@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CBB5BA83-F9C9-405A-9BC6-71EBB2FE739B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SDKSampleApp</RootNamespace>
+    <AssemblyName>SDKCSharpSample</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Source\AddClipForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\AddClipForm.Designer.cs">
+      <DependentUpon>AddClipForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\AddEventForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\AddEventForm.Designer.cs">
+      <DependentUpon>AddEventForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\AddSituationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\AddSituationForm.Designer.cs">
+      <DependentUpon>AddSituationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\ConnectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\ConnectForm.Designer.cs">
+      <DependentUpon>ConnectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\ControlManager.cs" />
+    <Compile Include="Source\DownloadProgressForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\DownloadProgressForm.Designer.cs">
+      <DependentUpon>DownloadProgressForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\NewExportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\NewExportForm.Designer.cs">
+      <DependentUpon>NewExportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\ExportManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\ExportManagerForm.Designer.cs">
+      <DependentUpon>ExportManagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\ExportSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\ExportSettingsForm.Designer.cs">
+      <DependentUpon>ExportSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\PTZControlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\PTZControlForm.Designer.cs">
+      <DependentUpon>PTZControlForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Enums.cs" />
+    <Compile Include="Source\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Source\SituationDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\SituationDetailsForm.Designer.cs">
+      <DependentUpon>SituationDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\SituationManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\SituationManagerForm.Designer.cs">
+      <DependentUpon>SituationManagerForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Source\AddClipForm.resx">
+      <DependentUpon>AddClipForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\AddEventForm.resx">
+      <DependentUpon>AddEventForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\AddSituationForm.resx">
+      <DependentUpon>AddSituationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\ConnectForm.resx">
+      <DependentUpon>ConnectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\DownloadProgressForm.resx">
+      <DependentUpon>DownloadProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\NewExportForm.resx">
+      <DependentUpon>NewExportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\ExportManagerForm.resx">
+      <DependentUpon>ExportManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\ExportSettingsForm.resx">
+      <DependentUpon>ExportSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\PTZControlForm.resx">
+      <DependentUpon>PTZControlForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Source\SituationDetailsForm.resx">
+      <DependentUpon>SituationDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\SituationManagerForm.resx">
+      <DependentUpon>SituationManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CSharpWrapper\CSharpWrapper.vcxproj">
+      <Project>{7b8bd603-eb13-4e0d-a7e9-7a36813e52e1}</Project>
+      <Name>CSharpWrapper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>SET D=
+
+IF $(ConfigurationName) == Debug (
+    SET D=d
+	SET PathName=D
+)
+
+SET VXSDK=VxSdk%25D%25
+SET REST=cpprest120%25D%25_2_6
+SET MEDIACTRL=MediaController%25D%25
+
+COPY /Y "$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdk%25PathName%25.$(PlatformTarget)\Bin\%25REST%25.dll" "$(TargetDir)"
+COPY /Y "$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdk%25PathName%25.$(PlatformTarget)\Bin\%25REST%25.pdb" "$(TargetDir)"
+
+COPY /Y "$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdk%25PathName%25.$(PlatformTarget)\Bin\%25VXSDK%25.dll" "$(TargetDir)"
+COPY /Y "$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdk%25PathName%25.$(PlatformTarget)\Bin\%25VXSDK%25.pdb" "$(TargetDir)"
+
+COPY /Y "$(ProjectDir)..\..\MediaController\Bin\$(PlatformTarget)\$(ConfigurationName)\%25MEDIACTRL%25.dll" "$(TargetDir)"
+COPY /Y "$(ProjectDir)..\..\MediaController\Bin\$(PlatformTarget)\$(ConfigurationName)\%25MEDIACTRL%25.pdb" "$(TargetDir)"</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

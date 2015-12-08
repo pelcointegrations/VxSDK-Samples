@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{882C1F53-F88D-47F1-BC85-623FBE1EB4C5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>VxSdk</RootNamespace>
+    <ProjectName>MediaController</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>Bin\$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>Bin\$(PlatformTarget)\$(Configuration)\Intermediates\</IntDir>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>$(ProjectName)d</TargetName>
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>Bin\$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>Bin\$(PlatformTarget)\$(Configuration)\Intermediates\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>Bin\$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>Bin\$(PlatformTarget)\$(Configuration)\Intermediates\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>Bin\$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>Bin\$(PlatformTarget)\$(Configuration)\Intermediates\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0501;WIN32;_EXPORTING;_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_devel\include\gstreamer-1.0;$(ProjectDir)ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_devel\include\glib-2.0;$(ProjectDir)ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_devel\lib\glib-2.0\include;$(ProjectDir)ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_devel\lib\gstreamer-1.0\include;$(ProjectDir)ThirdParty\Boost\1.59.0.0\Include;$(ProjectDir)Include;$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdkD.x86\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4267;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalOptions>-D_SCL_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
+      <GenerateXMLDocumentationFiles>true</GenerateXMLDocumentationFiles>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>VxSdkd.lib;glib-2.0.lib;gmodule-2.0.lib;gobject-2.0.lib;gstreamer-1.0.lib;gstapp-1.0.lib;gstaudio-1.0.lib;gstbadbase-1.0.lib;gstbadvideo-1.0.lib;gstbase-1.0.lib;gstbasecamerabinsrc-1.0.lib;gstcodecparsers-1.0.lib;gstcontroller-1.0.lib;gstfft-1.0.lib;gstgl-1.0.lib;gstinsertbin-1.0.lib;gstmpegts-1.0.lib;gstnet-1.0.lib;gstpbutils-1.0.lib;gstphotography-1.0.lib;gstriff-1.0.lib;gstrtp-1.0.lib;gstrtsp-1.0.lib;gstrtspserver-1.0.lib;gstsdp-1.0.lib;gsttag-1.0.lib;gsturidownloader-1.0.lib;gstvalidate-1.0.lib;gstvideo-1.0.lib;gthread-2.0.lib;harfbuzz.lib;iconv.lib;mpeg2convert.lib;mpeg2.lib;x264.lib;jpeg.lib;libboost_regex-vc120-mt-gd-1_59.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_devel\lib;$(ProjectDir)ThirdParty\Boost\1.59.0.0\Lib\$(PlatformTarget)\$(Configuration);$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdkD.x86\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0501;WIN32;_EXPORTING;_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_devel\include\gstreamer-1.0;$(ProjectDir)ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_devel\include\glib-2.0;$(ProjectDir)ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_devel\lib\glib-2.0\include;$(ProjectDir)ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_devel\lib\gstreamer-1.0\include;$(ProjectDir)ThirdParty\Boost\1.59.0.0\Include;$(ProjectDir)Include;$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdkD.x64\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4267;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalOptions>-D_SCL_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>VxSdkd.lib;glib-2.0.lib;gmodule-2.0.lib;gobject-2.0.lib;gstreamer-1.0.lib;gstapp-1.0.lib;gstaudio-1.0.lib;gstbadbase-1.0.lib;gstbadvideo-1.0.lib;gstbase-1.0.lib;gstbasecamerabinsrc-1.0.lib;gstcodecparsers-1.0.lib;gstcontroller-1.0.lib;gstfft-1.0.lib;gstgl-1.0.lib;gstinsertbin-1.0.lib;gstmpegts-1.0.lib;gstnet-1.0.lib;gstpbutils-1.0.lib;gstphotography-1.0.lib;gstriff-1.0.lib;gstrtp-1.0.lib;gstrtsp-1.0.lib;gstrtspserver-1.0.lib;gstsdp-1.0.lib;gsttag-1.0.lib;gsturidownloader-1.0.lib;gstvalidate-1.0.lib;gstvideo-1.0.lib;gthread-2.0.lib;harfbuzz.lib;iconv.lib;mpeg2convert.lib;mpeg2.lib;x264.lib;jpeg.lib;libboost_regex-vc120-mt-gd-1_59.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_devel\lib;$(ProjectDir)ThirdParty\Boost\1.59.0.0\Lib\$(PlatformTarget)\$(Configuration);$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdkD.x64\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0501;WIN32;_EXPORTING;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_devel\include\gstreamer-1.0;$(ProjectDir)ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_devel\include\glib-2.0;$(ProjectDir)ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_devel\lib\glib-2.0\include;$(ProjectDir)ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_devel\lib\gstreamer-1.0\include;$(ProjectDir)ThirdParty\Boost\1.59.0.0\Include;$(ProjectDir)Include;$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdk.x86\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4267;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalOptions>-D_SCL_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(ProjectDir)ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_devel\lib;$(ProjectDir)ThirdParty\Boost\1.59.0.0\Lib\$(PlatformTarget)\$(Configuration);$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdk.x86\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>VxSdk.lib;glib-2.0.lib;gmodule-2.0.lib;gobject-2.0.lib;gstreamer-1.0.lib;gstapp-1.0.lib;gstaudio-1.0.lib;gstbadbase-1.0.lib;gstbadvideo-1.0.lib;gstbase-1.0.lib;gstbasecamerabinsrc-1.0.lib;gstcodecparsers-1.0.lib;gstcontroller-1.0.lib;gstfft-1.0.lib;gstgl-1.0.lib;gstinsertbin-1.0.lib;gstmpegts-1.0.lib;gstnet-1.0.lib;gstpbutils-1.0.lib;gstphotography-1.0.lib;gstriff-1.0.lib;gstrtp-1.0.lib;gstrtsp-1.0.lib;gstrtspserver-1.0.lib;gstsdp-1.0.lib;gsttag-1.0.lib;gsturidownloader-1.0.lib;gstvalidate-1.0.lib;gstvideo-1.0.lib;gthread-2.0.lib;harfbuzz.lib;iconv.lib;mpeg2convert.lib;mpeg2.lib;x264.lib;jpeg.lib;libboost_regex-vc120-mt-1_59.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0501;WIN32;_EXPORTING;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_devel\include\gstreamer-1.0;$(ProjectDir)ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_devel\include\glib-2.0;$(ProjectDir)ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_devel\lib\glib-2.0\include;$(ProjectDir)ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_devel\lib\gstreamer-1.0\include;$(ProjectDir)ThirdParty\Boost\1.59.0.0\Include;$(ProjectDir)Include;$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdk.x64\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4267;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalOptions>-D_SCL_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(ProjectDir)ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_devel\lib;$(ProjectDir)ThirdParty\Boost\1.59.0.0\Lib\$(PlatformTarget)\$(Configuration);$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdk.x64\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>VxSdk.lib;glib-2.0.lib;gmodule-2.0.lib;gobject-2.0.lib;gstreamer-1.0.lib;gstapp-1.0.lib;gstaudio-1.0.lib;gstbadbase-1.0.lib;gstbadvideo-1.0.lib;gstbase-1.0.lib;gstbasecamerabinsrc-1.0.lib;gstcodecparsers-1.0.lib;gstcontroller-1.0.lib;gstfft-1.0.lib;gstgl-1.0.lib;gstinsertbin-1.0.lib;gstmpegts-1.0.lib;gstnet-1.0.lib;gstpbutils-1.0.lib;gstphotography-1.0.lib;gstriff-1.0.lib;gstrtp-1.0.lib;gstrtsp-1.0.lib;gstrtspserver-1.0.lib;gstsdp-1.0.lib;gsttag-1.0.lib;gsturidownloader-1.0.lib;gstvalidate-1.0.lib;gstvideo-1.0.lib;gthread-2.0.lib;harfbuzz.lib;iconv.lib;mpeg2convert.lib;mpeg2.lib;x264.lib;jpeg.lib;libboost_regex-vc120-mt-1_59.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\GstWrapper.cpp" />
+    <ClCompile Include="Source\MjpegPullStream.cpp" />
+    <ClCompile Include="Source\RtspCommands.cpp" />
+    <ClCompile Include="Source\RtspSdpParser.cpp" />
+    <ClCompile Include="Source\RtspStream.cpp" />
+    <ClCompile Include="Source\stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\Controller.cpp" />
+    <ClCompile Include="Source\StreamBase.cpp" />
+    <ClCompile Include="Source\StreamFactory.cpp" />
+    <ClCompile Include="Source\StreamState.cpp" />
+    <ClCompile Include="Source\Utilities.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\IController.h" />
+    <ClInclude Include="Include\IStream.h" />
+    <ClInclude Include="Include\Macros.h" />
+    <ClInclude Include="Include\MediaController.h" />
+    <ClInclude Include="Include\TimestampEvent.h" />
+    <ClInclude Include="Include\MediaRequest.h" />
+    <ClInclude Include="Include\Constants.h" />
+    <ClInclude Include="Include\Controller.h" />
+    <ClInclude Include="Include\GstVars.h" />
+    <ClInclude Include="Include\GstWrapper.h" />
+    <ClInclude Include="Include\MjpegPullStream.h" />
+    <ClInclude Include="Include\RtspCommands.h" />
+    <ClInclude Include="Include\RtspKeepAlive.h" />
+    <ClInclude Include="Include\RtspMediaDescription.h" />
+    <ClInclude Include="Include\RtspResponse.h" />
+    <ClInclude Include="Include\RtspSdpParser.h" />
+    <ClInclude Include="Include\RtspStream.h" />
+    <ClInclude Include="Include\stdafx.h" />
+    <ClInclude Include="Include\StreamBase.h" />
+    <ClInclude Include="Include\StreamFactory.h" />
+    <ClInclude Include="Include\StreamState.h" />
+    <ClInclude Include="Include\Utilities.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

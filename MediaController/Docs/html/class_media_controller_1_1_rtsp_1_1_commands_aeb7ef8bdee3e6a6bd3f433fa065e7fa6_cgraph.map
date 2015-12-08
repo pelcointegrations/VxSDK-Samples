@@ -1,0 +1,5 @@
+<map id="MediaController::Rtsp::Commands::Pause" name="MediaController::Rtsp::Commands::Pause">
+<area shape="rect" id="node2" href="$class_media_controller_1_1_controller.html#a9832c40e836ec7b9b7a45b7ee2aaf42e" title="Get the current playback mode. " alt="" coords="200,39,375,80"/>
+<area shape="rect" id="node3" href="$class_media_controller_1_1_stream_base.html#a8426351a80597fb8d2a3a2ccc8ba732e" title="Get the current GStreamer wrapper instance. " alt="" coords="423,5,615,47"/>
+<area shape="rect" id="node4" href="$class_media_controller_1_1_gst_wrapper.html#aaf7152a829d2ecd653fc2f508e336475" title="Get the current playback mode. " alt="" coords="423,71,614,112"/>
+</map>

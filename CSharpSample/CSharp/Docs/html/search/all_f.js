@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['enums',['Enums',['../namespace_s_d_k_sample_app_1_1_enums.html',1,'SDKSampleApp']]],
+  ['sdksampleapp',['SDKSampleApp',['../namespace_s_d_k_sample_app.html',1,'']]],
+  ['selectcontrol',['SelectControl',['../class_s_d_k_sample_app_1_1_source_1_1_control_manager.html#a8acf0fb0300935a513a040c5c3e3a533',1,'SDKSampleApp::Source::ControlManager']]],
+  ['selectedclip',['SelectedClip',['../class_s_d_k_sample_app_1_1_source_1_1_add_clip_form.html#a4e7aab7fcddbac2c2e93b7bcc19659ee',1,'SDKSampleApp::Source::AddClipForm']]],
+  ['selectedcontrol',['SelectedControl',['../class_s_d_k_sample_app_1_1_source_1_1_control_manager.html#aaa4c20ef1070c95287dbeb9ff8eaf302',1,'SDKSampleApp::Source::ControlManager']]],
+  ['selectedlabel',['SelectedLabel',['../class_s_d_k_sample_app_1_1_source_1_1_control_manager.html#ad5a16b3deadca734b7f256bc13606554',1,'SDKSampleApp::Source::ControlManager']]],
+  ['selectedpanel',['SelectedPanel',['../class_s_d_k_sample_app_1_1_source_1_1_control_manager.html#a919c4a5d08e1859f35cb1da59394bcc0',1,'SDKSampleApp::Source::ControlManager']]],
+  ['setplayingindex',['SetPlayingIndex',['../class_s_d_k_sample_app_1_1_source_1_1_control_manager.html#a4b99c684064cb99a6f016ec07b4297d4',1,'SDKSampleApp::Source::ControlManager']]],
+  ['setupptzcontrols',['SetupPtzControls',['../class_s_d_k_sample_app_1_1_source_1_1_main_form.html#a7969f672a73ac1032e13c169b04e5e09',1,'SDKSampleApp::Source::MainForm']]],
+  ['silenced',['Silenced',['../namespace_s_d_k_sample_app_1_1_enums.html#a3f43a4d396584b0912e9aa00173f8f7fa6f298e1e2a4770f368d3a31f1a74d7b8',1,'SDKSampleApp::Enums']]],
+  ['situationdetailsform',['SituationDetailsForm',['../class_s_d_k_sample_app_1_1_source_1_1_situation_details_form.html',1,'SDKSampleApp::Source']]],
+  ['situationdetailsform',['SituationDetailsForm',['../class_s_d_k_sample_app_1_1_source_1_1_situation_details_form.html#a47d314a613c8a2243cebd0f2717c1a21',1,'SDKSampleApp::Source::SituationDetailsForm']]],
+  ['situationdetailsform_2ecs',['SituationDetailsForm.cs',['../_situation_details_form_8cs.html',1,'']]],
+  ['situationmanagerform',['SituationManagerForm',['../class_s_d_k_sample_app_1_1_source_1_1_situation_manager_form.html',1,'SDKSampleApp::Source']]],
+  ['situationmanagerform',['SituationManagerForm',['../class_s_d_k_sample_app_1_1_source_1_1_situation_manager_form.html#af54acc2743f883cb87c8d11eb827bb84',1,'SDKSampleApp::Source::SituationManagerForm']]],
+  ['situationmanagerform_2ecs',['SituationManagerForm.cs',['../_situation_manager_form_8cs.html',1,'']]],
+  ['source',['Source',['../namespace_s_d_k_sample_app_1_1_source.html',1,'SDKSampleApp']]],
+  ['startdownload',['StartDownload',['../class_s_d_k_sample_app_1_1_source_1_1_download_progress_form.html#acfb6cb7a97fc94ecf276d617ceacd08e',1,'SDKSampleApp::Source::DownloadProgressForm']]],
+  ['startstream',['StartStream',['../class_s_d_k_sample_app_1_1_source_1_1_main_form.html#ac6b290a596c898012e568d0f431b2a16',1,'SDKSampleApp::Source::MainForm']]],
+  ['stopallstreams',['StopAllStreams',['../class_s_d_k_sample_app_1_1_source_1_1_main_form.html#afb86184699b7746ff1a3da91e57a08d3',1,'SDKSampleApp::Source::MainForm']]],
+  ['stopptz',['StopPtz',['../class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#abadddeb6a32a2b686d3aab9c768c4985',1,'SDKSampleApp::Source::PTZControlForm']]],
+  ['stopstream',['StopStream',['../class_s_d_k_sample_app_1_1_source_1_1_main_form.html#a5fc171542f96bf27383ceb2b16557940',1,'SDKSampleApp::Source::MainForm']]],
+  ['subscribetotimestamps',['SubscribeToTimestamps',['../class_s_d_k_sample_app_1_1_source_1_1_control_manager.html#a2b78baae35e2611b435b75fe4ed712fc',1,'SDKSampleApp::Source::ControlManager']]]
+];

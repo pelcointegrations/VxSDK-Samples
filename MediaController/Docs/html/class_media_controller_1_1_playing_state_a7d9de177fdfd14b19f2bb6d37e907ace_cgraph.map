@@ -1,0 +1,8 @@
+<map id="MediaController::PlayingState::Stop" name="MediaController::PlayingState::Stop">
+<area shape="rect" id="node2" href="$class_media_controller_1_1_stream_base.html#a997ae25fed4a14786421f456160bb4ff" title="Call TearDown on the stream. " alt="" coords="217,5,409,47"/>
+<area shape="rect" id="node3" href="$class_media_controller_1_1_stream_state.html#a8f6db90840dcbc48223b9f542b766551" title="Set the current state of the stream. " alt="" coords="216,71,409,112"/>
+<area shape="rect" id="node4" href="$class_media_controller_1_1_stream_base.html#a8426351a80597fb8d2a3a2ccc8ba732e" title="Get the current GStreamer wrapper instance. " alt="" coords="217,136,409,177"/>
+<area shape="rect" id="node5" href="$class_media_controller_1_1_gst_wrapper.html#af0a1d3209beb40b460742a34ce2e2b45" title="Set the current playback mode. " alt="" coords="217,201,408,243"/>
+<area shape="rect" id="node6" href="$class_media_controller_1_1_gst_wrapper.html#a07dc64a91cb7d41a9b3e57f4c6d2d5e3" title="Set the pipeline state to paused. " alt="" coords="217,267,408,308"/>
+<area shape="rect" id="node7" href="$class_media_controller_1_1_gst_wrapper.html#a46c6baee2fc6186911736bf66ea15069" title="Clear the display window. " alt="" coords="217,332,408,373"/>
+</map>

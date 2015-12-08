@@ -1,0 +1,4 @@
+<map id="MediaController::Rtsp::Stream" name="MediaController::Rtsp::Stream">
+<area shape="rect" id="node2" href="$class_media_controller_1_1_stream_base.html" title="The base class for the different stream types. " alt="" coords="5,80,197,107"/>
+<area shape="rect" id="node3" href="$class_media_controller_1_1_i_stream.html" title="Defines the stream interface. " alt="" coords="19,5,184,32"/>
+</map>
