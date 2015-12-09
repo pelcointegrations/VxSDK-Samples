@@ -1,0 +1,7 @@
+var searchData=
+[
+  ['name',['name',['../struct_vx_sdk_1_1_i_vx_data_source.html#a5796ff811b6e1973998361a71b1637f9',1,'VxSdk::IVxDataSource::name()'],['../struct_vx_sdk_1_1_i_vx_device.html#a59767acd0373003b506401c92fe2f75d',1,'VxSdk::IVxDevice::name()'],['../struct_vx_sdk_1_1_i_vx_export.html#ad18a65d91d7a67c2b911c3bb547693ca',1,'VxSdk::IVxExport::name()'],['../struct_vx_sdk_1_1_i_vx_pattern.html#af56461e8709400d41b592a1b898933f9',1,'VxSdk::IVxPattern::name()'],['../struct_vx_sdk_1_1_i_vx_preset.html#a915786255a537595549f729393b5bc0d',1,'VxSdk::IVxPreset::name()'],['../struct_vx_sdk_1_1_i_vx_situation.html#a781953eb7bea73e928362d1f69973e8c',1,'VxSdk::IVxSituation::name()'],['../struct_vx_sdk_1_1_i_vx_system.html#a3bc550066f27fb1c4c1bbd3d45020514',1,'VxSdk::IVxSystem::name()'],['../struct_vx_sdk_1_1_vx_new_export.html#ab7844d2ff96671284a88f2003215bfc2',1,'VxSdk::VxNewExport::name()'],['../struct_vx_sdk_1_1_vx_new_situation.html#a7e45524c547bfb07a02db0c148888810',1,'VxSdk::VxNewSituation::name()']]],
+  ['notificationids',['notificationIds',['../struct_vx_sdk_1_1_i_vx_situation.html#a9125a431af889cb5a04b14bd841a180e',1,'VxSdk::IVxSituation']]],
+  ['notificationidsize',['notificationIdSize',['../struct_vx_sdk_1_1_i_vx_situation.html#a1063e56b6ebd030fe646f440f44e919a',1,'VxSdk::IVxSituation']]],
+  ['number',['number',['../struct_vx_sdk_1_1_i_vx_data_source.html#ab211dba42f4b1e59c03e43b4af2b92f0',1,'VxSdk::IVxDataSource']]]
+];

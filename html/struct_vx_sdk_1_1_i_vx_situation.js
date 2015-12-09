@@ -1,0 +1,26 @@
+var struct_vx_sdk_1_1_i_vx_situation =
+[
+    [ "Clear", "struct_vx_sdk_1_1_i_vx_situation.html#ae5121331f00ccfe0c505d535b391fca7", null ],
+    [ "Delete", "struct_vx_sdk_1_1_i_vx_situation.html#a1904b0c798f4c1634f1b4f8747243b24", null ],
+    [ "DeleteSituation", "struct_vx_sdk_1_1_i_vx_situation.html#a2a69cfd77923230d4f3a618cbd25f78d", null ],
+    [ "Link", "struct_vx_sdk_1_1_i_vx_situation.html#a2ec5120ee5d4fc73f6a9d4099c3067e3", null ],
+    [ "Link", "struct_vx_sdk_1_1_i_vx_situation.html#aec3145382a210242b56d89f8ddffe9e2", null ],
+    [ "UnLink", "struct_vx_sdk_1_1_i_vx_situation.html#adb23ad3b747bad64815622118e7a2c4e", null ],
+    [ "UnLink", "struct_vx_sdk_1_1_i_vx_situation.html#a00ca235fd8dc79fcd014e7d4cab06501", null ],
+    [ "audibleLoopDelay", "struct_vx_sdk_1_1_i_vx_situation.html#a49ffed961ace2cfa3085d4b4df8fba1b", null ],
+    [ "audiblePlayCount", "struct_vx_sdk_1_1_i_vx_situation.html#aa2717c70b82b8ac8484a71cdadfb2d05", null ],
+    [ "autoAcknowledgeTime", "struct_vx_sdk_1_1_i_vx_situation.html#a4e2f16328eef3fe4f7a0fdc181176724", null ],
+    [ "isAckNeeded", "struct_vx_sdk_1_1_i_vx_situation.html#aa43a3665d16b61bd136926134d31f3f0", null ],
+    [ "name", "struct_vx_sdk_1_1_i_vx_situation.html#a781953eb7bea73e928362d1f69973e8c", null ],
+    [ "notificationIds", "struct_vx_sdk_1_1_i_vx_situation.html#a9125a431af889cb5a04b14bd841a180e", null ],
+    [ "notificationIdSize", "struct_vx_sdk_1_1_i_vx_situation.html#a1063e56b6ebd030fe646f440f44e919a", null ],
+    [ "severity", "struct_vx_sdk_1_1_i_vx_situation.html#a2da6f73fe11f63405962568e63df3cb2", null ],
+    [ "shouldAudiblyNotify", "struct_vx_sdk_1_1_i_vx_situation.html#adc2aead84d8cbf0cbadfc7ad03ee8226", null ],
+    [ "shouldExpandBanner", "struct_vx_sdk_1_1_i_vx_situation.html#a9afdbca6018c4ee5ecb95c5b8b610d97", null ],
+    [ "shouldLog", "struct_vx_sdk_1_1_i_vx_situation.html#ac05d5d9c24db7c94e0218ad9220baf28", null ],
+    [ "shouldNotify", "struct_vx_sdk_1_1_i_vx_situation.html#a1040fd067ef1b3be3dbc5b69689f69a9", null ],
+    [ "snoozeIntervals", "struct_vx_sdk_1_1_i_vx_situation.html#a1ad3d9e2712dc4d7eb5f671324c36c41", null ],
+    [ "snoozeIntervalSize", "struct_vx_sdk_1_1_i_vx_situation.html#a12e6f7f1f2cb72b47616e00907698121", null ],
+    [ "sourceDeviceId", "struct_vx_sdk_1_1_i_vx_situation.html#ac19f4a313c1d0eb70f9214c0b784ce9b", null ],
+    [ "type", "struct_vx_sdk_1_1_i_vx_situation.html#a85143db53e3991e5053a74aceefc349c", null ]
+];
