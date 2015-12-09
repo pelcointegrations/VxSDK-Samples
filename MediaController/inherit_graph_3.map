@@ -1,0 +1,8 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_media_controller_1_1_i_stream.html" title="Defines the stream interface. " alt="" coords="5,37,171,64"/>
+<area shape="rect" id="node2" href="$class_media_controller_1_1_i_controller.html" title="Defines the controller interface. " alt="" coords="225,9,404,36"/>
+<area shape="rect" id="node4" href="$class_media_controller_1_1_stream_base.html" title="The base class for the different stream types. " alt="" coords="219,64,411,91"/>
+<area shape="rect" id="node3" href="$class_media_controller_1_1_controller.html" title="Implements the IController interface methods. " alt="" coords="460,5,635,32"/>
+<area shape="rect" id="node5" href="$class_media_controller_1_1_mjpeg_pull_1_1_stream.html" title="Represents an MJPEG pull stream. " alt="" coords="459,57,636,98"/>
+<area shape="rect" id="node6" href="$class_media_controller_1_1_rtsp_1_1_stream.html" title="Represents an RTSP stream. " alt="" coords="474,122,621,163"/>
+</map>
