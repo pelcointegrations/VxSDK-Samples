@@ -148,6 +148,8 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a filter to be used when creating a <a class="el" href="struct_vx_sdk_1_1_vx_collection.html" title="Represents a collection of resources. ">VxCollection</a>. </p>
+
+<p>Definition at line <a class="el" href="_vx_collection_filter_8h_source.html#l00012">12</a> of file <a class="el" href="_vx_collection_filter_8h_source.html">VxCollectionFilter.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a929d6f30f386d5b8c3ff8adb3d59549c"></a>
 <div class="memitem">
@@ -172,6 +174,12 @@ Public Attributes</h2></td></tr>
 
 <p>Initializes a new instance of the <a class="el" href="struct_vx_sdk_1_1_vx_collection_filter.html" title="Represents a filter to be used when creating a VxCollection. ">VxCollectionFilter</a> struct. </p>
 
+<p>Definition at line <a class="el" href="_vx_collection_filter_8h_source.html#l00017">17</a> of file <a class="el" href="_vx_collection_filter_8h_source.html">VxCollectionFilter.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                             {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            <a class="code" href="struct_vx_sdk_1_1_vx_collection_filter.html#a82862b3910a7b0af9514751d1b8fcb2f">Clear</a>();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        }</div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_collection_filter_html_a82862b3910a7b0af9514751d1b8fcb2f"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_collection_filter.html#a82862b3910a7b0af9514751d1b8fcb2f">VxSdk::VxCollectionFilter::Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdoc">Clears this instance. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_collection_filter_8h_source.html#l00040">VxCollectionFilter.h:40</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ad2a112eea078f29cc3ca9450bff668d1"></a>
@@ -204,6 +212,15 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="_vx_collection_filter_8h_source.html#l00025">25</a> of file <a class="el" href="_vx_collection_filter_8h_source.html">VxCollectionFilter.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                                                          {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_collection_filter.html#a7bd02d863be1e1d683286fa4020dc1ae">key</a> = ref.key;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <a class="code" href="namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">Utilities::StrCopySafe</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_collection_filter.html#ab56db2375389beb09fc179a08b86ba45">value</a>, ref.value);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        }</div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_collection_filter_html_a7bd02d863be1e1d683286fa4020dc1ae"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_collection_filter.html#a7bd02d863be1e1d683286fa4020dc1ae">VxSdk::VxCollectionFilter::key</a></div><div class="ttdeci">VxCollectionFilterItem::Value key</div><div class="ttdoc">The filter key. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_collection_filter_8h_source.html#l00049">VxCollectionFilter.h:49</a></div></div>
+<div class="ttc" id="namespace_vx_sdk_1_1_utilities_html_a11cbdb435aa92ea160aad373da6a32db"><div class="ttname"><a href="namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">VxSdk::Utilities::StrCopySafe</a></div><div class="ttdeci">static void StrCopySafe(char(&amp;dst)[dstSize], const char *src)</div><div class="ttdoc">Performs a safe string copy. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_utilities_8h_source.html#l00015">VxUtilities.h:15</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_collection_filter_html_ab56db2375389beb09fc179a08b86ba45"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_collection_filter.html#ab56db2375389beb09fc179a08b86ba45">VxSdk::VxCollectionFilter::value</a></div><div class="ttdeci">char value[64]</div><div class="ttdoc">The filter value. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_collection_filter_8h_source.html#l00053">VxCollectionFilter.h:53</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a83884eabe331bca2520af206dd079e42"></a>
@@ -229,6 +246,12 @@ Public Attributes</h2></td></tr>
 
 <p>Finalizes an instance of the <a class="el" href="struct_vx_sdk_1_1_vx_collection_filter.html" title="Represents a filter to be used when creating a VxCollection. ">VxCollectionFilter</a> class. </p>
 
+<p>Definition at line <a class="el" href="_vx_collection_filter_8h_source.html#l00033">33</a> of file <a class="el" href="_vx_collection_filter_8h_source.html">VxCollectionFilter.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                              {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <a class="code" href="struct_vx_sdk_1_1_vx_collection_filter.html#a82862b3910a7b0af9514751d1b8fcb2f">Clear</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        }</div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_collection_filter_html_a82862b3910a7b0af9514751d1b8fcb2f"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_collection_filter.html#a82862b3910a7b0af9514751d1b8fcb2f">VxSdk::VxCollectionFilter::Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdoc">Clears this instance. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_collection_filter_8h_source.html#l00040">VxCollectionFilter.h:40</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -255,6 +278,16 @@ Public Attributes</h2></td></tr>
 
 <p>Clears this instance. </p>
 
+<p>Definition at line <a class="el" href="_vx_collection_filter_8h_source.html#l00040">40</a> of file <a class="el" href="_vx_collection_filter_8h_source.html">VxCollectionFilter.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                     {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_collection_filter.html#a7bd02d863be1e1d683286fa4020dc1ae">key</a> = <a class="code" href="struct_vx_sdk_1_1_vx_collection_filter_item.html#a7a426ee3c166b7a59122cd8fdd9ced17a111597f514a00f4527353db2f083a36b">VxCollectionFilterItem::kNone</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_collection_filter.html#ab56db2375389beb09fc179a08b86ba45">value</a>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        }</div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_collection_filter_html_a7bd02d863be1e1d683286fa4020dc1ae"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_collection_filter.html#a7bd02d863be1e1d683286fa4020dc1ae">VxSdk::VxCollectionFilter::key</a></div><div class="ttdeci">VxCollectionFilterItem::Value key</div><div class="ttdoc">The filter key. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_collection_filter_8h_source.html#l00049">VxCollectionFilter.h:49</a></div></div>
+<div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00018">VxMacros.h:18</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_collection_filter_item_html_a7a426ee3c166b7a59122cd8fdd9ced17a111597f514a00f4527353db2f083a36b"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_collection_filter_item.html#a7a426ee3c166b7a59122cd8fdd9ced17a111597f514a00f4527353db2f083a36b">VxSdk::VxCollectionFilterItem::kNone</a></div><div class="ttdef"><b>Definition:</b> <a href="_vx_primitives_8h_source.html#l00037">VxPrimitives.h:37</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_collection_filter_html_ab56db2375389beb09fc179a08b86ba45"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_collection_filter.html#ab56db2375389beb09fc179a08b86ba45">VxSdk::VxCollectionFilter::value</a></div><div class="ttdeci">char value[64]</div><div class="ttdoc">The filter value. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_collection_filter_8h_source.html#l00053">VxCollectionFilter.h:53</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -270,6 +303,8 @@ Public Attributes</h2></td></tr>
 
 <p>The filter key. </p>
 
+<p>Definition at line <a class="el" href="_vx_collection_filter_8h_source.html#l00049">49</a> of file <a class="el" href="_vx_collection_filter_8h_source.html">VxCollectionFilter.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ab56db2375389beb09fc179a08b86ba45"></a>
@@ -284,10 +319,12 @@ Public Attributes</h2></td></tr>
 
 <p>The filter value. </p>
 
+<p>Definition at line <a class="el" href="_vx_collection_filter_8h_source.html#l00053">53</a> of file <a class="el" href="_vx_collection_filter_8h_source.html">VxCollectionFilter.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="_vx_collection_filter_8h_source.html">VxCollectionFilter.h</a></li>
+<li>C:/Users/Zach/Git/vxsdk/VxSdk/Include/<a class="el" href="_vx_collection_filter_8h_source.html">VxCollectionFilter.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -12,7 +12,7 @@ var namespace_media_controller =
     [ "PlayingState", "class_media_controller_1_1_playing_state.html", "class_media_controller_1_1_playing_state" ],
     [ "StoppedState", "class_media_controller_1_1_stopped_state.html", "class_media_controller_1_1_stopped_state" ],
     [ "StreamBase", "class_media_controller_1_1_stream_base.html", "class_media_controller_1_1_stream_base" ],
-    [ "StreamFactory", "class_media_controller_1_1_stream_factory.html", null ],
+    [ "StreamFactory", "class_media_controller_1_1_stream_factory.html", "class_media_controller_1_1_stream_factory" ],
     [ "StreamState", "class_media_controller_1_1_stream_state.html", "class_media_controller_1_1_stream_state" ],
     [ "TimestampEvent", "struct_media_controller_1_1_timestamp_event.html", "struct_media_controller_1_1_timestamp_event" ]
 ];

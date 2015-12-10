@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['icontroller',['IController',['../class_media_controller_1_1_i_controller.html',1,'MediaController']]],
-  ['ip',['ip',['../struct_media_controller_1_1_rtsp_1_1_media_description.html#a7eb00a6c4eb242c9a03c77b08683ece7',1,'MediaController::Rtsp::MediaDescription']]],
-  ['ismulticast',['isMulticast',['../struct_media_controller_1_1_rtsp_1_1_media_description.html#a7cbfebff925e155b562f1c9232119cb0',1,'MediaController::Rtsp::MediaDescription']]],
-  ['istream',['IStream',['../class_media_controller_1_1_i_stream.html',1,'MediaController']]]
+  ['haslive',['hasLive',['../../VxSdk/struct_vx_sdk_1_1_i_vx_data_source.html#aaedeba4fb25b0dfb8af7bb0bfa086869',1,'VxSdk::IVxDataSource']]],
+  ['hasrecorded',['hasRecorded',['../../VxSdk/struct_vx_sdk_1_1_i_vx_data_source.html#abd4af36a9baf8fd2c443b628ddef40ed',1,'VxSdk::IVxDataSource']]],
+  ['headers',['headers',['../struct_media_controller_1_1_rtsp_1_1_response.html#a980642ffce198d5cf5b5ca61b12924fc',1,'MediaController::Rtsp::Response']]]
 ];

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>C# Sample: Source/AddClipForm.cs Source File</title>
+<title>C# Sample: C:/Users/Zach/Git/vxsdk/Samples/VxSDK-Samples/CSharpSample/CSharp/Source/AddClipForm.cs Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -111,19 +111,19 @@ $(document).ready(function(){initNavTree('_add_clip_form_8cs_source.html','');})
 <div class="contents">
 <a href="_add_clip_form_8cs.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_system.html">System</a>;</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_system.html">System</a>.Windows.Forms;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_c_p_p_cli.html">CPPCli</a>;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/CSharpWrapper/CSharpWrapper.tag:../CSharpWrapper/" href="../CSharpWrapper/namespace_c_p_p_cli.html">CPPCli</a>;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
 <div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="namespace_s_d_k_sample_app_1_1_source.html">    5</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_s_d_k_sample_app.html">SDKSampleApp</a>.Source</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
 <div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_s_d_k_sample_app_1_1_source_1_1_add_clip_form.html">   12</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">partial class </span><a class="code" href="class_s_d_k_sample_app_1_1_source_1_1_add_clip_form.html">AddClipForm</a> : Form</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keyword">private</span> <span class="keyword">static</span> Clip SelectedClip</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keyword">private</span> <span class="keyword">static</span> <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/CSharpWrapper/CSharpWrapper.tag:../CSharpWrapper/" href="../CSharpWrapper/class_c_p_p_cli_1_1_clip.html">Clip</a> SelectedClip</div>
 <div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_s_d_k_sample_app_1_1_source_1_1_add_clip_form.html#a4e7aab7fcddbac2c2e93b7bcc19659ee">   20</a></span>&#160;        {</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <span class="keyword">get</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            {</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="class_s_d_k_sample_app_1_1_source_1_1_new_export_form.html">NewExportForm</a>.<a class="code" href="class_s_d_k_sample_app_1_1_source_1_1_new_export_form.html#ad9c453d9d5d56a01e8332c992c966003">Instance</a>.lvAvailableClips.SelectedItems[0] != null)</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                    <span class="keywordflow">return</span> (Clip)<a class="code" href="class_s_d_k_sample_app_1_1_source_1_1_new_export_form.html">NewExportForm</a>.<a class="code" href="class_s_d_k_sample_app_1_1_source_1_1_new_export_form.html#ad9c453d9d5d56a01e8332c992c966003">Instance</a>.lvAvailableClips.SelectedItems[0].Tag;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                    <span class="keywordflow">return</span> (<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/CSharpWrapper/CSharpWrapper.tag:../CSharpWrapper/" href="../CSharpWrapper/class_c_p_p_cli_1_1_clip.html">Clip</a>)<a class="code" href="class_s_d_k_sample_app_1_1_source_1_1_new_export_form.html">NewExportForm</a>.<a class="code" href="class_s_d_k_sample_app_1_1_source_1_1_new_export_form.html#ad9c453d9d5d56a01e8332c992c966003">Instance</a>.lvAvailableClips.SelectedItems[0].Tag;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                }</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                <span class="keywordflow">return</span> null;</div>
@@ -154,7 +154,7 @@ $(document).ready(function(){initNavTree('_add_clip_form_8cs_source.html','');})
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
 <div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_s_d_k_sample_app_1_1_source_1_1_add_clip_form.html#a9cd72e0174da41f6d43544e6ac5fc259">   64</a></span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code" href="class_s_d_k_sample_app_1_1_source_1_1_add_clip_form.html#a9cd72e0174da41f6d43544e6ac5fc259">ButtonAdd_Click</a>(<span class="keywordtype">object</span> sender, EventArgs args)</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            var newExportClip = <span class="keyword">new</span> NewExportClip</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            var newExportClip = <span class="keyword">new</span> <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/CSharpWrapper/CSharpWrapper.tag:../CSharpWrapper/" href="../CSharpWrapper/class_c_p_p_cli_1_1_new_export_clip.html">NewExportClip</a></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            {</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                DataSourceId = SelectedClip.Id,</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                StartTime = dtpStartDate.Value.ToUniversalTime(),</div>
@@ -170,9 +170,11 @@ $(document).ready(function(){initNavTree('_add_clip_form_8cs_source.html','');})
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        }</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
-<div class="ttc" id="namespace_c_p_p_cli_html"><div class="ttname"><a href="namespace_c_p_p_cli.html">CPPCli</a></div></div>
+<div class="ttc" id="namespace_c_p_p_cli_html"><div class="ttname"><a href="../CSharpWrapper/namespace_c_p_p_cli.html">CPPCli</a></div></div>
 <div class="ttc" id="class_s_d_k_sample_app_1_1_source_1_1_new_export_form_html_ad9c453d9d5d56a01e8332c992c966003"><div class="ttname"><a href="class_s_d_k_sample_app_1_1_source_1_1_new_export_form.html#ad9c453d9d5d56a01e8332c992c966003">SDKSampleApp.Source.NewExportForm.Instance</a></div><div class="ttdeci">static NewExportForm Instance</div><div class="ttdoc">Gets the Instance property. </div><div class="ttdef"><b>Definition:</b> <a href="_new_export_form_8cs_source.html#l00019">NewExportForm.cs:19</a></div></div>
 <div class="ttc" id="namespace_system_html"><div class="ttname"><a href="namespace_system.html">System</a></div></div>
+<div class="ttc" id="class_c_p_p_cli_1_1_clip_html"><div class="ttname"><a href="../CSharpWrapper/class_c_p_p_cli_1_1_clip.html">CPPCli::Clip</a></div></div>
+<div class="ttc" id="class_c_p_p_cli_1_1_new_export_clip_html"><div class="ttname"><a href="../CSharpWrapper/class_c_p_p_cli_1_1_new_export_clip.html">CPPCli::NewExportClip</a></div></div>
 <div class="ttc" id="class_s_d_k_sample_app_1_1_source_1_1_add_clip_form_html"><div class="ttname"><a href="class_s_d_k_sample_app_1_1_source_1_1_add_clip_form.html">SDKSampleApp.Source.AddClipForm</a></div><div class="ttdoc">The AddClipForm class. </div><div class="ttdef"><b>Definition:</b> <a href="_add_clip_form_8cs_source.html#l00012">AddClipForm.cs:12</a></div></div>
 <div class="ttc" id="class_s_d_k_sample_app_1_1_source_1_1_add_clip_form_html_a9cd72e0174da41f6d43544e6ac5fc259"><div class="ttname"><a href="class_s_d_k_sample_app_1_1_source_1_1_add_clip_form.html#a9cd72e0174da41f6d43544e6ac5fc259">SDKSampleApp.Source.AddClipForm.ButtonAdd_Click</a></div><div class="ttdeci">void ButtonAdd_Click(object sender, EventArgs args)</div><div class="ttdoc">The ButtonAdd_Click method. </div><div class="ttdef"><b>Definition:</b> <a href="_add_clip_form_8cs_source.html#l00064">AddClipForm.cs:64</a></div></div>
 <div class="ttc" id="class_s_d_k_sample_app_1_1_source_1_1_add_clip_form_html_ac0988109aff57598fd64a4cb838c9151"><div class="ttname"><a href="class_s_d_k_sample_app_1_1_source_1_1_add_clip_form.html#ac0988109aff57598fd64a4cb838c9151">SDKSampleApp.Source.AddClipForm.AddClipForm</a></div><div class="ttdeci">AddClipForm()</div><div class="ttdoc">Initializes a new instance of the AddClipForm class. </div><div class="ttdef"><b>Definition:</b> <a href="_add_clip_form_8cs_source.html#l00035">AddClipForm.cs:35</a></div></div>
@@ -183,7 +185,7 @@ $(document).ready(function(){initNavTree('_add_clip_form_8cs_source.html','');})
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_74389ed8173ad57b461b9d623a1f3867.html">Source</a></li><li class="navelem"><a class="el" href="_add_clip_form_8cs.html">AddClipForm.cs</a></li>
+    <li class="navelem"><a class="el" href="dir_6f2bbc259acbf2c00bc5315c0044b8e4.html">vxsdk</a></li><li class="navelem"><a class="el" href="dir_4b6f63d7a9a5c451ae872abad24d55ab.html">Samples</a></li><li class="navelem"><a class="el" href="dir_aaf608bdbff9050509eeedf0760b46a9.html">VxSDK-Samples</a></li><li class="navelem"><a class="el" href="dir_a917c4225faed50e0e03aeacd1dcd100.html">CSharpSample</a></li><li class="navelem"><a class="el" href="dir_0c7ddb1f4049cac5c19d53dd5444a395.html">CSharp</a></li><li class="navelem"><a class="el" href="dir_4b0d544d28988a0267e15ace726e25ac.html">Source</a></li><li class="navelem"><a class="el" href="_add_clip_form_8cs.html">AddClipForm.cs</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>

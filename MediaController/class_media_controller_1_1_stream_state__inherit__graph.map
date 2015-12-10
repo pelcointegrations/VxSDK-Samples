@@ -1,5 +1,0 @@
-<map id="MediaController::StreamState" name="MediaController::StreamState">
-<area shape="rect" id="node2" href="$class_media_controller_1_1_paused_state.html" title="Represents a stream that is currently in the paused state. " alt="" coords="247,5,441,32"/>
-<area shape="rect" id="node3" href="$class_media_controller_1_1_playing_state.html" title="Represents a stream that is currently in the playing state. " alt="" coords="263,57,425,98"/>
-<area shape="rect" id="node4" href="$class_media_controller_1_1_stopped_state.html" title="Represents a stream that is currently in the stopped state. " alt="" coords="260,122,428,163"/>
-</map>

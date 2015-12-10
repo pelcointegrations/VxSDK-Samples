@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>C++/CLI Sample: Source/DataSource.cpp Source File</title>
+<title>C++/CLI Sample: C:/Users/Zach/Git/vxsdk/Samples/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/DataSource.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -109,11 +109,11 @@ $(document).ready(function(){initNavTree('_data_source_8cpp_source.html','');});
 <div class="title">DataSource.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;DataSource.h&quot;</span></div>
+<a href="_data_source_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_data_source_8h.html">DataSource.h</a>&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespace_system_1_1_collections_1_1_generic.html">System::Collections::Generic</a>;</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_c_p_p_cli_1_1_data_source.html#a41433348c41c908b00399f9499a794cf">    8</a></span>&#160;<a class="code" href="class_c_p_p_cli_1_1_data_source.html#a41433348c41c908b00399f9499a794cf">CPPCli::DataSource::DataSource</a>(VxSdk::IVxDataSource* vxDataSource) {</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_c_p_p_cli_1_1_data_source.html#a41433348c41c908b00399f9499a794cf">    8</a></span>&#160;<a class="code" href="class_c_p_p_cli_1_1_data_source.html#a41433348c41c908b00399f9499a794cf">CPPCli::DataSource::DataSource</a>(<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_data_source.html">VxSdk::IVxDataSource</a>* vxDataSource) {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    _dataSource = vxDataSource;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
@@ -124,31 +124,31 @@ $(document).ready(function(){initNavTree('_data_source_8cpp_source.html','');});
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
 <div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_c_p_p_cli_1_1_data_source.html#a73b46581c47ef65d5b4a16e2fd0a3ab3">   17</a></span>&#160;<a class="code" href="class_c_p_p_cli_1_1_data_session.html">CPPCli::DataSession</a>^ <a class="code" href="class_c_p_p_cli_1_1_data_source.html#a73b46581c47ef65d5b4a16e2fd0a3ab3">CPPCli::DataSource::CreateMjpegStream</a>() {</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="comment">// Create a data session object</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    VxSdk::IVxDataSession* dataSession;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_data_session.html">VxSdk::IVxDataSession</a>* dataSession;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment">// If the mjpeg protocol is not available on the datasource the result will return VxSdk::VxResult::kActionUnavailable,</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">// otherwise VxSdk::VxResult::kOK</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    VxSdk::VxResult::Value result = _dataSource-&gt;CreateMjpegDataSession(dataSession);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">if</span> (result == VxSdk::VxResult::kOK)</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxSdk::VxResult::Value</a> result = _dataSource-&gt;CreateMjpegDataSession(dataSession);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">if</span> (result == <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26ac95db274cb42e10fd36986b8336daae3">VxSdk::VxResult::kOK</a>)</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">gcnew</span> <a class="code" href="class_c_p_p_cli_1_1_data_session.html">DataSession</a>(dataSession);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">bool</span> CPPCli::DataSource::_CanPtz() {</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_c_p_p_cli_1_1_data_source.html#af64ec7d86b1709ad7db1f27acf559553">   30</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_c_p_p_cli_1_1_data_source.html#af64ec7d86b1709ad7db1f27acf559553">CPPCli::DataSource::_CanPtz</a>() {</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">bool</span> result;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    _dataSource-&gt;CanPtz(result);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;System::String^ CPPCli::DataSource::_GetRtspEndpoint() {</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_c_p_p_cli_1_1_data_source.html#ae59ab4ef933cde5fbb1ca81a59e32539">   36</a></span>&#160;System::String^ <a class="code" href="class_c_p_p_cli_1_1_data_source.html#ae59ab4ef933cde5fbb1ca81a59e32539">CPPCli::DataSource::_GetRtspEndpoint</a>() {</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">char</span>* rtspEndpoint = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">int</span> size = 0;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">// If the rtsp uri is not available on the datasource the result will return VxSdk::VxResult::kActionUnavailable,</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">// otherwise VxSdk::VxResult::kInsufficientSize</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    VxSdk::VxResult::Value result = _dataSource-&gt;GetRtspEndpoint(rtspEndpoint, size);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">if</span> (result == VxSdk::VxResult::kInsufficientSize) {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxSdk::VxResult::Value</a> result = _dataSource-&gt;GetRtspEndpoint(rtspEndpoint, size);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">if</span> (result == <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26a0d4ae90e7aa11503b8f2313aee339803">VxSdk::VxResult::kInsufficientSize</a>) {</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="comment">// Allocate enough space for rtspEndpoint</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        rtspEndpoint = <span class="keyword">new</span> <span class="keywordtype">char</span>[size];</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="comment">// The result should now be kOK since we have allocated enough space</span></div>
@@ -157,21 +157,21 @@ $(document).ready(function(){initNavTree('_data_source_8cpp_source.html','');});
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">gcnew</span> System::String(rtspEndpoint);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;List&lt;CPPCli::Clip^&gt;^ CPPCli::DataSource::_GetClips() {</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_c_p_p_cli_1_1_data_source.html#a82f69e485f4c4bd6d8bb11c50d3b4eda">   52</a></span>&#160;List&lt;CPPCli::Clip^&gt;^ <a class="code" href="class_c_p_p_cli_1_1_data_source.html#a82f69e485f4c4bd6d8bb11c50d3b4eda">CPPCli::DataSource::_GetClips</a>() {</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">// Create a list of managed clips</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    List&lt;Clip^&gt;^ mlist = <span class="keyword">gcnew</span> List&lt;Clip^&gt;();</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">// Create a collection of unmanaged clips</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    VxSdk::VxCollection&lt;VxSdk::IVxClip**&gt; clips;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_collection.html">VxSdk::VxCollection&lt;VxSdk::IVxClip**&gt;</a> clips;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">// Make the GetClips call, which will return with the total clip count, this allows the client to allocate memory.</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    VxSdk::VxResult::Value result = _dataSource-&gt;GetClips(clips);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxSdk::VxResult::Value</a> result = _dataSource-&gt;GetClips(clips);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">// As long as there are clips from this datasource the result should be VxSdk::VxResult::kInsufficientSize</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">if</span> (result == VxSdk::VxResult::kInsufficientSize) {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">if</span> (result == <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26a0d4ae90e7aa11503b8f2313aee339803">VxSdk::VxResult::kInsufficientSize</a>) {</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="comment">// Allocate enough space for the IVxClip collection</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        clips.collection = <span class="keyword">new</span> VxSdk::IVxClip*[clips.collectionSize];</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        clips.<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_collection.html#aa6b66343ba5098e788d6e3c1da23f8c3">collection</a> = <span class="keyword">new</span> <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_clip.html">VxSdk::IVxClip</a>*[clips.collectionSize];</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        result = _dataSource-&gt;GetClips(clips);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="comment">// The result should now be kOK since we have allocated enough space</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">if</span> (result == VxSdk::VxResult::kOK) {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">if</span> (result == <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26ac95db274cb42e10fd36986b8336daae3">VxSdk::VxResult::kOK</a>) {</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; clips.collectionSize; i++)</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                mlist-&gt;Add(<span class="keyword">gcnew</span> <a class="code" href="class_c_p_p_cli_1_1_clip.html">CPPCli::Clip</a>(clips.collection[i]));</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        }</div>
@@ -181,44 +181,60 @@ $(document).ready(function(){initNavTree('_data_source_8cpp_source.html','');});
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">return</span> mlist;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;List&lt;CPPCli::DataInterface^&gt;^ CPPCli::DataSource::_GetDataInterfaces() {</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_c_p_p_cli_1_1_data_source.html#a9c4e8bbd37c84b9f8d3299af2872679e">   76</a></span>&#160;List&lt;CPPCli::DataInterface^&gt;^ <a class="code" href="class_c_p_p_cli_1_1_data_source.html#a9c4e8bbd37c84b9f8d3299af2872679e">CPPCli::DataSource::_GetDataInterfaces</a>() {</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">// Create a list of managed export objects</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    List&lt;DataInterface^&gt;^ mlist = <span class="keyword">gcnew</span> List&lt;DataInterface^&gt;();</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; _dataSource-&gt;dataInterfaceSize; i++)</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        mlist-&gt;Add(<span class="keyword">gcnew</span> DataInterface(_dataSource-&gt;dataInterfaces[i]));</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        mlist-&gt;Add(<span class="keyword">gcnew</span> <a class="code" href="class_c_p_p_cli_1_1_data_interface.html">DataInterface</a>(_dataSource-&gt;dataInterfaces[i]));</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">return</span> mlist;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<a class="code" href="class_c_p_p_cli_1_1_ptz_controller.html">CPPCli::PtzController</a>^ CPPCli::DataSource::_GetPtzController() {</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="class_c_p_p_cli_1_1_data_source.html#a673bbb8012ec501e9498df4678ab6a4f">   85</a></span>&#160;<a class="code" href="class_c_p_p_cli_1_1_ptz_controller.html">CPPCli::PtzController</a>^ <a class="code" href="class_c_p_p_cli_1_1_data_source.html#a673bbb8012ec501e9498df4678ab6a4f">CPPCli::DataSource::_GetPtzController</a>() {</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment">// Check to ensure this datasource is a ptz camera</span></div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">bool</span> isPtz;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    VxSdk::VxResult::Value result = _dataSource-&gt;CanPtz(isPtz);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxSdk::VxResult::Value</a> result = _dataSource-&gt;CanPtz(isPtz);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">if</span> (isPtz) {</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="comment">// Get the ptz controller which allows the client to make ptz calls</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        VxSdk::IVxPtzController* ptzController = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_ptz_controller.html">VxSdk::IVxPtzController</a>* ptzController = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        result = _dataSource-&gt;GetPtzController(ptzController);</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="comment">// Return the ptz controller if GetPtzController was successful</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">if</span> (result == VxSdk::VxResult::kOK)</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">gcnew</span> PtzController(ptzController);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">if</span> (result == <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26ac95db274cb42e10fd36986b8336daae3">VxSdk::VxResult::kOK</a>)</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">gcnew</span> <a class="code" href="class_c_p_p_cli_1_1_ptz_controller.html">PtzController</a>(ptzController);</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
 <div class="ttc" id="class_c_p_p_cli_1_1_data_session_html"><div class="ttname"><a href="class_c_p_p_cli_1_1_data_session.html">CPPCli::DataSession</a></div><div class="ttdoc">The DataSession class represents a data session that is being transmitted by a data source...</div><div class="ttdef"><b>Definition:</b> <a href="_data_session_8h_source.html#l00013">DataSession.h:13</a></div></div>
+<div class="ttc" id="class_c_p_p_cli_1_1_data_source_html_af64ec7d86b1709ad7db1f27acf559553"><div class="ttname"><a href="class_c_p_p_cli_1_1_data_source.html#af64ec7d86b1709ad7db1f27acf559553">CPPCli::DataSource::_CanPtz</a></div><div class="ttdeci">bool _CanPtz()</div><div class="ttdef"><b>Definition:</b> <a href="_data_source_8cpp_source.html#l00030">DataSource.cpp:30</a></div></div>
 <div class="ttc" id="namespace_system_1_1_collections_1_1_generic_html"><div class="ttname"><a href="namespace_system_1_1_collections_1_1_generic.html">Generic</a></div><div class="ttdoc">Implements the data source class. </div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_result_html_adc2e4ff9e03060a9ed92fdc0121dde26ac95db274cb42e10fd36986b8336daae3"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26ac95db274cb42e10fd36986b8336daae3">VxSdk::VxResult::kOK</a></div><div class="ttdeci">kOK</div></div>
+<div class="ttc" id="class_c_p_p_cli_1_1_data_source_html_ae59ab4ef933cde5fbb1ca81a59e32539"><div class="ttname"><a href="class_c_p_p_cli_1_1_data_source.html#ae59ab4ef933cde5fbb1ca81a59e32539">CPPCli::DataSource::_GetRtspEndpoint</a></div><div class="ttdeci">System::String^ _GetRtspEndpoint()</div><div class="ttdef"><b>Definition:</b> <a href="_data_source_8cpp_source.html#l00036">DataSource.cpp:36</a></div></div>
+<div class="ttc" id="class_c_p_p_cli_1_1_data_source_html_a9c4e8bbd37c84b9f8d3299af2872679e"><div class="ttname"><a href="class_c_p_p_cli_1_1_data_source.html#a9c4e8bbd37c84b9f8d3299af2872679e">CPPCli::DataSource::_GetDataInterfaces</a></div><div class="ttdeci">System::Collections::Generic::List&lt; DataInterface^ &gt;^ _GetDataInterfaces()</div><div class="ttdef"><b>Definition:</b> <a href="_data_source_8cpp_source.html#l00076">DataSource.cpp:76</a></div></div>
 <div class="ttc" id="class_c_p_p_cli_1_1_clip_html"><div class="ttname"><a href="class_c_p_p_cli_1_1_clip.html">CPPCli::Clip</a></div><div class="ttdoc">The Clip class represents a contiguous duration of stored media originating from a single DataSource...</div><div class="ttdef"><b>Definition:</b> <a href="_clip_8h_source.html#l00013">Clip.h:13</a></div></div>
-<div class="ttc" id="class_c_p_p_cli_1_1_data_source_html"><div class="ttname"><a href="class_c_p_p_cli_1_1_data_source.html">CPPCli::DataSource</a></div><div class="ttdoc">The DataSource class represents a data producer in the system hosted by a device. ...</div><div class="ttdef"><b>Definition:</b> <a href="_data_source_8h_source.html#l00017">DataSource.h:17</a></div></div>
+<div class="ttc" id="_data_source_8h_html"><div class="ttname"><a href="_data_source_8h.html">DataSource.h</a></div></div>
+<div class="ttc" id="class_c_p_p_cli_1_1_data_source_html_a673bbb8012ec501e9498df4678ab6a4f"><div class="ttname"><a href="class_c_p_p_cli_1_1_data_source.html#a673bbb8012ec501e9498df4678ab6a4f">CPPCli::DataSource::_GetPtzController</a></div><div class="ttdeci">PtzController^ _GetPtzController()</div><div class="ttdef"><b>Definition:</b> <a href="_data_source_8cpp_source.html#l00085">DataSource.cpp:85</a></div></div>
+<div class="ttc" id="class_c_p_p_cli_1_1_data_source_html"><div class="ttname"><a href="class_c_p_p_cli_1_1_data_source.html">CPPCli::DataSource</a></div><div class="ttdoc">The DataSource class represents a data producer in the system hosted by a device. Each DataSource pro...</div><div class="ttdef"><b>Definition:</b> <a href="_data_source_8h_source.html#l00017">DataSource.h:17</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_session_html"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_i_vx_data_session.html">VxSdk::IVxDataSession</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_ptz_controller_html"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_i_vx_ptz_controller.html">VxSdk::IVxPtzController</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_source_html"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_i_vx_data_source.html">VxSdk::IVxDataSource</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_collection_html"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_collection.html">VxSdk::VxCollection</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_clip_html"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_i_vx_clip.html">VxSdk::IVxClip</a></div></div>
+<div class="ttc" id="class_c_p_p_cli_1_1_data_interface_html"><div class="ttname"><a href="class_c_p_p_cli_1_1_data_interface.html">CPPCli::DataInterface</a></div><div class="ttdoc">The DataInterface class represents an interface to a data source. </div><div class="ttdef"><b>Definition:</b> <a href="_data_interface_8h_source.html#l00012">DataInterface.h:12</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_collection_html_aa6b66343ba5098e788d6e3c1da23f8c3"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_collection.html#aa6b66343ba5098e788d6e3c1da23f8c3">VxSdk::VxCollection::collection</a></div><div class="ttdeci">T collection</div></div>
 <div class="ttc" id="class_c_p_p_cli_1_1_ptz_controller_html"><div class="ttname"><a href="class_c_p_p_cli_1_1_ptz_controller.html">CPPCli::PtzController</a></div><div class="ttdoc">The PtzController class can be created for a device that has pan, tilt, and/or zoom functionality...</div><div class="ttdef"><b>Definition:</b> <a href="_ptz_controller_8h_source.html#l00014">PtzController.h:14</a></div></div>
 <div class="ttc" id="class_c_p_p_cli_1_1_data_source_html_a41433348c41c908b00399f9499a794cf"><div class="ttname"><a href="class_c_p_p_cli_1_1_data_source.html#a41433348c41c908b00399f9499a794cf">CPPCli::DataSource::DataSource</a></div><div class="ttdeci">DataSource(VxSdk::IVxDataSource *vxDataSource)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="_data_source_8cpp_source.html#l00008">DataSource.cpp:8</a></div></div>
+<div class="ttc" id="class_c_p_p_cli_1_1_data_source_html_a82f69e485f4c4bd6d8bb11c50d3b4eda"><div class="ttname"><a href="class_c_p_p_cli_1_1_data_source.html#a82f69e485f4c4bd6d8bb11c50d3b4eda">CPPCli::DataSource::_GetClips</a></div><div class="ttdeci">System::Collections::Generic::List&lt; Clip^ &gt;^ _GetClips()</div><div class="ttdef"><b>Definition:</b> <a href="_data_source_8cpp_source.html#l00052">DataSource.cpp:52</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_result_html_adc2e4ff9e03060a9ed92fdc0121dde26"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxSdk::VxResult::Value</a></div><div class="ttdeci">Value</div></div>
 <div class="ttc" id="class_c_p_p_cli_1_1_data_source_html_a73b46581c47ef65d5b4a16e2fd0a3ab3"><div class="ttname"><a href="class_c_p_p_cli_1_1_data_source.html#a73b46581c47ef65d5b4a16e2fd0a3ab3">CPPCli::DataSource::CreateMjpegStream</a></div><div class="ttdeci">CPPCli::DataSession^ CreateMjpegStream()</div><div class="ttdoc">Create a new MJPEG stream. </div><div class="ttdef"><b>Definition:</b> <a href="_data_source_8cpp_source.html#l00017">DataSource.cpp:17</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_result_html_adc2e4ff9e03060a9ed92fdc0121dde26a0d4ae90e7aa11503b8f2313aee339803"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26a0d4ae90e7aa11503b8f2313aee339803">VxSdk::VxResult::kInsufficientSize</a></div><div class="ttdeci">kInsufficientSize</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_74389ed8173ad57b461b9d623a1f3867.html">Source</a></li><li class="navelem"><b>DataSource.cpp</b></li>
+    <li class="navelem"><a class="el" href="dir_6f2bbc259acbf2c00bc5315c0044b8e4.html">vxsdk</a></li><li class="navelem"><a class="el" href="dir_4b6f63d7a9a5c451ae872abad24d55ab.html">Samples</a></li><li class="navelem"><a class="el" href="dir_aaf608bdbff9050509eeedf0760b46a9.html">VxSDK-Samples</a></li><li class="navelem"><a class="el" href="dir_a917c4225faed50e0e03aeacd1dcd100.html">CSharpSample</a></li><li class="navelem"><a class="el" href="dir_2ac31aa99ba9034f710531bc3f32ad40.html">CSharpWrapper</a></li><li class="navelem"><a class="el" href="dir_759dab0bb0fa416aa528caa80c3adeae.html">Source</a></li><li class="navelem"><a class="el" href="_data_source_8cpp.html">DataSource.cpp</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>

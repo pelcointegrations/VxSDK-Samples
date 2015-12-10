@@ -1,9 +1,0 @@
-<map id="MediaController::PlayingState::Play" name="MediaController::PlayingState::Play">
-<area shape="rect" id="node2" href="$class_media_controller_1_1_stream_base.html#a8426351a80597fb8d2a3a2ccc8ba732e" title="Get the current GStreamer wrapper instance. " alt="" coords="217,5,409,47"/>
-<area shape="rect" id="node3" href="$class_media_controller_1_1_gst_wrapper.html#aaf7152a829d2ecd653fc2f508e336475" title="Get the current playback mode. " alt="" coords="217,71,408,112"/>
-<area shape="rect" id="node4" href="$class_media_controller_1_1_stream_base.html#a997ae25fed4a14786421f456160bb4ff" title="Call TearDown on the stream. " alt="" coords="217,136,409,177"/>
-<area shape="rect" id="node5" href="$class_media_controller_1_1_stream_base.html#a02122d0d27657a27a1c2c2718bd21ef0" title="Call Seek on the stream using the last timestamp received as the start time. " alt="" coords="217,201,409,243"/>
-<area shape="rect" id="node6" href="$class_media_controller_1_1_stream_state.html#a8f6db90840dcbc48223b9f542b766551" title="Set the current state of the stream. " alt="" coords="216,267,409,308"/>
-<area shape="rect" id="node7" href="$class_media_controller_1_1_gst_wrapper.html#af0a1d3209beb40b460742a34ce2e2b45" title="Set the current playback mode. " alt="" coords="217,332,408,373"/>
-<area shape="rect" id="node8" href="$class_media_controller_1_1_gst_wrapper.html#aab5b61232bf543508416828e8cd1ef8d" title="Set the pipeline state to playing and update the speed value for determining the framerate. " alt="" coords="217,397,408,439"/>
-</map>

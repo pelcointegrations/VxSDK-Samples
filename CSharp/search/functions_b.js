@@ -1,14 +1,7 @@
 var searchData=
 [
-  ['selectcontrol',['SelectControl',['../class_s_d_k_sample_app_1_1_source_1_1_control_manager.html#a8acf0fb0300935a513a040c5c3e3a533',1,'SDKSampleApp::Source::ControlManager']]],
-  ['setplayingindex',['SetPlayingIndex',['../class_s_d_k_sample_app_1_1_source_1_1_control_manager.html#a4b99c684064cb99a6f016ec07b4297d4',1,'SDKSampleApp::Source::ControlManager']]],
-  ['setupptzcontrols',['SetupPtzControls',['../class_s_d_k_sample_app_1_1_source_1_1_main_form.html#a7969f672a73ac1032e13c169b04e5e09',1,'SDKSampleApp::Source::MainForm']]],
-  ['situationdetailsform',['SituationDetailsForm',['../class_s_d_k_sample_app_1_1_source_1_1_situation_details_form.html#a47d314a613c8a2243cebd0f2717c1a21',1,'SDKSampleApp::Source::SituationDetailsForm']]],
-  ['situationmanagerform',['SituationManagerForm',['../class_s_d_k_sample_app_1_1_source_1_1_situation_manager_form.html#af54acc2743f883cb87c8d11eb827bb84',1,'SDKSampleApp::Source::SituationManagerForm']]],
-  ['startdownload',['StartDownload',['../class_s_d_k_sample_app_1_1_source_1_1_download_progress_form.html#acfb6cb7a97fc94ecf276d617ceacd08e',1,'SDKSampleApp::Source::DownloadProgressForm']]],
-  ['startstream',['StartStream',['../class_s_d_k_sample_app_1_1_source_1_1_main_form.html#ac6b290a596c898012e568d0f431b2a16',1,'SDKSampleApp::Source::MainForm']]],
-  ['stopallstreams',['StopAllStreams',['../class_s_d_k_sample_app_1_1_source_1_1_main_form.html#afb86184699b7746ff1a3da91e57a08d3',1,'SDKSampleApp::Source::MainForm']]],
-  ['stopptz',['StopPtz',['../class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#abadddeb6a32a2b686d3aab9c768c4985',1,'SDKSampleApp::Source::PTZControlForm']]],
-  ['stopstream',['StopStream',['../class_s_d_k_sample_app_1_1_source_1_1_main_form.html#a5fc171542f96bf27383ceb2b16557940',1,'SDKSampleApp::Source::MainForm']]],
-  ['subscribetotimestamps',['SubscribeToTimestamps',['../class_s_d_k_sample_app_1_1_source_1_1_control_manager.html#a2b78baae35e2611b435b75fe4ed712fc',1,'SDKSampleApp::Source::ControlManager']]]
+  ['link',['Link',['../../CSharpWrapper/class_c_p_p_cli_1_1_situation.html#ad1869eb41b1020328bd2d02d5921461e',1,'CPPCli::Situation::Link(Device^device)'],['../../CSharpWrapper/class_c_p_p_cli_1_1_situation.html#aaf4f15c15d015133a83197a40e989bda',1,'CPPCli::Situation::Link(DataSource^dataSource)'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_situation.html#a2ec5120ee5d4fc73f6a9d4099c3067e3',1,'VxSdk::IVxSituation::Link(IVxDevice &amp;device) const  =0'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_situation.html#aec3145382a210242b56d89f8ddffe9e2',1,'VxSdk::IVxSituation::Link(IVxDataSource &amp;dataSource) const  =0']]],
+  ['listviewdevices_5fitemselected',['ListViewDevices_ItemSelected',['../class_s_d_k_sample_app_1_1_source_1_1_new_export_form.html#a0f67332880fc43b9d595b9bfd240ad75',1,'SDKSampleApp::Source::NewExportForm']]],
+  ['listviewexportmanager_5fitemcheck',['ListViewExportManager_ItemCheck',['../class_s_d_k_sample_app_1_1_source_1_1_export_manager_form.html#afca96dba7eb18baa4370f8f4ffa9aa21',1,'SDKSampleApp::Source::ExportManagerForm']]],
+  ['login',['Login',['../../CSharpWrapper/class_c_p_p_cli_1_1_v_x_system.html#a834b57b4ce75de89d603b8da3c5f20e3',1,'CPPCli::VXSystem']]]
 ];

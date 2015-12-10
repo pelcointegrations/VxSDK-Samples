@@ -217,9 +217,9 @@ Private Member Functions</h2></td></tr>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keywordflow">try</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            {</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                <span class="comment">// Create a new VideoXpert system.</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                MainForm.CurrentSystem = <span class="keyword">new</span> VXSystem(txbxIp.Text);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                MainForm.CurrentSystem = <span class="keyword">new</span> <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/CSharpWrapper/CSharpWrapper.tag:../CSharpWrapper/" href="../CSharpWrapper/class_c_p_p_cli_1_1_v_x_system.html">VXSystem</a>(txbxIp.Text);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                var result = MainForm.CurrentSystem.Login(txbxUsername.Text, txbxPassword.Text);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                <span class="keywordflow">if</span> (result != Results.Value.OK)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                <span class="keywordflow">if</span> (result != <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/CSharpWrapper/CSharpWrapper.tag:../CSharpWrapper/" href="../CSharpWrapper/class_c_p_p_cli_1_1_results.html">Results</a>.<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/CSharpWrapper/CSharpWrapper.tag:../CSharpWrapper/" href="../CSharpWrapper/class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">Value</a>.OK)</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                {</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                    MainForm.CurrentSystem.Dispose();</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                    MainForm.Instance.WriteToLog(<span class="stringliteral">&quot;Error: &quot;</span> + result);</div>
@@ -260,12 +260,15 @@ Private Member Functions</h2></td></tr>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            Close();</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        }</div>
+<div class="ttc" id="class_c_p_p_cli_1_1_results_html"><div class="ttname"><a href="../CSharpWrapper/class_c_p_p_cli_1_1_results.html">CPPCli::Results</a></div></div>
+<div class="ttc" id="class_c_p_p_cli_1_1_results_html_a12504aac644d00e0532be43063a970ca"><div class="ttname"><a href="../CSharpWrapper/class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">CPPCli::Results::Value</a></div><div class="ttdeci">Value</div></div>
 <div class="ttc" id="namespace_s_d_k_sample_app_1_1_enums_html_aa2bd31b8ad20fd154bdad3ac987ec55e"><div class="ttname"><a href="namespace_s_d_k_sample_app_1_1_enums.html#aa2bd31b8ad20fd154bdad3ac987ec55e">SDKSampleApp.Enums.VxDeviceState</a></div><div class="ttdeci">VxDeviceState</div><div class="ttdoc">The VxDeviceState enumeration. </div><div class="ttdef"><b>Definition:</b> <a href="_enums_8cs_source.html#l00057">Enums.cs:57</a></div></div>
+<div class="ttc" id="class_c_p_p_cli_1_1_v_x_system_html"><div class="ttname"><a href="../CSharpWrapper/class_c_p_p_cli_1_1_v_x_system.html">CPPCli::VXSystem</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Source/<a class="el" href="_connect_form_8cs_source.html">ConnectForm.cs</a></li>
+<li>C:/Users/Zach/Git/vxsdk/Samples/VxSDK-Samples/CSharpSample/CSharp/Source/<a class="el" href="_connect_form_8cs_source.html">ConnectForm.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,8 +1,0 @@
-<map id="MediaController::Controller" name="MediaController::Controller">
-<area shape="rect" id="node5" href="$class_media_controller_1_1_stream_base.html" title="The base class for the different stream types. " alt="" coords="840,107,1032,133"/>
-<area shape="rect" id="node2" href="$class_media_controller_1_1_i_controller.html" title="Defines the controller interface. " alt="" coords="227,56,406,83"/>
-<area shape="rect" id="node3" href="$class_media_controller_1_1_i_stream.html" title="Defines the stream interface. " alt="" coords="5,87,171,113"/>
-<area shape="rect" id="node4" href="$class_media_controller_1_1_stream_state.html" title="Provides an interface for managing calls to the stream based on its current state. " alt="" coords="220,5,413,32"/>
-<area shape="rect" id="node6" href="$struct_media_controller_1_1_media_request.html" title="Contains the information needed to start a new media stream. " alt="" coords="495,157,697,184"/>
-<area shape="rect" id="node7" href="$class_media_controller_1_1_gst_wrapper.html" title="Manages the GStreamer instance. " alt="" coords="501,208,691,235"/>
-</map>

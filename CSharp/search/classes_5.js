@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['newexportform',['NewExportForm',['../class_s_d_k_sample_app_1_1_source_1_1_new_export_form.html',1,'SDKSampleApp::Source']]]
+  ['gstvars',['GstVars',['../../MediaController/struct_media_controller_1_1_gst_vars.html',1,'MediaController']]],
+  ['gstwrapper',['GstWrapper',['../../MediaController/class_media_controller_1_1_gst_wrapper.html',1,'MediaController']]]
 ];

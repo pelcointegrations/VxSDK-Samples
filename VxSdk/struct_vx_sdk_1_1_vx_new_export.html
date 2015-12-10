@@ -157,6 +157,8 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a new export to be created. </p>
+
+<p>Definition at line <a class="el" href="_vx_new_export_8h_source.html#l00013">13</a> of file <a class="el" href="_vx_new_export_8h_source.html">VxNewExport.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a333f38a2cebda5748eecc0a26390e99c"></a>
 <div class="memitem">
@@ -181,6 +183,12 @@ Public Attributes</h2></td></tr>
 
 <p>Initializes a new instance of the <a class="el" href="struct_vx_sdk_1_1_vx_new_export.html" title="Represents a new export to be created. ">VxNewExport</a> struct. </p>
 
+<p>Definition at line <a class="el" href="_vx_new_export_8h_source.html#l00018">18</a> of file <a class="el" href="_vx_new_export_8h_source.html">VxNewExport.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                      {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <a class="code" href="struct_vx_sdk_1_1_vx_new_export.html#aafad0b87a1c77d8eb39f046f34255b6d">Clear</a>();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        }</div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_export_html_aafad0b87a1c77d8eb39f046f34255b6d"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_new_export.html#aafad0b87a1c77d8eb39f046f34255b6d">VxSdk::VxNewExport::Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdoc">Clears this instance. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_new_export_8h_source.html#l00044">VxNewExport.h:44</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a0200e9c4ee43a9cdd03cc5b091bea890"></a>
@@ -213,6 +221,21 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="_vx_new_export_8h_source.html#l00026">26</a> of file <a class="el" href="_vx_new_export_8h_source.html">VxNewExport.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                                            {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_new_export.html#a70dba44c1cfd4ed86b05269ead640820">clips</a> = ref.clips;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_new_export.html#ac1b58e21df24ce98913fe2fb45ffd98d">clipSize</a> = ref.clipSize;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_new_export.html#abf18805f40583c16c11ded417eac50bd">format</a> = ref.format;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <a class="code" href="namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">Utilities::StrCopySafe</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_new_export.html#ab7844d2ff96671284a88f2003215bfc2">name</a>, ref.name);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <a class="code" href="namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">Utilities::StrCopySafe</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_new_export.html#a3dd2e22f7b2054f4f1aa0650cd5a5e99">password</a>, ref.password);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        }</div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_export_html_a3dd2e22f7b2054f4f1aa0650cd5a5e99"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_new_export.html#a3dd2e22f7b2054f4f1aa0650cd5a5e99">VxSdk::VxNewExport::password</a></div><div class="ttdeci">char password[64]</div><div class="ttdoc">The password for the Export. If set, the export data will be signed and encrypted. This password will be required to decrypt the export data. If not set, the export data will not be signed or encrypted. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_new_export_8h_source.html#l00073">VxNewExport.h:73</a></div></div>
+<div class="ttc" id="namespace_vx_sdk_1_1_utilities_html_a11cbdb435aa92ea160aad373da6a32db"><div class="ttname"><a href="namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">VxSdk::Utilities::StrCopySafe</a></div><div class="ttdeci">static void StrCopySafe(char(&amp;dst)[dstSize], const char *src)</div><div class="ttdoc">Performs a safe string copy. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_utilities_8h_source.html#l00015">VxUtilities.h:15</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_export_html_ab7844d2ff96671284a88f2003215bfc2"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_new_export.html#ab7844d2ff96671284a88f2003215bfc2">VxSdk::VxNewExport::name</a></div><div class="ttdeci">char name[64]</div><div class="ttdoc">The friendly name of the export. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_new_export_8h_source.html#l00068">VxNewExport.h:68</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_export_html_ac1b58e21df24ce98913fe2fb45ffd98d"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_new_export.html#ac1b58e21df24ce98913fe2fb45ffd98d">VxSdk::VxNewExport::clipSize</a></div><div class="ttdeci">int clipSize</div><div class="ttdoc">The size of clips. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_new_export_8h_source.html#l00060">VxNewExport.h:60</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_export_html_abf18805f40583c16c11ded417eac50bd"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_new_export.html#abf18805f40583c16c11ded417eac50bd">VxSdk::VxNewExport::format</a></div><div class="ttdeci">VxExportFormat::Value format</div><div class="ttdoc">The export format to use. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_new_export_8h_source.html#l00064">VxNewExport.h:64</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_export_html_a70dba44c1cfd4ed86b05269ead640820"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_new_export.html#a70dba44c1cfd4ed86b05269ead640820">VxSdk::VxNewExport::clips</a></div><div class="ttdeci">VxNewExportClip * clips</div><div class="ttdoc">The clips that shall be included in this export when triggered. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_new_export_8h_source.html#l00056">VxNewExport.h:56</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ac976e1c952e071d820e9aa699e3b5da7"></a>
@@ -238,6 +261,12 @@ Public Attributes</h2></td></tr>
 
 <p>Finalizes an instance of the <a class="el" href="struct_vx_sdk_1_1_vx_new_export.html" title="Represents a new export to be created. ">VxNewExport</a> class. </p>
 
+<p>Definition at line <a class="el" href="_vx_new_export_8h_source.html#l00037">37</a> of file <a class="el" href="_vx_new_export_8h_source.html">VxNewExport.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                       {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <a class="code" href="struct_vx_sdk_1_1_vx_new_export.html#aafad0b87a1c77d8eb39f046f34255b6d">Clear</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        }</div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_export_html_aafad0b87a1c77d8eb39f046f34255b6d"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_new_export.html#aafad0b87a1c77d8eb39f046f34255b6d">VxSdk::VxNewExport::Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdoc">Clears this instance. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_new_export_8h_source.html#l00044">VxNewExport.h:44</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -264,6 +293,22 @@ Public Attributes</h2></td></tr>
 
 <p>Clears this instance. </p>
 
+<p>Definition at line <a class="el" href="_vx_new_export_8h_source.html#l00044">44</a> of file <a class="el" href="_vx_new_export_8h_source.html">VxNewExport.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                     {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_new_export.html#a70dba44c1cfd4ed86b05269ead640820">clips</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_new_export.html#ac1b58e21df24ce98913fe2fb45ffd98d">clipSize</a> = 0;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_new_export.html#abf18805f40583c16c11ded417eac50bd">format</a> = <a class="code" href="struct_vx_sdk_1_1_vx_export_format.html#a1d413558b0370220d65194ec7eddb4baa91a1ce887e09f6424fc4b0d38289f50b">VxExportFormat::kUnknown</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_new_export.html#ab7844d2ff96671284a88f2003215bfc2">name</a>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_new_export.html#a3dd2e22f7b2054f4f1aa0650cd5a5e99">password</a>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        }</div>
+<div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00018">VxMacros.h:18</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_export_html_a3dd2e22f7b2054f4f1aa0650cd5a5e99"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_new_export.html#a3dd2e22f7b2054f4f1aa0650cd5a5e99">VxSdk::VxNewExport::password</a></div><div class="ttdeci">char password[64]</div><div class="ttdoc">The password for the Export. If set, the export data will be signed and encrypted. This password will be required to decrypt the export data. If not set, the export data will not be signed or encrypted. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_new_export_8h_source.html#l00073">VxNewExport.h:73</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_export_html_ab7844d2ff96671284a88f2003215bfc2"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_new_export.html#ab7844d2ff96671284a88f2003215bfc2">VxSdk::VxNewExport::name</a></div><div class="ttdeci">char name[64]</div><div class="ttdoc">The friendly name of the export. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_new_export_8h_source.html#l00068">VxNewExport.h:68</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_export_html_ac1b58e21df24ce98913fe2fb45ffd98d"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_new_export.html#ac1b58e21df24ce98913fe2fb45ffd98d">VxSdk::VxNewExport::clipSize</a></div><div class="ttdeci">int clipSize</div><div class="ttdoc">The size of clips. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_new_export_8h_source.html#l00060">VxNewExport.h:60</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_export_format_html_a1d413558b0370220d65194ec7eddb4baa91a1ce887e09f6424fc4b0d38289f50b"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_export_format.html#a1d413558b0370220d65194ec7eddb4baa91a1ce887e09f6424fc4b0d38289f50b">VxSdk::VxExportFormat::kUnknown</a></div><div class="ttdoc">An error or unknown value was returned.</div><div class="ttdef"><b>Definition:</b> <a href="_vx_primitives_8h_source.html#l00256">VxPrimitives.h:256</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_export_html_abf18805f40583c16c11ded417eac50bd"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_new_export.html#abf18805f40583c16c11ded417eac50bd">VxSdk::VxNewExport::format</a></div><div class="ttdeci">VxExportFormat::Value format</div><div class="ttdoc">The export format to use. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_new_export_8h_source.html#l00064">VxNewExport.h:64</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_export_html_a70dba44c1cfd4ed86b05269ead640820"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_new_export.html#a70dba44c1cfd4ed86b05269ead640820">VxSdk::VxNewExport::clips</a></div><div class="ttdeci">VxNewExportClip * clips</div><div class="ttdoc">The clips that shall be included in this export when triggered. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_new_export_8h_source.html#l00056">VxNewExport.h:56</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -279,6 +324,8 @@ Public Attributes</h2></td></tr>
 
 <p>The clips that shall be included in this export when triggered. </p>
 
+<p>Definition at line <a class="el" href="_vx_new_export_8h_source.html#l00056">56</a> of file <a class="el" href="_vx_new_export_8h_source.html">VxNewExport.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ac1b58e21df24ce98913fe2fb45ffd98d"></a>
@@ -292,6 +339,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The size of <a class="el" href="struct_vx_sdk_1_1_vx_new_export.html#a70dba44c1cfd4ed86b05269ead640820" title="The clips that shall be included in this export when triggered. ">clips</a>. </p>
+
+<p>Definition at line <a class="el" href="_vx_new_export_8h_source.html#l00060">60</a> of file <a class="el" href="_vx_new_export_8h_source.html">VxNewExport.h</a>.</p>
 
 </div>
 </div>
@@ -307,6 +356,8 @@ Public Attributes</h2></td></tr>
 
 <p>The export format to use. </p>
 
+<p>Definition at line <a class="el" href="_vx_new_export_8h_source.html#l00064">64</a> of file <a class="el" href="_vx_new_export_8h_source.html">VxNewExport.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ab7844d2ff96671284a88f2003215bfc2"></a>
@@ -320,6 +371,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The friendly name of the export. </p>
+
+<p>Definition at line <a class="el" href="_vx_new_export_8h_source.html#l00068">68</a> of file <a class="el" href="_vx_new_export_8h_source.html">VxNewExport.h</a>.</p>
 
 </div>
 </div>
@@ -335,10 +388,12 @@ Public Attributes</h2></td></tr>
 
 <p>The password for the Export. If set, the export data will be signed and encrypted. This password will be required to decrypt the export data. If not set, the export data will not be signed or encrypted. </p>
 
+<p>Definition at line <a class="el" href="_vx_new_export_8h_source.html#l00073">73</a> of file <a class="el" href="_vx_new_export_8h_source.html">VxNewExport.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="_vx_new_export_8h_source.html">VxNewExport.h</a></li>
+<li>C:/Users/Zach/Git/vxsdk/VxSdk/Include/<a class="el" href="_vx_new_export_8h_source.html">VxNewExport.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

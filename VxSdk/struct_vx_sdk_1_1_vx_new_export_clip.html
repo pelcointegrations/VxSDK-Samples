@@ -151,6 +151,8 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a clip that will be exported as part of a <a class="el" href="struct_vx_sdk_1_1_vx_new_export.html" title="Represents a new export to be created. ">VxNewExport</a>. </p>
+
+<p>Definition at line <a class="el" href="_vx_new_export_clip_8h_source.html#l00013">13</a> of file <a class="el" href="_vx_new_export_clip_8h_source.html">VxNewExportClip.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a2c36ae884d363ae270fb33839e2fd7e3"></a>
 <div class="memitem">
@@ -175,6 +177,12 @@ Public Attributes</h2></td></tr>
 
 <p>Initializes a new instance of the <a class="el" href="struct_vx_sdk_1_1_vx_new_export_clip.html" title="Represents a clip that will be exported as part of a VxNewExport. ">VxNewExportClip</a> struct. </p>
 
+<p>Definition at line <a class="el" href="_vx_new_export_clip_8h_source.html#l00018">18</a> of file <a class="el" href="_vx_new_export_clip_8h_source.html">VxNewExportClip.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                          {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <a class="code" href="struct_vx_sdk_1_1_vx_new_export_clip.html#a6156ec20b108dd356a4a2dc272787d11">Clear</a>();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        }</div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_export_clip_html_a6156ec20b108dd356a4a2dc272787d11"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_new_export_clip.html#a6156ec20b108dd356a4a2dc272787d11">VxSdk::VxNewExportClip::Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdoc">Clears this instance. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_new_export_clip_8h_source.html#l00042">VxNewExportClip.h:42</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a930781e1f4ebf3a4aae16961338663f1"></a>
@@ -207,6 +215,17 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="_vx_new_export_clip_8h_source.html#l00026">26</a> of file <a class="el" href="_vx_new_export_clip_8h_source.html">VxNewExportClip.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                                                    {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <a class="code" href="namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">Utilities::StrCopySafe</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_new_export_clip.html#a839d776995f19a1b6e50e712fb125fb2">dataSourceId</a>, ref.dataSourceId);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <a class="code" href="namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">Utilities::StrCopySafe</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_new_export_clip.html#a266d4b64ef9928b4ddbc2c2b45ae5228">startTime</a>, ref.startTime);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <a class="code" href="namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">Utilities::StrCopySafe</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_new_export_clip.html#aa45d3faa834da6d21937548a7993042d">endTime</a>, ref.endTime);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        }</div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_export_clip_html_a839d776995f19a1b6e50e712fb125fb2"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_new_export_clip.html#a839d776995f19a1b6e50e712fb125fb2">VxSdk::VxNewExportClip::dataSourceId</a></div><div class="ttdeci">char dataSourceId[64]</div><div class="ttdoc">The unique identifier of the data source. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_new_export_clip_8h_source.html#l00052">VxNewExportClip.h:52</a></div></div>
+<div class="ttc" id="namespace_vx_sdk_1_1_utilities_html_a11cbdb435aa92ea160aad373da6a32db"><div class="ttname"><a href="namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">VxSdk::Utilities::StrCopySafe</a></div><div class="ttdeci">static void StrCopySafe(char(&amp;dst)[dstSize], const char *src)</div><div class="ttdoc">Performs a safe string copy. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_utilities_8h_source.html#l00015">VxUtilities.h:15</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_export_clip_html_a266d4b64ef9928b4ddbc2c2b45ae5228"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_new_export_clip.html#a266d4b64ef9928b4ddbc2c2b45ae5228">VxSdk::VxNewExportClip::startTime</a></div><div class="ttdeci">char startTime[64]</div><div class="ttdoc">The time at which the clip begins. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_new_export_clip_8h_source.html#l00056">VxNewExportClip.h:56</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_export_clip_html_aa45d3faa834da6d21937548a7993042d"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_new_export_clip.html#aa45d3faa834da6d21937548a7993042d">VxSdk::VxNewExportClip::endTime</a></div><div class="ttdeci">char endTime[64]</div><div class="ttdoc">The time at which the clip ends. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_new_export_clip_8h_source.html#l00060">VxNewExportClip.h:60</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a7025e6436e7d665da7ec9478d6a48964"></a>
@@ -232,6 +251,12 @@ Public Attributes</h2></td></tr>
 
 <p>Finalizes an instance of the <a class="el" href="struct_vx_sdk_1_1_vx_new_export_clip.html" title="Represents a clip that will be exported as part of a VxNewExport. ">VxNewExportClip</a> class. </p>
 
+<p>Definition at line <a class="el" href="_vx_new_export_clip_8h_source.html#l00035">35</a> of file <a class="el" href="_vx_new_export_clip_8h_source.html">VxNewExportClip.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                           {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <a class="code" href="struct_vx_sdk_1_1_vx_new_export_clip.html#a6156ec20b108dd356a4a2dc272787d11">Clear</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        }</div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_export_clip_html_a6156ec20b108dd356a4a2dc272787d11"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_new_export_clip.html#a6156ec20b108dd356a4a2dc272787d11">VxSdk::VxNewExportClip::Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdoc">Clears this instance. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_new_export_clip_8h_source.html#l00042">VxNewExportClip.h:42</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -258,6 +283,17 @@ Public Attributes</h2></td></tr>
 
 <p>Clears this instance. </p>
 
+<p>Definition at line <a class="el" href="_vx_new_export_clip_8h_source.html#l00042">42</a> of file <a class="el" href="_vx_new_export_clip_8h_source.html">VxNewExportClip.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                     {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_new_export_clip.html#a839d776995f19a1b6e50e712fb125fb2">dataSourceId</a>);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_new_export_clip.html#a266d4b64ef9928b4ddbc2c2b45ae5228">startTime</a>);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_new_export_clip.html#aa45d3faa834da6d21937548a7993042d">endTime</a>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        }</div>
+<div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00018">VxMacros.h:18</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_export_clip_html_a839d776995f19a1b6e50e712fb125fb2"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_new_export_clip.html#a839d776995f19a1b6e50e712fb125fb2">VxSdk::VxNewExportClip::dataSourceId</a></div><div class="ttdeci">char dataSourceId[64]</div><div class="ttdoc">The unique identifier of the data source. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_new_export_clip_8h_source.html#l00052">VxNewExportClip.h:52</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_export_clip_html_a266d4b64ef9928b4ddbc2c2b45ae5228"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_new_export_clip.html#a266d4b64ef9928b4ddbc2c2b45ae5228">VxSdk::VxNewExportClip::startTime</a></div><div class="ttdeci">char startTime[64]</div><div class="ttdoc">The time at which the clip begins. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_new_export_clip_8h_source.html#l00056">VxNewExportClip.h:56</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_export_clip_html_aa45d3faa834da6d21937548a7993042d"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_new_export_clip.html#aa45d3faa834da6d21937548a7993042d">VxSdk::VxNewExportClip::endTime</a></div><div class="ttdeci">char endTime[64]</div><div class="ttdoc">The time at which the clip ends. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_new_export_clip_8h_source.html#l00060">VxNewExportClip.h:60</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -273,6 +309,8 @@ Public Attributes</h2></td></tr>
 
 <p>The unique identifier of the data source. </p>
 
+<p>Definition at line <a class="el" href="_vx_new_export_clip_8h_source.html#l00052">52</a> of file <a class="el" href="_vx_new_export_clip_8h_source.html">VxNewExportClip.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="aa45d3faa834da6d21937548a7993042d"></a>
@@ -286,6 +324,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The time at which the clip ends. </p>
+
+<p>Definition at line <a class="el" href="_vx_new_export_clip_8h_source.html#l00060">60</a> of file <a class="el" href="_vx_new_export_clip_8h_source.html">VxNewExportClip.h</a>.</p>
 
 </div>
 </div>
@@ -301,10 +341,12 @@ Public Attributes</h2></td></tr>
 
 <p>The time at which the clip begins. </p>
 
+<p>Definition at line <a class="el" href="_vx_new_export_clip_8h_source.html#l00056">56</a> of file <a class="el" href="_vx_new_export_clip_8h_source.html">VxNewExportClip.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="_vx_new_export_clip_8h_source.html">VxNewExportClip.h</a></li>
+<li>C:/Users/Zach/Git/vxsdk/VxSdk/Include/<a class="el" href="_vx_new_export_clip_8h_source.html">VxNewExportClip.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

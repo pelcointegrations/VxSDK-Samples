@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>Media Controller Sample: MediaController::Controller Class Reference</title>
+<title>Media Controller: MediaController::Controller Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Media Controller Sample
+   <div id="projectname">Media Controller
    </div>
    <div id="projectbrief">A GStreamer implementation using the VideoXpert SDK</div>
   </td>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -75,7 +74,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -209,28 +208,8 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>Implements the <a class="el" href="class_media_controller_1_1_i_controller.html" title="Defines the controller interface. ">IController</a> interface methods. </p>
 
 <p>Definition at line <a class="el" href="_controller_8h_source.html#l00014">14</a> of file <a class="el" href="_controller_8h_source.html">Controller.h</a>.</p>
-</div><div class="dynheader">
-Inheritance diagram for MediaController::Controller:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_media_controller_1_1_controller__inherit__graph.png" border="0" usemap="#_media_controller_1_1_controller_inherit__map" alt="Inheritance graph"/></div>
-<map name="_media_controller_1_1_controller_inherit__map" id="_media_controller_1_1_controller_inherit__map">
-<area shape="rect" id="node2" href="class_media_controller_1_1_i_controller.html" title="Defines the controller interface. " alt="" coords="5,80,184,107"/>
-<area shape="rect" id="node3" href="class_media_controller_1_1_i_stream.html" title="Defines the stream interface. " alt="" coords="12,5,177,32"/>
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for MediaController::Controller:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_media_controller_1_1_controller__coll__graph.png" border="0" usemap="#_media_controller_1_1_controller_coll__map" alt="Collaboration graph"/></div>
-<map name="_media_controller_1_1_controller_coll__map" id="_media_controller_1_1_controller_coll__map">
-<area shape="rect" id="node5" href="class_media_controller_1_1_stream_base.html" title="The base class for the different stream types. " alt="" coords="840,107,1032,133"/>
-<area shape="rect" id="node2" href="class_media_controller_1_1_i_controller.html" title="Defines the controller interface. " alt="" coords="227,56,406,83"/>
-<area shape="rect" id="node3" href="class_media_controller_1_1_i_stream.html" title="Defines the stream interface. " alt="" coords="5,87,171,113"/>
-<area shape="rect" id="node4" href="class_media_controller_1_1_stream_state.html" title="Provides an interface for managing calls to the stream based on its current state. " alt="" coords="220,5,413,32"/>
-<area shape="rect" id="node6" href="struct_media_controller_1_1_media_request.html" title="Contains the information needed to start a new media stream. " alt="" coords="495,157,697,184"/>
-<area shape="rect" id="node7" href="class_media_controller_1_1_gst_wrapper.html" title="Manages the GStreamer instance. " alt="" coords="501,208,691,235"/>
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+</div>
+<p>Inherits <a class="el" href="class_media_controller_1_1_i_controller.html">MediaController::IController</a>.</p>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a0721a2c41479204b84fe7a13843c204b"></a>
 <div class="memitem">
@@ -264,16 +243,6 @@ Collaboration diagram for MediaController::Controller:</div>
 <div class="ttc" id="class_media_controller_1_1_controller_html_ab044204deaa6df1296db0d3a6629796d"><div class="ttname"><a href="class_media_controller_1_1_controller.html#ab044204deaa6df1296db0d3a6629796d">MediaController::Controller::stream</a></div><div class="ttdeci">StreamBase * stream</div><div class="ttdoc">The current stream instance. </div><div class="ttdef"><b>Definition:</b> <a href="_controller_8h_source.html#l00050">Controller.h:50</a></div></div>
 <div class="ttc" id="class_media_controller_1_1_stream_factory_html_adef6fc0628d516cc1cd74f09638e17b7"><div class="ttname"><a href="class_media_controller_1_1_stream_factory.html#adef6fc0628d516cc1cd74f09638e17b7">MediaController::StreamFactory::CreateStream</a></div><div class="ttdeci">static StreamBase * CreateStream(MediaRequest &amp;request, Controller &amp;controller)</div><div class="ttdoc">Create a new stream object. </div><div class="ttdef"><b>Definition:</b> <a href="_stream_factory_8cpp_source.html#l00012">StreamFactory.cpp:12</a></div></div>
 </div><!-- fragment -->
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_media_controller_1_1_controller_a0721a2c41479204b84fe7a13843c204b_cgraph.png" border="0" usemap="#class_media_controller_1_1_controller_a0721a2c41479204b84fe7a13843c204b_cgraph" alt=""/></div>
-<map name="class_media_controller_1_1_controller_a0721a2c41479204b84fe7a13843c204b_cgraph" id="class_media_controller_1_1_controller_a0721a2c41479204b84fe7a13843c204b_cgraph">
-<area shape="rect" id="node2" href="class_media_controller_1_1_stream_factory.html#adef6fc0628d516cc1cd74f09638e17b7" title="Create a new stream object. " alt="" coords="228,5,435,47"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a0ab87934c4f7a266cfdb86e0f36bc1b5"></a>
@@ -345,17 +314,6 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="class_media_controller_1_1_gst_wrapper_html_ac0fa98f176f83ceb495e49ec58ef8392"><div class="ttname"><a href="class_media_controller_1_1_gst_wrapper.html#ac0fa98f176f83ceb495e49ec58ef8392">MediaController::GstWrapper::AddEventData</a></div><div class="ttdeci">void AddEventData(void *customData)</div><div class="ttdoc">Add custom data to be stored in here, which will be send back to caller inside TimestampEvent on Time...</div><div class="ttdef"><b>Definition:</b> <a href="_gst_wrapper_8cpp_source.html#l00252">GstWrapper.cpp:252</a></div></div>
 <div class="ttc" id="class_media_controller_1_1_controller_html_ab044204deaa6df1296db0d3a6629796d"><div class="ttname"><a href="class_media_controller_1_1_controller.html#ab044204deaa6df1296db0d3a6629796d">MediaController::Controller::stream</a></div><div class="ttdeci">StreamBase * stream</div><div class="ttdoc">The current stream instance. </div><div class="ttdef"><b>Definition:</b> <a href="_controller_8h_source.html#l00050">Controller.h:50</a></div></div>
 </div><!-- fragment -->
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_media_controller_1_1_controller_a522b854bfee7e896957f39bd8280330d_cgraph.png" border="0" usemap="#class_media_controller_1_1_controller_a522b854bfee7e896957f39bd8280330d_cgraph" alt=""/></div>
-<map name="class_media_controller_1_1_controller_a522b854bfee7e896957f39bd8280330d_cgraph" id="class_media_controller_1_1_controller_a522b854bfee7e896957f39bd8280330d_cgraph">
-<area shape="rect" id="node2" href="class_media_controller_1_1_stream_base.html#a8426351a80597fb8d2a3a2ccc8ba732e" title="Get the current GStreamer wrapper instance. " alt="" coords="228,5,420,47"/>
-<area shape="rect" id="node3" href="class_media_controller_1_1_gst_wrapper.html#ac0fa98f176f83ceb495e49ec58ef8392" title="Add custom data to be stored in here, which will be send back to caller inside TimestampEvent on Time..." alt="" coords="229,71,419,112"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="aba0857a1860225dcd5ed4f384b97b159"></a>
@@ -398,17 +356,6 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="class_media_controller_1_1_gst_wrapper_html_a223bd48b70740533739d04b84b3ad538"><div class="ttname"><a href="class_media_controller_1_1_gst_wrapper.html#a223bd48b70740533739d04b84b3ad538">MediaController::GstWrapper::AddObserver</a></div><div class="ttdeci">void AddObserver(TimestampEventCallback observer)</div><div class="ttdoc">Add a new subscriber to timestamp events. </div><div class="ttdef"><b>Definition:</b> <a href="_gst_wrapper_8cpp_source.html#l00249">GstWrapper.cpp:249</a></div></div>
 <div class="ttc" id="class_media_controller_1_1_controller_html_ab044204deaa6df1296db0d3a6629796d"><div class="ttname"><a href="class_media_controller_1_1_controller.html#ab044204deaa6df1296db0d3a6629796d">MediaController::Controller::stream</a></div><div class="ttdeci">StreamBase * stream</div><div class="ttdoc">The current stream instance. </div><div class="ttdef"><b>Definition:</b> <a href="_controller_8h_source.html#l00050">Controller.h:50</a></div></div>
 </div><!-- fragment -->
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_media_controller_1_1_controller_aba0857a1860225dcd5ed4f384b97b159_cgraph.png" border="0" usemap="#class_media_controller_1_1_controller_aba0857a1860225dcd5ed4f384b97b159_cgraph" alt=""/></div>
-<map name="class_media_controller_1_1_controller_aba0857a1860225dcd5ed4f384b97b159_cgraph" id="class_media_controller_1_1_controller_aba0857a1860225dcd5ed4f384b97b159_cgraph">
-<area shape="rect" id="node2" href="class_media_controller_1_1_stream_base.html#a8426351a80597fb8d2a3a2ccc8ba732e" title="Get the current GStreamer wrapper instance. " alt="" coords="228,5,420,47"/>
-<area shape="rect" id="node3" href="class_media_controller_1_1_gst_wrapper.html#a223bd48b70740533739d04b84b3ad538" title="Add a new subscriber to timestamp events. " alt="" coords="229,71,419,112"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a8e3fe1c73e53380337e45ba0af60b09c"></a>
@@ -444,17 +391,6 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="class_media_controller_1_1_stream_base_html_a8426351a80597fb8d2a3a2ccc8ba732e"><div class="ttname"><a href="class_media_controller_1_1_stream_base.html#a8426351a80597fb8d2a3a2ccc8ba732e">MediaController::StreamBase::GetGstreamer</a></div><div class="ttdeci">GstWrapper * GetGstreamer()</div><div class="ttdoc">Get the current GStreamer wrapper instance. </div><div class="ttdef"><b>Definition:</b> <a href="_stream_base_8cpp_source.html#l00037">StreamBase.cpp:37</a></div></div>
 <div class="ttc" id="class_media_controller_1_1_controller_html_ab044204deaa6df1296db0d3a6629796d"><div class="ttname"><a href="class_media_controller_1_1_controller.html#ab044204deaa6df1296db0d3a6629796d">MediaController::Controller::stream</a></div><div class="ttdeci">StreamBase * stream</div><div class="ttdoc">The current stream instance. </div><div class="ttdef"><b>Definition:</b> <a href="_controller_8h_source.html#l00050">Controller.h:50</a></div></div>
 </div><!-- fragment -->
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_media_controller_1_1_controller_a8e3fe1c73e53380337e45ba0af60b09c_cgraph.png" border="0" usemap="#class_media_controller_1_1_controller_a8e3fe1c73e53380337e45ba0af60b09c_cgraph" alt=""/></div>
-<map name="class_media_controller_1_1_controller_a8e3fe1c73e53380337e45ba0af60b09c_cgraph" id="class_media_controller_1_1_controller_a8e3fe1c73e53380337e45ba0af60b09c_cgraph">
-<area shape="rect" id="node2" href="class_media_controller_1_1_stream_base.html#a8426351a80597fb8d2a3a2ccc8ba732e" title="Get the current GStreamer wrapper instance. " alt="" coords="228,5,420,47"/>
-<area shape="rect" id="node3" href="class_media_controller_1_1_gst_wrapper.html#ac0e9a26c816b6f27f981fbf9e06f2600" title="Remove all existing timestamp event subscribers. " alt="" coords="229,71,419,112"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a93643812e3a63875b37209340a826443"></a>
@@ -551,36 +487,6 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="class_media_controller_1_1_controller_html_ab044204deaa6df1296db0d3a6629796d"><div class="ttname"><a href="class_media_controller_1_1_controller.html#ab044204deaa6df1296db0d3a6629796d">MediaController::Controller::stream</a></div><div class="ttdeci">StreamBase * stream</div><div class="ttdoc">The current stream instance. </div><div class="ttdef"><b>Definition:</b> <a href="_controller_8h_source.html#l00050">Controller.h:50</a></div></div>
 <div class="ttc" id="class_media_controller_1_1_gst_wrapper_html_aaf7152a829d2ecd653fc2f508e336475"><div class="ttname"><a href="class_media_controller_1_1_gst_wrapper.html#aaf7152a829d2ecd653fc2f508e336475">MediaController::GstWrapper::GetMode</a></div><div class="ttdeci">Controller::Mode GetMode() const </div><div class="ttdoc">Get the current playback mode. </div><div class="ttdef"><b>Definition:</b> <a href="_gst_wrapper_8h_source.html#l00092">GstWrapper.h:92</a></div></div>
 </div><!-- fragment -->
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_media_controller_1_1_controller_a9832c40e836ec7b9b7a45b7ee2aaf42e_cgraph.png" border="0" usemap="#class_media_controller_1_1_controller_a9832c40e836ec7b9b7a45b7ee2aaf42e_cgraph" alt=""/></div>
-<map name="class_media_controller_1_1_controller_a9832c40e836ec7b9b7a45b7ee2aaf42e_cgraph" id="class_media_controller_1_1_controller_a9832c40e836ec7b9b7a45b7ee2aaf42e_cgraph">
-<area shape="rect" id="node2" href="class_media_controller_1_1_stream_base.html#a8426351a80597fb8d2a3a2ccc8ba732e" title="Get the current GStreamer wrapper instance. " alt="" coords="228,5,420,47"/>
-<area shape="rect" id="node3" href="class_media_controller_1_1_gst_wrapper.html#aaf7152a829d2ecd653fc2f508e336475" title="Get the current playback mode. " alt="" coords="229,71,419,112"/>
-</map>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_media_controller_1_1_controller_a9832c40e836ec7b9b7a45b7ee2aaf42e_icgraph.png" border="0" usemap="#class_media_controller_1_1_controller_a9832c40e836ec7b9b7a45b7ee2aaf42e_icgraph" alt=""/></div>
-<map name="class_media_controller_1_1_controller_a9832c40e836ec7b9b7a45b7ee2aaf42e_icgraph" id="class_media_controller_1_1_controller_a9832c40e836ec7b9b7a45b7ee2aaf42e_icgraph">
-<area shape="rect" id="node2" href="class_media_controller_1_1_rtsp_1_1_commands.html#ade90cad2a6af616385df0c1e1b282aa0" title="Send the OPTIONS method and read the server response. " alt="" coords="246,108,395,149"/>
-<area shape="rect" id="node3" href="class_media_controller_1_1_rtsp_1_1_commands.html#a6336294ea2e2d214f3a9d1b494e4aa07" title="Send the PLAY method and read the server response. " alt="" coords="479,108,626,149"/>
-<area shape="rect" id="node4" href="class_media_controller_1_1_rtsp_1_1_commands.html#aca7fdcac23d14e5b9aebafb598d2002e" title="Send the PLAY method with a Range header and read the server response. " alt="" coords="473,207,633,248"/>
-<area shape="rect" id="node5" href="class_media_controller_1_1_rtsp_1_1_commands.html#a673c358503e9d490276568a49fbc2cbf" title="Send the GET_PARAMETER method and read the server response. " alt="" coords="228,356,413,397"/>
-<area shape="rect" id="node8" href="class_media_controller_1_1_rtsp_1_1_commands.html#a5498da92caf636c4b4a5033a9eda5d73" title="Send the DESCRIBE method and read the server response. " alt="" coords="243,173,398,215"/>
-<area shape="rect" id="node9" href="class_media_controller_1_1_rtsp_1_1_commands.html#ae96e490e6da2e25dfbb4f399781eedc9" title="Send the SETUP method and read the server response. " alt="" coords="247,239,394,280"/>
-<area shape="rect" id="node10" href="class_media_controller_1_1_rtsp_1_1_commands.html#aeb7ef8bdee3e6a6bd3f433fa065e7fa6" title="Send the PAUSE method and read the server response. " alt="" coords="247,421,394,463"/>
-<area shape="rect" id="node11" href="class_media_controller_1_1_rtsp_1_1_commands.html#ab978494a8f0b4937be380619c95f93e2" title="Send the TEARDOWN method and read the server response. " alt="" coords="241,43,400,84"/>
-<area shape="rect" id="node6" href="class_media_controller_1_1_rtsp_1_1_keep_alive.html#a12e8ceb008904ea406d6cd9a85de6cca" title="Make a GET_PARAMETERS method call to the associated stream. " alt="" coords="461,356,644,397"/>
-<area shape="rect" id="node7" href="class_media_controller_1_1_rtsp_1_1_keep_alive.html#aa40cce08e2a6fcbf63a333f6915d7564" title="Constructor. " alt="" coords="692,356,844,397"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a677d67427e4a34e52fa2f8bf2702ab82"></a>
@@ -615,16 +521,6 @@ Here is the caller graph for this function:</div>
 <div class="ttc" id="class_media_controller_1_1_controller_html_a03fae8101558689ac1d58f6744546bce"><div class="ttname"><a href="class_media_controller_1_1_controller.html#a03fae8101558689ac1d58f6744546bce">MediaController::Controller::state</a></div><div class="ttdeci">StreamState * state</div><div class="ttdoc">The current state of the stream. </div><div class="ttdef"><b>Definition:</b> <a href="_controller_8h_source.html#l00045">Controller.h:45</a></div></div>
 <div class="ttc" id="class_media_controller_1_1_stream_state_html_af13945b6827c9ae26289938f10ee41b4"><div class="ttname"><a href="class_media_controller_1_1_stream_state.html#af13945b6827c9ae26289938f10ee41b4">MediaController::StreamState::GoToLive</a></div><div class="ttdeci">virtual void GoToLive(Controller &amp;controller)</div><div class="ttdoc">Perform the GoToLive action based on the stream state. </div><div class="ttdef"><b>Definition:</b> <a href="_stream_state_8cpp_source.html#l00019">StreamState.cpp:19</a></div></div>
 </div><!-- fragment -->
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_media_controller_1_1_controller_a677d67427e4a34e52fa2f8bf2702ab82_cgraph.png" border="0" usemap="#class_media_controller_1_1_controller_a677d67427e4a34e52fa2f8bf2702ab82_cgraph" alt=""/></div>
-<map name="class_media_controller_1_1_controller_a677d67427e4a34e52fa2f8bf2702ab82_cgraph" id="class_media_controller_1_1_controller_a677d67427e4a34e52fa2f8bf2702ab82_cgraph">
-<area shape="rect" id="node2" href="class_media_controller_1_1_stream_state.html#af13945b6827c9ae26289938f10ee41b4" title="Perform the GoToLive action based on the stream state. " alt="" coords="228,5,421,47"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a7bb25f5bf86e2df8282e6d07bedf3c8e"></a>
@@ -666,16 +562,6 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="class_media_controller_1_1_stream_base_html_a4eda2d269c28a548e3da5d99b7e14556"><div class="ttname"><a href="class_media_controller_1_1_stream_base.html#a4eda2d269c28a548e3da5d99b7e14556">MediaController::StreamBase::NewRequest</a></div><div class="ttdeci">virtual void NewRequest(MediaRequest &amp;request) override</div><div class="ttdoc">Set the stream to a new source. </div><div class="ttdef"><b>Definition:</b> <a href="_stream_base_8cpp_source.html#l00033">StreamBase.cpp:33</a></div></div>
 <div class="ttc" id="class_media_controller_1_1_controller_html_ab044204deaa6df1296db0d3a6629796d"><div class="ttname"><a href="class_media_controller_1_1_controller.html#ab044204deaa6df1296db0d3a6629796d">MediaController::Controller::stream</a></div><div class="ttdeci">StreamBase * stream</div><div class="ttdoc">The current stream instance. </div><div class="ttdef"><b>Definition:</b> <a href="_controller_8h_source.html#l00050">Controller.h:50</a></div></div>
 </div><!-- fragment -->
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_media_controller_1_1_controller_a7bb25f5bf86e2df8282e6d07bedf3c8e_cgraph.png" border="0" usemap="#class_media_controller_1_1_controller_a7bb25f5bf86e2df8282e6d07bedf3c8e_cgraph" alt=""/></div>
-<map name="class_media_controller_1_1_controller_a7bb25f5bf86e2df8282e6d07bedf3c8e_cgraph" id="class_media_controller_1_1_controller_a7bb25f5bf86e2df8282e6d07bedf3c8e_cgraph">
-<area shape="rect" id="node2" href="class_media_controller_1_1_stream_base.html#a4eda2d269c28a548e3da5d99b7e14556" title="Set the stream to a new source. " alt="" coords="228,5,420,47"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a8ff2b68e58bf36748e5b1e21caea5207"></a>
@@ -710,16 +596,6 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="class_media_controller_1_1_controller_html_a03fae8101558689ac1d58f6744546bce"><div class="ttname"><a href="class_media_controller_1_1_controller.html#a03fae8101558689ac1d58f6744546bce">MediaController::Controller::state</a></div><div class="ttdeci">StreamState * state</div><div class="ttdoc">The current state of the stream. </div><div class="ttdef"><b>Definition:</b> <a href="_controller_8h_source.html#l00045">Controller.h:45</a></div></div>
 <div class="ttc" id="class_media_controller_1_1_stream_state_html_a617e7ca4317e7c9d60c7531db1133a00"><div class="ttname"><a href="class_media_controller_1_1_stream_state.html#a617e7ca4317e7c9d60c7531db1133a00">MediaController::StreamState::Pause</a></div><div class="ttdeci">virtual void Pause(Controller &amp;controller)</div><div class="ttdoc">Perform the Pause action based on the stream state. </div><div class="ttdef"><b>Definition:</b> <a href="_stream_state_8cpp_source.html#l00017">StreamState.cpp:17</a></div></div>
 </div><!-- fragment -->
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_media_controller_1_1_controller_a8ff2b68e58bf36748e5b1e21caea5207_cgraph.png" border="0" usemap="#class_media_controller_1_1_controller_a8ff2b68e58bf36748e5b1e21caea5207_cgraph" alt=""/></div>
-<map name="class_media_controller_1_1_controller_a8ff2b68e58bf36748e5b1e21caea5207_cgraph" id="class_media_controller_1_1_controller_a8ff2b68e58bf36748e5b1e21caea5207_cgraph">
-<area shape="rect" id="node2" href="class_media_controller_1_1_stream_state.html#a617e7ca4317e7c9d60c7531db1133a00" title="Perform the Pause action based on the stream state. " alt="" coords="228,5,421,47"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a1fefe26969ec04245cc19616f7e84c86"></a>
@@ -761,16 +637,6 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="class_media_controller_1_1_stream_state_html_a67c1cd5f99463882d2d9936dc1f39bde"><div class="ttname"><a href="class_media_controller_1_1_stream_state.html#a67c1cd5f99463882d2d9936dc1f39bde">MediaController::StreamState::Play</a></div><div class="ttdeci">virtual void Play(Controller &amp;controller, int speed)</div><div class="ttdoc">Perform the Play action based on the stream state. </div><div class="ttdef"><b>Definition:</b> <a href="_stream_state_8cpp_source.html#l00016">StreamState.cpp:16</a></div></div>
 <div class="ttc" id="class_media_controller_1_1_controller_html_a03fae8101558689ac1d58f6744546bce"><div class="ttname"><a href="class_media_controller_1_1_controller.html#a03fae8101558689ac1d58f6744546bce">MediaController::Controller::state</a></div><div class="ttdeci">StreamState * state</div><div class="ttdoc">The current state of the stream. </div><div class="ttdef"><b>Definition:</b> <a href="_controller_8h_source.html#l00045">Controller.h:45</a></div></div>
 </div><!-- fragment -->
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_media_controller_1_1_controller_a1fefe26969ec04245cc19616f7e84c86_cgraph.png" border="0" usemap="#class_media_controller_1_1_controller_a1fefe26969ec04245cc19616f7e84c86_cgraph" alt=""/></div>
-<map name="class_media_controller_1_1_controller_a1fefe26969ec04245cc19616f7e84c86_cgraph" id="class_media_controller_1_1_controller_a1fefe26969ec04245cc19616f7e84c86_cgraph">
-<area shape="rect" id="node2" href="class_media_controller_1_1_stream_state.html#a67c1cd5f99463882d2d9936dc1f39bde" title="Perform the Play action based on the stream state. " alt="" coords="228,5,421,47"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a1a763f2e4c6ed13eefd3e348cac02814"></a>
@@ -813,17 +679,6 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="class_media_controller_1_1_gst_wrapper_html_ae61952b746aca7df898cf7faafcfd372"><div class="ttname"><a href="class_media_controller_1_1_gst_wrapper.html#ae61952b746aca7df898cf7faafcfd372">MediaController::GstWrapper::RemoveObserver</a></div><div class="ttdeci">void RemoveObserver(TimestampEventCallback observer)</div><div class="ttdoc">Remove an existing timestamp event subscriber. </div><div class="ttdef"><b>Definition:</b> <a href="_gst_wrapper_8cpp_source.html#l00256">GstWrapper.cpp:256</a></div></div>
 <div class="ttc" id="class_media_controller_1_1_controller_html_ab044204deaa6df1296db0d3a6629796d"><div class="ttname"><a href="class_media_controller_1_1_controller.html#ab044204deaa6df1296db0d3a6629796d">MediaController::Controller::stream</a></div><div class="ttdeci">StreamBase * stream</div><div class="ttdoc">The current stream instance. </div><div class="ttdef"><b>Definition:</b> <a href="_controller_8h_source.html#l00050">Controller.h:50</a></div></div>
 </div><!-- fragment -->
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_media_controller_1_1_controller_a1a763f2e4c6ed13eefd3e348cac02814_cgraph.png" border="0" usemap="#class_media_controller_1_1_controller_a1a763f2e4c6ed13eefd3e348cac02814_cgraph" alt=""/></div>
-<map name="class_media_controller_1_1_controller_a1a763f2e4c6ed13eefd3e348cac02814_cgraph" id="class_media_controller_1_1_controller_a1a763f2e4c6ed13eefd3e348cac02814_cgraph">
-<area shape="rect" id="node2" href="class_media_controller_1_1_stream_base.html#a8426351a80597fb8d2a3a2ccc8ba732e" title="Get the current GStreamer wrapper instance. " alt="" coords="228,5,420,47"/>
-<area shape="rect" id="node3" href="class_media_controller_1_1_gst_wrapper.html#ae61952b746aca7df898cf7faafcfd372" title="Remove an existing timestamp event subscriber. " alt="" coords="229,71,419,112"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="ad6945bebdaaf9337d4589cd9e7188890"></a>
@@ -876,16 +731,6 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="class_media_controller_1_1_controller_html_a03fae8101558689ac1d58f6744546bce"><div class="ttname"><a href="class_media_controller_1_1_controller.html#a03fae8101558689ac1d58f6744546bce">MediaController::Controller::state</a></div><div class="ttdeci">StreamState * state</div><div class="ttdoc">The current state of the stream. </div><div class="ttdef"><b>Definition:</b> <a href="_controller_8h_source.html#l00045">Controller.h:45</a></div></div>
 <div class="ttc" id="class_media_controller_1_1_stream_state_html_a5f4080d852fc4d384caa5ba68115af1a"><div class="ttname"><a href="class_media_controller_1_1_stream_state.html#a5f4080d852fc4d384caa5ba68115af1a">MediaController::StreamState::Seek</a></div><div class="ttdeci">virtual void Seek(Controller &amp;controller, unsigned int unixTime, int speed)</div><div class="ttdoc">Perform the Seek action based on the stream state. </div><div class="ttdef"><b>Definition:</b> <a href="_stream_state_8cpp_source.html#l00020">StreamState.cpp:20</a></div></div>
 </div><!-- fragment -->
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_media_controller_1_1_controller_ad6945bebdaaf9337d4589cd9e7188890_cgraph.png" border="0" usemap="#class_media_controller_1_1_controller_ad6945bebdaaf9337d4589cd9e7188890_cgraph" alt=""/></div>
-<map name="class_media_controller_1_1_controller_ad6945bebdaaf9337d4589cd9e7188890_cgraph" id="class_media_controller_1_1_controller_ad6945bebdaaf9337d4589cd9e7188890_cgraph">
-<area shape="rect" id="node2" href="class_media_controller_1_1_stream_state.html#a5f4080d852fc4d384caa5ba68115af1a" title="Perform the Seek action based on the stream state. " alt="" coords="228,5,421,47"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="ac54696c364e51b527fcbbf2437a1559b"></a>
@@ -928,17 +773,6 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="class_media_controller_1_1_controller_html_ab044204deaa6df1296db0d3a6629796d"><div class="ttname"><a href="class_media_controller_1_1_controller.html#ab044204deaa6df1296db0d3a6629796d">MediaController::Controller::stream</a></div><div class="ttdeci">StreamBase * stream</div><div class="ttdoc">The current stream instance. </div><div class="ttdef"><b>Definition:</b> <a href="_controller_8h_source.html#l00050">Controller.h:50</a></div></div>
 <div class="ttc" id="class_media_controller_1_1_gst_wrapper_html_afc541e40bd938d2ccae439a5079adea8"><div class="ttname"><a href="class_media_controller_1_1_gst_wrapper.html#afc541e40bd938d2ccae439a5079adea8">MediaController::GstWrapper::SetWindow</a></div><div class="ttdeci">void SetWindow(intptr_t winhandle)</div><div class="ttdoc">Set the display window using the given window handle. </div><div class="ttdef"><b>Definition:</b> <a href="_gst_wrapper_8cpp_source.html#l00221">GstWrapper.cpp:221</a></div></div>
 </div><!-- fragment -->
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_media_controller_1_1_controller_ac54696c364e51b527fcbbf2437a1559b_cgraph.png" border="0" usemap="#class_media_controller_1_1_controller_ac54696c364e51b527fcbbf2437a1559b_cgraph" alt=""/></div>
-<map name="class_media_controller_1_1_controller_ac54696c364e51b527fcbbf2437a1559b_cgraph" id="class_media_controller_1_1_controller_ac54696c364e51b527fcbbf2437a1559b_cgraph">
-<area shape="rect" id="node2" href="class_media_controller_1_1_stream_base.html#a8426351a80597fb8d2a3a2ccc8ba732e" title="Get the current GStreamer wrapper instance. " alt="" coords="228,5,420,47"/>
-<area shape="rect" id="node3" href="class_media_controller_1_1_gst_wrapper.html#afc541e40bd938d2ccae439a5079adea8" title="Set the display window using the given window handle. " alt="" coords="229,71,419,112"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a894569aeb854360939f4e16831e36b63"></a>
@@ -973,16 +807,6 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="class_media_controller_1_1_stream_state_html_afe8edb29dd66429bcf0e72be336841c7"><div class="ttname"><a href="class_media_controller_1_1_stream_state.html#afe8edb29dd66429bcf0e72be336841c7">MediaController::StreamState::Stop</a></div><div class="ttdeci">virtual void Stop(Controller &amp;controller)</div><div class="ttdoc">Perform the Stop action based on the stream state. </div><div class="ttdef"><b>Definition:</b> <a href="_stream_state_8cpp_source.html#l00018">StreamState.cpp:18</a></div></div>
 <div class="ttc" id="class_media_controller_1_1_controller_html_a03fae8101558689ac1d58f6744546bce"><div class="ttname"><a href="class_media_controller_1_1_controller.html#a03fae8101558689ac1d58f6744546bce">MediaController::Controller::state</a></div><div class="ttdeci">StreamState * state</div><div class="ttdoc">The current state of the stream. </div><div class="ttdef"><b>Definition:</b> <a href="_controller_8h_source.html#l00045">Controller.h:45</a></div></div>
 </div><!-- fragment -->
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_media_controller_1_1_controller_a894569aeb854360939f4e16831e36b63_cgraph.png" border="0" usemap="#class_media_controller_1_1_controller_a894569aeb854360939f4e16831e36b63_cgraph" alt=""/></div>
-<map name="class_media_controller_1_1_controller_a894569aeb854360939f4e16831e36b63_cgraph" id="class_media_controller_1_1_controller_a894569aeb854360939f4e16831e36b63_cgraph">
-<area shape="rect" id="node2" href="class_media_controller_1_1_stream_state.html#afe8edb29dd66429bcf0e72be336841c7" title="Perform the Stop action based on the stream state. " alt="" coords="228,5,421,47"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -1019,8 +843,8 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>Source/<a class="el" href="_controller_8h_source.html">Controller.h</a></li>
-<li>Source/<a class="el" href="_controller_8cpp_source.html">Controller.cpp</a></li>
+<li>C:/Users/Zach/Git/vxsdk/Samples/VxSDK-Samples/MediaController/Include/<a class="el" href="_controller_8h_source.html">Controller.h</a></li>
+<li>C:/Users/Zach/Git/vxsdk/Samples/VxSDK-Samples/MediaController/Source/<a class="el" href="_controller_8cpp_source.html">Controller.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

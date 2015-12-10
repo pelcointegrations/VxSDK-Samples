@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['vxackstate',['VxAckState',['../../VxSdk/struct_vx_sdk_1_1_vx_ack_state.html',1,'VxSdk']]],
+  ['vxcollection',['VxCollection',['../../VxSdk/struct_vx_sdk_1_1_vx_collection.html',1,'VxSdk']]],
+  ['vxcollectionfilter',['VxCollectionFilter',['../../VxSdk/struct_vx_sdk_1_1_vx_collection_filter.html',1,'VxSdk']]],
+  ['vxcollectionfilteritem',['VxCollectionFilterItem',['../../VxSdk/struct_vx_sdk_1_1_vx_collection_filter_item.html',1,'VxSdk']]],
+  ['vxdatasourcetype',['VxDataSourceType',['../../VxSdk/struct_vx_sdk_1_1_vx_data_source_type.html',1,'VxSdk']]],
+  ['vxdevicestate',['VxDeviceState',['../../VxSdk/struct_vx_sdk_1_1_vx_device_state.html',1,'VxSdk']]],
+  ['vxdevicetype',['VxDeviceType',['../../VxSdk/struct_vx_sdk_1_1_vx_device_type.html',1,'VxSdk']]],
+  ['vxexportformat',['VxExportFormat',['../../VxSdk/struct_vx_sdk_1_1_vx_export_format.html',1,'VxSdk']]],
+  ['vxexportstatus',['VxExportStatus',['../../VxSdk/struct_vx_sdk_1_1_vx_export_status.html',1,'VxSdk']]],
+  ['vxfocusdirection',['VxFocusDirection',['../../VxSdk/struct_vx_sdk_1_1_vx_focus_direction.html',1,'VxSdk']]],
+  ['vxirisdirection',['VxIrisDirection',['../../VxSdk/struct_vx_sdk_1_1_vx_iris_direction.html',1,'VxSdk']]],
+  ['vxkvobject',['VxKvObject',['../../VxSdk/struct_vx_sdk_1_1_vx_kv_object.html',1,'VxSdk']]],
+  ['vxlogininfo',['VxLoginInfo',['../../VxSdk/struct_vx_sdk_1_1_vx_login_info.html',1,'VxSdk']]],
+  ['vxnewevent',['VxNewEvent',['../../VxSdk/struct_vx_sdk_1_1_vx_new_event.html',1,'VxSdk']]],
+  ['vxnewexport',['VxNewExport',['../../VxSdk/struct_vx_sdk_1_1_vx_new_export.html',1,'VxSdk']]],
+  ['vxnewexportclip',['VxNewExportClip',['../../VxSdk/struct_vx_sdk_1_1_vx_new_export_clip.html',1,'VxSdk']]],
+  ['vxnewsituation',['VxNewSituation',['../../VxSdk/struct_vx_sdk_1_1_vx_new_situation.html',1,'VxSdk']]],
+  ['vxrecordingframerate',['VxRecordingFramerate',['../../VxSdk/struct_vx_sdk_1_1_vx_recording_framerate.html',1,'VxSdk']]],
+  ['vxrecordingtype',['VxRecordingType',['../../VxSdk/struct_vx_sdk_1_1_vx_recording_type.html',1,'VxSdk']]],
+  ['vxresult',['VxResult',['../../VxSdk/struct_vx_sdk_1_1_vx_result.html',1,'VxSdk']]],
+  ['vxretentionpriority',['VxRetentionPriority',['../../VxSdk/struct_vx_sdk_1_1_vx_retention_priority.html',1,'VxSdk']]],
+  ['vxstreamprotocol',['VxStreamProtocol',['../../VxSdk/struct_vx_sdk_1_1_vx_stream_protocol.html',1,'VxSdk']]],
+  ['vxsystem',['VXSystem',['../../CSharpWrapper/class_c_p_p_cli_1_1_v_x_system.html',1,'CPPCli']]],
+  ['vxzoomdirection',['VxZoomDirection',['../../VxSdk/struct_vx_sdk_1_1_vx_zoom_direction.html',1,'VxSdk']]]
+];

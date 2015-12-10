@@ -214,7 +214,7 @@ Private Member Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_add_situation_form_8cs_source.html#l00028">28</a> of file <a class="el" href="_add_situation_form_8cs_source.html">AddSituationForm.cs</a>.</p>
 <div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            var situation = <span class="keyword">new</span> NewSituation</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            var situation = <span class="keyword">new</span> <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/CSharpWrapper/CSharpWrapper.tag:../CSharpWrapper/" href="../CSharpWrapper/class_c_p_p_cli_1_1_new_situation.html">NewSituation</a></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            {</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                IsAckNeeded = this.ckbxAckNeeded.Checked,</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                AudibleLoopDelay = (int)this.nudAudibleLoopDelay.Value,</div>
@@ -246,15 +246,17 @@ Private Member Functions</h2></td></tr>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                intervalList.Add((<span class="keywordtype">int</span>)this.nudSnoozeIntervals3.Value);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            }</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            situation.SnoozeIntervals = intervalList;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            situation.<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/CSharpWrapper/CSharpWrapper.tag:../CSharpWrapper/" href="../CSharpWrapper/class_c_p_p_cli_1_1_new_situation.html#a49fe3302f31603ebcf8f2665c40ef9ed">SnoozeIntervals</a> = intervalList;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            MainForm.CurrentSystem.AddSituation(situation);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div>
+<div class="ttc" id="class_c_p_p_cli_1_1_new_situation_html"><div class="ttname"><a href="../CSharpWrapper/class_c_p_p_cli_1_1_new_situation.html">CPPCli::NewSituation</a></div></div>
+<div class="ttc" id="class_c_p_p_cli_1_1_new_situation_html_a49fe3302f31603ebcf8f2665c40ef9ed"><div class="ttname"><a href="../CSharpWrapper/class_c_p_p_cli_1_1_new_situation.html#a49fe3302f31603ebcf8f2665c40ef9ed">CPPCli::NewSituation::SnoozeIntervals</a></div><div class="ttdeci">System::Collections::Generic::List&lt; int &gt;^ SnoozeIntervals</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Source/<a class="el" href="_add_situation_form_8cs_source.html">AddSituationForm.cs</a></li>
+<li>C:/Users/Zach/Git/vxsdk/Samples/VxSDK-Samples/CSharpSample/CSharp/Source/<a class="el" href="_add_situation_form_8cs_source.html">AddSituationForm.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

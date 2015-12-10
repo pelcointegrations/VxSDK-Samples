@@ -21,5 +21,6 @@ var searchData=
   ['state',['state',['../struct_vx_sdk_1_1_i_vx_data_source.html#a8fe7320e808adb9c9ffc3ccf9aa9a9fe',1,'VxSdk::IVxDataSource::state()'],['../struct_vx_sdk_1_1_i_vx_device.html#a8a7770ef3129363a71f7ee12d8b53cdb',1,'VxSdk::IVxDevice::state()']]],
   ['status',['status',['../struct_vx_sdk_1_1_i_vx_export.html#a80cc015ee1ec962cc515acdd9dbcef6c',1,'VxSdk::IVxExport']]],
   ['stopnotifications',['StopNotifications',['../struct_vx_sdk_1_1_i_vx_system.html#a7961138a0726e7260d6260e19fd693cd',1,'VxSdk::IVxSystem']]],
+  ['strcopysafe',['StrCopySafe',['../namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db',1,'VxSdk::Utilities::StrCopySafe(char(&amp;dst)[dstSize], const char *src)'],['../namespace_vx_sdk_1_1_utilities.html#a7e4537f935028e0892d543dd9328e2e0',1,'VxSdk::Utilities::StrCopySafe(char *dst, const char *src, int dstSize)']]],
   ['supportsmulticast',['supportsMulticast',['../struct_vx_sdk_1_1_i_vx_data_interface.html#ab51fcf9aca01ba3e7d2ade1ff7e4de75',1,'VxSdk::IVxDataInterface']]]
 ];

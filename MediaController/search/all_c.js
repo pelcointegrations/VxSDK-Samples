@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['newrequest',['NewRequest',['../class_media_controller_1_1_i_stream.html#af1acf51b6b487e08555b855f16a6234f',1,'MediaController::IStream::NewRequest()'],['../class_media_controller_1_1_controller.html#a7bb25f5bf86e2df8282e6d07bedf3c8e',1,'MediaController::Controller::NewRequest()'],['../class_media_controller_1_1_mjpeg_pull_1_1_stream.html#ae9585d6f4100ac1177ebf4aa90b52115',1,'MediaController::MjpegPull::Stream::NewRequest()'],['../class_media_controller_1_1_rtsp_1_1_stream.html#a39cfada86d3fc6e9fae55f327d935214',1,'MediaController::Rtsp::Stream::NewRequest()'],['../class_media_controller_1_1_stream_base.html#a4eda2d269c28a548e3da5d99b7e14556',1,'MediaController::StreamBase::NewRequest()']]]
+  ['lasttimestamp',['lastTimestamp',['../struct_media_controller_1_1_gst_vars.html#ad664aa7cdd3f7e40b6aa21a2d254fd7e',1,'MediaController::GstVars']]],
+  ['link',['Link',['../../VxSdk/struct_vx_sdk_1_1_i_vx_situation.html#a2ec5120ee5d4fc73f6a9d4099c3067e3',1,'VxSdk::IVxSituation::Link(IVxDevice &amp;device) const  =0'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_situation.html#aec3145382a210242b56d89f8ddffe9e2',1,'VxSdk::IVxSituation::Link(IVxDataSource &amp;dataSource) const  =0']]],
+  ['lockexpiretime',['lockExpireTime',['../../VxSdk/struct_vx_sdk_1_1_i_vx_ptz_controller.html#af2519138541a43f9ae4d6af2c5bb6f6b',1,'VxSdk::IVxPtzController']]]
 ];

@@ -8,6 +8,7 @@ var class_c_p_p_cli_1_1_media_control =
     [ "MediaControl", "class_c_p_p_cli_1_1_media_control.html#a595308b3ceaa5e88cf797832c736760f", null ],
     [ "~MediaControl", "class_c_p_p_cli_1_1_media_control.html#a43a9854e5a5e6e839211de9e27f5b8a3", null ],
     [ "!MediaControl", "class_c_p_p_cli_1_1_media_control.html#a6169790c09dc57fed40de16a5695420b", null ],
+    [ "_FireTimestampEvent", "class_c_p_p_cli_1_1_media_control.html#a04ab1e1e38fb69e749560a92b2113357", null ],
     [ "GoToLive", "class_c_p_p_cli_1_1_media_control.html#a2f06f8f367a4580152ee612e97c907e9", null ],
     [ "Pause", "class_c_p_p_cli_1_1_media_control.html#aea10959f86fd8a017a13d214d2d1179d", null ],
     [ "Play", "class_c_p_p_cli_1_1_media_control.html#a0596ead4b76687ccf3443f8ca1ee1ad1", null ],
@@ -17,6 +18,9 @@ var class_c_p_p_cli_1_1_media_control =
     [ "Stop", "class_c_p_p_cli_1_1_media_control.html#ac4bef37ebfc0b008c3a9a1af2a80d53c", null ],
     [ "TimestampCallbackDelegate", "class_c_p_p_cli_1_1_media_control.html#a7d853becec314b4fb51f318ef28f2bc6", null ],
     [ "TimestampEventDelegate", "class_c_p_p_cli_1_1_media_control.html#adc3effeb5aa911e8388f69c5c6f959ab", null ],
+    [ "_control", "class_c_p_p_cli_1_1_media_control.html#a6f92b83e701b7378716c396a36a88340", null ],
+    [ "_timestampCallback", "class_c_p_p_cli_1_1_media_control.html#a082192a6501112e5271af995c4cef97d", null ],
+    [ "_timestampEvent", "class_c_p_p_cli_1_1_media_control.html#a8c345dd18a2361cc264a8561564f6ea8", null ],
     [ "Mode", "class_c_p_p_cli_1_1_media_control.html#ad2b8cd0ffd4249180a2bfd29fb4c7be2", null ],
     [ "TimestampEvent", "class_c_p_p_cli_1_1_media_control.html#a5fe728509e767c45c21f9def2a57a61f", null ]
 ];

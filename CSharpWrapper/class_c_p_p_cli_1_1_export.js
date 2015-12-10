@@ -15,6 +15,8 @@ var class_c_p_p_cli_1_1_export =
     [ "Export", "class_c_p_p_cli_1_1_export.html#a741f9a7a48b2049c61535182849961e1", null ],
     [ "~Export", "class_c_p_p_cli_1_1_export.html#a7b7f9bd388377c0ac2d8ede605300d40", null ],
     [ "!Export", "class_c_p_p_cli_1_1_export.html#ac6755bc024906285d62892f9466226df", null ],
+    [ "_GetClips", "class_c_p_p_cli_1_1_export.html#a4e40d196ad3aeae953471a75f543b272", null ],
+    [ "_export", "class_c_p_p_cli_1_1_export.html#ae6b7cf62467b54a65c2b22466b024da4", null ],
     [ "Completed", "class_c_p_p_cli_1_1_export.html#a3809b220802ebcbc997f1d99a550c6ad", null ],
     [ "DataUri", "class_c_p_p_cli_1_1_export.html#a1626329c0d36b98e1772892fc6884f1b", null ],
     [ "ExportClips", "class_c_p_p_cli_1_1_export.html#a7c752b3e549c076866af8419da26b722", null ],

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>Media Controller Sample: Source/RtspSdpParser.h Source File</title>
+<title>Media Controller: C:/Users/Zach/Git/vxsdk/Samples/VxSDK-Samples/MediaController/Include/RtspSdpParser.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Media Controller Sample
+   <div id="projectname">Media Controller
    </div>
    <div id="projectbrief">A GStreamer implementation using the VideoXpert SDK</div>
   </td>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -74,6 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -110,10 +110,10 @@ $(document).ready(function(){initNavTree('_rtsp_sdp_parser_8h_source.html','');}
 <div class="title">RtspSdpParser.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef RtspSdpParser_h__</span></div>
+<a href="_rtsp_sdp_parser_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef RtspSdpParser_h__</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define RtspSdpParser_h__</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;RtspMediaDescription.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_rtsp_media_description_8h.html">RtspMediaDescription.h</a>&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_media_controller.html">MediaController</a> {</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keyword">namespace </span>Rtsp {</div>
@@ -132,25 +132,27 @@ $(document).ready(function(){initNavTree('_rtsp_sdp_parser_8h_source.html','');}
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="class_media_controller_1_1_rtsp_1_1_sdp_parser.html#ab4aa75f1b1c3977d829037e2a8479afe">Parse</a>(<span class="keyword">const</span> std::string&amp; sdp);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            std::vector&lt;MediaDescription&gt; _mediaDescriptions;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_media_controller_1_1_rtsp_1_1_sdp_parser.html#a6794260c52525bde03e761f6125d4705">   45</a></span>&#160;            std::vector&lt;MediaDescription&gt; <a class="code" href="class_media_controller_1_1_rtsp_1_1_sdp_parser.html#a6794260c52525bde03e761f6125d4705">_mediaDescriptions</a>;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        };</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif // RtspSdpParser_h__</span></div>
+<div class="ttc" id="class_media_controller_1_1_rtsp_1_1_sdp_parser_html_a6794260c52525bde03e761f6125d4705"><div class="ttname"><a href="class_media_controller_1_1_rtsp_1_1_sdp_parser.html#a6794260c52525bde03e761f6125d4705">MediaController::Rtsp::SdpParser::_mediaDescriptions</a></div><div class="ttdeci">std::vector&lt; MediaDescription &gt; _mediaDescriptions</div><div class="ttdef"><b>Definition:</b> <a href="_rtsp_sdp_parser_8h_source.html#l00045">RtspSdpParser.h:45</a></div></div>
 <div class="ttc" id="class_media_controller_1_1_rtsp_1_1_sdp_parser_html_a451b0af69cb552a7bada46ac19a1b2e2"><div class="ttname"><a href="class_media_controller_1_1_rtsp_1_1_sdp_parser.html#a451b0af69cb552a7bada46ac19a1b2e2">MediaController::Rtsp::SdpParser::GetFirstVideo</a></div><div class="ttdeci">const MediaDescription &amp; GetFirstVideo()</div><div class="ttdoc">Get the first available video media description. </div><div class="ttdef"><b>Definition:</b> <a href="_rtsp_sdp_parser_8cpp_source.html#l00051">RtspSdpParser.cpp:51</a></div></div>
 <div class="ttc" id="class_media_controller_1_1_rtsp_1_1_sdp_parser_html_ab4aa75f1b1c3977d829037e2a8479afe"><div class="ttname"><a href="class_media_controller_1_1_rtsp_1_1_sdp_parser.html#ab4aa75f1b1c3977d829037e2a8479afe">MediaController::Rtsp::SdpParser::Parse</a></div><div class="ttdeci">void Parse(const std::string &amp;sdp)</div><div class="ttdoc">Parses a raw SDP packet string. </div><div class="ttdef"><b>Definition:</b> <a href="_rtsp_sdp_parser_8cpp_source.html#l00022">RtspSdpParser.cpp:22</a></div></div>
 <div class="ttc" id="class_media_controller_1_1_rtsp_1_1_sdp_parser_html_abccfefa3ce039a491fe40c1c1e4f25e0"><div class="ttname"><a href="class_media_controller_1_1_rtsp_1_1_sdp_parser.html#abccfefa3ce039a491fe40c1c1e4f25e0">MediaController::Rtsp::SdpParser::GetMediaDescriptions</a></div><div class="ttdeci">const std::vector&lt; MediaDescription &gt; &amp; GetMediaDescriptions()</div><div class="ttdoc">Get all available media descriptions. </div><div class="ttdef"><b>Definition:</b> <a href="_rtsp_sdp_parser_8cpp_source.html#l00018">RtspSdpParser.cpp:18</a></div></div>
 <div class="ttc" id="class_media_controller_1_1_rtsp_1_1_sdp_parser_html"><div class="ttname"><a href="class_media_controller_1_1_rtsp_1_1_sdp_parser.html">MediaController::Rtsp::SdpParser</a></div><div class="ttdoc">Parses the SDP packets sent from an RTSP source. </div><div class="ttdef"><b>Definition:</b> <a href="_rtsp_sdp_parser_8h_source.html#l00012">RtspSdpParser.h:12</a></div></div>
 <div class="ttc" id="struct_media_controller_1_1_rtsp_1_1_media_description_html"><div class="ttname"><a href="struct_media_controller_1_1_rtsp_1_1_media_description.html">MediaController::Rtsp::MediaDescription</a></div><div class="ttdoc">The parsed media information from an SDP packet. </div><div class="ttdef"><b>Definition:</b> <a href="_rtsp_media_description_8h_source.html#l00010">RtspMediaDescription.h:10</a></div></div>
 <div class="ttc" id="class_media_controller_1_1_rtsp_1_1_sdp_parser_html_a4deeb2f3ba9277a18b2a4bd65283d23b"><div class="ttname"><a href="class_media_controller_1_1_rtsp_1_1_sdp_parser.html#a4deeb2f3ba9277a18b2a4bd65283d23b">MediaController::Rtsp::SdpParser::~SdpParser</a></div><div class="ttdeci">~SdpParser()</div><div class="ttdoc">Default destructor. </div><div class="ttdef"><b>Definition:</b> <a href="_rtsp_sdp_parser_8cpp_source.html#l00016">RtspSdpParser.cpp:16</a></div></div>
+<div class="ttc" id="_rtsp_media_description_8h_html"><div class="ttname"><a href="_rtsp_media_description_8h.html">RtspMediaDescription.h</a></div></div>
 <div class="ttc" id="class_media_controller_1_1_rtsp_1_1_sdp_parser_html_ac54a9ec810cbcf1039284ab450c5babc"><div class="ttname"><a href="class_media_controller_1_1_rtsp_1_1_sdp_parser.html#ac54a9ec810cbcf1039284ab450c5babc">MediaController::Rtsp::SdpParser::SdpParser</a></div><div class="ttdeci">SdpParser()</div><div class="ttdoc">Default constructor. </div><div class="ttdef"><b>Definition:</b> <a href="_rtsp_sdp_parser_8cpp_source.html#l00014">RtspSdpParser.cpp:14</a></div></div>
-<div class="ttc" id="namespace_media_controller_html"><div class="ttname"><a href="namespace_media_controller.html">MediaController</a></div><div class="ttdoc">Contains classes used to create and manage media streams. </div><div class="ttdef"><b>Definition:</b> <a href="_i_controller_8h_source.html#l00007">IController.h:7</a></div></div>
+<div class="ttc" id="namespace_media_controller_html"><div class="ttname"><a href="namespace_media_controller.html">MediaController</a></div><div class="ttdoc">Contains classes used to create and manage media streams. </div><div class="ttdef"><b>Definition:</b> <a href="_controller_8cpp_source.html#l00017">Controller.cpp:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_74389ed8173ad57b461b9d623a1f3867.html">Source</a></li><li class="navelem"><b>RtspSdpParser.h</b></li>
+    <li class="navelem"><a class="el" href="dir_6f2bbc259acbf2c00bc5315c0044b8e4.html">vxsdk</a></li><li class="navelem"><a class="el" href="dir_4b6f63d7a9a5c451ae872abad24d55ab.html">Samples</a></li><li class="navelem"><a class="el" href="dir_aaf608bdbff9050509eeedf0760b46a9.html">VxSDK-Samples</a></li><li class="navelem"><a class="el" href="dir_0c6d11e4f0b35f1feb615cd0d7c911f9.html">MediaController</a></li><li class="navelem"><a class="el" href="dir_82a7cfcfa0e067f11e94024df6739dae.html">Include</a></li><li class="navelem"><a class="el" href="_rtsp_sdp_parser_8h.html">RtspSdpParser.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>

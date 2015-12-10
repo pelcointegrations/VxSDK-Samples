@@ -2,6 +2,7 @@ var class_c_p_p_cli_1_1_new_situation =
 [
     [ "NewSituation", "class_c_p_p_cli_1_1_new_situation.html#a79fbe9f8f8408824ab81073e7cffa6da", null ],
     [ "NewSituation", "class_c_p_p_cli_1_1_new_situation.html#aa0ded70dbbbc566d6bf11b10c497cd76", null ],
+    [ "_newSituation", "class_c_p_p_cli_1_1_new_situation.html#abbc99c9bd3078f64f26748a6b68569ae", null ],
     [ "AudibleLoopDelay", "class_c_p_p_cli_1_1_new_situation.html#acf5ae71497d4238a49c5b88e56326e1a", null ],
     [ "AudiblePlayCount", "class_c_p_p_cli_1_1_new_situation.html#a780f5384c14b00a627ee08716587403f", null ],
     [ "AutoAcknowledge", "class_c_p_p_cli_1_1_new_situation.html#a6119e1f23789649dbfbce61b0dc51107", null ],

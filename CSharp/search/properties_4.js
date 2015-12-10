@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['selectedclip',['SelectedClip',['../class_s_d_k_sample_app_1_1_source_1_1_add_clip_form.html#a4e7aab7fcddbac2c2e93b7bcc19659ee',1,'SDKSampleApp::Source::AddClipForm']]]
+  ['filesizekb',['FileSizeKb',['../../CSharpWrapper/class_c_p_p_cli_1_1_export.html#a3b66c19dd4c870662c65ac9f48a32761',1,'CPPCli::Export']]],
+  ['format',['Format',['../../CSharpWrapper/class_c_p_p_cli_1_1_export.html#a84407174cd565acd6d8a95938b63a7cf',1,'CPPCli::Export::Format()'],['../../CSharpWrapper/class_c_p_p_cli_1_1_new_export.html#ab200a61fe365813f6b65f1fbb4907ea6',1,'CPPCli::NewExport::Format()']]],
+  ['framerate',['Framerate',['../../CSharpWrapper/class_c_p_p_cli_1_1_clip.html#a8c8b1079f165a14e979cc416c0e36d58',1,'CPPCli::Clip']]]
 ];

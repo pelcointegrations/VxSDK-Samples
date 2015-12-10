@@ -145,6 +145,8 @@ Protected Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents an individual range of media data belonging to an Export. This data shall be exported when the Export is triggered. </p>
+
+<p>Definition at line <a class="el" href="_i_vx_export_clip_8h_source.html#l00013">13</a> of file <a class="el" href="_i_vx_export_clip_8h_source.html">IVxExportClip.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a08f25697452ecf7074516986fc4a3e9e"></a>
 <div class="memitem">
@@ -169,6 +171,18 @@ Protected Member Functions</h2></td></tr>
 
 <p>Clears this instance. </p>
 
+<p>Definition at line <a class="el" href="_i_vx_export_clip_8h_source.html#l00036">36</a> of file <a class="el" href="_i_vx_export_clip_8h_source.html">IVxExportClip.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                     {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_export_clip.html#a5f18d0a23299a355997f8b101c89967a">dataSourceId</a>);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_export_clip.html#a6928cc18391128afd22f310178e4c168">startTime</a>);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_export_clip.html#a866f8bece286c97dc1758b01c9a6b9af">endTime</a>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        }</div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_export_clip_html_a866f8bece286c97dc1758b01c9a6b9af"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_export_clip.html#a866f8bece286c97dc1758b01c9a6b9af">VxSdk::IVxExportClip::endTime</a></div><div class="ttdeci">char endTime[64]</div><div class="ttdoc">The time at which the export media ends. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_export_clip_8h_source.html#l00030">IVxExportClip.h:30</a></div></div>
+<div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00018">VxMacros.h:18</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_export_clip_html_a6928cc18391128afd22f310178e4c168"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_export_clip.html#a6928cc18391128afd22f310178e4c168">VxSdk::IVxExportClip::startTime</a></div><div class="ttdeci">char startTime[64]</div><div class="ttdoc">The time at which the export media begins. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_export_clip_8h_source.html#l00026">IVxExportClip.h:26</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_export_clip_html_a5f18d0a23299a355997f8b101c89967a"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_export_clip.html#a5f18d0a23299a355997f8b101c89967a">VxSdk::IVxExportClip::dataSourceId</a></div><div class="ttdeci">char dataSourceId[64]</div><div class="ttdoc">The unique identifier of the exports data source. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_export_clip_8h_source.html#l00022">IVxExportClip.h:22</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -184,6 +198,8 @@ Protected Member Functions</h2></td></tr>
 
 <p>The unique identifier of the exports data source. </p>
 
+<p>Definition at line <a class="el" href="_i_vx_export_clip_8h_source.html#l00022">22</a> of file <a class="el" href="_i_vx_export_clip_8h_source.html">IVxExportClip.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a866f8bece286c97dc1758b01c9a6b9af"></a>
@@ -197,6 +213,8 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The time at which the export media ends. </p>
+
+<p>Definition at line <a class="el" href="_i_vx_export_clip_8h_source.html#l00030">30</a> of file <a class="el" href="_i_vx_export_clip_8h_source.html">IVxExportClip.h</a>.</p>
 
 </div>
 </div>
@@ -212,6 +230,8 @@ Protected Member Functions</h2></td></tr>
 
 <p>The unique identifier. </p>
 
+<p>Definition at line <a class="el" href="_i_vx_export_clip_8h_source.html#l00018">18</a> of file <a class="el" href="_i_vx_export_clip_8h_source.html">IVxExportClip.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a6928cc18391128afd22f310178e4c168"></a>
@@ -226,10 +246,12 @@ Protected Member Functions</h2></td></tr>
 
 <p>The time at which the export media begins. </p>
 
+<p>Definition at line <a class="el" href="_i_vx_export_clip_8h_source.html#l00026">26</a> of file <a class="el" href="_i_vx_export_clip_8h_source.html">IVxExportClip.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="_i_vx_export_clip_8h_source.html">IVxExportClip.h</a></li>
+<li>C:/Users/Zach/Git/vxsdk/VxSdk/Include/<a class="el" href="_i_vx_export_clip_8h_source.html">IVxExportClip.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

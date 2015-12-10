@@ -18,6 +18,8 @@ var class_c_p_p_cli_1_1_device =
     [ "Device", "class_c_p_p_cli_1_1_device.html#a64fabf5a4bb6a6884b110738e22f3e05", null ],
     [ "~Device", "class_c_p_p_cli_1_1_device.html#a84a03c64ddc562482acb2ea7cc3b3a9a", null ],
     [ "!Device", "class_c_p_p_cli_1_1_device.html#aa601808544ef37fe5f90d6d3b921593e", null ],
+    [ "_GetDataSources", "class_c_p_p_cli_1_1_device.html#ad9eee7e1162a0b06cc520f5b5316707d", null ],
+    [ "_device", "class_c_p_p_cli_1_1_device.html#afaeffe7f56c0c29059669a529b8d890f", null ],
     [ "DataSources", "class_c_p_p_cli_1_1_device.html#a211fc1188c6e216bdfe4fa56d2380389", null ],
     [ "Id", "class_c_p_p_cli_1_1_device.html#a60162ff569cfb15a00cc6790ca84a86f", null ],
     [ "Ip", "class_c_p_p_cli_1_1_device.html#ac42cd6380526feec0ef2844453d6a9f5", null ],

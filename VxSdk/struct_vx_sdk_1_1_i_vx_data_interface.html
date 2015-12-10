@@ -145,6 +145,8 @@ Protected Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents an interface to a data source. </p>
+
+<p>Definition at line <a class="el" href="_i_vx_data_interface_8h_source.html#l00012">12</a> of file <a class="el" href="_i_vx_data_interface_8h_source.html">IVxDataInterface.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a09fd56d427e7e273adeeeece28fb3282"></a>
 <div class="memitem">
@@ -169,6 +171,20 @@ Protected Member Functions</h2></td></tr>
 
 <p>Clears this instance. </p>
 
+<p>Definition at line <a class="el" href="_i_vx_data_interface_8h_source.html#l00035">35</a> of file <a class="el" href="_i_vx_data_interface_8h_source.html">IVxDataInterface.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                     {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_interface.html#a45d5f2bf9e831f1e52c4f6428e20033c">multicastTestIp</a>);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_interface.html#ab51fcf9aca01ba3e7d2ade1ff7e4de75">supportsMulticast</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_interface.html#a9f5f5fc5b4fe6e15a840ed1aa95af633">multicastTestPort</a> = 0;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_interface.html#ae5c27eda7717e97d2baaa7318e83eb80">protocol</a> = <a class="code" href="struct_vx_sdk_1_1_vx_stream_protocol.html#a2b76fe7e5279308f2ee4a134507a412aa6666699fcf3216a304d4951da8cda5ae">VxStreamProtocol::kUnknown</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        }</div>
+<div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00018">VxMacros.h:18</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_interface_html_a45d5f2bf9e831f1e52c4f6428e20033c"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_interface.html#a45d5f2bf9e831f1e52c4f6428e20033c">VxSdk::IVxDataInterface::multicastTestIp</a></div><div class="ttdeci">char multicastTestIp[64]</div><div class="ttdoc">The multicast test IP used to test transmission capabilities. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_interface_8h_source.html#l00017">IVxDataInterface.h:17</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_stream_protocol_html_a2b76fe7e5279308f2ee4a134507a412aa6666699fcf3216a304d4951da8cda5ae"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_stream_protocol.html#a2b76fe7e5279308f2ee4a134507a412aa6666699fcf3216a304d4951da8cda5ae">VxSdk::VxStreamProtocol::kUnknown</a></div><div class="ttdoc">An error or unknown value was returned.</div><div class="ttdef"><b>Definition:</b> <a href="_vx_primitives_8h_source.html#l00063">VxPrimitives.h:63</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_interface_html_ab51fcf9aca01ba3e7d2ade1ff7e4de75"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_interface.html#ab51fcf9aca01ba3e7d2ade1ff7e4de75">VxSdk::IVxDataInterface::supportsMulticast</a></div><div class="ttdeci">bool supportsMulticast</div><div class="ttdoc">Indicates whether the interface supports multicast transmission. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_interface_8h_source.html#l00021">IVxDataInterface.h:21</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_interface_html_ae5c27eda7717e97d2baaa7318e83eb80"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_interface.html#ae5c27eda7717e97d2baaa7318e83eb80">VxSdk::IVxDataInterface::protocol</a></div><div class="ttdeci">VxStreamProtocol::Value protocol</div><div class="ttdoc">The transport protocol used by the data interface. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_interface_8h_source.html#l00029">IVxDataInterface.h:29</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_interface_html_a9f5f5fc5b4fe6e15a840ed1aa95af633"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_interface.html#a9f5f5fc5b4fe6e15a840ed1aa95af633">VxSdk::IVxDataInterface::multicastTestPort</a></div><div class="ttdeci">unsigned short multicastTestPort</div><div class="ttdoc">The multicast test port used to test transmission capabilities. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_interface_8h_source.html#l00025">IVxDataInterface.h:25</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -184,6 +200,8 @@ Protected Member Functions</h2></td></tr>
 
 <p>The multicast test IP used to test transmission capabilities. </p>
 
+<p>Definition at line <a class="el" href="_i_vx_data_interface_8h_source.html#l00017">17</a> of file <a class="el" href="_i_vx_data_interface_8h_source.html">IVxDataInterface.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a9f5f5fc5b4fe6e15a840ed1aa95af633"></a>
@@ -197,6 +215,8 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The multicast test port used to test transmission capabilities. </p>
+
+<p>Definition at line <a class="el" href="_i_vx_data_interface_8h_source.html#l00025">25</a> of file <a class="el" href="_i_vx_data_interface_8h_source.html">IVxDataInterface.h</a>.</p>
 
 </div>
 </div>
@@ -212,6 +232,8 @@ Protected Member Functions</h2></td></tr>
 
 <p>The transport protocol used by the data interface. </p>
 
+<p>Definition at line <a class="el" href="_i_vx_data_interface_8h_source.html#l00029">29</a> of file <a class="el" href="_i_vx_data_interface_8h_source.html">IVxDataInterface.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ab51fcf9aca01ba3e7d2ade1ff7e4de75"></a>
@@ -226,10 +248,12 @@ Protected Member Functions</h2></td></tr>
 
 <p>Indicates whether the interface supports multicast transmission. </p>
 
+<p>Definition at line <a class="el" href="_i_vx_data_interface_8h_source.html#l00021">21</a> of file <a class="el" href="_i_vx_data_interface_8h_source.html">IVxDataInterface.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="_i_vx_data_interface_8h_source.html">IVxDataInterface.h</a></li>
+<li>C:/Users/Zach/Git/vxsdk/VxSdk/Include/<a class="el" href="_i_vx_data_interface_8h_source.html">IVxDataInterface.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

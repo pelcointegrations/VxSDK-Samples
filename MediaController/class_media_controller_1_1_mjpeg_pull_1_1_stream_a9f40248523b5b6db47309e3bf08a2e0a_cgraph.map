@@ -1,5 +1,0 @@
-<map id="MediaController::MjpegPull::Stream::Stream" name="MediaController::MjpegPull::Stream::Stream">
-<area shape="rect" id="node2" href="$class_media_controller_1_1_gst_wrapper_1_1_builder.html#a26a23a82f58d8ccb09cb746a7ec0f60d" title="Set the description for the current pipeline. " alt="" coords="231,5,440,47"/>
-<area shape="rect" id="node3" href="$class_media_controller_1_1_gst_wrapper_1_1_builder.html#a6c3a8aae7d10a0875c422897b26ee1db" title="Build a new pipeline. " alt="" coords="240,71,431,112"/>
-<area shape="rect" id="node4" href="$class_media_controller_1_1_gst_wrapper.html#ac51ce9890a31dcb366c95a3f282ad28f" title="Subscribe to the the events sent from the GStreamer Bus element. " alt="" coords="240,136,431,177"/>
-</map>

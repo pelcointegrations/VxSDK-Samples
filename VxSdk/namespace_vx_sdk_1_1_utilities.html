@@ -107,6 +107,8 @@ $(document).ready(function(){initNavTree('namespace_vx_sdk_1_1_utilities.html','
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">VxSdk::Utilities Namespace Reference</div>  </div>
 </div><!--header-->
@@ -114,9 +116,132 @@ $(document).ready(function(){initNavTree('namespace_vx_sdk_1_1_utilities.html','
 
 <p>Provides commonly used methods.  
 <a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a11cbdb435aa92ea160aad373da6a32db"><td class="memTemplParams" colspan="2">template&lt;size_t dstSize&gt; </td></tr>
+<tr class="memitem:a11cbdb435aa92ea160aad373da6a32db"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">StrCopySafe</a> (char(&amp;dst)[dstSize], const char *src)</td></tr>
+<tr class="memdesc:a11cbdb435aa92ea160aad373da6a32db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a safe string copy.  <a href="#a11cbdb435aa92ea160aad373da6a32db">More...</a><br /></td></tr>
+<tr class="separator:a11cbdb435aa92ea160aad373da6a32db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e4537f935028e0892d543dd9328e2e0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vx_sdk_1_1_utilities.html#a7e4537f935028e0892d543dd9328e2e0">StrCopySafe</a> (char *dst, const char *src, int dstSize)</td></tr>
+<tr class="memdesc:a7e4537f935028e0892d543dd9328e2e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a safe string copy.  <a href="#a7e4537f935028e0892d543dd9328e2e0">More...</a><br /></td></tr>
+<tr class="separator:a7e4537f935028e0892d543dd9328e2e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides commonly used methods. </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a11cbdb435aa92ea160aad373da6a32db"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t dstSize&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void VxSdk::Utilities::StrCopySafe </td>
+          <td>(</td>
+          <td class="paramtype">char(&amp;)&#160;</td>
+          <td class="paramname"><em>dst</em>[dstSize], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>src</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Performs a safe string copy. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dst</td><td>The destination.</td></tr>
+    <tr><td class="paramname">src</td><td>The source.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_vx_utilities_8h_source.html#l00015">15</a> of file <a class="el" href="_vx_utilities_8h_source.html">VxUtilities.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                                                                      {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            <span class="keywordflow">if</span> (src) {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                strncpy_s(dst, dstSize, src, dstSize - 1);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                dst[dstSize - 1] = 0;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            }</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a7e4537f935028e0892d543dd9328e2e0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void VxSdk::Utilities::StrCopySafe </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dstSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Performs a safe string copy. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dst</td><td>The destination.</td></tr>
+    <tr><td class="paramname">src</td><td>The source.</td></tr>
+    <tr><td class="paramname">dstSize</td><td>The size of <em>dst</em> .</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_vx_utilities_8h_source.html#l00028">28</a> of file <a class="el" href="_vx_utilities_8h_source.html">VxUtilities.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                                                                         {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keywordflow">if</span> (dst &amp;&amp; src &amp;&amp; dstSize &gt; 0) {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                strncpy_s(dst, dstSize, src, dstSize - 1);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                dst[dstSize - 1] = 0;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>C++/CLI Sample: Include/Utils.h Source File</title>
+<title>C++/CLI Sample: C:/Users/Zach/Git/vxsdk/Samples/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/Utils.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('_utils_8h_source.html','');});
 <div class="title">Utils.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Declares the utilities class.</span></div>
+<a href="_utils_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Declares the utilities class.</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef Utils_h__</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define Utils_h__</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('_utils_8h_source.html','');});
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_c_p_p_cli_1_1_utils.html">   53</a></span>&#160;    <span class="keyword">private</span> <span class="keyword">class </span><a class="code" href="class_c_p_p_cli_1_1_utils.html">Utils</a> {</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* GetDateFormat() { <span class="keywordflow">return</span> <span class="stringliteral">&quot;yyyy-MM-dd&#39;T&#39;HH:mm:ss.fff&#39;Z&#39;&quot;</span>; }</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_c_p_p_cli_1_1_utils.html#a8338f12ca753f53791ea9906f76d4fe6">   55</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="class_c_p_p_cli_1_1_utils.html#a8338f12ca753f53791ea9906f76d4fe6">GetDateFormat</a>() { <span class="keywordflow">return</span> <span class="stringliteral">&quot;yyyy-MM-dd&#39;T&#39;HH:mm:ss.fff&#39;Z&#39;&quot;</span>; }</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
 <div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2">   62</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2">ConvertSysString</a>(System::String^ sysString) {</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            msclr::interop::marshal_context^ ctx = <span class="keyword">gcnew</span> msclr::interop::marshal_context();</div>
@@ -159,7 +159,7 @@ $(document).ready(function(){initNavTree('_utils_8h_source.html','');});
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
 <div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="class_c_p_p_cli_1_1_utils.html#ad35ae4b3763298547bffaa8e6cf150f6">   82</a></span>&#160;        <span class="keyword">static</span> System::DateTime <a class="code" href="class_c_p_p_cli_1_1_utils.html#ad35ae4b3763298547bffaa8e6cf150f6">ConvertCharToDateTime</a>(<span class="keywordtype">char</span>* dateTimeString) {</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            System::String^ value = <span class="keyword">gcnew</span> System::String(dateTimeString);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            System::String^ format = <span class="keyword">gcnew</span> System::String(GetDateFormat());</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            System::String^ format = <span class="keyword">gcnew</span> System::String(<a class="code" href="class_c_p_p_cli_1_1_utils.html#a8338f12ca753f53791ea9906f76d4fe6">GetDateFormat</a>());</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordflow">if</span> (value == System::String::Empty)</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                <span class="keywordflow">return</span> System::DateTime();</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
@@ -167,7 +167,7 @@ $(document).ready(function(){initNavTree('_utils_8h_source.html','');});
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        }</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
 <div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="class_c_p_p_cli_1_1_utils.html#a07aeac4d8bb768bb49b3072b1133b914">   96</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="class_c_p_p_cli_1_1_utils.html#a07aeac4d8bb768bb49b3072b1133b914">ConvertDateTimeToChar</a>(System::DateTime dateTime) {</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            System::String^ timeString = dateTime.ToString(<span class="keyword">gcnew</span> System::String(GetDateFormat()));</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            System::String^ timeString = dateTime.ToString(<span class="keyword">gcnew</span> System::String(<a class="code" href="class_c_p_p_cli_1_1_utils.html#a8338f12ca753f53791ea9906f76d4fe6">GetDateFormat</a>()));</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            msclr::interop::marshal_context^ ctx = <span class="keyword">gcnew</span> msclr::interop::marshal_context();</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <span class="keywordflow">return</span> ctx-&gt;marshal_as&lt;<span class="keyword">const</span> <span class="keywordtype">char</span>*&gt;(timeString);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        }</div>
@@ -182,6 +182,7 @@ $(document).ready(function(){initNavTree('_utils_8h_source.html','');});
 <div class="ttc" id="class_c_p_p_cli_1_1_results_html_a12504aac644d00e0532be43063a970caadb3f55cd913a0331acdfa5fa1da8323a"><div class="ttname"><a href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970caadb3f55cd913a0331acdfa5fa1da8323a">CPPCli::Results::Value::CommunicationError</a></div><div class="ttdoc">There was an error communicating to the device.</div></div>
 <div class="ttc" id="class_c_p_p_cli_1_1_results_html_a12504aac644d00e0532be43063a970caa0011e5adf86cf2b7dbc981fa5124af1b"><div class="ttname"><a href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970caa0011e5adf86cf2b7dbc981fa5124af1b">CPPCli::Results::Value::InvalidKey</a></div><div class="ttdoc">The key used to initialize the SDK was invalid.</div></div>
 <div class="ttc" id="class_c_p_p_cli_1_1_results_html_a12504aac644d00e0532be43063a970caa812bdf85b54f88ae21885f00d2be746f"><div class="ttname"><a href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970caa812bdf85b54f88ae21885f00d2be746f">CPPCli::Results::Value::InvalidLoginInfo</a></div><div class="ttdoc">The login credentials were invalid.</div></div>
+<div class="ttc" id="class_c_p_p_cli_1_1_utils_html_a8338f12ca753f53791ea9906f76d4fe6"><div class="ttname"><a href="class_c_p_p_cli_1_1_utils.html#a8338f12ca753f53791ea9906f76d4fe6">CPPCli::Utils::GetDateFormat</a></div><div class="ttdeci">static const char * GetDateFormat()</div><div class="ttdef"><b>Definition:</b> <a href="_utils_8h_source.html#l00055">Utils.h:55</a></div></div>
 <div class="ttc" id="class_c_p_p_cli_1_1_results_html_a12504aac644d00e0532be43063a970caac87f7496cbb27b7ef44dc4766c4e7c2d"><div class="ttname"><a href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970caac87f7496cbb27b7ef44dc4766c4e7c2d">CPPCli::Results::Value::InsufficientSize</a></div><div class="ttdoc">The size value was not sufficient enough to allocate the collection.</div></div>
 <div class="ttc" id="class_c_p_p_cli_1_1_results_html_a12504aac644d00e0532be43063a970caabfaef30f1c8011c5cefa38ae470fb7aa"><div class="ttname"><a href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970caabfaef30f1c8011c5cefa38ae470fb7aa">CPPCli::Results::Value::UnknownError</a></div><div class="ttdoc">An error or unknown value was returned.</div></div>
 <div class="ttc" id="class_c_p_p_cli_1_1_utils_html_a07aeac4d8bb768bb49b3072b1133b914"><div class="ttname"><a href="class_c_p_p_cli_1_1_utils.html#a07aeac4d8bb768bb49b3072b1133b914">CPPCli::Utils::ConvertDateTimeToChar</a></div><div class="ttdeci">static const char * ConvertDateTimeToChar(System::DateTime dateTime)</div><div class="ttdoc">Convert a DateTime to a char. </div><div class="ttdef"><b>Definition:</b> <a href="_utils_8h_source.html#l00096">Utils.h:96</a></div></div>
@@ -196,7 +197,7 @@ $(document).ready(function(){initNavTree('_utils_8h_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_856524284ebe840938865dc061f982fb.html">Include</a></li><li class="navelem"><b>Utils.h</b></li>
+    <li class="navelem"><a class="el" href="dir_6f2bbc259acbf2c00bc5315c0044b8e4.html">vxsdk</a></li><li class="navelem"><a class="el" href="dir_4b6f63d7a9a5c451ae872abad24d55ab.html">Samples</a></li><li class="navelem"><a class="el" href="dir_aaf608bdbff9050509eeedf0760b46a9.html">VxSDK-Samples</a></li><li class="navelem"><a class="el" href="dir_a917c4225faed50e0e03aeacd1dcd100.html">CSharpSample</a></li><li class="navelem"><a class="el" href="dir_2ac31aa99ba9034f710531bc3f32ad40.html">CSharpWrapper</a></li><li class="navelem"><a class="el" href="dir_04bc032241c69693d170c28261ec468b.html">Include</a></li><li class="navelem"><a class="el" href="_utils_8h.html">Utils.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>

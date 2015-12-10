@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['enums',['Enums',['../namespace_s_d_k_sample_app_1_1_enums.html',1,'SDKSampleApp']]],
-  ['sdksampleapp',['SDKSampleApp',['../namespace_s_d_k_sample_app.html',1,'']]],
-  ['source',['Source',['../namespace_s_d_k_sample_app_1_1_source.html',1,'SDKSampleApp']]]
+  ['cppcli',['CPPCli',['../../CSharpWrapper/namespace_c_p_p_cli.html',1,'']]]
 ];

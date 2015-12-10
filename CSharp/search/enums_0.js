@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['controls',['Controls',['../class_s_d_k_sample_app_1_1_source_1_1_control_manager.html#aff2e02e90bba71a385692fb9c7c351f4',1,'SDKSampleApp::Source::ControlManager']]]
+  ['ackstates',['AckStates',['../../CSharpWrapper/class_c_p_p_cli_1_1_event.html#a797f0b21d1589554490662f51e3ae615',1,'CPPCli::Event']]]
 ];

@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['vxsystem',['VXSystem',['../class_c_p_p_cli_1_1_v_x_system.html',1,'CPPCli']]]
+  ['pattern',['Pattern',['../class_c_p_p_cli_1_1_pattern.html',1,'CPPCli']]],
+  ['pausedstate',['PausedState',['../../MediaController/class_media_controller_1_1_paused_state.html',1,'MediaController']]],
+  ['playingstate',['PlayingState',['../../MediaController/class_media_controller_1_1_playing_state.html',1,'MediaController']]],
+  ['preset',['Preset',['../class_c_p_p_cli_1_1_preset.html',1,'CPPCli']]],
+  ['ptzcontroller',['PtzController',['../class_c_p_p_cli_1_1_ptz_controller.html',1,'CPPCli']]]
 ];

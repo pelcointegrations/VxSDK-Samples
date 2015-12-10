@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['ttl',['ttl',['../struct_media_controller_1_1_rtsp_1_1_media_description.html#adbffec85b614ef6dbda157e1ae9c77b5',1,'MediaController::Rtsp::MediaDescription']]],
-  ['type',['type',['../struct_media_controller_1_1_rtsp_1_1_media_description.html#afa38c6554a0e5feb0918662e248e2be3',1,'MediaController::Rtsp::MediaDescription']]]
+  ['lasttimestamp',['lastTimestamp',['../struct_media_controller_1_1_gst_vars.html#ad664aa7cdd3f7e40b6aa21a2d254fd7e',1,'MediaController::GstVars']]],
+  ['lockexpiretime',['lockExpireTime',['../../VxSdk/struct_vx_sdk_1_1_i_vx_ptz_controller.html#af2519138541a43f9ae4d6af2c5bb6f6b',1,'VxSdk::IVxPtzController']]]
 ];

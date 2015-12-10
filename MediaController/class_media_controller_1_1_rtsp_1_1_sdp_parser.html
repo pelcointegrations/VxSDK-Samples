@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>Media Controller Sample: MediaController::Rtsp::SdpParser Class Reference</title>
+<title>Media Controller: MediaController::Rtsp::SdpParser Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Media Controller Sample
+   <div id="projectname">Media Controller
    </div>
    <div id="projectbrief">A GStreamer implementation using the VideoXpert SDK</div>
   </td>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -75,7 +74,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -111,6 +110,7 @@ $(document).ready(function(){initNavTree('class_media_controller_1_1_rtsp_1_1_sd
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_media_controller_1_1_rtsp_1_1_sdp_parser-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">MediaController::Rtsp::SdpParser Class Reference</div>  </div>
@@ -139,6 +139,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab4aa75f1b1c3977d829037e2a8479afe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_rtsp_1_1_sdp_parser.html#ab4aa75f1b1c3977d829037e2a8479afe">Parse</a> (const std::string &amp;sdp)</td></tr>
 <tr class="memdesc:ab4aa75f1b1c3977d829037e2a8479afe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a raw SDP packet string.  <a href="#ab4aa75f1b1c3977d829037e2a8479afe">More...</a><br /></td></tr>
 <tr class="separator:ab4aa75f1b1c3977d829037e2a8479afe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a6794260c52525bde03e761f6125d4705"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="struct_media_controller_1_1_rtsp_1_1_media_description.html">MediaDescription</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_rtsp_1_1_sdp_parser.html#a6794260c52525bde03e761f6125d4705">_mediaDescriptions</a></td></tr>
+<tr class="separator:a6794260c52525bde03e761f6125d4705"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Parses the SDP packets sent from an RTSP source. </p>
@@ -204,28 +209,18 @@ Public Member Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_rtsp_sdp_parser_8cpp_source.html#l00051">51</a> of file <a class="el" href="_rtsp_sdp_parser_8cpp_source.html">RtspSdpParser.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                                 {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; _mediaDescriptions.size(); i++) {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">const</span> <a class="code" href="struct_media_controller_1_1_rtsp_1_1_media_description.html">MediaDescription</a>&amp; md = _mediaDescriptions[i];</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="class_media_controller_1_1_rtsp_1_1_sdp_parser.html#a6794260c52525bde03e761f6125d4705">_mediaDescriptions</a>.size(); i++) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">const</span> <a class="code" href="struct_media_controller_1_1_rtsp_1_1_media_description.html">MediaDescription</a>&amp; md = <a class="code" href="class_media_controller_1_1_rtsp_1_1_sdp_parser.html#a6794260c52525bde03e761f6125d4705">_mediaDescriptions</a>[i];</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">if</span> (md.<a class="code" href="struct_media_controller_1_1_rtsp_1_1_media_description.html#afa38c6554a0e5feb0918662e248e2be3">type</a> == <span class="stringliteral">&quot;video&quot;</span>)</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="keywordflow">return</span> md;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> EmptyMediaDescription;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="_rtsp_sdp_parser_8cpp.html#a24f157e67c30513e994687698f38b140">EmptyMediaDescription</a>;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<div class="ttc" id="class_media_controller_1_1_rtsp_1_1_sdp_parser_html_a6794260c52525bde03e761f6125d4705"><div class="ttname"><a href="class_media_controller_1_1_rtsp_1_1_sdp_parser.html#a6794260c52525bde03e761f6125d4705">MediaController::Rtsp::SdpParser::_mediaDescriptions</a></div><div class="ttdeci">std::vector&lt; MediaDescription &gt; _mediaDescriptions</div><div class="ttdef"><b>Definition:</b> <a href="_rtsp_sdp_parser_8h_source.html#l00045">RtspSdpParser.h:45</a></div></div>
+<div class="ttc" id="_rtsp_sdp_parser_8cpp_html_a24f157e67c30513e994687698f38b140"><div class="ttname"><a href="_rtsp_sdp_parser_8cpp.html#a24f157e67c30513e994687698f38b140">EmptyMediaDescription</a></div><div class="ttdeci">static const MediaDescription EmptyMediaDescription</div><div class="ttdef"><b>Definition:</b> <a href="_rtsp_sdp_parser_8cpp_source.html#l00008">RtspSdpParser.cpp:8</a></div></div>
 <div class="ttc" id="struct_media_controller_1_1_rtsp_1_1_media_description_html"><div class="ttname"><a href="struct_media_controller_1_1_rtsp_1_1_media_description.html">MediaController::Rtsp::MediaDescription</a></div><div class="ttdoc">The parsed media information from an SDP packet. </div><div class="ttdef"><b>Definition:</b> <a href="_rtsp_media_description_8h_source.html#l00010">RtspMediaDescription.h:10</a></div></div>
 <div class="ttc" id="struct_media_controller_1_1_rtsp_1_1_media_description_html_afa38c6554a0e5feb0918662e248e2be3"><div class="ttname"><a href="struct_media_controller_1_1_rtsp_1_1_media_description.html#afa38c6554a0e5feb0918662e248e2be3">MediaController::Rtsp::MediaDescription::type</a></div><div class="ttdeci">std::string type</div><div class="ttdoc">The type of media. </div><div class="ttdef"><b>Definition:</b> <a href="_rtsp_media_description_8h_source.html#l00030">RtspMediaDescription.h:30</a></div></div>
 </div><!-- fragment -->
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_media_controller_1_1_rtsp_1_1_sdp_parser_a451b0af69cb552a7bada46ac19a1b2e2_icgraph.png" border="0" usemap="#class_media_controller_1_1_rtsp_1_1_sdp_parser_a451b0af69cb552a7bada46ac19a1b2e2_icgraph" alt=""/></div>
-<map name="class_media_controller_1_1_rtsp_1_1_sdp_parser_a451b0af69cb552a7bada46ac19a1b2e2_icgraph" id="class_media_controller_1_1_rtsp_1_1_sdp_parser_a451b0af69cb552a7bada46ac19a1b2e2_icgraph">
-<area shape="rect" id="node2" href="class_media_controller_1_1_rtsp_1_1_commands.html#a5498da92caf636c4b4a5033a9eda5d73" title="Send the DESCRIBE method and read the server response. " alt="" coords="232,39,387,80"/>
-<area shape="rect" id="node3" href="class_media_controller_1_1_rtsp_1_1_commands.html#a6336294ea2e2d214f3a9d1b494e4aa07" title="Send the PLAY method and read the server response. " alt="" coords="441,5,588,47"/>
-<area shape="rect" id="node4" href="class_media_controller_1_1_rtsp_1_1_commands.html#aca7fdcac23d14e5b9aebafb598d2002e" title="Send the PLAY method with a Range header and read the server response. " alt="" coords="435,71,595,112"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="abccfefa3ce039a491fe40c1c1e4f25e0"></a>
@@ -246,8 +241,9 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="_rtsp_sdp_parser_8cpp_source.html#l00018">18</a> of file <a class="el" href="_rtsp_sdp_parser_8cpp_source.html">RtspSdpParser.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                                                                {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">return</span> this-&gt;_mediaDescriptions;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_media_controller_1_1_rtsp_1_1_sdp_parser.html#a6794260c52525bde03e761f6125d4705">_mediaDescriptions</a>;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
+<div class="ttc" id="class_media_controller_1_1_rtsp_1_1_sdp_parser_html_a6794260c52525bde03e761f6125d4705"><div class="ttname"><a href="class_media_controller_1_1_rtsp_1_1_sdp_parser.html#a6794260c52525bde03e761f6125d4705">MediaController::Rtsp::SdpParser::_mediaDescriptions</a></div><div class="ttdeci">std::vector&lt; MediaDescription &gt; _mediaDescriptions</div><div class="ttdef"><b>Definition:</b> <a href="_rtsp_sdp_parser_8h_source.html#l00045">RtspSdpParser.h:45</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -275,7 +271,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="_rtsp_sdp_parser_8cpp_source.html#l00022">22</a> of file <a class="el" href="_rtsp_sdp_parser_8cpp_source.html">RtspSdpParser.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                                       {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    this-&gt;_mediaDescriptions.clear();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    this-&gt;<a class="code" href="class_media_controller_1_1_rtsp_1_1_sdp_parser.html#a6794260c52525bde03e761f6125d4705">_mediaDescriptions</a>.clear();</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    stringstream sdpStream(sdp);</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">string</span> line;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
@@ -284,52 +280,68 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="comment">// Check if the current line is the start a new media stream description.</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordflow">if</span> (line.substr(0, 2) == <span class="stringliteral">&quot;m=&quot;</span>) {</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <span class="keywordflow">if</span> (!media.<a class="code" href="struct_media_controller_1_1_rtsp_1_1_media_description.html#afa38c6554a0e5feb0918662e248e2be3">type</a>.empty()) {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                this-&gt;_mediaDescriptions.push_back(media);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                media = EmptyMediaDescription;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                this-&gt;<a class="code" href="class_media_controller_1_1_rtsp_1_1_sdp_parser.html#a6794260c52525bde03e761f6125d4705">_mediaDescriptions</a>.push_back(media);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                media = <a class="code" href="_rtsp_sdp_parser_8cpp.html#a24f157e67c30513e994687698f38b140">EmptyMediaDescription</a>;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            }</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            ParseMediaDescription(line, media.<a class="code" href="struct_media_controller_1_1_rtsp_1_1_media_description.html#afa38c6554a0e5feb0918662e248e2be3">type</a>, media.<a class="code" href="struct_media_controller_1_1_rtsp_1_1_media_description.html#a989503e70a6550b7a8a4c3ed8ee57384">port</a>, media.<a class="code" href="struct_media_controller_1_1_rtsp_1_1_media_description.html#af92d8a395be9b8b24c3f2b7ac64692dd">protocol</a>, media.<a class="code" href="struct_media_controller_1_1_rtsp_1_1_media_description.html#ac817edfc0aa2c9e5a13c121297fa3afd">payload</a>);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <a class="code" href="_rtsp_sdp_parser_8cpp.html#a72d11a65f23deed49681e2c247562582">ParseMediaDescription</a>(line, media.<a class="code" href="struct_media_controller_1_1_rtsp_1_1_media_description.html#afa38c6554a0e5feb0918662e248e2be3">type</a>, media.<a class="code" href="struct_media_controller_1_1_rtsp_1_1_media_description.html#a989503e70a6550b7a8a4c3ed8ee57384">port</a>, media.<a class="code" href="struct_media_controller_1_1_rtsp_1_1_media_description.html#af92d8a395be9b8b24c3f2b7ac64692dd">protocol</a>, media.<a class="code" href="struct_media_controller_1_1_rtsp_1_1_media_description.html#ac817edfc0aa2c9e5a13c121297fa3afd">payload</a>);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        }</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!media.<a class="code" href="struct_media_controller_1_1_rtsp_1_1_media_description.html#afa38c6554a0e5feb0918662e248e2be3">type</a>.empty()) {</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="comment">// If the line contains the connection information, parse it.</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="keywordflow">if</span> (line.substr(0, 2) == <span class="stringliteral">&quot;c=&quot;</span>)</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                ParseConnectionInformation(line, media.<a class="code" href="struct_media_controller_1_1_rtsp_1_1_media_description.html#a7eb00a6c4eb242c9a03c77b08683ece7">ip</a>, media.<a class="code" href="struct_media_controller_1_1_rtsp_1_1_media_description.html#adbffec85b614ef6dbda157e1ae9c77b5">ttl</a>, media.<a class="code" href="struct_media_controller_1_1_rtsp_1_1_media_description.html#a7cbfebff925e155b562f1c9232119cb0">isMulticast</a>);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                <a class="code" href="_rtsp_sdp_parser_8cpp.html#a13981954bfc3e778b6ebe12aef9c5236">ParseConnectionInformation</a>(line, media.<a class="code" href="struct_media_controller_1_1_rtsp_1_1_media_description.html#a7eb00a6c4eb242c9a03c77b08683ece7">ip</a>, media.<a class="code" href="struct_media_controller_1_1_rtsp_1_1_media_description.html#adbffec85b614ef6dbda157e1ae9c77b5">ttl</a>, media.<a class="code" href="struct_media_controller_1_1_rtsp_1_1_media_description.html#a7cbfebff925e155b562f1c9232119cb0">isMulticast</a>);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="comment">// If the line contains the RTP map, parse it.</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (line.substr(0, 9) == <span class="stringliteral">&quot;a=rtpmap:&quot;</span>)</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                ParseRtpMap(line, media.<a class="code" href="struct_media_controller_1_1_rtsp_1_1_media_description.html#ac817edfc0aa2c9e5a13c121297fa3afd">payload</a>, media.<a class="code" href="struct_media_controller_1_1_rtsp_1_1_media_description.html#a19845be452979f69d76b4f5edf290333">encoding</a>, media.<a class="code" href="struct_media_controller_1_1_rtsp_1_1_media_description.html#aa051c4ed2a3bf0e94f01872358009bb0">rate</a>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                <a class="code" href="_rtsp_sdp_parser_8cpp.html#a4f36c1c0813fdd3f31bbace75d2ad9fb">ParseRtpMap</a>(line, media.<a class="code" href="struct_media_controller_1_1_rtsp_1_1_media_description.html#ac817edfc0aa2c9e5a13c121297fa3afd">payload</a>, media.<a class="code" href="struct_media_controller_1_1_rtsp_1_1_media_description.html#a19845be452979f69d76b4f5edf290333">encoding</a>, media.<a class="code" href="struct_media_controller_1_1_rtsp_1_1_media_description.html#aa051c4ed2a3bf0e94f01872358009bb0">rate</a>);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        }</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">if</span> (!media.<a class="code" href="struct_media_controller_1_1_rtsp_1_1_media_description.html#afa38c6554a0e5feb0918662e248e2be3">type</a>.empty())</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        this-&gt;_mediaDescriptions.push_back(media);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        this-&gt;<a class="code" href="class_media_controller_1_1_rtsp_1_1_sdp_parser.html#a6794260c52525bde03e761f6125d4705">_mediaDescriptions</a>.push_back(media);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<div class="ttc" id="class_media_controller_1_1_rtsp_1_1_sdp_parser_html_a6794260c52525bde03e761f6125d4705"><div class="ttname"><a href="class_media_controller_1_1_rtsp_1_1_sdp_parser.html#a6794260c52525bde03e761f6125d4705">MediaController::Rtsp::SdpParser::_mediaDescriptions</a></div><div class="ttdeci">std::vector&lt; MediaDescription &gt; _mediaDescriptions</div><div class="ttdef"><b>Definition:</b> <a href="_rtsp_sdp_parser_8h_source.html#l00045">RtspSdpParser.h:45</a></div></div>
+<div class="ttc" id="_rtsp_sdp_parser_8cpp_html_a24f157e67c30513e994687698f38b140"><div class="ttname"><a href="_rtsp_sdp_parser_8cpp.html#a24f157e67c30513e994687698f38b140">EmptyMediaDescription</a></div><div class="ttdeci">static const MediaDescription EmptyMediaDescription</div><div class="ttdef"><b>Definition:</b> <a href="_rtsp_sdp_parser_8cpp_source.html#l00008">RtspSdpParser.cpp:8</a></div></div>
 <div class="ttc" id="struct_media_controller_1_1_rtsp_1_1_media_description_html_af92d8a395be9b8b24c3f2b7ac64692dd"><div class="ttname"><a href="struct_media_controller_1_1_rtsp_1_1_media_description.html#af92d8a395be9b8b24c3f2b7ac64692dd">MediaController::Rtsp::MediaDescription::protocol</a></div><div class="ttdeci">std::string protocol</div><div class="ttdoc">The transport protocol. </div><div class="ttdef"><b>Definition:</b> <a href="_rtsp_media_description_8h_source.html#l00040">RtspMediaDescription.h:40</a></div></div>
 <div class="ttc" id="struct_media_controller_1_1_rtsp_1_1_media_description_html_adbffec85b614ef6dbda157e1ae9c77b5"><div class="ttname"><a href="struct_media_controller_1_1_rtsp_1_1_media_description.html#adbffec85b614ef6dbda157e1ae9c77b5">MediaController::Rtsp::MediaDescription::ttl</a></div><div class="ttdeci">unsigned short ttl</div><div class="ttdoc">The time to live (TTL) value. </div><div class="ttdef"><b>Definition:</b> <a href="_rtsp_media_description_8h_source.html#l00055">RtspMediaDescription.h:55</a></div></div>
 <div class="ttc" id="struct_media_controller_1_1_rtsp_1_1_media_description_html_ac817edfc0aa2c9e5a13c121297fa3afd"><div class="ttname"><a href="struct_media_controller_1_1_rtsp_1_1_media_description.html#ac817edfc0aa2c9e5a13c121297fa3afd">MediaController::Rtsp::MediaDescription::payload</a></div><div class="ttdeci">unsigned short payload</div><div class="ttdoc">RTP payload type number. </div><div class="ttdef"><b>Definition:</b> <a href="_rtsp_media_description_8h_source.html#l00045">RtspMediaDescription.h:45</a></div></div>
 <div class="ttc" id="struct_media_controller_1_1_rtsp_1_1_media_description_html_a7eb00a6c4eb242c9a03c77b08683ece7"><div class="ttname"><a href="struct_media_controller_1_1_rtsp_1_1_media_description.html#a7eb00a6c4eb242c9a03c77b08683ece7">MediaController::Rtsp::MediaDescription::ip</a></div><div class="ttdeci">std::string ip</div><div class="ttdoc">The address for media. </div><div class="ttdef"><b>Definition:</b> <a href="_rtsp_media_description_8h_source.html#l00050">RtspMediaDescription.h:50</a></div></div>
+<div class="ttc" id="_rtsp_sdp_parser_8cpp_html_a72d11a65f23deed49681e2c247562582"><div class="ttname"><a href="_rtsp_sdp_parser_8cpp.html#a72d11a65f23deed49681e2c247562582">ParseMediaDescription</a></div><div class="ttdeci">void ParseMediaDescription(const string &amp;line, string &amp;media, unsigned short &amp;port, string &amp;protocol, unsigned short &amp;payload)</div><div class="ttdef"><b>Definition:</b> <a href="_rtsp_sdp_parser_8cpp_source.html#l00060">RtspSdpParser.cpp:60</a></div></div>
+<div class="ttc" id="_rtsp_sdp_parser_8cpp_html_a4f36c1c0813fdd3f31bbace75d2ad9fb"><div class="ttname"><a href="_rtsp_sdp_parser_8cpp.html#a4f36c1c0813fdd3f31bbace75d2ad9fb">ParseRtpMap</a></div><div class="ttdeci">void ParseRtpMap(const string &amp;line, const unsigned short payload, string &amp;encoding, unsigned int &amp;rate)</div><div class="ttdef"><b>Definition:</b> <a href="_rtsp_sdp_parser_8cpp_source.html#l00092">RtspSdpParser.cpp:92</a></div></div>
 <div class="ttc" id="struct_media_controller_1_1_rtsp_1_1_media_description_html"><div class="ttname"><a href="struct_media_controller_1_1_rtsp_1_1_media_description.html">MediaController::Rtsp::MediaDescription</a></div><div class="ttdoc">The parsed media information from an SDP packet. </div><div class="ttdef"><b>Definition:</b> <a href="_rtsp_media_description_8h_source.html#l00010">RtspMediaDescription.h:10</a></div></div>
 <div class="ttc" id="struct_media_controller_1_1_rtsp_1_1_media_description_html_a989503e70a6550b7a8a4c3ed8ee57384"><div class="ttname"><a href="struct_media_controller_1_1_rtsp_1_1_media_description.html#a989503e70a6550b7a8a4c3ed8ee57384">MediaController::Rtsp::MediaDescription::port</a></div><div class="ttdeci">unsigned short port</div><div class="ttdoc">The transport port for media. </div><div class="ttdef"><b>Definition:</b> <a href="_rtsp_media_description_8h_source.html#l00035">RtspMediaDescription.h:35</a></div></div>
 <div class="ttc" id="struct_media_controller_1_1_rtsp_1_1_media_description_html_aa051c4ed2a3bf0e94f01872358009bb0"><div class="ttname"><a href="struct_media_controller_1_1_rtsp_1_1_media_description.html#aa051c4ed2a3bf0e94f01872358009bb0">MediaController::Rtsp::MediaDescription::rate</a></div><div class="ttdeci">unsigned int rate</div><div class="ttdoc">The stream clock rate. </div><div class="ttdef"><b>Definition:</b> <a href="_rtsp_media_description_8h_source.html#l00065">RtspMediaDescription.h:65</a></div></div>
 <div class="ttc" id="struct_media_controller_1_1_rtsp_1_1_media_description_html_a7cbfebff925e155b562f1c9232119cb0"><div class="ttname"><a href="struct_media_controller_1_1_rtsp_1_1_media_description.html#a7cbfebff925e155b562f1c9232119cb0">MediaController::Rtsp::MediaDescription::isMulticast</a></div><div class="ttdeci">bool isMulticast</div><div class="ttdoc">Specifies whether the transport type is multicast or unicast. </div><div class="ttdef"><b>Definition:</b> <a href="_rtsp_media_description_8h_source.html#l00070">RtspMediaDescription.h:70</a></div></div>
 <div class="ttc" id="struct_media_controller_1_1_rtsp_1_1_media_description_html_afa38c6554a0e5feb0918662e248e2be3"><div class="ttname"><a href="struct_media_controller_1_1_rtsp_1_1_media_description.html#afa38c6554a0e5feb0918662e248e2be3">MediaController::Rtsp::MediaDescription::type</a></div><div class="ttdeci">std::string type</div><div class="ttdoc">The type of media. </div><div class="ttdef"><b>Definition:</b> <a href="_rtsp_media_description_8h_source.html#l00030">RtspMediaDescription.h:30</a></div></div>
 <div class="ttc" id="struct_media_controller_1_1_rtsp_1_1_media_description_html_a19845be452979f69d76b4f5edf290333"><div class="ttname"><a href="struct_media_controller_1_1_rtsp_1_1_media_description.html#a19845be452979f69d76b4f5edf290333">MediaController::Rtsp::MediaDescription::encoding</a></div><div class="ttdeci">std::string encoding</div><div class="ttdoc">The encoding name denoting the payload format to be used. </div><div class="ttdef"><b>Definition:</b> <a href="_rtsp_media_description_8h_source.html#l00060">RtspMediaDescription.h:60</a></div></div>
+<div class="ttc" id="_rtsp_sdp_parser_8cpp_html_a13981954bfc3e778b6ebe12aef9c5236"><div class="ttname"><a href="_rtsp_sdp_parser_8cpp.html#a13981954bfc3e778b6ebe12aef9c5236">ParseConnectionInformation</a></div><div class="ttdeci">void ParseConnectionInformation(const string &amp;line, string &amp;ip, unsigned short &amp;ttl, bool &amp;isMulticast)</div><div class="ttdef"><b>Definition:</b> <a href="_rtsp_sdp_parser_8cpp_source.html#l00073">RtspSdpParser.cpp:73</a></div></div>
 </div><!-- fragment -->
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_media_controller_1_1_rtsp_1_1_sdp_parser_ab4aa75f1b1c3977d829037e2a8479afe_icgraph.png" border="0" usemap="#class_media_controller_1_1_rtsp_1_1_sdp_parser_ab4aa75f1b1c3977d829037e2a8479afe_icgraph" alt=""/></div>
-<map name="class_media_controller_1_1_rtsp_1_1_sdp_parser_ab4aa75f1b1c3977d829037e2a8479afe_icgraph" id="class_media_controller_1_1_rtsp_1_1_sdp_parser_ab4aa75f1b1c3977d829037e2a8479afe_icgraph">
-<area shape="rect" id="node2" href="class_media_controller_1_1_rtsp_1_1_commands.html#a5498da92caf636c4b4a5033a9eda5d73" title="Send the DESCRIBE method and read the server response. " alt="" coords="200,39,355,80"/>
-<area shape="rect" id="node3" href="class_media_controller_1_1_rtsp_1_1_commands.html#a6336294ea2e2d214f3a9d1b494e4aa07" title="Send the PLAY method and read the server response. " alt="" coords="409,5,556,47"/>
-<area shape="rect" id="node4" href="class_media_controller_1_1_rtsp_1_1_commands.html#aca7fdcac23d14e5b9aebafb598d2002e" title="Send the PLAY method with a Range header and read the server response. " alt="" coords="403,71,563,112"/>
-</map>
 </div>
-</p>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a6794260c52525bde03e761f6125d4705"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="struct_media_controller_1_1_rtsp_1_1_media_description.html">MediaDescription</a>&gt; MediaController::Rtsp::SdpParser::_mediaDescriptions</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_rtsp_sdp_parser_8h_source.html#l00045">45</a> of file <a class="el" href="_rtsp_sdp_parser_8h_source.html">RtspSdpParser.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>Source/<a class="el" href="_rtsp_sdp_parser_8h_source.html">RtspSdpParser.h</a></li>
-<li>Source/<a class="el" href="_rtsp_sdp_parser_8cpp_source.html">RtspSdpParser.cpp</a></li>
+<li>C:/Users/Zach/Git/vxsdk/Samples/VxSDK-Samples/MediaController/Include/<a class="el" href="_rtsp_sdp_parser_8h_source.html">RtspSdpParser.h</a></li>
+<li>C:/Users/Zach/Git/vxsdk/Samples/VxSDK-Samples/MediaController/Source/<a class="el" href="_rtsp_sdp_parser_8cpp_source.html">RtspSdpParser.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

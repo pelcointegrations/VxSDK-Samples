@@ -33,6 +33,7 @@ var class_c_p_p_cli_1_1_ptz_controller =
     [ "Stop", "class_c_p_p_cli_1_1_ptz_controller.html#a1dc7b3426cb6593986a62017dd82409e", null ],
     [ "TriggerPattern", "class_c_p_p_cli_1_1_ptz_controller.html#ac7bfd6bdd351fcdb92a766d01ca83bb3", null ],
     [ "TriggerPreset", "class_c_p_p_cli_1_1_ptz_controller.html#a73653af661e81a06eb642dd3d15bec74", null ],
+    [ "_ptzController", "class_c_p_p_cli_1_1_ptz_controller.html#a36b587c4903af353516c7e2c264d542f", null ],
     [ "IsLocked", "class_c_p_p_cli_1_1_ptz_controller.html#a7c91426d4b462e5c4cc3e7e51029ae3e", null ],
     [ "LockExpireTime", "class_c_p_p_cli_1_1_ptz_controller.html#a5861cd67b05678c1e23bd39fd0a6db35", null ],
     [ "X", "class_c_p_p_cli_1_1_ptz_controller.html#a16f86e7a6f03ad8f42a9e7fb4c00da75", null ],

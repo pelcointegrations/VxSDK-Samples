@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['clip',['Clip',['../class_c_p_p_cli_1_1_clip.html',1,'CPPCli']]]
+  ['builder',['Builder',['../../MediaController/class_media_controller_1_1_gst_wrapper_1_1_builder.html',1,'MediaController::GstWrapper']]]
 ];

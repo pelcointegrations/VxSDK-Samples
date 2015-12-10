@@ -1,4 +1,0 @@
-<map id="MediaController::Rtsp::Commands::GetParameter" name="MediaController::Rtsp::Commands::GetParameter">
-<area shape="rect" id="node2" href="$class_media_controller_1_1_rtsp_1_1_keep_alive.html#a12e8ceb008904ea406d6cd9a85de6cca" title="Make a GET_PARAMETERS method call to the associated stream. " alt="" coords="239,5,421,47"/>
-<area shape="rect" id="node3" href="$class_media_controller_1_1_rtsp_1_1_keep_alive.html#aa40cce08e2a6fcbf63a333f6915d7564" title="Constructor. " alt="" coords="469,5,621,47"/>
-</map>

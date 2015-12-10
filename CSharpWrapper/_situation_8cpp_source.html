@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>C++/CLI Sample: Source/Situation.cpp Source File</title>
+<title>C++/CLI Sample: C:/Users/Zach/Git/vxsdk/Samples/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/Situation.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -109,12 +109,12 @@ $(document).ready(function(){initNavTree('_situation_8cpp_source.html','');});
 <div class="title">Situation.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;Situation.h&quot;</span></div>
+<a href="_situation_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_situation_8h.html">Situation.h</a>&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespace_system.html">System</a>;</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespace_system_1_1_collections_1_1_generic.html">System::Collections::Generic</a>;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_c_p_p_cli_1_1_situation.html#a4ecff883baa45da022bd9813ad6219e4">    9</a></span>&#160;<a class="code" href="class_c_p_p_cli_1_1_situation.html#a4ecff883baa45da022bd9813ad6219e4">CPPCli::Situation::Situation</a>(VxSdk::IVxSituation* vxSituation) {</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_c_p_p_cli_1_1_situation.html#a4ecff883baa45da022bd9813ad6219e4">    9</a></span>&#160;<a class="code" href="class_c_p_p_cli_1_1_situation.html#a4ecff883baa45da022bd9813ad6219e4">CPPCli::Situation::Situation</a>(<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_situation.html">VxSdk::IVxSituation</a>* vxSituation) {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    _situation = vxSituation;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
@@ -125,33 +125,33 @@ $(document).ready(function(){initNavTree('_situation_8cpp_source.html','');});
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
 <div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_c_p_p_cli_1_1_situation.html#ad1869eb41b1020328bd2d02d5921461e">   18</a></span>&#160;<a class="code" href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">CPPCli::Results::Value</a> <a class="code" href="class_c_p_p_cli_1_1_situation.html#ad1869eb41b1020328bd2d02d5921461e">CPPCli::Situation::Link</a>(<a class="code" href="class_c_p_p_cli_1_1_device.html">CPPCli::Device</a>^ device) {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="comment">// Link a device to a situation</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    VxSdk::VxResult::Value result = _situation-&gt;Link(*device-&gt;_device);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxSdk::VxResult::Value</a> result = _situation-&gt;Link(*device-&gt;<a class="code" href="class_c_p_p_cli_1_1_device.html#afaeffe7f56c0c29059669a529b8d890f">_device</a>);</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment">// Unless there was an issue linking the device the result should be VxSdk::VxResult::kOK</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">CPPCli::Results::Value</a>(result);</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_c_p_p_cli_1_1_situation.html#aaf4f15c15d015133a83197a40e989bda">   25</a></span>&#160;<a class="code" href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">CPPCli::Results::Value</a> <a class="code" href="class_c_p_p_cli_1_1_situation.html#ad1869eb41b1020328bd2d02d5921461e">CPPCli::Situation::Link</a>(<a class="code" href="class_c_p_p_cli_1_1_data_source.html">CPPCli::DataSource</a>^ dataSource) {</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">// Link a data source to a situation</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    VxSdk::VxResult::Value result = _situation-&gt;Link(*dataSource-&gt;_dataSource);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxSdk::VxResult::Value</a> result = _situation-&gt;Link(*dataSource-&gt;<a class="code" href="class_c_p_p_cli_1_1_data_source.html#acea849b126e037a61ec16c8b6245c503">_dataSource</a>);</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">// Unless there was an issue linking the data source the result should be VxSdk::VxResult::kOK</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">CPPCli::Results::Value</a>(result);</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_c_p_p_cli_1_1_situation.html#a8493bf562ac98c9a8e73d05e75ca9de3">   32</a></span>&#160;<a class="code" href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">CPPCli::Results::Value</a> <a class="code" href="class_c_p_p_cli_1_1_situation.html#a8493bf562ac98c9a8e73d05e75ca9de3">CPPCli::Situation::UnLink</a>(<a class="code" href="class_c_p_p_cli_1_1_device.html">CPPCli::Device</a>^ device) {</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">// Unlink a device from a situation</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    VxSdk::VxResult::Value result = _situation-&gt;UnLink(*device-&gt;_device);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxSdk::VxResult::Value</a> result = _situation-&gt;UnLink(*device-&gt;<a class="code" href="class_c_p_p_cli_1_1_device.html#afaeffe7f56c0c29059669a529b8d890f">_device</a>);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">// Unless there was an issue unlinking the device the result should be VxSdk::VxResult::kOK</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">CPPCli::Results::Value</a>(result);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_c_p_p_cli_1_1_situation.html#afa7a3cc50f79b0660ced6fa5a48f66de">   39</a></span>&#160;<a class="code" href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">CPPCli::Results::Value</a> <a class="code" href="class_c_p_p_cli_1_1_situation.html#a8493bf562ac98c9a8e73d05e75ca9de3">CPPCli::Situation::UnLink</a>(<a class="code" href="class_c_p_p_cli_1_1_data_source.html">CPPCli::DataSource</a>^ dataSource) {</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">// Unlink a data source from a situation</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    VxSdk::VxResult::Value result = _situation-&gt;UnLink(*dataSource-&gt;_dataSource);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxSdk::VxResult::Value</a> result = _situation-&gt;UnLink(*dataSource-&gt;<a class="code" href="class_c_p_p_cli_1_1_data_source.html#acea849b126e037a61ec16c8b6245c503">_dataSource</a>);</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">// Unless there was an issue unlinking the data source the result should be VxSdk::VxResult::kOK</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">CPPCli::Results::Value</a>(result);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;List&lt;int&gt;^ CPPCli::Situation::_GetSnoozeIntervals() {</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_c_p_p_cli_1_1_situation.html#aea6dd4f3f48e2f00035934cb85140dac">   46</a></span>&#160;List&lt;int&gt;^ <a class="code" href="class_c_p_p_cli_1_1_situation.html#aea6dd4f3f48e2f00035934cb85140dac">CPPCli::Situation::_GetSnoozeIntervals</a>() {</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    List&lt;int&gt;^ mlist = <span class="keyword">gcnew</span> List&lt;int&gt;();</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; _situation-&gt;snoozeIntervalSize; i++)</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        mlist-&gt;Add(_situation-&gt;snoozeIntervals[i]);</div>
@@ -159,28 +159,35 @@ $(document).ready(function(){initNavTree('_situation_8cpp_source.html','');});
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">return</span> mlist;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;List&lt;String^&gt;^ CPPCli::Situation::_GetNotificationIds() {</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_c_p_p_cli_1_1_situation.html#a866214ed0c4dcca321a153d3a53b7fef">   54</a></span>&#160;List&lt;String^&gt;^ <a class="code" href="class_c_p_p_cli_1_1_situation.html#a866214ed0c4dcca321a153d3a53b7fef">CPPCli::Situation::_GetNotificationIds</a>() {</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    List&lt;String^&gt;^ mlist = <span class="keyword">gcnew</span> List&lt;String^&gt;();</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; _situation-&gt;notificationIdSize; i++)</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        mlist-&gt;Add(<span class="keyword">gcnew</span> String(_situation-&gt;notificationIds[i]));</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span> mlist;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
+<div class="ttc" id="_situation_8h_html"><div class="ttname"><a href="_situation_8h.html">Situation.h</a></div></div>
 <div class="ttc" id="namespace_system_1_1_collections_1_1_generic_html"><div class="ttname"><a href="namespace_system_1_1_collections_1_1_generic.html">Generic</a></div><div class="ttdoc">Implements the data source class. </div></div>
 <div class="ttc" id="class_c_p_p_cli_1_1_situation_html_ad1869eb41b1020328bd2d02d5921461e"><div class="ttname"><a href="class_c_p_p_cli_1_1_situation.html#ad1869eb41b1020328bd2d02d5921461e">CPPCli::Situation::Link</a></div><div class="ttdeci">Results::Value Link(Device^ device)</div><div class="ttdoc">Associate a device with this situation. </div><div class="ttdef"><b>Definition:</b> <a href="_situation_8cpp_source.html#l00018">Situation.cpp:18</a></div></div>
 <div class="ttc" id="class_c_p_p_cli_1_1_results_html_a12504aac644d00e0532be43063a970ca"><div class="ttname"><a href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">CPPCli::Results::Value</a></div><div class="ttdeci">Value</div><div class="ttdoc">Values that represent the result of calls to the VideoXpert system. </div><div class="ttdef"><b>Definition:</b> <a href="_utils_8h_source.html#l00020">Utils.h:20</a></div></div>
-<div class="ttc" id="namespace_system_html"><div class="ttname"><a href="namespace_system.html">System</a></div></div>
+<div class="ttc" id="namespace_system_html"><div class="ttname"><a href="namespace_system.html">System</a></div><div class="ttdoc">Implements the situation class. </div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_situation_html"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_i_vx_situation.html">VxSdk::IVxSituation</a></div></div>
 <div class="ttc" id="class_c_p_p_cli_1_1_situation_html_a8493bf562ac98c9a8e73d05e75ca9de3"><div class="ttname"><a href="class_c_p_p_cli_1_1_situation.html#a8493bf562ac98c9a8e73d05e75ca9de3">CPPCli::Situation::UnLink</a></div><div class="ttdeci">Results::Value UnLink(Device^ device)</div><div class="ttdoc">Remove device association from this situation. </div><div class="ttdef"><b>Definition:</b> <a href="_situation_8cpp_source.html#l00032">Situation.cpp:32</a></div></div>
-<div class="ttc" id="class_c_p_p_cli_1_1_data_source_html"><div class="ttname"><a href="class_c_p_p_cli_1_1_data_source.html">CPPCli::DataSource</a></div><div class="ttdoc">The DataSource class represents a data producer in the system hosted by a device. ...</div><div class="ttdef"><b>Definition:</b> <a href="_data_source_8h_source.html#l00017">DataSource.h:17</a></div></div>
+<div class="ttc" id="class_c_p_p_cli_1_1_data_source_html"><div class="ttname"><a href="class_c_p_p_cli_1_1_data_source.html">CPPCli::DataSource</a></div><div class="ttdoc">The DataSource class represents a data producer in the system hosted by a device. Each DataSource pro...</div><div class="ttdef"><b>Definition:</b> <a href="_data_source_8h_source.html#l00017">DataSource.h:17</a></div></div>
+<div class="ttc" id="class_c_p_p_cli_1_1_situation_html_aea6dd4f3f48e2f00035934cb85140dac"><div class="ttname"><a href="class_c_p_p_cli_1_1_situation.html#aea6dd4f3f48e2f00035934cb85140dac">CPPCli::Situation::_GetSnoozeIntervals</a></div><div class="ttdeci">System::Collections::Generic::List&lt; int &gt;^ _GetSnoozeIntervals()</div><div class="ttdef"><b>Definition:</b> <a href="_situation_8cpp_source.html#l00046">Situation.cpp:46</a></div></div>
 <div class="ttc" id="class_c_p_p_cli_1_1_situation_html"><div class="ttname"><a href="class_c_p_p_cli_1_1_situation.html">CPPCli::Situation</a></div><div class="ttdoc">The Situation class represents a particular situation configuration that specifies how corresponding ...</div><div class="ttdef"><b>Definition:</b> <a href="_situation_8h_source.html#l00014">Situation.h:14</a></div></div>
+<div class="ttc" id="class_c_p_p_cli_1_1_device_html_afaeffe7f56c0c29059669a529b8d890f"><div class="ttname"><a href="class_c_p_p_cli_1_1_device.html#afaeffe7f56c0c29059669a529b8d890f">CPPCli::Device::_device</a></div><div class="ttdeci">VxSdk::IVxDevice * _device</div><div class="ttdef"><b>Definition:</b> <a href="_device_8h_source.html#l00222">Device.h:222</a></div></div>
+<div class="ttc" id="class_c_p_p_cli_1_1_situation_html_a866214ed0c4dcca321a153d3a53b7fef"><div class="ttname"><a href="class_c_p_p_cli_1_1_situation.html#a866214ed0c4dcca321a153d3a53b7fef">CPPCli::Situation::_GetNotificationIds</a></div><div class="ttdeci">System::Collections::Generic::List&lt; System::String^ &gt;^ _GetNotificationIds()</div><div class="ttdef"><b>Definition:</b> <a href="_situation_8cpp_source.html#l00054">Situation.cpp:54</a></div></div>
 <div class="ttc" id="class_c_p_p_cli_1_1_situation_html_a4ecff883baa45da022bd9813ad6219e4"><div class="ttname"><a href="class_c_p_p_cli_1_1_situation.html#a4ecff883baa45da022bd9813ad6219e4">CPPCli::Situation::Situation</a></div><div class="ttdeci">Situation(VxSdk::IVxSituation *vxSituation)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="_situation_8cpp_source.html#l00009">Situation.cpp:9</a></div></div>
+<div class="ttc" id="class_c_p_p_cli_1_1_data_source_html_acea849b126e037a61ec16c8b6245c503"><div class="ttname"><a href="class_c_p_p_cli_1_1_data_source.html#acea849b126e037a61ec16c8b6245c503">CPPCli::DataSource::_dataSource</a></div><div class="ttdeci">VxSdk::IVxDataSource * _dataSource</div><div class="ttdef"><b>Definition:</b> <a href="_data_source_8h_source.html#l00208">DataSource.h:208</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_result_html_adc2e4ff9e03060a9ed92fdc0121dde26"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxSdk::VxResult::Value</a></div><div class="ttdeci">Value</div></div>
 <div class="ttc" id="class_c_p_p_cli_1_1_device_html"><div class="ttname"><a href="class_c_p_p_cli_1_1_device.html">CPPCli::Device</a></div><div class="ttdoc">The Device class represents a particular physical device in the system. </div><div class="ttdef"><b>Definition:</b> <a href="_device_8h_source.html#l00012">Device.h:12</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_74389ed8173ad57b461b9d623a1f3867.html">Source</a></li><li class="navelem"><b>Situation.cpp</b></li>
+    <li class="navelem"><a class="el" href="dir_6f2bbc259acbf2c00bc5315c0044b8e4.html">vxsdk</a></li><li class="navelem"><a class="el" href="dir_4b6f63d7a9a5c451ae872abad24d55ab.html">Samples</a></li><li class="navelem"><a class="el" href="dir_aaf608bdbff9050509eeedf0760b46a9.html">VxSDK-Samples</a></li><li class="navelem"><a class="el" href="dir_a917c4225faed50e0e03aeacd1dcd100.html">CSharpSample</a></li><li class="navelem"><a class="el" href="dir_2ac31aa99ba9034f710531bc3f32ad40.html">CSharpWrapper</a></li><li class="navelem"><a class="el" href="dir_759dab0bb0fa416aa528caa80c3adeae.html">Source</a></li><li class="navelem"><a class="el" href="_situation_8cpp.html">Situation.cpp</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>

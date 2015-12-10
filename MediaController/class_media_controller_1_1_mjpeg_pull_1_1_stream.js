@@ -10,5 +10,7 @@ var class_media_controller_1_1_mjpeg_pull_1_1_stream =
     [ "Play", "class_media_controller_1_1_mjpeg_pull_1_1_stream.html#abc07b64122ca24edbf1e10bfd99e6ca4", null ],
     [ "Resume", "class_media_controller_1_1_mjpeg_pull_1_1_stream.html#a3c18d8c4ef0be3b8f6f932363ff25d0b", null ],
     [ "Seek", "class_media_controller_1_1_mjpeg_pull_1_1_stream.html#a237f606f4e68139542998d50848e5ea7", null ],
-    [ "Stop", "class_media_controller_1_1_mjpeg_pull_1_1_stream.html#a2a849e829b398017e2cdff3f98956d86", null ]
+    [ "Stop", "class_media_controller_1_1_mjpeg_pull_1_1_stream.html#a2a849e829b398017e2cdff3f98956d86", null ],
+    [ "_dataSession", "class_media_controller_1_1_mjpeg_pull_1_1_stream.html#a15390ac9f932baac15217896221a5b24", null ],
+    [ "_uuid", "class_media_controller_1_1_mjpeg_pull_1_1_stream.html#a57f23c14d92a0f2114313d2316bd2d53", null ]
 ];

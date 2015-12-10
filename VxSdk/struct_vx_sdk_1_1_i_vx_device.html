@@ -184,6 +184,8 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a particular physical device in the system. </p>
+
+<p>Definition at line <a class="el" href="_i_vx_device_8h_source.html#l00014">14</a> of file <a class="el" href="_i_vx_device_8h_source.html">IVxDevice.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="acb2b031cbd20d7ec746d5ef687474470"></a>
 <div class="memitem">
@@ -208,6 +210,42 @@ Public Attributes</h2></td></tr>
 
 <p>Clears this instance. </p>
 
+<p>Definition at line <a class="el" href="_i_vx_device_8h_source.html#l00094">94</a> of file <a class="el" href="_i_vx_device_8h_source.html">IVxDevice.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                     {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_device.html#a38e63bf736e8f09e6e883a640d4dc2c1">isCommissioned</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_device.html#a9689d5c8dc35d7f75cf9dcacda826aa6">isLicenseRequired</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_device.html#ab2657278703d4c6433143f4f45e58d13">isPelcoHardware</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_device.html#a8d53e84766081d7bc29993554f60ab37">ip</a>);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_device.html#a2b3137cce75ac148c23ab19c0907ca62">username</a>);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_device.html#a8cd009fd9e5081c700a57bfec56eccbb">vendor</a>);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_device.html#a514018af79a6577480736ce08054687b">version</a>);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_device.html#aa1e20ff11975b1820d0facb620392b2f">virtualIp</a>);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_device.html#abd7e6e7c84af30ea12543b4d873bf025">model</a>);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_device.html#a59767acd0373003b506401c92fe2f75d">name</a>);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_device.html#ab322c229190704d066ca77975870fa2d">password</a>);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_device.html#a6cf7684b56d536753845c8fc0646b091">serial</a>);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_device.html#a8a7770ef3129363a71f7ee12d8b53cdb">state</a> = <a class="code" href="struct_vx_sdk_1_1_vx_device_state.html#a3e8548c29a9065bcd7536d2eaa9b72bfa3f319e448a94cd31c04138487df2c1f5">VxDeviceState::kUnknown</a>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_device.html#abb7c97debfce9802beec89e53a8fc6d8">type</a> = <a class="code" href="struct_vx_sdk_1_1_vx_device_type.html#ab69578909dcd1e573f53abae17329db9a7f1c816fa33b367fba2455ecc77d15e3">VxDeviceType::kUnknown</a>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        }</div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_device_html_a2b3137cce75ac148c23ab19c0907ca62"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_device.html#a2b3137cce75ac148c23ab19c0907ca62">VxSdk::IVxDevice::username</a></div><div class="ttdeci">char username[64]</div><div class="ttdoc">The account username used to communicate with the device, if any. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_device_8h_source.html#l00052">IVxDevice.h:52</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_device_html_ab2657278703d4c6433143f4f45e58d13"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_device.html#ab2657278703d4c6433143f4f45e58d13">VxSdk::IVxDevice::isPelcoHardware</a></div><div class="ttdeci">bool isPelcoHardware</div><div class="ttdoc">Indicates whether the device is running on Pelco hardware. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_device_8h_source.html#l00040">IVxDevice.h:40</a></div></div>
+<div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00018">VxMacros.h:18</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_device_html_abb7c97debfce9802beec89e53a8fc6d8"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_device.html#abb7c97debfce9802beec89e53a8fc6d8">VxSdk::IVxDevice::type</a></div><div class="ttdeci">VxDeviceType::Value type</div><div class="ttdoc">The type of device. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_device_8h_source.html#l00088">IVxDevice.h:88</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_device_html_a8cd009fd9e5081c700a57bfec56eccbb"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_device.html#a8cd009fd9e5081c700a57bfec56eccbb">VxSdk::IVxDevice::vendor</a></div><div class="ttdeci">char vendor[64]</div><div class="ttdoc">The device vendor, if any. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_device_8h_source.html#l00056">IVxDevice.h:56</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_device_html_abd7e6e7c84af30ea12543b4d873bf025"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_device.html#abd7e6e7c84af30ea12543b4d873bf025">VxSdk::IVxDevice::model</a></div><div class="ttdeci">char model[64]</div><div class="ttdoc">The device model name. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_device_8h_source.html#l00068">IVxDevice.h:68</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_device_html_aa1e20ff11975b1820d0facb620392b2f"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_device.html#aa1e20ff11975b1820d0facb620392b2f">VxSdk::IVxDevice::virtualIp</a></div><div class="ttdeci">char virtualIp[64]</div><div class="ttdoc">The virtual IP of the device, if any. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_device_8h_source.html#l00064">IVxDevice.h:64</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_device_html_a6cf7684b56d536753845c8fc0646b091"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_device.html#a6cf7684b56d536753845c8fc0646b091">VxSdk::IVxDevice::serial</a></div><div class="ttdeci">char serial[64]</div><div class="ttdoc">The serial number of the device. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_device_8h_source.html#l00080">IVxDevice.h:80</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_device_state_html_a3e8548c29a9065bcd7536d2eaa9b72bfa3f319e448a94cd31c04138487df2c1f5"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_device_state.html#a3e8548c29a9065bcd7536d2eaa9b72bfa3f319e448a94cd31c04138487df2c1f5">VxSdk::VxDeviceState::kUnknown</a></div><div class="ttdoc">An error or unknown value was returned.</div><div class="ttdef"><b>Definition:</b> <a href="_vx_primitives_8h_source.html#l00111">VxPrimitives.h:111</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_device_html_a8a7770ef3129363a71f7ee12d8b53cdb"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_device.html#a8a7770ef3129363a71f7ee12d8b53cdb">VxSdk::IVxDevice::state</a></div><div class="ttdeci">VxDeviceState::Value state</div><div class="ttdoc">The current operational state of the device. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_device_8h_source.html#l00084">IVxDevice.h:84</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_device_html_a38e63bf736e8f09e6e883a640d4dc2c1"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_device.html#a38e63bf736e8f09e6e883a640d4dc2c1">VxSdk::IVxDevice::isCommissioned</a></div><div class="ttdeci">bool isCommissioned</div><div class="ttdoc">Indicates whether the device is commissioned. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_device_8h_source.html#l00032">IVxDevice.h:32</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_device_html_ab322c229190704d066ca77975870fa2d"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_device.html#ab322c229190704d066ca77975870fa2d">VxSdk::IVxDevice::password</a></div><div class="ttdeci">char password[64]</div><div class="ttdoc">The account password used to communicate with the device, if any. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_device_8h_source.html#l00076">IVxDevice.h:76</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_device_html_a9689d5c8dc35d7f75cf9dcacda826aa6"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_device.html#a9689d5c8dc35d7f75cf9dcacda826aa6">VxSdk::IVxDevice::isLicenseRequired</a></div><div class="ttdeci">bool isLicenseRequired</div><div class="ttdoc">Indicates whether a license is required for commissioning the device. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_device_8h_source.html#l00036">IVxDevice.h:36</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_device_html_a8d53e84766081d7bc29993554f60ab37"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_device.html#a8d53e84766081d7bc29993554f60ab37">VxSdk::IVxDevice::ip</a></div><div class="ttdeci">char ip[64]</div><div class="ttdoc">The IP of the device. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_device_8h_source.html#l00048">IVxDevice.h:48</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_device_type_html_ab69578909dcd1e573f53abae17329db9a7f1c816fa33b367fba2455ecc77d15e3"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_device_type.html#ab69578909dcd1e573f53abae17329db9a7f1c816fa33b367fba2455ecc77d15e3">VxSdk::VxDeviceType::kUnknown</a></div><div class="ttdoc">An error or unknown value was returned.</div><div class="ttdef"><b>Definition:</b> <a href="_vx_primitives_8h_source.html#l00125">VxPrimitives.h:125</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_device_html_a514018af79a6577480736ce08054687b"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_device.html#a514018af79a6577480736ce08054687b">VxSdk::IVxDevice::version</a></div><div class="ttdeci">char version[64]</div><div class="ttdoc">The current version of software running on the device. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_device_8h_source.html#l00060">IVxDevice.h:60</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_device_html_a59767acd0373003b506401c92fe2f75d"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_device.html#a59767acd0373003b506401c92fe2f75d">VxSdk::IVxDevice::name</a></div><div class="ttdeci">char name[64]</div><div class="ttdoc">The friendly name of the device. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_device_8h_source.html#l00072">IVxDevice.h:72</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a1a8bc3d079d756661f08fa05fcc620a1"></a>
@@ -282,6 +320,8 @@ Public Attributes</h2></td></tr>
 
 <p>The unique identifier of the device. </p>
 
+<p>Definition at line <a class="el" href="_i_vx_device_8h_source.html#l00044">44</a> of file <a class="el" href="_i_vx_device_8h_source.html">IVxDevice.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a8d53e84766081d7bc29993554f60ab37"></a>
@@ -295,6 +335,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The IP of the device. </p>
+
+<p>Definition at line <a class="el" href="_i_vx_device_8h_source.html#l00048">48</a> of file <a class="el" href="_i_vx_device_8h_source.html">IVxDevice.h</a>.</p>
 
 </div>
 </div>
@@ -310,6 +352,8 @@ Public Attributes</h2></td></tr>
 
 <p>Indicates whether the device is commissioned. </p>
 
+<p>Definition at line <a class="el" href="_i_vx_device_8h_source.html#l00032">32</a> of file <a class="el" href="_i_vx_device_8h_source.html">IVxDevice.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a9689d5c8dc35d7f75cf9dcacda826aa6"></a>
@@ -323,6 +367,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Indicates whether a license is required for commissioning the device. </p>
+
+<p>Definition at line <a class="el" href="_i_vx_device_8h_source.html#l00036">36</a> of file <a class="el" href="_i_vx_device_8h_source.html">IVxDevice.h</a>.</p>
 
 </div>
 </div>
@@ -338,6 +384,8 @@ Public Attributes</h2></td></tr>
 
 <p>Indicates whether the device is running on Pelco hardware. </p>
 
+<p>Definition at line <a class="el" href="_i_vx_device_8h_source.html#l00040">40</a> of file <a class="el" href="_i_vx_device_8h_source.html">IVxDevice.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="abd7e6e7c84af30ea12543b4d873bf025"></a>
@@ -351,6 +399,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The device model name. </p>
+
+<p>Definition at line <a class="el" href="_i_vx_device_8h_source.html#l00068">68</a> of file <a class="el" href="_i_vx_device_8h_source.html">IVxDevice.h</a>.</p>
 
 </div>
 </div>
@@ -366,6 +416,8 @@ Public Attributes</h2></td></tr>
 
 <p>The friendly name of the device. </p>
 
+<p>Definition at line <a class="el" href="_i_vx_device_8h_source.html#l00072">72</a> of file <a class="el" href="_i_vx_device_8h_source.html">IVxDevice.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ab322c229190704d066ca77975870fa2d"></a>
@@ -379,6 +431,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The account password used to communicate with the device, if any. </p>
+
+<p>Definition at line <a class="el" href="_i_vx_device_8h_source.html#l00076">76</a> of file <a class="el" href="_i_vx_device_8h_source.html">IVxDevice.h</a>.</p>
 
 </div>
 </div>
@@ -394,6 +448,8 @@ Public Attributes</h2></td></tr>
 
 <p>The serial number of the device. </p>
 
+<p>Definition at line <a class="el" href="_i_vx_device_8h_source.html#l00080">80</a> of file <a class="el" href="_i_vx_device_8h_source.html">IVxDevice.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a8a7770ef3129363a71f7ee12d8b53cdb"></a>
@@ -407,6 +463,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The current operational state of the device. </p>
+
+<p>Definition at line <a class="el" href="_i_vx_device_8h_source.html#l00084">84</a> of file <a class="el" href="_i_vx_device_8h_source.html">IVxDevice.h</a>.</p>
 
 </div>
 </div>
@@ -422,6 +480,8 @@ Public Attributes</h2></td></tr>
 
 <p>The type of device. </p>
 
+<p>Definition at line <a class="el" href="_i_vx_device_8h_source.html#l00088">88</a> of file <a class="el" href="_i_vx_device_8h_source.html">IVxDevice.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a2b3137cce75ac148c23ab19c0907ca62"></a>
@@ -435,6 +495,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The account username used to communicate with the device, if any. </p>
+
+<p>Definition at line <a class="el" href="_i_vx_device_8h_source.html#l00052">52</a> of file <a class="el" href="_i_vx_device_8h_source.html">IVxDevice.h</a>.</p>
 
 </div>
 </div>
@@ -450,6 +512,8 @@ Public Attributes</h2></td></tr>
 
 <p>The device vendor, if any. </p>
 
+<p>Definition at line <a class="el" href="_i_vx_device_8h_source.html#l00056">56</a> of file <a class="el" href="_i_vx_device_8h_source.html">IVxDevice.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a514018af79a6577480736ce08054687b"></a>
@@ -463,6 +527,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The current version of software running on the device. </p>
+
+<p>Definition at line <a class="el" href="_i_vx_device_8h_source.html#l00060">60</a> of file <a class="el" href="_i_vx_device_8h_source.html">IVxDevice.h</a>.</p>
 
 </div>
 </div>
@@ -478,10 +544,12 @@ Public Attributes</h2></td></tr>
 
 <p>The virtual IP of the device, if any. </p>
 
+<p>Definition at line <a class="el" href="_i_vx_device_8h_source.html#l00064">64</a> of file <a class="el" href="_i_vx_device_8h_source.html">IVxDevice.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="_i_vx_device_8h_source.html">IVxDevice.h</a></li>
+<li>C:/Users/Zach/Git/vxsdk/VxSdk/Include/<a class="el" href="_i_vx_device_8h_source.html">IVxDevice.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>C++/CLI Sample: Source/Export.cpp Source File</title>
+<title>C++/CLI Sample: C:/Users/Zach/Git/vxsdk/Samples/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/Export.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -109,11 +109,11 @@ $(document).ready(function(){initNavTree('_export_8cpp_source.html','');});
 <div class="title">Export.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;Export.h&quot;</span></div>
+<a href="_export_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_export_8h.html">Export.h</a>&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespace_system_1_1_collections_1_1_generic.html">System::Collections::Generic</a>;</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_c_p_p_cli_1_1_export.html#a741f9a7a48b2049c61535182849961e1">    8</a></span>&#160;<a class="code" href="class_c_p_p_cli_1_1_export.html#a741f9a7a48b2049c61535182849961e1">CPPCli::Export::Export</a>(VxSdk::IVxExport* vxExport) {</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_c_p_p_cli_1_1_export.html#a741f9a7a48b2049c61535182849961e1">    8</a></span>&#160;<a class="code" href="class_c_p_p_cli_1_1_export.html#a741f9a7a48b2049c61535182849961e1">CPPCli::Export::Export</a>(<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_export.html">VxSdk::IVxExport</a>* vxExport) {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    _export = vxExport;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('_export_8cpp_source.html','');});
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    _export = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;List&lt;CPPCli::ExportClip^&gt;^ CPPCli::Export::_GetClips() {</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_c_p_p_cli_1_1_export.html#a4e40d196ad3aeae953471a75f543b272">   17</a></span>&#160;List&lt;CPPCli::ExportClip^&gt;^ <a class="code" href="class_c_p_p_cli_1_1_export.html#a4e40d196ad3aeae953471a75f543b272">CPPCli::Export::_GetClips</a>() {</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="comment">// Create a list of managed export objects</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    List&lt;CPPCli::ExportClip^&gt;^ mlist = <span class="keyword">gcnew</span> List&lt;CPPCli::ExportClip^&gt;();</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">// Add each clip in the export to the list</span></div>
@@ -132,15 +132,18 @@ $(document).ready(function(){initNavTree('_export_8cpp_source.html','');});
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">return</span> mlist;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
 <div class="ttc" id="class_c_p_p_cli_1_1_export_html_a741f9a7a48b2049c61535182849961e1"><div class="ttname"><a href="class_c_p_p_cli_1_1_export.html#a741f9a7a48b2049c61535182849961e1">CPPCli::Export::Export</a></div><div class="ttdeci">Export(VxSdk::IVxExport *vxExport)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="_export_8cpp_source.html#l00008">Export.cpp:8</a></div></div>
+<div class="ttc" id="_export_8h_html"><div class="ttname"><a href="_export_8h.html">Export.h</a></div></div>
 <div class="ttc" id="namespace_system_1_1_collections_1_1_generic_html"><div class="ttname"><a href="namespace_system_1_1_collections_1_1_generic.html">Generic</a></div><div class="ttdoc">Implements the data source class. </div></div>
 <div class="ttc" id="class_c_p_p_cli_1_1_export_clip_html"><div class="ttname"><a href="class_c_p_p_cli_1_1_export_clip.html">CPPCli::ExportClip</a></div><div class="ttdoc">The ExportClip class represents an individual range of media data belonging to an Export...</div><div class="ttdef"><b>Definition:</b> <a href="_export_clip_8h_source.html#l00014">ExportClip.h:14</a></div></div>
+<div class="ttc" id="class_c_p_p_cli_1_1_export_html_a4e40d196ad3aeae953471a75f543b272"><div class="ttname"><a href="class_c_p_p_cli_1_1_export.html#a4e40d196ad3aeae953471a75f543b272">CPPCli::Export::_GetClips</a></div><div class="ttdeci">System::Collections::Generic::List&lt; ExportClip^ &gt;^ _GetClips()</div><div class="ttdef"><b>Definition:</b> <a href="_export_8cpp_source.html#l00017">Export.cpp:17</a></div></div>
 <div class="ttc" id="class_c_p_p_cli_1_1_export_html"><div class="ttname"><a href="class_c_p_p_cli_1_1_export.html">CPPCli::Export</a></div><div class="ttdoc">The Export class represents an exported data set that is archived within the system. </div><div class="ttdef"><b>Definition:</b> <a href="_export_8h_source.html#l00014">Export.h:14</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_export_html"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_i_vx_export.html">VxSdk::IVxExport</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_74389ed8173ad57b461b9d623a1f3867.html">Source</a></li><li class="navelem"><b>Export.cpp</b></li>
+    <li class="navelem"><a class="el" href="dir_6f2bbc259acbf2c00bc5315c0044b8e4.html">vxsdk</a></li><li class="navelem"><a class="el" href="dir_4b6f63d7a9a5c451ae872abad24d55ab.html">Samples</a></li><li class="navelem"><a class="el" href="dir_aaf608bdbff9050509eeedf0760b46a9.html">VxSDK-Samples</a></li><li class="navelem"><a class="el" href="dir_a917c4225faed50e0e03aeacd1dcd100.html">CSharpSample</a></li><li class="navelem"><a class="el" href="dir_2ac31aa99ba9034f710531bc3f32ad40.html">CSharpWrapper</a></li><li class="navelem"><a class="el" href="dir_759dab0bb0fa416aa528caa80c3adeae.html">Source</a></li><li class="navelem"><a class="el" href="_export_8cpp.html">Export.cpp</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>

@@ -1,4 +1,0 @@
-<map id="MediaController::Controller::AddEventData" name="MediaController::Controller::AddEventData">
-<area shape="rect" id="node2" href="$class_media_controller_1_1_stream_base.html#a8426351a80597fb8d2a3a2ccc8ba732e" title="Get the current GStreamer wrapper instance. " alt="" coords="228,5,420,47"/>
-<area shape="rect" id="node3" href="$class_media_controller_1_1_gst_wrapper.html#ac0fa98f176f83ceb495e49ec58ef8392" title="Add custom data to be stored in here, which will be send back to caller inside TimestampEvent on Time..." alt="" coords="229,71,419,112"/>
-</map>

@@ -1,12 +1,12 @@
 var NAVTREE =
 [
-  [ "Media Controller Sample", "index.html", [
-    [ "README", "md__r_e_a_d_m_e.html", null ],
+  [ "Media Controller", "index.html", [
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ],
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ],
+        [ "Variables", "namespacemembers_vars.html", null ],
         [ "Typedefs", "namespacemembers_type.html", null ]
       ] ]
     ] ],
@@ -23,14 +23,21 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Files", null, [
-      [ "File List", "files.html", "files" ]
+      [ "File List", "files.html", "files" ],
+      [ "File Members", "globals.html", [
+        [ "All", "globals.html", null ],
+        [ "Functions", "globals_func.html", null ],
+        [ "Variables", "globals_vars.html", null ],
+        [ "Macros", "globals_defs.html", null ]
+      ] ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"_constants_8h_source.html"
+"_constants_8h.html",
+"class_media_controller_1_1_rtsp_1_1_commands.html#ade90cad2a6af616385df0c1e1b282aa0"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

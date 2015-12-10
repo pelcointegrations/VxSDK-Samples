@@ -1,4 +1,0 @@
-<map id="MediaController::Controller::ClearObservers" name="MediaController::Controller::ClearObservers">
-<area shape="rect" id="node2" href="$class_media_controller_1_1_stream_base.html#a8426351a80597fb8d2a3a2ccc8ba732e" title="Get the current GStreamer wrapper instance. " alt="" coords="228,5,420,47"/>
-<area shape="rect" id="node3" href="$class_media_controller_1_1_gst_wrapper.html#ac0e9a26c816b6f27f981fbf9e06f2600" title="Remove all existing timestamp event subscribers. " alt="" coords="229,71,419,112"/>
-</map>

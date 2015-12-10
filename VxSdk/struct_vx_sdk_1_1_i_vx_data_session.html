@@ -182,6 +182,8 @@ Protected Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a data session that is being transmitted by a data source, via a data interface, to a client. </p>
+
+<p>Definition at line <a class="el" href="_i_vx_data_session_8h_source.html#l00013">13</a> of file <a class="el" href="_i_vx_data_session_8h_source.html">IVxDataSession.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="af742fa18d5780964f67086c8743601f8"></a>
 <div class="memitem">
@@ -206,6 +208,24 @@ Protected Member Functions</h2></td></tr>
 
 <p>Clears this instance. </p>
 
+<p>Definition at line <a class="el" href="_i_vx_data_session_8h_source.html#l00095">95</a> of file <a class="el" href="_i_vx_data_session_8h_source.html">IVxDataSession.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                     {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_session.html#a68db051909953967a7929de4dad8c9c3">time</a>);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_session.html#afc0ca130e7b329318da4d754ce11c152">jpegUri</a>);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <a class="code" href="struct_vx_sdk_1_1_i_vx_data_session.html#a3b0a90f0dd19ee1a7fd829acdc8433ec">quality</a> = 0;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <a class="code" href="struct_vx_sdk_1_1_i_vx_data_session.html#a29bb8f6bb31bc96502de18995b4d5fb7">speed</a> = 0;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <a class="code" href="struct_vx_sdk_1_1_i_vx_data_session.html#a21d03a45b6c430a23b5445a1e530a9d6">xResolution</a> = 0;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <a class="code" href="struct_vx_sdk_1_1_i_vx_data_session.html#a92841ee8af205e5992d8ecb843955f9d">yResolution</a> = 0;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        }</div>
+<div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00018">VxMacros.h:18</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_session_html_afc0ca130e7b329318da4d754ce11c152"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_session.html#afc0ca130e7b329318da4d754ce11c152">VxSdk::IVxDataSession::jpegUri</a></div><div class="ttdeci">char jpegUri[512]</div><div class="ttdoc">The URI of the JPEG frame. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_session_8h_source.html#l00064">IVxDataSession.h:64</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_session_html_a68db051909953967a7929de4dad8c9c3"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_session.html#a68db051909953967a7929de4dad8c9c3">VxSdk::IVxDataSession::time</a></div><div class="ttdeci">char time[64]</div><div class="ttdoc">The absolute position of the data session. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_session_8h_source.html#l00068">IVxDataSession.h:68</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_session_html_a3b0a90f0dd19ee1a7fd829acdc8433ec"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_session.html#a3b0a90f0dd19ee1a7fd829acdc8433ec">VxSdk::IVxDataSession::quality</a></div><div class="ttdeci">unsigned short quality</div><div class="ttdoc">The image quality of the data from 1 to 100. Smaller numbers have better quality than larger numbers...</div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_session_8h_source.html#l00081">IVxDataSession.h:81</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_session_html_a21d03a45b6c430a23b5445a1e530a9d6"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_session.html#a21d03a45b6c430a23b5445a1e530a9d6">VxSdk::IVxDataSession::xResolution</a></div><div class="ttdeci">unsigned short xResolution</div><div class="ttdoc">The the horizontal resolution of the data (Width). </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_session_8h_source.html#l00085">IVxDataSession.h:85</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_session_html_a92841ee8af205e5992d8ecb843955f9d"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_session.html#a92841ee8af205e5992d8ecb843955f9d">VxSdk::IVxDataSession::yResolution</a></div><div class="ttdeci">unsigned short yResolution</div><div class="ttdoc">The vertical resolution of the data (Height). </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_session_8h_source.html#l00089">IVxDataSession.h:89</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_session_html_a29bb8f6bb31bc96502de18995b4d5fb7"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_session.html#a29bb8f6bb31bc96502de18995b4d5fb7">VxSdk::IVxDataSession::speed</a></div><div class="ttdeci">float speed</div><div class="ttdoc">The play speed of the data. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_session_8h_source.html#l00076">IVxDataSession.h:76</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a96aa75f76eccb499e3767543612011c6"></a>
@@ -454,6 +474,8 @@ Protected Member Functions</h2></td></tr>
 
 <p>The unique identifier of the sessions data source. </p>
 
+<p>Definition at line <a class="el" href="_i_vx_data_session_8h_source.html#l00072">72</a> of file <a class="el" href="_i_vx_data_session_8h_source.html">IVxDataSession.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="afc0ca130e7b329318da4d754ce11c152"></a>
@@ -467,6 +489,8 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The URI of the JPEG frame. </p>
+
+<p>Definition at line <a class="el" href="_i_vx_data_session_8h_source.html#l00064">64</a> of file <a class="el" href="_i_vx_data_session_8h_source.html">IVxDataSession.h</a>.</p>
 
 </div>
 </div>
@@ -482,6 +506,8 @@ Protected Member Functions</h2></td></tr>
 
 <p>The image quality of the data from 1 to 100. Smaller numbers have better quality than larger numbers. </p>
 
+<p>Definition at line <a class="el" href="_i_vx_data_session_8h_source.html#l00081">81</a> of file <a class="el" href="_i_vx_data_session_8h_source.html">IVxDataSession.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a29bb8f6bb31bc96502de18995b4d5fb7"></a>
@@ -495,6 +521,8 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The play speed of the data. </p>
+
+<p>Definition at line <a class="el" href="_i_vx_data_session_8h_source.html#l00076">76</a> of file <a class="el" href="_i_vx_data_session_8h_source.html">IVxDataSession.h</a>.</p>
 
 </div>
 </div>
@@ -510,6 +538,8 @@ Protected Member Functions</h2></td></tr>
 
 <p>The absolute position of the data session. </p>
 
+<p>Definition at line <a class="el" href="_i_vx_data_session_8h_source.html#l00068">68</a> of file <a class="el" href="_i_vx_data_session_8h_source.html">IVxDataSession.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a21d03a45b6c430a23b5445a1e530a9d6"></a>
@@ -523,6 +553,8 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The the horizontal resolution of the data (Width). </p>
+
+<p>Definition at line <a class="el" href="_i_vx_data_session_8h_source.html#l00085">85</a> of file <a class="el" href="_i_vx_data_session_8h_source.html">IVxDataSession.h</a>.</p>
 
 </div>
 </div>
@@ -538,10 +570,12 @@ Protected Member Functions</h2></td></tr>
 
 <p>The vertical resolution of the data (Height). </p>
 
+<p>Definition at line <a class="el" href="_i_vx_data_session_8h_source.html#l00089">89</a> of file <a class="el" href="_i_vx_data_session_8h_source.html">IVxDataSession.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="_i_vx_data_session_8h_source.html">IVxDataSession.h</a></li>
+<li>C:/Users/Zach/Git/vxsdk/VxSdk/Include/<a class="el" href="_i_vx_data_session_8h_source.html">IVxDataSession.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

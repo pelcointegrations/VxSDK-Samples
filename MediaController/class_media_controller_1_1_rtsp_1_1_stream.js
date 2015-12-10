@@ -10,5 +10,7 @@ var class_media_controller_1_1_rtsp_1_1_stream =
     [ "Play", "class_media_controller_1_1_rtsp_1_1_stream.html#a7790a70a35e70203c73232ff1fc27dfc", null ],
     [ "Resume", "class_media_controller_1_1_rtsp_1_1_stream.html#ae479b9bed38549d274d24f69cf277637", null ],
     [ "Seek", "class_media_controller_1_1_rtsp_1_1_stream.html#a7cd6a0ebc8cf8bfceeb5874ff713134e", null ],
-    [ "Stop", "class_media_controller_1_1_rtsp_1_1_stream.html#a675c9cab355bdf341f76bcd36ea4d16d", null ]
+    [ "Stop", "class_media_controller_1_1_rtsp_1_1_stream.html#a675c9cab355bdf341f76bcd36ea4d16d", null ],
+    [ "_keepAliveRunning", "class_media_controller_1_1_rtsp_1_1_stream.html#a6f8a8de7f9deb0aa5702d440c193a00d", null ],
+    [ "_rtspCommands", "class_media_controller_1_1_rtsp_1_1_stream.html#a9a23ef285f3e21b14d8e6e90bcebf39b", null ]
 ];

@@ -203,6 +203,8 @@ Protected Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a particular situation configuration that specifies how corresponding events shall be generated and handled when the situation is detected. </p>
+
+<p>Definition at line <a class="el" href="_i_vx_situation_8h_source.html#l00013">13</a> of file <a class="el" href="_i_vx_situation_8h_source.html">IVxSituation.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ae5121331f00ccfe0c505d535b391fca7"></a>
 <div class="memitem">
@@ -227,6 +229,43 @@ Protected Member Functions</h2></td></tr>
 
 <p>Clears this instance. </p>
 
+<p>Definition at line <a class="el" href="_i_vx_situation_8h_source.html#l00120">120</a> of file <a class="el" href="_i_vx_situation_8h_source.html">IVxSituation.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                     {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_situation.html#a85143db53e3991e5053a74aceefc349c">type</a>);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_situation.html#ac19f4a313c1d0eb70f9214c0b784ce9b">sourceDeviceId</a>);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_situation.html#a781953eb7bea73e928362d1f69973e8c">name</a>);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_situation.html#a1040fd067ef1b3be3dbc5b69689f69a9">shouldNotify</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_situation.html#ac05d5d9c24db7c94e0218ad9220baf28">shouldLog</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_situation.html#a9afdbca6018c4ee5ecb95c5b8b610d97">shouldExpandBanner</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_situation.html#aa43a3665d16b61bd136926134d31f3f0">isAckNeeded</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_situation.html#adc2aead84d8cbf0cbadfc7ad03ee8226">shouldAudiblyNotify</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_situation.html#a4e2f16328eef3fe4f7a0fdc181176724">autoAcknowledgeTime</a> = 0;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_situation.html#a49ffed961ace2cfa3085d4b4df8fba1b">audibleLoopDelay</a> = 0;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_situation.html#aa2717c70b82b8ac8484a71cdadfb2d05">audiblePlayCount</a> = 0;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_situation.html#a2da6f73fe11f63405962568e63df3cb2">severity</a> = 0;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_situation.html#a1ad3d9e2712dc4d7eb5f671324c36c41">snoozeIntervals</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_situation.html#a12e6f7f1f2cb72b47616e00907698121">snoozeIntervalSize</a> = 0;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_situation.html#a9125a431af889cb5a04b14bd841a180e">notificationIds</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_situation.html#a1063e56b6ebd030fe646f440f44e919a">notificationIdSize</a> = 0;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        }</div>
+<div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00018">VxMacros.h:18</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_situation_html_ac19f4a313c1d0eb70f9214c0b784ce9b"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_situation.html#ac19f4a313c1d0eb70f9214c0b784ce9b">VxSdk::IVxSituation::sourceDeviceId</a></div><div class="ttdeci">char sourceDeviceId[64]</div><div class="ttdoc">The unique identifier of the source device. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_situation_8h_source.html#l00058">IVxSituation.h:58</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_situation_html_a12e6f7f1f2cb72b47616e00907698121"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_situation.html#a12e6f7f1f2cb72b47616e00907698121">VxSdk::IVxSituation::snoozeIntervalSize</a></div><div class="ttdeci">int snoozeIntervalSize</div><div class="ttdoc">The size of snoozeIntervals. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_situation_8h_source.html#l00106">IVxSituation.h:106</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_situation_html_a1040fd067ef1b3be3dbc5b69689f69a9"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_situation.html#a1040fd067ef1b3be3dbc5b69689f69a9">VxSdk::IVxSituation::shouldNotify</a></div><div class="ttdeci">bool shouldNotify</div><div class="ttdoc">Indicates whether an event generated from the situation shall generate notifications. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_situation_8h_source.html#l00066">IVxSituation.h:66</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_situation_html_a1063e56b6ebd030fe646f440f44e919a"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_situation.html#a1063e56b6ebd030fe646f440f44e919a">VxSdk::IVxSituation::notificationIdSize</a></div><div class="ttdeci">int notificationIdSize</div><div class="ttdoc">The size of notificationIds. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_situation_8h_source.html#l00114">IVxSituation.h:114</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_situation_html_a9afdbca6018c4ee5ecb95c5b8b610d97"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_situation.html#a9afdbca6018c4ee5ecb95c5b8b610d97">VxSdk::IVxSituation::shouldExpandBanner</a></div><div class="ttdeci">bool shouldExpandBanner</div><div class="ttdoc">Indicates whether the notification banner on clients should be expanded by default. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_situation_8h_source.html#l00074">IVxSituation.h:74</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_situation_html_a781953eb7bea73e928362d1f69973e8c"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_situation.html#a781953eb7bea73e928362d1f69973e8c">VxSdk::IVxSituation::name</a></div><div class="ttdeci">char name[64]</div><div class="ttdoc">The situation friendly name. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_situation_8h_source.html#l00062">IVxSituation.h:62</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_situation_html_a1ad3d9e2712dc4d7eb5f671324c36c41"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_situation.html#a1ad3d9e2712dc4d7eb5f671324c36c41">VxSdk::IVxSituation::snoozeIntervals</a></div><div class="ttdeci">int * snoozeIntervals</div><div class="ttdoc">The default snooze intervals, in seconds, for a generated event. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_situation_8h_source.html#l00102">IVxSituation.h:102</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_situation_html_a4e2f16328eef3fe4f7a0fdc181176724"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_situation.html#a4e2f16328eef3fe4f7a0fdc181176724">VxSdk::IVxSituation::autoAcknowledgeTime</a></div><div class="ttdeci">int autoAcknowledgeTime</div><div class="ttdoc">The number of seconds after which a generated event state will be set to AutoAcked. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_situation_8h_source.html#l00086">IVxSituation.h:86</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_situation_html_ac05d5d9c24db7c94e0218ad9220baf28"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_situation.html#ac05d5d9c24db7c94e0218ad9220baf28">VxSdk::IVxSituation::shouldLog</a></div><div class="ttdeci">bool shouldLog</div><div class="ttdoc">Indicates whether events generated from this situation shall be persisted or immediately be discarded...</div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_situation_8h_source.html#l00070">IVxSituation.h:70</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_situation_html_a9125a431af889cb5a04b14bd841a180e"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_situation.html#a9125a431af889cb5a04b14bd841a180e">VxSdk::IVxSituation::notificationIds</a></div><div class="ttdeci">char ** notificationIds</div><div class="ttdoc">The unique identifiers of the notifications configured for this situation. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_situation_8h_source.html#l00110">IVxSituation.h:110</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_situation_html_a85143db53e3991e5053a74aceefc349c"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_situation.html#a85143db53e3991e5053a74aceefc349c">VxSdk::IVxSituation::type</a></div><div class="ttdeci">char type[128]</div><div class="ttdoc">The situation type. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_situation_8h_source.html#l00054">IVxSituation.h:54</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_situation_html_a49ffed961ace2cfa3085d4b4df8fba1b"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_situation.html#a49ffed961ace2cfa3085d4b4df8fba1b">VxSdk::IVxSituation::audibleLoopDelay</a></div><div class="ttdeci">int audibleLoopDelay</div><div class="ttdoc">The seconds to wait between audible notifications. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_situation_8h_source.html#l00090">IVxSituation.h:90</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_situation_html_aa43a3665d16b61bd136926134d31f3f0"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_situation.html#aa43a3665d16b61bd136926134d31f3f0">VxSdk::IVxSituation::isAckNeeded</a></div><div class="ttdeci">bool isAckNeeded</div><div class="ttdoc">Indicates whether the generated events shall have an initial state of AckNeeded or NoAckNeeded...</div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_situation_8h_source.html#l00078">IVxSituation.h:78</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_situation_html_adc2aead84d8cbf0cbadfc7ad03ee8226"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_situation.html#adc2aead84d8cbf0cbadfc7ad03ee8226">VxSdk::IVxSituation::shouldAudiblyNotify</a></div><div class="ttdeci">bool shouldAudiblyNotify</div><div class="ttdoc">Indicates whether a notification sound should play on supporting clients when an event is received...</div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_situation_8h_source.html#l00082">IVxSituation.h:82</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_situation_html_a2da6f73fe11f63405962568e63df3cb2"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_situation.html#a2da6f73fe11f63405962568e63df3cb2">VxSdk::IVxSituation::severity</a></div><div class="ttdeci">int severity</div><div class="ttdoc">The severity of the generated event, from 1 (highest) to 10 (lowest). </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_situation_8h_source.html#l00098">IVxSituation.h:98</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_situation_html_aa2717c70b82b8ac8484a71cdadfb2d05"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_situation.html#aa2717c70b82b8ac8484a71cdadfb2d05">VxSdk::IVxSituation::audiblePlayCount</a></div><div class="ttdeci">int audiblePlayCount</div><div class="ttdoc">The amount of times to play audible notifications. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_situation_8h_source.html#l00094">IVxSituation.h:94</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a1904b0c798f4c1634f1b4f8747243b24"></a>
@@ -426,6 +465,8 @@ Protected Member Functions</h2></td></tr>
 
 <p>The seconds to wait between audible notifications. </p>
 
+<p>Definition at line <a class="el" href="_i_vx_situation_8h_source.html#l00090">90</a> of file <a class="el" href="_i_vx_situation_8h_source.html">IVxSituation.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="aa2717c70b82b8ac8484a71cdadfb2d05"></a>
@@ -439,6 +480,8 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The amount of times to play audible notifications. </p>
+
+<p>Definition at line <a class="el" href="_i_vx_situation_8h_source.html#l00094">94</a> of file <a class="el" href="_i_vx_situation_8h_source.html">IVxSituation.h</a>.</p>
 
 </div>
 </div>
@@ -454,6 +497,8 @@ Protected Member Functions</h2></td></tr>
 
 <p>The number of seconds after which a generated event state will be set to AutoAcked. </p>
 
+<p>Definition at line <a class="el" href="_i_vx_situation_8h_source.html#l00086">86</a> of file <a class="el" href="_i_vx_situation_8h_source.html">IVxSituation.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="aa43a3665d16b61bd136926134d31f3f0"></a>
@@ -467,6 +512,8 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Indicates whether the generated events shall have an initial state of AckNeeded or NoAckNeeded. </p>
+
+<p>Definition at line <a class="el" href="_i_vx_situation_8h_source.html#l00078">78</a> of file <a class="el" href="_i_vx_situation_8h_source.html">IVxSituation.h</a>.</p>
 
 </div>
 </div>
@@ -482,6 +529,8 @@ Protected Member Functions</h2></td></tr>
 
 <p>The situation friendly name. </p>
 
+<p>Definition at line <a class="el" href="_i_vx_situation_8h_source.html#l00062">62</a> of file <a class="el" href="_i_vx_situation_8h_source.html">IVxSituation.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a9125a431af889cb5a04b14bd841a180e"></a>
@@ -495,6 +544,8 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The unique identifiers of the notifications configured for this situation. </p>
+
+<p>Definition at line <a class="el" href="_i_vx_situation_8h_source.html#l00110">110</a> of file <a class="el" href="_i_vx_situation_8h_source.html">IVxSituation.h</a>.</p>
 
 </div>
 </div>
@@ -510,6 +561,8 @@ Protected Member Functions</h2></td></tr>
 
 <p>The size of <a class="el" href="struct_vx_sdk_1_1_i_vx_situation.html#a9125a431af889cb5a04b14bd841a180e" title="The unique identifiers of the notifications configured for this situation. ">notificationIds</a>. </p>
 
+<p>Definition at line <a class="el" href="_i_vx_situation_8h_source.html#l00114">114</a> of file <a class="el" href="_i_vx_situation_8h_source.html">IVxSituation.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a2da6f73fe11f63405962568e63df3cb2"></a>
@@ -523,6 +576,8 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The severity of the generated event, from 1 (highest) to 10 (lowest). </p>
+
+<p>Definition at line <a class="el" href="_i_vx_situation_8h_source.html#l00098">98</a> of file <a class="el" href="_i_vx_situation_8h_source.html">IVxSituation.h</a>.</p>
 
 </div>
 </div>
@@ -538,6 +593,8 @@ Protected Member Functions</h2></td></tr>
 
 <p>Indicates whether a notification sound should play on supporting clients when an event is received. </p>
 
+<p>Definition at line <a class="el" href="_i_vx_situation_8h_source.html#l00082">82</a> of file <a class="el" href="_i_vx_situation_8h_source.html">IVxSituation.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a9afdbca6018c4ee5ecb95c5b8b610d97"></a>
@@ -551,6 +608,8 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Indicates whether the notification banner on clients should be expanded by default. </p>
+
+<p>Definition at line <a class="el" href="_i_vx_situation_8h_source.html#l00074">74</a> of file <a class="el" href="_i_vx_situation_8h_source.html">IVxSituation.h</a>.</p>
 
 </div>
 </div>
@@ -566,6 +625,8 @@ Protected Member Functions</h2></td></tr>
 
 <p>Indicates whether events generated from this situation shall be persisted or immediately be discarded. </p>
 
+<p>Definition at line <a class="el" href="_i_vx_situation_8h_source.html#l00070">70</a> of file <a class="el" href="_i_vx_situation_8h_source.html">IVxSituation.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a1040fd067ef1b3be3dbc5b69689f69a9"></a>
@@ -579,6 +640,8 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Indicates whether an event generated from the situation shall generate notifications. </p>
+
+<p>Definition at line <a class="el" href="_i_vx_situation_8h_source.html#l00066">66</a> of file <a class="el" href="_i_vx_situation_8h_source.html">IVxSituation.h</a>.</p>
 
 </div>
 </div>
@@ -594,6 +657,8 @@ Protected Member Functions</h2></td></tr>
 
 <p>The default snooze intervals, in seconds, for a generated event. </p>
 
+<p>Definition at line <a class="el" href="_i_vx_situation_8h_source.html#l00102">102</a> of file <a class="el" href="_i_vx_situation_8h_source.html">IVxSituation.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a12e6f7f1f2cb72b47616e00907698121"></a>
@@ -607,6 +672,8 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The size of <a class="el" href="struct_vx_sdk_1_1_i_vx_situation.html#a1ad3d9e2712dc4d7eb5f671324c36c41" title="The default snooze intervals, in seconds, for a generated event. ">snoozeIntervals</a>. </p>
+
+<p>Definition at line <a class="el" href="_i_vx_situation_8h_source.html#l00106">106</a> of file <a class="el" href="_i_vx_situation_8h_source.html">IVxSituation.h</a>.</p>
 
 </div>
 </div>
@@ -622,6 +689,8 @@ Protected Member Functions</h2></td></tr>
 
 <p>The unique identifier of the source device. </p>
 
+<p>Definition at line <a class="el" href="_i_vx_situation_8h_source.html#l00058">58</a> of file <a class="el" href="_i_vx_situation_8h_source.html">IVxSituation.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a85143db53e3991e5053a74aceefc349c"></a>
@@ -636,10 +705,12 @@ Protected Member Functions</h2></td></tr>
 
 <p>The situation type. </p>
 
+<p>Definition at line <a class="el" href="_i_vx_situation_8h_source.html#l00054">54</a> of file <a class="el" href="_i_vx_situation_8h_source.html">IVxSituation.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="_i_vx_situation_8h_source.html">IVxSituation.h</a></li>
+<li>C:/Users/Zach/Git/vxsdk/VxSdk/Include/<a class="el" href="_i_vx_situation_8h_source.html">IVxSituation.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>Media Controller Sample: MediaController::Utilities Namespace Reference</title>
+<title>Media Controller: MediaController::Utilities Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Media Controller Sample
+   <div id="projectname">Media Controller
    </div>
    <div id="projectbrief">A GStreamer implementation using the VideoXpert SDK</div>
   </td>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -152,25 +151,6 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span><span class="keyword">&gt;</span>(currentTime);</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        }</div>
 </div><!-- fragment -->
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespace_media_controller_1_1_utilities_af2dab63a3a50da3f464c5e9a7d01021e_cgraph.png" border="0" usemap="#namespace_media_controller_1_1_utilities_af2dab63a3a50da3f464c5e9a7d01021e_cgraph" alt=""/></div>
-<map name="namespace_media_controller_1_1_utilities_af2dab63a3a50da3f464c5e9a7d01021e_cgraph" id="namespace_media_controller_1_1_utilities_af2dab63a3a50da3f464c5e9a7d01021e_cgraph">
-</map>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespace_media_controller_1_1_utilities_af2dab63a3a50da3f464c5e9a7d01021e_icgraph.png" border="0" usemap="#namespace_media_controller_1_1_utilities_af2dab63a3a50da3f464c5e9a7d01021e_icgraph" alt=""/></div>
-<map name="namespace_media_controller_1_1_utilities_af2dab63a3a50da3f464c5e9a7d01021e_icgraph" id="namespace_media_controller_1_1_utilities_af2dab63a3a50da3f464c5e9a7d01021e_icgraph">
-<area shape="rect" id="node2" href="class_media_controller_1_1_stopped_state.html#a8bd9ad863881ed1f8b487a2eb4e00993" title="Perform the Play action based on the stream state. " alt="" coords="216,29,384,71"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="ac9d68406b6736a96222b0aeefe4c6501"></a>
@@ -201,30 +181,12 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;            time_t unixTimeValue = unixTime;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;            tm tmTime;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;            gmtime_s(&amp;tmTime, &amp;unixTimeValue);</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;            <span class="keywordtype">char</span> date[Constants::kDateMaxSize];</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;            <span class="keywordtype">char</span> date[<a class="code" href="namespace_media_controller_1_1_constants.html#a3c6b84d295b77ace0ae606545840c4dd">Constants::kDateMaxSize</a>];</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;            strftime(date, <span class="keyword">sizeof</span>(date), <span class="stringliteral">&quot;%Y%m%dT%H%M%S.000Z-&quot;</span>, &amp;tmTime);</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;            <span class="keywordflow">return</span> string(date);</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        }</div>
+<div class="ttc" id="namespace_media_controller_1_1_constants_html_a3c6b84d295b77ace0ae606545840c4dd"><div class="ttname"><a href="namespace_media_controller_1_1_constants.html#a3c6b84d295b77ace0ae606545840c4dd">MediaController::Constants::kDateMaxSize</a></div><div class="ttdeci">static const unsigned short kDateMaxSize</div><div class="ttdef"><b>Definition:</b> <a href="_constants_8h_source.html#l00015">Constants.h:15</a></div></div>
 </div><!-- fragment -->
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespace_media_controller_1_1_utilities_ac9d68406b6736a96222b0aeefe4c6501_cgraph.png" border="0" usemap="#namespace_media_controller_1_1_utilities_ac9d68406b6736a96222b0aeefe4c6501_cgraph" alt=""/></div>
-<map name="namespace_media_controller_1_1_utilities_ac9d68406b6736a96222b0aeefe4c6501_cgraph" id="namespace_media_controller_1_1_utilities_ac9d68406b6736a96222b0aeefe4c6501_cgraph">
-</map>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespace_media_controller_1_1_utilities_ac9d68406b6736a96222b0aeefe4c6501_icgraph.png" border="0" usemap="#namespace_media_controller_1_1_utilities_ac9d68406b6736a96222b0aeefe4c6501_icgraph" alt=""/></div>
-<map name="namespace_media_controller_1_1_utilities_ac9d68406b6736a96222b0aeefe4c6501_icgraph" id="namespace_media_controller_1_1_utilities_ac9d68406b6736a96222b0aeefe4c6501_icgraph">
-<area shape="rect" id="node2" href="class_media_controller_1_1_rtsp_1_1_commands.html#aca7fdcac23d14e5b9aebafb598d2002e" title="Send the PLAY method with a Range header and read the server response. " alt="" coords="216,29,376,71"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 </div><!-- contents -->

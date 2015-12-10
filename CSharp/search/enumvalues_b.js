@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['silenced',['Silenced',['../namespace_s_d_k_sample_app_1_1_enums.html#a3f43a4d396584b0912e9aa00173f8f7fa6f298e1e2a4770f368d3a31f1a74d7b8',1,'SDKSampleApp::Enums']]]
+  ['pending',['Pending',['../../CSharpWrapper/class_c_p_p_cli_1_1_export.html#aa1e40310d87591e803c2c5d30d74f0a7a2d13df6f8b5e4c5af9f87e0dc39df69d',1,'CPPCli::Export']]],
+  ['playback',['Playback',['../../CSharpWrapper/class_c_p_p_cli_1_1_media_control.html#acf04284305097301ef271f4670615552a8dc55bfcd34d5dc5860d3fefba972b7c',1,'CPPCli::MediaControl']]]
 ];

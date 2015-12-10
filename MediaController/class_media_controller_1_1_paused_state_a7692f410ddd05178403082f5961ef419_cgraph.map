@@ -1,7 +1,0 @@
-<map id="MediaController::PausedState::Seek" name="MediaController::PausedState::Seek">
-<area shape="rect" id="node2" href="$class_media_controller_1_1_stream_base.html#aae155f1282c9c6ab41caa41f9852da18" title="Call Play on the stream with the supplied start time, resulting in a playback stream. " alt="" coords="249,5,441,47"/>
-<area shape="rect" id="node3" href="$class_media_controller_1_1_stream_state.html#a8f6db90840dcbc48223b9f542b766551" title="Set the current state of the stream. " alt="" coords="248,71,441,112"/>
-<area shape="rect" id="node4" href="$class_media_controller_1_1_stream_base.html#a8426351a80597fb8d2a3a2ccc8ba732e" title="Get the current GStreamer wrapper instance. " alt="" coords="249,136,441,177"/>
-<area shape="rect" id="node5" href="$class_media_controller_1_1_gst_wrapper.html#af0a1d3209beb40b460742a34ce2e2b45" title="Set the current playback mode. " alt="" coords="249,201,440,243"/>
-<area shape="rect" id="node6" href="$class_media_controller_1_1_gst_wrapper.html#aab5b61232bf543508416828e8cd1ef8d" title="Set the pipeline state to playing and update the speed value for determining the framerate. " alt="" coords="249,267,440,308"/>
-</map>

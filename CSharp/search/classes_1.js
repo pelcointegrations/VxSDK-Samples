@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['connectform',['ConnectForm',['../class_s_d_k_sample_app_1_1_source_1_1_connect_form.html',1,'SDKSampleApp::Source']]],
-  ['controlmanager',['ControlManager',['../class_s_d_k_sample_app_1_1_source_1_1_control_manager.html',1,'SDKSampleApp::Source']]]
+  ['builder',['Builder',['../../MediaController/class_media_controller_1_1_gst_wrapper_1_1_builder.html',1,'MediaController::GstWrapper']]]
 ];

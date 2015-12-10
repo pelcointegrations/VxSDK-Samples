@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>Media Controller Sample: Include/IController.h Source File</title>
+<title>Media Controller: C:/Users/Zach/Git/vxsdk/Samples/VxSDK-Samples/MediaController/Include/IController.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Media Controller Sample
+   <div id="projectname">Media Controller
    </div>
    <div id="projectbrief">A GStreamer implementation using the VideoXpert SDK</div>
   </td>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -74,6 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -110,13 +110,13 @@ $(document).ready(function(){initNavTree('_i_controller_8h_source.html','');});
 <div class="title">IController.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef IController_h_</span></div>
+<a href="_i_controller_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef IController_h_</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define IController_h_</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;IStream.h&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;TimestampEvent.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_i_stream_8h.html">IStream.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_timestamp_event_8h.html">TimestampEvent.h</a>&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="namespace_media_controller.html">    7</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_media_controller.html">MediaController</a> {</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_media_controller.html">MediaController</a> {</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
 <div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="namespace_media_controller.html#af30de79c6143202068761ea616e550fd">   13</a></span>&#160;    <span class="keyword">typedef</span> void(*<a class="code" href="namespace_media_controller.html#af30de79c6143202068761ea616e550fd">TimestampEventCallback</a>)(<a class="code" href="struct_media_controller_1_1_timestamp_event.html">TimestampEvent</a>*);</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
@@ -153,22 +153,24 @@ $(document).ready(function(){initNavTree('_i_controller_8h_source.html','');});
 <div class="ttc" id="class_media_controller_1_1_i_controller_html_a25fad32d7f94ecc5999bab37ead56842"><div class="ttname"><a href="class_media_controller_1_1_i_controller.html#a25fad32d7f94ecc5999bab37ead56842">MediaController::IController::RemoveObserver</a></div><div class="ttdeci">virtual void RemoveObserver(TimestampEventCallback observer)=0</div><div class="ttdoc">Remove an existing timestamp event subscriber. </div></div>
 <div class="ttc" id="class_media_controller_1_1_i_controller_html_a244c1d4acbbe9c02b5694f8a1b4763c2"><div class="ttname"><a href="class_media_controller_1_1_i_controller.html#a244c1d4acbbe9c02b5694f8a1b4763c2">MediaController::IController::AddEventData</a></div><div class="ttdeci">virtual void AddEventData(void *customData)=0</div><div class="ttdoc">Add event data to be send back during timestamp events. </div></div>
 <div class="ttc" id="class_media_controller_1_1_i_controller_html_ac096b6dc76daeb30df51bacf9bfe4712"><div class="ttname"><a href="class_media_controller_1_1_i_controller.html#ac096b6dc76daeb30df51bacf9bfe4712">MediaController::IController::~IController</a></div><div class="ttdeci">virtual ~IController()</div><div class="ttdoc">Virtual destructor. </div><div class="ttdef"><b>Definition:</b> <a href="_i_controller_8h_source.html#l00038">IController.h:38</a></div></div>
+<div class="ttc" id="_timestamp_event_8h_html"><div class="ttname"><a href="_timestamp_event_8h.html">TimestampEvent.h</a></div></div>
 <div class="ttc" id="struct_media_controller_1_1_timestamp_event_html"><div class="ttname"><a href="struct_media_controller_1_1_timestamp_event.html">MediaController::TimestampEvent</a></div><div class="ttdoc">Represents an event that has been sent from a stream. </div><div class="ttdef"><b>Definition:</b> <a href="_timestamp_event_8h_source.html#l00009">TimestampEvent.h:9</a></div></div>
 <div class="ttc" id="class_media_controller_1_1_i_controller_html_aeb873b38a229a877fafc92ef3a581f37a2182a8f6dc36ced932e7e05305f22704"><div class="ttname"><a href="class_media_controller_1_1_i_controller.html#aeb873b38a229a877fafc92ef3a581f37a2182a8f6dc36ced932e7e05305f22704">MediaController::IController::kPlayback</a></div><div class="ttdoc">The stream is playing recorded video.</div><div class="ttdef"><b>Definition:</b> <a href="_i_controller_8h_source.html#l00032">IController.h:32</a></div></div>
 <div class="ttc" id="class_media_controller_1_1_i_stream_html"><div class="ttname"><a href="class_media_controller_1_1_i_stream.html">MediaController::IStream</a></div><div class="ttdoc">Defines the stream interface. </div><div class="ttdef"><b>Definition:</b> <a href="_i_stream_8h_source.html#l00011">IStream.h:11</a></div></div>
 <div class="ttc" id="class_media_controller_1_1_i_controller_html_a13d9691ab294809a5260a41e4ff59f0f"><div class="ttname"><a href="class_media_controller_1_1_i_controller.html#a13d9691ab294809a5260a41e4ff59f0f">MediaController::IController::GetMode</a></div><div class="ttdeci">virtual Mode GetMode()=0</div><div class="ttdoc">Get the current playback mode. </div></div>
 <div class="ttc" id="namespace_media_controller_html_af30de79c6143202068761ea616e550fd"><div class="ttname"><a href="namespace_media_controller.html#af30de79c6143202068761ea616e550fd">MediaController::TimestampEventCallback</a></div><div class="ttdeci">void(* TimestampEventCallback)(TimestampEvent *)</div><div class="ttdoc">The timestamp event callback function pointer. </div><div class="ttdef"><b>Definition:</b> <a href="_i_controller_8h_source.html#l00013">IController.h:13</a></div></div>
+<div class="ttc" id="_i_stream_8h_html"><div class="ttname"><a href="_i_stream_8h.html">IStream.h</a></div></div>
 <div class="ttc" id="class_media_controller_1_1_i_controller_html_aeb873b38a229a877fafc92ef3a581f37acc1969e6e601edde4fbbad12a234e519"><div class="ttname"><a href="class_media_controller_1_1_i_controller.html#aeb873b38a229a877fafc92ef3a581f37acc1969e6e601edde4fbbad12a234e519">MediaController::IController::kLive</a></div><div class="ttdoc">The stream is playing live video.</div><div class="ttdef"><b>Definition:</b> <a href="_i_controller_8h_source.html#l00029">IController.h:29</a></div></div>
 <div class="ttc" id="class_media_controller_1_1_i_controller_html_a96f8b74408f4c56296460de5d51c7774"><div class="ttname"><a href="class_media_controller_1_1_i_controller.html#a96f8b74408f4c56296460de5d51c7774">MediaController::IController::AddObserver</a></div><div class="ttdeci">virtual void AddObserver(TimestampEventCallback observer)=0</div><div class="ttdoc">Add a new subscriber to timestamp events. </div></div>
 <div class="ttc" id="class_media_controller_1_1_i_controller_html"><div class="ttname"><a href="class_media_controller_1_1_i_controller.html">MediaController::IController</a></div><div class="ttdoc">Defines the controller interface. </div><div class="ttdef"><b>Definition:</b> <a href="_i_controller_8h_source.html#l00018">IController.h:18</a></div></div>
-<div class="ttc" id="namespace_media_controller_html"><div class="ttname"><a href="namespace_media_controller.html">MediaController</a></div><div class="ttdoc">Contains classes used to create and manage media streams. </div><div class="ttdef"><b>Definition:</b> <a href="_i_controller_8h_source.html#l00007">IController.h:7</a></div></div>
+<div class="ttc" id="namespace_media_controller_html"><div class="ttname"><a href="namespace_media_controller.html">MediaController</a></div><div class="ttdoc">Contains classes used to create and manage media streams. </div><div class="ttdef"><b>Definition:</b> <a href="_controller_8cpp_source.html#l00017">Controller.cpp:17</a></div></div>
 <div class="ttc" id="class_media_controller_1_1_i_controller_html_aeb873b38a229a877fafc92ef3a581f37a277ddc64239dd32f57f788dbd3ec64a9"><div class="ttname"><a href="class_media_controller_1_1_i_controller.html#aeb873b38a229a877fafc92ef3a581f37a277ddc64239dd32f57f788dbd3ec64a9">MediaController::IController::kStopped</a></div><div class="ttdoc">The stream is stopped.</div><div class="ttdef"><b>Definition:</b> <a href="_i_controller_8h_source.html#l00026">IController.h:26</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_856524284ebe840938865dc061f982fb.html">Include</a></li><li class="navelem"><b>IController.h</b></li>
+    <li class="navelem"><a class="el" href="dir_6f2bbc259acbf2c00bc5315c0044b8e4.html">vxsdk</a></li><li class="navelem"><a class="el" href="dir_4b6f63d7a9a5c451ae872abad24d55ab.html">Samples</a></li><li class="navelem"><a class="el" href="dir_aaf608bdbff9050509eeedf0760b46a9.html">VxSDK-Samples</a></li><li class="navelem"><a class="el" href="dir_0c6d11e4f0b35f1feb615cd0d7c911f9.html">MediaController</a></li><li class="navelem"><a class="el" href="dir_82a7cfcfa0e067f11e94024df6739dae.html">Include</a></li><li class="navelem"><a class="el" href="_i_controller_8h.html">IController.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>

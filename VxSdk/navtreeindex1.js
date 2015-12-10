@@ -1,5 +1,10 @@
 var NAVTREEINDEX1 =
 {
+"struct_vx_sdk_1_1_i_vx_situation.html#a2da6f73fe11f63405962568e63df3cb2":[1,0,0,11,14],
+"struct_vx_sdk_1_1_i_vx_situation.html#a2ec5120ee5d4fc73f6a9d4099c3067e3":[1,0,0,11,3],
+"struct_vx_sdk_1_1_i_vx_situation.html#a49ffed961ace2cfa3085d4b4df8fba1b":[1,0,0,11,7],
+"struct_vx_sdk_1_1_i_vx_situation.html#a4e2f16328eef3fe4f7a0fdc181176724":[1,0,0,11,9],
+"struct_vx_sdk_1_1_i_vx_situation.html#a781953eb7bea73e928362d1f69973e8c":[1,0,0,11,11],
 "struct_vx_sdk_1_1_i_vx_situation.html#a85143db53e3991e5053a74aceefc349c":[1,0,0,11,22],
 "struct_vx_sdk_1_1_i_vx_situation.html#a9125a431af889cb5a04b14bd841a180e":[1,0,0,11,12],
 "struct_vx_sdk_1_1_i_vx_situation.html#a9afdbca6018c4ee5ecb95c5b8b610d97":[1,0,0,11,16],

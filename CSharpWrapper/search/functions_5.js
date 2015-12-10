@@ -1,9 +1,13 @@
 var searchData=
 [
-  ['getdevices',['GetDevices',['../class_c_p_p_cli_1_1_v_x_system.html#ac62f3a99b57100e33088348c196df269',1,'CPPCli::VXSystem']]],
-  ['getexports',['GetExports',['../class_c_p_p_cli_1_1_v_x_system.html#a3cccc3a30b245e19c776236afca72458',1,'CPPCli::VXSystem']]],
-  ['getpatterns',['GetPatterns',['../class_c_p_p_cli_1_1_ptz_controller.html#a25cc53c7ac96d003a284c6bea41a4932',1,'CPPCli::PtzController']]],
-  ['getpresets',['GetPresets',['../class_c_p_p_cli_1_1_ptz_controller.html#a7d645e59e5d0dc205ef040e851cba574',1,'CPPCli::PtzController']]],
-  ['getsituations',['GetSituations',['../class_c_p_p_cli_1_1_v_x_system.html#a97c15b4c686df544ba284b5fb2740572',1,'CPPCli::VXSystem']]],
-  ['gotolive',['GoToLive',['../class_c_p_p_cli_1_1_media_control.html#a2f06f8f367a4580152ee612e97c907e9',1,'CPPCli::MediaControl']]]
+  ['datainterface',['DataInterface',['../class_c_p_p_cli_1_1_data_interface.html#a2a07eadb0067d845e1d6302baa6cc1a4',1,'CPPCli::DataInterface']]],
+  ['datasession',['DataSession',['../class_c_p_p_cli_1_1_data_session.html#aea1bda94b5774516efc27ccc0b33facc',1,'CPPCli::DataSession']]],
+  ['datasource',['DataSource',['../class_c_p_p_cli_1_1_data_source.html#a41433348c41c908b00399f9499a794cf',1,'CPPCli::DataSource']]],
+  ['default',['Default',['../../VxSdk/struct_vx_sdk_1_1_vx_new_situation.html#ab4171af92f4eb1f82743cd0bf05491e2',1,'VxSdk::VxNewSituation']]],
+  ['delete',['Delete',['../../VxSdk/struct_vx_sdk_1_1_i_vx_clip.html#af92d767e2c3fb2d7a1d94605285d320c',1,'VxSdk::IVxClip::Delete()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_data_session.html#a96aa75f76eccb499e3767543612011c6',1,'VxSdk::IVxDataSession::Delete()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_data_source.html#a343ab001ccf2c96ef0cf35f18169f080',1,'VxSdk::IVxDataSource::Delete()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_device.html#a1a8bc3d079d756661f08fa05fcc620a1',1,'VxSdk::IVxDevice::Delete()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_event.html#a62f86281e77174ef98c398c3ce8bc5ab',1,'VxSdk::IVxEvent::Delete()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_export.html#ae29a38ba8a475af9003011776d09a5c4',1,'VxSdk::IVxExport::Delete()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_pattern.html#a18ba6e34685674d72c224236311705f8',1,'VxSdk::IVxPattern::Delete()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_preset.html#a8537829a9e872d59813d26147709a70f',1,'VxSdk::IVxPreset::Delete()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_ptz_controller.html#a527e9e41e5537828faab039444b3343d',1,'VxSdk::IVxPtzController::Delete()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_situation.html#a1904b0c798f4c1634f1b4f8747243b24',1,'VxSdk::IVxSituation::Delete()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_system.html#a89441c2a97ea14bff936661dd27631fc',1,'VxSdk::IVxSystem::Delete()']]],
+  ['deletedatasession',['DeleteDataSession',['../../VxSdk/struct_vx_sdk_1_1_i_vx_data_session.html#aef80e32b3c161ce7887ab379efb5c687',1,'VxSdk::IVxDataSession']]],
+  ['deleteexport',['DeleteExport',['../../VxSdk/struct_vx_sdk_1_1_i_vx_export.html#ab37423770bd8d3caac762d97878ee982',1,'VxSdk::IVxExport::DeleteExport()'],['../class_c_p_p_cli_1_1_v_x_system.html#a753c9d7915242110f5b6ad4d70a715d2',1,'CPPCli::VXSystem::DeleteExport()']]],
+  ['deletesituation',['DeleteSituation',['../../VxSdk/struct_vx_sdk_1_1_i_vx_situation.html#a2a69cfd77923230d4f3a618cbd25f78d',1,'VxSdk::IVxSituation::DeleteSituation()'],['../class_c_p_p_cli_1_1_v_x_system.html#a01105ecee4cef47021d58c163d3a5bf2',1,'CPPCli::VXSystem::DeleteSituation()']]],
+  ['describe',['Describe',['../../MediaController/class_media_controller_1_1_rtsp_1_1_commands.html#a5498da92caf636c4b4a5033a9eda5d73',1,'MediaController::Rtsp::Commands']]],
+  ['device',['Device',['../class_c_p_p_cli_1_1_device.html#a64fabf5a4bb6a6884b110738e22f3e05',1,'CPPCli::Device']]]
 ];

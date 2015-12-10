@@ -401,14 +401,14 @@ Private Member Functions</h2></td></tr>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordflow">try</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            {</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                <span class="comment">// Get the selected device.</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                var dev = (Device)lvDevices.SelectedItems[0].Tag;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                var dev = (<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/CSharpWrapper/CSharpWrapper.tag:../CSharpWrapper/" href="../CSharpWrapper/class_c_p_p_cli_1_1_device.html">Device</a>)lvDevices.SelectedItems[0].Tag;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                var dataSources = dev.DataSources;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                foreach (var dataSource in dataSources)</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                {</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                    <span class="keywordflow">foreach</span> (var dataInterface <span class="keywordflow">in</span> dataSource.DataInterfaces)</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                    {</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                        <span class="comment">// If the protocol is not Rtsp/Rtp then it will not be recording.</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                        <span class="keywordflow">if</span> (dataInterface.Protocol != (DataInterface.StreamProtocols)<a class="code" href="namespace_s_d_k_sample_app_1_1_enums.html#a9f1969ae6142d250aa7c18d5b8c01004">VxStreamProtocol</a>.RtspRtp)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                        <span class="keywordflow">if</span> (dataInterface.Protocol != (<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/CSharpWrapper/CSharpWrapper.tag:../CSharpWrapper/" href="../CSharpWrapper/class_c_p_p_cli_1_1_data_interface.html">DataInterface</a>.<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/CSharpWrapper/CSharpWrapper.tag:../CSharpWrapper/" href="../CSharpWrapper/class_c_p_p_cli_1_1_data_interface.html#abc71fe6bdd16582a76e99d5a20fb35e0">StreamProtocols</a>)<a class="code" href="namespace_s_d_k_sample_app_1_1_enums.html#a9f1969ae6142d250aa7c18d5b8c01004">VxStreamProtocol</a>.RtspRtp)</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                            <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                        var clips = dataSource.Clips;</div>
@@ -432,6 +432,9 @@ Private Member Functions</h2></td></tr>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            { }   </div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div>
 <div class="ttc" id="namespace_s_d_k_sample_app_1_1_enums_html_a9f1969ae6142d250aa7c18d5b8c01004"><div class="ttname"><a href="namespace_s_d_k_sample_app_1_1_enums.html#a9f1969ae6142d250aa7c18d5b8c01004">SDKSampleApp.Enums.VxStreamProtocol</a></div><div class="ttdeci">VxStreamProtocol</div><div class="ttdoc">The VxStreamProtocol enumeration. </div><div class="ttdef"><b>Definition:</b> <a href="_enums_8cs_source.html#l00135">Enums.cs:135</a></div></div>
+<div class="ttc" id="class_c_p_p_cli_1_1_data_interface_html_abc71fe6bdd16582a76e99d5a20fb35e0"><div class="ttname"><a href="../CSharpWrapper/class_c_p_p_cli_1_1_data_interface.html#abc71fe6bdd16582a76e99d5a20fb35e0">CPPCli::DataInterface::StreamProtocols</a></div><div class="ttdeci">StreamProtocols</div></div>
+<div class="ttc" id="class_c_p_p_cli_1_1_data_interface_html"><div class="ttname"><a href="../CSharpWrapper/class_c_p_p_cli_1_1_data_interface.html">CPPCli::DataInterface</a></div></div>
+<div class="ttc" id="class_c_p_p_cli_1_1_device_html"><div class="ttname"><a href="../CSharpWrapper/class_c_p_p_cli_1_1_device.html">CPPCli::Device</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -462,7 +465,7 @@ Private Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Source/<a class="el" href="_new_export_form_8cs_source.html">NewExportForm.cs</a></li>
+<li>C:/Users/Zach/Git/vxsdk/Samples/VxSDK-Samples/CSharpSample/CSharp/Source/<a class="el" href="_new_export_form_8cs_source.html">NewExportForm.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

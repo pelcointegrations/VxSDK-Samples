@@ -2,6 +2,7 @@ var class_media_controller_1_1_stream_base =
 [
     [ "~StreamBase", "class_media_controller_1_1_stream_base.html#ad4a70540ee69b155a8ca5123a859baf1", null ],
     [ "StreamBase", "class_media_controller_1_1_stream_base.html#a2d22488fa6b3e0ff7c174cdeba5cc9bb", null ],
+    [ "StreamBase", "class_media_controller_1_1_stream_base.html#a42d295f46f4563434c45021286630dc3", null ],
     [ "FrameBackward", "class_media_controller_1_1_stream_base.html#a6dedd1c7d98100ed150258af0ea0e57b", null ],
     [ "FrameForward", "class_media_controller_1_1_stream_base.html#a3508d3b5e19efb45b0cf9fd843a15b73", null ],
     [ "GetGstreamer", "class_media_controller_1_1_stream_base.html#a8426351a80597fb8d2a3a2ccc8ba732e", null ],

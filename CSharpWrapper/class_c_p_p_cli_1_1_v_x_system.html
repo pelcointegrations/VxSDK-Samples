@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -109,6 +109,9 @@ $(document).ready(function(){initNavTree('class_c_p_p_cli_1_1_v_x_system.html','
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pac-static-methods">Static Package Functions</a> &#124;
+<a href="#pac-attribs">Package Attributes</a> &#124;
+<a href="#pac-static-attribs">Static Package Attributes</a> &#124;
 <a href="#properties">Properties</a> &#124;
 <a href="#events">Events</a> &#124;
 <a href="class_c_p_p_cli_1_1_v_x_system-members.html">List of all members</a>  </div>
@@ -117,7 +120,7 @@ $(document).ready(function(){initNavTree('class_c_p_p_cli_1_1_v_x_system.html','
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="class_c_p_p_cli_1_1_v_x_system.html" title="The VXSystem class represents a VideoXpert system. ">VXSystem</a> class represents a VideoXpert system.  
+<p>The <a class="el" href="class_c_p_p_cli_1_1_v_x_system.html" title="The VXSystem class represents a VideoXpert system. It is the entry point of the VideoXpert SDK and al...">VXSystem</a> class represents a VideoXpert system. It is the entry point of the VideoXpert SDK and allows the user to manage the system and devices.  
  <a href="class_c_p_p_cli_1_1_v_x_system.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_v_x_system_8h_source.html">VXSystem.h</a>&gt;</code></p>
@@ -160,12 +163,31 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa8284a86d0c78a47d086c20c352060db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">Results::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_v_x_system.html#aa8284a86d0c78a47d086c20c352060db">InjectEvent</a> (<a class="el" href="class_c_p_p_cli_1_1_new_event.html">NewEvent</a>^ newEvent)</td></tr>
 <tr class="memdesc:aa8284a86d0c78a47d086c20c352060db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a new event into the system.  <a href="#aa8284a86d0c78a47d086c20c352060db">More...</a><br /></td></tr>
 <tr class="separator:aa8284a86d0c78a47d086c20c352060db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb55a88b4508d23122acd09f9ecf6af9"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_v_x_system.html#aeb55a88b4508d23122acd09f9ecf6af9">EventCallbackDelegate</a> (VxSdk::IVxEvent *vxEvent)</td></tr>
+<tr class="memitem:aeb55a88b4508d23122acd09f9ecf6af9"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_v_x_system.html#aeb55a88b4508d23122acd09f9ecf6af9">EventCallbackDelegate</a> (<a class="elRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_event.html">VxSdk::IVxEvent</a> *vxEvent)</td></tr>
 <tr class="memdesc:aeb55a88b4508d23122acd09f9ecf6af9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The native event callback delegate.  <a href="#aeb55a88b4508d23122acd09f9ecf6af9">More...</a><br /></td></tr>
 <tr class="separator:aeb55a88b4508d23122acd09f9ecf6af9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00a54ff47433b31e2a2c974f8d1f8af7"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_v_x_system.html#a00a54ff47433b31e2a2c974f8d1f8af7">EventDelegate</a> (<a class="el" href="class_c_p_p_cli_1_1_event.html">Event</a>^ vxEvent)</td></tr>
 <tr class="memdesc:a00a54ff47433b31e2a2c974f8d1f8af7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The managed event delegate.  <a href="#a00a54ff47433b31e2a2c974f8d1f8af7">More...</a><br /></td></tr>
 <tr class="separator:a00a54ff47433b31e2a2c974f8d1f8af7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-static-methods"></a>
+Static Package Functions</h2></td></tr>
+<tr class="memitem:a28d98adf632a71205425bd38f5b00755"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_v_x_system.html#a28d98adf632a71205425bd38f5b00755">_FireEvent</a> (<a class="elRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_event.html">VxSdk::IVxEvent</a> *vxEvent)</td></tr>
+<tr class="separator:a28d98adf632a71205425bd38f5b00755"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-attribs"></a>
+Package Attributes</h2></td></tr>
+<tr class="memitem:ae22a0a176121622942b44b91c8150e99"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_system.html">VxSdk::IVxSystem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_v_x_system.html#ae22a0a176121622942b44b91c8150e99">_system</a></td></tr>
+<tr class="separator:ae22a0a176121622942b44b91c8150e99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ce5747f2ac5f394a94d464cadf3149e"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_login_info.html">VxSdk::VxLoginInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_v_x_system.html#a2ce5747f2ac5f394a94d464cadf3149e">_loginInfo</a></td></tr>
+<tr class="separator:a2ce5747f2ac5f394a94d464cadf3149e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2a7ba8c1537b619015bc4ee492ebb9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_p_p_cli_1_1_v_x_system.html#aeb55a88b4508d23122acd09f9ecf6af9">EventCallbackDelegate</a>^&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_v_x_system.html#aa2a7ba8c1537b619015bc4ee492ebb9f">_callback</a></td></tr>
+<tr class="separator:aa2a7ba8c1537b619015bc4ee492ebb9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-static-attribs"></a>
+Static Package Attributes</h2></td></tr>
+<tr class="memitem:a2aec8c82cf350f178c2b848618e0d17f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_c_p_p_cli_1_1_v_x_system.html#a00a54ff47433b31e2a2c974f8d1f8af7">EventDelegate</a>^&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_v_x_system.html#a2aec8c82cf350f178c2b848618e0d17f">_systemEvent</a></td></tr>
+<tr class="separator:a2aec8c82cf350f178c2b848618e0d17f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
@@ -183,8 +205,7 @@ Events</h2></td></tr>
 <tr class="separator:ab1246aed9d0a3edc510d669470b4ab2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="class_c_p_p_cli_1_1_v_x_system.html" title="The VXSystem class represents a VideoXpert system. ">VXSystem</a> class represents a VideoXpert system. </p>
-<p>It is the entry point of the VideoXpert SDK and allows the user to manage the system and devices. </p>
+<div class="textblock"><p>The <a class="el" href="class_c_p_p_cli_1_1_v_x_system.html" title="The VXSystem class represents a VideoXpert system. It is the entry point of the VideoXpert SDK and al...">VXSystem</a> class represents a VideoXpert system. It is the entry point of the VideoXpert SDK and allows the user to manage the system and devices. </p>
 
 <p>Definition at line <a class="el" href="_v_x_system_8h_source.html#l00016">16</a> of file <a class="el" href="_v_x_system_8h_source.html">VXSystem.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -211,36 +232,21 @@ Events</h2></td></tr>
 </dl>
 
 <p>Definition at line <a class="el" href="_v_x_system_8cpp_source.html#l00012">12</a> of file <a class="el" href="_v_x_system_8cpp_source.html">VXSystem.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;                                   : _loginInfo(<span class="keyword">new</span> VxSdk::VxLoginInfo()) {</div>
+<div class="fragment"><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;                                   : <a class="code" href="class_c_p_p_cli_1_1_v_x_system.html#a2ce5747f2ac5f394a94d464cadf3149e">_loginInfo</a>(<span class="keyword">new</span> <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_login_info.html">VxSdk::VxLoginInfo</a>()) {</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="comment">// Init the sdk with your key generated using VxSdkKeyGen.exe</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    String^ key = File::ReadAllText(<span class="stringliteral">&quot;..\\..\\..\\..\\..\\PelcoKey.txt&quot;</span>);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    VxSdk::VxInit(<a class="code" href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2">Utils::ConvertSysString</a>(key));</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/namespace_vx_sdk.html#ad02dc2992da723f3c6ed634f320c29cc">VxSdk::VxInit</a>(<a class="code" href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2">Utils::ConvertSysString</a>(key));</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="comment">// Enter the VideoXpert IP information</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    VxSdk::Utilities::StrCopySafe(_loginInfo-&gt;ipAddress, <a class="code" href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2">Utils::ConvertSysString</a>(ip));</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">VxSdk::Utilities::StrCopySafe</a>(<a class="code" href="class_c_p_p_cli_1_1_v_x_system.html#a2ce5747f2ac5f394a94d464cadf3149e">_loginInfo</a>-&gt;<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_login_info.html#ac56160737c3aa9e3d8bb8340ef832ec8">ipAddress</a>, <a class="code" href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2">Utils::ConvertSysString</a>(ip));</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<div class="ttc" id="class_c_p_p_cli_1_1_v_x_system_html_a2ce5747f2ac5f394a94d464cadf3149e"><div class="ttname"><a href="class_c_p_p_cli_1_1_v_x_system.html#a2ce5747f2ac5f394a94d464cadf3149e">CPPCli::VXSystem::_loginInfo</a></div><div class="ttdeci">VxSdk::VxLoginInfo * _loginInfo</div><div class="ttdef"><b>Definition:</b> <a href="_v_x_system_8h_source.html#l00139">VXSystem.h:139</a></div></div>
+<div class="ttc" id="namespace_vx_sdk_1_1_utilities_html_a11cbdb435aa92ea160aad373da6a32db"><div class="ttname"><a href="../VxSdk/namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">VxSdk::Utilities::StrCopySafe</a></div><div class="ttdeci">static void StrCopySafe(char(&amp;dst)[dstSize], const char *src)</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_login_info_html_ac56160737c3aa9e3d8bb8340ef832ec8"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_login_info.html#ac56160737c3aa9e3d8bb8340ef832ec8">VxSdk::VxLoginInfo::ipAddress</a></div><div class="ttdeci">char ipAddress[64]</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_login_info_html"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_login_info.html">VxSdk::VxLoginInfo</a></div></div>
+<div class="ttc" id="namespace_vx_sdk_html_ad02dc2992da723f3c6ed634f320c29cc"><div class="ttname"><a href="../VxSdk/namespace_vx_sdk.html#ad02dc2992da723f3c6ed634f320c29cc">VxSdk::VxInit</a></div><div class="ttdeci">EXTERN_C VXAPI VxResult::Value VxInit(const char *key)</div></div>
 <div class="ttc" id="class_c_p_p_cli_1_1_utils_html_af27a653d2c277c67bb7a2dee0971f4b2"><div class="ttname"><a href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2">CPPCli::Utils::ConvertSysString</a></div><div class="ttdeci">static const char * ConvertSysString(System::String^ sysString)</div><div class="ttdoc">Convert a system string to a char. </div><div class="ttdef"><b>Definition:</b> <a href="_utils_8h_source.html#l00062">Utils.h:62</a></div></div>
 </div><!-- fragment -->
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_c_p_p_cli_1_1_v_x_system_a82d6690426eca83ea5b3b1ac0d99b131_cgraph.png" border="0" usemap="#class_c_p_p_cli_1_1_v_x_system_a82d6690426eca83ea5b3b1ac0d99b131_cgraph" alt=""/></div>
-<map name="class_c_p_p_cli_1_1_v_x_system_a82d6690426eca83ea5b3b1ac0d99b131_cgraph" id="class_c_p_p_cli_1_1_v_x_system_a82d6690426eca83ea5b3b1ac0d99b131_cgraph">
-<area shape="rect" id="node2" href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2" title="Convert a system string to a char. " alt="" coords="256,5,428,47"/>
-</map>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_c_p_p_cli_1_1_v_x_system_a82d6690426eca83ea5b3b1ac0d99b131_icgraph.png" border="0" usemap="#class_c_p_p_cli_1_1_v_x_system_a82d6690426eca83ea5b3b1ac0d99b131_icgraph" alt=""/></div>
-<map name="class_c_p_p_cli_1_1_v_x_system_a82d6690426eca83ea5b3b1ac0d99b131_icgraph" id="class_c_p_p_cli_1_1_v_x_system_a82d6690426eca83ea5b3b1ac0d99b131_icgraph">
-<area shape="rect" id="node2" href="class_c_p_p_cli_1_1_v_x_system.html#adad99c4b19cddd9bdb36943e33041216" title="Virtual destructor. " alt="" coords="256,5,397,47"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="adad99c4b19cddd9bdb36943e33041216"></a>
@@ -272,17 +278,6 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        }</div>
 <div class="ttc" id="class_c_p_p_cli_1_1_v_x_system_html_a82d6690426eca83ea5b3b1ac0d99b131"><div class="ttname"><a href="class_c_p_p_cli_1_1_v_x_system.html#a82d6690426eca83ea5b3b1ac0d99b131">CPPCli::VXSystem::VXSystem</a></div><div class="ttdeci">VXSystem(System::String^ ip)</div><div class="ttdoc">Constructor that takes an IP as a parameter. </div><div class="ttdef"><b>Definition:</b> <a href="_v_x_system_8cpp_source.html#l00012">VXSystem.cpp:12</a></div></div>
 </div><!-- fragment -->
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_c_p_p_cli_1_1_v_x_system_adad99c4b19cddd9bdb36943e33041216_cgraph.png" border="0" usemap="#class_c_p_p_cli_1_1_v_x_system_adad99c4b19cddd9bdb36943e33041216_cgraph" alt=""/></div>
-<map name="class_c_p_p_cli_1_1_v_x_system_adad99c4b19cddd9bdb36943e33041216_cgraph" id="class_c_p_p_cli_1_1_v_x_system_adad99c4b19cddd9bdb36943e33041216_cgraph">
-<area shape="rect" id="node2" href="class_c_p_p_cli_1_1_v_x_system.html#a82d6690426eca83ea5b3b1ac0d99b131" title="Constructor that takes an IP as a parameter. " alt="" coords="195,13,397,39"/>
-<area shape="rect" id="node3" href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2" title="Convert a system string to a char. " alt="" coords="445,5,617,47"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a907262dda74153eb989969e9b42e2aa0"></a>
@@ -303,23 +298,60 @@ Here is the call graph for this function:</div>
 <p>Definition at line <a class="el" href="_v_x_system_8cpp_source.html#l00043">43</a> of file <a class="el" href="_v_x_system_8cpp_source.html">VXSystem.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                          {</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">// Delete system object</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">if</span> (_system != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_c_p_p_cli_1_1_v_x_system.html#ae22a0a176121622942b44b91c8150e99">_system</a> != <span class="keyword">nullptr</span>) {</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="comment">// Unsubscribe to the system events</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        _system-&gt;StopNotifications();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keyword">delete</span> _callback;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        _system-&gt;Delete();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        _system = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="class_c_p_p_cli_1_1_v_x_system.html#ae22a0a176121622942b44b91c8150e99">_system</a>-&gt;<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_system.html#a7961138a0726e7260d6260e19fd693cd">StopNotifications</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keyword">delete</span> <a class="code" href="class_c_p_p_cli_1_1_v_x_system.html#aa2a7ba8c1537b619015bc4ee492ebb9f">_callback</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="class_c_p_p_cli_1_1_v_x_system.html#ae22a0a176121622942b44b91c8150e99">_system</a>-&gt;<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_system.html#a89441c2a97ea14bff936661dd27631fc">Delete</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="class_c_p_p_cli_1_1_v_x_system.html#ae22a0a176121622942b44b91c8150e99">_system</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">// Delete loginInfo object</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">if</span> (_loginInfo != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">delete</span> _loginInfo;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_c_p_p_cli_1_1_v_x_system.html#a2ce5747f2ac5f394a94d464cadf3149e">_loginInfo</a> != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">delete</span> <a class="code" href="class_c_p_p_cli_1_1_v_x_system.html#a2ce5747f2ac5f394a94d464cadf3149e">_loginInfo</a>;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_system_html_a89441c2a97ea14bff936661dd27631fc"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_i_vx_system.html#a89441c2a97ea14bff936661dd27631fc">VxSdk::IVxSystem::Delete</a></div><div class="ttdeci">virtual VxResult::Value Delete() const  =0</div></div>
+<div class="ttc" id="class_c_p_p_cli_1_1_v_x_system_html_a2ce5747f2ac5f394a94d464cadf3149e"><div class="ttname"><a href="class_c_p_p_cli_1_1_v_x_system.html#a2ce5747f2ac5f394a94d464cadf3149e">CPPCli::VXSystem::_loginInfo</a></div><div class="ttdeci">VxSdk::VxLoginInfo * _loginInfo</div><div class="ttdef"><b>Definition:</b> <a href="_v_x_system_8h_source.html#l00139">VXSystem.h:139</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_system_html_a7961138a0726e7260d6260e19fd693cd"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_i_vx_system.html#a7961138a0726e7260d6260e19fd693cd">VxSdk::IVxSystem::StopNotifications</a></div><div class="ttdeci">virtual VxResult::Value StopNotifications() const  =0</div></div>
+<div class="ttc" id="class_c_p_p_cli_1_1_v_x_system_html_aa2a7ba8c1537b619015bc4ee492ebb9f"><div class="ttname"><a href="class_c_p_p_cli_1_1_v_x_system.html#aa2a7ba8c1537b619015bc4ee492ebb9f">CPPCli::VXSystem::_callback</a></div><div class="ttdeci">EventCallbackDelegate^ _callback</div><div class="ttdef"><b>Definition:</b> <a href="_v_x_system_8h_source.html#l00140">VXSystem.h:140</a></div></div>
+<div class="ttc" id="class_c_p_p_cli_1_1_v_x_system_html_ae22a0a176121622942b44b91c8150e99"><div class="ttname"><a href="class_c_p_p_cli_1_1_v_x_system.html#ae22a0a176121622942b44b91c8150e99">CPPCli::VXSystem::_system</a></div><div class="ttdeci">VxSdk::IVxSystem * _system</div><div class="ttdef"><b>Definition:</b> <a href="_v_x_system_8h_source.html#l00138">VXSystem.h:138</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a28d98adf632a71205425bd38f5b00755"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CPPCli::VXSystem::_FireEvent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_event.html">VxSdk::IVxEvent</a> *&#160;</td>
+          <td class="paramname"><em>vxEvent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_v_x_system_8cpp_source.html#l00258">258</a> of file <a class="el" href="_v_x_system_8cpp_source.html">VXSystem.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                                                      {</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="comment">// Fire the notification if there is a subscription to the system events</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_c_p_p_cli_1_1_v_x_system.html#a2aec8c82cf350f178c2b848618e0d17f">_systemEvent</a> != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_c_p_p_cli_1_1_v_x_system.html#a2aec8c82cf350f178c2b848618e0d17f">_systemEvent</a>(<span class="keyword">gcnew</span> Event(vxEvent));</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;}</div>
+<div class="ttc" id="class_c_p_p_cli_1_1_v_x_system_html_a2aec8c82cf350f178c2b848618e0d17f"><div class="ttname"><a href="class_c_p_p_cli_1_1_v_x_system.html#a2aec8c82cf350f178c2b848618e0d17f">CPPCli::VXSystem::_systemEvent</a></div><div class="ttdeci">static EventDelegate^ _systemEvent</div><div class="ttdef"><b>Definition:</b> <a href="_v_x_system_8h_source.html#l00141">VXSystem.h:141</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a class="anchor" id="adddaec3653d09d4b061057cd4706231d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -346,48 +378,57 @@ Here is the call graph for this function:</div>
 <p>Definition at line <a class="el" href="_v_x_system_8cpp_source.html#l00181">181</a> of file <a class="el" href="_v_x_system_8cpp_source.html">VXSystem.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                                                                                {</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="comment">// Create a situation object and populate its fields using newSituation</span></div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    VxSdk::VxNewSituation vxSituation;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    VxSdk::Utilities::StrCopySafe(vxSituation.name, <a class="code" href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2">Utils::ConvertSysString</a>(newSituation-&gt;Name));</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    VxSdk::Utilities::StrCopySafe(vxSituation.sourceDeviceId, <a class="code" href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2">Utils::ConvertSysString</a>(newSituation-&gt;SourceDeviceId));</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    VxSdk::Utilities::StrCopySafe(vxSituation.type, <a class="code" href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2">Utils::ConvertSysString</a>(newSituation-&gt;Type));</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    vxSituation.ackNeeded = newSituation-&gt;IsAckNeeded;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    vxSituation.audibleLoopDelay = newSituation-&gt;AudibleLoopDelay;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    vxSituation.audibleNotify = newSituation-&gt;UseAudibleNotification;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    vxSituation.audiblePlayCount = newSituation-&gt;AudiblePlayCount;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    vxSituation.autoAcknowledge = newSituation-&gt;AutoAcknowledge;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    vxSituation.expandBanner = newSituation-&gt;ShouldExpandBanner;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    vxSituation.log = newSituation-&gt;ShouldLog;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    vxSituation.notify = newSituation-&gt;ShouldNotify;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    vxSituation.severity = newSituation-&gt;Severity;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_new_situation.html">VxSdk::VxNewSituation</a> vxSituation;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">VxSdk::Utilities::StrCopySafe</a>(vxSituation.<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_new_situation.html#a7e45524c547bfb07a02db0c148888810">name</a>, <a class="code" href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2">Utils::ConvertSysString</a>(newSituation-&gt;Name));</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">VxSdk::Utilities::StrCopySafe</a>(vxSituation.<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_new_situation.html#a6287117987eb201a0415ae0c06b49d9a">sourceDeviceId</a>, <a class="code" href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2">Utils::ConvertSysString</a>(newSituation-&gt;SourceDeviceId));</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">VxSdk::Utilities::StrCopySafe</a>(vxSituation.<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_new_situation.html#acef867465329c3a407418ee51564151e">type</a>, <a class="code" href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2">Utils::ConvertSysString</a>(newSituation-&gt;Type));</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    vxSituation.<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_new_situation.html#ad7f4c166b3fc0614f59e8f8813919ede">isAckNeeded</a> = newSituation-&gt;IsAckNeeded;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    vxSituation.<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_new_situation.html#a5c61818029c4279ea915a2fee4c3bd9d">audibleLoopDelay</a> = newSituation-&gt;AudibleLoopDelay;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    vxSituation.<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_new_situation.html#a98846ef7ea642749c085d8c7d96b3be3">shouldAudiblyNotify</a> = newSituation-&gt;UseAudibleNotification;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    vxSituation.<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_new_situation.html#a3d6c0b99d78f6501d07974b1c4ff15a9">audiblePlayCount</a> = newSituation-&gt;AudiblePlayCount;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    vxSituation.<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_new_situation.html#aa194af2c334b9362acf0069e8780a024">autoAcknowledge</a> = newSituation-&gt;AutoAcknowledge;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    vxSituation.<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_new_situation.html#abbacf35e1e83dea4f9edebe6ad06413f">shouldExpandBanner</a> = newSituation-&gt;ShouldExpandBanner;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    vxSituation.<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_new_situation.html#aa5315d12956d5b07fe49efe8a6065f18">shouldLog</a> = newSituation-&gt;ShouldLog;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    vxSituation.<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_new_situation.html#aed25dc1272ebaa6804234b5bf5976256">shouldNotify</a> = newSituation-&gt;ShouldNotify;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    vxSituation.<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_new_situation.html#a738520c51d5772c3544eb02cc5509fbb">severity</a> = newSituation-&gt;Severity;</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordtype">int</span> size = newSituation-&gt;SnoozeIntervals-&gt;Count;</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordtype">int</span> *intervals = <span class="keyword">new</span> <span class="keywordtype">int</span>[size];</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; size; i++) {</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        intervals[i] = newSituation-&gt;SnoozeIntervals[i];</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    }</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    vxSituation.snoozeIntervals = intervals;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    vxSituation.<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_new_situation.html#a2073bdb70e360c419d2524890908db0d">snoozeIntervals</a> = intervals;</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="comment">// Make the call to add the situation into VideoXpert</span></div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    VxSdk::VxResult::Value result = _system-&gt;AddSituation(vxSituation);</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxSdk::VxResult::Value</a> result = <a class="code" href="class_c_p_p_cli_1_1_v_x_system.html#ae22a0a176121622942b44b91c8150e99">_system</a>-&gt;<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_system.html#aafe2b0350411d8991a1a92ec4620f838">AddSituation</a>(vxSituation);</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="comment">// Unless there was an issue adding the situation the result should be VxSdk::VxResult::kOK</span></div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keywordflow">if</span> (result == VxSdk::VxResult::kOK) {</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keywordflow">if</span> (result == <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26ac95db274cb42e10fd36986b8336daae3">VxSdk::VxResult::kOK</a>) {</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        <span class="comment">// Remove the memory we previously allocated</span></div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <span class="keyword">delete</span>[] vxSituation.snoozeIntervals;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <span class="keyword">delete</span>[] vxSituation.<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_new_situation.html#a2073bdb70e360c419d2524890908db0d">snoozeIntervals</a>;</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    }</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">CPPCli::Results::Value</a>(result);</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;}</div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_situation_html"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_new_situation.html">VxSdk::VxNewSituation</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_situation_html_a5c61818029c4279ea915a2fee4c3bd9d"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_new_situation.html#a5c61818029c4279ea915a2fee4c3bd9d">VxSdk::VxNewSituation::audibleLoopDelay</a></div><div class="ttdeci">int audibleLoopDelay</div></div>
 <div class="ttc" id="class_c_p_p_cli_1_1_results_html_a12504aac644d00e0532be43063a970ca"><div class="ttname"><a href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">CPPCli::Results::Value</a></div><div class="ttdeci">Value</div><div class="ttdoc">Values that represent the result of calls to the VideoXpert system. </div><div class="ttdef"><b>Definition:</b> <a href="_utils_8h_source.html#l00020">Utils.h:20</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_result_html_adc2e4ff9e03060a9ed92fdc0121dde26ac95db274cb42e10fd36986b8336daae3"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26ac95db274cb42e10fd36986b8336daae3">VxSdk::VxResult::kOK</a></div><div class="ttdeci">kOK</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_situation_html_aa194af2c334b9362acf0069e8780a024"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_new_situation.html#aa194af2c334b9362acf0069e8780a024">VxSdk::VxNewSituation::autoAcknowledge</a></div><div class="ttdeci">int autoAcknowledge</div></div>
+<div class="ttc" id="namespace_vx_sdk_1_1_utilities_html_a11cbdb435aa92ea160aad373da6a32db"><div class="ttname"><a href="../VxSdk/namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">VxSdk::Utilities::StrCopySafe</a></div><div class="ttdeci">static void StrCopySafe(char(&amp;dst)[dstSize], const char *src)</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_situation_html_abbacf35e1e83dea4f9edebe6ad06413f"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_new_situation.html#abbacf35e1e83dea4f9edebe6ad06413f">VxSdk::VxNewSituation::shouldExpandBanner</a></div><div class="ttdeci">bool shouldExpandBanner</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_system_html_aafe2b0350411d8991a1a92ec4620f838"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_i_vx_system.html#aafe2b0350411d8991a1a92ec4620f838">VxSdk::IVxSystem::AddSituation</a></div><div class="ttdeci">virtual VxResult::Value AddSituation(VxNewSituation &amp;newSituation) const  =0</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_situation_html_acef867465329c3a407418ee51564151e"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_new_situation.html#acef867465329c3a407418ee51564151e">VxSdk::VxNewSituation::type</a></div><div class="ttdeci">char type[128]</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_situation_html_aed25dc1272ebaa6804234b5bf5976256"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_new_situation.html#aed25dc1272ebaa6804234b5bf5976256">VxSdk::VxNewSituation::shouldNotify</a></div><div class="ttdeci">bool shouldNotify</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_situation_html_aa5315d12956d5b07fe49efe8a6065f18"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_new_situation.html#aa5315d12956d5b07fe49efe8a6065f18">VxSdk::VxNewSituation::shouldLog</a></div><div class="ttdeci">bool shouldLog</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_situation_html_a7e45524c547bfb07a02db0c148888810"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_new_situation.html#a7e45524c547bfb07a02db0c148888810">VxSdk::VxNewSituation::name</a></div><div class="ttdeci">char name[64]</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_situation_html_a6287117987eb201a0415ae0c06b49d9a"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_new_situation.html#a6287117987eb201a0415ae0c06b49d9a">VxSdk::VxNewSituation::sourceDeviceId</a></div><div class="ttdeci">char sourceDeviceId[64]</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_situation_html_a98846ef7ea642749c085d8c7d96b3be3"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_new_situation.html#a98846ef7ea642749c085d8c7d96b3be3">VxSdk::VxNewSituation::shouldAudiblyNotify</a></div><div class="ttdeci">bool shouldAudiblyNotify</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_situation_html_a738520c51d5772c3544eb02cc5509fbb"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_new_situation.html#a738520c51d5772c3544eb02cc5509fbb">VxSdk::VxNewSituation::severity</a></div><div class="ttdeci">int severity</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_result_html_adc2e4ff9e03060a9ed92fdc0121dde26"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxSdk::VxResult::Value</a></div><div class="ttdeci">Value</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_situation_html_a2073bdb70e360c419d2524890908db0d"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_new_situation.html#a2073bdb70e360c419d2524890908db0d">VxSdk::VxNewSituation::snoozeIntervals</a></div><div class="ttdeci">int * snoozeIntervals</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_situation_html_ad7f4c166b3fc0614f59e8f8813919ede"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_new_situation.html#ad7f4c166b3fc0614f59e8f8813919ede">VxSdk::VxNewSituation::isAckNeeded</a></div><div class="ttdeci">bool isAckNeeded</div></div>
 <div class="ttc" id="class_c_p_p_cli_1_1_utils_html_af27a653d2c277c67bb7a2dee0971f4b2"><div class="ttname"><a href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2">CPPCli::Utils::ConvertSysString</a></div><div class="ttdeci">static const char * ConvertSysString(System::String^ sysString)</div><div class="ttdoc">Convert a system string to a char. </div><div class="ttdef"><b>Definition:</b> <a href="_utils_8h_source.html#l00062">Utils.h:62</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_situation_html_a3d6c0b99d78f6501d07974b1c4ff15a9"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_new_situation.html#a3d6c0b99d78f6501d07974b1c4ff15a9">VxSdk::VxNewSituation::audiblePlayCount</a></div><div class="ttdeci">int audiblePlayCount</div></div>
+<div class="ttc" id="class_c_p_p_cli_1_1_v_x_system_html_ae22a0a176121622942b44b91c8150e99"><div class="ttname"><a href="class_c_p_p_cli_1_1_v_x_system.html#ae22a0a176121622942b44b91c8150e99">CPPCli::VXSystem::_system</a></div><div class="ttdeci">VxSdk::IVxSystem * _system</div><div class="ttdef"><b>Definition:</b> <a href="_v_x_system_8h_source.html#l00138">VXSystem.h:138</a></div></div>
 </div><!-- fragment -->
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_c_p_p_cli_1_1_v_x_system_adddaec3653d09d4b061057cd4706231d_cgraph.png" border="0" usemap="#class_c_p_p_cli_1_1_v_x_system_adddaec3653d09d4b061057cd4706231d_cgraph" alt=""/></div>
-<map name="class_c_p_p_cli_1_1_v_x_system_adddaec3653d09d4b061057cd4706231d_cgraph" id="class_c_p_p_cli_1_1_v_x_system_adddaec3653d09d4b061057cd4706231d_cgraph">
-<area shape="rect" id="node2" href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2" title="Convert a system string to a char. " alt="" coords="268,5,440,47"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="aa28d910f2e98896b69210ff3393b9918"></a>
@@ -418,54 +459,59 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    String^ exportId;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// Create a new VxNewExportClip object using the clip info contained in newExport</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> clipSize = newExport-&gt;Clips-&gt;Count;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    VxSdk::VxNewExportClip* clips = <span class="keyword">new</span> VxSdk::VxNewExportClip[clipSize];</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_new_export_clip.html">VxSdk::VxNewExportClip</a>* clips = <span class="keyword">new</span> <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_new_export_clip.html">VxSdk::VxNewExportClip</a>[clipSize];</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; clipSize; i++) {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        VxSdk::Utilities::StrCopySafe(clips[i].dataSourceId, <a class="code" href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2">Utils::ConvertSysString</a>(newExport-&gt;Clips[i]-&gt;DataSourceId));</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        VxSdk::Utilities::StrCopySafe(clips[i].startTime, <a class="code" href="class_c_p_p_cli_1_1_utils.html#a07aeac4d8bb768bb49b3072b1133b914">Utils::ConvertDateTimeToChar</a>(newExport-&gt;Clips[i]-&gt;StartTime));</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        VxSdk::Utilities::StrCopySafe(clips[i].endTime, <a class="code" href="class_c_p_p_cli_1_1_utils.html#a07aeac4d8bb768bb49b3072b1133b914">Utils::ConvertDateTimeToChar</a>(newExport-&gt;Clips[i]-&gt;EndTime));</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">VxSdk::Utilities::StrCopySafe</a>(clips[i].dataSourceId, <a class="code" href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2">Utils::ConvertSysString</a>(newExport-&gt;Clips[i]-&gt;DataSourceId));</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">VxSdk::Utilities::StrCopySafe</a>(clips[i].startTime, <a class="code" href="class_c_p_p_cli_1_1_utils.html#a07aeac4d8bb768bb49b3072b1133b914">Utils::ConvertDateTimeToChar</a>(newExport-&gt;Clips[i]-&gt;StartTime));</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">VxSdk::Utilities::StrCopySafe</a>(clips[i].endTime, <a class="code" href="class_c_p_p_cli_1_1_utils.html#a07aeac4d8bb768bb49b3072b1133b914">Utils::ConvertDateTimeToChar</a>(newExport-&gt;Clips[i]-&gt;EndTime));</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// Create a VxNewExport object using the settings contained in newExport and the VxNewExportClip that</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">// was just created.</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    VxSdk::VxNewExport vxExport;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    vxExport.format = (VxSdk::VxExportFormat::Value)newExport-&gt;Format;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    vxExport.clips = clips;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    vxExport.clipSize = clipSize;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    VxSdk::Utilities::StrCopySafe(vxExport.name, <a class="code" href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2">Utils::ConvertSysString</a>(newExport-&gt;Name));</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_new_export.html">VxSdk::VxNewExport</a> vxExport;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    vxExport.<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_new_export.html#abf18805f40583c16c11ded417eac50bd">format</a> = (<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_export_format.html#a1d413558b0370220d65194ec7eddb4ba">VxSdk::VxExportFormat::Value</a>)newExport-&gt;Format;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    vxExport.<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_new_export.html#a70dba44c1cfd4ed86b05269ead640820">clips</a> = clips;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    vxExport.<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_new_export.html#ac1b58e21df24ce98913fe2fb45ffd98d">clipSize</a> = clipSize;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">VxSdk::Utilities::StrCopySafe</a>(vxExport.<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_new_export.html#ab7844d2ff96671284a88f2003215bfc2">name</a>, <a class="code" href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2">Utils::ConvertSysString</a>(newExport-&gt;Name));</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">// If the password field has a password set then the export will be password protected, if the password is not</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">// set, the export will be public</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    VxSdk::Utilities::StrCopySafe(vxExport.password, <a class="code" href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2">Utils::ConvertSysString</a>(newExport-&gt;Password));</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">VxSdk::Utilities::StrCopySafe</a>(vxExport.<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_new_export.html#a3dd2e22f7b2054f4f1aa0650cd5a5e99">password</a>, <a class="code" href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2">Utils::ConvertSysString</a>(newExport-&gt;Password));</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">// Attempt to create the export</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    VxSdk::IVxExport* exportItem = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    VxSdk::VxResult::Value result = _system-&gt;CreateExport(vxExport, exportItem);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_export.html">VxSdk::IVxExport</a>* exportItem = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxSdk::VxResult::Value</a> result = <a class="code" href="class_c_p_p_cli_1_1_v_x_system.html#ae22a0a176121622942b44b91c8150e99">_system</a>-&gt;<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_system.html#aed5236278f6448b9212730a5372b3dca">CreateExport</a>(vxExport, exportItem);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="comment">// Unless there was an issue initiating the export the result should be VxSdk::VxResult::kOK</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">if</span> (result == VxSdk::VxResult::kOK) {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">if</span> (result == <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26ac95db274cb42e10fd36986b8336daae3">VxSdk::VxResult::kOK</a>) {</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="comment">// The exportItem returned from the system is the export initiated on the server and contains a lot of</span></div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="comment">// helpful information about the export.</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        exportId = <span class="keyword">gcnew</span> String(exportItem-&gt;id);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        exportId = <span class="keyword">gcnew</span> String(exportItem-&gt;<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_export.html#acfb5ed825ea69fa9327def772f88b6f5">id</a>);</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="comment">// This export item must still be deleted from memory</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        exportItem-&gt;Delete();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        exportItem-&gt;<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_export.html#ae29a38ba8a475af9003011776d09a5c4">Delete</a>();</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        exportItem = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">return</span> exportId;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_export_html"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_new_export.html">VxSdk::VxNewExport</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_export_html_a3dd2e22f7b2054f4f1aa0650cd5a5e99"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_new_export.html#a3dd2e22f7b2054f4f1aa0650cd5a5e99">VxSdk::VxNewExport::password</a></div><div class="ttdeci">char password[64]</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_result_html_adc2e4ff9e03060a9ed92fdc0121dde26ac95db274cb42e10fd36986b8336daae3"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26ac95db274cb42e10fd36986b8336daae3">VxSdk::VxResult::kOK</a></div><div class="ttdeci">kOK</div></div>
+<div class="ttc" id="namespace_vx_sdk_1_1_utilities_html_a11cbdb435aa92ea160aad373da6a32db"><div class="ttname"><a href="../VxSdk/namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">VxSdk::Utilities::StrCopySafe</a></div><div class="ttdeci">static void StrCopySafe(char(&amp;dst)[dstSize], const char *src)</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_system_html_aed5236278f6448b9212730a5372b3dca"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_i_vx_system.html#aed5236278f6448b9212730a5372b3dca">VxSdk::IVxSystem::CreateExport</a></div><div class="ttdeci">virtual VxResult::Value CreateExport(VxNewExport &amp;newExport, IVxExport *&amp;exportItem) const  =0</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_export_format_html_a1d413558b0370220d65194ec7eddb4ba"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_export_format.html#a1d413558b0370220d65194ec7eddb4ba">VxSdk::VxExportFormat::Value</a></div><div class="ttdeci">Value</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_export_html_ab7844d2ff96671284a88f2003215bfc2"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_new_export.html#ab7844d2ff96671284a88f2003215bfc2">VxSdk::VxNewExport::name</a></div><div class="ttdeci">char name[64]</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_export_html"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_i_vx_export.html">VxSdk::IVxExport</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_export_html_ac1b58e21df24ce98913fe2fb45ffd98d"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_new_export.html#ac1b58e21df24ce98913fe2fb45ffd98d">VxSdk::VxNewExport::clipSize</a></div><div class="ttdeci">int clipSize</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_export_html_ae29a38ba8a475af9003011776d09a5c4"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_i_vx_export.html#ae29a38ba8a475af9003011776d09a5c4">VxSdk::IVxExport::Delete</a></div><div class="ttdeci">virtual VxResult::Value Delete() const  =0</div></div>
 <div class="ttc" id="class_c_p_p_cli_1_1_utils_html_a07aeac4d8bb768bb49b3072b1133b914"><div class="ttname"><a href="class_c_p_p_cli_1_1_utils.html#a07aeac4d8bb768bb49b3072b1133b914">CPPCli::Utils::ConvertDateTimeToChar</a></div><div class="ttdeci">static const char * ConvertDateTimeToChar(System::DateTime dateTime)</div><div class="ttdoc">Convert a DateTime to a char. </div><div class="ttdef"><b>Definition:</b> <a href="_utils_8h_source.html#l00096">Utils.h:96</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_result_html_adc2e4ff9e03060a9ed92fdc0121dde26"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxSdk::VxResult::Value</a></div><div class="ttdeci">Value</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_export_clip_html"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_new_export_clip.html">VxSdk::VxNewExportClip</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_export_html_acfb5ed825ea69fa9327def772f88b6f5"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_i_vx_export.html#acfb5ed825ea69fa9327def772f88b6f5">VxSdk::IVxExport::id</a></div><div class="ttdeci">char id[64]</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_export_html_abf18805f40583c16c11ded417eac50bd"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_new_export.html#abf18805f40583c16c11ded417eac50bd">VxSdk::VxNewExport::format</a></div><div class="ttdeci">VxExportFormat::Value format</div></div>
 <div class="ttc" id="class_c_p_p_cli_1_1_utils_html_af27a653d2c277c67bb7a2dee0971f4b2"><div class="ttname"><a href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2">CPPCli::Utils::ConvertSysString</a></div><div class="ttdeci">static const char * ConvertSysString(System::String^ sysString)</div><div class="ttdoc">Convert a system string to a char. </div><div class="ttdef"><b>Definition:</b> <a href="_utils_8h_source.html#l00062">Utils.h:62</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_export_html_a70dba44c1cfd4ed86b05269ead640820"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_new_export.html#a70dba44c1cfd4ed86b05269ead640820">VxSdk::VxNewExport::clips</a></div><div class="ttdeci">VxNewExportClip * clips</div></div>
+<div class="ttc" id="class_c_p_p_cli_1_1_v_x_system_html_ae22a0a176121622942b44b91c8150e99"><div class="ttname"><a href="class_c_p_p_cli_1_1_v_x_system.html#ae22a0a176121622942b44b91c8150e99">CPPCli::VXSystem::_system</a></div><div class="ttdeci">VxSdk::IVxSystem * _system</div><div class="ttdef"><b>Definition:</b> <a href="_v_x_system_8h_source.html#l00138">VXSystem.h:138</a></div></div>
 </div><!-- fragment -->
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_c_p_p_cli_1_1_v_x_system_aa28d910f2e98896b69210ff3393b9918_cgraph.png" border="0" usemap="#class_c_p_p_cli_1_1_v_x_system_aa28d910f2e98896b69210ff3393b9918_cgraph" alt=""/></div>
-<map name="class_c_p_p_cli_1_1_v_x_system_aa28d910f2e98896b69210ff3393b9918_cgraph" id="class_c_p_p_cli_1_1_v_x_system_aa28d910f2e98896b69210ff3393b9918_cgraph">
-<area shape="rect" id="node2" href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2" title="Convert a system string to a char. " alt="" coords="234,5,406,47"/>
-<area shape="rect" id="node3" href="class_c_p_p_cli_1_1_utils.html#a07aeac4d8bb768bb49b3072b1133b914" title="Convert a DateTime to a char. " alt="" coords="232,71,408,112"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a753c9d7915242110f5b6ad4d70a715d2"></a>
@@ -494,14 +540,17 @@ Here is the call graph for this function:</div>
 <p>Definition at line <a class="el" href="_v_x_system_8cpp_source.html#l00098">98</a> of file <a class="el" href="_v_x_system_8cpp_source.html">VXSystem.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                                                                        {</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">// Create an export object using the exportItem</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    VxSdk::IVxExport* delExport = exportItem-&gt;_export;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_export.html">VxSdk::IVxExport</a>* delExport = exportItem-&gt;_export;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="comment">// To delete an export simply make a DeleteExport call</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    VxSdk::VxResult::Value result = delExport-&gt;DeleteExport();</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxSdk::VxResult::Value</a> result = delExport-&gt;<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_export.html#ab37423770bd8d3caac762d97878ee982">DeleteExport</a>();</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="comment">// Unless there was an issue deleting the export the result should be VxSdk::VxResult::kOK</span></div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">CPPCli::Results::Value</a>(result);</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
 <div class="ttc" id="class_c_p_p_cli_1_1_results_html_a12504aac644d00e0532be43063a970ca"><div class="ttname"><a href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">CPPCli::Results::Value</a></div><div class="ttdeci">Value</div><div class="ttdoc">Values that represent the result of calls to the VideoXpert system. </div><div class="ttdef"><b>Definition:</b> <a href="_utils_8h_source.html#l00020">Utils.h:20</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_export_html"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_i_vx_export.html">VxSdk::IVxExport</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_result_html_adc2e4ff9e03060a9ed92fdc0121dde26"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxSdk::VxResult::Value</a></div><div class="ttdeci">Value</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_export_html_ab37423770bd8d3caac762d97878ee982"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_i_vx_export.html#ab37423770bd8d3caac762d97878ee982">VxSdk::IVxExport::DeleteExport</a></div><div class="ttdeci">virtual VxResult::Value DeleteExport() const  =0</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -531,14 +580,17 @@ Here is the call graph for this function:</div>
 <p>Definition at line <a class="el" href="_v_x_system_8cpp_source.html#l00213">213</a> of file <a class="el" href="_v_x_system_8cpp_source.html">VXSystem.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                                                                                 {</div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="comment">// Create a situation object using the situationItem</span></div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    VxSdk::IVxSituation* delSituation = situationItem-&gt;_situation;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_situation.html">VxSdk::IVxSituation</a>* delSituation = situationItem-&gt;_situation;</div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;</div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="comment">// To delete a situation simply make a DeleteSituation call</span></div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    VxSdk::VxResult::Value result = delSituation-&gt;DeleteSituation();</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxSdk::VxResult::Value</a> result = delSituation-&gt;<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_situation.html#a2a69cfd77923230d4f3a618cbd25f78d">DeleteSituation</a>();</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="comment">// Unless there was an issue deleting the situation the result should be VxSdk::VxResult::kOK</span></div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">CPPCli::Results::Value</a>(result);</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;}</div>
 <div class="ttc" id="class_c_p_p_cli_1_1_results_html_a12504aac644d00e0532be43063a970ca"><div class="ttname"><a href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">CPPCli::Results::Value</a></div><div class="ttdeci">Value</div><div class="ttdoc">Values that represent the result of calls to the VideoXpert system. </div><div class="ttdef"><b>Definition:</b> <a href="_utils_8h_source.html#l00020">Utils.h:20</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_situation_html"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_i_vx_situation.html">VxSdk::IVxSituation</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_result_html_adc2e4ff9e03060a9ed92fdc0121dde26"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxSdk::VxResult::Value</a></div><div class="ttdeci">Value</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_situation_html_a2a69cfd77923230d4f3a618cbd25f78d"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_i_vx_situation.html#a2a69cfd77923230d4f3a618cbd25f78d">VxSdk::IVxSituation::DeleteSituation</a></div><div class="ttdeci">virtual VxResult::Value DeleteSituation() const  =0</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -549,7 +601,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">delegate void CPPCli::VXSystem::EventCallbackDelegate </td>
           <td>(</td>
-          <td class="paramtype">VxSdk::IVxEvent *&#160;</td>
+          <td class="paramtype"><a class="elRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_event.html">VxSdk::IVxEvent</a> *&#160;</td>
           <td class="paramname"><em>vxEvent</em></td><td>)</td>
           <td></td>
         </tr>
@@ -611,17 +663,17 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="comment">// Create a list of managed device objects</span></div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    List&lt;CPPCli::Device^&gt;^ mlist = <span class="keyword">gcnew</span> List&lt;CPPCli::Device^&gt;();</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="comment">// Create a collection of unmanaged device objects</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    VxSdk::VxCollection&lt;VxSdk::IVxDevice**&gt; devices;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_collection.html">VxSdk::VxCollection&lt;VxSdk::IVxDevice**&gt;</a> devices;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="comment">// Make the GetDevices call, which will return with the total device count, this allows the client to allocate memory.</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    VxSdk::VxResult::Value result = _system-&gt;GetDevices(devices);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxSdk::VxResult::Value</a> result = <a class="code" href="class_c_p_p_cli_1_1_v_x_system.html#ae22a0a176121622942b44b91c8150e99">_system</a>-&gt;<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_system.html#ad50525ec77f94f279a60fb375f3d8eb3">GetDevices</a>(devices);</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="comment">// Unless there are no devices on the system, this should return VxSdk::VxResult::kInsufficientSize</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">if</span> (result == VxSdk::VxResult::kInsufficientSize) {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">if</span> (result == <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26a0d4ae90e7aa11503b8f2313aee339803">VxSdk::VxResult::kInsufficientSize</a>) {</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="comment">// Allocate enough space for the IVxDevice collection</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        devices.collection = <span class="keyword">new</span> VxSdk::IVxDevice*[devices.collectionSize];</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        result = _system-&gt;GetDevices(devices);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        devices.collection = <span class="keyword">new</span> <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_device.html">VxSdk::IVxDevice</a>*[devices.collectionSize];</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        result = <a class="code" href="class_c_p_p_cli_1_1_v_x_system.html#ae22a0a176121622942b44b91c8150e99">_system</a>-&gt;<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_system.html#ad50525ec77f94f279a60fb375f3d8eb3">GetDevices</a>(devices);</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="comment">// The result should now be kOK since we have allocated enough space</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">if</span> (result == VxSdk::VxResult::kOK) {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">if</span> (result == <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26ac95db274cb42e10fd36986b8336daae3">VxSdk::VxResult::kOK</a>) {</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; devices.collectionSize; i++)</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                mlist-&gt;Add(<span class="keyword">gcnew</span> <a class="code" href="class_c_p_p_cli_1_1_device.html">CPPCli::Device</a>(devices.collection[i]));</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        }</div>
@@ -630,7 +682,14 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    }</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordflow">return</span> mlist;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;}</div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_system_html_ad50525ec77f94f279a60fb375f3d8eb3"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_i_vx_system.html#ad50525ec77f94f279a60fb375f3d8eb3">VxSdk::IVxSystem::GetDevices</a></div><div class="ttdeci">virtual VxResult::Value GetDevices(VxCollection&lt; IVxDevice ** &gt; &amp;deviceCollection) const  =0</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_result_html_adc2e4ff9e03060a9ed92fdc0121dde26ac95db274cb42e10fd36986b8336daae3"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26ac95db274cb42e10fd36986b8336daae3">VxSdk::VxResult::kOK</a></div><div class="ttdeci">kOK</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_collection_html"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_collection.html">VxSdk::VxCollection</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_result_html_adc2e4ff9e03060a9ed92fdc0121dde26"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxSdk::VxResult::Value</a></div><div class="ttdeci">Value</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_device_html"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_i_vx_device.html">VxSdk::IVxDevice</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_result_html_adc2e4ff9e03060a9ed92fdc0121dde26a0d4ae90e7aa11503b8f2313aee339803"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26a0d4ae90e7aa11503b8f2313aee339803">VxSdk::VxResult::kInsufficientSize</a></div><div class="ttdeci">kInsufficientSize</div></div>
 <div class="ttc" id="class_c_p_p_cli_1_1_device_html"><div class="ttname"><a href="class_c_p_p_cli_1_1_device.html">CPPCli::Device</a></div><div class="ttdoc">The Device class represents a particular physical device in the system. </div><div class="ttdef"><b>Definition:</b> <a href="_device_8h_source.html#l00012">Device.h:12</a></div></div>
+<div class="ttc" id="class_c_p_p_cli_1_1_v_x_system_html_ae22a0a176121622942b44b91c8150e99"><div class="ttname"><a href="class_c_p_p_cli_1_1_v_x_system.html#ae22a0a176121622942b44b91c8150e99">CPPCli::VXSystem::_system</a></div><div class="ttdeci">VxSdk::IVxSystem * _system</div><div class="ttdef"><b>Definition:</b> <a href="_v_x_system_8h_source.html#l00138">VXSystem.h:138</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -655,17 +714,17 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="comment">// Create a list of managed export objects</span></div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    List&lt;CPPCli::Export^&gt;^ mlist = <span class="keyword">gcnew</span> List&lt;CPPCli::Export^&gt;();</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="comment">// Create a collection of unmanaged export objects</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    VxSdk::VxCollection&lt;VxSdk::IVxExport**&gt; exports;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_collection.html">VxSdk::VxCollection&lt;VxSdk::IVxExport**&gt;</a> exports;</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="comment">// Make the GetExports call, which will return with the total export count, this allows the client to allocate memory.</span></div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    VxSdk::VxResult::Value result = _system-&gt;GetExports(exports);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxSdk::VxResult::Value</a> result = <a class="code" href="class_c_p_p_cli_1_1_v_x_system.html#ae22a0a176121622942b44b91c8150e99">_system</a>-&gt;<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_system.html#a98a155300e6eeed2d5280cb3ed4505f8">GetExports</a>(exports);</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="comment">// Unless there are no exports on the system, this should return VxSdk::VxResult::kInsufficientSize</span></div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keywordflow">if</span> (result == VxSdk::VxResult::kInsufficientSize) {</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keywordflow">if</span> (result == <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26a0d4ae90e7aa11503b8f2313aee339803">VxSdk::VxResult::kInsufficientSize</a>) {</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="comment">// Allocate enough space for the IVxExport collection</span></div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        exports.collection = <span class="keyword">new</span> VxSdk::IVxExport*[exports.collectionSize];</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        result = _system-&gt;GetExports(exports);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        exports.collection = <span class="keyword">new</span> <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_export.html">VxSdk::IVxExport</a>*[exports.collectionSize];</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        result = <a class="code" href="class_c_p_p_cli_1_1_v_x_system.html#ae22a0a176121622942b44b91c8150e99">_system</a>-&gt;<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_system.html#a98a155300e6eeed2d5280cb3ed4505f8">GetExports</a>(exports);</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="comment">// The result should now be kOK since we have allocated enough space</span></div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <span class="keywordflow">if</span> (result == VxSdk::VxResult::kOK) {</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <span class="keywordflow">if</span> (result == <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26ac95db274cb42e10fd36986b8336daae3">VxSdk::VxResult::kOK</a>) {</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; exports.collectionSize; i++)</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                mlist-&gt;Add(<span class="keyword">gcnew</span> <a class="code" href="class_c_p_p_cli_1_1_export.html">CPPCli::Export</a>(exports.collection[i]));</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        }</div>
@@ -674,7 +733,14 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    }</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">return</span> mlist;</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;}</div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_result_html_adc2e4ff9e03060a9ed92fdc0121dde26ac95db274cb42e10fd36986b8336daae3"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26ac95db274cb42e10fd36986b8336daae3">VxSdk::VxResult::kOK</a></div><div class="ttdeci">kOK</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_collection_html"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_collection.html">VxSdk::VxCollection</a></div></div>
 <div class="ttc" id="class_c_p_p_cli_1_1_export_html"><div class="ttname"><a href="class_c_p_p_cli_1_1_export.html">CPPCli::Export</a></div><div class="ttdoc">The Export class represents an exported data set that is archived within the system. </div><div class="ttdef"><b>Definition:</b> <a href="_export_8h_source.html#l00014">Export.h:14</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_export_html"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_i_vx_export.html">VxSdk::IVxExport</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_system_html_a98a155300e6eeed2d5280cb3ed4505f8"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_i_vx_system.html#a98a155300e6eeed2d5280cb3ed4505f8">VxSdk::IVxSystem::GetExports</a></div><div class="ttdeci">virtual VxResult::Value GetExports(VxCollection&lt; IVxExport ** &gt; &amp;exportCollection) const  =0</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_result_html_adc2e4ff9e03060a9ed92fdc0121dde26"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxSdk::VxResult::Value</a></div><div class="ttdeci">Value</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_result_html_adc2e4ff9e03060a9ed92fdc0121dde26a0d4ae90e7aa11503b8f2313aee339803"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26a0d4ae90e7aa11503b8f2313aee339803">VxSdk::VxResult::kInsufficientSize</a></div><div class="ttdeci">kInsufficientSize</div></div>
+<div class="ttc" id="class_c_p_p_cli_1_1_v_x_system_html_ae22a0a176121622942b44b91c8150e99"><div class="ttname"><a href="class_c_p_p_cli_1_1_v_x_system.html#ae22a0a176121622942b44b91c8150e99">CPPCli::VXSystem::_system</a></div><div class="ttdeci">VxSdk::IVxSystem * _system</div><div class="ttdef"><b>Definition:</b> <a href="_v_x_system_8h_source.html#l00138">VXSystem.h:138</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -699,17 +765,17 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="comment">// Create a list of managed situation objects</span></div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    List&lt;CPPCli::Situation^&gt;^ mlist = <span class="keyword">gcnew</span> List&lt;CPPCli::Situation^&gt;();</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="comment">// Create a collection of unmanaged situation objects</span></div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    VxSdk::VxCollection&lt;VxSdk::IVxSituation**&gt; situations;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_collection.html">VxSdk::VxCollection&lt;VxSdk::IVxSituation**&gt;</a> situations;</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="comment">// Make the GetSituations call, which will return with the total situation count, this allows the client to allocate memory.</span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    VxSdk::VxResult::Value result = _system-&gt;GetSituations(situations);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxSdk::VxResult::Value</a> result = <a class="code" href="class_c_p_p_cli_1_1_v_x_system.html#ae22a0a176121622942b44b91c8150e99">_system</a>-&gt;<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_system.html#aedd13f280cb87d6af92d1973260f4682">GetSituations</a>(situations);</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="comment">// The result should be kInsufficientSize if the number of situations on the system are greater than 0 (always)</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordflow">if</span> (result == VxSdk::VxResult::kInsufficientSize) {</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordflow">if</span> (result == <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26a0d4ae90e7aa11503b8f2313aee339803">VxSdk::VxResult::kInsufficientSize</a>) {</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="comment">// Allocate enough space for the IVxSituation collection</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        situations.collection = <span class="keyword">new</span> VxSdk::IVxSituation*[situations.collectionSize];</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        result = _system-&gt;GetSituations(situations);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        situations.collection = <span class="keyword">new</span> <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_situation.html">VxSdk::IVxSituation</a>*[situations.collectionSize];</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        result = <a class="code" href="class_c_p_p_cli_1_1_v_x_system.html#ae22a0a176121622942b44b91c8150e99">_system</a>-&gt;<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_system.html#aedd13f280cb87d6af92d1973260f4682">GetSituations</a>(situations);</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <span class="comment">// The result should now be kOK since we have allocated enough space</span></div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="keywordflow">if</span> (result == VxSdk::VxResult::kOK) {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="keywordflow">if</span> (result == <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26ac95db274cb42e10fd36986b8336daae3">VxSdk::VxResult::kOK</a>) {</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; situations.collectionSize; i++) {</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                mlist-&gt;Add(<span class="keyword">gcnew</span> <a class="code" href="class_c_p_p_cli_1_1_situation.html">CPPCli::Situation</a>(situations.collection[i]));</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            }</div>
@@ -719,7 +785,14 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    }</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordflow">return</span> mlist;</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;}</div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_result_html_adc2e4ff9e03060a9ed92fdc0121dde26ac95db274cb42e10fd36986b8336daae3"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26ac95db274cb42e10fd36986b8336daae3">VxSdk::VxResult::kOK</a></div><div class="ttdeci">kOK</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_situation_html"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_i_vx_situation.html">VxSdk::IVxSituation</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_system_html_aedd13f280cb87d6af92d1973260f4682"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_i_vx_system.html#aedd13f280cb87d6af92d1973260f4682">VxSdk::IVxSystem::GetSituations</a></div><div class="ttdeci">virtual VxResult::Value GetSituations(VxCollection&lt; IVxSituation ** &gt; &amp;situationCollection) const  =0</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_collection_html"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_collection.html">VxSdk::VxCollection</a></div></div>
 <div class="ttc" id="class_c_p_p_cli_1_1_situation_html"><div class="ttname"><a href="class_c_p_p_cli_1_1_situation.html">CPPCli::Situation</a></div><div class="ttdoc">The Situation class represents a particular situation configuration that specifies how corresponding ...</div><div class="ttdef"><b>Definition:</b> <a href="_situation_8h_source.html#l00014">Situation.h:14</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_result_html_adc2e4ff9e03060a9ed92fdc0121dde26"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxSdk::VxResult::Value</a></div><div class="ttdeci">Value</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_result_html_adc2e4ff9e03060a9ed92fdc0121dde26a0d4ae90e7aa11503b8f2313aee339803"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26a0d4ae90e7aa11503b8f2313aee339803">VxSdk::VxResult::kInsufficientSize</a></div><div class="ttdeci">kInsufficientSize</div></div>
+<div class="ttc" id="class_c_p_p_cli_1_1_v_x_system_html_ae22a0a176121622942b44b91c8150e99"><div class="ttname"><a href="class_c_p_p_cli_1_1_v_x_system.html#ae22a0a176121622942b44b91c8150e99">CPPCli::VXSystem::_system</a></div><div class="ttdeci">VxSdk::IVxSystem * _system</div><div class="ttdef"><b>Definition:</b> <a href="_v_x_system_8h_source.html#l00138">VXSystem.h:138</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -749,43 +822,46 @@ Here is the call graph for this function:</div>
 <p>Definition at line <a class="el" href="_v_x_system_8cpp_source.html#l00223">223</a> of file <a class="el" href="_v_x_system_8cpp_source.html">VXSystem.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                                                                       {</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="comment">// Create a new VxNewEvent object using the information contained in newEvent</span></div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    VxSdk::VxNewEvent vxEvent;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    VxSdk::Utilities::StrCopySafe(vxEvent.generatorDeviceId, <a class="code" href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2">Utils::ConvertSysString</a>(newEvent-&gt;GeneratorDeviceId));</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    VxSdk::Utilities::StrCopySafe(vxEvent.situationType, <a class="code" href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2">Utils::ConvertSysString</a>(newEvent-&gt;SituationType));</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    VxSdk::Utilities::StrCopySafe(vxEvent.sourceDeviceId, <a class="code" href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2">Utils::ConvertSysString</a>(newEvent-&gt;SourceDeviceId));</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    VxSdk::Utilities::StrCopySafe(vxEvent.time, <a class="code" href="class_c_p_p_cli_1_1_utils.html#a07aeac4d8bb768bb49b3072b1133b914">Utils::ConvertDateTimeToChar</a>(newEvent-&gt;Time));</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_new_event.html">VxSdk::VxNewEvent</a> vxEvent;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">VxSdk::Utilities::StrCopySafe</a>(vxEvent.<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_new_event.html#a9aa7b26dce59ae5f0a8aba9f8efe416c">generatorDeviceId</a>, <a class="code" href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2">Utils::ConvertSysString</a>(newEvent-&gt;GeneratorDeviceId));</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">VxSdk::Utilities::StrCopySafe</a>(vxEvent.<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_new_event.html#aae68f94fd2989761c1c4736044ec7973">situationType</a>, <a class="code" href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2">Utils::ConvertSysString</a>(newEvent-&gt;SituationType));</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">VxSdk::Utilities::StrCopySafe</a>(vxEvent.<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_new_event.html#ae3f8358d24df0e03d76339408ff72d80">sourceDeviceId</a>, <a class="code" href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2">Utils::ConvertSysString</a>(newEvent-&gt;SourceDeviceId));</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">VxSdk::Utilities::StrCopySafe</a>(vxEvent.<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_new_event.html#a7bd36b1163b7c97c71464a4cc4bd8205">time</a>, <a class="code" href="class_c_p_p_cli_1_1_utils.html#a07aeac4d8bb768bb49b3072b1133b914">Utils::ConvertDateTimeToChar</a>(newEvent-&gt;Time));</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordtype">int</span> size = newEvent-&gt;Properties-&gt;Count;</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    VxSdk::VxKvObject *kvObj = <span class="keyword">new</span> VxSdk::VxKvObject[size];</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    vxEvent.properties = kvObj;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_kv_object.html">VxSdk::VxKvObject</a> *kvObj = <span class="keyword">new</span> <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_kv_object.html">VxSdk::VxKvObject</a>[size];</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    vxEvent.<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_new_event.html#aec70ebbf7c693c40507f6a0c82e8d380">properties</a> = kvObj;</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; size; i++) {</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        VxSdk::Utilities::StrCopySafe(vxEvent.properties[i].key, <a class="code" href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2">Utils::ConvertSysString</a>(newEvent-&gt;Properties[i].Key));</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        VxSdk::Utilities::StrCopySafe(vxEvent.properties[i].value, <a class="code" href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2">Utils::ConvertSysString</a>(newEvent-&gt;Properties[i].Value));</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">VxSdk::Utilities::StrCopySafe</a>(vxEvent.<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_new_event.html#aec70ebbf7c693c40507f6a0c82e8d380">properties</a>[i].<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_kv_object.html#a354e66381d03d4d316bef4727ccef86c">key</a>, <a class="code" href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2">Utils::ConvertSysString</a>(newEvent-&gt;Properties[i].Key));</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">VxSdk::Utilities::StrCopySafe</a>(vxEvent.<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_new_event.html#aec70ebbf7c693c40507f6a0c82e8d380">properties</a>[i].<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_kv_object.html#adb4c6d08ccde84840d96f0e75c6e77b4">value</a>, <a class="code" href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2">Utils::ConvertSysString</a>(newEvent-&gt;Properties[i].Value));</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    }</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="comment">// Make the call to insert the event into VideoXpert</span></div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    VxSdk::VxResult::Value result = _system-&gt;InsertEvent(vxEvent);</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxSdk::VxResult::Value</a> result = <a class="code" href="class_c_p_p_cli_1_1_v_x_system.html#ae22a0a176121622942b44b91c8150e99">_system</a>-&gt;<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_system.html#afaaa24d489015e37fef27599b05d7d77">InsertEvent</a>(vxEvent);</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="comment">// Unless there was an issue inserting the event the result should be VxSdk::VxResult::kOK</span></div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="keywordflow">if</span> (result == VxSdk::VxResult::kOK) {</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="keywordflow">if</span> (result == <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26ac95db274cb42e10fd36986b8336daae3">VxSdk::VxResult::kOK</a>) {</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <span class="comment">// Remove the memory we previously allocated</span></div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="keyword">delete</span>[] vxEvent.properties;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="keyword">delete</span>[] vxEvent.<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_new_event.html#aec70ebbf7c693c40507f6a0c82e8d380">properties</a>;</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    }</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">CPPCli::Results::Value</a>(result);</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;}</div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_event_html_a9aa7b26dce59ae5f0a8aba9f8efe416c"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_new_event.html#a9aa7b26dce59ae5f0a8aba9f8efe416c">VxSdk::VxNewEvent::generatorDeviceId</a></div><div class="ttdeci">char generatorDeviceId[64]</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_event_html_aae68f94fd2989761c1c4736044ec7973"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_new_event.html#aae68f94fd2989761c1c4736044ec7973">VxSdk::VxNewEvent::situationType</a></div><div class="ttdeci">char situationType[64]</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_system_html_afaaa24d489015e37fef27599b05d7d77"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_i_vx_system.html#afaaa24d489015e37fef27599b05d7d77">VxSdk::IVxSystem::InsertEvent</a></div><div class="ttdeci">virtual VxResult::Value InsertEvent(VxNewEvent &amp;newEvent) const  =0</div></div>
 <div class="ttc" id="class_c_p_p_cli_1_1_results_html_a12504aac644d00e0532be43063a970ca"><div class="ttname"><a href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">CPPCli::Results::Value</a></div><div class="ttdeci">Value</div><div class="ttdoc">Values that represent the result of calls to the VideoXpert system. </div><div class="ttdef"><b>Definition:</b> <a href="_utils_8h_source.html#l00020">Utils.h:20</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_result_html_adc2e4ff9e03060a9ed92fdc0121dde26ac95db274cb42e10fd36986b8336daae3"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26ac95db274cb42e10fd36986b8336daae3">VxSdk::VxResult::kOK</a></div><div class="ttdeci">kOK</div></div>
+<div class="ttc" id="namespace_vx_sdk_1_1_utilities_html_a11cbdb435aa92ea160aad373da6a32db"><div class="ttname"><a href="../VxSdk/namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">VxSdk::Utilities::StrCopySafe</a></div><div class="ttdeci">static void StrCopySafe(char(&amp;dst)[dstSize], const char *src)</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_event_html_aec70ebbf7c693c40507f6a0c82e8d380"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_new_event.html#aec70ebbf7c693c40507f6a0c82e8d380">VxSdk::VxNewEvent::properties</a></div><div class="ttdeci">VxKvObject * properties</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_event_html_a7bd36b1163b7c97c71464a4cc4bd8205"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_new_event.html#a7bd36b1163b7c97c71464a4cc4bd8205">VxSdk::VxNewEvent::time</a></div><div class="ttdeci">char time[64]</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_kv_object_html_adb4c6d08ccde84840d96f0e75c6e77b4"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_kv_object.html#adb4c6d08ccde84840d96f0e75c6e77b4">VxSdk::VxKvObject::value</a></div><div class="ttdeci">char value[64]</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_event_html_ae3f8358d24df0e03d76339408ff72d80"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_new_event.html#ae3f8358d24df0e03d76339408ff72d80">VxSdk::VxNewEvent::sourceDeviceId</a></div><div class="ttdeci">char sourceDeviceId[64]</div></div>
 <div class="ttc" id="class_c_p_p_cli_1_1_utils_html_a07aeac4d8bb768bb49b3072b1133b914"><div class="ttname"><a href="class_c_p_p_cli_1_1_utils.html#a07aeac4d8bb768bb49b3072b1133b914">CPPCli::Utils::ConvertDateTimeToChar</a></div><div class="ttdeci">static const char * ConvertDateTimeToChar(System::DateTime dateTime)</div><div class="ttdoc">Convert a DateTime to a char. </div><div class="ttdef"><b>Definition:</b> <a href="_utils_8h_source.html#l00096">Utils.h:96</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_result_html_adc2e4ff9e03060a9ed92fdc0121dde26"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxSdk::VxResult::Value</a></div><div class="ttdeci">Value</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_kv_object_html"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_kv_object.html">VxSdk::VxKvObject</a></div></div>
 <div class="ttc" id="class_c_p_p_cli_1_1_utils_html_af27a653d2c277c67bb7a2dee0971f4b2"><div class="ttname"><a href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2">CPPCli::Utils::ConvertSysString</a></div><div class="ttdeci">static const char * ConvertSysString(System::String^ sysString)</div><div class="ttdoc">Convert a system string to a char. </div><div class="ttdef"><b>Definition:</b> <a href="_utils_8h_source.html#l00062">Utils.h:62</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_kv_object_html_a354e66381d03d4d316bef4727ccef86c"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_kv_object.html#a354e66381d03d4d316bef4727ccef86c">VxSdk::VxKvObject::key</a></div><div class="ttdeci">char key[64]</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_new_event_html"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_new_event.html">VxSdk::VxNewEvent</a></div></div>
+<div class="ttc" id="class_c_p_p_cli_1_1_v_x_system_html_ae22a0a176121622942b44b91c8150e99"><div class="ttname"><a href="class_c_p_p_cli_1_1_v_x_system.html#ae22a0a176121622942b44b91c8150e99">CPPCli::VXSystem::_system</a></div><div class="ttdeci">VxSdk::IVxSystem * _system</div><div class="ttdef"><b>Definition:</b> <a href="_v_x_system_8h_source.html#l00138">VXSystem.h:138</a></div></div>
 </div><!-- fragment -->
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_c_p_p_cli_1_1_v_x_system_aa8284a86d0c78a47d086c20c352060db_cgraph.png" border="0" usemap="#class_c_p_p_cli_1_1_v_x_system_aa8284a86d0c78a47d086c20c352060db_cgraph" alt=""/></div>
-<map name="class_c_p_p_cli_1_1_v_x_system_aa8284a86d0c78a47d086c20c352060db_cgraph" id="class_c_p_p_cli_1_1_v_x_system_aa8284a86d0c78a47d086c20c352060db_cgraph">
-<area shape="rect" id="node2" href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2" title="Convert a system string to a char. " alt="" coords="227,5,399,47"/>
-<area shape="rect" id="node3" href="class_c_p_p_cli_1_1_utils.html#a07aeac4d8bb768bb49b3072b1133b914" title="Convert a DateTime to a char. " alt="" coords="225,71,401,112"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a834b57b4ce75de89d603b8da3c5f20e3"></a>
@@ -825,38 +901,132 @@ Here is the call graph for this function:</div>
 <p>Definition at line <a class="el" href="_v_x_system_8cpp_source.html#l00021">21</a> of file <a class="el" href="_v_x_system_8cpp_source.html">VXSystem.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                                                                           {</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">// Enter the VideoXpert login information</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    VxSdk::Utilities::StrCopySafe(_loginInfo-&gt;username, <a class="code" href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2">Utils::ConvertSysString</a>(username));</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    VxSdk::Utilities::StrCopySafe(_loginInfo-&gt;password, <a class="code" href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2">Utils::ConvertSysString</a>(password));</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">VxSdk::Utilities::StrCopySafe</a>(<a class="code" href="class_c_p_p_cli_1_1_v_x_system.html#a2ce5747f2ac5f394a94d464cadf3149e">_loginInfo</a>-&gt;<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_login_info.html#a32d5efcf1f7e642086212c1997906837">username</a>, <a class="code" href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2">Utils::ConvertSysString</a>(username));</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">VxSdk::Utilities::StrCopySafe</a>(<a class="code" href="class_c_p_p_cli_1_1_v_x_system.html#a2ce5747f2ac5f394a94d464cadf3149e">_loginInfo</a>-&gt;<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_login_info.html#a7200b12f5b360d3378c5f46a3d7714f2">password</a>, <a class="code" href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2">Utils::ConvertSysString</a>(password));</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> kSslPort = 443;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    _loginInfo-&gt;port = kSslPort;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    _loginInfo-&gt;ssl = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="class_c_p_p_cli_1_1_v_x_system.html#a2ce5747f2ac5f394a94d464cadf3149e">_loginInfo</a>-&gt;<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_login_info.html#a978a113dd955c9c4f470565541b929b2">port</a> = kSslPort;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="class_c_p_p_cli_1_1_v_x_system.html#a2ce5747f2ac5f394a94d464cadf3149e">_loginInfo</a>-&gt;<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_login_info.html#ab2512eba0575aa577f77e6209f5e4a94">useSsl</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">// Attempt to login to the system</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    VxSdk::IVxSystem* system = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    VxSdk::VxResult::Value result = VxSdk::VxSystemLogin(*_loginInfo, system);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">if</span> (result == VxSdk::VxResult::kOK) {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        _system = system;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_system.html">VxSdk::IVxSystem</a>* system = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxSdk::VxResult::Value</a> result = <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/namespace_vx_sdk.html#adc82da866a8349ce0cc529ddfecffa1b">VxSdk::VxSystemLogin</a>(*<a class="code" href="class_c_p_p_cli_1_1_v_x_system.html#a2ce5747f2ac5f394a94d464cadf3149e">_loginInfo</a>, system);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">if</span> (result == <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26ac95db274cb42e10fd36986b8336daae3">VxSdk::VxResult::kOK</a>) {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="class_c_p_p_cli_1_1_v_x_system.html#ae22a0a176121622942b44b91c8150e99">_system</a> = system;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="comment">// Create a new callback delegate</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        _callback = <span class="keyword">gcnew</span> <a class="code" href="class_c_p_p_cli_1_1_v_x_system.html#aeb55a88b4508d23122acd09f9ecf6af9">EventCallbackDelegate</a>(&amp;_FireEvent);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="class_c_p_p_cli_1_1_v_x_system.html#aa2a7ba8c1537b619015bc4ee492ebb9f">_callback</a> = <span class="keyword">gcnew</span> <a class="code" href="class_c_p_p_cli_1_1_v_x_system.html#aeb55a88b4508d23122acd09f9ecf6af9">EventCallbackDelegate</a>(&amp;<a class="code" href="class_c_p_p_cli_1_1_v_x_system.html#a28d98adf632a71205425bd38f5b00755">_FireEvent</a>);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="comment">// Internally subscribe to the system events.  The client still needs to subscribe to the SystemEvent</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="comment">// delegate in order to receive the events.</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        _system-&gt;StartNotifications(VxSdk::VxEventCallback(Marshal::GetFunctionPointerForDelegate(_callback).ToPointer()));</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="class_c_p_p_cli_1_1_v_x_system.html#ae22a0a176121622942b44b91c8150e99">_system</a>-&gt;<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_system.html#a598f668a204e3affe0e1561fdb5a0384">StartNotifications</a>(<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/namespace_vx_sdk.html#a5740f17d74ae3a7459a633eaca311d1a">VxSdk::VxEventCallback</a>(Marshal::GetFunctionPointerForDelegate(<a class="code" href="class_c_p_p_cli_1_1_v_x_system.html#aa2a7ba8c1537b619015bc4ee492ebb9f">_callback</a>).ToPointer()));</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">CPPCli::Results::Value</a>(result);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_system_html_a598f668a204e3affe0e1561fdb5a0384"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_i_vx_system.html#a598f668a204e3affe0e1561fdb5a0384">VxSdk::IVxSystem::StartNotifications</a></div><div class="ttdeci">virtual VxResult::Value StartNotifications(VxEventCallback callback) const  =0</div></div>
+<div class="ttc" id="namespace_vx_sdk_html_adc82da866a8349ce0cc529ddfecffa1b"><div class="ttname"><a href="../VxSdk/namespace_vx_sdk.html#adc82da866a8349ce0cc529ddfecffa1b">VxSdk::VxSystemLogin</a></div><div class="ttdeci">EXTERN_C VXAPI VxResult::Value VxSystemLogin(const VxLoginInfo &amp;loginInfo, IVxSystem *&amp;system)</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_system_html"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_i_vx_system.html">VxSdk::IVxSystem</a></div></div>
 <div class="ttc" id="class_c_p_p_cli_1_1_results_html_a12504aac644d00e0532be43063a970ca"><div class="ttname"><a href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">CPPCli::Results::Value</a></div><div class="ttdeci">Value</div><div class="ttdoc">Values that represent the result of calls to the VideoXpert system. </div><div class="ttdef"><b>Definition:</b> <a href="_utils_8h_source.html#l00020">Utils.h:20</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_result_html_adc2e4ff9e03060a9ed92fdc0121dde26ac95db274cb42e10fd36986b8336daae3"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26ac95db274cb42e10fd36986b8336daae3">VxSdk::VxResult::kOK</a></div><div class="ttdeci">kOK</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_login_info_html_a978a113dd955c9c4f470565541b929b2"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_login_info.html#a978a113dd955c9c4f470565541b929b2">VxSdk::VxLoginInfo::port</a></div><div class="ttdeci">unsigned short port</div></div>
+<div class="ttc" id="class_c_p_p_cli_1_1_v_x_system_html_a28d98adf632a71205425bd38f5b00755"><div class="ttname"><a href="class_c_p_p_cli_1_1_v_x_system.html#a28d98adf632a71205425bd38f5b00755">CPPCli::VXSystem::_FireEvent</a></div><div class="ttdeci">static void _FireEvent(VxSdk::IVxEvent *vxEvent)</div><div class="ttdef"><b>Definition:</b> <a href="_v_x_system_8cpp_source.html#l00258">VXSystem.cpp:258</a></div></div>
+<div class="ttc" id="class_c_p_p_cli_1_1_v_x_system_html_a2ce5747f2ac5f394a94d464cadf3149e"><div class="ttname"><a href="class_c_p_p_cli_1_1_v_x_system.html#a2ce5747f2ac5f394a94d464cadf3149e">CPPCli::VXSystem::_loginInfo</a></div><div class="ttdeci">VxSdk::VxLoginInfo * _loginInfo</div><div class="ttdef"><b>Definition:</b> <a href="_v_x_system_8h_source.html#l00139">VXSystem.h:139</a></div></div>
+<div class="ttc" id="namespace_vx_sdk_1_1_utilities_html_a11cbdb435aa92ea160aad373da6a32db"><div class="ttname"><a href="../VxSdk/namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">VxSdk::Utilities::StrCopySafe</a></div><div class="ttdeci">static void StrCopySafe(char(&amp;dst)[dstSize], const char *src)</div></div>
+<div class="ttc" id="namespace_vx_sdk_html_a5740f17d74ae3a7459a633eaca311d1a"><div class="ttname"><a href="../VxSdk/namespace_vx_sdk.html#a5740f17d74ae3a7459a633eaca311d1a">VxSdk::VxEventCallback</a></div><div class="ttdeci">void(* VxEventCallback)(IVxEvent *)</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_login_info_html_a32d5efcf1f7e642086212c1997906837"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_login_info.html#a32d5efcf1f7e642086212c1997906837">VxSdk::VxLoginInfo::username</a></div><div class="ttdeci">char username[64]</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_login_info_html_a7200b12f5b360d3378c5f46a3d7714f2"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_login_info.html#a7200b12f5b360d3378c5f46a3d7714f2">VxSdk::VxLoginInfo::password</a></div><div class="ttdeci">char password[64]</div></div>
 <div class="ttc" id="class_c_p_p_cli_1_1_v_x_system_html_aeb55a88b4508d23122acd09f9ecf6af9"><div class="ttname"><a href="class_c_p_p_cli_1_1_v_x_system.html#aeb55a88b4508d23122acd09f9ecf6af9">CPPCli::VXSystem::EventCallbackDelegate</a></div><div class="ttdeci">delegate void EventCallbackDelegate(VxSdk::IVxEvent *vxEvent)</div><div class="ttdoc">The native event callback delegate. </div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_login_info_html_ab2512eba0575aa577f77e6209f5e4a94"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_login_info.html#ab2512eba0575aa577f77e6209f5e4a94">VxSdk::VxLoginInfo::useSsl</a></div><div class="ttdeci">bool useSsl</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_result_html_adc2e4ff9e03060a9ed92fdc0121dde26"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxSdk::VxResult::Value</a></div><div class="ttdeci">Value</div></div>
 <div class="ttc" id="class_c_p_p_cli_1_1_utils_html_af27a653d2c277c67bb7a2dee0971f4b2"><div class="ttname"><a href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2">CPPCli::Utils::ConvertSysString</a></div><div class="ttdeci">static const char * ConvertSysString(System::String^ sysString)</div><div class="ttdoc">Convert a system string to a char. </div><div class="ttdef"><b>Definition:</b> <a href="_utils_8h_source.html#l00062">Utils.h:62</a></div></div>
+<div class="ttc" id="class_c_p_p_cli_1_1_v_x_system_html_aa2a7ba8c1537b619015bc4ee492ebb9f"><div class="ttname"><a href="class_c_p_p_cli_1_1_v_x_system.html#aa2a7ba8c1537b619015bc4ee492ebb9f">CPPCli::VXSystem::_callback</a></div><div class="ttdeci">EventCallbackDelegate^ _callback</div><div class="ttdef"><b>Definition:</b> <a href="_v_x_system_8h_source.html#l00140">VXSystem.h:140</a></div></div>
+<div class="ttc" id="class_c_p_p_cli_1_1_v_x_system_html_ae22a0a176121622942b44b91c8150e99"><div class="ttname"><a href="class_c_p_p_cli_1_1_v_x_system.html#ae22a0a176121622942b44b91c8150e99">CPPCli::VXSystem::_system</a></div><div class="ttdeci">VxSdk::IVxSystem * _system</div><div class="ttdef"><b>Definition:</b> <a href="_v_x_system_8h_source.html#l00138">VXSystem.h:138</a></div></div>
 </div><!-- fragment -->
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_c_p_p_cli_1_1_v_x_system_a834b57b4ce75de89d603b8da3c5f20e3_cgraph.png" border="0" usemap="#class_c_p_p_cli_1_1_v_x_system_a834b57b4ce75de89d603b8da3c5f20e3_cgraph" alt=""/></div>
-<map name="class_c_p_p_cli_1_1_v_x_system_a834b57b4ce75de89d603b8da3c5f20e3_cgraph" id="class_c_p_p_cli_1_1_v_x_system_a834b57b4ce75de89d603b8da3c5f20e3_cgraph">
-<area shape="rect" id="node2" href="class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2" title="Convert a system string to a char. " alt="" coords="225,5,397,47"/>
-</map>
 </div>
-</p>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="aa2a7ba8c1537b619015bc4ee492ebb9f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_p_p_cli_1_1_v_x_system.html#aeb55a88b4508d23122acd09f9ecf6af9">EventCallbackDelegate</a> ^ CPPCli::VXSystem::_callback</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_v_x_system_8h_source.html#l00140">140</a> of file <a class="el" href="_v_x_system_8h_source.html">VXSystem.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2ce5747f2ac5f394a94d464cadf3149e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_login_info.html">VxSdk::VxLoginInfo</a>* CPPCli::VXSystem::_loginInfo</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_v_x_system_8h_source.html#l00139">139</a> of file <a class="el" href="_v_x_system_8h_source.html">VXSystem.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae22a0a176121622942b44b91c8150e99"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_system.html">VxSdk::IVxSystem</a>* CPPCli::VXSystem::_system</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_v_x_system_8h_source.html#l00138">138</a> of file <a class="el" href="_v_x_system_8h_source.html">VXSystem.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2aec8c82cf350f178c2b848618e0d17f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_p_p_cli_1_1_v_x_system.html#a00a54ff47433b31e2a2c974f8d1f8af7">EventDelegate</a> ^ CPPCli::VXSystem::_systemEvent</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_v_x_system_8h_source.html#l00141">141</a> of file <a class="el" href="_v_x_system_8h_source.html">VXSystem.h</a>.</p>
 
 </div>
 </div>
@@ -937,15 +1107,15 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>Include/<a class="el" href="_v_x_system_8h_source.html">VXSystem.h</a></li>
-<li>Source/<a class="el" href="_v_x_system_8cpp_source.html">VXSystem.cpp</a></li>
+<li>C:/Users/Zach/Git/vxsdk/Samples/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/<a class="el" href="_v_x_system_8h_source.html">VXSystem.h</a></li>
+<li>C:/Users/Zach/Git/vxsdk/Samples/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/<a class="el" href="_v_x_system_8cpp_source.html">VXSystem.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>CPPCli</b></li><li class="navelem"><a class="el" href="class_c_p_p_cli_1_1_v_x_system.html">VXSystem</a></li>
+    <li class="navelem"><a class="el" href="namespace_c_p_p_cli.html">CPPCli</a></li><li class="navelem"><a class="el" href="class_c_p_p_cli_1_1_v_x_system.html">VXSystem</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>

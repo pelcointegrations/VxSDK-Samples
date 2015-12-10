@@ -1,6 +1,0 @@
-<map id="MediaController::StreamBase::Seek" name="MediaController::StreamBase::Seek">
-<area shape="rect" id="node2" href="$class_media_controller_1_1_playing_state.html#a3de48205d6f16d9e37f9fce69fb9f266" title="Perform the Seek action based on the stream state. " alt="" coords="261,5,424,47"/>
-<area shape="rect" id="node3" href="$class_media_controller_1_1_paused_state.html#a7692f410ddd05178403082f5961ef419" title="Perform the Seek action based on the stream state. " alt="" coords="245,71,440,112"/>
-<area shape="rect" id="node4" href="$class_media_controller_1_1_stopped_state.html#a8bd9ad863881ed1f8b487a2eb4e00993" title="Perform the Play action based on the stream state. " alt="" coords="259,136,427,177"/>
-<area shape="rect" id="node5" href="$class_media_controller_1_1_stopped_state.html#a4bd811dfc679b042366c768657891ea7" title="Perform the Seek action based on the stream state. " alt="" coords="259,201,427,243"/>
-</map>

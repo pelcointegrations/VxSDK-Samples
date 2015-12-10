@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['control',['Control',['../class_s_d_k_sample_app_1_1_source_1_1_main_form.html#a0a160385b590cf379b66e58631a2d695',1,'SDKSampleApp::Source::MainForm']]],
-  ['current',['Current',['../class_s_d_k_sample_app_1_1_source_1_1_control_manager.html#a378ada1da871665f9c488b7ada7848ee',1,'SDKSampleApp::Source::ControlManager']]],
-  ['currentdevice',['CurrentDevice',['../class_s_d_k_sample_app_1_1_source_1_1_main_form.html#abce26b9a6edf6ade742404632b4b5169',1,'SDKSampleApp::Source::MainForm']]],
-  ['currentdevices',['CurrentDevices',['../class_s_d_k_sample_app_1_1_source_1_1_main_form.html#a62467834e53c0d78112f2df9b1b9b02d',1,'SDKSampleApp::Source::MainForm']]],
-  ['currentpassword',['CurrentPassword',['../class_s_d_k_sample_app_1_1_source_1_1_main_form.html#a7544476453e0e4d9ccdebafa474881c5',1,'SDKSampleApp::Source::MainForm']]],
-  ['currentsystem',['CurrentSystem',['../class_s_d_k_sample_app_1_1_source_1_1_main_form.html#a1c0d33e3581c9438b76c8ec8be4506d0',1,'SDKSampleApp::Source::MainForm']]],
-  ['currentusername',['CurrentUserName',['../class_s_d_k_sample_app_1_1_source_1_1_main_form.html#a0d18d99876eab4d91b10f093b7ca9350',1,'SDKSampleApp::Source::MainForm']]]
+  ['ackstate',['AckState',['../../CSharpWrapper/class_c_p_p_cli_1_1_event.html#a7bdd6dbce00b2f37563ea51ea1cec436',1,'CPPCli::Event']]],
+  ['audibleloopdelay',['AudibleLoopDelay',['../../CSharpWrapper/class_c_p_p_cli_1_1_new_situation.html#acf5ae71497d4238a49c5b88e56326e1a',1,'CPPCli::NewSituation::AudibleLoopDelay()'],['../../CSharpWrapper/class_c_p_p_cli_1_1_situation.html#a858438c6c7f4211c3f1b66b91295bf15',1,'CPPCli::Situation::AudibleLoopDelay()']]],
+  ['audibleplaycount',['AudiblePlayCount',['../../CSharpWrapper/class_c_p_p_cli_1_1_new_situation.html#a780f5384c14b00a627ee08716587403f',1,'CPPCli::NewSituation::AudiblePlayCount()'],['../../CSharpWrapper/class_c_p_p_cli_1_1_situation.html#abaef27a695701ec0a78fa85974d7e086',1,'CPPCli::Situation::AudiblePlayCount()']]],
+  ['autoacknowledge',['AutoAcknowledge',['../../CSharpWrapper/class_c_p_p_cli_1_1_new_situation.html#a6119e1f23789649dbfbce61b0dc51107',1,'CPPCli::NewSituation::AutoAcknowledge()'],['../../CSharpWrapper/class_c_p_p_cli_1_1_situation.html#a3e8f1876299c8b63939f1d8aed0952c5',1,'CPPCli::Situation::AutoAcknowledge()']]]
 ];
