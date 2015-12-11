@@ -3,6 +3,7 @@
 namespace CPPConsole {
     namespace Constants {
         //Constant definitions
+        const char* const kSdkKey = "ReplaceWithGeneratedKey";
         const char* const kSysIp = "192.168.5.178";
         const char* const kUserName = "admin";
         const char* const kPassword = "admin123";

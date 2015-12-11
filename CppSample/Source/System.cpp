@@ -11,15 +11,15 @@ CPPConsole::System::System() {
     _deviceList = nullptr;
 }
 
-bool CPPConsole::System::Login(const char* ip, int port, const char* user, const char* passwd) {
-    ifstream filein("PelcoKey.txt");
-    if (filein.is_open()) {
-        string key;
-        getline(filein, key);
-        VxSdk::VxInit(key.c_str());
-        filein.close();
+bool CPPConsole::System::InitializeSdk() {
+    VxSdk::VxResult::Value result = VxSdk::VxInit(Constants::kSdkKey);
+    if (result == VxSdk::VxResult::kOK) {
+        return true;
     }
+    return false;
+}
 
+bool CPPConsole::System::Login(const char* ip, int port, const char* user, const char* passwd) {
     VxSdk::VxLoginInfo loginInfo;
     loginInfo.port = Constants::kPortnum;
     loginInfo.useSsl = true;

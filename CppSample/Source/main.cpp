@@ -509,58 +509,68 @@ int main(int argc, char* argv[]) {
     cout << "VxSDK C++ console application - Started.\n\n";
     //Create an instance of wrapper class, all the SDK methods will be called with the help of wrapper classes
     CPPConsole::System* sys = new CPPConsole::System();
-    cout << "Connecting to system " << kSysIp << "...\n";
-    bool loggedIn = sys->Login(kSysIp, kPortnum, kUserName, kPassword);
-    if (!loggedIn) {
-        cout << "Failed to login!!\n";
+    bool loggedIn = false;
+    cout << "Initializing VxSDK...\n";
+    bool initialized = sys->InitializeSdk();
+    if (!initialized) {
+        cout << "Failed to initialize the VxSDK.  Verify the SDK key.\n";
     }
     else {
-        cout << "Logged into system:" << kSysIp << " as " << kUserName << "\n";
-        cout << "Fetching devices from system, Please wait...\n";
-        list<CPPConsole::Device*>* devices = sys->GetDevices();
-        cout << devices->size() << " devices found.\n";
+        cout << "Connecting to system " << kSysIp << "...\n";
+        loggedIn = sys->Login(kSysIp, kPortnum, kUserName, kPassword);
+        if (!loggedIn) {
+            cout << "Failed to login!!\n";
+        }
+        else {
+            cout << "Logged into system:" << kSysIp << " as " << kUserName << "\n";
+            cout << "Fetching devices from system, Please wait...\n";
+            list<CPPConsole::Device*>* devices = sys->GetDevices();
+            cout << devices->size() << " devices found.\n";
 
-        int option;
+            int option;
 
-        do{ //Showing Main menu. Refer CPPConsole::Utils::GetMainMenuChoiceFromUser for details
-            system("cls");
-            CPPConsole::Utils::DrawLine();
-            cout << "\n  CONNECTED TO:" << kSysIp;
-            cout << "\n  TOTAL DEVICES FOUND:" << devices->size() << "\n";
-            CPPConsole::Utils::DrawLine();
-            option = CPPConsole::Utils::GetMainMenuChoiceFromUser();
+            do{ //Showing Main menu. Refer CPPConsole::Utils::GetMainMenuChoiceFromUser for details
+                system("cls");
+                CPPConsole::Utils::DrawLine();
+                cout << "\n  CONNECTED TO:" << kSysIp;
+                cout << "\n  TOTAL DEVICES FOUND:" << devices->size() << "\n";
+                CPPConsole::Utils::DrawLine();
+                option = CPPConsole::Utils::GetMainMenuChoiceFromUser();
 
-            switch (option) {
+                switch (option) {
                 case 1:{
-                        // Dsiplay submenu related with devices (Show details, streaming)
-                        DevicesMenu(devices, sys);
-                        break;
+                    // Dsiplay submenu related with devices (Show details, streaming)
+                    DevicesMenu(devices, sys);
+                    break;
                 }
                 case 2:{
-                        // Dsiplay submenu related with exports (View,create,delete,download)
-                        ExportsMenu(devices, sys);
-                        break;
+                    // Dsiplay submenu related with exports (View,create,delete,download)
+                    ExportsMenu(devices, sys);
+                    break;
                 }
                 case 3:{
-                        // Dsiplay submenu related with events (View/Inject/Subscribe/Unsubscribe events,
-                        // View/Add/Delete situations)
-                        EventsMenu(devices, sys);
-                        break;
+                    // Dsiplay submenu related with events (View/Inject/Subscribe/Unsubscribe events,
+                    // View/Add/Delete situations)
+                    EventsMenu(devices, sys);
+                    break;
                 }
                 case 4:{
-                        break;
+                    break;
                 }
                 default:{
-                        cout << "\n Invalid Option!!";
-                        break;
+                    cout << "\n Invalid Option!!";
+                    break;
                 }
-            }
+                }
 
-        } while (option != 4);
+            } while (option != 4);
+        }
     }
     cout << "VxSDK C++ console application - Shutting down.\n";
     system(kPauseCommand);
-    delete sys;    //cleanup system instance.
+    if (initialized && loggedIn) {
+        delete sys;    //cleanup system instance.
+    }
     return 0;
 }
 #pragma endregion

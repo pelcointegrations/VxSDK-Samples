@@ -4,6 +4,7 @@
 
 namespace CPPJni {
     static const int kSslPort = 443;
+    static const char* kSdkKey = "ReplaceWithGeneratedKey";
 
     static const char* kInit = "<init>";
     static const char* kJavaLangString = "Ljava/lang/String;";

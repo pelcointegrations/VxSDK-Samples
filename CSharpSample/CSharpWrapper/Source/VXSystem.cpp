@@ -10,12 +10,15 @@ using namespace System::Collections::Generic;
 using namespace System::Runtime::InteropServices;
 
 CPPCli::VXSystem::VXSystem(String^ ip) : _loginInfo(new VxSdk::VxLoginInfo()) {
-    // Init the sdk with your key generated using VxSdkKeyGen.exe
-    String^ key = File::ReadAllText("..\\..\\..\\..\\..\\PelcoKey.txt");
-    VxSdk::VxInit(Utils::ConvertSysString(key));
-
     // Enter the VideoXpert IP information
     VxSdk::Utilities::StrCopySafe(_loginInfo->ipAddress, Utils::ConvertSysString(ip));
+}
+
+CPPCli::Results::Value CPPCli::VXSystem::InitializeSdk(System::String^ key) {
+    // Init the sdk with your key generated using VxSdkKeyGen.exe
+    VxSdk::VxResult::Value result = VxSdk::VxInit(Utils::ConvertSysString(key));
+
+    return CPPCli::Results::Value(result);
 }
 
 CPPCli::Results::Value CPPCli::VXSystem::Login(String^ username, String^ password) {

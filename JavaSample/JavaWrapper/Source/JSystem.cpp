@@ -266,12 +266,10 @@ void SetEventDetailsToJniObject(JNIEnv * env, Jni_Event* evObj, jobject jevObj, 
 /// <param name="ip">IP of Vx system to connect</param>
 JNIEXPORT jboolean JNICALL Java_javasample_JSystem_Connect(JNIEnv *env, jobject obj, jstring usrName, jstring passwd, jstring ip) {
     //Before logging in to VxSDK, initialize the SDK using key file.
-    ifstream filein("PelcoKey.txt");
-    if (filein.is_open()) {
-        string key;
-        getline(filein, key);
-        VxSdk::VxInit(key.c_str());
-        filein.close();
+    VxSdk::VxResult::Value result = VxSdk::VxInit(kSdkKey);
+    if (result != VxSdk::VxResult::kOK) {
+        LOGGER->Log("Failed to initialize the VxSDK.  Verify the SDK key.");
+        return false;
     }
 
     //Convert to C++ strings

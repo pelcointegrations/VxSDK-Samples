@@ -35,6 +35,13 @@ namespace CPPCli {
         !VXSystem();
 
         /// <summary>
+        /// Initialize the VideoXpert SDK.
+        /// </summary>
+        /// <param name="key">The key to initialize the SDK with.</param>
+        /// <returns>The <see cref="Results::Value">Result</see> of the initialization process.</returns>
+        Results::Value InitializeSdk(System::String^ key);
+
+        /// <summary>
         /// Log in to the VideoXpert system.
         /// </summary>
         /// <param name="username">The user name to log in with.</param>

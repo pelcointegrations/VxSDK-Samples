@@ -31,11 +31,18 @@ namespace SDKSampleApp.Source
             {
                 // Create a new VideoXpert system.
                 MainForm.CurrentSystem = new VXSystem(txbxIp.Text);
-                var result = MainForm.CurrentSystem.Login(txbxUsername.Text, txbxPassword.Text);
+                var result = MainForm.CurrentSystem.InitializeSdk(MainForm.SdkKey);
+                if(result != Results.Value.OK)
+                {
+                    MainForm.CurrentSystem.Dispose();
+                    MainForm.Instance.WriteToLog("Error initializing SDK: " + result);
+                    return;
+                }
+                result = MainForm.CurrentSystem.Login(txbxUsername.Text, txbxPassword.Text);
                 if (result != Results.Value.OK)
                 {
                     MainForm.CurrentSystem.Dispose();
-                    MainForm.Instance.WriteToLog("Error: " + result);
+                    MainForm.Instance.WriteToLog("Error logging in: " + result);
                     return;
                 }
 

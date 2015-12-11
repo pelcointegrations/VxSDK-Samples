@@ -27,6 +27,11 @@ namespace SDKSampleApp.Source
         }
 
         /// <summary>
+        /// The SDK key used to initialize the SDK.
+        /// </summary>
+        public static string SdkKey = "ReplaceWithGeneratedKey";
+
+        /// <summary>
         /// Gets or sets the CurrentDevice property.
         /// </summary>
         /// <value>The device that is currently streaming.</value>

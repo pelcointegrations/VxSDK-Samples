@@ -22,6 +22,11 @@ namespace CPPConsole {
             ~System();
 
             /// <summary>
+            /// Initialize the VxSDK
+            /// </summary>
+            bool InitializeSdk();
+
+            /// <summary>
             /// Login to system with the given ip, username and password
             /// </summary>
             /// <param name="ip">IP of Vx System </param>
