@@ -8,6 +8,6 @@ In order to run the sample you must replace the `SdkKey` string value in MainFor
 
 ## Documentation
 
-CSharp - http://pelcointegrations.github.io/VxSDK-Samples/CSharp/index.html
-CSharpWrapper - http://pelcointegrations.github.io/VxSDK-Samples/CSharpWrapper/index.html
+CSharp - http://pelcointegrations.github.io/VxSDK-Samples/CSharp/index.html  
+CSharpWrapper - http://pelcointegrations.github.io/VxSDK-Samples/CSharpWrapper/index.html  
 MediaController - http://pelcointegrations.github.io/VxSDK-Samples/MediaController/index.html
