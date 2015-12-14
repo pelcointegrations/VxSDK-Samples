@@ -215,11 +215,11 @@ SET VXSDK=VxSdk%25D%25
 SET REST=cpprest120%25D%25_2_6
 SET MEDIACTRL=MediaController%25D%25
 
-COPY /Y "$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdk%25PathName%25.$(PlatformTarget)\Bin\%25REST%25.dll" "$(TargetDir)"
-COPY /Y "$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdk%25PathName%25.$(PlatformTarget)\Bin\%25REST%25.pdb" "$(TargetDir)"
+COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%25REST%25.dll" "$(TargetDir)"
+COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%25REST%25.pdb" "$(TargetDir)"
 
-COPY /Y "$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdk%25PathName%25.$(PlatformTarget)\Bin\%25VXSDK%25.dll" "$(TargetDir)"
-COPY /Y "$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdk%25PathName%25.$(PlatformTarget)\Bin\%25VXSDK%25.pdb" "$(TargetDir)"
+COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%25VXSDK%25.dll" "$(TargetDir)"
+COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%25VXSDK%25.pdb" "$(TargetDir)"
 
 COPY /Y "$(ProjectDir)..\..\MediaController\Bin\$(PlatformTarget)\$(ConfigurationName)\%25MEDIACTRL%25.dll" "$(TargetDir)"
 COPY /Y "$(ProjectDir)..\..\MediaController\Bin\$(PlatformTarget)\$(ConfigurationName)\%25MEDIACTRL%25.pdb" "$(TargetDir)"</PreBuildEvent>

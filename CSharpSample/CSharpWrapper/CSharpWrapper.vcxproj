@@ -94,7 +94,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_WIN32_WINNT=0x0501;WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>Include\;$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdkD.x86\Include;$(ProjectDir)..\..\MediaController\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>Include\;$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Include;$(ProjectDir)..\..\MediaController\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile />
       <GenerateXMLDocumentationFiles>true</GenerateXMLDocumentationFiles>
     </ClCompile>
@@ -102,7 +102,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>VxSdkd.lib;MediaControllerd.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
-      <AdditionalLibraryDirectories>$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdkD.x86\Lib;$(ProjectDir)..\..\MediaController\Bin\x86\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Lib;$(ProjectDir)..\..\MediaController\Bin\x86\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PreBuildEvent>
       <Command>SET D=
@@ -114,11 +114,11 @@ IF $(ConfigurationName) == Debug (
 SET VXSDK=VxSdk%D%
 SET REST=cpprest120%D%_2_6
 
-COPY /Y "$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdkD.x86\Bin\%REST%.dll" "$(TargetDir)"
-COPY /Y "$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdkD.x86\Bin\%REST%.pdb" "$(TargetDir)"
+COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%REST%.dll" "$(TargetDir)"
+COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%REST%.pdb" "$(TargetDir)"
 
-COPY /Y "$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdkD.x86\Bin\%VXSDK%.dll" "$(TargetDir)"
-COPY /Y "$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdkD.x86\Bin\%VXSDK%.pdb" "$(TargetDir)"</Command>
+COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%VXSDK%.dll" "$(TargetDir)"
+COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%VXSDK%.pdb" "$(TargetDir)"</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -126,7 +126,7 @@ COPY /Y "$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdkD.x86\Bin\%VXSDK%.pdb" "$(
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_WIN32_WINNT=0x0501;WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>Include\;$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdkD.x64\Include;$(ProjectDir)..\..\MediaController\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>Include\;$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Include;$(ProjectDir)..\..\MediaController\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
     </ClCompile>
@@ -134,7 +134,7 @@ COPY /Y "$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdkD.x86\Bin\%VXSDK%.pdb" "$(
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>VxSdkd.lib;MediaControllerd.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
-      <AdditionalLibraryDirectories>$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdkD.x64\Lib;$(ProjectDir)..\..\MediaController\Bin\$(PlatformTarget)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Lib;$(ProjectDir)..\..\MediaController\Bin\$(PlatformTarget)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PreBuildEvent>
       <Command>SET D=
@@ -146,25 +146,25 @@ IF $(ConfigurationName) == Debug (
 SET VXSDK=VxSdk%D%
 SET REST=cpprest120%D%_2_6
 
-COPY /Y "$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdkD.x64\Bin\%REST%.dll" "$(TargetDir)"
-COPY /Y "$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdkD.x64\Bin\%REST%.pdb" "$(TargetDir)"
+COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%REST%.dll" "$(TargetDir)"
+COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%REST%.pdb" "$(TargetDir)"
 
-COPY /Y "$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdkD.x64\Bin\%VXSDK%.dll" "$(TargetDir)"
-COPY /Y "$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdkD.x64\Bin\%VXSDK%.pdb" "$(TargetDir)"</Command>
+COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%VXSDK%.dll" "$(TargetDir)"
+COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%VXSDK%.pdb" "$(TargetDir)"</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>_WIN32_WINNT=0x0501;WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>Include\;$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdk.x86\Include;$(ProjectDir)..\..\MediaController\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>Include\;$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Include;$(ProjectDir)..\..\MediaController\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile />
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>VxSdk.lib;MediaController.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
-      <AdditionalLibraryDirectories>$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdk.x86\Lib;$(ProjectDir)..\..\MediaController\Bin\$(PlatformTarget)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Lib;$(ProjectDir)..\..\MediaController\Bin\$(PlatformTarget)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PreBuildEvent>
       <Command>SET D=
@@ -176,16 +176,16 @@ IF $(ConfigurationName) == Debug (
 SET VXSDK=VxSdk%D%
 SET REST=cpprest120%D%_2_6
 
-COPY /Y "$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdk.x86\Bin\%REST%.dll" "$(TargetDir)"
+COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%REST%.dll" "$(TargetDir)"
 
-COPY /Y "$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdk.x86\Bin\%VXSDK%.dll" "$(TargetDir)"</Command>
+COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%VXSDK%.dll" "$(TargetDir)"</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>_WIN32_WINNT=0x0501;WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>Include\;$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdk.x64\Include;$(ProjectDir)..\..\MediaController\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>Include\;$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Include;$(ProjectDir)..\..\MediaController\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
     </ClCompile>
@@ -193,7 +193,7 @@ COPY /Y "$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdk.x86\Bin\%VXSDK%.dll" "$(T
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>VxSdk.lib;MediaController.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
-      <AdditionalLibraryDirectories>$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdk.x64\Lib;$(ProjectDir)..\..\MediaController\Bin\$(PlatformTarget)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Lib;$(ProjectDir)..\..\MediaController\Bin\$(PlatformTarget)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PreBuildEvent>
       <Command>SET D=
@@ -205,9 +205,9 @@ IF $(ConfigurationName) == Debug (
 SET VXSDK=VxSdk%D%
 SET REST=cpprest120%D%_2_6
 
-COPY /Y "$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdk.x64\Bin\%REST%.dll" "$(TargetDir)"
+COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%REST%.dll" "$(TargetDir)"
 
-COPY /Y "$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdk.x64\Bin\%VXSDK%.dll" "$(TargetDir)"</Command>
+COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%VXSDK%.dll" "$(TargetDir)"</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

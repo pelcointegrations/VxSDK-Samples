@@ -97,12 +97,12 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>Include\;$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdkD.x86\Include;$(ProjectDir)ThirdParty\Curl\7.43.0\$(PlatformTarget)\include\curl;..\MediaController\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>Include\;$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Include;$(ProjectDir)ThirdParty\Curl\7.43.0\$(PlatformTarget)\include\curl;..\MediaController\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdkD.x86\Lib;..\MediaController\Bin\$(PlatformTarget)\$(Configuration);$(ProjectDir)ThirdParty\Curl\7.43.0\$(PlatformTarget)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Lib;..\MediaController\Bin\$(PlatformTarget)\$(Configuration);$(ProjectDir)ThirdParty\Curl\7.43.0\$(PlatformTarget)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>VxSdkd.lib;libcurl.lib;MediaControllerd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PreBuildEvent>
@@ -116,8 +116,8 @@ SET VXSDK=VxSdk%D%
 SET REST=cpprest120%D%_2_6
 SET RTSPCTRLR=MediaController%D%
 
-COPY /Y "$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdkD.x86\Bin\%REST%.dll" "$(TargetDir)"
-COPY /Y "$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdkD.x86\Bin\%REST%.pdb" "$(TargetDir)"
+COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%REST%.dll" "$(TargetDir)"
+COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%REST%.pdb" "$(TargetDir)"
 
 XCOPY  "..\MediaController\ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_runtime\bin\*.*" "$(TargetDir)" /y /D
 XCOPY  "..\MediaController\ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_runtime\lib" "$(TargetDir)"..\lib\ /s /i /y /D
@@ -127,8 +127,8 @@ COPY /Y "..\MediaController\Bin\$(PlatformTarget)\$(ConfigurationName)\%RTSPCTRL
 
 XCOPY "$(ProjectDir)ThirdParty\Curl\7.43.0\$(PlatformTarget)\dlls\*.*" "$(TargetDir)" /y /D
 
-COPY /Y "$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdkD.x86\Bin\%VXSDK%.dll" "$(TargetDir)"
-COPY /Y "$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdkD.x86\Bin\%VXSDK%.pdb" "$(TargetDir)"
+COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%VXSDK%.dll" "$(TargetDir)"
+COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%VXSDK%.pdb" "$(TargetDir)"
 
 
 
@@ -144,12 +144,12 @@ COPY /Y "$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdkD.x86\Bin\%VXSDK%.pdb" "$(
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>Include\;$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdkD.x64\Include;$(ProjectDir)ThirdParty\Curl\7.43.0\$(PlatformTarget)\include\curl;..\MediaController\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>Include\;$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Include;$(ProjectDir)ThirdParty\Curl\7.43.0\$(PlatformTarget)\include\curl;..\MediaController\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdkD.x64\Lib;..\MediaController\Bin\$(PlatformTarget)\$(Configuration);$(ProjectDir)ThirdParty\Curl\7.43.0\$(PlatformTarget)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Lib;..\MediaController\Bin\$(PlatformTarget)\$(Configuration);$(ProjectDir)ThirdParty\Curl\7.43.0\$(PlatformTarget)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>VxSdkd.lib;libcurl.lib;MediaControllerd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PreBuildEvent>
@@ -163,8 +163,8 @@ SET VXSDK=VxSdk%D%
 SET REST=cpprest120%D%_2_6
 SET RTSPCTRLR=MediaController%D%
 
-COPY /Y "$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdkD.x64\Bin\%REST%.dll" "$(TargetDir)"
-COPY /Y "$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdkD.x64\Bin\%REST%.pdb" "$(TargetDir)"
+COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%REST%.dll" "$(TargetDir)"
+COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%REST%.pdb" "$(TargetDir)"
 
 XCOPY  "..\MediaController\ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_runtime\bin\*.*" "$(TargetDir)" /y /D
 XCOPY  "..\MediaController\ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_runtime\lib" "$(TargetDir)"..\lib\ /s /i /y /D
@@ -174,8 +174,8 @@ COPY /Y "..\MediaController\Bin\$(PlatformTarget)\$(ConfigurationName)\%RTSPCTRL
 
 XCOPY "$(ProjectDir)ThirdParty\Curl\7.43.0\$(PlatformTarget)\dlls\*.*" "$(TargetDir)" /y /D
 
-COPY /Y "$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdkD.x64\Bin\%VXSDK%.dll" "$(TargetDir)"
-COPY /Y "$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdkD.x64\Bin\%VXSDK%.pdb" "$(TargetDir)"
+COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%VXSDK%.dll" "$(TargetDir)"
+COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%VXSDK%.pdb" "$(TargetDir)"
 </Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -188,14 +188,14 @@ COPY /Y "$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdkD.x64\Bin\%VXSDK%.pdb" "$(
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>Include\;$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdk.x86\Include;$(ProjectDir)ThirdParty\Curl\7.43.0\$(PlatformTarget)\include\curl;..\MediaController\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>Include\;$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Include;$(ProjectDir)ThirdParty\Curl\7.43.0\$(PlatformTarget)\include\curl;..\MediaController\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdk.x86\Lib;..\MediaController\Bin\$(PlatformTarget)\$(Configuration);$(ProjectDir)ThirdParty\Curl\7.43.0\$(PlatformTarget)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Lib;..\MediaController\Bin\$(PlatformTarget)\$(Configuration);$(ProjectDir)ThirdParty\Curl\7.43.0\$(PlatformTarget)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>VxSdk.lib;libcurl.lib;MediaController.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PreBuildEvent>
@@ -209,7 +209,7 @@ SET VXSDK=VxSdk%D%
 SET REST=cpprest120%D%_2_6
 SET RTSPCTRLR=MediaController%D%
 
-COPY /Y "$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdk.x86\Bin\%REST%.dll" "$(TargetDir)"
+COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%REST%.dll" "$(TargetDir)"
 
 XCOPY  "..\MediaController\ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_runtime\bin\*.*" "$(TargetDir)" /y /D
 XCOPY  "..\MediaController\ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_runtime\lib" "$(TargetDir)"..\lib\ /s /i /y /D
@@ -218,7 +218,7 @@ COPY /Y "..\MediaController\Bin\$(PlatformTarget)\$(ConfigurationName)\%RTSPCTRL
 
 XCOPY "$(ProjectDir)ThirdParty\Curl\7.43.0\$(PlatformTarget)\dlls\*.*" "$(TargetDir)" /y /D
 
-COPY /Y "$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdk.x86\Bin\%VXSDK%.dll" "$(TargetDir)"</Command>
+COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%VXSDK%.dll" "$(TargetDir)"</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -230,14 +230,14 @@ COPY /Y "$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdk.x86\Bin\%VXSDK%.dll" "$(T
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>Include\;$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdk.x64\Include;$(ProjectDir)ThirdParty\Curl\7.43.0\$(PlatformTarget)\include\curl;..\MediaController\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>Include\;$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Include;$(ProjectDir)ThirdParty\Curl\7.43.0\$(PlatformTarget)\include\curl;..\MediaController\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdk.x64\Lib;..\MediaController\Bin\$(PlatformTarget)\$(Configuration);$(ProjectDir)ThirdParty\Curl\7.43.0\$(PlatformTarget)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Lib;..\MediaController\Bin\$(PlatformTarget)\$(Configuration);$(ProjectDir)ThirdParty\Curl\7.43.0\$(PlatformTarget)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>VxSdk.lib;libcurl.lib;MediaController.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PreBuildEvent>
@@ -251,7 +251,7 @@ SET VXSDK=VxSdk%D%
 SET REST=cpprest120%D%_2_6
 SET RTSPCTRLR=MediaController%D%
 
-COPY /Y "$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdk.x64\Bin\%REST%.dll" "$(TargetDir)"
+COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%REST%.dll" "$(TargetDir)"
 
 XCOPY  "..\MediaController\ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_runtime\bin\*.*" "$(TargetDir)" /y /D
 XCOPY  "..\MediaController\ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_runtime\lib" "$(TargetDir)"..\lib\ /s /i /y /D
@@ -260,7 +260,7 @@ COPY /Y "..\MediaController\Bin\$(PlatformTarget)\$(ConfigurationName)\%RTSPCTRL
 
 XCOPY "$(ProjectDir)ThirdParty\Curl\7.43.0\$(PlatformTarget)\dlls\*.*" "$(TargetDir)" /y /D
 
-COPY /Y "$(ProgramFiles)\Pelco\VxSdk\Sdk\VideoXpertSdk.x64\Bin\%VXSDK%.dll" "$(TargetDir)"</Command>
+COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%VXSDK%.dll" "$(TargetDir)"</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
