@@ -29,7 +29,7 @@ namespace SDKSampleApp.Source
         /// <summary>
         /// The SDK key used to initialize the SDK.
         /// </summary>
-        public static string SdkKey = "ReplaceWithGeneratedKey";
+        public static string SdkKey { get { return "ReplaceWithGeneratedKey"; } }
 
         /// <summary>
         /// Gets or sets the CurrentDevice property.
