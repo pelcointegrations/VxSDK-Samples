@@ -217,49 +217,57 @@ Private Member Functions</h2></td></tr>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keywordflow">try</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            {</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                <span class="comment">// Create a new VideoXpert system.</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                MainForm.CurrentSystem = <span class="keyword">new</span> <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/CSharpWrapper/CSharpWrapper.tag:../CSharpWrapper/" href="../CSharpWrapper/class_c_p_p_cli_1_1_v_x_system.html">VXSystem</a>(txbxIp.Text);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                var result = MainForm.CurrentSystem.Login(txbxUsername.Text, txbxPassword.Text);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                <span class="keywordflow">if</span> (result != <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/CSharpWrapper/CSharpWrapper.tag:../CSharpWrapper/" href="../CSharpWrapper/class_c_p_p_cli_1_1_results.html">Results</a>.<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/CSharpWrapper/CSharpWrapper.tag:../CSharpWrapper/" href="../CSharpWrapper/class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">Value</a>.OK)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                MainForm.CurrentSystem = <span class="keyword">new</span> <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSdkSamples-DocBranch/CSharpWrapper/CSharpWrapper.tag:../CSharpWrapper/" href="../CSharpWrapper/class_c_p_p_cli_1_1_v_x_system.html">VXSystem</a>(txbxIp.Text);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                var result = MainForm.CurrentSystem.InitializeSdk(MainForm.SdkKey);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                <span class="keywordflow">if</span> (result != <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSdkSamples-DocBranch/CSharpWrapper/CSharpWrapper.tag:../CSharpWrapper/" href="../CSharpWrapper/class_c_p_p_cli_1_1_results.html">Results</a>.<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSdkSamples-DocBranch/CSharpWrapper/CSharpWrapper.tag:../CSharpWrapper/" href="../CSharpWrapper/class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">Value</a>.OK)</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                {</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                    MainForm.CurrentSystem.Dispose();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                    MainForm.Instance.WriteToLog(<span class="stringliteral">&quot;Error: &quot;</span> + result);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                    MainForm.Instance.WriteToLog(<span class="stringliteral">&quot;Error initializing SDK: &quot;</span> + result);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                    <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                }</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                <span class="comment">// Get all of the devices from the system and add them to the device list.</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                MainForm.CurrentDevices = MainForm.CurrentSystem.GetDevices();</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                <span class="keywordflow">foreach</span> (var vxDevice <span class="keywordflow">in</span> MainForm.CurrentDevices)</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                    var lvItem = <span class="keyword">new</span> ListViewItem(vxDevice.Name);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                    lvItem.SubItems.Add(vxDevice.Ip);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                    lvItem.SubItems.Add(((<a class="code" href="namespace_s_d_k_sample_app_1_1_enums.html#aa2bd31b8ad20fd154bdad3ac987ec55e">VxDeviceState</a>)vxDevice.State).ToString());</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                    lvItem.Tag = vxDevice;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                    MainForm.Instance.lvDevices.Items.Add(lvItem);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                }</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                <span class="comment">// Save the username and password entered by the user for future use.</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                MainForm.CurrentUserName = txbxUsername.Text;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                MainForm.CurrentPassword = txbxPassword.Text;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">catch</span> (Exception ex)</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                MainForm.Instance.WriteToLog(<span class="stringliteral">&quot;Error: &quot;</span> + ex.Message);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="comment">// If the system creation did not throw then assume we have a valid system</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="comment">// and enable the UI elements.</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            MainForm.Instance.exportToolStripMenuItem.Enabled = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            MainForm.Instance.eventsToolStripMenuItem.Enabled = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            MainForm.Instance.situationsToolStripMenuItem.Enabled = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            MainForm.Instance.btnSeek.Enabled = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            MainForm.Instance.btnPause.Enabled = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            MainForm.Instance.btnPlay.Enabled = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            MainForm.Instance.btnStop.Enabled = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            MainForm.Instance.btnLive.Enabled = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            Close();</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                result = MainForm.CurrentSystem.Login(txbxUsername.Text, txbxPassword.Text);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                <span class="keywordflow">if</span> (result != <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSdkSamples-DocBranch/CSharpWrapper/CSharpWrapper.tag:../CSharpWrapper/" href="../CSharpWrapper/class_c_p_p_cli_1_1_results.html">Results</a>.<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSdkSamples-DocBranch/CSharpWrapper/CSharpWrapper.tag:../CSharpWrapper/" href="../CSharpWrapper/class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">Value</a>.OK)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                    MainForm.CurrentSystem.Dispose();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                    MainForm.Instance.WriteToLog(<span class="stringliteral">&quot;Error logging in: &quot;</span> + result);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                <span class="comment">// Get all of the devices from the system and add them to the device list.</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                MainForm.CurrentDevices = MainForm.CurrentSystem.GetDevices();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                <span class="keywordflow">foreach</span> (var vxDevice <span class="keywordflow">in</span> MainForm.CurrentDevices)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                    var lvItem = <span class="keyword">new</span> ListViewItem(vxDevice.Name);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                    lvItem.SubItems.Add(vxDevice.Ip);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                    lvItem.SubItems.Add(((<a class="code" href="namespace_s_d_k_sample_app_1_1_enums.html#aa2bd31b8ad20fd154bdad3ac987ec55e">VxDeviceState</a>)vxDevice.State).ToString());</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                    lvItem.Tag = vxDevice;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                    MainForm.Instance.lvDevices.Items.Add(lvItem);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                <span class="comment">// Save the username and password entered by the user for future use.</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                MainForm.CurrentUserName = txbxUsername.Text;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                MainForm.CurrentPassword = txbxPassword.Text;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordflow">catch</span> (Exception ex)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                MainForm.Instance.WriteToLog(<span class="stringliteral">&quot;Error: &quot;</span> + ex.Message);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="comment">// If the system creation did not throw then assume we have a valid system</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="comment">// and enable the UI elements.</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            MainForm.Instance.exportToolStripMenuItem.Enabled = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            MainForm.Instance.eventsToolStripMenuItem.Enabled = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            MainForm.Instance.situationsToolStripMenuItem.Enabled = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            MainForm.Instance.btnSeek.Enabled = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            MainForm.Instance.btnPause.Enabled = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            MainForm.Instance.btnPlay.Enabled = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            MainForm.Instance.btnStop.Enabled = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            MainForm.Instance.btnLive.Enabled = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            Close();</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        }</div>
 <div class="ttc" id="class_c_p_p_cli_1_1_results_html"><div class="ttname"><a href="../CSharpWrapper/class_c_p_p_cli_1_1_results.html">CPPCli::Results</a></div></div>
 <div class="ttc" id="class_c_p_p_cli_1_1_results_html_a12504aac644d00e0532be43063a970ca"><div class="ttname"><a href="../CSharpWrapper/class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">CPPCli::Results::Value</a></div><div class="ttdeci">Value</div></div>
 <div class="ttc" id="namespace_s_d_k_sample_app_1_1_enums_html_aa2bd31b8ad20fd154bdad3ac987ec55e"><div class="ttname"><a href="namespace_s_d_k_sample_app_1_1_enums.html#aa2bd31b8ad20fd154bdad3ac987ec55e">SDKSampleApp.Enums.VxDeviceState</a></div><div class="ttdeci">VxDeviceState</div><div class="ttdoc">The VxDeviceState enumeration. </div><div class="ttdef"><b>Definition:</b> <a href="_enums_8cs_source.html#l00057">Enums.cs:57</a></div></div>

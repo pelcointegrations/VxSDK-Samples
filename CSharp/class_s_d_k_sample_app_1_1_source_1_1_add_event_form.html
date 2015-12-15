@@ -228,7 +228,7 @@ Private Member Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_add_event_form_8cs_source.html#l00042">42</a> of file <a class="el" href="_add_event_form_8cs_source.html">AddEventForm.cs</a>.</p>
 <div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            var newEvent = <span class="keyword">new</span> <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/CSharpWrapper/CSharpWrapper.tag:../CSharpWrapper/" href="../CSharpWrapper/class_c_p_p_cli_1_1_new_event.html">NewEvent</a> </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            var newEvent = <span class="keyword">new</span> <a class="codeRef" doxygen="C:/Users/Zach/Git/VxSdkSamples-DocBranch/CSharpWrapper/CSharpWrapper.tag:../CSharpWrapper/" href="../CSharpWrapper/class_c_p_p_cli_1_1_new_event.html">NewEvent</a> </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            {</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                GeneratorDeviceId = this.txbxGeneratorDeviceId.Text,</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                SituationType = this.cbxSituationType.Text,</div>
@@ -247,7 +247,7 @@ Private Member Functions</h2></td></tr>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordflow">if</span> (!<span class="keywordtype">string</span>.IsNullOrEmpty(this.txbxName3.Text) &amp;&amp; !<span class="keywordtype">string</span>.IsNullOrEmpty(<span class="keyword">this</span>.txbxValue3.Text))</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                propertyList.Add(<span class="keyword">new</span> KeyValuePair&lt;string, string&gt;(<span class="keyword">this</span>.txbxName3.Text, <span class="keyword">this</span>.txbxValue3.Text));</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            newEvent.<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSDK-Samples/CSharpWrapper/CSharpWrapper.tag:../CSharpWrapper/" href="../CSharpWrapper/class_c_p_p_cli_1_1_new_event.html#a36f0ec4e4ce5e48a65cdf2af2c6881a6">Properties</a> = propertyList;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            newEvent.<a class="codeRef" doxygen="C:/Users/Zach/Git/VxSdkSamples-DocBranch/CSharpWrapper/CSharpWrapper.tag:../CSharpWrapper/" href="../CSharpWrapper/class_c_p_p_cli_1_1_new_event.html#a36f0ec4e4ce5e48a65cdf2af2c6881a6">Properties</a> = propertyList;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            MainForm.CurrentSystem.InjectEvent(newEvent);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }</div>

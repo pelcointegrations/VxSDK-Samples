@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['sdkkey',['SdkKey',['../class_s_d_k_sample_app_1_1_source_1_1_main_form.html#af6252832ae6be3564a24e840bddf8a90',1,'SDKSampleApp::Source::MainForm']]],
   ['secondsremaining',['SecondsRemaining',['../../CSharpWrapper/class_c_p_p_cli_1_1_export.html#aea661cbd69ae06451852169cdf8746cc',1,'CPPCli::Export']]],
   ['selectedclip',['SelectedClip',['../class_s_d_k_sample_app_1_1_source_1_1_add_clip_form.html#a4e7aab7fcddbac2c2e93b7bcc19659ee',1,'SDKSampleApp::Source::AddClipForm']]],
   ['selectedcontrol',['SelectedControl',['../class_s_d_k_sample_app_1_1_source_1_1_control_manager.html#aaa4c20ef1070c95287dbeb9ff8eaf302',1,'SDKSampleApp::Source::ControlManager']]],

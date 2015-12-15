@@ -2,7 +2,7 @@ var searchData=
 [
   ['failed',['Failed',['../../CSharpWrapper/class_c_p_p_cli_1_1_export.html#aa1e40310d87591e803c2c5d30d74f0a7ad7c8c85bf79bbe1b7188497c32c3b0ca',1,'CPPCli::Export']]],
   ['far',['Far',['../../CSharpWrapper/class_c_p_p_cli_1_1_ptz_controller.html#ad7ca95e8ee18a1c22f3380cc45e43116acfcd41f0c1804fb7778f8f01301223f6',1,'CPPCli::PtzController']]],
-  ['filesizekb',['fileSizeKb',['../../VxSdk/struct_vx_sdk_1_1_i_vx_export.html#a9e274ad07293f316902804a68f246bfb',1,'VxSdk::IVxExport::fileSizeKb()'],['../../CSharpWrapper/class_c_p_p_cli_1_1_export.html#a3b66c19dd4c870662c65ac9f48a32761',1,'CPPCli::Export::FileSizeKb()']]],
+  ['filesizekb',['FileSizeKb',['../../CSharpWrapper/class_c_p_p_cli_1_1_export.html#a3b66c19dd4c870662c65ac9f48a32761',1,'CPPCli::Export::FileSizeKb()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_export.html#a9e274ad07293f316902804a68f246bfb',1,'VxSdk::IVxExport::fileSizeKb()']]],
   ['filters',['filters',['../../VxSdk/struct_vx_sdk_1_1_vx_collection.html#a29b9a24eb72c328766736fbdf16f5bc2',1,'VxSdk::VxCollection']]],
   ['filtersize',['filterSize',['../../VxSdk/struct_vx_sdk_1_1_vx_collection.html#a2cad1a14f9418b550121f38f05d6062e',1,'VxSdk::VxCollection']]],
   ['focusdirections',['FocusDirections',['../../CSharpWrapper/class_c_p_p_cli_1_1_ptz_controller.html#ad7ca95e8ee18a1c22f3380cc45e43116',1,'CPPCli::PtzController']]],

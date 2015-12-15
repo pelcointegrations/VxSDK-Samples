@@ -25,11 +25,11 @@ var searchData=
   ['deletesituation',['DeleteSituation',['../../CSharpWrapper/class_c_p_p_cli_1_1_v_x_system.html#a01105ecee4cef47021d58c163d3a5bf2',1,'CPPCli::VXSystem::DeleteSituation()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_situation.html#a2a69cfd77923230d4f3a618cbd25f78d',1,'VxSdk::IVxSituation::DeleteSituation()']]],
   ['describe',['Describe',['../../MediaController/class_media_controller_1_1_rtsp_1_1_commands.html#a5498da92caf636c4b4a5033a9eda5d73',1,'MediaController::Rtsp::Commands']]],
   ['description',['description',['../../VxSdk/struct_vx_sdk_1_1_i_vx_pattern.html#a168283d3c4499be6041166ae33727e87',1,'VxSdk::IVxPattern::description()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_preset.html#ae82d0e57fe1196de9e76c255d90c8921',1,'VxSdk::IVxPreset::description()'],['../../CSharpWrapper/class_c_p_p_cli_1_1_pattern.html#ae777cb3677bf166ae74a50cd961ba356',1,'CPPCli::Pattern::Description()'],['../../CSharpWrapper/class_c_p_p_cli_1_1_preset.html#a19f157125f4216568f0eaae3a442b09a',1,'CPPCli::Preset::Description()']]],
-  ['device',['Device',['../../CSharpWrapper/class_c_p_p_cli_1_1_device.html#a64fabf5a4bb6a6884b110738e22f3e05',1,'CPPCli::Device']]],
   ['device',['Device',['../../CSharpWrapper/class_c_p_p_cli_1_1_device.html',1,'CPPCli']]],
+  ['device',['Device',['../../CSharpWrapper/class_c_p_p_cli_1_1_device.html#a64fabf5a4bb6a6884b110738e22f3e05',1,'CPPCli::Device']]],
   ['device_2ecpp',['Device.cpp',['../../CSharpWrapper/_device_8cpp.html',1,'']]],
   ['device_2eh',['Device.h',['../../CSharpWrapper/_device_8h.html',1,'']]],
-  ['downloadprogressform',['DownloadProgressForm',['../class_s_d_k_sample_app_1_1_source_1_1_download_progress_form.html',1,'SDKSampleApp::Source']]],
   ['downloadprogressform',['DownloadProgressForm',['../class_s_d_k_sample_app_1_1_source_1_1_download_progress_form.html#a79e50077f1731e3a2137aebe79c1a76f',1,'SDKSampleApp::Source::DownloadProgressForm']]],
+  ['downloadprogressform',['DownloadProgressForm',['../class_s_d_k_sample_app_1_1_source_1_1_download_progress_form.html',1,'SDKSampleApp::Source']]],
   ['downloadprogressform_2ecs',['DownloadProgressForm.cs',['../_download_progress_form_8cs.html',1,'']]]
 ];

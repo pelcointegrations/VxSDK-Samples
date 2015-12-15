@@ -30,5 +30,6 @@ var class_s_d_k_sample_app_1_1_source_1_1_main_form =
     [ "CurrentSystem", "class_s_d_k_sample_app_1_1_source_1_1_main_form.html#a1c0d33e3581c9438b76c8ec8be4506d0", null ],
     [ "CurrentUserName", "class_s_d_k_sample_app_1_1_source_1_1_main_form.html#a0d18d99876eab4d91b10f093b7ca9350", null ],
     [ "Instance", "class_s_d_k_sample_app_1_1_source_1_1_main_form.html#a56f71d6d9106174bd32a2de98b1dae51", null ],
-    [ "PtzForm", "class_s_d_k_sample_app_1_1_source_1_1_main_form.html#a8c0571ccab96388524ac6902492c00df", null ]
+    [ "PtzForm", "class_s_d_k_sample_app_1_1_source_1_1_main_form.html#a8c0571ccab96388524ac6902492c00df", null ],
+    [ "SdkKey", "class_s_d_k_sample_app_1_1_source_1_1_main_form.html#af6252832ae6be3564a24e840bddf8a90", null ]
 ];
