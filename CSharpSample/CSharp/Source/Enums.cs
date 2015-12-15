@@ -6,10 +6,10 @@
     /// <remarks>The result of an executed method.</remarks>
     public enum VxResult
     {
-        /// <summary>Unknown error occured.</summary>
+        /// <summary>Unknown error occurred.</summary>
         UnknownError,
 
-        /// <summary>No errors occured.</summary>
+        /// <summary>No errors occurred.</summary>
         OK,
 
         /// <summary>Received an unsupported version error from the system.</summary>
@@ -165,7 +165,7 @@
         /// <summary>Manual user initiation.</summary>
         Manual,
 
-        /// <summary>Motion anayltic.</summary>
+        /// <summary>Motion analytic.</summary>
         Motion,
 
         /// <summary>Time-based (continuous); no event.</summary>
