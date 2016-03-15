@@ -76,6 +76,10 @@ void Rtsp::Stream::FrameForward() {}
 void Rtsp::Stream::FrameBackward() {}
 
 void Rtsp::Stream::Seek(unsigned int unixTime, int speed) {
+    // Send the sequence of RTSP commands needed to start a playback stream.
+    this->_rtspCommands.Options();
+    this->_rtspCommands.Describe();
+    this->_rtspCommands.Setup();
     this->_rtspCommands.SeekPlay(unixTime, speed);
 
     if (!_keepAliveRunning) {

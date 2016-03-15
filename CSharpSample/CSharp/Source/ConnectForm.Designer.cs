@@ -30,12 +30,12 @@
         {
             this.tblLoginControls = new System.Windows.Forms.TableLayoutPanel();
             this.lblIp = new System.Windows.Forms.Label();
+            this.btnConnect = new System.Windows.Forms.Button();
             this.txbxIp = new System.Windows.Forms.TextBox();
             this.lblUsername = new System.Windows.Forms.Label();
             this.txbxUsername = new System.Windows.Forms.TextBox();
             this.lblPassword = new System.Windows.Forms.Label();
             this.txbxPassword = new System.Windows.Forms.TextBox();
-            this.btnConnect = new System.Windows.Forms.Button();
             this.tblLoginControls.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -80,13 +80,24 @@
             this.lblIp.Text = "IP";
             this.lblIp.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // btnConnect
+            // 
+            this.btnConnect.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnConnect.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnConnect.Location = new System.Drawing.Point(174, 55);
+            this.btnConnect.Name = "btnConnect";
+            this.btnConnect.Size = new System.Drawing.Size(60, 21);
+            this.btnConnect.TabIndex = 4;
+            this.btnConnect.Text = "Connect";
+            this.btnConnect.UseVisualStyleBackColor = true;
+            this.btnConnect.Click += new System.EventHandler(this.ButtonConnect_Click);
+            // 
             // txbxIp
             // 
             this.txbxIp.Location = new System.Drawing.Point(68, 3);
             this.txbxIp.Name = "txbxIp";
             this.txbxIp.Size = new System.Drawing.Size(100, 20);
-            this.txbxIp.TabIndex = 5;
-            this.txbxIp.Text = "10.221.224.106";
+            this.txbxIp.TabIndex = 1;
             // 
             // lblUsername
             // 
@@ -104,8 +115,7 @@
             this.txbxUsername.Location = new System.Drawing.Point(68, 29);
             this.txbxUsername.Name = "txbxUsername";
             this.txbxUsername.Size = new System.Drawing.Size(100, 20);
-            this.txbxUsername.TabIndex = 8;
-            this.txbxUsername.Text = "admin";
+            this.txbxUsername.TabIndex = 2;
             // 
             // lblPassword
             // 
@@ -123,22 +133,11 @@
             this.txbxPassword.Location = new System.Drawing.Point(68, 55);
             this.txbxPassword.Name = "txbxPassword";
             this.txbxPassword.Size = new System.Drawing.Size(100, 20);
-            this.txbxPassword.TabIndex = 9;
-            this.txbxPassword.Text = "admin123";
-            // 
-            // btnConnect
-            // 
-            this.btnConnect.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnConnect.Location = new System.Drawing.Point(174, 55);
-            this.btnConnect.Name = "btnConnect";
-            this.btnConnect.Size = new System.Drawing.Size(60, 21);
-            this.btnConnect.TabIndex = 11;
-            this.btnConnect.Text = "Connect";
-            this.btnConnect.UseVisualStyleBackColor = true;
-            this.btnConnect.Click += new System.EventHandler(this.ButtonConnect_Click);
+            this.txbxPassword.TabIndex = 3;
             // 
             // ConnectForm
             // 
+            this.AcceptButton = this.btnConnect;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(257, 102);
