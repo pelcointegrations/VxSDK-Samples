@@ -15,13 +15,13 @@ bool CPPConsole::PTZController::ContinuousMove(int speedX, int speedY, ZoomDirec
 
 std::list<CPPConsole::Preset*>* CPPConsole::PTZController::GetPresets() {
     if (_presetsList != nullptr) {
-        for (std::list<CPPConsole::Preset*>::const_iterator iterator = _presetsList->begin(), end = _presetsList->end(); iterator != end; ++iterator) {
+        for (std::list<Preset*>::const_iterator iterator = _presetsList->begin(), end = _presetsList->end(); iterator != end; ++iterator) {
             delete *iterator;
         }
         delete _presetsList;
     }
     
-    _presetsList = new std::list<CPPConsole::Preset*>();
+    _presetsList = new std::list<Preset*>();
 
     VxSdk::VxCollection<VxSdk::IVxPreset**> presets;
     VxSdk::VxResult::Value result = _ptzController->GetPresets(presets);
@@ -41,13 +41,13 @@ std::list<CPPConsole::Preset*>* CPPConsole::PTZController::GetPresets() {
 
 std::list<CPPConsole::Pattern*>* CPPConsole::PTZController::GetPatterns() {
     if (_patternsList != nullptr) {
-        for (std::list<CPPConsole::Pattern*>::const_iterator iterator = _patternsList->begin(), end = _patternsList->end(); iterator != end; ++iterator) {
+        for (std::list<Pattern*>::const_iterator iterator = _patternsList->begin(), end = _patternsList->end(); iterator != end; ++iterator) {
             delete *iterator;
         }
         delete _patternsList;
     }
 
-    _patternsList = new std::list<CPPConsole::Pattern*>();
+    _patternsList = new std::list<Pattern*>();
 
     VxSdk::VxCollection<VxSdk::IVxPattern**> patterns;
     VxSdk::VxResult::Value result = _ptzController->GetPatterns(patterns);
@@ -65,12 +65,12 @@ std::list<CPPConsole::Pattern*>* CPPConsole::PTZController::GetPatterns() {
     return _patternsList;
 }
 
-bool CPPConsole::PTZController::TriggerPattern(CPPConsole::Pattern* pattern) {
+bool CPPConsole::PTZController::TriggerPattern(Pattern* pattern) {
     VxSdk::VxResult::Value result = _ptzController->TriggerPattern(*pattern->Self());
     return result == VxSdk::VxResult::kOK;
 }
 
-bool CPPConsole::PTZController::TriggerPreset(CPPConsole::Preset* preset) {
+bool CPPConsole::PTZController::TriggerPreset(Preset* preset) {
     VxSdk::VxResult::Value result = _ptzController->TriggerPreset(*preset->Self());
     return result == VxSdk::VxResult::kOK;
 }
@@ -81,14 +81,14 @@ void CPPConsole::PTZController::PtzStop() {
 
 CPPConsole::PTZController::~PTZController() {
     if (_presetsList != nullptr) {
-        for (std::list<CPPConsole::Preset*>::const_iterator iterator = _presetsList->begin(), end = _presetsList->end(); iterator != end; ++iterator) {
+        for (std::list<Preset*>::const_iterator iterator = _presetsList->begin(), end = _presetsList->end(); iterator != end; ++iterator) {
             delete *iterator;
         }
         delete _presetsList;
     }
 
     if (_patternsList != nullptr) {
-        for (std::list<CPPConsole::Pattern*>::const_iterator iterator = _patternsList->begin(), end = _patternsList->end(); iterator != end; ++iterator) {
+        for (std::list<Pattern*>::const_iterator iterator = _patternsList->begin(), end = _patternsList->end(); iterator != end; ++iterator) {
             delete *iterator;
         }
         delete _patternsList;

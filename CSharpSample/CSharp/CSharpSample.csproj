@@ -55,116 +55,356 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Source\AddClipForm.cs">
+    <Compile Include="Source\Bookmarks\AddBookmarkForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Source\AddClipForm.Designer.cs">
+    <Compile Include="Source\Bookmarks\AddBookmarkForm.Designer.cs">
+      <DependentUpon>AddBookmarkForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Exports\AddClipForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Exports\AddClipForm.Designer.cs">
       <DependentUpon>AddClipForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Source\AddEventForm.cs">
+    <Compile Include="Source\DataObjects\AddDataObjectForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Source\AddEventForm.Designer.cs">
+    <Compile Include="Source\DataObjects\AddDataObjectForm.Designer.cs">
+      <DependentUpon>AddDataObjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\DataStorages\AddDeviceAssignmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\DataStorages\AddDeviceAssignmentForm.Designer.cs">
+      <DependentUpon>AddDeviceAssignmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Events\AddEventForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Events\AddEventForm.Designer.cs">
       <DependentUpon>AddEventForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Source\AddSituationForm.cs">
+    <Compile Include="Source\Roles\AddRoleForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Source\AddSituationForm.Designer.cs">
+    <Compile Include="Source\Roles\AddRoleForm.Designer.cs">
+      <DependentUpon>AddRoleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Schedules\AddScheduleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Schedules\AddScheduleForm.Designer.cs">
+      <DependentUpon>AddScheduleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Schedules\AddScheduleTriggerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Schedules\AddScheduleTriggerForm.Designer.cs">
+      <DependentUpon>AddScheduleTriggerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Situations\AddSituationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Situations\AddSituationForm.Designer.cs">
       <DependentUpon>AddSituationForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Source\ConnectForm.cs">
+    <Compile Include="Source\Tags\AddTagForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Source\ConnectForm.Designer.cs">
+    <Compile Include="Source\Tags\AddTagForm.Designer.cs">
+      <DependentUpon>AddTagForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Users\AddUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Users\AddUserForm.Designer.cs">
+      <DependentUpon>AddUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Bookmarks\BookmarkManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Bookmarks\BookmarkManagerForm.Designer.cs">
+      <DependentUpon>BookmarkManagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Misc\ComboBoxItem.cs" />
+    <Compile Include="Source\Main\ConnectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Main\ConnectForm.Designer.cs">
       <DependentUpon>ConnectForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Source\ControlManager.cs" />
-    <Compile Include="Source\DownloadProgressForm.cs">
+    <Compile Include="Source\Misc\ControlManager.cs" />
+    <Compile Include="Source\DataObjects\DataObjectManagerForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Source\DownloadProgressForm.Designer.cs">
+    <Compile Include="Source\DataObjects\DataObjectManagerForm.Designer.cs">
+      <DependentUpon>DataObjectManagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\DataStorages\DataStorageDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\DataStorages\DataStorageDetailsForm.Designer.cs">
+      <DependentUpon>DataStorageDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\DataStorages\DataStorageManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\DataStorages\DataStorageManagerForm.Designer.cs">
+      <DependentUpon>DataStorageManagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Exports\DownloadProgressForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Exports\DownloadProgressForm.Designer.cs">
       <DependentUpon>DownloadProgressForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Source\NewExportForm.cs">
+    <Compile Include="Source\Events\EventDisplayForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Source\NewExportForm.Designer.cs">
+    <Compile Include="Source\Events\EventDisplayForm.Designer.cs">
+      <DependentUpon>EventDisplayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Events\EventSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Events\EventSearchForm.Designer.cs">
+      <DependentUpon>EventSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Misc\ImageByteArray.cs" />
+    <Compile Include="Source\Misc\InputBox.cs" />
+    <Compile Include="Source\Tags\MergeTagForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Tags\MergeTagForm.Designer.cs">
+      <DependentUpon>MergeTagForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Roles\ModifyPrivilegeSourcesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Roles\ModifyPrivilegeSourcesForm.Designer.cs">
+      <DependentUpon>ModifyPrivilegeSourcesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Roles\ModifyRolePrivilegesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Roles\ModifyRolePrivilegesForm.Designer.cs">
+      <DependentUpon>ModifyRolePrivilegesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Schedules\ModifyScheduleSourcesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Schedules\ModifyScheduleSourcesForm.Designer.cs">
+      <DependentUpon>ModifyScheduleSourcesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Tags\ModifyTagForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Tags\ModifyTagForm.Designer.cs">
+      <DependentUpon>ModifyTagForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Users\ModifyUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Users\ModifyUserForm.Designer.cs">
+      <DependentUpon>ModifyUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Exports\NewExportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Exports\NewExportForm.Designer.cs">
       <DependentUpon>NewExportForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Source\ExportManagerForm.cs">
+    <Compile Include="Source\Exports\ExportManagerForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Source\ExportManagerForm.Designer.cs">
+    <Compile Include="Source\Exports\ExportManagerForm.Designer.cs">
       <DependentUpon>ExportManagerForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Source\ExportSettingsForm.cs">
+    <Compile Include="Source\Exports\ExportSettingsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Source\ExportSettingsForm.Designer.cs">
+    <Compile Include="Source\Exports\ExportSettingsForm.Designer.cs">
       <DependentUpon>ExportSettingsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Source\PTZControlForm.cs">
+    <Compile Include="Source\Schedules\NewPropertyForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Source\PTZControlForm.Designer.cs">
+    <Compile Include="Source\Schedules\NewPropertyForm.Designer.cs">
+      <DependentUpon>NewPropertyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Ptz\PTZControlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Ptz\PTZControlForm.Designer.cs">
       <DependentUpon>PTZControlForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Source\MainForm.cs">
+    <Compile Include="Source\Main\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Source\MainForm.Designer.cs">
+    <Compile Include="Source\Main\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Source\Enums.cs" />
+    <Compile Include="Source\Misc\Enums.cs" />
     <Compile Include="Source\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Source\SituationDetailsForm.cs">
+    <Compile Include="Source\DataStorages\RemoveDeviceAssignmentForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Source\SituationDetailsForm.Designer.cs">
+    <Compile Include="Source\DataStorages\RemoveDeviceAssignmentForm.Designer.cs">
+      <DependentUpon>RemoveDeviceAssignmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Roles\RoleManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Roles\RoleManagerForm.Designer.cs">
+      <DependentUpon>RoleManagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Schedules\ScheduleDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Schedules\ScheduleDetailsForm.Designer.cs">
+      <DependentUpon>ScheduleDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Schedules\ScheduleManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Schedules\ScheduleManagerForm.Designer.cs">
+      <DependentUpon>ScheduleManagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Situations\SituationDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Situations\SituationDetailsForm.Designer.cs">
       <DependentUpon>SituationDetailsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Source\SituationManagerForm.cs">
+    <Compile Include="Source\Situations\SituationManagerForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Source\SituationManagerForm.Designer.cs">
+    <Compile Include="Source\Situations\SituationManagerForm.Designer.cs">
       <DependentUpon>SituationManagerForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Source\AddClipForm.resx">
+    <Compile Include="Source\Situations\SituationTypeSelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Situations\SituationTypeSelectionForm.Designer.cs">
+      <DependentUpon>SituationTypeSelectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Main\StreamSelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Main\StreamSelectionForm.Designer.cs">
+      <DependentUpon>StreamSelectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Tags\TagManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Tags\TagManagerForm.Designer.cs">
+      <DependentUpon>TagManagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Users\UserManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Users\UserManagerForm.Designer.cs">
+      <DependentUpon>UserManagerForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Source\Bookmarks\AddBookmarkForm.resx">
+      <DependentUpon>AddBookmarkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Exports\AddClipForm.resx">
       <DependentUpon>AddClipForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Source\AddEventForm.resx">
+    <EmbeddedResource Include="Source\DataObjects\AddDataObjectForm.resx">
+      <DependentUpon>AddDataObjectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\DataStorages\AddDeviceAssignmentForm.resx">
+      <DependentUpon>AddDeviceAssignmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Events\AddEventForm.resx">
       <DependentUpon>AddEventForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Source\AddSituationForm.resx">
+    <EmbeddedResource Include="Source\Roles\AddRoleForm.resx">
+      <DependentUpon>AddRoleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Schedules\AddScheduleForm.resx">
+      <DependentUpon>AddScheduleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Schedules\AddScheduleTriggerForm.resx">
+      <DependentUpon>AddScheduleTriggerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Situations\AddSituationForm.resx">
       <DependentUpon>AddSituationForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Source\ConnectForm.resx">
+    <EmbeddedResource Include="Source\Tags\AddTagForm.resx">
+      <DependentUpon>AddTagForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Users\AddUserForm.resx">
+      <DependentUpon>AddUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Bookmarks\BookmarkManagerForm.resx">
+      <DependentUpon>BookmarkManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Main\ConnectForm.resx">
       <DependentUpon>ConnectForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Source\DownloadProgressForm.resx">
+    <EmbeddedResource Include="Source\DataObjects\DataObjectManagerForm.resx">
+      <DependentUpon>DataObjectManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\DataStorages\DataStorageDetailsForm.resx">
+      <DependentUpon>DataStorageDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\DataStorages\DataStorageManagerForm.resx">
+      <DependentUpon>DataStorageManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Exports\DownloadProgressForm.resx">
       <DependentUpon>DownloadProgressForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Source\NewExportForm.resx">
+    <EmbeddedResource Include="Source\Events\EventDisplayForm.resx">
+      <DependentUpon>EventDisplayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Events\EventSearchForm.resx">
+      <DependentUpon>EventSearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Tags\MergeTagForm.resx">
+      <DependentUpon>MergeTagForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Roles\ModifyPrivilegeSourcesForm.resx">
+      <DependentUpon>ModifyPrivilegeSourcesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Roles\ModifyRolePrivilegesForm.resx">
+      <DependentUpon>ModifyRolePrivilegesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Schedules\ModifyScheduleSourcesForm.resx">
+      <DependentUpon>ModifyScheduleSourcesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Tags\ModifyTagForm.resx">
+      <DependentUpon>ModifyTagForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Users\ModifyUserForm.resx">
+      <DependentUpon>ModifyUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Exports\NewExportForm.resx">
       <DependentUpon>NewExportForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Source\ExportManagerForm.resx">
+    <EmbeddedResource Include="Source\Exports\ExportManagerForm.resx">
       <DependentUpon>ExportManagerForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Source\ExportSettingsForm.resx">
+    <EmbeddedResource Include="Source\Exports\ExportSettingsForm.resx">
       <DependentUpon>ExportSettingsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Source\PTZControlForm.resx">
+    <EmbeddedResource Include="Source\Schedules\NewPropertyForm.resx">
+      <DependentUpon>NewPropertyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Ptz\PTZControlForm.resx">
       <DependentUpon>PTZControlForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Source\MainForm.resx">
+    <EmbeddedResource Include="Source\Main\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -177,11 +417,35 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Source\SituationDetailsForm.resx">
+    <EmbeddedResource Include="Source\DataStorages\RemoveDeviceAssignmentForm.resx">
+      <DependentUpon>RemoveDeviceAssignmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Roles\RoleManagerForm.resx">
+      <DependentUpon>RoleManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Schedules\ScheduleDetailsForm.resx">
+      <DependentUpon>ScheduleDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Schedules\ScheduleManagerForm.resx">
+      <DependentUpon>ScheduleManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Situations\SituationDetailsForm.resx">
       <DependentUpon>SituationDetailsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Source\SituationManagerForm.resx">
+    <EmbeddedResource Include="Source\Situations\SituationManagerForm.resx">
       <DependentUpon>SituationManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Situations\SituationTypeSelectionForm.resx">
+      <DependentUpon>SituationTypeSelectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Main\StreamSelectionForm.resx">
+      <DependentUpon>StreamSelectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Tags\TagManagerForm.resx">
+      <DependentUpon>TagManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Users\UserManagerForm.resx">
+      <DependentUpon>UserManagerForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -202,6 +466,7 @@
       <Name>CSharpWrapper</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>SET D=

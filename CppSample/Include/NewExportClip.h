@@ -12,7 +12,13 @@ namespace CPPConsole {
         /// <summary>
         /// Constructor - creates a new export clip
         /// </summary>
-        NewExportClip(){ _newExportClip = new VxSdk::VxNewExportClip(); }
+        NewExportClip() { _newExportClip = new VxSdk::VxNewExportClip(); }
+
+        /// <summary>
+        /// Constructor - copies the VxSDK new export clip pointer
+        /// </summary>
+        /// <param name="newExportClip">The new export clip pointer</param>
+        NewExportClip(VxSdk::VxNewExportClip* newExportClip) { _newExportClip = newExportClip; }
 
         /// <summary>
         /// Returns the id of exported clip's datasource

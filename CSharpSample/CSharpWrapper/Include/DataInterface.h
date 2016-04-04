@@ -68,6 +68,15 @@ namespace CPPCli {
             StreamProtocols get() { return StreamProtocols(_dataInterface->protocol); }
         }
 
+        /// <summary>
+        /// Gets the endpoint of the data interface.
+        /// </summary>
+        /// <value>The data interface endpoint.</value>
+        property System::String^ DataEndpoint {
+        public:
+            System::String^ get() { return gcnew System::String(_dataInterface->dataEndpoint); }
+        }
+
     internal:
         VxSdk::IVxDataInterface* _dataInterface;
     };

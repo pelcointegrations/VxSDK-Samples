@@ -2,8 +2,8 @@
 #define RtspKeepAlive_h__
 
 #include "RtspCommands.h"
-#include <boost/asio.hpp>
-#include <boost/thread.hpp>
+#include <thread>
+#include <atomic>
 
 namespace MediaController {
     namespace Rtsp {
@@ -17,27 +17,27 @@ namespace MediaController {
             /// <summary>
             /// Constructor.
             /// </summary>
-            /// <param name="io">A <c>boost::asio::io_service</c> object.</param>
             /// <param name="commands">The <see cref="Commands"/> instance for the associated stream.</param>
-            KeepAlive(boost::asio::io_service& io, Commands& commands)
-                : shutdownRequested(false),
+            KeepAlive(Commands& commands)
+                : _shutdownRequested(false),
                 _commands(commands),
-                _strand(io),
-                _timer(io, boost::posix_time::seconds(1)),
-                _count(0) {
-                _timer.async_wait(_strand.wrap(boost::bind(&KeepAlive::CallGetParams, this)));
+                _keepAliveThread(std::thread(&KeepAlive::GetParamsLoop, this)){
             }
 
             /// <summary>
             /// Destructor.
             /// </summary>
-            ~KeepAlive() { }
+            ~KeepAlive() {
+                _shutdownRequested = true;
+                this->_keepAliveThread.join();
+            }
 
             /// <summary>
             /// Make a GET_PARAMETERS method call to the associated stream.
             /// </summary>
-            void CallGetParams() {
-                if (!shutdownRequested) {
+            void GetParamsLoop() {
+                int _count = 0;
+                while (!_shutdownRequested) {
                     if (_count < Constants::kKeepAliveRefreshSec) {
                         ++_count;
                     }
@@ -45,21 +45,14 @@ namespace MediaController {
                         _commands.GetParameter();
                         _count = 0;
                     }
-                    _timer.expires_at(_timer.expires_at() + boost::posix_time::seconds(1));
-                    _timer.async_wait(_strand.wrap(boost::bind(&KeepAlive::CallGetParams, this)));
+                    std::this_thread::sleep_for(std::chrono::seconds(1));
                 }
             }
 
-            /// <summary>
-            /// Specifies whether the keep alive thread should shutdown.
-            /// </summary>
-            bool shutdownRequested;
-
         private:
             Commands _commands;
-            boost::asio::strand _strand;
-            boost::asio::deadline_timer _timer;
-            int _count;
+            std::thread _keepAliveThread;
+            std::atomic<bool> _shutdownRequested;
         };
     }
 }

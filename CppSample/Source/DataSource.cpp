@@ -3,22 +3,20 @@
 
 using namespace std;
 
-CPPConsole::DataSource::DataSource(VxSdk::IVxDataSource* vxDataSource)
-{
+CPPConsole::DataSource::DataSource(VxSdk::IVxDataSource* vxDataSource) {
     _dataSource = vxDataSource;
     _clipsList = nullptr;
     _dataInterfaceList = nullptr;
 }
 
-std::list<CPPConsole::Clip*>* CPPConsole::DataSource::GetClips()
-{
-    if (_clipsList != nullptr){
-        for (std::list<CPPConsole::Clip*>::const_iterator iterator = _clipsList->begin(), end = _clipsList->end(); iterator != end; ++iterator) {
+list<CPPConsole::Clip*>* CPPConsole::DataSource::GetClips() {
+    if (_clipsList != nullptr) {
+        for (list<Clip*>::const_iterator iterator = _clipsList->begin(), end = _clipsList->end(); iterator != end; ++iterator) {
             delete *iterator;
         }
         delete _clipsList;
     }
-    _clipsList = new list<CPPConsole::Clip*>();
+    _clipsList = new list<Clip*>();
     VxSdk::VxCollection<VxSdk::IVxClip**> clips;
     VxSdk::VxResult::Value result = _dataSource->GetClips(clips);
     if (result == VxSdk::VxResult::kInsufficientSize) {
@@ -33,16 +31,15 @@ std::list<CPPConsole::Clip*>* CPPConsole::DataSource::GetClips()
     return _clipsList;
 }
 
-std::list<CPPConsole::DataInterface*>* CPPConsole::DataSource::GetDataInterfaces()
-{
-    if (_dataInterfaceList != nullptr){
+list<CPPConsole::DataInterface*>* CPPConsole::DataSource::GetDataInterfaces() {
+    if (_dataInterfaceList != nullptr) {
         for (list<DataInterface*>::const_iterator iterator = _dataInterfaceList->begin(), end = _dataInterfaceList->end(); iterator != end; ++iterator) {
             delete *iterator;
         }
         delete _dataInterfaceList;
     }
 
-    _dataInterfaceList = new list<CPPConsole::DataInterface*>();
+    _dataInterfaceList = new list<DataInterface*>();
     int size = _dataSource->dataInterfaceSize;
     for (int i = 0; i < size; i++)
         _dataInterfaceList->push_back(new DataInterface(_dataSource->dataInterfaces[i]));
@@ -50,8 +47,7 @@ std::list<CPPConsole::DataInterface*>* CPPConsole::DataSource::GetDataInterfaces
     return _dataInterfaceList;
 }
 
-char* CPPConsole::DataSource::GetRtspEndpoint()
-{
+char* CPPConsole::DataSource::GetRtspEndpoint() {
     char* rtspEndpoint = nullptr;
     int size = 0;
     VxSdk::VxResult::Value result = _dataSource->GetRtspEndpoint(rtspEndpoint, size);
@@ -66,22 +62,21 @@ CPPConsole::DataSession* CPPConsole::DataSource::CreateMJPEGSession() {
     VxSdk::IVxDataSession* dataSession = nullptr;
 
     VxSdk::VxResult::Value result = _dataSource->CreateMjpegDataSession(dataSession);
-    if (result == VxSdk::VxResult::kOK){
+    if (result == VxSdk::VxResult::kOK) {
         return new DataSession(dataSession);
     }
     return nullptr;
 }
 
-CPPConsole::DataSource::~DataSource()
-{
+CPPConsole::DataSource::~DataSource() {
     if (_clipsList != nullptr){
-        for (std::list<CPPConsole::Clip*>::const_iterator iterator = _clipsList->begin(), end = _clipsList->end(); iterator != end; ++iterator) {
+        for (list<Clip*>::const_iterator iterator = _clipsList->begin(), end = _clipsList->end(); iterator != end; ++iterator) {
             delete *iterator;
         }
         delete _clipsList;
     }
 
-    if (_dataInterfaceList != nullptr){
+    if (_dataInterfaceList != nullptr) {
         for (list<DataInterface*>::const_iterator iterator = _dataInterfaceList->begin(), end = _dataInterfaceList->end(); iterator != end; ++iterator) {
             delete *iterator;
         }

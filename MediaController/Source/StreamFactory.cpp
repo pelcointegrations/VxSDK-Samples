@@ -13,14 +13,10 @@ StreamBase* StreamFactory::CreateStream(MediaRequest& request, Controller& contr
     StreamBase* stream = nullptr;
     if (!request.dataSource) return stream;
 
-    if (request.protocol == VxStreamProtocol::kRtspRtp) {
-        char endpoint[Constants::kEndpointMaxSize];
-        int size = Constants::kEndpointMaxSize;
-        VxResult::Value result = request.dataSource->GetRtspEndpoint(endpoint, size);
-        if (result == VxResult::kOK)
-            stream = new Rtsp::Stream(request, controller, endpoint);
+    if (request.dataInterface.protocol == VxStreamProtocol::kRtspRtp) {
+        stream = new Rtsp::Stream(request, controller);
     }
-    else if (request.protocol == VxStreamProtocol::kMjpegPull) {
+    else if (request.dataInterface.protocol == VxStreamProtocol::kMjpegPull) {
         stream = new MjpegPull::Stream(request, controller);
     }
     return stream;

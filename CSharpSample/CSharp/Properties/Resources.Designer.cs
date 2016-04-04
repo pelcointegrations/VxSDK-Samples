@@ -70,7 +70,7 @@ namespace SDKSampleApp.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Event from {0} - {1}.
+        ///   Looks up a localized string similar to Event received: [{0}]  {1} - {2}.
         /// </summary>
         internal static string EventHeaderFormatString {
             get {

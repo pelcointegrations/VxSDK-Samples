@@ -236,9 +236,13 @@ void Commands::SeekPlay(unsigned int unixTime, int speed) {
     // Parse the server response.
     Response resp = ProcessResponse(socket);
     // If a redirect code was returned we need to tear down the current session and start a new one using the redirect location.
-    if (resp.statusCode == kStatusCode301 && resp.statusCode != kStatusCode302) {
+    if (resp.statusCode == kStatusCode301 || resp.statusCode == kStatusCode302) {
+        // Copy the redirect location.
+        string temploc = resp.headers[kHeaderLocation];
+        // Tear down the current session.
+        Teardown();
         // Set the playback URI to the redirect location.
-        this->_playbackUri = resp.headers[kHeaderLocation];
+        this->_playbackUri = temploc;
         this->_controller->stream->GetGstreamer()->SetMode(MediaController::Controller::kPlayback);
         // Reset the value for the CSeq field.
         _cSeqNum = 0;

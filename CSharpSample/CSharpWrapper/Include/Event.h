@@ -57,6 +57,20 @@ namespace CPPCli {
         }
 
         /// <summary>
+        /// Acknowledge the event.
+        /// </summary>
+        /// <returns>The <see cref="Results::Value">Result</see> of the request.</returns>
+        Results::Value Acknowledge() { return (Results::Value)_event->Acknowledge(); }
+
+        /// <summary>
+        /// Silence the event for a given amount of time.
+        /// </summary>
+        /// <param name="wakeup">The delay, in seconds, to apply prior to the event being brought to
+        /// the user’s attention.</param>
+        /// <returns>The <see cref="Results::Value">Result</see> of the request.</returns>
+        Results::Value Silence(int wakeup) { return (Results::Value)_event->Silence(wakeup); }
+
+        /// <summary>
         /// Gets the current acknowledgement state of the event.
         /// </summary>
         /// <value>The current acknowledgement state.</value>

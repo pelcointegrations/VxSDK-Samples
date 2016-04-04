@@ -35,13 +35,13 @@ bool CPPConsole::System::Login(const char* ip, int port, const char* user, const
 
 list<CPPConsole::Device*>* CPPConsole::System::GetDevices() {
     if (_deviceList != nullptr) {
-        for (list<CPPConsole::Device*>::const_iterator iterator = _deviceList->begin(), end = _deviceList->end(); iterator != end; ++iterator) {
+        for (list<Device*>::const_iterator iterator = _deviceList->begin(), end = _deviceList->end(); iterator != end; ++iterator) {
             delete *iterator;
         }
         delete _deviceList;
     }
 
-    _deviceList = new list<CPPConsole::Device*>();
+    _deviceList = new list<Device*>();
     VxSdk::VxCollection<VxSdk::IVxDevice**> devices;
     VxSdk::VxResult::Value result = _system->GetDevices(devices);
     if (result == VxSdk::VxResult::kInsufficientSize) {
@@ -49,7 +49,7 @@ list<CPPConsole::Device*>* CPPConsole::System::GetDevices() {
         result = _system->GetDevices(devices);
         if (result == VxSdk::VxResult::kOK) {
             for (int i = 0; i < devices.collectionSize; i++)
-                _deviceList->push_back(new CPPConsole::Device(devices.collection[i]));
+                _deviceList->push_back(new Device(devices.collection[i]));
         }
         delete[] devices.collection;
     }
@@ -57,7 +57,7 @@ list<CPPConsole::Device*>* CPPConsole::System::GetDevices() {
 }
 
 list<CPPConsole::Device*>* CPPConsole::System::GetDevices(int pageIndex, int count, int& totalItems) {
-    list<CPPConsole::Device*>* deviceList = new list<CPPConsole::Device*>();
+    list<Device*>* deviceList = new list<Device*>();
 
     VxSdk::VxCollection<VxSdk::IVxDevice**> devices;
 
@@ -76,14 +76,14 @@ list<CPPConsole::Device*>* CPPConsole::System::GetDevices(int pageIndex, int cou
         result = _system->GetDevices(devices);
         if (result == VxSdk::VxResult::kOK) {
             for (int i = 0; i < devices.collectionSize; i++)
-                deviceList->push_back(new CPPConsole::Device(devices.collection[i]));
+                deviceList->push_back(new Device(devices.collection[i]));
         }
         delete[] devices.collection;
     }
     return deviceList;
 }
 
-CPPConsole::Export* CPPConsole::System::CreateExport(CPPConsole::NewExport* newExport) {
+CPPConsole::Export* CPPConsole::System::CreateExport(NewExport* newExport) {
     Export* exporter = nullptr;
     int size = newExport->GetClips()->size();
     VxSdk::VxNewExport vxExport;
@@ -113,7 +113,7 @@ CPPConsole::Export* CPPConsole::System::CreateExport(CPPConsole::NewExport* newE
 }
 
 list<CPPConsole::Export*>* CPPConsole::System::GetExports() {
-    list<Export*>* exportsList = new list<CPPConsole::Export*>();
+    list<Export*>* exportsList = new list<Export*>();
     VxSdk::VxCollection<VxSdk::IVxExport**> exports;
 
     VxSdk::VxResult::Value result = _system->GetExports(exports);
@@ -122,7 +122,7 @@ list<CPPConsole::Export*>* CPPConsole::System::GetExports() {
         result = _system->GetExports(exports);
         if (result == VxSdk::VxResult::kOK) {
             for (int i = 0; i < exports.collectionSize; i++)
-                exportsList->push_back(new CPPConsole::Export(exports.collection[i]));
+                exportsList->push_back(new Export(exports.collection[i]));
         }
         delete[] exports.collection;
     }
@@ -131,7 +131,7 @@ list<CPPConsole::Export*>* CPPConsole::System::GetExports() {
 
 CPPConsole::Export* CPPConsole::System::GetExportDetails(const char* expName, const char* id) {
     VxSdk::VxCollection<VxSdk::IVxExport**> exports;
-    CPPConsole::Export* expToRet = nullptr;
+    Export* expToRet = nullptr;
 
     exports.filterSize = 1;
     VxSdk::VxCollectionFilter filters[1];
@@ -147,7 +147,7 @@ CPPConsole::Export* CPPConsole::System::GetExportDetails(const char* expName, co
             for (int i = 0; i < exports.collectionSize; i++) {
                 VxSdk::IVxExport* exportObj = exports.collection[i];
                 if (strcmp(exportObj->id, id) == 0)
-                    expToRet = new CPPConsole::Export(exports.collection[i]);
+                    expToRet = new Export(exports.collection[i]);
             }
         }
         delete[] exports.collection;
@@ -155,7 +155,7 @@ CPPConsole::Export* CPPConsole::System::GetExportDetails(const char* expName, co
     return expToRet;
 }
 
-bool CPPConsole::System::DeleteExport(CPPConsole::Export* exportToDelete) {
+bool CPPConsole::System::DeleteExport(Export* exportToDelete) {
     VxSdk::IVxExport* delExport = exportToDelete->GetExportPtr();
     VxSdk::VxResult::Value result = delExport->DeleteExport();
     if (result == VxSdk::VxResult::kOK)
@@ -186,7 +186,7 @@ bool CPPConsole::System::InjectNewEvent(Situation* situation, string genDeviceId
 }
 
 list<CPPConsole::Situation*>* CPPConsole::System::GetSituations() {
-    list<Situation*>* situationsList = new list<CPPConsole::Situation*>();
+    list<Situation*>* situationsList = new list<Situation*>();
     VxSdk::VxCollection<VxSdk::IVxSituation**> situations;
 
     VxSdk::VxResult::Value result = _system->GetSituations(situations);
@@ -195,7 +195,7 @@ list<CPPConsole::Situation*>* CPPConsole::System::GetSituations() {
         result = _system->GetSituations(situations);
         if (result == VxSdk::VxResult::kOK) {
             for (int i = 0; i < situations.collectionSize; i++)
-                situationsList->push_back(new CPPConsole::Situation(situations.collection[i]));
+                situationsList->push_back(new Situation(situations.collection[i]));
         }
         delete[] situations.collection;
     }
@@ -208,8 +208,8 @@ bool CPPConsole::System::AddNewSituation(const char* name, const char* type) {
     VxSdk::VxNewSituation situation;
     situation.Default();
 
-    strncpy_s(situation.name, name, sizeof(situation.name));
-    strncpy_s(situation.type, type, sizeof(situation.type));
+    strncpy_s(situation.name, name, sizeof situation.name);
+    strncpy_s(situation.type, type, sizeof situation.type);
 
     VxSdk::VxResult::Value result = _system->AddSituation(situation);
     if (result == VxSdk::VxResult::kOK)
@@ -221,7 +221,7 @@ bool CPPConsole::System::AddNewSituation(const char* name, const char* type) {
     return res;
 }
 
-bool CPPConsole::System::DeleteSituation(CPPConsole::Situation* situationToDelete) {
+bool CPPConsole::System::DeleteSituation(Situation* situationToDelete) {
     VxSdk::VxResult::Value result = situationToDelete->Self()->DeleteSituation();
     if (result == VxSdk::VxResult::kOK)
         return true;
@@ -231,7 +231,7 @@ bool CPPConsole::System::DeleteSituation(CPPConsole::Situation* situationToDelet
 
 CPPConsole::System::~System() {
     if (_deviceList != nullptr) {
-        for (list<CPPConsole::Device*>::const_iterator iterator = _deviceList->begin(), end = _deviceList->end(); iterator != end; ++iterator) {
+        for (list<Device*>::const_iterator iterator = _deviceList->begin(), end = _deviceList->end(); iterator != end; ++iterator) {
             delete *iterator;
         }
         delete _deviceList;

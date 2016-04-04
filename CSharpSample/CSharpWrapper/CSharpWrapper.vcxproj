@@ -216,10 +216,31 @@ COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configurati
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Include\Bookmark.h" />
+    <ClInclude Include="Include\DataObject.h" />
+    <ClInclude Include="Include\DataStorage.h" />
+    <ClInclude Include="Include\DeviceAssignment.h" />
+    <ClInclude Include="Include\Driver.h" />
+    <ClInclude Include="Include\NewBookmark.h" />
+    <ClInclude Include="Include\NewDataObject.h" />
+    <ClInclude Include="Include\NewDeviceAssignment.h" />
     <ClInclude Include="Include\NewEvent.h" />
+    <ClInclude Include="Include\NewPrivilege.h" />
+    <ClInclude Include="Include\NewSchedule.h" />
+    <ClInclude Include="Include\NewScheduleTrigger.h" />
     <ClInclude Include="Include\NewSituation.h" />
     <ClInclude Include="Include\MediaControl.h" />
     <ClInclude Include="Include\MediaEvent.h" />
+    <ClInclude Include="Include\NewTag.h" />
+    <ClInclude Include="Include\NewUser.h" />
+    <ClInclude Include="Include\Privilege.h" />
+    <ClInclude Include="Include\PtzLock.h" />
+    <ClInclude Include="Include\Role.h" />
+    <ClInclude Include="Include\Schedule.h" />
+    <ClInclude Include="Include\ScheduleTrigger.h" />
+    <ClInclude Include="Include\SnapshotFilter.h" />
+    <ClInclude Include="Include\Tag.h" />
+    <ClInclude Include="Include\User.h" />
     <ClInclude Include="Include\Utils.h" />
     <ClInclude Include="Include\Clip.h" />
     <ClInclude Include="Include\DataInterface.h" />
@@ -239,6 +260,11 @@ COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configurati
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Resources\AssemblyInfo.cpp" />
+    <ClCompile Include="Source\Bookmark.cpp" />
+    <ClCompile Include="Source\DataObject.cpp" />
+    <ClCompile Include="Source\DataStorage.cpp" />
+    <ClCompile Include="Source\DeviceAssignment.cpp" />
+    <ClCompile Include="Source\Driver.cpp" />
     <ClCompile Include="Source\MediaControl.cpp" />
     <ClCompile Include="Source\Clip.cpp" />
     <ClCompile Include="Source\DataInterface.cpp" />
@@ -247,10 +273,18 @@ COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configurati
     <ClCompile Include="Source\Export.cpp" />
     <ClCompile Include="Source\ExportClip.cpp" />
     <ClCompile Include="Source\NewExport.cpp" />
+    <ClCompile Include="Source\NewSchedule.cpp" />
     <ClCompile Include="Source\Pattern.cpp" />
     <ClCompile Include="Source\Preset.cpp" />
+    <ClCompile Include="Source\Privilege.cpp" />
     <ClCompile Include="Source\PtzController.cpp" />
+    <ClCompile Include="Source\PtzLock.cpp" />
+    <ClCompile Include="Source\Role.cpp" />
+    <ClCompile Include="Source\Schedule.cpp" />
+    <ClCompile Include="Source\ScheduleTrigger.cpp" />
     <ClCompile Include="Source\Situation.cpp" />
+    <ClCompile Include="Source\Tag.cpp" />
+    <ClCompile Include="Source\User.cpp" />
     <ClCompile Include="Source\VXSystem.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

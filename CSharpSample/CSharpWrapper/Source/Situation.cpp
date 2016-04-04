@@ -44,7 +44,9 @@ CPPCli::Results::Value CPPCli::Situation::UnLink(CPPCli::DataSource^ dataSource)
 }
 
 List<int>^ CPPCli::Situation::_GetSnoozeIntervals() {
+    // Create a managed list of integers
     List<int>^ mlist = gcnew List<int>();
+    // Add each snooze interval to the list
     for (int i = 0; i < _situation->snoozeIntervalSize; i++)
         mlist->Add(_situation->snoozeIntervals[i]);
 
@@ -52,7 +54,9 @@ List<int>^ CPPCli::Situation::_GetSnoozeIntervals() {
 }
 
 List<String^>^ CPPCli::Situation::_GetNotificationIds() {
+    // Create a managed list of strings
     List<String^>^ mlist = gcnew List<String^>();
+    // Add each notification id to the list
     for (int i = 0; i < _situation->notificationIdSize; i++)
         mlist->Add(gcnew String(_situation->notificationIds[i]));
 

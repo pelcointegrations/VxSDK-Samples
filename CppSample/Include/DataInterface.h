@@ -27,7 +27,12 @@ namespace CPPConsole {
         /// <summary>
         /// Returns the protocol used in the datainterface
         /// </summary>
-        StreamProtocol GetProtocol(){ return StreamProtocol(_dataInterface->protocol); }
+        StreamProtocol GetProtocol() { return StreamProtocol(_dataInterface->protocol); }
+
+        /// <summary>
+        /// Returns the VxSDK data interface pointer
+        /// </summary>
+        VxSdk::IVxDataInterface* GetDataInterfacePtr() { return _dataInterface; }
 
         /// <summary>
         /// Destructor

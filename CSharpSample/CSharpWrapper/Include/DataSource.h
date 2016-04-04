@@ -8,6 +8,7 @@
 #include "PtzController.h"
 
 namespace CPPCli {
+    ref class Device;
 
     /// <summary>
     /// The DataSource class represents a data producer in the system hosted by a device. Each
@@ -115,6 +116,15 @@ namespace CPPCli {
         }
 
         /// <summary>
+        /// Gets the device that hosts this data source.
+        /// </summary>
+        /// <value>The host device.</value>
+        property CPPCli::Device^ HostDevice {
+        public:
+            CPPCli::Device^ get() { return _GetHostDevice(); }
+        }
+
+        /// <summary>
         /// Gets the unique identifier for this data source.
         /// </summary>
         /// <value>The unique identifier.</value>
@@ -204,6 +214,15 @@ namespace CPPCli {
             Types get() { return Types(_dataSource->type); }
         }
 
+        /// <summary>
+        /// Gets the URI to retrieve the current live frame.
+        /// </summary>
+        /// <value>The JPEG URI.</value>
+        property System::String^ SnapshotUri {
+        public:
+            System::String^ get() { return gcnew System::String(_dataSource->snapshotUri); }
+        }
+
     internal:
         VxSdk::IVxDataSource* _dataSource;
         bool _CanPtz();
@@ -211,6 +230,7 @@ namespace CPPCli {
         System::Collections::Generic::List<DataInterface^>^ _GetDataInterfaces();
         PtzController^ _GetPtzController();
         System::String^ _GetRtspEndpoint();
+        CPPCli::Device^ _GetHostDevice();
     };
 }
 #endif // DataSource_h__

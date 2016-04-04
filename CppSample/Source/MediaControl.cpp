@@ -4,8 +4,12 @@
 CPPConsole::MediaControl::MediaControl(CPPConsole::DataSource* ds) : _isPlaying(false), _speed(0) {
     MediaController::MediaRequest request;
     request.dataSource = ds->Self();
-    request.protocol = VxSdk::VxStreamProtocol::kRtspRtp;
-
+    auto dsi = ds->GetDataInterfaces();
+    for (std::list<DataInterface*>::const_iterator dsiIter = dsi->begin(), end = dsi->end(); dsiIter != end; ++dsiIter) {
+        if ((*dsiIter)->GetProtocol() == DataInterface::StreamProtocol::kStreamProtocolRtspRtp)
+            request.dataInterface = *(*dsiIter)->GetDataInterfacePtr();
+    }
+    
     MediaController::IController* control = nullptr;
     MediaController::GetController(&request, &control);
     _control = control;

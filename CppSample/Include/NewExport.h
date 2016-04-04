@@ -19,6 +19,18 @@ namespace CPPConsole {
         }
 
         /// <summary>
+        /// Constructor - copies the VxSDK new export pointer
+        /// </summary>
+        /// <param name="newExport">The new export pointer</param>
+        NewExport(VxSdk::VxNewExport* newExport) {
+            _clips = new std::vector<NewExportClip*>();
+            for (int i = 0; i < newExport->clipSize; i++)
+                _clips->push_back(new NewExportClip(&newExport->clips[i]));
+
+            _newExport = newExport;
+        }
+
+        /// <summary>
         /// Returns the clips that are added to this new export
         /// </summary>
         std::vector<NewExportClip*>* GetClips() { return _clips; }

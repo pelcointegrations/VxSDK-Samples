@@ -3,18 +3,17 @@
 
 using namespace std;
 
-CPPConsole::Device::Device(VxSdk::IVxDevice* vxDevice){
+CPPConsole::Device::Device(VxSdk::IVxDevice* vxDevice) {
     _device = vxDevice;
     _dataSourceList = nullptr;
 }
 
-std::list<CPPConsole::DataSource*>* CPPConsole::Device::GetDatasources()
-{
-    if (_dataSourceList != nullptr){
+list<CPPConsole::DataSource*>* CPPConsole::Device::GetDatasources() {
+    if (_dataSourceList != nullptr) {
         return _dataSourceList;
     }
 
-    _dataSourceList = new list<CPPConsole::DataSource*>();
+    _dataSourceList = new list<DataSource*>();
     VxSdk::VxCollection<VxSdk::IVxDataSource**> dataSources;
     VxSdk::VxResult::Value result = _device->GetDataSources(dataSources);
     if (result == VxSdk::VxResult::kInsufficientSize) {
@@ -22,7 +21,7 @@ std::list<CPPConsole::DataSource*>* CPPConsole::Device::GetDatasources()
         result = _device->GetDataSources(dataSources);
         if (result == VxSdk::VxResult::kOK) {
             for (int i = 0; i < dataSources.collectionSize; i++)
-                _dataSourceList->push_back(new CPPConsole::DataSource(dataSources.collection[i]));
+                _dataSourceList->push_back(new DataSource(dataSources.collection[i]));
         }
         delete[] dataSources.collection;
     }

@@ -2,6 +2,7 @@
 #ifndef Clip_h__
 #define Clip_h__
 
+#include "SnapshotFilter.h"
 #include "VxSdk.h"
 #include "Utils.h"
 
@@ -88,6 +89,12 @@ namespace CPPCli {
         /// Finaliser.
         /// </summary>
         !Clip();
+
+        /// <summary>
+        /// Gets the endpoint URI for snapshots.
+        /// </summary>
+        /// <returns>The snapshot endpoint.</returns>
+        System::String^ GetSnapshotEndpoint(SnapshotFilter^ filter);
 
         /// <summary>
         /// Gets the unique identifier of the clips data source.

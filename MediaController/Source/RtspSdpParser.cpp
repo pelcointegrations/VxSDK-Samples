@@ -105,6 +105,7 @@ void ParseRtpMap(const string& line, const unsigned short payload, string& encod
             boost::split(items3, items2[1], boost::is_any_of(kForwardSlash));
             for (size_t i = 0; i < items3.size(); i++) boost::trim(items3[i]);
             encoding = items3[0];
+            transform(encoding.begin(), encoding.end(), encoding.begin(), ::toupper);
             rate = boost::lexical_cast<unsigned int>(items3[1]);
         }
     }

@@ -18,7 +18,7 @@ namespace MediaController {
         /// <summary>
         /// The protocol to use for the new stream.
         /// </summary>
-        VxSdk::VxStreamProtocol::Value protocol;
+        VxSdk::IVxDataInterface dataInterface;
     };
 }
 #endif // MediaRequest_h__

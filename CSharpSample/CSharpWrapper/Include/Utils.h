@@ -65,6 +65,15 @@ namespace CPPCli {
         }
 
         /// <summary>
+        /// Convert a system string to a char.
+        /// </summary>
+        /// <param name="sysString">The system string.</param>
+        /// <returns>Null if it fails, else the converted string.</returns>
+        static char* ConvertSysStringNonConst(System::String^ sysString) {
+            return (char*)(void*)System::Runtime::InteropServices::Marshal::StringToHGlobalAnsi(sysString);
+        }
+
+        /// <summary>
         /// Convert a system string to a standard string.
         /// </summary>
         /// <param name="sysString">The system string.</param>
@@ -97,6 +106,31 @@ namespace CPPCli {
             System::String^ timeString = dateTime.ToString(gcnew System::String(GetDateFormat()));
             msclr::interop::marshal_context^ ctx = gcnew msclr::interop::marshal_context();
             return ctx->marshal_as<const char*>(timeString);
+        }
+
+        /// <summary>
+        /// Convert a DateTime to a char in TimeOfDay format.
+        /// </summary>
+        /// <param name="dateTime">The DateTime.</param>
+        /// <returns>The DateTime as a char in TimeOfDay format.</returns>
+        static const char* ConvertDateTimeToTimeChar(System::DateTime dateTime) {
+            System::String^ timeString = dateTime.ToString(gcnew System::String("HH:mm:ss"));
+            msclr::interop::marshal_context^ ctx = gcnew msclr::interop::marshal_context();
+            return ctx->marshal_as<const char*>(timeString);
+        }
+
+        /// <summary>
+        /// Convert a char to a DateTime using TimeOfDay format.
+        /// </summary>
+        /// <param name="timeString">The time string.</param>
+        /// <returns>Default DateTime if it fails, else the parsed DateTime.</returns>
+        static System::DateTime ConvertTimeCharToDateTime(char* timeString) {
+            System::String^ value = gcnew System::String(timeString);
+            System::String^ format = gcnew System::String("HH:mm:ss");
+            if (value == System::String::Empty)
+                return System::DateTime();
+
+            return System::DateTime::ParseExact(value, format, System::Globalization::CultureInfo::InvariantCulture);
         }
     };
 }

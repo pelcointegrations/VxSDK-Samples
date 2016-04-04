@@ -3,6 +3,7 @@
 
 #include "StreamBase.h"
 #include "RtspCommands.h"
+#include "RtspKeepAlive.h"
 
 namespace MediaController {
 
@@ -23,7 +24,7 @@ namespace MediaController {
             /// <param name="request">The requested media.</param>
             /// <param name="controller">A media controller object.</param>
             /// <param name="liveUri">The location of the live RTSP stream.</param>
-            Stream(MediaRequest& request, MediaController::Controller& controller, const std::string& liveUri);
+            Stream(MediaRequest& request, MediaController::Controller& controller);
 
             /// <summary>
             /// Virtual destructor.
@@ -41,7 +42,7 @@ namespace MediaController {
 
         private:
             Commands _rtspCommands;
-            bool _keepAliveRunning;
+            KeepAlive* _rtspKeepAlive;
         };
     }
 }

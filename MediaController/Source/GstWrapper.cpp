@@ -22,7 +22,6 @@ GstPadProbeReturn OnRtcpPacketReceived(GstPad *localPad, GstPadProbeInfo *info, 
 
     // Get the buffer sent in the event and check if it is valid.
     GstBuffer *buffer = GST_PAD_PROBE_INFO_BUFFER(info);
-    buffer = gst_buffer_make_writable(buffer);
     if (!GST_IS_BUFFER(buffer))
         return GST_PAD_PROBE_OK;
 
@@ -54,7 +53,6 @@ GstPadProbeReturn OnRtpPacketReceived(GstPad *localPad, GstPadProbeInfo *info, G
 
     // Get the buffer sent in the event and check if it is valid.
     GstBuffer *buffer = GST_PAD_PROBE_INFO_BUFFER(info);
-    buffer = gst_buffer_make_writable(buffer);
     if (!GST_IS_BUFFER(buffer)) return GST_PAD_PROBE_OK;
 
     // Map the buffer to an GstRTPBuffer type.

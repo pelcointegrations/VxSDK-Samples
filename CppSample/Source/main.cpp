@@ -16,9 +16,10 @@
 using namespace std;
 using namespace CPPConsole::Constants;
 
-//Make sure event is displayed if event page is currently displayed on screen.
+// Make sure event is displayed if event page is currently displayed on screen.
 bool gEventsPageDisplayed = false;
-bool gGotPlayerHandle = false; //Set to true once GStreamer player window is available in TimeStampCallback
+// Set to true once GStreamer player window is available in TimeStampCallback
+bool gGotPlayerHandle = false;
 string gCurrentlyPlayingCam = "";
 HWND gGstreamerPlayerWindow = nullptr;
 
@@ -61,10 +62,10 @@ void UnSubscribeEvents(CPPConsole::System* sys);
 /// <param name="totalToUpload">total data to upload; not used</param>
 /// <param name="uploaded">total data uploaded; not used</param>
 /// <param name="stream">file pointer to which data is being written</param>
-int progress_func(void* ptr, double totalToDownload, double downloaded, double totalToUpload, double uploaded)
-{
+int progress_func(void* ptr, double totalToDownload, double downloaded, double totalToUpload, double uploaded) {
     int actualSize = *static_cast<int*>(ptr);
-    CPPConsole::Utils::ShowProgress("Downloading", static_cast<int>(downloaded) / 1000, actualSize, 50);    //downloaded in bytes. So convert to Kb
+    // Downloaded in bytes, so convert to Kb
+    CPPConsole::Utils::ShowProgress("Downloading", static_cast<int>(downloaded) / 1000, actualSize, 50);
     return 0;
 }
 
@@ -86,11 +87,13 @@ size_t write_data(void *ptr, size_t size, size_t nmemb, FILE *stream) {
 /// <param name="keyCode">User entered keycode </param>
 /// <param name="ptzControl"/> PTZ control instance</param>
 static bool ProcessPTZKeyEvents(char keyCode, CPPConsole::PTZController* ptzControl) {
-    bool ptzCommandProcessed = true; //This will be false for non PTZ commands
+    // This will be false for non PTZ commands
+    bool ptzCommandProcessed = true;
     bool ptzRes = false;
-    bool showResult = true; //To make exceptional cases for presets and patterns
+    // Used to make exceptional cases for presets and patterns
+    bool showResult = true;
 
-    //Keycode functions mentioned in CPPConsole::Utils::DisplayPlayerOptionsToConsole.
+    // Keycode functions mentioned in CPPConsole::Utils::DisplayPlayerOptionsToConsole.
     switch (keyCode) {
     case '7':
         if (ptzControl != nullptr) {
@@ -213,7 +216,8 @@ static bool ProcessPTZKeyEvents(char keyCode, CPPConsole::PTZController* ptzCont
         showResult = false;
         break;
     default:
-        ptzCommandProcessed = false; //Not received a PTZ command keycode
+        // Not received a PTZ command keycode
+        ptzCommandProcessed = false;
         break;
     }
     if (ptzCommandProcessed && showResult) {
@@ -243,8 +247,8 @@ void TimestampCallback(MediaController::TimestampEvent* timeEvent) {
         << setfill('0') << setw(2) << timeinfo.tm_min << ":"
         << setfill('0') << setw(2) << timeinfo.tm_sec;
 
-    //Normally when gstreamer player is invoked it comes with a predefined window title as given below.
-    //So use that text to get the window handle.
+    // Normally when gstreamer player is invoked it comes with a predefined window title as given below.
+    // So use that text to get the window handle.
     if (!gGotPlayerHandle) {
         gGstreamerPlayerWindow = FindWindow(nullptr, _T("GStreamer D3D video sink (internal window)"));
         if (gGstreamerPlayerWindow != nullptr)
@@ -252,13 +256,13 @@ void TimestampCallback(MediaController::TimestampEvent* timeEvent) {
             gGotPlayerHandle = true;
         }
     }
-    //Once window handle is available, update the title text with currently streaming camera name and time.
+    // Once window handle is available, update the title text with currently streaming camera name and time.
     if (gGotPlayerHandle) {
         string textToDisplayIntitle = gCurrentlyPlayingCam + " (" + fmt.str() + ")";
         ::SetWindowTextA(gGstreamerPlayerWindow, textToDisplayIntitle.c_str());
     }
     
-    //Delet event data once done
+    // Delet event data once done
     delete timeEvent;
 }
 
@@ -267,7 +271,6 @@ void TimestampCallback(MediaController::TimestampEvent* timeEvent) {
 /// </summary>
 /// <param name="device">device pointer</param>
 void ShowDeviceDetails(CPPConsole::Device* device) {
-
     cout << "\n  Device Details: " << "\n";
     CPPConsole::Utils::DrawLine();
     cout << kNameMessage << device->GetDeviceName();
@@ -307,19 +310,21 @@ void ShowExportDetails(CPPConsole::Export* exportToDisplay) {
 /// <param name="isMjpegEnabled">true if Mjpeg streaming to be started</param>
 /// <param name="seekTime">nullptr for live; otherwise pass time in "yyyymmddThhmmssZ-" format</param>
 void StartStreamingForDataSource(CPPConsole::DataSource* dataSourceToPlay, bool isMjpegEnabled, time_t seekTime) {
-    CPPConsole::PTZController* ptzControl = nullptr; //Only if datasource supports PTZ, this will get instantiated
+    // Only if datasource supports PTZ, this will get instantiated
+    CPPConsole::PTZController* ptzControl = nullptr;
 
     cout << "Invoking MediaController..\n";
     CPPConsole::MediaControl *mediaControl = new CPPConsole::MediaControl(dataSourceToPlay);
 
     HWND gstWindowHandle = ::CreateWindowA("Gstreamer", "VideoPlayer", WS_VISIBLE, 0, 0, 600, 600, NULL, NULL, NULL, NULL);
-    ::SetWindowTextA(gstWindowHandle, "GStreamer Player");
+    SetWindowTextA(gstWindowHandle, "GStreamer Player");
 
     mediaControl->SetVideoWindow(gstWindowHandle);
     if (seekTime == 0)
         mediaControl->Play(1);
     else
         mediaControl->Seek(static_cast<unsigned int>(seekTime), 1);
+
     mediaControl->SetTimestampCallback(TimestampCallback);
 
     gCurrentlyPlayingCam = string(dataSourceToPlay->GetDataSourceName());
@@ -336,16 +341,16 @@ void StartStreamingForDataSource(CPPConsole::DataSource* dataSourceToPlay, bool 
 
     char option;
 
-    do{
+    do {
         cin >> option;
         
-        if (ptzControl != nullptr) {
+        if (ptzControl != nullptr)
             isPtzCommandProcessed = ProcessPTZKeyEvents(tolower(option), ptzControl);
-        }
+
 
         if (!isPtzCommandProcessed) {
             switch (tolower(option)) {
-                case 'p':{
+                case 'p': {
                     if (mediaControl->IsPlaying()) {
                         cout << "\nPausing the stream.\n";
                         mediaControl->Pause();
@@ -357,20 +362,26 @@ void StartStreamingForDataSource(CPPConsole::DataSource* dataSourceToPlay, bool 
 
                     break;
                 }
-                case 'z':{
-                    if (seekTime == 0) break; //For live streaming speed is not required
+                case 'z': {
+                    // For live streaming speed is not required
+                    if (seekTime == 0)
+                        break;
 
                     mediaControl->Play(mediaControl->GetCurrentSpeed() + 2);
                     break;
                 }
-                case 'x':{
-                    if (seekTime == 0) break; //For live streaming speed is not required
+                case 'x': {
+                    // For live streaming speed is not required
+                    if (seekTime == 0)
+                        break;
 
                     mediaControl->Play(mediaControl->GetCurrentSpeed() - 2);
                     break;
                 }
-                case 'l':{
-                    if (seekTime == 0) break;
+                case 'l': {
+                    // For live streaming speed is not required
+                    if (seekTime == 0)
+                        break;
 
                     mediaControl->GoToLive();
                     break;
@@ -385,9 +396,9 @@ void StartStreamingForDataSource(CPPConsole::DataSource* dataSourceToPlay, bool 
     gCurrentlyPlayingCam = "";
     gGotPlayerHandle = false;
 
-    if (ptzControl != nullptr) {
+    if (ptzControl != nullptr)
         delete ptzControl;
-    }
+
     delete mediaControl;
 }
 
@@ -440,17 +451,26 @@ void DisplayExportDetailsOnScreen(list<CPPConsole::Export*>* exports) {
         for (list<CPPConsole::Export*>::const_iterator iterator = exports->begin(), end = exports->end(); iterator != end; ++iterator) {
             CPPConsole::Export::ExportStatus expStatus = (*iterator)->GetExportStatus();
             string expStatusInString = "U";
-            if (expStatus == CPPConsole::Export::ExportStatus::Exporting) {
-                expStatusInString = "E";
-            }
-            else if (expStatus == CPPConsole::Export::ExportStatus::Successful) {
-                expStatusInString = "S";
-            }
-            else if (expStatus == CPPConsole::Export::ExportStatus::Failed) {
-                expStatusInString = "F";
-            }
-            else if (expStatus == CPPConsole::Export::ExportStatus::Pending) {
-                expStatusInString = "P";
+            switch (expStatus) {
+                case CPPConsole::Export::ExportStatus::Exporting: {
+                    expStatusInString = "E";
+                    break;
+                }
+                case CPPConsole::Export::ExportStatus::Successful: {
+                    expStatusInString = "S";
+                    break;
+                }
+                case CPPConsole::Export::ExportStatus::Failed: {
+                    expStatusInString = "F";
+                    break;
+                }
+                case CPPConsole::Export::ExportStatus::Pending: {
+                    expStatusInString = "P";
+                    break;
+                }
+                case CPPConsole::Export::ExportStatus::Unknown:
+                default:
+                    break;
             }
 
             cout << setfill(' ') << "\n" << "    " << index + 1 << "    " << left << setw(50) <<
@@ -475,22 +495,22 @@ void DisplayExportDetailsOnScreen(list<CPPConsole::Export*>* exports) {
 /// </summary>
 /// <param name="ev">IVxEvent pointer containing newly received event details</param>
 void EventsCallBack(VxSdk::IVxEvent* ev) {
-    //Only log acknowledgement needed events. Skip others
+    // Only log acknowledgement needed events. Skip others
     if (ev->ackState == VxSdk::VxAckState::kAckNeeded) {
         ofstream fStream(CPPConsole::Utils::GetEventLogFilePath(), ios_base::app | ios_base::out);
 
-        if (fStream)
-        {
+        if (fStream) {
             fStream << ev->generatorDeviceId << ";" <<
-                ev->time << ";" <<
-                ev->situationType << ";" <<
-                ev->severity << ";" <<
-                ev->sourceDeviceId << ";" <<
-                ev->sourceUserName << ";" << endl;
+                       ev->time << ";" <<
+                       ev->situationType << ";" <<
+                       ev->severity << ";" <<
+                       ev->sourceDeviceId << ";" <<
+                       ev->sourceUserName << ";" << endl;
             fStream.close();
         }
 
-        if (gEventsPageDisplayed) { //If View Events page is currently displayed on screen, then refresh the screen
+        // If View Events page is currently displayed on screen, then refresh the screen
+        if (gEventsPageDisplayed) {
             DisplayEventsPool();
         }
     }
@@ -507,7 +527,7 @@ void EventsCallBack(VxSdk::IVxEvent* ev) {
 /// <param name="argv[]">default argument; not used</param>
 int main(int argc, char* argv[]) {
     cout << "VxSDK C++ console application - Started.\n\n";
-    //Create an instance of wrapper class, all the SDK methods will be called with the help of wrapper classes
+    // Create an instance of wrapper class, all the SDK methods will be called with the help of wrapper classes
     CPPConsole::System* sys = new CPPConsole::System();
     bool loggedIn = false;
     cout << "Initializing VxSDK...\n";
@@ -528,8 +548,8 @@ int main(int argc, char* argv[]) {
             cout << devices->size() << " devices found.\n";
 
             int option;
-
-            do{ //Showing Main menu. Refer CPPConsole::Utils::GetMainMenuChoiceFromUser for details
+            // Showing Main menu. Refer CPPConsole::Utils::GetMainMenuChoiceFromUser for details
+            do {
                 system("cls");
                 CPPConsole::Utils::DrawLine();
                 cout << "\n  CONNECTED TO:" << kSysIp;
@@ -538,29 +558,29 @@ int main(int argc, char* argv[]) {
                 option = CPPConsole::Utils::GetMainMenuChoiceFromUser();
 
                 switch (option) {
-                case 1:{
-                    // Dsiplay submenu related with devices (Show details, streaming)
-                    DevicesMenu(devices, sys);
-                    break;
-                }
-                case 2:{
-                    // Dsiplay submenu related with exports (View,create,delete,download)
-                    ExportsMenu(devices, sys);
-                    break;
-                }
-                case 3:{
-                    // Dsiplay submenu related with events (View/Inject/Subscribe/Unsubscribe events,
-                    // View/Add/Delete situations)
-                    EventsMenu(devices, sys);
-                    break;
-                }
-                case 4:{
-                    break;
-                }
-                default:{
-                    cout << "\n Invalid Option!!";
-                    break;
-                }
+                    case 1: {
+                        // Display submenu related with devices (Show details, streaming)
+                        DevicesMenu(devices, sys);
+                        break;
+                    }
+                    case 2: {
+                        // Display submenu related with exports (View,create,delete,download)
+                        ExportsMenu(devices, sys);
+                        break;
+                    }
+                    case 3: {
+                        // Display submenu related with events (View/Inject/Subscribe/Unsubscribe events,
+                        // View/Add/Delete situations)
+                        EventsMenu(devices, sys);
+                        break;
+                    }
+                    case 4: {
+                        break;
+                    }
+                    default: {
+                        cout << "\n Invalid Option!!";
+                        break;
+                    }
                 }
 
             } while (option != 4);
@@ -569,7 +589,8 @@ int main(int argc, char* argv[]) {
     cout << "VxSDK C++ console application - Shutting down.\n";
     system(kPauseCommand);
     if (initialized && loggedIn) {
-        delete sys;    //cleanup system instance.
+        // cleanup system instance.
+        delete sys;
     }
     return 0;
 }
@@ -584,27 +605,43 @@ int main(int argc, char* argv[]) {
 /// <param name="sys">System pointer</param>
 void DevicesMenu(list<CPPConsole::Device*>* devices, CPPConsole::System* sys) {
     int choice;
-    do{
+    do {
         choice = CPPConsole::Utils::GetDevicesSubMenuChoiceFromUser();
-        if (choice == 1) { //View all devices
-            DisplayallDevices(devices);
-            system(kPauseCommand);
-        }
-        else if (choice == 2) { // View devices page by page
-            DisplayDevicesUsingPagination(sys);
-            system(kPauseCommand);
-        }
-        else if (choice == 3) { // Get the details of a particular device
-            DisplayDeviceDetails(devices);
-            system(kPauseCommand);
-        }
-        else if (choice == 4) { //Start live streaming
-            DoLiveStreamingOption(devices);
-            system(kPauseCommand);
-        }
-        else if (choice == 5) { //Perform playback
-            DoPlaybackOption(devices);
-            system(kPauseCommand);
+        switch (choice) {
+            case 1: {
+                // View all devices
+                DisplayallDevices(devices);
+                system(kPauseCommand);
+                break;
+            }
+            case 2: {
+                // View devices page by page
+                DisplayDevicesUsingPagination(sys);
+                system(kPauseCommand);
+                break;
+            }
+            case 3: {
+                // Get the details of a particular device
+                DisplayDeviceDetails(devices);
+                system(kPauseCommand);
+                break;
+            }
+            case 4: {
+                // Start live streaming
+                DoLiveStreamingOption(devices);
+                system(kPauseCommand);
+                break;
+            }
+            case 5: {
+                // Perform playback
+                DoPlaybackOption(devices);
+                system(kPauseCommand);
+                break;
+            }
+            default: {
+                cout << "\n Invalid Option!!";
+                break;
+            }
         }
     } while (choice != 6);
 }
@@ -619,21 +656,35 @@ void ExportsMenu(list<CPPConsole::Device*>* devices, CPPConsole::System* sys) {
     int choice;
     do {
         choice = CPPConsole::Utils::GetExportSubMenuChoiceFromUser();
-        if (choice == 1) { //View Exports
-            ShowExports(sys);
-            system(kPauseCommand);
-        }
-        else if (choice == 2) { //Create new export
-            CreateNewExportOption(devices, sys);
-            system(kPauseCommand);
-        }
-        else if (choice == 3) { //Delete an existing export
-            DeleteExport(sys);
-            system(kPauseCommand);
-        }
-        else if (choice == 4) { //Download an export
-            DownloadExport(sys);
-            system(kPauseCommand);
+        switch (choice) {
+            case 1: {
+                // View Exports
+                ShowExports(sys);
+                system(kPauseCommand);
+                break;
+            }
+            case 2: {
+                // Create new export
+                CreateNewExportOption(devices, sys);
+                system(kPauseCommand);
+                break;
+            }
+            case 3: {
+                // Delete an existing export
+                DeleteExport(sys);
+                system(kPauseCommand);
+                break;
+            }
+            case 4: {
+                // Download an export
+                DownloadExport(sys);
+                system(kPauseCommand);
+                break;
+            }
+            default: {
+                cout << "\n Invalid Option!!";
+                break;
+            }
         }
     } while (choice != 5);
 }
@@ -648,38 +699,56 @@ void EventsMenu(list<CPPConsole::Device*>* devices, CPPConsole::System* sys) {
     int choice;
     do {
         choice = CPPConsole::Utils::GetEventsSubMenuChoiceFromUser();
-        
-        if (choice == 1) { //View all events
-            DisplayEventsPool();
-            gEventsPageDisplayed = true;
-            system(kPauseCommand);
-            gEventsPageDisplayed = false;
+        switch (choice) {
+            case 1: {
+                // View all events
+                DisplayEventsPool();
+                gEventsPageDisplayed = true;
+                system(kPauseCommand);
+                gEventsPageDisplayed = false;
+                break;
+            }
+            case 2: {
+                // View all situations
+                DisplaySituations(sys);
+                system(kPauseCommand);
+                break;
+            }
+            case 3: {
+                // Add New Situation
+                AddNewSituation(sys);
+                system(kPauseCommand);
+                break;
+            }
+            case 4: {
+                // Delete situation
+                DeleteSituation(sys);
+                system(kPauseCommand);
+                break;
+            }
+            case 5: {
+                // Inject Events
+                InjectEvents(sys);
+                system(kPauseCommand);
+                break;
+            }
+            case 6: {
+                // Subscribe events
+                SubscribeEvents(sys);
+                system(kPauseCommand);
+                break;
+            }
+            case 7: {
+                // UnSubscribe to event
+                UnSubscribeEvents(sys);
+                system(kPauseCommand);
+                break;
+            }
+            default: {
+                cout << "\n Invalid Option!!";
+                break;
+            }
         }
-        else if (choice == 2) { //View all situations
-            DisplaySituations(sys);
-            system(kPauseCommand);
-        }
-        else if (choice == 3) { //Add New Situation
-            AddNewSituation(sys);
-            system(kPauseCommand);
-        }
-        else if (choice == 4) { //Delete situation
-            DeleteSituation(sys);
-            system(kPauseCommand);
-        }
-        else if (choice == 5) { //Inject Events
-            InjectEvents(sys);
-            system(kPauseCommand);
-        }
-        else if (choice == 6) { //Subscribe events
-            SubscribeEvents(sys);
-            system(kPauseCommand);
-        }
-        else if (choice == 7) { //UnSubscribe to event
-            UnSubscribeEvents(sys);
-            system(kPauseCommand);
-        }
-
     } while (choice != 8);
 }
 #pragma endregion
@@ -692,16 +761,19 @@ void EventsMenu(list<CPPConsole::Device*>* devices, CPPConsole::System* sys) {
 void PrintPage(list<CPPConsole::Device*>* devices) {
     int index = 0;
     for (list<CPPConsole::Device*>::const_iterator iterator = devices->begin(), end = devices->end(); iterator != end; ++iterator) {
-        //if-else doesn't contain any difference other than adding padding based on two digit/three difit index
-        if (index + 1 < 10)
+        // if-else doesn't contain any difference other than adding padding based on two digit/three difit index
+        if (index + 1 < 10) {
             cout << setfill(' ') << "\n" << "    " << index + 1 << "    " << left << setw(50) <<
-            (*iterator)->GetDeviceName() << "    " << setw(20) << (*iterator)->GetDeviceIp();
-        else if (index + 1 < 100)
+                (*iterator)->GetDeviceName() << "    " << setw(20) << (*iterator)->GetDeviceIp();
+        }
+        else if (index + 1 < 100) {
             cout << setfill(' ') << "\n" << "    " << index + 1 << "   " << left << setw(50) <<
             (*iterator)->GetDeviceName() << "    " << setw(20) << (*iterator)->GetDeviceIp();
-        else
+        }
+        else {
             cout << setfill(' ') << "\n" << "    " << index + 1 << "  " << left << setw(50) <<
             (*iterator)->GetDeviceName() << "    " << setw(20) << (*iterator)->GetDeviceIp();
+        }
 
         index++;
     }
@@ -751,7 +823,8 @@ void DisplayDevicesUsingPagination(CPPConsole::System* sys) {
 
         devices = sys->GetDevices(startIndex, numberOfItemsPerPage, totalNumberOfItems);
         PrintPage(devices);
-        if ((startIndex + numberOfItemsPerPage) > totalNumberOfItems) { //Last page
+        if ((startIndex + numberOfItemsPerPage) > totalNumberOfItems) {
+            // Last page
             cout << kShowingMessage << totalNumberOfItems << kOutOfMessage << totalNumberOfItems;
             break;
         }
@@ -881,7 +954,7 @@ void ShowExports(CPPConsole::System* sys) {
     list<CPPConsole::Export*>* exports = sys->GetExports();
     DisplayExportDetailsOnScreen(exports);
 
-    //Cleanup exports array
+    // Cleanup exports array
     if (exports != nullptr) {
         for (list<CPPConsole::Export*>::const_iterator iterator = exports->begin(), end = exports->end(); iterator != end; ++iterator) {
             delete *iterator;
@@ -1014,7 +1087,7 @@ void DeleteExport(CPPConsole::System* sys) {
             cout << "\n  Failed to delete export!!\n";
         }
 
-        //Cleanup exports array
+        // Cleanup exports array
         if (exports != nullptr) {
             for (list<CPPConsole::Export*>::const_iterator iterator = exports->begin(), end = exports->end(); iterator != end; ++iterator) {
                 delete *iterator;
@@ -1096,7 +1169,7 @@ void DownloadExport(CPPConsole::System* sys) {
             cout << "\n\n";
         }
 
-        //Cleanup exports array
+        // Cleanup exports array
         if (exports != nullptr) {
             for (list<CPPConsole::Export*>::const_iterator iterator = exports->begin(), end = exports->end(); iterator != end; ++iterator) {
                 delete *iterator;
@@ -1126,18 +1199,15 @@ void DisplayEventsPool() {
     CPPConsole::Utils::DrawLine();
 
     ifstream infile(CPPConsole::Utils::GetEventLogFilePath());
-    if (infile)
-    {
-        while (infile)
-        {
+    if (infile) {
+        while (infile) {
             string s;
             if (!getline(infile, s)) break;
 
             istringstream ss(s);
             vector <string> record;
 
-            while (ss)
-            {
+            while (ss) {
                 string str;
                 if (!getline(ss, str, ';')) break;
                 record.push_back(str);
@@ -1147,7 +1217,6 @@ void DisplayEventsPool() {
             cout << left << setw(numWidth) << setfill(' ') << CPPConsole::Utils::CovertUTCTimeFormatToString(record[1]);
             cout << left << setw(15) << setfill(' ') << record[3];
             cout << left << setw(nameWidth) << setfill(' ') << record[5];
-
             cout << "\n";
         }
         CPPConsole::Utils::DrawLine();
@@ -1191,7 +1260,7 @@ void DisplaySituations(CPPConsole::System* sys) {
     list<CPPConsole::Situation*>* situations = sys->GetSituations();
     DisplaySituationDetailsOnScreen(situations);
 
-    //Cleanup situations array
+    // Cleanup situations array
     if (situations != nullptr) {
         for (list<CPPConsole::Situation*>::const_iterator iterator = situations->begin(), end = situations->end(); iterator != end; ++iterator) {
             delete *iterator;

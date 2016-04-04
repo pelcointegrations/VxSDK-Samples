@@ -33,8 +33,8 @@ namespace CPPCli {
         /// Constructor.
         /// </summary>
         /// <param name="dataSource">The data source to use to create the stream.</param>
-        /// <param name="protocol">The protocol for the stream to use.</param>
-        MediaControl(DataSource^ dataSource, DataInterface::StreamProtocols protocol);
+        /// <param name="dataInterface">The data interface to use to create the stream.</param>
+        MediaControl(DataSource^ dataSource, DataInterface^ dataInterface);
 
         /// <summary>
         /// Virtual destructor.
@@ -58,8 +58,8 @@ namespace CPPCli {
         /// Set the stream to a new data source.
         /// </summary>
         /// <param name="dataSource">The data source to set the stream to.</param>
-        /// <param name="protocol">The protocol to set the stream to.</param>
-        void SetDataSource(DataSource^ dataSource, DataInterface::StreamProtocols protocol);
+        /// <param name="dataInterface">The data interface to use to create the stream.</param>
+        void SetDataSource(DataSource^ dataSource, DataInterface^ dataInterface);
 
         /// <summary>
         /// Call Play on the stream.
@@ -98,6 +98,14 @@ namespace CPPCli {
         }
 
         /// <summary>
+        /// Gets the current data source.
+        /// </summary>
+        /// <value>The current data source.</value>
+        property DataSource^ CurrentDataSource {
+            DataSource^ get() { return _currentdataSource; }
+        }
+
+        /// <summary>
         /// The native event callback delegate.
         /// </summary>
         /// <param name="timeEvent">The time event sent from the stream.</param>
@@ -124,6 +132,7 @@ namespace CPPCli {
         void _FireTimestampEvent(MediaController::TimestampEvent* timeEvent);
         TimestampCallbackDelegate ^ _timestampCallback;
         TimestampEventDelegate ^ _timestampEvent;
+        DataSource^ _currentdataSource;
     };
 }
 #endif // MediaControl_h__

@@ -1,6 +1,7 @@
 /// <summary>
 /// Implements the data source class.
 /// </summary>
+#include "Device.h"
 #include "DataSource.h"
 
 using namespace System::Collections::Generic;
@@ -96,5 +97,17 @@ CPPCli::PtzController^ CPPCli::DataSource::_GetPtzController() {
         if (result == VxSdk::VxResult::kOK)
             return gcnew PtzController(ptzController);
     }
+    return nullptr;
+}
+
+CPPCli::Device^ CPPCli::DataSource::_GetHostDevice() {
+    // Get the device which hosts this data source
+    VxSdk::IVxDevice* device = nullptr;
+    VxSdk::VxResult::Value result = _dataSource->GetHostDevice(device);
+
+    // Return the device if GetHostDevice was successful
+    if (result == VxSdk::VxResult::kOK)
+        return gcnew Device(device);
+
     return nullptr;
 }

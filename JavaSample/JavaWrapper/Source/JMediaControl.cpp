@@ -99,7 +99,7 @@ JNIEXPORT jboolean JNICALL Java_javasample_JMediaControl_InvokeMediaController
 
     MediaController::MediaRequest request;
     request.dataSource = vxDatasource;
-    request.protocol = VxSdk::VxStreamProtocol::Value(streamProtocol);
+    request.dataInterface = *vxDatasource->dataInterfaces[0];
 
     MediaController::IController* control = nullptr;
     MediaController::GetController(&request, &control); //Initializing the MediaController library
@@ -141,7 +141,7 @@ JNIEXPORT jboolean JNICALL Java_javasample_JMediaControl_SetDataSource
 
     MediaController::MediaRequest request;
     request.dataSource = vxDatasource;
-    request.protocol = VxSdk::VxStreamProtocol::Value(protocol);
+    request.dataInterface = *vxDatasource->dataInterfaces[0];
     control->NewRequest(request); //Set a new request with another datasource
     return true;
 }

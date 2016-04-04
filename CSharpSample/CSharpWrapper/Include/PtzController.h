@@ -4,7 +4,7 @@
 
 #include "Pattern.h"
 #include "Preset.h"
-#include "Utils.h"
+#include "PtzLock.h"
 
 namespace CPPCli {
 
@@ -186,6 +186,15 @@ namespace CPPCli {
         Results::Value TriggerPreset(Preset^ preset);
 
         /// <summary>
+        /// Gets the <see cref="PtzLock"/> associated with this ptz controller.
+        /// </summary>
+        /// <value><c>nullptr</c> if no ptz lock is available, else the <see cref="PtzLock"/>.</value>
+        property PtzLock^ PTZLock {
+        public:
+            PtzLock^ get() { return _GetPtzLock(); }
+        }
+
+        /// <summary>
         /// Gets a value indicating whether the PTZ control is locked.
         /// </summary>
         /// <value><c>true</c> if locked, <c>false</c> if not.</value>
@@ -244,6 +253,7 @@ namespace CPPCli {
 
     internal:
         VxSdk::IVxPtzController* _ptzController;
+        PtzLock^ _GetPtzLock();
     };
 }
 #endif // PtzController_h__

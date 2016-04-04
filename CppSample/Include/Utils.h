@@ -107,7 +107,7 @@ namespace CPPConsole {
             struct tm timeinfo;
             gmtime_s(&timeinfo, &epochTime);
 
-            fmt << (timeinfo.tm_year + 1900) << "-"
+            fmt << timeinfo.tm_year + 1900 << "-"
                 << std::setfill('0') << std::setw(2) << (timeinfo.tm_mon + 1) << "-"
                 << std::setfill('0') << std::setw(2) << timeinfo.tm_mday << "T"
                 << std::setfill('0') << std::setw(2) << timeinfo.tm_hour << ":"
@@ -126,8 +126,8 @@ namespace CPPConsole {
             struct tm timeinfo;
             gmtime_s(&timeinfo, &epochTime);
 
-            fmt << (timeinfo.tm_year + 1900)
-                << std::setfill('0') << std::setw(2) << (timeinfo.tm_mon + 1)
+            fmt << timeinfo.tm_year + 1900
+                << std::setfill('0') << std::setw(2) << timeinfo.tm_mon + 1
                 << std::setfill('0') << std::setw(2) << timeinfo.tm_mday << "T"
                 << std::setfill('0') << std::setw(2) << timeinfo.tm_hour
                 << std::setfill('0') << std::setw(2) << timeinfo.tm_min
@@ -146,9 +146,10 @@ namespace CPPConsole {
             //Here parse date and time string value to time structure
             dateStream >> std::get_time(&parseTime, "%Y-%m-%dT%H:%M:%S.%X");
             std::string convertedStr = std::to_string(parseTime.tm_hour) + ":" +
-                std::to_string(parseTime.tm_min) + ":" +
-                std::to_string(parseTime.tm_sec) + "," +
-                std::to_string(parseTime.tm_mday) + " " + months[parseTime.tm_mon];
+                                       std::to_string(parseTime.tm_min) + ":" +
+                                       std::to_string(parseTime.tm_sec) + "," +
+                                       std::to_string(parseTime.tm_mday) + " " +
+                                       months[parseTime.tm_mon];
             return convertedStr;
         }
 
@@ -160,7 +161,8 @@ namespace CPPConsole {
         /// <param name="n">actual size</param>
         /// <param name="w">width of bar</param>
         static void ShowProgress(std::string statusMsg, unsigned int x, unsigned int n, int w = 50) {
-            if ((x != n) && (x % (n / 100 + 1) != 0)) return;
+            if ((x != n) && (x % (n / 100 + 1) != 0))
+                return;
 
             float ratio = x / static_cast<float>(n);
             int  c = static_cast<int>(ratio * w);

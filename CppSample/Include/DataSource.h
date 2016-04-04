@@ -86,7 +86,7 @@ namespace CPPConsole {
             if (result == VxSdk::VxResult::kOK)
                 return new PTZController(ptzController);
 
-            return NULL;
+            return nullptr;
         }
 
         /// <summary>

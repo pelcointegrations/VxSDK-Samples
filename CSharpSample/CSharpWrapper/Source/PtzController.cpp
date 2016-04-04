@@ -63,61 +63,85 @@ List<CPPCli::Preset^>^ CPPCli::PtzController::GetPresets() {
 }
 
 CPPCli::Results::Value CPPCli::PtzController::AbsoluteMove(int positionX, int positionY) {
+    // Call AbsoluteMove and return the result
     VxSdk::VxResult::Value result = _ptzController->AbsoluteMove(positionX, positionY);
     return CPPCli::Results::Value(result);
 }
 
 CPPCli::Results::Value CPPCli::PtzController::AbsoluteMove(int positionX, int positionY, int positionZ) {
+    // Call AbsoluteMove and return the result
     VxSdk::VxResult::Value result = _ptzController->AbsoluteMove(positionX, positionY, positionZ);
     return CPPCli::Results::Value(result);
 }
 
 CPPCli::Results::Value CPPCli::PtzController::AbsolutePan(int positionX) {
+    // Call AbsolutePan and return the result
     VxSdk::VxResult::Value result = _ptzController->AbsolutePan(positionX);
     return CPPCli::Results::Value(result);
 }
 
 CPPCli::Results::Value CPPCli::PtzController::AbsoluteTilt(int positionY) {
+    // Call AbsoluteTilt and return the result
     VxSdk::VxResult::Value result = _ptzController->AbsoluteTilt(positionY);
     return CPPCli::Results::Value(result);
 }
 
 CPPCli::Results::Value CPPCli::PtzController::AbsoluteZoom(int positionZ) {
+    // Call AbsoluteZoom and return the result
     VxSdk::VxResult::Value result = _ptzController->AbsoluteZoom(positionZ);
     return CPPCli::Results::Value(result);
 }
 
-CPPCli::Results::Value CPPCli::PtzController::ContinuousMove(int speedX, int speedY, CPPCli::PtzController::ZoomDirections inOut){
+CPPCli::Results::Value CPPCli::PtzController::ContinuousMove(int speedX, int speedY, CPPCli::PtzController::ZoomDirections inOut) {
+    // Call ContinuousMove and return the result
     VxSdk::VxResult::Value result = _ptzController->ContinuousMove(speedX, speedY, (VxSdk::VxZoomDirection::Value)inOut);
     return CPPCli::Results::Value(result);
 }
 
-CPPCli::Results::Value CPPCli::PtzController::RelativeMove(int deltaX, int deltaY, int deltaZ){
+CPPCli::Results::Value CPPCli::PtzController::RelativeMove(int deltaX, int deltaY, int deltaZ) {
+    // Call RelativeMove and return the result
     VxSdk::VxResult::Value result = _ptzController->RelativeMove(deltaX, deltaY, deltaZ);
     return CPPCli::Results::Value(result);
 }
 
-CPPCli::Results::Value CPPCli::PtzController::ContinuousIris(CPPCli::PtzController::IrisDirections openClose){
+CPPCli::Results::Value CPPCli::PtzController::ContinuousIris(CPPCli::PtzController::IrisDirections openClose) {
+    // Call ContinuousIris and return the result
     VxSdk::VxResult::Value result = _ptzController->ContinuousIris((VxSdk::VxIrisDirection::Value)openClose);
     return CPPCli::Results::Value(result);
 }
 
-CPPCli::Results::Value CPPCli::PtzController::ContinuousFocus(CPPCli::PtzController::FocusDirections nearFar){
+CPPCli::Results::Value CPPCli::PtzController::ContinuousFocus(CPPCli::PtzController::FocusDirections nearFar) {
+    // Call ContinuousFocus and return the result
     VxSdk::VxResult::Value result = _ptzController->ContinuousFocus((VxSdk::VxFocusDirection::Value)nearFar);
     return CPPCli::Results::Value(result);
 }
 
 CPPCli::Results::Value CPPCli::PtzController::Stop() {
+    // Call PtzStop and return the result
     VxSdk::VxResult::Value result = _ptzController->PtzStop();
     return CPPCli::Results::Value(result);
 }
 
 CPPCli::Results::Value CPPCli::PtzController::TriggerPattern(Pattern^ pattern) {
+    // Call TriggerPattern and return the result
     VxSdk::VxResult::Value result = _ptzController->TriggerPattern(*pattern->_pattern);
     return CPPCli::Results::Value(result);
 }
 
 CPPCli::Results::Value CPPCli::PtzController::TriggerPreset(Preset^ preset) {
+    // Call TriggerPreset and return the result
     VxSdk::VxResult::Value result = _ptzController->TriggerPreset(*preset->_preset);
     return CPPCli::Results::Value(result);
+}
+
+CPPCli::PtzLock^ CPPCli::PtzController::_GetPtzLock() {
+    // Get the ptz lock which allows the client to make lock the ptz controller
+    VxSdk::IVxPtzLock* ptzLock = nullptr;
+    VxSdk::VxResult::Value result = _ptzController->GetPtzLock(ptzLock);
+
+    // Return the ptz lock if GetPtzLock was successful
+    if (result == VxSdk::VxResult::kOK)
+        return gcnew PtzLock(ptzLock);
+
+    return nullptr;
 }

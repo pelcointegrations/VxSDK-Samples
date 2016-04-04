@@ -81,7 +81,7 @@ namespace CPPConsole {
         ~MediaControl();
 
     private:
-        MediaController::IController* _control; //RTSPcontroller wrapper instance
+        MediaController::IController* _control;
         bool _isPlaying;
         int _speed;
     };
