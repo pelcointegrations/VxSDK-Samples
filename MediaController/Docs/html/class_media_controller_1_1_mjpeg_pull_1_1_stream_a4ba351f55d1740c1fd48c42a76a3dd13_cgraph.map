@@ -1,0 +1,4 @@
+<map id="MediaController::MjpegPull::Stream::Pause" name="MediaController::MjpegPull::Stream::Pause">
+<area shape="rect" id="node2" href="$class_media_controller_1_1_gst_wrapper.html#a729a6adfbcd8ec37fee584f6714948cd" title="Set the internal timestamp variable. " alt="" coords="231,5,421,47"/>
+<area shape="rect" id="node3" href="$class_media_controller_1_1_gst_wrapper.html#a9989e4853b720e3345937362ba8940eb" title="Get the last timestamp received from the stream. " alt="" coords="231,71,421,112"/>
+</map>

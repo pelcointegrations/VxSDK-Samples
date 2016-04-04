@@ -1,0 +1,6 @@
+<map id="CPPCli::Schedule::~Schedule" name="CPPCli::Schedule::~Schedule">
+<area shape="rect" id="node2" href="$class_c_p_p_cli_1_1_schedule.html#a7ec0b32cacb13d85478101f72349d7e6" title="Constructor. " alt="" coords="188,5,376,32"/>
+<area shape="rect" id="node3" href="$class_c_p_p_cli_1_1_schedule.html#afe119db28e0a262762bf3012011ec9ef" title="Get the data sources linked to the schedule. " alt="" coords="189,56,375,83"/>
+<area shape="rect" id="node4" href="$class_c_p_p_cli_1_1_schedule.html#a670acbee5abbef04a8daea7c6c7a01d4" title="Add data sources to the schedule. " alt="" coords="203,107,361,133"/>
+<area shape="rect" id="node5" href="$class_c_p_p_cli_1_1_schedule.html#a87840f942154150afca7e025b0b807bb" title="Delete existing data sources from the schedule. " alt="" coords="197,157,367,184"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="MediaController::IController::~IController" name="MediaController::IController::~IController">
+<area shape="rect" id="node2" href="$class_media_controller_1_1_i_controller.html#a81111a6c5d9000ed48ffebf89bb67261" title="Set the display window using the given window handle. " alt="" coords="232,5,411,47"/>
+<area shape="rect" id="node3" href="$class_media_controller_1_1_i_controller.html#a96f8b74408f4c56296460de5d51c7774" title="Add a new subscriber to timestamp events. " alt="" coords="232,71,411,112"/>
+<area shape="rect" id="node4" href="$class_media_controller_1_1_i_controller.html#a244c1d4acbbe9c02b5694f8a1b4763c2" title="Add event data to be send back during timestamp events. " alt="" coords="232,136,411,177"/>
+<area shape="rect" id="node5" href="$class_media_controller_1_1_i_controller.html#a25fad32d7f94ecc5999bab37ead56842" title="Remove an existing timestamp event subscriber. " alt="" coords="232,201,411,243"/>
+<area shape="rect" id="node6" href="$class_media_controller_1_1_i_controller.html#af3b234c09b43800aac4207f45dceceb3" title="Remove all existing timestamp event subscribers. " alt="" coords="232,267,411,308"/>
+<area shape="rect" id="node7" href="$class_media_controller_1_1_i_controller.html#a13d9691ab294809a5260a41e4ff59f0f" title="Get the current playback mode. " alt="" coords="232,332,411,373"/>
+</map>

@@ -1,8 +1,4 @@
 <map id="MediaController::GstWrapper::ClearWindow" name="MediaController::GstWrapper::ClearWindow">
-<area shape="rect" id="node2" href="$class_media_controller_1_1_gst_wrapper.html#a44808fa8e212ecb070da05bef1f9ace9" title="Update the pipeline description. " alt="" coords="246,39,437,80"/>
-<area shape="rect" id="node6" href="$class_media_controller_1_1_playing_state.html#a7d9de177fdfd14b19f2bb6d37e907ace" title="Perform the Stop action based on the stream state. " alt="" coords="260,104,423,145"/>
-<area shape="rect" id="node7" href="$class_media_controller_1_1_paused_state.html#a60919e3fad6f0c893c84c7b7972da17f" title="Perform the Stop action based on the stream state. " alt="" coords="244,169,439,211"/>
-<area shape="rect" id="node3" href="$class_media_controller_1_1_rtsp_1_1_commands.html#a5498da92caf636c4b4a5033a9eda5d73" title="Send the DESCRIBE method and read the server response. " alt="" coords="487,39,641,80"/>
-<area shape="rect" id="node4" href="$class_media_controller_1_1_rtsp_1_1_commands.html#a6336294ea2e2d214f3a9d1b494e4aa07" title="Send the PLAY method and read the server response. " alt="" coords="696,5,843,47"/>
-<area shape="rect" id="node5" href="$class_media_controller_1_1_rtsp_1_1_commands.html#aca7fdcac23d14e5b9aebafb598d2002e" title="Send the PLAY method with a Range header and read the server response. " alt="" coords="689,71,849,112"/>
+<area shape="rect" id="node2" href="$class_media_controller_1_1_playing_state.html#a7d9de177fdfd14b19f2bb6d37e907ace" title="Perform the Stop action based on the stream state. " alt="" coords="260,5,423,47"/>
+<area shape="rect" id="node3" href="$class_media_controller_1_1_paused_state.html#a60919e3fad6f0c893c84c7b7972da17f" title="Perform the Stop action based on the stream state. " alt="" coords="244,71,439,112"/>
 </map>

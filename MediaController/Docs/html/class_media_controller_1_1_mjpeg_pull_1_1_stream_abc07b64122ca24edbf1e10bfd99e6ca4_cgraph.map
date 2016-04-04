@@ -1,0 +1,4 @@
+<map id="MediaController::MjpegPull::Stream::Play" name="MediaController::MjpegPull::Stream::Play">
+<area shape="rect" id="node2" href="$class_media_controller_1_1_mjpeg_pull_1_1_stream.html#ae9585d6f4100ac1177ebf4aa90b52115" title="Set the stream to a new source. " alt="" coords="231,5,408,47"/>
+<area shape="rect" id="node3" href="$class_media_controller_1_1_gst_wrapper.html#a59c5c7068ec0a084ae7e35d8ba850015" title="Set the stream location. " alt="" coords="456,5,647,47"/>
+</map>

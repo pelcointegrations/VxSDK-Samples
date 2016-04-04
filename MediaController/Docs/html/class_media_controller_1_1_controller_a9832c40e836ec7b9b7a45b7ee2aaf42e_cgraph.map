@@ -1,4 +1,12 @@
 <map id="MediaController::Controller::GetMode" name="MediaController::Controller::GetMode">
-<area shape="rect" id="node2" href="$class_media_controller_1_1_stream_base.html#a8426351a80597fb8d2a3a2ccc8ba732e" title="Get the current GStreamer wrapper instance. " alt="" coords="228,5,420,47"/>
-<area shape="rect" id="node3" href="$class_media_controller_1_1_gst_wrapper.html#aaf7152a829d2ecd653fc2f508e336475" title="Get the current playback mode. " alt="" coords="229,71,419,112"/>
+<area shape="rect" id="node2" href="$class_media_controller_1_1_stream_base.html#a8426351a80597fb8d2a3a2ccc8ba732e" title="Get the current GStreamer wrapper instance. " alt="" coords="228,169,420,211"/>
+<area shape="rect" id="node3" href="$class_media_controller_1_1_gst_wrapper.html#aaf7152a829d2ecd653fc2f508e336475" title="Get the current playback mode. " alt="" coords="229,235,419,276"/>
+<area shape="rect" id="node4" href="$class_media_controller_1_1_gst_wrapper.html#af0a1d3209beb40b460742a34ce2e2b45" title="Set the current playback mode. " alt="" coords="468,5,659,47"/>
+<area shape="rect" id="node5" href="$class_media_controller_1_1_gst_wrapper.html#ac0fa98f176f83ceb495e49ec58ef8392" title="Add custom data to be stored in here, which will be send back to caller inside TimestampEvent on Time..." alt="" coords="468,71,659,112"/>
+<area shape="rect" id="node6" href="$class_media_controller_1_1_gst_wrapper.html#a9989e4853b720e3345937362ba8940eb" title="Get the last timestamp received from the stream. " alt="" coords="468,136,659,177"/>
+<area shape="rect" id="node7" href="$class_media_controller_1_1_gst_wrapper.html#a729a6adfbcd8ec37fee584f6714948cd" title="Set the internal timestamp variable. " alt="" coords="468,201,659,243"/>
+<area shape="rect" id="node8" href="$class_media_controller_1_1_gst_wrapper.html#a44808fa8e212ecb070da05bef1f9ace9" title="Update the pipeline description. " alt="" coords="468,267,659,308"/>
+<area shape="rect" id="node9" href="$class_media_controller_1_1_gst_wrapper.html#a59c5c7068ec0a084ae7e35d8ba850015" title="Set the stream location. " alt="" coords="468,332,659,373"/>
+<area shape="rect" id="node10" href="$class_media_controller_1_1_gst_wrapper.html#ac51ce9890a31dcb366c95a3f282ad28f" title="Subscribe to the the events sent from the GStreamer Bus element. " alt="" coords="468,397,659,439"/>
+<area shape="rect" id="node11" href="$class_media_controller_1_1_gst_wrapper.html#a5ddc1a7978fde1c97d478befa0265e7e" title="Subscribe to the the probe events sent from the GStreamer Src element. " alt="" coords="468,463,659,504"/>
 </map>

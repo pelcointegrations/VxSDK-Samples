@@ -1,0 +1,10 @@
+<map id="MediaController::IStream::~IStream" name="MediaController::IStream::~IStream">
+<area shape="rect" id="node2" href="$class_media_controller_1_1_i_stream.html#afefbdcf267875b8ab73c0a3dacff96a0" title="Call Play on the stream. " alt="" coords="219,5,384,47"/>
+<area shape="rect" id="node3" href="$class_media_controller_1_1_i_stream.html#aeb52708f005e2395d90b06bf22868afe" title="Call Pause on the stream. " alt="" coords="219,71,384,112"/>
+<area shape="rect" id="node4" href="$class_media_controller_1_1_i_stream.html#a8ba52c69638f1ee143d3d9ad78b6eade" title="Call TearDown on the stream. " alt="" coords="219,136,384,177"/>
+<area shape="rect" id="node5" href="$class_media_controller_1_1_i_stream.html#a89a7629afd57f6eb9e90a750ad2c5dfd" title="Not implemented. " alt="" coords="219,201,384,243"/>
+<area shape="rect" id="node6" href="$class_media_controller_1_1_i_stream.html#a58c336f518d87333a01e2824276db82c" title="Not implemented. " alt="" coords="219,267,384,308"/>
+<area shape="rect" id="node7" href="$class_media_controller_1_1_i_stream.html#aed3c956ef7efd114eea1044bab631d55" title="Call Play on the stream with the supplied start time, resulting in a playback stream. " alt="" coords="219,332,384,373"/>
+<area shape="rect" id="node8" href="$class_media_controller_1_1_i_stream.html#a8f6788601512710453d7a4b0b1999838" title="Set the stream to Live and call Play. " alt="" coords="219,397,384,439"/>
+<area shape="rect" id="node9" href="$class_media_controller_1_1_i_stream.html#af1acf51b6b487e08555b855f16a6234f" title="Set the stream to a new source. " alt="" coords="219,463,384,504"/>
+</map>

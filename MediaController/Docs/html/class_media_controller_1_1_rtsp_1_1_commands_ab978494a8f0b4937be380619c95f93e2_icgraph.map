@@ -1,3 +1,9 @@
 <map id="MediaController::Rtsp::Commands::Teardown" name="MediaController::Rtsp::Commands::Teardown">
-<area shape="rect" id="node2" href="$class_media_controller_1_1_rtsp_1_1_commands.html#a6336294ea2e2d214f3a9d1b494e4aa07" title="Send the PLAY method and read the server response. " alt="" coords="212,5,359,47"/>
+<area shape="rect" id="node2" href="$class_media_controller_1_1_rtsp_1_1_commands.html#a6336294ea2e2d214f3a9d1b494e4aa07" title="Send the PLAY method and read the server response. " alt="" coords="219,5,365,47"/>
+<area shape="rect" id="node4" href="$class_media_controller_1_1_rtsp_1_1_commands.html#aca7fdcac23d14e5b9aebafb598d2002e" title="Send the PLAY method with a Range header and read the server response. " alt="" coords="212,71,372,112"/>
+<area shape="rect" id="node7" href="$class_media_controller_1_1_rtsp_1_1_stream.html#a97c7554d9bcc086b2a424a14d7a4c56b" title="Call Pause on the stream. " alt="" coords="219,136,365,177"/>
+<area shape="rect" id="node8" href="$class_media_controller_1_1_rtsp_1_1_stream.html#a675c9cab355bdf341f76bcd36ea4d16d" title="Call TearDown on the stream. " alt="" coords="219,201,365,243"/>
+<area shape="rect" id="node3" href="$class_media_controller_1_1_rtsp_1_1_stream.html#a7790a70a35e70203c73232ff1fc27dfc" title="Call Play on the stream. " alt="" coords="420,5,567,47"/>
+<area shape="rect" id="node5" href="$class_media_controller_1_1_rtsp_1_1_stream.html#a7cd6a0ebc8cf8bfceeb5874ff713134e" title="Call Play on the stream with the supplied start time, resulting in a playback stream. " alt="" coords="420,71,567,112"/>
+<area shape="rect" id="node6" href="$class_media_controller_1_1_rtsp_1_1_stream.html#ae479b9bed38549d274d24f69cf277637" title="Call Seek on the stream using the last timestamp received as the start time. " alt="" coords="615,71,761,112"/>
 </map>

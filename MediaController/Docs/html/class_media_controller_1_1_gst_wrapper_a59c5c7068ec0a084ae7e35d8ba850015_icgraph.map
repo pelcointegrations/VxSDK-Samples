@@ -1,0 +1,25 @@
+<map id="MediaController::GstWrapper::SetLocation" name="MediaController::GstWrapper::SetLocation">
+<area shape="rect" id="node2" href="$class_media_controller_1_1_gst_wrapper.html#aaf7152a829d2ecd653fc2f508e336475" title="Get the current playback mode. " alt="" coords="244,386,435,427"/>
+<area shape="rect" id="node21" href="$class_media_controller_1_1_mjpeg_pull_1_1_stream.html#ae9585d6f4100ac1177ebf4aa90b52115" title="Set the stream to a new source. " alt="" coords="251,550,428,591"/>
+<area shape="rect" id="node3" href="$class_media_controller_1_1_controller.html#a9832c40e836ec7b9b7a45b7ee2aaf42e" title="Get the current playback mode. " alt="" coords="484,321,659,362"/>
+<area shape="rect" id="node18" href="$class_media_controller_1_1_playing_state.html#af11c2334ac505ee1299e544a2a964c04" title="Perform the Play action based on the stream state. " alt="" coords="490,386,653,427"/>
+<area shape="rect" id="node19" href="$class_media_controller_1_1_playing_state.html#a4bde5bd5038a99c5195293c8f5ce6af0" title="Perform the GoToLive action based on the stream state. " alt="" coords="490,451,653,493"/>
+<area shape="rect" id="node20" href="$class_media_controller_1_1_playing_state.html#a3de48205d6f16d9e37f9fce69fb9f266" title="Perform the Seek action based on the stream state. " alt="" coords="490,255,653,297"/>
+<area shape="rect" id="node4" href="$class_media_controller_1_1_rtsp_1_1_commands.html#ade90cad2a6af616385df0c1e1b282aa0" title="Send the OPTIONS method and read the server response. " alt="" coords="726,109,875,150"/>
+<area shape="rect" id="node5" href="$class_media_controller_1_1_rtsp_1_1_commands.html#a6336294ea2e2d214f3a9d1b494e4aa07" title="Send the PLAY method and read the server response. " alt="" coords="963,131,1109,173"/>
+<area shape="rect" id="node7" href="$class_media_controller_1_1_rtsp_1_1_commands.html#aca7fdcac23d14e5b9aebafb598d2002e" title="Send the PLAY method with a Range header and read the server response. " alt="" coords="956,350,1116,391"/>
+<area shape="rect" id="node10" href="$class_media_controller_1_1_rtsp_1_1_commands.html#a673c358503e9d490276568a49fbc2cbf" title="Send the GET_PARAMETER method and read the server response. " alt="" coords="708,543,893,585"/>
+<area shape="rect" id="node12" href="$class_media_controller_1_1_rtsp_1_1_commands.html#a5498da92caf636c4b4a5033a9eda5d73" title="Send the DESCRIBE method and read the server response. " alt="" coords="723,226,878,267"/>
+<area shape="rect" id="node13" href="$class_media_controller_1_1_rtsp_1_1_commands.html#ae96e490e6da2e25dfbb4f399781eedc9" title="Send the SETUP method and read the server response. " alt="" coords="727,291,874,333"/>
+<area shape="rect" id="node14" href="$class_media_controller_1_1_rtsp_1_1_commands.html#aeb7ef8bdee3e6a6bd3f433fa065e7fa6" title="Send the PAUSE method and read the server response. " alt="" coords="727,475,874,517"/>
+<area shape="rect" id="node16" href="$class_media_controller_1_1_rtsp_1_1_commands.html#ab978494a8f0b4937be380619c95f93e2" title="Send the TEARDOWN method and read the server response. " alt="" coords="721,409,880,450"/>
+<area shape="rect" id="node6" href="$class_media_controller_1_1_rtsp_1_1_stream.html#a7790a70a35e70203c73232ff1fc27dfc" title="Call Play on the stream. " alt="" coords="1179,77,1325,118"/>
+<area shape="rect" id="node8" href="$class_media_controller_1_1_rtsp_1_1_stream.html#a7cd6a0ebc8cf8bfceeb5874ff713134e" title="Call Play on the stream with the supplied start time, resulting in a playback stream. " alt="" coords="1179,266,1325,307"/>
+<area shape="rect" id="node9" href="$class_media_controller_1_1_rtsp_1_1_stream.html#ae479b9bed38549d274d24f69cf277637" title="Call Seek on the stream using the last timestamp received as the start time. " alt="" coords="1373,266,1520,307"/>
+<area shape="rect" id="node11" href="$class_media_controller_1_1_rtsp_1_1_keep_alive.html#aa0ef59356d504b3729737ae1cdf49303" title="Make a GET_PARAMETERS method call to the associated stream. " alt="" coords="941,546,1131,587"/>
+<area shape="rect" id="node15" href="$class_media_controller_1_1_rtsp_1_1_stream.html#a97c7554d9bcc086b2a424a14d7a4c56b" title="Call Pause on the stream. " alt="" coords="963,481,1109,522"/>
+<area shape="rect" id="node17" href="$class_media_controller_1_1_rtsp_1_1_stream.html#a675c9cab355bdf341f76bcd36ea4d16d" title="Call TearDown on the stream. " alt="" coords="963,415,1109,457"/>
+<area shape="rect" id="node22" href="$class_media_controller_1_1_mjpeg_pull_1_1_stream.html#abc07b64122ca24edbf1e10bfd99e6ca4" title="Call Play on the stream. " alt="" coords="483,517,660,558"/>
+<area shape="rect" id="node23" href="$class_media_controller_1_1_mjpeg_pull_1_1_stream.html#a237f606f4e68139542998d50848e5ea7" title="Call Play on the stream with the supplied start time, resulting in a playback stream. " alt="" coords="483,582,660,623"/>
+<area shape="rect" id="node24" href="$class_media_controller_1_1_mjpeg_pull_1_1_stream.html#a3c18d8c4ef0be3b8f6f932363ff25d0b" title="Call Seek on the stream using the last timestamp received as the start time. " alt="" coords="483,647,660,689"/>
+</map>
