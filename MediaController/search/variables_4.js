@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['emptymediadescription',['EmptyMediaDescription',['../_rtsp_sdp_parser_8cpp.html#a24f157e67c30513e994687698f38b140',1,'RtspSdpParser.cpp']]],
-  ['encoding',['encoding',['../struct_media_controller_1_1_rtsp_1_1_media_description.html#a19845be452979f69d76b4f5edf290333',1,'MediaController::Rtsp::MediaDescription']]],
-  ['endtime',['endTime',['../../VxSdk/struct_vx_sdk_1_1_i_vx_clip.html#a2f67c61280396ae8de54fb339fa9dd27',1,'VxSdk::IVxClip::endTime()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_export_clip.html#a866f8bece286c97dc1758b01c9a6b9af',1,'VxSdk::IVxExportClip::endTime()'],['../../VxSdk/struct_vx_sdk_1_1_vx_new_export_clip.html#aa45d3faa834da6d21937548a7993042d',1,'VxSdk::VxNewExportClip::endTime()']]],
-  ['eventdata',['eventData',['../struct_media_controller_1_1_gst_vars.html#a72be54c269a80c7e98b472a39e60d9ed',1,'MediaController::GstVars::eventData()'],['../struct_media_controller_1_1_timestamp_event.html#a0a84d38da5a6e535644451a0778cd05d',1,'MediaController::TimestampEvent::eventData()']]],
-  ['exportclips',['exportClips',['../../VxSdk/struct_vx_sdk_1_1_i_vx_export.html#aa22126be18b2aab33b2f8a6df00f78ac',1,'VxSdk::IVxExport']]],
-  ['exportclipsize',['exportClipSize',['../../VxSdk/struct_vx_sdk_1_1_i_vx_export.html#a3a9884aa7ca1d43e8fb9a4e6f1ce7278',1,'VxSdk::IVxExport']]]
+  ['filesizekb',['fileSizeKb',['../../VxSdk/struct_vx_sdk_1_1_i_vx_export.html#a9e274ad07293f316902804a68f246bfb',1,'VxSdk::IVxExport']]],
+  ['filters',['filters',['../../VxSdk/struct_vx_sdk_1_1_vx_collection.html#a29b9a24eb72c328766736fbdf16f5bc2',1,'VxSdk::VxCollection']]],
+  ['filtersize',['filterSize',['../../VxSdk/struct_vx_sdk_1_1_vx_collection.html#a2cad1a14f9418b550121f38f05d6062e',1,'VxSdk::VxCollection']]],
+  ['format',['format',['../../VxSdk/struct_vx_sdk_1_1_i_vx_export.html#a13eb37299ce8a52b9b0165b9861c4718',1,'VxSdk::IVxExport::format()'],['../../VxSdk/struct_vx_sdk_1_1_vx_new_export.html#abf18805f40583c16c11ded417eac50bd',1,'VxSdk::VxNewExport::format()']]],
+  ['framerate',['framerate',['../../VxSdk/struct_vx_sdk_1_1_i_vx_clip.html#a6a77651726686092a0508082b9332f78',1,'VxSdk::IVxClip']]]
 ];

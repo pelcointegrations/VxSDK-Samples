@@ -1,9 +1,14 @@
 var searchData=
 [
-  ['default',['Default',['../../VxSdk/struct_vx_sdk_1_1_vx_new_situation.html#ab4171af92f4eb1f82743cd0bf05491e2',1,'VxSdk::VxNewSituation']]],
-  ['delete',['Delete',['../../VxSdk/struct_vx_sdk_1_1_i_vx_clip.html#af92d767e2c3fb2d7a1d94605285d320c',1,'VxSdk::IVxClip::Delete()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_data_session.html#a96aa75f76eccb499e3767543612011c6',1,'VxSdk::IVxDataSession::Delete()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_data_source.html#a343ab001ccf2c96ef0cf35f18169f080',1,'VxSdk::IVxDataSource::Delete()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_device.html#a1a8bc3d079d756661f08fa05fcc620a1',1,'VxSdk::IVxDevice::Delete()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_event.html#a62f86281e77174ef98c398c3ce8bc5ab',1,'VxSdk::IVxEvent::Delete()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_export.html#ae29a38ba8a475af9003011776d09a5c4',1,'VxSdk::IVxExport::Delete()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_pattern.html#a18ba6e34685674d72c224236311705f8',1,'VxSdk::IVxPattern::Delete()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_preset.html#a8537829a9e872d59813d26147709a70f',1,'VxSdk::IVxPreset::Delete()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_ptz_controller.html#a527e9e41e5537828faab039444b3343d',1,'VxSdk::IVxPtzController::Delete()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_situation.html#a1904b0c798f4c1634f1b4f8747243b24',1,'VxSdk::IVxSituation::Delete()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_system.html#a89441c2a97ea14bff936661dd27631fc',1,'VxSdk::IVxSystem::Delete()']]],
-  ['deletedatasession',['DeleteDataSession',['../../VxSdk/struct_vx_sdk_1_1_i_vx_data_session.html#aef80e32b3c161ce7887ab379efb5c687',1,'VxSdk::IVxDataSession']]],
-  ['deleteexport',['DeleteExport',['../../VxSdk/struct_vx_sdk_1_1_i_vx_export.html#ab37423770bd8d3caac762d97878ee982',1,'VxSdk::IVxExport']]],
-  ['deletesituation',['DeleteSituation',['../../VxSdk/struct_vx_sdk_1_1_i_vx_situation.html#a2a69cfd77923230d4f3a618cbd25f78d',1,'VxSdk::IVxSituation']]],
-  ['describe',['Describe',['../class_media_controller_1_1_rtsp_1_1_commands.html#a5498da92caf636c4b4a5033a9eda5d73',1,'MediaController::Rtsp::Commands']]]
+  ['getclips',['GetClips',['../../VxSdk/struct_vx_sdk_1_1_i_vx_data_source.html#a45915949444df8683e8122a761fda792',1,'VxSdk::IVxDataSource']]],
+  ['getdatasources',['GetDataSources',['../../VxSdk/struct_vx_sdk_1_1_i_vx_device.html#a5d6894113b9aa50991bdcf8fd0063275',1,'VxSdk::IVxDevice']]],
+  ['getdevices',['GetDevices',['../../VxSdk/struct_vx_sdk_1_1_i_vx_system.html#ad50525ec77f94f279a60fb375f3d8eb3',1,'VxSdk::IVxSystem']]],
+  ['getexports',['GetExports',['../../VxSdk/struct_vx_sdk_1_1_i_vx_system.html#a98a155300e6eeed2d5280cb3ed4505f8',1,'VxSdk::IVxSystem']]],
+  ['getpatterns',['GetPatterns',['../../VxSdk/struct_vx_sdk_1_1_i_vx_ptz_controller.html#ad41b41740cee54b2e56bcd031456fe75',1,'VxSdk::IVxPtzController']]],
+  ['getposition',['GetPosition',['../../VxSdk/struct_vx_sdk_1_1_i_vx_ptz_controller.html#a9869f466cff27142647f292f9841f843',1,'VxSdk::IVxPtzController']]],
+  ['getpresets',['GetPresets',['../../VxSdk/struct_vx_sdk_1_1_i_vx_ptz_controller.html#aafb7d2e038dc0fa6c01d3e7c2373ded2',1,'VxSdk::IVxPtzController']]],
+  ['getptzcontroller',['GetPtzController',['../../VxSdk/struct_vx_sdk_1_1_i_vx_data_source.html#a03ca184705a1a5d98cd3735deae9007b',1,'VxSdk::IVxDataSource']]],
+  ['getrtspendpoint',['GetRtspEndpoint',['../../VxSdk/struct_vx_sdk_1_1_i_vx_data_source.html#ab882c8b3a1f206e8ee4f86a3b398c7a3',1,'VxSdk::IVxDataSource']]],
+  ['getsituations',['GetSituations',['../../VxSdk/struct_vx_sdk_1_1_i_vx_system.html#aedd13f280cb87d6af92d1973260f4682',1,'VxSdk::IVxSystem']]],
+  ['golive',['GoLive',['../../VxSdk/struct_vx_sdk_1_1_i_vx_data_session.html#ad5a98d1eca8ddff086d7bdacc82f94f2',1,'VxSdk::IVxDataSession']]]
 ];

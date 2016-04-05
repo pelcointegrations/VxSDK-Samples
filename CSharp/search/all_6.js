@@ -1,12 +1,10 @@
 var searchData=
 [
-  ['encoder',['Encoder',['../../CSharpWrapper/class_c_p_p_cli_1_1_device.html#a9e9bb567a4d33139f8e874925378503da87d487f6f605eb96e61be67988e41e6d',1,'CPPCli::Device::Encoder()'],['../namespace_s_d_k_sample_app_1_1_enums.html#af32cf618fd668911fbe90d8291ead923a87d487f6f605eb96e61be67988e41e6d',1,'SDKSampleApp.Enums.Encoder()']]],
-  ['encodetobase64',['EncodeToBase64',['../class_s_d_k_sample_app_1_1_source_1_1_download_progress_form.html#aa4ac9de4e7a74d060898e3d0b5277ccf',1,'SDKSampleApp::Source::DownloadProgressForm']]],
+  ['encoder',['Encoder',['../../CSharpWrapper/class_c_p_p_cli_1_1_device.html#a9e9bb567a4d33139f8e874925378503da87d487f6f605eb96e61be67988e41e6d',1,'CPPCli::Device']]],
   ['encoding',['encoding',['../../MediaController/struct_media_controller_1_1_rtsp_1_1_media_description.html#a19845be452979f69d76b4f5edf290333',1,'MediaController::Rtsp::MediaDescription']]],
   ['endtime',['EndTime',['../../CSharpWrapper/class_c_p_p_cli_1_1_clip.html#a240ef970e00aad46504c9945cc9e704c',1,'CPPCli::Clip::EndTime()'],['../../CSharpWrapper/class_c_p_p_cli_1_1_export_clip.html#a7488a8b2756069343e13907088bf3bbe',1,'CPPCli::ExportClip::EndTime()'],['../../CSharpWrapper/class_c_p_p_cli_1_1_new_export_clip.html#a16742b04f2471d43159d889ce5a449b8',1,'CPPCli::NewExportClip::EndTime()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_clip.html#a2f67c61280396ae8de54fb339fa9dd27',1,'VxSdk::IVxClip::endTime()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_export_clip.html#a866f8bece286c97dc1758b01c9a6b9af',1,'VxSdk::IVxExportClip::endTime()'],['../../VxSdk/struct_vx_sdk_1_1_vx_new_export_clip.html#aa45d3faa834da6d21937548a7993042d',1,'VxSdk::VxNewExportClip::endTime()']]],
-  ['enums_2ecs',['Enums.cs',['../_enums_8cs.html',1,'']]],
-  ['event',['Event',['../../CSharpWrapper/class_c_p_p_cli_1_1_event.html#a67f8ddb1179e6c8c2f7235e001ff573f',1,'CPPCli::Event::Event()'],['../../CSharpWrapper/class_c_p_p_cli_1_1_clip.html#acf036b9a9f760b348055f5126188e84eaa4ecfc70574394990cf17bd83df499f7',1,'CPPCli::Clip::Event()'],['../namespace_s_d_k_sample_app_1_1_enums.html#adfdd7b436cd920413c37c175bd8c6e34aa4ecfc70574394990cf17bd83df499f7',1,'SDKSampleApp.Enums.Event()']]],
   ['event',['Event',['../../CSharpWrapper/class_c_p_p_cli_1_1_event.html',1,'CPPCli']]],
+  ['event',['Event',['../../CSharpWrapper/class_c_p_p_cli_1_1_event.html#a67f8ddb1179e6c8c2f7235e001ff573f',1,'CPPCli::Event::Event()'],['../../CSharpWrapper/class_c_p_p_cli_1_1_clip.html#acf036b9a9f760b348055f5126188e84eaa4ecfc70574394990cf17bd83df499f7',1,'CPPCli::Clip::Event()']]],
   ['event_2eh',['Event.h',['../../CSharpWrapper/_event_8h.html',1,'']]],
   ['eventcallbackdelegate',['EventCallbackDelegate',['../../CSharpWrapper/class_c_p_p_cli_1_1_v_x_system.html#aeb55a88b4508d23122acd09f9ecf6af9',1,'CPPCli::VXSystem']]],
   ['eventdata',['eventData',['../../MediaController/struct_media_controller_1_1_gst_vars.html#a72be54c269a80c7e98b472a39e60d9ed',1,'MediaController::GstVars::eventData()'],['../../MediaController/struct_media_controller_1_1_timestamp_event.html#a0a84d38da5a6e535644451a0778cd05d',1,'MediaController::TimestampEvent::eventData()']]],
@@ -20,13 +18,7 @@ var searchData=
   ['exportclip',['ExportClip',['../../CSharpWrapper/class_c_p_p_cli_1_1_export_clip.html',1,'CPPCli']]],
   ['exportclip_2ecpp',['ExportClip.cpp',['../../CSharpWrapper/_export_clip_8cpp.html',1,'']]],
   ['exportclip_2eh',['ExportClip.h',['../../CSharpWrapper/_export_clip_8h.html',1,'']]],
-  ['exportclips',['exportClips',['../../VxSdk/struct_vx_sdk_1_1_i_vx_export.html#aa22126be18b2aab33b2f8a6df00f78ac',1,'VxSdk::IVxExport::exportClips()'],['../../CSharpWrapper/class_c_p_p_cli_1_1_export.html#a7c752b3e549c076866af8419da26b722',1,'CPPCli::Export::ExportClips()']]],
+  ['exportclips',['ExportClips',['../../CSharpWrapper/class_c_p_p_cli_1_1_export.html#a7c752b3e549c076866af8419da26b722',1,'CPPCli::Export::ExportClips()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_export.html#aa22126be18b2aab33b2f8a6df00f78ac',1,'VxSdk::IVxExport::exportClips()']]],
   ['exportclipsize',['exportClipSize',['../../VxSdk/struct_vx_sdk_1_1_i_vx_export.html#a3a9884aa7ca1d43e8fb9a4e6f1ce7278',1,'VxSdk::IVxExport']]],
-  ['exporting',['Exporting',['../../CSharpWrapper/class_c_p_p_cli_1_1_export.html#aa1e40310d87591e803c2c5d30d74f0a7a58946eb6fa72f0bdfcd0ebdb20b34597',1,'CPPCli::Export']]],
-  ['exportmanagerform',['ExportManagerForm',['../class_s_d_k_sample_app_1_1_source_1_1_export_manager_form.html',1,'SDKSampleApp::Source']]],
-  ['exportmanagerform',['ExportManagerForm',['../class_s_d_k_sample_app_1_1_source_1_1_export_manager_form.html#a4d760d7ca47037b044d77098e7118219',1,'SDKSampleApp::Source::ExportManagerForm']]],
-  ['exportmanagerform_2ecs',['ExportManagerForm.cs',['../_export_manager_form_8cs.html',1,'']]],
-  ['exportsettingsform',['ExportSettingsForm',['../class_s_d_k_sample_app_1_1_source_1_1_export_settings_form.html#a72b26c1a25c63bad8a5ff63690270ffe',1,'SDKSampleApp::Source::ExportSettingsForm']]],
-  ['exportsettingsform',['ExportSettingsForm',['../class_s_d_k_sample_app_1_1_source_1_1_export_settings_form.html',1,'SDKSampleApp::Source']]],
-  ['exportsettingsform_2ecs',['ExportSettingsForm.cs',['../_export_settings_form_8cs.html',1,'']]]
+  ['exporting',['Exporting',['../../CSharpWrapper/class_c_p_p_cli_1_1_export.html#aa1e40310d87591e803c2c5d30d74f0a7a58946eb6fa72f0bdfcd0ebdb20b34597',1,'CPPCli::Export']]]
 ];

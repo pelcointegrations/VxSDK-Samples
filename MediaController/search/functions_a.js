@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['mediadescription',['MediaDescription',['../struct_media_controller_1_1_rtsp_1_1_media_description.html#a4713d3f3576ed7d8fe06eed769578348',1,'MediaController::Rtsp::MediaDescription']]]
+  ['unlink',['UnLink',['../../VxSdk/struct_vx_sdk_1_1_i_vx_situation.html#adb23ad3b747bad64815622118e7a2c4e',1,'VxSdk::IVxSituation::UnLink(IVxDevice &amp;device) const  =0'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_situation.html#a00ca235fd8dc79fcd014e7d4cab06501',1,'VxSdk::IVxSituation::UnLink(IVxDataSource &amp;dataSource) const  =0']]],
+  ['update',['Update',['../../VxSdk/struct_vx_sdk_1_1_i_vx_data_session.html#a949549e8d22904539263d4aac643e5f6',1,'VxSdk::IVxDataSession']]]
 ];

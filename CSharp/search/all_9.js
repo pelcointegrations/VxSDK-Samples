@@ -6,5 +6,5 @@ var searchData=
   ['hasrecordedvideo',['HasRecordedVideo',['../../CSharpWrapper/class_c_p_p_cli_1_1_data_source.html#a89af03b76c4872847c1234a4ecced757',1,'CPPCli::DataSource']]],
   ['headers',['headers',['../../MediaController/struct_media_controller_1_1_rtsp_1_1_response.html#a980642ffce198d5cf5b5ca61b12924fc',1,'MediaController::Rtsp::Response']]],
   ['height',['Height',['../../CSharpWrapper/class_c_p_p_cli_1_1_data_session.html#afb87121d8d0693be86e2d12acc583f68',1,'CPPCli::DataSession']]],
-  ['high',['High',['../../CSharpWrapper/class_c_p_p_cli_1_1_clip.html#a62d6f7b0b4f419b00a71e79e48d98236a655d20c1ca69519ca647684edbb2db35',1,'CPPCli::Clip::High()'],['../namespace_s_d_k_sample_app_1_1_enums.html#a60f5891bdda37c37de27392f4eb6f573a655d20c1ca69519ca647684edbb2db35',1,'SDKSampleApp.Enums.High()']]]
+  ['high',['High',['../../CSharpWrapper/class_c_p_p_cli_1_1_clip.html#a62d6f7b0b4f419b00a71e79e48d98236a655d20c1ca69519ca647684edbb2db35',1,'CPPCli::Clip']]]
 ];

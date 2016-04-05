@@ -9,6 +9,8 @@ var struct_vx_sdk_1_1_vx_collection_filter_item =
       [ "kName", "struct_vx_sdk_1_1_vx_collection_filter_item.html#a7a426ee3c166b7a59122cd8fdd9ced17a465e25fc0748efc5cbbe2ecca75d9c29", null ],
       [ "kId", "struct_vx_sdk_1_1_vx_collection_filter_item.html#a7a426ee3c166b7a59122cd8fdd9ced17a101a530049c317cb47711afa7cf851a0", null ],
       [ "kStart", "struct_vx_sdk_1_1_vx_collection_filter_item.html#a7a426ee3c166b7a59122cd8fdd9ced17a7c4490f39b34b26b8d00373120ccf00e", null ],
-      [ "kType", "struct_vx_sdk_1_1_vx_collection_filter_item.html#a7a426ee3c166b7a59122cd8fdd9ced17a51fc2bd035cb97d9e2a475b007c8fb6b", null ]
+      [ "kType", "struct_vx_sdk_1_1_vx_collection_filter_item.html#a7a426ee3c166b7a59122cd8fdd9ced17a51fc2bd035cb97d9e2a475b007c8fb6b", null ],
+      [ "kSituationType", "struct_vx_sdk_1_1_vx_collection_filter_item.html#a7a426ee3c166b7a59122cd8fdd9ced17a22f9e3884b5ac4a324555c7ce33fa3ca", null ],
+      [ "kUnassigned", "struct_vx_sdk_1_1_vx_collection_filter_item.html#a7a426ee3c166b7a59122cd8fdd9ced17a8162c65d966df81c15f52f35ad9c977e", null ]
     ] ]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['width',['Width',['../class_c_p_p_cli_1_1_data_session.html#aa5c0c85eaa978c0746bb84f8ff835c3b',1,'CPPCli::DataSession']]]
+  ['yresolution',['yResolution',['../../VxSdk/struct_vx_sdk_1_1_i_vx_data_session.html#a92841ee8af205e5992d8ecb843955f9d',1,'VxSdk::IVxDataSession']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quality',['quality',['../../VxSdk/struct_vx_sdk_1_1_i_vx_data_session.html#a3b0a90f0dd19ee1a7fd829acdc8433ec',1,'VxSdk::IVxDataSession']]]
+  ['recordingtype',['recordingType',['../../VxSdk/struct_vx_sdk_1_1_i_vx_clip.html#a2315e8381ee3566cc5441b4a06273e63',1,'VxSdk::IVxClip']]]
 ];

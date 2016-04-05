@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['irisdirections',['IrisDirections',['../../CSharpWrapper/class_c_p_p_cli_1_1_ptz_controller.html#ab6589f2c4e3515602f0166681a4ac04d',1,'CPPCli::PtzController']]]
+  ['mode',['Mode',['../../MediaController/class_media_controller_1_1_i_controller.html#aeb873b38a229a877fafc92ef3a581f37',1,'MediaController::IController']]],
+  ['modes',['Modes',['../../CSharpWrapper/class_c_p_p_cli_1_1_media_control.html#acf04284305097301ef271f4670615552',1,'CPPCli::MediaControl']]]
 ];

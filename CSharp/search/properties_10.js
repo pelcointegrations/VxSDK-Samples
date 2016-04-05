@@ -1,11 +1,6 @@
 var searchData=
 [
-  ['sdkkey',['SdkKey',['../class_s_d_k_sample_app_1_1_source_1_1_main_form.html#af6252832ae6be3564a24e840bddf8a90',1,'SDKSampleApp::Source::MainForm']]],
   ['secondsremaining',['SecondsRemaining',['../../CSharpWrapper/class_c_p_p_cli_1_1_export.html#aea661cbd69ae06451852169cdf8746cc',1,'CPPCli::Export']]],
-  ['selectedclip',['SelectedClip',['../class_s_d_k_sample_app_1_1_source_1_1_add_clip_form.html#a4e7aab7fcddbac2c2e93b7bcc19659ee',1,'SDKSampleApp::Source::AddClipForm']]],
-  ['selectedcontrol',['SelectedControl',['../class_s_d_k_sample_app_1_1_source_1_1_control_manager.html#aaa4c20ef1070c95287dbeb9ff8eaf302',1,'SDKSampleApp::Source::ControlManager']]],
-  ['selectedlabel',['SelectedLabel',['../class_s_d_k_sample_app_1_1_source_1_1_control_manager.html#ad5a16b3deadca734b7f256bc13606554',1,'SDKSampleApp::Source::ControlManager']]],
-  ['selectedpanel',['SelectedPanel',['../class_s_d_k_sample_app_1_1_source_1_1_control_manager.html#a919c4a5d08e1859f35cb1da59394bcc0',1,'SDKSampleApp::Source::ControlManager']]],
   ['serial',['Serial',['../../CSharpWrapper/class_c_p_p_cli_1_1_device.html#aeb2ab590c89ffe5fce68824eaad5ee71',1,'CPPCli::Device']]],
   ['severity',['Severity',['../../CSharpWrapper/class_c_p_p_cli_1_1_event.html#aa995f2ef0de16da544628cd6cc19df15',1,'CPPCli::Event::Severity()'],['../../CSharpWrapper/class_c_p_p_cli_1_1_new_situation.html#a42aa733c8cd6cd3aa76e0d3a16c18339',1,'CPPCli::NewSituation::Severity()'],['../../CSharpWrapper/class_c_p_p_cli_1_1_situation.html#ae87d1d0274791cdcbfa76ca5ce3d0676',1,'CPPCli::Situation::Severity()']]],
   ['shouldexpandbanner',['ShouldExpandBanner',['../../CSharpWrapper/class_c_p_p_cli_1_1_new_situation.html#a965b1bbd096251a5ab832267c9714bfa',1,'CPPCli::NewSituation::ShouldExpandBanner()'],['../../CSharpWrapper/class_c_p_p_cli_1_1_situation.html#aced7a867aa2308df8a517242579e299e',1,'CPPCli::Situation::ShouldExpandBanner()']]],

@@ -9,6 +9,5 @@ var searchData=
   ['deleteexport',['DeleteExport',['../../CSharpWrapper/class_c_p_p_cli_1_1_v_x_system.html#a753c9d7915242110f5b6ad4d70a715d2',1,'CPPCli::VXSystem::DeleteExport()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_export.html#ab37423770bd8d3caac762d97878ee982',1,'VxSdk::IVxExport::DeleteExport()']]],
   ['deletesituation',['DeleteSituation',['../../CSharpWrapper/class_c_p_p_cli_1_1_v_x_system.html#a01105ecee4cef47021d58c163d3a5bf2',1,'CPPCli::VXSystem::DeleteSituation()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_situation.html#a2a69cfd77923230d4f3a618cbd25f78d',1,'VxSdk::IVxSituation::DeleteSituation()']]],
   ['describe',['Describe',['../../MediaController/class_media_controller_1_1_rtsp_1_1_commands.html#a5498da92caf636c4b4a5033a9eda5d73',1,'MediaController::Rtsp::Commands']]],
-  ['device',['Device',['../../CSharpWrapper/class_c_p_p_cli_1_1_device.html#a64fabf5a4bb6a6884b110738e22f3e05',1,'CPPCli::Device']]],
-  ['downloadprogressform',['DownloadProgressForm',['../class_s_d_k_sample_app_1_1_source_1_1_download_progress_form.html#a79e50077f1731e3a2137aebe79c1a76f',1,'SDKSampleApp::Source::DownloadProgressForm']]]
+  ['device',['Device',['../../CSharpWrapper/class_c_p_p_cli_1_1_device.html#a64fabf5a4bb6a6884b110738e22f3e05',1,'CPPCli::Device']]]
 ];

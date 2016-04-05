@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['ackstate',['ackState',['../../VxSdk/struct_vx_sdk_1_1_i_vx_event.html#a63b353689db46235004a972568cb148f',1,'VxSdk::IVxEvent']]],
-  ['audibleloopdelay',['audibleLoopDelay',['../../VxSdk/struct_vx_sdk_1_1_i_vx_situation.html#a49ffed961ace2cfa3085d4b4df8fba1b',1,'VxSdk::IVxSituation::audibleLoopDelay()'],['../../VxSdk/struct_vx_sdk_1_1_vx_new_situation.html#a5c61818029c4279ea915a2fee4c3bd9d',1,'VxSdk::VxNewSituation::audibleLoopDelay()']]],
-  ['audibleplaycount',['audiblePlayCount',['../../VxSdk/struct_vx_sdk_1_1_i_vx_situation.html#aa2717c70b82b8ac8484a71cdadfb2d05',1,'VxSdk::IVxSituation::audiblePlayCount()'],['../../VxSdk/struct_vx_sdk_1_1_vx_new_situation.html#a3d6c0b99d78f6501d07974b1c4ff15a9',1,'VxSdk::VxNewSituation::audiblePlayCount()']]],
-  ['autoacknowledge',['autoAcknowledge',['../../VxSdk/struct_vx_sdk_1_1_vx_new_situation.html#aa194af2c334b9362acf0069e8780a024',1,'VxSdk::VxNewSituation']]],
-  ['autoacknowledgetime',['autoAcknowledgeTime',['../../VxSdk/struct_vx_sdk_1_1_i_vx_situation.html#a4e2f16328eef3fe4f7a0fdc181176724',1,'VxSdk::IVxSituation']]]
+  ['clips',['clips',['../../VxSdk/struct_vx_sdk_1_1_vx_new_export.html#a70dba44c1cfd4ed86b05269ead640820',1,'VxSdk::VxNewExport']]],
+  ['clipsize',['clipSize',['../../VxSdk/struct_vx_sdk_1_1_vx_new_export.html#ac1b58e21df24ce98913fe2fb45ffd98d',1,'VxSdk::VxNewExport']]],
+  ['collection',['collection',['../../VxSdk/struct_vx_sdk_1_1_vx_collection.html#aa6b66343ba5098e788d6e3c1da23f8c3',1,'VxSdk::VxCollection']]],
+  ['collectionsize',['collectionSize',['../../VxSdk/struct_vx_sdk_1_1_vx_collection.html#a9b339db50d44a0fc986cdd787f1c589b',1,'VxSdk::VxCollection']]],
+  ['completedtime',['completedTime',['../../VxSdk/struct_vx_sdk_1_1_i_vx_export.html#a3e16200fd05a80e3b1ecae4d158ebabb',1,'VxSdk::IVxExport']]]
 ];

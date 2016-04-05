@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['states',['States',['../../CSharpWrapper/class_c_p_p_cli_1_1_data_source.html#a61d68fcfc0e938fe709406ed9801b930',1,'CPPCli::DataSource::States()'],['../../CSharpWrapper/class_c_p_p_cli_1_1_export.html#aa1e40310d87591e803c2c5d30d74f0a7',1,'CPPCli::Export::States()']]],
-  ['streamprotocols',['StreamProtocols',['../../CSharpWrapper/class_c_p_p_cli_1_1_data_interface.html#abc71fe6bdd16582a76e99d5a20fb35e0',1,'CPPCli::DataInterface']]]
+  ['types',['Types',['../../CSharpWrapper/class_c_p_p_cli_1_1_data_source.html#a515c2e6f6e2dfb0ecf2e062efcb65680',1,'CPPCli::DataSource::Types()'],['../../CSharpWrapper/class_c_p_p_cli_1_1_device.html#a9e9bb567a4d33139f8e874925378503d',1,'CPPCli::Device::Types()']]]
 ];

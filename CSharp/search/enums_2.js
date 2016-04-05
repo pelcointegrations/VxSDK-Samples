@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['focusdirections',['FocusDirections',['../../CSharpWrapper/class_c_p_p_cli_1_1_ptz_controller.html#ad7ca95e8ee18a1c22f3380cc45e43116',1,'CPPCli::PtzController']]],
-  ['formats',['Formats',['../../CSharpWrapper/class_c_p_p_cli_1_1_export.html#a5099286740a481c658f0fb9c540982aa',1,'CPPCli::Export']]]
+  ['irisdirections',['IrisDirections',['../../CSharpWrapper/class_c_p_p_cli_1_1_ptz_controller.html#ab6589f2c4e3515602f0166681a4ac04d',1,'CPPCli::PtzController']]]
 ];

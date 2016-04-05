@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['unlink',['UnLink',['../struct_vx_sdk_1_1_i_vx_situation.html#adb23ad3b747bad64815622118e7a2c4e',1,'VxSdk::IVxSituation::UnLink(IVxDevice &amp;device) const  =0'],['../struct_vx_sdk_1_1_i_vx_situation.html#a00ca235fd8dc79fcd014e7d4cab06501',1,'VxSdk::IVxSituation::UnLink(IVxDataSource &amp;dataSource) const  =0']]],
-  ['update',['Update',['../struct_vx_sdk_1_1_i_vx_data_session.html#a949549e8d22904539263d4aac643e5f6',1,'VxSdk::IVxDataSession']]]
+  ['triggerpattern',['TriggerPattern',['../struct_vx_sdk_1_1_i_vx_ptz_controller.html#a1a8d4b3d627cda6b1d68aa3491c5687a',1,'VxSdk::IVxPtzController']]],
+  ['triggerpreset',['TriggerPreset',['../struct_vx_sdk_1_1_i_vx_ptz_controller.html#ad2b9bf465c57c25738f33b2ad8fa1523',1,'VxSdk::IVxPtzController']]]
 ];

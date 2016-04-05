@@ -6,8 +6,8 @@ var searchData=
   ['datainterface_2eh',['DataInterface.h',['../../CSharpWrapper/_data_interface_8h.html',1,'']]],
   ['datainterfaces',['dataInterfaces',['../../VxSdk/struct_vx_sdk_1_1_i_vx_data_source.html#af1467589857083c4702294e73f637a2d',1,'VxSdk::IVxDataSource::dataInterfaces()'],['../../CSharpWrapper/class_c_p_p_cli_1_1_data_source.html#aca2fec75cee24bb63a6c790f7f6719ce',1,'CPPCli::DataSource::DataInterfaces()']]],
   ['datainterfacesize',['dataInterfaceSize',['../../VxSdk/struct_vx_sdk_1_1_i_vx_data_source.html#adf332a3c38459478e693abde970f317e',1,'VxSdk::IVxDataSource']]],
-  ['datasession',['DataSession',['../../CSharpWrapper/class_c_p_p_cli_1_1_data_session.html#aea1bda94b5774516efc27ccc0b33facc',1,'CPPCli::DataSession']]],
   ['datasession',['DataSession',['../../CSharpWrapper/class_c_p_p_cli_1_1_data_session.html',1,'CPPCli']]],
+  ['datasession',['DataSession',['../../CSharpWrapper/class_c_p_p_cli_1_1_data_session.html#aea1bda94b5774516efc27ccc0b33facc',1,'CPPCli::DataSession']]],
   ['datasession_2eh',['DataSession.h',['../../CSharpWrapper/_data_session_8h.html',1,'']]],
   ['datasource',['dataSource',['../../MediaController/struct_media_controller_1_1_media_request.html#a17f9c9a6df737dcd2a4a9ad592d02d53',1,'MediaController::MediaRequest::dataSource()'],['../../CSharpWrapper/class_c_p_p_cli_1_1_data_source.html#a41433348c41c908b00399f9499a794cf',1,'CPPCli::DataSource::DataSource()']]],
   ['datasource',['DataSource',['../../CSharpWrapper/class_c_p_p_cli_1_1_data_source.html',1,'CPPCli']]],
@@ -17,7 +17,7 @@ var searchData=
   ['datasourcename',['dataSourceName',['../../VxSdk/struct_vx_sdk_1_1_i_vx_clip.html#a5168277aa5f368746bac9118430046a8',1,'VxSdk::IVxClip']]],
   ['datasources',['DataSources',['../../CSharpWrapper/class_c_p_p_cli_1_1_device.html#a211fc1188c6e216bdfe4fa56d2380389',1,'CPPCli::Device']]],
   ['datauri',['DataUri',['../../CSharpWrapper/class_c_p_p_cli_1_1_export.html#a1626329c0d36b98e1772892fc6884f1b',1,'CPPCli::Export::DataUri()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_export.html#aa3036f19233f19e47b5e3bb13010bac3',1,'VxSdk::IVxExport::dataUri()']]],
-  ['decoder',['Decoder',['../../CSharpWrapper/class_c_p_p_cli_1_1_device.html#a9e9bb567a4d33139f8e874925378503dae6818a215084646ac80a1a07561ecf35',1,'CPPCli::Device::Decoder()'],['../namespace_s_d_k_sample_app_1_1_enums.html#af32cf618fd668911fbe90d8291ead923ae6818a215084646ac80a1a07561ecf35',1,'SDKSampleApp.Enums.Decoder()']]],
+  ['decoder',['Decoder',['../../CSharpWrapper/class_c_p_p_cli_1_1_device.html#a9e9bb567a4d33139f8e874925378503dae6818a215084646ac80a1a07561ecf35',1,'CPPCli::Device']]],
   ['default',['Default',['../../VxSdk/struct_vx_sdk_1_1_vx_new_situation.html#ab4171af92f4eb1f82743cd0bf05491e2',1,'VxSdk::VxNewSituation']]],
   ['delete',['Delete',['../../VxSdk/struct_vx_sdk_1_1_i_vx_clip.html#af92d767e2c3fb2d7a1d94605285d320c',1,'VxSdk::IVxClip::Delete()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_data_session.html#a96aa75f76eccb499e3767543612011c6',1,'VxSdk::IVxDataSession::Delete()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_data_source.html#a343ab001ccf2c96ef0cf35f18169f080',1,'VxSdk::IVxDataSource::Delete()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_device.html#a1a8bc3d079d756661f08fa05fcc620a1',1,'VxSdk::IVxDevice::Delete()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_event.html#a62f86281e77174ef98c398c3ce8bc5ab',1,'VxSdk::IVxEvent::Delete()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_export.html#ae29a38ba8a475af9003011776d09a5c4',1,'VxSdk::IVxExport::Delete()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_pattern.html#a18ba6e34685674d72c224236311705f8',1,'VxSdk::IVxPattern::Delete()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_preset.html#a8537829a9e872d59813d26147709a70f',1,'VxSdk::IVxPreset::Delete()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_ptz_controller.html#a527e9e41e5537828faab039444b3343d',1,'VxSdk::IVxPtzController::Delete()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_situation.html#a1904b0c798f4c1634f1b4f8747243b24',1,'VxSdk::IVxSituation::Delete()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_system.html#a89441c2a97ea14bff936661dd27631fc',1,'VxSdk::IVxSystem::Delete()']]],
   ['deletedatasession',['DeleteDataSession',['../../VxSdk/struct_vx_sdk_1_1_i_vx_data_session.html#aef80e32b3c161ce7887ab379efb5c687',1,'VxSdk::IVxDataSession']]],
@@ -25,11 +25,8 @@ var searchData=
   ['deletesituation',['DeleteSituation',['../../CSharpWrapper/class_c_p_p_cli_1_1_v_x_system.html#a01105ecee4cef47021d58c163d3a5bf2',1,'CPPCli::VXSystem::DeleteSituation()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_situation.html#a2a69cfd77923230d4f3a618cbd25f78d',1,'VxSdk::IVxSituation::DeleteSituation()']]],
   ['describe',['Describe',['../../MediaController/class_media_controller_1_1_rtsp_1_1_commands.html#a5498da92caf636c4b4a5033a9eda5d73',1,'MediaController::Rtsp::Commands']]],
   ['description',['description',['../../VxSdk/struct_vx_sdk_1_1_i_vx_pattern.html#a168283d3c4499be6041166ae33727e87',1,'VxSdk::IVxPattern::description()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_preset.html#ae82d0e57fe1196de9e76c255d90c8921',1,'VxSdk::IVxPreset::description()'],['../../CSharpWrapper/class_c_p_p_cli_1_1_pattern.html#ae777cb3677bf166ae74a50cd961ba356',1,'CPPCli::Pattern::Description()'],['../../CSharpWrapper/class_c_p_p_cli_1_1_preset.html#a19f157125f4216568f0eaae3a442b09a',1,'CPPCli::Preset::Description()']]],
-  ['device',['Device',['../../CSharpWrapper/class_c_p_p_cli_1_1_device.html',1,'CPPCli']]],
   ['device',['Device',['../../CSharpWrapper/class_c_p_p_cli_1_1_device.html#a64fabf5a4bb6a6884b110738e22f3e05',1,'CPPCli::Device']]],
+  ['device',['Device',['../../CSharpWrapper/class_c_p_p_cli_1_1_device.html',1,'CPPCli']]],
   ['device_2ecpp',['Device.cpp',['../../CSharpWrapper/_device_8cpp.html',1,'']]],
-  ['device_2eh',['Device.h',['../../CSharpWrapper/_device_8h.html',1,'']]],
-  ['downloadprogressform',['DownloadProgressForm',['../class_s_d_k_sample_app_1_1_source_1_1_download_progress_form.html#a79e50077f1731e3a2137aebe79c1a76f',1,'SDKSampleApp::Source::DownloadProgressForm']]],
-  ['downloadprogressform',['DownloadProgressForm',['../class_s_d_k_sample_app_1_1_source_1_1_download_progress_form.html',1,'SDKSampleApp::Source']]],
-  ['downloadprogressform_2ecs',['DownloadProgressForm.cs',['../_download_progress_form_8cs.html',1,'']]]
+  ['device_2eh',['Device.h',['../../CSharpWrapper/_device_8h.html',1,'']]]
 ];

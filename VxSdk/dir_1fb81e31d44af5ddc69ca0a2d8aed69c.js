@@ -1,10 +1,16 @@
 var dir_1fb81e31d44af5ddc69ca0a2d8aed69c =
 [
+    [ "IVxBookmark.h", "_i_vx_bookmark_8h.html", [
+      [ "IVxBookmark", "struct_vx_sdk_1_1_i_vx_bookmark.html", "struct_vx_sdk_1_1_i_vx_bookmark" ]
+    ] ],
     [ "IVxClip.h", "_i_vx_clip_8h.html", [
       [ "IVxClip", "struct_vx_sdk_1_1_i_vx_clip.html", "struct_vx_sdk_1_1_i_vx_clip" ]
     ] ],
     [ "IVxDataInterface.h", "_i_vx_data_interface_8h.html", [
       [ "IVxDataInterface", "struct_vx_sdk_1_1_i_vx_data_interface.html", "struct_vx_sdk_1_1_i_vx_data_interface" ]
+    ] ],
+    [ "IVxDataObject.h", "_i_vx_data_object_8h.html", [
+      [ "IVxDataObject", "struct_vx_sdk_1_1_i_vx_data_object.html", "struct_vx_sdk_1_1_i_vx_data_object" ]
     ] ],
     [ "IVxDataSession.h", "_i_vx_data_session_8h.html", [
       [ "IVxDataSession", "struct_vx_sdk_1_1_i_vx_data_session.html", "struct_vx_sdk_1_1_i_vx_data_session" ]
@@ -12,8 +18,17 @@ var dir_1fb81e31d44af5ddc69ca0a2d8aed69c =
     [ "IVxDataSource.h", "_i_vx_data_source_8h.html", [
       [ "IVxDataSource", "struct_vx_sdk_1_1_i_vx_data_source.html", "struct_vx_sdk_1_1_i_vx_data_source" ]
     ] ],
+    [ "IVxDataStorage.h", "_i_vx_data_storage_8h.html", [
+      [ "IVxDataStorage", "struct_vx_sdk_1_1_i_vx_data_storage.html", "struct_vx_sdk_1_1_i_vx_data_storage" ]
+    ] ],
     [ "IVxDevice.h", "_i_vx_device_8h.html", [
       [ "IVxDevice", "struct_vx_sdk_1_1_i_vx_device.html", "struct_vx_sdk_1_1_i_vx_device" ]
+    ] ],
+    [ "IVxDeviceAssignment.h", "_i_vx_device_assignment_8h.html", [
+      [ "IVxDeviceAssignment", "struct_vx_sdk_1_1_i_vx_device_assignment.html", "struct_vx_sdk_1_1_i_vx_device_assignment" ]
+    ] ],
+    [ "IVxDriver.h", "_i_vx_driver_8h.html", [
+      [ "IVxDriver", "struct_vx_sdk_1_1_i_vx_driver.html", "struct_vx_sdk_1_1_i_vx_driver" ]
     ] ],
     [ "IVxEvent.h", "_i_vx_event_8h.html", "_i_vx_event_8h" ],
     [ "IVxExport.h", "_i_vx_export_8h.html", [
@@ -28,14 +43,38 @@ var dir_1fb81e31d44af5ddc69ca0a2d8aed69c =
     [ "IVxPreset.h", "_i_vx_preset_8h.html", [
       [ "IVxPreset", "struct_vx_sdk_1_1_i_vx_preset.html", "struct_vx_sdk_1_1_i_vx_preset" ]
     ] ],
+    [ "IVxPrivilege.h", "_i_vx_privilege_8h.html", [
+      [ "IVxPrivilege", "struct_vx_sdk_1_1_i_vx_privilege.html", "struct_vx_sdk_1_1_i_vx_privilege" ]
+    ] ],
     [ "IVxPtzController.h", "_i_vx_ptz_controller_8h.html", [
       [ "IVxPtzController", "struct_vx_sdk_1_1_i_vx_ptz_controller.html", "struct_vx_sdk_1_1_i_vx_ptz_controller" ]
+    ] ],
+    [ "IVxPtzLock.h", "_i_vx_ptz_lock_8h.html", [
+      [ "IVxPtzLock", "struct_vx_sdk_1_1_i_vx_ptz_lock.html", "struct_vx_sdk_1_1_i_vx_ptz_lock" ]
+    ] ],
+    [ "IVxRole.h", "_i_vx_role_8h.html", [
+      [ "IVxRole", "struct_vx_sdk_1_1_i_vx_role.html", "struct_vx_sdk_1_1_i_vx_role" ]
+    ] ],
+    [ "IVxSchedule.h", "_i_vx_schedule_8h.html", [
+      [ "IVxSchedule", "struct_vx_sdk_1_1_i_vx_schedule.html", "struct_vx_sdk_1_1_i_vx_schedule" ]
+    ] ],
+    [ "IVxScheduleTrigger.h", "_i_vx_schedule_trigger_8h.html", [
+      [ "IVxScheduleTrigger", "struct_vx_sdk_1_1_i_vx_schedule_trigger.html", "struct_vx_sdk_1_1_i_vx_schedule_trigger" ]
     ] ],
     [ "IVxSituation.h", "_i_vx_situation_8h.html", [
       [ "IVxSituation", "struct_vx_sdk_1_1_i_vx_situation.html", "struct_vx_sdk_1_1_i_vx_situation" ]
     ] ],
     [ "IVxSystem.h", "_i_vx_system_8h.html", [
       [ "IVxSystem", "struct_vx_sdk_1_1_i_vx_system.html", "struct_vx_sdk_1_1_i_vx_system" ]
+    ] ],
+    [ "IVxTag.h", "_i_vx_tag_8h.html", [
+      [ "IVxTag", "struct_vx_sdk_1_1_i_vx_tag.html", "struct_vx_sdk_1_1_i_vx_tag" ]
+    ] ],
+    [ "IVxUser.h", "_i_vx_user_8h.html", [
+      [ "IVxUser", "struct_vx_sdk_1_1_i_vx_user.html", "struct_vx_sdk_1_1_i_vx_user" ]
+    ] ],
+    [ "VxAuthInfo.h", "_vx_auth_info_8h.html", [
+      [ "VxAuthInfo", "struct_vx_sdk_1_1_vx_auth_info.html", "struct_vx_sdk_1_1_vx_auth_info" ]
     ] ],
     [ "VxCollection.h", "_vx_collection_8h.html", [
       [ "VxCollection", "struct_vx_sdk_1_1_vx_collection.html", "struct_vx_sdk_1_1_vx_collection" ]
@@ -50,6 +89,15 @@ var dir_1fb81e31d44af5ddc69ca0a2d8aed69c =
       [ "VxLoginInfo", "struct_vx_sdk_1_1_vx_login_info.html", "struct_vx_sdk_1_1_vx_login_info" ]
     ] ],
     [ "VxMacros.h", "_vx_macros_8h.html", "_vx_macros_8h" ],
+    [ "VxNewBookmark.h", "_vx_new_bookmark_8h.html", [
+      [ "VxNewBookmark", "struct_vx_sdk_1_1_vx_new_bookmark.html", "struct_vx_sdk_1_1_vx_new_bookmark" ]
+    ] ],
+    [ "VxNewDataObject.h", "_vx_new_data_object_8h.html", [
+      [ "VxNewDataObject", "struct_vx_sdk_1_1_vx_new_data_object.html", "struct_vx_sdk_1_1_vx_new_data_object" ]
+    ] ],
+    [ "VxNewDeviceAssignment.h", "_vx_new_device_assignment_8h.html", [
+      [ "VxNewDeviceAssignment", "struct_vx_sdk_1_1_vx_new_device_assignment.html", "struct_vx_sdk_1_1_vx_new_device_assignment" ]
+    ] ],
     [ "VxNewEvent.h", "_vx_new_event_8h.html", [
       [ "VxNewEvent", "struct_vx_sdk_1_1_vx_new_event.html", "struct_vx_sdk_1_1_vx_new_event" ]
     ] ],
@@ -59,26 +107,51 @@ var dir_1fb81e31d44af5ddc69ca0a2d8aed69c =
     [ "VxNewExportClip.h", "_vx_new_export_clip_8h.html", [
       [ "VxNewExportClip", "struct_vx_sdk_1_1_vx_new_export_clip.html", "struct_vx_sdk_1_1_vx_new_export_clip" ]
     ] ],
+    [ "VxNewPrivilege.h", "_vx_new_privilege_8h.html", [
+      [ "VxNewPrivilege", "struct_vx_sdk_1_1_vx_new_privilege.html", "struct_vx_sdk_1_1_vx_new_privilege" ]
+    ] ],
+    [ "VxNewSchedule.h", "_vx_new_schedule_8h.html", [
+      [ "VxNewSchedule", "struct_vx_sdk_1_1_vx_new_schedule.html", "struct_vx_sdk_1_1_vx_new_schedule" ]
+    ] ],
+    [ "VxNewScheduleTrigger.h", "_vx_new_schedule_trigger_8h.html", [
+      [ "VxNewScheduleTrigger", "struct_vx_sdk_1_1_vx_new_schedule_trigger.html", "struct_vx_sdk_1_1_vx_new_schedule_trigger" ]
+    ] ],
     [ "VxNewSituation.h", "_vx_new_situation_8h.html", [
       [ "VxNewSituation", "struct_vx_sdk_1_1_vx_new_situation.html", "struct_vx_sdk_1_1_vx_new_situation" ]
     ] ],
+    [ "VxNewTag.h", "_vx_new_tag_8h.html", [
+      [ "VxNewTag", "struct_vx_sdk_1_1_vx_new_tag.html", "struct_vx_sdk_1_1_vx_new_tag" ]
+    ] ],
+    [ "VxNewUser.h", "_vx_new_user_8h.html", [
+      [ "VxNewUser", "struct_vx_sdk_1_1_vx_new_user.html", "struct_vx_sdk_1_1_vx_new_user" ]
+    ] ],
     [ "VxPrimitives.h", "_vx_primitives_8h.html", [
-      [ "VxResult", "struct_vx_sdk_1_1_vx_result.html", "struct_vx_sdk_1_1_vx_result" ],
-      [ "VxCollectionFilterItem", "struct_vx_sdk_1_1_vx_collection_filter_item.html", "struct_vx_sdk_1_1_vx_collection_filter_item" ],
-      [ "VxStreamProtocol", "struct_vx_sdk_1_1_vx_stream_protocol.html", "struct_vx_sdk_1_1_vx_stream_protocol" ],
       [ "VxAckState", "struct_vx_sdk_1_1_vx_ack_state.html", "struct_vx_sdk_1_1_vx_ack_state" ],
+      [ "VxCollectionFilterItem", "struct_vx_sdk_1_1_vx_collection_filter_item.html", "struct_vx_sdk_1_1_vx_collection_filter_item" ],
       [ "VxDataSourceType", "struct_vx_sdk_1_1_vx_data_source_type.html", "struct_vx_sdk_1_1_vx_data_source_type" ],
+      [ "VxDataStorageType", "struct_vx_sdk_1_1_vx_data_storage_type.html", "struct_vx_sdk_1_1_vx_data_storage_type" ],
       [ "VxDeviceState", "struct_vx_sdk_1_1_vx_device_state.html", "struct_vx_sdk_1_1_vx_device_state" ],
       [ "VxDeviceType", "struct_vx_sdk_1_1_vx_device_type.html", "struct_vx_sdk_1_1_vx_device_type" ],
-      [ "VxRecordingType", "struct_vx_sdk_1_1_vx_recording_type.html", "struct_vx_sdk_1_1_vx_recording_type" ],
-      [ "VxRecordingFramerate", "struct_vx_sdk_1_1_vx_recording_framerate.html", "struct_vx_sdk_1_1_vx_recording_framerate" ],
-      [ "VxRetentionPriority", "struct_vx_sdk_1_1_vx_retention_priority.html", "struct_vx_sdk_1_1_vx_retention_priority" ],
-      [ "VxIrisDirection", "struct_vx_sdk_1_1_vx_iris_direction.html", "struct_vx_sdk_1_1_vx_iris_direction" ],
-      [ "VxFocusDirection", "struct_vx_sdk_1_1_vx_focus_direction.html", "struct_vx_sdk_1_1_vx_focus_direction" ],
-      [ "VxZoomDirection", "struct_vx_sdk_1_1_vx_zoom_direction.html", "struct_vx_sdk_1_1_vx_zoom_direction" ],
       [ "VxExportFormat", "struct_vx_sdk_1_1_vx_export_format.html", "struct_vx_sdk_1_1_vx_export_format" ],
-      [ "VxExportStatus", "struct_vx_sdk_1_1_vx_export_status.html", "struct_vx_sdk_1_1_vx_export_status" ]
+      [ "VxExportStatus", "struct_vx_sdk_1_1_vx_export_status.html", "struct_vx_sdk_1_1_vx_export_status" ],
+      [ "VxFocusDirection", "struct_vx_sdk_1_1_vx_focus_direction.html", "struct_vx_sdk_1_1_vx_focus_direction" ],
+      [ "VxIrisDirection", "struct_vx_sdk_1_1_vx_iris_direction.html", "struct_vx_sdk_1_1_vx_iris_direction" ],
+      [ "VxPermissionId", "struct_vx_sdk_1_1_vx_permission_id.html", "struct_vx_sdk_1_1_vx_permission_id" ],
+      [ "VxRecordingFramerate", "struct_vx_sdk_1_1_vx_recording_framerate.html", "struct_vx_sdk_1_1_vx_recording_framerate" ],
+      [ "VxRecordingType", "struct_vx_sdk_1_1_vx_recording_type.html", "struct_vx_sdk_1_1_vx_recording_type" ],
+      [ "VxRecurrenceType", "struct_vx_sdk_1_1_vx_recurrence_type.html", "struct_vx_sdk_1_1_vx_recurrence_type" ],
+      [ "VxResourceType", "struct_vx_sdk_1_1_vx_resource_type.html", "struct_vx_sdk_1_1_vx_resource_type" ],
+      [ "VxResult", "struct_vx_sdk_1_1_vx_result.html", "struct_vx_sdk_1_1_vx_result" ],
+      [ "VxRetentionPriority", "struct_vx_sdk_1_1_vx_retention_priority.html", "struct_vx_sdk_1_1_vx_retention_priority" ],
+      [ "VxScheduleAction", "struct_vx_sdk_1_1_vx_schedule_action.html", "struct_vx_sdk_1_1_vx_schedule_action" ],
+      [ "VxSituationType", "struct_vx_sdk_1_1_vx_situation_type.html", "struct_vx_sdk_1_1_vx_situation_type" ],
+      [ "VxSnapshotFilterItem", "struct_vx_sdk_1_1_vx_snapshot_filter_item.html", "struct_vx_sdk_1_1_vx_snapshot_filter_item" ],
+      [ "VxStreamProtocol", "struct_vx_sdk_1_1_vx_stream_protocol.html", "struct_vx_sdk_1_1_vx_stream_protocol" ],
+      [ "VxZoomDirection", "struct_vx_sdk_1_1_vx_zoom_direction.html", "struct_vx_sdk_1_1_vx_zoom_direction" ]
     ] ],
     [ "VxSdk.h", "_vx_sdk_8h.html", "_vx_sdk_8h" ],
+    [ "VxSnapshotFilter.h", "_vx_snapshot_filter_8h.html", [
+      [ "VxSnapshotFilter", "struct_vx_sdk_1_1_vx_snapshot_filter.html", "struct_vx_sdk_1_1_vx_snapshot_filter" ]
+    ] ],
     [ "VxUtilities.h", "_vx_utilities_8h.html", "_vx_utilities_8h" ]
 ];

@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['relativemove',['RelativeMove',['../../VxSdk/struct_vx_sdk_1_1_i_vx_ptz_controller.html#aa44dec03a985efd8123b6d1b7505911c',1,'VxSdk::IVxPtzController::RelativeMove()'],['../class_c_p_p_cli_1_1_ptz_controller.html#af1ec158bf337f5c75be82dcf9691c1d9',1,'CPPCli::PtzController::RelativeMove()']]],
-  ['removeobserver',['RemoveObserver',['../../MediaController/class_media_controller_1_1_controller.html#a1a763f2e4c6ed13eefd3e348cac02814',1,'MediaController::Controller::RemoveObserver()'],['../../MediaController/class_media_controller_1_1_gst_wrapper.html#ae61952b746aca7df898cf7faafcfd372',1,'MediaController::GstWrapper::RemoveObserver()'],['../../MediaController/class_media_controller_1_1_i_controller.html#a25fad32d7f94ecc5999bab37ead56842',1,'MediaController::IController::RemoveObserver()']]],
-  ['resetpath',['ResetPath',['../../MediaController/class_media_controller_1_1_rtsp_1_1_commands.html#a5b87b5a5a56ff4c024055c2f29a00ea0',1,'MediaController::Rtsp::Commands']]],
-  ['resume',['Resume',['../../MediaController/class_media_controller_1_1_mjpeg_pull_1_1_stream.html#a3c18d8c4ef0be3b8f6f932363ff25d0b',1,'MediaController::MjpegPull::Stream::Resume()'],['../../MediaController/class_media_controller_1_1_rtsp_1_1_stream.html#ae479b9bed38549d274d24f69cf277637',1,'MediaController::Rtsp::Stream::Resume()'],['../../MediaController/class_media_controller_1_1_stream_base.html#a02122d0d27657a27a1c2c2718bd21ef0',1,'MediaController::StreamBase::Resume()']]]
+  ['unixtimetorfc3339',['UnixTimeToRfc3339',['../../MediaController/namespace_media_controller_1_1_utilities.html#ac9d68406b6736a96222b0aeefe4c6501',1,'MediaController::Utilities']]],
+  ['unlink',['UnLink',['../../VxSdk/struct_vx_sdk_1_1_i_vx_situation.html#adb23ad3b747bad64815622118e7a2c4e',1,'VxSdk::IVxSituation::UnLink(IVxDevice &amp;device) const  =0'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_situation.html#a00ca235fd8dc79fcd014e7d4cab06501',1,'VxSdk::IVxSituation::UnLink(IVxDataSource &amp;dataSource) const  =0']]],
+  ['update',['Update',['../../VxSdk/struct_vx_sdk_1_1_i_vx_data_session.html#a949549e8d22904539263d4aac643e5f6',1,'VxSdk::IVxDataSession']]],
+  ['updatepipeline',['UpdatePipeline',['../../MediaController/class_media_controller_1_1_gst_wrapper.html#a44808fa8e212ecb070da05bef1f9ace9',1,'MediaController::GstWrapper']]]
 ];

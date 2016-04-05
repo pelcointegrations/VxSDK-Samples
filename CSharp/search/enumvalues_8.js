@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['manager',['Manager',['../../CSharpWrapper/class_c_p_p_cli_1_1_device.html#a9e9bb567a4d33139f8e874925378503daae94be3cd532ce4a025884819eb08c98',1,'CPPCli::Device::Manager()'],['../namespace_s_d_k_sample_app_1_1_enums.html#af32cf618fd668911fbe90d8291ead923aae94be3cd532ce4a025884819eb08c98',1,'SDKSampleApp.Enums.Manager()']]],
-  ['manual',['Manual',['../../CSharpWrapper/class_c_p_p_cli_1_1_clip.html#acf036b9a9f760b348055f5126188e84eae1ba155a9f2e8c3be94020eef32a0301',1,'CPPCli::Clip::Manual()'],['../namespace_s_d_k_sample_app_1_1_enums.html#adfdd7b436cd920413c37c175bd8c6e34ae1ba155a9f2e8c3be94020eef32a0301',1,'SDKSampleApp.Enums.Manual()']]],
-  ['medium',['Medium',['../../CSharpWrapper/class_c_p_p_cli_1_1_clip.html#a62d6f7b0b4f419b00a71e79e48d98236a87f8a6ab85c9ced3702b4ea641ad4bb5',1,'CPPCli::Clip::Medium()'],['../namespace_s_d_k_sample_app_1_1_enums.html#a60f5891bdda37c37de27392f4eb6f573a87f8a6ab85c9ced3702b4ea641ad4bb5',1,'SDKSampleApp.Enums.Medium()']]],
-  ['mg',['Mg',['../../CSharpWrapper/class_c_p_p_cli_1_1_device.html#a9e9bb567a4d33139f8e874925378503daaf6cdb852ac107524b150b227c2886e6',1,'CPPCli::Device::Mg()'],['../namespace_s_d_k_sample_app_1_1_enums.html#af32cf618fd668911fbe90d8291ead923aaf6cdb852ac107524b150b227c2886e6',1,'SDKSampleApp.Enums.Mg()']]],
-  ['mjpegpull',['MjpegPull',['../../CSharpWrapper/class_c_p_p_cli_1_1_data_interface.html#abc71fe6bdd16582a76e99d5a20fb35e0a25b72b3f9afc6efc117d5d8109195fdc',1,'CPPCli::DataInterface::MjpegPull()'],['../namespace_s_d_k_sample_app_1_1_enums.html#a9f1969ae6142d250aa7c18d5b8c01004a25b72b3f9afc6efc117d5d8109195fdc',1,'SDKSampleApp.Enums.MjpegPull()']]],
+  ['manager',['Manager',['../../CSharpWrapper/class_c_p_p_cli_1_1_device.html#a9e9bb567a4d33139f8e874925378503daae94be3cd532ce4a025884819eb08c98',1,'CPPCli::Device']]],
+  ['manual',['Manual',['../../CSharpWrapper/class_c_p_p_cli_1_1_clip.html#acf036b9a9f760b348055f5126188e84eae1ba155a9f2e8c3be94020eef32a0301',1,'CPPCli::Clip']]],
+  ['medium',['Medium',['../../CSharpWrapper/class_c_p_p_cli_1_1_clip.html#a62d6f7b0b4f419b00a71e79e48d98236a87f8a6ab85c9ced3702b4ea641ad4bb5',1,'CPPCli::Clip']]],
+  ['mg',['Mg',['../../CSharpWrapper/class_c_p_p_cli_1_1_device.html#a9e9bb567a4d33139f8e874925378503daaf6cdb852ac107524b150b227c2886e6',1,'CPPCli::Device']]],
+  ['mjpegpull',['MjpegPull',['../../CSharpWrapper/class_c_p_p_cli_1_1_data_interface.html#abc71fe6bdd16582a76e99d5a20fb35e0a25b72b3f9afc6efc117d5d8109195fdc',1,'CPPCli::DataInterface']]],
   ['mkvzip',['MkvZip',['../../CSharpWrapper/class_c_p_p_cli_1_1_export.html#a5099286740a481c658f0fb9c540982aaa22ede624179d7924a226fea4faa5c4de',1,'CPPCli::Export']]],
-  ['monitor',['Monitor',['../../CSharpWrapper/class_c_p_p_cli_1_1_device.html#a9e9bb567a4d33139f8e874925378503dad2986ac8cb6bd55892099c1ffd6b1f6f',1,'CPPCli::Device::Monitor()'],['../namespace_s_d_k_sample_app_1_1_enums.html#af32cf618fd668911fbe90d8291ead923ad2986ac8cb6bd55892099c1ffd6b1f6f',1,'SDKSampleApp.Enums.Monitor()']]],
-  ['motion',['Motion',['../../CSharpWrapper/class_c_p_p_cli_1_1_clip.html#acf036b9a9f760b348055f5126188e84ea8226588f03da49b857e5ddf8c508dd2d',1,'CPPCli::Clip::Motion()'],['../namespace_s_d_k_sample_app_1_1_enums.html#adfdd7b436cd920413c37c175bd8c6e34a8226588f03da49b857e5ddf8c508dd2d',1,'SDKSampleApp.Enums.Motion()']]],
+  ['monitor',['Monitor',['../../CSharpWrapper/class_c_p_p_cli_1_1_device.html#a9e9bb567a4d33139f8e874925378503dad2986ac8cb6bd55892099c1ffd6b1f6f',1,'CPPCli::Device']]],
+  ['motion',['Motion',['../../CSharpWrapper/class_c_p_p_cli_1_1_clip.html#acf036b9a9f760b348055f5126188e84ea8226588f03da49b857e5ddf8c508dd2d',1,'CPPCli::Clip']]],
   ['mp4',['Mp4',['../../CSharpWrapper/class_c_p_p_cli_1_1_export.html#a5099286740a481c658f0fb9c540982aaa7d761542d4b5ea168dc156e85a9a2949',1,'CPPCli::Export']]]
 ];

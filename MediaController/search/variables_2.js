@@ -1,10 +1,9 @@
 var searchData=
 [
-  ['clips',['clips',['../../VxSdk/struct_vx_sdk_1_1_vx_new_export.html#a70dba44c1cfd4ed86b05269ead640820',1,'VxSdk::VxNewExport']]],
-  ['clipsize',['clipSize',['../../VxSdk/struct_vx_sdk_1_1_vx_new_export.html#ac1b58e21df24ce98913fe2fb45ffd98d',1,'VxSdk::VxNewExport']]],
-  ['collection',['collection',['../../VxSdk/struct_vx_sdk_1_1_vx_collection.html#aa6b66343ba5098e788d6e3c1da23f8c3',1,'VxSdk::VxCollection']]],
-  ['collectionsize',['collectionSize',['../../VxSdk/struct_vx_sdk_1_1_vx_collection.html#a9b339db50d44a0fc986cdd787f1c589b',1,'VxSdk::VxCollection']]],
-  ['completedtime',['completedTime',['../../VxSdk/struct_vx_sdk_1_1_i_vx_export.html#a3e16200fd05a80e3b1ecae4d158ebabb',1,'VxSdk::IVxExport']]],
-  ['content',['content',['../struct_media_controller_1_1_rtsp_1_1_response.html#ab1eb5333e6dc0068cf7be6a6fbc90286',1,'MediaController::Rtsp::Response']]],
-  ['currenttimestamp',['currentTimestamp',['../struct_media_controller_1_1_gst_vars.html#a294d02b1d114b3fe49f7f6c0c2bf7df4',1,'MediaController::GstVars']]]
+  ['datainterfaces',['dataInterfaces',['../../VxSdk/struct_vx_sdk_1_1_i_vx_data_source.html#af1467589857083c4702294e73f637a2d',1,'VxSdk::IVxDataSource']]],
+  ['datainterfacesize',['dataInterfaceSize',['../../VxSdk/struct_vx_sdk_1_1_i_vx_data_source.html#adf332a3c38459478e693abde970f317e',1,'VxSdk::IVxDataSource']]],
+  ['datasourceid',['dataSourceId',['../../VxSdk/struct_vx_sdk_1_1_i_vx_clip.html#a6eff1302892dd02ba665c27ee8d9e246',1,'VxSdk::IVxClip::dataSourceId()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_export_clip.html#a5f18d0a23299a355997f8b101c89967a',1,'VxSdk::IVxExportClip::dataSourceId()'],['../../VxSdk/struct_vx_sdk_1_1_vx_new_export_clip.html#a839d776995f19a1b6e50e712fb125fb2',1,'VxSdk::VxNewExportClip::dataSourceId()']]],
+  ['datasourcename',['dataSourceName',['../../VxSdk/struct_vx_sdk_1_1_i_vx_clip.html#a5168277aa5f368746bac9118430046a8',1,'VxSdk::IVxClip']]],
+  ['datauri',['dataUri',['../../VxSdk/struct_vx_sdk_1_1_i_vx_export.html#aa3036f19233f19e47b5e3bb13010bac3',1,'VxSdk::IVxExport']]],
+  ['description',['description',['../../VxSdk/struct_vx_sdk_1_1_i_vx_pattern.html#a168283d3c4499be6041166ae33727e87',1,'VxSdk::IVxPattern::description()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_preset.html#ae82d0e57fe1196de9e76c255d90c8921',1,'VxSdk::IVxPreset::description()']]]
 ];

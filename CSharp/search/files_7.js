@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['newevent_2eh',['NewEvent.h',['../../CSharpWrapper/_new_event_8h.html',1,'']]],
-  ['newexport_2ecpp',['NewExport.cpp',['../../CSharpWrapper/_new_export_8cpp.html',1,'']]],
-  ['newexport_2eh',['NewExport.h',['../../CSharpWrapper/_new_export_8h.html',1,'']]],
-  ['newexportclip_2eh',['NewExportClip.h',['../../CSharpWrapper/_new_export_clip_8h.html',1,'']]],
-  ['newexportform_2ecs',['NewExportForm.cs',['../_new_export_form_8cs.html',1,'']]],
-  ['newsituation_2eh',['NewSituation.h',['../../CSharpWrapper/_new_situation_8h.html',1,'']]]
+  ['pattern_2ecpp',['Pattern.cpp',['../../CSharpWrapper/_pattern_8cpp.html',1,'']]],
+  ['pattern_2eh',['Pattern.h',['../../CSharpWrapper/_pattern_8h.html',1,'']]],
+  ['preset_2ecpp',['Preset.cpp',['../../CSharpWrapper/_preset_8cpp.html',1,'']]],
+  ['preset_2eh',['Preset.h',['../../CSharpWrapper/_preset_8h.html',1,'']]],
+  ['ptzcontroller_2ecpp',['PtzController.cpp',['../../CSharpWrapper/_ptz_controller_8cpp.html',1,'']]],
+  ['ptzcontroller_2eh',['PtzController.h',['../../CSharpWrapper/_ptz_controller_8h.html',1,'']]]
 ];

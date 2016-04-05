@@ -1,6 +1,5 @@
 var files =
 [
-    [ "vxsdk", "dir_6f2bbc259acbf2c00bc5315c0044b8e4.html", "dir_6f2bbc259acbf2c00bc5315c0044b8e4" ],
     [ "Clip.h", "../CSharpWrapper/_clip_8h.html", null ],
     [ "DataInterface.h", "../CSharpWrapper/_data_interface_8h.html", null ],
     [ "DataSession.h", "../CSharpWrapper/_data_session_8h.html", null ],

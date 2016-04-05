@@ -13,6 +13,7 @@ var struct_vx_sdk_1_1_i_vx_ptz_controller =
     [ "GetPatterns", "struct_vx_sdk_1_1_i_vx_ptz_controller.html#ad41b41740cee54b2e56bcd031456fe75", null ],
     [ "GetPosition", "struct_vx_sdk_1_1_i_vx_ptz_controller.html#a9869f466cff27142647f292f9841f843", null ],
     [ "GetPresets", "struct_vx_sdk_1_1_i_vx_ptz_controller.html#aafb7d2e038dc0fa6c01d3e7c2373ded2", null ],
+    [ "GetPtzLock", "struct_vx_sdk_1_1_i_vx_ptz_controller.html#a93ea89980aa5c6136976ffdc5e858c4d", null ],
     [ "PtzStop", "struct_vx_sdk_1_1_i_vx_ptz_controller.html#a490c9e16c48ef4b7808fc43424ab9d82", null ],
     [ "RelativeMove", "struct_vx_sdk_1_1_i_vx_ptz_controller.html#aa44dec03a985efd8123b6d1b7505911c", null ],
     [ "TriggerPattern", "struct_vx_sdk_1_1_i_vx_ptz_controller.html#a1a8d4b3d627cda6b1d68aa3491c5687a", null ],

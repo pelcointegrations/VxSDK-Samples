@@ -1,0 +1,27 @@
+var struct_vx_sdk_1_1_vx_new_schedule_trigger =
+[
+    [ "VxNewScheduleTrigger", "struct_vx_sdk_1_1_vx_new_schedule_trigger.html#a96dad848ef6a172ddd9df02f72c4a9bb", null ],
+    [ "VxNewScheduleTrigger", "struct_vx_sdk_1_1_vx_new_schedule_trigger.html#a979af7410580fc5432347b99462a87a4", null ],
+    [ "~VxNewScheduleTrigger", "struct_vx_sdk_1_1_vx_new_schedule_trigger.html#a73715ca47b9e8a38018f53f75dd27d7c", null ],
+    [ "Clear", "struct_vx_sdk_1_1_vx_new_schedule_trigger.html#ad80e65a7353c9373137a0128e48c173a", null ],
+    [ "dailyEndTime", "struct_vx_sdk_1_1_vx_new_schedule_trigger.html#a5de028ad6da5a083bcf4245c7729a009", null ],
+    [ "dailyStartTime", "struct_vx_sdk_1_1_vx_new_schedule_trigger.html#a343af41f592d68dcfdfea2403921c4e4", null ],
+    [ "endDate", "struct_vx_sdk_1_1_vx_new_schedule_trigger.html#a4b72743841ea30e531760fe29f79c085", null ],
+    [ "event", "struct_vx_sdk_1_1_vx_new_schedule_trigger.html#a999c5e5218017fdf377ebf71898d7954", null ],
+    [ "eventProperties", "struct_vx_sdk_1_1_vx_new_schedule_trigger.html#af7011ac2344311f621421af4da94d7fa", null ],
+    [ "eventPropertySize", "struct_vx_sdk_1_1_vx_new_schedule_trigger.html#a83ecf136b6591188ff9eac53d121800d", null ],
+    [ "eventSourceDevice", "struct_vx_sdk_1_1_vx_new_schedule_trigger.html#a4999bc1de9ed8bf49188f310597be17c", null ],
+    [ "framerate", "struct_vx_sdk_1_1_vx_new_schedule_trigger.html#a60b550760aa7759b855216776c878bf2", null ],
+    [ "id", "struct_vx_sdk_1_1_vx_new_schedule_trigger.html#a3f2f91e4df71b30e527e0f0ff497f161", null ],
+    [ "postTrigger", "struct_vx_sdk_1_1_vx_new_schedule_trigger.html#a8180f3eada8c4ade006a7149bd8225cc", null ],
+    [ "preTrigger", "struct_vx_sdk_1_1_vx_new_schedule_trigger.html#a6f1d23d7cea090eea5e453cd67e0f6d6", null ],
+    [ "recurMonthly", "struct_vx_sdk_1_1_vx_new_schedule_trigger.html#acf6e5fb05afaabcbf7dc1a4af9177066", null ],
+    [ "recurMonthlySize", "struct_vx_sdk_1_1_vx_new_schedule_trigger.html#aac298e4bb612991bbc3c02dd5c83d459", null ],
+    [ "recurrence", "struct_vx_sdk_1_1_vx_new_schedule_trigger.html#a995770b843dac049d5cc7caf2b591924", null ],
+    [ "recurWeekly", "struct_vx_sdk_1_1_vx_new_schedule_trigger.html#a90e0b352bd5c8ccea61d4c4ea1713de8", null ],
+    [ "recurWeeklySize", "struct_vx_sdk_1_1_vx_new_schedule_trigger.html#a3cb6492d5ec69641da00c8380c0270c5", null ],
+    [ "recurYearly", "struct_vx_sdk_1_1_vx_new_schedule_trigger.html#a65a658b02569c634e24ac2d61ec9ec21", null ],
+    [ "recurYearlySize", "struct_vx_sdk_1_1_vx_new_schedule_trigger.html#a28a0e67c8a70233bd77ed3eacd392df3", null ],
+    [ "startDate", "struct_vx_sdk_1_1_vx_new_schedule_trigger.html#a4e412b7631cbaf7c345f2f1ea1df698c", null ],
+    [ "timeout", "struct_vx_sdk_1_1_vx_new_schedule_trigger.html#a9a0533750dc8c305bc666b7ed85ede8b", null ]
+];
