@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['webclientdownloadfilecompleted',['WebClientDownloadFileCompleted',['../class_s_d_k_sample_app_1_1_source_1_1_download_progress_form.html#a8dbd897688080e13eb51f798ae9330ce',1,'SDKSampleApp::Source::DownloadProgressForm']]],
-  ['webclientdownloadprogresschanged',['WebClientDownloadProgressChanged',['../class_s_d_k_sample_app_1_1_source_1_1_download_progress_form.html#a05283de03cc309ece1acffdce7aef242',1,'SDKSampleApp::Source::DownloadProgressForm']]],
-  ['writetolog',['WriteToLog',['../class_s_d_k_sample_app_1_1_source_1_1_main_form.html#adad5207b5dabbc249810282737e645ac',1,'SDKSampleApp::Source::MainForm']]]
+  ['refreshclipimages',['RefreshClipImages',['../class_s_d_k_sample_app_1_1_source_1_1_add_clip_form.html#aeff6ebe43cbdf4bece8908b37a576f86',1,'SDKSampleApp::Source::AddClipForm']]],
+  ['removedeviceassignmentform',['RemoveDeviceAssignmentForm',['../class_s_d_k_sample_app_1_1_source_1_1_remove_device_assignment_form.html#acbcf252225efb262098459d044d1ccc6',1,'SDKSampleApp::Source::RemoveDeviceAssignmentForm']]],
+  ['rolemanagerform',['RoleManagerForm',['../class_s_d_k_sample_app_1_1_source_1_1_role_manager_form.html#a3a2226c05ce98a7d2f41ba9a602da869',1,'SDKSampleApp::Source::RoleManagerForm']]]
 ];

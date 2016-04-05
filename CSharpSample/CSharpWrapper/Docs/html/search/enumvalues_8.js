@@ -1,12 +1,19 @@
 var searchData=
 [
+  ['manageaggregatoraccount',['ManageAggregatorAccount',['../class_c_p_p_cli_1_1_privilege.html#aafa1578cd2326685f3238c33a26db1eba1dd3856eb2dd654dc66837a4b7b906f5',1,'CPPCli::Privilege']]],
+  ['managemapfiles',['ManageMapFiles',['../class_c_p_p_cli_1_1_privilege.html#aafa1578cd2326685f3238c33a26db1eba514d27ab603d6e8dfdd20e578123cfda',1,'CPPCli::Privilege']]],
   ['manager',['Manager',['../class_c_p_p_cli_1_1_device.html#a9e9bb567a4d33139f8e874925378503daae94be3cd532ce4a025884819eb08c98',1,'CPPCli::Device']]],
+  ['manageroles',['ManageRoles',['../class_c_p_p_cli_1_1_privilege.html#aafa1578cd2326685f3238c33a26db1ebaec11b4c7b749646a56ace84ff0f81aa3',1,'CPPCli::Privilege']]],
+  ['managesystemtags',['ManageSystemTags',['../class_c_p_p_cli_1_1_privilege.html#aafa1578cd2326685f3238c33a26db1eba7a564eda045d0a93df9885de17c46b1a',1,'CPPCli::Privilege']]],
+  ['managesystemviews',['ManageSystemViews',['../class_c_p_p_cli_1_1_privilege.html#aafa1578cd2326685f3238c33a26db1ebab10ca40fb85e7f2f541e9c920b4e5b5f',1,'CPPCli::Privilege']]],
+  ['manageuseraccounts',['ManageUserAccounts',['../class_c_p_p_cli_1_1_privilege.html#aafa1578cd2326685f3238c33a26db1eba9ff07a6003bf3cc6fcfe0275be67dfaa',1,'CPPCli::Privilege']]],
   ['manual',['Manual',['../class_c_p_p_cli_1_1_clip.html#acf036b9a9f760b348055f5126188e84eae1ba155a9f2e8c3be94020eef32a0301',1,'CPPCli::Clip']]],
   ['medium',['Medium',['../class_c_p_p_cli_1_1_clip.html#a62d6f7b0b4f419b00a71e79e48d98236a87f8a6ab85c9ced3702b4ea641ad4bb5',1,'CPPCli::Clip']]],
   ['mg',['Mg',['../class_c_p_p_cli_1_1_device.html#a9e9bb567a4d33139f8e874925378503daaf6cdb852ac107524b150b227c2886e6',1,'CPPCli::Device']]],
   ['mjpegpull',['MjpegPull',['../class_c_p_p_cli_1_1_data_interface.html#abc71fe6bdd16582a76e99d5a20fb35e0a25b72b3f9afc6efc117d5d8109195fdc',1,'CPPCli::DataInterface']]],
   ['mkvzip',['MkvZip',['../class_c_p_p_cli_1_1_export.html#a5099286740a481c658f0fb9c540982aaa22ede624179d7924a226fea4faa5c4de',1,'CPPCli::Export']]],
   ['monitor',['Monitor',['../class_c_p_p_cli_1_1_device.html#a9e9bb567a4d33139f8e874925378503dad2986ac8cb6bd55892099c1ffd6b1f6f',1,'CPPCli::Device']]],
-  ['motion',['Motion',['../class_c_p_p_cli_1_1_clip.html#acf036b9a9f760b348055f5126188e84ea8226588f03da49b857e5ddf8c508dd2d',1,'CPPCli::Clip']]],
+  ['monthly',['Monthly',['../class_c_p_p_cli_1_1_schedule_trigger.html#a13b46a6775273cbdb1a68fba425e5722a9030e39f00132d583da4122532e509e9',1,'CPPCli::ScheduleTrigger']]],
+  ['motion',['Motion',['../class_c_p_p_cli_1_1_clip.html#acf036b9a9f760b348055f5126188e84ea8226588f03da49b857e5ddf8c508dd2d',1,'CPPCli::Clip::Motion()'],['../class_c_p_p_cli_1_1_schedule_trigger.html#ac3c8fa22341a3764ce1694e96019138ba8226588f03da49b857e5ddf8c508dd2d',1,'CPPCli::ScheduleTrigger::Motion()']]],
   ['mp4',['Mp4',['../class_c_p_p_cli_1_1_export.html#a5099286740a481c658f0fb9c540982aaa7d761542d4b5ea168dc156e85a9a2949',1,'CPPCli::Export']]]
 ];

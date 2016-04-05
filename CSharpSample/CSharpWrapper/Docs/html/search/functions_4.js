@@ -1,8 +1,19 @@
 var searchData=
 [
-  ['event',['Event',['../class_c_p_p_cli_1_1_event.html#a67f8ddb1179e6c8c2f7235e001ff573f',1,'CPPCli::Event']]],
-  ['eventcallbackdelegate',['EventCallbackDelegate',['../class_c_p_p_cli_1_1_v_x_system.html#aeb55a88b4508d23122acd09f9ecf6af9',1,'CPPCli::VXSystem']]],
-  ['eventdelegate',['EventDelegate',['../class_c_p_p_cli_1_1_v_x_system.html#a00a54ff47433b31e2a2c974f8d1f8af7',1,'CPPCli::VXSystem']]],
-  ['export',['Export',['../class_c_p_p_cli_1_1_export.html#a741f9a7a48b2049c61535182849961e1',1,'CPPCli::Export']]],
-  ['exportclip',['ExportClip',['../class_c_p_p_cli_1_1_export_clip.html#a62b459acfe32782d8fad20bee3e0cea5',1,'CPPCli::ExportClip']]]
+  ['datainterface',['DataInterface',['../class_c_p_p_cli_1_1_data_interface.html#a2a07eadb0067d845e1d6302baa6cc1a4',1,'CPPCli::DataInterface']]],
+  ['dataobject',['DataObject',['../class_c_p_p_cli_1_1_data_object.html#adfd4d37b804c35699c0b5af15c75d824',1,'CPPCli::DataObject']]],
+  ['datasession',['DataSession',['../class_c_p_p_cli_1_1_data_session.html#aea1bda94b5774516efc27ccc0b33facc',1,'CPPCli::DataSession']]],
+  ['datasource',['DataSource',['../class_c_p_p_cli_1_1_data_source.html#a41433348c41c908b00399f9499a794cf',1,'CPPCli::DataSource']]],
+  ['datastorage',['DataStorage',['../class_c_p_p_cli_1_1_data_storage.html#a08d38330f472697c34304e3aca24a673',1,'CPPCli::DataStorage']]],
+  ['deletebookmark',['DeleteBookmark',['../class_c_p_p_cli_1_1_v_x_system.html#a0b22bfb210d70b0017f158a93810c7e2',1,'CPPCli::VXSystem']]],
+  ['deletedataobject',['DeleteDataObject',['../class_c_p_p_cli_1_1_v_x_system.html#a311059c04c99ea13afebf78276595301',1,'CPPCli::VXSystem']]],
+  ['deleteexport',['DeleteExport',['../class_c_p_p_cli_1_1_v_x_system.html#a753c9d7915242110f5b6ad4d70a715d2',1,'CPPCli::VXSystem']]],
+  ['deleterole',['DeleteRole',['../class_c_p_p_cli_1_1_v_x_system.html#ab17818181352edf703ec9f7ecb4acc22',1,'CPPCli::VXSystem']]],
+  ['deleteschedule',['DeleteSchedule',['../class_c_p_p_cli_1_1_v_x_system.html#a7bcc0d7afc635845a7dc705b10125401',1,'CPPCli::VXSystem']]],
+  ['deletesituation',['DeleteSituation',['../class_c_p_p_cli_1_1_v_x_system.html#a01105ecee4cef47021d58c163d3a5bf2',1,'CPPCli::VXSystem']]],
+  ['deletetag',['DeleteTag',['../class_c_p_p_cli_1_1_v_x_system.html#aac9d9b918a96bd6d30139f49f6150164',1,'CPPCli::VXSystem']]],
+  ['deleteuser',['DeleteUser',['../class_c_p_p_cli_1_1_v_x_system.html#a89ad85f26160a64e9f762a94892d822a',1,'CPPCli::VXSystem']]],
+  ['device',['Device',['../class_c_p_p_cli_1_1_device.html#a64fabf5a4bb6a6884b110738e22f3e05',1,'CPPCli::Device']]],
+  ['deviceassignment',['DeviceAssignment',['../class_c_p_p_cli_1_1_device_assignment.html#a0ecbba99383e5dd56372b95989388eab',1,'CPPCli::DeviceAssignment']]],
+  ['driver',['Driver',['../class_c_p_p_cli_1_1_driver.html#af6057de2a3c491641c21c40d59a6647c',1,'CPPCli::Driver']]]
 ];

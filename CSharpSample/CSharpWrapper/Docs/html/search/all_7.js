@@ -1,7 +1,20 @@
 var searchData=
 [
-  ['haslivestream',['HasLiveStream',['../class_c_p_p_cli_1_1_data_source.html#a6b8abdeb127122816b897ac11dbb3f9a',1,'CPPCli::DataSource']]],
-  ['hasrecordedvideo',['HasRecordedVideo',['../class_c_p_p_cli_1_1_data_source.html#a89af03b76c4872847c1234a4ecced757',1,'CPPCli::DataSource']]],
-  ['height',['Height',['../class_c_p_p_cli_1_1_data_session.html#afb87121d8d0693be86e2d12acc583f68',1,'CPPCli::DataSession']]],
-  ['high',['High',['../class_c_p_p_cli_1_1_clip.html#a62d6f7b0b4f419b00a71e79e48d98236a655d20c1ca69519ca647684edbb2db35',1,'CPPCli::Clip']]]
+  ['generatordeviceid',['GeneratorDeviceId',['../class_c_p_p_cli_1_1_event.html#a02adc69a9fe4c6a56acaeb70f1e59c44',1,'CPPCli::Event::GeneratorDeviceId()'],['../class_c_p_p_cli_1_1_new_event.html#acf730768f021d7777bc559033373cf29',1,'CPPCli::NewEvent::GeneratorDeviceId()']]],
+  ['getbookmarks',['GetBookmarks',['../class_c_p_p_cli_1_1_v_x_system.html#ac1bf3dc5baa1c1b040e93a81b2d371f8',1,'CPPCli::VXSystem']]],
+  ['getdataobjects',['GetDataObjects',['../class_c_p_p_cli_1_1_v_x_system.html#ab8dc68d3889af25a521a2c2b168427dd',1,'CPPCli::VXSystem']]],
+  ['getdatasources',['GetDataSources',['../class_c_p_p_cli_1_1_v_x_system.html#a79e08a75318cad32e828ae2c282d569e',1,'CPPCli::VXSystem']]],
+  ['getdatastorages',['GetDataStorages',['../class_c_p_p_cli_1_1_v_x_system.html#a79dc401567f320cd0ebda7349c82618e',1,'CPPCli::VXSystem']]],
+  ['getdevices',['GetDevices',['../class_c_p_p_cli_1_1_v_x_system.html#ac62f3a99b57100e33088348c196df269',1,'CPPCli::VXSystem']]],
+  ['getexports',['GetExports',['../class_c_p_p_cli_1_1_v_x_system.html#a3cccc3a30b245e19c776236afca72458',1,'CPPCli::VXSystem']]],
+  ['getlinks',['GetLinks',['../class_c_p_p_cli_1_1_schedule.html#afe119db28e0a262762bf3012011ec9ef',1,'CPPCli::Schedule']]],
+  ['getpatterns',['GetPatterns',['../class_c_p_p_cli_1_1_ptz_controller.html#a25cc53c7ac96d003a284c6bea41a4932',1,'CPPCli::PtzController']]],
+  ['getpresets',['GetPresets',['../class_c_p_p_cli_1_1_ptz_controller.html#a7d645e59e5d0dc205ef040e851cba574',1,'CPPCli::PtzController']]],
+  ['getroles',['GetRoles',['../class_c_p_p_cli_1_1_v_x_system.html#a0837fc2ecc4ea39a50397a6e137a72c0',1,'CPPCli::VXSystem']]],
+  ['getschedules',['GetSchedules',['../class_c_p_p_cli_1_1_v_x_system.html#a53bc587706ce1c30194b0377bb3d5e81',1,'CPPCli::VXSystem']]],
+  ['getsituations',['GetSituations',['../class_c_p_p_cli_1_1_v_x_system.html#a97c15b4c686df544ba284b5fb2740572',1,'CPPCli::VXSystem']]],
+  ['getsnapshotendpoint',['GetSnapshotEndpoint',['../class_c_p_p_cli_1_1_clip.html#a4736e7d4e94f76405d7d8b9a2db98560',1,'CPPCli::Clip']]],
+  ['gettags',['GetTags',['../class_c_p_p_cli_1_1_v_x_system.html#aa8833633442bc6c0ab6f61aa17215c11',1,'CPPCli::VXSystem']]],
+  ['getusers',['GetUsers',['../class_c_p_p_cli_1_1_v_x_system.html#a8e67eea577119e09449983eb55372f89',1,'CPPCli::VXSystem']]],
+  ['gotolive',['GoToLive',['../class_c_p_p_cli_1_1_media_control.html#a2f06f8f367a4580152ee612e97c907e9',1,'CPPCli::MediaControl']]]
 ];

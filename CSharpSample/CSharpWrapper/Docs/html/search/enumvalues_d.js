@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['setupedgedevices',['SetupEdgeDevices',['../class_c_p_p_cli_1_1_privilege.html#aafa1578cd2326685f3238c33a26db1ebabceee6d67dd07359177d2ab35b882e95',1,'CPPCli::Privilege']]],
   ['silenced',['Silenced',['../class_c_p_p_cli_1_1_event.html#a797f0b21d1589554490662f51e3ae615a6f298e1e2a4770f368d3a31f1a74d7b8',1,'CPPCli::Event']]],
   ['stop',['Stop',['../class_c_p_p_cli_1_1_ptz_controller.html#ab6589f2c4e3515602f0166681a4ac04da11a755d598c0c417f9a36758c3da7481',1,'CPPCli::PtzController::Stop()'],['../class_c_p_p_cli_1_1_ptz_controller.html#ad7ca95e8ee18a1c22f3380cc45e43116a11a755d598c0c417f9a36758c3da7481',1,'CPPCli::PtzController::Stop()'],['../class_c_p_p_cli_1_1_ptz_controller.html#a1c4a102a3a38b54d55b1fb9d73d06c3da11a755d598c0c417f9a36758c3da7481',1,'CPPCli::PtzController::Stop()']]],
   ['stopped',['Stopped',['../class_c_p_p_cli_1_1_media_control.html#acf04284305097301ef271f4670615552ac23e2b09ebe6bf4cb5e2a9abe85c0be2',1,'CPPCli::MediaControl']]],

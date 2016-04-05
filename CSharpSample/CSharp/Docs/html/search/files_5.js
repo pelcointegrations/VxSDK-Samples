@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['newexportform_2ecs',['NewExportForm.cs',['../_new_export_form_8cs.html',1,'']]]
+  ['imagebytearray_2ecs',['ImageByteArray.cs',['../_image_byte_array_8cs.html',1,'']]],
+  ['inputbox_2ecs',['InputBox.cs',['../_input_box_8cs.html',1,'']]]
 ];

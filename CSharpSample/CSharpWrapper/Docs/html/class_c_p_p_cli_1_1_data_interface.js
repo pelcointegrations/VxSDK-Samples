@@ -6,6 +6,7 @@ var class_c_p_p_cli_1_1_data_interface =
       [ "RtspRtp", "class_c_p_p_cli_1_1_data_interface.html#abc71fe6bdd16582a76e99d5a20fb35e0a91f8a6974aac1219696e7d60ee53eebb", null ]
     ] ],
     [ "DataInterface", "class_c_p_p_cli_1_1_data_interface.html#a2a07eadb0067d845e1d6302baa6cc1a4", null ],
+    [ "DataEndpoint", "class_c_p_p_cli_1_1_data_interface.html#abf4532540ca294aed3ea11d888fadbee", null ],
     [ "MulticastTestIp", "class_c_p_p_cli_1_1_data_interface.html#a48259d3d42bc2ecafcf0a6b0e271d5d3", null ],
     [ "MulticastTestPort", "class_c_p_p_cli_1_1_data_interface.html#a10cb2d1b32e5234ddf5d78772ed14ffa", null ],
     [ "Protocol", "class_c_p_p_cli_1_1_data_interface.html#a00f08dc23cbc1b7fc740efa975d10bec", null ],

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['selectedclip',['SelectedClip',['../class_s_d_k_sample_app_1_1_source_1_1_add_clip_form.html#a4e7aab7fcddbac2c2e93b7bcc19659ee',1,'SDKSampleApp::Source::AddClipForm']]]
+  ['originalindex',['OriginalIndex',['../class_s_d_k_sample_app_1_1_source_1_1_modify_role_privileges_form.html#aa52bf229dd9db9dcc3f3273b9210b8ed',1,'SDKSampleApp::Source::ModifyRolePrivilegesForm']]]
 ];

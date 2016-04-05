@@ -1,6 +1,27 @@
 var searchData=
 [
-  ['recorder',['Recorder',['../namespace_s_d_k_sample_app_1_1_enums.html#af32cf618fd668911fbe90d8291ead923a1aff765143dc4bf8ef68f698234e10f6',1,'SDKSampleApp::Enums']]],
-  ['right',['Right',['../class_s_d_k_sample_app_1_1_source_1_1_control_manager.html#aff2e02e90bba71a385692fb9c7c351f4a92b09c7c48c520c3c55e497875da437c',1,'SDKSampleApp::Source::ControlManager']]],
-  ['rtsprtp',['RtspRtp',['../namespace_s_d_k_sample_app_1_1_enums.html#a9f1969ae6142d250aa7c18d5b8c01004a91f8a6974aac1219696e7d60ee53eebb',1,'SDKSampleApp::Enums']]]
+  ['panelvideostreamleft_5fmouseclick',['PanelVideoStreamLeft_MouseClick',['../class_s_d_k_sample_app_1_1_source_1_1_main_form.html#a5957f82e7009e051517bef9052265ff8',1,'SDKSampleApp::Source::MainForm']]],
+  ['panelvideostreamright_5fmouseclick',['PanelVideoStreamRight_MouseClick',['../class_s_d_k_sample_app_1_1_source_1_1_main_form.html#ac66aa335f73024f4a2042e6d14e93f60',1,'SDKSampleApp::Source::MainForm']]],
+  ['populatebookmarks',['PopulateBookmarks',['../class_s_d_k_sample_app_1_1_source_1_1_bookmark_manager_form.html#a882d9787521f2dc4d3c6d73f8a6e4514',1,'SDKSampleApp::Source::BookmarkManagerForm']]],
+  ['populatedataobjects',['PopulateDataObjects',['../class_s_d_k_sample_app_1_1_source_1_1_data_object_manager_form.html#a7b450f37186bf286dae4f7865526a934',1,'SDKSampleApp::Source::DataObjectManagerForm']]],
+  ['populatedatasources',['PopulateDataSources',['../class_s_d_k_sample_app_1_1_source_1_1_modify_privilege_sources_form.html#a35610be700d905b3c9771d75c094fb57',1,'SDKSampleApp.Source.ModifyPrivilegeSourcesForm.PopulateDataSources()'],['../class_s_d_k_sample_app_1_1_source_1_1_modify_schedule_sources_form.html#ab4c8649e43ead22fb30c555eb6df28bc',1,'SDKSampleApp.Source.ModifyScheduleSourcesForm.PopulateDataSources()'],['../class_s_d_k_sample_app_1_1_source_1_1_modify_tag_form.html#a1a4752909717d4f7160d4baa8b3d36f5',1,'SDKSampleApp.Source.ModifyTagForm.PopulateDataSources()']]],
+  ['populatedatastorages',['PopulateDataStorages',['../class_s_d_k_sample_app_1_1_source_1_1_data_storage_manager_form.html#a61eedd11817458d980465dd362610709',1,'SDKSampleApp::Source::DataStorageManagerForm']]],
+  ['populatedevices',['PopulateDevices',['../class_s_d_k_sample_app_1_1_source_1_1_modify_privilege_sources_form.html#ae7502cc07e537ed92bf21e09b0bff79c',1,'SDKSampleApp.Source.ModifyPrivilegeSourcesForm.PopulateDevices()'],['../class_s_d_k_sample_app_1_1_source_1_1_modify_tag_form.html#a69aed9f8a9197833089eaaf4bb3f13d2',1,'SDKSampleApp.Source.ModifyTagForm.PopulateDevices()']]],
+  ['populateeventinfo',['PopulateEventInfo',['../class_s_d_k_sample_app_1_1_source_1_1_event_display_form.html#a7c50727eb5be299717e9710e32ad0ee9',1,'SDKSampleApp::Source::EventDisplayForm']]],
+  ['populateexports',['PopulateExports',['../class_s_d_k_sample_app_1_1_source_1_1_export_manager_form.html#a31e159f7da5ef0b70a431a47bfc93b0e',1,'SDKSampleApp::Source::ExportManagerForm']]],
+  ['populateroles',['PopulateRoles',['../class_s_d_k_sample_app_1_1_source_1_1_modify_role_privileges_form.html#a01ab4205de6ed2dfe52d343aed038033',1,'SDKSampleApp.Source.ModifyRolePrivilegesForm.PopulateRoles()'],['../class_s_d_k_sample_app_1_1_source_1_1_role_manager_form.html#aa4d78ae66e18947a9d45a4ba48b3266e',1,'SDKSampleApp.Source.RoleManagerForm.PopulateRoles()'],['../class_s_d_k_sample_app_1_1_source_1_1_modify_user_form.html#ae141e645a082ab0844436129d54228b1',1,'SDKSampleApp.Source.ModifyUserForm.PopulateRoles()']]],
+  ['populateschedules',['PopulateSchedules',['../class_s_d_k_sample_app_1_1_source_1_1_schedule_manager_form.html#afb0052b98940017a7ab21f11c7b8dfc5',1,'SDKSampleApp::Source::ScheduleManagerForm']]],
+  ['populatesituations',['PopulateSituations',['../class_s_d_k_sample_app_1_1_source_1_1_situation_manager_form.html#a031734750dbe073064c3bdfd56bc0fde',1,'SDKSampleApp::Source::SituationManagerForm']]],
+  ['populatestorageinfo',['PopulateStorageInfo',['../class_s_d_k_sample_app_1_1_source_1_1_add_device_assignment_form.html#a1dce66a4c1dcf491ab19ee75867466d7',1,'SDKSampleApp::Source::AddDeviceAssignmentForm']]],
+  ['populatetags',['PopulateTags',['../class_s_d_k_sample_app_1_1_source_1_1_merge_tag_form.html#ac105b1a290d1ce8aa8eed6220009cec6',1,'SDKSampleApp.Source.MergeTagForm.PopulateTags()'],['../class_s_d_k_sample_app_1_1_source_1_1_tag_manager_form.html#a2432ea02cd4d94fb570c70cb1886a176',1,'SDKSampleApp.Source.TagManagerForm.PopulateTags()']]],
+  ['populateusers',['PopulateUsers',['../class_s_d_k_sample_app_1_1_source_1_1_modify_privilege_sources_form.html#a54c615ee292e6a6c7257b430788451da',1,'SDKSampleApp.Source.ModifyPrivilegeSourcesForm.PopulateUsers()'],['../class_s_d_k_sample_app_1_1_source_1_1_user_manager_form.html#aa274b8a818c02488e81dce2cdd4c5dd6',1,'SDKSampleApp.Source.UserManagerForm.PopulateUsers()']]],
+  ['program',['Program',['../class_s_d_k_sample_app_1_1_source_1_1_program.html',1,'SDKSampleApp::Source']]],
+  ['program_2ecs',['Program.cs',['../_program_8cs.html',1,'']]],
+  ['propertylistview',['PropertyListView',['../class_s_d_k_sample_app_1_1_source_1_1_new_property_form.html#ab4a4d0d374ffd7415acd5c4efd0b4eb8',1,'SDKSampleApp::Source::NewPropertyForm']]],
+  ['ptzcontrol',['PtzControl',['../class_s_d_k_sample_app_1_1_source_1_1_control_manager.html#ad9952967643300ee7a46e1701e415dbc',1,'SDKSampleApp::Source::ControlManager']]],
+  ['ptzcontrolform',['PTZControlForm',['../class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#a8cbcdc0b32dbf5620c07fb5d6fea43c7',1,'SDKSampleApp::Source::PTZControlForm']]],
+  ['ptzcontrolform',['PTZControlForm',['../class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html',1,'SDKSampleApp::Source']]],
+  ['ptzcontrolform_2ecs',['PTZControlForm.cs',['../_p_t_z_control_form_8cs.html',1,'']]],
+  ['ptzform',['PtzForm',['../class_s_d_k_sample_app_1_1_source_1_1_main_form.html#a8c0571ccab96388524ac6902492c00df',1,'SDKSampleApp::Source::MainForm']]],
+  ['ptzlock',['PTZLock',['../class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#aafc2fd30be976045664aac3172e8832f',1,'SDKSampleApp::Source::PTZControlForm']]]
 ];

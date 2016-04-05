@@ -1,4 +1,19 @@
 var searchData=
 [
-  ['injectevent',['InjectEvent',['../class_c_p_p_cli_1_1_v_x_system.html#aa8284a86d0c78a47d086c20c352060db',1,'CPPCli::VXSystem']]]
+  ['getbookmarks',['GetBookmarks',['../class_c_p_p_cli_1_1_v_x_system.html#ac1bf3dc5baa1c1b040e93a81b2d371f8',1,'CPPCli::VXSystem']]],
+  ['getdataobjects',['GetDataObjects',['../class_c_p_p_cli_1_1_v_x_system.html#ab8dc68d3889af25a521a2c2b168427dd',1,'CPPCli::VXSystem']]],
+  ['getdatasources',['GetDataSources',['../class_c_p_p_cli_1_1_v_x_system.html#a79e08a75318cad32e828ae2c282d569e',1,'CPPCli::VXSystem']]],
+  ['getdatastorages',['GetDataStorages',['../class_c_p_p_cli_1_1_v_x_system.html#a79dc401567f320cd0ebda7349c82618e',1,'CPPCli::VXSystem']]],
+  ['getdevices',['GetDevices',['../class_c_p_p_cli_1_1_v_x_system.html#ac62f3a99b57100e33088348c196df269',1,'CPPCli::VXSystem']]],
+  ['getexports',['GetExports',['../class_c_p_p_cli_1_1_v_x_system.html#a3cccc3a30b245e19c776236afca72458',1,'CPPCli::VXSystem']]],
+  ['getlinks',['GetLinks',['../class_c_p_p_cli_1_1_schedule.html#afe119db28e0a262762bf3012011ec9ef',1,'CPPCli::Schedule']]],
+  ['getpatterns',['GetPatterns',['../class_c_p_p_cli_1_1_ptz_controller.html#a25cc53c7ac96d003a284c6bea41a4932',1,'CPPCli::PtzController']]],
+  ['getpresets',['GetPresets',['../class_c_p_p_cli_1_1_ptz_controller.html#a7d645e59e5d0dc205ef040e851cba574',1,'CPPCli::PtzController']]],
+  ['getroles',['GetRoles',['../class_c_p_p_cli_1_1_v_x_system.html#a0837fc2ecc4ea39a50397a6e137a72c0',1,'CPPCli::VXSystem']]],
+  ['getschedules',['GetSchedules',['../class_c_p_p_cli_1_1_v_x_system.html#a53bc587706ce1c30194b0377bb3d5e81',1,'CPPCli::VXSystem']]],
+  ['getsituations',['GetSituations',['../class_c_p_p_cli_1_1_v_x_system.html#a97c15b4c686df544ba284b5fb2740572',1,'CPPCli::VXSystem']]],
+  ['getsnapshotendpoint',['GetSnapshotEndpoint',['../class_c_p_p_cli_1_1_clip.html#a4736e7d4e94f76405d7d8b9a2db98560',1,'CPPCli::Clip']]],
+  ['gettags',['GetTags',['../class_c_p_p_cli_1_1_v_x_system.html#aa8833633442bc6c0ab6f61aa17215c11',1,'CPPCli::VXSystem']]],
+  ['getusers',['GetUsers',['../class_c_p_p_cli_1_1_v_x_system.html#a8e67eea577119e09449983eb55372f89',1,'CPPCli::VXSystem']]],
+  ['gotolive',['GoToLive',['../class_c_p_p_cli_1_1_media_control.html#a2f06f8f367a4580152ee612e97c907e9',1,'CPPCli::MediaControl']]]
 ];

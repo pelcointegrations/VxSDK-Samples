@@ -18,6 +18,7 @@ var class_c_p_p_cli_1_1_data_source =
     [ "DataInterfaces", "class_c_p_p_cli_1_1_data_source.html#aca2fec75cee24bb63a6c790f7f6719ce", null ],
     [ "HasLiveStream", "class_c_p_p_cli_1_1_data_source.html#a6b8abdeb127122816b897ac11dbb3f9a", null ],
     [ "HasRecordedVideo", "class_c_p_p_cli_1_1_data_source.html#a89af03b76c4872847c1234a4ecced757", null ],
+    [ "HostDevice", "class_c_p_p_cli_1_1_data_source.html#aaf8bf62be800b0a78043f215ce18683a", null ],
     [ "Id", "class_c_p_p_cli_1_1_data_source.html#acc8838a32487ed21fd2ffca1dfb469de", null ],
     [ "Ip", "class_c_p_p_cli_1_1_data_source.html#af71e1c51579bdb8c3e0f64bc70b7626e", null ],
     [ "IsCapturing", "class_c_p_p_cli_1_1_data_source.html#a40a7669960336a77be0394bde54078be", null ],
@@ -27,6 +28,7 @@ var class_c_p_p_cli_1_1_data_source =
     [ "Number", "class_c_p_p_cli_1_1_data_source.html#a30811440e98d9a11636ded5ae2c4be80", null ],
     [ "PTZController", "class_c_p_p_cli_1_1_data_source.html#aa822c17ec70599d77f15af2522462572", null ],
     [ "RtspEndpoint", "class_c_p_p_cli_1_1_data_source.html#a2886003304e2dd3bbb1d707a53824e8a", null ],
+    [ "SnapshotUri", "class_c_p_p_cli_1_1_data_source.html#a6bae8d6c5d83f5e040910cda103927e4", null ],
     [ "State", "class_c_p_p_cli_1_1_data_source.html#a68bd063d6cd5bea89dcc491727745ecc", null ],
     [ "Type", "class_c_p_p_cli_1_1_data_source.html#ad4a8cfc03e8fb1c2726c59cb3093990a", null ]
 ];

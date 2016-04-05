@@ -1,9 +1,16 @@
 var searchData=
 [
+  ['enablerowcontrols',['EnableRowControls',['../class_s_d_k_sample_app_1_1_source_1_1_modify_role_privileges_form.html#a6ace3c6529e8778d336a3bb0b827d2ec',1,'SDKSampleApp::Source::ModifyRolePrivilegesForm']]],
   ['encoder',['Encoder',['../namespace_s_d_k_sample_app_1_1_enums.html#af32cf618fd668911fbe90d8291ead923a87d487f6f605eb96e61be67988e41e6d',1,'SDKSampleApp::Enums']]],
-  ['encodetobase64',['EncodeToBase64',['../class_s_d_k_sample_app_1_1_source_1_1_download_progress_form.html#aa4ac9de4e7a74d060898e3d0b5277ccf',1,'SDKSampleApp::Source::DownloadProgressForm']]],
+  ['encodetobase64',['EncodeToBase64',['../class_s_d_k_sample_app_1_1_source_1_1_download_progress_form.html#aa4ac9de4e7a74d060898e3d0b5277ccf',1,'SDKSampleApp.Source.DownloadProgressForm.EncodeToBase64()'],['../class_s_d_k_sample_app_1_1_source_1_1_main_form.html#a63312a2f2b6bfee865499f1014c82915',1,'SDKSampleApp.Source.MainForm.EncodeToBase64()']]],
   ['enums_2ecs',['Enums.cs',['../_enums_8cs.html',1,'']]],
   ['event',['Event',['../namespace_s_d_k_sample_app_1_1_enums.html#adfdd7b436cd920413c37c175bd8c6e34aa4ecfc70574394990cf17bd83df499f7',1,'SDKSampleApp::Enums']]],
+  ['eventdisplayform',['EventDisplayForm',['../class_s_d_k_sample_app_1_1_source_1_1_event_display_form.html',1,'SDKSampleApp::Source']]],
+  ['eventdisplayform',['EventDisplayForm',['../class_s_d_k_sample_app_1_1_source_1_1_event_display_form.html#a1adf4303ef144b4b5a29c1c8045afb67',1,'SDKSampleApp::Source::EventDisplayForm']]],
+  ['eventdisplayform_2ecs',['EventDisplayForm.cs',['../_event_display_form_8cs.html',1,'']]],
+  ['eventsearchform',['EventSearchForm',['../class_s_d_k_sample_app_1_1_source_1_1_event_search_form.html',1,'SDKSampleApp::Source']]],
+  ['eventsearchform',['EventSearchForm',['../class_s_d_k_sample_app_1_1_source_1_1_event_search_form.html#a48aef12691119124d04454196061f3cc',1,'SDKSampleApp::Source::EventSearchForm']]],
+  ['eventsearchform_2ecs',['EventSearchForm.cs',['../_event_search_form_8cs.html',1,'']]],
   ['exportmanagerform',['ExportManagerForm',['../class_s_d_k_sample_app_1_1_source_1_1_export_manager_form.html#a4d760d7ca47037b044d77098e7118219',1,'SDKSampleApp::Source::ExportManagerForm']]],
   ['exportmanagerform',['ExportManagerForm',['../class_s_d_k_sample_app_1_1_source_1_1_export_manager_form.html',1,'SDKSampleApp::Source']]],
   ['exportmanagerform_2ecs',['ExportManagerForm.cs',['../_export_manager_form_8cs.html',1,'']]],

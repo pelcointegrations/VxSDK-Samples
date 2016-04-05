@@ -1,10 +1,22 @@
 var searchData=
 [
-  ['failed',['Failed',['../class_c_p_p_cli_1_1_export.html#aa1e40310d87591e803c2c5d30d74f0a7ad7c8c85bf79bbe1b7188497c32c3b0ca',1,'CPPCli::Export']]],
-  ['far',['Far',['../class_c_p_p_cli_1_1_ptz_controller.html#ad7ca95e8ee18a1c22f3380cc45e43116acfcd41f0c1804fb7778f8f01301223f6',1,'CPPCli::PtzController']]],
-  ['filesizekb',['FileSizeKb',['../class_c_p_p_cli_1_1_export.html#a3b66c19dd4c870662c65ac9f48a32761',1,'CPPCli::Export']]],
-  ['focusdirections',['FocusDirections',['../class_c_p_p_cli_1_1_ptz_controller.html#ad7ca95e8ee18a1c22f3380cc45e43116',1,'CPPCli::PtzController']]],
-  ['format',['Format',['../class_c_p_p_cli_1_1_export.html#a84407174cd565acd6d8a95938b63a7cf',1,'CPPCli::Export::Format()'],['../class_c_p_p_cli_1_1_new_export.html#ab200a61fe365813f6b65f1fbb4907ea6',1,'CPPCli::NewExport::Format()']]],
-  ['formats',['Formats',['../class_c_p_p_cli_1_1_export.html#a5099286740a481c658f0fb9c540982aa',1,'CPPCli::Export']]],
-  ['framerate',['Framerate',['../class_c_p_p_cli_1_1_clip.html#a8c8b1079f165a14e979cc416c0e36d58',1,'CPPCli::Clip']]]
+  ['encoder',['Encoder',['../class_c_p_p_cli_1_1_device.html#a9e9bb567a4d33139f8e874925378503da87d487f6f605eb96e61be67988e41e6d',1,'CPPCli::Device']]],
+  ['enddate',['EndDate',['../class_c_p_p_cli_1_1_new_schedule_trigger.html#a7bb2a2e76f604ccd1a8ffdc77a4bfc1a',1,'CPPCli::NewScheduleTrigger::EndDate()'],['../class_c_p_p_cli_1_1_schedule_trigger.html#afc9754535e81e08021a7baa924bb2937',1,'CPPCli::ScheduleTrigger::EndDate()']]],
+  ['endtime',['EndTime',['../class_c_p_p_cli_1_1_clip.html#a240ef970e00aad46504c9945cc9e704c',1,'CPPCli::Clip::EndTime()'],['../class_c_p_p_cli_1_1_export_clip.html#a7488a8b2756069343e13907088bf3bbe',1,'CPPCli::ExportClip::EndTime()'],['../class_c_p_p_cli_1_1_new_export_clip.html#a16742b04f2471d43159d889ce5a449b8',1,'CPPCli::NewExportClip::EndTime()'],['../class_c_p_p_cli_1_1_snapshot_filter.html#a83f5173c7bfb0fd12e06a838b471136b',1,'CPPCli::SnapshotFilter::EndTime()']]],
+  ['event',['Event',['../class_c_p_p_cli_1_1_event.html',1,'CPPCli']]],
+  ['event',['Event',['../class_c_p_p_cli_1_1_new_schedule_trigger.html#a2fc355d4b37c0f64e8131735c65c4e75',1,'CPPCli::NewScheduleTrigger::Event()'],['../class_c_p_p_cli_1_1_schedule_trigger.html#a744c4315a5c17d14ec4767c5990179ab',1,'CPPCli::ScheduleTrigger::Event()'],['../class_c_p_p_cli_1_1_event.html#a67f8ddb1179e6c8c2f7235e001ff573f',1,'CPPCli::Event::Event()'],['../class_c_p_p_cli_1_1_clip.html#acf036b9a9f760b348055f5126188e84eaa4ecfc70574394990cf17bd83df499f7',1,'CPPCli::Clip::Event()']]],
+  ['eventcallbackdelegate',['EventCallbackDelegate',['../class_c_p_p_cli_1_1_v_x_system.html#aeb55a88b4508d23122acd09f9ecf6af9',1,'CPPCli::VXSystem']]],
+  ['eventdelegate',['EventDelegate',['../class_c_p_p_cli_1_1_v_x_system.html#a00a54ff47433b31e2a2c974f8d1f8af7',1,'CPPCli::VXSystem']]],
+  ['eventproperties',['EventProperties',['../class_c_p_p_cli_1_1_new_schedule_trigger.html#a9276b2231c427ca05c7bc0c0c440a636',1,'CPPCli::NewScheduleTrigger::EventProperties()'],['../class_c_p_p_cli_1_1_schedule_trigger.html#a35911e4daf1b475b7d87f75cab19b3b1',1,'CPPCli::ScheduleTrigger::EventProperties()']]],
+  ['eventsource',['EventSource',['../class_c_p_p_cli_1_1_new_schedule_trigger.html#aa3be42f8e8645b23df79a00fd95bd90e',1,'CPPCli::NewScheduleTrigger::EventSource()'],['../class_c_p_p_cli_1_1_schedule_trigger.html#ad1b211392a6270737341085d38fede8d',1,'CPPCli::ScheduleTrigger::EventSource()']]],
+  ['eventsourcerecord',['EventSourceRecord',['../class_c_p_p_cli_1_1_schedule.html#a66e8e065ebcf171eaac44310153bcddea71cf9cafd2f20a90d719c9d9b4069f51',1,'CPPCli::Schedule']]],
+  ['eventtype',['EventType',['../class_c_p_p_cli_1_1_clip.html#aa81854f6af51460b14282c110bdb0f4a',1,'CPPCli::Clip']]],
+  ['expiretime',['ExpireTime',['../class_c_p_p_cli_1_1_ptz_lock.html#a55834cb36f60293d0317353b8c997029',1,'CPPCli::PtzLock']]],
+  ['export',['Export',['../class_c_p_p_cli_1_1_export.html#a741f9a7a48b2049c61535182849961e1',1,'CPPCli::Export']]],
+  ['export',['Export',['../class_c_p_p_cli_1_1_export.html',1,'CPPCli']]],
+  ['exportclip',['ExportClip',['../class_c_p_p_cli_1_1_export_clip.html',1,'CPPCli']]],
+  ['exportclip',['ExportClip',['../class_c_p_p_cli_1_1_export_clip.html#a62b459acfe32782d8fad20bee3e0cea5',1,'CPPCli::ExportClip']]],
+  ['exportclips',['ExportClips',['../class_c_p_p_cli_1_1_export.html#a7c752b3e549c076866af8419da26b722',1,'CPPCli::Export']]],
+  ['exporting',['Exporting',['../class_c_p_p_cli_1_1_export.html#aa1e40310d87591e803c2c5d30d74f0a7a58946eb6fa72f0bdfcd0ebdb20b34597',1,'CPPCli::Export']]],
+  ['exportmediaclips',['ExportMediaClips',['../class_c_p_p_cli_1_1_privilege.html#aafa1578cd2326685f3238c33a26db1ebaee3a1336efe8a4fb354815334739ee33',1,'CPPCli::Privilege']]]
 ];

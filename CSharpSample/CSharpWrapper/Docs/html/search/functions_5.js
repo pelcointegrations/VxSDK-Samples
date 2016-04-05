@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['getdevices',['GetDevices',['../class_c_p_p_cli_1_1_v_x_system.html#ac62f3a99b57100e33088348c196df269',1,'CPPCli::VXSystem']]],
-  ['getexports',['GetExports',['../class_c_p_p_cli_1_1_v_x_system.html#a3cccc3a30b245e19c776236afca72458',1,'CPPCli::VXSystem']]],
-  ['getpatterns',['GetPatterns',['../class_c_p_p_cli_1_1_ptz_controller.html#a25cc53c7ac96d003a284c6bea41a4932',1,'CPPCli::PtzController']]],
-  ['getpresets',['GetPresets',['../class_c_p_p_cli_1_1_ptz_controller.html#a7d645e59e5d0dc205ef040e851cba574',1,'CPPCli::PtzController']]],
-  ['getsituations',['GetSituations',['../class_c_p_p_cli_1_1_v_x_system.html#a97c15b4c686df544ba284b5fb2740572',1,'CPPCli::VXSystem']]],
-  ['gotolive',['GoToLive',['../class_c_p_p_cli_1_1_media_control.html#a2f06f8f367a4580152ee612e97c907e9',1,'CPPCli::MediaControl']]]
+  ['event',['Event',['../class_c_p_p_cli_1_1_event.html#a67f8ddb1179e6c8c2f7235e001ff573f',1,'CPPCli::Event']]],
+  ['eventcallbackdelegate',['EventCallbackDelegate',['../class_c_p_p_cli_1_1_v_x_system.html#aeb55a88b4508d23122acd09f9ecf6af9',1,'CPPCli::VXSystem']]],
+  ['eventdelegate',['EventDelegate',['../class_c_p_p_cli_1_1_v_x_system.html#a00a54ff47433b31e2a2c974f8d1f8af7',1,'CPPCli::VXSystem']]],
+  ['export',['Export',['../class_c_p_p_cli_1_1_export.html#a741f9a7a48b2049c61535182849961e1',1,'CPPCli::Export']]],
+  ['exportclip',['ExportClip',['../class_c_p_p_cli_1_1_export_clip.html#a62b459acfe32782d8fad20bee3e0cea5',1,'CPPCli::ExportClip']]]
 ];
