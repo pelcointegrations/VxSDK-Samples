@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rtspendpoint',['RtspEndpoint',['../../CSharpWrapper/class_c_p_p_cli_1_1_data_source.html#a2886003304e2dd3bbb1d707a53824e8a',1,'CPPCli::DataSource']]]
+  ['quality',['Quality',['../../CSharpWrapper/class_c_p_p_cli_1_1_data_session.html#a5de4488f752ee70113fc2c506d102c5b',1,'CPPCli::DataSession']]]
 ];

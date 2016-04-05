@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['password',['Password',['../../CSharpWrapper/class_c_p_p_cli_1_1_device.html#af1e74d9da8f97972b6663ae4aef48bba',1,'CPPCli::Device::Password()'],['../../CSharpWrapper/class_c_p_p_cli_1_1_new_export.html#aff11a106e4a8666cc0c3d069fd5f65e4',1,'CPPCli::NewExport::Password()']]],
-  ['percentcomplete',['PercentComplete',['../../CSharpWrapper/class_c_p_p_cli_1_1_export.html#a7935a0ee259104646d3ddf361982d6af',1,'CPPCli::Export']]],
-  ['priority',['Priority',['../../CSharpWrapper/class_c_p_p_cli_1_1_clip.html#abbc4366d9ef7220074f9e944e22d95f3',1,'CPPCli::Clip']]],
-  ['properties',['Properties',['../../CSharpWrapper/class_c_p_p_cli_1_1_new_event.html#a36f0ec4e4ce5e48a65cdf2af2c6881a6',1,'CPPCli::NewEvent']]],
-  ['protocol',['Protocol',['../../CSharpWrapper/class_c_p_p_cli_1_1_data_interface.html#a00f08dc23cbc1b7fc740efa975d10bec',1,'CPPCli::DataInterface']]],
-  ['ptzcontroller',['PTZController',['../../CSharpWrapper/class_c_p_p_cli_1_1_data_source.html#aa822c17ec70599d77f15af2522462572',1,'CPPCli::DataSource']]]
+  ['offset',['Offset',['../../CSharpWrapper/class_c_p_p_cli_1_1_snapshot_filter.html#a14f7f06f40e16e8ea4a836783dd68d6f',1,'CPPCli::SnapshotFilter']]],
+  ['originalindex',['OriginalIndex',['../class_s_d_k_sample_app_1_1_source_1_1_modify_role_privileges_form.html#aa52bf229dd9db9dcc3f3273b9210b8ed',1,'SDKSampleApp::Source::ModifyRolePrivilegesForm']]],
+  ['owner',['Owner',['../../CSharpWrapper/class_c_p_p_cli_1_1_data_object.html#a23879cec217071fb4b360f3a56f1b1d8',1,'CPPCli::DataObject::Owner()'],['../../CSharpWrapper/class_c_p_p_cli_1_1_export.html#a659f32b8ebd06ce093f4764d211fb54d',1,'CPPCli::Export::Owner()'],['../../CSharpWrapper/class_c_p_p_cli_1_1_ptz_lock.html#a6a0b33f25ea7f92573990f1496aedd10',1,'CPPCli::PtzLock::Owner()'],['../../CSharpWrapper/class_c_p_p_cli_1_1_tag.html#ac98831b5bacd3ba4d90525756debdfcf',1,'CPPCli::Tag::Owner()']]]
 ];

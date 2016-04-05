@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['clips',['Clips',['../../CSharpWrapper/class_c_p_p_cli_1_1_data_source.html#a787d8027656759f3d286704c6f4d0602',1,'CPPCli::DataSource::Clips()'],['../../CSharpWrapper/class_c_p_p_cli_1_1_new_export.html#a07d2ac7dec88be66c20016a96b5e85f2',1,'CPPCli::NewExport::Clips()']]],
-  ['completed',['Completed',['../../CSharpWrapper/class_c_p_p_cli_1_1_export.html#a3809b220802ebcbc997f1d99a550c6ad',1,'CPPCli::Export']]]
+  ['bytes',['Bytes',['../class_s_d_k_sample_app_1_1_source_1_1_image_byte_array.html#a3d2f403b524a1a62846990c96d7a60ed',1,'SDKSampleApp::Source::ImageByteArray']]]
 ];

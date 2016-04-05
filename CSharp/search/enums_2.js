@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['irisdirections',['IrisDirections',['../../CSharpWrapper/class_c_p_p_cli_1_1_ptz_controller.html#ab6589f2c4e3515602f0166681a4ac04d',1,'CPPCli::PtzController']]]
+  ['datastoragetypes',['DataStorageTypes',['../../CSharpWrapper/class_c_p_p_cli_1_1_data_storage.html#a8e8fc183074346d9ddc5b3ffa48e16b6',1,'CPPCli::DataStorage']]]
 ];

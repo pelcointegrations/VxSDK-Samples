@@ -1,8 +1,14 @@
 var searchData=
 [
-  ['clip_2ecpp',['Clip.cpp',['../../CSharpWrapper/_clip_8cpp.html',1,'']]],
-  ['clip_2eh',['Clip.h',['../../CSharpWrapper/_clip_8h.html',1,'']]],
-  ['constants_2eh',['Constants.h',['../../MediaController/_constants_8h.html',1,'']]],
-  ['controller_2ecpp',['Controller.cpp',['../../MediaController/_controller_8cpp.html',1,'']]],
-  ['controller_2eh',['Controller.h',['../../MediaController/_controller_8h.html',1,'']]]
+  ['addbookmarkform_2ecs',['AddBookmarkForm.cs',['../_add_bookmark_form_8cs.html',1,'']]],
+  ['addclipform_2ecs',['AddClipForm.cs',['../_add_clip_form_8cs.html',1,'']]],
+  ['adddataobjectform_2ecs',['AddDataObjectForm.cs',['../_add_data_object_form_8cs.html',1,'']]],
+  ['adddeviceassignmentform_2ecs',['AddDeviceAssignmentForm.cs',['../_add_device_assignment_form_8cs.html',1,'']]],
+  ['addeventform_2ecs',['AddEventForm.cs',['../_add_event_form_8cs.html',1,'']]],
+  ['addroleform_2ecs',['AddRoleForm.cs',['../_add_role_form_8cs.html',1,'']]],
+  ['addscheduleform_2ecs',['AddScheduleForm.cs',['../_add_schedule_form_8cs.html',1,'']]],
+  ['addscheduletriggerform_2ecs',['AddScheduleTriggerForm.cs',['../_add_schedule_trigger_form_8cs.html',1,'']]],
+  ['addsituationform_2ecs',['AddSituationForm.cs',['../_add_situation_form_8cs.html',1,'']]],
+  ['addtagform_2ecs',['AddTagForm.cs',['../_add_tag_form_8cs.html',1,'']]],
+  ['adduserform_2ecs',['AddUserForm.cs',['../_add_user_form_8cs.html',1,'']]]
 ];

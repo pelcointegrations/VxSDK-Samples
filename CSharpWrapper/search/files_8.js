@@ -1,15 +1,13 @@
 var searchData=
 [
-  ['vxcollection_2eh',['VxCollection.h',['../../VxSdk/_vx_collection_8h.html',1,'']]],
-  ['vxcollectionfilter_2eh',['VxCollectionFilter.h',['../../VxSdk/_vx_collection_filter_8h.html',1,'']]],
-  ['vxkvobject_2eh',['VxKvObject.h',['../../VxSdk/_vx_kv_object_8h.html',1,'']]],
-  ['vxlogininfo_2eh',['VxLoginInfo.h',['../../VxSdk/_vx_login_info_8h.html',1,'']]],
-  ['vxmacros_2eh',['VxMacros.h',['../../VxSdk/_vx_macros_8h.html',1,'']]],
-  ['vxnewevent_2eh',['VxNewEvent.h',['../../VxSdk/_vx_new_event_8h.html',1,'']]],
-  ['vxnewexport_2eh',['VxNewExport.h',['../../VxSdk/_vx_new_export_8h.html',1,'']]],
-  ['vxnewexportclip_2eh',['VxNewExportClip.h',['../../VxSdk/_vx_new_export_clip_8h.html',1,'']]],
-  ['vxnewsituation_2eh',['VxNewSituation.h',['../../VxSdk/_vx_new_situation_8h.html',1,'']]],
-  ['vxprimitives_2eh',['VxPrimitives.h',['../../VxSdk/_vx_primitives_8h.html',1,'']]],
-  ['vxsdk_2eh',['VxSdk.h',['../../VxSdk/_vx_sdk_8h.html',1,'']]],
-  ['vxutilities_2eh',['VxUtilities.h',['../../VxSdk/_vx_utilities_8h.html',1,'']]]
+  ['pattern_2ecpp',['Pattern.cpp',['../_pattern_8cpp.html',1,'']]],
+  ['pattern_2eh',['Pattern.h',['../_pattern_8h.html',1,'']]],
+  ['preset_2ecpp',['Preset.cpp',['../_preset_8cpp.html',1,'']]],
+  ['preset_2eh',['Preset.h',['../_preset_8h.html',1,'']]],
+  ['privilege_2ecpp',['Privilege.cpp',['../_privilege_8cpp.html',1,'']]],
+  ['privilege_2eh',['Privilege.h',['../_privilege_8h.html',1,'']]],
+  ['ptzcontroller_2ecpp',['PtzController.cpp',['../_ptz_controller_8cpp.html',1,'']]],
+  ['ptzcontroller_2eh',['PtzController.h',['../_ptz_controller_8h.html',1,'']]],
+  ['ptzlock_2ecpp',['PtzLock.cpp',['../_ptz_lock_8cpp.html',1,'']]],
+  ['ptzlock_2eh',['PtzLock.h',['../_ptz_lock_8h.html',1,'']]]
 ];

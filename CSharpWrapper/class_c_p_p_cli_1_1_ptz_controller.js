@@ -19,6 +19,7 @@ var class_c_p_p_cli_1_1_ptz_controller =
     [ "PtzController", "class_c_p_p_cli_1_1_ptz_controller.html#a7df16ff611c5d2ecf9501f7b89a0a5b8", null ],
     [ "~PtzController", "class_c_p_p_cli_1_1_ptz_controller.html#a5a3a2477b5e6445f84887cab72badd07", null ],
     [ "!PtzController", "class_c_p_p_cli_1_1_ptz_controller.html#a60a6a638587600f05104d32c1085bc3d", null ],
+    [ "_GetPtzLock", "class_c_p_p_cli_1_1_ptz_controller.html#a36a2c39d8e34273578d610c90816806c", null ],
     [ "AbsoluteMove", "class_c_p_p_cli_1_1_ptz_controller.html#ae2294f6b1472cd5730f166e6cdd11fe2", null ],
     [ "AbsoluteMove", "class_c_p_p_cli_1_1_ptz_controller.html#aa1f1ebc703691285da29c225a31e96cd", null ],
     [ "AbsolutePan", "class_c_p_p_cli_1_1_ptz_controller.html#a11037c498a09a8af0b4dff511c7fd4bf", null ],
@@ -36,6 +37,7 @@ var class_c_p_p_cli_1_1_ptz_controller =
     [ "_ptzController", "class_c_p_p_cli_1_1_ptz_controller.html#a36b587c4903af353516c7e2c264d542f", null ],
     [ "IsLocked", "class_c_p_p_cli_1_1_ptz_controller.html#a7c91426d4b462e5c4cc3e7e51029ae3e", null ],
     [ "LockExpireTime", "class_c_p_p_cli_1_1_ptz_controller.html#a5861cd67b05678c1e23bd39fd0a6db35", null ],
+    [ "PTZLock", "class_c_p_p_cli_1_1_ptz_controller.html#a8af4e01eea85023b8fc417ecb8881640", null ],
     [ "X", "class_c_p_p_cli_1_1_ptz_controller.html#a16f86e7a6f03ad8f42a9e7fb4c00da75", null ],
     [ "Y", "class_c_p_p_cli_1_1_ptz_controller.html#afe25f6731f0f5d05aa6899a816234e19", null ],
     [ "Z", "class_c_p_p_cli_1_1_ptz_controller.html#a5b38e23be172036c554d9c90924e74e0", null ]

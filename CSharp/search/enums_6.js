@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['types',['Types',['../../CSharpWrapper/class_c_p_p_cli_1_1_data_source.html#a515c2e6f6e2dfb0ecf2e062efcb65680',1,'CPPCli::DataSource::Types()'],['../../CSharpWrapper/class_c_p_p_cli_1_1_device.html#a9e9bb567a4d33139f8e874925378503d',1,'CPPCli::Device::Types()']]]
+  ['permissionids',['PermissionIds',['../../CSharpWrapper/class_c_p_p_cli_1_1_privilege.html#aafa1578cd2326685f3238c33a26db1eb',1,'CPPCli::Privilege']]]
 ];

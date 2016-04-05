@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['gstvars_2eh',['GstVars.h',['../../MediaController/_gst_vars_8h.html',1,'']]],
-  ['gstwrapper_2ecpp',['GstWrapper.cpp',['../../MediaController/_gst_wrapper_8cpp.html',1,'']]],
-  ['gstwrapper_2eh',['GstWrapper.h',['../../MediaController/_gst_wrapper_8h.html',1,'']]]
+  ['clip_2ecpp',['Clip.cpp',['../_clip_8cpp.html',1,'']]],
+  ['clip_2eh',['Clip.h',['../_clip_8h.html',1,'']]],
+  ['constants_2eh',['Constants.h',['../../MediaController/_constants_8h.html',1,'']]],
+  ['controller_2ecpp',['Controller.cpp',['../../MediaController/_controller_8cpp.html',1,'']]],
+  ['controller_2eh',['Controller.h',['../../MediaController/_controller_8h.html',1,'']]]
 ];

@@ -23,6 +23,7 @@ var class_c_p_p_cli_1_1_clip =
     [ "Clip", "class_c_p_p_cli_1_1_clip.html#ac6bf2bd0c8eb796352a162f175d389c0", null ],
     [ "~Clip", "class_c_p_p_cli_1_1_clip.html#a434fac639c7d8ef2418adeea295ee565", null ],
     [ "!Clip", "class_c_p_p_cli_1_1_clip.html#a3ce6dae1562b1e95699c54d92dbdb79e", null ],
+    [ "GetSnapshotEndpoint", "class_c_p_p_cli_1_1_clip.html#a4736e7d4e94f76405d7d8b9a2db98560", null ],
     [ "_clip", "class_c_p_p_cli_1_1_clip.html#a71bd06e3fa40d2876a614270b1072915", null ],
     [ "EndTime", "class_c_p_p_cli_1_1_clip.html#a240ef970e00aad46504c9945cc9e704c", null ],
     [ "EventType", "class_c_p_p_cli_1_1_clip.html#aa81854f6af51460b14282c110bdb0f4a", null ],

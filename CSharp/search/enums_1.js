@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['focusdirections',['FocusDirections',['../../CSharpWrapper/class_c_p_p_cli_1_1_ptz_controller.html#ad7ca95e8ee18a1c22f3380cc45e43116',1,'CPPCli::PtzController']]],
-  ['formats',['Formats',['../../CSharpWrapper/class_c_p_p_cli_1_1_export.html#a5099286740a481c658f0fb9c540982aa',1,'CPPCli::Export']]]
+  ['controls',['Controls',['../class_s_d_k_sample_app_1_1_source_1_1_control_manager.html#aff2e02e90bba71a385692fb9c7c351f4',1,'SDKSampleApp::Source::ControlManager']]]
 ];

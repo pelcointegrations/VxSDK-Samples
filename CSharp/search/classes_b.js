@@ -1,11 +1,8 @@
 var searchData=
 [
-  ['sdpparser',['SdpParser',['../../MediaController/class_media_controller_1_1_rtsp_1_1_sdp_parser.html',1,'MediaController::Rtsp']]],
-  ['situation',['Situation',['../../CSharpWrapper/class_c_p_p_cli_1_1_situation.html',1,'CPPCli']]],
-  ['stoppedstate',['StoppedState',['../../MediaController/class_media_controller_1_1_stopped_state.html',1,'MediaController']]],
-  ['stream',['Stream',['../../MediaController/class_media_controller_1_1_rtsp_1_1_stream.html',1,'MediaController::Rtsp']]],
-  ['stream',['Stream',['../../MediaController/class_media_controller_1_1_mjpeg_pull_1_1_stream.html',1,'MediaController::MjpegPull']]],
-  ['streambase',['StreamBase',['../../MediaController/class_media_controller_1_1_stream_base.html',1,'MediaController']]],
-  ['streamfactory',['StreamFactory',['../../MediaController/class_media_controller_1_1_stream_factory.html',1,'MediaController']]],
-  ['streamstate',['StreamState',['../../MediaController/class_media_controller_1_1_stream_state.html',1,'MediaController']]]
+  ['removedeviceassignmentform',['RemoveDeviceAssignmentForm',['../class_s_d_k_sample_app_1_1_source_1_1_remove_device_assignment_form.html',1,'SDKSampleApp::Source']]],
+  ['response',['Response',['../../MediaController/struct_media_controller_1_1_rtsp_1_1_response.html',1,'MediaController::Rtsp']]],
+  ['results',['Results',['../../CSharpWrapper/class_c_p_p_cli_1_1_results.html',1,'CPPCli']]],
+  ['role',['Role',['../../CSharpWrapper/class_c_p_p_cli_1_1_role.html',1,'CPPCli']]],
+  ['rolemanagerform',['RoleManagerForm',['../class_s_d_k_sample_app_1_1_source_1_1_role_manager_form.html',1,'SDKSampleApp::Source']]]
 ];

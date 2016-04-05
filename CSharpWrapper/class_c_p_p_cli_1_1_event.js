@@ -11,6 +11,8 @@ var class_c_p_p_cli_1_1_event =
     [ "Event", "class_c_p_p_cli_1_1_event.html#a67f8ddb1179e6c8c2f7235e001ff573f", null ],
     [ "~Event", "class_c_p_p_cli_1_1_event.html#a6b62d263a9efca5a97a078a66347cf75", null ],
     [ "!Event", "class_c_p_p_cli_1_1_event.html#a96e18347a7527d2c410f5584e659e8b1", null ],
+    [ "Acknowledge", "class_c_p_p_cli_1_1_event.html#a5b9cd1b7d32199af14385e3715bee373", null ],
+    [ "Silence", "class_c_p_p_cli_1_1_event.html#af9af1f9456b827aac11267a5b32849f7", null ],
     [ "_event", "class_c_p_p_cli_1_1_event.html#aeb4384335549a03f55a7778997141989", null ],
     [ "AckState", "class_c_p_p_cli_1_1_event.html#a7bdd6dbce00b2f37563ea51ea1cec436", null ],
     [ "GeneratorDeviceId", "class_c_p_p_cli_1_1_event.html#a02adc69a9fe4c6a56acaeb70f1e59c44", null ],

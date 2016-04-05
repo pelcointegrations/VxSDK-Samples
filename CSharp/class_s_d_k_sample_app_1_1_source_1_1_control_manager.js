@@ -23,5 +23,6 @@ var class_s_d_k_sample_app_1_1_source_1_1_control_manager =
     [ "PtzControl", "class_s_d_k_sample_app_1_1_source_1_1_control_manager.html#ad9952967643300ee7a46e1701e415dbc", null ],
     [ "SelectedControl", "class_s_d_k_sample_app_1_1_source_1_1_control_manager.html#aaa4c20ef1070c95287dbeb9ff8eaf302", null ],
     [ "SelectedLabel", "class_s_d_k_sample_app_1_1_source_1_1_control_manager.html#ad5a16b3deadca734b7f256bc13606554", null ],
-    [ "SelectedPanel", "class_s_d_k_sample_app_1_1_source_1_1_control_manager.html#a919c4a5d08e1859f35cb1da59394bcc0", null ]
+    [ "SelectedPanel", "class_s_d_k_sample_app_1_1_source_1_1_control_manager.html#a919c4a5d08e1859f35cb1da59394bcc0", null ],
+    [ "SelectedPanelTime", "class_s_d_k_sample_app_1_1_source_1_1_control_manager.html#a6240b6a9dbd88bd50976cc225eba7c0e", null ]
 ];

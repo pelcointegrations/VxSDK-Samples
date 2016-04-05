@@ -2,6 +2,7 @@ var class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form =
 [
     [ "PTZControlForm", "class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#a8cbcdc0b32dbf5620c07fb5d6fea43c7", null ],
     [ "ButtonGetPosition_Click", "class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#a01233766ed6d06542e4962a4253e75fd", null ],
+    [ "ButtonLockClick", "class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#ab796d007b72027f18cfc62ea6f2ad585", null ],
     [ "ButtonMove_Click", "class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#a81b7d709bf9dcee6fb93dd160fefc225", null ],
     [ "ButtonPtzD_Click", "class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#a7a93fb8a983e124693de872547c729ea", null ],
     [ "ButtonPtzDL_Click", "class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#a12198f22feea2c151a4d6492e0667f86", null ],
@@ -17,6 +18,7 @@ var class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form =
     [ "ButtonPtzUR_Click", "class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#a508d6e4d302f8a14c9962ee737edf402", null ],
     [ "ButtonPtzZoomIn_Click", "class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#afcc87f3253d3a04d5c4c72d6077f2e9f", null ],
     [ "ButtonPtzZoomOut_Click", "class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#ad76913363e18f2dcb3f91b41198cc581", null ],
+    [ "ButtonRefreshLock_Click", "class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#a17f0d7b24bb1cb172510614bffb146e6", null ],
     [ "ButtonSetPosition_Click", "class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#a5de3b24202f2191d18c75fce8907f8a4", null ],
     [ "ButtonTriggerPattern_Click", "class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#a1d271c8d520c318979952c3414cdea7e", null ],
     [ "ButtonTriggerPreset_Click", "class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#af0296d7b73d197da5ab7abacc12b0420", null ],
@@ -24,6 +26,9 @@ var class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form =
     [ "GetPresets", "class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#a2ffbae99f5da3d6ae99893070471bcd9", null ],
     [ "OnFormClosing", "class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#af15e1f00c9df7d9920562a070c088e00", null ],
     [ "StopPtz", "class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#abadddeb6a32a2b686d3aab9c768c4985", null ],
+    [ "TryAbsoluteMove", "class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#ac27fbecf0ccb7bbb9fcdf57e03f0e54b", null ],
     [ "TryParseNullable", "class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#a76bc1987f66cd58c9f3ba026274b7c83", null ],
-    [ "Instance", "class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#a32c2d37e2565cb30f3f54d8ba4a627b6", null ]
+    [ "UpdatePtzLockInfo", "class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#afd7306956ef48a6fa459efd921b907bf", null ],
+    [ "Instance", "class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#a32c2d37e2565cb30f3f54d8ba4a627b6", null ],
+    [ "PTZLock", "class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#aafc2fd30be976045664aac3172e8832f", null ]
 ];
