@@ -69,6 +69,7 @@ GstPadProbeReturn OnRtpPacketReceived(GstPad *localPad, GstPadProbeInfo *info, G
                 TimestampEventCallback observer = vars->observerList[i];
                 TimestampEvent* newEvent = new TimestampEvent();
                 newEvent->unixTime = curTime;
+                newEvent->eventData = vars->eventData;
                 observer(newEvent);
             }
         }

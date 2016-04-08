@@ -64,9 +64,12 @@ void Rtsp::Stream::FrameForward() {}
 void Rtsp::Stream::FrameBackward() {}
 
 void Rtsp::Stream::Seek(unsigned int unixTime, int speed) {
-    this->_rtspCommands.Options();
-    this->_rtspCommands.Describe();
-    this->_rtspCommands.Setup();
+    if (this->GetGstreamer()->GetMode() != IController::kPlayback) {
+        this->_rtspCommands.Options();
+        this->_rtspCommands.Describe();
+        this->_rtspCommands.Setup();    
+    }
+
     this->_rtspCommands.SeekPlay(unixTime, speed);
 
     if (!_rtspKeepAlive) {

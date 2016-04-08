@@ -156,8 +156,8 @@ void StoppedState::GoToLive(Controller& controller) {
 }
 
 void StoppedState::Seek(Controller& controller, unsigned int unixTime, int speed) {
-    controller.stream->GetGstreamer()->SetMode(Controller::kPlayback);
     controller.stream->Seek(unixTime, speed);
+    controller.stream->GetGstreamer()->SetMode(Controller::kPlayback);
     SetState(controller, new PlayingState());
     controller.stream->GetGstreamer()->Play(speed);
 }
