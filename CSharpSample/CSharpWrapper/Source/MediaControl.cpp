@@ -45,8 +45,8 @@ CPPCli::MediaControl::!MediaControl() {
     delete _control;
 }
 
-void CPPCli::MediaControl::Play(int speed) {
-    _control->Play(speed);
+bool CPPCli::MediaControl::Play(int speed) {
+    return _control->Play(speed);
 }
 
 void CPPCli::MediaControl::Pause() {
@@ -61,12 +61,12 @@ void CPPCli::MediaControl::GoToLive() {
     _control->GoToLive();
 }
 
-void CPPCli::MediaControl::Seek(System::DateTime time, int speed) {
+bool CPPCli::MediaControl::Seek(System::DateTime time, int speed) {
     // Convert the seek time from a DateTime format to unix time format
     System::TimeSpan ts = (time - System::DateTime(1970, 1, 1, 0, 0, 0));
     unsigned int seekTime = safe_cast<unsigned int>(ts.TotalSeconds);
 
-    _control->Seek(seekTime, speed);
+    return _control->Seek(seekTime, speed);
 }
 
 void CPPCli::MediaControl::TimestampEvent::add(TimestampEventDelegate ^eventDelegate) {

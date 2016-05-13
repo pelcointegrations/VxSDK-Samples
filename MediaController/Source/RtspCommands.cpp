@@ -21,6 +21,7 @@ void Extract(const string& ip, string& address, string& service);
 string GetControlLocation(string response);
 string GetSessionUuid(const string& session);
 Response ProcessResponse(boost::asio::ip::tcp::socket& socket);
+string BuildGstCaps(MediaDescription description);
 
 Commands::Commands(MediaController::Controller* controller, const string& liveUri) : _port(0) {
     this->_controller = controller;
@@ -29,7 +30,7 @@ Commands::Commands(MediaController::Controller* controller, const string& liveUr
     this->_liveUri = this->_playbackUri = liveUri;
 }
 
-void Commands::Options() {
+bool Commands::Options() {
     // Increment the value for the CSeq field.
     _cSeqNum++;
     // The locations of the live and playback streams are different, so we need to choose the right one for the current mode.
@@ -50,10 +51,13 @@ void Commands::Options() {
     write(socket, request);
 
     // Parse the server response.
-    ProcessResponse(socket);
+    Response resp = ProcessResponse(socket);
+    if (resp.statusCode != kStatusCode200) { return false; }
+    
+    return true;
 }
 
-void Commands::GetParameter() {
+bool Commands::GetParameter() {
     // Increment the value for the CSeq field.
     _cSeqNum++;
     // The locations of the live and playback streams are different, so we need to choose the right one for the current mode.
@@ -72,14 +76,17 @@ void Commands::GetParameter() {
     requestStream << kGetParameter << kWhitespace << uri << kWhitespace << kRtspVersion << kOneNewLine;
     requestStream << kHeaderCSeq << kColonSpace << _cSeqNum << kOneNewLine;
     requestStream << kHeaderUserAgent << kColonSpace << kActualUserAgent << kOneNewLine;
-    requestStream << kHeaderSession << kColonSpace << this->_session << kTwoNewLines;
+    requestStream << kHeaderSession << kColonSpace << this->_sessionId << kTwoNewLines;
     write(socket, request);
 
     // Parse the server response.
-    ProcessResponse(socket);
+    Response resp = ProcessResponse(socket);
+    if (resp.statusCode != kStatusCode200) { return false; }
+
+    return true;
 }
 
-void Commands::Describe() {
+bool Commands::Describe() {
     // Increment the value for the CSeq field.
     _cSeqNum++;
     // The locations of the live and playback streams are different, so we need to choose the right one for the current mode.
@@ -103,6 +110,8 @@ void Commands::Describe() {
 
     // Parse the server response.
     Response resp = ProcessResponse(socket);
+    if (resp.statusCode != kStatusCode200) { return false; }
+
     // Parse the session description information.
     SdpParser& parser = this->_controller->GetMode() == MediaController::Controller::kLive ? this->_liveSdp : this->_playbackSdp;
     parser.Parse(resp.content);
@@ -112,16 +121,14 @@ void Commands::Describe() {
     _port = md.isMulticast ? md.port : socket.local_endpoint().port();;
     string multiOptions;
     if (md.isMulticast)
-        multiOptions = str(boost::format("address=%1%") % md.ip);
+        multiOptions = str(boost::format(" address=%1%") % md.ip);
 
     // The elements in the GStreamer pipeline need to have unique names in order to run multiple instances.
     // So a random UUID is generated and appended to the element names.
-    boost::uuids::uuid uuid = boost::uuids::random_generator()();
-    string pipeline = str(boost::format(kRtspPipeline) % uuid % md.rate % md.encoding % _port % multiOptions % uuid % (_port + 1));
+    _uuid = boost::uuids::to_string(boost::uuids::random_generator()());
+    string pipeline = str(boost::format(kRtspPipeline) % _uuid % BuildGstCaps(md) % _port % multiOptions % (_port + 1));
     // Update the pipeline using the description generated above.
     this->_controller->stream->GetGstreamer()->UpdatePipeline(pipeline);
-    // Subscribe to the GStreamer Src element in order to get timestamps.
-    this->_controller->stream->GetGstreamer()->SubscribeToProbeEvents(boost::uuids::to_string(uuid));
 
     // Set the live/playback URI to the control URL obtained from the server response.
     string newUri = GetControlLocation(resp.content);
@@ -129,9 +136,11 @@ void Commands::Describe() {
         this->_liveUri = newUri;
     else
         this->_playbackUri = newUri;
+
+    return true;
 }
 
-void Commands::Setup() {
+bool Commands::Setup() {
     // Increment the value for the CSeq field.
     _cSeqNum++;
     // The locations of the live and playback streams are different, so we need to choose the right one for the current mode.
@@ -157,13 +166,17 @@ void Commands::Setup() {
 
     // Parse the server response.
     Response resp = ProcessResponse(socket);
+    if (resp.statusCode != kStatusCode200) { return false; }
     // Set the session ID using the UUID obtained from the server response.
-    this->_session = GetSessionUuid(resp.session);
+    this->_sessionId = GetSessionUuid(resp.session);
+
+    return true;
 }
 
-void Commands::Play(int speed) {
+bool Commands::Play(int speed) {
     // Increment the value for the CSeq field.
     _cSeqNum++;
+    bool ret = false;
     // The locations of the live and playback streams are different, so we need to choose the right one for the current mode.
     string uri = this->_controller->GetMode() == MediaController::Controller::kLive ? this->_liveUri : this->_playbackUri;
 
@@ -171,7 +184,7 @@ void Commands::Play(int speed) {
     // PLAY {uri} RTSP/1.0
     // CSeq: {_cSeqNum}
     // User-Agent: Pelco VxSdk
-    // Session: {_session}
+    // Session: {_sessionId}
     boost::asio::io_service ioService;
     boost::asio::ip::tcp::socket socket(ioService);
     GetSocket(uri, ioService, socket);
@@ -180,7 +193,7 @@ void Commands::Play(int speed) {
     requestStream << kPlay << kWhitespace << uri << kWhitespace << kRtspVersion << kOneNewLine;
     requestStream << kHeaderCSeq << kColonSpace << _cSeqNum << kOneNewLine;
     requestStream << kHeaderUserAgent << kColonSpace << kActualUserAgent << kOneNewLine;
-    requestStream << kHeaderSession << kColonSpace << this->_session << kTwoNewLines;
+    requestStream << kHeaderSession << kColonSpace << this->_sessionId << kTwoNewLines;
     write(socket, request);
 
     // Parse the server response.
@@ -189,6 +202,13 @@ void Commands::Play(int speed) {
     if (resp.statusCode == kStatusCode301 || resp.statusCode == kStatusCode302) {
         // Copy the redirect location.
         string temploc = resp.headers[kHeaderLocation];
+
+        // Redirect location cannot have "/video" on the end of the url.
+        string videoEnding = "%2Fvideo";
+        if (0 == temploc.compare(temploc.length() - videoEnding.length(), videoEnding.length(), videoEnding)) {
+            boost::replace_last(temploc, videoEnding, "");
+        }
+
         // Tear down the current session.
         Teardown();
         // Set the live URI to the copied redirect location.
@@ -200,13 +220,22 @@ void Commands::Play(int speed) {
         Options();
         Describe();
         Setup();
-        Play(speed);
+        ret = Play(speed);
     }
+    if (resp.statusCode == kStatusCode200) {
+        this->_controller->stream->GetGstreamer()->SetPipeline();
+
+        // Subscribe to the GStreamer Src element in order to get timestamps.
+        this->_controller->stream->GetGstreamer()->SubscribeToProbeEvents(_uuid);
+        return true;
+    }
+    return ret;
 }
 
-void Commands::SeekPlay(unsigned int unixTime, int speed) {
+bool Commands::SeekPlay(unsigned int unixTime, int speed) {
     // Increment the value for the CSeq field.
     _cSeqNum++;
+    bool ret = false;
     // The locations of the live and playback streams are different, so we need to choose the right one for the current mode.
     string uri = this->_controller->GetMode() == MediaController::Controller::kLive ? this->_liveUri : this->_playbackUri;
     if (uri.empty())
@@ -216,7 +245,7 @@ void Commands::SeekPlay(unsigned int unixTime, int speed) {
     // PLAY {uri} RTSP/1.0
     // CSeq: {_cSeqNum}
     // User-Agent: Pelco VxSdk
-    // Session: {_session}
+    // Session: {_sessionId}
     // Scale: {speed}
     // Range: clock={timeStr}
     string timeStr = Utilities::UnixTimeToRfc3339(unixTime);
@@ -228,7 +257,7 @@ void Commands::SeekPlay(unsigned int unixTime, int speed) {
     requestStream << kPlay << kWhitespace << uri << kWhitespace << kRtspVersion << kOneNewLine;
     requestStream << kHeaderCSeq << kColonSpace << _cSeqNum << kOneNewLine;
     requestStream << kHeaderUserAgent << kColonSpace << kActualUserAgent << kOneNewLine;
-    requestStream << kHeaderSession << kColonSpace << this->_session << kOneNewLine;
+    requestStream << kHeaderSession << kColonSpace << this->_sessionId << kOneNewLine;
     requestStream << kHeaderScale << kColonSpace << speed << kOneNewLine;
     requestStream << kHeaderRange << kColonSpace << "clock=" << timeStr.c_str() << kTwoNewLines;
     write(socket, request);
@@ -237,12 +266,8 @@ void Commands::SeekPlay(unsigned int unixTime, int speed) {
     Response resp = ProcessResponse(socket);
     // If a redirect code was returned we need to tear down the current session and start a new one using the redirect location.
     if (resp.statusCode == kStatusCode301 || resp.statusCode == kStatusCode302) {
-        // Copy the redirect location.
-        string temploc = resp.headers[kHeaderLocation];
-        // Tear down the current session.
-        Teardown();
         // Set the playback URI to the redirect location.
-        this->_playbackUri = temploc;
+        this->_playbackUri = resp.headers[kHeaderLocation];
         this->_controller->stream->GetGstreamer()->SetMode(MediaController::Controller::kPlayback);
         // Reset the value for the CSeq field.
         _cSeqNum = 0;
@@ -250,8 +275,16 @@ void Commands::SeekPlay(unsigned int unixTime, int speed) {
         Options();
         Describe();
         Setup();
-        SeekPlay(unixTime, speed);
+        ret = SeekPlay(unixTime, speed);
     }
+    if (resp.statusCode == kStatusCode200) {
+        this->_controller->stream->GetGstreamer()->SetPipeline();
+
+        // Subscribe to the GStreamer Src element in order to get timestamps.
+        this->_controller->stream->GetGstreamer()->SubscribeToProbeEvents(_uuid);
+        return true;
+    }
+    return ret;
 }
 
 void Commands::Pause() {
@@ -264,7 +297,7 @@ void Commands::Pause() {
     // PAUSE {uri} RTSP/1.0
     // CSeq: {_cSeqNum}
     // User-Agent: Pelco VxSdk
-    // Session: {_session}
+    // Session: {_sessionId}
     boost::asio::io_service ioService;
     boost::asio::ip::tcp::socket socket(ioService);
     GetSocket(uri, ioService, socket);
@@ -273,7 +306,7 @@ void Commands::Pause() {
     requestStream << kPause << kWhitespace << uri << kWhitespace << kRtspVersion << kOneNewLine;
     requestStream << kHeaderCSeq << kColonSpace << _cSeqNum << kOneNewLine;
     requestStream << kHeaderUserAgent << kColonSpace << kActualUserAgent << kOneNewLine;
-    requestStream << kHeaderSession << kColonSpace << this->_session << kTwoNewLines;
+    requestStream << kHeaderSession << kColonSpace << this->_sessionId << kTwoNewLines;
     write(socket, request);
 
     // Parse the server response.
@@ -290,7 +323,7 @@ void Commands::Teardown() {
     // TEARDOWN {uri} RTSP/1.0
     // CSeq: {_cSeqNum}
     // User-Agent: Pelco VxSdk
-    // Session: {_session}
+    // Session: {_sessionId}
     boost::asio::io_service ioService;
     boost::asio::ip::tcp::socket socket(ioService);
     GetSocket(uri, ioService, socket);
@@ -299,13 +332,13 @@ void Commands::Teardown() {
     requestStream << kTeardown << kWhitespace << uri << kWhitespace << kRtspVersion << kOneNewLine;
     requestStream << kHeaderCSeq << kColonSpace << _cSeqNum << kOneNewLine;
     requestStream << kHeaderUserAgent << kColonSpace << kActualUserAgent << kOneNewLine;
-    requestStream << kHeaderSession << kColonSpace << this->_session << kTwoNewLines;
+    requestStream << kHeaderSession << kColonSpace << this->_sessionId << kTwoNewLines;
     write(socket, request);
 
     // Parse the server response.
     ProcessResponse(socket);
     // Reset the session and URI values to their defaults.
-    this->_session.clear();
+    this->_sessionId.clear();
     this->_playbackUri = this->_liveUri;
     // Reset the value for the CSeq field.
     _cSeqNum = 0;
@@ -369,14 +402,44 @@ string GetControlLocation(string response) {
     string controlLocation;
     string contentLine;
     stringstream responseStream(response);
+    bool isVideoSection = false;
 
     while (getline(responseStream, contentLine)) {
-        if (contentLine.substr(0, 10) == str(boost::format("%1%:") % kControl)) {
+        if (contentLine.substr(0, 7) == "m=video")
+            isVideoSection = true;
+
+        if (isVideoSection && contentLine.substr(0, 10) == str(boost::format("%1%:") % kControl)) {
             controlLocation = contentLine.substr(10, contentLine.length());
             boost::trim(controlLocation);
+            break;
         }
     }
     return controlLocation;
+}
+
+/// <summary>
+/// Build the GStreamers caps based on the values contained in the SDP response.
+/// </summary>
+/// <param name="description">The media description built from the SDP response.</param>
+/// <returns>A GStreamer caps string.</returns>
+string BuildGstCaps(MediaDescription description) {
+    string caps;
+    if (description.rate != -1)
+        caps += str(boost::format(",clock-rate=(int)%1%") % description.rate);
+    if (description.encoding != "")
+        caps += str(boost::format(",encoding-name=(string)%1%") % description.encoding);
+    if (description.payload != -1)
+        caps += str(boost::format(",payload=(int)%1%") % description.payload);
+    if (description.packetizationMode != "")
+        caps += str(boost::format(",packetizationMode=(string)%1%") % description.packetizationMode);
+    if (description.profileLevelId != "")
+        caps += str(boost::format(",profile-level-id=(string)%1%") % description.profileLevelId);
+    if (description.spropParameterSets != "")
+        caps += str(boost::format(",sprop-parameter-sets=(string)\"%1%\"") % description.spropParameterSets);
+    if (description.conferenceType != "")
+        caps += str(boost::format(",a-type=(string)%1%") % description.conferenceType);
+
+    return caps;
 }
 
 /// <summary>

@@ -38,7 +38,7 @@ namespace CPPConsole {
         /// Returns the dataInterfaces available for this datasource
         /// List gets deleted on its destructor
         /// </summary>
-        std::list<CPPConsole::DataInterface*>* GetDataInterfaces();
+        std::list<DataInterface*>* GetDataInterfaces();
 
         /// <summary>
         /// Returns the RTSP endpoint url

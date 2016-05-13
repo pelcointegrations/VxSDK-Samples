@@ -18,7 +18,7 @@ namespace SDKSampleApp.Source
             var processType = Environment.Is64BitProcess ? "x64" : "x86";
             var currentPath = new System.IO.DirectoryInfo(Application.ExecutablePath);
             var rootSamplePath = currentPath.Parent.Parent.Parent.Parent.Parent.Parent.FullName;
-            const string PathFormat = "{0}\\MediaController\\ThirdParty\\GStreamer\\1.5.2\\{1}\\gstreamer_runtime\\bin";
+            const string PathFormat = "{0}\\MediaController\\ThirdParty\\GStreamer\\1.8.1\\{1}\\gstreamer_runtime\\bin";
             var gstreamerPath = new System.IO.DirectoryInfo(string.Format(PathFormat, rootSamplePath, processType));
 
             // Add the GStreamer location to the path.  It will use it to automatically find the needed files.

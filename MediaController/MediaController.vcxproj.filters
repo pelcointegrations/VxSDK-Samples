@@ -32,6 +32,9 @@
     <ClCompile Include="Source\RtspStream.cpp">
       <Filter>Streaming\Rtsp</Filter>
     </ClCompile>
+    <ClCompile Include="Source\RtspKeepAlive.cpp">
+      <Filter>Streaming\Rtsp</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Include\Controller.h">

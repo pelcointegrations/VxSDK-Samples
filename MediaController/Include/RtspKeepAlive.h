@@ -2,8 +2,6 @@
 #define RtspKeepAlive_h__
 
 #include "RtspCommands.h"
-#include <thread>
-#include <atomic>
 
 namespace MediaController {
     namespace Rtsp {
@@ -18,41 +16,22 @@ namespace MediaController {
             /// Constructor.
             /// </summary>
             /// <param name="commands">The <see cref="Commands"/> instance for the associated stream.</param>
-            KeepAlive(Commands& commands)
-                : _shutdownRequested(false),
-                _commands(commands),
-                _keepAliveThread(std::thread(&KeepAlive::GetParamsLoop, this)){
-            }
+            KeepAlive(Commands& commands);
 
             /// <summary>
             /// Destructor.
             /// </summary>
-            ~KeepAlive() {
-                _shutdownRequested = true;
-                this->_keepAliveThread.join();
-            }
+            ~KeepAlive();
 
             /// <summary>
             /// Make a GET_PARAMETERS method call to the associated stream.
             /// </summary>
-            void GetParamsLoop() {
-                int _count = 0;
-                while (!_shutdownRequested) {
-                    if (_count < Constants::kKeepAliveRefreshSec) {
-                        ++_count;
-                    }
-                    else {
-                        _commands.GetParameter();
-                        _count = 0;
-                    }
-                    std::this_thread::sleep_for(std::chrono::seconds(1));
-                }
-            }
+            void GetParamsLoop();
 
         private:
             Commands _commands;
-            std::thread _keepAliveThread;
-            std::atomic<bool> _shutdownRequested;
+            struct ThreadInfo;
+            std::unique_ptr<ThreadInfo> d_ptr;
         };
     }
 }

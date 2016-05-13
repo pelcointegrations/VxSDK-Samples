@@ -261,9 +261,6 @@ void TimestampCallback(MediaController::TimestampEvent* timeEvent) {
         string textToDisplayIntitle = gCurrentlyPlayingCam + " (" + fmt.str() + ")";
         ::SetWindowTextA(gGstreamerPlayerWindow, textToDisplayIntitle.c_str());
     }
-    
-    // Delet event data once done
-    delete timeEvent;
 }
 
 /// <summary>

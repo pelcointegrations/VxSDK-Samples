@@ -119,8 +119,8 @@ SET RTSPCTRLR=MediaController%D%
 COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%REST%.dll" "$(TargetDir)"
 COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%REST%.pdb" "$(TargetDir)"
 
-XCOPY  "..\MediaController\ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_runtime\bin\*.*" "$(TargetDir)" /y /D
-XCOPY  "..\MediaController\ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_runtime\lib" "$(TargetDir)"..\lib\ /s /i /y /D
+XCOPY  "..\MediaController\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_runtime\bin\*.*" "$(TargetDir)" /y /D
+XCOPY  "..\MediaController\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_runtime\lib" "$(TargetDir)"..\lib\ /s /i /y /D
 
 COPY /Y "..\MediaController\Bin\$(PlatformTarget)\$(ConfigurationName)\%RTSPCTRLR%.dll" "$(TargetDir)"
 COPY /Y "..\MediaController\Bin\$(PlatformTarget)\$(ConfigurationName)\%RTSPCTRLR%.pdb" "$(TargetDir)"
@@ -166,8 +166,8 @@ SET RTSPCTRLR=MediaController%D%
 COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%REST%.dll" "$(TargetDir)"
 COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%REST%.pdb" "$(TargetDir)"
 
-XCOPY  "..\MediaController\ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_runtime\bin\*.*" "$(TargetDir)" /y /D
-XCOPY  "..\MediaController\ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_runtime\lib" "$(TargetDir)"..\lib\ /s /i /y /D
+XCOPY  "..\MediaController\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_runtime\bin\*.*" "$(TargetDir)" /y /D
+XCOPY  "..\MediaController\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_runtime\lib" "$(TargetDir)"..\lib\ /s /i /y /D
 
 COPY /Y "..\MediaController\Bin\$(PlatformTarget)\$(ConfigurationName)\%RTSPCTRLR%.dll" "$(TargetDir)"
 COPY /Y "..\MediaController\Bin\$(PlatformTarget)\$(ConfigurationName)\%RTSPCTRLR%.pdb" "$(TargetDir)"
@@ -211,8 +211,8 @@ SET RTSPCTRLR=MediaController%D%
 
 COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%REST%.dll" "$(TargetDir)"
 
-XCOPY  "..\MediaController\ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_runtime\bin\*.*" "$(TargetDir)" /y /D
-XCOPY  "..\MediaController\ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_runtime\lib" "$(TargetDir)"..\lib\ /s /i /y /D
+XCOPY  "..\MediaController\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_runtime\bin\*.*" "$(TargetDir)" /y /D
+XCOPY  "..\MediaController\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_runtime\lib" "$(TargetDir)"..\lib\ /s /i /y /D
 
 COPY /Y "..\MediaController\Bin\$(PlatformTarget)\$(ConfigurationName)\%RTSPCTRLR%.dll" "$(TargetDir)"
 
@@ -253,8 +253,8 @@ SET RTSPCTRLR=MediaController%D%
 
 COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%REST%.dll" "$(TargetDir)"
 
-XCOPY  "..\MediaController\ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_runtime\bin\*.*" "$(TargetDir)" /y /D
-XCOPY  "..\MediaController\ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_runtime\lib" "$(TargetDir)"..\lib\ /s /i /y /D
+XCOPY  "..\MediaController\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_runtime\bin\*.*" "$(TargetDir)" /y /D
+XCOPY  "..\MediaController\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_runtime\lib" "$(TargetDir)"..\lib\ /s /i /y /D
 
 COPY /Y "..\MediaController\Bin\$(PlatformTarget)\$(ConfigurationName)\%RTSPCTRLR%.dll" "$(TargetDir)"
 

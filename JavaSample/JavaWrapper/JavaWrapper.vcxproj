@@ -118,8 +118,8 @@ SET RTSPCTRLR=MediaController%D%
 COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%REST%.dll" "$(TargetDir)"
 COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%REST%.pdb" "$(TargetDir)"
 
-XCOPY  "$(ProjectDir)..\..\MediaController\ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_runtime\bin\*.*" "$(TargetDir)" /y /D
-XCOPY  "$(ProjectDir)..\..\MediaController\ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_runtime\lib" "$(TargetDir)"..\lib\ /s /i /y /D
+XCOPY  "$(ProjectDir)..\..\MediaController\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_runtime\bin\*.*" "$(TargetDir)" /y /D
+XCOPY  "$(ProjectDir)..\..\MediaController\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_runtime\lib" "$(TargetDir)"..\lib\ /s /i /y /D
 
 COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%VXSDK%.dll" "$(TargetDir)"
 COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%VXSDK%.pdb" "$(TargetDir)"
@@ -147,8 +147,8 @@ COPY /Y "$(TargetDir)$(TargetName).dll" "..\Java\libs\$(PlatformTarget)\$(Config
 COPY /Y "$(TargetDir)%RTSPCTRLR%.dll" "..\Java\libs\$(PlatformTarget)\$(ConfigurationName)"
 COPY /Y "$(TargetDir)%RTSPCTRLR%.pdb" "..\Java\libs\$(PlatformTarget)\$(ConfigurationName)"
 
-XCOPY  "$(ProjectDir)..\..\MediaController\ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_runtime\bin\*.*" "..\Java\libs\$(PlatformTarget)\$(ConfigurationName)\bin\" /y /D
-XCOPY  "$(ProjectDir)..\..\MediaController\ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_runtime\lib" "..\Java\libs\$(PlatformTarget)\$(ConfigurationName)\lib\" /s /i /y /D</Command>
+XCOPY  "$(ProjectDir)..\..\MediaController\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_runtime\bin\*.*" "..\Java\libs\$(PlatformTarget)\$(ConfigurationName)\bin\" /y /D
+XCOPY  "$(ProjectDir)..\..\MediaController\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_runtime\lib" "..\Java\libs\$(PlatformTarget)\$(ConfigurationName)\lib\" /s /i /y /D</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -181,8 +181,8 @@ SET RTSPCTRLR=MediaController%D%
 COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%REST%.dll" "$(TargetDir)"
 COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%REST%.pdb" "$(TargetDir)"
 
-XCOPY  "$(ProjectDir)..\..\MediaController\ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_runtime\bin\*.*" "$(TargetDir)" /y /D
-XCOPY  "$(ProjectDir)..\..\MediaController\ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_runtime\lib" "$(TargetDir)"..\lib\ /s /i /y /D
+XCOPY  "$(ProjectDir)..\..\MediaController\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_runtime\bin\*.*" "$(TargetDir)" /y /D
+XCOPY  "$(ProjectDir)..\..\MediaController\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_runtime\lib" "$(TargetDir)"..\lib\ /s /i /y /D
 
 COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%VXSDK%.dll" "$(TargetDir)"
 COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%VXSDK%.pdb" "$(TargetDir)"
@@ -210,8 +210,8 @@ COPY /Y "$(TargetDir)$(TargetName).dll" "..\Java\libs\$(PlatformTarget)\$(Config
 COPY /Y "$(TargetDir)%RTSPCTRLR%.dll" "..\Java\libs\$(PlatformTarget)\$(ConfigurationName)"
 COPY /Y "$(TargetDir)%RTSPCTRLR%.pdb" "..\Java\libs\$(PlatformTarget)\$(ConfigurationName)"
 
-XCOPY  "$(ProjectDir)..\..\MediaController\ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_runtime\bin\*.*" "..\Java\libs\$(PlatformTarget)\$(ConfigurationName)\bin\" /y /D
-XCOPY  "$(ProjectDir)..\..\MediaController\ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_runtime\lib" "..\Java\libs\$(PlatformTarget)\$(ConfigurationName)\lib\" /s /i /y /D</Command>
+XCOPY  "$(ProjectDir)..\..\MediaController\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_runtime\bin\*.*" "..\Java\libs\$(PlatformTarget)\$(ConfigurationName)\bin\" /y /D
+XCOPY  "$(ProjectDir)..\..\MediaController\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_runtime\lib" "..\Java\libs\$(PlatformTarget)\$(ConfigurationName)\lib\" /s /i /y /D</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -246,8 +246,8 @@ SET RTSPCTRLR=MediaController%D%
 
 COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%REST%.dll" "$(TargetDir)"
 
-XCOPY  "$(ProjectDir)..\..\MediaController\ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_runtime\bin\*.*" "$(TargetDir)" /y /D
-XCOPY  "$(ProjectDir)..\..\MediaController\ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_runtime\lib" "$(TargetDir)"..\lib\ /s /i /y /D
+XCOPY  "$(ProjectDir)..\..\MediaController\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_runtime\bin\*.*" "$(TargetDir)" /y /D
+XCOPY  "$(ProjectDir)..\..\MediaController\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_runtime\lib" "$(TargetDir)"..\lib\ /s /i /y /D
 
 COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%VXSDK%.dll" "$(TargetDir)"
 
@@ -272,8 +272,8 @@ COPY /Y "$(TargetDir)$(TargetName).dll" "..\Java\libs\$(PlatformTarget)\$(Config
 COPY /Y "$(TargetDir)%RTSPCTRLR%.dll" "..\Java\libs\$(PlatformTarget)\$(ConfigurationName)"
 COPY /Y "$(TargetDir)%RTSPCTRLR%.pdb" "..\Java\libs\$(PlatformTarget)\$(ConfigurationName)"
 
-XCOPY  "$(ProjectDir)..\..\MediaController\ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_runtime\bin\*.*" "..\Java\libs\$(PlatformTarget)\$(ConfigurationName)\bin\" /y /D
-XCOPY  "$(ProjectDir)..\..\MediaController\ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_runtime\lib" "..\Java\libs\$(PlatformTarget)\$(ConfigurationName)\lib\" /s /i /y /D</Command>
+XCOPY  "$(ProjectDir)..\..\MediaController\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_runtime\bin\*.*" "..\Java\libs\$(PlatformTarget)\$(ConfigurationName)\bin\" /y /D
+XCOPY  "$(ProjectDir)..\..\MediaController\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_runtime\lib" "..\Java\libs\$(PlatformTarget)\$(ConfigurationName)\lib\" /s /i /y /D</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -308,8 +308,8 @@ SET RTSPCTRLR=MediaController%D%
 
 COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%REST%.dll" "$(TargetDir)"
 
-XCOPY  "$(ProjectDir)..\..\MediaController\ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_runtime\bin\*.*" "$(TargetDir)" /y /D
-XCOPY  "$(ProjectDir)..\..\MediaController\ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_runtime\lib" "$(TargetDir)"..\lib\ /s /i /y /D
+XCOPY  "$(ProjectDir)..\..\MediaController\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_runtime\bin\*.*" "$(TargetDir)" /y /D
+XCOPY  "$(ProjectDir)..\..\MediaController\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_runtime\lib" "$(TargetDir)"..\lib\ /s /i /y /D
 
 COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%VXSDK%.dll" "$(TargetDir)"
 
@@ -334,8 +334,8 @@ COPY /Y "$(TargetDir)$(TargetName).dll" "..\Java\libs\$(PlatformTarget)\$(Config
 COPY /Y "$(TargetDir)%RTSPCTRLR%.dll" "..\Java\libs\$(PlatformTarget)\$(ConfigurationName)"
 COPY /Y "$(TargetDir)%RTSPCTRLR%.pdb" "..\Java\libs\$(PlatformTarget)\$(ConfigurationName)"
 
-XCOPY  "$(ProjectDir)..\..\MediaController\ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_runtime\bin\*.*" "..\Java\libs\$(PlatformTarget)\$(ConfigurationName)\bin\" /y /D
-XCOPY  "$(ProjectDir)..\..\MediaController\ThirdParty\GStreamer\1.5.2\$(PlatformTarget)\gstreamer_runtime\lib" "..\Java\libs\$(PlatformTarget)\$(ConfigurationName)\lib\" /s /i /y /D</Command>
+XCOPY  "$(ProjectDir)..\..\MediaController\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_runtime\bin\*.*" "..\Java\libs\$(PlatformTarget)\$(ConfigurationName)\bin\" /y /D
+XCOPY  "$(ProjectDir)..\..\MediaController\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_runtime\lib" "..\Java\libs\$(PlatformTarget)\$(ConfigurationName)\lib\" /s /i /y /D</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

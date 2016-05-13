@@ -14,7 +14,7 @@ namespace MediaController {
         /// <summary>
         /// The GStreamer pipeline.
         /// </summary>
-        GstElement *pipeline;
+        std::unique_ptr<GstElement*> pipeline;
 
         /// <summary>
         /// The list of timestamp event observers.

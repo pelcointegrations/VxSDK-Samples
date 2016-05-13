@@ -40,6 +40,7 @@ namespace MediaController {
         static const char* kColonSpace = ": ";
         static const char* kSemicolon = ";";
         static const char* kForwardSlash = "/";
+        static const char* kEquals = "=";
         static const char* kReturn = "\r";
         static const char* kOneNewLine = "\r\n";
         static const char* kTwoNewLines = "\r\n\r\n";
@@ -53,19 +54,17 @@ namespace MediaController {
         static const char* kPause = "PAUSE";
         static const char* kTeardown = "TEARDOWN";
         static const char* kSdpMimeType = "application/sdp";
-        static const std::string kRtspPipeline = "rtpbin name=rtpbin "
-                                                 "udpsrc name=udpsrc0%1% "
-                                                 "caps=\"application/x-rtp,media=(string)video,clock-rate=(int)%2%,encoding-name=(string)%3%\" "
-                                                 "port=%4% %5% ! queue ! decodebin ! d3dvideosink name=videoSink "
-                                                 "udpsrc name=udpsrc1%6% port=%7% ! rtpbin.recv_rtcp_sink_0";
+        static const std::string kRtspPipeline = "udpsrc name=udpsrc0%1% buffer-size=524288 caps=\"application/x-rtp,media=(string)video%2%\" reuse=false port=%3%%4% "
+                                                 "! .recv_rtp_sink_0 rtpbin name=rtpbin%1% ! decodebin ! d3dvideosink sync=false udpsrc name=udpsrc1%1% caps=\"application/x-rtcp\" "
+                                                 "reuse=false port=%5% ! rtpbin%1%.recv_rtcp_sink_0";
 
         // Mjpeg
         static const char* kHttpHeaders = "http-headers";
         static const char* kResponseHeaders = "response-headers";
         static const char* kHttpSrc = "httpsrc";
         static const char* kSrc = "src";
-        static const std::string kMjpegPipeline = "souphttpsrc retries=-1 location=%1% name=httpsrc%2% http-log-level=SOUP_LOGGER_LOG_HEADERS ssl-strict=false "
-                                                  "! jpegdec ! d3dvideosink name=videoSink";
+        static const std::string kMjpegPipeline = "souphttpsrc retries=5 keep-alive=true location=%1% name=httpsrc%2% http-log-level=SOUP_LOGGER_LOG_HEADERS ssl-strict=false "
+                                                  "! jpegdec ! d3dvideosink";
     }
 }
 #endif // Constants_h__

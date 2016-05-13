@@ -17,10 +17,14 @@ namespace MediaController {
                 this->protocol.clear();
                 this->ip.clear();
                 this->encoding.clear();
+                this->packetizationMode.clear();
+                this->profileLevelId.clear();
+                this->spropParameterSets.clear();
+                this->conferenceType.clear();
                 this->port = 0;
-                this->payload = 0;
+                this->payload = -1;
                 this->ttl = 0;
-                this->rate = 0;
+                this->rate = -1;
                 this->isMulticast = false;
             }
 
@@ -68,6 +72,26 @@ namespace MediaController {
             /// Specifies whether the transport type is multicast or unicast.
             /// </summary>
             bool isMulticast;
+
+            /// <summary>
+            /// Specifies the properties of an RTP payload type.
+            /// </summary>
+            std::string packetizationMode;
+
+            /// <summary>
+            /// Indicates the profile that the codec supports.
+            /// </summary>
+            std::string profileLevelId;
+
+            /// <summary>
+            /// Specifies sequence and picture parameters.
+            /// </summary>
+            std::string spropParameterSets;
+
+            /// <summary>
+            /// Specifies the type of the conference.
+            /// </summary>
+            std::string conferenceType;
         };
     }
 }

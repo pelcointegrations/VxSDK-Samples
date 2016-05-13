@@ -71,6 +71,12 @@ namespace MediaController {
         /// </summary>
         /// <returns>The current stream <see cref="Mode"/>.</returns>
         virtual Mode GetMode() = 0;
+
+        /// <summary>
+        /// Get the status of the pipeline.
+        /// </summary>
+        /// <returns>True if pipeline is active, otherwise false.</returns>
+        virtual bool IsPipelineActive() = 0;
     };
 }
 #endif // IController_h_

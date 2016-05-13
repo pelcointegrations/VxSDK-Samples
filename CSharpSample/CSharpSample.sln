@@ -3,14 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CSharpWrapper", "CSharpWrapper\CSharpWrapper.vcxproj", "{7B8BD603-EB13-4E0D-A7E9-7A36813E52E1}"
-	ProjectSection(ProjectDependencies) = postProject
-		{882C1F53-F88D-47F1-BC85-623FBE1EB4C5} = {882C1F53-F88D-47F1-BC85-623FBE1EB4C5}
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpSample", "CSharp\CSharpSample.csproj", "{CBB5BA83-F9C9-405A-9BC6-71EBB2FE739B}"
 	ProjectSection(ProjectDependencies) = postProject
 		{7B8BD603-EB13-4E0D-A7E9-7A36813E52E1} = {7B8BD603-EB13-4E0D-A7E9-7A36813E52E1}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CSharpWrapper", "CSharpWrapper\CSharpWrapper.vcxproj", "{7B8BD603-EB13-4E0D-A7E9-7A36813E52E1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{882C1F53-F88D-47F1-BC85-623FBE1EB4C5} = {882C1F53-F88D-47F1-BC85-623FBE1EB4C5}
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MediaController", "..\MediaController\MediaController.vcxproj", "{882C1F53-F88D-47F1-BC85-623FBE1EB4C5}"

@@ -18,19 +18,19 @@ namespace MediaController {
         /// Virtual destructor.
         /// </summary>
         virtual ~StreamBase();
-        virtual void Play(int speed) override;
+        virtual bool Play(int speed) override;
         virtual void Pause() override;
         virtual void Stop() override;
         virtual void FrameForward() override;
         virtual void FrameBackward() override;
-        virtual void Seek(unsigned int unixTime, int speed) override;
+        virtual bool Seek(unsigned int unixTime, int speed) override;
         virtual void NewRequest(MediaRequest& request) override;
 
         /// <summary>
         /// Call Seek on the stream using the last timestamp received as the start time.
         /// </summary>
         /// <param name="speed">The playback speed.  Negative values can be used for reverse playback.</param>
-        virtual void Resume(int speed);
+        virtual bool Resume(int speed);
 
         /// <summary>
         /// Get the current GStreamer wrapper instance.

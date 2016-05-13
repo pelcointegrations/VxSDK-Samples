@@ -723,14 +723,21 @@ namespace SDKSampleApp.Source
         /// </summary>
         /// <param name="selProtocol">The selected protocol.</param>
         /// <param name="dataSource">The selected data source.</param>
+        /// <param name="autoSelect">Selects the first available stream if True.</param>
         /// <returns>The currently selected data interface.</returns>
-        private DataInterface SelectDataInterface(VxStreamProtocol selProtocol, DataSource dataSource)
+        private DataInterface SelectDataInterface(VxStreamProtocol selProtocol, DataSource dataSource, bool autoSelect)
         {
             DataInterface dataInterface;
             if (selProtocol == VxStreamProtocol.RtspRtp)
             {
                 var interfaceList = dataSource.DataInterfaces.Where(iface =>
                     iface.Protocol == DataInterface.StreamProtocols.RtspRtp).ToList();
+
+                if (interfaceList.Count == 0)
+                    return null;
+
+                if (autoSelect)
+                    return interfaceList[0];
 
                 if (interfaceList.Count > 1)
                 {
@@ -765,11 +772,16 @@ namespace SDKSampleApp.Source
             {
                 // Get the data sources for the selected device.
                 var dataSource = (DataSource)lvDataSources.SelectedItems[0].Tag;
-                 var selProtocol = mjpegToolStripMenuItem.Checked ?
+                 VxStreamProtocol selProtocol = mjpegToolStripMenuItem.Checked ?
                      VxStreamProtocol.MjpegPull : VxStreamProtocol.RtspRtp;
 
-                var dataInterface = SelectDataInterface(selProtocol, dataSource);
-                if (dataInterface == null) return;
+                var showWindow = Control.Current != null && !(seekTime != default(DateTime) || Control.Current.Mode != MediaControl.Modes.Playback);
+                var dataInterface = SelectDataInterface(selProtocol, dataSource, showWindow);
+                if (dataInterface == null)
+                {
+                    WriteToLog("Error: No data interface found for selected camera.\n");
+                    return;
+                }
                 // If the media controller exists then a stream is running and the user is
                 // requesting a new action on it.  If it's null then this is either the
                 // first run or an existing stream has been stopped.  So a new media controller
@@ -792,9 +804,40 @@ namespace SDKSampleApp.Source
                 }
 
                 if (seekTime == default(DateTime))
-                    Control.Current.Play((int)nudSpeed.Value);
+                {
+                    if (!Control.Current.Play((int) nudSpeed.Value))
+                    {
+                        WriteToLog(string.Format("Error: Unable to {0} stream.\n",
+                            Control.Current.Mode == MediaControl.Modes.Playback ? "resume" : "start"));
+                        if (Control.Current.IsPipelineActive)
+                        {
+                            StopStream();
+                            return;
+                        }
+
+                        Control.Current.Dispose();
+                        Control.Current = null;
+                        Control.SelectedPanel.Refresh();
+                        return;
+                    }
+                }
                 else
-                    Control.Current.Seek(seekTime, (int)nudSpeed.Value);
+                {
+                    if (!Control.Current.Seek(seekTime, (int)nudSpeed.Value))
+                    {
+                        WriteToLog("Error: Unable to start recorded stream.\n");
+                        if (Control.Current.IsPipelineActive)
+                        {
+                            StopStream();
+                            return;
+                        }
+
+                        Control.Current.Dispose();
+                        Control.Current = null;
+                        Control.SelectedPanel.Refresh();
+                        return;
+                    }
+                }
 
                 Control.SetPlayingIndex();
                 SetupPtzControls(dataSource);

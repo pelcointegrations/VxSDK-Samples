@@ -65,7 +65,7 @@ namespace CPPCli {
         /// Call Play on the stream.
         /// </summary>
         /// <param name="speed">The playback speed.  Negative values can be used for reverse playback.</param>
-        void Play(int speed);
+        bool Play(int speed);
 
         /// <summary>
         /// Call Pause on the stream.
@@ -87,7 +87,7 @@ namespace CPPCli {
         /// </summary>
         /// <param name="time">The start time for playback.</param>
         /// <param name="speed">The playback speed.  Negative values can be used for reverse playback.</param>
-        void Seek(System::DateTime time, int speed);
+        bool Seek(System::DateTime time, int speed);
 
         /// <summary>
         /// Gets the current playback mode.
@@ -98,11 +98,19 @@ namespace CPPCli {
         }
 
         /// <summary>
-        /// Gets the current data source.
+        /// Gets the current playback mode.
         /// </summary>
-        /// <value>The current data source.</value>
+        /// <value>The current stream mode.</value>
         property DataSource^ CurrentDataSource {
             DataSource^ get() { return _currentdataSource; }
+        }
+
+        /// <summary>
+        /// Get the status of the pipeline.
+        /// </summary>
+        /// <returns>True if pipeline is active, otherwise false.</returns>
+        property bool IsPipelineActive {
+            bool get() { return _control->IsPipelineActive(); }
         }
 
         /// <summary>

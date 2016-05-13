@@ -34,7 +34,7 @@ Controller::Controller(MediaRequest& request) {
 Controller::~Controller() {}
 
 void Controller::SetWindow(void* handle) {
-    this->stream->GetGstreamer()->SetWindow(intptr_t(handle));
+    this->stream->GetGstreamer()->SetWindowHandle(intptr_t(handle));
 }
 
 void Controller::NewRequest(MediaRequest& request) {
@@ -45,8 +45,8 @@ void Controller::GoToLive() {
     state->GoToLive(*this);
 }
 
-void Controller::Play(int speed) {
-    state->Play(*this, speed);
+bool Controller::Play(int speed) {
+    return state->Play(*this, speed);
 }
 
 void Controller::Pause() {
@@ -61,8 +61,8 @@ void Controller::FrameForward() {}
 
 void Controller::FrameBackward() {}
 
-void Controller::Seek(unsigned int unixTime, int speed) {
-    state->Seek(*this, unixTime, speed);
+bool Controller::Seek(unsigned int unixTime, int speed) {
+    return state->Seek(*this, unixTime, speed);
 }
 
 void Controller::AddObserver(TimestampEventCallback observer) {
@@ -83,4 +83,8 @@ void Controller::ClearObservers() {
 
 Controller::Mode Controller::GetMode() {
     return this->stream->GetGstreamer()->GetMode();
+}
+
+bool Controller::IsPipelineActive() {
+    return this->stream->GetGstreamer()->IsPipelineActive();
 }

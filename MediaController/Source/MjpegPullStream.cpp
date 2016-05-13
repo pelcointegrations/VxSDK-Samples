@@ -18,22 +18,26 @@ MjpegPull::Stream::Stream(MediaRequest& request, Controller& controller)
     std::string pipeline = boost::str(boost::format(Constants::kMjpegPipeline) % _dataSession->jpegUri % _uuid);
 
     // Build a new pipeline using the description generated above.
-    this->_gst = GstWrapper::Builder()
-        .SetPipelineDescription(pipeline)
-        .Build();
+    this->_gst = new GstWrapper();
 
-    // Subscribe to the GStreamer Bus element in order to get timestamps.
-    this->_gst->SubscribeToBusEvents(_uuid);
+    // Update the pipeline using the description generated above.
+    this->_gst->UpdatePipeline(pipeline);
 }
 
 MjpegPull::Stream::~Stream() {}
 
-void MjpegPull::Stream::Play(int speed) {
+bool MjpegPull::Stream::Play(int speed) {
     // If the jpegUri is empty send a new stream request.
     if (_dataSession->jpegUri[0] == '\0')
         NewRequest(_mediaRequest);
 
+    if (!this->_gst->IsPipelineActive()) {
+        this->_gst->SetPipeline();
+        // Subscribe to the GStreamer Bus element in order to get timestamps.
+        this->_gst->SubscribeToBusEvents(_uuid);
+    }
     _dataSession->GoLive();
+    return true;
 }
 
 void MjpegPull::Stream::Pause() {
@@ -51,31 +55,43 @@ void MjpegPull::Stream::FrameForward() {}
 
 void MjpegPull::Stream::FrameBackward() {}
 
-void MjpegPull::Stream::Seek(unsigned int unixTime, int speed) {
+bool MjpegPull::Stream::Seek(unsigned int unixTime, int speed) {
     // If the jpegUri is empty send a new stream request.
     if (_dataSession->jpegUri[0] == '\0')
         NewRequest(_mediaRequest);
 
+    if (!this->_gst->IsPipelineActive()) {
+        this->_gst->SetPipeline();
+        // Subscribe to the GStreamer Bus element in order to get timestamps.
+        this->_gst->SubscribeToBusEvents(_uuid);
+    }
     VxSdk::VxResult::Value ret = _dataSession->Seek(unixTime, speed);
     if (ret == VxSdk::VxResult::kOK) {
         // Set the initial timestamp to the seek time.
         this->_gst->SetTimestamp(unixTime);
     }
+    return true;
 }
 
 void MjpegPull::Stream::GoToLive() {}
 
-void MjpegPull::Stream::Resume(int speed) {
+bool MjpegPull::Stream::Resume(int speed) {
     // If the jpegUri is empty send a new stream request.
     if (_dataSession->jpegUri[0] == '\0')
         NewRequest(_mediaRequest);
 
+    if (!this->_gst->IsPipelineActive()) {
+        this->_gst->SetPipeline();
+        // Subscribe to the GStreamer Bus element in order to get timestamps.
+        this->_gst->SubscribeToBusEvents(_uuid);
+    }
     // Seek to the last received timestamp generated during the Pause call.
     VxSdk::VxResult::Value ret = _dataSession->Seek(this->_gst->GetLastTimestamp(VxStreamProtocol::kMjpegPull), speed);
     if (ret == VxSdk::VxResult::kOK) {
         // Set the initial timestamp to the seek time.
         this->_gst->SetTimestamp(this->_gst->GetLastTimestamp(VxStreamProtocol::kMjpegPull));
     }
+    return true;
 }
 
 void MjpegPull::Stream::NewRequest(MediaRequest& request) {

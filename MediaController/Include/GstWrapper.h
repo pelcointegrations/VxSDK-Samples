@@ -4,7 +4,6 @@
 #include "Controller.h"
 #include "GstVars.h"
 #include <gst/gstelement.h>
-#include <boost/thread.hpp>
 
 namespace MediaController {
 
@@ -15,34 +14,6 @@ namespace MediaController {
     public:
 
         /// <summary>
-        /// Creates new instances of GStreamer.
-        /// </summary>
-        class Builder {
-        public:
-
-            /// <summary>
-            /// Default constructor.
-            /// </summary>
-            Builder();
-
-            /// <summary>
-            /// Set the description for the current pipeline.
-            /// </summary>
-            /// <param name="pipelineDescription">The description to set the pipeline to.</param>
-            /// <returns>The builder instance with the newly set pipeline.</returns>
-            Builder SetPipelineDescription(const std::string& pipelineDescription);
-
-            /// <summary>
-            /// Build a new pipeline.
-            /// </summary>
-            /// <returns>A new GstWrapper object.</returns>
-            GstWrapper* Build();
-
-        private:
-            GstWrapper* const _gst;
-        };
-
-        /// <summary>
         /// Destructor.
         /// </summary>
         ~GstWrapper();
@@ -51,7 +22,7 @@ namespace MediaController {
         /// Set the display window using the given window handle.
         /// </summary>
         /// <param name="winhandle">The window handle of the display.</param>
-        void SetWindow(intptr_t winhandle);
+        void SetWindowHandle(intptr_t winhandle);
 
         /// <summary>
         /// Clear the display window.
@@ -89,13 +60,20 @@ namespace MediaController {
         /// Get the current playback mode.
         /// </summary>
         /// <returns>The current stream <see cref="Controller::Mode"/>.</returns>
-        Controller::Mode GetMode() const { return _gstVars->mode; }
+        Controller::Mode GetMode() const { return _gstVars.mode; }
 
         /// <summary>
         /// Set the current playback mode.
         /// </summary>
         /// <param name="mode">The stream <see cref="Controller::Mode"/> to set.</param>
         void SetMode(Controller::Mode mode);
+
+        /// <summary>
+        /// Set the description for the current pipeline.
+        /// </summary>
+        /// <param name="pipelineDescription">The description to set the pipeline to.</param>
+        /// <returns>The builder instance with the newly set pipeline.</returns>
+        void SetPipeline();
 
         /// <summary>
         /// Add custom data to be stored in here, which will be send back to caller inside <see cref="TimestampEvent"/> on <see cref="TimestampEventCallback"/>.
@@ -123,6 +101,12 @@ namespace MediaController {
         void UpdatePipeline(const std::string& pipelineDescription);
 
         /// <summary>
+        /// Get the status of the pipeline.
+        /// </summary>
+        /// <returns>True if pipeline is active, otherwise false.</returns>
+        bool IsPipelineActive();
+
+        /// <summary>
         /// Set the stream location.
         /// </summary>
         /// <param name="location">The URI of the new stream location.</param>
@@ -140,15 +124,15 @@ namespace MediaController {
         /// <param name="uuid">The UUID used in the current pipeline description.</param>
         void SubscribeToProbeEvents(std::string uuid);
 
-    private:
         GstWrapper();
+        void SetOverlay();
+    private:
         void Init();
         void Cleanup();
         std::string _pipelineDescription;
         intptr_t _winhandle;
-        GstVars* const _gstVars;
+        GstVars _gstVars;
         GMainLoop *_loop;
-        boost::thread *_workerThread;
     };
 }
 #endif // GstWrapper_h__

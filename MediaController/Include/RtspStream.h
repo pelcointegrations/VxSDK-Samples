@@ -30,19 +30,19 @@ namespace MediaController {
             /// Virtual destructor.
             /// </summary>
             virtual ~Stream();
-            virtual void Play(int speed) override;
+            virtual bool Play(int speed) override;
             virtual void Pause() override;
             virtual void Stop() override;
             virtual void FrameForward() override;
             virtual void FrameBackward() override;
-            virtual void Seek(unsigned int unixTime, int speed) override;
+            virtual bool Seek(unsigned int unixTime, int speed) override;
             virtual void GoToLive() override;
             virtual void NewRequest(MediaRequest& request) override;
-            virtual void Resume(int speed) override;
+            virtual bool Resume(int speed) override;
 
         private:
             Commands _rtspCommands;
-            KeepAlive* _rtspKeepAlive;
+            std::unique_ptr<KeepAlive> _rtspKeepAlive;
         };
     }
 }

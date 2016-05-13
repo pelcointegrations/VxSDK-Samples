@@ -1,17 +1,14 @@
 #include "stdafx.h"
 #include "MediaControl.h"
 
-CPPConsole::MediaControl::MediaControl(CPPConsole::DataSource* ds) : _isPlaying(false), _speed(0) {
+CPPConsole::MediaControl::MediaControl(DataSource* ds) : _isPlaying(false), _speed(0) {
     MediaController::MediaRequest request;
     request.dataSource = ds->Self();
     auto dsi = ds->GetDataInterfaces();
-    for (std::list<DataInterface*>::const_iterator dsiIter = dsi->begin(), end = dsi->end(); dsiIter != end; ++dsiIter) {
-        if ((*dsiIter)->GetProtocol() == DataInterface::StreamProtocol::kStreamProtocolRtspRtp)
-            request.dataInterface = *(*dsiIter)->GetDataInterfacePtr();
-    }
-    
+    request.dataInterface = *dsi->front()->_dataInterface;
+
     MediaController::IController* control = nullptr;
-    MediaController::GetController(&request, &control);
+    GetController(&request, &control);
     _control = control;
 }
 

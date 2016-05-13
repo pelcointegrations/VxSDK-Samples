@@ -10,6 +10,7 @@ static const MediaDescription EmptyMediaDescription;
 void ParseMediaDescription(const string& line, string& media, unsigned short& port, string& protocol, unsigned short& payload);
 void ParseConnectionInformation(const string& line, string& ip, unsigned short& ttl, bool& isMulticast);
 void ParseRtpMap(const string& line, const unsigned short payload, string& encoding, unsigned int& rate);
+void ParseFormatParams(const string& line, string& packetizationMode, string& profileLevelId, string& spropParameterSets);
 
 SdpParser::SdpParser() {}
 
@@ -34,6 +35,10 @@ void SdpParser::Parse(const string& sdp) {
             }
             ParseMediaDescription(line, media.type, media.port, media.protocol, media.payload);
         }
+        else if (line.substr(0, 7) == "a=type:"){
+            media.conferenceType = line.substr(7);
+            boost::trim(media.conferenceType);
+        }
         else if (!media.type.empty()) {
             // If the line contains the connection information, parse it.
             if (line.substr(0, 2) == "c=")
@@ -41,6 +46,8 @@ void SdpParser::Parse(const string& sdp) {
             // If the line contains the RTP map, parse it.
             else if (line.substr(0, 9) == "a=rtpmap:")
                 ParseRtpMap(line, media.payload, media.encoding, media.rate);
+            else if (line.substr(0, 7) == "a=fmtp:")
+                ParseFormatParams(line, media.packetizationMode, media.profileLevelId, media.spropParameterSets);
         }
     }
 
@@ -107,6 +114,41 @@ void ParseRtpMap(const string& line, const unsigned short payload, string& encod
             encoding = items3[0];
             transform(encoding.begin(), encoding.end(), encoding.begin(), ::toupper);
             rate = boost::lexical_cast<unsigned int>(items3[1]);
+        }
+    }
+}
+
+void ParseFormatParams(const string& line, string& packetizationMode, string& profileLevelId, string& spropParameterSets) {
+    vector<string> items;
+    boost::split(items, line, boost::is_any_of(kWhitespace));
+    for (size_t i = 0; i < items.size(); i++) boost::trim(items[i]);
+
+    if (items.size() >= 2) {
+        vector<string> items2;
+        boost::split(items2, items[1], boost::is_any_of(kSemicolon));
+        for (size_t i = 0; i < items2.size(); i++) {
+            boost::trim(items2[i]);
+            vector<string> items3;
+            boost::split(items3, items2[i], boost::is_any_of(kEquals));
+            for (size_t ii = 0; ii < items3.size(); ii++) boost::trim(items3[ii]);
+
+            if (items3[0] == "packetization-mode") {
+                packetizationMode = items3[1];
+            }
+            else if (items3[0] == "profile-level-id") {
+                profileLevelId = items3[1];
+            }
+            else if (items3[0] == "sprop-parameter-sets") {
+                const auto equals_idx = items2[i].find_first_of('=');
+                if (std::string::npos != equals_idx)
+                {
+                    spropParameterSets = items2[i].substr(equals_idx + 1);
+                    boost::replace_all(spropParameterSets, "=", "\\=");
+                    boost::replace_all(spropParameterSets, ",", "\\,");
+                    boost::replace_all(spropParameterSets, "+", "\\+");
+                }
+
+            }
         }
     }
 }

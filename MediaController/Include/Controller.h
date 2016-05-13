@@ -26,17 +26,18 @@ namespace MediaController {
         virtual ~Controller();
         virtual void SetWindow(void* handle) override;
         virtual void GoToLive() override;
-        virtual void Play(int speed) override;
+        virtual bool Play(int speed) override;
         virtual void Pause() override;
         virtual void Stop() override;
         virtual void FrameForward() override;
         virtual void FrameBackward() override;
-        virtual void Seek(unsigned int unixTime, int speed) override;
+        virtual bool Seek(unsigned int unixTime, int speed) override;
         virtual void NewRequest(MediaRequest& request) override;
         virtual void AddObserver(TimestampEventCallback observer) override;
         virtual void RemoveObserver(TimestampEventCallback observer) override;
         virtual void ClearObservers() override;
         virtual Mode GetMode() override;
+        virtual bool IsPipelineActive() override;
         virtual void AddEventData(void* customData) override;
 
         /// <summary>
