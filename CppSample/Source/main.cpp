@@ -992,9 +992,6 @@ void CreateNewExportOption(list<CPPConsole::Device*>* devices, CPPConsole::Syste
             cout << "\n  Enter name for your export: ";
             cin >> exportName;
 
-            cout << "\n  Enter password for your export: ";
-            cin >> exportPasswd;
-
             cout << "\n\t1.MkvZip\n";
             cout << "\t2.Mp4\n";
             cout << "\n  Chose a file format for your export from above options: ";
@@ -1009,7 +1006,6 @@ void CreateNewExportOption(list<CPPConsole::Device*>* devices, CPPConsole::Syste
             CPPConsole::NewExport* newExport = new CPPConsole::NewExport();
             newExport->AddClip(exportClip);
             newExport->SetExportName(exportName.c_str());
-            newExport->SetExportPassword(exportPasswd.c_str());
 
             if (fileFormatOption == 1) {
                 newExport->SetExportFormat(CPPConsole::Export::ExportFormat::MkvZip);
