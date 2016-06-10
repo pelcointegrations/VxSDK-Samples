@@ -25,7 +25,7 @@ namespace MediaController {
         /// </summary>
         virtual ~Controller();
         virtual void SetWindow(void* handle) override;
-        virtual void GoToLive() override;
+        virtual bool GoToLive() override;
         virtual bool Play(int speed) override;
         virtual void Pause() override;
         virtual void Stop() override;

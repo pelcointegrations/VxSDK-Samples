@@ -71,11 +71,32 @@ bool Rtsp::Stream::Seek(unsigned int unixTime, int speed) {
     return true;
 }
 
-void Rtsp::Stream::GoToLive() {}
+bool Rtsp::Stream::GoToLive() {
+    if (!this->_rtspCommands.Options())
+        return false;
+    if (!this->_rtspCommands.Describe())
+        return false;
+    if (!this->_rtspCommands.Setup())
+        return false;
+    if (!this->_rtspCommands.Play(1))
+        return false;
+
+    if (!this->_rtspKeepAlive) {
+        // Start the keep alive loop in a new thread.
+        this->_rtspKeepAlive = make_unique<KeepAlive>(this->_rtspCommands);
+    }
+    return true;
+}
 
 bool Rtsp::Stream::Resume(int speed) {
-    // Seek to the last received timestamp.
-    return Seek(this->_gst->GetLastTimestamp(VxStreamProtocol::kRtspRtp), speed);
+    if (!this->_rtspCommands.SeekPlay(this->_gst->GetLastTimestamp(VxStreamProtocol::kRtspRtp), speed))
+        return false;
+
+    if (!this->_rtspKeepAlive) {
+        // Start the keep alive loop in a new thread.
+        this->_rtspKeepAlive = make_unique<KeepAlive>(this->_rtspCommands);
+    }
+    return true;
 }
 
 void Rtsp::Stream::NewRequest(MediaRequest& request) {

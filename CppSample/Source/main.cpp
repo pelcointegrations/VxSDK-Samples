@@ -311,16 +311,24 @@ void StartStreamingForDataSource(CPPConsole::DataSource* dataSourceToPlay, bool 
     CPPConsole::PTZController* ptzControl = nullptr;
 
     cout << "Invoking MediaController..\n";
-    CPPConsole::MediaControl *mediaControl = new CPPConsole::MediaControl(dataSourceToPlay);
+    CPPConsole::MediaControl *mediaControl = new CPPConsole::MediaControl(dataSourceToPlay, isMjpegEnabled);
 
     HWND gstWindowHandle = ::CreateWindowA("Gstreamer", "VideoPlayer", WS_VISIBLE, 0, 0, 600, 600, NULL, NULL, NULL, NULL);
     SetWindowTextA(gstWindowHandle, "GStreamer Player");
 
     mediaControl->SetVideoWindow(gstWindowHandle);
-    if (seekTime == 0)
-        mediaControl->Play(1);
-    else
-        mediaControl->Seek(static_cast<unsigned int>(seekTime), 1);
+    if (seekTime == 0) {
+        if (!mediaControl->Play(1)) {
+            cout << "Error starting stream.\n";
+            return;
+        }
+    }
+    else {
+        if (!mediaControl->Seek(static_cast<unsigned int>(seekTime), 1)) {
+            cout << "Error starting stream.\n";
+            return;
+        }
+    }
 
     mediaControl->SetTimestampCallback(TimestampCallback);
 
@@ -356,31 +364,22 @@ void StartStreamingForDataSource(CPPConsole::DataSource* dataSourceToPlay, bool 
                         cout << "\nResuming the stream.\n";
                         mediaControl->Play(mediaControl->GetCurrentSpeed());
                     }
-
+                    gGotPlayerHandle = false;
                     break;
                 }
                 case 'z': {
-                    // For live streaming speed is not required
-                    if (seekTime == 0)
-                        break;
-
                     mediaControl->Play(mediaControl->GetCurrentSpeed() + 2);
+                    gGotPlayerHandle = false;
                     break;
                 }
                 case 'x': {
-                    // For live streaming speed is not required
-                    if (seekTime == 0)
-                        break;
-
                     mediaControl->Play(mediaControl->GetCurrentSpeed() - 2);
+                    gGotPlayerHandle = false;
                     break;
                 }
                 case 'l': {
-                    // For live streaming speed is not required
-                    if (seekTime == 0)
-                        break;
-
                     mediaControl->GoToLive();
+                    gGotPlayerHandle = false;
                     break;
                 }
                 default:

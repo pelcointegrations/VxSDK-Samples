@@ -36,7 +36,7 @@ namespace MediaController {
             virtual void FrameForward() override;
             virtual void FrameBackward() override;
             virtual bool Seek(unsigned int unixTime, int speed) override;
-            virtual void GoToLive() override;
+            virtual bool GoToLive() override;
             virtual void NewRequest(MediaRequest& request) override;
             virtual bool Resume(int speed) override;
 

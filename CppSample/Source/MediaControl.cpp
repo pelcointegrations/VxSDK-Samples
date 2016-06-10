@@ -1,11 +1,18 @@
 #include "stdafx.h"
 #include "MediaControl.h"
 
-CPPConsole::MediaControl::MediaControl(DataSource* ds) : _isPlaying(false), _speed(0) {
+CPPConsole::MediaControl::MediaControl(DataSource* ds, bool isMjpegEnabled) : _isPlaying(false), _speed(0) {
+    auto protocol = isMjpegEnabled ? DataInterface::StreamProtocol::kStreamProtocolMjpegPull : DataInterface::StreamProtocol::kStreamProtocolRtspRtp;
+
     MediaController::MediaRequest request;
     request.dataSource = ds->Self();
     auto dsi = ds->GetDataInterfaces();
-    request.dataInterface = *dsi->front()->_dataInterface;
+    for (std::list<DataInterface*>::const_iterator iterator = dsi->begin(), end = dsi->end(); iterator != end; ++iterator) {
+        if ((*iterator)->GetProtocol() == protocol) {
+            request.dataInterface = *(*iterator)->_dataInterface;
+            break;
+        }
+    }
 
     MediaController::IController* control = nullptr;
     GetController(&request, &control);
@@ -16,10 +23,11 @@ void CPPConsole::MediaControl::SetVideoWindow(void* handle) {
     _control->SetWindow(handle);
 }
 
-void CPPConsole::MediaControl::Play(int speed) {
+bool CPPConsole::MediaControl::Play(int speed) {
     _speed = speed;
-    _control->Play(speed);
+    auto ret = _control->Play(speed);
     _isPlaying = true;
+    return ret;
 }
 
 void CPPConsole::MediaControl::GoToLive() {
@@ -37,10 +45,11 @@ void CPPConsole::MediaControl::Stop() {
     _isPlaying = false;
 }
 
-void CPPConsole::MediaControl::Seek(unsigned int time, int speed) {
+bool CPPConsole::MediaControl::Seek(unsigned int time, int speed) {
     _speed = speed;
-    _control->Seek(time, speed);
+    auto ret = _control->Seek(time, speed);
     _isPlaying = true;
+    return ret;
 }
 
 void CPPConsole::MediaControl::SetTimestampCallback(MediaController::TimestampEventCallback callBackMethod) {

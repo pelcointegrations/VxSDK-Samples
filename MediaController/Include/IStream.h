@@ -52,7 +52,7 @@ namespace MediaController {
         /// <summary>
         /// Set the stream to Live and call Play.
         /// </summary>
-        virtual void GoToLive() = 0;
+        virtual bool GoToLive() = 0;
 
         /// <summary>
         /// Set the stream to a new source.

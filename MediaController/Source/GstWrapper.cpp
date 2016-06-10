@@ -2,6 +2,7 @@
 #include "GstWrapper.h"
 
 #include <gst/gst.h>
+#include <gst/base/gstbasesrc.h>
 #include <gst/rtp/gstrtcpbuffer.h>
 #include <gst/rtp/gstrtpbuffer.h>
 #include <gst/video/video.h>
@@ -235,7 +236,7 @@ void GstWrapper::SetOverlay() {
 
 void GstWrapper::ClearWindow() {
     Cleanup();
-    SetPipeline();
+    //SetPipeline();
 }
 
 void GstWrapper::Play(int speed) {
@@ -330,6 +331,7 @@ void GstWrapper::Cleanup() {
 
     gst_element_set_state(*_gstVars.pipeline, GST_STATE_NULL);
     gst_object_unref(GST_OBJECT(*_gstVars.pipeline));
+    _gstVars.pipeline.reset(nullptr);
     _gstVars.lastTimestamp = NULL;
 }
 

@@ -41,8 +41,8 @@ void Controller::NewRequest(MediaRequest& request) {
     this->stream->NewRequest(request);
 }
 
-void Controller::GoToLive() {
-    state->GoToLive(*this);
+bool Controller::GoToLive() {
+    return state->GoToLive(*this);
 }
 
 bool Controller::Play(int speed) {

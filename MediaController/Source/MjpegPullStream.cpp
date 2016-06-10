@@ -73,7 +73,7 @@ bool MjpegPull::Stream::Seek(unsigned int unixTime, int speed) {
     return true;
 }
 
-void MjpegPull::Stream::GoToLive() {}
+bool MjpegPull::Stream::GoToLive() { return true; }
 
 bool MjpegPull::Stream::Resume(int speed) {
     // If the jpegUri is empty send a new stream request.

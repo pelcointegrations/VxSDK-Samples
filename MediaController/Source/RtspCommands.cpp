@@ -111,24 +111,25 @@ bool Commands::Describe() {
     // Parse the server response.
     Response resp = ProcessResponse(socket);
     if (resp.statusCode != kStatusCode200) { return false; }
-
     // Parse the session description information.
     SdpParser& parser = this->_controller->GetMode() == MediaController::Controller::kLive ? this->_liveSdp : this->_playbackSdp;
     parser.Parse(resp.content);
     const MediaDescription& md = parser.GetFirstVideo();
 
-    // Set up the pipeline variables to use the correct values based on the transport protocol.
-    _port = md.isMulticast ? md.port : socket.local_endpoint().port();;
-    string multiOptions;
-    if (md.isMulticast)
-        multiOptions = str(boost::format(" address=%1%") % md.ip);
+    if (!this->_controller->stream->GetGstreamer()->IsPipelineActive()) {
+        // Set up the pipeline variables to use the correct values based on the transport protocol.
+        _port = md.isMulticast ? md.port : socket.local_endpoint().port();;
+        string multiOptions;
+        if (md.isMulticast)
+            multiOptions = str(boost::format(" address=%1%") % md.ip);
 
-    // The elements in the GStreamer pipeline need to have unique names in order to run multiple instances.
-    // So a random UUID is generated and appended to the element names.
-    _uuid = boost::uuids::to_string(boost::uuids::random_generator()());
-    string pipeline = str(boost::format(kRtspPipeline) % _uuid % BuildGstCaps(md) % _port % multiOptions % (_port + 1));
-    // Update the pipeline using the description generated above.
-    this->_controller->stream->GetGstreamer()->UpdatePipeline(pipeline);
+        // The elements in the GStreamer pipeline need to have unique names in order to run multiple instances.
+        // So a random UUID is generated and appended to the element names.
+        _uuid = boost::uuids::to_string(boost::uuids::random_generator()());
+        string pipeline = str(boost::format(kRtspPipeline) % _uuid % BuildGstCaps(md) % _port % multiOptions % (_port + 1));
+        // Update the pipeline using the description generated above.
+        this->_controller->stream->GetGstreamer()->UpdatePipeline(pipeline);
+    }
 
     // Set the live/playback URI to the control URL obtained from the server response.
     string newUri = GetControlLocation(resp.content);
@@ -223,10 +224,12 @@ bool Commands::Play(int speed) {
         ret = Play(speed);
     }
     if (resp.statusCode == kStatusCode200) {
-        this->_controller->stream->GetGstreamer()->SetPipeline();
+        if (!this->_controller->stream->GetGstreamer()->IsPipelineActive()) {
+            this->_controller->stream->GetGstreamer()->SetPipeline();
 
-        // Subscribe to the GStreamer Src element in order to get timestamps.
-        this->_controller->stream->GetGstreamer()->SubscribeToProbeEvents(_uuid);
+            // Subscribe to the GStreamer Src element in order to get timestamps.
+            this->_controller->stream->GetGstreamer()->SubscribeToProbeEvents(_uuid);
+        }
         return true;
     }
     return ret;
@@ -278,10 +281,12 @@ bool Commands::SeekPlay(unsigned int unixTime, int speed) {
         ret = SeekPlay(unixTime, speed);
     }
     if (resp.statusCode == kStatusCode200) {
-        this->_controller->stream->GetGstreamer()->SetPipeline();
+        if (!this->_controller->stream->GetGstreamer()->IsPipelineActive()) {
+            this->_controller->stream->GetGstreamer()->SetPipeline();
 
-        // Subscribe to the GStreamer Src element in order to get timestamps.
-        this->_controller->stream->GetGstreamer()->SubscribeToProbeEvents(_uuid);
+            // Subscribe to the GStreamer Src element in order to get timestamps.
+            this->_controller->stream->GetGstreamer()->SubscribeToProbeEvents(_uuid);
+        }
         return true;
     }
     return ret;

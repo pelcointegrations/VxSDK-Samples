@@ -39,7 +39,7 @@ namespace MediaController {
         /// Perform the GoToLive action based on the stream state.
         /// </summary>
         /// <param name="controller">The controller instance.</param>
-        virtual void GoToLive(Controller& controller);
+        virtual bool GoToLive(Controller& controller);
 
         /// <summary>
         /// Perform the Seek action based on the stream state.
@@ -76,7 +76,7 @@ namespace MediaController {
         virtual bool Play(Controller& controller, int speed) override;
         virtual void Pause(Controller& controller) override;
         virtual void Stop(Controller& controller) override;
-        virtual void GoToLive(Controller& controller) override;
+        virtual bool GoToLive(Controller& controller) override;
         virtual bool Seek(Controller& controller, unsigned int unixTime, int speed) override;
     };
 
@@ -92,7 +92,7 @@ namespace MediaController {
         virtual ~PausedState() {}
         virtual bool Play(Controller& controller, int speed) override;
         virtual void Stop(Controller& controller) override;
-        virtual void GoToLive(Controller& controller) override;
+        virtual bool GoToLive(Controller& controller) override;
         virtual bool Seek(Controller& controller, unsigned int unixTime, int speed) override;
     };
 
@@ -107,7 +107,7 @@ namespace MediaController {
         /// </summary>
         virtual ~StoppedState() {}
         virtual bool Play(Controller& controller, int speed) override;
-        virtual void GoToLive(Controller& controller) override;
+        virtual bool GoToLive(Controller& controller) override;
         virtual bool Seek(Controller& controller, unsigned int unixTime, int speed) override;
     };
 }

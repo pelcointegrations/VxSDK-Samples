@@ -25,7 +25,7 @@ namespace CPPConsole {
         /// </summary>
         /// <param name="uri">RTSP url received from VxSDK</param>
         /// <param name="port">port number to connect</param>
-        MediaControl(DataSource *ds);
+        MediaControl(DataSource *ds, bool isMjpegEnabled);
 
         /// <summary>
         /// Set the window handle to stream into
@@ -36,7 +36,7 @@ namespace CPPConsole {
         /// <summary>
         /// Start playback
         /// </summary>
-        void Play(int speed);
+        bool Play(int speed);
 
         /// <summary>
         /// Jump to live
@@ -57,7 +57,7 @@ namespace CPPConsole {
         /// Seek to a particular time
         /// </summary>
         /// <param name="time">Time to seek</param>
-        void Seek(unsigned int time, int speed);
+        bool Seek(unsigned int time, int speed);
 
         /// <summary>
         /// Set timestamp callback method to receive timestamp events from Media Controller

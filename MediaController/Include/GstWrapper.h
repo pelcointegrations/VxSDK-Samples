@@ -63,6 +63,12 @@ namespace MediaController {
         Controller::Mode GetMode() const { return _gstVars.mode; }
 
         /// <summary>
+        /// Get the current playback speed.
+        /// </summary>
+        /// <returns>The current speed.</returns>
+        int GetSpeed() const { return _gstVars.speed; }
+
+        /// <summary>
         /// Set the current playback mode.
         /// </summary>
         /// <param name="mode">The stream <see cref="Controller::Mode"/> to set.</param>
