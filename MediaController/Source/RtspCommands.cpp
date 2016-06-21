@@ -48,7 +48,8 @@ bool Commands::Options() {
     requestStream << kOptions << kWhitespace << uri << kWhitespace << kRtspVersion << kOneNewLine;
     requestStream << kHeaderCSeq << kColonSpace << _cSeqNum << kOneNewLine;
     requestStream << kHeaderUserAgent << kColonSpace << kActualUserAgent << kTwoNewLines;
-    write(socket, request);
+    try { write(socket, request); }
+    catch (...) { return false; }
 
     // Parse the server response.
     Response resp = ProcessResponse(socket);
@@ -77,7 +78,8 @@ bool Commands::GetParameter() {
     requestStream << kHeaderCSeq << kColonSpace << _cSeqNum << kOneNewLine;
     requestStream << kHeaderUserAgent << kColonSpace << kActualUserAgent << kOneNewLine;
     requestStream << kHeaderSession << kColonSpace << this->_sessionId << kTwoNewLines;
-    write(socket, request);
+    try { write(socket, request); }
+    catch (...) { return false; }
 
     // Parse the server response.
     Response resp = ProcessResponse(socket);
@@ -106,7 +108,8 @@ bool Commands::Describe() {
     requestStream << kHeaderCSeq << kColonSpace << _cSeqNum << kOneNewLine;
     requestStream << kHeaderUserAgent << kColonSpace << kActualUserAgent << kOneNewLine;
     requestStream << kHeaderAccept << kColonSpace << kSdpMimeType << kTwoNewLines;
-    write(socket, request);
+    try { write(socket, request); }
+    catch (...) { return false; }
 
     // Parse the server response.
     Response resp = ProcessResponse(socket);
@@ -163,7 +166,8 @@ bool Commands::Setup() {
     requestStream << kHeaderUserAgent << kColonSpace << kActualUserAgent << kOneNewLine;
     requestStream << kHeaderTransport << kColonSpace << md.protocol << kSemicolon << (md.isMulticast ? "multicast" : "unicast");
     requestStream << ";client_port=" << _port << "-" << _port + 1 << kTwoNewLines;
-    write(socket, request);
+    try { write(socket, request); }
+    catch (...) { return false; }
 
     // Parse the server response.
     Response resp = ProcessResponse(socket);
@@ -195,7 +199,8 @@ bool Commands::Play(int speed) {
     requestStream << kHeaderCSeq << kColonSpace << _cSeqNum << kOneNewLine;
     requestStream << kHeaderUserAgent << kColonSpace << kActualUserAgent << kOneNewLine;
     requestStream << kHeaderSession << kColonSpace << this->_sessionId << kTwoNewLines;
-    write(socket, request);
+    try { write(socket, request); }
+    catch (...) { return false; }
 
     // Parse the server response.
     Response resp = ProcessResponse(socket);
@@ -263,7 +268,8 @@ bool Commands::SeekPlay(unsigned int unixTime, int speed) {
     requestStream << kHeaderSession << kColonSpace << this->_sessionId << kOneNewLine;
     requestStream << kHeaderScale << kColonSpace << speed << kOneNewLine;
     requestStream << kHeaderRange << kColonSpace << "clock=" << timeStr.c_str() << kTwoNewLines;
-    write(socket, request);
+    try { write(socket, request); }
+    catch (...) { return false; }
 
     // Parse the server response.
     Response resp = ProcessResponse(socket);
@@ -312,7 +318,8 @@ void Commands::Pause() {
     requestStream << kHeaderCSeq << kColonSpace << _cSeqNum << kOneNewLine;
     requestStream << kHeaderUserAgent << kColonSpace << kActualUserAgent << kOneNewLine;
     requestStream << kHeaderSession << kColonSpace << this->_sessionId << kTwoNewLines;
-    write(socket, request);
+    try { write(socket, request); }
+    catch (...) { return; }
 
     // Parse the server response.
     ProcessResponse(socket);
@@ -338,7 +345,8 @@ void Commands::Teardown() {
     requestStream << kHeaderCSeq << kColonSpace << _cSeqNum << kOneNewLine;
     requestStream << kHeaderUserAgent << kColonSpace << kActualUserAgent << kOneNewLine;
     requestStream << kHeaderSession << kColonSpace << this->_sessionId << kTwoNewLines;
-    write(socket, request);
+    try { write(socket, request); }
+    catch (...) { return; }
 
     // Parse the server response.
     ProcessResponse(socket);
