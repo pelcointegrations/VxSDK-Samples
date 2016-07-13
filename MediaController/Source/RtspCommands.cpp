@@ -197,6 +197,7 @@ bool Commands::Play(float speed) {
     ostream requestStream(&request);
     requestStream << kPlay << kWhitespace << uri << kWhitespace << kRtspVersion << kOneNewLine;
     requestStream << kHeaderCSeq << kColonSpace << _cSeqNum << kOneNewLine;
+    requestStream << kHeaderRange << kColonSpace << "npt=0-" << kOneNewLine;
     requestStream << kHeaderUserAgent << kColonSpace << kActualUserAgent << kOneNewLine;
     requestStream << kHeaderSession << kColonSpace << this->_sessionId << kTwoNewLines;
     try { write(socket, request); }
