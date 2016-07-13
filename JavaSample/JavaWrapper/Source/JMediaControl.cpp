@@ -194,7 +194,7 @@ JNIEXPORT void JNICALL Java_javasample_JMediaControl_UnSubscribeTimeStampEvents
 /// <param name="mediaControlObj">JMediaControl Java class instance</param>
 /// <param name="speed">speed of playback stream</param>
 JNIEXPORT void JNICALL Java_javasample_JMediaControl_Play
-(JNIEnv *env, jobject mediaControlObj, jint speed) {
+(JNIEnv *env, jobject mediaControlObj, jfloat speed) {
     MediaController::IController* control = GetMediaControllerObj(env, mediaControlObj);
     control->Play(speed);
 }
@@ -240,7 +240,7 @@ JNIEXPORT void JNICALL Java_javasample_JMediaControl_GotoLive
 /// <param name="time">seek time to start playbcak</param>
 /// <param name="speed">Speed of playback streams</param>
 JNIEXPORT void JNICALL Java_javasample_JMediaControl_Seek
-(JNIEnv *env, jobject mediaControlObj, jint time, jint speed) {
+(JNIEnv *env, jobject mediaControlObj, jint time, jfloat speed) {
     MediaController::IController* control = GetMediaControllerObj(env, mediaControlObj);
     LOGGER->Log("Seek to:%d", time);
     control->Seek(time, speed);

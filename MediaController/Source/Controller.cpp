@@ -45,7 +45,7 @@ bool Controller::GoToLive() {
     return state->GoToLive(*this);
 }
 
-bool Controller::Play(int speed) {
+bool Controller::Play(float speed) {
     return state->Play(*this, speed);
 }
 
@@ -61,7 +61,7 @@ void Controller::FrameForward() {}
 
 void Controller::FrameBackward() {}
 
-bool Controller::Seek(unsigned int unixTime, int speed) {
+bool Controller::Seek(unsigned int unixTime, float speed) {
     return state->Seek(*this, unixTime, speed);
 }
 

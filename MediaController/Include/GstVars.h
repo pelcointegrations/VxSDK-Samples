@@ -44,7 +44,7 @@ namespace MediaController {
         /// <summary>
         /// The current speed of the stream.
         /// </summary>
-        int speed;
+        float speed;
 
         /// <summary>
         /// Store the custom data from caller and send back on event callback.

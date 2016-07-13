@@ -21,7 +21,7 @@ namespace MediaController {
         /// </summary>
         /// <param name="controller">The controller instance.</param>
         /// <param name="speed">The playback speed.</param>
-        virtual bool Play(Controller& controller, int speed);
+        virtual bool Play(Controller& controller, float speed);
 
         /// <summary>
         /// Perform the Pause action based on the stream state.
@@ -47,7 +47,7 @@ namespace MediaController {
         /// <param name="controller">The controller instance.</param>
         /// <param name="unixTime">The start time for playback.</param>
         /// <param name="speed">The playback speed.</param>
-        virtual bool Seek(Controller& controller, unsigned int unixTime, int speed);
+        virtual bool Seek(Controller& controller, unsigned int unixTime, float speed);
 
     protected:
         /// <summary>
@@ -73,11 +73,11 @@ namespace MediaController {
         /// Virtual destructor.
         /// </summary>
         virtual ~PlayingState() {}
-        virtual bool Play(Controller& controller, int speed) override;
+        virtual bool Play(Controller& controller, float speed) override;
         virtual void Pause(Controller& controller) override;
         virtual void Stop(Controller& controller) override;
         virtual bool GoToLive(Controller& controller) override;
-        virtual bool Seek(Controller& controller, unsigned int unixTime, int speed) override;
+        virtual bool Seek(Controller& controller, unsigned int unixTime, float speed) override;
     };
 
     /// <summary>
@@ -90,10 +90,10 @@ namespace MediaController {
         /// Virtual destructor.
         /// </summary>
         virtual ~PausedState() {}
-        virtual bool Play(Controller& controller, int speed) override;
+        virtual bool Play(Controller& controller, float speed) override;
         virtual void Stop(Controller& controller) override;
         virtual bool GoToLive(Controller& controller) override;
-        virtual bool Seek(Controller& controller, unsigned int unixTime, int speed) override;
+        virtual bool Seek(Controller& controller, unsigned int unixTime, float speed) override;
     };
 
     /// <summary>
@@ -106,9 +106,9 @@ namespace MediaController {
         /// Virtual destructor.
         /// </summary>
         virtual ~StoppedState() {}
-        virtual bool Play(Controller& controller, int speed) override;
+        virtual bool Play(Controller& controller, float speed) override;
         virtual bool GoToLive(Controller& controller) override;
-        virtual bool Seek(Controller& controller, unsigned int unixTime, int speed) override;
+        virtual bool Seek(Controller& controller, unsigned int unixTime, float speed) override;
     };
 }
 #endif // StreamState_h__

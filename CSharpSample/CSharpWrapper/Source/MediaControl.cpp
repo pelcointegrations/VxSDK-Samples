@@ -45,7 +45,7 @@ CPPCli::MediaControl::!MediaControl() {
     delete _control;
 }
 
-bool CPPCli::MediaControl::Play(int speed) {
+bool CPPCli::MediaControl::Play(float speed) {
     return _control->Play(speed);
 }
 
@@ -61,7 +61,7 @@ void CPPCli::MediaControl::GoToLive() {
     _control->GoToLive();
 }
 
-bool CPPCli::MediaControl::Seek(System::DateTime time, int speed) {
+bool CPPCli::MediaControl::Seek(System::DateTime time, float speed) {
     // Convert the seek time from a DateTime format to unix time format
     System::TimeSpan ts = (time - System::DateTime(1970, 1, 1, 0, 0, 0));
     unsigned int seekTime = safe_cast<unsigned int>(ts.TotalSeconds);

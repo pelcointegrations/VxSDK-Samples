@@ -119,36 +119,37 @@ void ParseRtpMap(const string& line, const unsigned short payload, string& encod
 }
 
 void ParseFormatParams(const string& line, string& packetizationMode, string& profileLevelId, string& spropParameterSets) {
-    vector<string> items;
-    boost::split(items, line, boost::is_any_of(kWhitespace));
-    for (size_t i = 0; i < items.size(); i++) boost::trim(items[i]);
+    string values;
+    const auto equals_idx_space = line.find_first_of(' ');
+    if (string::npos != equals_idx_space)
+        values = line.substr(equals_idx_space + 1);
+    else
+        return;
 
-    if (items.size() >= 2) {
-        vector<string> items2;
-        boost::split(items2, items[1], boost::is_any_of(kSemicolon));
-        for (size_t i = 0; i < items2.size(); i++) {
-            boost::trim(items2[i]);
-            vector<string> items3;
-            boost::split(items3, items2[i], boost::is_any_of(kEquals));
-            for (size_t ii = 0; ii < items3.size(); ii++) boost::trim(items3[ii]);
+    vector<string> items2;
+    boost::split(items2, values, boost::is_any_of(kSemicolon));
+    for (size_t i = 0; i < items2.size(); i++) {
+        boost::trim(items2[i]);
+        vector<string> items3;
+        boost::split(items3, items2[i], boost::is_any_of(kEquals));
+        for (size_t ii = 0; ii < items3.size(); ii++) boost::trim(items3[ii]);
 
-            if (items3[0] == "packetization-mode") {
-                packetizationMode = items3[1];
+        if (items3[0] == "packetization-mode") {
+            packetizationMode = items3[1];
+        }
+        else if (items3[0] == "profile-level-id") {
+            profileLevelId = items3[1];
+        }
+        else if (items3[0] == "sprop-parameter-sets") {
+            const auto equals_idx = items2[i].find_first_of('=');
+            if (string::npos != equals_idx)
+            {
+                spropParameterSets = items2[i].substr(equals_idx + 1);
+                boost::replace_all(spropParameterSets, "=", "\\=");
+                boost::replace_all(spropParameterSets, ",", "\\,");
+                boost::replace_all(spropParameterSets, "+", "\\+");
             }
-            else if (items3[0] == "profile-level-id") {
-                profileLevelId = items3[1];
-            }
-            else if (items3[0] == "sprop-parameter-sets") {
-                const auto equals_idx = items2[i].find_first_of('=');
-                if (std::string::npos != equals_idx)
-                {
-                    spropParameterSets = items2[i].substr(equals_idx + 1);
-                    boost::replace_all(spropParameterSets, "=", "\\=");
-                    boost::replace_all(spropParameterSets, ",", "\\,");
-                    boost::replace_all(spropParameterSets, "+", "\\+");
-                }
 
-            }
         }
     }
 }

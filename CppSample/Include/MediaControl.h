@@ -36,7 +36,7 @@ namespace CPPConsole {
         /// <summary>
         /// Start playback
         /// </summary>
-        bool Play(int speed);
+        bool Play(float speed);
 
         /// <summary>
         /// Jump to live
@@ -57,7 +57,7 @@ namespace CPPConsole {
         /// Seek to a particular time
         /// </summary>
         /// <param name="time">Time to seek</param>
-        bool Seek(unsigned int time, int speed);
+        bool Seek(unsigned int time, float speed);
 
         /// <summary>
         /// Set timestamp callback method to receive timestamp events from Media Controller
@@ -73,7 +73,7 @@ namespace CPPConsole {
         /// <summary>
         /// Returns the current playing speed.
         /// </summary>
-        int GetCurrentSpeed() { return _speed; }
+        float GetCurrentSpeed() { return _speed; }
 
         /// <summary>
         /// Destructor
@@ -84,6 +84,6 @@ namespace CPPConsole {
         //RTSPcontroller wrapper instance
         MediaController::IController* _control;
         bool _isPlaying;
-        int _speed;
+        float _speed;
     };
 }

@@ -18,7 +18,7 @@ StreamBase::~StreamBase() {
     delete this->_gst;
 }
 
-bool StreamBase::Play(int speed) { return false; }
+bool StreamBase::Play(float speed) { return false; }
 
 void StreamBase::Pause() {}
 
@@ -28,11 +28,11 @@ void StreamBase::FrameForward() {}
 
 void StreamBase::FrameBackward() {}
 
-bool StreamBase::Seek(unsigned int unixTime, int speed) { return false; }
+bool StreamBase::Seek(unsigned int unixTime, float speed) { return false; }
 
 void StreamBase::NewRequest(MediaRequest& request) {}
 
-bool StreamBase::Resume(int speed) { return false; }
+bool StreamBase::Resume(unsigned int unixTime, float speed) { return false; }
 
 GstWrapper* StreamBase::GetGstreamer() {
     return this->_gst;

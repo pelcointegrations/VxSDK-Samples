@@ -20,7 +20,7 @@ namespace MediaController {
         /// Call Play on the stream.
         /// </summary>
         /// <param name="speed">The playback speed.  Negative values can be used for reverse playback.</param>
-        virtual bool Play(int speed) = 0;
+        virtual bool Play(float speed) = 0;
 
         /// <summary>
         /// Call Pause on the stream.
@@ -47,7 +47,7 @@ namespace MediaController {
         /// </summary>
         /// <param name="unixTime">The start time for playback.</param>
         /// <param name="speed">The playback speed.  Negative values can be used for reverse playback.</param>
-        virtual bool Seek(unsigned int unixTime, int speed) = 0;
+        virtual bool Seek(unsigned int unixTime, float speed) = 0;
 
         /// <summary>
         /// Set the stream to Live and call Play.

@@ -32,7 +32,7 @@ namespace MediaController {
         /// <summary>
         /// Set the pipeline state to playing and update the speed value for determining the framerate.
         /// </summary>
-        void Play(int speed);
+        void Play(float speed);
 
         /// <summary>
         /// Set the pipeline state to paused.
@@ -66,7 +66,7 @@ namespace MediaController {
         /// Get the current playback speed.
         /// </summary>
         /// <returns>The current speed.</returns>
-        int GetSpeed() const { return _gstVars.speed; }
+        float GetSpeed() const { return _gstVars.speed; }
 
         /// <summary>
         /// Set the current playback mode.

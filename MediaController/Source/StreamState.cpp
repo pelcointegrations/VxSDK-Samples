@@ -13,11 +13,11 @@ using namespace MediaController;
 
 StreamState::StreamState() {}
 
-bool StreamState::Play(Controller& controller, int speed) { return false; }
+bool StreamState::Play(Controller& controller, float speed) { return false; }
 void StreamState::Pause(Controller& controller) {}
 void StreamState::Stop(Controller& controller) {}
 bool StreamState::GoToLive(Controller& controller) { return false; }
-bool StreamState::Seek(Controller& controller, unsigned int unixTime, int speed) { return false; }
+bool StreamState::Seek(Controller& controller, unsigned int unixTime, float speed) { return false; }
 
 void StreamState::SetState(Controller& controller, StreamState* state) {
     controller.state = state;
@@ -27,7 +27,7 @@ void StreamState::SetState(Controller& controller, StreamState* state) {
 // PlayingState
 //=======================================================
 
-bool PlayingState::Play(Controller& controller, int speed) {
+bool PlayingState::Play(Controller& controller, float speed) {
     // Fast forward is not allowed if the stream is currently live so return
     // if it's attempted.
     bool ret = true;
@@ -43,7 +43,7 @@ bool PlayingState::Play(Controller& controller, int speed) {
     }
     else {
         if (speed != controller.stream->GetGstreamer()->GetSpeed()) {
-            ret = controller.stream->Resume(speed);
+            ret = controller.stream->Resume(0, speed);
             if (ret) {
                 controller.stream->GetGstreamer()->SetMode(Controller::kPlayback);
             }
@@ -86,9 +86,11 @@ bool PlayingState::GoToLive(Controller& controller) {
     return ret;
 }
 
-bool PlayingState::Seek(Controller& controller, unsigned int unixTime, int speed) {
-    controller.stream->GetGstreamer()->SetTimestamp(unixTime);
-    bool ret = controller.stream->Resume(speed);
+bool PlayingState::Seek(Controller& controller, unsigned int unixTime, float speed) {
+    if (controller.stream->GetGstreamer()->GetMode() == Controller::kLive)
+        controller.stream->Stop();
+
+    bool ret = controller.stream->Resume(unixTime, speed);
     SetState(controller, new PlayingState());
     controller.stream->GetGstreamer()->SetMode(Controller::kPlayback);
     controller.stream->GetGstreamer()->Play(speed);
@@ -99,7 +101,7 @@ bool PlayingState::Seek(Controller& controller, unsigned int unixTime, int speed
 // PausedState
 //=======================================================
 
-bool PausedState::Play(Controller& controller, int speed) {
+bool PausedState::Play(Controller& controller, float speed) {
     // Calling Play from a paused state means the stream is in playback mode, so call Resume.
     bool ret;
     if (controller.stream->GetGstreamer()->GetMode() == Controller::kLive) {
@@ -107,7 +109,7 @@ bool PausedState::Play(Controller& controller, int speed) {
         ret = controller.stream->Seek(controller.stream->GetGstreamer()->GetLastTimestamp(VxSdk::VxStreamProtocol::kRtspRtp), speed);
     }
     else {
-        ret = controller.stream->Resume(speed);
+        ret = controller.stream->Resume(0, speed);
     }
 
     if (ret) {
@@ -132,6 +134,7 @@ void PausedState::Stop(Controller& controller) {
 bool PausedState::GoToLive(Controller& controller) {
     // Being in a paused state means the stream is in playback mode, so the stream needs to
     // be stopped since it will be transitioning to live.
+    controller.stream->Stop();
     controller.stream->GetGstreamer()->SetMode(Controller::kLive);
     bool ret = controller.stream->GoToLive();
     SetState(controller, new PlayingState());
@@ -139,9 +142,11 @@ bool PausedState::GoToLive(Controller& controller) {
     return ret;
 }
 
-bool PausedState::Seek(Controller& controller, unsigned int unixTime, int speed) {
-    controller.stream->GetGstreamer()->SetTimestamp(unixTime);
-    bool ret = controller.stream->Resume(speed);
+bool PausedState::Seek(Controller& controller, unsigned int unixTime, float speed) {
+    if (controller.stream->GetGstreamer()->GetMode() == Controller::kLive)
+        controller.stream->Stop();
+
+    bool ret = controller.stream->Resume(unixTime, speed);
     SetState(controller, new PlayingState());
     controller.stream->GetGstreamer()->SetMode(Controller::kPlayback);
     controller.stream->GetGstreamer()->Play(speed);
@@ -152,7 +157,7 @@ bool PausedState::Seek(Controller& controller, unsigned int unixTime, int speed)
 // StoppedState
 //=======================================================
 
-bool StoppedState::Play(Controller& controller, int speed) {
+bool StoppedState::Play(Controller& controller, float speed) {
     bool ret;
     // Playing from a stopped state assumes the stream starts in live mode.  However,
     // if a negative speed value is given then the stream will be in playback mode since
@@ -180,7 +185,7 @@ bool StoppedState::GoToLive(Controller& controller) {
     return ret;
 }
 
-bool StoppedState::Seek(Controller& controller, unsigned int unixTime, int speed) {
+bool StoppedState::Seek(Controller& controller, unsigned int unixTime, float speed) {
     bool ret = controller.stream->Seek(unixTime, speed);
     controller.stream->GetGstreamer()->SetMode(Controller::kPlayback);
     SetState(controller, new PlayingState());

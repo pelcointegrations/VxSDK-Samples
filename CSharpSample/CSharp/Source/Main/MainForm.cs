@@ -215,6 +215,7 @@ namespace SDKSampleApp.Source
 
             Control.Current.Pause();
             Control.ChangePtzFormState(false);
+            btnLive.Enabled = true;
         }
 
         /// <summary>
@@ -805,7 +806,7 @@ namespace SDKSampleApp.Source
 
                 if (seekTime == default(DateTime))
                 {
-                    if (!Control.Current.Play((int) nudSpeed.Value))
+                    if (!Control.Current.Play((float) nudSpeed.Value))
                     {
                         WriteToLog(string.Format("Error: Unable to {0} stream.\n",
                             Control.Current.Mode == MediaControl.Modes.Playback ? "resume" : "start"));
@@ -823,7 +824,7 @@ namespace SDKSampleApp.Source
                 }
                 else
                 {
-                    if (!Control.Current.Seek(seekTime, (int)nudSpeed.Value))
+                    if (!Control.Current.Seek(seekTime, (float)nudSpeed.Value))
                     {
                         WriteToLog("Error: Unable to start recorded stream.\n");
                         if (Control.Current.IsPipelineActive)

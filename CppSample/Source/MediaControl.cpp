@@ -23,7 +23,7 @@ void CPPConsole::MediaControl::SetVideoWindow(void* handle) {
     _control->SetWindow(handle);
 }
 
-bool CPPConsole::MediaControl::Play(int speed) {
+bool CPPConsole::MediaControl::Play(float speed) {
     _speed = speed;
     auto ret = _control->Play(speed);
     _isPlaying = true;
@@ -45,7 +45,7 @@ void CPPConsole::MediaControl::Stop() {
     _isPlaying = false;
 }
 
-bool CPPConsole::MediaControl::Seek(unsigned int time, int speed) {
+bool CPPConsole::MediaControl::Seek(unsigned int time, float speed) {
     _speed = speed;
     auto ret = _control->Seek(time, speed);
     _isPlaying = true;

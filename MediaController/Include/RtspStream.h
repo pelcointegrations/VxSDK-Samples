@@ -30,15 +30,15 @@ namespace MediaController {
             /// Virtual destructor.
             /// </summary>
             virtual ~Stream();
-            virtual bool Play(int speed) override;
+            virtual bool Play(float speed) override;
             virtual void Pause() override;
             virtual void Stop() override;
             virtual void FrameForward() override;
             virtual void FrameBackward() override;
-            virtual bool Seek(unsigned int unixTime, int speed) override;
+            virtual bool Seek(unsigned int unixTime, float speed) override;
             virtual bool GoToLive() override;
             virtual void NewRequest(MediaRequest& request) override;
-            virtual bool Resume(int speed) override;
+            virtual bool Resume(unsigned int unixTime, float speed) override;
 
         private:
             Commands _rtspCommands;

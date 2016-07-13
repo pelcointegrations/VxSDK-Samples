@@ -26,12 +26,12 @@ namespace MediaController {
         virtual ~Controller();
         virtual void SetWindow(void* handle) override;
         virtual bool GoToLive() override;
-        virtual bool Play(int speed) override;
+        virtual bool Play(float speed) override;
         virtual void Pause() override;
         virtual void Stop() override;
         virtual void FrameForward() override;
         virtual void FrameBackward() override;
-        virtual bool Seek(unsigned int unixTime, int speed) override;
+        virtual bool Seek(unsigned int unixTime, float speed) override;
         virtual void NewRequest(MediaRequest& request) override;
         virtual void AddObserver(TimestampEventCallback observer) override;
         virtual void RemoveObserver(TimestampEventCallback observer) override;

@@ -178,7 +178,7 @@ bool Commands::Setup() {
     return true;
 }
 
-bool Commands::Play(int speed) {
+bool Commands::Play(float speed) {
     // Increment the value for the CSeq field.
     _cSeqNum++;
     bool ret = false;
@@ -240,7 +240,7 @@ bool Commands::Play(int speed) {
     return ret;
 }
 
-bool Commands::SeekPlay(unsigned int unixTime, int speed) {
+bool Commands::SeekPlay(unsigned int unixTime, float speed) {
     // Increment the value for the CSeq field.
     _cSeqNum++;
     bool ret = false;

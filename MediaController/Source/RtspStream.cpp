@@ -20,7 +20,7 @@ Rtsp::Stream::Stream(MediaRequest& request, MediaController::Controller& control
 
 Rtsp::Stream::~Stream() {}
 
-bool Rtsp::Stream::Play(int speed) {
+bool Rtsp::Stream::Play(float speed) {
     // Send the sequence of RTSP commands needed to start a new stream.
     if (!this->_rtspCommands.Options())
         return false;
@@ -54,7 +54,7 @@ void Rtsp::Stream::FrameForward() {}
 
 void Rtsp::Stream::FrameBackward() {}
 
-bool Rtsp::Stream::Seek(unsigned int unixTime, int speed) {
+bool Rtsp::Stream::Seek(unsigned int unixTime, float speed) {
     if (!this->_rtspCommands.Options())
         return false;
     if (!this->_rtspCommands.Describe())
@@ -88,9 +88,21 @@ bool Rtsp::Stream::GoToLive() {
     return true;
 }
 
-bool Rtsp::Stream::Resume(int speed) {
-    if (!this->_rtspCommands.SeekPlay(this->_gst->GetLastTimestamp(VxStreamProtocol::kRtspRtp), speed))
-        return false;
+bool Rtsp::Stream::Resume(unsigned int unixTime, float speed) {
+    if (unixTime == 0) {
+        if (!this->_rtspCommands.SeekPlay(this->_gst->GetLastTimestamp(VxStreamProtocol::kRtspRtp), speed))
+            return false;
+    }
+    else {
+        if (!this->_rtspCommands.Options())
+            return false;
+        if (!this->_rtspCommands.Describe())
+            return false;
+        if (!this->_rtspCommands.Setup())
+            return false;
+        if (!this->_rtspCommands.SeekPlay(unixTime, speed))
+            return false;
+    }
 
     if (!this->_rtspKeepAlive) {
         // Start the keep alive loop in a new thread.

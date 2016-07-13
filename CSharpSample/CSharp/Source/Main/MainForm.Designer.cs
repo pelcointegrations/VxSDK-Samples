@@ -59,6 +59,7 @@
             this.dataObjectsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataStorageManagerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportManagerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rolesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.scheduleManagerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.situationManagerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tagManagerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -76,7 +77,6 @@
             this.panelVideoStreamRight = new System.Windows.Forms.Panel();
             this.scOuter = new System.Windows.Forms.SplitContainer();
             this.txbxLog = new System.Windows.Forms.TextBox();
-            this.rolesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudSpeed)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.scInner)).BeginInit();
@@ -347,56 +347,63 @@
             // bookmarkManagerToolStripMenuItem
             // 
             this.bookmarkManagerToolStripMenuItem.Name = "bookmarkManagerToolStripMenuItem";
-            this.bookmarkManagerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.bookmarkManagerToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.bookmarkManagerToolStripMenuItem.Text = "Bookmarks";
             this.bookmarkManagerToolStripMenuItem.Click += new System.EventHandler(this.MenuItemBookmarkManager_Click);
             // 
             // dataObjectsToolStripMenuItem
             // 
             this.dataObjectsToolStripMenuItem.Name = "dataObjectsToolStripMenuItem";
-            this.dataObjectsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.dataObjectsToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.dataObjectsToolStripMenuItem.Text = "Data Objects";
             this.dataObjectsToolStripMenuItem.Click += new System.EventHandler(this.MenuItemDataObjectManager_Click);
             // 
             // dataStorageManagerToolStripMenuItem
             // 
             this.dataStorageManagerToolStripMenuItem.Name = "dataStorageManagerToolStripMenuItem";
-            this.dataStorageManagerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.dataStorageManagerToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.dataStorageManagerToolStripMenuItem.Text = "Data Storage";
             this.dataStorageManagerToolStripMenuItem.Click += new System.EventHandler(this.MenuItemDataStorageManager_Click);
             // 
             // exportManagerToolStripMenuItem
             // 
             this.exportManagerToolStripMenuItem.Name = "exportManagerToolStripMenuItem";
-            this.exportManagerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exportManagerToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.exportManagerToolStripMenuItem.Text = "Exports";
             this.exportManagerToolStripMenuItem.Click += new System.EventHandler(this.MenuItemExportManager_Click);
+            // 
+            // rolesToolStripMenuItem
+            // 
+            this.rolesToolStripMenuItem.Name = "rolesToolStripMenuItem";
+            this.rolesToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.rolesToolStripMenuItem.Text = "Roles";
+            this.rolesToolStripMenuItem.Click += new System.EventHandler(this.MenuItemRoleManager_Click);
             // 
             // scheduleManagerToolStripMenuItem
             // 
             this.scheduleManagerToolStripMenuItem.Name = "scheduleManagerToolStripMenuItem";
-            this.scheduleManagerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.scheduleManagerToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.scheduleManagerToolStripMenuItem.Text = "Schedules";
             this.scheduleManagerToolStripMenuItem.Click += new System.EventHandler(this.MenuItemScheduleManager_Click);
             // 
             // situationManagerToolStripMenuItem
             // 
             this.situationManagerToolStripMenuItem.Name = "situationManagerToolStripMenuItem";
-            this.situationManagerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.situationManagerToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.situationManagerToolStripMenuItem.Text = "Situations";
             this.situationManagerToolStripMenuItem.Click += new System.EventHandler(this.MenuItemSituationManager_Click);
             // 
             // tagManagerToolStripMenuItem
             // 
             this.tagManagerToolStripMenuItem.Name = "tagManagerToolStripMenuItem";
-            this.tagManagerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.tagManagerToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.tagManagerToolStripMenuItem.Text = "Tags";
             this.tagManagerToolStripMenuItem.Click += new System.EventHandler(this.MenuItemTagManager_Click);
             // 
             // usersToolStripMenuItem
             // 
             this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
-            this.usersToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.usersToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.usersToolStripMenuItem.Text = "Users";
             this.usersToolStripMenuItem.Click += new System.EventHandler(this.MenuItemUserManager_Click);
             // 
@@ -437,6 +444,7 @@
             // nudSpeed
             // 
             this.nudSpeed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.nudSpeed.DecimalPlaces = 1;
             this.nudSpeed.Location = new System.Drawing.Point(737, 367);
             this.nudSpeed.Maximum = new decimal(new int[] {
             300,
@@ -594,13 +602,6 @@
             this.txbxLog.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.txbxLog.Size = new System.Drawing.Size(1554, 78);
             this.txbxLog.TabIndex = 0;
-            // 
-            // rolesToolStripMenuItem
-            // 
-            this.rolesToolStripMenuItem.Name = "rolesToolStripMenuItem";
-            this.rolesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.rolesToolStripMenuItem.Text = "Roles";
-            this.rolesToolStripMenuItem.Click += new System.EventHandler(this.MenuItemRoleManager_Click);
             // 
             // MainForm
             // 

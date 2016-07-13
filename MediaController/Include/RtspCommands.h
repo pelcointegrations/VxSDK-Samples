@@ -46,7 +46,7 @@ namespace MediaController {
             /// Send the PLAY method and read the server response.
             /// </summary>
             /// <param name="speed">The playback speed.  Negative values can be used for reverse playback.</param>
-            bool Play(int speed);
+            bool Play(float speed);
 
             /// <summary>
             /// Send the PAUSE method and read the server response.
@@ -58,7 +58,7 @@ namespace MediaController {
             /// </summary>
             /// <param name="unixTime">The start time for playback.</param>
             /// <param name="speed">The playback speed.  Negative values can be used for reverse playback.</param>
-            bool SeekPlay(unsigned int unixTime, int speed);
+            bool SeekPlay(unsigned int unixTime, float speed);
 
             /// <summary>
             /// Send the TEARDOWN method and read the server response.

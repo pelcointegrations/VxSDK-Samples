@@ -150,7 +150,7 @@ GstPadProbeReturn OnJpegPacketReceived(GstPad *localPad, GstPadProbeInfo *info, 
                     // For playback, the initial time is set using the seek time.  It is then incremented based on the elapsed time between
                     // timestamps and the playback speed.
                     if (vars->lastTimestamp != 0 && vars->lastTimestamp != streamTs) {
-                        vars->currentTimestamp += abs(static_cast<int>(streamTs - vars->lastTimestamp)) * vars->speed;
+                        vars->currentTimestamp += abs(static_cast<int>(streamTs - vars->lastTimestamp)) * static_cast<int>(vars->speed);
                     }
                 }
                 else {
@@ -239,7 +239,7 @@ void GstWrapper::ClearWindow() {
     //SetPipeline();
 }
 
-void GstWrapper::Play(int speed) {
+void GstWrapper::Play(float speed) {
     _gstVars.rtcpTimestamp = 0;
     _gstVars.speed = speed;
 

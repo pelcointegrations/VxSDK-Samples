@@ -26,7 +26,7 @@ MjpegPull::Stream::Stream(MediaRequest& request, Controller& controller)
 
 MjpegPull::Stream::~Stream() {}
 
-bool MjpegPull::Stream::Play(int speed) {
+bool MjpegPull::Stream::Play(float speed) {
     // If the jpegUri is empty send a new stream request.
     if (_dataSession->jpegUri[0] == '\0')
         NewRequest(_mediaRequest);
@@ -55,7 +55,7 @@ void MjpegPull::Stream::FrameForward() {}
 
 void MjpegPull::Stream::FrameBackward() {}
 
-bool MjpegPull::Stream::Seek(unsigned int unixTime, int speed) {
+bool MjpegPull::Stream::Seek(unsigned int unixTime, float speed) {
     // If the jpegUri is empty send a new stream request.
     if (_dataSession->jpegUri[0] == '\0')
         NewRequest(_mediaRequest);
@@ -65,7 +65,7 @@ bool MjpegPull::Stream::Seek(unsigned int unixTime, int speed) {
         // Subscribe to the GStreamer Bus element in order to get timestamps.
         this->_gst->SubscribeToBusEvents(_uuid);
     }
-    VxSdk::VxResult::Value ret = _dataSession->Seek(unixTime, speed);
+    VxSdk::VxResult::Value ret = _dataSession->Seek(unixTime, static_cast<int>(speed));
     if (ret == VxSdk::VxResult::kOK) {
         // Set the initial timestamp to the seek time.
         this->_gst->SetTimestamp(unixTime);
@@ -75,7 +75,7 @@ bool MjpegPull::Stream::Seek(unsigned int unixTime, int speed) {
 
 bool MjpegPull::Stream::GoToLive() { return true; }
 
-bool MjpegPull::Stream::Resume(int speed) {
+bool MjpegPull::Stream::Resume(unsigned int unixTime, float speed) {
     // If the jpegUri is empty send a new stream request.
     if (_dataSession->jpegUri[0] == '\0')
         NewRequest(_mediaRequest);
@@ -86,7 +86,7 @@ bool MjpegPull::Stream::Resume(int speed) {
         this->_gst->SubscribeToBusEvents(_uuid);
     }
     // Seek to the last received timestamp generated during the Pause call.
-    VxSdk::VxResult::Value ret = _dataSession->Seek(this->_gst->GetLastTimestamp(VxStreamProtocol::kMjpegPull), speed);
+    VxSdk::VxResult::Value ret = _dataSession->Seek(this->_gst->GetLastTimestamp(VxStreamProtocol::kMjpegPull), static_cast<int>(speed));
     if (ret == VxSdk::VxResult::kOK) {
         // Set the initial timestamp to the seek time.
         this->_gst->SetTimestamp(this->_gst->GetLastTimestamp(VxStreamProtocol::kMjpegPull));

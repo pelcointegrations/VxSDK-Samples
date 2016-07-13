@@ -65,7 +65,7 @@ namespace CPPCli {
         /// Call Play on the stream.
         /// </summary>
         /// <param name="speed">The playback speed.  Negative values can be used for reverse playback.</param>
-        bool Play(int speed);
+        bool Play(float speed);
 
         /// <summary>
         /// Call Pause on the stream.
@@ -87,7 +87,7 @@ namespace CPPCli {
         /// </summary>
         /// <param name="time">The start time for playback.</param>
         /// <param name="speed">The playback speed.  Negative values can be used for reverse playback.</param>
-        bool Seek(System::DateTime time, int speed);
+        bool Seek(System::DateTime time, float speed);
 
         /// <summary>
         /// Gets the current playback mode.
