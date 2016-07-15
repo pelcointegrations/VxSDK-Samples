@@ -20,8 +20,7 @@ namespace CPPConsole {
         const char* const kOutOfMessage = " out of ";
         const char* const kExportingMessage = "Exporting";
         const char* const kFetchingMessage = "Fetching situations from system..Please wait..\n";
-        const char* const kEnterDeviceIndexMessage = "\n\n  Enter device index: ";
-        const char* const kEnterCameraIndexMessage = "\n\n  Enter camera index: ";
+        const char* const kEnterDataSourceIndexMessage = "\n\n  Enter data source index: ";
         const char* const kFetchingExportMessage = "Fetching exports from system..Please wait..\n";
         const char* const kIndexHeader = "  INDEX  ";
         const char* const kNameHeader = "NAME  ";

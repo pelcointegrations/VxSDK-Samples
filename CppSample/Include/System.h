@@ -1,5 +1,5 @@
 #pragma once
-#include "Device.h"
+#include "DataSource.h"
 #include "NewExport.h"
 #include "Situation.h"
 
@@ -36,19 +36,19 @@ namespace CPPConsole {
             bool Login(const char* ip, int port, const char* user, const char* passwd);
 
             /// <summary>
-            /// Get the devices associated with this system instance.
-            /// Destructor method will deallocate the device list allocated here
+            /// Get the datasources associated with this system instance.
+            /// Destructor method will deallocate the datasource list allocated here
             /// </summary>
-            std::list<Device*>* GetDevices();
+            std::list<DataSource*>* GetDataSources();
 
             /// <summary>
-            /// Get devices using pagination query
-            /// Caller should deallocate the device list once done
+            /// Get datasources using pagination query
+            /// Caller should deallocate the datasource list once done
             /// </summary>
-            /// <param name="pageIndex">From device</param>
+            /// <param name="pageIndex">From datasource</param>
             /// <param name="count"/>number of items to be fetched</param>
             /// <param name="totalItems">totalItems available in server (will be filled in by this method)</param>
-            std::list<Device*>* GetDevices(int pageIndex, int count, int& totalItems);
+            std::list<DataSource*>* GetDataSources(int pageIndex, int count, int& totalItems);
 
             /// <summary>
             /// Creates a new export in server
@@ -118,7 +118,7 @@ namespace CPPConsole {
             ///pointer to VxSDK system
             VxSdk::IVxSystem* _system;
 
-            ///List holding device list
-            std::list<Device*>* _deviceList;
+            ///List holding datasource list
+            std::list<DataSource*>* _dataSourceList;
     };
 }

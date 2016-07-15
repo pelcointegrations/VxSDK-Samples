@@ -63,6 +63,11 @@ namespace CPPConsole {
         const char* GetDataSourceName() { return _dataSource->name; }
 
         /// <summary>
+        /// Returns datasource number
+        /// </summary>
+        int GetDataSourceNumber() { return _dataSource->number; }
+
+        /// <summary>
         /// Returns datasource ip
         /// </summary>
         const char* GetDataSourceIp() { return _dataSource->ip; }

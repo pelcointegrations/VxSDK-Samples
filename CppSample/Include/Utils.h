@@ -230,7 +230,7 @@ namespace CPPConsole {
             int option = 0;
             std::cout << "\n\n  MAIN MENU\n";
             DrawLine();
-            std::cout << "\n  1. Devices";
+            std::cout << "\n  1. DataSources";
             std::cout << "\n  2. Export";
             std::cout << "\n  3. Events";
             std::cout << "\n  4. Exit";
@@ -240,17 +240,17 @@ namespace CPPConsole {
         }
 
         /// <summary>
-        /// Display and get the devices sub menu choice from user
+        /// Display and get the datasources sub menu choice from user
         /// </summary>
-        static int GetDevicesSubMenuChoiceFromUser() {
+        static int GetDataSourcesSubMenuChoiceFromUser() {
             system("cls");
             int option = 0;
             DrawLine();
-            std::cout << "\n  DEVICES\n";
+            std::cout << "\n  DATA SOURCES\n";
             DrawLine();
-            std::cout << "\n  1. View all Devices";
-            std::cout << "\n  2. View devices page by page";
-            std::cout << "\n  3. View Device details";
+            std::cout << "\n  1. View all DataSources";
+            std::cout << "\n  2. View DataSources page by page";
+            std::cout << "\n  3. View DataSource details";
             std::cout << "\n  4. Live Streaming";
             std::cout << "\n  5. Playback";
             std::cout << "\n  6. Go back to main menu";

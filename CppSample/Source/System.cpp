@@ -8,7 +8,7 @@ using namespace std;
 
 CPPConsole::System::System() {
     _system = nullptr;
-    _deviceList = nullptr;
+    _dataSourceList = nullptr;
 }
 
 bool CPPConsole::System::InitializeSdk() {
@@ -33,54 +33,54 @@ bool CPPConsole::System::Login(const char* ip, int port, const char* user, const
     return _system != nullptr;
 }
 
-list<CPPConsole::Device*>* CPPConsole::System::GetDevices() {
-    if (_deviceList != nullptr) {
-        for (list<Device*>::const_iterator iterator = _deviceList->begin(), end = _deviceList->end(); iterator != end; ++iterator) {
+list<CPPConsole::DataSource*>* CPPConsole::System::GetDataSources() {
+    if (_dataSourceList != nullptr) {
+        for (list<DataSource*>::const_iterator iterator = _dataSourceList->begin(), end = _dataSourceList->end(); iterator != end; ++iterator) {
             delete *iterator;
         }
-        delete _deviceList;
+        delete _dataSourceList;
     }
 
-    _deviceList = new list<Device*>();
-    VxSdk::VxCollection<VxSdk::IVxDevice**> devices;
-    VxSdk::VxResult::Value result = _system->GetDevices(devices);
+    _dataSourceList = new list<DataSource*>();
+    VxSdk::VxCollection<VxSdk::IVxDataSource**> dataSources;
+    VxSdk::VxResult::Value result = _system->GetDataSources(dataSources);
     if (result == VxSdk::VxResult::kInsufficientSize) {
-        devices.collection = new VxSdk::IVxDevice*[devices.collectionSize];
-        result = _system->GetDevices(devices);
+        dataSources.collection = new VxSdk::IVxDataSource*[dataSources.collectionSize];
+        result = _system->GetDataSources(dataSources);
         if (result == VxSdk::VxResult::kOK) {
-            for (int i = 0; i < devices.collectionSize; i++)
-                _deviceList->push_back(new Device(devices.collection[i]));
+            for (int i = 0; i < dataSources.collectionSize; i++)
+                _dataSourceList->push_back(new DataSource(dataSources.collection[i]));
         }
-        delete[] devices.collection;
+        delete[] dataSources.collection;
     }
-    return _deviceList;
+    return _dataSourceList;
 }
 
-list<CPPConsole::Device*>* CPPConsole::System::GetDevices(int pageIndex, int count, int& totalItems) {
-    list<Device*>* deviceList = new list<Device*>();
+list<CPPConsole::DataSource*>* CPPConsole::System::GetDataSources(int pageIndex, int count, int& totalItems) {
+    list<DataSource*>* dataSourceList = new list<DataSource*>();
 
-    VxSdk::VxCollection<VxSdk::IVxDevice**> devices;
+    VxSdk::VxCollection<VxSdk::IVxDataSource**> dataSources;
 
-    devices.filterSize = 2;
+    dataSources.filterSize = 2;
     VxSdk::VxCollectionFilter filters[2];
     filters[0].key = VxSdk::VxCollectionFilterItem::kStart;
     filters[1].key = VxSdk::VxCollectionFilterItem::kCount;
     VxSdk::Utilities::StrCopySafe(filters[0].value, to_string(pageIndex).c_str());
     VxSdk::Utilities::StrCopySafe(filters[1].value, to_string(count).c_str());
-    devices.filters = filters;
+    dataSources.filters = filters;
 
-    VxSdk::VxResult::Value result = _system->GetDevices(devices);
+    VxSdk::VxResult::Value result = _system->GetDataSources(dataSources);
     if (result == VxSdk::VxResult::kInsufficientSize) {
-        devices.collection = new VxSdk::IVxDevice*[devices.collectionSize];
-        totalItems = devices.collectionSize;
-        result = _system->GetDevices(devices);
+        dataSources.collection = new VxSdk::IVxDataSource*[dataSources.collectionSize];
+        totalItems = dataSources.collectionSize;
+        result = _system->GetDataSources(dataSources);
         if (result == VxSdk::VxResult::kOK) {
-            for (int i = 0; i < devices.collectionSize; i++)
-                deviceList->push_back(new Device(devices.collection[i]));
+            for (int i = 0; i < dataSources.collectionSize; i++)
+                dataSourceList->push_back(new DataSource(dataSources.collection[i]));
         }
-        delete[] devices.collection;
+        delete[] dataSources.collection;
     }
-    return deviceList;
+    return dataSourceList;
 }
 
 CPPConsole::Export* CPPConsole::System::CreateExport(NewExport* newExport) {
@@ -230,11 +230,11 @@ bool CPPConsole::System::DeleteSituation(Situation* situationToDelete) {
 }
 
 CPPConsole::System::~System() {
-    if (_deviceList != nullptr) {
-        for (list<Device*>::const_iterator iterator = _deviceList->begin(), end = _deviceList->end(); iterator != end; ++iterator) {
+    if (_dataSourceList != nullptr) {
+        for (list<DataSource*>::const_iterator iterator = _dataSourceList->begin(), end = _dataSourceList->end(); iterator != end; ++iterator) {
             delete *iterator;
         }
-        delete _deviceList;
+        delete _dataSourceList;
     }
 
     _system->Delete();

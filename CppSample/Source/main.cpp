@@ -1,6 +1,6 @@
 #include "stdafx.h"
 #include "System.h"
-#include "Device.h"
+#include "DataSource.h"
 #include "MediaControl.h"
 #include "Utils.h"
 #include "Constants.h"
@@ -25,20 +25,20 @@ HWND gGstreamerPlayerWindow = nullptr;
 
 #pragma region Method_Declarations
 /*Main Menu Options*/
-void DevicesMenu(list<CPPConsole::Device*>* devices, CPPConsole::System* sys);
-void ExportsMenu(list<CPPConsole::Device*>* devices, CPPConsole::System* sys);
-void EventsMenu(list<CPPConsole::Device*>* devices, CPPConsole::System* sys);
+void DataSourcesMenu(list<CPPConsole::DataSource*>* datasources, CPPConsole::System* sys);
+void ExportsMenu(list<CPPConsole::DataSource*>* datasources, CPPConsole::System* sys);
+void EventsMenu(list<CPPConsole::DataSource*>* datasources, CPPConsole::System* sys);
 
-/*Devices Sub Menu Options*/
-void DisplayallDevices(list<CPPConsole::Device*>* devices);
-void DisplayDevicesUsingPagination(CPPConsole::System* sys);
-void DisplayDeviceDetails(list<CPPConsole::Device*>* devices);
-void DoLiveStreamingOption(list<CPPConsole::Device*>* devices);
-void DoPlaybackOption(list<CPPConsole::Device*>* devices);
+/*DataSources Sub Menu Options*/
+void DisplayallDataSources(list<CPPConsole::DataSource*>* datasources);
+void DisplayDataSourcesUsingPagination(CPPConsole::System* sys);
+void DisplayDataSourceDetails(list<CPPConsole::DataSource*>* datasources);
+void DoLiveStreamingOption(list<CPPConsole::DataSource*>* datasources);
+void DoPlaybackOption(list<CPPConsole::DataSource*>* datasources);
 
 /*Exports Sub Menu Options*/
 void ShowExports(CPPConsole::System* sys);
-void CreateNewExportOption(list<CPPConsole::Device*>* devices, CPPConsole::System* sys);
+void CreateNewExportOption(list<CPPConsole::DataSource*>* datasources, CPPConsole::System* sys);
 void DeleteExport(CPPConsole::System* sys);
 void DownloadExport(CPPConsole::System* sys);
 
@@ -180,7 +180,7 @@ static bool ProcessPTZKeyEvents(char keyCode, CPPConsole::PTZController* ptzCont
                 }
             }
             else {
-                cout << "\nNo presets available for this device!\n";
+                cout << "\nNo presets available for this datasource!\n";
             }
         }
         showResult = false;
@@ -210,7 +210,7 @@ static bool ProcessPTZKeyEvents(char keyCode, CPPConsole::PTZController* ptzCont
                 }
             }
             else {
-                cout << "\nNo patterns available for this device!\n";
+                cout << "\nNo patterns available for this datasource!\n";
             }
         }
         showResult = false;
@@ -264,22 +264,18 @@ void TimestampCallback(MediaController::TimestampEvent* timeEvent) {
 }
 
 /// <summary>
-/// Method for displaying details of given device on console
+/// Method for displaying details of given datasource on console
 /// </summary>
-/// <param name="device">device pointer</param>
-void ShowDeviceDetails(CPPConsole::Device* device) {
-    cout << "\n  Device Details: " << "\n";
+/// <param name="datasource">datasource pointer</param>
+void ShowDataSourceDetails(CPPConsole::DataSource* datasource) {
+    cout << "\n  DataSource Details: " << "\n";
     CPPConsole::Utils::DrawLine();
-    cout << kNameMessage << device->GetDeviceName();
-    cout << "\n  ID: " << device->GetDeviceId();
-    cout << "\n  IP: " << device->GetDeviceIp();
-    cout << "\n  Model: " << device->GetDeviceModel();
-    cout << "\n  Vendor: " << device->GetVendor();
-    cout << "\n  Type: " << device->GetDeviceTypeInString();
-    string isOnline = "No";
-    if (device->IsOnline()) isOnline = "Yes";
-    cout << "\n  Online: " << isOnline;
-    cout << "\n  Datasources:" << device->GetDatasources()->size() << "\n";
+    cout << kNameMessage << datasource->GetDataSourceName();
+    cout << "\n  ID: " << datasource->GetDataSourceId();
+    cout << "\n  IP: " << datasource->GetDataSourceIp();
+    cout << "\n  PTZ: " << datasource->IsPTZ();
+    cout << "\n  State: " << datasource->GetDeviceState();
+    cout << "\n  DataInterfaces:" << datasource->GetDataInterfaces()->size() << "\n";
     CPPConsole::Utils::DrawLine();
     cout << "\n";
 }
@@ -517,7 +513,7 @@ void EventsCallBack(VxSdk::IVxEvent* ev) {
 #pragma region Main
 /// <summary>
 /// Entry point to program
-/// Connect to system defined in Constants.h, Fetch devices and show menu to User
+/// Connect to system defined in Constants.h, Fetch datasources and show menu to User
 /// </summary>
 /// <param name="argc">default argument; not used</param>
 /// <param name="argv[]">default argument; not used</param>
@@ -539,9 +535,9 @@ int main(int argc, char* argv[]) {
         }
         else {
             cout << "Logged into system:" << kSysIp << " as " << kUserName << "\n";
-            cout << "Fetching devices from system, Please wait...\n";
-            list<CPPConsole::Device*>* devices = sys->GetDevices();
-            cout << devices->size() << " devices found.\n";
+            cout << "Fetching datasources from system, Please wait...\n";
+            list<CPPConsole::DataSource*>* datasources = sys->GetDataSources();
+            cout << datasources->size() << " datasources found.\n";
 
             int option;
             // Showing Main menu. Refer CPPConsole::Utils::GetMainMenuChoiceFromUser for details
@@ -549,25 +545,25 @@ int main(int argc, char* argv[]) {
                 system("cls");
                 CPPConsole::Utils::DrawLine();
                 cout << "\n  CONNECTED TO:" << kSysIp;
-                cout << "\n  TOTAL DEVICES FOUND:" << devices->size() << "\n";
+                cout << "\n  TOTAL DATASOURCES FOUND:" << datasources->size() << "\n";
                 CPPConsole::Utils::DrawLine();
                 option = CPPConsole::Utils::GetMainMenuChoiceFromUser();
 
                 switch (option) {
                     case 1: {
-                        // Display submenu related with devices (Show details, streaming)
-                        DevicesMenu(devices, sys);
+                        // Display submenu related with datasources (Show details, streaming)
+                        DataSourcesMenu(datasources, sys);
                         break;
                     }
                     case 2: {
                         // Display submenu related with exports (View,create,delete,download)
-                        ExportsMenu(devices, sys);
+                        ExportsMenu(datasources, sys);
                         break;
                     }
                     case 3: {
                         // Display submenu related with events (View/Inject/Subscribe/Unsubscribe events,
                         // View/Add/Delete situations)
-                        EventsMenu(devices, sys);
+                        EventsMenu(datasources, sys);
                         break;
                     }
                     case 4: {
@@ -594,43 +590,43 @@ int main(int argc, char* argv[]) {
 
 #pragma region MainMenu
 /// <summary>
-/// Devices sub menu option
-/// Show options to display all devices, live/playback streaming
+/// DataSources sub menu option
+/// Show options to display all datasources, live/playback streaming
 /// </summary>
-/// <param name="devices">collected devices</param>
+/// <param name="datasources">collected datasources</param>
 /// <param name="sys">System pointer</param>
-void DevicesMenu(list<CPPConsole::Device*>* devices, CPPConsole::System* sys) {
+void DataSourcesMenu(list<CPPConsole::DataSource*>* datasources, CPPConsole::System* sys) {
     int choice;
     do {
-        choice = CPPConsole::Utils::GetDevicesSubMenuChoiceFromUser();
+        choice = CPPConsole::Utils::GetDataSourcesSubMenuChoiceFromUser();
         switch (choice) {
             case 1: {
-                // View all devices
-                DisplayallDevices(devices);
+                // View all datasources
+                DisplayallDataSources(datasources);
                 system(kPauseCommand);
                 break;
             }
             case 2: {
-                // View devices page by page
-                DisplayDevicesUsingPagination(sys);
+                // View datasources page by page
+                DisplayDataSourcesUsingPagination(sys);
                 system(kPauseCommand);
                 break;
             }
             case 3: {
-                // Get the details of a particular device
-                DisplayDeviceDetails(devices);
+                // Get the details of a particular datasource
+                DisplayDataSourceDetails(datasources);
                 system(kPauseCommand);
                 break;
             }
             case 4: {
                 // Start live streaming
-                DoLiveStreamingOption(devices);
+                DoLiveStreamingOption(datasources);
                 system(kPauseCommand);
                 break;
             }
             case 5: {
                 // Perform playback
-                DoPlaybackOption(devices);
+                DoPlaybackOption(datasources);
                 system(kPauseCommand);
                 break;
             }
@@ -646,9 +642,9 @@ void DevicesMenu(list<CPPConsole::Device*>* devices, CPPConsole::System* sys) {
 /// Exports sub menu option
 /// Show options to display all exports, create/delete/download an export
 /// </summary>
-/// <param name="devices">collected devices</param>
+/// <param name="datasources">collected datasources</param>
 /// <param name="sys">System pointer</param>
-void ExportsMenu(list<CPPConsole::Device*>* devices, CPPConsole::System* sys) {
+void ExportsMenu(list<CPPConsole::DataSource*>* datasources, CPPConsole::System* sys) {
     int choice;
     do {
         choice = CPPConsole::Utils::GetExportSubMenuChoiceFromUser();
@@ -661,7 +657,7 @@ void ExportsMenu(list<CPPConsole::Device*>* devices, CPPConsole::System* sys) {
             }
             case 2: {
                 // Create new export
-                CreateNewExportOption(devices, sys);
+                CreateNewExportOption(datasources, sys);
                 system(kPauseCommand);
                 break;
             }
@@ -689,9 +685,9 @@ void ExportsMenu(list<CPPConsole::Device*>* devices, CPPConsole::System* sys) {
 /// Events sub menu option
 /// Show options to display/inject/subscribe/unsubscribe events, view/add/delete situation
 /// </summary>
-/// <param name="devices">collected devices</param>
+/// <param name="datasources">collected datasources</param>
 /// <param name="sys">System pointer</param>
-void EventsMenu(list<CPPConsole::Device*>* devices, CPPConsole::System* sys) {
+void EventsMenu(list<CPPConsole::DataSource*>* datasources, CPPConsole::System* sys) {
     int choice;
     do {
         choice = CPPConsole::Utils::GetEventsSubMenuChoiceFromUser();
@@ -749,26 +745,26 @@ void EventsMenu(list<CPPConsole::Device*>* devices, CPPConsole::System* sys) {
 }
 #pragma endregion
 
-#pragma region Devices_SubMenu
+#pragma region DataSources_SubMenu
 /// <summary>
-/// Display a page of details for devices
+/// Display a page of details for datasources
 /// </summary>
-/// <param name="devices">collected devices</param>
-void PrintPage(list<CPPConsole::Device*>* devices) {
+/// <param name="datasources">collected datasources</param>
+void PrintPage(list<CPPConsole::DataSource*>* datasources) {
     int index = 0;
-    for (list<CPPConsole::Device*>::const_iterator iterator = devices->begin(), end = devices->end(); iterator != end; ++iterator) {
+    for (list<CPPConsole::DataSource*>::const_iterator iterator = datasources->begin(), end = datasources->end(); iterator != end; ++iterator) {
         // if-else doesn't contain any difference other than adding padding based on two digit/three difit index
         if (index + 1 < 10) {
             cout << setfill(' ') << "\n" << "    " << index + 1 << "    " << left << setw(50) <<
-                (*iterator)->GetDeviceName() << "    " << setw(20) << (*iterator)->GetDeviceIp();
+                (*iterator)->GetDataSourceName() << "    " << setw(20) << (*iterator)->GetDataSourceIp();
         }
         else if (index + 1 < 100) {
             cout << setfill(' ') << "\n" << "    " << index + 1 << "   " << left << setw(50) <<
-            (*iterator)->GetDeviceName() << "    " << setw(20) << (*iterator)->GetDeviceIp();
+            (*iterator)->GetDataSourceName() << "    " << setw(20) << (*iterator)->GetDataSourceIp();
         }
         else {
             cout << setfill(' ') << "\n" << "    " << index + 1 << "  " << left << setw(50) <<
-            (*iterator)->GetDeviceName() << "    " << setw(20) << (*iterator)->GetDeviceIp();
+            (*iterator)->GetDataSourceName() << "    " << setw(20) << (*iterator)->GetDataSourceIp();
         }
 
         index++;
@@ -778,24 +774,24 @@ void PrintPage(list<CPPConsole::Device*>* devices) {
 }
 
 /// <summary>
-/// Display details of devices available in system
+/// Display details of datasources available in system
 /// </summary>
-/// <param name="devices">collected devices</param>
-void DisplayallDevices(list<CPPConsole::Device*>* devices) {
+/// <param name="datasources">collected datasources</param>
+void DisplayallDataSources(list<CPPConsole::DataSource*>* datasources) {
     system("cls");
 
     cout << "\n\n";
     cout << setfill(' ') << kIndexHeader << setw(50) << left << kNameHeader << setw(20) << kIpHeader << "\n";
     CPPConsole::Utils::DrawLine();
-    PrintPage(devices);
+    PrintPage(datasources);
     cout << "\n";
 }
 
 /// <summary>
-/// Display device with paging
+/// Display datasource with paging
 /// </summary>
 /// <param name="sys">system pointer</param>
-void DisplayDevicesUsingPagination(CPPConsole::System* sys) {
+void DisplayDataSourcesUsingPagination(CPPConsole::System* sys) {
     int startIndex = 0;
     int numberOfItemsPerPage = 20;
     int totalNumberOfItems = 0;
@@ -803,10 +799,10 @@ void DisplayDevicesUsingPagination(CPPConsole::System* sys) {
     cin >> numberOfItemsPerPage;
 
     system("cls");
-    cout << "Fetching first " << numberOfItemsPerPage << " devices..";
+    cout << "Fetching first " << numberOfItemsPerPage << " datasources..";
     cout << "\n\n";
 
-    list<CPPConsole::Device*>* devices = sys->GetDevices(startIndex, numberOfItemsPerPage, totalNumberOfItems);
+    list<CPPConsole::DataSource*>* datasources = sys->GetDataSources(startIndex, numberOfItemsPerPage, totalNumberOfItems);
 
     cout << setfill(' ') << kIndexHeader << setw(50) << left << "NAME  " << setw(20) << "    IP" << "\n";
     CPPConsole::Utils::DrawLine();
@@ -814,11 +810,11 @@ void DisplayDevicesUsingPagination(CPPConsole::System* sys) {
     int totalIteration = (totalNumberOfItems + numberOfItemsPerPage - 1) / numberOfItemsPerPage;
     cin.ignore();
     for (int i = 0; i < totalIteration; i++) {
-        if (devices != nullptr)
-            delete devices;
+        if (datasources != nullptr)
+            delete datasources;
 
-        devices = sys->GetDevices(startIndex, numberOfItemsPerPage, totalNumberOfItems);
-        PrintPage(devices);
+        datasources = sys->GetDataSources(startIndex, numberOfItemsPerPage, totalNumberOfItems);
+        PrintPage(datasources);
         if ((startIndex + numberOfItemsPerPage) > totalNumberOfItems) {
             // Last page
             cout << kShowingMessage << totalNumberOfItems << kOutOfMessage << totalNumberOfItems;
@@ -839,100 +835,88 @@ void DisplayDevicesUsingPagination(CPPConsole::System* sys) {
 }
 
 /// <summary>
-/// Get the device index for displaying its details
+/// Get the datasource index for displaying its details
 /// </summary>
-/// <param name="devices">collected devices</param>
-void DisplayDeviceDetails(list<CPPConsole::Device*>* devices) {
+/// <param name="datasources">collected datasources</param>
+void DisplayDataSourceDetails(list<CPPConsole::DataSource*>* datasources) {
     int devIndex;
-    cout << kEnterDeviceIndexMessage;
+    cout << kEnterDataSourceIndexMessage;
     cin >> devIndex;
 
-    list<CPPConsole::Device*>::iterator it = next(devices->begin(), devIndex - 1);
-    ShowDeviceDetails((*it));
+    list<CPPConsole::DataSource*>::iterator it = next(datasources->begin(), devIndex - 1);
+    ShowDataSourceDetails((*it));
 }
 
 /// <summary>
-/// Get the device index for performing live streaming
+/// Get the datasource index for performing live streaming
 /// </summary>
-/// <param name="devices">collected devices</param>
-void DoLiveStreamingOption(list<CPPConsole::Device*>* devices) {
+/// <param name="datasources">collected datasources</param>
+void DoLiveStreamingOption(list<CPPConsole::DataSource*>* datasources) {
     int camNum;
-    cout << kEnterCameraIndexMessage;
+    cout << kEnterDataSourceIndexMessage;
     cin >> camNum;
 
-    list<CPPConsole::Device*>::iterator it = next(devices->begin(), camNum - 1);
-    if ((*it)->GetDeviceType() != CPPConsole::Device::DeviceType::Camera) {
-        cout << "\n  Device you selected is not a camera!!\n";
-        return;
-    }
+    list<CPPConsole::DataSource*>::iterator it = next(datasources->begin(), camNum - 1);
     bool isMjpegEnabled = false;
     string mJPEGOption = "N";
     cout << "\n  Do you want to play MJPEG (Y/N) [Default is RTSP]: ";
     cin >> mJPEGOption;
     if (mJPEGOption == "Y" || mJPEGOption == "y") { isMjpegEnabled = true; }
 
-    ShowDeviceDetails((*it));
-    list<CPPConsole::DataSource*>* dataSources = (*it)->GetDatasources();
-
+    ShowDataSourceDetails((*it));
     CPPConsole::DataSource* dataSourceSelectedForStreaming = nullptr;
 
-    for (list<CPPConsole::DataSource*>::const_iterator iterator = dataSources->begin(), end = dataSources->end(); iterator != end; ++iterator) {
-        list<CPPConsole::DataInterface*>* dataInterfaces = (*iterator)->GetDataInterfaces();
 
-        for (list<CPPConsole::DataInterface*>::const_iterator dataInterfaceIter = dataInterfaces->begin(), e = dataInterfaces->end();
-            dataInterfaceIter != e; ++dataInterfaceIter) {
-            if (isMjpegEnabled) {
-                if ((*dataInterfaceIter)->GetProtocol() == CPPConsole::DataInterface::StreamProtocol::kStreamProtocolMjpegPull) {
-                    dataSourceSelectedForStreaming = (*iterator);
-                    break;
-                }
+    list<CPPConsole::DataInterface*>* dataInterfaces = (*it)->GetDataInterfaces();
+    for (list<CPPConsole::DataInterface*>::const_iterator dataInterfaceIter = dataInterfaces->begin(), e = dataInterfaces->end();
+        dataInterfaceIter != e; ++dataInterfaceIter) {
+        if (isMjpegEnabled) {
+            if ((*dataInterfaceIter)->GetProtocol() == CPPConsole::DataInterface::StreamProtocol::kStreamProtocolMjpegPull) {
+                dataSourceSelectedForStreaming = (*it);
+                break;
             }
-            else {
-                if ((*dataInterfaceIter)->GetProtocol() == CPPConsole::DataInterface::StreamProtocol::kStreamProtocolRtspRtp) {
-                    dataSourceSelectedForStreaming = (*iterator);
-                    break;
-                }
+        }
+        else {
+            if ((*dataInterfaceIter)->GetProtocol() == CPPConsole::DataInterface::StreamProtocol::kStreamProtocolRtspRtp) {
+                dataSourceSelectedForStreaming = (*it);
+                break;
             }
         }
     }
+
     if (dataSourceSelectedForStreaming != nullptr) {
         StartStreamingForDataSource(dataSourceSelectedForStreaming, isMjpegEnabled, 0);
     }
 }
 
 /// <summary>
-/// Get the device index for performing playback
+/// Get the datasource index for performing playback
 /// </summary>
-/// <param name="devices">collected devices</param>
-void DoPlaybackOption(list<CPPConsole::Device*>* devices) {
+/// <param name="datasources">collected datasources</param>
+void DoPlaybackOption(list<CPPConsole::DataSource*>* datasources) {
     int camNum;
-    cout << kEnterCameraIndexMessage;
+    cout << kEnterDataSourceIndexMessage;
     cin >> camNum;
 
-    list<CPPConsole::Device*>::iterator it = next(devices->begin(), camNum - 1);
-    cout << "\n  Camera selected for playback is:" << (*it)->GetDeviceName() << "\n";
+    list<CPPConsole::DataSource*>::iterator it = next(datasources->begin(), camNum - 1);
+    cout << "\n  DataSource selected for playback is:" << (*it)->GetDataSourceName() << "\n";
 
     cin.ignore();
     cout << "\n\n  Input date and time to start playback(yyyy-mm-dd hh:mm:ss)";
     struct tm playBackTime = CPPConsole::Utils::GetDateAndTimeFromUser();
 
     time_t timeSinceEpoch = mktime(&playBackTime);
-
-    list<CPPConsole::DataSource*>* dataSources = (*it)->GetDatasources();
-
     CPPConsole::DataSource* dataSourceSelectedForStreaming = nullptr;
 
-    for (list<CPPConsole::DataSource*>::const_iterator iterator = dataSources->begin(), end = dataSources->end(); iterator != end; ++iterator) {
-        list<CPPConsole::DataInterface*>* dataInterfaces = (*iterator)->GetDataInterfaces();
-
-        for (list<CPPConsole::DataInterface*>::const_iterator dataInterfaceIter = dataInterfaces->begin(), e = dataInterfaces->end();
-            dataInterfaceIter != e; ++dataInterfaceIter) {
-            if ((*dataInterfaceIter)->GetProtocol() == CPPConsole::DataInterface::StreamProtocol::kStreamProtocolRtspRtp) {
-                dataSourceSelectedForStreaming = (*iterator);
-                break;
-            }
+    list<CPPConsole::DataInterface*>* dataInterfaces = (*it)->GetDataInterfaces();
+    for (list<CPPConsole::DataInterface*>::const_iterator dataInterfaceIter = dataInterfaces->begin(), e = dataInterfaces->end();
+        dataInterfaceIter != e; ++dataInterfaceIter) {
+        if ((*dataInterfaceIter)->GetProtocol() == CPPConsole::DataInterface::StreamProtocol::kStreamProtocolRtspRtp) {
+            dataSourceSelectedForStreaming = (*it);
+            break;
         }
     }
+
     if (dataSourceSelectedForStreaming != nullptr) {
         StartStreamingForDataSource(dataSourceSelectedForStreaming, false, timeSinceEpoch);
     }
@@ -962,94 +946,90 @@ void ShowExports(CPPConsole::System* sys) {
 /// <summary>
 /// Collect details from user and create new export
 /// </summary>
-/// <param name="devices">collected devices</param>
+/// <param name="datasources">collected datasources</param>
 /// <param name="sys">system pointer</param>
-void CreateNewExportOption(list<CPPConsole::Device*>* devices, CPPConsole::System* sys) {
+void CreateNewExportOption(list<CPPConsole::DataSource*>* datasources, CPPConsole::System* sys) {
     int camNum;
-    cout << kEnterCameraIndexMessage;
+    cout << kEnterDataSourceIndexMessage;
     cin >> camNum;
 
-    list<CPPConsole::Device*>::iterator it = next(devices->begin(), camNum - 1);
-    cout << "\n  Camera selected for export is:" << (*it)->GetDeviceName() << "\n";
-
-    list<CPPConsole::DataSource*>* dataSources = (*it)->GetDatasources();
+    list<CPPConsole::DataSource*>::iterator iterator = next(datasources->begin(), camNum - 1);
+    cout << "\n  DataSource selected for export is:" << (*iterator)->GetDataSourceName() << "\n";
 
     string exportName;
     string exportPasswd;
     int fileFormatOption = 1;
 
-    for (list<CPPConsole::DataSource*>::const_iterator iterator = dataSources->begin(), end = dataSources->end(); iterator != end; ++iterator) {
-        if (ShowAvailableClips(*iterator)) {
-            cin.ignore();
-            cout << "\n  Input start time for export clip(yyyy-mm-dd hh:mm:ss): ";
-            struct tm strtTime = CPPConsole::Utils::GetDateAndTimeFromUser();
-            string startTimeInUTC = CPPConsole::Utils::ConvertLocalTimetoUTC(strtTime);
 
-            cout << "\n  Input end time for export clip(yyyy-mm-dd hh:mm:ss): ";
-            struct tm endtme = CPPConsole::Utils::GetDateAndTimeFromUser();
-            string endTimeInUTC = CPPConsole::Utils::ConvertLocalTimetoUTC(endtme);
+    if (ShowAvailableClips(*iterator)) {
+        cin.ignore();
+        cout << "\n  Input start time for export clip(yyyy-mm-dd hh:mm:ss): ";
+        struct tm strtTime = CPPConsole::Utils::GetDateAndTimeFromUser();
+        string startTimeInUTC = CPPConsole::Utils::ConvertLocalTimetoUTC(strtTime);
 
-            cout << "\n  Enter name for your export: ";
-            cin >> exportName;
+        cout << "\n  Input end time for export clip(yyyy-mm-dd hh:mm:ss): ";
+        struct tm endtme = CPPConsole::Utils::GetDateAndTimeFromUser();
+        string endTimeInUTC = CPPConsole::Utils::ConvertLocalTimetoUTC(endtme);
 
-            cout << "\n\t1.MkvZip\n";
-            cout << "\t2.Mp4\n";
-            cout << "\n  Chose a file format for your export from above options: ";
-            cin >> fileFormatOption;
+        cout << "\n  Enter name for your export: ";
+        cin >> exportName;
+
+        cout << "\n\t1.MkvZip\n";
+        cout << "\t2.Mp4\n";
+        cout << "\n  Chose a file format for your export from above options: ";
+        cin >> fileFormatOption;
             
 
-            CPPConsole::NewExportClip* exportClip = new CPPConsole::NewExportClip();
-            exportClip->SetDataSourceId((*iterator)->GetDataSourceId());
-            exportClip->SetStartTime(startTimeInUTC.c_str());
-            exportClip->SetEndTime(endTimeInUTC.c_str());
+        CPPConsole::NewExportClip* exportClip = new CPPConsole::NewExportClip();
+        exportClip->SetDataSourceId((*iterator)->GetDataSourceId());
+        exportClip->SetStartTime(startTimeInUTC.c_str());
+        exportClip->SetEndTime(endTimeInUTC.c_str());
 
-            CPPConsole::NewExport* newExport = new CPPConsole::NewExport();
-            newExport->AddClip(exportClip);
-            newExport->SetExportName(exportName.c_str());
+        CPPConsole::NewExport* newExport = new CPPConsole::NewExport();
+        newExport->AddClip(exportClip);
+        newExport->SetExportName(exportName.c_str());
 
-            if (fileFormatOption == 1) {
-                newExport->SetExportFormat(CPPConsole::Export::ExportFormat::MkvZip);
-            }
-            if (fileFormatOption == 2) {
-                newExport->SetExportFormat(CPPConsole::Export::ExportFormat::Mp4);
-            }
-
-            CPPConsole::Export* exp = sys->CreateExport(newExport);
-
-            if (exp != nullptr) {
-                do {
-                    CPPConsole::Export* newExp = sys->GetExportDetails(exp->GetExportName(), exp->GetExportId());
-
-                    if (newExp->GetExportStatus() == CPPConsole::Export::ExportStatus::Failed) {
-                        cout << "\n  Export failed!!\n";
-                        break;
-                    }
-                    if (newExp->GetExportStatus() == CPPConsole::Export::ExportStatus::Successful) {
-                        CPPConsole::Utils::ShowProgress(kExportingMessage, 100, 100, 50);
-                        cout << "\n  Export successfully created..\n";
-                        break;
-                    }
-                    if (newExp->GetExportStatus() == CPPConsole::Export::ExportStatus::Exporting) {
-                        CPPConsole::Utils::ShowProgress(kExportingMessage, static_cast<int>(exp->GetPercentComplete()), 100, 50);
-                    }
-                    else if (newExp->GetExportStatus() == CPPConsole::Export::ExportStatus::Pending) {
-                        CPPConsole::Utils::ShowProgress("Pending", static_cast<int>(exp->GetPercentComplete()), 100, 50);
-                    }
-
-                    delete newExp;
-                    Sleep(1000);
-                } while (true);
-
-                delete exp;
-            }
-            else {
-                cout << "\n  Failed to export!!.\n";
-            }
-            delete exportClip;
-            delete newExport;
-
-            break;
+        if (fileFormatOption == 1) {
+            newExport->SetExportFormat(CPPConsole::Export::ExportFormat::MkvZip);
         }
+        if (fileFormatOption == 2) {
+            newExport->SetExportFormat(CPPConsole::Export::ExportFormat::Mp4);
+        }
+
+        CPPConsole::Export* exp = sys->CreateExport(newExport);
+
+        if (exp != nullptr) {
+            do {
+                CPPConsole::Export* newExp = sys->GetExportDetails(exp->GetExportName(), exp->GetExportId());
+
+                if (newExp->GetExportStatus() == CPPConsole::Export::ExportStatus::Failed) {
+                    cout << "\n  Export failed!!\n";
+                    break;
+                }
+                if (newExp->GetExportStatus() == CPPConsole::Export::ExportStatus::Successful) {
+                    CPPConsole::Utils::ShowProgress(kExportingMessage, 100, 100, 50);
+                    cout << "\n  Export successfully created..\n";
+                    break;
+                }
+                if (newExp->GetExportStatus() == CPPConsole::Export::ExportStatus::Exporting) {
+                    CPPConsole::Utils::ShowProgress(kExportingMessage, static_cast<int>(exp->GetPercentComplete()), 100, 50);
+                }
+                else if (newExp->GetExportStatus() == CPPConsole::Export::ExportStatus::Pending) {
+                    CPPConsole::Utils::ShowProgress("Pending", static_cast<int>(exp->GetPercentComplete()), 100, 50);
+                }
+
+                delete newExp;
+                Sleep(1000);
+            } while (true);
+
+            delete exp;
+        }
+        else {
+            cout << "\n  Failed to export!!.\n";
+        }
+        delete exportClip;
+        delete newExport;
+
         cout << "  No clips available for selected camera!!\n";
     }
 }
