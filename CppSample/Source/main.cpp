@@ -1012,10 +1012,10 @@ void CreateNewExportOption(list<CPPConsole::DataSource*>* datasources, CPPConsol
                     break;
                 }
                 if (newExp->GetExportStatus() == CPPConsole::Export::ExportStatus::Exporting) {
-                    CPPConsole::Utils::ShowProgress(kExportingMessage, static_cast<int>(exp->GetPercentComplete()), 100, 50);
+                    CPPConsole::Utils::ShowProgress(kExportingMessage, static_cast<int>(newExp->GetPercentComplete()), 100, 50);
                 }
                 else if (newExp->GetExportStatus() == CPPConsole::Export::ExportStatus::Pending) {
-                    CPPConsole::Utils::ShowProgress("Pending", static_cast<int>(exp->GetPercentComplete()), 100, 50);
+                    CPPConsole::Utils::ShowProgress("Pending", static_cast<int>(newExp->GetPercentComplete()), 100, 50);
                 }
 
                 delete newExp;
