@@ -1,0 +1,5 @@
+*.suo
+External/Pelco/VxSdk-1.2/CSharpWrapper/Bin
+VxSdkMonitorSample/bin
+VxSdkMonitorSample/obj
+*.db
