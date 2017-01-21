@@ -1,0 +1,21 @@
+<map id="MediaController::PlayingState::Play" name="MediaController::PlayingState::Play">
+<area shape="rect" id="node2" href="$class_media_controller_1_1_stream_base.html#ad45aca1bf506ddeac7aec127b8037266" title="Get the current playback mode. " alt="" coords="216,39,408,80"/>
+<area shape="rect" id="node4" href="$class_media_controller_1_1_stream_base.html#a8082f1179f094eab73f0907cb8d58833" title="Call Play on the stream. " alt="" coords="216,136,408,177"/>
+<area shape="rect" id="node5" href="$class_media_controller_1_1_stream_base.html#a085aa7f25b6da52cb919958707d3eb0e" title="Gets the current time of the stream. " alt="" coords="216,201,408,243"/>
+<area shape="rect" id="node7" href="$class_media_controller_1_1_stream_base.html#ad8c8fb7254a3d4cfc29a552fba440121" title="Get the current GStreamer wrapper instance. " alt="" coords="216,267,408,308"/>
+<area shape="rect" id="node8" href="$class_media_controller_1_1_gst_wrapper.html#a6867df2bc3d4b43764f9663af096842f" title="Get the current playback speed. " alt="" coords="217,397,407,439"/>
+<area shape="rect" id="node20" href="$class_media_controller_1_1_stream_base.html#ab86864297f769c5257227f72c370e791" title="Send PLAY on an existing stream. " alt="" coords="216,463,408,504"/>
+<area shape="rect" id="node3" href="$class_media_controller_1_1_gst_wrapper.html#aaf7152a829d2ecd653fc2f508e336475" title="Get the current playback mode. " alt="" coords="456,5,647,47"/>
+<area shape="rect" id="node6" href="$class_media_controller_1_1_gst_wrapper.html#aea3795ae288b23f9355bd3fa04371cc1" title="Get the last timestamp received from the stream. " alt="" coords="456,71,647,112"/>
+<area shape="rect" id="node9" href="$class_media_controller_1_1_gst_wrapper.html#a04c5611674a24bfdff220b3b967e15f9" title="Get the status of the pipeline. " alt="" coords="456,136,647,177"/>
+<area shape="rect" id="node10" href="$class_media_controller_1_1_gst_wrapper.html#a223bd48b70740533739d04b84b3ad538" title="Add a new subscriber to timestamp events. " alt="" coords="456,201,647,243"/>
+<area shape="rect" id="node11" href="$class_media_controller_1_1_gst_wrapper.html#ae61952b746aca7df898cf7faafcfd372" title="Remove an existing timestamp event subscriber. " alt="" coords="456,267,647,308"/>
+<area shape="rect" id="node12" href="$class_media_controller_1_1_gst_wrapper.html#ac0e9a26c816b6f27f981fbf9e06f2600" title="Remove all existing timestamp event subscribers. " alt="" coords="456,332,647,373"/>
+<area shape="rect" id="node13" href="$class_media_controller_1_1_gst_wrapper.html#ac0fa98f176f83ceb495e49ec58ef8392" title="Add custom data to be stored in here, which will be send back to caller inside TimestampEvent on Time..." alt="" coords="456,397,647,439"/>
+<area shape="rect" id="node14" href="$class_media_controller_1_1_gst_wrapper.html#a9d9daf14c6b6cfe52a7fb0bcd6b4a76c" title="Create the pipeline for an RTSP video stream. " alt="" coords="456,463,647,504"/>
+<area shape="rect" id="node15" href="$class_media_controller_1_1_gst_wrapper.html#a041731491df0ed485c82b323756d6927" title="Create the pipeline for an RTSP audio stream. " alt="" coords="456,528,647,569"/>
+<area shape="rect" id="node16" href="$class_media_controller_1_1_gst_wrapper.html#ac8cadd47be5e2847488be93e8064b1ef" title="Create the pipeline for an MJPEG stream. " alt="" coords="456,593,647,635"/>
+<area shape="rect" id="node17" href="$class_media_controller_1_1_gst_wrapper.html#a5ec4443c87798903502a4f65cb6eebea" title="Set the pipeline state to playing and update the speed value for determining the framerate. " alt="" coords="456,659,647,700"/>
+<area shape="rect" id="node18" href="$class_media_controller_1_1_gst_wrapper.html#a499f357308c79d6a73a578ec1356dcbb" title="Set the pipeline state to paused. " alt="" coords="456,724,647,765"/>
+<area shape="rect" id="node19" href="$class_media_controller_1_1_gst_wrapper.html#afec04a424ba74d48a849b298962b7a7b" title="Clear the pipeline and display window. " alt="" coords="456,789,647,831"/>
+</map>

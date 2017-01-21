@@ -48,6 +48,7 @@ CPPCli::DataStorage^ CPPCli::DeviceAssignment::_GetDataStorage() {
     if (result == VxSdk::VxResult::kOK)
         return gcnew CPPCli::DataStorage(dataStorage);
 
+    // Return nullptr if GetDataStorage is unsuccessful
     return nullptr;
 }
 
@@ -60,6 +61,7 @@ CPPCli::Device^ CPPCli::DeviceAssignment::_GetDevice() {
     if (result == VxSdk::VxResult::kOK)
         return gcnew CPPCli::Device(device);
 
+    // Return nullptr if GetDevice is unsuccessful
     return nullptr;
 }
 
@@ -72,5 +74,25 @@ CPPCli::Driver^ CPPCli::DeviceAssignment::_GetDriver() {
     if (result == VxSdk::VxResult::kOK)
         return gcnew CPPCli::Driver(driver);
 
+    // Return nullptr if GetDriver is unsuccessful
     return nullptr;
+}
+
+void CPPCli::DeviceAssignment::_SetDataSources(List<CPPCli::DataSource^>^ dataSources) {
+    // Set the data source id size based on the list count
+    int dataSourceIdSize = dataSources->Count;
+    if (dataSourceIdSize == 0)
+        return;
+
+    // Create a list of data source ids
+    char** dataSourceIds;
+    dataSourceIds = new char*[dataSourceIdSize];
+    for (int i = 0; i < dataSourceIdSize; i++) {
+        int idLength = dataSources[i]->Id->Length + 1;
+        dataSourceIds[i] = new char[idLength];
+        VxSdk::Utilities::StrCopySafe(dataSourceIds[i], Utils::ConvertSysString(dataSources[i]->Id), idLength);
+    }
+
+    // Set the data sources using the list of ids
+    _deviceAssignment->SetDataSources(dataSourceIds, dataSourceIdSize);
 }

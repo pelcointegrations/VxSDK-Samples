@@ -24,31 +24,33 @@ namespace MediaController {
         /// Virtual destructor.
         /// </summary>
         virtual ~Controller();
-        virtual void SetWindow(void* handle) override;
-        virtual bool GoToLive() override;
-        virtual bool Play(float speed) override;
-        virtual void Pause() override;
-        virtual void Stop() override;
-        virtual void FrameForward() override;
-        virtual void FrameBackward() override;
-        virtual bool Seek(unsigned int unixTime, float speed) override;
-        virtual void NewRequest(MediaRequest& request) override;
-        virtual void AddObserver(TimestampEventCallback observer) override;
-        virtual void RemoveObserver(TimestampEventCallback observer) override;
-        virtual void ClearObservers() override;
-        virtual Mode GetMode() override;
-        virtual bool IsPipelineActive() override;
-        virtual void AddEventData(void* customData) override;
+        void SetWindow(void* handle) override;
+        bool GoToLive() override;
+        bool Play(float speed, unsigned int unixTime) override;
+        void PlayStream(float speed, unsigned int unixTime) override;
+        void Pause() override;
+        void Stop() override;
+        void NewRequest(MediaRequest& request) override;
+        void AddObserver(TimestampEventCallback observer) override;
+        void RemoveObserver(TimestampEventCallback observer) override;
+        void ClearObservers() override;
+        Mode GetMode() override;
+        bool IsPipelineActive() override;
+        void AddEventData(void* customData) override;
 
         /// <summary>
-        /// The current state of the stream.
-        /// </summary>
-        StreamState* state;
-
-        /// <summary>
-        /// The current stream instance.
+        /// The current video stream instance.
         /// </summary>
         StreamBase* stream;
+
+        /// <summary>
+        /// The current audio stream instance.
+        /// </summary>
+        StreamBase* audioStream;
+
+    private:
+        static void CallSetupStream(StreamBase* stream, float speed, unsigned int unixTime, bool* result);
+        static void CallPlayStream(StreamBase* stream, float speed, unsigned int unixTime);
     };
 }
 #endif // Controller_h__

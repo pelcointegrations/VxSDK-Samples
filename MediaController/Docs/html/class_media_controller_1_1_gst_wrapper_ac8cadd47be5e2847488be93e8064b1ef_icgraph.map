@@ -1,0 +1,6 @@
+<map id="MediaController::GstWrapper::CreateMjpegPipeline" name="MediaController::GstWrapper::CreateMjpegPipeline">
+<area shape="rect" id="node2" href="$class_media_controller_1_1_gst_wrapper.html#a6867df2bc3d4b43764f9663af096842f" title="Get the current playback speed. " alt="" coords="244,5,435,47"/>
+<area shape="rect" id="node4" href="$class_media_controller_1_1_mjpeg_pull_1_1_stream.html#a0c45ff070115cc8e4356d544830a20a8" title="Call Play on the stream. " alt="" coords="251,71,428,112"/>
+<area shape="rect" id="node5" href="$class_media_controller_1_1_mjpeg_pull_1_1_stream.html#a7a1a78b1f728b23769770d0638dfff53" title="Send PLAY on an existing stream. " alt="" coords="251,136,428,177"/>
+<area shape="rect" id="node3" href="$class_media_controller_1_1_playing_state.html#a0bf97da76a698a03dc7b82d5e3f3a0ed" title="Perform the Play action based on the stream state. " alt="" coords="483,5,645,47"/>
+</map>

@@ -243,7 +243,7 @@ JNIEXPORT void JNICALL Java_javasample_JMediaControl_Seek
 (JNIEnv *env, jobject mediaControlObj, jint time, jfloat speed) {
     MediaController::IController* control = GetMediaControllerObj(env, mediaControlObj);
     LOGGER->Log("Seek to:%d", time);
-    control->Seek(time, speed);
+    control->Play(speed, time);
 }
 
 /// <summary>

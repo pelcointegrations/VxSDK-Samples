@@ -5,6 +5,7 @@
 #include <msclr/marshal.h>
 #include <msclr/marshal_cppstd.h>
 #include <string>
+#include "VxSdk.h"
 
 namespace CPPCli {
 
@@ -44,6 +45,26 @@ namespace CPPCli {
 
             /// <summary>The key used to initialize the SDK was invalid.</summary>
             InvalidKey
+        };
+    };
+
+    /// <summary>
+    /// The LogLevel class is a helper class that contains the logging severity <see cref="LogLevel::Value">Values</see> enum.
+    /// </summary>
+    public ref class LogLevel {
+    public:
+
+        /// <summary>
+        /// Values that represent the logging severity levels.
+        /// </summary>
+        enum class Value {
+            Trace,
+            Debug,
+            Info,
+            Warning,
+            Error,
+            Fatal,
+            None
         };
     };
 
@@ -94,7 +115,10 @@ namespace CPPCli {
             if (value == System::String::Empty)
                 return System::DateTime();
 
-            return System::DateTime::ParseExact(value, format, System::Globalization::CultureInfo::InvariantCulture);
+            System::DateTime timeValue;
+            System::Globalization::CultureInfo^ culture = System::Globalization::CultureInfo::InvariantCulture;
+            System::DateTime::TryParseExact(value, format, culture, System::Globalization::DateTimeStyles::None, timeValue);
+            return timeValue;
         }
 
         /// <summary>
@@ -109,6 +133,17 @@ namespace CPPCli {
         }
 
         /// <summary>
+        /// Convert a DateTime to a char.
+        /// </summary>
+        /// <param name="dateTime">The DateTime.</param>
+        /// <returns>The DateTime as a char.</returns>
+        static char* ConvertDateTimeToCharNonConst(System::DateTime dateTime) {
+            System::String^ timeString = dateTime.ToString(gcnew System::String(GetDateFormat()));
+            msclr::interop::marshal_context^ ctx = gcnew msclr::interop::marshal_context();
+            return (char*)(void*)System::Runtime::InteropServices::Marshal::StringToHGlobalAnsi(timeString);
+        }
+
+        /// <summary>
         /// Convert a DateTime to a char in TimeOfDay format.
         /// </summary>
         /// <param name="dateTime">The DateTime.</param>
@@ -117,6 +152,17 @@ namespace CPPCli {
             System::String^ timeString = dateTime.ToString(gcnew System::String("HH:mm:ss"));
             msclr::interop::marshal_context^ ctx = gcnew msclr::interop::marshal_context();
             return ctx->marshal_as<const char*>(timeString);
+        }
+
+        /// <summary>
+        /// Convert a DateTime to a char in TimeOfDay format.
+        /// </summary>
+        /// <param name="dateTime">The DateTime.</param>
+        /// <returns>The DateTime as a char in TimeOfDay format.</returns>
+        static char* ConvertDateTimeToTimeCharNonConst(System::DateTime dateTime) {
+            System::String^ timeString = dateTime.ToString(gcnew System::String("HH:mm:ss"));
+            msclr::interop::marshal_context^ ctx = gcnew msclr::interop::marshal_context();
+            return (char*)(void*)System::Runtime::InteropServices::Marshal::StringToHGlobalAnsi(timeString);
         }
 
         /// <summary>
@@ -131,6 +177,48 @@ namespace CPPCli {
                 return System::DateTime();
 
             return System::DateTime::ParseExact(value, format, System::Globalization::CultureInfo::InvariantCulture);
+        }
+    };
+
+    /// <summary>
+    /// Provides global VxSDK methods.
+    /// </summary>
+    public ref class VxGlobal{
+    public:
+        /// <summary>
+        /// Initialize the VideoXpert SDK.
+        /// </summary>
+        /// <param name="key">The key to initialize the SDK with.</param>
+        /// <returns>The <see cref="Results::Value">Result</see> of the initialization process.</returns>
+        static CPPCli::Results::Value InitializeSdk(System::String^ key) {
+            // Init the sdk with your key generated using VxSdkKeyGen.exe
+            VxSdk::VxResult::Value result = VxSdk::VxInit(Utils::ConvertSysString(key));
+
+            return CPPCli::Results::Value(result);
+        }
+
+        /// <summary>
+        /// Sets the minimum severity level of messages to log.
+        /// </summary>
+        /// <param name="logLevel">The logging severity <see cref="LogLevel">level</see>.</param>
+        /// <returns>The <see cref="Results::Value">Result</see> of setting the configuration.</returns>
+        static CPPCli::Results::Value SetLogLevel(CPPCli::LogLevel::Value logLevel) {
+            // Set the log level
+            VxSdk::VxResult::Value result = VxSdk::VxSetLogLevel((VxSdk::VxLogLevel::Value)logLevel);
+
+            return CPPCli::Results::Value(result);
+        }
+
+        /// <summary>
+        /// Sets the output path for log files.
+        /// </summary>
+        /// <param name="logPath">The directory to store the generated log files.</param>
+        /// <returns>The <see cref="Results::Value">Result</see> of setting the configuration.</returns>
+        static CPPCli::Results::Value SetLogPath(System::String^ logPath) {
+            // Set the log path
+            VxSdk::VxResult::Value result = VxSdk::VxSetLogPath(CPPCli::Utils::ConvertSysString(logPath));
+
+            return CPPCli::Results::Value(result);
         }
     };
 }

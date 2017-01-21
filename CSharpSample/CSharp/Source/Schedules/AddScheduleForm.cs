@@ -72,9 +72,6 @@ namespace SDKSampleApp.Source
         /// <param name="args">The <paramref name="args"/> parameter.</param>
         private void ButtonAdd_Click(object sender, EventArgs args)
         {
-            if (lvScheduleTriggers.Items.Count == 0)
-                return;
-
             var newSchedule = new NewSchedule
             {
                 Id = tbxId.Text,

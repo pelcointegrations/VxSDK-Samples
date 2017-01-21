@@ -34,12 +34,13 @@ namespace CPPCli {
         !DeviceAssignment();
 
         /// <summary>
-        /// Gets the data sources assigned by this device assignment.
+        /// Gets or sets the data sources assigned by this device assignment.
         /// </summary>
         /// <value>A <c>List</c> of data sources.</value>
         property System::Collections::Generic::List<CPPCli::DataSource^>^ DataSources {
         public:
             System::Collections::Generic::List<CPPCli::DataSource^>^ get() { return _GetDataSources(); }
+            void set(System::Collections::Generic::List<CPPCli::DataSource^>^ value) { _SetDataSources(value); }
         }
 
         /// <summary>
@@ -70,12 +71,17 @@ namespace CPPCli {
         }
 
         /// <summary>
-        /// Gets the driver type.
+        /// Gets or sets the driver type.
         /// </summary>
         /// <value>The driver type.</value>
         property System::String^ DriverType {
         public:
             System::String^ get() { return gcnew System::String(_deviceAssignment->driverType); }
+            void set(System::String^ value) {
+                char driverType[64];
+                strncpy_s(driverType, Utils::ConvertSysStringNonConst(value), sizeof(driverType));
+                _deviceAssignment->SetDriverType(driverType);
+            }
         }
 
     internal:
@@ -84,6 +90,7 @@ namespace CPPCli {
         CPPCli::DataStorage^ _GetDataStorage();
         CPPCli::Device^ _GetDevice();
         CPPCli::Driver^ _GetDriver();
+        void _SetDataSources(System::Collections::Generic::List<CPPCli::DataSource^>^ dataSources);
     };
 }
 #endif // DeviceAssignment_h__

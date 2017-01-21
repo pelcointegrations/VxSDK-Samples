@@ -1,0 +1,6 @@
+<map id="CppSamples::Devices::ViewAllDevices::PrintDevices" name="CppSamples::Devices::ViewAllDevices::PrintDevices">
+<area shape="rect" id="node2" href="$class_cpp_samples_1_1_common_1_1_tabular_printer.html#ab446d9c6ac5f0f3f99a95dd6d0a71970" title="Add a column to the table. " alt="" coords="257,5,443,47"/>
+<area shape="rect" id="node3" href="$class_cpp_samples_1_1_common_1_1_tabular_printer.html#a925884739c65b7c67c90b36fc583f042" title="Add a row to the table. " alt="" coords="267,71,433,112"/>
+<area shape="rect" id="node4" href="$class_cpp_samples_1_1_common_1_1_tabular_printer.html#aa4a4f3a68063464a572214e3a07f5220" title="Add a std::string value to the current cell in the table and forward the pointer to next cell..." alt="" coords="252,136,448,177"/>
+<area shape="rect" id="node5" href="$class_cpp_samples_1_1_common_1_1_tabular_printer.html#a3b53bd9de19dfcd2f87fede7d18a7e38" title="Convert the table to std::string and return it. " alt="" coords="267,201,433,243"/>
+</map>

@@ -7,7 +7,7 @@
 	</PropertyGroup>
 	<ItemDefinitionGroup>
 		<ClCompile>
-			<AdditionalIncludeDirectories>$(ProjectDir)\MediaController\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<AdditionalIncludeDirectories>$(ProjectDir)\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
 		</ClCompile>
 	</ItemDefinitionGroup>
 	<ItemGroup/>

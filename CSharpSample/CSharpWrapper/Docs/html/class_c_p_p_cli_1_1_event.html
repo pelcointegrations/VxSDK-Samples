@@ -154,6 +154,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5b9cd1b7d32199af14385e3715bee373"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">Results::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_event.html#a5b9cd1b7d32199af14385e3715bee373">Acknowledge</a> ()</td></tr>
 <tr class="memdesc:a5b9cd1b7d32199af14385e3715bee373"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acknowledge the event.  <a href="#a5b9cd1b7d32199af14385e3715bee373">More...</a><br /></td></tr>
 <tr class="separator:a5b9cd1b7d32199af14385e3715bee373"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc83bb9a11408e5cfbfd6a4d941e613e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">Results::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_event.html#abc83bb9a11408e5cfbfd6a4d941e613e">Refresh</a> ()</td></tr>
+<tr class="memdesc:abc83bb9a11408e5cfbfd6a4d941e613e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refreshes this instances properties.  <a href="#abc83bb9a11408e5cfbfd6a4d941e613e">More...</a><br /></td></tr>
+<tr class="separator:abc83bb9a11408e5cfbfd6a4d941e613e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9af1f9456b827aac11267a5b32849f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">Results::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_event.html#af9af1f9456b827aac11267a5b32849f7">Silence</a> (int wakeup)</td></tr>
 <tr class="memdesc:af9af1f9456b827aac11267a5b32849f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Silence the event for a given amount of time.  <a href="#af9af1f9456b827aac11267a5b32849f7">More...</a><br /></td></tr>
 <tr class="separator:af9af1f9456b827aac11267a5b32849f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,32 +166,53 @@ Properties</h2></td></tr>
 <tr class="memitem:a7bdd6dbce00b2f37563ea51ea1cec436"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_p_p_cli_1_1_event.html#a797f0b21d1589554490662f51e3ae615">AckStates</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_event.html#a7bdd6dbce00b2f37563ea51ea1cec436">AckState</a><code> [get]</code></td></tr>
 <tr class="memdesc:a7bdd6dbce00b2f37563ea51ea1cec436"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current acknowledgement state of the event.  <a href="#a7bdd6dbce00b2f37563ea51ea1cec436">More...</a><br /></td></tr>
 <tr class="separator:a7bdd6dbce00b2f37563ea51ea1cec436"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd2028f18bcaa2cc382d8b21e15f1f93"><td class="memItemLeft" align="right" valign="top">System::DateTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_event.html#acd2028f18bcaa2cc382d8b21e15f1f93">AckTime</a><code> [get]</code></td></tr>
+<tr class="memdesc:acd2028f18bcaa2cc382d8b21e15f1f93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the time at which the current <a class="el" href="class_c_p_p_cli_1_1_event.html#a7bdd6dbce00b2f37563ea51ea1cec436" title="Gets the current acknowledgement state of the event. ">AckState</a> was set.  <a href="#acd2028f18bcaa2cc382d8b21e15f1f93">More...</a><br /></td></tr>
+<tr class="separator:acd2028f18bcaa2cc382d8b21e15f1f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d2610944c29b2bf5f80b4621e31bf6b"><td class="memItemLeft" align="right" valign="top">System::String^ &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_event.html#a0d2610944c29b2bf5f80b4621e31bf6b">AckUserName</a><code> [get]</code></td></tr>
+<tr class="memdesc:a0d2610944c29b2bf5f80b4621e31bf6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the name of the user that set the current <a class="el" href="class_c_p_p_cli_1_1_event.html#a7bdd6dbce00b2f37563ea51ea1cec436" title="Gets the current acknowledgement state of the event. ">AckState</a>, if any.  <a href="#a0d2610944c29b2bf5f80b4621e31bf6b">More...</a><br /></td></tr>
+<tr class="separator:a0d2610944c29b2bf5f80b4621e31bf6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea05c32c905692047df4803e67c1913b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_p_p_cli_1_1_device.html">CPPCli::Device</a>^ &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_event.html#aea05c32c905692047df4803e67c1913b">GeneratorDevice</a><code> [get]</code></td></tr>
+<tr class="memdesc:aea05c32c905692047df4803e67c1913b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the unique identifier of the device that created and injected this event into the system.  <a href="#aea05c32c905692047df4803e67c1913b">More...</a><br /></td></tr>
+<tr class="separator:aea05c32c905692047df4803e67c1913b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02adc69a9fe4c6a56acaeb70f1e59c44"><td class="memItemLeft" align="right" valign="top">System::String^ &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_event.html#a02adc69a9fe4c6a56acaeb70f1e59c44">GeneratorDeviceId</a><code> [get]</code></td></tr>
 <tr class="memdesc:a02adc69a9fe4c6a56acaeb70f1e59c44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the unique identifier of the device that created and injected this event into the system.  <a href="#a02adc69a9fe4c6a56acaeb70f1e59c44">More...</a><br /></td></tr>
 <tr class="separator:a02adc69a9fe4c6a56acaeb70f1e59c44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5e57dfbf3c784e685cec866471da92b"><td class="memItemLeft" align="right" valign="top">System::String^ &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_event.html#aa5e57dfbf3c784e685cec866471da92b">Id</a><code> [get]</code></td></tr>
 <tr class="memdesc:aa5e57dfbf3c784e685cec866471da92b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the unique identifier created by the device that generated the event.  <a href="#aa5e57dfbf3c784e685cec866471da92b">More...</a><br /></td></tr>
 <tr class="separator:aa5e57dfbf3c784e685cec866471da92b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2a6d6b43840f571f7a0541173ee8f20"><td class="memItemLeft" align="right" valign="top">System::Collections::Generic::List&lt; System::Collections::Generic::KeyValuePair&lt; System::String^ , System::String^ &gt;&gt;^&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_event.html#ae2a6d6b43840f571f7a0541173ee8f20">Properties</a><code> [get]</code></td></tr>
+<tr class="memdesc:ae2a6d6b43840f571f7a0541173ee8f20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a list of the properties associated with the event, if any.  <a href="#ae2a6d6b43840f571f7a0541173ee8f20">More...</a><br /></td></tr>
+<tr class="separator:ae2a6d6b43840f571f7a0541173ee8f20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa995f2ef0de16da544628cd6cc19df15"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_event.html#aa995f2ef0de16da544628cd6cc19df15">Severity</a><code> [get]</code></td></tr>
 <tr class="memdesc:aa995f2ef0de16da544628cd6cc19df15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the severity of the event, from 1 (highest) to 10 (lowest).  <a href="#aa995f2ef0de16da544628cd6cc19df15">More...</a><br /></td></tr>
 <tr class="separator:aa995f2ef0de16da544628cd6cc19df15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eadea10f67a1b4898ee56aee6bdc2bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_p_p_cli_1_1_situation.html">CPPCli::Situation</a>^ &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_event.html#a3eadea10f67a1b4898ee56aee6bdc2bc">Situation</a><code> [get]</code></td></tr>
+<tr class="memdesc:a3eadea10f67a1b4898ee56aee6bdc2bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the type of the situation that led to the generation of this <a class="el" href="class_c_p_p_cli_1_1_event.html" title="The Event class represents an instance of a particular situation that has occurred. ">Event</a>.  <a href="#a3eadea10f67a1b4898ee56aee6bdc2bc">More...</a><br /></td></tr>
+<tr class="separator:a3eadea10f67a1b4898ee56aee6bdc2bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a618f11d6f9a5ea44adde05f0bfba15ff"><td class="memItemLeft" align="right" valign="top">System::String^ &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_event.html#a618f11d6f9a5ea44adde05f0bfba15ff">SituationType</a><code> [get]</code></td></tr>
 <tr class="memdesc:a618f11d6f9a5ea44adde05f0bfba15ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the type of the situation that led to the generation of this <a class="el" href="class_c_p_p_cli_1_1_event.html" title="The Event class represents an instance of a particular situation that has occurred. ">Event</a>.  <a href="#a618f11d6f9a5ea44adde05f0bfba15ff">More...</a><br /></td></tr>
 <tr class="separator:a618f11d6f9a5ea44adde05f0bfba15ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abffb3e3decb067faec3cd21170711805"><td class="memItemLeft" align="right" valign="top">System::DateTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_event.html#abffb3e3decb067faec3cd21170711805">Time</a><code> [get]</code></td></tr>
-<tr class="memdesc:abffb3e3decb067faec3cd21170711805"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the time at which the situation occurred.  <a href="#abffb3e3decb067faec3cd21170711805">More...</a><br /></td></tr>
-<tr class="separator:abffb3e3decb067faec3cd21170711805"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a5703e659713a1dbf968c270e1e7e8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_p_p_cli_1_1_device.html">CPPCli::Device</a>^ &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_event.html#a5a5703e659713a1dbf968c270e1e7e8f">SourceDevice</a><code> [get]</code></td></tr>
+<tr class="memdesc:a5a5703e659713a1dbf968c270e1e7e8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the unique identifier of the device that the situation occurred on.  <a href="#a5a5703e659713a1dbf968c270e1e7e8f">More...</a><br /></td></tr>
+<tr class="separator:a5a5703e659713a1dbf968c270e1e7e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6791260b1011fc749cee2a221df8baee"><td class="memItemLeft" align="right" valign="top">System::String^ &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_event.html#a6791260b1011fc749cee2a221df8baee">SourceDeviceId</a><code> [get]</code></td></tr>
 <tr class="memdesc:a6791260b1011fc749cee2a221df8baee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the unique identifier of the device that the situation occurred on.  <a href="#a6791260b1011fc749cee2a221df8baee">More...</a><br /></td></tr>
 <tr class="separator:a6791260b1011fc749cee2a221df8baee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c00bb459d124a711d30ae47d3388125"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_p_p_cli_1_1_user.html">CPPCli::User</a>^ &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_event.html#a5c00bb459d124a711d30ae47d3388125">SourceUser</a><code> [get]</code></td></tr>
+<tr class="memdesc:a5c00bb459d124a711d30ae47d3388125"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the name of the user that was the cause of the situation, if any.  <a href="#a5c00bb459d124a711d30ae47d3388125">More...</a><br /></td></tr>
+<tr class="separator:a5c00bb459d124a711d30ae47d3388125"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd0f64a729e1275b9e0c2cc9517c1d59"><td class="memItemLeft" align="right" valign="top">System::String^ &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_event.html#acd0f64a729e1275b9e0c2cc9517c1d59">SourceUserName</a><code> [get]</code></td></tr>
-<tr class="memdesc:acd0f64a729e1275b9e0c2cc9517c1d59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the user name of the user that was the cause of the situation, if any.  <a href="#acd0f64a729e1275b9e0c2cc9517c1d59">More...</a><br /></td></tr>
+<tr class="memdesc:acd0f64a729e1275b9e0c2cc9517c1d59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the name of the user that was the cause of the situation, if any.  <a href="#acd0f64a729e1275b9e0c2cc9517c1d59">More...</a><br /></td></tr>
 <tr class="separator:acd0f64a729e1275b9e0c2cc9517c1d59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abffb3e3decb067faec3cd21170711805"><td class="memItemLeft" align="right" valign="top">System::DateTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_event.html#abffb3e3decb067faec3cd21170711805">Time</a><code> [get]</code></td></tr>
+<tr class="memdesc:abffb3e3decb067faec3cd21170711805"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the time at which the situation occurred.  <a href="#abffb3e3decb067faec3cd21170711805">More...</a><br /></td></tr>
+<tr class="separator:abffb3e3decb067faec3cd21170711805"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="class_c_p_p_cli_1_1_event.html" title="The Event class represents an instance of a particular situation that has occurred. ">Event</a> class represents an instance of a particular situation that has occurred. </p>
 
-<p>Definition at line <a class="el" href="_event_8h_source.html#l00012">12</a> of file <a class="el" href="_event_8h_source.html">Event.h</a>.</p>
+<p>Definition at line <a class="el" href="_event_8h_source.html#l00015">15</a> of file <a class="el" href="_event_8h_source.html">Event.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="a797f0b21d1589554490662f51e3ae615"></a>
 <div class="memitem">
@@ -230,17 +254,14 @@ Properties</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="_event_8h_source.html#l00018">18</a> of file <a class="el" href="_event_8h_source.html">Event.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                             {</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            Unknown,</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            AckNeeded,</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            Acked,</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            AutoAcked,</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            NoAckNeeded,</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            Silenced</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        };</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_event_8h_source.html#l00021">21</a> of file <a class="el" href="_event_8h_source.html">Event.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                             {</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            Unknown,</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            AckNeeded,</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            Acked,</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            AutoAcked,</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            NoAckNeeded,</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            Silenced</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        };</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a67f8ddb1179e6c8c2f7235e001ff573f"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">CPPCli::Event::Event </td>
@@ -250,14 +271,10 @@ Properties</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Constructor. </p>
+<p>Implements the bookmark class.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">vxEvent</td><td>The vx event.</td></tr>
@@ -265,8 +282,8 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_event_8h_source.html#l00042">42</a> of file <a class="el" href="_event_8h_source.html">Event.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;: _event(vxEvent) {};</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_event_8cpp_source.html#l00008">8</a> of file <a class="el" href="_event_8cpp_source.html">Event.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;                                         {</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    _event = vxEvent;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div></div><!-- fragment -->
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -302,8 +319,8 @@ Here is the caller graph for this function:</div>
 
 <p>Destructor. </p>
 
-<p>Definition at line <a class="el" href="_event_8h_source.html#l00047">47</a> of file <a class="el" href="_event_8h_source.html">Event.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                         {</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            this-&gt;!<a class="code" href="class_c_p_p_cli_1_1_event.html#a67f8ddb1179e6c8c2f7235e001ff573f">Event</a>();</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div><div class="ttc" id="class_c_p_p_cli_1_1_event_html_a67f8ddb1179e6c8c2f7235e001ff573f"><div class="ttname"><a href="class_c_p_p_cli_1_1_event.html#a67f8ddb1179e6c8c2f7235e001ff573f">CPPCli::Event::Event</a></div><div class="ttdeci">Event(VxSdk::IVxEvent *vxEvent)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="_event_8h_source.html#l00042">Event.h:42</a></div></div>
+<p>Definition at line <a class="el" href="_event_8h_source.html#l00050">50</a> of file <a class="el" href="_event_8h_source.html">Event.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                         {</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            this-&gt;!<a class="code" href="class_c_p_p_cli_1_1_event.html#a67f8ddb1179e6c8c2f7235e001ff573f">Event</a>();</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        }</div><div class="ttc" id="class_c_p_p_cli_1_1_event_html_a67f8ddb1179e6c8c2f7235e001ff573f"><div class="ttname"><a href="class_c_p_p_cli_1_1_event.html#a67f8ddb1179e6c8c2f7235e001ff573f">CPPCli::Event::Event</a></div><div class="ttdeci">Event(VxSdk::IVxEvent *vxEvent)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="_event_8cpp_source.html#l00008">Event.cpp:8</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -320,9 +337,6 @@ Here is the call graph for this function:</div>
 <a class="anchor" id="a96e18347a7527d2c410f5584e659e8b1"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">CPPCli::Event::!Event </td>
@@ -331,17 +345,12 @@ Here is the call graph for this function:</div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Finaliser. </p>
 
-<p>Definition at line <a class="el" href="_event_8h_source.html#l00054">54</a> of file <a class="el" href="_event_8h_source.html">Event.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                 {</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            _event-&gt;Delete();</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            _event = <span class="keyword">nullptr</span>;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_event_8cpp_source.html#l00012">12</a> of file <a class="el" href="_event_8cpp_source.html">Event.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;                    {</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    _event-&gt;Delete();</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    _event = <span class="keyword">nullptr</span>;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -370,7 +379,36 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">Result</a> of the request.</dd></dl>
 
 <p>Definition at line <a class="el" href="_event_8h_source.html#l00063">63</a> of file <a class="el" href="_event_8h_source.html">Event.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{ <span class="keywordflow">return</span> (<a class="code" href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">Results::Value</a>)_event-&gt;Acknowledge(); }</div><div class="ttc" id="class_c_p_p_cli_1_1_results_html_a12504aac644d00e0532be43063a970ca"><div class="ttname"><a href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">CPPCli::Results::Value</a></div><div class="ttdeci">Value</div><div class="ttdoc">Values that represent the result of calls to the VideoXpert system. </div><div class="ttdef"><b>Definition:</b> <a href="_utils_8h_source.html#l00020">Utils.h:20</a></div></div>
+<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{ <span class="keywordflow">return</span> (<a class="code" href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">Results::Value</a>)_event-&gt;Acknowledge(); }</div><div class="ttc" id="class_c_p_p_cli_1_1_results_html_a12504aac644d00e0532be43063a970ca"><div class="ttname"><a href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">CPPCli::Results::Value</a></div><div class="ttdeci">Value</div><div class="ttdoc">Values that represent the result of calls to the VideoXpert system. </div><div class="ttdef"><b>Definition:</b> <a href="_utils_8h_source.html#l00021">Utils.h:21</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="abc83bb9a11408e5cfbfd6a4d941e613e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">Results::Value</a> CPPCli::Event::Refresh </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Refreshes this instances properties. </p>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">Result</a> of updating the properties.</dd></dl>
+
+<p>Definition at line <a class="el" href="_event_8h_source.html#l00069">69</a> of file <a class="el" href="_event_8h_source.html">Event.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{ <span class="keywordflow">return</span> (<a class="code" href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">CPPCli::Results::Value</a>)_event-&gt;Refresh(); }</div><div class="ttc" id="class_c_p_p_cli_1_1_results_html_a12504aac644d00e0532be43063a970ca"><div class="ttname"><a href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">CPPCli::Results::Value</a></div><div class="ttdeci">Value</div><div class="ttdoc">Values that represent the result of calls to the VideoXpert system. </div><div class="ttdef"><b>Definition:</b> <a href="_utils_8h_source.html#l00021">Utils.h:21</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -405,8 +443,8 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">Result</a> of the request.</dd></dl>
 
-<p>Definition at line <a class="el" href="_event_8h_source.html#l00071">71</a> of file <a class="el" href="_event_8h_source.html">Event.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{ <span class="keywordflow">return</span> (<a class="code" href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">Results::Value</a>)_event-&gt;Silence(wakeup); }</div><div class="ttc" id="class_c_p_p_cli_1_1_results_html_a12504aac644d00e0532be43063a970ca"><div class="ttname"><a href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">CPPCli::Results::Value</a></div><div class="ttdeci">Value</div><div class="ttdoc">Values that represent the result of calls to the VideoXpert system. </div><div class="ttdef"><b>Definition:</b> <a href="_utils_8h_source.html#l00020">Utils.h:20</a></div></div>
+<p>Definition at line <a class="el" href="_event_8h_source.html#l00077">77</a> of file <a class="el" href="_event_8h_source.html">Event.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{ <span class="keywordflow">return</span> (<a class="code" href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">Results::Value</a>)_event-&gt;Silence(wakeup); }</div><div class="ttc" id="class_c_p_p_cli_1_1_results_html_a12504aac644d00e0532be43063a970ca"><div class="ttname"><a href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">CPPCli::Results::Value</a></div><div class="ttdeci">Value</div><div class="ttdoc">Values that represent the result of calls to the VideoXpert system. </div><div class="ttdef"><b>Definition:</b> <a href="_utils_8h_source.html#l00021">Utils.h:21</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -432,7 +470,82 @@ Here is the call graph for this function:</div>
 <p>Gets the current acknowledgement state of the event. </p>
 <p>The current acknowledgement state.</p>
 
-<p>Definition at line <a class="el" href="_event_8h_source.html#l00077">77</a> of file <a class="el" href="_event_8h_source.html">Event.h</a>.</p>
+<p>Definition at line <a class="el" href="_event_8h_source.html#l00083">83</a> of file <a class="el" href="_event_8h_source.html">Event.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acd2028f18bcaa2cc382d8b21e15f1f93"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System:: DateTime CPPCli::Event::AckTime</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the time at which the current <a class="el" href="class_c_p_p_cli_1_1_event.html#a7bdd6dbce00b2f37563ea51ea1cec436" title="Gets the current acknowledgement state of the event. ">AckState</a> was set. </p>
+<p>The event acknowledgement time.</p>
+
+<p>Definition at line <a class="el" href="_event_8h_source.html#l00092">92</a> of file <a class="el" href="_event_8h_source.html">Event.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0d2610944c29b2bf5f80b4621e31bf6b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System:: String^ CPPCli::Event::AckUserName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the name of the user that set the current <a class="el" href="class_c_p_p_cli_1_1_event.html#a7bdd6dbce00b2f37563ea51ea1cec436" title="Gets the current acknowledgement state of the event. ">AckState</a>, if any. </p>
+<p>The user name.</p>
+
+<p>Definition at line <a class="el" href="_event_8h_source.html#l00101">101</a> of file <a class="el" href="_event_8h_source.html">Event.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aea05c32c905692047df4803e67c1913b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CPPCli:: <a class="el" href="class_c_p_p_cli_1_1_device.html">Device</a>^ CPPCli::Event::GeneratorDevice</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the unique identifier of the device that created and injected this event into the system. </p>
+<p>The identifier of the generator device.</p>
+
+<p>Definition at line <a class="el" href="_event_8h_source.html#l00111">111</a> of file <a class="el" href="_event_8h_source.html">Event.h</a>.</p>
 
 </div>
 </div>
@@ -457,7 +570,7 @@ Here is the call graph for this function:</div>
 <p>Gets the unique identifier of the device that created and injected this event into the system. </p>
 <p>The identifier of the generator device.</p>
 
-<p>Definition at line <a class="el" href="_event_8h_source.html#l00087">87</a> of file <a class="el" href="_event_8h_source.html">Event.h</a>.</p>
+<p>Definition at line <a class="el" href="_event_8h_source.html#l00121">121</a> of file <a class="el" href="_event_8h_source.html">Event.h</a>.</p>
 
 </div>
 </div>
@@ -482,7 +595,32 @@ Here is the call graph for this function:</div>
 <p>Gets the unique identifier created by the device that generated the event. </p>
 <p>The events unique identifier.</p>
 
-<p>Definition at line <a class="el" href="_event_8h_source.html#l00096">96</a> of file <a class="el" href="_event_8h_source.html">Event.h</a>.</p>
+<p>Definition at line <a class="el" href="_event_8h_source.html#l00130">130</a> of file <a class="el" href="_event_8h_source.html">Event.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae2a6d6b43840f571f7a0541173ee8f20"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System:: Collections:: Generic:: List&lt; System:: Collections:: Generic:: KeyValuePair&lt; System:: String^, System:: String^&gt;&gt;^ CPPCli::Event::Properties</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets a list of the properties associated with the event, if any. </p>
+<p>The event properties.</p>
+
+<p>Definition at line <a class="el" href="_event_8h_source.html#l00139">139</a> of file <a class="el" href="_event_8h_source.html">Event.h</a>.</p>
 
 </div>
 </div>
@@ -507,7 +645,32 @@ Here is the call graph for this function:</div>
 <p>Gets the severity of the event, from 1 (highest) to 10 (lowest). </p>
 <p>The event severity.</p>
 
-<p>Definition at line <a class="el" href="_event_8h_source.html#l00105">105</a> of file <a class="el" href="_event_8h_source.html">Event.h</a>.</p>
+<p>Definition at line <a class="el" href="_event_8h_source.html#l00150">150</a> of file <a class="el" href="_event_8h_source.html">Event.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3eadea10f67a1b4898ee56aee6bdc2bc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CPPCli:: <a class="el" href="class_c_p_p_cli_1_1_situation.html">Situation</a>^ CPPCli::Event::Situation</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the type of the situation that led to the generation of this <a class="el" href="class_c_p_p_cli_1_1_event.html" title="The Event class represents an instance of a particular situation that has occurred. ">Event</a>. </p>
+<p>The type of the situation.</p>
+
+<p>Definition at line <a class="el" href="_event_8h_source.html#l00159">159</a> of file <a class="el" href="_event_8h_source.html">Event.h</a>.</p>
 
 </div>
 </div>
@@ -532,7 +695,32 @@ Here is the call graph for this function:</div>
 <p>Gets the type of the situation that led to the generation of this <a class="el" href="class_c_p_p_cli_1_1_event.html" title="The Event class represents an instance of a particular situation that has occurred. ">Event</a>. </p>
 <p>The type of the situation.</p>
 
-<p>Definition at line <a class="el" href="_event_8h_source.html#l00114">114</a> of file <a class="el" href="_event_8h_source.html">Event.h</a>.</p>
+<p>Definition at line <a class="el" href="_event_8h_source.html#l00168">168</a> of file <a class="el" href="_event_8h_source.html">Event.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5a5703e659713a1dbf968c270e1e7e8f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CPPCli:: <a class="el" href="class_c_p_p_cli_1_1_device.html">Device</a>^ CPPCli::Event::SourceDevice</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the unique identifier of the device that the situation occurred on. </p>
+<p>The unique identifier of the source device.</p>
+
+<p>Definition at line <a class="el" href="_event_8h_source.html#l00177">177</a> of file <a class="el" href="_event_8h_source.html">Event.h</a>.</p>
 
 </div>
 </div>
@@ -557,7 +745,32 @@ Here is the call graph for this function:</div>
 <p>Gets the unique identifier of the device that the situation occurred on. </p>
 <p>The unique identifier of the source device.</p>
 
-<p>Definition at line <a class="el" href="_event_8h_source.html#l00132">132</a> of file <a class="el" href="_event_8h_source.html">Event.h</a>.</p>
+<p>Definition at line <a class="el" href="_event_8h_source.html#l00186">186</a> of file <a class="el" href="_event_8h_source.html">Event.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5c00bb459d124a711d30ae47d3388125"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CPPCli:: <a class="el" href="class_c_p_p_cli_1_1_user.html">User</a>^ CPPCli::Event::SourceUser</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the name of the user that was the cause of the situation, if any. </p>
+<p>The user name.</p>
+
+<p>Definition at line <a class="el" href="_event_8h_source.html#l00195">195</a> of file <a class="el" href="_event_8h_source.html">Event.h</a>.</p>
 
 </div>
 </div>
@@ -579,10 +792,10 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Gets the user name of the user that was the cause of the situation, if any. </p>
+<p>Gets the name of the user that was the cause of the situation, if any. </p>
 <p>The user name.</p>
 
-<p>Definition at line <a class="el" href="_event_8h_source.html#l00141">141</a> of file <a class="el" href="_event_8h_source.html">Event.h</a>.</p>
+<p>Definition at line <a class="el" href="_event_8h_source.html#l00204">204</a> of file <a class="el" href="_event_8h_source.html">Event.h</a>.</p>
 
 </div>
 </div>
@@ -607,12 +820,13 @@ Here is the call graph for this function:</div>
 <p>Gets the time at which the situation occurred. </p>
 <p>The event time.</p>
 
-<p>Definition at line <a class="el" href="_event_8h_source.html#l00123">123</a> of file <a class="el" href="_event_8h_source.html">Event.h</a>.</p>
+<p>Definition at line <a class="el" href="_event_8h_source.html#l00213">213</a> of file <a class="el" href="_event_8h_source.html">Event.h</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>Include/<a class="el" href="_event_8h_source.html">Event.h</a></li>
+<li>Source/<a class="el" href="_event_8cpp_source.html">Event.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

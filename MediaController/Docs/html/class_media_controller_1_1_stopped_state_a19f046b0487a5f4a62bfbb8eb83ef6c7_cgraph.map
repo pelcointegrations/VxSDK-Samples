@@ -1,0 +1,4 @@
+<map id="MediaController::StoppedState::Play" name="MediaController::StoppedState::Play">
+<area shape="rect" id="node2" href="$class_media_controller_1_1_stream_base.html#a8082f1179f094eab73f0907cb8d58833" title="Call Play on the stream. " alt="" coords="221,5,413,47"/>
+<area shape="rect" id="node3" href="$namespace_media_controller_1_1_utilities.html#af2dab63a3a50da3f464c5e9a7d01021e" title="Get the current time as a unix timestamp. " alt="" coords="236,95,399,136"/>
+</map>

@@ -3,6 +3,7 @@
 #define Driver_h__
 
 #include "VxSdk.h"
+#include "Utils.h"
 
 namespace CPPCli {
     ref class DataStorage;
@@ -30,6 +31,12 @@ namespace CPPCli {
         /// Finaliser.
         /// </summary>
         !Driver();
+
+        /// <summary>
+        /// Refreshes this instances properties.
+        /// </summary>
+        /// <returns>The <see cref="Results::Value">Result</see> of updating the properties.</returns>
+        Results::Value Refresh();
 
         /// <summary>
         /// Gets the data storage that hosts this driver.

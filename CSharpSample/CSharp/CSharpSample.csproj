@@ -70,6 +70,66 @@
     <Compile Include="Source\Bookmarks\AddBookmarkForm.Designer.cs">
       <DependentUpon>AddBookmarkForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Source\Devices\AddDeviceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Devices\AddDeviceForm.Designer.cs">
+      <DependentUpon>AddDeviceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Devices\DeviceManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Devices\DeviceManagerForm.Designer.cs">
+      <DependentUpon>DeviceManagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Devices\ModifyDeviceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Devices\ModifyDeviceForm.Designer.cs">
+      <DependentUpon>ModifyDeviceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Drawings\AddDrawingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Drawings\AddDrawingForm.Designer.cs">
+      <DependentUpon>AddDrawingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Drawings\DrawingManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Drawings\DrawingManagerForm.Designer.cs">
+      <DependentUpon>DrawingManagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Drawings\ModifyDrawingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Drawings\ModifyDrawingForm.Designer.cs">
+      <DependentUpon>ModifyDrawingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Drawings\ViewDrawingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Drawings\ViewDrawingForm.Designer.cs">
+      <DependentUpon>ViewDrawingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Monitors\AddMonitorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Monitors\AddMonitorForm.Designer.cs">
+      <DependentUpon>AddMonitorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Monitors\MonitorManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Monitors\MonitorManagerForm.Designer.cs">
+      <DependentUpon>MonitorManagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Monitors\ViewMonitorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Monitors\ViewMonitorForm.Designer.cs">
+      <DependentUpon>ViewMonitorForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Source\Exports\AddClipForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +154,37 @@
     <Compile Include="Source\Events\AddEventForm.Designer.cs">
       <DependentUpon>AddEventForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Source\License\LicenseDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\License\LicenseDetailsForm.Designer.cs">
+      <DependentUpon>LicenseDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Misc\Utilities.cs" />
+    <Compile Include="Source\Notifications\AddNotificationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Notifications\AddNotificationForm.Designer.cs">
+      <DependentUpon>AddNotificationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Notifications\NotificationManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Notifications\NotificationManagerForm.Designer.cs">
+      <DependentUpon>NotificationManagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\QuickReports\QuickReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\QuickReports\QuickReportForm.Designer.cs">
+      <DependentUpon>QuickReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\QuickReports\ReportStatusForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\QuickReports\ReportStatusForm.Designer.cs">
+      <DependentUpon>ReportStatusForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Source\Roles\AddRoleForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +202,12 @@
     </Compile>
     <Compile Include="Source\Schedules\AddScheduleTriggerForm.Designer.cs">
       <DependentUpon>AddScheduleTriggerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Situations\ModifyNotificationsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Situations\ModifyNotificationsForm.Designer.cs">
+      <DependentUpon>ModifyNotificationsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Source\Situations\AddSituationForm.cs">
       <SubType>Form</SubType>
@@ -149,6 +246,12 @@
     </Compile>
     <Compile Include="Source\DataObjects\DataObjectManagerForm.Designer.cs">
       <DependentUpon>DataObjectManagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Main\ClusterConfigDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Main\ClusterConfigDetailsForm.Designer.cs">
+      <DependentUpon>ClusterConfigDetailsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Source\DataStorages\DataStorageDetailsForm.cs">
       <SubType>Form</SubType>
@@ -320,6 +423,40 @@
     <EmbeddedResource Include="Source\Bookmarks\AddBookmarkForm.resx">
       <DependentUpon>AddBookmarkForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Source\Devices\AddDeviceForm.resx">
+      <DependentUpon>AddDeviceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Devices\DeviceManagerForm.resx">
+      <DependentUpon>DeviceManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Devices\ModifyDeviceForm.resx">
+      <DependentUpon>ModifyDeviceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Drawings\AddDrawingForm.resx">
+      <DependentUpon>AddDrawingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Drawings\DrawingManagerForm.resx">
+      <DependentUpon>DrawingManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Drawings\ModifyDrawingForm.resx">
+      <DependentUpon>ModifyDrawingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Drawings\ViewDrawingForm.resx">
+      <DependentUpon>ViewDrawingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Monitors\AddMonitorForm.resx">
+      <DependentUpon>AddMonitorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Monitors\MonitorManagerForm.resx">
+      <DependentUpon>MonitorManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Monitors\ViewMonitorForm.resx">
+      <DependentUpon>ViewMonitorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Source\Exports\AddClipForm.resx">
       <DependentUpon>AddClipForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -332,6 +469,21 @@
     <EmbeddedResource Include="Source\Events\AddEventForm.resx">
       <DependentUpon>AddEventForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Source\License\LicenseDetailsForm.resx">
+      <DependentUpon>LicenseDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Notifications\AddNotificationForm.resx">
+      <DependentUpon>AddNotificationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Notifications\NotificationManagerForm.resx">
+      <DependentUpon>NotificationManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\QuickReports\QuickReportForm.resx">
+      <DependentUpon>QuickReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\QuickReports\ReportStatusForm.resx">
+      <DependentUpon>ReportStatusForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Source\Roles\AddRoleForm.resx">
       <DependentUpon>AddRoleForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -340,6 +492,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Source\Schedules\AddScheduleTriggerForm.resx">
       <DependentUpon>AddScheduleTriggerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Situations\ModifyNotificationsForm.resx">
+      <DependentUpon>ModifyNotificationsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Source\Situations\AddSituationForm.resx">
       <DependentUpon>AddSituationForm.cs</DependentUpon>
@@ -358,6 +513,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Source\DataObjects\DataObjectManagerForm.resx">
       <DependentUpon>DataObjectManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Main\ClusterConfigDetailsForm.resx">
+      <DependentUpon>ClusterConfigDetailsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Source\DataStorages\DataStorageDetailsForm.resx">
       <DependentUpon>DataStorageDetailsForm.cs</DependentUpon>
@@ -476,7 +634,7 @@
 
 IF $(ConfigurationName) == Debug (
     SET D=d
-	SET PathName=D
+    SET PathName=D
 )
 
 SET VXSDK=VxSdk%25D%25

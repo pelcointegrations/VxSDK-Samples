@@ -7,6 +7,7 @@
 #include "DataObject.h"
 
 namespace CPPCli {
+    ref class User;
 
     /// <summary>
     /// The DataObject class represents an object that contains a custom serialized data object submitted by a
@@ -34,12 +35,19 @@ namespace CPPCli {
         !DataObject();
 
         /// <summary>
-        /// Gets the serialized data.
+        /// Refreshes this instances properties.
+        /// </summary>
+        /// <returns>The <see cref="Results::Value">Result</see> of updating the properties.</returns>
+        Results::Value Refresh();
+
+        /// <summary>
+        /// Gets or sets the serialized data.
         /// </summary>
         /// <value>The serialized data.</value>
         property System::String^ Data {
         public:
             System::String^ get() { return _GetData(); }
+            void set(System::String^ value) { _SetData(value); }
         }
 
         /// <summary>
@@ -61,10 +69,19 @@ namespace CPPCli {
         }
 
         /// <summary>
-        /// Gets the owner.
+        /// Gets the <see cref="User"/> that owns this data object.
         /// </summary>
-        /// <value>The owner.</value>
-        property System::String^ Owner {
+        /// <value>The owner of this data object.</value>
+        property CPPCli::User^ Owner {
+        public:
+            CPPCli::User^ get() { return _GetOwner(); }
+        }
+
+        /// <summary>
+        /// Gets the name of the user that owns this data object.
+        /// </summary>
+        /// <value>The name of the owner.</value>
+        property System::String^ OwnerName {
         public:
             System::String^ get() { return gcnew System::String(_dataObject->owner); }
         }
@@ -72,6 +89,8 @@ namespace CPPCli {
     internal:
         VxSdk::IVxDataObject* _dataObject;
         System::String^ _GetData();
+        CPPCli::User^ _GetOwner();
+        void _SetData(System::String^);
     };
 }
 #endif // DataObject_h__

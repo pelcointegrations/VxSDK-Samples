@@ -2,13 +2,13 @@
 #include "GstWrapper.h"
 
 #include <gst/gst.h>
-#include <gst/base/gstbasesrc.h>
 #include <gst/rtp/gstrtcpbuffer.h>
 #include <gst/rtp/gstrtpbuffer.h>
 #include <gst/video/video.h>
 #include <boost/date_time/posix_time/posix_time.hpp>
 #include <boost/thread.hpp>
 #include <Winsock2.h>
+#include "libsoup/soup-logger.h"
 
 using namespace std;
 using namespace MediaController;
@@ -16,7 +16,7 @@ using namespace MediaController;
 GstPadProbeReturn OnRtcpPacketReceived(GstPad *localPad, GstPadProbeInfo *info, GstVars *vars) {
     if (GST_PAD_PROBE_INFO_TYPE(info) | GST_PAD_PROBE_TYPE_BUFFER) {
         GstBuffer *buff = gst_pad_probe_info_get_buffer(info);
-        GstRTCPBuffer rtcp = { 0 };
+        GstRTCPBuffer rtcp = { nullptr };
         if (gst_rtcp_buffer_map(buff, GST_MAP_READ, &rtcp)) {
             guint64 ntptime;
             GstRTCPPacket packet;
@@ -26,7 +26,7 @@ GstPadProbeReturn OnRtcpPacketReceived(GstPad *localPad, GstPadProbeInfo *info, 
                 GstRTCPType type = gst_rtcp_packet_get_type(&packet);
                 if (type == GST_RTCP_TYPE_SR) {
                     // Parse the sender info.
-                    gst_rtcp_packet_sr_get_sender_info(&packet, NULL, &ntptime, NULL, NULL, NULL);
+                    gst_rtcp_packet_sr_get_sender_info(&packet, nullptr, &ntptime, nullptr, nullptr, nullptr);
                     // Convert the timestamp from NTP format to Unix format.
                     guint64 unixMsTime = gst_rtcp_ntp_to_unix(ntptime);
                     // Set the rtcpTimestamp value to the unixMsTime converted from milliseconds to seconds.
@@ -43,14 +43,14 @@ GstPadProbeReturn OnRtcpPacketReceived(GstPad *localPad, GstPadProbeInfo *info, 
 GstPadProbeReturn OnRtpPacketReceived(GstPad *localPad, GstPadProbeInfo *info, GstVars *vars) {
     if (GST_PAD_PROBE_INFO_TYPE(info) | GST_PAD_PROBE_TYPE_BUFFER) {
         GstBuffer *buff = gst_pad_probe_info_get_buffer(info);
-        GstRTPBuffer rtp = { 0 };
+        GstRTPBuffer rtp = { nullptr };
         gpointer data;
 
         if (gst_rtp_buffer_map(buff, GST_MAP_READ, &rtp)) {
             // Parse the buffer based on the current mode.
             if (vars->mode == MediaController::Controller::kPlayback) {
                 // Playback packets contain extension data, which gives us the stream time.
-                if (gst_rtp_buffer_get_extension_data(&rtp, NULL, &data, NULL)) {
+                if (gst_rtp_buffer_get_extension_data(&rtp, nullptr, &data, nullptr)) {
                     // Convert the time contained in the extension data from NTP format to Unix format.
                     vars->currentTimestamp = ntohl(*reinterpret_cast<unsigned long*>(data)) - Constants::kNtpToEpochDiffSec;
                     unsigned int curTime = vars->currentTimestamp;
@@ -138,6 +138,9 @@ GstPadProbeReturn OnJpegPacketReceived(GstPad *localPad, GstPadProbeInfo *info, 
                 boost::smatch::iterator it = what.begin();
                 ++it;
                 string timestamp = *it;
+                if (timestamp.empty())
+                    return GST_PAD_PROBE_OK;
+
                 // Format the timestamp string and convert it to a ptime value.
                 boost::replace_all(timestamp, "T", Constants::kWhitespace);
                 timestamp = timestamp.substr(0, timestamp.size() - 4);
@@ -174,7 +177,7 @@ void OnBusMessage(GstBus *bus, GstMessage *msg, GstVars *vars) {
     case GST_MESSAGE_EOS:
     case GST_MESSAGE_ERROR:
         // Set the pipeline to NULL.
-        gst_element_set_state(*vars->pipeline, GST_STATE_NULL);
+        gst_element_set_state(vars->pipeline, GST_STATE_READY);
         // Send the latest timestamp parsed in the OnJpegPacketReceived method.
         for (size_t i = 0; i < vars->observerList.size(); i++) {
             if (vars->currentTimestamp == 0)
@@ -190,126 +193,81 @@ void OnBusMessage(GstBus *bus, GstMessage *msg, GstVars *vars) {
             }
         }
         // Set the pipeline back to playing.
-        gst_element_set_state(*vars->pipeline, GST_STATE_PLAYING);
+        gst_element_set_state(vars->pipeline, GST_STATE_PLAYING);
         break;
     default:
         break;
     }
 }
 
-GstWrapper::GstWrapper() : _gstVars(GstVars()) {
+// Called when rtpbin has validated a payload that we can depayload.
+static void OnPadAdded(GstElement * rtpbin, GstPad * new_pad, GstElement * depay)
+{
+    GstPad *sinkpad;
+    GstPadLinkReturn lres;
+
+    g_print("New payload on pad: %s\n", GST_PAD_NAME(new_pad));
+
+    sinkpad = gst_element_get_static_pad(depay, Constants::kSink);
+    g_assert(sinkpad);
+
+    lres = gst_pad_link(new_pad, sinkpad);
+
+    gst_object_unref(sinkpad);
+}
+
+GstWrapper::GstWrapper() {
     SetMode(Controller::kStopped);
-    _gstVars.pipeline.reset(nullptr);
     Init();
+    _gstVars.isPipelineActive = false;
 }
 
-GstWrapper::~GstWrapper() {
-    Cleanup();
-}
-
-bool GstWrapper::IsPipelineActive() {
-    return (_gstVars.pipeline != nullptr);
-}
+GstWrapper::~GstWrapper() { }
 
 void GstWrapper::Init() {
     if (!gst_is_initialized())
         gst_init(nullptr, nullptr);
 }
 
-void GstWrapper::SetPipeline() {
-    _gstVars.pipeline = std::make_unique<GstElement*>(gst_parse_launch(_pipelineDescription.c_str(), nullptr));
-    SetOverlay();
+void GstWrapper::SetWindowHandle(guintptr winhandle) {
+    _gstVars.windowHandle = winhandle;
 }
 
-void GstWrapper::SetWindowHandle(intptr_t winhandle) {
-    _winhandle = winhandle;
+void GstWrapper::SetLocation(std::string location) {
+    _gstVars.location = location;
 }
 
-void GstWrapper::SetOverlay() {
-    // Get the video overlay element from the pipeline.
-    GstElement *video_sink = gst_bin_get_by_interface(GST_BIN(*_gstVars.pipeline), GST_TYPE_VIDEO_OVERLAY);
-    // Set the window handle.
-    gst_video_overlay_set_window_handle(GST_VIDEO_OVERLAY(video_sink), _winhandle);
-    gst_video_overlay_expose(GST_VIDEO_OVERLAY(video_sink));
-    gst_object_unref(video_sink);
+void GstWrapper::SetPorts(int port, int port2) {
+    _gstVars.rtpPort = port;
+    _gstVars.rtcpPort = port2;
+    _gstVars.rtcpSinkPort = port2 + 4;
 }
 
-void GstWrapper::ClearWindow() {
-    Cleanup();
-    //SetPipeline();
+void GstWrapper::SetCaps(std::string caps, bool isMjpeg) {
+    _gstVars.rtpCaps = "application/x-rtp,media=(string)" + caps;
+    _gstVars.isMjpeg = isMjpeg;
 }
 
-void GstWrapper::Play(float speed) {
-    _gstVars.rtcpTimestamp = 0;
-    _gstVars.speed = speed;
-
-    if (_gstVars.pipeline) {
-        gst_element_set_state(*_gstVars.pipeline, GST_STATE_PLAYING);
-    }
+void GstWrapper::SetCookie(std::string cookie) {
+    _gstVars.cookie = cookie;
 }
 
-void GstWrapper::Pause() {
-    gst_element_set_state(*_gstVars.pipeline, GST_STATE_PAUSED);
+void GstWrapper::SetRtcpHostIP(std::string hostIp) {
+    _gstVars.hostIp = hostIp;
 }
 
-void GstWrapper::AddObserver(TimestampEventCallback observer) {
-    _gstVars.observerList.push_back(observer);
-}
-void GstWrapper::AddEventData(void* customData) {
-    _gstVars.eventData = customData;
+void GstWrapper::SetMulticastAddress(std::string multicastAddress) {
+    _gstVars.multicastAddress = multicastAddress;
 }
 
-void GstWrapper::RemoveObserver(TimestampEventCallback observer) {
-    _gstVars.observerList.erase(remove(_gstVars.observerList.begin(), _gstVars.observerList.end(), observer), _gstVars.observerList.end());
+void GstWrapper::SetTimestamp(unsigned int seekTime) {
+    _gstVars.currentTimestamp = seekTime;
+    _gstVars.lastTimestamp = NULL;
 }
 
-void GstWrapper::ClearObservers() {
-    _gstVars.observerList.clear();
-}
-
-void GstWrapper::SetMode(Controller::Mode mode) {
-    _gstVars.rtcpTimestamp = 0;
-    _gstVars.mode = mode;
-}
-
-void GstWrapper::SetLocation(char* location, std::string uuid) {
-    // Get the Bin pipeline element and set the location property to the new location.
-    GstElement *httpsrc = gst_bin_get_by_name(GST_BIN(*_gstVars.pipeline), g_strconcat(Constants::kHttpSrc, uuid.c_str(), NULL));
-    g_object_set(httpsrc, "location", location, NULL);
-}
-
-void GstWrapper::SubscribeToBusEvents(std::string uuid) {
-    _loop = g_main_loop_new(nullptr, FALSE);
-    boost::thread _workerThread(g_main_loop_run, _loop);
-
-    // Get the pipeline Bus element and subscribe to its events.
-    GstBus *bus = gst_pipeline_get_bus(GST_PIPELINE(*_gstVars.pipeline));
-    gst_bus_add_watch(bus, GstBusFunc(OnBusMessage), &_gstVars);
-
-    // Subscribe to the probe events on the pipelines httpsrc Bin element.
-    GstElement* httpsrc = gst_bin_get_by_name(GST_BIN(*_gstVars.pipeline), g_strconcat(Constants::kHttpSrc, uuid.c_str(), NULL));
-    GstPad *httpsrcpad = gst_element_get_static_pad(httpsrc, Constants::kSrc);
-    gst_pad_add_probe(httpsrcpad, GST_PAD_PROBE_TYPE_EVENT_BOTH, GstPadProbeCallback(OnJpegPacketReceived), &_gstVars, nullptr);
-    gst_object_unref(httpsrcpad);
-}
-
-void GstWrapper::SubscribeToProbeEvents(std::string uuid) {
-    // Subscribe to the probe events on the pipelines udpsrc1 Bin element.
-    GstElement* udpsrc1 = gst_bin_get_by_name(GST_BIN(*_gstVars.pipeline), g_strconcat("udpsrc1", uuid.c_str(), NULL));
-    GstPad *udpsrc1pad = gst_element_get_static_pad(udpsrc1, Constants::kSrc);
-    gst_pad_add_probe(udpsrc1pad, GST_PAD_PROBE_TYPE_BUFFER, GstPadProbeCallback(OnRtcpPacketReceived), &_gstVars, nullptr);
-    gst_object_unref(udpsrc1pad);
-
-    // Subscribe to the probe events on the pipelines udpsrc0 Bin element.
-    GstElement* udpsrc0 = gst_bin_get_by_name(GST_BIN(*_gstVars.pipeline), g_strconcat("udpsrc0", uuid.c_str(), NULL));
-    GstPad *udpsrc0pad = gst_element_get_static_pad(udpsrc0, Constants::kSrc);
-    gst_pad_add_probe(udpsrc0pad, GST_PAD_PROBE_TYPE_BUFFER, GstPadProbeCallback(OnRtpPacketReceived), &_gstVars, nullptr);
-    gst_object_unref(udpsrc0pad);
-}
-
-unsigned int GstWrapper::GetLastTimestamp(VxSdk::VxStreamProtocol::Value protocol) {
+unsigned int GstWrapper::GetLastTimestamp() const {
     // If the protocol is MjpegPull do not convert the timestamp.
-    if (protocol == VxSdk::VxStreamProtocol::kMjpegPull) {
+    if (_gstVars.protocol == VxSdk::VxStreamProtocol::kMjpegPull) {
         return _gstVars.currentTimestamp;
     }
     // If the current mode is playback do not convert the timestamp.
@@ -320,23 +278,223 @@ unsigned int GstWrapper::GetLastTimestamp(VxSdk::VxStreamProtocol::Value protoco
     return static_cast<unsigned int>(_gstVars.rtcpTimestamp / Constants::kMillisecondsInt);
 }
 
-void GstWrapper::SetTimestamp(unsigned int seekTime) {
-    _gstVars.currentTimestamp = seekTime;
-    _gstVars.lastTimestamp = NULL;
+void GstWrapper::SetMode(Controller::Mode mode) {
+    _gstVars.rtcpTimestamp = 0;
+    _gstVars.mode = mode;
 }
 
-void GstWrapper::Cleanup() {
-    if (_loop != nullptr)
-        g_main_loop_quit(_loop);
-
-    gst_element_set_state(*_gstVars.pipeline, GST_STATE_NULL);
-    gst_object_unref(GST_OBJECT(*_gstVars.pipeline));
-    _gstVars.pipeline.reset(nullptr);
-    _gstVars.lastTimestamp = NULL;
+bool GstWrapper::IsPipelineActive() const {
+    return _gstVars.isPipelineActive;
 }
 
-void GstWrapper::UpdatePipeline(const std::string& pipelineDescription) {
-    if (pipelineDescription != _pipelineDescription) {
-        _pipelineDescription = pipelineDescription;
+void GstWrapper::AddObserver(TimestampEventCallback observer) {
+    _gstVars.observerList.push_back(observer);
+}
+
+void GstWrapper::RemoveObserver(TimestampEventCallback observer) {
+    _gstVars.observerList.erase(remove(_gstVars.observerList.begin(), _gstVars.observerList.end(), observer), _gstVars.observerList.end());
+}
+
+void GstWrapper::ClearObservers() {
+    _gstVars.observerList.clear();
+}
+
+void GstWrapper::AddEventData(void* customData) {
+    _gstVars.eventData = customData;
+}
+
+void GstWrapper::CreatePipeline() {
+    // Create the pipeline.
+    _gstVars.pipeline = gst_pipeline_new(nullptr);
+    g_assert(_gstVars.pipeline);
+    _gstVars.isPipelineActive = true;
+
+    // Create the udpsrc.
+    _gstVars.src = gst_element_factory_make(Constants::kUdpSrc, "rtpSrc");
+    g_assert(_gstVars.src);
+    g_object_set(_gstVars.src, Constants::kPort, _gstVars.rtpPort, NULL);
+    if (!_gstVars.multicastAddress.empty())
+        g_object_set(_gstVars.src, Constants::kAddress, _gstVars.multicastAddress.c_str(), NULL);
+
+    // Set the caps on udpsrc.
+    _gstVars.caps = gst_caps_from_string(_gstVars.rtpCaps.c_str());
+    g_object_set(_gstVars.src, Constants::kCaps, _gstVars.caps, NULL);
+    gst_caps_unref(_gstVars.caps);
+
+    // Create the udpsrc for RTCP.
+    _gstVars.rtcpSrc = gst_element_factory_make(Constants::kUdpSrc, "rtcpSrc");
+    g_assert(_gstVars.rtcpSrc);
+    g_object_set(_gstVars.rtcpSrc, Constants::kPort, _gstVars.rtcpPort, NULL);
+
+    // Create the udpsink for RTCP.
+    _gstVars.rtcpSink = gst_element_factory_make(Constants::kUdpSink, "rtcpSink");
+    g_assert(_gstVars.rtcpSink);
+    g_object_set(_gstVars.rtcpSink, Constants::kPort, _gstVars.rtcpSinkPort, Constants::kHost, _gstVars.hostIp.c_str(), NULL);
+    g_object_set(_gstVars.rtcpSink, Constants::kAsync, FALSE, Constants::kSync, FALSE, NULL);
+
+    // Add the elements to the pipeline.
+    gst_bin_add_many(GST_BIN(_gstVars.pipeline), _gstVars.src, _gstVars.rtcpSrc, _gstVars.rtcpSink, NULL);
+}
+
+void GstWrapper::LinkBinElements() {
+    // Create the bin element.
+    _gstVars.bin = gst_element_factory_make(Constants::kRtpBin, "rtpBin");
+    g_assert(_gstVars.bin);
+
+    // Add the bin element to the pipeline.
+    gst_bin_add(GST_BIN(_gstVars.pipeline), _gstVars.bin);
+
+    // Start linking elements to the bin, beginning with the RTP sinkPad for session 0.
+    _gstVars.srcPad = gst_element_get_static_pad(_gstVars.src, Constants::kSrc);
+    gst_pad_add_probe(_gstVars.srcPad, GST_PAD_PROBE_TYPE_BUFFER, GstPadProbeCallback(OnRtpPacketReceived), &_gstVars, nullptr);
+    _gstVars.sinkPad = gst_element_get_request_pad(_gstVars.bin, "recv_rtp_sink_0");
+    _gstVars.linkReturn = gst_pad_link(_gstVars.srcPad, _gstVars.sinkPad);
+    g_assert(_gstVars.linkReturn == GST_PAD_LINK_OK);
+    gst_object_unref(_gstVars.srcPad);
+    gst_object_unref(_gstVars.sinkPad);
+
+    // Link the RTCP sinkPad for session 0.
+    _gstVars.srcPad = gst_element_get_static_pad(_gstVars.rtcpSrc, Constants::kSrc);
+    gst_pad_add_probe(_gstVars.srcPad, GST_PAD_PROBE_TYPE_BUFFER, GstPadProbeCallback(OnRtcpPacketReceived), &_gstVars, nullptr);
+    _gstVars.sinkPad = gst_element_get_request_pad(_gstVars.bin, "recv_rtcp_sink_0");
+    _gstVars.linkReturn = gst_pad_link(_gstVars.srcPad, _gstVars.sinkPad);
+    g_assert(_gstVars.linkReturn == GST_PAD_LINK_OK);
+    gst_object_unref(_gstVars.srcPad);
+    gst_object_unref(_gstVars.sinkPad);
+
+    // Link the RTCP srcPad for session 0.
+    _gstVars.srcPad = gst_element_get_request_pad(_gstVars.bin, "send_rtcp_src_0");
+    _gstVars.sinkPad = gst_element_get_static_pad(_gstVars.rtcpSink, Constants::kSink);
+    _gstVars.linkReturn = gst_pad_link(_gstVars.srcPad, _gstVars.sinkPad);
+    g_assert(_gstVars.linkReturn == GST_PAD_LINK_OK);
+    gst_object_unref(_gstVars.srcPad);
+    gst_object_unref(_gstVars.sinkPad);
+}
+
+void GstWrapper::CreateVideoRtspPipeline() {
+    // Create the pipeline.
+    CreatePipeline();
+
+    // Create the depayloader, decoder and video sink.
+    _gstVars.videoDepay = gst_element_factory_make(_gstVars.isMjpeg ? Constants::kRtpJpegDepay : Constants::kRtpDepay, "videoDepay");
+    g_assert(_gstVars.videoDepay);
+    _gstVars.videoDec = gst_element_factory_make(_gstVars.isMjpeg ? Constants::kJpegDec : Constants::kRtpDec, "videoDec");
+    g_assert(_gstVars.videoDec);
+    _gstVars.videoSink = gst_element_factory_make(Constants::kVideoSink, "videoSink");
+    g_assert(_gstVars.videoSink);
+
+    // Add elements to the pipeline and link.
+    gst_bin_add_many(GST_BIN(_gstVars.pipeline), _gstVars.videoDepay, _gstVars.videoDec, _gstVars.videoSink, NULL);
+    gst_element_link_many(_gstVars.videoDepay, _gstVars.videoDec, _gstVars.videoSink, NULL);
+
+    // Create the bin element and start linking
+    LinkBinElements();
+
+    // The RTP pad that connects to the depayloader will be created dynamically.
+    // So connect to the pad-added signal and pass the depayloader to link to it.
+    g_signal_connect(_gstVars.bin, "pad-added", G_CALLBACK(OnPadAdded), _gstVars.videoDepay);
+
+    // Set the window handle for the video sink.
+    gst_video_overlay_set_window_handle(GST_VIDEO_OVERLAY(_gstVars.videoSink), _gstVars.windowHandle);
+
+    _gstVars.protocol = VxSdk::VxStreamProtocol::kRtspRtp;
+    g_print("Starting RTP video receiver pipeline.\n");
+}
+
+void GstWrapper::CreateAudioRtspPipeline() {
+    // Create the pipeline.
+    CreatePipeline();
+
+    // Create the depayloader, decoder and audio sink.
+    _gstVars.audioDepay = gst_element_factory_make(Constants::kRtpAudioDepay, "audioDepay");
+    g_assert(_gstVars.audioDepay);
+    _gstVars.audioDec = gst_element_factory_make(Constants::kRtpAudioDec, "audioDec");
+    g_assert(_gstVars.audioDec);
+    _gstVars.audioSink = gst_element_factory_make(Constants::kAudioSink, "audioSink");
+    g_assert(_gstVars.audioSink);
+
+    // Add elements to the pipeline and link.
+    gst_bin_add_many(GST_BIN(_gstVars.pipeline), _gstVars.audioDepay, _gstVars.audioDec, _gstVars.audioSink, NULL);
+    gst_element_link_many(_gstVars.audioDepay, _gstVars.audioDec, _gstVars.audioSink, NULL);
+
+    // Create the bin element and start linking
+    LinkBinElements();
+
+    // The RTP pad that connects to the depayloader will be created dynamically.
+    // So connect to the pad-added signal and pass the depayloader to link to it.
+    g_signal_connect(_gstVars.bin, "pad-added", G_CALLBACK(OnPadAdded), _gstVars.audioDepay);
+
+    _gstVars.protocol = VxSdk::VxStreamProtocol::kRtspRtp;
+    g_print("Starting RTP audio receiver pipeline.\n");
+}
+
+void GstWrapper::CreateMjpegPipeline() {
+    // Create the pipeline.
+    _gstVars.pipeline = gst_pipeline_new(nullptr);
+    g_assert(_gstVars.pipeline);
+    _gstVars.isPipelineActive = true;
+    GstBus *bus = gst_pipeline_get_bus(GST_PIPELINE(_gstVars.pipeline));
+    _gstVars.busWatchId = gst_bus_add_watch(bus, GstBusFunc(OnBusMessage), &_gstVars);
+    gst_object_unref(bus);
+
+    // Create the souphttpsrc.
+    _gstVars.src = gst_element_factory_make(Constants::kHttpSrc, "httpSrc");
+    g_assert(_gstVars.src);
+    g_object_set(_gstVars.src, Constants::kRetries, 5, NULL);
+    g_object_set(_gstVars.src, Constants::kKeepAlive, TRUE, NULL);
+    g_object_set(_gstVars.src, Constants::kLocation, _gstVars.location.c_str(), NULL);
+    g_object_set(_gstVars.src, Constants::kHttpLogLevel, SOUP_LOGGER_LOG_HEADERS, NULL);
+    g_object_set(_gstVars.src, Constants::kSslStrict, FALSE, NULL);
+    static const char *cookie[] = { _gstVars.cookie.c_str(), NULL };
+    g_object_set(_gstVars.src, Constants::kCookies, cookie, NULL);
+
+    // Create the decoder and video sink.
+    _gstVars.videoDec = gst_element_factory_make(Constants::kJpegDec, "videoDec");
+    g_assert(_gstVars.videoDec);
+    _gstVars.videoSink = gst_element_factory_make(Constants::kVideoSink, "videoSink");
+    g_assert(_gstVars.videoSink);
+
+    // Add elements to the pipeline and link.
+    gst_bin_add_many(GST_BIN(_gstVars.pipeline), _gstVars.src, _gstVars.videoDec, _gstVars.videoSink, NULL);
+    gst_element_link_many(_gstVars.src, _gstVars.videoDec, _gstVars.videoSink, NULL);
+
+    // Add a probe to souphttpsrc.
+    GstPad *httpsrcpad = gst_element_get_static_pad(_gstVars.src, Constants::kSrc);
+    gst_pad_add_probe(httpsrcpad, GST_PAD_PROBE_TYPE_EVENT_BOTH, GstPadProbeCallback(OnJpegPacketReceived), &_gstVars, nullptr);
+    gst_object_unref(httpsrcpad);
+
+    // Set the window handle for the video sink.
+    gst_video_overlay_set_window_handle(GST_VIDEO_OVERLAY(_gstVars.videoSink), _gstVars.windowHandle);
+
+    // Start the loop to receive bus messages.
+    _gstVars.loop = g_main_loop_new(nullptr, FALSE);
+    boost::thread _workerThread(g_main_loop_run, _gstVars.loop);
+
+    _gstVars.protocol = VxSdk::VxStreamProtocol::kMjpegPull;
+    g_print("Starting MJPEG receiver pipeline.\n");
+}
+
+void GstWrapper::Play(float speed) {
+    _gstVars.rtcpTimestamp = 0;
+    _gstVars.speed = speed;
+
+    if (_gstVars.pipeline) {
+        gst_element_set_state(_gstVars.pipeline, GST_STATE_PLAYING);
+    }
+}
+
+void GstWrapper::Pause() const {
+    gst_element_set_state(_gstVars.pipeline, GST_STATE_PAUSED);
+}
+
+void GstWrapper::ClearPipeline() {
+    g_print("Stopping receiver pipeline.\n");
+    gst_element_set_state(_gstVars.pipeline, GST_STATE_NULL);
+    gst_object_unref(_gstVars.pipeline);
+    _gstVars.isPipelineActive = false;
+    _gstVars.lastTimestamp = NULL;
+    if (_gstVars.protocol == VxSdk::VxStreamProtocol::kMjpegPull) {
+        g_source_remove(_gstVars.busWatchId);
+        g_main_loop_unref(_gstVars.loop);
     }
 }

@@ -3,6 +3,7 @@
 #define Device_h__
 
 #include "DataSource.h"
+#include "DeviceAssignment.h"
 
 namespace CPPCli {
 
@@ -16,9 +17,6 @@ namespace CPPCli {
         /// Values that represent device types.
         /// </summary>
         enum class Types {
-            /// <summary>An error or unknown value was returned.</summary>
-            Unknown,
-
             /// <summary>A camera device.</summary>
             Camera,
 
@@ -33,6 +31,9 @@ namespace CPPCli {
 
             /// <summary>An encoder device.</summary>
             Encoder,
+
+            /// <summary>An external device.</summary>
+            External,
 
             /// <summary>A system manager device.</summary>
             Manager,
@@ -51,7 +52,10 @@ namespace CPPCli {
             
             /// <summary>A UI device.</summary>
             Ui,
-            
+
+            /// <summary>An error or unknown value was returned.</summary>
+            Unknown,
+
             /// <summary>A VCD device.</summary>
             Vcd
         };
@@ -75,6 +79,12 @@ namespace CPPCli {
         !Device();
 
         /// <summary>
+        /// Refreshes this instances properties.
+        /// </summary>
+        /// <returns>The <see cref="Results::Value">Result</see> of updating the properties.</returns>
+        Results::Value Refresh();
+
+        /// <summary>
         /// Gets the data sources hosted by this device.
         /// </summary>
         /// <value>A <c>List</c> of data sources.</value>
@@ -84,12 +94,12 @@ namespace CPPCli {
         }
 
         /// <summary>
-        /// Gets a value indicating whether the device is commissioned.
+        /// Gets the assignments to a data storage for this device.
         /// </summary>
-        /// <value><c>true</c> if commissioned, <c>false</c> if not.</value>
-        property bool IsCommissioned {
+        /// <value>A <c>List</c> of device assignments.</value>
+        property System::Collections::Generic::List<DeviceAssignment^>^ DeviceAssignments {
         public:
-            bool get() { return _device->isCommissioned; }
+            System::Collections::Generic::List<DeviceAssignment^>^ get() { return _GetDeviceAssignments(); }
         }
 
         /// <summary>
@@ -111,12 +121,30 @@ namespace CPPCli {
         }
 
         /// <summary>
+        /// Gets a value indicating whether the device is commissioned.
+        /// </summary>
+        /// <value><c>true</c> if commissioned, <c>false</c> if not.</value>
+        property bool IsCommissioned {
+        public:
+            bool get() { return _device->isCommissioned; }
+        }
+
+        /// <summary>
         /// Gets a value indicating whether a license is required for commissioning the device.
         /// </summary>
         /// <value><c>true</c> if license required, <c>false</c> if not.</value>
         property bool IsLicenseRequired {
         public:
             bool get() { return _device->isLicenseRequired; }
+        }
+
+        /// <summary>
+        /// Gets a value indicating whether the device is running on Pelco hardware.
+        /// </summary>
+        /// <value><c>true</c> if a Pelco device, <c>false</c> if not.</value>
+        property bool IsPelcoHardware {
+        public:
+            bool get() { return _device->isPelcoHardware; }
         }
 
         /// <summary>
@@ -129,30 +157,30 @@ namespace CPPCli {
         }
 
         /// <summary>
-        /// Gets the friendly name of the device.
+        /// Gets or sets the friendly name of the device.
         /// </summary>
         /// <value>The friendly name.</value>
         property System::String^ Name {
         public:
             System::String^ get() { return gcnew System::String(_device->name); }
+            void set(System::String^ value) {
+                char name[64];
+                strncpy_s(name, Utils::ConvertSysStringNonConst(value), sizeof(name));
+                _device->SetName(name);
+            }
         }
 
         /// <summary>
-        /// Gets the account password used to communicate with the device, if any.
+        /// Sets the account password used to communicate with the device, if any.
         /// </summary>
         /// <value>The password.</value>
         property System::String^ Password {
         public:
-            System::String^ get() { return gcnew System::String(_device->password); }
-        }
-
-        /// <summary>
-        /// Gets a value indicating whether the device is running on Pelco hardware.
-        /// </summary>
-        /// <value><c>true</c> if a Pelco device, <c>false</c> if not.</value>
-        property bool IsPelcoHardware {
-        public:
-            bool get() { return _device->isPelcoHardware; }
+            void set(System::String^ value) {
+                char password[64];
+                strncpy_s(password, Utils::ConvertSysStringNonConst(value), sizeof(password));
+                _device->SetPassword(password);
+            }
         }
 
         /// <summary>
@@ -183,12 +211,17 @@ namespace CPPCli {
         }
 
         /// <summary>
-        /// Gets the account username used to communicate with the device, if any.
+        /// Gets or sets the account username used to communicate with the device, if any.
         /// </summary>
         /// <value>The username.</value>
         property System::String^ Username {
         public:
             System::String^ get() { return gcnew System::String(_device->username); }
+            void set(System::String^ value) {
+                char username[64];
+                strncpy_s(username, Utils::ConvertSysStringNonConst(value), sizeof(username));
+                _device->SetUsername(username);
+            }
         }
 
         /// <summary>
@@ -221,6 +254,7 @@ namespace CPPCli {
     internal:
         VxSdk::IVxDevice* _device;
         System::Collections::Generic::List<DataSource^>^ _GetDataSources();
+        System::Collections::Generic::List<DeviceAssignment^>^ _GetDeviceAssignments();
     };
 }
 #endif // Device_h__

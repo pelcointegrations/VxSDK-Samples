@@ -14,6 +14,10 @@ CPPCli::Bookmark::!Bookmark() {
     _bookmark = nullptr;
 }
 
+CPPCli::Results::Value CPPCli::Bookmark::Refresh() {
+    return (CPPCli::Results::Value)_bookmark->Refresh();
+}
+
 CPPCli::DataSource^ CPPCli::Bookmark::_GetDataSource() {
     // Get the data source
     VxSdk::IVxDataSource* dataSource = nullptr;

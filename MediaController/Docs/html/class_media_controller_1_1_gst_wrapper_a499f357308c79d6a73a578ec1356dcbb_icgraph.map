@@ -1,0 +1,6 @@
+<map id="MediaController::GstWrapper::Pause" name="MediaController::GstWrapper::Pause">
+<area shape="rect" id="node2" href="$class_media_controller_1_1_gst_wrapper.html#a6867df2bc3d4b43764f9663af096842f" title="Get the current playback speed. " alt="" coords="244,5,435,47"/>
+<area shape="rect" id="node4" href="$class_media_controller_1_1_mjpeg_pull_1_1_stream.html#a4ba351f55d1740c1fd48c42a76a3dd13" title="Call Pause on the stream. " alt="" coords="251,71,428,112"/>
+<area shape="rect" id="node5" href="$class_media_controller_1_1_rtsp_1_1_stream.html#a97c7554d9bcc086b2a424a14d7a4c56b" title="Call Pause on the stream. " alt="" coords="266,136,413,177"/>
+<area shape="rect" id="node3" href="$class_media_controller_1_1_playing_state.html#a0bf97da76a698a03dc7b82d5e3f3a0ed" title="Perform the Play action based on the stream state. " alt="" coords="483,5,645,47"/>
+</map>

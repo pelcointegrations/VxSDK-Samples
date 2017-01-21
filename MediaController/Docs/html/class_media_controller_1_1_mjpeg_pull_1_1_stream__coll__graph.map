@@ -1,9 +1,7 @@
 <map id="MediaController::MjpegPull::Stream" name="MediaController::MjpegPull::Stream">
-<area shape="rect" id="node2" href="$class_media_controller_1_1_stream_base.html" title="The base class for the different stream types. " alt="" coords="351,129,543,156"/>
-<area shape="rect" id="node6" href="$class_media_controller_1_1_controller.html" title="Implements the IController interface methods. " alt="" coords="659,67,833,93"/>
-<area shape="rect" id="node3" href="$class_media_controller_1_1_i_stream.html" title="Defines the stream interface. " alt="" coords="24,67,189,93"/>
-<area shape="rect" id="node7" href="$class_media_controller_1_1_i_controller.html" title="Defines the controller interface. " alt="" coords="358,56,537,83"/>
-<area shape="rect" id="node4" href="$struct_media_controller_1_1_media_request.html" title="Contains the information needed to start a new media stream. " alt="" coords="5,179,208,205"/>
-<area shape="rect" id="node5" href="$class_media_controller_1_1_gst_wrapper.html" title="Manages the GStreamer instance. " alt="" coords="11,128,202,155"/>
-<area shape="rect" id="node8" href="$class_media_controller_1_1_stream_state.html" title="Provides an interface for managing calls to the stream based on its current state. " alt="" coords="351,5,544,32"/>
+<area shape="rect" id="node2" href="$class_media_controller_1_1_stream_base.html" title="The base class for the different stream types. " alt="" coords="351,81,543,108"/>
+<area shape="rect" id="node3" href="$class_media_controller_1_1_i_stream.html" title="Defines the stream interface. " alt="" coords="24,5,189,32"/>
+<area shape="rect" id="node4" href="$class_media_controller_1_1_stream_state.html" title="Provides an interface for managing calls to the stream based on its current state. " alt="" coords="10,56,203,83"/>
+<area shape="rect" id="node5" href="$struct_media_controller_1_1_media_request.html" title="Contains the information needed to start a new media stream. " alt="" coords="5,107,208,133"/>
+<area shape="rect" id="node6" href="$class_media_controller_1_1_gst_wrapper.html" title="Manages the GStreamer instance. " alt="" coords="11,157,202,184"/>
 </map>

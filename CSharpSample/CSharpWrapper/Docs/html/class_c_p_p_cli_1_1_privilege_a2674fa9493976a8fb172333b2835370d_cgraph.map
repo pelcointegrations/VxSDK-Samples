@@ -1,5 +1,6 @@
 <map id="CPPCli::Privilege::~Privilege" name="CPPCli::Privilege::~Privilege">
 <area shape="rect" id="node2" href="$class_c_p_p_cli_1_1_privilege.html#a04faea3847a97394639a4669bde402d2" title="Constructor. " alt="" coords="193,5,321,47"/>
-<area shape="rect" id="node3" href="$class_c_p_p_cli_1_1_privilege.html#a24ca543e5ddad70dfb54a5408489fbc1" title="Associate devices with this privilege. " alt="" coords="181,71,333,98"/>
-<area shape="rect" id="node4" href="$class_c_p_p_cli_1_1_privilege.html#a3399c8902f14849e866fdd1da878206a" title="Remove device associations from this privilege. " alt="" coords="193,123,321,164"/>
+<area shape="rect" id="node3" href="$class_c_p_p_cli_1_1_privilege.html#af8d51072113e64c447361a69ee1ca8ca" title="Associate data sources with this privilege. " alt="" coords="181,71,333,98"/>
+<area shape="rect" id="node4" href="$class_c_p_p_cli_1_1_privilege.html#a6d3157a3121d1307d84d2603863d4e22" title="Refreshes this instances properties. " alt="" coords="193,123,321,164"/>
+<area shape="rect" id="node5" href="$class_c_p_p_cli_1_1_privilege.html#a0af07825f32068b6625f470f40fac68d" title="Remove data source associations from this privilege. " alt="" coords="381,152,509,193"/>
 </map>

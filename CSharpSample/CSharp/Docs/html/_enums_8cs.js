@@ -19,18 +19,19 @@ var _enums_8cs =
       [ "Online", "_enums_8cs.html#aa2bd31b8ad20fd154bdad3ac987ec55ea54f664c70c22054ea0d8d26fc3997ce7", null ]
     ] ],
     [ "VxDeviceType", "_enums_8cs.html#af32cf618fd668911fbe90d8291ead923", [
-      [ "Unknown", "_enums_8cs.html#af32cf618fd668911fbe90d8291ead923a88183b946cc5f0e8c96b2e66e1c74a7e", null ],
       [ "Camera", "_enums_8cs.html#af32cf618fd668911fbe90d8291ead923a967d35e40f3f95b1f538bd248640bf3b", null ],
       [ "Core", "_enums_8cs.html#af32cf618fd668911fbe90d8291ead923a83168e6cb289d732cc78427b51f93153", null ],
       [ "CoreMg", "_enums_8cs.html#af32cf618fd668911fbe90d8291ead923aaad1e360db5db482a8f1270e8f163f3f", null ],
       [ "Decoder", "_enums_8cs.html#af32cf618fd668911fbe90d8291ead923ae6818a215084646ac80a1a07561ecf35", null ],
       [ "Encoder", "_enums_8cs.html#af32cf618fd668911fbe90d8291ead923a87d487f6f605eb96e61be67988e41e6d", null ],
+      [ "External", "_enums_8cs.html#af32cf618fd668911fbe90d8291ead923ab206a1b4ea1097761f78e8876f6da779", null ],
       [ "Manager", "_enums_8cs.html#af32cf618fd668911fbe90d8291ead923aae94be3cd532ce4a025884819eb08c98", null ],
       [ "Mg", "_enums_8cs.html#af32cf618fd668911fbe90d8291ead923aaf6cdb852ac107524b150b227c2886e6", null ],
       [ "Monitor", "_enums_8cs.html#af32cf618fd668911fbe90d8291ead923ad2986ac8cb6bd55892099c1ffd6b1f6f", null ],
       [ "Recorder", "_enums_8cs.html#af32cf618fd668911fbe90d8291ead923a1aff765143dc4bf8ef68f698234e10f6", null ],
       [ "Udi", "_enums_8cs.html#af32cf618fd668911fbe90d8291ead923abcc9602076dc6b0d7f538bdb5705032a", null ],
       [ "Ui", "_enums_8cs.html#af32cf618fd668911fbe90d8291ead923a730b1d2ffece9a1c748a54cd0bb0e363", null ],
+      [ "Unknown", "_enums_8cs.html#af32cf618fd668911fbe90d8291ead923a88183b946cc5f0e8c96b2e66e1c74a7e", null ],
       [ "Vcd", "_enums_8cs.html#af32cf618fd668911fbe90d8291ead923a072a1a46e06607a200fe8af01d0928aa", null ]
     ] ],
     [ "VxRecordFramerate", "_enums_8cs.html#a3ffacf8c9ae166012c5ba8b8087d5dd7", [
@@ -49,7 +50,7 @@ var _enums_8cs =
     ] ],
     [ "VxResult", "_enums_8cs.html#a4bfd34104cd21c30a3ea3d2b61e59cdf", [
       [ "UnknownError", "_enums_8cs.html#a4bfd34104cd21c30a3ea3d2b61e59cdfabfaef30f1c8011c5cefa38ae470fb7aa", null ],
-      [ "OK", "_enums_8cs.html#a4bfd34104cd21c30a3ea3d2b61e59cdfae0aa021e21dddbd6d8cecec71e9cf564", null ],
+      [ "Ok", "_enums_8cs.html#a4bfd34104cd21c30a3ea3d2b61e59cdfaa60852f204ed8028c1c58808b746d115", null ],
       [ "UnsupportedVersion", "_enums_8cs.html#a4bfd34104cd21c30a3ea3d2b61e59cdfa0f89bc98e9b12bdeda0604e57bdc0518", null ],
       [ "InvalidHandle", "_enums_8cs.html#a4bfd34104cd21c30a3ea3d2b61e59cdfa2d0e462e9958ce7bb443e70023241dfe", null ],
       [ "InsufficientSize", "_enums_8cs.html#a4bfd34104cd21c30a3ea3d2b61e59cdfac87f7496cbb27b7ef44dc4766c4e7c2d", null ],

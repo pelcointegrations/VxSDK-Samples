@@ -9,31 +9,34 @@ using namespace VxSdk;
 
 StreamBase::StreamBase() {}
 
-StreamBase::StreamBase(MediaRequest& request, Controller& controller) :
-   _mediaRequest(request),  _controller(&controller)  {
-   this->_gst = nullptr;
+StreamBase::StreamBase(MediaRequest& request) :
+   _mediaRequest(request)  {
+    // Build a new pipeline using the description generated above.
+    this->_gst = new GstWrapper();
 }
 
 StreamBase::~StreamBase() {
-    delete this->_gst;
+
 }
 
-bool StreamBase::Play(float speed) { return false; }
+bool StreamBase::Play(float speed, unsigned int unixTime) { return false; }
 
 void StreamBase::Pause() {}
 
 void StreamBase::Stop() {}
 
-void StreamBase::FrameForward() {}
-
-void StreamBase::FrameBackward() {}
-
-bool StreamBase::Seek(unsigned int unixTime, float speed) { return false; }
-
 void StreamBase::NewRequest(MediaRequest& request) {}
 
-bool StreamBase::Resume(unsigned int unixTime, float speed) { return false; }
+bool StreamBase::Resume(float speed, unsigned int unixTime) { return false; }
 
-GstWrapper* StreamBase::GetGstreamer() {
+GstWrapper* StreamBase::GetGstreamer() const {
     return this->_gst;
+}
+
+unsigned int StreamBase::GetLastTimestamp() const {
+    return this->_gst->GetLastTimestamp();
+}
+
+Controller::Mode StreamBase::GetMode() {
+    return this->_gst->GetMode();
 }

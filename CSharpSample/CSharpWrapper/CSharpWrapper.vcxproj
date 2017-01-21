@@ -23,6 +23,7 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <Keyword>ManagedCProj</Keyword>
     <RootNamespace>CPPCli</RootNamespace>
+    <ProjectName>CSharpWrapper</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -217,14 +218,25 @@ COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configurati
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Include\Bookmark.h" />
+    <ClInclude Include="Include\Configuration.h" />
     <ClInclude Include="Include\DataObject.h" />
     <ClInclude Include="Include\DataStorage.h" />
     <ClInclude Include="Include\DeviceAssignment.h" />
+    <ClInclude Include="Include\Drawing.h" />
     <ClInclude Include="Include\Driver.h" />
+    <ClInclude Include="Include\License.h" />
+    <ClInclude Include="Include\LicenseFeature.h" />
+    <ClInclude Include="Include\Marker.h" />
+    <ClInclude Include="Include\Monitor.h" />
+    <ClInclude Include="Include\MonitorCell.h" />
     <ClInclude Include="Include\NewBookmark.h" />
     <ClInclude Include="Include\NewDataObject.h" />
+    <ClInclude Include="Include\NewDevice.h" />
     <ClInclude Include="Include\NewDeviceAssignment.h" />
     <ClInclude Include="Include\NewEvent.h" />
+    <ClInclude Include="Include\NewMonitor.h" />
+    <ClInclude Include="Include\NewMarker.h" />
+    <ClInclude Include="Include\NewNotification.h" />
     <ClInclude Include="Include\NewPrivilege.h" />
     <ClInclude Include="Include\NewSchedule.h" />
     <ClInclude Include="Include\NewScheduleTrigger.h" />
@@ -233,8 +245,10 @@ COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configurati
     <ClInclude Include="Include\MediaEvent.h" />
     <ClInclude Include="Include\NewTag.h" />
     <ClInclude Include="Include\NewUser.h" />
+    <ClInclude Include="Include\Notification.h" />
     <ClInclude Include="Include\Privilege.h" />
     <ClInclude Include="Include\PtzLock.h" />
+    <ClInclude Include="Include\ResourceLock.h" />
     <ClInclude Include="Include\Role.h" />
     <ClInclude Include="Include\Schedule.h" />
     <ClInclude Include="Include\ScheduleTrigger.h" />
@@ -257,14 +271,21 @@ COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configurati
     <ClInclude Include="Include\PtzController.h" />
     <ClInclude Include="Include\Situation.h" />
     <ClInclude Include="Include\VXSystem.h" />
+    <ClInclude Include="Include\NewQuickReport.h" />
+    <ClInclude Include="Include\QuickReport.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Resources\AssemblyInfo.cpp" />
     <ClCompile Include="Source\Bookmark.cpp" />
+    <ClCompile Include="Source\Configuration.cpp" />
     <ClCompile Include="Source\DataObject.cpp" />
     <ClCompile Include="Source\DataStorage.cpp" />
     <ClCompile Include="Source\DeviceAssignment.cpp" />
+    <ClCompile Include="Source\Drawing.cpp" />
     <ClCompile Include="Source\Driver.cpp" />
+    <ClCompile Include="Source\License.cpp" />
+    <ClCompile Include="Source\LicenseFeature.cpp" />
+    <ClCompile Include="Source\Marker.cpp" />
     <ClCompile Include="Source\MediaControl.cpp" />
     <ClCompile Include="Source\Clip.cpp" />
     <ClCompile Include="Source\DataInterface.cpp" />
@@ -272,8 +293,11 @@ COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configurati
     <ClCompile Include="Source\Device.cpp" />
     <ClCompile Include="Source\Export.cpp" />
     <ClCompile Include="Source\ExportClip.cpp" />
+    <ClCompile Include="Source\Monitor.cpp" />
+    <ClCompile Include="Source\MonitorCell.cpp" />
     <ClCompile Include="Source\NewExport.cpp" />
     <ClCompile Include="Source\NewSchedule.cpp" />
+    <ClCompile Include="Source\Notification.cpp" />
     <ClCompile Include="Source\Pattern.cpp" />
     <ClCompile Include="Source\Preset.cpp" />
     <ClCompile Include="Source\Privilege.cpp" />
@@ -286,6 +310,8 @@ COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configurati
     <ClCompile Include="Source\Tag.cpp" />
     <ClCompile Include="Source\User.cpp" />
     <ClCompile Include="Source\VXSystem.cpp" />
+    <ClCompile Include="Source\Event.cpp" />
+    <ClCompile Include="Source\QuickReport.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

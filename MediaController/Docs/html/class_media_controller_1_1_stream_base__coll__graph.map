@@ -1,8 +1,6 @@
 <map id="MediaController::StreamBase" name="MediaController::StreamBase">
-<area shape="rect" id="node5" href="$class_media_controller_1_1_controller.html" title="Implements the IController interface methods. " alt="" coords="657,63,832,89"/>
-<area shape="rect" id="node2" href="$class_media_controller_1_1_i_stream.html" title="Defines the stream interface. " alt="" coords="24,15,189,41"/>
-<area shape="rect" id="node6" href="$class_media_controller_1_1_i_controller.html" title="Defines the controller interface. " alt="" coords="358,5,537,32"/>
-<area shape="rect" id="node3" href="$struct_media_controller_1_1_media_request.html" title="Contains the information needed to start a new media stream. " alt="" coords="5,73,208,100"/>
-<area shape="rect" id="node4" href="$class_media_controller_1_1_gst_wrapper.html" title="Manages the GStreamer instance. " alt="" coords="11,124,202,151"/>
-<area shape="rect" id="node7" href="$class_media_controller_1_1_stream_state.html" title="Provides an interface for managing calls to the stream based on its current state. " alt="" coords="351,131,544,157"/>
+<area shape="rect" id="node2" href="$class_media_controller_1_1_i_stream.html" title="Defines the stream interface. " alt="" coords="24,5,189,32"/>
+<area shape="rect" id="node3" href="$class_media_controller_1_1_stream_state.html" title="Provides an interface for managing calls to the stream based on its current state. " alt="" coords="10,56,203,83"/>
+<area shape="rect" id="node4" href="$struct_media_controller_1_1_media_request.html" title="Contains the information needed to start a new media stream. " alt="" coords="5,107,208,133"/>
+<area shape="rect" id="node5" href="$class_media_controller_1_1_gst_wrapper.html" title="Manages the GStreamer instance. " alt="" coords="11,157,202,184"/>
 </map>

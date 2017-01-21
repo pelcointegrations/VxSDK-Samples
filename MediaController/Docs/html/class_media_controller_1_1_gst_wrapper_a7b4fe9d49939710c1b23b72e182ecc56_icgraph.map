@@ -1,0 +1,6 @@
+<map id="MediaController::GstWrapper::SetLocation" name="MediaController::GstWrapper::SetLocation">
+<area shape="rect" id="node2" href="$class_media_controller_1_1_mjpeg_pull_1_1_stream.html#ae9585d6f4100ac1177ebf4aa90b52115" title="Set the stream to a new source. " alt="" coords="244,71,421,112"/>
+<area shape="rect" id="node3" href="$class_media_controller_1_1_mjpeg_pull_1_1_stream.html#a885f63b31fb958873c99bd153861d04d" title="Constructor. " alt="" coords="469,5,647,47"/>
+<area shape="rect" id="node4" href="$class_media_controller_1_1_mjpeg_pull_1_1_stream.html#a0c45ff070115cc8e4356d544830a20a8" title="Call Play on the stream. " alt="" coords="469,71,647,112"/>
+<area shape="rect" id="node5" href="$class_media_controller_1_1_mjpeg_pull_1_1_stream.html#a7a1a78b1f728b23769770d0638dfff53" title="Send PLAY on an existing stream. " alt="" coords="469,136,647,177"/>
+</map>

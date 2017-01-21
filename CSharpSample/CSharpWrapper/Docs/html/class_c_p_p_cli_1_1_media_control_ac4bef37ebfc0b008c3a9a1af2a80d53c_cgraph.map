@@ -1,0 +1,9 @@
+<map id="CPPCli::MediaControl::Stop" name="CPPCli::MediaControl::Stop">
+<area shape="rect" id="node2" href="$class_c_p_p_cli_1_1_media_control.html#a6c22e4af9a96ebfffa17b883d0de9f28" title="Constructor. " alt="" coords="201,5,349,47"/>
+<area shape="rect" id="node3" href="$class_c_p_p_cli_1_1_media_control.html#a8ae5fd0402e8b21dd5e751d26ac1477b" title="Set the display window using the given window handle. " alt="" coords="201,71,349,112"/>
+<area shape="rect" id="node4" href="$class_c_p_p_cli_1_1_media_control.html#a135391645c1a3d75f322f131db8871ec" title="Set the stream to a new data source. " alt="" coords="201,136,349,177"/>
+<area shape="rect" id="node5" href="$class_c_p_p_cli_1_1_media_control.html#a23258c3044465ff3d32b0caa131b29a3" title="Call Play on the stream. " alt="" coords="201,201,349,243"/>
+<area shape="rect" id="node6" href="$class_c_p_p_cli_1_1_media_control.html#aea10959f86fd8a017a13d214d2d1179d" title="Call Pause on the stream. " alt="" coords="201,267,349,308"/>
+<area shape="rect" id="node7" href="$class_c_p_p_cli_1_1_media_control.html#a2f06f8f367a4580152ee612e97c907e9" title="Call GoToLive on the stream. " alt="" coords="201,332,349,373"/>
+<area shape="rect" id="node8" href="$class_c_p_p_cli_1_1_media_control.html#a894c71184556007b3da6e81a92a9cbd1" title="Call Play on the stream with the supplied start time, resulting in a playback stream. " alt="" coords="201,397,349,439"/>
+</map>

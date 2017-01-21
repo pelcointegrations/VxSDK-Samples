@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Windows.Forms;
 using CPPCli;
@@ -139,7 +140,7 @@ namespace SDKSampleApp.Source
                 return;
 
             privilege.Priority = (int)value;
-            button.Text = value.ToString();
+            button.Text = value.ToString(CultureInfo.InvariantCulture);
         }
 
         /// <summary>

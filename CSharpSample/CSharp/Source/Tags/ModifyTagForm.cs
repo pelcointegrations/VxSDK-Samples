@@ -7,9 +7,9 @@ using CPPCli;
 namespace SDKSampleApp.Source
 {
     /// <summary>
-    /// The AddTagForm class.
+    /// The ModifyTagForm class.
     /// </summary>
-    /// <remarks>Provides a dialog window that allows the user to create a new tag.</remarks>
+    /// <remarks>Provides a dialog window that allows the user to modify a tag.</remarks>
     public partial class ModifyTagForm : Form
     {
         /// <summary>

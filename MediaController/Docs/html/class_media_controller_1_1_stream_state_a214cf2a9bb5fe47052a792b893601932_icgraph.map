@@ -1,0 +1,6 @@
+<map id="MediaController::StreamState::Play" name="MediaController::StreamState::Play">
+<area shape="rect" id="node2" href="$class_media_controller_1_1_playing_state.html#accba39a7a8d320865c25ad52c775781c" title="Virtual destructor. " alt="" coords="263,5,425,47"/>
+<area shape="rect" id="node3" href="$class_media_controller_1_1_paused_state.html#ae70acfaf69074d1fea20e2585a14e4e6" title="Virtual destructor. " alt="" coords="247,71,441,112"/>
+<area shape="rect" id="node4" href="$class_media_controller_1_1_stopped_state.html#a91eba4e93a183e1716a6eb8fa5b6c379" title="Virtual destructor. " alt="" coords="260,136,428,177"/>
+<area shape="rect" id="node5" href="$class_media_controller_1_1_controller.html#a845a3ef3ab3e9c5505905b3116f1a36d" title="Call Play on the stream. " alt="" coords="257,201,431,243"/>
+</map>

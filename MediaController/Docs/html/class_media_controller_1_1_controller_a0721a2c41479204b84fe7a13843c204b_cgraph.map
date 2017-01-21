@@ -1,3 +1,4 @@
 <map id="MediaController::Controller::Controller" name="MediaController::Controller::Controller">
-<area shape="rect" id="node2" href="$class_media_controller_1_1_stream_factory.html#adef6fc0628d516cc1cd74f09638e17b7" title="Create a new stream object. " alt="" coords="228,5,435,47"/>
+<area shape="rect" id="node2" href="$class_media_controller_1_1_stream_factory.html#a85f0b48501389559fe212342cf213f1b" title="Create a new stream object. " alt="" coords="228,5,435,47"/>
+<area shape="rect" id="node3" href="$class_media_controller_1_1_stream_factory.html#a3c1774b36fdb97ba7be9c81f85ece77a" title="Create a new audio stream object. " alt="" coords="228,71,435,112"/>
 </map>

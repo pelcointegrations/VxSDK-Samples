@@ -40,15 +40,6 @@ namespace CPPCli {
         !NewSchedule();
 
         /// <summary>
-        /// Gets the triggers that shall be included in this schedule.
-        /// </summary>
-        /// <value>A <c>List</c> of triggers included in the schedule.</value>
-        property System::Collections::Generic::List<NewScheduleTrigger^>^ ScheduleTriggers {
-        public:
-            System::Collections::Generic::List<NewScheduleTrigger^>^ get() { return _scheduleTriggers; }
-        }
-
-        /// <summary>
         /// Gets or sets the event action to use for the schedule.
         /// </summary>
         /// <value>The event <see cref="Schedule::Actions">Action</see>.</value>
@@ -56,6 +47,16 @@ namespace CPPCli {
         public:
             Schedule::Actions get() { return (Schedule::Actions)_newSchedule->action; }
             void set(Schedule::Actions value) { _newSchedule->action = (VxSdk::VxScheduleAction::Value)value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the unique schedule identifier.
+        /// </summary>
+        /// <value>The unique identifier.</value>
+        property System::String^ Id {
+        public:
+            System::String^ get() { return gcnew System::String(_newSchedule->id); }
+            void set(System::String^ value) { VxSdk::Utilities::StrCopySafe(_newSchedule->id, Utils::ConvertSysString(value)); }
         }
 
         /// <summary>
@@ -69,13 +70,12 @@ namespace CPPCli {
         }
 
         /// <summary>
-        /// Gets or sets the unique schedule identifier.
+        /// Gets the triggers that shall be included in this schedule.
         /// </summary>
-        /// <value>The unique identifier.</value>
-        property System::String^ Id {
+        /// <value>A <c>List</c> of triggers included in the schedule.</value>
+        property System::Collections::Generic::List<NewScheduleTrigger^>^ ScheduleTriggers {
         public:
-            System::String^ get() { return gcnew System::String(_newSchedule->id); }
-            void set(System::String^ value) { VxSdk::Utilities::StrCopySafe(_newSchedule->id, Utils::ConvertSysString(value)); }
+            System::Collections::Generic::List<NewScheduleTrigger^>^ get() { return _scheduleTriggers; }
         }
 
         /// <summary>

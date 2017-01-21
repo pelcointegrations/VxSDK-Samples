@@ -1,0 +1,4 @@
+<map id="MediaController::Controller::IsPipelineActive" name="MediaController::Controller::IsPipelineActive">
+<area shape="rect" id="node2" href="$class_media_controller_1_1_stream_base.html#ad8c8fb7254a3d4cfc29a552fba440121" title="Get the current GStreamer wrapper instance. " alt="" coords="228,5,420,47"/>
+<area shape="rect" id="node3" href="$class_media_controller_1_1_gst_wrapper.html#a04c5611674a24bfdff220b3b967e15f9" title="Get the status of the pipeline. " alt="" coords="229,71,419,112"/>
+</map>

@@ -28,6 +28,7 @@ namespace SDKSampleApp.Source
                 return;
 
             AddDataStorageInfo(dataStorage);
+            AddStorageConfigInfo(dataStorage);
 
             if (dataStorage.DataSources.Count > 0)
                 AddDataSourceInfo(dataStorage);
@@ -51,6 +52,8 @@ namespace SDKSampleApp.Source
             {
                 // Get the value from the property.
                 var val = prop.GetValue(dataStorage, null);
+                if (val == null)
+                    continue;
 
                 // Get each item if the value is a List type and generate a string.
                 if (val.GetType() != typeof(string))
@@ -100,6 +103,31 @@ namespace SDKSampleApp.Source
                 lvSubItem.SubItems.Add(driver.Name);
                 lvDataStorageDetails.Items.Add(lvSubItem);
             }
+        }
+
+        /// <summary>
+        /// The AddStorageConfigInfo method.
+        /// </summary>
+        /// <param name="dataStorage">The <paramref name="dataStorage"/> to add the info for.</param>
+        private void AddStorageConfigInfo(DataStorage dataStorage)
+        {
+            var config = dataStorage.Configuration;
+            if (config == null)
+                return;
+
+            var lvItem = new ListViewItem(string.Empty) { BackColor = Color.LightGray };
+            lvItem.SubItems.Add("Config");
+            lvDataStorageDetails.Items.Add(lvItem);
+
+            var lvSubItem = new ListViewItem(string.Empty);
+            lvSubItem.SubItems.Add("Transmission Type");
+            lvSubItem.SubItems.Add(config.TransmissionType);
+            lvDataStorageDetails.Items.Add(lvSubItem);
+
+            var lvSubItem2 = new ListViewItem(string.Empty);
+            lvSubItem2.SubItems.Add("Retention Limit");
+            lvSubItem2.SubItems.Add(config.RetentionLimit.ToString());
+            lvDataStorageDetails.Items.Add(lvSubItem2);
         }
     }
 }

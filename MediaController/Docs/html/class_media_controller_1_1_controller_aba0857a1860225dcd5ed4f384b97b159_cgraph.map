@@ -1,4 +1,4 @@
 <map id="MediaController::Controller::AddObserver" name="MediaController::Controller::AddObserver">
-<area shape="rect" id="node2" href="$class_media_controller_1_1_stream_base.html#a8426351a80597fb8d2a3a2ccc8ba732e" title="Get the current GStreamer wrapper instance. " alt="" coords="228,5,420,47"/>
+<area shape="rect" id="node2" href="$class_media_controller_1_1_stream_base.html#ad8c8fb7254a3d4cfc29a552fba440121" title="Get the current GStreamer wrapper instance. " alt="" coords="228,5,420,47"/>
 <area shape="rect" id="node3" href="$class_media_controller_1_1_gst_wrapper.html#a223bd48b70740533739d04b84b3ad538" title="Add a new subscriber to timestamp events. " alt="" coords="229,71,419,112"/>
 </map>

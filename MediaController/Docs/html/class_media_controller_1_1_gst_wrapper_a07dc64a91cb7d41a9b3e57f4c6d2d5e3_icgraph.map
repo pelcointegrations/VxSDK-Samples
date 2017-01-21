@@ -1,5 +1,0 @@
-<map id="MediaController::GstWrapper::Pause" name="MediaController::GstWrapper::Pause">
-<area shape="rect" id="node2" href="$class_media_controller_1_1_playing_state.html#a5974a94acb89f8de121ba1855526eb75" title="Perform the Pause action based on the stream state. " alt="" coords="260,5,423,47"/>
-<area shape="rect" id="node3" href="$class_media_controller_1_1_playing_state.html#a7d9de177fdfd14b19f2bb6d37e907ace" title="Perform the Stop action based on the stream state. " alt="" coords="260,71,423,112"/>
-<area shape="rect" id="node4" href="$class_media_controller_1_1_paused_state.html#a60919e3fad6f0c893c84c7b7972da17f" title="Perform the Stop action based on the stream state. " alt="" coords="244,136,439,177"/>
-</map>

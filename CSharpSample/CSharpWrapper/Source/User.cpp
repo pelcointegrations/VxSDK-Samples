@@ -22,6 +22,10 @@ CPPCli::Results::Value CPPCli::User::AddToRole(CPPCli::Role^ role) {
     return CPPCli::Results::Value(result);
 }
 
+CPPCli::Results::Value CPPCli::User::Refresh() {
+    return (CPPCli::Results::Value)_user->Refresh();
+}
+
 CPPCli::Results::Value CPPCli::User::RemoveFromRole(CPPCli::Role^ role) {
     // Make the call to remove the user from the role
     VxSdk::VxResult::Value result = _user->RemoveFromRole(*role->_role);
@@ -30,8 +34,11 @@ CPPCli::Results::Value CPPCli::User::RemoveFromRole(CPPCli::Role^ role) {
 }
 
 CPPCli::Results::Value CPPCli::User::SetPassword(System::String^ newPassword) {
+    char password[64];
+    strncpy_s(password, Utils::ConvertSysStringNonConst(newPassword), sizeof(password));
+
     // Make the call to set the users password
-    VxSdk::VxResult::Value result = _user->SetPassword(Utils::ConvertSysString(newPassword));
+    VxSdk::VxResult::Value result = _user->SetPassword(password);
     // Unless there was an issue setting the password the result should be VxSdk::VxResult::kOK
     return CPPCli::Results::Value(result);
 }
@@ -89,6 +96,31 @@ System::Collections::Generic::List<CPPCli::Role^>^ CPPCli::User::_GetRoles() {
         }
         // Remove the memory we previously allocated to the collection
         delete[] roles.collection;
+    }
+    return mlist;
+}
+
+System::Collections::Generic::List<CPPCli::Tag^>^ CPPCli::User::_GetTags() {
+    // Create a list of managed tags
+    List<Tag^>^ mlist = gcnew List<Tag^>();
+    // Create a collection of unmanaged tags
+    VxSdk::VxCollection<VxSdk::IVxTag**> tags;
+
+    // Make the GetTags call, which will return with the total tag count, this
+    // allows the client to allocate memory.
+    VxSdk::VxResult::Value result = _user->GetTags(tags);
+    // As long as there are tags linked the result should be VxSdk::VxResult::kInsufficientSize
+    if (result == VxSdk::VxResult::kInsufficientSize) {
+        // Allocate enough space for the IVxTag collection
+        tags.collection = new VxSdk::IVxTag*[tags.collectionSize];
+        result = _user->GetTags(tags);
+        // The result should now be kOK since we have allocated enough space
+        if (result == VxSdk::VxResult::kOK) {
+            for (int i = 0; i < tags.collectionSize; i++)
+                mlist->Add(gcnew Tag(tags.collection[i]));
+        }
+        // Remove the memory we previously allocated to the collection
+        delete[] tags.collection;
     }
     return mlist;
 }

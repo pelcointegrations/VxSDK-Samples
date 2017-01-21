@@ -4,6 +4,7 @@
 
 #include "VxSdk.h"
 #include "ExportClip.h"
+#include "User.h"
 #include "Utils.h"
 
 namespace CPPCli {
@@ -67,6 +68,12 @@ namespace CPPCli {
         !Export();
 
         /// <summary>
+        /// Refreshes this instances properties.
+        /// </summary>
+        /// <returns>The <see cref="Results::Value">Result</see> of updating the properties.</returns>
+        Results::Value Refresh();
+
+        /// <summary>
         /// Gets the date and time at which the triggered export completed the export operation.
         /// </summary>
         /// <value>A default <c>DateTime</c> if it fails, else the <c>DateTime</c> when the export completed.</value>
@@ -76,12 +83,31 @@ namespace CPPCli {
         }
 
         /// <summary>
+        /// Gets the URI to the exported data.  It will only be present if
+        /// the exported data is completed and available for download.
+        /// </summary>
+        /// <value>The data URI.</value>
+        property System::String^ DataUri {
+        public:
+            System::String^ get() { return gcnew System::String(_export->dataUri); }
+        }
+
+        /// <summary>
         /// Gets the clips associated with this export.
         /// </summary>
         /// <value>The <c>List</c> of clips contained in the export.</value>
         property System::Collections::Generic::List<ExportClip^>^ ExportClips {
         public:
             System::Collections::Generic::List<ExportClip^>^ get() { return _GetClips(); }
+        }
+
+        /// <summary>
+        /// Gets the file size of the exported data in kilobytes (kB).
+        /// </summary>
+        /// <value>The file size.</value>
+        property int FileSizeKb {
+        public:
+            int get() { return _export->fileSizeKb; }
         }
 
         /// <summary>
@@ -112,6 +138,15 @@ namespace CPPCli {
         }
 
         /// <summary>
+        /// Gets a value indicating whether the export data is signed and encrypted.
+        /// </summary>
+        /// <value><c>true</c> if this export is protected, <c>false</c> if not.</value>
+        property bool IsProtected {
+        public:
+            bool get() { return _export->isProtected; }
+        }
+
+        /// <summary>
         /// Gets the friendly name of the export.
         /// </summary>
         /// <value>The friendly name.</value>
@@ -121,10 +156,19 @@ namespace CPPCli {
         }
 
         /// <summary>
+        /// Gets the user that has created this export, if any.
+        /// </summary>
+        /// <value>The user that owns this export.</value>
+        property User^ Owner {
+        public:
+            User^ get() { return _GetOwner(); }
+        }
+
+        /// <summary>
         /// Gets the name of the user that has created this export, if any.
         /// </summary>
         /// <value>The owner name.</value>
-        property System::String^ Owner {
+        property System::String^ OwnerName {
         public:
             System::String^ get() { return gcnew System::String(_export->owner); }
         }
@@ -141,15 +185,6 @@ namespace CPPCli {
         }
 
         /// <summary>
-        /// Gets a value indicating whether the export data is signed and encrypted.
-        /// </summary>
-        /// <value><c>true</c> if this export is protected, <c>false</c> if not.</value>
-        property bool IsProtected {
-        public:
-            bool get() { return _export->isProtected; }
-        }
-
-        /// <summary>
         /// Gets the estimated time remaining, in seconds, until the export is 100
         /// percent complete.  If the export is complete this value will be 0.
         /// </summary>
@@ -157,15 +192,6 @@ namespace CPPCli {
         property int SecondsRemaining {
         public:
             int get() { return _export->secondsRemaining; }
-        }
-
-        /// <summary>
-        /// Gets the file size of the exported data in kilobytes (kB).
-        /// </summary>
-        /// <value>The file size.</value>
-        property int FileSizeKb {
-        public:
-            int get() { return _export->fileSizeKb; }
         }
 
         /// <summary>
@@ -177,19 +203,10 @@ namespace CPPCli {
             States get() { return (States)_export->status; }
         }
 
-        /// <summary>
-        /// Gets the URI to the exported data.  It will only be present if
-        /// the exported data is completed and available for download.
-        /// </summary>
-        /// <value>The data URI.</value>
-        property System::String^ DataUri {
-        public:
-            System::String^ get() { return gcnew System::String(_export->dataUri); }
-        }
-
     internal:
         VxSdk::IVxExport* _export;
         System::Collections::Generic::List<ExportClip^>^ _GetClips();
+        User^ _GetOwner();
     };
 }
 #endif // Export_h__

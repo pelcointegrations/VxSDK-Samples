@@ -1,4 +1,5 @@
 <map id="CPPCli::DataSource::~DataSource" name="CPPCli::DataSource::~DataSource">
 <area shape="rect" id="node2" href="$class_c_p_p_cli_1_1_data_source.html#a41433348c41c908b00399f9499a794cf" title="Constructor. " alt="" coords="196,5,336,47"/>
 <area shape="rect" id="node3" href="$class_c_p_p_cli_1_1_data_source.html#a73b46581c47ef65d5b4a16e2fd0a3ab3" title="Create a new MJPEG stream. " alt="" coords="193,71,339,112"/>
+<area shape="rect" id="node4" href="$class_c_p_p_cli_1_1_data_source.html#a648247ad60ced1d386e16c14f00df380" title="Refreshes this instances properties. " alt="" coords="196,136,336,177"/>
 </map>

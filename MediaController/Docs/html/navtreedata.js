@@ -29,7 +29,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_constants_8h_source.html"
+"_constants_8h_source.html",
+"struct_media_controller_1_1_rtsp_1_1_keep_alive_1_1_thread_info.html#a41ba09138296245f5e4fcbaa9385f322"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

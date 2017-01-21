@@ -54,6 +54,9 @@ namespace SDKSampleApp.Source
         /// <param name="args">The <paramref name="args"/> parameter.</param>  
         private void ButtonDelete_Click(object sender, EventArgs args)
         {
+            if (lvBookmarkManager.CheckedItems.Count == 0)
+                return;
+
             // Get the associated bookmark object from the selected item and delete
             // it from the VideoXpert system.
             var bookmark = (Bookmark)lvBookmarkManager.CheckedItems[0].Tag;

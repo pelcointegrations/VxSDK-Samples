@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Source\DataSource\ViewAllDataSource.cpp">
+      <Filter>DataSource</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Common\MenuItem.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Common\stdafx.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DataSource\ViewDataSourceByPage.cpp">
+      <Filter>DataSource</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Common\Controller.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Common\Utility.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Common\Paging.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DataSource\ViewDataSourceDetails.cpp">
+      <Filter>DataSource</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Exports\ViewExport.cpp">
+      <Filter>Exports</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Exports\CreateExport.cpp">
+      <Filter>Exports</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Exports\DeleteExport.cpp">
+      <Filter>Exports</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Exports\DownloadExport.cpp">
+      <Filter>Exports</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\LiveStreaming\DataSourceLiveStreaming.cpp">
+      <Filter>LiveStreaming</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\LiveStreaming\MediaOperationshandler.cpp">
+      <Filter>LiveStreaming</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\LiveStreaming\PtzOperationsHandler.cpp">
+      <Filter>LiveStreaming</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Events\MonitorEvents.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Events\SearchEvents.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Events\DisplaySituations.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Events\AddSituation.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Events\DeleteSituation.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Events\InjectEvents.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Bookmarks\AddBookmark.cpp">
+      <Filter>Bookmarks</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Bookmarks\ViewAllBookmarks.cpp">
+      <Filter>Bookmarks</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Reports\ViewQuickReport.cpp">
+      <Filter>Reports</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Bookmarks\DeleteBookmark.cpp">
+      <Filter>Bookmarks</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Roles\ViewAllRoles.cpp">
+      <Filter>Roles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Roles\AddRole.cpp">
+      <Filter>Roles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Roles\DeleteRole.cpp">
+      <Filter>Roles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Notifications\ViewAllNotifications.cpp">
+      <Filter>Notifications</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Notifications\AddNotification.cpp">
+      <Filter>Notifications</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Notifications\DeleteNotification.cpp">
+      <Filter>Notifications</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Tags\AddTag.cpp">
+      <Filter>Tags</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Tags\DeleteTag.cpp">
+      <Filter>Tags</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Tags\ViewAllTags.cpp">
+      <Filter>Tags</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Tags\MergeTag.cpp">
+      <Filter>Tags</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Users\AddUser.cpp">
+      <Filter>Users</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Users\DeleteUser.cpp">
+      <Filter>Users</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Users\ViewAllUsers.cpp">
+      <Filter>Users</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Schedules\AddSchedule.cpp">
+      <Filter>Schedules</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Schedules\DeleteSchedule.cpp">
+      <Filter>Schedules</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Schedules\ViewAllSchedules.cpp">
+      <Filter>Schedules</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Schedules\AddTriggerToSchedule.cpp">
+      <Filter>Schedules</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Drawings\AddDrawing.cpp">
+      <Filter>Drawings</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Drawings\DeleteDrawing.cpp">
+      <Filter>Drawings</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Drawings\ViewAllDrawings.cpp">
+      <Filter>Drawings</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DataObjects\AddDataObject.cpp">
+      <Filter>DataObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DataObjects\DeleteDataObject.cpp">
+      <Filter>DataObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DataObjects\ViewAllDataObjects.cpp">
+      <Filter>DataObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Devices\ViewAllDevices.cpp">
+      <Filter>Devices</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Common\TabularPrinter.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\DataSource\ViewAllDataSource.h">
+      <Filter>DataSource</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Common\MenuItem.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Common\Plugin.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Common\stdafx.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Common\targetver.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DataSource\ViewDataSourceByPage.h">
+      <Filter>DataSource</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Common\Controller.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Common\Utility.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Common\Paging.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DataSource\ViewDataSourceDetails.h">
+      <Filter>DataSource</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Exports\ViewExport.h">
+      <Filter>Exports</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Exports\CreateExport.h">
+      <Filter>Exports</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Exports\DeleteExport.h">
+      <Filter>Exports</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Exports\DownloadExport.h">
+      <Filter>Exports</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\LiveStreaming\DataSourceLiveStreaming.h">
+      <Filter>LiveStreaming</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\LiveStreaming\MediaOperationshandler.h">
+      <Filter>LiveStreaming</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\LiveStreaming\PtzOperationsHandler.h">
+      <Filter>LiveStreaming</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Events\MonitorEvents.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Common\Constants.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Events\SearchEvents.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Events\DisplaySituations.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Events\AddSituation.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Events\DeleteSituation.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Events\InjectEvents.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Bookmarks\AddBookmark.h">
+      <Filter>Bookmarks</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Bookmarks\ViewAllBookmarks.h">
+      <Filter>Bookmarks</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Reports\ViewQuickReport.h">
+      <Filter>Reports</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Bookmarks\DeleteBookmark.h">
+      <Filter>Bookmarks</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Roles\ViewAllRoles.h">
+      <Filter>Roles</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Roles\AddRole.h">
+      <Filter>Roles</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Roles\DeleteRole.h">
+      <Filter>Roles</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Notifications\ViewAllNotifications.h">
+      <Filter>Notifications</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Notifications\AddNotification.h">
+      <Filter>Notifications</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Notifications\DeleteNotification.h">
+      <Filter>Notifications</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Tags\AddTag.h">
+      <Filter>Tags</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Tags\DeleteTag.h">
+      <Filter>Tags</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Tags\ViewAllTags.h">
+      <Filter>Tags</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Tags\MergeTag.h">
+      <Filter>Tags</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Users\AddUser.h">
+      <Filter>Users</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Users\DeleteUser.h">
+      <Filter>Users</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Users\ViewAllUsers.h">
+      <Filter>Users</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Schedules\AddSchedule.h">
+      <Filter>Schedules</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Schedules\DeleteSchedule.h">
+      <Filter>Schedules</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Schedules\ViewAllSchedules.h">
+      <Filter>Schedules</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Common\OptionSelector.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Schedules\AddTriggerToSchedule.h">
+      <Filter>Schedules</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Drawings\AddDrawing.h">
+      <Filter>Drawings</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Drawings\DeleteDrawing.h">
+      <Filter>Drawings</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Drawings\ViewAllDrawings.h">
+      <Filter>Drawings</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DataObjects\AddDataObject.h">
+      <Filter>DataObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DataObjects\DeleteDataObject.h">
+      <Filter>DataObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DataObjects\ViewAllDataObjects.h">
+      <Filter>DataObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Devices\ViewAllDevices.h">
+      <Filter>Devices</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Common\TabularPrinter.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{2094eb19-b0c4-4baf-bed3-252259f9a910}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataSource">
+      <UniqueIdentifier>{1bc48757-81f3-4e1a-8b09-eca928856a93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exports">
+      <UniqueIdentifier>{f8963d23-d5f1-47e8-86de-c7832bd33a0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LiveStreaming">
+      <UniqueIdentifier>{fc86b7d5-8d4c-406a-a1e1-189204215e59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Events">
+      <UniqueIdentifier>{a128a05e-f5fd-4288-abf1-cfca459da415}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bookmarks">
+      <UniqueIdentifier>{f576f97d-fe5f-4032-86a3-1fd4611c1270}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Reports">
+      <UniqueIdentifier>{2493d7f3-0b26-40af-a1b5-ef3775e60f10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Roles">
+      <UniqueIdentifier>{47139beb-eecc-471e-837f-42e222afc10b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Notifications">
+      <UniqueIdentifier>{7d3f4f03-6021-4a2d-93b0-d9fce2324ed9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tags">
+      <UniqueIdentifier>{72c31747-9d52-4979-a8da-990094b0cd76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Users">
+      <UniqueIdentifier>{325ca511-ef4e-42d3-bc56-2d3abaadae64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Schedules">
+      <UniqueIdentifier>{4895a1f2-eeae-4584-af40-2625b7a4b38e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drawings">
+      <UniqueIdentifier>{7976e951-b8e8-43e0-a3fa-4be44c5e9a46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataObjects">
+      <UniqueIdentifier>{532aa832-6317-4ec7-80da-3c73caa719ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Devices">
+      <UniqueIdentifier>{441c5250-16ed-401e-9718-9ea861b82028}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

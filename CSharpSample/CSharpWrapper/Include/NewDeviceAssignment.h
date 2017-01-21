@@ -27,6 +27,17 @@ namespace CPPCli {
         /// <param name="vxNewDeviceAssignment">The new device assignment.</param>
         NewDeviceAssignment(VxSdk::VxNewDeviceAssignment* vxNewDeviceAssignment) {
             _newDeviceAssignment = vxNewDeviceAssignment;
+            _dataSources = gcnew System::Collections::Generic::List<System::String^>();
+        }
+
+        /// <summary>
+        /// Gets the data sources that will be included in this device assignment.
+        /// </summary>
+        /// <value>A <c>List</c> of data sources.</value>
+        property System::Collections::Generic::List<System::String^>^ DataSourceIds {
+        public:
+            System::Collections::Generic::List<System::String^>^ get() { return _dataSources; }
+            void set(System::Collections::Generic::List<System::String^>^ value) { _dataSources = value; }
         }
 
         /// <summary>
@@ -47,15 +58,6 @@ namespace CPPCli {
         public:
             System::String^ get() { return gcnew System::String(_newDeviceAssignment->driverType); }
             void set(System::String^ value) { VxSdk::Utilities::StrCopySafe(_newDeviceAssignment->driverType, Utils::ConvertSysString(value)); }
-        }
-
-        /// <summary>
-        /// Gets the data sources that will be included in this device assignment.
-        /// </summary>
-        /// <value>A <c>List</c> of data sources.</value>
-        property System::Collections::Generic::List<System::String^>^ DataSourceIds {
-        public:
-            System::Collections::Generic::List<System::String^>^ get() { return _dataSources; }
         }
 
     internal:

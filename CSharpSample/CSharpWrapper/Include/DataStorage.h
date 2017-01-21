@@ -2,6 +2,7 @@
 #ifndef DataStorage_h__
 #define DataStorage_h__
 
+#include "Configuration.h"
 #include "Device.h"
 #include "DeviceAssignment.h"
 #include "NewDeviceAssignment.h"
@@ -10,7 +11,7 @@
 namespace CPPCli {
 
     /// <summary>
-    /// The DataStorage class represents a data storage provider in the system (e.g. an NSM5200 
+    /// The DataStorage class represents a data storage provider in the system (e.g. an NSM5200
     /// storage pool or a VxRecorder) hosted by a system device. The DataStorage can be directed
     /// to store media produced by a device by assigning the device to it.
     /// </summary>
@@ -60,6 +61,12 @@ namespace CPPCli {
         Results::Value AssignDevice(NewDeviceAssignment^ newDeviceAssignment);
 
         /// <summary>
+        /// Refreshes this instances properties.
+        /// </summary>
+        /// <returns>The <see cref="Results::Value">Result</see> of updating the properties.</returns>
+        Results::Value Refresh();
+
+        /// <summary>
         /// Unassign a device from this data storage.
         /// </summary>
         /// <param name="device">The device to be unassigned from the data storage.</param>
@@ -70,9 +77,9 @@ namespace CPPCli {
         /// Gets the device assignments for this data storage.
         /// </summary>
         /// <value>A <c>List</c> of device assignments.</value>
-        property System::Collections::Generic::List<CPPCli::DeviceAssignment^>^ DeviceAssignments {
+        property CPPCli::Configuration::Storage^ Configuration {
         public:
-            System::Collections::Generic::List<CPPCli::DeviceAssignment^>^ get() { return _GetDeviceAssignments(); }
+            CPPCli::Configuration::Storage^ get() { return _GetStorageConfig(); }
         }
 
         /// <summary>
@@ -85,12 +92,12 @@ namespace CPPCli {
         }
 
         /// <summary>
-        /// Gets the device that hosts this data storage.
+        /// Gets the device assignments for this data storage.
         /// </summary>
-        /// <value>The host device.</value>
-        property CPPCli::Device^ HostDevice {
+        /// <value>A <c>List</c> of device assignments.</value>
+        property System::Collections::Generic::List<CPPCli::DeviceAssignment^>^ DeviceAssignments {
         public:
-            CPPCli::Device^ get() { return _GetHostDevice(); }
+            System::Collections::Generic::List<CPPCli::DeviceAssignment^>^ get() { return _GetDeviceAssignments(); }
         }
 
         /// <summary>
@@ -103,7 +110,16 @@ namespace CPPCli {
         }
 
         /// <summary>
-        /// Gets the unique identifier of the device.
+        /// Gets the device that hosts this data storage.
+        /// </summary>
+        /// <value>The host device.</value>
+        property CPPCli::Device^ HostDevice {
+        public:
+            CPPCli::Device^ get() { return _GetHostDevice(); }
+        }
+
+        /// <summary>
+        /// Gets the unique identifier of the data storage.
         /// </summary>
         /// <value>The unique identifier.</value>
         property System::String^ Id {
@@ -112,12 +128,17 @@ namespace CPPCli {
         }
 
         /// <summary>
-        /// Gets the friendly name of the data storage.
+        /// Gets or sets the friendly name of the data storage.
         /// </summary>
         /// <value>The friendly name.</value>
         property System::String^ Name {
         public:
             System::String^ get() { return gcnew System::String(_dataStorage->name); }
+            void set(System::String^ value) {
+                char name[64];
+                strncpy_s(name, Utils::ConvertSysStringNonConst(value), sizeof(name));
+                _dataStorage->SetName(name);
+            }
         }
 
         /// <summary>
@@ -131,10 +152,11 @@ namespace CPPCli {
 
     internal:
         VxSdk::IVxDataStorage* _dataStorage;
-        System::Collections::Generic::List<CPPCli::DeviceAssignment^>^ _GetDeviceAssignments();
         System::Collections::Generic::List<CPPCli::DataSource^>^ _GetDataSources();
-        CPPCli::Device^ _GetHostDevice();
+        System::Collections::Generic::List<CPPCli::DeviceAssignment^>^ _GetDeviceAssignments();
         System::Collections::Generic::List<CPPCli::Driver^>^ _GetDrivers();
+        CPPCli::Device^ _GetHostDevice();
+        CPPCli::Configuration::Storage^ _GetStorageConfig();
     };
 }
 #endif // DataStorage_h__

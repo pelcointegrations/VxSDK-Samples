@@ -1,5 +1,6 @@
 <map id="CPPCli::DataStorage::~DataStorage" name="CPPCli::DataStorage::~DataStorage">
 <area shape="rect" id="node2" href="$class_c_p_p_cli_1_1_data_storage.html#a08d38330f472697c34304e3aca24a673" title="Constructor. " alt="" coords="197,5,341,47"/>
 <area shape="rect" id="node3" href="$class_c_p_p_cli_1_1_data_storage.html#a15af7cbaf12fbb3a89e80d0e39ad02f9" title="Assign a device to this data storage to be managed and recorded based on its configuration. " alt="" coords="197,71,341,112"/>
-<area shape="rect" id="node4" href="$class_c_p_p_cli_1_1_data_storage.html#a0dea083e6325017107d4edfb9e451f24" title="Unassign a device from this data storage. " alt="" coords="197,136,341,177"/>
+<area shape="rect" id="node4" href="$class_c_p_p_cli_1_1_data_storage.html#a681973d29eb0033948d5c3f125bf7977" title="Refreshes this instances properties. " alt="" coords="197,136,341,177"/>
+<area shape="rect" id="node5" href="$class_c_p_p_cli_1_1_data_storage.html#a0dea083e6325017107d4edfb9e451f24" title="Unassign a device from this data storage. " alt="" coords="197,201,341,243"/>
 </map>

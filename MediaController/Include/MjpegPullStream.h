@@ -21,25 +21,22 @@ namespace MediaController {
             /// </summary>
             /// <param name="request">The requested media.</param>
             /// <param name="controller">A media controller object.</param>
-            Stream(MediaRequest& request, Controller& controller);
+            Stream(MediaRequest& request);
 
             /// <summary>
             /// Virtual destructor.
             /// </summary>
             virtual ~Stream();
-            virtual bool Play(float speed) override;
-            virtual void Pause() override;
-            virtual void Stop() override;
-            virtual void FrameForward() override;
-            virtual void FrameBackward() override;
-            virtual bool Seek(unsigned int unixTime, float speed) override;
-            virtual bool GoToLive() override;
-            virtual bool Resume(unsigned int unixTime, float speed) override;
-            virtual void NewRequest(MediaRequest& request) override;
+            bool Play(float speed, unsigned int unixTime) override;
+            void PlayStream(float speed, unsigned int unixTime) override;
+            void Pause() override;
+            void Stop() override;
+            bool Resume(float speed, unsigned int unixTime) override;
+            bool GoToLive() override;
+            void NewRequest(MediaRequest& request) override;
 
         private:
             VxSdk::IVxDataSession* _dataSession;
-            std::string _uuid;
         };
     }
 }

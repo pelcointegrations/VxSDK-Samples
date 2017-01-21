@@ -1,10 +1,11 @@
 <map id="CPPCli::Utils::ConvertDateTimeToChar" name="CPPCli::Utils::ConvertDateTimeToChar">
 <area shape="rect" id="node2" href="$class_c_p_p_cli_1_1_clip.html#a4736e7d4e94f76405d7d8b9a2db98560" title="Gets the endpoint URI for snapshots. " alt="" coords="249,5,428,47"/>
-<area shape="rect" id="node4" href="$class_c_p_p_cli_1_1_v_x_system.html#a3f3c16cc6385e273c7bdb92b1b5fca1d" title="Create a new export on the VideoXpert system. " alt="" coords="249,71,428,112"/>
-<area shape="rect" id="node6" href="$class_c_p_p_cli_1_1_v_x_system.html#a7df8bc6a0130c9f1f4ecae18eaf27e6f" title="Search for events on the system. " alt="" coords="247,136,430,177"/>
-<area shape="rect" id="node7" href="$class_c_p_p_cli_1_1_v_x_system.html#aa8284a86d0c78a47d086c20c352060db" title="Insert a new event into the system. " alt="" coords="253,201,425,243"/>
-<area shape="rect" id="node8" href="$class_c_p_p_cli_1_1_v_x_system.html#a7596cd2c07ce54fa64e1326c0a6b1abb" title="Create a new bookmark on the VideoXpert system. " alt="" coords="249,267,428,308"/>
-<area shape="rect" id="node9" href="$class_c_p_p_cli_1_1_v_x_system.html#a95d3d9a822f64b57b931fcf46200f734" title="Add a new schedule on the VideoXpert system. " alt="" coords="229,333,448,359"/>
+<area shape="rect" id="node4" href="$class_c_p_p_cli_1_1_v_x_system.html#a95d3d9a822f64b57b931fcf46200f734" title="Add a new schedule on the VideoXpert system. " alt="" coords="229,71,448,98"/>
+<area shape="rect" id="node6" href="$class_c_p_p_cli_1_1_v_x_system.html#a7596cd2c07ce54fa64e1326c0a6b1abb" title="Create a new bookmark on the VideoXpert system. " alt="" coords="249,123,428,164"/>
+<area shape="rect" id="node7" href="$class_c_p_p_cli_1_1_v_x_system.html#a3f3c16cc6385e273c7bdb92b1b5fca1d" title="Create a new export on the VideoXpert system. " alt="" coords="249,188,428,229"/>
+<area shape="rect" id="node8" href="$class_c_p_p_cli_1_1_v_x_system.html#a7e1d88e2bc26a449b774f9424cf5db31" title="Create a new quick report on the VideoXpert system. " alt="" coords="249,253,428,295"/>
+<area shape="rect" id="node9" href="$class_c_p_p_cli_1_1_v_x_system.html#aa8284a86d0c78a47d086c20c352060db" title="Insert a new event into the system. " alt="" coords="253,319,425,360"/>
+<area shape="rect" id="node10" href="$class_c_p_p_cli_1_1_v_x_system.html#ac600d21c12932e612566eed1c68b6066" title="Search for events on the system. " alt="" coords="247,384,430,425"/>
 <area shape="rect" id="node3" href="$class_c_p_p_cli_1_1_clip.html#a434fac639c7d8ef2418adeea295ee565" title="Destructor. " alt="" coords="501,13,633,39"/>
-<area shape="rect" id="node5" href="$class_c_p_p_cli_1_1_v_x_system.html#adad99c4b19cddd9bdb36943e33041216" title="Virtual destructor. " alt="" coords="496,201,637,243"/>
+<area shape="rect" id="node5" href="$class_c_p_p_cli_1_1_v_x_system.html#adad99c4b19cddd9bdb36943e33041216" title="Virtual destructor. " alt="" coords="496,221,637,263"/>
 </map>

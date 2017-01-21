@@ -1,3 +1,4 @@
 <map id="MediaController::Controller::NewRequest" name="MediaController::Controller::NewRequest">
-<area shape="rect" id="node2" href="$class_media_controller_1_1_stream_base.html#a4eda2d269c28a548e3da5d99b7e14556" title="Set the stream to a new source. " alt="" coords="228,5,420,47"/>
+<area shape="rect" id="node2" href="$class_media_controller_1_1_stream_base.html#a4eda2d269c28a548e3da5d99b7e14556" title="Set the stream to a new source. " alt="" coords="235,5,427,47"/>
+<area shape="rect" id="node3" href="$class_media_controller_1_1_stream_factory.html#a2b33381ed60c75631ab28a4f2eae21ee" title="Create a new audio MediaRequest object. " alt="" coords="228,71,435,112"/>
 </map>

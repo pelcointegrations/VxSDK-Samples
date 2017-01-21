@@ -185,7 +185,7 @@ namespace SDKSampleApp.Source
             get
             {
                 return SelectedControl == Controls.Left ?
-                    MainForm.Instance.lblTimeStampLeft.Text : MainForm.Instance.lblTimeStampRight.Text;
+                    MainForm.Instance.lblTimestampLeft.Text : MainForm.Instance.lblTimestampRight.Text;
             }
         }
 
@@ -198,7 +198,7 @@ namespace SDKSampleApp.Source
             get
             {
                 return SelectedControl == Controls.Left ?
-                    MainForm.Instance.lblTimeStampLeft : MainForm.Instance.lblTimeStampRight;
+                    MainForm.Instance.lblTimestampLeft : MainForm.Instance.lblTimestampRight;
             }
         }
 
@@ -211,9 +211,9 @@ namespace SDKSampleApp.Source
             // Note that the timestamp is in UTC by default, so you must convert it to local time
             // if that is the format required.
             var timestamp = timeEvent.Timestamp.ToLocalTime().ToString("s");
-            MainForm.Instance.lblTimeStampLeft.BeginInvoke((MethodInvoker)delegate
+            MainForm.Instance.lblTimestampLeft.BeginInvoke((MethodInvoker)delegate
             {
-                MainForm.Instance.lblTimeStampLeft.Text = timestamp;
+                MainForm.Instance.lblTimestampLeft.Text = timestamp;
             });
         }
 
@@ -226,9 +226,9 @@ namespace SDKSampleApp.Source
             // Note that the timestamp is in UTC by default, so you must convert it to local time
             // if that is the format required.
             var timestamp = timeEvent.Timestamp.ToLocalTime().ToString("s");
-            MainForm.Instance.lblTimeStampRight.BeginInvoke((MethodInvoker)delegate
+            MainForm.Instance.lblTimestampRight.BeginInvoke((MethodInvoker)delegate
             {
-                MainForm.Instance.lblTimeStampRight.Text = timestamp;
+                MainForm.Instance.lblTimestampRight.Text = timestamp;
             });
         }
 

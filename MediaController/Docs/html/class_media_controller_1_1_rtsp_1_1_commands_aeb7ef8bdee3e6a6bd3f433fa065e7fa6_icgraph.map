@@ -1,3 +1,4 @@
 <map id="MediaController::Rtsp::Commands::Pause" name="MediaController::Rtsp::Commands::Pause">
-<area shape="rect" id="node2" href="$class_media_controller_1_1_rtsp_1_1_stream.html#a97c7554d9bcc086b2a424a14d7a4c56b" title="Call Pause on the stream. " alt="" coords="200,5,347,47"/>
+<area shape="rect" id="node2" href="$class_media_controller_1_1_rtsp_1_1_commands.html#aaa4a45195e2f54a422b8442eb6187551" title="Destructor. " alt="" coords="200,5,379,47"/>
+<area shape="rect" id="node3" href="$class_media_controller_1_1_rtsp_1_1_stream.html#a97c7554d9bcc086b2a424a14d7a4c56b" title="Call Pause on the stream. " alt="" coords="216,71,363,112"/>
 </map>

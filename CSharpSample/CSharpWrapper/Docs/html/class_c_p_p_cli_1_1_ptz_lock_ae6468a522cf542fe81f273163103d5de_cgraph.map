@@ -1,5 +1,6 @@
 <map id="CPPCli::PtzLock::~PtzLock" name="CPPCli::PtzLock::~PtzLock">
 <area shape="rect" id="node2" href="$class_c_p_p_cli_1_1_ptz_lock.html#ab84316dcc2a34c2ec453d6cbb1247253" title="Constructor. " alt="" coords="237,5,413,32"/>
 <area shape="rect" id="node3" href="$class_c_p_p_cli_1_1_ptz_lock.html#a12958221f4ede4512dd0cb2be6e6eba7" title="Lock the ptz control. " alt="" coords="247,56,403,83"/>
-<area shape="rect" id="node4" href="$class_c_p_p_cli_1_1_ptz_lock.html#a72107b8f3611c845eeb0b3295a779eed" title="Unlock the ptz control. " alt="" coords="241,107,409,133"/>
+<area shape="rect" id="node4" href="$class_c_p_p_cli_1_1_ptz_lock.html#a121caa3919c97da3cf04d06df87d8fa4" title="Update this instances properties. " alt="" coords="239,107,411,133"/>
+<area shape="rect" id="node5" href="$class_c_p_p_cli_1_1_ptz_lock.html#a72107b8f3611c845eeb0b3295a779eed" title="Unlock the ptz control. " alt="" coords="241,157,409,184"/>
 </map>

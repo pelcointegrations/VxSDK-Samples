@@ -12,6 +12,12 @@ namespace SDKSampleApp.Source
     public partial class EventSearchForm : Form
     {
         /// <summary>
+        /// Gets or sets the StartIndex property.
+        /// </summary>
+        /// <value>The index of the first element returned in current page of the collection.</value>
+        private int StartIndex { get; set; }
+
+        /// <summary>
         /// Initializes a new instance of the <see cref="EventSearchForm" /> class.
         /// </summary>
         public EventSearchForm()
@@ -26,43 +32,7 @@ namespace SDKSampleApp.Source
 
             cbxSituationType.SelectedIndex = 0;
             dtpStartDate.Value = DateTime.Now - TimeSpan.FromDays(1);
-        }
-
-        /// <summary>
-        /// The ButtonSearch_Click method.
-        /// </summary>
-        /// <param name="sender">The <paramref name="sender"/> parameter.</param>
-        /// <param name="args">The <paramref name="args"/> parameter.</param>
-        private void ButtonSearch_Click(object sender, EventArgs args)
-        {
-            lvEvents.Items.Clear();
-            var situationType = string.Empty;
-            if (cbxSituationType.SelectedIndex != 0) 
-                situationType = cbxSituationType.SelectedItem.ToString();
-
-            var searchStart = dtpStartDate.Value.ToUniversalTime();
-            var searchEnd = dtpEndDate.Value.ToUniversalTime();
-            var events = MainForm.CurrentSystem.SearchEvents(situationType, searchStart, searchEnd);
-            foreach (var vxEvent in events)
-            {
-                var lvItem = new ListViewItem(vxEvent.Time.ToLocalTime().ToString("u"));
-                lvItem.SubItems.Add(vxEvent.SituationType);
-                lvItem.SubItems.Add(vxEvent.Id);
-                lvItem.SubItems.Add(vxEvent.Severity.ToString());
-                lvItem.SubItems.Add(vxEvent.AckState.ToString());
-                lvItem.Tag = vxEvent;
-                lvEvents.Items.Add(lvItem);
-            }
-        }
-
-        /// <summary>
-        /// The ButtonClear_Click method.
-        /// </summary>
-        /// <param name="sender">The <paramref name="sender"/> parameter.</param>
-        /// <param name="args">The <paramref name="args"/> parameter.</param>
-        private void ButtonClear_Click(object sender, EventArgs args)
-        {
-            lvEvents.Items.Clear();
+            StartIndex = 0;
         }
 
         /// <summary>
@@ -81,6 +51,58 @@ namespace SDKSampleApp.Source
         }
 
         /// <summary>
+        /// The ButtonClear_Click method.
+        /// </summary>
+        /// <param name="sender">The <paramref name="sender"/> parameter.</param>
+        /// <param name="args">The <paramref name="args"/> parameter.</param>
+        private void ButtonClear_Click(object sender, EventArgs args)
+        {
+            btnNextPage.Enabled = false;
+            btnPreviousPage.Enabled = false;
+            lvEvents.Items.Clear();
+        }
+
+        /// <summary>
+        /// The ButtonNextPage_Click method.
+        /// </summary>
+        /// <param name="sender">The <paramref name="sender"/> parameter.</param>
+        /// <param name="args">The <paramref name="args"/> parameter.</param>
+        private void ButtonNextPage_Click(object sender, EventArgs args)
+        {
+            btnNextPage.Enabled = false;
+            StartIndex += (int)nudResultsPerPage.Value;
+            Search();
+        }
+
+        /// <summary>
+        /// The ButtonPreviousPage_Click method.
+        /// </summary>
+        /// <param name="sender">The <paramref name="sender"/> parameter.</param>
+        /// <param name="args">The <paramref name="args"/> parameter.</param>
+        private void ButtonPreviousPage_Click(object sender, EventArgs args)
+        {
+            btnPreviousPage.Enabled = false;
+            StartIndex -= (int)nudResultsPerPage.Value;
+            if (StartIndex < 0)
+                StartIndex = 0;
+
+            Search();
+        }
+
+        /// <summary>
+        /// The ButtonSearch_Click method.
+        /// </summary>
+        /// <param name="sender">The <paramref name="sender"/> parameter.</param>
+        /// <param name="args">The <paramref name="args"/> parameter.</param>
+        private void ButtonSearch_Click(object sender, EventArgs args)
+        {
+            StartIndex = 0;
+            btnPreviousPage.Enabled = false;
+            btnNextPage.Enabled = false;
+            Search();
+        }
+
+        /// <summary>
         /// The ButtonSilence_Click method.
         /// </summary>
         /// <param name="sender">The <paramref name="sender"/> parameter.</param>
@@ -96,6 +118,43 @@ namespace SDKSampleApp.Source
             decimal value = 0;
             if (InputBox.Show("Silence", "Wake Time:", ref value) == DialogResult.OK)
                 selEvent.Silence((int)value);
+        }
+
+        /// <summary>
+        /// Perform an event search.
+        /// </summary>
+        private void Search()
+        {
+            var type = string.Empty;
+            if (cbxSituationType.SelectedIndex != 0)
+                type = cbxSituationType.SelectedItem.ToString();
+
+            var start = dtpStartDate.Value.ToUniversalTime();
+            var end = dtpEndDate.Value.ToUniversalTime();
+            var count = (int)nudResultsPerPage.Value;
+            var events = MainForm.CurrentSystem.SearchEvents(type, start, end, StartIndex, count);
+            if (events.Count > 0)
+            {
+                lvEvents.Items.Clear();
+                if (events.Count >= (int)nudResultsPerPage.Value)
+                    btnNextPage.Enabled = true;
+
+                if (StartIndex > 0)
+                    btnPreviousPage.Enabled = true;
+            }
+            else
+                btnNextPage.Enabled = false;
+
+            foreach (var vxEvent in events)
+            {
+                var lvItem = new ListViewItem(vxEvent.Time.ToLocalTime().ToString("u"));
+                lvItem.SubItems.Add(vxEvent.SituationType);
+                lvItem.SubItems.Add(vxEvent.Id);
+                lvItem.SubItems.Add(vxEvent.Severity.ToString());
+                lvItem.SubItems.Add(vxEvent.AckState.ToString());
+                lvItem.Tag = vxEvent;
+                lvEvents.Items.Add(lvItem);
+            }
         }
     }
 }

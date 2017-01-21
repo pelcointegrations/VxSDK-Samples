@@ -22,26 +22,23 @@ namespace MediaController {
             /// Constructor.
             /// </summary>
             /// <param name="request">The requested media.</param>
-            /// <param name="controller">A media controller object.</param>
-            /// <param name="liveUri">The location of the live RTSP stream.</param>
-            Stream(MediaRequest& request, MediaController::Controller& controller);
+            /// <param name="isVideo">Specifies wheather this Stream handles audio or video.</param>
+            Stream(MediaRequest& request, bool isVideo);
 
             /// <summary>
             /// Virtual destructor.
             /// </summary>
             virtual ~Stream();
-            virtual bool Play(float speed) override;
-            virtual void Pause() override;
-            virtual void Stop() override;
-            virtual void FrameForward() override;
-            virtual void FrameBackward() override;
-            virtual bool Seek(unsigned int unixTime, float speed) override;
-            virtual bool GoToLive() override;
-            virtual void NewRequest(MediaRequest& request) override;
-            virtual bool Resume(unsigned int unixTime, float speed) override;
+            bool Play(float speed = 0, unsigned int unixTime = 0) override;
+            void PlayStream(float speed, unsigned int unixTime) override;
+            void Pause() override;
+            void Stop() override;
+            bool GoToLive() override;
+            void NewRequest(MediaRequest& request) override;
+            bool Resume(float speed = 0, unsigned int unixTime = 0) override;
 
         private:
-            Commands _rtspCommands;
+            Commands* _rtspCommands;
             std::unique_ptr<KeepAlive> _rtspKeepAlive;
         };
     }

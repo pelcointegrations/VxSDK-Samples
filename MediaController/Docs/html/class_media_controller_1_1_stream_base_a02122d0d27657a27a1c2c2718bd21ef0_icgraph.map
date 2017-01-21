@@ -1,4 +1,0 @@
-<map id="MediaController::StreamBase::Resume" name="MediaController::StreamBase::Resume">
-<area shape="rect" id="node2" href="$class_media_controller_1_1_playing_state.html#af11c2334ac505ee1299e544a2a964c04" title="Perform the Play action based on the stream state. " alt="" coords="261,5,424,47"/>
-<area shape="rect" id="node3" href="$class_media_controller_1_1_paused_state.html#a85739ebb8913694177992e83ca26b122" title="Perform the Play action based on the stream state. " alt="" coords="245,71,440,112"/>
-</map>

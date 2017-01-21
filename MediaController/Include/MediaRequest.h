@@ -10,15 +10,30 @@ namespace MediaController {
     /// </summary>
     struct MediaRequest {
 
+        MediaRequest() {
+            dataSource = nullptr;
+            audioDataSource = nullptr;
+        }
+
         /// <summary>
-        /// The data source to use to create the new stream.
+        /// The data source to use to create the new video stream.
         /// </summary>
         VxSdk::IVxDataSource* dataSource;
 
         /// <summary>
-        /// The protocol to use for the new stream.
+        /// The protocol to use for the new video stream.
         /// </summary>
         VxSdk::IVxDataInterface dataInterface;
+
+        /// <summary>
+        /// The data source to use to create the new audio stream.
+        /// </summary>
+        VxSdk::IVxDataSource* audioDataSource;
+
+        /// <summary>
+        /// The protocol to use for the new audio stream.
+        /// </summary>
+        VxSdk::IVxDataInterface audioDataInterface;
     };
 }
 #endif // MediaRequest_h__

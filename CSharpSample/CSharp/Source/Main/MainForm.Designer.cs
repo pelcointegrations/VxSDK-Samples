@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.btnPlay = new System.Windows.Forms.Button();
             this.lvDataSources = new System.Windows.Forms.ListView();
             this.colHeadName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -35,10 +36,18 @@
             this.panelVideoStreamLeft = new System.Windows.Forms.Panel();
             this.btnPause = new System.Windows.Forms.Button();
             this.btnStop = new System.Windows.Forms.Button();
-            this.lblTimeStampLeft = new System.Windows.Forms.Label();
+            this.lblTimestampLeft = new System.Windows.Forms.Label();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.connectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.vxSDKLogLevelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logTraceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logDebugToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logWarningToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logErrorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logFatalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logDisableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.snapshotPathToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showLogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -56,9 +65,16 @@
             this.mjpegToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bookmarkManagerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clusterConfigToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataObjectsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataStorageManagerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.devicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.drawingManagerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportManagerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.licenseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.monitorsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.notificationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.quickReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rolesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.scheduleManagerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.situationManagerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -72,7 +88,7 @@
             this.pbLoadCameras = new System.Windows.Forms.ProgressBar();
             this.lblAddingCameras = new System.Windows.Forms.Label();
             this.btnSnapshot = new System.Windows.Forms.Button();
-            this.lblTimeStampRight = new System.Windows.Forms.Label();
+            this.lblTimestampRight = new System.Windows.Forms.Label();
             this.scVideoPanels = new System.Windows.Forms.SplitContainer();
             this.panelVideoStreamRight = new System.Windows.Forms.Panel();
             this.scOuter = new System.Windows.Forms.SplitContainer();
@@ -139,12 +155,17 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelVideoStreamLeft.BackColor = System.Drawing.SystemColors.WindowText;
-            this.panelVideoStreamLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelVideoStreamLeft.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelVideoStreamLeft.BackgroundImage")));
+            this.panelVideoStreamLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panelVideoStreamLeft.Location = new System.Drawing.Point(3, 3);
             this.panelVideoStreamLeft.Name = "panelVideoStreamLeft";
             this.panelVideoStreamLeft.Size = new System.Drawing.Size(584, 353);
             this.panelVideoStreamLeft.TabIndex = 2;
+            this.panelVideoStreamLeft.Click += new System.EventHandler(this.PanelVideoStream_Click);
             this.panelVideoStreamLeft.MouseClick += new System.Windows.Forms.MouseEventHandler(this.PanelVideoStreamLeft_MouseClick);
+            this.panelVideoStreamLeft.MouseEnter += new System.EventHandler(this.PanelVideoStream_MouseEnter);
+            this.panelVideoStreamLeft.MouseLeave += new System.EventHandler(this.PanelVideoStream_MouseLeave);
+            this.panelVideoStreamLeft.MouseWheel += new System.Windows.Forms.MouseEventHandler(this.PanelVideoStream_MouseWheel);
             // 
             // btnPause
             // 
@@ -170,13 +191,13 @@
             this.btnStop.UseVisualStyleBackColor = true;
             this.btnStop.Click += new System.EventHandler(this.ButtonStop_Click);
             // 
-            // lblTimeStampLeft
+            // lblTimestampLeft
             // 
-            this.lblTimeStampLeft.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.lblTimeStampLeft.Location = new System.Drawing.Point(3, 364);
-            this.lblTimeStampLeft.Name = "lblTimeStampLeft";
-            this.lblTimeStampLeft.Size = new System.Drawing.Size(125, 25);
-            this.lblTimeStampLeft.TabIndex = 11;
+            this.lblTimestampLeft.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblTimestampLeft.Location = new System.Drawing.Point(3, 364);
+            this.lblTimestampLeft.Name = "lblTimestampLeft";
+            this.lblTimestampLeft.Size = new System.Drawing.Size(125, 25);
+            this.lblTimestampLeft.TabIndex = 11;
             // 
             // menuStrip
             // 
@@ -196,6 +217,7 @@
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.connectToolStripMenuItem,
+            this.vxSDKLogLevelToolStripMenuItem,
             this.snapshotPathToolStripMenuItem,
             this.showLogToolStripMenuItem,
             this.exitToolStripMenuItem});
@@ -209,6 +231,78 @@
             this.connectToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
             this.connectToolStripMenuItem.Text = "Connect";
             this.connectToolStripMenuItem.Click += new System.EventHandler(this.MenuItemConnect_Click);
+            // 
+            // vxSDKLogLevelToolStripMenuItem
+            // 
+            this.vxSDKLogLevelToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.logTraceToolStripMenuItem,
+            this.logDebugToolStripMenuItem,
+            this.logInfoToolStripMenuItem,
+            this.logWarningToolStripMenuItem,
+            this.logErrorToolStripMenuItem,
+            this.logFatalToolStripMenuItem,
+            this.logDisableToolStripMenuItem});
+            this.vxSDKLogLevelToolStripMenuItem.Name = "vxSDKLogLevelToolStripMenuItem";
+            this.vxSDKLogLevelToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
+            this.vxSDKLogLevelToolStripMenuItem.Text = "VxSDK Log Level";
+            // 
+            // logTraceToolStripMenuItem
+            // 
+            this.logTraceToolStripMenuItem.Name = "logTraceToolStripMenuItem";
+            this.logTraceToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.logTraceToolStripMenuItem.Tag = 0;
+            this.logTraceToolStripMenuItem.Text = "Trace";
+            this.logTraceToolStripMenuItem.Click += new System.EventHandler(this.MenuItemLogLevel_Click);
+            // 
+            // logDebugToolStripMenuItem
+            // 
+            this.logDebugToolStripMenuItem.Name = "logDebugToolStripMenuItem";
+            this.logDebugToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.logDebugToolStripMenuItem.Tag = 1;
+            this.logDebugToolStripMenuItem.Text = "Debug";
+            this.logDebugToolStripMenuItem.Click += new System.EventHandler(this.MenuItemLogLevel_Click);
+            // 
+            // logInfoToolStripMenuItem
+            // 
+            this.logInfoToolStripMenuItem.Checked = true;
+            this.logInfoToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.logInfoToolStripMenuItem.Name = "logInfoToolStripMenuItem";
+            this.logInfoToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.logInfoToolStripMenuItem.Tag = 2;
+            this.logInfoToolStripMenuItem.Text = "Info";
+            this.logInfoToolStripMenuItem.Click += new System.EventHandler(this.MenuItemLogLevel_Click);
+            // 
+            // logWarningToolStripMenuItem
+            // 
+            this.logWarningToolStripMenuItem.Name = "logWarningToolStripMenuItem";
+            this.logWarningToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.logWarningToolStripMenuItem.Tag = 3;
+            this.logWarningToolStripMenuItem.Text = "Warning";
+            this.logWarningToolStripMenuItem.Click += new System.EventHandler(this.MenuItemLogLevel_Click);
+            // 
+            // logErrorToolStripMenuItem
+            // 
+            this.logErrorToolStripMenuItem.Name = "logErrorToolStripMenuItem";
+            this.logErrorToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.logErrorToolStripMenuItem.Tag = 4;
+            this.logErrorToolStripMenuItem.Text = "Error";
+            this.logErrorToolStripMenuItem.Click += new System.EventHandler(this.MenuItemLogLevel_Click);
+            // 
+            // logFatalToolStripMenuItem
+            // 
+            this.logFatalToolStripMenuItem.Name = "logFatalToolStripMenuItem";
+            this.logFatalToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.logFatalToolStripMenuItem.Tag = 5;
+            this.logFatalToolStripMenuItem.Text = "Fatal";
+            this.logFatalToolStripMenuItem.Click += new System.EventHandler(this.MenuItemLogLevel_Click);
+            // 
+            // logDisableToolStripMenuItem
+            // 
+            this.logDisableToolStripMenuItem.Name = "logDisableToolStripMenuItem";
+            this.logDisableToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.logDisableToolStripMenuItem.Tag = 6;
+            this.logDisableToolStripMenuItem.Text = "Disable";
+            this.logDisableToolStripMenuItem.Click += new System.EventHandler(this.MenuItemLogLevel_Click);
             // 
             // snapshotPathToolStripMenuItem
             // 
@@ -331,9 +425,16 @@
             // 
             this.manageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bookmarkManagerToolStripMenuItem,
+            this.clusterConfigToolStripMenuItem,
             this.dataObjectsToolStripMenuItem,
             this.dataStorageManagerToolStripMenuItem,
+            this.devicesToolStripMenuItem,
+            this.drawingManagerToolStripMenuItem,
             this.exportManagerToolStripMenuItem,
+            this.licenseToolStripMenuItem,
+            this.monitorsToolStripMenuItem,
+            this.notificationsToolStripMenuItem,
+            this.quickReportToolStripMenuItem,
             this.rolesToolStripMenuItem,
             this.scheduleManagerToolStripMenuItem,
             this.situationManagerToolStripMenuItem,
@@ -347,63 +448,112 @@
             // bookmarkManagerToolStripMenuItem
             // 
             this.bookmarkManagerToolStripMenuItem.Name = "bookmarkManagerToolStripMenuItem";
-            this.bookmarkManagerToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.bookmarkManagerToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.bookmarkManagerToolStripMenuItem.Text = "Bookmarks";
             this.bookmarkManagerToolStripMenuItem.Click += new System.EventHandler(this.MenuItemBookmarkManager_Click);
+            // 
+            // clusterConfigToolStripMenuItem
+            // 
+            this.clusterConfigToolStripMenuItem.Name = "clusterConfigToolStripMenuItem";
+            this.clusterConfigToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.clusterConfigToolStripMenuItem.Text = "Cluster Configuration";
+            this.clusterConfigToolStripMenuItem.Click += new System.EventHandler(this.MenuItemClusterConfig_Click);
             // 
             // dataObjectsToolStripMenuItem
             // 
             this.dataObjectsToolStripMenuItem.Name = "dataObjectsToolStripMenuItem";
-            this.dataObjectsToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.dataObjectsToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.dataObjectsToolStripMenuItem.Text = "Data Objects";
             this.dataObjectsToolStripMenuItem.Click += new System.EventHandler(this.MenuItemDataObjectManager_Click);
             // 
             // dataStorageManagerToolStripMenuItem
             // 
             this.dataStorageManagerToolStripMenuItem.Name = "dataStorageManagerToolStripMenuItem";
-            this.dataStorageManagerToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.dataStorageManagerToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.dataStorageManagerToolStripMenuItem.Text = "Data Storage";
             this.dataStorageManagerToolStripMenuItem.Click += new System.EventHandler(this.MenuItemDataStorageManager_Click);
+            // 
+            // devicesToolStripMenuItem
+            // 
+            this.devicesToolStripMenuItem.Name = "devicesToolStripMenuItem";
+            this.devicesToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.devicesToolStripMenuItem.Text = "Devices";
+            this.devicesToolStripMenuItem.Click += new System.EventHandler(this.MenuItemDeviceManager_Click);
+            // 
+            // drawingManagerToolStripMenuItem
+            // 
+            this.drawingManagerToolStripMenuItem.Name = "drawingManagerToolStripMenuItem";
+            this.drawingManagerToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.drawingManagerToolStripMenuItem.Text = "Drawings";
+            this.drawingManagerToolStripMenuItem.Click += new System.EventHandler(this.MenuItemDrawingManager_Click);
             // 
             // exportManagerToolStripMenuItem
             // 
             this.exportManagerToolStripMenuItem.Name = "exportManagerToolStripMenuItem";
-            this.exportManagerToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.exportManagerToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.exportManagerToolStripMenuItem.Text = "Exports";
             this.exportManagerToolStripMenuItem.Click += new System.EventHandler(this.MenuItemExportManager_Click);
+            // 
+            // licenseToolStripMenuItem
+            // 
+            this.licenseToolStripMenuItem.Name = "licenseToolStripMenuItem";
+            this.licenseToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.licenseToolStripMenuItem.Text = "License";
+            this.licenseToolStripMenuItem.Click += new System.EventHandler(this.MenuItemLicenseDetails_Click);
+            // 
+            // monitorsToolStripMenuItem
+            // 
+            this.monitorsToolStripMenuItem.Name = "monitorsToolStripMenuItem";
+            this.monitorsToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.monitorsToolStripMenuItem.Text = "Monitors";
+            this.monitorsToolStripMenuItem.Click += new System.EventHandler(this.MenuItemMonitors_Click);
+            // 
+            // notificationsToolStripMenuItem
+            // 
+            this.notificationsToolStripMenuItem.Name = "notificationsToolStripMenuItem";
+            this.notificationsToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.notificationsToolStripMenuItem.Text = "Notifications";
+            this.notificationsToolStripMenuItem.Click += new System.EventHandler(this.MenuItemNotifications_Click);
+            // 
+            // quickReportToolStripMenuItem
+            // 
+            this.quickReportToolStripMenuItem.Name = "quickReportToolStripMenuItem";
+            this.quickReportToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.quickReportToolStripMenuItem.Text = "Quick Report";
+            this.quickReportToolStripMenuItem.Click += new System.EventHandler(this.MenuItemQuickReport_Click);
             // 
             // rolesToolStripMenuItem
             // 
             this.rolesToolStripMenuItem.Name = "rolesToolStripMenuItem";
-            this.rolesToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.rolesToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.rolesToolStripMenuItem.Text = "Roles";
             this.rolesToolStripMenuItem.Click += new System.EventHandler(this.MenuItemRoleManager_Click);
             // 
             // scheduleManagerToolStripMenuItem
             // 
             this.scheduleManagerToolStripMenuItem.Name = "scheduleManagerToolStripMenuItem";
-            this.scheduleManagerToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.scheduleManagerToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.scheduleManagerToolStripMenuItem.Text = "Schedules";
             this.scheduleManagerToolStripMenuItem.Click += new System.EventHandler(this.MenuItemScheduleManager_Click);
             // 
             // situationManagerToolStripMenuItem
             // 
             this.situationManagerToolStripMenuItem.Name = "situationManagerToolStripMenuItem";
-            this.situationManagerToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.situationManagerToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.situationManagerToolStripMenuItem.Text = "Situations";
             this.situationManagerToolStripMenuItem.Click += new System.EventHandler(this.MenuItemSituationManager_Click);
             // 
             // tagManagerToolStripMenuItem
             // 
             this.tagManagerToolStripMenuItem.Name = "tagManagerToolStripMenuItem";
-            this.tagManagerToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.tagManagerToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.tagManagerToolStripMenuItem.Text = "Tags";
             this.tagManagerToolStripMenuItem.Click += new System.EventHandler(this.MenuItemTagManager_Click);
             // 
             // usersToolStripMenuItem
             // 
             this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
-            this.usersToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.usersToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.usersToolStripMenuItem.Text = "Users";
             this.usersToolStripMenuItem.Click += new System.EventHandler(this.MenuItemUserManager_Click);
             // 
@@ -482,9 +632,9 @@
             // scInner.Panel2
             // 
             this.scInner.Panel2.Controls.Add(this.btnSnapshot);
-            this.scInner.Panel2.Controls.Add(this.lblTimeStampRight);
+            this.scInner.Panel2.Controls.Add(this.lblTimestampRight);
             this.scInner.Panel2.Controls.Add(this.scVideoPanels);
-            this.scInner.Panel2.Controls.Add(this.lblTimeStampLeft);
+            this.scInner.Panel2.Controls.Add(this.lblTimestampLeft);
             this.scInner.Panel2.Controls.Add(this.nudSpeed);
             this.scInner.Panel2.Controls.Add(this.btnLive);
             this.scInner.Panel2.Controls.Add(this.lblSpeed);
@@ -528,20 +678,21 @@
             this.btnSnapshot.UseVisualStyleBackColor = true;
             this.btnSnapshot.Click += new System.EventHandler(this.ButtonSnapshot_Click);
             // 
-            // lblTimeStampRight
+            // lblTimestampRight
             // 
-            this.lblTimeStampRight.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblTimeStampRight.Location = new System.Drawing.Point(1058, 364);
-            this.lblTimeStampRight.Name = "lblTimeStampRight";
-            this.lblTimeStampRight.Size = new System.Drawing.Size(125, 25);
-            this.lblTimeStampRight.TabIndex = 44;
-            this.lblTimeStampRight.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lblTimestampRight.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTimestampRight.Location = new System.Drawing.Point(1058, 364);
+            this.lblTimestampRight.Name = "lblTimestampRight";
+            this.lblTimestampRight.Size = new System.Drawing.Size(125, 25);
+            this.lblTimestampRight.TabIndex = 44;
+            this.lblTimestampRight.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // scVideoPanels
             // 
             this.scVideoPanels.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.scVideoPanels.BackColor = System.Drawing.SystemColors.Control;
             this.scVideoPanels.Location = new System.Drawing.Point(3, 3);
             this.scVideoPanels.Name = "scVideoPanels";
             // 
@@ -562,12 +713,17 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelVideoStreamRight.BackColor = System.Drawing.SystemColors.WindowText;
-            this.panelVideoStreamRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelVideoStreamRight.Location = new System.Drawing.Point(5, 3);
+            this.panelVideoStreamRight.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelVideoStreamRight.BackgroundImage")));
+            this.panelVideoStreamRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panelVideoStreamRight.Location = new System.Drawing.Point(3, 3);
             this.panelVideoStreamRight.Name = "panelVideoStreamRight";
-            this.panelVideoStreamRight.Size = new System.Drawing.Size(581, 353);
+            this.panelVideoStreamRight.Size = new System.Drawing.Size(578, 353);
             this.panelVideoStreamRight.TabIndex = 3;
+            this.panelVideoStreamRight.Click += new System.EventHandler(this.PanelVideoStream_Click);
             this.panelVideoStreamRight.MouseClick += new System.Windows.Forms.MouseEventHandler(this.PanelVideoStreamRight_MouseClick);
+            this.panelVideoStreamRight.MouseEnter += new System.EventHandler(this.PanelVideoStream_MouseEnter);
+            this.panelVideoStreamRight.MouseLeave += new System.EventHandler(this.PanelVideoStream_MouseLeave);
+            this.panelVideoStreamRight.MouseWheel += new System.Windows.Forms.MouseEventHandler(this.PanelVideoStream_MouseWheel);
             // 
             // scOuter
             // 
@@ -642,7 +798,7 @@
 
         public System.Windows.Forms.Panel panelVideoStreamLeft;
 
-        public System.Windows.Forms.Label lblTimeStampLeft;
+        public System.Windows.Forms.Label lblTimestampLeft;
         public System.Windows.Forms.ListView lvDataSources;
         private System.Windows.Forms.MenuStrip menuStrip;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
@@ -672,7 +828,7 @@
 
         public System.Windows.Forms.SplitContainer scVideoPanels;
 
-        public System.Windows.Forms.Label lblTimeStampRight;
+        public System.Windows.Forms.Label lblTimestampRight;
         private System.Windows.Forms.ToolStripMenuItem showLogToolStripMenuItem;
         public System.Windows.Forms.Button btnSnapshot;
         private System.Windows.Forms.ToolStripMenuItem snapshotPathToolStripMenuItem;
@@ -691,6 +847,21 @@
         private System.Windows.Forms.ToolStripMenuItem usersToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dataObjectsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem rolesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clusterConfigToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem drawingManagerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem devicesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem licenseToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem notificationsToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem vxSDKLogLevelToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem logTraceToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem logDebugToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem logInfoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem logWarningToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem logErrorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem logFatalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem logDisableToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem quickReportToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem monitorsToolStripMenuItem;
     }
 }
 

@@ -37,7 +37,7 @@
             this.chId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chDomain = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chState = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.chPasswordExperation = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chPasswordExpiration = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // btnRefresh
@@ -87,7 +87,7 @@
             this.chId,
             this.chDomain,
             this.chState,
-            this.chPasswordExperation});
+            this.chPasswordExpiration});
             this.lvUsers.FullRowSelect = true;
             this.lvUsers.Location = new System.Drawing.Point(12, 12);
             this.lvUsers.MultiSelect = false;
@@ -116,10 +116,10 @@
             // 
             this.chState.Text = "State";
             // 
-            // chPasswordExperation
+            // chPasswordExpiration
             // 
-            this.chPasswordExperation.Text = "Password Experation";
-            this.chPasswordExperation.Width = 137;
+            this.chPasswordExpiration.Text = "Password Expiration";
+            this.chPasswordExpiration.Width = 137;
             // 
             // UserManagerForm
             // 
@@ -152,6 +152,6 @@
         private System.Windows.Forms.ColumnHeader chId;
         private System.Windows.Forms.ColumnHeader chDomain;
         private System.Windows.Forms.ColumnHeader chState;
-        private System.Windows.Forms.ColumnHeader chPasswordExperation;
+        private System.Windows.Forms.ColumnHeader chPasswordExpiration;
     }
 }

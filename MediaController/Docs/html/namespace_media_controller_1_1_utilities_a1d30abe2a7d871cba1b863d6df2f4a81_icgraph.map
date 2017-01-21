@@ -1,5 +1,6 @@
 <map id="MediaController::Utilities::UnixTimeToRfc3339" name="MediaController::Utilities::UnixTimeToRfc3339">
-<area shape="rect" id="node2" href="$class_media_controller_1_1_rtsp_1_1_commands.html#aca7fdcac23d14e5b9aebafb598d2002e" title="Send the PLAY method with a Range header and read the server response. " alt="" coords="216,29,376,71"/>
-<area shape="rect" id="node3" href="$class_media_controller_1_1_rtsp_1_1_stream.html#a7cd6a0ebc8cf8bfceeb5874ff713134e" title="Call Play on the stream with the supplied start time, resulting in a playback stream. " alt="" coords="424,29,571,71"/>
-<area shape="rect" id="node4" href="$class_media_controller_1_1_rtsp_1_1_stream.html#ae479b9bed38549d274d24f69cf277637" title="Call Seek on the stream using the last timestamp received as the start time. " alt="" coords="619,29,765,71"/>
+<area shape="rect" id="node2" href="$class_media_controller_1_1_rtsp_1_1_commands.html#a668fd4ee9f6b286b7dabaa5b8cf9c936" title="Send the PLAY method with a Range header and read the server response. " alt="" coords="216,71,396,112"/>
+<area shape="rect" id="node3" href="$class_media_controller_1_1_rtsp_1_1_commands.html#aaa4a45195e2f54a422b8442eb6187551" title="Destructor. " alt="" coords="444,5,623,47"/>
+<area shape="rect" id="node4" href="$class_media_controller_1_1_rtsp_1_1_stream.html#a4c2d53803d2e6b6dfef82f3f3531ddb6" title="Call Play on the stream. " alt="" coords="460,71,607,112"/>
+<area shape="rect" id="node5" href="$class_media_controller_1_1_rtsp_1_1_stream.html#a49b9998b7473949c38b3494bc6bdfbf8" title="Send PLAY on an existing stream. " alt="" coords="460,136,607,177"/>
 </map>

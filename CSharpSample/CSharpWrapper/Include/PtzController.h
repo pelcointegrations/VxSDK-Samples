@@ -81,18 +81,6 @@ namespace CPPCli {
         !PtzController();
 
         /// <summary>
-        /// Get the available patterns.
-        /// </summary>
-        /// <returns>A <c>List</c> of patterns.</returns>
-        System::Collections::Generic::List<Pattern^>^ GetPatterns();
-
-        /// <summary>
-        /// Get the available presets.
-        /// </summary>
-        /// <returns>A <c>List</c> of presets.</returns>
-        System::Collections::Generic::List<Preset^>^ GetPresets();
-
-        /// <summary>
         /// Move to the absolute position of the given coordinates.
         /// </summary>
         /// <param name="positionX">The X coordinate absolute position (pan).</param>
@@ -131,6 +119,20 @@ namespace CPPCli {
         Results::Value AbsoluteZoom(int positionZ);
 
         /// <summary>
+        /// Focus near or far until the user wants to stop.
+        /// </summary>
+        /// <param name="nearFar">The direction to focus.</param>
+        /// <returns>The <see cref="Results::Value">Result</see> of the focus call.</returns>
+        Results::Value ContinuousFocus(FocusDirections nearFar);
+
+        /// <summary>
+        /// Open or close the iris until the user wants to stop.
+        /// </summary>
+        /// <param name="openClose">The direction to change the iris.</param>
+        /// <returns>The <see cref="Results::Value">Result</see> of the iris call.</returns>
+        Results::Value ContinuousIris(IrisDirections openClose);
+
+        /// <summary>
         /// Continuously move the field of view at the given speed until stopped.
         /// </summary>
         /// <param name="speedX">Pan speed. Negative values pan left, positive values pan right.</param>
@@ -138,6 +140,24 @@ namespace CPPCli {
         /// <param name="inOut">The direction to zoom.</param>
         /// <returns>The <see cref="Results::Value">Result</see> of the continuous move.</returns>
         Results::Value ContinuousMove(int speedX, int speedY, ZoomDirections inOut);
+
+        /// <summary>
+        /// Get the available patterns.
+        /// </summary>
+        /// <returns>A <c>List</c> of patterns.</returns>
+        System::Collections::Generic::List<Pattern^>^ GetPatterns();
+
+        /// <summary>
+        /// Get the available presets.
+        /// </summary>
+        /// <returns>A <c>List</c> of presets.</returns>
+        System::Collections::Generic::List<Preset^>^ GetPresets();
+
+        /// <summary>
+        /// Update this instances properties.
+        /// </summary>
+        /// <returns>The <see cref="Results::Value">Result</see> of updating the properties.</returns>
+        Results::Value Refresh();
 
         /// <summary>
         /// Moves the camera position relative to the current position.
@@ -152,18 +172,19 @@ namespace CPPCli {
         Results::Value RelativeMove(int deltaX, int deltaY, int deltaZ);
 
         /// <summary>
-        /// Open or close the iris until the user wants to stop.
+        /// Moves the camera position within a percentage relative to the device’s current field of view.
         /// </summary>
-        /// <param name="openClose">The direction to change the iris.</param>
-        /// <returns>The <see cref="Results::Value">Result</see> of the iris call.</returns>
-        Results::Value ContinuousIris(IrisDirections openClose);
-
-        /// <summary>
-        /// Focus near or far until the user wants to stop.
-        /// </summary>
-        /// <param name="nearFar">The direction to focus.</param>
-        /// <returns>The <see cref="Results::Value">Result</see> of the focus call.</returns>
-        Results::Value ContinuousFocus(FocusDirections nearFar);
+        /// <remarks>
+        /// The rotational x and y parameters are used to move within a percentage of the current field of view of the camera. For
+        /// instance, if the x parameter were 50 and the y parameter were -50, the pan/tilt would move halfway to the edge of the field
+        /// of view along the x axis and halfway to the field of view along the negative y axis from its present position.
+        /// </remarks>
+        /// <param name="percentageX">Percentage of the current field of view of the camera (X axis).  Positive values are to the right,
+        ///               negative values are to the left. Range: -100 to 100.</param>
+        /// <param name="percentageY">Percentage of the current field of view of the camera (Y axis).  Positive values are up, negative
+        ///               values are down. Range: -100 to 100.</param>
+        /// <returns>The <see cref="Results::Value">Result</see> of the relative percentage move.</returns>
+        Results::Value RelativePercentageMove(int percentageX, int percentageY);
 
         /// <summary>
         /// Stops all PTZ actions.
@@ -186,13 +207,11 @@ namespace CPPCli {
         Results::Value TriggerPreset(Preset^ preset);
 
         /// <summary>
-        /// Gets the <see cref="PtzLock"/> associated with this ptz controller.
+        /// Triggers a refresh of this <see cref="PtzController"/> on the VideoXpert system; updating its <see cref="Pattern">patterns</see>
+        /// and <see cref="Preset">presets</see> based on the current camera configuration.
         /// </summary>
-        /// <value><c>nullptr</c> if no ptz lock is available, else the <see cref="PtzLock"/>.</value>
-        property PtzLock^ PTZLock {
-        public:
-            PtzLock^ get() { return _GetPtzLock(); }
-        }
+        /// <returns>The <see cref="Results::Value">Result</see> of refreshing the <see cref="PtzController"/>.</returns>
+        Results::Value TriggerRefresh();
 
         /// <summary>
         /// Gets a value indicating whether the PTZ control is locked.
@@ -210,6 +229,15 @@ namespace CPPCli {
         property int LockExpireTime {
         public:
             int get() { return _ptzController->lockExpireTime; }
+        }
+
+        /// <summary>
+        /// Gets the <see cref="PtzLock"/> associated with this ptz controller.
+        /// </summary>
+        /// <value><c>nullptr</c> if no ptz lock is available, else the <see cref="PtzLock"/>.</value>
+        property PtzLock^ PTZLock {
+        public:
+            PtzLock^ get() { return _GetPtzLock(); }
         }
 
         /// <summary>

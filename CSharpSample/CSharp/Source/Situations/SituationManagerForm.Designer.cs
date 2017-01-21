@@ -35,6 +35,7 @@
             this.btnNewSituation = new System.Windows.Forms.Button();
             this.btnDeleteSituation = new System.Windows.Forms.Button();
             this.btnViewSituation = new System.Windows.Forms.Button();
+            this.btnModifyNotifications = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lvSituationManager
@@ -73,7 +74,7 @@
             // 
             this.btnNewSituation.Location = new System.Drawing.Point(650, 12);
             this.btnNewSituation.Name = "btnNewSituation";
-            this.btnNewSituation.Size = new System.Drawing.Size(94, 23);
+            this.btnNewSituation.Size = new System.Drawing.Size(107, 23);
             this.btnNewSituation.TabIndex = 4;
             this.btnNewSituation.Text = "Add New";
             this.btnNewSituation.UseVisualStyleBackColor = true;
@@ -81,9 +82,9 @@
             // 
             // btnDeleteSituation
             // 
-            this.btnDeleteSituation.Location = new System.Drawing.Point(650, 70);
+            this.btnDeleteSituation.Location = new System.Drawing.Point(650, 99);
             this.btnDeleteSituation.Name = "btnDeleteSituation";
-            this.btnDeleteSituation.Size = new System.Drawing.Size(94, 23);
+            this.btnDeleteSituation.Size = new System.Drawing.Size(107, 23);
             this.btnDeleteSituation.TabIndex = 5;
             this.btnDeleteSituation.Text = "Delete";
             this.btnDeleteSituation.UseVisualStyleBackColor = true;
@@ -93,17 +94,28 @@
             // 
             this.btnViewSituation.Location = new System.Drawing.Point(650, 41);
             this.btnViewSituation.Name = "btnViewSituation";
-            this.btnViewSituation.Size = new System.Drawing.Size(94, 23);
+            this.btnViewSituation.Size = new System.Drawing.Size(107, 23);
             this.btnViewSituation.TabIndex = 6;
             this.btnViewSituation.Text = "View Details";
             this.btnViewSituation.UseVisualStyleBackColor = true;
             this.btnViewSituation.Click += new System.EventHandler(this.ButtonViewSituation_Click);
             // 
+            // btnModifyNotifications
+            // 
+            this.btnModifyNotifications.Location = new System.Drawing.Point(650, 70);
+            this.btnModifyNotifications.Name = "btnModifyNotifications";
+            this.btnModifyNotifications.Size = new System.Drawing.Size(107, 23);
+            this.btnModifyNotifications.TabIndex = 7;
+            this.btnModifyNotifications.Text = "Modify Notifications";
+            this.btnModifyNotifications.UseVisualStyleBackColor = true;
+            this.btnModifyNotifications.Click += new System.EventHandler(this.ButtonModifyNotifications_Click);
+            // 
             // SituationManagerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(748, 343);
+            this.ClientSize = new System.Drawing.Size(761, 343);
+            this.Controls.Add(this.btnModifyNotifications);
             this.Controls.Add(this.btnViewSituation);
             this.Controls.Add(this.btnDeleteSituation);
             this.Controls.Add(this.btnNewSituation);
@@ -127,5 +139,6 @@
         private System.Windows.Forms.Button btnNewSituation;
         private System.Windows.Forms.Button btnDeleteSituation;
         private System.Windows.Forms.Button btnViewSituation;
+        private System.Windows.Forms.Button btnModifyNotifications;
     }
 }

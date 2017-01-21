@@ -56,15 +56,27 @@
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(ProjectDir)ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\share\vs\2010\libs\gstreamer-1.0.props" />
+    <Import Project="$(ProjectDir)ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\share\vs\2010\libs\gstreamer-video-1.0.props" />
+    <Import Project="$(ProjectDir)ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\share\vs\2010\libs\gstreamer-rtp-1.0.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(ProjectDir)ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\share\vs\2010\libs\gstreamer-1.0.props" />
+    <Import Project="$(ProjectDir)ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\share\vs\2010\libs\gstreamer-video-1.0.props" />
+    <Import Project="$(ProjectDir)ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\share\vs\2010\libs\gstreamer-rtp-1.0.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(ProjectDir)ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\share\vs\2010\libs\gstreamer-1.0.props" />
+    <Import Project="$(ProjectDir)ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\share\vs\2010\libs\gstreamer-video-1.0.props" />
+    <Import Project="$(ProjectDir)ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\share\vs\2010\libs\gstreamer-rtp-1.0.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(ProjectDir)ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\share\vs\2010\libs\gstreamer-1.0.props" />
+    <Import Project="$(ProjectDir)ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\share\vs\2010\libs\gstreamer-video-1.0.props" />
+    <Import Project="$(ProjectDir)ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\share\vs\2010\libs\gstreamer-rtp-1.0.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -96,7 +108,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_WIN32_WINNT=0x0501;WIN32;_EXPORTING;_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(ProjectDir)ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\include\gstreamer-1.0;$(ProjectDir)ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\include\glib-2.0;$(ProjectDir)ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\lib\glib-2.0\include;$(ProjectDir)ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\lib\gstreamer-1.0\include;$(ProjectDir)ThirdParty\Boost\1.59.0.0\Include;$(ProjectDir)Include;$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)ThirdParty\Boost\1.59.0.0\Include;Include;$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Include;$(ProjectDir)\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\include\libsoup-2.4;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4267;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <AdditionalOptions>-D_SCL_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
       <GenerateXMLDocumentationFiles>true</GenerateXMLDocumentationFiles>
@@ -104,8 +116,8 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>VxSdkd.lib;glib-2.0.lib;gmodule-2.0.lib;gobject-2.0.lib;gstreamer-1.0.lib;gstapp-1.0.lib;gstaudio-1.0.lib;gstbadbase-1.0.lib;gstbadvideo-1.0.lib;gstbase-1.0.lib;gstbasecamerabinsrc-1.0.lib;gstcodecparsers-1.0.lib;gstcontroller-1.0.lib;gstfft-1.0.lib;gstgl-1.0.lib;gstinsertbin-1.0.lib;gstmpegts-1.0.lib;gstnet-1.0.lib;gstpbutils-1.0.lib;gstphotography-1.0.lib;gstriff-1.0.lib;gstrtp-1.0.lib;gstrtsp-1.0.lib;gstrtspserver-1.0.lib;gstsdp-1.0.lib;gsttag-1.0.lib;gsturidownloader-1.0.lib;gstvalidate-1.0.lib;gstvideo-1.0.lib;gthread-2.0.lib;harfbuzz.lib;iconv.lib;mpeg2convert.lib;mpeg2.lib;x264.lib;jpeg.lib;libboost_regex-vc120-mt-gd-1_59.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(ProjectDir)ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\lib;$(ProjectDir)ThirdParty\Boost\1.59.0.0\Lib\$(PlatformTarget)\$(Configuration);$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>VxSdkd.lib;libboost_regex-vc120-mt-gd-1_59.lib;gstaudio-1.0.lib;gstcontroller-1.0.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)ThirdParty\Boost\1.59.0.0\Lib\$(PlatformTarget)\$(Configuration);$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -115,15 +127,15 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_WIN32_WINNT=0x0501;WIN32;_EXPORTING;_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(ProjectDir)ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\include\gstreamer-1.0;$(ProjectDir)ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\include\glib-2.0;$(ProjectDir)ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\lib\glib-2.0\include;$(ProjectDir)ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\lib\gstreamer-1.0\include;$(ProjectDir)ThirdParty\Boost\1.59.0.0\Include;$(ProjectDir)Include;$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)ThirdParty\Boost\1.59.0.0\Include;Include;$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Include;$(ProjectDir)\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\include\libsoup-2.4;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4267;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <AdditionalOptions>-D_SCL_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>VxSdkd.lib;glib-2.0.lib;gmodule-2.0.lib;gobject-2.0.lib;gstreamer-1.0.lib;gstapp-1.0.lib;gstaudio-1.0.lib;gstbadbase-1.0.lib;gstbadvideo-1.0.lib;gstbase-1.0.lib;gstbasecamerabinsrc-1.0.lib;gstcodecparsers-1.0.lib;gstcontroller-1.0.lib;gstfft-1.0.lib;gstgl-1.0.lib;gstinsertbin-1.0.lib;gstmpegts-1.0.lib;gstnet-1.0.lib;gstpbutils-1.0.lib;gstphotography-1.0.lib;gstriff-1.0.lib;gstrtp-1.0.lib;gstrtsp-1.0.lib;gstrtspserver-1.0.lib;gstsdp-1.0.lib;gsttag-1.0.lib;gsturidownloader-1.0.lib;gstvalidate-1.0.lib;gstvideo-1.0.lib;gthread-2.0.lib;harfbuzz.lib;iconv.lib;mpeg2convert.lib;mpeg2.lib;x264.lib;jpeg.lib;libboost_regex-vc120-mt-gd-1_59.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(ProjectDir)ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\lib;$(ProjectDir)ThirdParty\Boost\1.59.0.0\Lib\$(PlatformTarget)\$(Configuration);$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>VxSdkd.lib;libboost_regex-vc120-mt-gd-1_59.lib;gstaudio-1.0.lib;gstcontroller-1.0.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)ThirdParty\Boost\1.59.0.0\Lib\$(PlatformTarget)\$(Configuration);$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -135,7 +147,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>_WIN32_WINNT=0x0501;WIN32;_EXPORTING;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(ProjectDir)ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\include\gstreamer-1.0;$(ProjectDir)ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\include\glib-2.0;$(ProjectDir)ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\lib\glib-2.0\include;$(ProjectDir)ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\lib\gstreamer-1.0\include;$(ProjectDir)ThirdParty\Boost\1.59.0.0\Include;$(ProjectDir)Include;$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)ThirdParty\Boost\1.59.0.0\Include;Include;$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Include;$(ProjectDir)\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\include\libsoup-2.4;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4267;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <AdditionalOptions>-D_SCL_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
@@ -144,8 +156,9 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>$(ProjectDir)ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\lib;$(ProjectDir)ThirdParty\Boost\1.59.0.0\Lib\$(PlatformTarget)\$(Configuration);$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>VxSdk.lib;glib-2.0.lib;gmodule-2.0.lib;gobject-2.0.lib;gstreamer-1.0.lib;gstapp-1.0.lib;gstaudio-1.0.lib;gstbadbase-1.0.lib;gstbadvideo-1.0.lib;gstbase-1.0.lib;gstbasecamerabinsrc-1.0.lib;gstcodecparsers-1.0.lib;gstcontroller-1.0.lib;gstfft-1.0.lib;gstgl-1.0.lib;gstinsertbin-1.0.lib;gstmpegts-1.0.lib;gstnet-1.0.lib;gstpbutils-1.0.lib;gstphotography-1.0.lib;gstriff-1.0.lib;gstrtp-1.0.lib;gstrtsp-1.0.lib;gstrtspserver-1.0.lib;gstsdp-1.0.lib;gsttag-1.0.lib;gsturidownloader-1.0.lib;gstvalidate-1.0.lib;gstvideo-1.0.lib;gthread-2.0.lib;harfbuzz.lib;iconv.lib;mpeg2convert.lib;mpeg2.lib;x264.lib;jpeg.lib;libboost_regex-vc120-mt-1_59.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)ThirdParty\Boost\1.59.0.0\Lib\$(PlatformTarget)\$(Configuration);$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>VxSdk.lib;libboost_regex-vc120-mt-1_59.lib;gstaudio-1.0.lib;gstcontroller-1.0.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -157,7 +170,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>_WIN32_WINNT=0x0501;WIN32;_EXPORTING;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(ProjectDir)ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\include\gstreamer-1.0;$(ProjectDir)ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\include\glib-2.0;$(ProjectDir)ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\lib\glib-2.0\include;$(ProjectDir)ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\lib\gstreamer-1.0\include;$(ProjectDir)ThirdParty\Boost\1.59.0.0\Include;$(ProjectDir)Include;$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)ThirdParty\Boost\1.59.0.0\Include;Include;$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Include;$(ProjectDir)\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\include\libsoup-2.4;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4267;4018;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <AdditionalOptions>-D_SCL_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
@@ -166,8 +179,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>$(ProjectDir)ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\lib;$(ProjectDir)ThirdParty\Boost\1.59.0.0\Lib\$(PlatformTarget)\$(Configuration);$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>VxSdk.lib;glib-2.0.lib;gmodule-2.0.lib;gobject-2.0.lib;gstreamer-1.0.lib;gstapp-1.0.lib;gstaudio-1.0.lib;gstbadbase-1.0.lib;gstbadvideo-1.0.lib;gstbase-1.0.lib;gstbasecamerabinsrc-1.0.lib;gstcodecparsers-1.0.lib;gstcontroller-1.0.lib;gstfft-1.0.lib;gstgl-1.0.lib;gstinsertbin-1.0.lib;gstmpegts-1.0.lib;gstnet-1.0.lib;gstpbutils-1.0.lib;gstphotography-1.0.lib;gstriff-1.0.lib;gstrtp-1.0.lib;gstrtsp-1.0.lib;gstrtspserver-1.0.lib;gstsdp-1.0.lib;gsttag-1.0.lib;gsturidownloader-1.0.lib;gstvalidate-1.0.lib;gstvideo-1.0.lib;gthread-2.0.lib;harfbuzz.lib;iconv.lib;mpeg2convert.lib;mpeg2.lib;x264.lib;jpeg.lib;libboost_regex-vc120-mt-1_59.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)ThirdParty\Boost\1.59.0.0\Lib\$(PlatformTarget)\$(Configuration);$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>VxSdk.lib;libboost_regex-vc120-mt-1_59.lib;gstaudio-1.0.lib;gstcontroller-1.0.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

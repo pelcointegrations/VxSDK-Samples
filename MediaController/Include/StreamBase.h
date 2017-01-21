@@ -6,7 +6,7 @@
 
 namespace MediaController {
     class GstWrapper;
-    class Controller;
+    class StreamState;
 
     /// <summary>
     /// The base class for the different stream types.
@@ -18,33 +18,49 @@ namespace MediaController {
         /// Virtual destructor.
         /// </summary>
         virtual ~StreamBase();
-        virtual bool Play(float speed) override;
-        virtual void Pause() override;
-        virtual void Stop() override;
-        virtual void FrameForward() override;
-        virtual void FrameBackward() override;
-        virtual bool Seek(unsigned int unixTime, float speed) override;
-        virtual void NewRequest(MediaRequest& request) override;
+        bool Play(float speed = 0, unsigned int unixTime = 0) override;
+        void Pause() override;
+        void Stop() override;
+        void NewRequest(MediaRequest& request) override;
 
         /// <summary>
-        /// Call Seek on the stream using the last timestamp received as the start time.
+        /// Send PLAY on an existing stream.
         /// </summary>
-        /// <param name="speed">The playback speed.  Negative values can be used for reverse playback.</param>
-        virtual bool Resume(unsigned int unixTime, float speed);
+        /// <param name="speed">The playback speed.  Negative values can be used for reverse
+        /// playback. A value of 0 will resume a paused stream.</param>
+        /// <param name="unixTime">The start time for playback. A value of 0 will start a live stream.</param>
+        virtual bool Resume(float speed = 0, unsigned int unixTime = 0);
 
         /// <summary>
         /// Get the current GStreamer wrapper instance.
         /// </summary>
         /// <returns>The current <see cref="GstWrapper"/> instance.</returns>
-        GstWrapper* GetGstreamer();
+        GstWrapper* GetGstreamer() const;
+
+        /// <summary>
+        /// Gets the current time of the stream.
+        /// </summary>
+        /// <returns>The last timestamp received.</returns>
+        unsigned int GetLastTimestamp() const;
+
+        /// <summary>
+        /// The current state of the stream.
+        /// </summary>
+        StreamState* state;
+
+        Mode GetMode() override;
+
+        /// <summary>
+        /// The protocol of the stream.
+        /// </summary>
+        VxSdk::VxStreamProtocol::Value protocol;
 
     protected:
         /// <summary>
         /// Constructor.
         /// </summary>
         /// <param name="request">The requested media.</param>
-        /// <param name="controller">A media controller object.</param>
-        StreamBase(MediaRequest& request, Controller& controller);
+        StreamBase(MediaRequest& request);
 
     private:
         /// <summary>
@@ -54,7 +70,6 @@ namespace MediaController {
 
     protected:
         MediaRequest _mediaRequest;
-        Controller* _controller;
         GstWrapper* _gst;
     };
 }

@@ -1,4 +1,4 @@
 <map id="MediaController::Controller::SetWindow" name="MediaController::Controller::SetWindow">
-<area shape="rect" id="node2" href="$class_media_controller_1_1_stream_base.html#a8426351a80597fb8d2a3a2ccc8ba732e" title="Get the current GStreamer wrapper instance. " alt="" coords="228,5,420,47"/>
-<area shape="rect" id="node3" href="$class_media_controller_1_1_gst_wrapper.html#afc541e40bd938d2ccae439a5079adea8" title="Set the display window using the given window handle. " alt="" coords="229,71,419,112"/>
+<area shape="rect" id="node2" href="$class_media_controller_1_1_stream_base.html#ad8c8fb7254a3d4cfc29a552fba440121" title="Get the current GStreamer wrapper instance. " alt="" coords="228,5,420,47"/>
+<area shape="rect" id="node3" href="$class_media_controller_1_1_gst_wrapper.html#a6f33a84644f3c2b8579af0668a1dd7f2" title="Set the display window using the given window handle. " alt="" coords="229,71,419,112"/>
 </map>

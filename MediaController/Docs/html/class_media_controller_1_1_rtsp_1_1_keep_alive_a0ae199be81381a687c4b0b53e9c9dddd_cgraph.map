@@ -1,0 +1,4 @@
+<map id="MediaController::Rtsp::KeepAlive::KeepAlive" name="MediaController::Rtsp::KeepAlive::KeepAlive">
+<area shape="rect" id="node2" href="$class_media_controller_1_1_rtsp_1_1_keep_alive.html#aa0ef59356d504b3729737ae1cdf49303" title="Make a GET_PARAMETERS method call to the associated stream. " alt="" coords="205,5,395,47"/>
+<area shape="rect" id="node3" href="$class_media_controller_1_1_rtsp_1_1_commands.html#a79759164915aea3bfef6b58f53355d7c" title="Send the GET_PARAMETER method and read the server response. " alt="" coords="443,5,628,47"/>
+</map>

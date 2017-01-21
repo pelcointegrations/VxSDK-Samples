@@ -33,13 +33,13 @@ namespace SDKSampleApp.Source
         /// <param name="args">The <paramref name="args"/> parameter</param>
         private void ButtonAdd_Click(object sender, EventArgs args)
         {
-            if (lvDataSources.SelectedItems[0] == null)
+            if (lvDataSources.SelectedItems.Count == 0)
                 return;
 
             var dataSource = (DataSource)lvDataSources.SelectedItems[0].Tag;
             var newBookmark = new NewBookmark
             {
-                Description = this.tbxDescription.Text,
+                Description = tbxDescription.Text,
                 Time = dtpTime.Value.ToUniversalTime(),
                 DataSourceId = dataSource.Id
             };

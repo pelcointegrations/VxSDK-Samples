@@ -9,10 +9,10 @@
 	</PropertyGroup>
 	<ItemDefinitionGroup>
 		<ClCompile>
-			<AdditionalIncludeDirectories>$(ProjectDir)\MediaController\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\include\glib-2.0;$(ProjectDir)\MediaController\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\lib\glib-2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<AdditionalIncludeDirectories>$(ProjectDir)\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\include\glib-2.0;$(ProjectDir)\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\lib\glib-2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
 		</ClCompile>
 		<Link>
-			<AdditionalLibraryDirectories>$(ProjectDir)\MediaController\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+			<AdditionalLibraryDirectories>$(ProjectDir)\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
 			<AdditionalDependencies>glib-2.0.lib;intl.lib;%(AdditionalDependencies)</AdditionalDependencies>
 		</Link>
 	</ItemDefinitionGroup>

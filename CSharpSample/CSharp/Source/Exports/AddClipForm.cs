@@ -110,7 +110,7 @@ namespace SDKSampleApp.Source
         {
             var newExportClip = new NewExportClip
             {
-                DataSourceId = SelectedClip.Id,
+                DataSourceId = SelectedClip.DataSourceId,
                 StartTime = dtpStartDate.Value.ToUniversalTime(),
                 EndTime = dtpEndDate.Value.ToUniversalTime()
             };

@@ -37,12 +37,36 @@ namespace CPPCli {
         }
 
         /// <summary>
+        /// Refreshes this instances properties.
+        /// </summary>
+        /// <returns>The <see cref="Results::Value">Result</see> of updating the properties.</returns>
+        Results::Value Update() { return (CPPCli::Results::Value)_dataSession->Update(); }
+
+        /// <summary>
+        /// Gets the vertical resolution of the data (Height).
+        /// </summary>
+        /// <value>The vertical resolution.</value>
+        property int Height {
+        public:
+            int get() { return _dataSession->yResolution; }
+        }
+
+        /// <summary>
         /// Gets the unique identifier of the sessions data source.
         /// </summary>
         /// <value>The unique identifier.</value>
         property System::String^ Id {
         public:
             System::String^ get() { return gcnew System::String(_dataSession->id); }
+        }
+
+        /// <summary>
+        /// Gets URI of the JPEG frame.
+        /// </summary>
+        /// <value>The JPEG URI.</value>
+        property System::String^ JpegUri {
+        public:
+            System::String^ get() { return gcnew System::String(_dataSession->jpegUri); }
         }
 
         /// <summary>
@@ -64,39 +88,12 @@ namespace CPPCli {
         }
 
         /// <summary>
-        /// Gets the absolute position of the session.
-        /// </summary>
-        /// <value>The absolute position.</value>
-        property System::DateTime Time {
-        public:
-            System::DateTime get() { return Utils::ConvertCharToDateTime(_dataSession->time); }
-        }
-
-        /// <summary>
         /// Gets the horizontal resolution of the data (Width).
         /// </summary>
         /// <value>The horizontal resolution.</value>
         property int Width {
         public:
             int get() { return _dataSession->xResolution; }
-        }
-
-        /// <summary>
-        /// Gets the vertical resolution of the data (Height).
-        /// </summary>
-        /// <value>The vertical resolution.</value>
-        property int Height {
-        public:
-            int get() { return _dataSession->yResolution; }
-        }
-
-        /// <summary>
-        /// Gets URI of the JPEG frame.
-        /// </summary>
-        /// <value>The JPEG URI.</value>
-        property System::String^ JpegUri {
-        public:
-            System::String^ get() { return gcnew System::String(_dataSession->jpegUri); }
         }
 
     internal:

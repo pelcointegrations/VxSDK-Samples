@@ -19,48 +19,34 @@ namespace MediaController {
         /// <summary>
         /// Perform the Play action based on the stream state.
         /// </summary>
-        /// <param name="controller">The controller instance.</param>
+        /// <param name="stream">The stream instance.</param>
         /// <param name="speed">The playback speed.</param>
-        virtual bool Play(Controller& controller, float speed);
+        /// <param name="unixTime">The start time for playback.</param>
+        virtual bool Play(StreamBase& stream, float speed, unsigned int unixTime) { return false; }
 
         /// <summary>
         /// Perform the Pause action based on the stream state.
         /// </summary>
-        /// <param name="controller">The controller instance.</param>
-        virtual void Pause(Controller& controller);
+        /// <param name="stream">The stream instance.</param>
+        virtual void Pause(StreamBase& stream) {}
 
         /// <summary>
         /// Perform the Stop action based on the stream state.
         /// </summary>
-        /// <param name="controller">The controller instance.</param>
-        virtual void Stop(Controller& controller);
+        /// <param name="stream">The stream instance.</param>
+        virtual void Stop(StreamBase& stream) {}
 
         /// <summary>
         /// Perform the GoToLive action based on the stream state.
         /// </summary>
-        /// <param name="controller">The controller instance.</param>
-        virtual bool GoToLive(Controller& controller);
-
-        /// <summary>
-        /// Perform the Seek action based on the stream state.
-        /// </summary>
-        /// <param name="controller">The controller instance.</param>
-        /// <param name="unixTime">The start time for playback.</param>
-        /// <param name="speed">The playback speed.</param>
-        virtual bool Seek(Controller& controller, unsigned int unixTime, float speed);
+        /// <param name="stream">The stream instance.</param>
+        virtual bool GoToLive(StreamBase& stream) { return false; }
 
     protected:
         /// <summary>
         /// Constructor.
         /// </summary>
-        StreamState();
-
-        /// <summary>
-        /// Set the current state of the stream.
-        /// </summary>
-        /// <param name="controller">The controller instance.</param>
-        /// <param name="state">The state to set the stream to.</param>
-        void SetState(Controller& controller, StreamState* state);
+        StreamState() {}
     };
 
     /// <summary>
@@ -73,11 +59,10 @@ namespace MediaController {
         /// Virtual destructor.
         /// </summary>
         virtual ~PlayingState() {}
-        virtual bool Play(Controller& controller, float speed) override;
-        virtual void Pause(Controller& controller) override;
-        virtual void Stop(Controller& controller) override;
-        virtual bool GoToLive(Controller& controller) override;
-        virtual bool Seek(Controller& controller, unsigned int unixTime, float speed) override;
+        bool Play(StreamBase& stream, float speed, unsigned int unixTime) override;
+        void Pause(StreamBase& stream) override;
+        void Stop(StreamBase& stream) override;
+        bool GoToLive(StreamBase& stream) override;
     };
 
     /// <summary>
@@ -90,10 +75,9 @@ namespace MediaController {
         /// Virtual destructor.
         /// </summary>
         virtual ~PausedState() {}
-        virtual bool Play(Controller& controller, float speed) override;
-        virtual void Stop(Controller& controller) override;
-        virtual bool GoToLive(Controller& controller) override;
-        virtual bool Seek(Controller& controller, unsigned int unixTime, float speed) override;
+        bool Play(StreamBase& stream, float speed, unsigned int unixTime) override;
+        void Stop(StreamBase& stream) override;
+        bool GoToLive(StreamBase& stream) override;
     };
 
     /// <summary>
@@ -106,9 +90,8 @@ namespace MediaController {
         /// Virtual destructor.
         /// </summary>
         virtual ~StoppedState() {}
-        virtual bool Play(Controller& controller, float speed) override;
-        virtual bool GoToLive(Controller& controller) override;
-        virtual bool Seek(Controller& controller, unsigned int unixTime, float speed) override;
+        bool Play(StreamBase& stream, float speed, unsigned int unixTime) override;
+        bool GoToLive(StreamBase& stream) override;
     };
 }
 #endif // StreamState_h__

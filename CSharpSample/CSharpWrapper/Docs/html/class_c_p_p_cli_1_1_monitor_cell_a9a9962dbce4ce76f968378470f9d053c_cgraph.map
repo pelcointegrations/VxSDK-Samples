@@ -1,0 +1,6 @@
+<map id="CPPCli::MonitorCell::~MonitorCell" name="CPPCli::MonitorCell::~MonitorCell">
+<area shape="rect" id="node2" href="$class_c_p_p_cli_1_1_monitor_cell.html#a8d448525b9d4c093461f09ba55c5a003" title="Constructor. " alt="" coords="191,5,328,47"/>
+<area shape="rect" id="node3" href="$class_c_p_p_cli_1_1_monitor_cell.html#aeaeb960a82933e928c7ebbced8c8d01b" title="Removes the active data source from this cell. " alt="" coords="191,71,328,112"/>
+<area shape="rect" id="node4" href="$class_c_p_p_cli_1_1_monitor_cell.html#ae8139302c061c1d754390a5f02ac97a9" title="Sets the position of the display data to live. " alt="" coords="191,136,328,177"/>
+<area shape="rect" id="node5" href="$class_c_p_p_cli_1_1_monitor_cell.html#a79471d20a09c418581b0491731703dd8" title="Refreshes this instances properties. " alt="" coords="191,201,328,243"/>
+</map>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
@@ -45,7 +46,7 @@ namespace SDKSampleApp.Source
             var builder = new StringBuilder();
             foreach (var value in nameSplit)
             {
-                builder.Append(char.ToUpper(value[0]) + value.Substring(1));
+                builder.Append(char.ToUpper(value[0], CultureInfo.InvariantCulture) + value.Substring(1));
                 builder.Append(' ');
             }
 
@@ -65,7 +66,7 @@ namespace SDKSampleApp.Source
 
             foreach (var value in typeArray)
             {
-                builder.Append(char.ToUpper(value[0]) + value.Substring(1));
+                builder.Append(char.ToUpper(value[0], CultureInfo.InvariantCulture) + value.Substring(1));
                 builder.Append(' ');
             }
 

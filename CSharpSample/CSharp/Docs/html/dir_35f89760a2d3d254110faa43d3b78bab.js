@@ -1,5 +1,8 @@
 var dir_35f89760a2d3d254110faa43d3b78bab =
 [
+    [ "ClusterConfigDetailsForm.cs", "_cluster_config_details_form_8cs.html", [
+      [ "ClusterConfigDetailsForm", "class_s_d_k_sample_app_1_1_source_1_1_cluster_config_details_form.html", "class_s_d_k_sample_app_1_1_source_1_1_cluster_config_details_form" ]
+    ] ],
     [ "ConnectForm.cs", "_connect_form_8cs.html", [
       [ "ConnectForm", "class_s_d_k_sample_app_1_1_source_1_1_connect_form.html", "class_s_d_k_sample_app_1_1_source_1_1_connect_form" ]
     ] ],

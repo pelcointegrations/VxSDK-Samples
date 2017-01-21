@@ -1,6 +1,7 @@
 <map id="CPPCli::Tag::~Tag" name="CPPCli::Tag::~Tag">
-<area shape="rect" id="node2" href="$class_c_p_p_cli_1_1_tag.html#ad1badd70154943452faea620b3d03961" title="Constructor. " alt="" coords="191,5,314,32"/>
-<area shape="rect" id="node3" href="$class_c_p_p_cli_1_1_tag.html#a9f2d4b25e32549e6cad99e6f7b04dccb" title="Merge this tag into the given tag. " alt="" coords="184,107,321,133"/>
-<area shape="rect" id="node4" href="$class_c_p_p_cli_1_1_tag.html#a22fa6db32be29e1e69391aef8e8804df" title="Associate devices with this tag. " alt="" coords="375,81,501,108"/>
-<area shape="rect" id="node5" href="$class_c_p_p_cli_1_1_tag.html#a2f1ed9d468c70d5ef46492953a53c7a6" title="Remove device associations from this tag. " alt="" coords="369,144,507,171"/>
+<area shape="rect" id="node2" href="$class_c_p_p_cli_1_1_tag.html#ad1badd70154943452faea620b3d03961" title="Constructor. " alt="" coords="195,5,318,32"/>
+<area shape="rect" id="node3" href="$class_c_p_p_cli_1_1_tag.html#a641148bb0f0f77a922c347e3660264a2" title="Associate data sources with this tag. " alt="" coords="194,56,319,83"/>
+<area shape="rect" id="node4" href="$class_c_p_p_cli_1_1_tag.html#a9f2d4b25e32549e6cad99e6f7b04dccb" title="Merge this tag into the given tag. " alt="" coords="188,107,325,133"/>
+<area shape="rect" id="node5" href="$class_c_p_p_cli_1_1_tag.html#a43103418ebdd45db518c0322b1c6cd9d" title="Update this instances properties. " alt="" coords="184,157,329,184"/>
+<area shape="rect" id="node6" href="$class_c_p_p_cli_1_1_tag.html#aafcafcc3645a26e72e5ec64df8b916d0" title="Remove data source associations from this tag. " alt="" coords="377,183,515,209"/>
 </map>

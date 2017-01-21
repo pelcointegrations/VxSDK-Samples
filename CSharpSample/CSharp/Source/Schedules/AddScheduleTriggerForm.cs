@@ -59,13 +59,13 @@ namespace SDKSampleApp.Source
         /// </summary>
         private void SetUpForm()
         {
-            const int setIconSpacing = 0x1000 + 53;
-            const int x = 34;
-            const int y = 28;
+            const int SetIconSpacing = 0x1000 + 53;
+            const int X = 34;
+            const int Y = 28;
 
-            SendMessage((int)lvMonthly.Handle, setIconSpacing, 0, x * 65536 + y);
-            SendMessage((int)lvYearly.Handle, setIconSpacing, 0, x * 65536 + y);
-            SendMessage((int)lvWeekly.Handle, setIconSpacing, 0, x * 65536 + y);
+            SendMessage((int)lvMonthly.Handle, SetIconSpacing, 0, X * 65536 + Y);
+            SendMessage((int)lvYearly.Handle, SetIconSpacing, 0, X * 65536 + Y);
+            SendMessage((int)lvWeekly.Handle, SetIconSpacing, 0, X * 65536 + Y);
 
             cbxFramerate.SelectedIndex = 1;
             cbxRecurrenceType.SelectedIndex = 0;

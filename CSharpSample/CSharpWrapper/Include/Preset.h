@@ -31,21 +31,21 @@ namespace CPPCli {
         !Preset();
 
         /// <summary>
-        /// Gets the friendly name of the preset.
-        /// </summary>
-        /// <value>The friendly name.</value>
-        property System::String^ Name {
-        public:
-            System::String^ get() { return gcnew System::String(_preset->name); }
-        }
-
-        /// <summary>
         /// Gets the friendly description of the preset.
         /// </summary>
         /// <value>The friendly description.</value>
         property System::String^ Description {
         public:
             System::String^ get() { return gcnew System::String(_preset->description); }
+        }
+
+        /// <summary>
+        /// Gets the friendly name of the preset.
+        /// </summary>
+        /// <value>The friendly name.</value>
+        property System::String^ Name {
+        public:
+            System::String^ get() { return gcnew System::String(_preset->name); }
         }
 
     internal:

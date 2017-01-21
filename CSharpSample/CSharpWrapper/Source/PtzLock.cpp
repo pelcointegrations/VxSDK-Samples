@@ -18,6 +18,10 @@ CPPCli::Results::Value CPPCli::PtzLock::Lock(int expireTime) {
     return CPPCli::Results::Value(result);
 }
 
+CPPCli::Results::Value CPPCli::PtzLock::Refresh() {
+    return (CPPCli::Results::Value)_ptzLock->Refresh();
+}
+
 CPPCli::Results::Value CPPCli::PtzLock::Unlock() {
     // Call Unlock and return the result
     VxSdk::VxResult::Value result = _ptzLock->Unlock();

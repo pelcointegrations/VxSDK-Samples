@@ -1,3 +1,5 @@
 <map id="MediaController::GstWrapper::AddObserver" name="MediaController::GstWrapper::AddObserver">
-<area shape="rect" id="node2" href="$class_media_controller_1_1_controller.html#aba0857a1860225dcd5ed4f384b97b159" title="Add a new subscriber to timestamp events. " alt="" coords="244,5,419,47"/>
+<area shape="rect" id="node2" href="$class_media_controller_1_1_gst_wrapper.html#a6867df2bc3d4b43764f9663af096842f" title="Get the current playback speed. " alt="" coords="244,5,435,47"/>
+<area shape="rect" id="node4" href="$class_media_controller_1_1_controller.html#aba0857a1860225dcd5ed4f384b97b159" title="Add a new subscriber to timestamp events. " alt="" coords="252,71,427,112"/>
+<area shape="rect" id="node3" href="$class_media_controller_1_1_playing_state.html#a0bf97da76a698a03dc7b82d5e3f3a0ed" title="Perform the Play action based on the stream state. " alt="" coords="483,5,645,47"/>
 </map>

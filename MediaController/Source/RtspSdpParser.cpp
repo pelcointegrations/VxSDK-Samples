@@ -11,24 +11,31 @@ void ParseMediaDescription(const string& line, string& media, unsigned short& po
 void ParseConnectionInformation(const string& line, string& ip, unsigned short& ttl, bool& isMulticast);
 void ParseRtpMap(const string& line, const unsigned short payload, string& encoding, unsigned int& rate);
 void ParseFormatParams(const string& line, string& packetizationMode, string& profileLevelId, string& spropParameterSets);
+void ParseControlLocation(const string& line, string& controlUri);
 
 SdpParser::SdpParser() {}
 
 SdpParser::~SdpParser() {}
 
-const vector<MediaDescription>& SdpParser::GetMediaDescriptions() {
+const vector<MediaDescription>& SdpParser::GetMediaDescriptions() const {
     return this->_mediaDescriptions;
 }
 
 void SdpParser::Parse(const string& sdp) {
     this->_mediaDescriptions.clear();
+    this->sessionControlUri.clear();
     stringstream sdpStream(sdp);
     string line;
+    bool reachedMedia = false;
 
     MediaDescription media;
     while (getline(sdpStream, line)) {
+        if (!reachedMedia && line.substr(0, 10) == "a=control:")
+            ParseControlLocation(line, sessionControlUri);
+
         // Check if the current line is the start a new media stream description.
         if (line.substr(0, 2) == "m=") {
+            reachedMedia = true;
             if (!media.type.empty()) {
                 this->_mediaDescriptions.push_back(media);
                 media = EmptyMediaDescription;
@@ -48,6 +55,8 @@ void SdpParser::Parse(const string& sdp) {
                 ParseRtpMap(line, media.payload, media.encoding, media.rate);
             else if (line.substr(0, 7) == "a=fmtp:")
                 ParseFormatParams(line, media.packetizationMode, media.profileLevelId, media.spropParameterSets);
+            else if (line.substr(0, 10) == "a=control:")
+                ParseControlLocation(line, media.controlUri);
         }
     }
 
@@ -59,6 +68,15 @@ const MediaDescription& SdpParser::GetFirstVideo() {
     for (size_t i = 0; i < _mediaDescriptions.size(); i++) {
         const MediaDescription& md = _mediaDescriptions[i];
         if (md.type == "video")
+            return md;
+    }
+    return EmptyMediaDescription;
+}
+
+const MediaDescription& SdpParser::GetFirstAudio() {
+    for (size_t i = 0; i < _mediaDescriptions.size(); i++) {
+        const MediaDescription& md = _mediaDescriptions[i];
+        if (md.type == "audio")
             return md;
     }
     return EmptyMediaDescription;
@@ -152,4 +170,9 @@ void ParseFormatParams(const string& line, string& packetizationMode, string& pr
 
         }
     }
+}
+
+void ParseControlLocation(const string& line, string& controlUri) {
+    controlUri = line.substr(10, line.length());
+    boost::trim(controlUri);
 }

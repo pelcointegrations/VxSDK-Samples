@@ -1,5 +1,6 @@
 <map id="CPPCli::Role::~Role" name="CPPCli::Role::~Role">
 <area shape="rect" id="node2" href="$class_c_p_p_cli_1_1_role.html#a386976079528393fe7414bea8614edba" title="Constructor. " alt="" coords="227,5,359,32"/>
 <area shape="rect" id="node3" href="$class_c_p_p_cli_1_1_role.html#a65f4b4620a18c255b34650c1352962cd" title="Add a new privilege to the role. " alt="" coords="205,56,382,83"/>
-<area shape="rect" id="node4" href="$class_c_p_p_cli_1_1_role.html#af4d97c2a29bf01c97bbce4260587fabe" title="Remove a privilege from the role. " alt="" coords="193,107,393,133"/>
+<area shape="rect" id="node4" href="$class_c_p_p_cli_1_1_role.html#ab894ec4e59c39a31b4dac74e192754bc" title="Update this instances properties. " alt="" coords="218,107,369,133"/>
+<area shape="rect" id="node5" href="$class_c_p_p_cli_1_1_role.html#af4d97c2a29bf01c97bbce4260587fabe" title="Remove a privilege from the role. " alt="" coords="193,157,393,184"/>
 </map>

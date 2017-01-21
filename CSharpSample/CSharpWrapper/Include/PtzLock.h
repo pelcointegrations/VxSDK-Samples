@@ -40,19 +40,16 @@ namespace CPPCli {
         Results::Value Lock(int expireTime);
 
         /// <summary>
+        /// Update this instances properties.
+        /// </summary>
+        /// <returns>The <see cref="Results::Value">Result</see> of updating the properties.</returns>
+        Results::Value Refresh();
+
+        /// <summary>
         /// Unlock the ptz control.
         /// </summary>
         /// <returns>The <see cref="Results::Value">Result</see> of the request.</returns>
         Results::Value Unlock();
-
-        /// <summary>
-        /// Gets the unique identifier of the ptz lock.
-        /// </summary>
-        /// <value>The unique identifier.</value>
-        property System::String^ Id {
-        public:
-            System::String^ get() { return gcnew System::String(_ptzLock->id); }
-        }
 
         /// <summary>
         /// Gets the amount of time (in seconds) that the ptz lock will be held.
@@ -61,6 +58,15 @@ namespace CPPCli {
         property int ExpireTime {
         public:
             int get() { return _GetExpireTime(); }
+        }
+
+        /// <summary>
+        /// Gets the unique identifier of the ptz lock.
+        /// </summary>
+        /// <value>The unique identifier.</value>
+        property System::String^ Id {
+        public:
+            System::String^ get() { return gcnew System::String(_ptzLock->id); }
         }
 
         /// <summary>

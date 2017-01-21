@@ -1,6 +1,7 @@
 <map id="CPPCli::User::~User" name="CPPCli::User::~User">
 <area shape="rect" id="node2" href="$class_c_p_p_cli_1_1_user.html#a7d619dab60c9d24250ad13036e364dc9" title="Constructor. " alt="" coords="233,5,368,32"/>
 <area shape="rect" id="node3" href="$class_c_p_p_cli_1_1_user.html#a91df0d524012fd265523ccd57ce3b36e" title="Add this user to a role. " alt="" coords="215,56,386,83"/>
-<area shape="rect" id="node4" href="$class_c_p_p_cli_1_1_user.html#af244d582019bd4ceeb03c2d623d02192" title="Remove this user from a role. " alt="" coords="196,107,405,133"/>
-<area shape="rect" id="node5" href="$class_c_p_p_cli_1_1_user.html#a20eca86875b76eaab80b0511542395b1" title="Submit a request for a password change. " alt="" coords="209,157,393,184"/>
+<area shape="rect" id="node4" href="$class_c_p_p_cli_1_1_user.html#a3a944878b56659c828065f17fd082135" title="Update this instances properties. " alt="" coords="225,107,376,133"/>
+<area shape="rect" id="node5" href="$class_c_p_p_cli_1_1_user.html#af244d582019bd4ceeb03c2d623d02192" title="Remove this user from a role. " alt="" coords="196,157,405,184"/>
+<area shape="rect" id="node6" href="$class_c_p_p_cli_1_1_user.html#a20eca86875b76eaab80b0511542395b1" title="Submit a request for a password change. " alt="" coords="209,208,393,235"/>
 </map>

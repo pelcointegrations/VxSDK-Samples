@@ -98,5 +98,24 @@ namespace SDKSampleApp.Source
             PopulateSituations();
             lvSituationManager.Refresh();
         }
+
+        /// <summary>
+        /// The ButtonModifyNotifications_Click method.
+        /// </summary>
+        /// <param name="sender">The <paramref name="sender"/> parameter.</param>
+        /// <param name="args">The <paramref name="args"/> parameter.</param>   
+        private void ButtonModifyNotifications_Click(object sender, EventArgs args)
+        {
+            if (lvSituationManager.SelectedItems.Count == 0)
+                return;
+
+            var situation = (Situation)lvSituationManager.SelectedItems[0].Tag;
+
+            using (var modifyNotificationsForm = new ModifyNotificationsForm(situation))
+            {
+                modifyNotificationsForm.PopulateRoles();
+                modifyNotificationsForm.ShowDialog();
+            }
+        }
     }
 }

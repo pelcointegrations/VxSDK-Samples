@@ -40,11 +40,49 @@ namespace CPPCli {
         CPPCli::Results::Value AddPrivilege(CPPCli::NewPrivilege^ newPrivilege);
 
         /// <summary>
+        /// Update this instances properties.
+        /// </summary>
+        /// <returns>The <see cref="Results::Value">Result</see> of updating the properties.</returns>
+        Results::Value Refresh();
+
+        /// <summary>
         /// Remove a privilege from the role.
         /// </summary>
         /// <param name="privilegeItem">The privilege to remove.</param>
         /// <returns>The <see cref="Results::Value">Result</see> of removing the privilege.</returns>
         CPPCli::Results::Value RemovePrivilege(CPPCli::Privilege^ privilegeItem);
+
+        /// <summary>
+        /// Gets the unique identifier for this role.
+        /// </summary>
+        /// <value>The unique identifier.</value>
+        property System::String^ Id {
+        public:
+            System::String^ get() { return gcnew System::String(_role->id); }
+        }
+
+        /// <summary>
+        /// Indicates that the role was created internally on the server and is read-only.
+        /// </summary>
+        /// <value>The read-only value.</value>
+        property bool IsReadOnly {
+        public:
+            bool get() { return _role->isReadOnly; }
+        }
+
+        /// <summary>
+        /// Gets or sets the friendly name.
+        /// </summary>
+        /// <value>The friendly name.</value>
+        property System::String^ Name {
+        public:
+            System::String^ get() { return gcnew System::String(_role->name); }
+            void set(System::String^ value) {
+                char name[64];
+                strncpy_s(name, Utils::ConvertSysStringNonConst(value), sizeof(name));
+                _role->SetName(name);
+            }
+        }
 
         /// <summary>
         /// Gets the privileges assigned to this role.
@@ -62,33 +100,6 @@ namespace CPPCli {
         property System::Collections::Generic::List<User^>^ Users {
         public:
             System::Collections::Generic::List<User^>^ get() { return _GetUsers(); }
-        }
-
-        /// <summary>
-        /// Gets the unique identifier for this role.
-        /// </summary>
-        /// <value>The unique identifier.</value>
-        property System::String^ Id {
-        public:
-            System::String^ get() { return gcnew System::String(_role->id); }
-        }
-
-        /// <summary>
-        /// Gets the friendly name.
-        /// </summary>
-        /// <value>The friendly name.</value>
-        property System::String^ Name {
-        public:
-            System::String^ get() { return gcnew System::String(_role->name); }
-        }
-
-        /// <summary>
-        /// Indicates that the role was created internally on the server and is read-only.
-        /// </summary>
-        /// <value>The read-only value.</value>
-        property bool IsReadOnly {
-        public:
-            bool get() { return _role->isReadOnly; }
         }
 
     internal:

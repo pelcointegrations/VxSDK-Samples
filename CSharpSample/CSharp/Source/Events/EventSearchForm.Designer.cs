@@ -44,9 +44,14 @@
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnSilence = new System.Windows.Forms.Button();
             this.btnAck = new System.Windows.Forms.Button();
+            this.btnNextPage = new System.Windows.Forms.Button();
+            this.nudResultsPerPage = new System.Windows.Forms.NumericUpDown();
+            this.lblResultsPerPage = new System.Windows.Forms.Label();
+            this.btnPreviousPage = new System.Windows.Forms.Button();
             this.gbxEndTime.SuspendLayout();
             this.gbxStartTime.SuspendLayout();
             this.gbxSituationType.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudResultsPerPage)).BeginInit();
             this.SuspendLayout();
             // 
             // gbxEndTime
@@ -118,7 +123,7 @@
             this.lvEvents.Location = new System.Drawing.Point(12, 76);
             this.lvEvents.MultiSelect = false;
             this.lvEvents.Name = "lvEvents";
-            this.lvEvents.Size = new System.Drawing.Size(742, 193);
+            this.lvEvents.Size = new System.Drawing.Size(747, 283);
             this.lvEvents.TabIndex = 9;
             this.lvEvents.UseCompatibleStateImageBehavior = false;
             this.lvEvents.View = System.Windows.Forms.View.Details;
@@ -126,7 +131,7 @@
             // chTime
             // 
             this.chTime.Text = "Time";
-            this.chTime.Width = 130;
+            this.chTime.Width = 135;
             // 
             // chType
             // 
@@ -136,7 +141,7 @@
             // chId
             // 
             this.chId.Text = "ID";
-            this.chId.Width = 270;
+            this.chId.Width = 280;
             // 
             // chSeverity
             // 
@@ -149,7 +154,7 @@
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(679, 47);
+            this.btnClear.Location = new System.Drawing.Point(684, 47);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(75, 23);
             this.btnClear.TabIndex = 10;
@@ -159,7 +164,7 @@
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(679, 18);
+            this.btnSearch.Location = new System.Drawing.Point(684, 18);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(75, 23);
             this.btnSearch.TabIndex = 11;
@@ -169,7 +174,7 @@
             // 
             // btnSilence
             // 
-            this.btnSilence.Location = new System.Drawing.Point(297, 275);
+            this.btnSilence.Location = new System.Drawing.Point(12, 364);
             this.btnSilence.Name = "btnSilence";
             this.btnSilence.Size = new System.Drawing.Size(80, 23);
             this.btnSilence.TabIndex = 12;
@@ -179,7 +184,7 @@
             // 
             // btnAck
             // 
-            this.btnAck.Location = new System.Drawing.Point(388, 275);
+            this.btnAck.Location = new System.Drawing.Point(103, 364);
             this.btnAck.Name = "btnAck";
             this.btnAck.Size = new System.Drawing.Size(80, 23);
             this.btnAck.TabIndex = 13;
@@ -187,11 +192,63 @@
             this.btnAck.UseVisualStyleBackColor = true;
             this.btnAck.Click += new System.EventHandler(this.ButtonAck_Click);
             // 
+            // btnNextPage
+            // 
+            this.btnNextPage.Enabled = false;
+            this.btnNextPage.Location = new System.Drawing.Point(674, 364);
+            this.btnNextPage.Name = "btnNextPage";
+            this.btnNextPage.Size = new System.Drawing.Size(85, 23);
+            this.btnNextPage.TabIndex = 14;
+            this.btnNextPage.Text = "Next Page";
+            this.btnNextPage.UseVisualStyleBackColor = true;
+            this.btnNextPage.Click += new System.EventHandler(this.ButtonNextPage_Click);
+            // 
+            // nudResultsPerPage
+            // 
+            this.nudResultsPerPage.Location = new System.Drawing.Point(503, 365);
+            this.nudResultsPerPage.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.nudResultsPerPage.Name = "nudResultsPerPage";
+            this.nudResultsPerPage.Size = new System.Drawing.Size(72, 20);
+            this.nudResultsPerPage.TabIndex = 15;
+            this.nudResultsPerPage.Value = new decimal(new int[] {
+            15,
+            0,
+            0,
+            0});
+            // 
+            // lblResultsPerPage
+            // 
+            this.lblResultsPerPage.AutoSize = true;
+            this.lblResultsPerPage.Location = new System.Drawing.Point(405, 369);
+            this.lblResultsPerPage.Name = "lblResultsPerPage";
+            this.lblResultsPerPage.Size = new System.Drawing.Size(92, 13);
+            this.lblResultsPerPage.TabIndex = 16;
+            this.lblResultsPerPage.Text = "Results Per Page:";
+            // 
+            // btnPreviousPage
+            // 
+            this.btnPreviousPage.Enabled = false;
+            this.btnPreviousPage.Location = new System.Drawing.Point(581, 364);
+            this.btnPreviousPage.Name = "btnPreviousPage";
+            this.btnPreviousPage.Size = new System.Drawing.Size(85, 23);
+            this.btnPreviousPage.TabIndex = 17;
+            this.btnPreviousPage.Text = "Previous Page";
+            this.btnPreviousPage.UseVisualStyleBackColor = true;
+            this.btnPreviousPage.Click += new System.EventHandler(this.ButtonPreviousPage_Click);
+            // 
             // EventSearchForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(765, 308);
+            this.ClientSize = new System.Drawing.Size(771, 395);
+            this.Controls.Add(this.btnPreviousPage);
+            this.Controls.Add(this.lblResultsPerPage);
+            this.Controls.Add(this.nudResultsPerPage);
+            this.Controls.Add(this.btnNextPage);
             this.Controls.Add(this.btnAck);
             this.Controls.Add(this.btnSilence);
             this.Controls.Add(this.btnSearch);
@@ -210,7 +267,9 @@
             this.gbxEndTime.ResumeLayout(false);
             this.gbxStartTime.ResumeLayout(false);
             this.gbxSituationType.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.nudResultsPerPage)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -232,5 +291,9 @@
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnSilence;
         private System.Windows.Forms.Button btnAck;
+        private System.Windows.Forms.Button btnNextPage;
+        private System.Windows.Forms.NumericUpDown nudResultsPerPage;
+        private System.Windows.Forms.Label lblResultsPerPage;
+        private System.Windows.Forms.Button btnPreviousPage;
     }
 }

@@ -17,21 +17,6 @@ namespace MediaController {
     /// </summary>
     class IController : public IStream {
     public:
-
-        /// <summary>
-        /// Values that represent the different playback modes.
-        /// </summary>
-        enum Mode {
-            /// <summary>The stream is stopped.</summary>
-            kStopped,
-
-            /// <summary>The stream is playing live video.</summary>
-            kLive,
-
-            /// <summary>The stream is playing recorded video.</summary>
-            kPlayback
-        };
-
         /// <summary>
         /// Virtual destructor.
         /// </summary>
@@ -65,12 +50,6 @@ namespace MediaController {
         /// Remove all existing timestamp event subscribers.
         /// </summary>
         virtual void ClearObservers() = 0;
-
-        /// <summary>
-        /// Get the current playback mode.
-        /// </summary>
-        /// <returns>The current stream <see cref="Mode"/>.</returns>
-        virtual Mode GetMode() = 0;
 
         /// <summary>
         /// Get the status of the pipeline.

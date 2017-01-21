@@ -1,8 +1,22 @@
 var searchData=
 [
-  ['tag',['Tag',['../class_c_p_p_cli_1_1_tag.html#ad1badd70154943452faea620b3d03961',1,'CPPCli::Tag']]],
-  ['timestampcallbackdelegate',['TimestampCallbackDelegate',['../class_c_p_p_cli_1_1_media_control.html#a7d853becec314b4fb51f318ef28f2bc6',1,'CPPCli::MediaControl']]],
-  ['timestampeventdelegate',['TimestampEventDelegate',['../class_c_p_p_cli_1_1_media_control.html#adc3effeb5aa911e8388f69c5c6f959ab',1,'CPPCli::MediaControl']]],
-  ['triggerpattern',['TriggerPattern',['../class_c_p_p_cli_1_1_ptz_controller.html#ac7bfd6bdd351fcdb92a766d01ca83bb3',1,'CPPCli::PtzController']]],
-  ['triggerpreset',['TriggerPreset',['../class_c_p_p_cli_1_1_ptz_controller.html#a73653af661e81a06eb642dd3d15bec74',1,'CPPCli::PtzController']]]
+  ['schedule',['Schedule',['../class_c_p_p_cli_1_1_schedule.html#a7ec0b32cacb13d85478101f72349d7e6',1,'CPPCli::Schedule']]],
+  ['scheduletrigger',['ScheduleTrigger',['../class_c_p_p_cli_1_1_schedule_trigger.html#a03746fc19e37e98da3ac95874bd4cf6f',1,'CPPCli::ScheduleTrigger']]],
+  ['searchevents',['SearchEvents',['../class_c_p_p_cli_1_1_v_x_system.html#ac600d21c12932e612566eed1c68b6066',1,'CPPCli::VXSystem']]],
+  ['seek',['Seek',['../class_c_p_p_cli_1_1_media_control.html#a894c71184556007b3da6e81a92a9cbd1',1,'CPPCli::MediaControl']]],
+  ['setassociation',['SetAssociation',['../class_c_p_p_cli_1_1_marker.html#af2073e5ea3f8576eb05c8136869b4088',1,'CPPCli::Marker']]],
+  ['setcoordinates',['SetCoordinates',['../class_c_p_p_cli_1_1_marker.html#a26b2cc5e2c70a36b3328fd5ece850ecc',1,'CPPCli::Marker']]],
+  ['setdatasource',['SetDataSource',['../class_c_p_p_cli_1_1_media_control.html#a135391645c1a3d75f322f131db8871ec',1,'CPPCli::MediaControl']]],
+  ['setimage',['SetImage',['../class_c_p_p_cli_1_1_drawing.html#ac42ff29aaee062c3b4168b5287522f31',1,'CPPCli::Drawing']]],
+  ['setlock',['SetLock',['../class_c_p_p_cli_1_1_drawing.html#a975021cfaa45ff5572533c3f602876c5',1,'CPPCli::Drawing']]],
+  ['setloglevel',['SetLogLevel',['../class_c_p_p_cli_1_1_vx_global.html#a6445bb0a41e8ac284750e88aee8e1ac8',1,'CPPCli::VxGlobal']]],
+  ['setlogpath',['SetLogPath',['../class_c_p_p_cli_1_1_vx_global.html#ac8677f64c1a6135b6db2d8332fb38f09',1,'CPPCli::VxGlobal']]],
+  ['setpassword',['SetPassword',['../class_c_p_p_cli_1_1_user.html#a20eca86875b76eaab80b0511542395b1',1,'CPPCli::User']]],
+  ['setvideowindow',['SetVideoWindow',['../class_c_p_p_cli_1_1_media_control.html#a8ae5fd0402e8b21dd5e751d26ac1477b',1,'CPPCli::MediaControl']]],
+  ['silence',['Silence',['../class_c_p_p_cli_1_1_event.html#af9af1f9456b827aac11267a5b32849f7',1,'CPPCli::Event']]],
+  ['situation',['Situation',['../class_c_p_p_cli_1_1_situation.html#a4ecff883baa45da022bd9813ad6219e4',1,'CPPCli::Situation']]],
+  ['snapshotfilter',['SnapshotFilter',['../class_c_p_p_cli_1_1_snapshot_filter.html#ae3b208059c29ed1b8787f89a36350078',1,'CPPCli::SnapshotFilter']]],
+  ['stop',['Stop',['../class_c_p_p_cli_1_1_media_control.html#ac4bef37ebfc0b008c3a9a1af2a80d53c',1,'CPPCli::MediaControl::Stop()'],['../class_c_p_p_cli_1_1_ptz_controller.html#a1dc7b3426cb6593986a62017dd82409e',1,'CPPCli::PtzController::Stop()']]],
+  ['storage',['Storage',['../class_c_p_p_cli_1_1_configuration_1_1_storage.html#a0f23d5bc6b597b234373c5dd08e71289',1,'CPPCli::Configuration::Storage']]],
+  ['subscribetoeventsbytype',['SubscribeToEventsByType',['../class_c_p_p_cli_1_1_v_x_system.html#ad0f13bb9843a7bc1c9305d55d0bbcd52',1,'CPPCli::VXSystem']]]
 ];

@@ -1,4 +1,5 @@
 <map id="MediaController::MjpegPull::Stream::Pause" name="MediaController::MjpegPull::Stream::Pause">
-<area shape="rect" id="node2" href="$class_media_controller_1_1_gst_wrapper.html#a729a6adfbcd8ec37fee584f6714948cd" title="Set the internal timestamp variable. " alt="" coords="231,5,421,47"/>
-<area shape="rect" id="node3" href="$class_media_controller_1_1_gst_wrapper.html#a9989e4853b720e3345937362ba8940eb" title="Get the last timestamp received from the stream. " alt="" coords="231,71,421,112"/>
+<area shape="rect" id="node2" href="$class_media_controller_1_1_gst_wrapper.html#a499f357308c79d6a73a578ec1356dcbb" title="Set the pipeline state to paused. " alt="" coords="231,5,421,47"/>
+<area shape="rect" id="node3" href="$class_media_controller_1_1_gst_wrapper.html#a729a6adfbcd8ec37fee584f6714948cd" title="Set the internal timestamp variable. " alt="" coords="231,71,421,112"/>
+<area shape="rect" id="node4" href="$class_media_controller_1_1_gst_wrapper.html#aea3795ae288b23f9355bd3fa04371cc1" title="Get the last timestamp received from the stream. " alt="" coords="231,136,421,177"/>
 </map>

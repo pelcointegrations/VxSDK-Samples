@@ -1,4 +1,0 @@
-<map id="MediaController::Rtsp::Commands::SeekPlay" name="MediaController::Rtsp::Commands::SeekPlay">
-<area shape="rect" id="node2" href="$class_media_controller_1_1_rtsp_1_1_stream.html#a7cd6a0ebc8cf8bfceeb5874ff713134e" title="Call Play on the stream with the supplied start time, resulting in a playback stream. " alt="" coords="213,5,360,47"/>
-<area shape="rect" id="node3" href="$class_media_controller_1_1_rtsp_1_1_stream.html#ae479b9bed38549d274d24f69cf277637" title="Call Seek on the stream using the last timestamp received as the start time. " alt="" coords="408,5,555,47"/>
-</map>

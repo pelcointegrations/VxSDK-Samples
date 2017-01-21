@@ -10,11 +10,21 @@ namespace MediaController {
     /// Variables required for GStreamer.
     /// </summary>
     struct GstVars {
-
-        /// <summary>
-        /// The GStreamer pipeline.
-        /// </summary>
-        std::unique_ptr<GstElement*> pipeline;
+        GstElement *pipeline;
+        GstElement *bin;
+        GstElement *src;
+        GstElement *rtcpSrc;
+        GstElement *rtcpSink;
+        GstElement *videoDepay;
+        GstElement *videoDec;
+        GstElement *videoSink;
+        GstElement *audioDepay;
+        GstElement *audioDec;
+        GstElement *audioSink;
+        GstCaps *caps;
+        GstPadLinkReturn linkReturn;
+        GstPad *srcPad;
+        GstPad *sinkPad;
 
         /// <summary>
         /// The list of timestamp event observers.
@@ -50,6 +60,21 @@ namespace MediaController {
         /// Store the custom data from caller and send back on event callback.
         /// </summary>
         void* eventData;
+
+        bool isPipelineActive;
+        bool isMjpeg;
+        std::string rtpCaps;
+        std::string cookie;
+        std::string hostIp;
+        std::string multicastAddress;
+        std::string location;
+        gint rtpPort;
+        gint rtcpPort;
+        gint rtcpSinkPort;
+        guintptr windowHandle;
+        guint busWatchId;
+        GMainLoop *loop;
+        VxSdk::VxStreamProtocol::Value protocol;
     };
 }
 #endif // GstVars_h__

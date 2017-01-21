@@ -1,0 +1,4 @@
+<map id="MediaController::MjpegPull::Stream::Stop" name="MediaController::MjpegPull::Stream::Stop">
+<area shape="rect" id="node2" href="$class_media_controller_1_1_gst_wrapper.html#afec04a424ba74d48a849b298962b7a7b" title="Clear the pipeline and display window. " alt="" coords="231,5,421,47"/>
+<area shape="rect" id="node3" href="$class_media_controller_1_1_gst_wrapper.html#af0a1d3209beb40b460742a34ce2e2b45" title="Set the playback mode. " alt="" coords="231,71,421,112"/>
+</map>

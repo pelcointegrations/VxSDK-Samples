@@ -165,7 +165,6 @@ void SetDeviceDetailsToJniObject(JNIEnv * env, Jni_Device* deviceObj, jobject jD
     env->SetObjectField(jDevObj, deviceObj->deviceID, env->NewStringUTF(vxDevice->id));
     env->SetBooleanField(jDevObj, deviceObj->deviceCommissioned, vxDevice->isCommissioned);
     env->SetBooleanField(jDevObj, deviceObj->deviceLicenseRequired, vxDevice->isLicenseRequired);
-    env->SetObjectField(jDevObj, deviceObj->devicePassword, env->NewStringUTF(vxDevice->password));
     env->SetBooleanField(jDevObj, deviceObj->devicePelcoHardware, vxDevice->isPelcoHardware);
     env->SetObjectField(jDevObj, deviceObj->deviceSerial, env->NewStringUTF(vxDevice->serial));
     env->SetObjectField(jDevObj, deviceObj->deviceUsername, env->NewStringUTF(vxDevice->username));

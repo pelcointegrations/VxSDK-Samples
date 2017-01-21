@@ -30,11 +30,27 @@ namespace CPPCli {
         };
 
         /// <summary>
+        /// The native event callback delegate.
+        /// </summary>
+        /// <param name="timeEvent">The time event sent from the stream.</param>
+        [System::Runtime::InteropServices::UnmanagedFunctionPointer(
+            System::Runtime::InteropServices::CallingConvention::Cdecl)]
+        delegate void TimestampCallbackDelegate(MediaController::TimestampEvent* timeEvent);
+
+        /// <summary>
+        /// The managed event delegate.
+        /// </summary>
+        /// <param name="mediaEvent">The media event sent from the stream as a managed type.</param>
+        delegate void TimestampEventDelegate(MediaEvent^ mediaEvent);
+
+        /// <summary>
         /// Constructor.
         /// </summary>
-        /// <param name="dataSource">The data source to use to create the stream.</param>
-        /// <param name="dataInterface">The data interface to use to create the stream.</param>
-        MediaControl(DataSource^ dataSource, DataInterface^ dataInterface);
+        /// <param name="videoSource">The data source to use to create the video stream.</param>
+        /// <param name="videoInterface">The data interface to use to create the video stream.</param>
+        /// <param name="audioSource">The data source to use to create the audio stream.</param>
+        /// <param name="audioInterface">The data interface to use to create the audio stream.</param>
+        MediaControl(DataSource^ videoSource, DataInterface^ videoInterface, DataSource^ audioSource, DataInterface^ audioInterface);
 
         /// <summary>
         /// Virtual destructor.
@@ -49,23 +65,9 @@ namespace CPPCli {
         !MediaControl();
 
         /// <summary>
-        /// Set the display window using the given window handle.
+        /// Call GoToLive on the stream.
         /// </summary>
-        /// <param name="windowHandle">An <c>IntPtr</c> to the window handle.</param>
-        void SetVideoWindow(System::IntPtr windowHandle);
-
-        /// <summary>
-        /// Set the stream to a new data source.
-        /// </summary>
-        /// <param name="dataSource">The data source to set the stream to.</param>
-        /// <param name="dataInterface">The data interface to use to create the stream.</param>
-        void SetDataSource(DataSource^ dataSource, DataInterface^ dataInterface);
-
-        /// <summary>
-        /// Call Play on the stream.
-        /// </summary>
-        /// <param name="speed">The playback speed.  Negative values can be used for reverse playback.</param>
-        bool Play(float speed);
+        void GoToLive();
 
         /// <summary>
         /// Call Pause on the stream.
@@ -73,14 +75,10 @@ namespace CPPCli {
         void Pause();
 
         /// <summary>
-        /// Call TearDown on the stream.
+        /// Call Play on the stream.
         /// </summary>
-        void Stop();
-
-        /// <summary>
-        /// Call GoToLive on the stream.
-        /// </summary>
-        void GoToLive();
+        /// <param name="speed">The playback speed.  Negative values can be used for reverse playback.</param>
+        bool Play(float speed);
 
         /// <summary>
         /// Call Play on the stream with the supplied start time, resulting in a playback stream.
@@ -90,17 +88,29 @@ namespace CPPCli {
         bool Seek(System::DateTime time, float speed);
 
         /// <summary>
-        /// Gets the current playback mode.
+        /// Set the stream to a new data source.
         /// </summary>
-        /// <value>The current stream mode.</value>
-        property Modes Mode {
-            Modes get() { return (Modes)_control->GetMode(); }
-        }
+        /// <param name="videoDataSource">The data source to use to create the video stream.</param>
+        /// <param name="videoDataInterface">The data interface to use to create the video stream.</param>
+        /// <param name="audioDataSource">The data source to use to create the audio stream.</param>
+        /// <param name="audioDataInterface">The data interface to use to create the audio stream.</param>
+        void SetDataSource(DataSource^ videoDataSource, DataInterface^ videoDataInterface, DataSource^ audioDataSource, DataInterface^ audioDataInterface);
 
         /// <summary>
-        /// Gets the current playback mode.
+        /// Set the display window using the given window handle.
         /// </summary>
-        /// <value>The current stream mode.</value>
+        /// <param name="windowHandle">An <c>IntPtr</c> to the window handle.</param>
+        void SetVideoWindow(System::IntPtr windowHandle);
+
+        /// <summary>
+        /// Call TearDown on the stream.
+        /// </summary>
+        void Stop();
+
+        /// <summary>
+        /// Gets the current data source.
+        /// </summary>
+        /// <value>The current data source.</value>
         property DataSource^ CurrentDataSource {
             DataSource^ get() { return _currentdataSource; }
         }
@@ -114,18 +124,12 @@ namespace CPPCli {
         }
 
         /// <summary>
-        /// The native event callback delegate.
+        /// Gets the current playback mode.
         /// </summary>
-        /// <param name="timeEvent">The time event sent from the stream.</param>
-        [System::Runtime::InteropServices::UnmanagedFunctionPointer(
-            System::Runtime::InteropServices::CallingConvention::Cdecl)]
-        delegate void TimestampCallbackDelegate(MediaController::TimestampEvent* timeEvent);
-
-        /// <summary>
-        /// The managed event delegate.
-        /// </summary>
-        /// <param name="mediaEvent">The media event sent from the stream as a managed type.</param>
-        delegate void TimestampEventDelegate(MediaEvent^ mediaEvent);
+        /// <value>The current stream mode.</value>
+        property Modes Mode {
+            Modes get() { return (Modes)_control->GetMode(); }
+        }
 
         /// <summary>
         /// TimestampEvent is raised whenever a new timestamp is received from the stream.

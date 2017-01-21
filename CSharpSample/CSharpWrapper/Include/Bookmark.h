@@ -33,12 +33,23 @@ namespace CPPCli {
         !Bookmark();
 
         /// <summary>
-        /// Gets the friendly description of the bookmark.
+        /// Refreshes this instances properties.
+        /// </summary>
+        /// <returns>The <see cref="Results::Value">Result</see> of updating the properties.</returns>
+        Results::Value Refresh();
+
+        /// <summary>
+        /// Gets or sets the friendly description of the bookmark.
         /// </summary>
         /// <value>The friendly description.</value>
         property System::String^ Description {
         public:
             System::String^ get() { return gcnew System::String(_bookmark->description); }
+            void set(System::String^ value) {
+                char description[64];
+                strncpy_s(description, Utils::ConvertSysStringNonConst(value), sizeof(description));
+                _bookmark->SetDescription(description);
+            }
         }
 
         /// <summary>

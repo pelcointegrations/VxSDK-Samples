@@ -1,6 +1,5 @@
 var hierarchy =
 [
-    [ "MediaController::GstWrapper::Builder", "class_media_controller_1_1_gst_wrapper_1_1_builder.html", null ],
     [ "MediaController::Rtsp::Commands", "class_media_controller_1_1_rtsp_1_1_commands.html", null ],
     [ "MediaController::GstVars", "struct_media_controller_1_1_gst_vars.html", null ],
     [ "MediaController::GstWrapper", "class_media_controller_1_1_gst_wrapper.html", null ],
@@ -24,5 +23,6 @@ var hierarchy =
       [ "MediaController::PlayingState", "class_media_controller_1_1_playing_state.html", null ],
       [ "MediaController::StoppedState", "class_media_controller_1_1_stopped_state.html", null ]
     ] ],
+    [ "MediaController::Rtsp::KeepAlive::ThreadInfo", "struct_media_controller_1_1_rtsp_1_1_keep_alive_1_1_thread_info.html", null ],
     [ "MediaController::TimestampEvent", "struct_media_controller_1_1_timestamp_event.html", null ]
 ];

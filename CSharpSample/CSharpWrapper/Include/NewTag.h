@@ -28,17 +28,6 @@ namespace CPPCli {
         }
 
         /// <summary>
-        /// Gets or sets the unique tag friendly name.
-        /// </summary>
-        /// <remarks>Note: Commas are invalid characters for this field and MUST NOT be used.</remarks>
-        /// <value>The unique friendly name.</value>
-        property System::String^ Name {
-        public:
-            System::String^ get() { return gcnew System::String(_newTag->name); }
-            void set(System::String^ value) { VxSdk::Utilities::StrCopySafe(_newTag->name, Utils::ConvertSysString(value)); }
-        }
-
-        /// <summary>
         /// Gets or sets whether the new tag will not be owned (public) or will be owned by the user
         /// submitting the request (private).
         /// </summary>
@@ -47,6 +36,17 @@ namespace CPPCli {
         public:
             bool get() { return _newTag->isPublic; }
             void set(bool value) { _newTag->isPublic = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the unique tag friendly name.
+        /// </summary>
+        /// <remarks>Note: Commas are invalid characters for this field and MUST NOT be used.</remarks>
+        /// <value>The unique friendly name.</value>
+        property System::String^ Name {
+        public:
+            System::String^ get() { return gcnew System::String(_newTag->name); }
+            void set(System::String^ value) { VxSdk::Utilities::StrCopySafe(_newTag->name, Utils::ConvertSysString(value)); }
         }
 
     internal:

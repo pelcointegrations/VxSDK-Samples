@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -114,8 +115,8 @@ namespace SDKSampleApp.Source
             foreach (var dev in CurrentDevices.Where(dev => dev.Id == systemEvent.SourceDeviceId))
                 device = dev;
 
-            WriteToLog(string.Format(Resources.EventHeaderFormatString, severity, type,
-                device != null ? device.Name : systemEvent.SourceDeviceId));
+            string devName = device != null ? device.Name : systemEvent.SourceDeviceId;
+            WriteToLog(string.Format(Resources.EventHeaderFormatString, severity, type, devName));
 
             if (displayEventDialogsToolStripMenuItem.Checked)
             {
@@ -278,13 +279,13 @@ namespace SDKSampleApp.Source
             if (scOuter.Panel2Collapsed)
             {
                 showLogToolStripMenuItem.Text = @"Hide Log";
-                ClientSize = new System.Drawing.Size(ClientSize.Width, ClientSize.Height + 90);
+                ClientSize = new Size(ClientSize.Width, ClientSize.Height + 90);
                 scOuter.Panel2Collapsed = false;
             }
             else
             {
                 showLogToolStripMenuItem.Text = @"Show Log";
-                ClientSize = new System.Drawing.Size(ClientSize.Width, ClientSize.Height - 90);
+                ClientSize = new Size(ClientSize.Width, ClientSize.Height - 90);
                 scOuter.Panel2Collapsed = true;
             }
         }
@@ -299,6 +300,20 @@ namespace SDKSampleApp.Source
             using (var bookmarkForm = new BookmarkManagerForm())
             {
                 bookmarkForm.ShowDialog();
+            }
+        }
+
+        /// <summary>
+        /// The MenuItemClusterConfig_Click method.
+        /// </summary>
+        /// <param name="sender">The <paramref name="sender"/> parameter.</param>
+        /// <param name="args">The <paramref name="args"/> parameter.</param>
+        private void MenuItemClusterConfig_Click(object sender, EventArgs args)
+        {
+            using (var clusterConfigDetailsForm = new ClusterConfigDetailsForm())
+            {
+                clusterConfigDetailsForm.GetClusterConfig(CurrentSystem);
+                clusterConfigDetailsForm.ShowDialog();
             }
         }
 
@@ -352,6 +367,32 @@ namespace SDKSampleApp.Source
         }
 
         /// <summary>
+        /// The MenuItemDeviceManager_Click method.
+        /// </summary>
+        /// <param name="sender">The <paramref name="sender"/> parameter.</param>
+        /// <param name="args">The <paramref name="args"/> parameter.</param>
+        private void MenuItemDeviceManager_Click(object sender, EventArgs args)
+        {
+            using (var deviceManagerForm = new DeviceManagerForm())
+            {
+                deviceManagerForm.ShowDialog();
+            }
+        }
+
+        /// <summary>
+        /// The MenuItemDrawingManager_Click method.
+        /// </summary>
+        /// <param name="sender">The <paramref name="sender"/> parameter.</param>
+        /// <param name="args">The <paramref name="args"/> parameter.</param>
+        private void MenuItemDrawingManager_Click(object sender, EventArgs args)
+        {
+            using (var drawingManagerForm = new DrawingManagerForm())
+            {
+                drawingManagerForm.ShowDialog();
+            }
+        }
+
+        /// <summary>
         /// The MenuItemExportManager_Click method.
         /// </summary>
         /// <param name="sender">The <paramref name="sender"/> parameter.</param>
@@ -378,6 +419,67 @@ namespace SDKSampleApp.Source
         }
 
         /// <summary>
+        /// The MenuItemLogLevel_Click method.
+        /// </summary>
+        /// <param name="sender">The <paramref name="sender"/> parameter.</param>
+        /// <param name="args">The <paramref name="args"/> parameter.</param>
+        private void MenuItemLogLevel_Click(object sender, EventArgs args)
+        {
+            var item = sender as ToolStripMenuItem;
+            if (item == null)
+                return;
+
+            logTraceToolStripMenuItem.Checked = item == logTraceToolStripMenuItem;
+            logDebugToolStripMenuItem.Checked = item == logDebugToolStripMenuItem;
+            logInfoToolStripMenuItem.Checked = item == logInfoToolStripMenuItem;
+            logWarningToolStripMenuItem.Checked = item == logWarningToolStripMenuItem;
+            logErrorToolStripMenuItem.Checked = item == logErrorToolStripMenuItem;
+            logFatalToolStripMenuItem.Checked = item == logFatalToolStripMenuItem;
+            logDisableToolStripMenuItem.Checked = item == logDisableToolStripMenuItem;
+
+            VxGlobal.SetLogLevel((LogLevel.Value)item.Tag);
+        }
+
+        /// <summary>
+        /// The MenuItemLicenseDetails_Click method.
+        /// </summary>
+        /// <param name="sender">The <paramref name="sender"/> parameter.</param>
+        /// <param name="args">The <paramref name="args"/> parameter.</param>
+        private void MenuItemLicenseDetails_Click(object sender, EventArgs args)
+        {
+            using (var licenseDetailsForm = new LicenseDetailsForm())
+            {
+                licenseDetailsForm.ShowDialog();
+            }
+        }
+
+        /// <summary>
+        /// The MenuItemMonitors_Click method.
+        /// </summary>
+        /// <param name="sender">The <paramref name="sender"/> parameter.</param>
+        /// <param name="args">The <paramref name="args"/> parameter.</param>
+        private void MenuItemMonitors_Click(object sender, EventArgs args)
+        {
+            using (var monitorManagerForm = new MonitorManagerForm())
+            {
+                monitorManagerForm.ShowDialog();
+            }
+        }
+
+        /// <summary>
+        /// The MenuItemNotifications_Click method.
+        /// </summary>
+        /// <param name="sender">The <paramref name="sender"/> parameter.</param>
+        /// <param name="args">The <paramref name="args"/> parameter.</param>
+        private void MenuItemNotifications_Click(object sender, EventArgs args)
+        {
+            using (var notificationManagerForm = new NotificationManagerForm())
+            {
+                notificationManagerForm.ShowDialog();
+            }
+        }
+
+        /// <summary>
         /// The MenuItemProtocol_Click method.
         /// </summary>
         /// <param name="sender">The <paramref name="sender"/> parameter.</param>
@@ -397,6 +499,19 @@ namespace SDKSampleApp.Source
             }
 
             StopAllStreams();
+        }
+
+        /// <summary>
+        /// The MenuItemQuickReport_Click method.
+        /// </summary>
+        /// <param name="sender">The <paramref name="sender"/> parameter.</param>
+        /// <param name="args">The <paramref name="args"/> parameter.</param>
+        private void MenuItemQuickReport_Click(object sender, EventArgs args)
+        {
+            using (var quickReportForm = new QuickReportForm())
+            {
+                quickReportForm.ShowDialog();
+            }
         }
 
         /// <summary>
@@ -581,6 +696,114 @@ namespace SDKSampleApp.Source
         }
 
         /// <summary>
+        /// The PanelVideoStream_Click method.
+        /// </summary>
+        /// <param name="sender">The <paramref name="sender"/> parameter.</param>
+        /// <param name="args">The <paramref name="args"/> parameter.</param>
+        private void PanelVideoStream_Click(object sender, EventArgs args)
+        {
+            var panel = sender as Panel;
+            if (panel == null)
+                return;
+
+            if (Control.SelectedPanel != panel)
+                return;
+
+            var point = panel.PointToClient(Cursor.Position);
+            if (Control.PtzControl == null)
+                return;
+
+            float relX;
+            float relY;
+            var xMidPoint = (float)panel.Width / 2;
+            if (point.X > xMidPoint)
+            {
+                var adjustedX = point.X - xMidPoint;
+                relX = adjustedX / xMidPoint * 100;
+            }
+            else
+            {
+                var adjustedX = xMidPoint - point.X;
+                relX = adjustedX / xMidPoint * -100;
+            }
+
+            var yMidPoint = (float)panel.Height / 2;
+            if (point.Y > yMidPoint)
+            {
+                var adjustedY = yMidPoint - point.Y;
+                relY = adjustedY / yMidPoint * 100;
+            }
+            else
+            {
+                var adjustedY = point.Y - yMidPoint;
+                relY = adjustedY / yMidPoint * -100;
+            }
+
+            Control.PtzControl.RelativePercentageMove((int)relX, (int)relY);
+        }
+
+        /// <summary>
+        /// The PanelVideoStream_MouseEnter method.
+        /// </summary>
+        /// <param name="sender">The <paramref name="sender"/> parameter.</param>
+        /// <param name="args">The <paramref name="args"/> parameter.</param>
+        private void PanelVideoStream_MouseEnter(object sender, EventArgs args)
+        {
+            var panel = sender as Panel;
+            if (panel == null)
+                return;
+
+            if (Control.SelectedPanel != panel)
+                return;
+
+            if (Control.PtzControl == null)
+                return;
+
+            panel.Cursor = Cursors.Cross;
+        }
+
+        /// <summary>
+        /// The PanelVideoStream_MouseLeave method.
+        /// </summary>
+        /// <param name="sender">The <paramref name="sender"/> parameter.</param>
+        /// <param name="args">The <paramref name="args"/> parameter.</param>
+        private void PanelVideoStream_MouseLeave(object sender, EventArgs args)
+        {
+            var panel = sender as Panel;
+            if (panel == null)
+                return;
+
+            if (Control.SelectedPanel != panel)
+                return;
+
+            if (Control.PtzControl == null)
+                return;
+
+            panel.Cursor = Cursors.Default;
+        }
+
+        /// <summary>
+        /// The PanelVideoStream_MouseWheel method.
+        /// </summary>
+        /// <param name="sender">The <paramref name="sender"/> parameter.</param>
+        /// <param name="args">The <paramref name="args"/> parameter.</param>
+        private void PanelVideoStream_MouseWheel(object sender, MouseEventArgs args)
+        {
+            var panel = sender as Panel;
+            if (panel == null)
+                return;
+
+            if (Control.SelectedPanel != panel)
+                return;
+
+            if (Control.PtzControl == null)
+                return;
+
+            var zoomLevel = (float)args.Delta / 2;
+            Control.PtzControl.RelativeMove(0, 0, (int)zoomLevel);
+        }
+
+        /// <summary>
         /// The PanelVideoStreamLeft_MouseClick method.
         /// </summary>
         /// <param name="sender">The <paramref name="sender"/> parameter.</param>
@@ -588,6 +811,10 @@ namespace SDKSampleApp.Source
         private void PanelVideoStreamLeft_MouseClick(object sender, MouseEventArgs args)
         {
             Control.SelectControl(ControlManager.Controls.Left);
+            if (Control.PtzControl == null)
+                return;
+
+            Control.SelectedPanel.Cursor = Cursors.Cross;
         }
 
         /// <summary>
@@ -598,6 +825,10 @@ namespace SDKSampleApp.Source
         private void PanelVideoStreamRight_MouseClick(object sender, MouseEventArgs args)
         {
             Control.SelectControl(ControlManager.Controls.Right);
+            if (Control.PtzControl == null)
+                return;
+
+            Control.SelectedPanel.Cursor = Cursors.Cross;
         }
 
         /// <summary>
@@ -617,6 +848,11 @@ namespace SDKSampleApp.Source
             var bytes = await response.Content.ReadAsByteArrayAsync();
             var imageTime = Control.SelectedPanelTime.Replace(":", string.Empty);
             var filename = SnapshotBasePath + "Live-" + imageTime + ".jpg";
+            if (!Directory.Exists(SnapshotBasePath))
+            {
+                WriteToLog(string.Format("Unable to take snapshot, path no longer exists {0}.", SnapshotBasePath));
+                return;
+            }
 
             BinaryWriter binWriter = null;
             try
@@ -663,7 +899,9 @@ namespace SDKSampleApp.Source
 
             var filter = new SnapshotFilter
             {
-                StartTime = DateTime.Parse(Control.SelectedPanelTime).ToUniversalTime()
+                StartTime = DateTime.Parse(Control.SelectedPanelTime).ToUniversalTime(),
+                EndTime = DateTime.Parse(Control.SelectedPanelTime).ToUniversalTime().AddSeconds(1),
+                Offset = 10
             };
 
             var uri = new Uri(currentClip.GetSnapshotEndpoint(filter));
@@ -689,6 +927,11 @@ namespace SDKSampleApp.Source
             {
                 var imageTime = byteArray.ImageTime.ToString("s").Replace(":", string.Empty);
                 var filename = SnapshotBasePath + "Recorded-" + imageTime + ".jpg";
+                if (!Directory.Exists(SnapshotBasePath))
+                {
+                    WriteToLog(string.Format("Unable to take snapshot, path no longer exists {0}.", SnapshotBasePath));
+                    return;
+                }
 
                 BinaryWriter binWriter = null;
                 try
@@ -773,23 +1016,27 @@ namespace SDKSampleApp.Source
             {
                 // Get the data sources for the selected device.
                 var dataSource = (DataSource)lvDataSources.SelectedItems[0].Tag;
-                 VxStreamProtocol selProtocol = mjpegToolStripMenuItem.Checked ?
-                     VxStreamProtocol.MjpegPull : VxStreamProtocol.RtspRtp;
+                var protocol = mjpegToolStripMenuItem.Checked ? VxStreamProtocol.MjpegPull : VxStreamProtocol.RtspRtp;
+                var showWindow = Control.Current != null && Control.Current.Mode == MediaControl.Modes.Stopped;
 
-                var showWindow = Control.Current != null && !(seekTime != default(DateTime) || Control.Current.Mode != MediaControl.Modes.Playback);
-                var dataInterface = SelectDataInterface(selProtocol, dataSource, showWindow);
+                var dataInterface = SelectDataInterface(protocol, dataSource, showWindow);
                 if (dataInterface == null)
                 {
                     WriteToLog("Error: No data interface found for selected camera.\n");
                     return;
                 }
+
+                DataSource audioDataSource;
+                DataInterface audioDataInterface;
+                SelectAudioData(dataSource, showWindow, out audioDataSource, out audioDataInterface);
+
                 // If the media controller exists then a stream is running and the user is
                 // requesting a new action on it.  If it's null then this is either the
                 // first run or an existing stream has been stopped.  So a new media controller
                 // instance is needed.
                 if (Control.Current == null)
                 {
-                    Control.Current = new MediaControl(dataSource, dataInterface);
+                    Control.Current = new MediaControl(dataSource, dataInterface, audioDataSource, audioDataInterface);
                     Control.SubscribeToTimestamps();
                     Control.Current.SetVideoWindow(Control.SelectedPanel.Handle);
                 }
@@ -797,16 +1044,16 @@ namespace SDKSampleApp.Source
                 {
                     // If a new device has been selected while another stream is running, stop the
                     // old stream and set up the new stream using the new data source.
-                    if (dataSource.Id != CurrentDataSource.Id)
+                    if ((CurrentDataSource == null) || (dataSource.Id != CurrentDataSource.Id))
                     {
                         Control.Current.Stop();
-                        Control.Current.SetDataSource(dataSource, dataInterface);
+                        Control.Current.SetDataSource(dataSource, dataInterface, audioDataSource, audioDataInterface);
                     }
                 }
 
                 if (seekTime == default(DateTime))
                 {
-                    if (!Control.Current.Play((float) nudSpeed.Value))
+                    if (!Control.Current.Play((float)nudSpeed.Value))
                     {
                         WriteToLog(string.Format("Error: Unable to {0} stream.\n",
                             Control.Current.Mode == MediaControl.Modes.Playback ? "resume" : "start"));
@@ -833,6 +1080,10 @@ namespace SDKSampleApp.Source
                             return;
                         }
 
+                        Control.SelectedLabel.BeginInvoke((MethodInvoker)delegate
+                        {
+                            Control.SelectedLabel.Text = string.Empty;
+                        });
                         Control.Current.Dispose();
                         Control.Current = null;
                         Control.SelectedPanel.Refresh();
@@ -897,6 +1148,34 @@ namespace SDKSampleApp.Source
             catch (Exception ex)
             {
                 WriteToLog(string.Format(@"Error: {0}\n", ex.Message));
+            }
+        }
+
+        /// <summary>
+        /// Select the audio data source and data interfaces from the MainForm.CurrentDataSources
+        /// </summary>
+        /// <param name="videoSource">Video data source</param>
+        /// <param name="showWindow">Specifies wheather to show the window or not</param>
+        /// <param name="audioSource">Out parameter for audio data source</param>
+        /// <param name="audioInterface">Out parameter for audio data interface</param>
+        private void SelectAudioData(DataSource videoSource, bool showWindow, out DataSource audioSource, out DataInterface audioInterface)
+        {
+            audioSource = null;
+            audioInterface = null;
+
+            foreach (var ds in CurrentDataSources)
+            {
+                if (videoSource.Name != ds.Name || ds.Type != DataSource.Types.Audio)
+                    continue;
+
+                audioInterface = SelectDataInterface(VxStreamProtocol.RtspRtp, ds, showWindow);
+                if (audioInterface == null)
+                {
+                    WriteToLog("Error: No audio data interface found for selected camera.\n");
+                    return;
+                }
+
+                audioSource = ds;
             }
         }
     }

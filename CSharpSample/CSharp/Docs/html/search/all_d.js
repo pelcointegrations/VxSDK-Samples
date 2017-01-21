@@ -1,7 +1,8 @@
 var searchData=
 [
   ['offline',['Offline',['../namespace_s_d_k_sample_app_1_1_enums.html#aa2bd31b8ad20fd154bdad3ac987ec55ea8d9da4bc0e49a50e09ac9f7e56789d39',1,'SDKSampleApp::Enums']]],
-  ['ok',['OK',['../namespace_s_d_k_sample_app_1_1_enums.html#a4bfd34104cd21c30a3ea3d2b61e59cdfae0aa021e21dddbd6d8cecec71e9cf564',1,'SDKSampleApp::Enums']]],
+  ['ok',['Ok',['../namespace_s_d_k_sample_app_1_1_enums.html#a4bfd34104cd21c30a3ea3d2b61e59cdfaa60852f204ed8028c1c58808b746d115',1,'SDKSampleApp::Enums']]],
+  ['onformclosed',['OnFormClosed',['../class_s_d_k_sample_app_1_1_source_1_1_connect_form.html#a6949d390a161e8b8b89dd046e14028fa',1,'SDKSampleApp::Source::ConnectForm']]],
   ['onformclosing',['OnFormClosing',['../class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#af15e1f00c9df7d9920562a070c088e00',1,'SDKSampleApp::Source::PTZControlForm']]],
   ['online',['Online',['../namespace_s_d_k_sample_app_1_1_enums.html#aa2bd31b8ad20fd154bdad3ac987ec55ea54f664c70c22054ea0d8d26fc3997ce7',1,'SDKSampleApp::Enums']]],
   ['onsystemevent',['OnSystemEvent',['../class_s_d_k_sample_app_1_1_source_1_1_main_form.html#ab20b8ce5d3f2e177090028010513a593',1,'SDKSampleApp::Source::MainForm']]],

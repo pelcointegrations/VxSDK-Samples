@@ -109,7 +109,6 @@ $(document).ready(function(){initNavTree('class_media_controller_1_1_i_controlle
 
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_media_controller_1_1_i_controller-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -122,19 +121,6 @@ $(document).ready(function(){initNavTree('class_media_controller_1_1_i_controlle
 
 <p><code>#include &lt;<a class="el" href="_i_controller_8h_source.html">IController.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:aeb873b38a229a877fafc92ef3a581f37"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_i_controller.html#aeb873b38a229a877fafc92ef3a581f37">Mode</a> { <br />
-&#160;&#160;<a class="el" href="class_media_controller_1_1_i_controller.html#aeb873b38a229a877fafc92ef3a581f37a277ddc64239dd32f57f788dbd3ec64a9">kStopped</a>, 
-<br />
-&#160;&#160;<a class="el" href="class_media_controller_1_1_i_controller.html#aeb873b38a229a877fafc92ef3a581f37acc1969e6e601edde4fbbad12a234e519">kLive</a>, 
-<br />
-&#160;&#160;<a class="el" href="class_media_controller_1_1_i_controller.html#aeb873b38a229a877fafc92ef3a581f37a2182a8f6dc36ced932e7e05305f22704">kPlayback</a>
-<br />
- }<tr class="memdesc:aeb873b38a229a877fafc92ef3a581f37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent the different playback modes.  <a href="class_media_controller_1_1_i_controller.html#aeb873b38a229a877fafc92ef3a581f37">More...</a><br /></td></tr>
-</td></tr>
-<tr class="separator:aeb873b38a229a877fafc92ef3a581f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac096b6dc76daeb30df51bacf9bfe4712"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_i_controller.html#ac096b6dc76daeb30df51bacf9bfe4712">~IController</a> ()</td></tr>
@@ -155,37 +141,48 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af3b234c09b43800aac4207f45dceceb3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_i_controller.html#af3b234c09b43800aac4207f45dceceb3">ClearObservers</a> ()=0</td></tr>
 <tr class="memdesc:af3b234c09b43800aac4207f45dceceb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all existing timestamp event subscribers.  <a href="#af3b234c09b43800aac4207f45dceceb3">More...</a><br /></td></tr>
 <tr class="separator:af3b234c09b43800aac4207f45dceceb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13d9691ab294809a5260a41e4ff59f0f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_media_controller_1_1_i_controller.html#aeb873b38a229a877fafc92ef3a581f37">Mode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_i_controller.html#a13d9691ab294809a5260a41e4ff59f0f">GetMode</a> ()=0</td></tr>
-<tr class="memdesc:a13d9691ab294809a5260a41e4ff59f0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current playback mode.  <a href="#a13d9691ab294809a5260a41e4ff59f0f">More...</a><br /></td></tr>
-<tr class="separator:a13d9691ab294809a5260a41e4ff59f0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a768ace522735bcac45c74d4c01553490"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_i_controller.html#a768ace522735bcac45c74d4c01553490">IsPipelineActive</a> ()=0</td></tr>
+<tr class="memdesc:a768ace522735bcac45c74d4c01553490"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the status of the pipeline.  <a href="#a768ace522735bcac45c74d4c01553490">More...</a><br /></td></tr>
+<tr class="separator:a768ace522735bcac45c74d4c01553490"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_media_controller_1_1_i_stream"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_media_controller_1_1_i_stream')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_media_controller_1_1_i_stream.html">MediaController::IStream</a></td></tr>
 <tr class="memitem:ae5266309acb4de0c67c82d179b5a6888 inherit pub_methods_class_media_controller_1_1_i_stream"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_i_stream.html#ae5266309acb4de0c67c82d179b5a6888">~IStream</a> ()</td></tr>
 <tr class="memdesc:ae5266309acb4de0c67c82d179b5a6888 inherit pub_methods_class_media_controller_1_1_i_stream"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor.  <a href="#ae5266309acb4de0c67c82d179b5a6888">More...</a><br /></td></tr>
 <tr class="separator:ae5266309acb4de0c67c82d179b5a6888 inherit pub_methods_class_media_controller_1_1_i_stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afefbdcf267875b8ab73c0a3dacff96a0 inherit pub_methods_class_media_controller_1_1_i_stream"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_i_stream.html#afefbdcf267875b8ab73c0a3dacff96a0">Play</a> (int speed)=0</td></tr>
-<tr class="memdesc:afefbdcf267875b8ab73c0a3dacff96a0 inherit pub_methods_class_media_controller_1_1_i_stream"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call Play on the stream.  <a href="#afefbdcf267875b8ab73c0a3dacff96a0">More...</a><br /></td></tr>
-<tr class="separator:afefbdcf267875b8ab73c0a3dacff96a0 inherit pub_methods_class_media_controller_1_1_i_stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af037ad06c1a89885106931709b0f51c1 inherit pub_methods_class_media_controller_1_1_i_stream"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_i_stream.html#af037ad06c1a89885106931709b0f51c1">Play</a> (float speed=0, unsigned int unixTime=0)=0</td></tr>
+<tr class="memdesc:af037ad06c1a89885106931709b0f51c1 inherit pub_methods_class_media_controller_1_1_i_stream"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call Play on the stream.  <a href="#af037ad06c1a89885106931709b0f51c1">More...</a><br /></td></tr>
+<tr class="separator:af037ad06c1a89885106931709b0f51c1 inherit pub_methods_class_media_controller_1_1_i_stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac421e258f6dc1c9cd65d95b0b4d145f4 inherit pub_methods_class_media_controller_1_1_i_stream"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac421e258f6dc1c9cd65d95b0b4d145f4"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>PlayStream</b> (float speed, unsigned int unixTime)=0</td></tr>
+<tr class="separator:ac421e258f6dc1c9cd65d95b0b4d145f4 inherit pub_methods_class_media_controller_1_1_i_stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb52708f005e2395d90b06bf22868afe inherit pub_methods_class_media_controller_1_1_i_stream"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_i_stream.html#aeb52708f005e2395d90b06bf22868afe">Pause</a> ()=0</td></tr>
 <tr class="memdesc:aeb52708f005e2395d90b06bf22868afe inherit pub_methods_class_media_controller_1_1_i_stream"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call Pause on the stream.  <a href="#aeb52708f005e2395d90b06bf22868afe">More...</a><br /></td></tr>
 <tr class="separator:aeb52708f005e2395d90b06bf22868afe inherit pub_methods_class_media_controller_1_1_i_stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ba52c69638f1ee143d3d9ad78b6eade inherit pub_methods_class_media_controller_1_1_i_stream"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_i_stream.html#a8ba52c69638f1ee143d3d9ad78b6eade">Stop</a> ()=0</td></tr>
 <tr class="memdesc:a8ba52c69638f1ee143d3d9ad78b6eade inherit pub_methods_class_media_controller_1_1_i_stream"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call TearDown on the stream.  <a href="#a8ba52c69638f1ee143d3d9ad78b6eade">More...</a><br /></td></tr>
 <tr class="separator:a8ba52c69638f1ee143d3d9ad78b6eade inherit pub_methods_class_media_controller_1_1_i_stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89a7629afd57f6eb9e90a750ad2c5dfd inherit pub_methods_class_media_controller_1_1_i_stream"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_i_stream.html#a89a7629afd57f6eb9e90a750ad2c5dfd">FrameForward</a> ()=0</td></tr>
-<tr class="memdesc:a89a7629afd57f6eb9e90a750ad2c5dfd inherit pub_methods_class_media_controller_1_1_i_stream"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not implemented.  <a href="#a89a7629afd57f6eb9e90a750ad2c5dfd">More...</a><br /></td></tr>
-<tr class="separator:a89a7629afd57f6eb9e90a750ad2c5dfd inherit pub_methods_class_media_controller_1_1_i_stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58c336f518d87333a01e2824276db82c inherit pub_methods_class_media_controller_1_1_i_stream"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_i_stream.html#a58c336f518d87333a01e2824276db82c">FrameBackward</a> ()=0</td></tr>
-<tr class="memdesc:a58c336f518d87333a01e2824276db82c inherit pub_methods_class_media_controller_1_1_i_stream"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not implemented.  <a href="#a58c336f518d87333a01e2824276db82c">More...</a><br /></td></tr>
-<tr class="separator:a58c336f518d87333a01e2824276db82c inherit pub_methods_class_media_controller_1_1_i_stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed3c956ef7efd114eea1044bab631d55 inherit pub_methods_class_media_controller_1_1_i_stream"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_i_stream.html#aed3c956ef7efd114eea1044bab631d55">Seek</a> (unsigned int unixTime, int speed)=0</td></tr>
-<tr class="memdesc:aed3c956ef7efd114eea1044bab631d55 inherit pub_methods_class_media_controller_1_1_i_stream"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call Play on the stream with the supplied start time, resulting in a playback stream.  <a href="#aed3c956ef7efd114eea1044bab631d55">More...</a><br /></td></tr>
-<tr class="separator:aed3c956ef7efd114eea1044bab631d55 inherit pub_methods_class_media_controller_1_1_i_stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f6788601512710453d7a4b0b1999838 inherit pub_methods_class_media_controller_1_1_i_stream"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_i_stream.html#a8f6788601512710453d7a4b0b1999838">GoToLive</a> ()=0</td></tr>
-<tr class="memdesc:a8f6788601512710453d7a4b0b1999838 inherit pub_methods_class_media_controller_1_1_i_stream"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the stream to Live and call Play.  <a href="#a8f6788601512710453d7a4b0b1999838">More...</a><br /></td></tr>
-<tr class="separator:a8f6788601512710453d7a4b0b1999838 inherit pub_methods_class_media_controller_1_1_i_stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92acd082bf3f10528c19662f6c90a0c8 inherit pub_methods_class_media_controller_1_1_i_stream"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_i_stream.html#a92acd082bf3f10528c19662f6c90a0c8">GoToLive</a> ()=0</td></tr>
+<tr class="memdesc:a92acd082bf3f10528c19662f6c90a0c8 inherit pub_methods_class_media_controller_1_1_i_stream"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the stream to Live and call Play.  <a href="#a92acd082bf3f10528c19662f6c90a0c8">More...</a><br /></td></tr>
+<tr class="separator:a92acd082bf3f10528c19662f6c90a0c8 inherit pub_methods_class_media_controller_1_1_i_stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1acf51b6b487e08555b855f16a6234f inherit pub_methods_class_media_controller_1_1_i_stream"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_i_stream.html#af1acf51b6b487e08555b855f16a6234f">NewRequest</a> (<a class="el" href="struct_media_controller_1_1_media_request.html">MediaRequest</a> &amp;request)=0</td></tr>
 <tr class="memdesc:af1acf51b6b487e08555b855f16a6234f inherit pub_methods_class_media_controller_1_1_i_stream"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the stream to a new source.  <a href="#af1acf51b6b487e08555b855f16a6234f">More...</a><br /></td></tr>
 <tr class="separator:af1acf51b6b487e08555b855f16a6234f inherit pub_methods_class_media_controller_1_1_i_stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0287c7ed351222b7c8fde8bf4c2a34a inherit pub_methods_class_media_controller_1_1_i_stream"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_media_controller_1_1_i_stream.html#a0ac9cb583470ae5b9f2e3314fdca9843">Mode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_i_stream.html#ab0287c7ed351222b7c8fde8bf4c2a34a">GetMode</a> ()=0</td></tr>
+<tr class="memdesc:ab0287c7ed351222b7c8fde8bf4c2a34a inherit pub_methods_class_media_controller_1_1_i_stream"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current playback mode.  <a href="#ab0287c7ed351222b7c8fde8bf4c2a34a">More...</a><br /></td></tr>
+<tr class="separator:ab0287c7ed351222b7c8fde8bf4c2a34a inherit pub_methods_class_media_controller_1_1_i_stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_class_media_controller_1_1_i_stream"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_media_controller_1_1_i_stream')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_media_controller_1_1_i_stream.html">MediaController::IStream</a></td></tr>
+<tr class="memitem:a0ac9cb583470ae5b9f2e3314fdca9843 inherit pub_types_class_media_controller_1_1_i_stream"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_i_stream.html#a0ac9cb583470ae5b9f2e3314fdca9843">Mode</a> { <br />
+&#160;&#160;<a class="el" href="class_media_controller_1_1_i_stream.html#a0ac9cb583470ae5b9f2e3314fdca9843a133c44ef437ff8a26fc323ed35e975ff">kStopped</a>, 
+<br />
+&#160;&#160;<a class="el" href="class_media_controller_1_1_i_stream.html#a0ac9cb583470ae5b9f2e3314fdca9843adf3918a3aa70d9f1df2517efe874a5cb">kLive</a>, 
+<br />
+&#160;&#160;<a class="el" href="class_media_controller_1_1_i_stream.html#a0ac9cb583470ae5b9f2e3314fdca9843a75ff807459806cb0692c305bb7b0d1e0">kPlayback</a>
+<br />
+ }<tr class="memdesc:a0ac9cb583470ae5b9f2e3314fdca9843"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent the different playback modes.  <a href="class_media_controller_1_1_i_stream.html#a0ac9cb583470ae5b9f2e3314fdca9843">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a0ac9cb583470ae5b9f2e3314fdca9843 inherit pub_types_class_media_controller_1_1_i_stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Defines the controller interface. </p>
@@ -208,37 +205,6 @@ Collaboration diagram for MediaController::IController:</div>
 <area shape="rect" id="node2" href="class_media_controller_1_1_i_stream.html" title="Defines the stream interface. " alt="" coords="12,5,177,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="aeb873b38a229a877fafc92ef3a581f37"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="class_media_controller_1_1_i_controller.html#aeb873b38a229a877fafc92ef3a581f37">MediaController::IController::Mode</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Values that represent the different playback modes. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="aeb873b38a229a877fafc92ef3a581f37a277ddc64239dd32f57f788dbd3ec64a9"></a>kStopped&#160;</td><td class="fielddoc">
-<p>The stream is stopped.</p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aeb873b38a229a877fafc92ef3a581f37acc1969e6e601edde4fbbad12a234e519"></a>kLive&#160;</td><td class="fielddoc">
-<p>The stream is playing live video.</p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aeb873b38a229a877fafc92ef3a581f37a2182a8f6dc36ced932e7e05305f22704"></a>kPlayback&#160;</td><td class="fielddoc">
-<p>The stream is playing recorded video.</p>
-</td></tr>
-</table>
-
-<p>Definition at line <a class="el" href="_i_controller_8h_source.html#l00024">24</a> of file <a class="el" href="_i_controller_8h_source.html">IController.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                  {</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <a class="code" href="class_media_controller_1_1_i_controller.html#aeb873b38a229a877fafc92ef3a581f37a277ddc64239dd32f57f788dbd3ec64a9">kStopped</a>,</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <a class="code" href="class_media_controller_1_1_i_controller.html#aeb873b38a229a877fafc92ef3a581f37acc1969e6e601edde4fbbad12a234e519">kLive</a>,</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <a class="code" href="class_media_controller_1_1_i_controller.html#aeb873b38a229a877fafc92ef3a581f37a2182a8f6dc36ced932e7e05305f22704">kPlayback</a></div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        };</div><div class="ttc" id="class_media_controller_1_1_i_controller_html_aeb873b38a229a877fafc92ef3a581f37a2182a8f6dc36ced932e7e05305f22704"><div class="ttname"><a href="class_media_controller_1_1_i_controller.html#aeb873b38a229a877fafc92ef3a581f37a2182a8f6dc36ced932e7e05305f22704">MediaController::IController::kPlayback</a></div><div class="ttdoc">The stream is playing recorded video.</div><div class="ttdef"><b>Definition:</b> <a href="_i_controller_8h_source.html#l00032">IController.h:32</a></div></div>
-<div class="ttc" id="class_media_controller_1_1_i_controller_html_aeb873b38a229a877fafc92ef3a581f37acc1969e6e601edde4fbbad12a234e519"><div class="ttname"><a href="class_media_controller_1_1_i_controller.html#aeb873b38a229a877fafc92ef3a581f37acc1969e6e601edde4fbbad12a234e519">MediaController::IController::kLive</a></div><div class="ttdoc">The stream is playing live video.</div><div class="ttdef"><b>Definition:</b> <a href="_i_controller_8h_source.html#l00029">IController.h:29</a></div></div>
-<div class="ttc" id="class_media_controller_1_1_i_controller_html_aeb873b38a229a877fafc92ef3a581f37a277ddc64239dd32f57f788dbd3ec64a9"><div class="ttname"><a href="class_media_controller_1_1_i_controller.html#aeb873b38a229a877fafc92ef3a581f37a277ddc64239dd32f57f788dbd3ec64a9">MediaController::IController::kStopped</a></div><div class="ttdoc">The stream is stopped.</div><div class="ttdef"><b>Definition:</b> <a href="_i_controller_8h_source.html#l00026">IController.h:26</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ac096b6dc76daeb30df51bacf9bfe4712"></a>
 <div class="memitem">
@@ -263,8 +229,8 @@ Collaboration diagram for MediaController::IController:</div>
 
 <p>Virtual destructor. </p>
 
-<p>Definition at line <a class="el" href="_i_controller_8h_source.html#l00038">38</a> of file <a class="el" href="_i_controller_8h_source.html">IController.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{}</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_i_controller_8h_source.html#l00023">23</a> of file <a class="el" href="_i_controller_8h_source.html">IController.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{}</div></div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -275,7 +241,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" id="node4" href="class_media_controller_1_1_i_controller.html#a244c1d4acbbe9c02b5694f8a1b4763c2" title="Add event data to be send back during timestamp events. " alt="" coords="232,136,411,177"/>
 <area shape="rect" id="node5" href="class_media_controller_1_1_i_controller.html#a25fad32d7f94ecc5999bab37ead56842" title="Remove an existing timestamp event subscriber. " alt="" coords="232,201,411,243"/>
 <area shape="rect" id="node6" href="class_media_controller_1_1_i_controller.html#af3b234c09b43800aac4207f45dceceb3" title="Remove all existing timestamp event subscribers. " alt="" coords="232,267,411,308"/>
-<area shape="rect" id="node7" href="class_media_controller_1_1_i_controller.html#a13d9691ab294809a5260a41e4ff59f0f" title="Get the current playback mode. " alt="" coords="232,332,411,373"/>
+<area shape="rect" id="node7" href="class_media_controller_1_1_i_controller.html#a768ace522735bcac45c74d4c01553490" title="Get the status of the pipeline. " alt="" coords="232,332,411,373"/>
 </map>
 </div>
 </p>
@@ -408,7 +374,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a13d9691ab294809a5260a41e4ff59f0f"></a>
+<a class="anchor" id="a768ace522735bcac45c74d4c01553490"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -416,7 +382,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="class_media_controller_1_1_i_controller.html#aeb873b38a229a877fafc92ef3a581f37">Mode</a> MediaController::IController::GetMode </td>
+          <td class="memname">virtual bool MediaController::IController::IsPipelineActive </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -429,16 +395,16 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Get the current playback mode. </p>
-<dl class="section return"><dt>Returns</dt><dd>The current stream <a class="el" href="class_media_controller_1_1_i_controller.html#aeb873b38a229a877fafc92ef3a581f37" title="Values that represent the different playback modes. ">Mode</a>.</dd></dl>
+<p>Get the status of the pipeline. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if pipeline is active, otherwise false.</dd></dl>
 
-<p>Implemented in <a class="el" href="class_media_controller_1_1_controller.html#a9832c40e836ec7b9b7a45b7ee2aaf42e">MediaController::Controller</a>.</p>
+<p>Implemented in <a class="el" href="class_media_controller_1_1_controller.html#ae1fbeff24b6dbae0f6ae7b2f28721f39">MediaController::Controller</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_media_controller_1_1_i_controller_a13d9691ab294809a5260a41e4ff59f0f_icgraph.png" border="0" usemap="#class_media_controller_1_1_i_controller_a13d9691ab294809a5260a41e4ff59f0f_icgraph" alt=""/></div>
-<map name="class_media_controller_1_1_i_controller_a13d9691ab294809a5260a41e4ff59f0f_icgraph" id="class_media_controller_1_1_i_controller_a13d9691ab294809a5260a41e4ff59f0f_icgraph">
+<div class="center"><img src="class_media_controller_1_1_i_controller_a768ace522735bcac45c74d4c01553490_icgraph.png" border="0" usemap="#class_media_controller_1_1_i_controller_a768ace522735bcac45c74d4c01553490_icgraph" alt=""/></div>
+<map name="class_media_controller_1_1_i_controller_a768ace522735bcac45c74d4c01553490_icgraph" id="class_media_controller_1_1_i_controller_a768ace522735bcac45c74d4c01553490_icgraph">
 <area shape="rect" id="node2" href="class_media_controller_1_1_i_controller.html#ac096b6dc76daeb30df51bacf9bfe4712" title="Virtual destructor. " alt="" coords="232,5,411,47"/>
 </map>
 </div>

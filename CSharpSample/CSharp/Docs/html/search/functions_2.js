@@ -1,13 +1,19 @@
 var searchData=
 [
+  ['canceldownload',['CancelDownload',['../class_s_d_k_sample_app_1_1_source_1_1_report_status_form.html#aa27b8df6d65f5929fc4179bbd9ae2f58',1,'SDKSampleApp::Source::ReportStatusForm']]],
   ['changeprogressviewstate',['ChangeProgressViewState',['../class_s_d_k_sample_app_1_1_source_1_1_connect_form.html#a00235d8e862533c73f9d375d2acc6569',1,'SDKSampleApp::Source::ConnectForm']]],
   ['changeptzformstate',['ChangePtzFormState',['../class_s_d_k_sample_app_1_1_source_1_1_control_manager.html#a53f29117846012bf8d91b2e2e967e90f',1,'SDKSampleApp::Source::ControlManager']]],
   ['checkboxaccountenabled_5fcheckedchanged',['CheckBoxAccountEnabled_CheckedChanged',['../class_s_d_k_sample_app_1_1_source_1_1_modify_user_form.html#ae17b327d19bc3d5875fb5140b335ad7f',1,'SDKSampleApp::Source::ModifyUserForm']]],
   ['checkboxchangepassword_5fcheckedchanged',['CheckBoxChangePassword_CheckedChanged',['../class_s_d_k_sample_app_1_1_source_1_1_modify_user_form.html#a734ce6c1e4709c9abdb0080711478e63',1,'SDKSampleApp::Source::ModifyUserForm']]],
+  ['checkboxtimeneeded_5fcheckedchanged',['CheckBoxTimeNeeded_CheckedChanged',['../class_s_d_k_sample_app_1_1_source_1_1_quick_report_form.html#a075dc49f09ac1f7dc76b7d273fe7ddcd',1,'SDKSampleApp::Source::QuickReportForm']]],
+  ['clusterconfigdetailsform',['ClusterConfigDetailsForm',['../class_s_d_k_sample_app_1_1_source_1_1_cluster_config_details_form.html#a9272033479b66e2c94aa6ba0b78b3a82',1,'SDKSampleApp::Source::ClusterConfigDetailsForm']]],
   ['combobox_5fclick',['ComboBox_Click',['../class_s_d_k_sample_app_1_1_source_1_1_modify_role_privileges_form.html#a05686a3dc48ee145aba3b9fd881b67f1',1,'SDKSampleApp::Source::ModifyRolePrivilegesForm']]],
   ['combobox_5fselectedindexchanged',['ComboBox_SelectedIndexChanged',['../class_s_d_k_sample_app_1_1_source_1_1_modify_role_privileges_form.html#a680848700bc33dbfe0fd706330ea50a1',1,'SDKSampleApp::Source::ModifyRolePrivilegesForm']]],
   ['comboboxdevices_5fselectedindexchanged',['ComboBoxDevices_SelectedIndexChanged',['../class_s_d_k_sample_app_1_1_source_1_1_add_device_assignment_form.html#a16fd45d0f879dc7bf5a1845f74c78385',1,'SDKSampleApp::Source::AddDeviceAssignmentForm']]],
+  ['comboboxdevicetype_5fselectedindexchanged',['ComboBoxDeviceType_SelectedIndexChanged',['../class_s_d_k_sample_app_1_1_source_1_1_add_device_form.html#acc03108386a872c4fd3c569824bcdfe8',1,'SDKSampleApp::Source::AddDeviceForm']]],
   ['comboboxevent_5fselectedindexchanged',['ComboBoxEvent_SelectedIndexChanged',['../class_s_d_k_sample_app_1_1_source_1_1_add_schedule_trigger_form.html#ac83b45ff31c8f8b4970897523e94a949',1,'SDKSampleApp::Source::AddScheduleTriggerForm']]],
+  ['comboboxlayouts_5fselectedindexchanged',['ComboBoxLayouts_SelectedIndexChanged',['../class_s_d_k_sample_app_1_1_source_1_1_view_monitor_form.html#aaba18f9eceddce731a49722482526bf2',1,'SDKSampleApp::Source::ViewMonitorForm']]],
+  ['comboboxrecorder_5fselectedindexchanged',['ComboBoxRecorder_SelectedIndexChanged',['../class_s_d_k_sample_app_1_1_source_1_1_add_device_form.html#a6c5dd4e2ddeb0c6dbc1b3a506b58524f',1,'SDKSampleApp::Source::AddDeviceForm']]],
   ['comboboxrecurrencetype_5fselectedindexchanged',['ComboBoxRecurrenceType_SelectedIndexChanged',['../class_s_d_k_sample_app_1_1_source_1_1_add_schedule_trigger_form.html#a3ed6bcb53eec77916dae72c211062d9e',1,'SDKSampleApp::Source::AddScheduleTriggerForm']]],
   ['connectform',['ConnectForm',['../class_s_d_k_sample_app_1_1_source_1_1_connect_form.html#ab48af4539ce25552b0cdc0cdf887f0b5',1,'SDKSampleApp::Source::ConnectForm']]],
   ['controlmanager',['ControlManager',['../class_s_d_k_sample_app_1_1_source_1_1_control_manager.html#a3566600cad285bdf9d5791065cb6756d',1,'SDKSampleApp::Source::ControlManager']]]

@@ -15,6 +15,7 @@ var class_c_p_p_cli_1_1_export =
     [ "Export", "class_c_p_p_cli_1_1_export.html#a741f9a7a48b2049c61535182849961e1", null ],
     [ "~Export", "class_c_p_p_cli_1_1_export.html#a7b7f9bd388377c0ac2d8ede605300d40", null ],
     [ "!Export", "class_c_p_p_cli_1_1_export.html#ac6755bc024906285d62892f9466226df", null ],
+    [ "Refresh", "class_c_p_p_cli_1_1_export.html#ab6dc87e5894270a1418468efbbedca9b", null ],
     [ "Completed", "class_c_p_p_cli_1_1_export.html#a3809b220802ebcbc997f1d99a550c6ad", null ],
     [ "DataUri", "class_c_p_p_cli_1_1_export.html#a1626329c0d36b98e1772892fc6884f1b", null ],
     [ "ExportClips", "class_c_p_p_cli_1_1_export.html#a7c752b3e549c076866af8419da26b722", null ],
@@ -24,7 +25,8 @@ var class_c_p_p_cli_1_1_export =
     [ "Initiated", "class_c_p_p_cli_1_1_export.html#ab2c2887030ed4da6589b3d7bde6ba069", null ],
     [ "IsProtected", "class_c_p_p_cli_1_1_export.html#a33d81657a96c40d960084bd307a51839", null ],
     [ "Name", "class_c_p_p_cli_1_1_export.html#a0cd3296a380590e1e3b11963294a3c9d", null ],
-    [ "Owner", "class_c_p_p_cli_1_1_export.html#a659f32b8ebd06ce093f4764d211fb54d", null ],
+    [ "Owner", "class_c_p_p_cli_1_1_export.html#ab4d1ab906ae5e23e2a60119307fff4d2", null ],
+    [ "OwnerName", "class_c_p_p_cli_1_1_export.html#a7bb2d749caa6077d643a7cda788cf276", null ],
     [ "PercentComplete", "class_c_p_p_cli_1_1_export.html#a7935a0ee259104646d3ddf361982d6af", null ],
     [ "SecondsRemaining", "class_c_p_p_cli_1_1_export.html#aea661cbd69ae06451852169cdf8746cc", null ],
     [ "Status", "class_c_p_p_cli_1_1_export.html#a48cd1d8b120272c929ed30daccce7062", null ]

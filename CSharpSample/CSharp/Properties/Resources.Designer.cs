@@ -22,7 +22,7 @@ namespace SDKSampleApp.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace SDKSampleApp.Properties {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SDKSampleApp.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace SDKSampleApp.Properties {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -61,9 +61,19 @@ namespace SDKSampleApp.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap camera_online {
+            get {
+                object obj = ResourceManager.GetObject("camera_online", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {0}: {1} {2} {3} {4} {5} {6}.
         /// </summary>
-        internal static string EventDetailsFormatString {
+        public static string EventDetailsFormatString {
             get {
                 return ResourceManager.GetString("EventDetailsFormatString", resourceCulture);
             }
@@ -72,7 +82,7 @@ namespace SDKSampleApp.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Event received: [{0}]  {1} - {2}.
         /// </summary>
-        internal static string EventHeaderFormatString {
+        public static string EventHeaderFormatString {
             get {
                 return ResourceManager.GetString("EventHeaderFormatString", resourceCulture);
             }

@@ -1,6 +1,9 @@
 <map id="CPPCli::Schedule::~Schedule" name="CPPCli::Schedule::~Schedule">
-<area shape="rect" id="node2" href="$class_c_p_p_cli_1_1_schedule.html#a7ec0b32cacb13d85478101f72349d7e6" title="Constructor. " alt="" coords="188,5,376,32"/>
-<area shape="rect" id="node3" href="$class_c_p_p_cli_1_1_schedule.html#afe119db28e0a262762bf3012011ec9ef" title="Get the data sources linked to the schedule. " alt="" coords="189,56,375,83"/>
-<area shape="rect" id="node4" href="$class_c_p_p_cli_1_1_schedule.html#a670acbee5abbef04a8daea7c6c7a01d4" title="Add data sources to the schedule. " alt="" coords="203,107,361,133"/>
-<area shape="rect" id="node5" href="$class_c_p_p_cli_1_1_schedule.html#a87840f942154150afca7e025b0b807bb" title="Delete existing data sources from the schedule. " alt="" coords="197,157,367,184"/>
+<area shape="rect" id="node2" href="$class_c_p_p_cli_1_1_schedule.html#a7ec0b32cacb13d85478101f72349d7e6" title="Constructor. " alt="" coords="199,5,387,32"/>
+<area shape="rect" id="node3" href="$class_c_p_p_cli_1_1_schedule.html#a029ba0d95e86dd8bb376f0708bcefffb" title="Add a new schedule trigger to the schedule. " alt="" coords="188,57,399,98"/>
+<area shape="rect" id="node4" href="$class_c_p_p_cli_1_1_schedule.html#a78bc1f2332630cd8f413eca782686a23" title="Delete a schedule trigger from the schedule. " alt="" coords="208,122,379,163"/>
+<area shape="rect" id="node5" href="$class_c_p_p_cli_1_1_schedule.html#afe119db28e0a262762bf3012011ec9ef" title="Get the data sources linked to the schedule. " alt="" coords="200,188,387,215"/>
+<area shape="rect" id="node6" href="$class_c_p_p_cli_1_1_schedule.html#a670acbee5abbef04a8daea7c6c7a01d4" title="Add data sources to the schedule. " alt="" coords="214,239,373,265"/>
+<area shape="rect" id="node7" href="$class_c_p_p_cli_1_1_schedule.html#afcaf234e3caa50edf0f94ca37994c439" title="Update this instances properties. " alt="" coords="204,289,383,316"/>
+<area shape="rect" id="node8" href="$class_c_p_p_cli_1_1_schedule.html#a87840f942154150afca7e025b0b807bb" title="Delete existing data sources from the schedule. " alt="" coords="208,340,379,367"/>
 </map>

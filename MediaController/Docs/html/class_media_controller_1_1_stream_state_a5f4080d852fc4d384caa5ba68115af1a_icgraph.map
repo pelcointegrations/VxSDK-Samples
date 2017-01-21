@@ -1,7 +1,0 @@
-<map id="MediaController::StreamState::Seek" name="MediaController::StreamState::Seek">
-<area shape="rect" id="node2" href="$class_media_controller_1_1_stream_state.html#acbd824a78b5458d1577ea36f2a9be548" title="Virtual destructor. " alt="" coords="247,5,441,47"/>
-<area shape="rect" id="node3" href="$class_media_controller_1_1_playing_state.html#accba39a7a8d320865c25ad52c775781c" title="Virtual destructor. " alt="" coords="263,71,425,112"/>
-<area shape="rect" id="node4" href="$class_media_controller_1_1_paused_state.html#ae70acfaf69074d1fea20e2585a14e4e6" title="Virtual destructor. " alt="" coords="247,136,441,177"/>
-<area shape="rect" id="node5" href="$class_media_controller_1_1_stopped_state.html#a91eba4e93a183e1716a6eb8fa5b6c379" title="Virtual destructor. " alt="" coords="260,201,428,243"/>
-<area shape="rect" id="node6" href="$class_media_controller_1_1_controller.html#ad6945bebdaaf9337d4589cd9e7188890" title="Call Play on the stream with the supplied start time, resulting in a playback stream. " alt="" coords="257,267,431,308"/>
-</map>

@@ -133,18 +133,18 @@ namespace CPPCli {
         !Privilege();
 
         /// <summary>
-        /// Associate devices with this privilege.
-        /// </summary>
-        /// <param name="devices">A <c>List</c> containing the devices to be added.</param>
-        /// <returns>The <see cref="Results::Value">Result</see> of adding the devices.</returns>
-        CPPCli::Results::Value Link(System::Collections::Generic::List<Device^>^ devices);
-
-        /// <summary>
         /// Associate data sources with this privilege.
         /// </summary>
         /// <param name="dataSources">A <c>List</c> containing the data sources to be added.</param>
         /// <returns>The <see cref="Results::Value">Result</see> of adding the data sources.</returns>
         CPPCli::Results::Value Link(System::Collections::Generic::List<DataSource^>^ dataSources);
+
+        /// <summary>
+        /// Associate devices with this privilege.
+        /// </summary>
+        /// <param name="devices">A <c>List</c> containing the devices to be added.</param>
+        /// <returns>The <see cref="Results::Value">Result</see> of adding the devices.</returns>
+        CPPCli::Results::Value Link(System::Collections::Generic::List<Device^>^ devices);
 
         /// <summary>
         /// Associate users with this privilege.
@@ -154,11 +154,10 @@ namespace CPPCli {
         CPPCli::Results::Value Link(System::Collections::Generic::List<User^>^ users);
 
         /// <summary>
-        /// Remove device associations from this privilege.
+        /// Refreshes this instances properties.
         /// </summary>
-        /// <param name="devices">A <c>List</c> containing the devices to be removed.</param>
-        /// <returns>The <see cref="Results::Value">Result</see> of removing the devices.</returns>
-        CPPCli::Results::Value Unlink(System::Collections::Generic::List<Device^>^ devices);
+        /// <returns>The <see cref="Results::Value">Result</see> of updating the properties.</returns>
+        Results::Value Refresh();
 
         /// <summary>
         /// Remove data source associations from this privilege.
@@ -168,6 +167,13 @@ namespace CPPCli {
         CPPCli::Results::Value Unlink(System::Collections::Generic::List<DataSource^>^ dataSources);
 
         /// <summary>
+        /// Remove device associations from this privilege.
+        /// </summary>
+        /// <param name="devices">A <c>List</c> containing the devices to be removed.</param>
+        /// <returns>The <see cref="Results::Value">Result</see> of removing the devices.</returns>
+        CPPCli::Results::Value Unlink(System::Collections::Generic::List<Device^>^ devices);
+
+        /// <summary>
         /// Remove user associations from this privilege.
         /// </summary>
         /// <param name="users">A <c>List</c> containing the users to be removed.</param>
@@ -175,12 +181,22 @@ namespace CPPCli {
         CPPCli::Results::Value Unlink(System::Collections::Generic::List<User^>^ users);
 
         /// <summary>
-        /// Gets the devices associated with this privilege.
+        /// Gets the unique identifier for this privilege.
         /// </summary>
-        /// <value>A list of devices.</value>
-        property System::Collections::Generic::List<Device^>^ LinkedDevices {
+        /// <value>The unique identifier.</value>
+        property System::String^ Id {
         public:
-            System::Collections::Generic::List<Device^>^ get() { return _GetLinkedDevices(); }
+            System::String^ get() { return gcnew System::String(_privilege->id); }
+        }
+
+        /// <summary>
+        /// Gets whether the privilege is restricted to the associated resources.
+        /// </summary>
+        /// <value><c>true</c> if restricted, <c>false</c> if not.</value>
+        property bool IsRestricted {
+        public:
+            bool get() { return _GetRestricted(); }
+            void set(bool value) { _privilege->SetRestricted(value); }
         }
 
         /// <summary>
@@ -193,48 +209,21 @@ namespace CPPCli {
         }
 
         /// <summary>
+        /// Gets the devices associated with this privilege.
+        /// </summary>
+        /// <value>A list of devices.</value>
+        property System::Collections::Generic::List<Device^>^ LinkedDevices {
+        public:
+            System::Collections::Generic::List<Device^>^ get() { return _GetLinkedDevices(); }
+        }
+
+        /// <summary>
         /// Gets the users associated with this privilege.
         /// </summary>
         /// <value>A list of users.</value>
         property System::Collections::Generic::List<User^>^ LinkedUsers {
         public:
             System::Collections::Generic::List<User^>^ get() { return _GetLinkedUsers(); }
-        }
-
-        /// <summary>
-        /// Gets the devices not associated with this privilege.
-        /// </summary>
-        /// <value>A list of devices.</value>
-        property System::Collections::Generic::List<Device^>^ UnLinkedDevices {
-        public:
-            System::Collections::Generic::List<Device^>^ get() { return _GetUnLinkedDevices(); }
-        }
-
-        /// <summary>
-        /// Gets the data sources not associated with this privilege.
-        /// </summary>
-        /// <value>A list of data sources.</value>
-        property System::Collections::Generic::List<DataSource^>^ UnLinkedDataSources {
-        public:
-            System::Collections::Generic::List<DataSource^>^ get() { return _GetUnLinkedDataSources(); }
-        }
-
-        /// <summary>
-        /// Gets the users not associated with this privilege.
-        /// </summary>
-        /// <value>A list of users.</value>
-        property System::Collections::Generic::List<User^>^ UnLinkedUsers {
-        public:
-            System::Collections::Generic::List<User^>^ get() { return _GetUnLinkedUsers(); }
-        }
-
-        /// <summary>
-        /// Gets the unique identifier for this privilege.
-        /// </summary>
-        /// <value>The unique identifier.</value>
-        property System::String^ Id {
-        public:
-            System::String^ get() { return gcnew System::String(_privilege->id); }
         }
 
         /// <summary>
@@ -267,24 +256,41 @@ namespace CPPCli {
         }
 
         /// <summary>
-        /// Gets whether the privilege is restricted to the associated resources.
+        /// Gets the data sources not associated with this privilege.
         /// </summary>
-        /// <value><c>true</c> if restricted, <c>false</c> if not.</value>
-        property bool IsRestricted {
+        /// <value>A list of data sources.</value>
+        property System::Collections::Generic::List<DataSource^>^ UnLinkedDataSources {
         public:
-            bool get() { return _GetRestricted(); }
-            void set(bool value) { _privilege->SetRestricted(value); }
+            System::Collections::Generic::List<DataSource^>^ get() { return _GetUnLinkedDataSources(); }
+        }
+
+        /// <summary>
+        /// Gets the devices not associated with this privilege.
+        /// </summary>
+        /// <value>A list of devices.</value>
+        property System::Collections::Generic::List<Device^>^ UnLinkedDevices {
+        public:
+            System::Collections::Generic::List<Device^>^ get() { return _GetUnLinkedDevices(); }
+        }
+
+        /// <summary>
+        /// Gets the users not associated with this privilege.
+        /// </summary>
+        /// <value>A list of users.</value>
+        property System::Collections::Generic::List<User^>^ UnLinkedUsers {
+        public:
+            System::Collections::Generic::List<User^>^ get() { return _GetUnLinkedUsers(); }
         }
 
     internal:
         VxSdk::IVxPrivilege* _privilege;
+        System::Collections::Generic::List<DataSource^>^ _GetLinkedDataSources();
+        System::Collections::Generic::List<Device^>^ _GetLinkedDevices();
+        System::Collections::Generic::List<User^>^ _GetLinkedUsers();
         int _GetPriority();
         bool _GetRestricted();
-        System::Collections::Generic::List<Device^>^ _GetLinkedDevices();
-        System::Collections::Generic::List<DataSource^>^ _GetLinkedDataSources();
-        System::Collections::Generic::List<User^>^ _GetLinkedUsers();
-        System::Collections::Generic::List<Device^>^ _GetUnLinkedDevices();
         System::Collections::Generic::List<DataSource^>^ _GetUnLinkedDataSources();
+        System::Collections::Generic::List<Device^>^ _GetUnLinkedDevices();
         System::Collections::Generic::List<User^>^ _GetUnLinkedUsers();
     };
 }

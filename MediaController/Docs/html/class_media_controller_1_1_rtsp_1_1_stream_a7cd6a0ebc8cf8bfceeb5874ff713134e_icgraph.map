@@ -1,3 +1,0 @@
-<map id="MediaController::Rtsp::Stream::Seek" name="MediaController::Rtsp::Stream::Seek">
-<area shape="rect" id="node2" href="$class_media_controller_1_1_rtsp_1_1_stream.html#ae479b9bed38549d274d24f69cf277637" title="Call Seek on the stream using the last timestamp received as the start time. " alt="" coords="200,5,347,47"/>
-</map>

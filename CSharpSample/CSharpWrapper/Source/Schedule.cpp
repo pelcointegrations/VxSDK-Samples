@@ -14,6 +14,73 @@ CPPCli::Schedule::!Schedule() {
     _schedule = nullptr;
 }
 
+CPPCli::Results::Value CPPCli::Schedule::AddScheduleTrigger(CPPCli::NewScheduleTrigger^ newScheduleTrigger) {
+    // Create a new schedule trigger object
+    VxSdk::VxNewScheduleTrigger newTrigger;
+    VxSdk::Utilities::StrCopySafe(newTrigger.dailyEndTime, Utils::ConvertDateTimeToTimeChar(newScheduleTrigger->DailyEndTime));
+    VxSdk::Utilities::StrCopySafe(newTrigger.dailyStartTime, Utils::ConvertDateTimeToTimeChar(newScheduleTrigger->DailyStartTime));
+    VxSdk::Utilities::StrCopySafe(newTrigger.endDate, Utils::ConvertDateTimeToChar(newScheduleTrigger->EndDate));
+    VxSdk::Utilities::StrCopySafe(newTrigger.startDate, Utils::ConvertDateTimeToChar(newScheduleTrigger->StartDate));
+    VxSdk::Utilities::StrCopySafe(newTrigger.id, Utils::ConvertSysString(newScheduleTrigger->Id));
+    VxSdk::Utilities::StrCopySafe(newTrigger.eventSourceDevice, Utils::ConvertSysString(newScheduleTrigger->EventSource));
+    newTrigger.postTrigger = newScheduleTrigger->PostTrigger;
+    newTrigger.preTrigger = newScheduleTrigger->PreTrigger;
+    newTrigger.timeout = newScheduleTrigger->Timeout;
+    newTrigger.event = VxSdk::VxSituationType::Value(newScheduleTrigger->Event);
+    newTrigger.recurrence = VxSdk::VxRecurrenceType::Value(newScheduleTrigger->RecurrenceType);
+    newTrigger.framerate = VxSdk::VxRecordingFramerate::Value(newScheduleTrigger->Framerate);
+
+    // Get the weekly interval values
+    int weeklySize = newScheduleTrigger->RecurWeekly->Count;
+    int *weekIntervals = new int[weeklySize];
+    for (int iW = 0; iW < weeklySize; iW++) {
+        weekIntervals[iW] = newScheduleTrigger->RecurWeekly[iW];
+    }
+    // Add any weekly interval values to the new schedule trigger
+    newTrigger.recurWeekly = weekIntervals;
+    newTrigger.recurWeeklySize = weeklySize;
+
+    // Get the monthly interval values
+    int monthlySize = newScheduleTrigger->RecurMonthly->Count;
+    int *monthIntervals = new int[monthlySize];
+    for (int iM = 0; iM < monthlySize; iM++) {
+        monthIntervals[iM] = newScheduleTrigger->RecurMonthly[iM];
+    }
+    // Add any monthly interval values to the new schedule trigger
+    newTrigger.recurMonthly = monthIntervals;
+    newTrigger.recurMonthlySize = monthlySize;
+
+    // Get the yearly interval values
+    int yearlySize = newScheduleTrigger->RecurYearly->Count;
+    int *yearIntervals = new int[yearlySize];
+    for (int iY = 0; iY < yearlySize; iY++) {
+        yearIntervals[iY] = newScheduleTrigger->RecurYearly[iY];
+    }
+    // Add any yearly interval values to the new schedule trigger
+    newTrigger.recurYearly = yearIntervals;
+    newTrigger.recurYearlySize = yearlySize;
+
+    // Add any event properties to the new schedule trigger
+    int size = newScheduleTrigger->EventProperties->Count;
+    VxSdk::VxKvObject *kvObj = new VxSdk::VxKvObject[size];
+    newTrigger.eventPropertySize = size;
+    newTrigger.eventProperties = kvObj;
+    for (int ii = 0; ii < size; ii++) {
+        VxSdk::Utilities::StrCopySafe(newTrigger.eventProperties[ii].key,
+            Utils::ConvertSysString(newScheduleTrigger->EventProperties[ii].Key));
+        VxSdk::Utilities::StrCopySafe(newTrigger.eventProperties[ii].value,
+            Utils::ConvertSysString(newScheduleTrigger->EventProperties[ii].Value));
+    }
+
+    // Add the schedule trigger to the schedule
+    return CPPCli::Results::Value(_schedule->AddScheduleTrigger(newTrigger));
+}
+
+CPPCli::Results::Value CPPCli::Schedule::DeleteScheduleTrigger(CPPCli::ScheduleTrigger^ scheduleTrigger) {
+    // Delete the schedule trigger
+    return CPPCli::Results::Value(scheduleTrigger->_scheduleTrigger->DeleteScheduleTrigger());
+}
+
 List<CPPCli::DataSource^>^ CPPCli::Schedule::GetLinks() {
     // Create a list of managed data source objects
     List<CPPCli::DataSource^>^ mlist = gcnew List<CPPCli::DataSource^>();
@@ -50,6 +117,11 @@ CPPCli::Results::Value CPPCli::Schedule::Link(List<CPPCli::DataSource^>^ dataSou
 
     // Unless there was an issue linking the data sources the result should be VxSdk::VxResult::kOK
     return CPPCli::Results::Value(result);
+}
+
+
+CPPCli::Results::Value CPPCli::Schedule::Refresh() {
+    return (CPPCli::Results::Value)_schedule->Refresh();
 }
 
 CPPCli::Results::Value CPPCli::Schedule::Unlink(List<CPPCli::DataSource^>^ dataSources) {

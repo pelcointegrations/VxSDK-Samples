@@ -16,7 +16,7 @@ namespace MediaController {
             /// Constructor.
             /// </summary>
             /// <param name="commands">The <see cref="Commands"/> instance for the associated stream.</param>
-            KeepAlive(Commands& commands);
+            explicit KeepAlive(Commands* commands);
 
             /// <summary>
             /// Destructor.
@@ -29,7 +29,7 @@ namespace MediaController {
             void GetParamsLoop();
 
         private:
-            Commands _commands;
+            Commands* _commands;
             struct ThreadInfo;
             std::unique_ptr<ThreadInfo> d_ptr;
         };

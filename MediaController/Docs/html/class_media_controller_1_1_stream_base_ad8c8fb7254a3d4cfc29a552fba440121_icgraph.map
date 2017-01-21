@@ -1,0 +1,10 @@
+<map id="MediaController::StreamBase::GetGstreamer" name="MediaController::StreamBase::GetGstreamer">
+<area shape="rect" id="node2" href="$class_media_controller_1_1_controller.html#ac54696c364e51b527fcbbf2437a1559b" title="Set the display window using the given window handle. " alt="" coords="245,5,420,47"/>
+<area shape="rect" id="node3" href="$class_media_controller_1_1_controller.html#aba0857a1860225dcd5ed4f384b97b159" title="Add a new subscriber to timestamp events. " alt="" coords="245,71,420,112"/>
+<area shape="rect" id="node4" href="$class_media_controller_1_1_controller.html#a522b854bfee7e896957f39bd8280330d" title="Add event data to be send back during timestamp events. " alt="" coords="245,136,420,177"/>
+<area shape="rect" id="node5" href="$class_media_controller_1_1_controller.html#a1a763f2e4c6ed13eefd3e348cac02814" title="Remove an existing timestamp event subscriber. " alt="" coords="245,201,420,243"/>
+<area shape="rect" id="node6" href="$class_media_controller_1_1_controller.html#a8e3fe1c73e53380337e45ba0af60b09c" title="Remove all existing timestamp event subscribers. " alt="" coords="245,267,420,308"/>
+<area shape="rect" id="node7" href="$class_media_controller_1_1_controller.html#a9832c40e836ec7b9b7a45b7ee2aaf42e" title="Get the current playback mode. " alt="" coords="245,332,420,373"/>
+<area shape="rect" id="node8" href="$class_media_controller_1_1_controller.html#ae1fbeff24b6dbae0f6ae7b2f28721f39" title="Get the status of the pipeline. " alt="" coords="245,397,420,439"/>
+<area shape="rect" id="node9" href="$class_media_controller_1_1_playing_state.html#a0bf97da76a698a03dc7b82d5e3f3a0ed" title="Perform the Play action based on the stream state. " alt="" coords="251,463,414,504"/>
+</map>

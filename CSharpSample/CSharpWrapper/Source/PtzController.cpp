@@ -14,6 +14,54 @@ CPPCli::PtzController::!PtzController() {
     _ptzController = nullptr;
 }
 
+CPPCli::Results::Value CPPCli::PtzController::AbsoluteMove(int positionX, int positionY) {
+    // Call AbsoluteMove and return the result
+    VxSdk::VxResult::Value result = _ptzController->AbsoluteMove(positionX, positionY);
+    return CPPCli::Results::Value(result);
+}
+
+CPPCli::Results::Value CPPCli::PtzController::AbsoluteMove(int positionX, int positionY, int positionZ) {
+    // Call AbsoluteMove and return the result
+    VxSdk::VxResult::Value result = _ptzController->AbsoluteMove(positionX, positionY, positionZ);
+    return CPPCli::Results::Value(result);
+}
+
+CPPCli::Results::Value CPPCli::PtzController::AbsolutePan(int positionX) {
+    // Call AbsolutePan and return the result
+    VxSdk::VxResult::Value result = _ptzController->AbsolutePan(positionX);
+    return CPPCli::Results::Value(result);
+}
+
+CPPCli::Results::Value CPPCli::PtzController::AbsoluteTilt(int positionY) {
+    // Call AbsoluteTilt and return the result
+    VxSdk::VxResult::Value result = _ptzController->AbsoluteTilt(positionY);
+    return CPPCli::Results::Value(result);
+}
+
+CPPCli::Results::Value CPPCli::PtzController::AbsoluteZoom(int positionZ) {
+    // Call AbsoluteZoom and return the result
+    VxSdk::VxResult::Value result = _ptzController->AbsoluteZoom(positionZ);
+    return CPPCli::Results::Value(result);
+}
+
+CPPCli::Results::Value CPPCli::PtzController::ContinuousFocus(CPPCli::PtzController::FocusDirections nearFar) {
+    // Call ContinuousFocus and return the result
+    VxSdk::VxResult::Value result = _ptzController->ContinuousFocus((VxSdk::VxFocusDirection::Value)nearFar);
+    return CPPCli::Results::Value(result);
+}
+
+CPPCli::Results::Value CPPCli::PtzController::ContinuousIris(CPPCli::PtzController::IrisDirections openClose) {
+    // Call ContinuousIris and return the result
+    VxSdk::VxResult::Value result = _ptzController->ContinuousIris((VxSdk::VxIrisDirection::Value)openClose);
+    return CPPCli::Results::Value(result);
+}
+
+CPPCli::Results::Value CPPCli::PtzController::ContinuousMove(int speedX, int speedY, CPPCli::PtzController::ZoomDirections inOut) {
+    // Call ContinuousMove and return the result
+    VxSdk::VxResult::Value result = _ptzController->ContinuousMove(speedX, speedY, (VxSdk::VxZoomDirection::Value)inOut);
+    return CPPCli::Results::Value(result);
+}
+
 List<CPPCli::Pattern^>^ CPPCli::PtzController::GetPatterns() {
     // Create a list of managed pattern objects
     List<Pattern^>^ mlist = gcnew List<Pattern^>();
@@ -62,40 +110,8 @@ List<CPPCli::Preset^>^ CPPCli::PtzController::GetPresets() {
     return mlist;
 }
 
-CPPCli::Results::Value CPPCli::PtzController::AbsoluteMove(int positionX, int positionY) {
-    // Call AbsoluteMove and return the result
-    VxSdk::VxResult::Value result = _ptzController->AbsoluteMove(positionX, positionY);
-    return CPPCli::Results::Value(result);
-}
-
-CPPCli::Results::Value CPPCli::PtzController::AbsoluteMove(int positionX, int positionY, int positionZ) {
-    // Call AbsoluteMove and return the result
-    VxSdk::VxResult::Value result = _ptzController->AbsoluteMove(positionX, positionY, positionZ);
-    return CPPCli::Results::Value(result);
-}
-
-CPPCli::Results::Value CPPCli::PtzController::AbsolutePan(int positionX) {
-    // Call AbsolutePan and return the result
-    VxSdk::VxResult::Value result = _ptzController->AbsolutePan(positionX);
-    return CPPCli::Results::Value(result);
-}
-
-CPPCli::Results::Value CPPCli::PtzController::AbsoluteTilt(int positionY) {
-    // Call AbsoluteTilt and return the result
-    VxSdk::VxResult::Value result = _ptzController->AbsoluteTilt(positionY);
-    return CPPCli::Results::Value(result);
-}
-
-CPPCli::Results::Value CPPCli::PtzController::AbsoluteZoom(int positionZ) {
-    // Call AbsoluteZoom and return the result
-    VxSdk::VxResult::Value result = _ptzController->AbsoluteZoom(positionZ);
-    return CPPCli::Results::Value(result);
-}
-
-CPPCli::Results::Value CPPCli::PtzController::ContinuousMove(int speedX, int speedY, CPPCli::PtzController::ZoomDirections inOut) {
-    // Call ContinuousMove and return the result
-    VxSdk::VxResult::Value result = _ptzController->ContinuousMove(speedX, speedY, (VxSdk::VxZoomDirection::Value)inOut);
-    return CPPCli::Results::Value(result);
+CPPCli::Results::Value CPPCli::PtzController::Refresh() {
+    return (CPPCli::Results::Value)_ptzController->Refresh();
 }
 
 CPPCli::Results::Value CPPCli::PtzController::RelativeMove(int deltaX, int deltaY, int deltaZ) {
@@ -104,15 +120,9 @@ CPPCli::Results::Value CPPCli::PtzController::RelativeMove(int deltaX, int delta
     return CPPCli::Results::Value(result);
 }
 
-CPPCli::Results::Value CPPCli::PtzController::ContinuousIris(CPPCli::PtzController::IrisDirections openClose) {
-    // Call ContinuousIris and return the result
-    VxSdk::VxResult::Value result = _ptzController->ContinuousIris((VxSdk::VxIrisDirection::Value)openClose);
-    return CPPCli::Results::Value(result);
-}
-
-CPPCli::Results::Value CPPCli::PtzController::ContinuousFocus(CPPCli::PtzController::FocusDirections nearFar) {
-    // Call ContinuousFocus and return the result
-    VxSdk::VxResult::Value result = _ptzController->ContinuousFocus((VxSdk::VxFocusDirection::Value)nearFar);
+CPPCli::Results::Value CPPCli::PtzController::RelativePercentageMove(int percentageX, int percentageY) {
+    // Call RelativePercentageMove and return the result
+    VxSdk::VxResult::Value result = _ptzController->RelativePercentageMove(percentageX, percentageY);
     return CPPCli::Results::Value(result);
 }
 
@@ -131,6 +141,12 @@ CPPCli::Results::Value CPPCli::PtzController::TriggerPattern(Pattern^ pattern) {
 CPPCli::Results::Value CPPCli::PtzController::TriggerPreset(Preset^ preset) {
     // Call TriggerPreset and return the result
     VxSdk::VxResult::Value result = _ptzController->TriggerPreset(*preset->_preset);
+    return CPPCli::Results::Value(result);
+}
+
+CPPCli::Results::Value CPPCli::PtzController::TriggerRefresh() {
+    // Call TriggerRefresh and return the result
+    VxSdk::VxResult::Value result = _ptzController->TriggerRefresh();
     return CPPCli::Results::Value(result);
 }
 

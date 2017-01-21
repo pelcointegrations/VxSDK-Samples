@@ -1,7 +1,0 @@
-<map id="MediaController::Rtsp::Commands::Options" name="MediaController::Rtsp::Commands::Options">
-<area shape="rect" id="node2" href="$class_media_controller_1_1_rtsp_1_1_commands.html#a6336294ea2e2d214f3a9d1b494e4aa07" title="Send the PLAY method and read the server response. " alt="" coords="209,5,356,47"/>
-<area shape="rect" id="node3" href="$class_media_controller_1_1_rtsp_1_1_stream.html#a7790a70a35e70203c73232ff1fc27dfc" title="Call Play on the stream. " alt="" coords="411,48,557,89"/>
-<area shape="rect" id="node4" href="$class_media_controller_1_1_rtsp_1_1_commands.html#aca7fdcac23d14e5b9aebafb598d2002e" title="Send the PLAY method with a Range header and read the server response. " alt="" coords="203,123,363,164"/>
-<area shape="rect" id="node5" href="$class_media_controller_1_1_rtsp_1_1_stream.html#a7cd6a0ebc8cf8bfceeb5874ff713134e" title="Call Play on the stream with the supplied start time, resulting in a playback stream. " alt="" coords="411,139,557,180"/>
-<area shape="rect" id="node6" href="$class_media_controller_1_1_rtsp_1_1_stream.html#ae479b9bed38549d274d24f69cf277637" title="Call Seek on the stream using the last timestamp received as the start time. " alt="" coords="605,139,752,180"/>
-</map>

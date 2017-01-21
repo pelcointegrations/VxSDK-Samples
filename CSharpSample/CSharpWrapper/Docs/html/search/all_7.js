@@ -1,13 +1,21 @@
 var searchData=
 [
+  ['generatordevice',['GeneratorDevice',['../class_c_p_p_cli_1_1_event.html#aea05c32c905692047df4803e67c1913b',1,'CPPCli::Event']]],
   ['generatordeviceid',['GeneratorDeviceId',['../class_c_p_p_cli_1_1_event.html#a02adc69a9fe4c6a56acaeb70f1e59c44',1,'CPPCli::Event::GeneratorDeviceId()'],['../class_c_p_p_cli_1_1_new_event.html#acf730768f021d7777bc559033373cf29',1,'CPPCli::NewEvent::GeneratorDeviceId()']]],
+  ['getassociation',['GetAssociation',['../class_c_p_p_cli_1_1_marker.html#a3c112294a8a37d6408e801444a823213',1,'CPPCli::Marker']]],
   ['getbookmarks',['GetBookmarks',['../class_c_p_p_cli_1_1_v_x_system.html#ac1bf3dc5baa1c1b040e93a81b2d371f8',1,'CPPCli::VXSystem']]],
   ['getdataobjects',['GetDataObjects',['../class_c_p_p_cli_1_1_v_x_system.html#ab8dc68d3889af25a521a2c2b168427dd',1,'CPPCli::VXSystem']]],
   ['getdatasources',['GetDataSources',['../class_c_p_p_cli_1_1_v_x_system.html#a79e08a75318cad32e828ae2c282d569e',1,'CPPCli::VXSystem']]],
   ['getdatastorages',['GetDataStorages',['../class_c_p_p_cli_1_1_v_x_system.html#a79dc401567f320cd0ebda7349c82618e',1,'CPPCli::VXSystem']]],
   ['getdevices',['GetDevices',['../class_c_p_p_cli_1_1_v_x_system.html#ac62f3a99b57100e33088348c196df269',1,'CPPCli::VXSystem']]],
+  ['getdrawings',['GetDrawings',['../class_c_p_p_cli_1_1_v_x_system.html#a13b7b50324c82860ed2bfd39e44e4de9',1,'CPPCli::VXSystem']]],
   ['getexports',['GetExports',['../class_c_p_p_cli_1_1_v_x_system.html#a3cccc3a30b245e19c776236afca72458',1,'CPPCli::VXSystem']]],
+  ['getimageuri',['GetImageUri',['../class_c_p_p_cli_1_1_drawing.html#a755564adc2124654efb516361eba974f',1,'CPPCli::Drawing']]],
+  ['getlicense',['GetLicense',['../class_c_p_p_cli_1_1_v_x_system.html#a738ba097520412223838454053d9b1cc',1,'CPPCli::VXSystem']]],
   ['getlinks',['GetLinks',['../class_c_p_p_cli_1_1_schedule.html#afe119db28e0a262762bf3012011ec9ef',1,'CPPCli::Schedule']]],
+  ['getlock',['GetLock',['../class_c_p_p_cli_1_1_drawing.html#a8aad256dbca86dcbac1afe4c4740836b',1,'CPPCli::Drawing']]],
+  ['getmonitors',['GetMonitors',['../class_c_p_p_cli_1_1_v_x_system.html#a17c7b3f373f99a43ab88d73dbd6146bc',1,'CPPCli::VXSystem']]],
+  ['getnotifications',['GetNotifications',['../class_c_p_p_cli_1_1_v_x_system.html#ad7d94e7b8942429e0c2e9cbad61de1da',1,'CPPCli::VXSystem']]],
   ['getpatterns',['GetPatterns',['../class_c_p_p_cli_1_1_ptz_controller.html#a25cc53c7ac96d003a284c6bea41a4932',1,'CPPCli::PtzController']]],
   ['getpresets',['GetPresets',['../class_c_p_p_cli_1_1_ptz_controller.html#a7d645e59e5d0dc205ef040e851cba574',1,'CPPCli::PtzController']]],
   ['getroles',['GetRoles',['../class_c_p_p_cli_1_1_v_x_system.html#a0837fc2ecc4ea39a50397a6e137a72c0',1,'CPPCli::VXSystem']]],
@@ -16,5 +24,5 @@ var searchData=
   ['getsnapshotendpoint',['GetSnapshotEndpoint',['../class_c_p_p_cli_1_1_clip.html#a4736e7d4e94f76405d7d8b9a2db98560',1,'CPPCli::Clip']]],
   ['gettags',['GetTags',['../class_c_p_p_cli_1_1_v_x_system.html#aa8833633442bc6c0ab6f61aa17215c11',1,'CPPCli::VXSystem']]],
   ['getusers',['GetUsers',['../class_c_p_p_cli_1_1_v_x_system.html#a8e67eea577119e09449983eb55372f89',1,'CPPCli::VXSystem']]],
-  ['gotolive',['GoToLive',['../class_c_p_p_cli_1_1_media_control.html#a2f06f8f367a4580152ee612e97c907e9',1,'CPPCli::MediaControl']]]
+  ['gotolive',['GoToLive',['../class_c_p_p_cli_1_1_media_control.html#a2f06f8f367a4580152ee612e97c907e9',1,'CPPCli::MediaControl::GoToLive()'],['../class_c_p_p_cli_1_1_monitor_cell.html#ae8139302c061c1d754390a5f02ac97a9',1,'CPPCli::MonitorCell::GoToLive()']]]
 ];

@@ -1,0 +1,8 @@
+<map id="MediaController::StreamBase::Play" name="MediaController::StreamBase::Play">
+<area shape="rect" id="node2" href="$class_media_controller_1_1_playing_state.html#a0bf97da76a698a03dc7b82d5e3f3a0ed" title="Perform the Play action based on the stream state. " alt="" coords="261,5,424,47"/>
+<area shape="rect" id="node3" href="$class_media_controller_1_1_playing_state.html#aa42a52f62cca87b6d347702e1369d7eb" title="Perform the GoToLive action based on the stream state. " alt="" coords="261,71,424,112"/>
+<area shape="rect" id="node4" href="$class_media_controller_1_1_paused_state.html#a914dc4fd7093ea4833cd6e29ff54ba91" title="Perform the Play action based on the stream state. " alt="" coords="245,136,440,177"/>
+<area shape="rect" id="node5" href="$class_media_controller_1_1_paused_state.html#a33effb368d43fe8cf3dfe64a30d09674" title="Perform the GoToLive action based on the stream state. " alt="" coords="245,201,440,243"/>
+<area shape="rect" id="node6" href="$class_media_controller_1_1_stopped_state.html#a19f046b0487a5f4a62bfbb8eb83ef6c7" title="Perform the Play action based on the stream state. " alt="" coords="259,267,427,308"/>
+<area shape="rect" id="node7" href="$class_media_controller_1_1_stopped_state.html#a33d6e16ce69b96d634e2c4aba70d8a80" title="Perform the GoToLive action based on the stream state. " alt="" coords="259,332,427,373"/>
+</map>

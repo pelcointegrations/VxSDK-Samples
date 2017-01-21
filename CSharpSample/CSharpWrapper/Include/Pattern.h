@@ -32,21 +32,21 @@ namespace CPPCli {
         !Pattern();
 
         /// <summary>
-        /// Gets the friendly name of the pattern.
-        /// </summary>
-        /// <value>The friendly name.</value>
-        property System::String^ Name {
-        public:
-            System::String^ get() { return gcnew System::String(_pattern->name); }
-        }
-
-        /// <summary>
         /// Gets the friendly description of the pattern.
         /// </summary>
         /// <value>The friendly description.</value>
         property System::String^ Description {
         public:
             System::String^ get() { return gcnew System::String(_pattern->description); }
+        }
+
+        /// <summary>
+        /// Gets the friendly name of the pattern.
+        /// </summary>
+        /// <value>The friendly name.</value>
+        property System::String^ Name {
+        public:
+            System::String^ get() { return gcnew System::String(_pattern->name); }
         }
 
     internal:

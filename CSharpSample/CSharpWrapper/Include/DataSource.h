@@ -8,6 +8,7 @@
 #include "PtzController.h"
 
 namespace CPPCli {
+    ref class DataStorage;
     ref class Device;
 
     /// <summary>
@@ -71,31 +72,10 @@ namespace CPPCli {
         CPPCli::DataSession^ CreateMjpegStream();
 
         /// <summary>
-        /// Gets the RTSP stream endpoint URI.
+        /// Refreshes this instances properties.
         /// </summary>
-        /// <value>The RTSP endpoint.</value>
-        property System::String^ RtspEndpoint {
-        public:
-            System::String^ get() { return _GetRtspEndpoint(); }
-        }
-
-        /// <summary>
-        /// Gets a value indicating whether PTZ is enabled.
-        /// </summary>
-        /// <value><c>true</c> if PTZ is enabled, <c>false</c> if not.</value>
-        property bool IsPTZ {
-        public:
-            bool get() { return _CanPtz(); }
-        }
-
-        /// <summary>
-        /// Gets a value indicating whether this data source is currently being captured by a recorder.
-        /// </summary>
-        /// <value><c>true</c> if capturing, <c>false</c> if not.</value>
-        property bool IsCapturing {
-        public:
-            bool get() { return _dataSource->isCapturing; }
-        }
+        /// <returns>The <see cref="Results::Value">Result</see> of updating the properties.</returns>
+        Results::Value Refresh();
 
         /// <summary>
         /// Gets the clips associated with this data source.
@@ -113,6 +93,33 @@ namespace CPPCli {
         property System::Collections::Generic::List<DataInterface^>^ DataInterfaces {
         public:
             System::Collections::Generic::List<DataInterface^>^ get() { return _GetDataInterfaces(); }
+        }
+
+        /// <summary>
+        /// Gets the data storages that this data source is associated with.
+        /// </summary>
+        /// <value>A <c>List</c> of the associated data storages.</value>
+        property System::Collections::Generic::List<DataStorage^>^ DataStorages {
+        public:
+            System::Collections::Generic::List<DataStorage^>^ get() { return _GetDataStorages(); }
+        }
+
+        /// <summary>
+        /// Gets a value indicating whether the live stream is available.
+        /// </summary>
+        /// <value><c>true</c> if live is available, <c>false</c> if not.</value>
+        property bool HasLiveStream {
+        public:
+            bool get() { return _dataSource->hasLive; }
+        }
+
+        /// <summary>
+        /// Gets a value indicating whether the recorded video is available.
+        /// </summary>
+        /// <value><c>true</c> if recorded video is available, <c>false</c> if not.</value>
+        property bool HasRecordedVideo {
+        public:
+            bool get() { return _dataSource->hasRecorded; }
         }
 
         /// <summary>
@@ -143,12 +150,30 @@ namespace CPPCli {
         }
 
         /// <summary>
-        /// Gets a value indicating whether the live stream is available.
+        /// Gets a value indicating whether this data source is currently being captured by a recorder.
         /// </summary>
-        /// <value><c>true</c> if live is available, <c>false</c> if not.</value>
-        property bool HasLiveStream {
+        /// <value><c>true</c> if capturing, <c>false</c> if not.</value>
+        property bool IsCapturing {
         public:
-            bool get() { return _dataSource->hasLive; }
+            bool get() { return _dataSource->isCapturing; }
+        }
+
+        /// <summary>
+        /// Gets a value indicating whether PTZ is enabled.
+        /// </summary>
+        /// <value><c>true</c> if PTZ is enabled, <c>false</c> if not.</value>
+        property bool IsPTZ {
+        public:
+            bool get() { return _CanPtz(); }
+        }
+
+        /// <summary>
+        /// Gets a value indicating whether the data source is currently recording.
+        /// </summary>
+        /// <value><c>true</c> if recording, <c>false</c> if not.</value>
+        property bool IsRecording {
+        public:
+            bool get() { return _dataSource->isRecording; }
         }
 
         /// <summary>
@@ -158,6 +183,11 @@ namespace CPPCli {
         property System::String^ Name {
         public:
             System::String^ get() { return gcnew System::String(_dataSource->name); }
+            void set(System::String^ value) {
+                char name[64];
+                strncpy_s(name, Utils::ConvertSysStringNonConst(value), sizeof(name));
+                _dataSource->SetName(name);
+            }
         }
 
         /// <summary>
@@ -167,6 +197,7 @@ namespace CPPCli {
         property int Number {
         public:
             int get() { return _dataSource->number; }
+            void set(int value) { _dataSource->SetNumber(value); }
         }
 
         /// <summary>
@@ -179,21 +210,21 @@ namespace CPPCli {
         }
 
         /// <summary>
-        /// Gets a value indicating whether the recorded video is available.
+        /// Gets the RTSP stream endpoint URI.
         /// </summary>
-        /// <value><c>true</c> if recorded video is available, <c>false</c> if not.</value>
-        property bool HasRecordedVideo {
+        /// <value>The RTSP endpoint.</value>
+        property System::String^ RtspEndpoint {
         public:
-            bool get() { return _dataSource->hasRecorded; }
+            System::String^ get() { return _GetRtspEndpoint(); }
         }
 
         /// <summary>
-        /// Gets a value indicating whether the data source is currently recording.
+        /// Gets the URI to retrieve the current live frame.
         /// </summary>
-        /// <value><c>true</c> if recording, <c>false</c> if not.</value>
-        property bool IsRecording {
+        /// <value>The JPEG URI.</value>
+        property System::String^ SnapshotUri {
         public:
-            bool get() { return _dataSource->isRecording; }
+            System::String^ get() { return gcnew System::String(_dataSource->snapshotUri); }
         }
 
         /// <summary>
@@ -214,23 +245,15 @@ namespace CPPCli {
             Types get() { return Types(_dataSource->type); }
         }
 
-        /// <summary>
-        /// Gets the URI to retrieve the current live frame.
-        /// </summary>
-        /// <value>The JPEG URI.</value>
-        property System::String^ SnapshotUri {
-        public:
-            System::String^ get() { return gcnew System::String(_dataSource->snapshotUri); }
-        }
-
     internal:
         VxSdk::IVxDataSource* _dataSource;
         bool _CanPtz();
         System::Collections::Generic::List<Clip^>^ _GetClips();
         System::Collections::Generic::List<DataInterface^>^ _GetDataInterfaces();
+        System::Collections::Generic::List<DataStorage^>^ _GetDataStorages();
+        CPPCli::Device^ _GetHostDevice();
         PtzController^ _GetPtzController();
         System::String^ _GetRtspEndpoint();
-        CPPCli::Device^ _GetHostDevice();
     };
 }
 #endif // DataSource_h__

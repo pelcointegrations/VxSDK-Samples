@@ -10,7 +10,7 @@
         UnknownError,
 
         /// <summary>No errors occurred.</summary>
-        OK,
+        Ok,
 
         /// <summary>Received an unsupported version error from the system.</summary>
         UnsupportedVersion,
@@ -72,9 +72,6 @@
     /// <remarks>The particular type of a device.</remarks>
     public enum VxDeviceType
     {
-        /// <summary>An error or unknown value was returned.</summary>
-        Unknown,
-
         /// <summary>A camera device.</summary>
         Camera,
 
@@ -89,6 +86,9 @@
 
         /// <summary>An encoder device.</summary>
         Encoder,
+
+        /// <summary>An external device.</summary>
+        External,
 
         /// <summary>A system manager device.</summary>
         Manager,
@@ -107,6 +107,9 @@
 
         /// <summary>A UI device.</summary>
         Ui,
+
+        /// <summary>An error or unknown value was returned.</summary>
+        Unknown,
 
         /// <summary>A VCD device.</summary>
         Vcd

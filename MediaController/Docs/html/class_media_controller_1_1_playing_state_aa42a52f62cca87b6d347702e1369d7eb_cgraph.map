@@ -1,0 +1,5 @@
+<map id="MediaController::PlayingState::GoToLive" name="MediaController::PlayingState::GoToLive">
+<area shape="rect" id="node2" href="$class_media_controller_1_1_stream_base.html#ad45aca1bf506ddeac7aec127b8037266" title="Get the current playback mode. " alt="" coords="216,5,408,47"/>
+<area shape="rect" id="node4" href="$class_media_controller_1_1_stream_base.html#a8082f1179f094eab73f0907cb8d58833" title="Call Play on the stream. " alt="" coords="216,71,408,112"/>
+<area shape="rect" id="node3" href="$class_media_controller_1_1_gst_wrapper.html#aaf7152a829d2ecd653fc2f508e336475" title="Get the current playback mode. " alt="" coords="456,5,647,47"/>
+</map>

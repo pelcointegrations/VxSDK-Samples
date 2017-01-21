@@ -21,15 +21,6 @@ namespace CPPCli {
         ExportClip(VxSdk::IVxExportClip* vxClip);
 
         /// <summary>
-        /// Gets the unique identifier.
-        /// </summary>
-        /// <value>The unique identifier.</value>
-        property System::String^ Id {
-        public:
-            System::String^ get() { return gcnew System::String(_exportClip->id); }
-        }
-
-        /// <summary>
         /// Gets the data source unique identifier of the export media.
         /// </summary>
         /// <value>The unique identifier of the data source.</value>
@@ -45,6 +36,15 @@ namespace CPPCli {
         property System::DateTime EndTime {
         public:
             System::DateTime get() { return Utils::ConvertCharToDateTime(_exportClip->endTime); }
+        }
+
+        /// <summary>
+        /// Gets the unique identifier.
+        /// </summary>
+        /// <value>The unique identifier.</value>
+        property System::String^ Id {
+        public:
+            System::String^ get() { return gcnew System::String(_exportClip->id); }
         }
 
         /// <summary>

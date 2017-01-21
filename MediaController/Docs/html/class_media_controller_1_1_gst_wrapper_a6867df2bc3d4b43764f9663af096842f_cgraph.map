@@ -1,0 +1,13 @@
+<map id="MediaController::GstWrapper::GetSpeed" name="MediaController::GstWrapper::GetSpeed">
+<area shape="rect" id="node2" href="$class_media_controller_1_1_gst_wrapper.html#a04c5611674a24bfdff220b3b967e15f9" title="Get the status of the pipeline. " alt="" coords="244,5,435,47"/>
+<area shape="rect" id="node3" href="$class_media_controller_1_1_gst_wrapper.html#a223bd48b70740533739d04b84b3ad538" title="Add a new subscriber to timestamp events. " alt="" coords="244,71,435,112"/>
+<area shape="rect" id="node4" href="$class_media_controller_1_1_gst_wrapper.html#ae61952b746aca7df898cf7faafcfd372" title="Remove an existing timestamp event subscriber. " alt="" coords="244,136,435,177"/>
+<area shape="rect" id="node5" href="$class_media_controller_1_1_gst_wrapper.html#ac0e9a26c816b6f27f981fbf9e06f2600" title="Remove all existing timestamp event subscribers. " alt="" coords="244,201,435,243"/>
+<area shape="rect" id="node6" href="$class_media_controller_1_1_gst_wrapper.html#ac0fa98f176f83ceb495e49ec58ef8392" title="Add custom data to be stored in here, which will be send back to caller inside TimestampEvent on Time..." alt="" coords="244,267,435,308"/>
+<area shape="rect" id="node7" href="$class_media_controller_1_1_gst_wrapper.html#a9d9daf14c6b6cfe52a7fb0bcd6b4a76c" title="Create the pipeline for an RTSP video stream. " alt="" coords="244,332,435,373"/>
+<area shape="rect" id="node8" href="$class_media_controller_1_1_gst_wrapper.html#a041731491df0ed485c82b323756d6927" title="Create the pipeline for an RTSP audio stream. " alt="" coords="244,397,435,439"/>
+<area shape="rect" id="node9" href="$class_media_controller_1_1_gst_wrapper.html#ac8cadd47be5e2847488be93e8064b1ef" title="Create the pipeline for an MJPEG stream. " alt="" coords="244,463,435,504"/>
+<area shape="rect" id="node10" href="$class_media_controller_1_1_gst_wrapper.html#a5ec4443c87798903502a4f65cb6eebea" title="Set the pipeline state to playing and update the speed value for determining the framerate. " alt="" coords="244,528,435,569"/>
+<area shape="rect" id="node11" href="$class_media_controller_1_1_gst_wrapper.html#a499f357308c79d6a73a578ec1356dcbb" title="Set the pipeline state to paused. " alt="" coords="244,593,435,635"/>
+<area shape="rect" id="node12" href="$class_media_controller_1_1_gst_wrapper.html#afec04a424ba74d48a849b298962b7a7b" title="Clear the pipeline and display window. " alt="" coords="244,659,435,700"/>
+</map>

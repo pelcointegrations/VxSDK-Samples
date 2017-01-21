@@ -3,13 +3,21 @@
 /// </summary>
 #include "MediaControl.h"
 
+#ifndef NO_MEDIA
 using namespace System::Runtime::InteropServices;
 
-CPPCli::MediaControl::MediaControl(DataSource^ dataSource, DataInterface^ dataInterface) {
+CPPCli::MediaControl::MediaControl(DataSource^ videoSource, DataInterface^ videoInterface, DataSource^ audioSource, DataInterface^ audioInterface) {
     // Create a new MediaRequest object
     MediaController::MediaRequest request;
-    request.dataSource = dataSource->_dataSource;
-    request.dataInterface = *dataInterface->_dataInterface;
+    if (videoSource != nullptr) {
+        request.dataSource = videoSource->_dataSource;
+        request.dataInterface = *videoInterface->_dataInterface;
+    }
+    
+    if (audioSource != nullptr) {
+        request.audioDataSource = audioSource->_dataSource;
+        request.audioDataInterface = *audioInterface->_dataInterface;
+    }
 
     // Get the MediaController which allows the client to control streams
     MediaController::IController* control = nullptr;
@@ -20,45 +28,26 @@ CPPCli::MediaControl::MediaControl(DataSource^ dataSource, DataInterface^ dataIn
     control->AddObserver(MediaController::TimestampEventCallback(Marshal::GetFunctionPointerForDelegate(_timestampCallback).ToPointer()));
 
     _control = control;
-    _currentdataSource = dataSource;
-}
-
-void CPPCli::MediaControl::SetVideoWindow(System::IntPtr windowHandle) {
-    // Set the display for the MediaController using windowHandle
-    void* VideoWindow = windowHandle.ToPointer();
-    _control->SetWindow(VideoWindow);
-}
-
-void CPPCli::MediaControl::SetDataSource(DataSource^ dataSource, DataInterface^ dataInterface) {
-    // Create a new MediaRequest object
-    MediaController::MediaRequest request;
-    request.dataSource = dataSource->_dataSource;
-    request.dataInterface = *dataInterface->_dataInterface;
-    // Update the stream settings for the MediaController using the MediaRequest
-    _control->NewRequest(request);
-    _currentdataSource = dataSource;
+    _currentdataSource = videoSource;
 }
 
 CPPCli::MediaControl::!MediaControl() {
     // Clear all subscriptions to the timestamp events
     _control->ClearObservers();
     delete _control;
+    _control = nullptr;
 }
 
-bool CPPCli::MediaControl::Play(float speed) {
-    return _control->Play(speed);
+void CPPCli::MediaControl::GoToLive() {
+    _control->GoToLive();
 }
 
 void CPPCli::MediaControl::Pause() {
     _control->Pause();
 }
 
-void CPPCli::MediaControl::Stop() {
-    _control->Stop();
-}
-
-void CPPCli::MediaControl::GoToLive() {
-    _control->GoToLive();
+bool CPPCli::MediaControl::Play(float speed) {
+    return _control->Play(speed);
 }
 
 bool CPPCli::MediaControl::Seek(System::DateTime time, float speed) {
@@ -66,7 +55,35 @@ bool CPPCli::MediaControl::Seek(System::DateTime time, float speed) {
     System::TimeSpan ts = (time - System::DateTime(1970, 1, 1, 0, 0, 0));
     unsigned int seekTime = safe_cast<unsigned int>(ts.TotalSeconds);
 
-    return _control->Seek(seekTime, speed);
+    return _control->Play(speed, seekTime);
+}
+
+void CPPCli::MediaControl::SetDataSource(DataSource^ videoSource, DataInterface^ videoInterface, DataSource^ audioSource, DataInterface^ audioInterface) {
+    // Create a new MediaRequest object
+    MediaController::MediaRequest request;
+    if (videoSource != nullptr) {
+        request.dataSource = videoSource->_dataSource;
+        request.dataInterface = *videoInterface->_dataInterface;
+    }
+
+    if (audioSource != nullptr) {
+        request.audioDataSource = audioSource->_dataSource;
+        request.audioDataInterface = *audioInterface->_dataInterface;
+    }
+
+    // Update the stream settings for the MediaController using the MediaRequest
+    _control->NewRequest(request);
+    _currentdataSource = videoSource;
+}
+
+void CPPCli::MediaControl::SetVideoWindow(System::IntPtr windowHandle) {
+    // Set the display for the MediaController using windowHandle
+    HWND VideoWindow = static_cast<HWND>(windowHandle.ToPointer());
+    _control->SetWindow(VideoWindow);
+}
+
+void CPPCli::MediaControl::Stop() {
+    _control->Stop();
 }
 
 void CPPCli::MediaControl::TimestampEvent::add(TimestampEventDelegate ^eventDelegate) {
@@ -84,3 +101,43 @@ void CPPCli::MediaControl::_FireTimestampEvent(MediaController::TimestampEvent* 
     if (_timestampEvent != nullptr)
         return _timestampEvent(gcnew MediaEvent(timeEvent));
 }
+#else //NO_MEDIA defined
+CPPCli::MediaControl::MediaControl(DataSource^ videoSource, DataInterface^ videoInterface, DataSource^ audioSource, DataInterface^ audioInterface) {
+}
+
+void CPPCli::MediaControl::SetVideoWindow(System::IntPtr windowHandle) {
+}
+
+void CPPCli::MediaControl::SetDataSource(DataSource^ videoSource, DataInterface^ videoInterface, DataSource^ audioSource, DataInterface^ audioInterface) {
+}
+
+CPPCli::MediaControl::!MediaControl() {
+}
+
+bool CPPCli::MediaControl::Play(float speed) {
+    return false;
+}
+
+void CPPCli::MediaControl::Pause() {
+}
+
+void CPPCli::MediaControl::Stop() {
+}
+
+void CPPCli::MediaControl::GoToLive() {
+}
+
+bool CPPCli::MediaControl::Seek(System::DateTime time, float speed) {
+    return false;
+}
+
+void CPPCli::MediaControl::TimestampEvent::add(TimestampEventDelegate ^eventDelegate) {
+
+};
+
+void CPPCli::MediaControl::TimestampEvent::remove(TimestampEventDelegate ^eventDelegate) {
+};
+
+void CPPCli::MediaControl::_FireTimestampEvent(MediaController::TimestampEvent* timeEvent) {
+}
+#endif

@@ -40,7 +40,7 @@ namespace SDKSampleApp.Source
                 var lvItem = new ListViewItem(string.Empty);
                 lvItem.SubItems.Add(export.Name);
                 lvItem.SubItems.Add(export.Initiated.ToLocalTime().ToString("s"));
-                lvItem.SubItems.Add(export.Owner);
+                lvItem.SubItems.Add(export.OwnerName);
                 lvItem.SubItems.Add(export.FileSizeKb.ToString());
                 lvItem.SubItems.Add(export.Status.ToString());
                 lvItem.Tag = export;

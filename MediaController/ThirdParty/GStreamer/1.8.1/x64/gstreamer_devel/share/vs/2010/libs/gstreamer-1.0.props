@@ -11,7 +11,7 @@
 	</PropertyGroup>
 	<ItemDefinitionGroup>
 		<ClCompile>
-			<AdditionalIncludeDirectories>$(ProjectDir)\MediaController\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\include\gstreamer-1.0;$(ProjectDir)\MediaController\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\lib\gstreamer-1.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<AdditionalIncludeDirectories>$(ProjectDir)\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\include\gstreamer-1.0;$(ProjectDir)\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_devel\lib\gstreamer-1.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
 		</ClCompile>
 		<Link>
 			<AdditionalLibraryDirectories>;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>

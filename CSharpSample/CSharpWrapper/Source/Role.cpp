@@ -23,6 +23,10 @@ CPPCli::Results::Value CPPCli::Role::AddPrivilege(CPPCli::NewPrivilege^ newPrivi
     return CPPCli::Results::Value(result);
 }
 
+CPPCli::Results::Value CPPCli::Role::Refresh() {
+    return (CPPCli::Results::Value)_role->Refresh();
+}
+
 CPPCli::Results::Value CPPCli::Role::RemovePrivilege(CPPCli::Privilege^ privilegeItem) {
     // Create a privilege object using the privilegeItem
     VxSdk::IVxPrivilege* delPrivilege = privilegeItem->_privilege;

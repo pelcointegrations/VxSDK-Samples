@@ -131,15 +131,15 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
+<tr class="memitem:a58d170e87769999b58ecf6e4b9296ea2"><td class="memItemLeft" align="right" valign="top">System::Collections::Generic::List&lt; System::String^ &gt;^&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_new_device_assignment.html#a58d170e87769999b58ecf6e4b9296ea2">DataSourceIds</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a58d170e87769999b58ecf6e4b9296ea2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the data sources that will be included in this device assignment.  <a href="#a58d170e87769999b58ecf6e4b9296ea2">More...</a><br /></td></tr>
+<tr class="separator:a58d170e87769999b58ecf6e4b9296ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a544ae823dc0ff218874761eb353bec86"><td class="memItemLeft" align="right" valign="top">System::String^ &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_new_device_assignment.html#a544ae823dc0ff218874761eb353bec86">DeviceId</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a544ae823dc0ff218874761eb353bec86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the unique ID of the device to assign.  <a href="#a544ae823dc0ff218874761eb353bec86">More...</a><br /></td></tr>
 <tr class="separator:a544ae823dc0ff218874761eb353bec86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb70830ed45fe03649e4ed1c163200e1"><td class="memItemLeft" align="right" valign="top">System::String^ &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_new_device_assignment.html#adb70830ed45fe03649e4ed1c163200e1">DriverType</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:adb70830ed45fe03649e4ed1c163200e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the type identifier of the driver to use for this device.  <a href="#adb70830ed45fe03649e4ed1c163200e1">More...</a><br /></td></tr>
 <tr class="separator:adb70830ed45fe03649e4ed1c163200e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58d170e87769999b58ecf6e4b9296ea2"><td class="memItemLeft" align="right" valign="top">System::Collections::Generic::List&lt; System::String^ &gt;^&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_new_device_assignment.html#a58d170e87769999b58ecf6e4b9296ea2">DataSourceIds</a><code> [get]</code></td></tr>
-<tr class="memdesc:a58d170e87769999b58ecf6e4b9296ea2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the data sources that will be included in this device assignment.  <a href="#a58d170e87769999b58ecf6e4b9296ea2">More...</a><br /></td></tr>
-<tr class="separator:a58d170e87769999b58ecf6e4b9296ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="class_c_p_p_cli_1_1_new_device_assignment.html" title="The NewDeviceAssignment class represents a new device assignment. ">NewDeviceAssignment</a> class represents a new device assignment. </p>
@@ -204,7 +204,7 @@ Properties</h2></td></tr>
 </dl>
 
 <p>Definition at line <a class="el" href="_new_device_assignment_8h_source.html#l00028">28</a> of file <a class="el" href="_new_device_assignment_8h_source.html">NewDeviceAssignment.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                                                                               {</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            _newDeviceAssignment = vxNewDeviceAssignment;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        }</div></div><!-- fragment -->
+<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                                                                               {</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            _newDeviceAssignment = vxNewDeviceAssignment;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            _dataSources = <span class="keyword">gcnew</span> System::Collections::Generic::List&lt;System::String^&gt;();</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        }</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Property Documentation</h2>
@@ -221,7 +221,7 @@ Properties</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -229,7 +229,7 @@ Properties</h2></td></tr>
 <p>Gets the data sources that will be included in this device assignment. </p>
 <p>A <code>List</code> of data sources.</p>
 
-<p>Definition at line <a class="el" href="_new_device_assignment_8h_source.html#l00056">56</a> of file <a class="el" href="_new_device_assignment_8h_source.html">NewDeviceAssignment.h</a>.</p>
+<p>Definition at line <a class="el" href="_new_device_assignment_8h_source.html#l00037">37</a> of file <a class="el" href="_new_device_assignment_8h_source.html">NewDeviceAssignment.h</a>.</p>
 
 </div>
 </div>
@@ -254,7 +254,7 @@ Properties</h2></td></tr>
 <p>Gets or sets the unique ID of the device to assign. </p>
 <p>The unique identifier.</p>
 
-<p>Definition at line <a class="el" href="_new_device_assignment_8h_source.html#l00036">36</a> of file <a class="el" href="_new_device_assignment_8h_source.html">NewDeviceAssignment.h</a>.</p>
+<p>Definition at line <a class="el" href="_new_device_assignment_8h_source.html#l00047">47</a> of file <a class="el" href="_new_device_assignment_8h_source.html">NewDeviceAssignment.h</a>.</p>
 
 </div>
 </div>
@@ -279,7 +279,7 @@ Properties</h2></td></tr>
 <p>Gets or sets the type identifier of the driver to use for this device. </p>
 <p>The driver type.</p>
 
-<p>Definition at line <a class="el" href="_new_device_assignment_8h_source.html#l00046">46</a> of file <a class="el" href="_new_device_assignment_8h_source.html">NewDeviceAssignment.h</a>.</p>
+<p>Definition at line <a class="el" href="_new_device_assignment_8h_source.html#l00057">57</a> of file <a class="el" href="_new_device_assignment_8h_source.html">NewDeviceAssignment.h</a>.</p>
 
 </div>
 </div>

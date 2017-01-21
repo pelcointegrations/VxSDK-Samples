@@ -39,6 +39,10 @@ CPPCli::Results::Value CPPCli::DataStorage::AssignDevice(CPPCli::NewDeviceAssign
     return CPPCli::Results::Value(result);
 }
 
+CPPCli::Results::Value CPPCli::DataStorage::Refresh() {
+    return (CPPCli::Results::Value)_dataStorage->Refresh();
+}
+
 CPPCli::Results::Value CPPCli::DataStorage::UnassignDevice(CPPCli::Device^ device) {
     // Create an IVxDevice object using the device
     VxSdk::IVxDevice* delDevice = device->_device;
@@ -47,30 +51,6 @@ CPPCli::Results::Value CPPCli::DataStorage::UnassignDevice(CPPCli::Device^ devic
     VxSdk::VxResult::Value result = _dataStorage->UnassignDevice(*delDevice);
     // Unless there was an issue unassigning the device the result should be VxSdk::VxResult::kOK
     return CPPCli::Results::Value(result);
-}
-
-List<CPPCli::DeviceAssignment^>^ CPPCli::DataStorage::_GetDeviceAssignments() {
-    // Create a list of managed device assignment objects
-    List<DeviceAssignment^>^ mlist = gcnew List<DeviceAssignment^>();
-    // Create a collection of unmanaged device assignment objects
-    VxSdk::VxCollection<VxSdk::IVxDeviceAssignment**> deviceAssignments;
-
-    // Make the GetDeviceAssignments call, which will return with the total count of device assignments, this allows the client to allocate memory.
-    VxSdk::VxResult::Value result = _dataStorage->GetDeviceAssignments(deviceAssignments);
-    // Unless there are no device assignments on the system, this should return VxSdk::VxResult::kInsufficientSize
-    if (result == VxSdk::VxResult::kInsufficientSize) {
-        // An array of pointers is allocated using the size returned by the previous GetDeviceAssignments call
-        deviceAssignments.collection = new VxSdk::IVxDeviceAssignment*[deviceAssignments.collectionSize];
-        result = _dataStorage->GetDeviceAssignments(deviceAssignments);
-        // The result should now be kOK since we have allocated enough space
-        if (result == VxSdk::VxResult::kOK) {
-            for (int i = 0; i < deviceAssignments.collectionSize; i++)
-                mlist->Add(gcnew CPPCli::DeviceAssignment(deviceAssignments.collection[i]));
-        }
-        // Remove the memory we previously allocated to the collection
-        delete[] deviceAssignments.collection;
-    }
-    return mlist;
 }
 
 List<CPPCli::DataSource^>^ CPPCli::DataStorage::_GetDataSources() {
@@ -97,16 +77,28 @@ List<CPPCli::DataSource^>^ CPPCli::DataStorage::_GetDataSources() {
     return mlist;
 }
 
-CPPCli::Device^ CPPCli::DataStorage::_GetHostDevice() {
-    // Get the device which hosts this data storage
-    VxSdk::IVxDevice* device = nullptr;
-    VxSdk::VxResult::Value result = _dataStorage->GetHostDevice(device);
+List<CPPCli::DeviceAssignment^>^ CPPCli::DataStorage::_GetDeviceAssignments() {
+    // Create a list of managed device assignment objects
+    List<DeviceAssignment^>^ mlist = gcnew List<DeviceAssignment^>();
+    // Create a collection of unmanaged device assignment objects
+    VxSdk::VxCollection<VxSdk::IVxDeviceAssignment**> deviceAssignments;
 
-    // Return the device if GetHostDevice was successful
-    if (result == VxSdk::VxResult::kOK)
-        return gcnew Device(device);
-
-    return nullptr;
+    // Make the GetDeviceAssignments call, which will return with the total count of device assignments, this allows the client to allocate memory.
+    VxSdk::VxResult::Value result = _dataStorage->GetDeviceAssignments(deviceAssignments);
+    // Unless there are no device assignments on the system, this should return VxSdk::VxResult::kInsufficientSize
+    if (result == VxSdk::VxResult::kInsufficientSize) {
+        // An array of pointers is allocated using the size returned by the previous GetDeviceAssignments call
+        deviceAssignments.collection = new VxSdk::IVxDeviceAssignment*[deviceAssignments.collectionSize];
+        result = _dataStorage->GetDeviceAssignments(deviceAssignments);
+        // The result should now be kOK since we have allocated enough space
+        if (result == VxSdk::VxResult::kOK) {
+            for (int i = 0; i < deviceAssignments.collectionSize; i++)
+                mlist->Add(gcnew CPPCli::DeviceAssignment(deviceAssignments.collection[i]));
+        }
+        // Remove the memory we previously allocated to the collection
+        delete[] deviceAssignments.collection;
+    }
+    return mlist;
 }
 
 List<CPPCli::Driver^>^ CPPCli::DataStorage::_GetDrivers() {
@@ -131,4 +123,28 @@ List<CPPCli::Driver^>^ CPPCli::DataStorage::_GetDrivers() {
         delete[] drivers.collection;
     }
     return mlist;
+}
+
+CPPCli::Device^ CPPCli::DataStorage::_GetHostDevice() {
+    // Get the device which hosts this data storage
+    VxSdk::IVxDevice* device = nullptr;
+    VxSdk::VxResult::Value result = _dataStorage->GetHostDevice(device);
+
+    // Return the device if GetHostDevice was successful
+    if (result == VxSdk::VxResult::kOK)
+        return gcnew Device(device);
+
+    return nullptr;
+}
+
+CPPCli::Configuration::Storage^ CPPCli::DataStorage::_GetStorageConfig() {
+    // Get the storage config
+    VxSdk::IVxConfiguration::Storage* storageConfig = nullptr;
+    VxSdk::VxResult::Value result = _dataStorage->GetStorageConfiguration(storageConfig);
+
+    // Return the storage config if GetStorageConfiguration was successful
+    if (result == VxSdk::VxResult::kOK)
+        return gcnew CPPCli::Configuration::Storage(storageConfig);
+
+    return nullptr;
 }

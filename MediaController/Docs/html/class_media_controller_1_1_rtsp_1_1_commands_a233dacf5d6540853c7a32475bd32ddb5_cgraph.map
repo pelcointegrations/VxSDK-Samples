@@ -1,0 +1,4 @@
+<map id="MediaController::Rtsp::Commands::Setup" name="MediaController::Rtsp::Commands::Setup">
+<area shape="rect" id="node2" href="$class_media_controller_1_1_rtsp_1_1_sdp_parser.html#a451b0af69cb552a7bada46ac19a1b2e2" title="Get the first available video media description. " alt="" coords="200,5,379,47"/>
+<area shape="rect" id="node3" href="$class_media_controller_1_1_rtsp_1_1_sdp_parser.html#a4950ff5fbfa0c3966e543faec7dd12f9" title="Get the first available audio media description. " alt="" coords="200,71,379,112"/>
+</map>

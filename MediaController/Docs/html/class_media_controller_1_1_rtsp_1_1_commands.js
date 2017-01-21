@@ -1,13 +1,15 @@
 var class_media_controller_1_1_rtsp_1_1_commands =
 [
-    [ "Commands", "class_media_controller_1_1_rtsp_1_1_commands.html#aec50cef68f0bce217b757ae36811e8f9", null ],
-    [ "Describe", "class_media_controller_1_1_rtsp_1_1_commands.html#a5498da92caf636c4b4a5033a9eda5d73", null ],
-    [ "GetParameter", "class_media_controller_1_1_rtsp_1_1_commands.html#a673c358503e9d490276568a49fbc2cbf", null ],
-    [ "Options", "class_media_controller_1_1_rtsp_1_1_commands.html#ade90cad2a6af616385df0c1e1b282aa0", null ],
+    [ "Commands", "class_media_controller_1_1_rtsp_1_1_commands.html#abf9c432199cb6805965ea43f4ff470a4", null ],
+    [ "~Commands", "class_media_controller_1_1_rtsp_1_1_commands.html#aaa4a45195e2f54a422b8442eb6187551", null ],
+    [ "Describe", "class_media_controller_1_1_rtsp_1_1_commands.html#ab0f48629e382a47c849c484ecb930997", null ],
+    [ "GetParameter", "class_media_controller_1_1_rtsp_1_1_commands.html#a79759164915aea3bfef6b58f53355d7c", null ],
+    [ "GetSessionId", "class_media_controller_1_1_rtsp_1_1_commands.html#a42105c2a58a5dca2f7ea6a7155f97f89", null ],
+    [ "Options", "class_media_controller_1_1_rtsp_1_1_commands.html#a41255112af18a8cde2a568f6cb7847c1", null ],
     [ "Pause", "class_media_controller_1_1_rtsp_1_1_commands.html#aeb7ef8bdee3e6a6bd3f433fa065e7fa6", null ],
-    [ "Play", "class_media_controller_1_1_rtsp_1_1_commands.html#a6336294ea2e2d214f3a9d1b494e4aa07", null ],
-    [ "ResetPath", "class_media_controller_1_1_rtsp_1_1_commands.html#a5b87b5a5a56ff4c024055c2f29a00ea0", null ],
-    [ "SeekPlay", "class_media_controller_1_1_rtsp_1_1_commands.html#aca7fdcac23d14e5b9aebafb598d2002e", null ],
-    [ "Setup", "class_media_controller_1_1_rtsp_1_1_commands.html#ae96e490e6da2e25dfbb4f399781eedc9", null ],
+    [ "PlayStream", "class_media_controller_1_1_rtsp_1_1_commands.html#aed61e7342b77383f14251edcff1a5286", null ],
+    [ "ResetPath", "class_media_controller_1_1_rtsp_1_1_commands.html#a3160e618d99a3dfdd70e0186ca8dc325", null ],
+    [ "Setup", "class_media_controller_1_1_rtsp_1_1_commands.html#a233dacf5d6540853c7a32475bd32ddb5", null ],
+    [ "SetupStream", "class_media_controller_1_1_rtsp_1_1_commands.html#a668fd4ee9f6b286b7dabaa5b8cf9c936", null ],
     [ "Teardown", "class_media_controller_1_1_rtsp_1_1_commands.html#ab978494a8f0b4937be380619c95f93e2", null ]
 ];

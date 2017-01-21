@@ -1,5 +1,5 @@
 <map id="MediaController::MjpegPull::Stream::NewRequest" name="MediaController::MjpegPull::Stream::NewRequest">
-<area shape="rect" id="node2" href="$class_media_controller_1_1_mjpeg_pull_1_1_stream.html#abc07b64122ca24edbf1e10bfd99e6ca4" title="Call Play on the stream. " alt="" coords="231,5,408,47"/>
-<area shape="rect" id="node3" href="$class_media_controller_1_1_mjpeg_pull_1_1_stream.html#a237f606f4e68139542998d50848e5ea7" title="Call Play on the stream with the supplied start time, resulting in a playback stream. " alt="" coords="231,71,408,112"/>
-<area shape="rect" id="node4" href="$class_media_controller_1_1_mjpeg_pull_1_1_stream.html#a3c18d8c4ef0be3b8f6f932363ff25d0b" title="Call Seek on the stream using the last timestamp received as the start time. " alt="" coords="231,136,408,177"/>
+<area shape="rect" id="node2" href="$class_media_controller_1_1_mjpeg_pull_1_1_stream.html#a885f63b31fb958873c99bd153861d04d" title="Constructor. " alt="" coords="231,5,408,47"/>
+<area shape="rect" id="node3" href="$class_media_controller_1_1_mjpeg_pull_1_1_stream.html#a0c45ff070115cc8e4356d544830a20a8" title="Call Play on the stream. " alt="" coords="231,71,408,112"/>
+<area shape="rect" id="node4" href="$class_media_controller_1_1_mjpeg_pull_1_1_stream.html#a7a1a78b1f728b23769770d0638dfff53" title="Send PLAY on an existing stream. " alt="" coords="231,136,408,177"/>
 </map>

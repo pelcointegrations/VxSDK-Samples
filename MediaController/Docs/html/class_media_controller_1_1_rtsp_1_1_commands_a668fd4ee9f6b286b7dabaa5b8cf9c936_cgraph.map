@@ -1,0 +1,10 @@
+<map id="MediaController::Rtsp::Commands::SetupStream" name="MediaController::Rtsp::Commands::SetupStream">
+<area shape="rect" id="node2" href="$namespace_media_controller_1_1_utilities.html#a1d30abe2a7d871cba1b863d6df2f4a81" title="Convert a unix timestamp to an RFC 3339 formatted string. " alt="" coords="247,29,410,71"/>
+<area shape="rect" id="node3" href="$class_media_controller_1_1_gst_wrapper.html#af0a1d3209beb40b460742a34ce2e2b45" title="Set the playback mode. " alt="" coords="233,95,424,136"/>
+<area shape="rect" id="node4" href="$class_media_controller_1_1_rtsp_1_1_commands.html#a41255112af18a8cde2a568f6cb7847c1" title="Send the OPTIONS method and read the server response. " alt="" coords="254,160,403,201"/>
+<area shape="rect" id="node5" href="$class_media_controller_1_1_rtsp_1_1_commands.html#ab0f48629e382a47c849c484ecb930997" title="Send the DESCRIBE method and read the server response. " alt="" coords="251,225,406,267"/>
+<area shape="rect" id="node9" href="$class_media_controller_1_1_rtsp_1_1_commands.html#a233dacf5d6540853c7a32475bd32ddb5" title="Send the SETUP method and read the server response. " alt="" coords="255,291,402,332"/>
+<area shape="rect" id="node6" href="$class_media_controller_1_1_rtsp_1_1_sdp_parser.html#ab4aa75f1b1c3977d829037e2a8479afe" title="Parses a raw SDP packet string. " alt="" coords="488,160,635,201"/>
+<area shape="rect" id="node7" href="$class_media_controller_1_1_rtsp_1_1_sdp_parser.html#a451b0af69cb552a7bada46ac19a1b2e2" title="Get the first available video media description. " alt="" coords="472,291,651,332"/>
+<area shape="rect" id="node8" href="$class_media_controller_1_1_rtsp_1_1_sdp_parser.html#a4950ff5fbfa0c3966e543faec7dd12f9" title="Get the first available audio media description. " alt="" coords="472,225,651,267"/>
+</map>

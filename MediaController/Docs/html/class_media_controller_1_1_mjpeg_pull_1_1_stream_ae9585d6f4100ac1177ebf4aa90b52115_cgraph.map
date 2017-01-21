@@ -1,3 +1,4 @@
 <map id="MediaController::MjpegPull::Stream::NewRequest" name="MediaController::MjpegPull::Stream::NewRequest">
-<area shape="rect" id="node2" href="$class_media_controller_1_1_gst_wrapper.html#a59c5c7068ec0a084ae7e35d8ba850015" title="Set the stream location. " alt="" coords="231,5,421,47"/>
+<area shape="rect" id="node2" href="$class_media_controller_1_1_gst_wrapper.html#a7b4fe9d49939710c1b23b72e182ecc56" title="Set the stream location. " alt="" coords="231,5,421,47"/>
+<area shape="rect" id="node3" href="$class_media_controller_1_1_gst_wrapper.html#a4d13f49d3797c6807aa974b3015c4e2f" title="Set the cookie for MJPEG streams. " alt="" coords="231,71,421,112"/>
 </map>

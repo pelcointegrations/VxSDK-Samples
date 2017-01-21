@@ -1,0 +1,8 @@
+<map id="CPPCli::Marker::~Marker" name="CPPCli::Marker::~Marker">
+<area shape="rect" id="node2" href="$class_c_p_p_cli_1_1_marker.html#adc8c8e0a699db21b0d5e2e629b1e2b67" title="Constructor. " alt="" coords="254,5,414,32"/>
+<area shape="rect" id="node3" href="$class_c_p_p_cli_1_1_marker.html#a20bc94350f3338df275cf04ec44b009b" title="Deletes the data source associated with this marker. " alt="" coords="221,56,447,83"/>
+<area shape="rect" id="node4" href="$class_c_p_p_cli_1_1_marker.html#a3c112294a8a37d6408e801444a823213" title="Gets the data source associated with this marker. " alt="" coords="229,107,439,133"/>
+<area shape="rect" id="node5" href="$class_c_p_p_cli_1_1_marker.html#ae02e93ed1ce882cb8ddfa6499c87aaa0" title="Refreshes this instances properties. " alt="" coords="252,157,416,184"/>
+<area shape="rect" id="node6" href="$class_c_p_p_cli_1_1_marker.html#af2073e5ea3f8576eb05c8136869b4088" title="Sets the data source associated with this marker. " alt="" coords="230,208,438,235"/>
+<area shape="rect" id="node7" href="$class_c_p_p_cli_1_1_marker.html#a26b2cc5e2c70a36b3328fd5ece850ecc" title="Sets the location of the marker on the associated drawing. " alt="" coords="229,259,439,285"/>
+</map>

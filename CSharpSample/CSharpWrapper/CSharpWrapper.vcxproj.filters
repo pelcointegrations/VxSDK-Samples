@@ -11,210 +11,285 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CSharpSample\CSharpWrapper\Include\NewEvent.h">
+    <ClInclude Include="Include\NewEvent.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSharpSample\CSharpWrapper\Include\NewSituation.h">
+    <ClInclude Include="Include\NewSituation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSharpSample\CSharpWrapper\Include\MediaControl.h">
+    <ClInclude Include="Include\MediaControl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSharpSample\CSharpWrapper\Include\MediaEvent.h">
+    <ClInclude Include="Include\MediaEvent.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSharpSample\CSharpWrapper\Include\Utils.h">
+    <ClInclude Include="Include\Utils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSharpSample\CSharpWrapper\Include\Clip.h">
+    <ClInclude Include="Include\Clip.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSharpSample\CSharpWrapper\Include\DataInterface.h">
+    <ClInclude Include="Include\DataInterface.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSharpSample\CSharpWrapper\Include\DataSession.h">
+    <ClInclude Include="Include\DataSession.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSharpSample\CSharpWrapper\Include\DataSource.h">
+    <ClInclude Include="Include\DataSource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSharpSample\CSharpWrapper\Include\Device.h">
+    <ClInclude Include="Include\Device.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSharpSample\CSharpWrapper\Include\Event.h">
+    <ClInclude Include="Include\Event.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSharpSample\CSharpWrapper\Include\Export.h">
+    <ClInclude Include="Include\Export.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSharpSample\CSharpWrapper\Include\ExportClip.h">
+    <ClInclude Include="Include\ExportClip.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSharpSample\CSharpWrapper\Include\NewExport.h">
+    <ClInclude Include="Include\NewExport.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSharpSample\CSharpWrapper\Include\NewExportClip.h">
+    <ClInclude Include="Include\NewExportClip.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSharpSample\CSharpWrapper\Include\Pattern.h">
+    <ClInclude Include="Include\Pattern.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSharpSample\CSharpWrapper\Include\Preset.h">
+    <ClInclude Include="Include\Preset.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSharpSample\CSharpWrapper\Include\PtzController.h">
+    <ClInclude Include="Include\PtzController.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSharpSample\CSharpWrapper\Include\Situation.h">
+    <ClInclude Include="Include\Situation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSharpSample\CSharpWrapper\Include\VXSystem.h">
+    <ClInclude Include="Include\VXSystem.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSharpSample\CSharpWrapper\Include\SnapshotFilter.h">
+    <ClInclude Include="Include\SnapshotFilter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSharpSample\CSharpWrapper\Include\Bookmark.h">
+    <ClInclude Include="Include\Bookmark.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSharpSample\CSharpWrapper\Include\NewBookmark.h">
+    <ClInclude Include="Include\NewBookmark.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSharpSample\CSharpWrapper\Include\NewSchedule.h">
+    <ClInclude Include="Include\NewSchedule.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSharpSample\CSharpWrapper\Include\NewScheduleTrigger.h">
+    <ClInclude Include="Include\NewScheduleTrigger.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSharpSample\CSharpWrapper\Include\Schedule.h">
+    <ClInclude Include="Include\Schedule.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSharpSample\CSharpWrapper\Include\ScheduleTrigger.h">
+    <ClInclude Include="Include\ScheduleTrigger.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSharpSample\CSharpWrapper\Include\DataStorage.h">
+    <ClInclude Include="Include\DataStorage.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSharpSample\CSharpWrapper\Include\DeviceAssignment.h">
+    <ClInclude Include="Include\DeviceAssignment.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSharpSample\CSharpWrapper\Include\Driver.h">
+    <ClInclude Include="Include\Driver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSharpSample\CSharpWrapper\Include\NewDeviceAssignment.h">
+    <ClInclude Include="Include\NewDeviceAssignment.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSharpSample\CSharpWrapper\Include\PtzLock.h">
+    <ClInclude Include="Include\PtzLock.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSharpSample\CSharpWrapper\Include\NewTag.h">
+    <ClInclude Include="Include\NewTag.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSharpSample\CSharpWrapper\Include\Tag.h">
+    <ClInclude Include="Include\Tag.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSharpSample\CSharpWrapper\Include\NewPrivilege.h">
+    <ClInclude Include="Include\NewPrivilege.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSharpSample\CSharpWrapper\Include\NewUser.h">
+    <ClInclude Include="Include\NewUser.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSharpSample\CSharpWrapper\Include\Privilege.h">
+    <ClInclude Include="Include\Privilege.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSharpSample\CSharpWrapper\Include\Role.h">
+    <ClInclude Include="Include\Role.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSharpSample\CSharpWrapper\Include\User.h">
+    <ClInclude Include="Include\User.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSharpSample\CSharpWrapper\Include\DataObject.h">
+    <ClInclude Include="Include\DataObject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CSharpSample\CSharpWrapper\Include\NewDataObject.h">
+    <ClInclude Include="Include\NewDataObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Configuration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Drawing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Marker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\NewMarker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ResourceLock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\License.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\LicenseFeature.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\NewDevice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Notification.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\NewNotification.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\QuickReport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\NewQuickReport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Monitor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\MonitorCell.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\NewMonitor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CSharpSample\CSharpWrapper\Source\MediaControl.cpp">
+    <ClCompile Include="Source\MediaControl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CSharpSample\CSharpWrapper\Source\Clip.cpp">
+    <ClCompile Include="Source\Clip.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CSharpSample\CSharpWrapper\Source\DataInterface.cpp">
+    <ClCompile Include="Source\DataInterface.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CSharpSample\CSharpWrapper\Source\DataSource.cpp">
+    <ClCompile Include="Source\DataSource.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CSharpSample\CSharpWrapper\Source\Device.cpp">
+    <ClCompile Include="Source\Device.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CSharpSample\CSharpWrapper\Source\Export.cpp">
+    <ClCompile Include="Source\Export.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CSharpSample\CSharpWrapper\Source\ExportClip.cpp">
+    <ClCompile Include="Source\ExportClip.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CSharpSample\CSharpWrapper\Source\NewExport.cpp">
+    <ClCompile Include="Source\NewExport.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CSharpSample\CSharpWrapper\Source\Pattern.cpp">
+    <ClCompile Include="Source\Pattern.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CSharpSample\CSharpWrapper\Source\Preset.cpp">
+    <ClCompile Include="Source\Preset.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CSharpSample\CSharpWrapper\Source\PtzController.cpp">
+    <ClCompile Include="Source\PtzController.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CSharpSample\CSharpWrapper\Source\Situation.cpp">
+    <ClCompile Include="Source\Situation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CSharpSample\CSharpWrapper\Source\VXSystem.cpp">
+    <ClCompile Include="Source\VXSystem.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CSharpSample\CSharpWrapper\Resources\AssemblyInfo.cpp">
+    <ClCompile Include="Resources\AssemblyInfo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CSharpSample\CSharpWrapper\Source\Bookmark.cpp">
+    <ClCompile Include="Source\Bookmark.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CSharpSample\CSharpWrapper\Source\NewSchedule.cpp">
+    <ClCompile Include="Source\NewSchedule.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CSharpSample\CSharpWrapper\Source\Schedule.cpp">
+    <ClCompile Include="Source\Schedule.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CSharpSample\CSharpWrapper\Source\ScheduleTrigger.cpp">
+    <ClCompile Include="Source\ScheduleTrigger.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CSharpSample\CSharpWrapper\Source\DataStorage.cpp">
+    <ClCompile Include="Source\DataStorage.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CSharpSample\CSharpWrapper\Source\DeviceAssignment.cpp">
+    <ClCompile Include="Source\DeviceAssignment.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CSharpSample\CSharpWrapper\Source\Driver.cpp">
+    <ClCompile Include="Source\Driver.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CSharpSample\CSharpWrapper\Source\PtzLock.cpp">
+    <ClCompile Include="Source\PtzLock.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CSharpSample\CSharpWrapper\Source\Tag.cpp">
+    <ClCompile Include="Source\Tag.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CSharpSample\CSharpWrapper\Source\Privilege.cpp">
+    <ClCompile Include="Source\Privilege.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CSharpSample\CSharpWrapper\Source\Role.cpp">
+    <ClCompile Include="Source\Role.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CSharpSample\CSharpWrapper\Source\User.cpp">
+    <ClCompile Include="Source\User.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CSharpSample\CSharpWrapper\Source\DataObject.cpp">
+    <ClCompile Include="Source\DataObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Configuration.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Drawing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Marker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\License.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\LicenseFeature.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Notification.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Event.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\QuickReport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Monitor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\MonitorCell.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

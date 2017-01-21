@@ -7,6 +7,7 @@
 #include "DataSource.h"
 
 namespace CPPCli {
+    ref class User;
 
     /// <summary>
     /// The Tag class represents a non-hierarchical identifier typically associated with one or
@@ -35,12 +36,12 @@ namespace CPPCli {
         !Tag();
 
         /// <summary>
-        /// Merge this tag into the given tag. All links associated with this tag will be re-associated
-        /// with the given tag; this tag will then be deleted.
+        /// Associate data sources with this tag. If the data source is deleted, the association with
+        /// this tag shall also be removed.
         /// </summary>
-        /// <param name="tag">The tag to merge into.</param>
-        /// <returns>The <see cref="Results::Value">Result</see> of merging the tag.</returns>
-        CPPCli::Results::Value Merge(CPPCli::Tag^ tag);
+        /// <param name="dataSources">A <c>List</c> containing the data sources to be added.</param>
+        /// <returns>The <see cref="Results::Value">Result</see> of adding the data sources.</returns>
+        CPPCli::Results::Value Link(System::Collections::Generic::List<CPPCli::DataSource^>^ dataSources);
 
         /// <summary>
         /// Associate devices with this tag. If the device is deleted, the association with this tag
@@ -51,19 +52,18 @@ namespace CPPCli {
         CPPCli::Results::Value Link(System::Collections::Generic::List<CPPCli::Device^>^ devices);
 
         /// <summary>
-        /// Associate data sources with this tag. If the data source is deleted, the association with
-        /// this tag shall also be removed.
+        /// Merge this tag into the given tag. All links associated with this tag will be re-associated
+        /// with the given tag; this tag will then be deleted.
         /// </summary>
-        /// <param name="dataSources">A <c>List</c> containing the data sources to be added.</param>
-        /// <returns>The <see cref="Results::Value">Result</see> of adding the data sources.</returns>
-        CPPCli::Results::Value Link(System::Collections::Generic::List<CPPCli::DataSource^>^ dataSources);
+        /// <param name="tag">The tag to merge into.</param>
+        /// <returns>The <see cref="Results::Value">Result</see> of merging the tag.</returns>
+        CPPCli::Results::Value Merge(CPPCli::Tag^ tag);
 
         /// <summary>
-        /// Remove device associations from this tag.
+        /// Update this instances properties.
         /// </summary>
-        /// <param name="devices">A <c>List</c> containing the devices to be removed.</param>
-        /// <returns>The <see cref="Results::Value">Result</see> of removing the devices.</returns>
-        CPPCli::Results::Value Unlink(System::Collections::Generic::List<CPPCli::Device^>^ devices);
+        /// <returns>The <see cref="Results::Value">Result</see> of updating the properties.</returns>
+        Results::Value Refresh();
 
         /// <summary>
         /// Remove data source associations from this tag.
@@ -73,12 +73,19 @@ namespace CPPCli {
         CPPCli::Results::Value Unlink(System::Collections::Generic::List<CPPCli::DataSource^>^ dataSources);
 
         /// <summary>
-        /// Gets the devices associated with this tag.
+        /// Remove device associations from this tag.
         /// </summary>
-        /// <value>A list of devices.</value>
-        property System::Collections::Generic::List<Device^>^ LinkedDevices {
+        /// <param name="devices">A <c>List</c> containing the devices to be removed.</param>
+        /// <returns>The <see cref="Results::Value">Result</see> of removing the devices.</returns>
+        CPPCli::Results::Value Unlink(System::Collections::Generic::List<CPPCli::Device^>^ devices);
+
+        /// <summary>
+        /// Gets the unique identifier for this tag.
+        /// </summary>
+        /// <value>The unique identifier.</value>
+        property System::String^ Id {
         public:
-            System::Collections::Generic::List<Device^>^ get() { return _GetLinkedDevices(); }
+            System::String^ get() { return gcnew System::String(_tag->id); }
         }
 
         /// <summary>
@@ -91,36 +98,51 @@ namespace CPPCli {
         }
 
         /// <summary>
-        /// Gets the unique identifier for this tag.
+        /// Gets the devices associated with this tag.
         /// </summary>
-        /// <value>The unique identifier.</value>
-        property System::String^ Id {
+        /// <value>A list of devices.</value>
+        property System::Collections::Generic::List<Device^>^ LinkedDevices {
         public:
-            System::String^ get() { return gcnew System::String(_tag->id); }
+            System::Collections::Generic::List<Device^>^ get() { return _GetLinkedDevices(); }
         }
 
         /// <summary>
-        /// Gets the friendly name.
+        /// Gets or sets the friendly name.
         /// </summary>
         /// <value>The friendly name.</value>
         property System::String^ Name {
         public:
             System::String^ get() { return gcnew System::String(_tag->name); }
+            void set(System::String^ value) {
+                char name[64];
+                strncpy_s(name, Utils::ConvertSysStringNonConst(value), sizeof(name));
+                _tag->SetName(name);
+            }
         }
 
         /// <summary>
-        /// Gets the owner.
+        /// Gets the user that owns this tag.
         /// </summary>
-        /// <value>The owner.</value>
-        property System::String^ Owner {
+        /// <value>The user that owns this tag.</value>
+        property User^ Owner {
+        public:
+            User^ get() { return _GetOwner(); }
+        }
+
+        /// <summary>
+        /// Gets the name of the user that owns this tag.
+        /// </summary>
+        /// <value>The name of the user that owns this tag.</value>
+        property System::String^ OwnerName {
         public:
             System::String^ get() { return gcnew System::String(_tag->owner); }
         }
 
     internal:
         VxSdk::IVxTag* _tag;
-        System::Collections::Generic::List<Device^>^ _GetLinkedDevices();
         System::Collections::Generic::List<DataSource^>^ _GetLinkedDataSources();
+        System::Collections::Generic::List<Device^>^ _GetLinkedDevices();
+        User^ _GetOwner();
     };
 }
 #endif // Tag_h__

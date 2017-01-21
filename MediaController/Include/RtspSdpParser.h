@@ -26,7 +26,7 @@ namespace MediaController {
             /// Get all available media descriptions.
             /// </summary>
             /// <returns>A list of <see cref="MediaDescription"/> objects.</returns>
-            const std::vector<MediaDescription>& GetMediaDescriptions();
+            const std::vector<MediaDescription>& GetMediaDescriptions() const;
 
             /// <summary>
             /// Get the first available video media description.
@@ -36,10 +36,22 @@ namespace MediaController {
             const MediaDescription& GetFirstVideo();
 
             /// <summary>
+            /// Get the first available audio media description.
+            /// </summary>
+            /// <returns>An empty <see cref="MediaDescription"/> if no description is found, otherwise the first
+            /// audio <see cref="MediaDescription"/>.</returns>
+            const MediaDescription& GetFirstAudio();
+
+            /// <summary>
             /// Parses a raw SDP packet string.
             /// </summary>
             /// <param name="sdp">The SDP packet as a string.</param>
             void Parse(const std::string& sdp);
+
+            /// <summary>
+            /// The session control URI.
+            /// </summary>
+            std::string sessionControlUri;
 
         private:
             std::vector<MediaDescription> _mediaDescriptions;

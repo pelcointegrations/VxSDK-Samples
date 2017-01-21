@@ -37,7 +37,7 @@ namespace SDKSampleApp.Source
             {
                 var lvItem = new ListViewItem(tag.Name);
                 lvItem.SubItems.Add(tag.Id);
-                lvItem.SubItems.Add(tag.Owner);
+                lvItem.SubItems.Add(tag.OwnerName);
                 lvItem.Tag = tag;
                 lvTags.Items.Add(lvItem);
             }

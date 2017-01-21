@@ -1,0 +1,12 @@
+<map id="CPPCli::Drawing::~Drawing" name="CPPCli::Drawing::~Drawing">
+<area shape="rect" id="node2" href="$class_c_p_p_cli_1_1_drawing.html#a3c64c0502964865f7d972b4774eb92f8" title="Constructor. " alt="" coords="249,5,421,32"/>
+<area shape="rect" id="node3" href="$class_c_p_p_cli_1_1_drawing.html#a5e024081144a7f8e5aded403107718bb" title="Creates a new marker. " alt="" coords="240,56,429,83"/>
+<area shape="rect" id="node4" href="$class_c_p_p_cli_1_1_drawing.html#aab2f6276872935b65d6fa61cfe6f4aaa" title="Deletes the binary drawing image data. " alt="" coords="235,107,434,133"/>
+<area shape="rect" id="node5" href="$class_c_p_p_cli_1_1_drawing.html#a988ca7fff963a9114972745173f81544" title="Deletes the resource lock, if any. " alt="" coords="239,157,430,184"/>
+<area shape="rect" id="node6" href="$class_c_p_p_cli_1_1_drawing.html#a4e8a3604b7be56e7317d5dcf960f18e3" title="Deletes a marker. " alt="" coords="233,208,436,235"/>
+<area shape="rect" id="node7" href="$class_c_p_p_cli_1_1_drawing.html#a755564adc2124654efb516361eba974f" title="Gets the image uri, if any. " alt="" coords="235,259,434,285"/>
+<area shape="rect" id="node8" href="$class_c_p_p_cli_1_1_drawing.html#a8aad256dbca86dcbac1afe4c4740836b" title="Gets the resource lock, if any. " alt="" coords="247,309,422,336"/>
+<area shape="rect" id="node9" href="$class_c_p_p_cli_1_1_drawing.html#a5886123f54a7c2fbc8d07fde677282fe" title="Refreshes this instances properties. " alt="" coords="249,360,420,387"/>
+<area shape="rect" id="node10" href="$class_c_p_p_cli_1_1_drawing.html#ac42ff29aaee062c3b4168b5287522f31" title="Sets the binary drawing image data. " alt="" coords="244,411,425,437"/>
+<area shape="rect" id="node11" href="$class_c_p_p_cli_1_1_drawing.html#a975021cfaa45ff5572533c3f602876c5" title="Sets a resource lock on this drawing, owned by the current user. " alt="" coords="247,461,422,488"/>
+</map>

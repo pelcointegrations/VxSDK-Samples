@@ -13,6 +13,7 @@ namespace MediaController {
             /// Default constructor.
             /// </summary>
             MediaDescription() {
+                this->controlUri.clear();
                 this->type.clear();
                 this->protocol.clear();
                 this->ip.clear();
@@ -27,6 +28,11 @@ namespace MediaController {
                 this->rate = -1;
                 this->isMulticast = false;
             }
+
+            /// <summary>
+            /// The media control URI.
+            /// </summary>
+            std::string controlUri;
 
             /// <summary>
             /// The type of media.

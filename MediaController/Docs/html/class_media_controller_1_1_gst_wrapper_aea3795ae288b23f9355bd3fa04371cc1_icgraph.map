@@ -1,0 +1,7 @@
+<map id="MediaController::GstWrapper::GetLastTimestamp" name="MediaController::GstWrapper::GetLastTimestamp">
+<area shape="rect" id="node2" href="$class_media_controller_1_1_mjpeg_pull_1_1_stream.html#a4ba351f55d1740c1fd48c42a76a3dd13" title="Call Pause on the stream. " alt="" coords="251,5,429,47"/>
+<area shape="rect" id="node3" href="$class_media_controller_1_1_mjpeg_pull_1_1_stream.html#a7a1a78b1f728b23769770d0638dfff53" title="Send PLAY on an existing stream. " alt="" coords="251,71,429,112"/>
+<area shape="rect" id="node4" href="$class_media_controller_1_1_stream_base.html#a085aa7f25b6da52cb919958707d3eb0e" title="Gets the current time of the stream. " alt="" coords="244,136,436,177"/>
+<area shape="rect" id="node5" href="$class_media_controller_1_1_playing_state.html#a0bf97da76a698a03dc7b82d5e3f3a0ed" title="Perform the Play action based on the stream state. " alt="" coords="500,103,663,144"/>
+<area shape="rect" id="node6" href="$class_media_controller_1_1_paused_state.html#a914dc4fd7093ea4833cd6e29ff54ba91" title="Perform the Play action based on the stream state. " alt="" coords="484,168,679,209"/>
+</map>

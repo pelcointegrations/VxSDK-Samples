@@ -1,0 +1,6 @@
+<map id="MediaController::Rtsp::Commands::Describe" name="MediaController::Rtsp::Commands::Describe">
+<area shape="rect" id="node2" href="$class_media_controller_1_1_rtsp_1_1_commands.html#aaa4a45195e2f54a422b8442eb6187551" title="Destructor. " alt="" coords="436,5,615,47"/>
+<area shape="rect" id="node3" href="$class_media_controller_1_1_rtsp_1_1_commands.html#a668fd4ee9f6b286b7dabaa5b8cf9c936" title="Send the PLAY method with a Range header and read the server response. " alt="" coords="208,71,388,112"/>
+<area shape="rect" id="node4" href="$class_media_controller_1_1_rtsp_1_1_stream.html#a4c2d53803d2e6b6dfef82f3f3531ddb6" title="Call Play on the stream. " alt="" coords="452,136,599,177"/>
+<area shape="rect" id="node5" href="$class_media_controller_1_1_rtsp_1_1_stream.html#a49b9998b7473949c38b3494bc6bdfbf8" title="Send PLAY on an existing stream. " alt="" coords="452,71,599,112"/>
+</map>

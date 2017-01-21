@@ -1,0 +1,6 @@
+<map id="CPPCli::Notification::~Notification" name="CPPCli::Notification::~Notification">
+<area shape="rect" id="node2" href="$class_c_p_p_cli_1_1_notification.html#afd348b837789a1bea5b19848c499e273" title="Constructor. " alt="" coords="189,5,325,47"/>
+<area shape="rect" id="node3" href="$class_c_p_p_cli_1_1_notification.html#a4b01d2213ff2079ef3cda60ffcfb6ed6" title="Add a role to the list of roles that this notification serves. " alt="" coords="189,71,325,112"/>
+<area shape="rect" id="node4" href="$class_c_p_p_cli_1_1_notification.html#aeceba313b7afb15da45ea4c86ff0a683" title="Refreshes this instances properties. " alt="" coords="189,136,325,177"/>
+<area shape="rect" id="node5" href="$class_c_p_p_cli_1_1_notification.html#a91e753cec64ecd500b729a66d9569da7" title="Remove a role from the list of roles that this notification serves. " alt="" coords="189,201,325,243"/>
+</map>

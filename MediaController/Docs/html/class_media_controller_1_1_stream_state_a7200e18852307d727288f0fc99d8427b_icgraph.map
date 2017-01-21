@@ -1,0 +1,4 @@
+<map id="MediaController::StreamState::Pause" name="MediaController::StreamState::Pause">
+<area shape="rect" id="node2" href="$class_media_controller_1_1_playing_state.html#accba39a7a8d320865c25ad52c775781c" title="Virtual destructor. " alt="" coords="253,5,415,47"/>
+<area shape="rect" id="node3" href="$class_media_controller_1_1_controller.html#a8ff2b68e58bf36748e5b1e21caea5207" title="Call Pause on the stream. " alt="" coords="247,71,421,112"/>
+</map>

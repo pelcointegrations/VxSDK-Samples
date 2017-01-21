@@ -3,7 +3,6 @@
 #define Clip_h__
 
 #include "SnapshotFilter.h"
-#include "VxSdk.h"
 #include "Utils.h"
 
 namespace CPPCli {
@@ -100,7 +99,7 @@ namespace CPPCli {
         /// Gets the unique identifier of the clips data source.
         /// </summary>
         /// <value>The unique identifier.</value>
-        property System::String^ Id {
+        property System::String^ DataSourceId {
         public:
             System::String^ get() { return gcnew System::String(_clip->dataSourceId); }
         }
@@ -109,7 +108,7 @@ namespace CPPCli {
         /// Gets the friendly name of the clips data source.
         /// </summary>
         /// <value>The friendly name of the data source.</value>
-        property System::String^ Name {
+        property System::String^ DataSourceName {
         public:
             System::String^ get() { return gcnew System::String(_clip->dataSourceName); }
         }
@@ -142,6 +141,15 @@ namespace CPPCli {
         }
 
         /// <summary>
+        /// Gets the type of media contained in the clip.
+        /// </summary>
+        /// <value>The media type.</value>
+        property System::String^ MediaType {
+        public:
+            System::String^ get() { return gcnew System::String(_clip->type); }
+        }
+
+        /// <summary>
         /// Gets the recording retention priority of the clip.
         /// </summary>
         /// <value>The priority level.</value>
@@ -157,15 +165,6 @@ namespace CPPCli {
         property System::DateTime StartTime {
         public:
             System::DateTime get() { return Utils::ConvertCharToDateTime(_clip->startTime); }
-        }
-
-        /// <summary>
-        /// Gets the type of media contained in the clip.
-        /// </summary>
-        /// <value>The media type.</value>
-        property System::String^ MediaType {
-        public:
-            System::String^ get() { return gcnew System::String(_clip->type); }
         }
 
     internal:

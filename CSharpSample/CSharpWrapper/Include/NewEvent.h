@@ -29,16 +29,6 @@ namespace CPPCli {
         NewEvent(VxSdk::VxNewEvent* vxNewEvent) : _newEvent(vxNewEvent) {};
 
         /// <summary>
-        /// Gets or sets the identifier for the type of situation that led to this new event.
-        /// </summary>
-        /// <value>The type identifier of the situation.</value>
-        property System::String^ SituationType {
-        public:
-            System::String^ get() { return gcnew System::String(_newEvent->situationType); }
-            void set(System::String^ value) { VxSdk::Utilities::StrCopySafe(_newEvent->situationType, Utils::ConvertSysString(value)); }
-        }
-
-        /// <summary>
         /// Gets or sets the unique identifier of the device that generated this event.
         /// </summary>
         /// <value>The unique identifier.</value>
@@ -46,26 +36,6 @@ namespace CPPCli {
         public:
             System::String^ get() { return gcnew System::String(_newEvent->generatorDeviceId); }
             void set(System::String^ value) { VxSdk::Utilities::StrCopySafe(_newEvent->generatorDeviceId, Utils::ConvertSysString(value)); }
-        }
-
-        /// <summary>
-        /// Gets or sets the unique identifier of the device that the situation occurred on.
-        /// </summary>
-        /// <value>The unique identifier.</value>
-        property System::String^ SourceDeviceId {
-        public:
-            System::String^ get() { return gcnew System::String(_newEvent->sourceDeviceId); }
-            void set(System::String^ value) { VxSdk::Utilities::StrCopySafe(_newEvent->sourceDeviceId, Utils::ConvertSysString(value)); }
-        }
-
-        /// <summary>
-        /// Gets or sets the time at which the situation occurred.
-        /// </summary>
-        /// <value>The time.</value>
-        property System::DateTime Time {
-        public:
-            System::DateTime get() { return Utils::ConvertCharToDateTime(_newEvent->time); }
-            void set(System::DateTime value) { VxSdk::Utilities::StrCopySafe(_newEvent->time, Utils::ConvertDateTimeToChar(value)); }
         }
 
         /// <summary>
@@ -88,7 +58,6 @@ namespace CPPCli {
 
                 return mList;
             }
-
             void set(System::Collections::Generic::List<System::Collections::Generic::KeyValuePair<System::String^, System::String^>>^ value) {
                 _newEvent->propertySize = value->Count;
                 VxSdk::VxKvObject *kvObj = new VxSdk::VxKvObject[_newEvent->propertySize];
@@ -100,6 +69,46 @@ namespace CPPCli {
                     strncpy_s(_newEvent->properties[i].value, Utils::ConvertSysString(value[i].Value), sizeof(_newEvent->properties[i].value));
                 }
             }
+        }
+
+        /// <summary>
+        /// Gets or sets the identifier for the type of situation that led to this new event.
+        /// </summary>
+        /// <value>The type identifier of the situation.</value>
+        property System::String^ SituationType {
+        public:
+            System::String^ get() { return gcnew System::String(_newEvent->situationType); }
+            void set(System::String^ value) { VxSdk::Utilities::StrCopySafe(_newEvent->situationType, Utils::ConvertSysString(value)); }
+        }
+
+        /// <summary>
+        /// Gets or sets the unique identifier of the device that the situation occurred on.
+        /// </summary>
+        /// <value>The unique identifier.</value>
+        property System::String^ SourceDeviceId {
+        public:
+            System::String^ get() { return gcnew System::String(_newEvent->sourceDeviceId); }
+            void set(System::String^ value) { VxSdk::Utilities::StrCopySafe(_newEvent->sourceDeviceId, Utils::ConvertSysString(value)); }
+        }
+
+        /// <summary>
+        /// Gets or sets the unique identifier of the user that caused the situation to occur.
+        /// </summary>
+        /// <value>The unique identifier.</value>
+        property System::String^ SourceUserName {
+        public:
+            System::String^ get() { return gcnew System::String(_newEvent->sourceUserName); }
+            void set(System::String^ value) { VxSdk::Utilities::StrCopySafe(_newEvent->sourceUserName, Utils::ConvertSysString(value)); }
+        }
+
+        /// <summary>
+        /// Gets or sets the time at which the situation occurred.
+        /// </summary>
+        /// <value>The time.</value>
+        property System::DateTime Time {
+        public:
+            System::DateTime get() { return Utils::ConvertCharToDateTime(_newEvent->time); }
+            void set(System::DateTime value) { VxSdk::Utilities::StrCopySafe(_newEvent->time, Utils::ConvertDateTimeToChar(value)); }
         }
 
     internal:

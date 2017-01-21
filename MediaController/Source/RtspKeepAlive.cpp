@@ -8,7 +8,7 @@ struct MediaController::Rtsp::KeepAlive::ThreadInfo {
     std::atomic<bool> _shutdownRequested;
 };
 
-MediaController::Rtsp::KeepAlive::KeepAlive(Commands& commands) : _commands(commands), d_ptr(new ThreadInfo()) {
+MediaController::Rtsp::KeepAlive::KeepAlive(Commands* commands) : _commands(commands), d_ptr(new ThreadInfo()) {
     d_ptr->_shutdownRequested = false;
     d_ptr->_keepAliveThread = std::thread(&KeepAlive::GetParamsLoop, this);
 }
@@ -25,7 +25,7 @@ void MediaController::Rtsp::KeepAlive::GetParamsLoop() {
             ++_count;
         }
         else {
-            _commands.GetParameter();
+            _commands->GetParameter();
             _count = 0;
         }
         std::this_thread::sleep_for(std::chrono::seconds(1));

@@ -14,3 +14,7 @@ CPPCli::ScheduleTrigger::!ScheduleTrigger() {
     _scheduleTrigger->Delete();
     _scheduleTrigger = nullptr;
 }
+
+CPPCli::Results::Value CPPCli::ScheduleTrigger::Refresh() {
+    return (CPPCli::Results::Value)_scheduleTrigger->Refresh();
+}

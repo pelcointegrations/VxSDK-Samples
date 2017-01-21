@@ -5,6 +5,7 @@
 #include "VxSdk.h"
 #include "Utils.h"
 #include "DataSource.h"
+#include "NewScheduleTrigger.h"
 #include "ScheduleTrigger.h"
 
 namespace CPPCli {
@@ -50,6 +51,20 @@ namespace CPPCli {
         !Schedule();
 
         /// <summary>
+        /// Add a new schedule trigger to the schedule.
+        /// </summary>
+        /// <param name="newScheduleTrigger">The new schedule trigger to add.</param>
+        /// <returns>The <see cref="Results::Value">Result</see> of adding the schedule trigger.</returns>
+        CPPCli::Results::Value AddScheduleTrigger(CPPCli::NewScheduleTrigger^ newScheduleTrigger);
+
+        /// <summary>
+        /// Delete a schedule trigger from the schedule.  This will delete the schedule trigger from any other schedules as well.
+        /// </summary>
+        /// <param name="scheduleTrigger">The schedule trigger to delete.</param>
+        /// <returns>The <see cref="Results::Value">Result</see> of deleting the schedule trigger.</returns>
+        CPPCli::Results::Value DeleteScheduleTrigger(CPPCli::ScheduleTrigger^ scheduleTrigger);
+
+        /// <summary>
         /// Get the data sources linked to the schedule.
         /// </summary>
         /// <returns>A <c>List</c> containing the data sources linked to the schedule.</returns>
@@ -61,6 +76,12 @@ namespace CPPCli {
         /// <param name="dataSources">A <c>List</c> containing the data sources to be added.</param>
         /// <returns>The <see cref="Results::Value">Result</see> of adding the data sources.</returns>
         Results::Value Link(System::Collections::Generic::List<DataSource^>^ dataSources);
+
+        /// <summary>
+        /// Update this instances properties.
+        /// </summary>
+        /// <returns>The <see cref="Results::Value">Result</see> of updating the properties.</returns>
+        Results::Value Refresh();
 
         /// <summary>
         /// Delete existing data sources from the schedule.
@@ -79,12 +100,13 @@ namespace CPPCli {
         }
 
         /// <summary>
-        /// Gets the action performed when the schedule is active.
+        /// Gets or sets the action performed when the schedule is active.
         /// </summary>
         /// <value>The <see cref="Actions">Action</see>.</value>
         property Actions Action {
         public:
             Actions get() { return (Actions)_schedule->action; }
+            void set(Actions value) { _schedule->SetAction((VxSdk::VxScheduleAction::Value)value); }
         }
 
         /// <summary>
@@ -97,21 +119,27 @@ namespace CPPCli {
         }
 
         /// <summary>
-        /// Gets the friendly name of the schedule.
+        /// Gets or sets the friendly name of the schedule.
         /// </summary>
         /// <value>The friendly name.</value>
         property System::String^ Name {
         public:
             System::String^ get() { return gcnew System::String(_schedule->name); }
+            void set(System::String^ value) {
+                char name[64];
+                strncpy_s(name, Utils::ConvertSysStringNonConst(value), sizeof(name));
+                _schedule->SetName(name);
+            }
         }
 
         /// <summary>
-        /// Gets a value indicating whether the schedule applies to all data sources.
+        /// Gets or sets a value indicating whether the schedule applies to all data sources.
         /// </summary>
         /// <value><c>true</c> if this schedule applies to all data sources, <c>false</c> if not.</value>
         property bool UseAllDataSources {
         public:
             bool get() { return _schedule->useAllDataSources; }
+            void set(bool value) { _schedule->SetUseAllDataSources(value); }
         }
 
     internal:

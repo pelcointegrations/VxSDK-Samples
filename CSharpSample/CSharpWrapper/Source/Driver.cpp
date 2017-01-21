@@ -15,6 +15,10 @@ CPPCli::Driver::!Driver() {
     _driver = nullptr;
 }
 
+CPPCli::Results::Value CPPCli::Driver::Refresh() {
+    return (CPPCli::Results::Value)_driver->Refresh();
+}
+
 CPPCli::DataStorage^ CPPCli::Driver::_GetDataStorage() {
     // Get the data storage which hosts this driver
     VxSdk::IVxDataStorage* dataStorage = nullptr;
