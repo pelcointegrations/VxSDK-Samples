@@ -102,7 +102,7 @@ namespace VxSdkMonitorSample
         {
             listBoxCells.Items.Clear();
             for (int i = 0; i < count; i++)
-                listBoxCells.Items.Add($"__ {i+1} __");
+                listBoxCells.Items.Add("__ " + (i+1) + " __");
             if (listBoxCells.Items.Count > 0)
                 listBoxCells.SelectedIndex = 0;
         }

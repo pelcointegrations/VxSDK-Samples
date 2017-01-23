@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>VxSdkMonitorSample</RootNamespace>
     <AssemblyName>VxSdkMonitorSample</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
     <DebugSymbols>true</DebugSymbols>
@@ -87,6 +88,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -102,12 +104,33 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\External\Pelco\VxSdk-1.2\CSharpWrapper\CSharpWrapper14.vcxproj">
+    <ProjectReference Include="..\..\CSharpSample\CSharpWrapper\CSharpWrapper.vcxproj">
       <Project>{7b8bd603-eb13-4e0d-a7e9-7a36813e52e1}</Project>
       <Name>CSharpWrapper</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>SET D=
+
+IF $(ConfigurationName) == Debug (
+    SET D=d
+    SET PathName=D
+)
+
+SET VXSDK=VxSdk%25D%25
+SET REST=cpprest120%25D%25_2_6
+
+COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%25REST%25.dll" "$(TargetDir)"
+IF $(ConfigurationName) == Debug (
+COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%25REST%25.pdb" "$(TargetDir)"
+)
+
+COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%25VXSDK%25.dll" "$(TargetDir)"
+IF $(ConfigurationName) == Debug (
+COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\%25VXSDK%25.pdb" "$(TargetDir)"
+)</PreBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

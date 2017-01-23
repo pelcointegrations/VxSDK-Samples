@@ -19,9 +19,9 @@ namespace VxSdkMonitorSample
 
         public VxSdk()
         {
-            var retVal = VxGlobal.InitializeSdk("3419BB83B7F2BC21BA8E1E50EE23390CD0C69B1C7EDED5E404A2DA7465595621");
+            var retVal = VxGlobal.InitializeSdk("ReplaceWithGeneratedKey");
             if (retVal != Results.Value.OK)
-                throw new Exception($"{retVal}: Unable to InitializeSdk");
+                throw new Exception(retVal + "Unable to InitializeSdk");
         }
 
         public BindingList<Monitor> Monitors
@@ -60,7 +60,7 @@ namespace VxSdkMonitorSample
                 _system = new VXSystem(ip);
                 var retVal = await Task.Run(() => _system.Login(username, password));
                 if (retVal != Results.Value.OK)
-                    throw new Exception($"{retVal}: Unable to login to the VideoXpert system provided ({ip}) with user ({username})");
+                    throw new Exception(retVal + "Unable to login to the VideoXpert system provided ({ip}) with user ({username})");
                 success = true;
             }
             catch (Exception e)

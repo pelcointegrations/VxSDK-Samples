@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VxSdkMonitorSample", "VxSdkMonitorSample\VxSdkMonitorSample.csproj", "{DADEA77F-14E2-4D0E-820C-63220F1089B5}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CSharpWrapper", "External\Pelco\VxSdk-1.2\CSharpWrapper\CSharpWrapper14.vcxproj", "{7B8BD603-EB13-4E0D-A7E9-7A36813E52E1}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CSharpWrapper", "..\CSharpSample\CSharpWrapper\CSharpWrapper.vcxproj", "{7B8BD603-EB13-4E0D-A7E9-7A36813E52E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,14 +23,14 @@ Global
 		{DADEA77F-14E2-4D0E-820C-63220F1089B5}.Release|x64.Build.0 = Release|x64
 		{DADEA77F-14E2-4D0E-820C-63220F1089B5}.Release|x86.ActiveCfg = Release|x86
 		{DADEA77F-14E2-4D0E-820C-63220F1089B5}.Release|x86.Build.0 = Release|x86
-		{7B8BD603-EB13-4E0D-A7E9-7A36813E52E1}.Debug|x64.ActiveCfg = Debug|x64
-		{7B8BD603-EB13-4E0D-A7E9-7A36813E52E1}.Debug|x64.Build.0 = Debug|x64
-		{7B8BD603-EB13-4E0D-A7E9-7A36813E52E1}.Debug|x86.ActiveCfg = Debug|Win32
-		{7B8BD603-EB13-4E0D-A7E9-7A36813E52E1}.Debug|x86.Build.0 = Debug|Win32
-		{7B8BD603-EB13-4E0D-A7E9-7A36813E52E1}.Release|x64.ActiveCfg = Release|x64
-		{7B8BD603-EB13-4E0D-A7E9-7A36813E52E1}.Release|x64.Build.0 = Release|x64
-		{7B8BD603-EB13-4E0D-A7E9-7A36813E52E1}.Release|x86.ActiveCfg = Release|Win32
-		{7B8BD603-EB13-4E0D-A7E9-7A36813E52E1}.Release|x86.Build.0 = Release|Win32
+		{7B8BD603-EB13-4E0D-A7E9-7A36813E52E1}.Debug|x64.ActiveCfg = DebugNoMedia|x64
+		{7B8BD603-EB13-4E0D-A7E9-7A36813E52E1}.Debug|x64.Build.0 = DebugNoMedia|x64
+		{7B8BD603-EB13-4E0D-A7E9-7A36813E52E1}.Debug|x86.ActiveCfg = DebugNoMedia|Win32
+		{7B8BD603-EB13-4E0D-A7E9-7A36813E52E1}.Debug|x86.Build.0 = DebugNoMedia|Win32
+		{7B8BD603-EB13-4E0D-A7E9-7A36813E52E1}.Release|x64.ActiveCfg = ReleaseNoMedia|x64
+		{7B8BD603-EB13-4E0D-A7E9-7A36813E52E1}.Release|x64.Build.0 = ReleaseNoMedia|x64
+		{7B8BD603-EB13-4E0D-A7E9-7A36813E52E1}.Release|x86.ActiveCfg = ReleaseNoMedia|Win32
+		{7B8BD603-EB13-4E0D-A7E9-7A36813E52E1}.Release|x86.Build.0 = ReleaseNoMedia|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
