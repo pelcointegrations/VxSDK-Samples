@@ -7,6 +7,7 @@ var class_c_p_p_cli_1_1_ptz_lock =
     [ "_GetLockState", "class_c_p_p_cli_1_1_ptz_lock.html#a739d4a3413080244dc4ab1394f5cea6e", null ],
     [ "_GetOwner", "class_c_p_p_cli_1_1_ptz_lock.html#a897c05beed6fd41b5e9b22fef0863fd3", null ],
     [ "Lock", "class_c_p_p_cli_1_1_ptz_lock.html#a12958221f4ede4512dd0cb2be6e6eba7", null ],
+    [ "Refresh", "class_c_p_p_cli_1_1_ptz_lock.html#a121caa3919c97da3cf04d06df87d8fa4", null ],
     [ "Unlock", "class_c_p_p_cli_1_1_ptz_lock.html#a72107b8f3611c845eeb0b3295a779eed", null ],
     [ "_ptzLock", "class_c_p_p_cli_1_1_ptz_lock.html#af11cbf0e1cb6410f8ad61e2434b6cdba", null ],
     [ "ExpireTime", "class_c_p_p_cli_1_1_ptz_lock.html#a55834cb36f60293d0317353b8c997029", null ],

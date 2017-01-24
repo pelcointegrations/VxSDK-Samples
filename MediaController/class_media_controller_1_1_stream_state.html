@@ -127,30 +127,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acbd824a78b5458d1577ea36f2a9be548"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_stream_state.html#acbd824a78b5458d1577ea36f2a9be548">~StreamState</a> ()</td></tr>
 <tr class="memdesc:acbd824a78b5458d1577ea36f2a9be548"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor.  <a href="#acbd824a78b5458d1577ea36f2a9be548">More...</a><br /></td></tr>
 <tr class="separator:acbd824a78b5458d1577ea36f2a9be548"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67c1cd5f99463882d2d9936dc1f39bde"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_stream_state.html#a67c1cd5f99463882d2d9936dc1f39bde">Play</a> (<a class="el" href="class_media_controller_1_1_controller.html">Controller</a> &amp;controller, int speed)</td></tr>
-<tr class="memdesc:a67c1cd5f99463882d2d9936dc1f39bde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform the Play action based on the stream state.  <a href="#a67c1cd5f99463882d2d9936dc1f39bde">More...</a><br /></td></tr>
-<tr class="separator:a67c1cd5f99463882d2d9936dc1f39bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a617e7ca4317e7c9d60c7531db1133a00"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_stream_state.html#a617e7ca4317e7c9d60c7531db1133a00">Pause</a> (<a class="el" href="class_media_controller_1_1_controller.html">Controller</a> &amp;controller)</td></tr>
-<tr class="memdesc:a617e7ca4317e7c9d60c7531db1133a00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform the Pause action based on the stream state.  <a href="#a617e7ca4317e7c9d60c7531db1133a00">More...</a><br /></td></tr>
-<tr class="separator:a617e7ca4317e7c9d60c7531db1133a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe8edb29dd66429bcf0e72be336841c7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_stream_state.html#afe8edb29dd66429bcf0e72be336841c7">Stop</a> (<a class="el" href="class_media_controller_1_1_controller.html">Controller</a> &amp;controller)</td></tr>
-<tr class="memdesc:afe8edb29dd66429bcf0e72be336841c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform the Stop action based on the stream state.  <a href="#afe8edb29dd66429bcf0e72be336841c7">More...</a><br /></td></tr>
-<tr class="separator:afe8edb29dd66429bcf0e72be336841c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af13945b6827c9ae26289938f10ee41b4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_stream_state.html#af13945b6827c9ae26289938f10ee41b4">GoToLive</a> (<a class="el" href="class_media_controller_1_1_controller.html">Controller</a> &amp;controller)</td></tr>
-<tr class="memdesc:af13945b6827c9ae26289938f10ee41b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform the GoToLive action based on the stream state.  <a href="#af13945b6827c9ae26289938f10ee41b4">More...</a><br /></td></tr>
-<tr class="separator:af13945b6827c9ae26289938f10ee41b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f4080d852fc4d384caa5ba68115af1a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_stream_state.html#a5f4080d852fc4d384caa5ba68115af1a">Seek</a> (<a class="el" href="class_media_controller_1_1_controller.html">Controller</a> &amp;controller, unsigned int unixTime, int speed)</td></tr>
-<tr class="memdesc:a5f4080d852fc4d384caa5ba68115af1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform the Seek action based on the stream state.  <a href="#a5f4080d852fc4d384caa5ba68115af1a">More...</a><br /></td></tr>
-<tr class="separator:a5f4080d852fc4d384caa5ba68115af1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a214cf2a9bb5fe47052a792b893601932"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_stream_state.html#a214cf2a9bb5fe47052a792b893601932">Play</a> (<a class="el" href="class_media_controller_1_1_stream_base.html">StreamBase</a> &amp;stream, float speed, unsigned int unixTime)</td></tr>
+<tr class="memdesc:a214cf2a9bb5fe47052a792b893601932"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform the Play action based on the stream state.  <a href="#a214cf2a9bb5fe47052a792b893601932">More...</a><br /></td></tr>
+<tr class="separator:a214cf2a9bb5fe47052a792b893601932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7200e18852307d727288f0fc99d8427b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_stream_state.html#a7200e18852307d727288f0fc99d8427b">Pause</a> (<a class="el" href="class_media_controller_1_1_stream_base.html">StreamBase</a> &amp;stream)</td></tr>
+<tr class="memdesc:a7200e18852307d727288f0fc99d8427b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform the Pause action based on the stream state.  <a href="#a7200e18852307d727288f0fc99d8427b">More...</a><br /></td></tr>
+<tr class="separator:a7200e18852307d727288f0fc99d8427b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76174e8ca3beae8e80d0f769745df889"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_stream_state.html#a76174e8ca3beae8e80d0f769745df889">Stop</a> (<a class="el" href="class_media_controller_1_1_stream_base.html">StreamBase</a> &amp;stream)</td></tr>
+<tr class="memdesc:a76174e8ca3beae8e80d0f769745df889"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform the Stop action based on the stream state.  <a href="#a76174e8ca3beae8e80d0f769745df889">More...</a><br /></td></tr>
+<tr class="separator:a76174e8ca3beae8e80d0f769745df889"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fe3b3a8167ad6de3b889fb2709dd358"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_stream_state.html#a6fe3b3a8167ad6de3b889fb2709dd358">GoToLive</a> (<a class="el" href="class_media_controller_1_1_stream_base.html">StreamBase</a> &amp;stream)</td></tr>
+<tr class="memdesc:a6fe3b3a8167ad6de3b889fb2709dd358"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform the GoToLive action based on the stream state.  <a href="#a6fe3b3a8167ad6de3b889fb2709dd358">More...</a><br /></td></tr>
+<tr class="separator:a6fe3b3a8167ad6de3b889fb2709dd358"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a632127cb3deed8bd15858cb4adc3aaf3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_stream_state.html#a632127cb3deed8bd15858cb4adc3aaf3">StreamState</a> ()</td></tr>
-<tr class="memdesc:a632127cb3deed8bd15858cb4adc3aaf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a632127cb3deed8bd15858cb4adc3aaf3">More...</a><br /></td></tr>
-<tr class="separator:a632127cb3deed8bd15858cb4adc3aaf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f6db90840dcbc48223b9f542b766551"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_stream_state.html#a8f6db90840dcbc48223b9f542b766551">SetState</a> (<a class="el" href="class_media_controller_1_1_controller.html">Controller</a> &amp;controller, <a class="el" href="class_media_controller_1_1_stream_state.html">StreamState</a> *state)</td></tr>
-<tr class="memdesc:a8f6db90840dcbc48223b9f542b766551"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current state of the stream.  <a href="#a8f6db90840dcbc48223b9f542b766551">More...</a><br /></td></tr>
-<tr class="separator:a8f6db90840dcbc48223b9f542b766551"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27f0e1063fd03ccdb9235339b5004bf9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_stream_state.html#a27f0e1063fd03ccdb9235339b5004bf9">StreamState</a> ()</td></tr>
+<tr class="memdesc:a27f0e1063fd03ccdb9235339b5004bf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a27f0e1063fd03ccdb9235339b5004bf9">More...</a><br /></td></tr>
+<tr class="separator:a27f0e1063fd03ccdb9235339b5004bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides an interface for managing calls to the stream based on its current state. </p>
@@ -186,7 +180,7 @@ Protected Member Functions</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{}</div></div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a632127cb3deed8bd15858cb4adc3aaf3"></a>
+<a class="anchor" id="a27f0e1063fd03ccdb9235339b5004bf9"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -194,7 +188,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">StreamState::StreamState </td>
+          <td class="memname">MediaController::StreamState::StreamState </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -202,19 +196,19 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Constructor. </p>
 
-<p>Definition at line <a class="el" href="_stream_state_8cpp_source.html#l00014">14</a> of file <a class="el" href="_stream_state_8cpp_source.html">StreamState.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{}</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_stream_state_8h_source.html#l00049">49</a> of file <a class="el" href="_stream_state_8h_source.html">StreamState.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{}</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="af13945b6827c9ae26289938f10ee41b4"></a>
+<a class="anchor" id="a6fe3b3a8167ad6de3b889fb2709dd358"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -222,16 +216,16 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void StreamState::GoToLive </td>
+          <td class="memname">virtual bool MediaController::StreamState::GoToLive </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_media_controller_1_1_controller.html">Controller</a> &amp;&#160;</td>
-          <td class="paramname"><em>controller</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_media_controller_1_1_stream_base.html">StreamBase</a> &amp;&#160;</td>
+          <td class="paramname"><em>stream</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -239,18 +233,18 @@ Protected Member Functions</h2></td></tr>
 <p>Perform the GoToLive action based on the stream state. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">controller</td><td>The controller instance.</td></tr>
+    <tr><td class="paramname">stream</td><td>The stream instance.</td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="class_media_controller_1_1_stopped_state.html#a00d5b1e333856139c44a7fef43226623">MediaController::StoppedState</a>, <a class="el" href="class_media_controller_1_1_paused_state.html#a64004d4640ff8dd3e06d7617bafced24">MediaController::PausedState</a>, and <a class="el" href="class_media_controller_1_1_playing_state.html#a4bde5bd5038a99c5195293c8f5ce6af0">MediaController::PlayingState</a>.</p>
+<p>Reimplemented in <a class="el" href="class_media_controller_1_1_stopped_state.html#a33d6e16ce69b96d634e2c4aba70d8a80">MediaController::StoppedState</a>, <a class="el" href="class_media_controller_1_1_paused_state.html#a33effb368d43fe8cf3dfe64a30d09674">MediaController::PausedState</a>, and <a class="el" href="class_media_controller_1_1_playing_state.html#aa42a52f62cca87b6d347702e1369d7eb">MediaController::PlayingState</a>.</p>
 
-<p>Definition at line <a class="el" href="_stream_state_8cpp_source.html#l00019">19</a> of file <a class="el" href="_stream_state_8cpp_source.html">StreamState.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{}</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_stream_state_8h_source.html#l00043">43</a> of file <a class="el" href="_stream_state_8h_source.html">StreamState.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div></div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a617e7ca4317e7c9d60c7531db1133a00"></a>
+<a class="anchor" id="a7200e18852307d727288f0fc99d8427b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -258,16 +252,16 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void StreamState::Pause </td>
+          <td class="memname">virtual void MediaController::StreamState::Pause </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_media_controller_1_1_controller.html">Controller</a> &amp;&#160;</td>
-          <td class="paramname"><em>controller</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_media_controller_1_1_stream_base.html">StreamBase</a> &amp;&#160;</td>
+          <td class="paramname"><em>stream</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -275,18 +269,18 @@ Protected Member Functions</h2></td></tr>
 <p>Perform the Pause action based on the stream state. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">controller</td><td>The controller instance.</td></tr>
+    <tr><td class="paramname">stream</td><td>The stream instance.</td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="class_media_controller_1_1_playing_state.html#a5974a94acb89f8de121ba1855526eb75">MediaController::PlayingState</a>.</p>
+<p>Reimplemented in <a class="el" href="class_media_controller_1_1_playing_state.html#acff31b4fdafd651190f385d5afaf9fa0">MediaController::PlayingState</a>.</p>
 
-<p>Definition at line <a class="el" href="_stream_state_8cpp_source.html#l00017">17</a> of file <a class="el" href="_stream_state_8cpp_source.html">StreamState.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{}</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_stream_state_8h_source.html#l00031">31</a> of file <a class="el" href="_stream_state_8h_source.html">StreamState.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{}</div></div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a67c1cd5f99463882d2d9936dc1f39bde"></a>
+<a class="anchor" id="a214cf2a9bb5fe47052a792b893601932"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -294,16 +288,22 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void StreamState::Play </td>
+          <td class="memname">virtual bool MediaController::StreamState::Play </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_media_controller_1_1_controller.html">Controller</a> &amp;&#160;</td>
-          <td class="paramname"><em>controller</em>, </td>
+          <td class="paramtype"><a class="el" href="class_media_controller_1_1_stream_base.html">StreamBase</a> &amp;&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>speed</em>&#160;</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>speed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>unixTime</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -313,7 +313,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -321,73 +321,20 @@ Protected Member Functions</h2></td></tr>
 <p>Perform the Play action based on the stream state. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">controller</td><td>The controller instance.</td></tr>
+    <tr><td class="paramname">stream</td><td>The stream instance.</td></tr>
     <tr><td class="paramname">speed</td><td>The playback speed.</td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Reimplemented in <a class="el" href="class_media_controller_1_1_stopped_state.html#a8bd9ad863881ed1f8b487a2eb4e00993">MediaController::StoppedState</a>, <a class="el" href="class_media_controller_1_1_paused_state.html#a85739ebb8913694177992e83ca26b122">MediaController::PausedState</a>, and <a class="el" href="class_media_controller_1_1_playing_state.html#af11c2334ac505ee1299e544a2a964c04">MediaController::PlayingState</a>.</p>
-
-<p>Definition at line <a class="el" href="_stream_state_8cpp_source.html#l00016">16</a> of file <a class="el" href="_stream_state_8cpp_source.html">StreamState.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{}</div></div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="a5f4080d852fc4d384caa5ba68115af1a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void StreamState::Seek </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_media_controller_1_1_controller.html">Controller</a> &amp;&#160;</td>
-          <td class="paramname"><em>controller</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>unixTime</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>speed</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Perform the Seek action based on the stream state. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">controller</td><td>The controller instance.</td></tr>
     <tr><td class="paramname">unixTime</td><td>The start time for playback.</td></tr>
-    <tr><td class="paramname">speed</td><td>The playback speed.</td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="class_media_controller_1_1_stopped_state.html#a4bd811dfc679b042366c768657891ea7">MediaController::StoppedState</a>, <a class="el" href="class_media_controller_1_1_paused_state.html#a7692f410ddd05178403082f5961ef419">MediaController::PausedState</a>, and <a class="el" href="class_media_controller_1_1_playing_state.html#a3de48205d6f16d9e37f9fce69fb9f266">MediaController::PlayingState</a>.</p>
+<p>Reimplemented in <a class="el" href="class_media_controller_1_1_stopped_state.html#a19f046b0487a5f4a62bfbb8eb83ef6c7">MediaController::StoppedState</a>, <a class="el" href="class_media_controller_1_1_paused_state.html#a914dc4fd7093ea4833cd6e29ff54ba91">MediaController::PausedState</a>, and <a class="el" href="class_media_controller_1_1_playing_state.html#a0bf97da76a698a03dc7b82d5e3f3a0ed">MediaController::PlayingState</a>.</p>
 
-<p>Definition at line <a class="el" href="_stream_state_8cpp_source.html#l00020">20</a> of file <a class="el" href="_stream_state_8cpp_source.html">StreamState.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{}</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_stream_state_8h_source.html#l00025">25</a> of file <a class="el" href="_stream_state_8h_source.html">StreamState.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div></div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a8f6db90840dcbc48223b9f542b766551"></a>
+<a class="anchor" id="a76174e8ca3beae8e80d0f769745df889"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -395,63 +342,16 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void StreamState::SetState </td>
+          <td class="memname">virtual void MediaController::StreamState::Stop </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_media_controller_1_1_controller.html">Controller</a> &amp;&#160;</td>
-          <td class="paramname"><em>controller</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_media_controller_1_1_stream_state.html">StreamState</a> *&#160;</td>
-          <td class="paramname"><em>state</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Set the current state of the stream. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">controller</td><td>The controller instance.</td></tr>
-    <tr><td class="paramname">state</td><td>The state to set the stream to.</td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="_stream_state_8cpp_source.html#l00022">22</a> of file <a class="el" href="_stream_state_8cpp_source.html">StreamState.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                                                                     {</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_media_controller_1_1_stream_state.html">StreamState</a>* aux = controller.<a class="code" href="class_media_controller_1_1_controller.html#a03fae8101558689ac1d58f6744546bce">state</a>;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    controller.<a class="code" href="class_media_controller_1_1_controller.html#a03fae8101558689ac1d58f6744546bce">state</a> = state;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">delete</span> aux;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div><div class="ttc" id="class_media_controller_1_1_controller_html_a03fae8101558689ac1d58f6744546bce"><div class="ttname"><a href="class_media_controller_1_1_controller.html#a03fae8101558689ac1d58f6744546bce">MediaController::Controller::state</a></div><div class="ttdeci">StreamState * state</div><div class="ttdoc">The current state of the stream. </div><div class="ttdef"><b>Definition:</b> <a href="_controller_8h_source.html#l00045">Controller.h:45</a></div></div>
-<div class="ttc" id="class_media_controller_1_1_stream_state_html"><div class="ttname"><a href="class_media_controller_1_1_stream_state.html">MediaController::StreamState</a></div><div class="ttdoc">Provides an interface for managing calls to the stream based on its current state. </div><div class="ttdef"><b>Definition:</b> <a href="_stream_state_8h_source.html#l00011">StreamState.h:11</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="afe8edb29dd66429bcf0e72be336841c7"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void StreamState::Stop </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_media_controller_1_1_controller.html">Controller</a> &amp;&#160;</td>
-          <td class="paramname"><em>controller</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_media_controller_1_1_stream_base.html">StreamBase</a> &amp;&#160;</td>
+          <td class="paramname"><em>stream</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -459,20 +359,19 @@ Protected Member Functions</h2></td></tr>
 <p>Perform the Stop action based on the stream state. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">controller</td><td>The controller instance.</td></tr>
+    <tr><td class="paramname">stream</td><td>The stream instance.</td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="class_media_controller_1_1_paused_state.html#a60919e3fad6f0c893c84c7b7972da17f">MediaController::PausedState</a>, and <a class="el" href="class_media_controller_1_1_playing_state.html#a7d9de177fdfd14b19f2bb6d37e907ace">MediaController::PlayingState</a>.</p>
+<p>Reimplemented in <a class="el" href="class_media_controller_1_1_paused_state.html#aad0fafdb2c13f470d338f059ff1b66a2">MediaController::PausedState</a>, and <a class="el" href="class_media_controller_1_1_playing_state.html#a57fec62544b47dacb4c5b0835f1a5ae2">MediaController::PlayingState</a>.</p>
 
-<p>Definition at line <a class="el" href="_stream_state_8cpp_source.html#l00018">18</a> of file <a class="el" href="_stream_state_8cpp_source.html">StreamState.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{}</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_stream_state_8h_source.html#l00037">37</a> of file <a class="el" href="_stream_state_8h_source.html">StreamState.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{}</div></div><!-- fragment -->
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Users/zachm/Git/VxSDK-Samples/MediaController/Include/<a class="el" href="_stream_state_8h_source.html">StreamState.h</a></li>
-<li>C:/Users/zachm/Git/VxSDK-Samples/MediaController/Source/<a class="el" href="_stream_state_8cpp_source.html">StreamState.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

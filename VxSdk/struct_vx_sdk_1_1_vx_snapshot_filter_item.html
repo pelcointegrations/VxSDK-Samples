@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">VideoXpert SDK
-   &#160;<span id="projectnumber">1.1</span>
+   &#160;<span id="projectnumber">1.2</span>
    </div>
    <div id="projectbrief">A software development kit for third party vendors to integrate with the VideoXpert platform</div>
   </td>
@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('struct_vx_sdk_1_1_vx_snapshot_filter_i
 </div><!--header-->
 <div class="contents">
 
-<p>Values that represent collection filter types.  
+<p>Values that represent snapshot filter types.  
  <a href="struct_vx_sdk_1_1_vx_snapshot_filter_item.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_vx_primitives_8h_source.html">VxPrimitives.h</a>&gt;</code></p>
@@ -138,9 +138,9 @@ Public Types</h2></td></tr>
 <tr class="separator:a0d732ec86d6e4a4153040116e6ba1dab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Values that represent collection filter types. </p>
+<div class="textblock"><p>Values that represent snapshot filter types. </p>
 
-<p>Definition at line <a class="el" href="_vx_primitives_8h_source.html#l00406">406</a> of file <a class="el" href="_vx_primitives_8h_source.html">VxPrimitives.h</a>.</p>
+<p>Definition at line <a class="el" href="_vx_primitives_8h_source.html#l00617">617</a> of file <a class="el" href="_vx_primitives_8h_source.html">VxPrimitives.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="a0d732ec86d6e4a4153040116e6ba1dab"></a>
 <div class="memitem">
@@ -153,7 +153,7 @@ Public Types</h2></td></tr>
 </div><div class="memdoc">
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a0d732ec86d6e4a4153040116e6ba1daba98de4e0bdca23ebbeabd06818fd5edff"></a>kNone&#160;</td><td class="fielddoc">
-<p>An error or unknown value was returned.</p>
+<p>No filter.</p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a0d732ec86d6e4a4153040116e6ba1daba8b1f3f15730afd1c084ee59dba743394"></a>kStartTime&#160;</td><td class="fielddoc">
 <p>Time (RFC 3339 format) at which the initial image should start .</p>
@@ -169,12 +169,12 @@ Public Types</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="_vx_primitives_8h_source.html#l00407">407</a> of file <a class="el" href="_vx_primitives_8h_source.html">VxPrimitives.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;                   {</div><div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;            <a class="code" href="struct_vx_sdk_1_1_vx_snapshot_filter_item.html#a0d732ec86d6e4a4153040116e6ba1daba98de4e0bdca23ebbeabd06818fd5edff">kNone</a>,</div><div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;            <a class="code" href="struct_vx_sdk_1_1_vx_snapshot_filter_item.html#a0d732ec86d6e4a4153040116e6ba1daba8b1f3f15730afd1c084ee59dba743394">kStartTime</a>,</div><div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;            <a class="code" href="struct_vx_sdk_1_1_vx_snapshot_filter_item.html#a0d732ec86d6e4a4153040116e6ba1daba23cd1d71623f2421cebcd657c8495a3e">kEndTime</a>,</div><div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;            <a class="code" href="struct_vx_sdk_1_1_vx_snapshot_filter_item.html#a0d732ec86d6e4a4153040116e6ba1daba0a0c2a6f4250a7e5d208953717186b33">kWidth</a>,</div><div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;            <a class="code" href="struct_vx_sdk_1_1_vx_snapshot_filter_item.html#a0d732ec86d6e4a4153040116e6ba1daba44f8ab4089b49241476e3377b3af6204">kOffset</a></div><div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;        };</div><div class="ttc" id="struct_vx_sdk_1_1_vx_snapshot_filter_item_html_a0d732ec86d6e4a4153040116e6ba1daba44f8ab4089b49241476e3377b3af6204"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_snapshot_filter_item.html#a0d732ec86d6e4a4153040116e6ba1daba44f8ab4089b49241476e3377b3af6204">VxSdk::VxSnapshotFilterItem::kOffset</a></div><div class="ttdoc">Return multiple images offset by this amount of time, in seconds, between images.</div><div class="ttdef"><b>Definition:</b> <a href="_vx_primitives_8h_source.html#l00417">VxPrimitives.h:417</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_vx_snapshot_filter_item_html_a0d732ec86d6e4a4153040116e6ba1daba8b1f3f15730afd1c084ee59dba743394"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_snapshot_filter_item.html#a0d732ec86d6e4a4153040116e6ba1daba8b1f3f15730afd1c084ee59dba743394">VxSdk::VxSnapshotFilterItem::kStartTime</a></div><div class="ttdoc">Time (RFC 3339 format) at which the initial image should start .</div><div class="ttdef"><b>Definition:</b> <a href="_vx_primitives_8h_source.html#l00411">VxPrimitives.h:411</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_vx_snapshot_filter_item_html_a0d732ec86d6e4a4153040116e6ba1daba23cd1d71623f2421cebcd657c8495a3e"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_snapshot_filter_item.html#a0d732ec86d6e4a4153040116e6ba1daba23cd1d71623f2421cebcd657c8495a3e">VxSdk::VxSnapshotFilterItem::kEndTime</a></div><div class="ttdoc">Time (RFC 3339 format) at which no further images should be returned.</div><div class="ttdef"><b>Definition:</b> <a href="_vx_primitives_8h_source.html#l00413">VxPrimitives.h:413</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_vx_snapshot_filter_item_html_a0d732ec86d6e4a4153040116e6ba1daba98de4e0bdca23ebbeabd06818fd5edff"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_snapshot_filter_item.html#a0d732ec86d6e4a4153040116e6ba1daba98de4e0bdca23ebbeabd06818fd5edff">VxSdk::VxSnapshotFilterItem::kNone</a></div><div class="ttdoc">An error or unknown value was returned.</div><div class="ttdef"><b>Definition:</b> <a href="_vx_primitives_8h_source.html#l00409">VxPrimitives.h:409</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_vx_snapshot_filter_item_html_a0d732ec86d6e4a4153040116e6ba1daba0a0c2a6f4250a7e5d208953717186b33"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_snapshot_filter_item.html#a0d732ec86d6e4a4153040116e6ba1daba0a0c2a6f4250a7e5d208953717186b33">VxSdk::VxSnapshotFilterItem::kWidth</a></div><div class="ttdoc">Scale to given width in pixels, maintaining ratio.</div><div class="ttdef"><b>Definition:</b> <a href="_vx_primitives_8h_source.html#l00415">VxPrimitives.h:415</a></div></div>
+<p>Definition at line <a class="el" href="_vx_primitives_8h_source.html#l00618">618</a> of file <a class="el" href="_vx_primitives_8h_source.html">VxPrimitives.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;                   {</div><div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;            <a class="code" href="struct_vx_sdk_1_1_vx_snapshot_filter_item.html#a0d732ec86d6e4a4153040116e6ba1daba98de4e0bdca23ebbeabd06818fd5edff">kNone</a>,</div><div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;            <a class="code" href="struct_vx_sdk_1_1_vx_snapshot_filter_item.html#a0d732ec86d6e4a4153040116e6ba1daba8b1f3f15730afd1c084ee59dba743394">kStartTime</a>,</div><div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;            <a class="code" href="struct_vx_sdk_1_1_vx_snapshot_filter_item.html#a0d732ec86d6e4a4153040116e6ba1daba23cd1d71623f2421cebcd657c8495a3e">kEndTime</a>,</div><div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;            <a class="code" href="struct_vx_sdk_1_1_vx_snapshot_filter_item.html#a0d732ec86d6e4a4153040116e6ba1daba0a0c2a6f4250a7e5d208953717186b33">kWidth</a>,</div><div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;            <a class="code" href="struct_vx_sdk_1_1_vx_snapshot_filter_item.html#a0d732ec86d6e4a4153040116e6ba1daba44f8ab4089b49241476e3377b3af6204">kOffset</a></div><div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;        };</div><div class="ttc" id="struct_vx_sdk_1_1_vx_snapshot_filter_item_html_a0d732ec86d6e4a4153040116e6ba1daba44f8ab4089b49241476e3377b3af6204"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_snapshot_filter_item.html#a0d732ec86d6e4a4153040116e6ba1daba44f8ab4089b49241476e3377b3af6204">VxSdk::VxSnapshotFilterItem::kOffset</a></div><div class="ttdoc">Return multiple images offset by this amount of time, in seconds, between images.</div><div class="ttdef"><b>Definition:</b> <a href="_vx_primitives_8h_source.html#l00628">VxPrimitives.h:628</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_snapshot_filter_item_html_a0d732ec86d6e4a4153040116e6ba1daba8b1f3f15730afd1c084ee59dba743394"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_snapshot_filter_item.html#a0d732ec86d6e4a4153040116e6ba1daba8b1f3f15730afd1c084ee59dba743394">VxSdk::VxSnapshotFilterItem::kStartTime</a></div><div class="ttdoc">Time (RFC 3339 format) at which the initial image should start .</div><div class="ttdef"><b>Definition:</b> <a href="_vx_primitives_8h_source.html#l00622">VxPrimitives.h:622</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_snapshot_filter_item_html_a0d732ec86d6e4a4153040116e6ba1daba23cd1d71623f2421cebcd657c8495a3e"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_snapshot_filter_item.html#a0d732ec86d6e4a4153040116e6ba1daba23cd1d71623f2421cebcd657c8495a3e">VxSdk::VxSnapshotFilterItem::kEndTime</a></div><div class="ttdoc">Time (RFC 3339 format) at which no further images should be returned.</div><div class="ttdef"><b>Definition:</b> <a href="_vx_primitives_8h_source.html#l00624">VxPrimitives.h:624</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_snapshot_filter_item_html_a0d732ec86d6e4a4153040116e6ba1daba98de4e0bdca23ebbeabd06818fd5edff"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_snapshot_filter_item.html#a0d732ec86d6e4a4153040116e6ba1daba98de4e0bdca23ebbeabd06818fd5edff">VxSdk::VxSnapshotFilterItem::kNone</a></div><div class="ttdoc">No filter.</div><div class="ttdef"><b>Definition:</b> <a href="_vx_primitives_8h_source.html#l00620">VxPrimitives.h:620</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_snapshot_filter_item_html_a0d732ec86d6e4a4153040116e6ba1daba0a0c2a6f4250a7e5d208953717186b33"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_snapshot_filter_item.html#a0d732ec86d6e4a4153040116e6ba1daba0a0c2a6f4250a7e5d208953717186b33">VxSdk::VxSnapshotFilterItem::kWidth</a></div><div class="ttdoc">Scale to given width in pixels, maintaining ratio.</div><div class="ttdef"><b>Definition:</b> <a href="_vx_primitives_8h_source.html#l00626">VxPrimitives.h:626</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

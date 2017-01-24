@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['caps',['caps',['../../MediaController/struct_media_controller_1_1_gst_vars.html#ad38ffc18fac7a7014f77af9ffa60ad12',1,'MediaController::GstVars']]],
+  ['clearscreenalways',['ClearScreenAlways',['../class_cpp_samples_1_1_common_1_1_option_selector.html#a04ff6de734d84b17afd1206387847e93',1,'CppSamples::Common::OptionSelector']]],
+  ['clienttype',['clientType',['../../VxSdk/struct_vx_sdk_1_1_i_vx_data_object.html#a902ec2276c59525c0eba90b4f6d403a1',1,'VxSdk::IVxDataObject::clientType()'],['../../VxSdk/struct_vx_sdk_1_1_vx_new_data_object.html#a0e9e95f484648aa3ee873e7bb1324e81',1,'VxSdk::VxNewDataObject::clientType()']]],
+  ['clips',['clips',['../../VxSdk/struct_vx_sdk_1_1_vx_new_export.html#a70dba44c1cfd4ed86b05269ead640820',1,'VxSdk::VxNewExport']]],
+  ['clipsize',['clipSize',['../../VxSdk/struct_vx_sdk_1_1_vx_new_export.html#ac1b58e21df24ce98913fe2fb45ffd98d',1,'VxSdk::VxNewExport']]],
+  ['collection',['collection',['../../VxSdk/struct_vx_sdk_1_1_vx_collection.html#aa6b66343ba5098e788d6e3c1da23f8c3',1,'VxSdk::VxCollection']]],
+  ['collectionsize',['collectionSize',['../../VxSdk/struct_vx_sdk_1_1_vx_collection.html#a9b339db50d44a0fc986cdd787f1c589b',1,'VxSdk::VxCollection']]],
+  ['companyname',['companyName',['../../VxSdk/struct_vx_sdk_1_1_i_vx_license.html#a8ee70429b2899c4b0312e42a237afa6e',1,'VxSdk::IVxLicense']]],
+  ['completedtime',['completedTime',['../../VxSdk/struct_vx_sdk_1_1_i_vx_export.html#a3e16200fd05a80e3b1ecae4d158ebabb',1,'VxSdk::IVxExport']]],
+  ['conferencetype',['conferenceType',['../../MediaController/struct_media_controller_1_1_rtsp_1_1_media_description.html#a829f943d61468efca90a996dd62df0fc',1,'MediaController::Rtsp::MediaDescription']]],
+  ['content',['content',['../../MediaController/struct_media_controller_1_1_rtsp_1_1_response.html#ab1eb5333e6dc0068cf7be6a6fbc90286',1,'MediaController::Rtsp::Response']]],
+  ['contents',['contents',['../../VxSdk/struct_vx_sdk_1_1_vx_new_quick_report.html#a8c5c5088bc3de32d63b2d4da71a8ced9',1,'VxSdk::VxNewQuickReport']]],
+  ['contentssize',['contentsSize',['../../VxSdk/struct_vx_sdk_1_1_vx_new_quick_report.html#a68cdbd15dba75d2bb1e65e131866386a',1,'VxSdk::VxNewQuickReport']]],
+  ['controluri',['controlUri',['../../MediaController/struct_media_controller_1_1_rtsp_1_1_media_description.html#a8aeb21239a650abfc539ebf9b591421c',1,'MediaController::Rtsp::MediaDescription']]],
+  ['cookie',['cookie',['../../MediaController/struct_media_controller_1_1_gst_vars.html#af342b243da53d19010506387e215c339',1,'MediaController::GstVars']]],
+  ['corevirtualip',['coreVirtualIp',['../../VxSdk/struct_vx_sdk_1_1_i_vx_configuration_1_1_cluster.html#a35b60e8dc10553c98b84e29287e6f082',1,'VxSdk::IVxConfiguration::Cluster']]],
+  ['count',['count',['../../VxSdk/struct_vx_sdk_1_1_i_vx_license_feature.html#a741481cf402cf3209114a9bdd3c61d47',1,'VxSdk::IVxLicenseFeature']]],
+  ['currenttimestamp',['currentTimestamp',['../../MediaController/struct_media_controller_1_1_gst_vars.html#a294d02b1d114b3fe49f7f6c0c2bf7df4',1,'MediaController::GstVars']]]
+];

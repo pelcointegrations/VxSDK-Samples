@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">VideoXpert SDK
-   &#160;<span id="projectnumber">1.1</span>
+   &#160;<span id="projectnumber">1.2</span>
    </div>
    <div id="projectbrief">A software development kit for third party vendors to integrate with the VideoXpert platform</div>
   </td>
@@ -132,14 +132,20 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aa06cc66406bcb908d9dc4524ec733cea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete this bookmark from the VideoXpert system.  <a href="#aa06cc66406bcb908d9dc4524ec733cea">More...</a><br /></td></tr>
 <tr class="separator:aa06cc66406bcb908d9dc4524ec733cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0312d2da502885bff6436d22bf74bc6a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_bookmark.html#a0312d2da502885bff6436d22bf74bc6a">GetDataSource</a> (<a class="el" href="struct_vx_sdk_1_1_i_vx_data_source.html">IVxDataSource</a> *&amp;dataSource) const  =0</td></tr>
-<tr class="memdesc:a0312d2da502885bff6436d22bf74bc6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the data source associated with this bookmark.  <a href="#a0312d2da502885bff6436d22bf74bc6a">More...</a><br /></td></tr>
+<tr class="memdesc:a0312d2da502885bff6436d22bf74bc6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the data source associated with this bookmark.  <a href="#a0312d2da502885bff6436d22bf74bc6a">More...</a><br /></td></tr>
 <tr class="separator:a0312d2da502885bff6436d22bf74bc6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5adb085904002c38380dd1bd07ed8530"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_bookmark.html#a5adb085904002c38380dd1bd07ed8530">Refresh</a> ()=0</td></tr>
+<tr class="memdesc:a5adb085904002c38380dd1bd07ed8530"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refreshes the member values for this object by retrieving its current information from the VideoXpert system.  <a href="#a5adb085904002c38380dd1bd07ed8530">More...</a><br /></td></tr>
+<tr class="separator:a5adb085904002c38380dd1bd07ed8530"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afee7166dc9daeb225fdce93edc0646f2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_bookmark.html#afee7166dc9daeb225fdce93edc0646f2">SetDescription</a> (char *<a class="el" href="struct_vx_sdk_1_1_i_vx_bookmark.html#a17c27d69436c22e39fad510bdc7a0da4">description</a>)=0</td></tr>
+<tr class="memdesc:afee7166dc9daeb225fdce93edc0646f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the description property.  <a href="#afee7166dc9daeb225fdce93edc0646f2">More...</a><br /></td></tr>
+<tr class="separator:afee7166dc9daeb225fdce93edc0646f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a572dff812869b9bcf47b65b086b0f65e"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_bookmark.html#a572dff812869b9bcf47b65b086b0f65e">description</a> [64]</td></tr>
-<tr class="memdesc:a572dff812869b9bcf47b65b086b0f65e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The friendly description of the bookmark.  <a href="#a572dff812869b9bcf47b65b086b0f65e">More...</a><br /></td></tr>
-<tr class="separator:a572dff812869b9bcf47b65b086b0f65e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17c27d69436c22e39fad510bdc7a0da4"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_bookmark.html#a17c27d69436c22e39fad510bdc7a0da4">description</a> [256]</td></tr>
+<tr class="memdesc:a17c27d69436c22e39fad510bdc7a0da4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The friendly description of the bookmark.  <a href="#a17c27d69436c22e39fad510bdc7a0da4">More...</a><br /></td></tr>
+<tr class="separator:a17c27d69436c22e39fad510bdc7a0da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9ae8707ae955267677a15018b523888"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_bookmark.html#ab9ae8707ae955267677a15018b523888">id</a> [64]</td></tr>
 <tr class="memdesc:ab9ae8707ae955267677a15018b523888"><td class="mdescLeft">&#160;</td><td class="mdescRight">The unique identifier of the bookmark.  <a href="#ab9ae8707ae955267677a15018b523888">More...</a><br /></td></tr>
 <tr class="separator:ab9ae8707ae955267677a15018b523888"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,10 +187,10 @@ Protected Member Functions</h2></td></tr>
 
 <p>Clears this instance. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_bookmark_8h_source.html#l00049">49</a> of file <a class="el" href="_i_vx_bookmark_8h_source.html">IVxBookmark.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                     {</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_bookmark.html#a572dff812869b9bcf47b65b086b0f65e">description</a>);</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<span class="keywordtype">id</span>);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_bookmark.html#aed1009afa82966848017275fbc3848f1">time</a>);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div><div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00018">VxMacros.h:18</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_bookmark_html_a572dff812869b9bcf47b65b086b0f65e"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_bookmark.html#a572dff812869b9bcf47b65b086b0f65e">VxSdk::IVxBookmark::description</a></div><div class="ttdeci">char description[64]</div><div class="ttdoc">The friendly description of the bookmark. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_bookmark_8h_source.html#l00035">IVxBookmark.h:35</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_bookmark_html_aed1009afa82966848017275fbc3848f1"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_bookmark.html#aed1009afa82966848017275fbc3848f1">VxSdk::IVxBookmark::time</a></div><div class="ttdeci">char time[64]</div><div class="ttdoc">The time at which the point of interest occurred. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_bookmark_8h_source.html#l00043">IVxBookmark.h:43</a></div></div>
+<p>Definition at line <a class="el" href="_i_vx_bookmark_8h_source.html#l00061">61</a> of file <a class="el" href="_i_vx_bookmark_8h_source.html">IVxBookmark.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                     {</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_bookmark.html#a17c27d69436c22e39fad510bdc7a0da4">description</a>);</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<span class="keywordtype">id</span>);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_bookmark.html#aed1009afa82966848017275fbc3848f1">time</a>);</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div><div class="ttc" id="struct_vx_sdk_1_1_i_vx_bookmark_html_a17c27d69436c22e39fad510bdc7a0da4"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_bookmark.html#a17c27d69436c22e39fad510bdc7a0da4">VxSdk::IVxBookmark::description</a></div><div class="ttdeci">char description[256]</div><div class="ttdoc">The friendly description of the bookmark. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_bookmark_8h_source.html#l00047">IVxBookmark.h:47</a></div></div>
+<div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00018">VxMacros.h:18</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_bookmark_html_aed1009afa82966848017275fbc3848f1"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_bookmark.html#aed1009afa82966848017275fbc3848f1">VxSdk::IVxBookmark::time</a></div><div class="ttdeci">char time[64]</div><div class="ttdoc">The time at which the point of interest occurred. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_bookmark_8h_source.html#l00055">IVxBookmark.h:55</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -262,25 +268,90 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the data source associated with this bookmark. </p>
+<p>Gets the data source associated with this bookmark. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dataSource</td><td>The associated data source.</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of the request.</dd></dl>
 
 </div>
 </div>
+<a class="anchor" id="a5adb085904002c38380dd1bd07ed8530"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxBookmark::Refresh </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Refreshes the member values for this object by retrieving its current information from the VideoXpert system. </p>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of refreshing the member values for this object.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afee7166dc9daeb225fdce93edc0646f2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxBookmark::SetDescription </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>description</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the description property. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">description</td><td>The new description value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of setting the property.</dd></dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a572dff812869b9bcf47b65b086b0f65e"></a>
+<a class="anchor" id="a17c27d69436c22e39fad510bdc7a0da4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char VxSdk::IVxBookmark::description[64]</td>
+          <td class="memname">char VxSdk::IVxBookmark::description[256]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>The friendly description of the bookmark. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_bookmark_8h_source.html#l00035">35</a> of file <a class="el" href="_i_vx_bookmark_8h_source.html">IVxBookmark.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_bookmark_8h_source.html#l00047">47</a> of file <a class="el" href="_i_vx_bookmark_8h_source.html">IVxBookmark.h</a>.</p>
 
 </div>
 </div>
@@ -296,7 +367,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The unique identifier of the bookmark. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_bookmark_8h_source.html#l00039">39</a> of file <a class="el" href="_i_vx_bookmark_8h_source.html">IVxBookmark.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_bookmark_8h_source.html#l00051">51</a> of file <a class="el" href="_i_vx_bookmark_8h_source.html">IVxBookmark.h</a>.</p>
 
 </div>
 </div>
@@ -312,7 +383,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The time at which the point of interest occurred. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_bookmark_8h_source.html#l00043">43</a> of file <a class="el" href="_i_vx_bookmark_8h_source.html">IVxBookmark.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_bookmark_8h_source.html#l00055">55</a> of file <a class="el" href="_i_vx_bookmark_8h_source.html">IVxBookmark.h</a>.</p>
 
 </div>
 </div>

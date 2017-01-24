@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">VideoXpert SDK
-   &#160;<span id="projectnumber">1.1</span>
+   &#160;<span id="projectnumber">1.2</span>
    </div>
    <div id="projectbrief">A software development kit for third party vendors to integrate with the VideoXpert platform</div>
   </td>
@@ -131,6 +131,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_clip.html">IVxClip</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a contiguous duration of stored media originating from a single data source.  <a href="struct_vx_sdk_1_1_i_vx_clip.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_configuration.html">IVxConfiguration</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the configuration of a device.  <a href="struct_vx_sdk_1_1_i_vx_configuration.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_interface.html">IVxDataInterface</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a data interface for a data source. Clients can retrieve data from the data source using the protocol specified by this interface.  <a href="struct_vx_sdk_1_1_i_vx_data_interface.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,6 +155,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_device_assignment.html">IVxDeviceAssignment</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a device assignment on a data storage.  <a href="struct_vx_sdk_1_1_i_vx_device_assignment.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_drawing.html">IVxDrawing</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a diagrammatic representation of an area. A drawing may contain any number of markers to represent points of interest within the area.  <a href="struct_vx_sdk_1_1_i_vx_drawing.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_driver.html">IVxDriver</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a device communication driver.  <a href="struct_vx_sdk_1_1_i_vx_driver.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,6 +169,24 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_export_clip.html">IVxExportClip</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents an individual range of media data belonging to an export. This data shall be exported when the export is triggered.  <a href="struct_vx_sdk_1_1_i_vx_export_clip.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_license.html">IVxLicense</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents license information for the resource that owns this resource.  <a href="struct_vx_sdk_1_1_i_vx_license.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_license_feature.html">IVxLicenseFeature</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents device functionality that is enabled with a valid license.  <a href="struct_vx_sdk_1_1_i_vx_license_feature.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_marker.html">IVxMarker</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the location of a resource on a drawing. A marker is associated with exactly one drawing, though a drawing may have many markers. A marker may be associated with one resource, though a resource may have many markers.  <a href="struct_vx_sdk_1_1_i_vx_marker.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_monitor.html">IVxMonitor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a display for view data (typically video).  <a href="struct_vx_sdk_1_1_i_vx_monitor.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_monitor_cell.html">IVxMonitorCell</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a single viewport, hosted on a monitor, that can play media from a data source.  <a href="struct_vx_sdk_1_1_i_vx_monitor_cell.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_notification.html">IVxNotification</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a particular notification configuration for a situation.  <a href="struct_vx_sdk_1_1_i_vx_notification.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_pattern.html">IVxPattern</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a predefined sequence of movement that a PTZ device can perform when triggered. A running pattern will be halted upon any other PTZ request.  <a href="struct_vx_sdk_1_1_i_vx_pattern.html#details">More...</a><br /></td></tr>
@@ -178,6 +202,12 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_ptz_lock.html">IVxPtzLock</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a lock for a PTZ controller.  <a href="struct_vx_sdk_1_1_i_vx_ptz_lock.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_quick_report.html">IVxQuickReport</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a quick system health report.  <a href="struct_vx_sdk_1_1_i_vx_quick_report.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_resource_lock.html">IVxResourceLock</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a lock upon a resource. A resource that has been locked shall permit only the owner of the lock access to modify the resource.  <a href="struct_vx_sdk_1_1_i_vx_resource_lock.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_role.html">IVxRole</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a collection of permissions which can be assigned to a user.  <a href="struct_vx_sdk_1_1_i_vx_role.html#details">More...</a><br /></td></tr>
@@ -206,6 +236,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_auth_info.html">VxAuthInfo</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the information needed to authenticate with a VideoXpert system.  <a href="struct_vx_sdk_1_1_vx_auth_info.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_cell_layout.html">VxCellLayout</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent possible monitor layouts.  <a href="struct_vx_sdk_1_1_vx_cell_layout.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_collection.html">VxCollection</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a collection of resources.  <a href="struct_vx_sdk_1_1_vx_collection.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -214,6 +247,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_collection_filter_item.html">VxCollectionFilterItem</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent collection filter types.  <a href="struct_vx_sdk_1_1_vx_collection_filter_item.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_config_status.html">VxConfigStatus</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent the current cluster configuration status.  <a href="struct_vx_sdk_1_1_vx_config_status.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_data_source_type.html">VxDataSourceType</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent the particular type of a data source.  <a href="struct_vx_sdk_1_1_vx_data_source_type.html#details">More...</a><br /></td></tr>
@@ -245,14 +281,23 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_login_info.html">VxLoginInfo</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the information needed to log in to a VideoXpert system.  <a href="struct_vx_sdk_1_1_vx_login_info.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_log_level.html">VxLogLevel</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent logging severity levels.  <a href="struct_vx_sdk_1_1_vx_log_level.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_new_bookmark.html">VxNewBookmark</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a new bookmark to be created.  <a href="struct_vx_sdk_1_1_vx_new_bookmark.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_new_data_object.html">VxNewDataObject</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a new data object to be created.  <a href="struct_vx_sdk_1_1_vx_new_data_object.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_new_device.html">VxNewDevice</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a new device to be created.  <a href="struct_vx_sdk_1_1_vx_new_device.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_new_device_assignment.html">VxNewDeviceAssignment</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a new device assignment to be created.  <a href="struct_vx_sdk_1_1_vx_new_device_assignment.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_new_drawing.html">VxNewDrawing</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a new drawing to be created.  <a href="struct_vx_sdk_1_1_vx_new_drawing.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_new_event.html">VxNewEvent</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a request for a new event to be generated. The event will be generated based upon the event data, its situation configuration, and will receive a unique identifier.  <a href="struct_vx_sdk_1_1_vx_new_event.html#details">More...</a><br /></td></tr>
@@ -263,8 +308,20 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_new_export_clip.html">VxNewExportClip</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a clip that will be exported as part of a new export.  <a href="struct_vx_sdk_1_1_vx_new_export_clip.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_new_marker.html">VxNewMarker</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a new marker to be created.  <a href="struct_vx_sdk_1_1_vx_new_marker.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_new_monitor.html">VxNewMonitor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a new monitor to be created.  <a href="struct_vx_sdk_1_1_vx_new_monitor.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_new_notification.html">VxNewNotification</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a new notification configuration for a situation.  <a href="struct_vx_sdk_1_1_vx_new_notification.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_new_privilege.html">VxNewPrivilege</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a new privilege to be created.  <a href="struct_vx_sdk_1_1_vx_new_privilege.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_new_quick_report.html">VxNewQuickReport</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a new quick report.  <a href="struct_vx_sdk_1_1_vx_new_quick_report.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_new_schedule.html">VxNewSchedule</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a new schedule to be created. A schedule is a group of 0 or more resources associated with a set of time and/or event based schedule triggers that, when any are active, cause the scheduled action to be performed.  <a href="struct_vx_sdk_1_1_vx_new_schedule.html#details">More...</a><br /></td></tr>
@@ -293,6 +350,12 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_recurrence_type.html">VxRecurrenceType</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent the interval at which triggers repeat.  <a href="struct_vx_sdk_1_1_vx_recurrence_type.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_report_content.html">VxReportContent</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent types of content for quick reports.  <a href="struct_vx_sdk_1_1_vx_report_content.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_report_creation_status.html">VxReportCreationStatus</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent status of creating a quick report.  <a href="struct_vx_sdk_1_1_vx_report_creation_status.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_resource_type.html">VxResourceType</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent a type of resource.  <a href="struct_vx_sdk_1_1_vx_resource_type.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -309,13 +372,16 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent the available situation types for triggering a schedule.  <a href="struct_vx_sdk_1_1_vx_situation_type.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_snapshot_filter.html">VxSnapshotFilter</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a snapshot filter to be used when creating a <a class="el" href="struct_vx_sdk_1_1_vx_collection.html" title="Represents a collection of resources. ">VxCollection</a>.  <a href="struct_vx_sdk_1_1_vx_snapshot_filter.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a snapshot filter to be used when taking a snapshot.  <a href="struct_vx_sdk_1_1_vx_snapshot_filter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_snapshot_filter_item.html">VxSnapshotFilterItem</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent collection filter types.  <a href="struct_vx_sdk_1_1_vx_snapshot_filter_item.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent snapshot filter types.  <a href="struct_vx_sdk_1_1_vx_snapshot_filter_item.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_stream_protocol.html">VxStreamProtocol</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent stream protocols.  <a href="struct_vx_sdk_1_1_vx_stream_protocol.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_system_license_type.html">VxSystemLicenseType</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent the types of system licenses.  <a href="struct_vx_sdk_1_1_vx_system_license_type.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_zoom_direction.html">VxZoomDirection</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent zoom directions.  <a href="struct_vx_sdk_1_1_vx_zoom_direction.html#details">More...</a><br /></td></tr>
@@ -334,12 +400,15 @@ Functions</h2></td></tr>
 <tr class="memitem:adc82da866a8349ce0cc529ddfecffa1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_vx_macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="_vx_macros_8h.html#adcf0ad5fbc999590c972c1ffa2d6ac7e">VXAPI</a> <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vx_sdk.html#adc82da866a8349ce0cc529ddfecffa1b">VxSystemLogin</a> (const <a class="el" href="struct_vx_sdk_1_1_vx_login_info.html">VxLoginInfo</a> &amp;loginInfo, <a class="el" href="struct_vx_sdk_1_1_i_vx_system.html">IVxSystem</a> *&amp;system)</td></tr>
 <tr class="memdesc:adc82da866a8349ce0cc529ddfecffa1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs in to the VideoXpert system.  <a href="#adc82da866a8349ce0cc529ddfecffa1b">More...</a><br /></td></tr>
 <tr class="separator:adc82da866a8349ce0cc529ddfecffa1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89c2f5129c4710a2741f8182808edf25"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_vx_macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="_vx_macros_8h.html#adcf0ad5fbc999590c972c1ffa2d6ac7e">VXAPI</a> <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vx_sdk.html#a89c2f5129c4710a2741f8182808edf25">VxSetAuthToken</a> (const <a class="el" href="struct_vx_sdk_1_1_vx_auth_info.html">VxAuthInfo</a> &amp;authInfo, <a class="el" href="struct_vx_sdk_1_1_i_vx_system.html">IVxSystem</a> *&amp;system)</td></tr>
-<tr class="memdesc:a89c2f5129c4710a2741f8182808edf25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the authentication token for a VideoXpert system.  <a href="#a89c2f5129c4710a2741f8182808edf25">More...</a><br /></td></tr>
-<tr class="separator:a89c2f5129c4710a2741f8182808edf25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a289bd1fbcc394cf5e8aa60ca0534034f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_vx_macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="_vx_macros_8h.html#adcf0ad5fbc999590c972c1ffa2d6ac7e">VXAPI</a> <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vx_sdk.html#a289bd1fbcc394cf5e8aa60ca0534034f">IsSupportedSystem</a> (const char *ipAddress, int port, bool &amp;isSupported)</td></tr>
 <tr class="memdesc:a289bd1fbcc394cf5e8aa60ca0534034f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the system at the specified IP address is supported by this SDK.  <a href="#a289bd1fbcc394cf5e8aa60ca0534034f">More...</a><br /></td></tr>
 <tr class="separator:a289bd1fbcc394cf5e8aa60ca0534034f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7173ae984c07547738fa093e0a7ba18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_vx_macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="_vx_macros_8h.html#adcf0ad5fbc999590c972c1ffa2d6ac7e">VXAPI</a> <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vx_sdk.html#af7173ae984c07547738fa093e0a7ba18">VxSetLogLevel</a> (<a class="el" href="struct_vx_sdk_1_1_vx_log_level.html#aced4481f57edfd273e9c00b97628457d">VxLogLevel::Value</a> logLevel)</td></tr>
+<tr class="memdesc:af7173ae984c07547738fa093e0a7ba18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the minimum severity level of messages to log.  <a href="#af7173ae984c07547738fa093e0a7ba18">More...</a><br /></td></tr>
+<tr class="separator:af7173ae984c07547738fa093e0a7ba18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa74053f36b1c9fd465980a4bf8bbfb29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_vx_macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="_vx_macros_8h.html#adcf0ad5fbc999590c972c1ffa2d6ac7e">VXAPI</a> <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vx_sdk.html#aa74053f36b1c9fd465980a4bf8bbfb29">VxSetLogPath</a> (const char *logPath)</td></tr>
+<tr class="memdesc:aa74053f36b1c9fd465980a4bf8bbfb29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the output path for log files.  <a href="#aa74053f36b1c9fd465980a4bf8bbfb29">More...</a><br /></td></tr>
+<tr class="separator:aa74053f36b1c9fd465980a4bf8bbfb29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a class="anchor" id="a5740f17d74ae3a7459a633eaca311d1a"></a>
@@ -352,7 +421,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_i_vx_event_8h_source.html#l00093">93</a> of file <a class="el" href="_i_vx_event_8h_source.html">IVxEvent.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_event_8h_source.html#l00134">134</a> of file <a class="el" href="_i_vx_event_8h_source.html">IVxEvent.h</a>.</p>
 
 </div>
 </div>
@@ -391,6 +460,8 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ipAddress</td><td>The IP address of the system we want to check.</td></tr>
+    <tr><td class="paramname">port</td><td>The port of the system we want to check.</td></tr>
+    <tr><td class="paramname">isSupported</td><td><code>true</code> if system is supported, otherwise <code>false</code>.</td></tr>
   </table>
   </dd>
 </dl>
@@ -423,39 +494,53 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a89c2f5129c4710a2741f8182808edf25"></a>
+<a class="anchor" id="af7173ae984c07547738fa093e0a7ba18"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_vx_macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="_vx_macros_8h.html#adcf0ad5fbc999590c972c1ffa2d6ac7e">VXAPI</a> <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::VxSetAuthToken </td>
+          <td class="memname"><a class="el" href="_vx_macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="_vx_macros_8h.html#adcf0ad5fbc999590c972c1ffa2d6ac7e">VXAPI</a> <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::VxSetLogLevel </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_vx_sdk_1_1_vx_auth_info.html">VxAuthInfo</a> &amp;&#160;</td>
-          <td class="paramname"><em>authInfo</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="struct_vx_sdk_1_1_vx_log_level.html#aced4481f57edfd273e9c00b97628457d">VxLogLevel::Value</a>&#160;</td>
+          <td class="paramname"><em>logLevel</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_vx_sdk_1_1_i_vx_system.html">IVxSystem</a> *&amp;&#160;</td>
-          <td class="paramname"><em>system</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets the authentication token for a VideoXpert system. </p>
+<p>Sets the minimum severity level of messages to log. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">authInfo</td><td>The authentication information to use.</td></tr>
-    <tr><td class="paramname">system</td><td><code>nullptr</code> if authentication fails, else the new <a class="el" href="struct_vx_sdk_1_1_i_vx_system.html" title="Represents a VideoXpert system and allows the user to manage the system and devices. ">IVxSystem</a>.</td></tr>
+    <tr><td class="paramname">logLevel</td><td>The logging severity <a class="el" href="struct_vx_sdk_1_1_vx_log_level.html#aced4481f57edfd273e9c00b97628457d">level</a>.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of authenticating.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of setting the configuration.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa74053f36b1c9fd465980a4bf8bbfb29"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_vx_macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="_vx_macros_8h.html#adcf0ad5fbc999590c972c1ffa2d6ac7e">VXAPI</a> <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::VxSetLogPath </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>logPath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the output path for log files. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">logPath</td><td>The directory to store the generated log files.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of setting the configuration.</dd></dl>
 
 </div>
 </div>

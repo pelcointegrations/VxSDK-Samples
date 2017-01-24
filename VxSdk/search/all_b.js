@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['mediagatewaytranscast',['mediaGatewayTranscast',['../struct_vx_sdk_1_1_i_vx_configuration_1_1_cluster.html#af313df2d94249ddbf7e7a4f917b91b24',1,'VxSdk::IVxConfiguration::Cluster']]],
+  ['mediagatewayvirtualip',['mediaGatewayVirtualIp',['../struct_vx_sdk_1_1_i_vx_configuration_1_1_cluster.html#a4758fc01d477b8994ea60460574f95c0',1,'VxSdk::IVxConfiguration::Cluster']]],
   ['merge',['Merge',['../struct_vx_sdk_1_1_i_vx_tag.html#a01464bbeee0fdc8644644b832481faab',1,'VxSdk::IVxTag']]],
   ['model',['model',['../struct_vx_sdk_1_1_i_vx_device.html#abd7e6e7c84af30ea12543b4d873bf025',1,'VxSdk::IVxDevice']]],
   ['multicasttestip',['multicastTestIp',['../struct_vx_sdk_1_1_i_vx_data_interface.html#a45d5f2bf9e831f1e52c4f6428e20033c',1,'VxSdk::IVxDataInterface']]],

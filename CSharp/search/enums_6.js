@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['permissionids',['PermissionIds',['../../CSharpWrapper/class_c_p_p_cli_1_1_privilege.html#aafa1578cd2326685f3238c33a26db1eb',1,'CPPCli::Privilege']]]
+  ['mode',['Mode',['../../MediaController/class_media_controller_1_1_i_stream.html#a0ac9cb583470ae5b9f2e3314fdca9843',1,'MediaController::IStream']]],
+  ['modes',['Modes',['../../CSharpWrapper/class_c_p_p_cli_1_1_media_control.html#acf04284305097301ef271f4670615552',1,'CPPCli::MediaControl']]]
 ];

@@ -4,6 +4,7 @@ var class_c_p_p_cli_1_1_bookmark =
     [ "~Bookmark", "class_c_p_p_cli_1_1_bookmark.html#a57b537b16e9afe6f09305b979aa06f55", null ],
     [ "!Bookmark", "class_c_p_p_cli_1_1_bookmark.html#ab2ed869f3eca6aa7af6739f5ee121a37", null ],
     [ "_GetDataSource", "class_c_p_p_cli_1_1_bookmark.html#a32c945ed586c428026544edf92187791", null ],
+    [ "Refresh", "class_c_p_p_cli_1_1_bookmark.html#aab6827dfac7e746adf2a1f2fbf11b8f1", null ],
     [ "_bookmark", "class_c_p_p_cli_1_1_bookmark.html#a843254ec1aa3c1691fdc04cba2e3aef8", null ],
     [ "DataSource", "class_c_p_p_cli_1_1_bookmark.html#a5ed02f7669688c6b264a550946832b5b", null ],
     [ "Description", "class_c_p_p_cli_1_1_bookmark.html#ada6da3ccaf6a53c1bafabc17db8c8759", null ],

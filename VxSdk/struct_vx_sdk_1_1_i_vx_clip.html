@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">VideoXpert SDK
-   &#160;<span id="projectnumber">1.1</span>
+   &#160;<span id="projectnumber">1.2</span>
    </div>
    <div id="projectbrief">A software development kit for third party vendors to integrate with the VideoXpert platform</div>
   </td>
@@ -168,7 +168,7 @@ Protected Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a contiguous duration of stored media originating from a single data source. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_clip_8h_source.html#l00013">13</a> of file <a class="el" href="_i_vx_clip_8h_source.html">IVxClip.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_clip_8h_source.html#l00014">14</a> of file <a class="el" href="_i_vx_clip_8h_source.html">IVxClip.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a8d64970a8f67a5e0d119cd89f67cf6a3"></a>
 <div class="memitem">
@@ -193,19 +193,19 @@ Protected Member Functions</h2></td></tr>
 
 <p>Clears this instance. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_clip_8h_source.html#l00068">68</a> of file <a class="el" href="_i_vx_clip_8h_source.html">IVxClip.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                     {</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_clip.html#a6eff1302892dd02ba665c27ee8d9e246">dataSourceId</a>);</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_clip.html#a5168277aa5f368746bac9118430046a8">dataSourceName</a>);</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_clip.html#a2f67c61280396ae8de54fb339fa9dd27">endTime</a>);</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_clip.html#ab5ada0784d7fbdd20d907c54264a168a">startTime</a>);</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_clip.html#a6d3e0266a4148d5a97bfe04c570d559e">type</a>);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_clip.html#a6a77651726686092a0508082b9332f78">framerate</a> = <a class="code" href="struct_vx_sdk_1_1_vx_recording_framerate.html#a274d4bab0939b2fbec3c756e61f9f1eba7d0bd77ea6bf6f661d094be65c7ecef9">VxRecordingFramerate::kUnknown</a>;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_clip.html#adc0004b838d089f0f5cedbc3f7cd14ad">priority</a> = <a class="code" href="struct_vx_sdk_1_1_vx_retention_priority.html#a472c81736ebf210c74e87a90f4c130baaa7339d24e0fad96f11efb4c129b1c5c7">VxRetentionPriority::kUnknown</a>;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_clip.html#a2315e8381ee3566cc5441b4a06273e63">recordingType</a> = <a class="code" href="struct_vx_sdk_1_1_vx_recording_type.html#aa18b873a1195af3598b568f0a826d2e3af16121a9dd6c43b23d3b6e28afb7d351">VxRecordingType::kUnknown</a>;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        }</div><div class="ttc" id="struct_vx_sdk_1_1_i_vx_clip_html_adc0004b838d089f0f5cedbc3f7cd14ad"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_clip.html#adc0004b838d089f0f5cedbc3f7cd14ad">VxSdk::IVxClip::priority</a></div><div class="ttdeci">VxRetentionPriority::Value priority</div><div class="ttdoc">The recording retention priority of the clip. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_clip_8h_source.html#l00058">IVxClip.h:58</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_clip_html_a6eff1302892dd02ba665c27ee8d9e246"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_clip.html#a6eff1302892dd02ba665c27ee8d9e246">VxSdk::IVxClip::dataSourceId</a></div><div class="ttdeci">char dataSourceId[64]</div><div class="ttdoc">The unique identifier of the clips data source. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_clip_8h_source.html#l00034">IVxClip.h:34</a></div></div>
+<p>Definition at line <a class="el" href="_i_vx_clip_8h_source.html#l00069">69</a> of file <a class="el" href="_i_vx_clip_8h_source.html">IVxClip.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                     {</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_clip.html#a6eff1302892dd02ba665c27ee8d9e246">dataSourceId</a>);</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_clip.html#a5168277aa5f368746bac9118430046a8">dataSourceName</a>);</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_clip.html#a2f67c61280396ae8de54fb339fa9dd27">endTime</a>);</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_clip.html#ab5ada0784d7fbdd20d907c54264a168a">startTime</a>);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_clip.html#a6d3e0266a4148d5a97bfe04c570d559e">type</a>);</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_clip.html#a6a77651726686092a0508082b9332f78">framerate</a> = <a class="code" href="struct_vx_sdk_1_1_vx_recording_framerate.html#a274d4bab0939b2fbec3c756e61f9f1eba7d0bd77ea6bf6f661d094be65c7ecef9">VxRecordingFramerate::kUnknown</a>;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_clip.html#adc0004b838d089f0f5cedbc3f7cd14ad">priority</a> = <a class="code" href="struct_vx_sdk_1_1_vx_retention_priority.html#a472c81736ebf210c74e87a90f4c130baaa7339d24e0fad96f11efb4c129b1c5c7">VxRetentionPriority::kUnknown</a>;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_clip.html#a2315e8381ee3566cc5441b4a06273e63">recordingType</a> = <a class="code" href="struct_vx_sdk_1_1_vx_recording_type.html#aa18b873a1195af3598b568f0a826d2e3af16121a9dd6c43b23d3b6e28afb7d351">VxRecordingType::kUnknown</a>;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div><div class="ttc" id="struct_vx_sdk_1_1_i_vx_clip_html_adc0004b838d089f0f5cedbc3f7cd14ad"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_clip.html#adc0004b838d089f0f5cedbc3f7cd14ad">VxSdk::IVxClip::priority</a></div><div class="ttdeci">VxRetentionPriority::Value priority</div><div class="ttdoc">The recording retention priority of the clip. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_clip_8h_source.html#l00059">IVxClip.h:59</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_clip_html_a6eff1302892dd02ba665c27ee8d9e246"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_clip.html#a6eff1302892dd02ba665c27ee8d9e246">VxSdk::IVxClip::dataSourceId</a></div><div class="ttdeci">char dataSourceId[64]</div><div class="ttdoc">The unique identifier of the clips data source. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_clip_8h_source.html#l00035">IVxClip.h:35</a></div></div>
 <div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00018">VxMacros.h:18</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_vx_recording_framerate_html_a274d4bab0939b2fbec3c756e61f9f1eba7d0bd77ea6bf6f661d094be65c7ecef9"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_recording_framerate.html#a274d4bab0939b2fbec3c756e61f9f1eba7d0bd77ea6bf6f661d094be65c7ecef9">VxSdk::VxRecordingFramerate::kUnknown</a></div><div class="ttdoc">An error or unknown value was returned.</div><div class="ttdef"><b>Definition:</b> <a href="_vx_primitives_8h_source.html#l00263">VxPrimitives.h:263</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_clip_html_a6d3e0266a4148d5a97bfe04c570d559e"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_clip.html#a6d3e0266a4148d5a97bfe04c570d559e">VxSdk::IVxClip::type</a></div><div class="ttdeci">char type[64]</div><div class="ttdoc">The type of media contained in the clip. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_clip_8h_source.html#l00050">IVxClip.h:50</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_vx_recording_type_html_aa18b873a1195af3598b568f0a826d2e3af16121a9dd6c43b23d3b6e28afb7d351"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_recording_type.html#aa18b873a1195af3598b568f0a826d2e3af16121a9dd6c43b23d3b6e28afb7d351">VxSdk::VxRecordingType::kUnknown</a></div><div class="ttdoc">An error or unknown value was returned.</div><div class="ttdef"><b>Definition:</b> <a href="_vx_primitives_8h_source.html#l00277">VxPrimitives.h:277</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_clip_html_a6a77651726686092a0508082b9332f78"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_clip.html#a6a77651726686092a0508082b9332f78">VxSdk::IVxClip::framerate</a></div><div class="ttdeci">VxRecordingFramerate::Value framerate</div><div class="ttdoc">The framerate of the clip. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_clip_8h_source.html#l00054">IVxClip.h:54</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_clip_html_a2315e8381ee3566cc5441b4a06273e63"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_clip.html#a2315e8381ee3566cc5441b4a06273e63">VxSdk::IVxClip::recordingType</a></div><div class="ttdeci">VxRecordingType::Value recordingType</div><div class="ttdoc">The event type that triggered the recording of the clip. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_clip_8h_source.html#l00062">IVxClip.h:62</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_clip_html_a5168277aa5f368746bac9118430046a8"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_clip.html#a5168277aa5f368746bac9118430046a8">VxSdk::IVxClip::dataSourceName</a></div><div class="ttdeci">char dataSourceName[64]</div><div class="ttdoc">The friendly name of the clips data source. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_clip_8h_source.html#l00038">IVxClip.h:38</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_clip_html_a2f67c61280396ae8de54fb339fa9dd27"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_clip.html#a2f67c61280396ae8de54fb339fa9dd27">VxSdk::IVxClip::endTime</a></div><div class="ttdeci">char endTime[64]</div><div class="ttdoc">The end time of the clip. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_clip_8h_source.html#l00042">IVxClip.h:42</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_clip_html_ab5ada0784d7fbdd20d907c54264a168a"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_clip.html#ab5ada0784d7fbdd20d907c54264a168a">VxSdk::IVxClip::startTime</a></div><div class="ttdeci">char startTime[64]</div><div class="ttdoc">The start time of the clip. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_clip_8h_source.html#l00046">IVxClip.h:46</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_vx_retention_priority_html_a472c81736ebf210c74e87a90f4c130baaa7339d24e0fad96f11efb4c129b1c5c7"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_retention_priority.html#a472c81736ebf210c74e87a90f4c130baaa7339d24e0fad96f11efb4c129b1c5c7">VxSdk::VxRetentionPriority::kUnknown</a></div><div class="ttdoc">An error or unknown value was returned.</div><div class="ttdef"><b>Definition:</b> <a href="_vx_primitives_8h_source.html#l00360">VxPrimitives.h:360</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_recording_framerate_html_a274d4bab0939b2fbec3c756e61f9f1eba7d0bd77ea6bf6f661d094be65c7ecef9"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_recording_framerate.html#a274d4bab0939b2fbec3c756e61f9f1eba7d0bd77ea6bf6f661d094be65c7ecef9">VxSdk::VxRecordingFramerate::kUnknown</a></div><div class="ttdoc">An error or unknown value was returned.</div><div class="ttdef"><b>Definition:</b> <a href="_vx_primitives_8h_source.html#l00450">VxPrimitives.h:450</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_clip_html_a6d3e0266a4148d5a97bfe04c570d559e"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_clip.html#a6d3e0266a4148d5a97bfe04c570d559e">VxSdk::IVxClip::type</a></div><div class="ttdeci">char type[64]</div><div class="ttdoc">The type of media contained in the clip. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_clip_8h_source.html#l00051">IVxClip.h:51</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_recording_type_html_aa18b873a1195af3598b568f0a826d2e3af16121a9dd6c43b23d3b6e28afb7d351"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_recording_type.html#aa18b873a1195af3598b568f0a826d2e3af16121a9dd6c43b23d3b6e28afb7d351">VxSdk::VxRecordingType::kUnknown</a></div><div class="ttdoc">An error or unknown value was returned.</div><div class="ttdef"><b>Definition:</b> <a href="_vx_primitives_8h_source.html#l00464">VxPrimitives.h:464</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_clip_html_a6a77651726686092a0508082b9332f78"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_clip.html#a6a77651726686092a0508082b9332f78">VxSdk::IVxClip::framerate</a></div><div class="ttdeci">VxRecordingFramerate::Value framerate</div><div class="ttdoc">The framerate of the clip. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_clip_8h_source.html#l00055">IVxClip.h:55</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_clip_html_a2315e8381ee3566cc5441b4a06273e63"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_clip.html#a2315e8381ee3566cc5441b4a06273e63">VxSdk::IVxClip::recordingType</a></div><div class="ttdeci">VxRecordingType::Value recordingType</div><div class="ttdoc">The event type that triggered the recording of the clip. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_clip_8h_source.html#l00063">IVxClip.h:63</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_clip_html_a5168277aa5f368746bac9118430046a8"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_clip.html#a5168277aa5f368746bac9118430046a8">VxSdk::IVxClip::dataSourceName</a></div><div class="ttdeci">char dataSourceName[64]</div><div class="ttdoc">The friendly name of the clips data source. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_clip_8h_source.html#l00039">IVxClip.h:39</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_clip_html_a2f67c61280396ae8de54fb339fa9dd27"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_clip.html#a2f67c61280396ae8de54fb339fa9dd27">VxSdk::IVxClip::endTime</a></div><div class="ttdeci">char endTime[64]</div><div class="ttdoc">The end time of the clip. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_clip_8h_source.html#l00043">IVxClip.h:43</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_clip_html_ab5ada0784d7fbdd20d907c54264a168a"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_clip.html#ab5ada0784d7fbdd20d907c54264a168a">VxSdk::IVxClip::startTime</a></div><div class="ttdeci">char startTime[64]</div><div class="ttdoc">The start time of the clip. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_clip_8h_source.html#l00047">IVxClip.h:47</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_retention_priority_html_a472c81736ebf210c74e87a90f4c130baaa7339d24e0fad96f11efb4c129b1c5c7"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_retention_priority.html#a472c81736ebf210c74e87a90f4c130baaa7339d24e0fad96f11efb4c129b1c5c7">VxSdk::VxRetentionPriority::kUnknown</a></div><div class="ttdoc">An error or unknown value was returned.</div><div class="ttdef"><b>Definition:</b> <a href="_vx_primitives_8h_source.html#l00571">VxPrimitives.h:571</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -306,7 +306,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The unique identifier of the clips data source. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_clip_8h_source.html#l00034">34</a> of file <a class="el" href="_i_vx_clip_8h_source.html">IVxClip.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_clip_8h_source.html#l00035">35</a> of file <a class="el" href="_i_vx_clip_8h_source.html">IVxClip.h</a>.</p>
 
 </div>
 </div>
@@ -322,7 +322,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The friendly name of the clips data source. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_clip_8h_source.html#l00038">38</a> of file <a class="el" href="_i_vx_clip_8h_source.html">IVxClip.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_clip_8h_source.html#l00039">39</a> of file <a class="el" href="_i_vx_clip_8h_source.html">IVxClip.h</a>.</p>
 
 </div>
 </div>
@@ -338,7 +338,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The end time of the clip. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_clip_8h_source.html#l00042">42</a> of file <a class="el" href="_i_vx_clip_8h_source.html">IVxClip.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_clip_8h_source.html#l00043">43</a> of file <a class="el" href="_i_vx_clip_8h_source.html">IVxClip.h</a>.</p>
 
 </div>
 </div>
@@ -354,7 +354,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The framerate of the clip. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_clip_8h_source.html#l00054">54</a> of file <a class="el" href="_i_vx_clip_8h_source.html">IVxClip.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_clip_8h_source.html#l00055">55</a> of file <a class="el" href="_i_vx_clip_8h_source.html">IVxClip.h</a>.</p>
 
 </div>
 </div>
@@ -370,7 +370,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The recording retention priority of the clip. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_clip_8h_source.html#l00058">58</a> of file <a class="el" href="_i_vx_clip_8h_source.html">IVxClip.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_clip_8h_source.html#l00059">59</a> of file <a class="el" href="_i_vx_clip_8h_source.html">IVxClip.h</a>.</p>
 
 </div>
 </div>
@@ -386,7 +386,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The event type that triggered the recording of the clip. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_clip_8h_source.html#l00062">62</a> of file <a class="el" href="_i_vx_clip_8h_source.html">IVxClip.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_clip_8h_source.html#l00063">63</a> of file <a class="el" href="_i_vx_clip_8h_source.html">IVxClip.h</a>.</p>
 
 </div>
 </div>
@@ -402,7 +402,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The start time of the clip. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_clip_8h_source.html#l00046">46</a> of file <a class="el" href="_i_vx_clip_8h_source.html">IVxClip.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_clip_8h_source.html#l00047">47</a> of file <a class="el" href="_i_vx_clip_8h_source.html">IVxClip.h</a>.</p>
 
 </div>
 </div>
@@ -418,7 +418,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The type of media contained in the clip. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_clip_8h_source.html#l00050">50</a> of file <a class="el" href="_i_vx_clip_8h_source.html">IVxClip.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_clip_8h_source.html#l00051">51</a> of file <a class="el" href="_i_vx_clip_8h_source.html">IVxClip.h</a>.</p>
 
 </div>
 </div>

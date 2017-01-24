@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">VideoXpert SDK
-   &#160;<span id="projectnumber">1.1</span>
+   &#160;<span id="projectnumber">1.2</span>
    </div>
    <div id="projectbrief">A software development kit for third party vendors to integrate with the VideoXpert platform</div>
   </td>
@@ -142,9 +142,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a354e66381d03d4d316bef4727ccef86c"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_kv_object.html#a354e66381d03d4d316bef4727ccef86c">key</a> [64]</td></tr>
 <tr class="memdesc:a354e66381d03d4d316bef4727ccef86c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The object key.  <a href="#a354e66381d03d4d316bef4727ccef86c">More...</a><br /></td></tr>
 <tr class="separator:a354e66381d03d4d316bef4727ccef86c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb4c6d08ccde84840d96f0e75c6e77b4"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_kv_object.html#adb4c6d08ccde84840d96f0e75c6e77b4">value</a> [64]</td></tr>
-<tr class="memdesc:adb4c6d08ccde84840d96f0e75c6e77b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The object value.  <a href="#adb4c6d08ccde84840d96f0e75c6e77b4">More...</a><br /></td></tr>
-<tr class="separator:adb4c6d08ccde84840d96f0e75c6e77b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac007a0586c9732b609c0ed299c87bd4a"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_kv_object.html#ac007a0586c9732b609c0ed299c87bd4a">value</a> [2048]</td></tr>
+<tr class="memdesc:ac007a0586c9732b609c0ed299c87bd4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The object value.  <a href="#ac007a0586c9732b609c0ed299c87bd4a">More...</a><br /></td></tr>
+<tr class="separator:ac007a0586c9732b609c0ed299c87bd4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a key/value pair object. </p>
@@ -210,9 +210,9 @@ Public Attributes</h2></td></tr>
 </dl>
 
 <p>Definition at line <a class="el" href="_vx_kv_object_8h_source.html#l00025">25</a> of file <a class="el" href="_vx_kv_object_8h_source.html">VxKvObject.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                                          {</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <a class="code" href="namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">Utilities::StrCopySafe</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_kv_object.html#a354e66381d03d4d316bef4727ccef86c">key</a>, ref.key);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <a class="code" href="namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">Utilities::StrCopySafe</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_kv_object.html#adb4c6d08ccde84840d96f0e75c6e77b4">value</a>, ref.value);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        }</div><div class="ttc" id="namespace_vx_sdk_1_1_utilities_html_a11cbdb435aa92ea160aad373da6a32db"><div class="ttname"><a href="namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">VxSdk::Utilities::StrCopySafe</a></div><div class="ttdeci">static void StrCopySafe(char(&amp;dst)[dstSize], const char *src)</div><div class="ttdoc">Performs a safe string copy. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_utilities_8h_source.html#l00015">VxUtilities.h:15</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_vx_kv_object_html_adb4c6d08ccde84840d96f0e75c6e77b4"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_kv_object.html#adb4c6d08ccde84840d96f0e75c6e77b4">VxSdk::VxKvObject::value</a></div><div class="ttdeci">char value[64]</div><div class="ttdoc">The object value. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_kv_object_8h_source.html#l00053">VxKvObject.h:53</a></div></div>
+<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                                          {</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <a class="code" href="namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">Utilities::StrCopySafe</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_kv_object.html#a354e66381d03d4d316bef4727ccef86c">key</a>, ref.key);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <a class="code" href="namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">Utilities::StrCopySafe</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_kv_object.html#ac007a0586c9732b609c0ed299c87bd4a">value</a>, ref.value);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        }</div><div class="ttc" id="namespace_vx_sdk_1_1_utilities_html_a11cbdb435aa92ea160aad373da6a32db"><div class="ttname"><a href="namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">VxSdk::Utilities::StrCopySafe</a></div><div class="ttdeci">static void StrCopySafe(char(&amp;dst)[dstSize], const char *src)</div><div class="ttdoc">Performs a safe string copy. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_utilities_8h_source.html#l00015">VxUtilities.h:15</a></div></div>
 <div class="ttc" id="struct_vx_sdk_1_1_vx_kv_object_html_a354e66381d03d4d316bef4727ccef86c"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_kv_object.html#a354e66381d03d4d316bef4727ccef86c">VxSdk::VxKvObject::key</a></div><div class="ttdeci">char key[64]</div><div class="ttdoc">The object key. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_kv_object_8h_source.html#l00049">VxKvObject.h:49</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_kv_object_html_ac007a0586c9732b609c0ed299c87bd4a"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_kv_object.html#ac007a0586c9732b609c0ed299c87bd4a">VxSdk::VxKvObject::value</a></div><div class="ttdeci">char value[2048]</div><div class="ttdoc">The object value. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_kv_object_8h_source.html#l00053">VxKvObject.h:53</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -269,9 +269,9 @@ Public Attributes</h2></td></tr>
 <p>Clears this instance. </p>
 
 <p>Definition at line <a class="el" href="_vx_kv_object_8h_source.html#l00040">40</a> of file <a class="el" href="_vx_kv_object_8h_source.html">VxKvObject.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                     {</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_kv_object.html#a354e66381d03d4d316bef4727ccef86c">key</a>);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_kv_object.html#adb4c6d08ccde84840d96f0e75c6e77b4">value</a>);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        }</div><div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00018">VxMacros.h:18</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_vx_kv_object_html_adb4c6d08ccde84840d96f0e75c6e77b4"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_kv_object.html#adb4c6d08ccde84840d96f0e75c6e77b4">VxSdk::VxKvObject::value</a></div><div class="ttdeci">char value[64]</div><div class="ttdoc">The object value. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_kv_object_8h_source.html#l00053">VxKvObject.h:53</a></div></div>
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                     {</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_kv_object.html#a354e66381d03d4d316bef4727ccef86c">key</a>);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_kv_object.html#ac007a0586c9732b609c0ed299c87bd4a">value</a>);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        }</div><div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00018">VxMacros.h:18</a></div></div>
 <div class="ttc" id="struct_vx_sdk_1_1_vx_kv_object_html_a354e66381d03d4d316bef4727ccef86c"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_kv_object.html#a354e66381d03d4d316bef4727ccef86c">VxSdk::VxKvObject::key</a></div><div class="ttdeci">char key[64]</div><div class="ttdoc">The object key. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_kv_object_8h_source.html#l00049">VxKvObject.h:49</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_kv_object_html_ac007a0586c9732b609c0ed299c87bd4a"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_kv_object.html#ac007a0586c9732b609c0ed299c87bd4a">VxSdk::VxKvObject::value</a></div><div class="ttdeci">char value[2048]</div><div class="ttdoc">The object value. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_kv_object_8h_source.html#l00053">VxKvObject.h:53</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -292,12 +292,12 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="adb4c6d08ccde84840d96f0e75c6e77b4"></a>
+<a class="anchor" id="ac007a0586c9732b609c0ed299c87bd4a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char VxSdk::VxKvObject::value[64]</td>
+          <td class="memname">char VxSdk::VxKvObject::value[2048]</td>
         </tr>
       </table>
 </div><div class="memdoc">

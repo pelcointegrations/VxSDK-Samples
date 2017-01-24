@@ -9,5 +9,6 @@ var struct_vx_sdk_1_1_vx_new_event =
     [ "propertySize", "struct_vx_sdk_1_1_vx_new_event.html#ae448a44b3cffb676db7c34a6e65c8661", null ],
     [ "situationType", "struct_vx_sdk_1_1_vx_new_event.html#aae68f94fd2989761c1c4736044ec7973", null ],
     [ "sourceDeviceId", "struct_vx_sdk_1_1_vx_new_event.html#ae3f8358d24df0e03d76339408ff72d80", null ],
+    [ "sourceUserName", "struct_vx_sdk_1_1_vx_new_event.html#a727e67078691d1734ab2e58b15e1233d", null ],
     [ "time", "struct_vx_sdk_1_1_vx_new_event.html#a7bd36b1163b7c97c71464a4cc4bd8205", null ]
 ];

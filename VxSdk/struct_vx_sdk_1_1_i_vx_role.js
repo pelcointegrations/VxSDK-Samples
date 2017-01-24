@@ -6,6 +6,8 @@ var struct_vx_sdk_1_1_i_vx_role =
     [ "DeleteRole", "struct_vx_sdk_1_1_i_vx_role.html#af30369124abe898b6a4767f77271b270", null ],
     [ "GetPrivileges", "struct_vx_sdk_1_1_i_vx_role.html#a9f83c896b5dfb4875fb6c3b81ea36325", null ],
     [ "GetUsers", "struct_vx_sdk_1_1_i_vx_role.html#a9789bafa82270b52c5bf3693bd4f6bfe", null ],
+    [ "Refresh", "struct_vx_sdk_1_1_i_vx_role.html#a5d2e3d802204c90f9a986bbff753ca6a", null ],
+    [ "SetName", "struct_vx_sdk_1_1_i_vx_role.html#a7c8250a8bfc928dafd8c0ef37d339829", null ],
     [ "id", "struct_vx_sdk_1_1_i_vx_role.html#a8ca0254962ff6dfd728086a449cdde33", null ],
     [ "isReadOnly", "struct_vx_sdk_1_1_i_vx_role.html#a172c7231665023ac27137e1fa5b694db", null ],
     [ "name", "struct_vx_sdk_1_1_i_vx_role.html#a0d0a93810a4e736b39b8d5a9879e4783", null ]

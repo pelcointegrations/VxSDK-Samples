@@ -16,7 +16,11 @@ var searchData=
   ['device_2eh',['Device.h',['../../CSharpWrapper/_device_8h.html',1,'']]],
   ['deviceassignment_2ecpp',['DeviceAssignment.cpp',['../../CSharpWrapper/_device_assignment_8cpp.html',1,'']]],
   ['deviceassignment_2eh',['DeviceAssignment.h',['../../CSharpWrapper/_device_assignment_8h.html',1,'']]],
+  ['devicemanagerform_2ecs',['DeviceManagerForm.cs',['../_device_manager_form_8cs.html',1,'']]],
   ['downloadprogressform_2ecs',['DownloadProgressForm.cs',['../_download_progress_form_8cs.html',1,'']]],
+  ['drawing_2ecpp',['Drawing.cpp',['../../CSharpWrapper/_drawing_8cpp.html',1,'']]],
+  ['drawing_2eh',['Drawing.h',['../../CSharpWrapper/_drawing_8h.html',1,'']]],
+  ['drawingmanagerform_2ecs',['DrawingManagerForm.cs',['../_drawing_manager_form_8cs.html',1,'']]],
   ['driver_2ecpp',['Driver.cpp',['../../CSharpWrapper/_driver_8cpp.html',1,'']]],
   ['driver_2eh',['Driver.h',['../../CSharpWrapper/_driver_8h.html',1,'']]]
 ];

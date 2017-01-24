@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">VideoXpert SDK
-   &#160;<span id="projectnumber">1.1</span>
+   &#160;<span id="projectnumber">1.2</span>
    </div>
    <div id="projectbrief">A software development kit for third party vendors to integrate with the VideoXpert platform</div>
   </td>
@@ -131,6 +131,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3bb2df1bf0b56034d2a0c0869f6b452f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_driver.html#a3bb2df1bf0b56034d2a0c0869f6b452f">GetDataStorage</a> (<a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html">IVxDataStorage</a> *&amp;dataStorage) const  =0</td></tr>
 <tr class="memdesc:a3bb2df1bf0b56034d2a0c0869f6b452f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the <a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html" title="Represents a data storage provider in the system (e.g. NSM5200 storage pool or VideoXpert Storage) ho...">IVxDataStorage</a> that hosts this driver.  <a href="#a3bb2df1bf0b56034d2a0c0869f6b452f">More...</a><br /></td></tr>
 <tr class="separator:a3bb2df1bf0b56034d2a0c0869f6b452f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9fa54d319da652ab28d92663a9722e8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_driver.html#ae9fa54d319da652ab28d92663a9722e8">Refresh</a> ()=0</td></tr>
+<tr class="memdesc:ae9fa54d319da652ab28d92663a9722e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refreshes the member values for this object by retrieving its current information from the VideoXpert system.  <a href="#ae9fa54d319da652ab28d92663a9722e8">More...</a><br /></td></tr>
+<tr class="separator:ae9fa54d319da652ab28d92663a9722e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -181,12 +184,12 @@ Protected Member Functions</h2></td></tr>
 
 <p>Clears this instance. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_driver_8h_source.html#l00050">50</a> of file <a class="el" href="_i_vx_driver_8h_source.html">IVxDriver.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                     {</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_driver.html#a59e35aa1206ee128a312d0a1c8001823">name</a>);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_driver.html#a0987b27ce672a8cd3114458c10dc4607">type</a>);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_driver.html#a6bcfb7764cc6e702d0b4d3b20f316af6">vendor</a>);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_driver.html#a79b07c30e05b482b5e09e6e333b84178">version</a>);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div><div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00018">VxMacros.h:18</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_driver_html_a6bcfb7764cc6e702d0b4d3b20f316af6"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_driver.html#a6bcfb7764cc6e702d0b4d3b20f316af6">VxSdk::IVxDriver::vendor</a></div><div class="ttdeci">char vendor[64]</div><div class="ttdoc">The name of the vendor that manufactured the device that the driver is for. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_driver_8h_source.html#l00040">IVxDriver.h:40</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_driver_html_a0987b27ce672a8cd3114458c10dc4607"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_driver.html#a0987b27ce672a8cd3114458c10dc4607">VxSdk::IVxDriver::type</a></div><div class="ttdeci">char type[64]</div><div class="ttdoc">The driver type identifier. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_driver_8h_source.html#l00036">IVxDriver.h:36</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_driver_html_a59e35aa1206ee128a312d0a1c8001823"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_driver.html#a59e35aa1206ee128a312d0a1c8001823">VxSdk::IVxDriver::name</a></div><div class="ttdeci">char name[64]</div><div class="ttdoc">The friendly name of the driver. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_driver_8h_source.html#l00032">IVxDriver.h:32</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_driver_html_a79b07c30e05b482b5e09e6e333b84178"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_driver.html#a79b07c30e05b482b5e09e6e333b84178">VxSdk::IVxDriver::version</a></div><div class="ttdeci">char version[64]</div><div class="ttdoc">The driver version number. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_driver_8h_source.html#l00044">IVxDriver.h:44</a></div></div>
+<p>Definition at line <a class="el" href="_i_vx_driver_8h_source.html#l00055">55</a> of file <a class="el" href="_i_vx_driver_8h_source.html">IVxDriver.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                     {</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_driver.html#a59e35aa1206ee128a312d0a1c8001823">name</a>);</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_driver.html#a0987b27ce672a8cd3114458c10dc4607">type</a>);</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_driver.html#a6bcfb7764cc6e702d0b4d3b20f316af6">vendor</a>);</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_driver.html#a79b07c30e05b482b5e09e6e333b84178">version</a>);</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div><div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00018">VxMacros.h:18</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_driver_html_a6bcfb7764cc6e702d0b4d3b20f316af6"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_driver.html#a6bcfb7764cc6e702d0b4d3b20f316af6">VxSdk::IVxDriver::vendor</a></div><div class="ttdeci">char vendor[64]</div><div class="ttdoc">The name of the vendor that manufactured the device that the driver is for. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_driver_8h_source.html#l00045">IVxDriver.h:45</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_driver_html_a0987b27ce672a8cd3114458c10dc4607"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_driver.html#a0987b27ce672a8cd3114458c10dc4607">VxSdk::IVxDriver::type</a></div><div class="ttdeci">char type[64]</div><div class="ttdoc">The driver type identifier. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_driver_8h_source.html#l00041">IVxDriver.h:41</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_driver_html_a59e35aa1206ee128a312d0a1c8001823"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_driver.html#a59e35aa1206ee128a312d0a1c8001823">VxSdk::IVxDriver::name</a></div><div class="ttdeci">char name[64]</div><div class="ttdoc">The friendly name of the driver. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_driver_8h_source.html#l00037">IVxDriver.h:37</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_driver_html_a79b07c30e05b482b5e09e6e333b84178"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_driver.html#a79b07c30e05b482b5e09e6e333b84178">VxSdk::IVxDriver::version</a></div><div class="ttdeci">char version[64]</div><div class="ttdoc">The driver version number. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_driver_8h_source.html#l00049">IVxDriver.h:49</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -249,6 +252,32 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ae9fa54d319da652ab28d92663a9722e8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxDriver::Refresh </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Refreshes the member values for this object by retrieving its current information from the VideoXpert system. </p>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of refreshing the member values for this object.</dd></dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="a59e35aa1206ee128a312d0a1c8001823"></a>
 <div class="memitem">
@@ -262,7 +291,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The friendly name of the driver. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_driver_8h_source.html#l00032">32</a> of file <a class="el" href="_i_vx_driver_8h_source.html">IVxDriver.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_driver_8h_source.html#l00037">37</a> of file <a class="el" href="_i_vx_driver_8h_source.html">IVxDriver.h</a>.</p>
 
 </div>
 </div>
@@ -278,7 +307,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The driver type identifier. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_driver_8h_source.html#l00036">36</a> of file <a class="el" href="_i_vx_driver_8h_source.html">IVxDriver.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_driver_8h_source.html#l00041">41</a> of file <a class="el" href="_i_vx_driver_8h_source.html">IVxDriver.h</a>.</p>
 
 </div>
 </div>
@@ -294,7 +323,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The name of the vendor that manufactured the device that the driver is for. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_driver_8h_source.html#l00040">40</a> of file <a class="el" href="_i_vx_driver_8h_source.html">IVxDriver.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_driver_8h_source.html#l00045">45</a> of file <a class="el" href="_i_vx_driver_8h_source.html">IVxDriver.h</a>.</p>
 
 </div>
 </div>
@@ -310,7 +339,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The driver version number. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_driver_8h_source.html#l00044">44</a> of file <a class="el" href="_i_vx_driver_8h_source.html">IVxDriver.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_driver_8h_source.html#l00049">49</a> of file <a class="el" href="_i_vx_driver_8h_source.html">IVxDriver.h</a>.</p>
 
 </div>
 </div>

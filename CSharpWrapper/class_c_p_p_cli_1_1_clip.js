@@ -25,12 +25,12 @@ var class_c_p_p_cli_1_1_clip =
     [ "!Clip", "class_c_p_p_cli_1_1_clip.html#a3ce6dae1562b1e95699c54d92dbdb79e", null ],
     [ "GetSnapshotEndpoint", "class_c_p_p_cli_1_1_clip.html#a4736e7d4e94f76405d7d8b9a2db98560", null ],
     [ "_clip", "class_c_p_p_cli_1_1_clip.html#a71bd06e3fa40d2876a614270b1072915", null ],
+    [ "DataSourceId", "class_c_p_p_cli_1_1_clip.html#abacceb0edfd0b1a7ac2dfd6a79938396", null ],
+    [ "DataSourceName", "class_c_p_p_cli_1_1_clip.html#ad0e26b6d9daf36d14c2ff363ea72d882", null ],
     [ "EndTime", "class_c_p_p_cli_1_1_clip.html#a240ef970e00aad46504c9945cc9e704c", null ],
     [ "EventType", "class_c_p_p_cli_1_1_clip.html#aa81854f6af51460b14282c110bdb0f4a", null ],
     [ "Framerate", "class_c_p_p_cli_1_1_clip.html#a8c8b1079f165a14e979cc416c0e36d58", null ],
-    [ "Id", "class_c_p_p_cli_1_1_clip.html#abd708b8a4628da669b2df3736a47237d", null ],
     [ "MediaType", "class_c_p_p_cli_1_1_clip.html#acbf08be907f55f39c635c6219e3c1e27", null ],
-    [ "Name", "class_c_p_p_cli_1_1_clip.html#a520864521c240fa76f6d8796d2b47d0e", null ],
     [ "Priority", "class_c_p_p_cli_1_1_clip.html#abbc4366d9ef7220074f9e944e22d95f3", null ],
     [ "StartTime", "class_c_p_p_cli_1_1_clip.html#aaee1c8c3c974efa1dbc2f9fcbdbd1841", null ]
 ];

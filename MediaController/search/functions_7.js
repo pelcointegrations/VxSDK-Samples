@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['init',['Init',['../class_media_controller_1_1_gst_wrapper.html#a4c8055af9c0bb23eb8d32845761f1f74',1,'MediaController::GstWrapper']]],
-  ['insertevent',['InsertEvent',['../../VxSdk/struct_vx_sdk_1_1_i_vx_system.html#afaaa24d489015e37fef27599b05d7d77',1,'VxSdk::IVxSystem']]],
-  ['issupportedsystem',['IsSupportedSystem',['../../VxSdk/namespace_vx_sdk.html#a289bd1fbcc394cf5e8aa60ca0534034f',1,'VxSdk']]]
+  ['keepalive',['KeepAlive',['../class_media_controller_1_1_rtsp_1_1_keep_alive.html#a0ae199be81381a687c4b0b53e9c9dddd',1,'MediaController::Rtsp::KeepAlive']]]
 ];

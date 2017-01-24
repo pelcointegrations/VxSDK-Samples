@@ -5,6 +5,7 @@ var searchData=
   ['unlinkedusers',['UnLinkedUsers',['../../CSharpWrapper/class_c_p_p_cli_1_1_privilege.html#ab86a1108825395ef9c90f04449ded635',1,'CPPCli::Privilege']]],
   ['usealldatasources',['UseAllDataSources',['../../CSharpWrapper/class_c_p_p_cli_1_1_new_schedule.html#acf6995168019518d6e72fbfa2c261d35',1,'CPPCli::NewSchedule::UseAllDataSources()'],['../../CSharpWrapper/class_c_p_p_cli_1_1_schedule.html#a48419bf38b198f40bb507589f8c5f952',1,'CPPCli::Schedule::UseAllDataSources()']]],
   ['useaudiblenotification',['UseAudibleNotification',['../../CSharpWrapper/class_c_p_p_cli_1_1_new_situation.html#a9e6fac579885f5fefac02aa85f434ee9',1,'CPPCli::NewSituation::UseAudibleNotification()'],['../../CSharpWrapper/class_c_p_p_cli_1_1_situation.html#a8abfd2df362e9ab7f725700e9bdeb6f6',1,'CPPCli::Situation::UseAudibleNotification()']]],
-  ['username',['Username',['../../CSharpWrapper/class_c_p_p_cli_1_1_device.html#a498469d0ff8734c22cf7f1e6d2441a5a',1,'CPPCli::Device']]],
+  ['used',['Used',['../../CSharpWrapper/class_c_p_p_cli_1_1_license_feature.html#a6d0f1841140a4e888ff2afae687df6fe',1,'CPPCli::LicenseFeature']]],
+  ['username',['Username',['../../CSharpWrapper/class_c_p_p_cli_1_1_device.html#a498469d0ff8734c22cf7f1e6d2441a5a',1,'CPPCli::Device::Username()'],['../../CSharpWrapper/class_c_p_p_cli_1_1_new_device.html#ae825cc7fad84f2a131218225054aede9',1,'CPPCli::NewDevice::Username()']]],
   ['users',['Users',['../../CSharpWrapper/class_c_p_p_cli_1_1_role.html#a3535c025b688aa32bb2f107687f16901',1,'CPPCli::Role']]]
 ];

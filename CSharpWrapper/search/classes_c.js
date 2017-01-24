@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['tag',['Tag',['../class_c_p_p_cli_1_1_tag.html',1,'CPPCli']]],
-  ['timestampevent',['TimestampEvent',['../../MediaController/struct_media_controller_1_1_timestamp_event.html',1,'MediaController']]]
+  ['resourcelock',['ResourceLock',['../class_c_p_p_cli_1_1_resource_lock.html',1,'CPPCli']]],
+  ['response',['Response',['../../MediaController/struct_media_controller_1_1_rtsp_1_1_response.html',1,'MediaController::Rtsp']]],
+  ['results',['Results',['../class_c_p_p_cli_1_1_results.html',1,'CPPCli']]],
+  ['role',['Role',['../class_c_p_p_cli_1_1_role.html',1,'CPPCli']]]
 ];

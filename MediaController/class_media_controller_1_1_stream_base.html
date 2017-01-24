@@ -110,6 +110,7 @@ $(document).ready(function(){initNavTree('class_media_controller_1_1_stream_base
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
@@ -129,53 +130,59 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad4a70540ee69b155a8ca5123a859baf1"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_stream_base.html#ad4a70540ee69b155a8ca5123a859baf1">~StreamBase</a> ()</td></tr>
 <tr class="memdesc:ad4a70540ee69b155a8ca5123a859baf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor.  <a href="#ad4a70540ee69b155a8ca5123a859baf1">More...</a><br /></td></tr>
 <tr class="separator:ad4a70540ee69b155a8ca5123a859baf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3824ae01db55f2d8a850c6537572d11"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_stream_base.html#af3824ae01db55f2d8a850c6537572d11">Play</a> (int speed) override</td></tr>
-<tr class="memdesc:af3824ae01db55f2d8a850c6537572d11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call Play on the stream.  <a href="#af3824ae01db55f2d8a850c6537572d11">More...</a><br /></td></tr>
-<tr class="separator:af3824ae01db55f2d8a850c6537572d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb4af76756191399aca355298489fa60"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_stream_base.html#afb4af76756191399aca355298489fa60">Pause</a> () override</td></tr>
+<tr class="memitem:a8082f1179f094eab73f0907cb8d58833"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_stream_base.html#a8082f1179f094eab73f0907cb8d58833">Play</a> (float speed=0, unsigned int unixTime=0) override</td></tr>
+<tr class="memdesc:a8082f1179f094eab73f0907cb8d58833"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call Play on the stream.  <a href="#a8082f1179f094eab73f0907cb8d58833">More...</a><br /></td></tr>
+<tr class="separator:a8082f1179f094eab73f0907cb8d58833"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb4af76756191399aca355298489fa60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_stream_base.html#afb4af76756191399aca355298489fa60">Pause</a> () override</td></tr>
 <tr class="memdesc:afb4af76756191399aca355298489fa60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call Pause on the stream.  <a href="#afb4af76756191399aca355298489fa60">More...</a><br /></td></tr>
 <tr class="separator:afb4af76756191399aca355298489fa60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a997ae25fed4a14786421f456160bb4ff"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_stream_base.html#a997ae25fed4a14786421f456160bb4ff">Stop</a> () override</td></tr>
+<tr class="memitem:a997ae25fed4a14786421f456160bb4ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_stream_base.html#a997ae25fed4a14786421f456160bb4ff">Stop</a> () override</td></tr>
 <tr class="memdesc:a997ae25fed4a14786421f456160bb4ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call TearDown on the stream.  <a href="#a997ae25fed4a14786421f456160bb4ff">More...</a><br /></td></tr>
 <tr class="separator:a997ae25fed4a14786421f456160bb4ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3508d3b5e19efb45b0cf9fd843a15b73"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_stream_base.html#a3508d3b5e19efb45b0cf9fd843a15b73">FrameForward</a> () override</td></tr>
-<tr class="memdesc:a3508d3b5e19efb45b0cf9fd843a15b73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not implemented.  <a href="#a3508d3b5e19efb45b0cf9fd843a15b73">More...</a><br /></td></tr>
-<tr class="separator:a3508d3b5e19efb45b0cf9fd843a15b73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6dedd1c7d98100ed150258af0ea0e57b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_stream_base.html#a6dedd1c7d98100ed150258af0ea0e57b">FrameBackward</a> () override</td></tr>
-<tr class="memdesc:a6dedd1c7d98100ed150258af0ea0e57b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not implemented.  <a href="#a6dedd1c7d98100ed150258af0ea0e57b">More...</a><br /></td></tr>
-<tr class="separator:a6dedd1c7d98100ed150258af0ea0e57b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae155f1282c9c6ab41caa41f9852da18"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_stream_base.html#aae155f1282c9c6ab41caa41f9852da18">Seek</a> (unsigned int unixTime, int speed) override</td></tr>
-<tr class="memdesc:aae155f1282c9c6ab41caa41f9852da18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call Play on the stream with the supplied start time, resulting in a playback stream.  <a href="#aae155f1282c9c6ab41caa41f9852da18">More...</a><br /></td></tr>
-<tr class="separator:aae155f1282c9c6ab41caa41f9852da18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4eda2d269c28a548e3da5d99b7e14556"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_stream_base.html#a4eda2d269c28a548e3da5d99b7e14556">NewRequest</a> (<a class="el" href="struct_media_controller_1_1_media_request.html">MediaRequest</a> &amp;request) override</td></tr>
+<tr class="memitem:a4eda2d269c28a548e3da5d99b7e14556"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_stream_base.html#a4eda2d269c28a548e3da5d99b7e14556">NewRequest</a> (<a class="el" href="struct_media_controller_1_1_media_request.html">MediaRequest</a> &amp;request) override</td></tr>
 <tr class="memdesc:a4eda2d269c28a548e3da5d99b7e14556"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the stream to a new source.  <a href="#a4eda2d269c28a548e3da5d99b7e14556">More...</a><br /></td></tr>
 <tr class="separator:a4eda2d269c28a548e3da5d99b7e14556"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02122d0d27657a27a1c2c2718bd21ef0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_stream_base.html#a02122d0d27657a27a1c2c2718bd21ef0">Resume</a> (int speed)</td></tr>
-<tr class="memdesc:a02122d0d27657a27a1c2c2718bd21ef0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call Seek on the stream using the last timestamp received as the start time.  <a href="#a02122d0d27657a27a1c2c2718bd21ef0">More...</a><br /></td></tr>
-<tr class="separator:a02122d0d27657a27a1c2c2718bd21ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8426351a80597fb8d2a3a2ccc8ba732e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_media_controller_1_1_gst_wrapper.html">GstWrapper</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_stream_base.html#a8426351a80597fb8d2a3a2ccc8ba732e">GetGstreamer</a> ()</td></tr>
-<tr class="memdesc:a8426351a80597fb8d2a3a2ccc8ba732e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current GStreamer wrapper instance.  <a href="#a8426351a80597fb8d2a3a2ccc8ba732e">More...</a><br /></td></tr>
-<tr class="separator:a8426351a80597fb8d2a3a2ccc8ba732e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab86864297f769c5257227f72c370e791"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_stream_base.html#ab86864297f769c5257227f72c370e791">Resume</a> (float speed=0, unsigned int unixTime=0)</td></tr>
+<tr class="memdesc:ab86864297f769c5257227f72c370e791"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send PLAY on an existing stream.  <a href="#ab86864297f769c5257227f72c370e791">More...</a><br /></td></tr>
+<tr class="separator:ab86864297f769c5257227f72c370e791"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8c8fb7254a3d4cfc29a552fba440121"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_media_controller_1_1_gst_wrapper.html">GstWrapper</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_stream_base.html#ad8c8fb7254a3d4cfc29a552fba440121">GetGstreamer</a> () const </td></tr>
+<tr class="memdesc:ad8c8fb7254a3d4cfc29a552fba440121"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current GStreamer wrapper instance.  <a href="#ad8c8fb7254a3d4cfc29a552fba440121">More...</a><br /></td></tr>
+<tr class="separator:ad8c8fb7254a3d4cfc29a552fba440121"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a085aa7f25b6da52cb919958707d3eb0e"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_stream_base.html#a085aa7f25b6da52cb919958707d3eb0e">GetLastTimestamp</a> () const </td></tr>
+<tr class="memdesc:a085aa7f25b6da52cb919958707d3eb0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current time of the stream.  <a href="#a085aa7f25b6da52cb919958707d3eb0e">More...</a><br /></td></tr>
+<tr class="separator:a085aa7f25b6da52cb919958707d3eb0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad45aca1bf506ddeac7aec127b8037266"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_media_controller_1_1_i_stream.html#a0ac9cb583470ae5b9f2e3314fdca9843">Mode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_stream_base.html#ad45aca1bf506ddeac7aec127b8037266">GetMode</a> () override</td></tr>
+<tr class="memdesc:ad45aca1bf506ddeac7aec127b8037266"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current playback mode.  <a href="#ad45aca1bf506ddeac7aec127b8037266">More...</a><br /></td></tr>
+<tr class="separator:ad45aca1bf506ddeac7aec127b8037266"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_media_controller_1_1_i_stream"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_media_controller_1_1_i_stream')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_media_controller_1_1_i_stream.html">MediaController::IStream</a></td></tr>
 <tr class="memitem:ae5266309acb4de0c67c82d179b5a6888 inherit pub_methods_class_media_controller_1_1_i_stream"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_i_stream.html#ae5266309acb4de0c67c82d179b5a6888">~IStream</a> ()</td></tr>
 <tr class="memdesc:ae5266309acb4de0c67c82d179b5a6888 inherit pub_methods_class_media_controller_1_1_i_stream"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor.  <a href="#ae5266309acb4de0c67c82d179b5a6888">More...</a><br /></td></tr>
 <tr class="separator:ae5266309acb4de0c67c82d179b5a6888 inherit pub_methods_class_media_controller_1_1_i_stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f6788601512710453d7a4b0b1999838 inherit pub_methods_class_media_controller_1_1_i_stream"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_i_stream.html#a8f6788601512710453d7a4b0b1999838">GoToLive</a> ()=0</td></tr>
-<tr class="memdesc:a8f6788601512710453d7a4b0b1999838 inherit pub_methods_class_media_controller_1_1_i_stream"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the stream to Live and call Play.  <a href="#a8f6788601512710453d7a4b0b1999838">More...</a><br /></td></tr>
-<tr class="separator:a8f6788601512710453d7a4b0b1999838 inherit pub_methods_class_media_controller_1_1_i_stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac421e258f6dc1c9cd65d95b0b4d145f4 inherit pub_methods_class_media_controller_1_1_i_stream"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_i_stream.html#ac421e258f6dc1c9cd65d95b0b4d145f4">PlayStream</a> (float speed, unsigned int unixTime)=0</td></tr>
+<tr class="separator:ac421e258f6dc1c9cd65d95b0b4d145f4 inherit pub_methods_class_media_controller_1_1_i_stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92acd082bf3f10528c19662f6c90a0c8 inherit pub_methods_class_media_controller_1_1_i_stream"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_i_stream.html#a92acd082bf3f10528c19662f6c90a0c8">GoToLive</a> ()=0</td></tr>
+<tr class="memdesc:a92acd082bf3f10528c19662f6c90a0c8 inherit pub_methods_class_media_controller_1_1_i_stream"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the stream to Live and call Play.  <a href="#a92acd082bf3f10528c19662f6c90a0c8">More...</a><br /></td></tr>
+<tr class="separator:a92acd082bf3f10528c19662f6c90a0c8 inherit pub_methods_class_media_controller_1_1_i_stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a882f83099de41c5bddff56c01663c47a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_media_controller_1_1_stream_state.html">StreamState</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_stream_base.html#a882f83099de41c5bddff56c01663c47a">state</a></td></tr>
+<tr class="memdesc:a882f83099de41c5bddff56c01663c47a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current state of the stream.  <a href="#a882f83099de41c5bddff56c01663c47a">More...</a><br /></td></tr>
+<tr class="separator:a882f83099de41c5bddff56c01663c47a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af559f6ea49d338506cf2fceca3863a1b"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/Users/zachm/Git/samples_for_testing/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_stream_protocol.html#a2b76fe7e5279308f2ee4a134507a412a">VxSdk::VxStreamProtocol::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_stream_base.html#af559f6ea49d338506cf2fceca3863a1b">protocol</a></td></tr>
+<tr class="memdesc:af559f6ea49d338506cf2fceca3863a1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The protocol of the stream.  <a href="#af559f6ea49d338506cf2fceca3863a1b">More...</a><br /></td></tr>
+<tr class="separator:af559f6ea49d338506cf2fceca3863a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a2d22488fa6b3e0ff7c174cdeba5cc9bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_stream_base.html#a2d22488fa6b3e0ff7c174cdeba5cc9bb">StreamBase</a> (<a class="el" href="struct_media_controller_1_1_media_request.html">MediaRequest</a> &amp;request, <a class="el" href="class_media_controller_1_1_controller.html">Controller</a> &amp;controller)</td></tr>
-<tr class="memdesc:a2d22488fa6b3e0ff7c174cdeba5cc9bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a2d22488fa6b3e0ff7c174cdeba5cc9bb">More...</a><br /></td></tr>
-<tr class="separator:a2d22488fa6b3e0ff7c174cdeba5cc9bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d7373e3490a3346ff47709b86ed3a33"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_stream_base.html#a0d7373e3490a3346ff47709b86ed3a33">StreamBase</a> (<a class="el" href="struct_media_controller_1_1_media_request.html">MediaRequest</a> &amp;request)</td></tr>
+<tr class="memdesc:a0d7373e3490a3346ff47709b86ed3a33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a0d7373e3490a3346ff47709b86ed3a33">More...</a><br /></td></tr>
+<tr class="separator:a0d7373e3490a3346ff47709b86ed3a33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a278b108cc2f39033ec7d6bb7bd17dc7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_media_controller_1_1_media_request.html">MediaRequest</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_stream_base.html#a278b108cc2f39033ec7d6bb7bd17dc7a">_mediaRequest</a></td></tr>
 <tr class="separator:a278b108cc2f39033ec7d6bb7bd17dc7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2ce7521e4da7d3fb2eb805f0805f9f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_media_controller_1_1_controller.html">Controller</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_stream_base.html#ad2ce7521e4da7d3fb2eb805f0805f9f7">_controller</a></td></tr>
-<tr class="separator:ad2ce7521e4da7d3fb2eb805f0805f9f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab73a4e29c8b8be7ec870f423c47bc15b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_media_controller_1_1_gst_wrapper.html">GstWrapper</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_stream_base.html#ab73a4e29c8b8be7ec870f423c47bc15b">_gst</a></td></tr>
 <tr class="separator:ab73a4e29c8b8be7ec870f423c47bc15b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -184,6 +191,20 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a42d295f46f4563434c45021286630dc3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_stream_base.html#a42d295f46f4563434c45021286630dc3">StreamBase</a> ()</td></tr>
 <tr class="memdesc:a42d295f46f4563434c45021286630dc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a42d295f46f4563434c45021286630dc3">More...</a><br /></td></tr>
 <tr class="separator:a42d295f46f4563434c45021286630dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_class_media_controller_1_1_i_stream"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_media_controller_1_1_i_stream')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_media_controller_1_1_i_stream.html">MediaController::IStream</a></td></tr>
+<tr class="memitem:a0ac9cb583470ae5b9f2e3314fdca9843 inherit pub_types_class_media_controller_1_1_i_stream"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_i_stream.html#a0ac9cb583470ae5b9f2e3314fdca9843">Mode</a> { <br />
+&#160;&#160;<a class="el" href="class_media_controller_1_1_i_stream.html#a0ac9cb583470ae5b9f2e3314fdca9843a133c44ef437ff8a26fc323ed35e975ff">kStopped</a>, 
+<br />
+&#160;&#160;<a class="el" href="class_media_controller_1_1_i_stream.html#a0ac9cb583470ae5b9f2e3314fdca9843adf3918a3aa70d9f1df2517efe874a5cb">kLive</a>, 
+<br />
+&#160;&#160;<a class="el" href="class_media_controller_1_1_i_stream.html#a0ac9cb583470ae5b9f2e3314fdca9843a75ff807459806cb0692c305bb7b0d1e0">kPlayback</a>
+<br />
+ }<tr class="memdesc:a0ac9cb583470ae5b9f2e3314fdca9843"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent the different playback modes.  <a href="class_media_controller_1_1_i_stream.html#a0ac9cb583470ae5b9f2e3314fdca9843">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a0ac9cb583470ae5b9f2e3314fdca9843 inherit pub_types_class_media_controller_1_1_i_stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The base class for the different stream types. </p>
@@ -217,12 +238,11 @@ Private Member Functions</h2></td></tr>
 
 <p>Virtual destructor. </p>
 
-<p>Definition at line <a class="el" href="_stream_base_8cpp_source.html#l00017">17</a> of file <a class="el" href="_stream_base_8cpp_source.html">StreamBase.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                        {</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">delete</span> this-&gt;<a class="code" href="class_media_controller_1_1_stream_base.html#ab73a4e29c8b8be7ec870f423c47bc15b">_gst</a>;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div><div class="ttc" id="class_media_controller_1_1_stream_base_html_ab73a4e29c8b8be7ec870f423c47bc15b"><div class="ttname"><a href="class_media_controller_1_1_stream_base.html#ab73a4e29c8b8be7ec870f423c47bc15b">MediaController::StreamBase::_gst</a></div><div class="ttdeci">GstWrapper * _gst</div><div class="ttdef"><b>Definition:</b> <a href="_stream_base_8h_source.html#l00058">StreamBase.h:58</a></div></div>
-</div><!-- fragment -->
+<p>Definition at line <a class="el" href="_stream_base_8cpp_source.html#l00018">18</a> of file <a class="el" href="_stream_base_8cpp_source.html">StreamBase.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                        {</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a2d22488fa6b3e0ff7c174cdeba5cc9bb"></a>
+<a class="anchor" id="a0d7373e3490a3346ff47709b86ed3a33"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -233,18 +253,8 @@ Private Member Functions</h2></td></tr>
           <td class="memname">StreamBase::StreamBase </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_media_controller_1_1_media_request.html">MediaRequest</a> &amp;&#160;</td>
-          <td class="paramname"><em>request</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>request</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_media_controller_1_1_controller.html">Controller</a> &amp;&#160;</td>
-          <td class="paramname"><em>controller</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -258,15 +268,14 @@ Private Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">request</td><td>The requested media.</td></tr>
-    <tr><td class="paramname">controller</td><td>A media controller object.</td></tr>
   </table>
   </dd>
 </dl>
 
 <p>Definition at line <a class="el" href="_stream_base_8cpp_source.html#l00012">12</a> of file <a class="el" href="_stream_base_8cpp_source.html">StreamBase.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;                                                                    :</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;   <a class="code" href="class_media_controller_1_1_stream_base.html#a278b108cc2f39033ec7d6bb7bd17dc7a">_mediaRequest</a>(request),  <a class="code" href="class_media_controller_1_1_stream_base.html#ad2ce7521e4da7d3fb2eb805f0805f9f7">_controller</a>(&amp;controller)  {</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;   this-&gt;<a class="code" href="class_media_controller_1_1_stream_base.html#ab73a4e29c8b8be7ec870f423c47bc15b">_gst</a> = <span class="keyword">nullptr</span>;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div><div class="ttc" id="class_media_controller_1_1_stream_base_html_ab73a4e29c8b8be7ec870f423c47bc15b"><div class="ttname"><a href="class_media_controller_1_1_stream_base.html#ab73a4e29c8b8be7ec870f423c47bc15b">MediaController::StreamBase::_gst</a></div><div class="ttdeci">GstWrapper * _gst</div><div class="ttdef"><b>Definition:</b> <a href="_stream_base_8h_source.html#l00058">StreamBase.h:58</a></div></div>
-<div class="ttc" id="class_media_controller_1_1_stream_base_html_ad2ce7521e4da7d3fb2eb805f0805f9f7"><div class="ttname"><a href="class_media_controller_1_1_stream_base.html#ad2ce7521e4da7d3fb2eb805f0805f9f7">MediaController::StreamBase::_controller</a></div><div class="ttdeci">Controller * _controller</div><div class="ttdef"><b>Definition:</b> <a href="_stream_base_8h_source.html#l00057">StreamBase.h:57</a></div></div>
-<div class="ttc" id="class_media_controller_1_1_stream_base_html_a278b108cc2f39033ec7d6bb7bd17dc7a"><div class="ttname"><a href="class_media_controller_1_1_stream_base.html#a278b108cc2f39033ec7d6bb7bd17dc7a">MediaController::StreamBase::_mediaRequest</a></div><div class="ttdeci">MediaRequest _mediaRequest</div><div class="ttdef"><b>Definition:</b> <a href="_stream_base_8h_source.html#l00056">StreamBase.h:56</a></div></div>
+<div class="fragment"><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;                                            :</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;   <a class="code" href="class_media_controller_1_1_stream_base.html#a278b108cc2f39033ec7d6bb7bd17dc7a">_mediaRequest</a>(request)  {</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="comment">// Build a new pipeline using the description generated above.</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    this-&gt;<a class="code" href="class_media_controller_1_1_stream_base.html#ab73a4e29c8b8be7ec870f423c47bc15b">_gst</a> = <span class="keyword">new</span> <a class="code" href="class_media_controller_1_1_gst_wrapper.html">GstWrapper</a>();</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div><div class="ttc" id="class_media_controller_1_1_stream_base_html_ab73a4e29c8b8be7ec870f423c47bc15b"><div class="ttname"><a href="class_media_controller_1_1_stream_base.html#ab73a4e29c8b8be7ec870f423c47bc15b">MediaController::StreamBase::_gst</a></div><div class="ttdeci">GstWrapper * _gst</div><div class="ttdef"><b>Definition:</b> <a href="_stream_base_8h_source.html#l00073">StreamBase.h:73</a></div></div>
+<div class="ttc" id="class_media_controller_1_1_gst_wrapper_html"><div class="ttname"><a href="class_media_controller_1_1_gst_wrapper.html">MediaController::GstWrapper</a></div><div class="ttdoc">Manages the GStreamer instance. </div><div class="ttdef"><b>Definition:</b> <a href="_gst_wrapper_8h_source.html#l00013">GstWrapper.h:13</a></div></div>
+<div class="ttc" id="class_media_controller_1_1_stream_base_html_a278b108cc2f39033ec7d6bb7bd17dc7a"><div class="ttname"><a href="class_media_controller_1_1_stream_base.html#a278b108cc2f39033ec7d6bb7bd17dc7a">MediaController::StreamBase::_mediaRequest</a></div><div class="ttdeci">MediaRequest _mediaRequest</div><div class="ttdef"><b>Definition:</b> <a href="_stream_base_8h_source.html#l00072">StreamBase.h:72</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -298,69 +307,7 @@ Private Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a6dedd1c7d98100ed150258af0ea0e57b"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void StreamBase::FrameBackward </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Not implemented. </p>
-
-<p>Implements <a class="el" href="class_media_controller_1_1_i_stream.html#a58c336f518d87333a01e2824276db82c">MediaController::IStream</a>.</p>
-
-<p>Reimplemented in <a class="el" href="class_media_controller_1_1_rtsp_1_1_stream.html#af9f598827bbff60d6e5b5d9c09bebb38">MediaController::Rtsp::Stream</a>, and <a class="el" href="class_media_controller_1_1_mjpeg_pull_1_1_stream.html#a4bcb19c50be111a4792098c6a26500fa">MediaController::MjpegPull::Stream</a>.</p>
-
-<p>Definition at line <a class="el" href="_stream_base_8cpp_source.html#l00029">29</a> of file <a class="el" href="_stream_base_8cpp_source.html">StreamBase.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{}</div></div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="a3508d3b5e19efb45b0cf9fd843a15b73"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void StreamBase::FrameForward </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Not implemented. </p>
-
-<p>Implements <a class="el" href="class_media_controller_1_1_i_stream.html#a89a7629afd57f6eb9e90a750ad2c5dfd">MediaController::IStream</a>.</p>
-
-<p>Reimplemented in <a class="el" href="class_media_controller_1_1_rtsp_1_1_stream.html#a736a9e2d49723a000b57af8939ff79d5">MediaController::Rtsp::Stream</a>, and <a class="el" href="class_media_controller_1_1_mjpeg_pull_1_1_stream.html#aca3cd513815443d0283d45a73d869e94">MediaController::MjpegPull::Stream</a>.</p>
-
-<p>Definition at line <a class="el" href="_stream_base_8cpp_source.html#l00027">27</a> of file <a class="el" href="_stream_base_8cpp_source.html">StreamBase.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{}</div></div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="a8426351a80597fb8d2a3a2ccc8ba732e"></a>
+<a class="anchor" id="ad8c8fb7254a3d4cfc29a552fba440121"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -368,7 +315,7 @@ Private Member Functions</h2></td></tr>
           <td class="memname"><a class="el" href="class_media_controller_1_1_gst_wrapper.html">GstWrapper</a> * StreamBase::GetGstreamer </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -376,8 +323,62 @@ Private Member Functions</h2></td></tr>
 <p>Get the current GStreamer wrapper instance. </p>
 <dl class="section return"><dt>Returns</dt><dd>The current <a class="el" href="class_media_controller_1_1_gst_wrapper.html" title="Manages the GStreamer instance. ">GstWrapper</a> instance.</dd></dl>
 
-<p>Definition at line <a class="el" href="_stream_base_8cpp_source.html#l00037">37</a> of file <a class="el" href="_stream_base_8cpp_source.html">StreamBase.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                                     {</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_media_controller_1_1_stream_base.html#ab73a4e29c8b8be7ec870f423c47bc15b">_gst</a>;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div><div class="ttc" id="class_media_controller_1_1_stream_base_html_ab73a4e29c8b8be7ec870f423c47bc15b"><div class="ttname"><a href="class_media_controller_1_1_stream_base.html#ab73a4e29c8b8be7ec870f423c47bc15b">MediaController::StreamBase::_gst</a></div><div class="ttdeci">GstWrapper * _gst</div><div class="ttdef"><b>Definition:</b> <a href="_stream_base_8h_source.html#l00058">StreamBase.h:58</a></div></div>
+<p>Definition at line <a class="el" href="_stream_base_8cpp_source.html#l00032">32</a> of file <a class="el" href="_stream_base_8cpp_source.html">StreamBase.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                                           {</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_media_controller_1_1_stream_base.html#ab73a4e29c8b8be7ec870f423c47bc15b">_gst</a>;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div><div class="ttc" id="class_media_controller_1_1_stream_base_html_ab73a4e29c8b8be7ec870f423c47bc15b"><div class="ttname"><a href="class_media_controller_1_1_stream_base.html#ab73a4e29c8b8be7ec870f423c47bc15b">MediaController::StreamBase::_gst</a></div><div class="ttdeci">GstWrapper * _gst</div><div class="ttdef"><b>Definition:</b> <a href="_stream_base_8h_source.html#l00073">StreamBase.h:73</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a085aa7f25b6da52cb919958707d3eb0e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int StreamBase::GetLastTimestamp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the current time of the stream. </p>
+<dl class="section return"><dt>Returns</dt><dd>The last timestamp received.</dd></dl>
+
+<p>Definition at line <a class="el" href="_stream_base_8cpp_source.html#l00036">36</a> of file <a class="el" href="_stream_base_8cpp_source.html">StreamBase.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                                {</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_media_controller_1_1_stream_base.html#ab73a4e29c8b8be7ec870f423c47bc15b">_gst</a>-&gt;<a class="code" href="class_media_controller_1_1_gst_wrapper.html#aea3795ae288b23f9355bd3fa04371cc1">GetLastTimestamp</a>();</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div><div class="ttc" id="class_media_controller_1_1_stream_base_html_ab73a4e29c8b8be7ec870f423c47bc15b"><div class="ttname"><a href="class_media_controller_1_1_stream_base.html#ab73a4e29c8b8be7ec870f423c47bc15b">MediaController::StreamBase::_gst</a></div><div class="ttdeci">GstWrapper * _gst</div><div class="ttdef"><b>Definition:</b> <a href="_stream_base_8h_source.html#l00073">StreamBase.h:73</a></div></div>
+<div class="ttc" id="class_media_controller_1_1_gst_wrapper_html_aea3795ae288b23f9355bd3fa04371cc1"><div class="ttname"><a href="class_media_controller_1_1_gst_wrapper.html#aea3795ae288b23f9355bd3fa04371cc1">MediaController::GstWrapper::GetLastTimestamp</a></div><div class="ttdeci">unsigned int GetLastTimestamp() const </div><div class="ttdoc">Get the last timestamp received from the stream. </div><div class="ttdef"><b>Definition:</b> <a href="_gst_wrapper_8cpp_source.html#l00268">GstWrapper.cpp:268</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ad45aca1bf506ddeac7aec127b8037266"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_media_controller_1_1_i_stream.html#a0ac9cb583470ae5b9f2e3314fdca9843">Controller::Mode</a> StreamBase::GetMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the current playback mode. </p>
+<dl class="section return"><dt>Returns</dt><dd>The current stream <a class="el" href="class_media_controller_1_1_i_stream.html#a0ac9cb583470ae5b9f2e3314fdca9843" title="Values that represent the different playback modes. ">Mode</a>.</dd></dl>
+
+<p>Implements <a class="el" href="class_media_controller_1_1_i_stream.html#ab0287c7ed351222b7c8fde8bf4c2a34a">MediaController::IStream</a>.</p>
+
+<p>Definition at line <a class="el" href="_stream_base_8cpp_source.html#l00040">40</a> of file <a class="el" href="_stream_base_8cpp_source.html">StreamBase.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                                   {</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_media_controller_1_1_stream_base.html#ab73a4e29c8b8be7ec870f423c47bc15b">_gst</a>-&gt;<a class="code" href="class_media_controller_1_1_gst_wrapper.html#aaf7152a829d2ecd653fc2f508e336475">GetMode</a>();</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div><div class="ttc" id="class_media_controller_1_1_stream_base_html_ab73a4e29c8b8be7ec870f423c47bc15b"><div class="ttname"><a href="class_media_controller_1_1_stream_base.html#ab73a4e29c8b8be7ec870f423c47bc15b">MediaController::StreamBase::_gst</a></div><div class="ttdeci">GstWrapper * _gst</div><div class="ttdef"><b>Definition:</b> <a href="_stream_base_8h_source.html#l00073">StreamBase.h:73</a></div></div>
+<div class="ttc" id="class_media_controller_1_1_gst_wrapper_html_aaf7152a829d2ecd653fc2f508e336475"><div class="ttname"><a href="class_media_controller_1_1_gst_wrapper.html#aaf7152a829d2ecd653fc2f508e336475">MediaController::GstWrapper::GetMode</a></div><div class="ttdeci">Controller::Mode GetMode() const </div><div class="ttdoc">Get the current playback mode. </div><div class="ttdef"><b>Definition:</b> <a href="_gst_wrapper_8h_source.html#l00090">GstWrapper.h:90</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -413,10 +414,8 @@ Private Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="class_media_controller_1_1_i_stream.html#af1acf51b6b487e08555b855f16a6234f">MediaController::IStream</a>.</p>
 
-<p>Reimplemented in <a class="el" href="class_media_controller_1_1_rtsp_1_1_stream.html#a39cfada86d3fc6e9fae55f327d935214">MediaController::Rtsp::Stream</a>, and <a class="el" href="class_media_controller_1_1_mjpeg_pull_1_1_stream.html#ae9585d6f4100ac1177ebf4aa90b52115">MediaController::MjpegPull::Stream</a>.</p>
-
-<p>Definition at line <a class="el" href="_stream_base_8cpp_source.html#l00033">33</a> of file <a class="el" href="_stream_base_8cpp_source.html">StreamBase.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{}</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_stream_base_8cpp_source.html#l00028">28</a> of file <a class="el" href="_stream_base_8cpp_source.html">StreamBase.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{}</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="afb4af76756191399aca355298489fa60"></a>
@@ -444,13 +443,11 @@ Private Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="class_media_controller_1_1_i_stream.html#aeb52708f005e2395d90b06bf22868afe">MediaController::IStream</a>.</p>
 
-<p>Reimplemented in <a class="el" href="class_media_controller_1_1_rtsp_1_1_stream.html#a97c7554d9bcc086b2a424a14d7a4c56b">MediaController::Rtsp::Stream</a>, and <a class="el" href="class_media_controller_1_1_mjpeg_pull_1_1_stream.html#a4ba351f55d1740c1fd48c42a76a3dd13">MediaController::MjpegPull::Stream</a>.</p>
-
-<p>Definition at line <a class="el" href="_stream_base_8cpp_source.html#l00023">23</a> of file <a class="el" href="_stream_base_8cpp_source.html">StreamBase.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{}</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_stream_base_8cpp_source.html#l00024">24</a> of file <a class="el" href="_stream_base_8cpp_source.html">StreamBase.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{}</div></div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="af3824ae01db55f2d8a850c6537572d11"></a>
+<a class="anchor" id="a8082f1179f094eab73f0907cb8d58833"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -458,90 +455,16 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void StreamBase::Play </td>
+          <td class="memname">bool StreamBase::Play </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>speed</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Call Play on the stream. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">speed</td><td>The playback speed. Negative values can be used for reverse playback.</td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="class_media_controller_1_1_i_stream.html#afefbdcf267875b8ab73c0a3dacff96a0">MediaController::IStream</a>.</p>
-
-<p>Reimplemented in <a class="el" href="class_media_controller_1_1_rtsp_1_1_stream.html#a7790a70a35e70203c73232ff1fc27dfc">MediaController::Rtsp::Stream</a>, and <a class="el" href="class_media_controller_1_1_mjpeg_pull_1_1_stream.html#abc07b64122ca24edbf1e10bfd99e6ca4">MediaController::MjpegPull::Stream</a>.</p>
-
-<p>Definition at line <a class="el" href="_stream_base_8cpp_source.html#l00021">21</a> of file <a class="el" href="_stream_base_8cpp_source.html">StreamBase.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{}</div></div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="a02122d0d27657a27a1c2c2718bd21ef0"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void StreamBase::Resume </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>speed</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Call Seek on the stream using the last timestamp received as the start time. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">speed</td><td>The playback speed. Negative values can be used for reverse playback.</td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Reimplemented in <a class="el" href="class_media_controller_1_1_rtsp_1_1_stream.html#ae479b9bed38549d274d24f69cf277637">MediaController::Rtsp::Stream</a>, and <a class="el" href="class_media_controller_1_1_mjpeg_pull_1_1_stream.html#a3c18d8c4ef0be3b8f6f932363ff25d0b">MediaController::MjpegPull::Stream</a>.</p>
-
-<p>Definition at line <a class="el" href="_stream_base_8cpp_source.html#l00035">35</a> of file <a class="el" href="_stream_base_8cpp_source.html">StreamBase.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{}</div></div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="aae155f1282c9c6ab41caa41f9852da18"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void StreamBase::Seek </td>
-          <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>unixTime</em>, </td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>speed</em> = <code>0</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>speed</em>&#160;</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>unixTime</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -556,21 +479,66 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Call Play on the stream with the supplied start time, resulting in a playback stream. </p>
+<p>Call Play on the stream. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">unixTime</td><td>The start time for playback.</td></tr>
-    <tr><td class="paramname">speed</td><td>The playback speed. Negative values can be used for reverse playback.</td></tr>
+    <tr><td class="paramname">speed</td><td>The playback speed. Negative values can be used for reverse playback. A value of 0 will resume a paused stream.</td></tr>
+    <tr><td class="paramname">unixTime</td><td>The start time for playback. A value of 0 will start a live stream.</td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="class_media_controller_1_1_i_stream.html#aed3c956ef7efd114eea1044bab631d55">MediaController::IStream</a>.</p>
+<p>Implements <a class="el" href="class_media_controller_1_1_i_stream.html#af037ad06c1a89885106931709b0f51c1">MediaController::IStream</a>.</p>
 
-<p>Reimplemented in <a class="el" href="class_media_controller_1_1_rtsp_1_1_stream.html#a7cd6a0ebc8cf8bfceeb5874ff713134e">MediaController::Rtsp::Stream</a>, and <a class="el" href="class_media_controller_1_1_mjpeg_pull_1_1_stream.html#a237f606f4e68139542998d50848e5ea7">MediaController::MjpegPull::Stream</a>.</p>
+<p>Definition at line <a class="el" href="_stream_base_8cpp_source.html#l00022">22</a> of file <a class="el" href="_stream_base_8cpp_source.html">StreamBase.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ab86864297f769c5257227f72c370e791"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool StreamBase::Resume </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>speed</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>unixTime</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_stream_base_8cpp_source.html#l00031">31</a> of file <a class="el" href="_stream_base_8cpp_source.html">StreamBase.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{}</div></div><!-- fragment -->
+<p>Send PLAY on an existing stream. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">speed</td><td>The playback speed. Negative values can be used for reverse playback. A value of 0 will resume a paused stream.</td></tr>
+    <tr><td class="paramname">unixTime</td><td>The start time for playback. A value of 0 will start a live stream.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="class_media_controller_1_1_rtsp_1_1_stream.html#a49b9998b7473949c38b3494bc6bdfbf8">MediaController::Rtsp::Stream</a>, and <a class="el" href="class_media_controller_1_1_mjpeg_pull_1_1_stream.html#a7a1a78b1f728b23769770d0638dfff53">MediaController::MjpegPull::Stream</a>.</p>
+
+<p>Definition at line <a class="el" href="_stream_base_8cpp_source.html#l00030">30</a> of file <a class="el" href="_stream_base_8cpp_source.html">StreamBase.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a997ae25fed4a14786421f456160bb4ff"></a>
@@ -598,35 +566,11 @@ Private Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="class_media_controller_1_1_i_stream.html#a8ba52c69638f1ee143d3d9ad78b6eade">MediaController::IStream</a>.</p>
 
-<p>Reimplemented in <a class="el" href="class_media_controller_1_1_rtsp_1_1_stream.html#a675c9cab355bdf341f76bcd36ea4d16d">MediaController::Rtsp::Stream</a>, and <a class="el" href="class_media_controller_1_1_mjpeg_pull_1_1_stream.html#a2a849e829b398017e2cdff3f98956d86">MediaController::MjpegPull::Stream</a>.</p>
-
-<p>Definition at line <a class="el" href="_stream_base_8cpp_source.html#l00025">25</a> of file <a class="el" href="_stream_base_8cpp_source.html">StreamBase.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{}</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_stream_base_8cpp_source.html#l00026">26</a> of file <a class="el" href="_stream_base_8cpp_source.html">StreamBase.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{}</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="ad2ce7521e4da7d3fb2eb805f0805f9f7"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_media_controller_1_1_controller.html">Controller</a>* MediaController::StreamBase::_controller</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_stream_base_8h_source.html#l00057">57</a> of file <a class="el" href="_stream_base_8h_source.html">StreamBase.h</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="ab73a4e29c8b8be7ec870f423c47bc15b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -645,7 +589,7 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_stream_base_8h_source.html#l00058">58</a> of file <a class="el" href="_stream_base_8h_source.html">StreamBase.h</a>.</p>
+<p>Definition at line <a class="el" href="_stream_base_8h_source.html#l00073">73</a> of file <a class="el" href="_stream_base_8h_source.html">StreamBase.h</a>.</p>
 
 </div>
 </div>
@@ -667,7 +611,39 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="_stream_base_8h_source.html#l00072">72</a> of file <a class="el" href="_stream_base_8h_source.html">StreamBase.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af559f6ea49d338506cf2fceca3863a1b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="C:/Users/zachm/Git/samples_for_testing/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_stream_protocol.html#a2b76fe7e5279308f2ee4a134507a412a">VxSdk::VxStreamProtocol::Value</a> MediaController::StreamBase::protocol</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The protocol of the stream. </p>
+
 <p>Definition at line <a class="el" href="_stream_base_8h_source.html#l00056">56</a> of file <a class="el" href="_stream_base_8h_source.html">StreamBase.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a882f83099de41c5bddff56c01663c47a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_media_controller_1_1_stream_state.html">StreamState</a>* MediaController::StreamBase::state</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The current state of the stream. </p>
+
+<p>Definition at line <a class="el" href="_stream_base_8h_source.html#l00049">49</a> of file <a class="el" href="_stream_base_8h_source.html">StreamBase.h</a>.</p>
 
 </div>
 </div>

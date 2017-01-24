@@ -5,5 +5,5 @@ var struct_vx_sdk_1_1_vx_kv_object =
     [ "~VxKvObject", "struct_vx_sdk_1_1_vx_kv_object.html#a6566f127030ffdad393511ca526304f4", null ],
     [ "Clear", "struct_vx_sdk_1_1_vx_kv_object.html#a1f9c4690e58d21b912d59cda25f745e0", null ],
     [ "key", "struct_vx_sdk_1_1_vx_kv_object.html#a354e66381d03d4d316bef4727ccef86c", null ],
-    [ "value", "struct_vx_sdk_1_1_vx_kv_object.html#adb4c6d08ccde84840d96f0e75c6e77b4", null ]
+    [ "value", "struct_vx_sdk_1_1_vx_kv_object.html#ac007a0586c9732b609c0ed299c87bd4a", null ]
 ];

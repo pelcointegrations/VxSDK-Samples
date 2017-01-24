@@ -1,15 +1,10 @@
 var searchData=
 [
-  ['newbookmark',['NewBookmark',['../class_c_p_p_cli_1_1_new_bookmark.html',1,'CPPCli']]],
-  ['newdataobject',['NewDataObject',['../class_c_p_p_cli_1_1_new_data_object.html',1,'CPPCli']]],
-  ['newdeviceassignment',['NewDeviceAssignment',['../class_c_p_p_cli_1_1_new_device_assignment.html',1,'CPPCli']]],
-  ['newevent',['NewEvent',['../class_c_p_p_cli_1_1_new_event.html',1,'CPPCli']]],
-  ['newexport',['NewExport',['../class_c_p_p_cli_1_1_new_export.html',1,'CPPCli']]],
-  ['newexportclip',['NewExportClip',['../class_c_p_p_cli_1_1_new_export_clip.html',1,'CPPCli']]],
-  ['newprivilege',['NewPrivilege',['../class_c_p_p_cli_1_1_new_privilege.html',1,'CPPCli']]],
-  ['newschedule',['NewSchedule',['../class_c_p_p_cli_1_1_new_schedule.html',1,'CPPCli']]],
-  ['newscheduletrigger',['NewScheduleTrigger',['../class_c_p_p_cli_1_1_new_schedule_trigger.html',1,'CPPCli']]],
-  ['newsituation',['NewSituation',['../class_c_p_p_cli_1_1_new_situation.html',1,'CPPCli']]],
-  ['newtag',['NewTag',['../class_c_p_p_cli_1_1_new_tag.html',1,'CPPCli']]],
-  ['newuser',['NewUser',['../class_c_p_p_cli_1_1_new_user.html',1,'CPPCli']]]
+  ['marker',['Marker',['../class_c_p_p_cli_1_1_marker.html',1,'CPPCli']]],
+  ['mediacontrol',['MediaControl',['../class_c_p_p_cli_1_1_media_control.html',1,'CPPCli']]],
+  ['mediadescription',['MediaDescription',['../../MediaController/struct_media_controller_1_1_rtsp_1_1_media_description.html',1,'MediaController::Rtsp']]],
+  ['mediaevent',['MediaEvent',['../class_c_p_p_cli_1_1_media_event.html',1,'CPPCli']]],
+  ['mediarequest',['MediaRequest',['../../MediaController/struct_media_controller_1_1_media_request.html',1,'MediaController']]],
+  ['monitor',['Monitor',['../class_c_p_p_cli_1_1_monitor.html',1,'CPPCli']]],
+  ['monitorcell',['MonitorCell',['../class_c_p_p_cli_1_1_monitor_cell.html',1,'CPPCli']]]
 ];

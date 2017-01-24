@@ -19,7 +19,21 @@
     <includes id="_vx_utilities_8h" name="VxUtilities.h" local="yes" imported="no">VxUtilities.h</includes>
     <includes id="_vx_macros_8h" name="VxMacros.h" local="yes" imported="no">VxMacros.h</includes>
     <includes id="_vx_snapshot_filter_8h" name="VxSnapshotFilter.h" local="yes" imported="no">VxSnapshotFilter.h</includes>
+    <includes id="_i_vx_configuration_8h" name="IVxConfiguration.h" local="yes" imported="no">IVxConfiguration.h</includes>
     <class kind="struct">VxSdk::IVxClip</class>
+    <namespace>VxSdk</namespace>
+  </compound>
+  <compound kind="file">
+    <name>IVxConfiguration.h</name>
+    <path>C:/Users/zachm/Git/vxsdk/VxSdk/Include/</path>
+    <filename>_i_vx_configuration_8h</filename>
+    <includes id="_vx_primitives_8h" name="VxPrimitives.h" local="yes" imported="no">VxPrimitives.h</includes>
+    <includes id="_vx_macros_8h" name="VxMacros.h" local="yes" imported="no">VxMacros.h</includes>
+    <class kind="struct">VxSdk::IVxConfiguration</class>
+    <class kind="struct">VxSdk::IVxConfiguration::Time</class>
+    <class kind="struct">VxSdk::IVxConfiguration::Node</class>
+    <class kind="struct">VxSdk::IVxConfiguration::Cluster</class>
+    <class kind="struct">VxSdk::IVxConfiguration::Storage</class>
     <namespace>VxSdk</namespace>
   </compound>
   <compound kind="file">
@@ -64,6 +78,7 @@
     <includes id="_i_vx_data_session_8h" name="IVxDataSession.h" local="yes" imported="no">IVxDataSession.h</includes>
     <includes id="_vx_collection_8h" name="VxCollection.h" local="yes" imported="no">VxCollection.h</includes>
     <includes id="_i_vx_data_interface_8h" name="IVxDataInterface.h" local="yes" imported="no">IVxDataInterface.h</includes>
+    <includes id="_i_vx_data_storage_8h" name="IVxDataStorage.h" local="yes" imported="no">IVxDataStorage.h</includes>
     <class kind="struct">VxSdk::IVxDataSource</class>
     <namespace>VxSdk</namespace>
   </compound>
@@ -89,6 +104,7 @@
     <includes id="_vx_utilities_8h" name="VxUtilities.h" local="yes" imported="no">VxUtilities.h</includes>
     <includes id="_vx_macros_8h" name="VxMacros.h" local="yes" imported="no">VxMacros.h</includes>
     <includes id="_i_vx_data_source_8h" name="IVxDataSource.h" local="yes" imported="no">IVxDataSource.h</includes>
+    <includes id="_i_vx_monitor_8h" name="IVxMonitor.h" local="yes" imported="no">IVxMonitor.h</includes>
     <includes id="_vx_collection_8h" name="VxCollection.h" local="yes" imported="no">VxCollection.h</includes>
     <class kind="struct">VxSdk::IVxDevice</class>
     <namespace>VxSdk</namespace>
@@ -102,6 +118,17 @@
     <includes id="_vx_macros_8h" name="VxMacros.h" local="yes" imported="no">VxMacros.h</includes>
     <includes id="_i_vx_driver_8h" name="IVxDriver.h" local="yes" imported="no">IVxDriver.h</includes>
     <class kind="struct">VxSdk::IVxDeviceAssignment</class>
+    <namespace>VxSdk</namespace>
+  </compound>
+  <compound kind="file">
+    <name>IVxDrawing.h</name>
+    <path>C:/Users/zachm/Git/vxsdk/VxSdk/Include/</path>
+    <filename>_i_vx_drawing_8h</filename>
+    <includes id="_vx_primitives_8h" name="VxPrimitives.h" local="yes" imported="no">VxPrimitives.h</includes>
+    <includes id="_vx_utilities_8h" name="VxUtilities.h" local="yes" imported="no">VxUtilities.h</includes>
+    <includes id="_vx_macros_8h" name="VxMacros.h" local="yes" imported="no">VxMacros.h</includes>
+    <includes id="_vx_collection_8h" name="VxCollection.h" local="yes" imported="no">VxCollection.h</includes>
+    <class kind="struct">VxSdk::IVxDrawing</class>
     <namespace>VxSdk</namespace>
   </compound>
   <compound kind="file">
@@ -150,6 +177,69 @@
     <includes id="_vx_utilities_8h" name="VxUtilities.h" local="yes" imported="no">VxUtilities.h</includes>
     <includes id="_vx_macros_8h" name="VxMacros.h" local="yes" imported="no">VxMacros.h</includes>
     <class kind="struct">VxSdk::IVxExportClip</class>
+    <namespace>VxSdk</namespace>
+  </compound>
+  <compound kind="file">
+    <name>IVxLicense.h</name>
+    <path>C:/Users/zachm/Git/vxsdk/VxSdk/Include/</path>
+    <filename>_i_vx_license_8h</filename>
+    <includes id="_vx_primitives_8h" name="VxPrimitives.h" local="yes" imported="no">VxPrimitives.h</includes>
+    <includes id="_vx_utilities_8h" name="VxUtilities.h" local="yes" imported="no">VxUtilities.h</includes>
+    <includes id="_vx_macros_8h" name="VxMacros.h" local="yes" imported="no">VxMacros.h</includes>
+    <includes id="_i_vx_license_feature_8h" name="IVxLicenseFeature.h" local="yes" imported="no">IVxLicenseFeature.h</includes>
+    <class kind="struct">VxSdk::IVxLicense</class>
+    <namespace>VxSdk</namespace>
+  </compound>
+  <compound kind="file">
+    <name>IVxLicenseFeature.h</name>
+    <path>C:/Users/zachm/Git/vxsdk/VxSdk/Include/</path>
+    <filename>_i_vx_license_feature_8h</filename>
+    <includes id="_vx_primitives_8h" name="VxPrimitives.h" local="yes" imported="no">VxPrimitives.h</includes>
+    <includes id="_vx_utilities_8h" name="VxUtilities.h" local="yes" imported="no">VxUtilities.h</includes>
+    <includes id="_vx_macros_8h" name="VxMacros.h" local="yes" imported="no">VxMacros.h</includes>
+    <includes id="_i_vx_device_8h" name="IVxDevice.h" local="yes" imported="no">IVxDevice.h</includes>
+    <class kind="struct">VxSdk::IVxLicenseFeature</class>
+    <namespace>VxSdk</namespace>
+  </compound>
+  <compound kind="file">
+    <name>IVxMarker.h</name>
+    <path>C:/Users/zachm/Git/vxsdk/VxSdk/Include/</path>
+    <filename>_i_vx_marker_8h</filename>
+    <includes id="_vx_primitives_8h" name="VxPrimitives.h" local="yes" imported="no">VxPrimitives.h</includes>
+    <includes id="_vx_utilities_8h" name="VxUtilities.h" local="yes" imported="no">VxUtilities.h</includes>
+    <includes id="_vx_macros_8h" name="VxMacros.h" local="yes" imported="no">VxMacros.h</includes>
+    <class kind="struct">VxSdk::IVxMarker</class>
+    <namespace>VxSdk</namespace>
+  </compound>
+  <compound kind="file">
+    <name>IVxMonitor.h</name>
+    <path>C:/Users/zachm/Git/vxsdk/VxSdk/Include/</path>
+    <filename>_i_vx_monitor_8h</filename>
+    <includes id="_vx_primitives_8h" name="VxPrimitives.h" local="yes" imported="no">VxPrimitives.h</includes>
+    <includes id="_vx_macros_8h" name="VxMacros.h" local="yes" imported="no">VxMacros.h</includes>
+    <includes id="_vx_collection_8h" name="VxCollection.h" local="yes" imported="no">VxCollection.h</includes>
+    <includes id="_vx_utilities_8h" name="VxUtilities.h" local="yes" imported="no">VxUtilities.h</includes>
+    <includes id="_i_vx_monitor_cell_8h" name="IVxMonitorCell.h" local="yes" imported="no">IVxMonitorCell.h</includes>
+    <class kind="struct">VxSdk::IVxMonitor</class>
+    <namespace>VxSdk</namespace>
+  </compound>
+  <compound kind="file">
+    <name>IVxMonitorCell.h</name>
+    <path>C:/Users/zachm/Git/vxsdk/VxSdk/Include/</path>
+    <filename>_i_vx_monitor_cell_8h</filename>
+    <includes id="_vx_macros_8h" name="VxMacros.h" local="yes" imported="no">VxMacros.h</includes>
+    <class kind="struct">VxSdk::IVxMonitorCell</class>
+    <namespace>VxSdk</namespace>
+  </compound>
+  <compound kind="file">
+    <name>IVxNotification.h</name>
+    <path>C:/Users/zachm/Git/vxsdk/VxSdk/Include/</path>
+    <filename>_i_vx_notification_8h</filename>
+    <includes id="_vx_primitives_8h" name="VxPrimitives.h" local="yes" imported="no">VxPrimitives.h</includes>
+    <includes id="_vx_utilities_8h" name="VxUtilities.h" local="yes" imported="no">VxUtilities.h</includes>
+    <includes id="_vx_macros_8h" name="VxMacros.h" local="yes" imported="no">VxMacros.h</includes>
+    <includes id="_vx_collection_8h" name="VxCollection.h" local="yes" imported="no">VxCollection.h</includes>
+    <class kind="struct">VxSdk::IVxNotification</class>
     <namespace>VxSdk</namespace>
   </compound>
   <compound kind="file">
@@ -208,6 +298,26 @@
     <namespace>VxSdk</namespace>
   </compound>
   <compound kind="file">
+    <name>IVxQuickReport.h</name>
+    <path>C:/Users/zachm/Git/vxsdk/VxSdk/Include/</path>
+    <filename>_i_vx_quick_report_8h</filename>
+    <includes id="_vx_primitives_8h" name="VxPrimitives.h" local="yes" imported="no">VxPrimitives.h</includes>
+    <includes id="_vx_utilities_8h" name="VxUtilities.h" local="yes" imported="no">VxUtilities.h</includes>
+    <includes id="_vx_macros_8h" name="VxMacros.h" local="yes" imported="no">VxMacros.h</includes>
+    <class kind="struct">VxSdk::IVxQuickReport</class>
+    <namespace>VxSdk</namespace>
+  </compound>
+  <compound kind="file">
+    <name>IVxResourceLock.h</name>
+    <path>C:/Users/zachm/Git/vxsdk/VxSdk/Include/</path>
+    <filename>_i_vx_resource_lock_8h</filename>
+    <includes id="_vx_primitives_8h" name="VxPrimitives.h" local="yes" imported="no">VxPrimitives.h</includes>
+    <includes id="_vx_utilities_8h" name="VxUtilities.h" local="yes" imported="no">VxUtilities.h</includes>
+    <includes id="_vx_macros_8h" name="VxMacros.h" local="yes" imported="no">VxMacros.h</includes>
+    <class kind="struct">VxSdk::IVxResourceLock</class>
+    <namespace>VxSdk</namespace>
+  </compound>
+  <compound kind="file">
     <name>IVxRole.h</name>
     <path>C:/Users/zachm/Git/vxsdk/VxSdk/Include/</path>
     <filename>_i_vx_role_8h</filename>
@@ -263,6 +373,8 @@
     <includes id="_i_vx_device_8h" name="IVxDevice.h" local="yes" imported="no">IVxDevice.h</includes>
     <includes id="_i_vx_event_8h" name="IVxEvent.h" local="yes" imported="no">IVxEvent.h</includes>
     <includes id="_i_vx_export_8h" name="IVxExport.h" local="yes" imported="no">IVxExport.h</includes>
+    <includes id="_i_vx_license_8h" name="IVxLicense.h" local="yes" imported="no">IVxLicense.h</includes>
+    <includes id="_i_vx_role_8h" name="IVxRole.h" local="yes" imported="no">IVxRole.h</includes>
     <includes id="_i_vx_situation_8h" name="IVxSituation.h" local="yes" imported="no">IVxSituation.h</includes>
     <includes id="_i_vx_tag_8h" name="IVxTag.h" local="yes" imported="no">IVxTag.h</includes>
     <includes id="_vx_collection_8h" name="VxCollection.h" local="yes" imported="no">VxCollection.h</includes>
@@ -272,8 +384,8 @@
     <includes id="_vx_new_export_8h" name="VxNewExport.h" local="yes" imported="no">VxNewExport.h</includes>
     <includes id="_vx_new_situation_8h" name="VxNewSituation.h" local="yes" imported="no">VxNewSituation.h</includes>
     <includes id="_vx_new_tag_8h" name="VxNewTag.h" local="yes" imported="no">VxNewTag.h</includes>
-    <includes id="_i_vx_role_8h" name="IVxRole.h" local="yes" imported="no">IVxRole.h</includes>
     <includes id="_vx_new_user_8h" name="VxNewUser.h" local="yes" imported="no">VxNewUser.h</includes>
+    <includes id="_i_vx_monitor_8h" name="IVxMonitor.h" local="yes" imported="no">IVxMonitor.h</includes>
     <class kind="struct">VxSdk::IVxSystem</class>
     <namespace>VxSdk</namespace>
   </compound>
@@ -400,6 +512,16 @@
     <namespace>VxSdk</namespace>
   </compound>
   <compound kind="file">
+    <name>VxNewDevice.h</name>
+    <path>C:/Users/zachm/Git/vxsdk/VxSdk/Include/</path>
+    <filename>_vx_new_device_8h</filename>
+    <includes id="_vx_primitives_8h" name="VxPrimitives.h" local="yes" imported="no">VxPrimitives.h</includes>
+    <includes id="_vx_utilities_8h" name="VxUtilities.h" local="yes" imported="no">VxUtilities.h</includes>
+    <includes id="_vx_macros_8h" name="VxMacros.h" local="yes" imported="no">VxMacros.h</includes>
+    <class kind="struct">VxSdk::VxNewDevice</class>
+    <namespace>VxSdk</namespace>
+  </compound>
+  <compound kind="file">
     <name>VxNewDeviceAssignment.h</name>
     <path>C:/Users/zachm/Git/vxsdk/VxSdk/Include/</path>
     <filename>_vx_new_device_assignment_8h</filename>
@@ -407,6 +529,16 @@
     <includes id="_vx_utilities_8h" name="VxUtilities.h" local="yes" imported="no">VxUtilities.h</includes>
     <includes id="_vx_macros_8h" name="VxMacros.h" local="yes" imported="no">VxMacros.h</includes>
     <class kind="struct">VxSdk::VxNewDeviceAssignment</class>
+    <namespace>VxSdk</namespace>
+  </compound>
+  <compound kind="file">
+    <name>VxNewDrawing.h</name>
+    <path>C:/Users/zachm/Git/vxsdk/VxSdk/Include/</path>
+    <filename>_vx_new_drawing_8h</filename>
+    <includes id="_vx_primitives_8h" name="VxPrimitives.h" local="yes" imported="no">VxPrimitives.h</includes>
+    <includes id="_vx_utilities_8h" name="VxUtilities.h" local="yes" imported="no">VxUtilities.h</includes>
+    <includes id="_vx_macros_8h" name="VxMacros.h" local="yes" imported="no">VxMacros.h</includes>
+    <class kind="struct">VxSdk::VxNewDrawing</class>
     <namespace>VxSdk</namespace>
   </compound>
   <compound kind="file">
@@ -443,6 +575,36 @@
     <namespace>VxSdk</namespace>
   </compound>
   <compound kind="file">
+    <name>VxNewMarker.h</name>
+    <path>C:/Users/zachm/Git/vxsdk/VxSdk/Include/</path>
+    <filename>_vx_new_marker_8h</filename>
+    <includes id="_vx_primitives_8h" name="VxPrimitives.h" local="yes" imported="no">VxPrimitives.h</includes>
+    <includes id="_vx_utilities_8h" name="VxUtilities.h" local="yes" imported="no">VxUtilities.h</includes>
+    <includes id="_vx_macros_8h" name="VxMacros.h" local="yes" imported="no">VxMacros.h</includes>
+    <class kind="struct">VxSdk::VxNewMarker</class>
+    <namespace>VxSdk</namespace>
+  </compound>
+  <compound kind="file">
+    <name>VxNewMonitor.h</name>
+    <path>C:/Users/zachm/Git/vxsdk/VxSdk/Include/</path>
+    <filename>_vx_new_monitor_8h</filename>
+    <includes id="_vx_primitives_8h" name="VxPrimitives.h" local="yes" imported="no">VxPrimitives.h</includes>
+    <includes id="_vx_utilities_8h" name="VxUtilities.h" local="yes" imported="no">VxUtilities.h</includes>
+    <includes id="_vx_macros_8h" name="VxMacros.h" local="yes" imported="no">VxMacros.h</includes>
+    <class kind="struct">VxSdk::VxNewMonitor</class>
+    <namespace>VxSdk</namespace>
+  </compound>
+  <compound kind="file">
+    <name>VxNewNotification.h</name>
+    <path>C:/Users/zachm/Git/vxsdk/VxSdk/Include/</path>
+    <filename>_vx_new_notification_8h</filename>
+    <includes id="_vx_primitives_8h" name="VxPrimitives.h" local="yes" imported="no">VxPrimitives.h</includes>
+    <includes id="_vx_utilities_8h" name="VxUtilities.h" local="yes" imported="no">VxUtilities.h</includes>
+    <includes id="_vx_macros_8h" name="VxMacros.h" local="yes" imported="no">VxMacros.h</includes>
+    <class kind="struct">VxSdk::VxNewNotification</class>
+    <namespace>VxSdk</namespace>
+  </compound>
+  <compound kind="file">
     <name>VxNewPrivilege.h</name>
     <path>C:/Users/zachm/Git/vxsdk/VxSdk/Include/</path>
     <filename>_vx_new_privilege_8h</filename>
@@ -450,6 +612,16 @@
     <includes id="_vx_utilities_8h" name="VxUtilities.h" local="yes" imported="no">VxUtilities.h</includes>
     <includes id="_vx_macros_8h" name="VxMacros.h" local="yes" imported="no">VxMacros.h</includes>
     <class kind="struct">VxSdk::VxNewPrivilege</class>
+    <namespace>VxSdk</namespace>
+  </compound>
+  <compound kind="file">
+    <name>VxNewQuickReport.h</name>
+    <path>C:/Users/zachm/Git/vxsdk/VxSdk/Include/</path>
+    <filename>_vx_new_quick_report_8h</filename>
+    <includes id="_vx_primitives_8h" name="VxPrimitives.h" local="yes" imported="no">VxPrimitives.h</includes>
+    <includes id="_vx_utilities_8h" name="VxUtilities.h" local="yes" imported="no">VxUtilities.h</includes>
+    <includes id="_vx_macros_8h" name="VxMacros.h" local="yes" imported="no">VxMacros.h</includes>
+    <class kind="struct">VxSdk::VxNewQuickReport</class>
     <namespace>VxSdk</namespace>
   </compound>
   <compound kind="file">
@@ -507,7 +679,9 @@
     <path>C:/Users/zachm/Git/vxsdk/VxSdk/Include/</path>
     <filename>_vx_primitives_8h</filename>
     <class kind="struct">VxSdk::VxAckState</class>
+    <class kind="struct">VxSdk::VxCellLayout</class>
     <class kind="struct">VxSdk::VxCollectionFilterItem</class>
+    <class kind="struct">VxSdk::VxConfigStatus</class>
     <class kind="struct">VxSdk::VxDataSourceType</class>
     <class kind="struct">VxSdk::VxDataStorageType</class>
     <class kind="struct">VxSdk::VxDeviceState</class>
@@ -516,10 +690,13 @@
     <class kind="struct">VxSdk::VxExportStatus</class>
     <class kind="struct">VxSdk::VxFocusDirection</class>
     <class kind="struct">VxSdk::VxIrisDirection</class>
+    <class kind="struct">VxSdk::VxLogLevel</class>
+    <class kind="struct">VxSdk::VxReportCreationStatus</class>
     <class kind="struct">VxSdk::VxPermissionId</class>
     <class kind="struct">VxSdk::VxRecordingFramerate</class>
     <class kind="struct">VxSdk::VxRecordingType</class>
     <class kind="struct">VxSdk::VxRecurrenceType</class>
+    <class kind="struct">VxSdk::VxReportContent</class>
     <class kind="struct">VxSdk::VxResourceType</class>
     <class kind="struct">VxSdk::VxResult</class>
     <class kind="struct">VxSdk::VxRetentionPriority</class>
@@ -527,6 +704,7 @@
     <class kind="struct">VxSdk::VxSituationType</class>
     <class kind="struct">VxSdk::VxSnapshotFilterItem</class>
     <class kind="struct">VxSdk::VxStreamProtocol</class>
+    <class kind="struct">VxSdk::VxSystemLicenseType</class>
     <class kind="struct">VxSdk::VxZoomDirection</class>
     <namespace>VxSdk</namespace>
   </compound>
@@ -537,17 +715,22 @@
     <includes id="_vx_macros_8h" name="VxMacros.h" local="yes" imported="no">VxMacros.h</includes>
     <includes id="_vx_primitives_8h" name="VxPrimitives.h" local="yes" imported="no">VxPrimitives.h</includes>
     <includes id="_vx_utilities_8h" name="VxUtilities.h" local="yes" imported="no">VxUtilities.h</includes>
-    <includes id="_vx_auth_info_8h" name="VxAuthInfo.h" local="yes" imported="no">VxAuthInfo.h</includes>
     <includes id="_vx_collection_8h" name="VxCollection.h" local="yes" imported="no">VxCollection.h</includes>
     <includes id="_vx_collection_filter_8h" name="VxCollectionFilter.h" local="yes" imported="no">VxCollectionFilter.h</includes>
     <includes id="_vx_kv_object_8h" name="VxKvObject.h" local="yes" imported="no">VxKvObject.h</includes>
     <includes id="_vx_login_info_8h" name="VxLoginInfo.h" local="yes" imported="no">VxLoginInfo.h</includes>
     <includes id="_vx_new_bookmark_8h" name="VxNewBookmark.h" local="yes" imported="no">VxNewBookmark.h</includes>
+    <includes id="_vx_new_device_8h" name="VxNewDevice.h" local="yes" imported="no">VxNewDevice.h</includes>
     <includes id="_vx_new_data_object_8h" name="VxNewDataObject.h" local="yes" imported="no">VxNewDataObject.h</includes>
+    <includes id="_vx_new_drawing_8h" name="VxNewDrawing.h" local="yes" imported="no">VxNewDrawing.h</includes>
     <includes id="_vx_new_device_assignment_8h" name="VxNewDeviceAssignment.h" local="yes" imported="no">VxNewDeviceAssignment.h</includes>
     <includes id="_vx_new_event_8h" name="VxNewEvent.h" local="yes" imported="no">VxNewEvent.h</includes>
     <includes id="_vx_new_export_8h" name="VxNewExport.h" local="yes" imported="no">VxNewExport.h</includes>
     <includes id="_vx_new_export_clip_8h" name="VxNewExportClip.h" local="yes" imported="no">VxNewExportClip.h</includes>
+    <includes id="_vx_new_marker_8h" name="VxNewMarker.h" local="yes" imported="no">VxNewMarker.h</includes>
+    <includes id="_vx_new_monitor_8h" name="VxNewMonitor.h" local="yes" imported="no">VxNewMonitor.h</includes>
+    <includes id="_vx_new_notification_8h" name="VxNewNotification.h" local="yes" imported="no">VxNewNotification.h</includes>
+    <includes id="_vx_new_quick_report_8h" name="VxNewQuickReport.h" local="yes" imported="no">VxNewQuickReport.h</includes>
     <includes id="_vx_new_privilege_8h" name="VxNewPrivilege.h" local="yes" imported="no">VxNewPrivilege.h</includes>
     <includes id="_vx_new_schedule_8h" name="VxNewSchedule.h" local="yes" imported="no">VxNewSchedule.h</includes>
     <includes id="_vx_new_schedule_trigger_8h" name="VxNewScheduleTrigger.h" local="yes" imported="no">VxNewScheduleTrigger.h</includes>
@@ -564,14 +747,23 @@
     <includes id="_i_vx_data_storage_8h" name="IVxDataStorage.h" local="yes" imported="no">IVxDataStorage.h</includes>
     <includes id="_i_vx_device_8h" name="IVxDevice.h" local="yes" imported="no">IVxDevice.h</includes>
     <includes id="_i_vx_device_assignment_8h" name="IVxDeviceAssignment.h" local="yes" imported="no">IVxDeviceAssignment.h</includes>
+    <includes id="_i_vx_drawing_8h" name="IVxDrawing.h" local="yes" imported="no">IVxDrawing.h</includes>
     <includes id="_i_vx_driver_8h" name="IVxDriver.h" local="yes" imported="no">IVxDriver.h</includes>
     <includes id="_i_vx_event_8h" name="IVxEvent.h" local="yes" imported="no">IVxEvent.h</includes>
     <includes id="_i_vx_export_8h" name="IVxExport.h" local="yes" imported="no">IVxExport.h</includes>
     <includes id="_i_vx_export_clip_8h" name="IVxExportClip.h" local="yes" imported="no">IVxExportClip.h</includes>
+    <includes id="_i_vx_license_8h" name="IVxLicense.h" local="yes" imported="no">IVxLicense.h</includes>
+    <includes id="_i_vx_license_feature_8h" name="IVxLicenseFeature.h" local="yes" imported="no">IVxLicenseFeature.h</includes>
+    <includes id="_i_vx_marker_8h" name="IVxMarker.h" local="yes" imported="no">IVxMarker.h</includes>
+    <includes id="_i_vx_monitor_8h" name="IVxMonitor.h" local="yes" imported="no">IVxMonitor.h</includes>
+    <includes id="_i_vx_monitor_cell_8h" name="IVxMonitorCell.h" local="yes" imported="no">IVxMonitorCell.h</includes>
+    <includes id="_i_vx_notification_8h" name="IVxNotification.h" local="yes" imported="no">IVxNotification.h</includes>
+    <includes id="_i_vx_quick_report_8h" name="IVxQuickReport.h" local="yes" imported="no">IVxQuickReport.h</includes>
     <includes id="_i_vx_pattern_8h" name="IVxPattern.h" local="yes" imported="no">IVxPattern.h</includes>
     <includes id="_i_vx_preset_8h" name="IVxPreset.h" local="yes" imported="no">IVxPreset.h</includes>
     <includes id="_i_vx_ptz_controller_8h" name="IVxPtzController.h" local="yes" imported="no">IVxPtzController.h</includes>
     <includes id="_i_vx_ptz_lock_8h" name="IVxPtzLock.h" local="yes" imported="no">IVxPtzLock.h</includes>
+    <includes id="_i_vx_resource_lock_8h" name="IVxResourceLock.h" local="yes" imported="no">IVxResourceLock.h</includes>
     <includes id="_i_vx_role_8h" name="IVxRole.h" local="yes" imported="no">IVxRole.h</includes>
     <includes id="_i_vx_schedule_8h" name="IVxSchedule.h" local="yes" imported="no">IVxSchedule.h</includes>
     <includes id="_i_vx_schedule_trigger_8h" name="IVxScheduleTrigger.h" local="yes" imported="no">IVxScheduleTrigger.h</includes>
@@ -596,17 +788,24 @@
     </member>
     <member kind="function">
       <type>EXTERN_C VXAPI VxResult::Value</type>
-      <name>VxSetAuthToken</name>
-      <anchorfile>namespace_vx_sdk.html</anchorfile>
-      <anchor>a89c2f5129c4710a2741f8182808edf25</anchor>
-      <arglist>(const VxAuthInfo &amp;authInfo, IVxSystem *&amp;system)</arglist>
-    </member>
-    <member kind="function">
-      <type>EXTERN_C VXAPI VxResult::Value</type>
       <name>IsSupportedSystem</name>
       <anchorfile>namespace_vx_sdk.html</anchorfile>
       <anchor>a289bd1fbcc394cf5e8aa60ca0534034f</anchor>
       <arglist>(const char *ipAddress, int port, bool &amp;isSupported)</arglist>
+    </member>
+    <member kind="function">
+      <type>EXTERN_C VXAPI VxResult::Value</type>
+      <name>VxSetLogLevel</name>
+      <anchorfile>namespace_vx_sdk.html</anchorfile>
+      <anchor>af7173ae984c07547738fa093e0a7ba18</anchor>
+      <arglist>(VxLogLevel::Value logLevel)</arglist>
+    </member>
+    <member kind="function">
+      <type>EXTERN_C VXAPI VxResult::Value</type>
+      <name>VxSetLogPath</name>
+      <anchorfile>namespace_vx_sdk.html</anchorfile>
+      <anchor>aa74053f36b1c9fd465980a4bf8bbfb29</anchor>
+      <arglist>(const char *logPath)</arglist>
     </member>
   </compound>
   <compound kind="file">
@@ -641,6 +840,87 @@
     </member>
   </compound>
   <compound kind="struct">
+    <name>VxSdk::IVxConfiguration::Cluster</name>
+    <filename>struct_vx_sdk_1_1_i_vx_configuration_1_1_cluster.html</filename>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>Delete</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_configuration_1_1_cluster.html</anchorfile>
+      <anchor>a4f7126ba845624bfe807a02c70788d77</anchor>
+      <arglist>() const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>GetNodeConfigurations</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_configuration_1_1_cluster.html</anchorfile>
+      <anchor>ac2796b8fc609b301ad9f7f3c4db6ee54</anchor>
+      <arglist>(VxCollection&lt; IVxConfiguration::Node ** &gt; &amp;nodeCollection) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>GetTimeConfig</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_configuration_1_1_cluster.html</anchorfile>
+      <anchor>ae927d8b05e1c7fdbec56e97026125ee5</anchor>
+      <arglist>(IVxConfiguration::Time *&amp;timeConfig) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>Refresh</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_configuration_1_1_cluster.html</anchorfile>
+      <anchor>a37649982471589d2427c640b6cd37e47</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>coreVirtualIp</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_configuration_1_1_cluster.html</anchorfile>
+      <anchor>a35b60e8dc10553c98b84e29287e6f082</anchor>
+      <arglist>[64]</arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>mediaGatewayTranscast</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_configuration_1_1_cluster.html</anchorfile>
+      <anchor>af313df2d94249ddbf7e7a4f917b91b24</anchor>
+      <arglist>[64]</arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>mediaGatewayVirtualIp</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_configuration_1_1_cluster.html</anchorfile>
+      <anchor>a4758fc01d477b8994ea60460574f95c0</anchor>
+      <arglist>[64]</arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>statusDescription</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_configuration_1_1_cluster.html</anchorfile>
+      <anchor>a902d79843fa35133c4dfc99093ac510c</anchor>
+      <arglist>[256]</arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>statusCode</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_configuration_1_1_cluster.html</anchorfile>
+      <anchor>a650660fd680771eb03e5a19f017e5682</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>VxConfigStatus::Value</type>
+      <name>status</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_configuration_1_1_cluster.html</anchorfile>
+      <anchor>a52e80cb1573f3c2cc233d333c28a477c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>Clear</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_configuration_1_1_cluster.html</anchorfile>
+      <anchor>aa5f8efca0071c0fcf1f21aa0e3ded2d8</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
     <name>VxSdk::IVxBookmark</name>
     <filename>struct_vx_sdk_1_1_i_vx_bookmark.html</filename>
     <member kind="function" virtualness="pure">
@@ -664,12 +944,26 @@
       <anchor>a0312d2da502885bff6436d22bf74bc6a</anchor>
       <arglist>(IVxDataSource *&amp;dataSource) const  =0</arglist>
     </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>Refresh</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_bookmark.html</anchorfile>
+      <anchor>a5adb085904002c38380dd1bd07ed8530</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetDescription</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_bookmark.html</anchorfile>
+      <anchor>afee7166dc9daeb225fdce93edc0646f2</anchor>
+      <arglist>(char *description)=0</arglist>
+    </member>
     <member kind="variable">
       <type>char</type>
       <name>description</name>
       <anchorfile>struct_vx_sdk_1_1_i_vx_bookmark.html</anchorfile>
-      <anchor>a572dff812869b9bcf47b65b086b0f65e</anchor>
-      <arglist>[64]</arglist>
+      <anchor>a17c27d69436c22e39fad510bdc7a0da4</anchor>
+      <arglist>[256]</arglist>
     </member>
     <member kind="variable">
       <type>char</type>
@@ -775,6 +1069,14 @@
     </member>
   </compound>
   <compound kind="struct">
+    <name>VxSdk::IVxConfiguration</name>
+    <filename>struct_vx_sdk_1_1_i_vx_configuration.html</filename>
+    <class kind="struct">VxSdk::IVxConfiguration::Cluster</class>
+    <class kind="struct">VxSdk::IVxConfiguration::Node</class>
+    <class kind="struct">VxSdk::IVxConfiguration::Storage</class>
+    <class kind="struct">VxSdk::IVxConfiguration::Time</class>
+  </compound>
+  <compound kind="struct">
     <name>VxSdk::IVxDataInterface</name>
     <filename>struct_vx_sdk_1_1_i_vx_data_interface.html</filename>
     <member kind="variable">
@@ -844,6 +1146,27 @@
       <anchor>a99ae417e004ceb403fb5cd2203a05de9</anchor>
       <arglist>(char *data, int &amp;size) const  =0</arglist>
     </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>GetOwner</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_data_object.html</anchorfile>
+      <anchor>abf1f3fb72e30543cd21536b628d7f7e3</anchor>
+      <arglist>(IVxUser *&amp;user) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>Refresh</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_data_object.html</anchorfile>
+      <anchor>a786b63a714605e0c3905708ad99cc13e</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetData</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_data_object.html</anchorfile>
+      <anchor>a6365dad56033012f859f6431456fdc36</anchor>
+      <arglist>(char *data)=0</arglist>
+    </member>
     <member kind="variable">
       <type>char</type>
       <name>clientType</name>
@@ -892,6 +1215,27 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual VxResult::Value</type>
+      <name>GetAuthToken</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_data_session.html</anchorfile>
+      <anchor>abf320c1eeae75e4690a684efe42ed1cb</anchor>
+      <arglist>(char *token, int &amp;size) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>GetDataSource</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_data_session.html</anchorfile>
+      <anchor>a19a2ae85f860bb3e96ffe16387d17875</anchor>
+      <arglist>(IVxDataSource *&amp;dataSource) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>GetUser</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_data_session.html</anchorfile>
+      <anchor>afc4c8e96e2fbaf9452f4d94783496b86</anchor>
+      <arglist>(IVxUser *&amp;user) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
       <name>GoLive</name>
       <anchorfile>struct_vx_sdk_1_1_i_vx_data_session.html</anchorfile>
       <anchor>ad5a98d1eca8ddff086d7bdacc82f94f2</anchor>
@@ -915,15 +1259,29 @@
       <type>virtual VxResult::Value</type>
       <name>Seek</name>
       <anchorfile>struct_vx_sdk_1_1_i_vx_data_session.html</anchorfile>
-      <anchor>a14210f037270ec9fde0b52be62067462</anchor>
-      <arglist>(long long unixTime, int speed)=0</arglist>
+      <anchor>a7f14e30c90c60f2bdf070154e1144fc4</anchor>
+      <arglist>(long long unixTime, float speed)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual VxResult::Value</type>
       <name>SetSpeed</name>
       <anchorfile>struct_vx_sdk_1_1_i_vx_data_session.html</anchorfile>
-      <anchor>a1a09846d8ac14e9b3ed542c1391d279b</anchor>
-      <arglist>(int speed)=0</arglist>
+      <anchor>a95a2ea1bc5cbc6ab2455dbd86493421c</anchor>
+      <arglist>(float speed)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetQuality</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_data_session.html</anchorfile>
+      <anchor>ad0a250830a7ad0f74f7cc2f9b9512068</anchor>
+      <arglist>(unsigned short quality)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetResolution</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_data_session.html</anchorfile>
+      <anchor>a474a3a0c2b98b2a8c045c7db8b2cc76a</anchor>
+      <arglist>(unsigned short xResolution, unsigned short yResolution)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual VxResult::Value</type>
@@ -945,13 +1303,6 @@
       <anchorfile>struct_vx_sdk_1_1_i_vx_data_session.html</anchorfile>
       <anchor>afc0ca130e7b329318da4d754ce11c152</anchor>
       <arglist>[512]</arglist>
-    </member>
-    <member kind="variable">
-      <type>char</type>
-      <name>time</name>
-      <anchorfile>struct_vx_sdk_1_1_i_vx_data_session.html</anchorfile>
-      <anchor>a68db051909953967a7929de4dad8c9c3</anchor>
-      <arglist>[64]</arglist>
     </member>
     <member kind="variable">
       <type>float</type>
@@ -1022,6 +1373,13 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual VxResult::Value</type>
+      <name>GetDataStorages</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_data_source.html</anchorfile>
+      <anchor>a4957391f6294271616530197898c0ebb</anchor>
+      <arglist>(VxCollection&lt; IVxDataStorage ** &gt; &amp;dataStorageCollection) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
       <name>GetHostDevice</name>
       <anchorfile>struct_vx_sdk_1_1_i_vx_data_source.html</anchorfile>
       <anchor>a7c010b409195cac0ad7af5a493e4fed3</anchor>
@@ -1040,6 +1398,27 @@
       <anchorfile>struct_vx_sdk_1_1_i_vx_data_source.html</anchorfile>
       <anchor>ab882c8b3a1f206e8ee4f86a3b398c7a3</anchor>
       <arglist>(char *endpoint, int &amp;size) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>Refresh</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_data_source.html</anchorfile>
+      <anchor>a242914e19362d49175de15ddcb78c261</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetName</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_data_source.html</anchorfile>
+      <anchor>ae97a86859c508ceb9fdc0302d1846aee</anchor>
+      <arglist>(char name[64])=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetNumber</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_data_source.html</anchorfile>
+      <anchor>a435cc983f445071cd4e499d7ae6b185a</anchor>
+      <arglist>(int number)=0</arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
@@ -1187,6 +1566,27 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual VxResult::Value</type>
+      <name>GetStorageConfiguration</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_data_storage.html</anchorfile>
+      <anchor>a0291e3ed41f4fd49854b68b80f19095e</anchor>
+      <arglist>(IVxConfiguration::Storage *&amp;storageConfig) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>Refresh</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_data_storage.html</anchorfile>
+      <anchor>a5d694992518354b1e996bac1c6652bd4</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetName</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_data_storage.html</anchorfile>
+      <anchor>ad636fe9912ec303d2f8ab2faa1a2f744</anchor>
+      <arglist>(char name[64])=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
       <name>UnassignDevice</name>
       <anchorfile>struct_vx_sdk_1_1_i_vx_data_storage.html</anchorfile>
       <anchor>ae3c297acc77597225a5eba47685b7cfb</anchor>
@@ -1233,10 +1633,59 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual VxResult::Value</type>
+      <name>DeleteDevice</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_device.html</anchorfile>
+      <anchor>aab3054511518f668b7bcc519f4e383a2</anchor>
+      <arglist>() const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
       <name>GetDataSources</name>
       <anchorfile>struct_vx_sdk_1_1_i_vx_device.html</anchorfile>
       <anchor>a5d6894113b9aa50991bdcf8fd0063275</anchor>
       <arglist>(VxCollection&lt; IVxDataSource ** &gt; &amp;dataSourceCollection) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>GetDeviceAssignments</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_device.html</anchorfile>
+      <anchor>a4932e62abad1d903910c8aeeda6e116b</anchor>
+      <arglist>(VxCollection&lt; IVxDeviceAssignment ** &gt; &amp;deviceAssignmentCollection) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>Refresh</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_device.html</anchorfile>
+      <anchor>a5dc71be807d49c4b4467045ef27f08b3</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetName</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_device.html</anchorfile>
+      <anchor>a386db8ddc869c7d319d2f3a478b00ede</anchor>
+      <arglist>(char name[64])=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetPassword</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_device.html</anchorfile>
+      <anchor>a18d4c78e4ab5ffe142f662b28a9be93c</anchor>
+      <arglist>(char password[64])=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetUsername</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_device.html</anchorfile>
+      <anchor>ac38b1234aa4cbd4b96163338d4063906</anchor>
+      <arglist>(char username[64])=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>GetMonitors</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_device.html</anchorfile>
+      <anchor>ac225385618498b6ffa208b565d193f6b</anchor>
+      <arglist>(VxCollection&lt; IVxMonitor ** &gt; &amp;monitorCollection) const  =0</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -1292,13 +1741,6 @@
       <name>name</name>
       <anchorfile>struct_vx_sdk_1_1_i_vx_device.html</anchorfile>
       <anchor>a59767acd0373003b506401c92fe2f75d</anchor>
-      <arglist>[64]</arglist>
-    </member>
-    <member kind="variable">
-      <type>char</type>
-      <name>password</name>
-      <anchorfile>struct_vx_sdk_1_1_i_vx_device.html</anchorfile>
-      <anchor>ab322c229190704d066ca77975870fa2d</anchor>
       <arglist>[64]</arglist>
     </member>
     <member kind="variable">
@@ -1389,6 +1831,20 @@
       <anchor>aa5f76a4a86c8fbe397c83dd1d9dc185e</anchor>
       <arglist>(IVxDriver *&amp;driver) const  =0</arglist>
     </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetDataSources</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_device_assignment.html</anchorfile>
+      <anchor>a8422a7cae5e1967c4ac4d4f2117e38d0</anchor>
+      <arglist>(char **dataSourceIds, int dataSourceIdSize)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetDriverType</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_device_assignment.html</anchorfile>
+      <anchor>a7362b76f541ac0b8eeb91e0204ae35f5</anchor>
+      <arglist>(char driverType[64])=0</arglist>
+    </member>
     <member kind="variable">
       <type>char</type>
       <name>driverType</name>
@@ -1401,6 +1857,108 @@
       <name>Clear</name>
       <anchorfile>struct_vx_sdk_1_1_i_vx_device_assignment.html</anchorfile>
       <anchor>a5424cce00dfbfbc8b232038c047a468f</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>VxSdk::IVxDrawing</name>
+    <filename>struct_vx_sdk_1_1_i_vx_drawing.html</filename>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>AddMarker</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_drawing.html</anchorfile>
+      <anchor>aa525c5c866339bf58ffbc3a106364d1d</anchor>
+      <arglist>(VxNewMarker &amp;newMarker) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>Delete</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_drawing.html</anchorfile>
+      <anchor>af79436c5c0fff197dbe8d03e71ab1193</anchor>
+      <arglist>() const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>DeleteDrawing</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_drawing.html</anchorfile>
+      <anchor>a67574138e7348e9456bd8f830dca5b18</anchor>
+      <arglist>() const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>DeleteImage</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_drawing.html</anchorfile>
+      <anchor>a85f58616a7fcd46ca7f25230a0f865a6</anchor>
+      <arglist>() const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>GetImage</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_drawing.html</anchorfile>
+      <anchor>a66e0a17fd6cdbd93ee919d4ebf4f583c</anchor>
+      <arglist>(char *endpoint, int &amp;size) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>GetMarkers</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_drawing.html</anchorfile>
+      <anchor>a6cf03c0414c83ca438a4babe8a0aedd3</anchor>
+      <arglist>(VxCollection&lt; IVxMarker ** &gt; &amp;markerCollection) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>GetLock</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_drawing.html</anchorfile>
+      <anchor>a578c9807ff79d22ee37f64fa8fa9e69a</anchor>
+      <arglist>(IVxResourceLock *&amp;resourceLock) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>Refresh</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_drawing.html</anchorfile>
+      <anchor>a15a575ce4537d5f4e8f4b67466b049d7</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetImage</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_drawing.html</anchorfile>
+      <anchor>a9b66a786332f1505ab0553aae605c584</anchor>
+      <arglist>(char *imagePath) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetLock</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_drawing.html</anchorfile>
+      <anchor>ac1e6d0002d0e0018a0a11d060456328d</anchor>
+      <arglist>() const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetName</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_drawing.html</anchorfile>
+      <anchor>a805070aba9b0cccdcbad9b434e8cc42c</anchor>
+      <arglist>(char name[64])=0</arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>id</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_drawing.html</anchorfile>
+      <anchor>a53c7476077ad26bfc6a436d5c6a619d6</anchor>
+      <arglist>[64]</arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>name</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_drawing.html</anchorfile>
+      <anchor>a8c1319c96c0d3d94a02a71afada22400</anchor>
+      <arglist>[64]</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>Clear</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_drawing.html</anchorfile>
+      <anchor>a2d7c1b8502e7f84d5d0d184d52435507</anchor>
       <arglist>()</arglist>
     </member>
   </compound>
@@ -1420,6 +1978,13 @@
       <anchorfile>struct_vx_sdk_1_1_i_vx_driver.html</anchorfile>
       <anchor>a3bb2df1bf0b56034d2a0c0869f6b452f</anchor>
       <arglist>(IVxDataStorage *&amp;dataStorage) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>Refresh</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_driver.html</anchorfile>
+      <anchor>ae9fa54d319da652ab28d92663a9722e8</anchor>
+      <arglist>()=0</arglist>
     </member>
     <member kind="variable">
       <type>char</type>
@@ -1476,10 +2041,59 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual VxResult::Value</type>
+      <name>GetGeneratorDevice</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_event.html</anchorfile>
+      <anchor>ad68a4a2ee28582874d56822a17519abc</anchor>
+      <arglist>(IVxDevice *&amp;device) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>GetSituation</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_event.html</anchorfile>
+      <anchor>abcd4686d1e2733ae474b3b28c919b1ac</anchor>
+      <arglist>(IVxSituation *&amp;situation) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>GetSourceDevice</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_event.html</anchorfile>
+      <anchor>a25d84cbb12b9e2dc895db8d844927d96</anchor>
+      <arglist>(IVxDevice *&amp;device) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>GetUser</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_event.html</anchorfile>
+      <anchor>a028ba0d7305e69341a7d1c270689eff6</anchor>
+      <arglist>(IVxUser *&amp;user) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>Refresh</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_event.html</anchorfile>
+      <anchor>a41c73754094a134c110f543fd93226d3</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
       <name>Silence</name>
       <anchorfile>struct_vx_sdk_1_1_i_vx_event.html</anchorfile>
       <anchor>a3be8c9064c4ed0e8d169665493521aa9</anchor>
       <arglist>(int wakeup) const  =0</arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>ackTime</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_event.html</anchorfile>
+      <anchor>ab593b4bd7c55a1327b45fa5148e3af20</anchor>
+      <arglist>[256]</arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>ackUser</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_event.html</anchorfile>
+      <anchor>a796364946249371ebc0bdbc12a9f62cb</anchor>
+      <arglist>[256]</arglist>
     </member>
     <member kind="variable">
       <type>char</type>
@@ -1575,6 +2189,20 @@
       <anchorfile>struct_vx_sdk_1_1_i_vx_export.html</anchorfile>
       <anchor>ab37423770bd8d3caac762d97878ee982</anchor>
       <arglist>() const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>GetOwner</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_export.html</anchorfile>
+      <anchor>affab5824cbdd61e441eb20577c743e8c</anchor>
+      <arglist>(IVxUser *&amp;user) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>Refresh</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_export.html</anchorfile>
+      <anchor>af224af9670ea6b8cd81ec83f04f22c48</anchor>
+      <arglist>()=0</arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
@@ -1718,6 +2346,527 @@
       <name>Clear</name>
       <anchorfile>struct_vx_sdk_1_1_i_vx_export_clip.html</anchorfile>
       <anchor>a08f25697452ecf7074516986fc4a3e9e</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>VxSdk::IVxLicense</name>
+    <filename>struct_vx_sdk_1_1_i_vx_license.html</filename>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>CommissionDevice</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_license.html</anchorfile>
+      <anchor>a2f0bb809cdd50ecd9917a8d4edc4d54b</anchor>
+      <arglist>(IVxDevice &amp;device) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>DecommissionDevice</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_license.html</anchorfile>
+      <anchor>a86bbbcaf3c355ec0c45cbc711fc6260a</anchor>
+      <arglist>(IVxDevice &amp;device) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>Delete</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_license.html</anchorfile>
+      <anchor>a6423d3f38a38ee3b00683fefa3f9bd3a</anchor>
+      <arglist>() const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>GetLicenseFeatures</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_license.html</anchorfile>
+      <anchor>a36e72a6fc9b642381d1d24be6b80573c</anchor>
+      <arglist>(VxCollection&lt; IVxLicenseFeature ** &gt; &amp;licenseFeatureCollection) const  =0</arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>companyName</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_license.html</anchorfile>
+      <anchor>a8ee70429b2899c4b0312e42a237afa6e</anchor>
+      <arglist>[64]</arglist>
+    </member>
+    <member kind="variable">
+      <type>VxSystemLicenseType::Value</type>
+      <name>systemLicenseType</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_license.html</anchorfile>
+      <anchor>ac511e7aca5c5a9a7997dd652c486e9ff</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>Clear</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_license.html</anchorfile>
+      <anchor>ac2ae2b849e1b31fb9ecd955b4ebdbf9d</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>VxSdk::IVxLicenseFeature</name>
+    <filename>struct_vx_sdk_1_1_i_vx_license_feature.html</filename>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>Delete</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_license_feature.html</anchorfile>
+      <anchor>a9f4c4ae78385e57bfff65a20d0e9eb5c</anchor>
+      <arglist>() const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>GetCommissionedDevices</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_license_feature.html</anchorfile>
+      <anchor>af273409fcf7100b88f27dc382ad57034</anchor>
+      <arglist>(VxCollection&lt; IVxDevice ** &gt; &amp;deviceCollection) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>Refresh</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_license_feature.html</anchorfile>
+      <anchor>a04258ede513ddb090591a7bcfd8929e5</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="variable">
+      <type>bool</type>
+      <name>isPending</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_license_feature.html</anchorfile>
+      <anchor>a6655c9324c4d82240d094cfc13198c10</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>activationId</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_license_feature.html</anchorfile>
+      <anchor>a6b4af951f1fbf9680ee502ce16b1bc1f</anchor>
+      <arglist>[64]</arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>expiration</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_license_feature.html</anchorfile>
+      <anchor>a2c19b1c2c60ad25479d57da9f073ef18</anchor>
+      <arglist>[64]</arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>id</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_license_feature.html</anchorfile>
+      <anchor>a3ef0686121e6caa79d0c2cfebefb892d</anchor>
+      <arglist>[64]</arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>installation</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_license_feature.html</anchorfile>
+      <anchor>aef97b7a74b04e436558c1a38d139d34f</anchor>
+      <arglist>[64]</arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>name</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_license_feature.html</anchorfile>
+      <anchor>a8e86eafb22acd7cb503e74d05eb5d870</anchor>
+      <arglist>[64]</arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>version</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_license_feature.html</anchorfile>
+      <anchor>ac8c4b95b89729eb449adfbc449d7ed08</anchor>
+      <arglist>[64]</arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>count</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_license_feature.html</anchorfile>
+      <anchor>a741481cf402cf3209114a9bdd3c61d47</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>used</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_license_feature.html</anchorfile>
+      <anchor>aa3b32654a27c49f5faba23d336497763</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>Clear</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_license_feature.html</anchorfile>
+      <anchor>a32427af17eb0ac84c3e9f185ce4902ac</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>VxSdk::IVxMarker</name>
+    <filename>struct_vx_sdk_1_1_i_vx_marker.html</filename>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>Delete</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_marker.html</anchorfile>
+      <anchor>a04c5b7ea4f6fb9d70b8d1078ba644bb1</anchor>
+      <arglist>() const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>DeleteAssociation</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_marker.html</anchorfile>
+      <anchor>a3034b8b44bcd1939c5f12f213eccbb29</anchor>
+      <arglist>() const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>DeleteMarker</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_marker.html</anchorfile>
+      <anchor>a84a7e4644033f78398a527658eccd616</anchor>
+      <arglist>() const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>GetAssociation</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_marker.html</anchorfile>
+      <anchor>a6fe6655d758213e143c396023a1bd437</anchor>
+      <arglist>(IVxDataSource *&amp;dataSource) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>GetDrawing</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_marker.html</anchorfile>
+      <anchor>a97df9a7b3d5841ba378937c93e15f6c9</anchor>
+      <arglist>(IVxDrawing *&amp;drawing) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>Refresh</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_marker.html</anchorfile>
+      <anchor>a1cbd6d89198e3cb28921503a35cb35f9</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetAssociation</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_marker.html</anchorfile>
+      <anchor>aeb06e961fda8f6d60842018744e85f56</anchor>
+      <arglist>(IVxDataSource &amp;dataSource)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetDirection</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_marker.html</anchorfile>
+      <anchor>a9ab90b9e93675c0e3ba99cd8e9117869</anchor>
+      <arglist>(float direction)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetName</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_marker.html</anchorfile>
+      <anchor>a76cf7d20b5660de0dd309d3b76cb908e</anchor>
+      <arglist>(char name[64])=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetCoordinates</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_marker.html</anchorfile>
+      <anchor>a181d16d87ff0906fdaa63826e0a71bcc</anchor>
+      <arglist>(float x, float y)=0</arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>id</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_marker.html</anchorfile>
+      <anchor>a046b3482f71fe33e7a12d5e2a781beac</anchor>
+      <arglist>[64]</arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>name</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_marker.html</anchorfile>
+      <anchor>a24c9a7e7ae602dffd3f65d1b8ee36738</anchor>
+      <arglist>[64]</arglist>
+    </member>
+    <member kind="variable">
+      <type>float</type>
+      <name>direction</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_marker.html</anchorfile>
+      <anchor>a5ee1b44cc04b47e43a8abffc8cbb310c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>float</type>
+      <name>x</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_marker.html</anchorfile>
+      <anchor>a4442432d6708529a0fc039fb6a47ba58</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>float</type>
+      <name>y</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_marker.html</anchorfile>
+      <anchor>a83a1555ac4b0e8f2f0c6e34e8335bb54</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>Clear</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_marker.html</anchorfile>
+      <anchor>a07510cb97d0b1ceebe81d354d8eb3a71</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>VxSdk::IVxMonitor</name>
+    <filename>struct_vx_sdk_1_1_i_vx_monitor.html</filename>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>Delete</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_monitor.html</anchorfile>
+      <anchor>a9abfdcb51d418b65ce6bcec6cadb19fc</anchor>
+      <arglist>() const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>GetAvailableLayouts</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_monitor.html</anchorfile>
+      <anchor>a8ac5ddd4c1f612097e54fbdff29f2d01</anchor>
+      <arglist>(VxCollection&lt; VxCellLayout::Value * &gt; &amp;layoutCollection) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>GetHostDevice</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_monitor.html</anchorfile>
+      <anchor>a73bd724115893e25f9a4814c3b84bc1b</anchor>
+      <arglist>(IVxDevice *&amp;hostDevice) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>GetMonitorCells</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_monitor.html</anchorfile>
+      <anchor>a86c888d85d6dafd2b552dcf66128272d</anchor>
+      <arglist>(VxCollection&lt; IVxMonitorCell ** &gt; &amp;cellCollection)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>Refresh</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_monitor.html</anchorfile>
+      <anchor>a5ffaa43b6a211aaa6abafbdfbcaaf936</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>RemoveMonitor</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_monitor.html</anchorfile>
+      <anchor>a6334c43a161eef91d7a8e44a6d0a76f5</anchor>
+      <arglist>() const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetLayout</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_monitor.html</anchorfile>
+      <anchor>ad35906b06cba2f1b534c0f665d636aac</anchor>
+      <arglist>(VxCellLayout::Value layout)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetName</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_monitor.html</anchorfile>
+      <anchor>a793ec2dc263ebb1d5f66f711783298e7</anchor>
+      <arglist>(char name[64])=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetNumber</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_monitor.html</anchorfile>
+      <anchor>a26b3deb6c322abda9c0b03f552703273</anchor>
+      <arglist>(int number)=0</arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>id</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_monitor.html</anchorfile>
+      <anchor>a33141cd653b0a15cdf55b4a40bde08e7</anchor>
+      <arglist>[64]</arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>name</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_monitor.html</anchorfile>
+      <anchor>a089d4c34926e1c5a45eec017ba4fdf20</anchor>
+      <arglist>[64]</arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>number</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_monitor.html</anchorfile>
+      <anchor>a6ca06ed96b22f8c4aa13fd00e3f3340e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>VxCellLayout::Value</type>
+      <name>layout</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_monitor.html</anchorfile>
+      <anchor>a1673b2c9494b90a4d447ea06ae8039c3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>Clear</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_monitor.html</anchorfile>
+      <anchor>a57e8cd5a57086f6b7131e4999fe1a95c</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>VxSdk::IVxMonitorCell</name>
+    <filename>struct_vx_sdk_1_1_i_vx_monitor_cell.html</filename>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>Delete</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_monitor_cell.html</anchorfile>
+      <anchor>a8ec3dccbcb9667093753f9caf471386f</anchor>
+      <arglist>() const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>Refresh</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_monitor_cell.html</anchorfile>
+      <anchor>a78e787be7f7a93c23f9e2b4d531e47e1</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetDataSource</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_monitor_cell.html</anchorfile>
+      <anchor>afad846ab3e95363e687d128ac39237cf</anchor>
+      <arglist>(char dataSourceId[64])=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetSpeed</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_monitor_cell.html</anchorfile>
+      <anchor>a69e5ddaedc39bc2d0f151e753bae59bd</anchor>
+      <arglist>(float speed)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetTime</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_monitor_cell.html</anchorfile>
+      <anchor>a4ff8f9e551d58d19bfb9f33c151bf569</anchor>
+      <arglist>(char time[64])=0</arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>dataSourceId</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_monitor_cell.html</anchorfile>
+      <anchor>a6b1257145f4bb75c08a724e828ab5c2c</anchor>
+      <arglist>[64]</arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>index</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_monitor_cell.html</anchorfile>
+      <anchor>a802fa7f59e4b31fbefbd04bd55823ad6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>float</type>
+      <name>speed</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_monitor_cell.html</anchorfile>
+      <anchor>ac4ca84dc96b01866133bfc3994254303</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>time</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_monitor_cell.html</anchorfile>
+      <anchor>a7342148cbb6872b63c810f4ea873b339</anchor>
+      <arglist>[64]</arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>timeAnchor</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_monitor_cell.html</anchorfile>
+      <anchor>a39ebe9c0f58fd069a5d462ae9f659eff</anchor>
+      <arglist>[64]</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>Clear</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_monitor_cell.html</anchorfile>
+      <anchor>a320b500dbd834d9ab1e82d02cca200a3</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>VxSdk::IVxNotification</name>
+    <filename>struct_vx_sdk_1_1_i_vx_notification.html</filename>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>AddRole</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_notification.html</anchorfile>
+      <anchor>a45f36a33566a3d73f002f3cb0164b2d2</anchor>
+      <arglist>(IVxRole &amp;role) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>Delete</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_notification.html</anchorfile>
+      <anchor>a1bcbb62be7886e69d151edb96abf9979</anchor>
+      <arglist>() const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>DeleteNotification</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_notification.html</anchorfile>
+      <anchor>ab9b44a24a946a54a16d7639a9d47498b</anchor>
+      <arglist>() const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>GetRoles</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_notification.html</anchorfile>
+      <anchor>af6466f738add3d1228ab043b27b553d0</anchor>
+      <arglist>(VxCollection&lt; IVxRole ** &gt; &amp;roleCollection) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>Refresh</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_notification.html</anchorfile>
+      <anchor>a8f4f061c688ee6d52f8f429b44c0dcd8</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>RemoveRole</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_notification.html</anchorfile>
+      <anchor>aaf252ae959b6184eb50b06cc9f16488e</anchor>
+      <arglist>(IVxRole &amp;role)=0</arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>id</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_notification.html</anchorfile>
+      <anchor>a4cc842573ada117dc46a2633d44a7f8f</anchor>
+      <arglist>[64]</arglist>
+    </member>
+    <member kind="variable">
+      <type>char **</type>
+      <name>roleIds</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_notification.html</anchorfile>
+      <anchor>ab597654d00d1fa76269fe2c819b982c7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>roleIdSize</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_notification.html</anchorfile>
+      <anchor>aa1efcabbd9c84d155a83e4f3c3917ed3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>Clear</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_notification.html</anchorfile>
+      <anchor>a41f6576315863ee942c5b2995f712490</anchor>
       <arglist>()</arglist>
     </member>
   </compound>
@@ -1878,6 +3027,13 @@
       <anchorfile>struct_vx_sdk_1_1_i_vx_privilege.html</anchorfile>
       <anchor>aa21fe3b639bbabe9708338bf5c8b956d</anchor>
       <arglist>(IVxUser &amp;user) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>Refresh</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_privilege.html</anchorfile>
+      <anchor>abd416a2889acb726b50a6c29bad5878b</anchor>
+      <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual VxResult::Value</type>
@@ -2046,10 +3202,24 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual VxResult::Value</type>
+      <name>Refresh</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_ptz_controller.html</anchorfile>
+      <anchor>ad21e69443c0a9eb96e08939e54f38841</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
       <name>RelativeMove</name>
       <anchorfile>struct_vx_sdk_1_1_i_vx_ptz_controller.html</anchorfile>
       <anchor>aa44dec03a985efd8123b6d1b7505911c</anchor>
       <arglist>(int deltaX, int deltaY, int deltaZ) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>RelativePercentageMove</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_ptz_controller.html</anchorfile>
+      <anchor>a7f42591d6dea743e62a73c1e5f151fcc</anchor>
+      <arglist>(int percentageX, int percentageY) const  =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual VxResult::Value</type>
@@ -2064,6 +3234,13 @@
       <anchorfile>struct_vx_sdk_1_1_i_vx_ptz_controller.html</anchorfile>
       <anchor>ad2b9bf465c57c25738f33b2ad8fa1523</anchor>
       <arglist>(IVxPreset &amp;preset) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>TriggerRefresh</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_ptz_controller.html</anchorfile>
+      <anchor>ada6763bb0757cea2737e8c7a25bb5dfd</anchor>
+      <arglist>()=0</arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
@@ -2127,6 +3304,13 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual VxResult::Value</type>
+      <name>Refresh</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_ptz_lock.html</anchorfile>
+      <anchor>a70e572cd78ec37efbb942358287c8226</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
       <name>Unlock</name>
       <anchorfile>struct_vx_sdk_1_1_i_vx_ptz_lock.html</anchorfile>
       <anchor>a03070556a4e337fe1862cf05ec8839cb</anchor>
@@ -2144,6 +3328,70 @@
       <name>Clear</name>
       <anchorfile>struct_vx_sdk_1_1_i_vx_ptz_lock.html</anchorfile>
       <anchor>ade6deaee52d7b03d3a9b5bf9419cad90</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>VxSdk::IVxQuickReport</name>
+    <filename>struct_vx_sdk_1_1_i_vx_quick_report.html</filename>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>Delete</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_quick_report.html</anchorfile>
+      <anchor>a3908d20e01d9aff7ed5e89e6888412ec</anchor>
+      <arglist>() const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>GetQuickReportEndpoint</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_quick_report.html</anchorfile>
+      <anchor>a39db85e0f44d34d32d2c6894cb887d08</anchor>
+      <arglist>(char *endpoint, int &amp;size)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>GetStatus</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_quick_report.html</anchorfile>
+      <anchor>a91853de16c0bd928a9b79bf6b585cf3a</anchor>
+      <arglist>(VxReportCreationStatus::Value &amp;status)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>VxSdk::IVxResourceLock</name>
+    <filename>struct_vx_sdk_1_1_i_vx_resource_lock.html</filename>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>Delete</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_resource_lock.html</anchorfile>
+      <anchor>ad2a23d79585fec6cd177b579b45e1d19</anchor>
+      <arglist>() const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>DeleteResourceLock</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_resource_lock.html</anchorfile>
+      <anchor>afca5450ddded6c3783f14d012f77b978</anchor>
+      <arglist>() const  =0</arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>id</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_resource_lock.html</anchorfile>
+      <anchor>a21fb05d436bc76ce04538f8a81461bab</anchor>
+      <arglist>[64]</arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>owner</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_resource_lock.html</anchorfile>
+      <anchor>aa80050b5387f7defa54031b351dc5805</anchor>
+      <arglist>[64]</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>Clear</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_resource_lock.html</anchorfile>
+      <anchor>adbba9a0351a32f41a3fe6405d433e243</anchor>
       <arglist>()</arglist>
     </member>
   </compound>
@@ -2184,6 +3432,20 @@
       <anchorfile>struct_vx_sdk_1_1_i_vx_role.html</anchorfile>
       <anchor>a9789bafa82270b52c5bf3693bd4f6bfe</anchor>
       <arglist>(VxCollection&lt; IVxUser ** &gt; &amp;userCollection) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>Refresh</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_role.html</anchorfile>
+      <anchor>a5d2e3d802204c90f9a986bbff753ca6a</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetName</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_role.html</anchorfile>
+      <anchor>a7c8250a8bfc928dafd8c0ef37d339829</anchor>
+      <arglist>(char name[64])=0</arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
@@ -2261,6 +3523,34 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual VxResult::Value</type>
+      <name>Refresh</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_schedule.html</anchorfile>
+      <anchor>aa3ccdcb236870635db6c37e799648257</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetAction</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_schedule.html</anchorfile>
+      <anchor>a670642c17b5bc6bb4126fb1613fd3244</anchor>
+      <arglist>(VxScheduleAction::Value action)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetName</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_schedule.html</anchorfile>
+      <anchor>a4e8031dd66669863af7487e3481bd212</anchor>
+      <arglist>(char name[64])=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetUseAllDataSources</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_schedule.html</anchorfile>
+      <anchor>a8ccc04b6f2cf78d6cb3e153e0a5d62bc</anchor>
+      <arglist>(bool useAllDataSources)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
       <name>UnLink</name>
       <anchorfile>struct_vx_sdk_1_1_i_vx_schedule.html</anchorfile>
       <anchor>a382ee0da2dd3bf090ef5eaaf3bb31f7b</anchor>
@@ -2318,6 +3608,118 @@
       <anchorfile>struct_vx_sdk_1_1_i_vx_schedule_trigger.html</anchorfile>
       <anchor>a3a053fb54b90c5a03f5738ce877a34ba</anchor>
       <arglist>() const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>Refresh</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_schedule_trigger.html</anchorfile>
+      <anchor>acb2cf5d6f765447ae3d5e99bbcc67b3c</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetDailyEndTime</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_schedule_trigger.html</anchorfile>
+      <anchor>add8b87a2ead7a78a1bc6de21d7dff101</anchor>
+      <arglist>(char dailyEndTime[64])=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetDailyStartTime</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_schedule_trigger.html</anchorfile>
+      <anchor>a40dd0d77fca654a38bba0ddd081957f4</anchor>
+      <arglist>(char dailyStartTime[64])=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetEndDate</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_schedule_trigger.html</anchorfile>
+      <anchor>a04042a5077e1a0823b0f890be9dd1781</anchor>
+      <arglist>(char endDate[64])=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetEventSourceDevice</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_schedule_trigger.html</anchorfile>
+      <anchor>a70100a07d635cded8e4084e94fa9e819</anchor>
+      <arglist>(char eventSourceDevice[64])=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetStartDate</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_schedule_trigger.html</anchorfile>
+      <anchor>aa99ad49141e965a69e8d8dbeced1a195</anchor>
+      <arglist>(char startDate[64])=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetPostTrigger</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_schedule_trigger.html</anchorfile>
+      <anchor>aa67c8d4d8f6858b984828d2f8910a78d</anchor>
+      <arglist>(int postTrigger)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetPreTrigger</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_schedule_trigger.html</anchorfile>
+      <anchor>a4d2c26001eddc93430198980ce563931</anchor>
+      <arglist>(int preTrigger)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetTimeout</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_schedule_trigger.html</anchorfile>
+      <anchor>a2da452067f9b021d148572397a944c4b</anchor>
+      <arglist>(int timeout)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetMonthlyRecurrence</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_schedule_trigger.html</anchorfile>
+      <anchor>ae107942ce8d8752762c269ada81a4590</anchor>
+      <arglist>(int *daysOfMonth, int daysOfMonthSize)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetWeeklyRecurrence</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_schedule_trigger.html</anchorfile>
+      <anchor>a34e66b261c44841a61af35fcf2bacdfb</anchor>
+      <arglist>(int *daysOfWeek, int daysOfWeekSize)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetYearlyRecurrence</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_schedule_trigger.html</anchorfile>
+      <anchor>a5c2145de46ddc272b77c75147bdc246e</anchor>
+      <arglist>(int *monthsOfYear, int monthsOfYearSize)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetEventProperties</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_schedule_trigger.html</anchorfile>
+      <anchor>ab60115be789e13840e3d6106a47f4c04</anchor>
+      <arglist>(VxKvObject *eventProperties, int eventPropertySize)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetFramerate</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_schedule_trigger.html</anchorfile>
+      <anchor>a16654ed39b39d5e2ffca15bae8cb349f</anchor>
+      <arglist>(VxRecordingFramerate::Value framerate)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetRecurrence</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_schedule_trigger.html</anchorfile>
+      <anchor>afa02eab2b89af4fca0bd9b9dcdc8b6f7</anchor>
+      <arglist>(VxRecurrenceType::Value recurrence)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetEventType</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_schedule_trigger.html</anchorfile>
+      <anchor>a104d63f70024e970c1a78e332bfa1f29</anchor>
+      <arglist>(VxSituationType::Value eventType)=0</arglist>
     </member>
     <member kind="variable">
       <type>char</type>
@@ -2472,6 +3874,13 @@
     <filename>struct_vx_sdk_1_1_i_vx_situation.html</filename>
     <member kind="function" virtualness="pure">
       <type>virtual VxResult::Value</type>
+      <name>AddNotification</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_situation.html</anchorfile>
+      <anchor>a17406248c4668b28bafba2e6cef03f33</anchor>
+      <arglist>(IVxNotification &amp;notification) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
       <name>Delete</name>
       <anchorfile>struct_vx_sdk_1_1_i_vx_situation.html</anchorfile>
       <anchor>a1904b0c798f4c1634f1b4f8747243b24</anchor>
@@ -2500,6 +3909,13 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual VxResult::Value</type>
+      <name>GetNotifications</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_situation.html</anchorfile>
+      <anchor>ac657dc1dc9a940fe0184147194c9c37c</anchor>
+      <arglist>(VxCollection&lt; IVxNotification ** &gt; &amp;notificationCollection) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
       <name>Link</name>
       <anchorfile>struct_vx_sdk_1_1_i_vx_situation.html</anchorfile>
       <anchor>aec3145382a210242b56d89f8ddffe9e2</anchor>
@@ -2511,6 +3927,97 @@
       <anchorfile>struct_vx_sdk_1_1_i_vx_situation.html</anchorfile>
       <anchor>a2ec5120ee5d4fc73f6a9d4099c3067e3</anchor>
       <arglist>(IVxDevice &amp;device) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>Refresh</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_situation.html</anchorfile>
+      <anchor>aea69b8c46bab3f22f1909a09a1851f98</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>RemoveNotification</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_situation.html</anchorfile>
+      <anchor>a8d643234893fbc3501cd41fe8e5e0b4f</anchor>
+      <arglist>(IVxNotification &amp;notification) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetAckNeeded</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_situation.html</anchorfile>
+      <anchor>a7b6faa1dde92d95eaa89554959e23668</anchor>
+      <arglist>(bool isAckNeeded)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetAudibleLoopDelay</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_situation.html</anchorfile>
+      <anchor>ab9944dcc199e619d49a9bf947fbbf1d2</anchor>
+      <arglist>(int audibleLoopDelay)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetAudiblePlayCount</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_situation.html</anchorfile>
+      <anchor>ac9c2f3b42de73f633491c494cf4d373e</anchor>
+      <arglist>(int audiblePlayCount)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetAudiblyNotify</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_situation.html</anchorfile>
+      <anchor>a10668d2138ef2d45f819b7e66d7ba0cc</anchor>
+      <arglist>(bool shouldAudiblyNotify)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetAutoAcknowledgeTime</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_situation.html</anchorfile>
+      <anchor>ac25b8f6a260d24ebfe61a8e85b24c02b</anchor>
+      <arglist>(int autoAcknowledgeTime)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetExpandBanner</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_situation.html</anchorfile>
+      <anchor>a01b308cf87f862b701516e9ae1cec89f</anchor>
+      <arglist>(bool shouldExpandBanner)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetLog</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_situation.html</anchorfile>
+      <anchor>aef2cf1c3a175cbddc6141b82a9feb00b</anchor>
+      <arglist>(bool shouldLog)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetNotify</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_situation.html</anchorfile>
+      <anchor>a4d9f8104e11d3ee87115707a181da52b</anchor>
+      <arglist>(bool shouldNotify)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetName</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_situation.html</anchorfile>
+      <anchor>a0ab9aeb9744d0f842a0d8e4ec96cb04a</anchor>
+      <arglist>(char name[64])=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetSeverity</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_situation.html</anchorfile>
+      <anchor>af539117758abc2c05039f630a1d99035</anchor>
+      <arglist>(int severity)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetSnoozeIntervals</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_situation.html</anchorfile>
+      <anchor>ad30e528136c99ccfc99c437f765067ee</anchor>
+      <arglist>(int *snoozeIntervals, int snoozeIntervalSize)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual VxResult::Value</type>
@@ -2665,6 +4172,27 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual VxResult::Value</type>
+      <name>AddDevice</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_system.html</anchorfile>
+      <anchor>ad7283bdd31d57015a468b5077fc57593</anchor>
+      <arglist>(VxNewDevice &amp;newDevice) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>AddDrawing</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_system.html</anchorfile>
+      <anchor>a08481e4d6f9bba07f521d79d32246ee7</anchor>
+      <arglist>(VxNewDrawing &amp;newDrawing) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>AddNotification</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_system.html</anchorfile>
+      <anchor>a16f9c1c30358e606297cdfa52188e2a4</anchor>
+      <arglist>(VxNewNotification &amp;newNotification, IVxNotification *&amp;notificationItem) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
       <name>AddRole</name>
       <anchorfile>struct_vx_sdk_1_1_i_vx_system.html</anchorfile>
       <anchor>a77ff20979c4498c1e834d7fc48f8d9ff</anchor>
@@ -2700,10 +4228,31 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual VxResult::Value</type>
+      <name>AutoAddDevices</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_system.html</anchorfile>
+      <anchor>aa2125415bfaa1e91d8a7eca3b0f38f1a</anchor>
+      <arglist>() const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
       <name>CreateExport</name>
       <anchorfile>struct_vx_sdk_1_1_i_vx_system.html</anchorfile>
       <anchor>aed5236278f6448b9212730a5372b3dca</anchor>
       <arglist>(VxNewExport &amp;newExport, IVxExport *&amp;exportItem) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>CreateMonitor</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_system.html</anchorfile>
+      <anchor>ae60411039045c5464e72137c818ef3af</anchor>
+      <arglist>(VxNewMonitor &amp;newMonitor) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>CreateQuickReport</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_system.html</anchorfile>
+      <anchor>ae2888bea03c53020f39f063b4aef17a5</anchor>
+      <arglist>(VxNewQuickReport &amp;newQuickReport, IVxQuickReport *&amp;quickReport) const  =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual VxResult::Value</type>
@@ -2718,6 +4267,13 @@
       <anchorfile>struct_vx_sdk_1_1_i_vx_system.html</anchorfile>
       <anchor>a3335daa35f44746e4002f1eb4f07b5a5</anchor>
       <arglist>(VxCollection&lt; IVxBookmark ** &gt; &amp;bookmarkCollection) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>GetClusterConfiguration</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_system.html</anchorfile>
+      <anchor>a48f98529a030d874cbeb64f919d497f5</anchor>
+      <arglist>(IVxConfiguration::Cluster *&amp;clusterConfig) const  =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual VxResult::Value</type>
@@ -2756,6 +4312,13 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual VxResult::Value</type>
+      <name>GetDrawings</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_system.html</anchorfile>
+      <anchor>a78b8b8f73168c37309db2d8f85e1914f</anchor>
+      <arglist>(VxCollection&lt; IVxDrawing ** &gt; &amp;drawingCollection) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
       <name>GetEvents</name>
       <anchorfile>struct_vx_sdk_1_1_i_vx_system.html</anchorfile>
       <anchor>a97a1267f647b651e98f0378d2b53825a</anchor>
@@ -2767,6 +4330,27 @@
       <anchorfile>struct_vx_sdk_1_1_i_vx_system.html</anchorfile>
       <anchor>a98a155300e6eeed2d5280cb3ed4505f8</anchor>
       <arglist>(VxCollection&lt; IVxExport ** &gt; &amp;exportCollection) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>GetLicense</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_system.html</anchorfile>
+      <anchor>a11349cf5e1a12d2f1343f6e84b8c82aa</anchor>
+      <arglist>(IVxLicense *&amp;license) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>GetMonitors</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_system.html</anchorfile>
+      <anchor>a9cbd21302be727ac723eab84b1bd7df4</anchor>
+      <arglist>(VxCollection&lt; IVxMonitor ** &gt; &amp;monitorCollection) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>GetNotifications</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_system.html</anchorfile>
+      <anchor>ac51f9dca2fffbd83ee6c52834fc4d583</anchor>
+      <arglist>(VxCollection&lt; IVxNotification ** &gt; &amp;notificationCollection) const  =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual VxResult::Value</type>
@@ -2809,6 +4393,20 @@
       <anchorfile>struct_vx_sdk_1_1_i_vx_system.html</anchorfile>
       <anchor>afaaa24d489015e37fef27599b05d7d77</anchor>
       <arglist>(VxNewEvent &amp;newEvent) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>Refresh</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_system.html</anchorfile>
+      <anchor>a37867d31a5776e7faec602fc36a80eeb</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetName</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_system.html</anchorfile>
+      <anchor>aa7de55900a80cbcffc19f1dc82ef8d9a</anchor>
+      <arglist>(char name[64])=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual VxResult::Value</type>
@@ -2886,6 +4484,13 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual VxResult::Value</type>
+      <name>GetOwner</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_tag.html</anchorfile>
+      <anchor>a7099b908ba481aa8e0e7509723de6c2f</anchor>
+      <arglist>(IVxUser *&amp;user) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
       <name>Link</name>
       <anchorfile>struct_vx_sdk_1_1_i_vx_tag.html</anchorfile>
       <anchor>abd2babff047d5cd4f9079352cca1621b</anchor>
@@ -2904,6 +4509,20 @@
       <anchorfile>struct_vx_sdk_1_1_i_vx_tag.html</anchorfile>
       <anchor>a01464bbeee0fdc8644644b832481faab</anchor>
       <arglist>(IVxTag &amp;tag) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>Refresh</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_tag.html</anchorfile>
+      <anchor>aa502b95bb6093d87e5473974887a100b</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetName</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_tag.html</anchorfile>
+      <anchor>aa2d75831306ad70a68f7d2cd222afacd</anchor>
+      <arglist>(char name[64])=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual VxResult::Value</type>
@@ -2995,6 +4614,20 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual VxResult::Value</type>
+      <name>GetTags</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_user.html</anchorfile>
+      <anchor>a6dfce76d4a997409717344ab59262de5</anchor>
+      <arglist>(VxCollection&lt; IVxTag ** &gt; &amp;tagCollection) const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>Refresh</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_user.html</anchorfile>
+      <anchor>af632c1f9ce64b3c0a6c5fd206cc72a35</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
       <name>RemoveFromRole</name>
       <anchorfile>struct_vx_sdk_1_1_i_vx_user.html</anchorfile>
       <anchor>a950885fc2054d1b46c1819a5762b22cd</anchor>
@@ -3009,10 +4642,24 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual VxResult::Value</type>
+      <name>SetDomain</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_user.html</anchorfile>
+      <anchor>a150119700d84d14e0f69715efb7c8029</anchor>
+      <arglist>(char domain[64])=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>SetName</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_user.html</anchorfile>
+      <anchor>a51c6e1eda7d9486fee1dddc3f174af4a</anchor>
+      <arglist>(char name[64])=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
       <name>SetPassword</name>
       <anchorfile>struct_vx_sdk_1_1_i_vx_user.html</anchorfile>
-      <anchor>aa6ab4e90493f88f97d3fc9cd2bdbac73</anchor>
-      <arglist>(const char *newPassword) const  =0</arglist>
+      <anchor>a1cec19a11c525937a618ca589b2c7361</anchor>
+      <arglist>(char newPassword[64]) const  =0</arglist>
     </member>
     <member kind="variable">
       <type>char</type>
@@ -3047,6 +4694,130 @@
       <name>Clear</name>
       <anchorfile>struct_vx_sdk_1_1_i_vx_user.html</anchorfile>
       <anchor>a40d8de93106db0b3a43f0eeefd56678b</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>VxSdk::IVxConfiguration::Node</name>
+    <filename>struct_vx_sdk_1_1_i_vx_configuration_1_1_node.html</filename>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>Delete</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_configuration_1_1_node.html</anchorfile>
+      <anchor>a8e7e4b93eeabfd95c4b4d0ce8252fbf0</anchor>
+      <arglist>() const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>Refresh</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_configuration_1_1_node.html</anchorfile>
+      <anchor>aabc7ffa19f64c61c53232e94b24fe83d</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>hostAddress</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_configuration_1_1_node.html</anchorfile>
+      <anchor>a22a1ba406963f3c2cf6da2bf2af7ebc8</anchor>
+      <arglist>[64]</arglist>
+    </member>
+    <member kind="variable">
+      <type>VxConfigStatus::Value</type>
+      <name>status</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_configuration_1_1_node.html</anchorfile>
+      <anchor>a6722723665c1ae7ba2e91bc412e08683</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>Clear</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_configuration_1_1_node.html</anchorfile>
+      <anchor>a6ede2987514177bdf98c95b14dd60a41</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>VxSdk::IVxConfiguration::Storage</name>
+    <filename>struct_vx_sdk_1_1_i_vx_configuration_1_1_storage.html</filename>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>Delete</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_configuration_1_1_storage.html</anchorfile>
+      <anchor>a545ac2cd3fa59fa6571f100cce5c17d6</anchor>
+      <arglist>() const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>Refresh</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_configuration_1_1_storage.html</anchorfile>
+      <anchor>aca2fb6138896d3e40bc21152fe79ed5e</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>transmissionType</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_configuration_1_1_storage.html</anchorfile>
+      <anchor>a8d5ffa04e0ee597bb076fbc332af893c</anchor>
+      <arglist>[64]</arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>retentionLimit</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_configuration_1_1_storage.html</anchorfile>
+      <anchor>a3bf9ee628420309778e2c6122eb593d7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>Clear</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_configuration_1_1_storage.html</anchorfile>
+      <anchor>a5074d4b9496c93ffbeef7aa0cfbb1c84</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>VxSdk::IVxConfiguration::Time</name>
+    <filename>struct_vx_sdk_1_1_i_vx_configuration_1_1_time.html</filename>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>Delete</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_configuration_1_1_time.html</anchorfile>
+      <anchor>a3ec41d4aec15033269f056e521ac6024</anchor>
+      <arglist>() const  =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>GetTime</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_configuration_1_1_time.html</anchorfile>
+      <anchor>a42d190a94ad44e7b9f3e8e6555e98048</anchor>
+      <arglist>(char currentTime[64])=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual VxResult::Value</type>
+      <name>Refresh</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_configuration_1_1_time.html</anchorfile>
+      <anchor>a1a888b34c8331d74989edd673762fda0</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="variable">
+      <type>bool</type>
+      <name>isTimeServerEnabled</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_configuration_1_1_time.html</anchorfile>
+      <anchor>ab5ccbb42a2ef651ce6f9d24e9e2e5068</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>timeServerAddress</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_configuration_1_1_time.html</anchorfile>
+      <anchor>a4902c24d15883a44c67b5b91d429c231</anchor>
+      <arglist>[64]</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>Clear</name>
+      <anchorfile>struct_vx_sdk_1_1_i_vx_configuration_1_1_time.html</anchorfile>
+      <anchor>a01cd043f21820e018d117c08da8b496d</anchor>
       <arglist>()</arglist>
     </member>
   </compound>
@@ -3190,6 +4961,233 @@
       <name>port</name>
       <anchorfile>struct_vx_sdk_1_1_vx_auth_info.html</anchorfile>
       <anchor>a4f7fffab36dfd68d53391a743dcfeb7c</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>VxSdk::VxCellLayout</name>
+    <filename>struct_vx_sdk_1_1_vx_cell_layout.html</filename>
+    <member kind="enumeration">
+      <type></type>
+      <name>Value</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_cell_layout.html</anchorfile>
+      <anchor>aa70b14e502970e9ac7fe7433640f823e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>k1x1</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_cell_layout.html</anchorfile>
+      <anchor>aa70b14e502970e9ac7fe7433640f823ea0d6080d4794f08ce86ae743864938e98</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>k1x2</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_cell_layout.html</anchorfile>
+      <anchor>aa70b14e502970e9ac7fe7433640f823ea5387219fb3926d9a134ecc8315bedfbe</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>k2x1</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_cell_layout.html</anchorfile>
+      <anchor>aa70b14e502970e9ac7fe7433640f823ea48b0af69bebf43529506c335e8b0f7b8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>k2x2</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_cell_layout.html</anchorfile>
+      <anchor>aa70b14e502970e9ac7fe7433640f823ea3c67dd2a760925f9bcd09a070d7b1c29</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>k2x3</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_cell_layout.html</anchorfile>
+      <anchor>aa70b14e502970e9ac7fe7433640f823ea1661f8dd02e04c20adad2eefd06da30f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>k3x2</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_cell_layout.html</anchorfile>
+      <anchor>aa70b14e502970e9ac7fe7433640f823ea38fd31499f818eda1f488e9bc380e803</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>k3x3</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_cell_layout.html</anchorfile>
+      <anchor>aa70b14e502970e9ac7fe7433640f823ea9c84d3531055914228b0359409607a8e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>k4x3</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_cell_layout.html</anchorfile>
+      <anchor>aa70b14e502970e9ac7fe7433640f823ea8dbf1334ef5d9355c0640c68686cc513</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>k4x4</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_cell_layout.html</anchorfile>
+      <anchor>aa70b14e502970e9ac7fe7433640f823ea68f8351421cd7a47da90b4d62a97ba8b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>k1plus12</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_cell_layout.html</anchorfile>
+      <anchor>aa70b14e502970e9ac7fe7433640f823ea384862087bd1ffc913e3d652fae0bb3e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>k2plus8</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_cell_layout.html</anchorfile>
+      <anchor>aa70b14e502970e9ac7fe7433640f823eaac28a0fbc21463a360cc224b4ab1a23d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>k3plus4</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_cell_layout.html</anchorfile>
+      <anchor>aa70b14e502970e9ac7fe7433640f823ea886cbcfd6d17456aa59bad5e9574843e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>k1plus5</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_cell_layout.html</anchorfile>
+      <anchor>aa70b14e502970e9ac7fe7433640f823eac7c485d39fbaadba6df0c803a4c61239</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>k1plus7</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_cell_layout.html</anchorfile>
+      <anchor>aa70b14e502970e9ac7fe7433640f823eadf230b76fa6caccde3644be0a22aa393</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>k12plus1</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_cell_layout.html</anchorfile>
+      <anchor>aa70b14e502970e9ac7fe7433640f823ea38c9018a9c67e137400de64b6381ac14</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>k8plus2</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_cell_layout.html</anchorfile>
+      <anchor>aa70b14e502970e9ac7fe7433640f823eaa02ed5901f5db01e56878c76410ce8ce</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>k1plus4tall</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_cell_layout.html</anchorfile>
+      <anchor>aa70b14e502970e9ac7fe7433640f823eac5996f4e66ebedd7098e917b64b076c6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>k1plus4wide</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_cell_layout.html</anchorfile>
+      <anchor>aa70b14e502970e9ac7fe7433640f823ea2a41252cc4e8a144923863421252757e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>k1x1</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_cell_layout.html</anchorfile>
+      <anchor>aa70b14e502970e9ac7fe7433640f823ea0d6080d4794f08ce86ae743864938e98</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>k1x2</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_cell_layout.html</anchorfile>
+      <anchor>aa70b14e502970e9ac7fe7433640f823ea5387219fb3926d9a134ecc8315bedfbe</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>k2x1</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_cell_layout.html</anchorfile>
+      <anchor>aa70b14e502970e9ac7fe7433640f823ea48b0af69bebf43529506c335e8b0f7b8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>k2x2</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_cell_layout.html</anchorfile>
+      <anchor>aa70b14e502970e9ac7fe7433640f823ea3c67dd2a760925f9bcd09a070d7b1c29</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>k2x3</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_cell_layout.html</anchorfile>
+      <anchor>aa70b14e502970e9ac7fe7433640f823ea1661f8dd02e04c20adad2eefd06da30f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>k3x2</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_cell_layout.html</anchorfile>
+      <anchor>aa70b14e502970e9ac7fe7433640f823ea38fd31499f818eda1f488e9bc380e803</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>k3x3</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_cell_layout.html</anchorfile>
+      <anchor>aa70b14e502970e9ac7fe7433640f823ea9c84d3531055914228b0359409607a8e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>k4x3</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_cell_layout.html</anchorfile>
+      <anchor>aa70b14e502970e9ac7fe7433640f823ea8dbf1334ef5d9355c0640c68686cc513</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>k4x4</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_cell_layout.html</anchorfile>
+      <anchor>aa70b14e502970e9ac7fe7433640f823ea68f8351421cd7a47da90b4d62a97ba8b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>k1plus12</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_cell_layout.html</anchorfile>
+      <anchor>aa70b14e502970e9ac7fe7433640f823ea384862087bd1ffc913e3d652fae0bb3e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>k2plus8</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_cell_layout.html</anchorfile>
+      <anchor>aa70b14e502970e9ac7fe7433640f823eaac28a0fbc21463a360cc224b4ab1a23d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>k3plus4</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_cell_layout.html</anchorfile>
+      <anchor>aa70b14e502970e9ac7fe7433640f823ea886cbcfd6d17456aa59bad5e9574843e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>k1plus5</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_cell_layout.html</anchorfile>
+      <anchor>aa70b14e502970e9ac7fe7433640f823eac7c485d39fbaadba6df0c803a4c61239</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>k1plus7</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_cell_layout.html</anchorfile>
+      <anchor>aa70b14e502970e9ac7fe7433640f823eadf230b76fa6caccde3644be0a22aa393</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>k12plus1</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_cell_layout.html</anchorfile>
+      <anchor>aa70b14e502970e9ac7fe7433640f823ea38c9018a9c67e137400de64b6381ac14</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>k8plus2</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_cell_layout.html</anchorfile>
+      <anchor>aa70b14e502970e9ac7fe7433640f823eaa02ed5901f5db01e56878c76410ce8ce</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>k1plus4tall</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_cell_layout.html</anchorfile>
+      <anchor>aa70b14e502970e9ac7fe7433640f823eac5996f4e66ebedd7098e917b64b076c6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>k1plus4wide</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_cell_layout.html</anchorfile>
+      <anchor>aa70b14e502970e9ac7fe7433640f823ea2a41252cc4e8a144923863421252757e</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -3391,6 +5389,258 @@
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
+      <name>kDataSourceNumber</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17ae9244334b1a9e1f9dcf169d086f3a1da</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kDescription</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a54138d6e1237f834b18fd6aeb7327c11</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kModifiedSince</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a638cbe38534e2f3601655cc1de61e69b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kTime</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17ac692a550fe8d66b0ea70e0e76ed91b2d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kEndTime</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a2ae7222bd83ffef3f75eee44bb2281ec</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kStartTime</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a87d4a2bedd8e050131d82544502507b9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kEvent</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a70e37b241544ef7c0bff25e7083bef3f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kFramerate</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a9e2c71a9dba6771fd5dc9be533d7f689</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kPriority</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a787b0636033970e6419beacd0452cc60</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kClientType</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a3425380365cdaacebf08374f522a6371</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kOwned</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a9351721acf91a903cec4d6aff6282328</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kOwner</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a2c94842cdfc838e893c26f4ac0985853</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kUsername</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a59b67610e35d414664efa7fdbc9c8997</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kAllTags</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17ad47b6714bacf0d2f7fcdbd0e2d91ee1e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kCapturing</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a644898670b8148cdc939300684589e75</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kIp</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a4220de05876b48704bac476a9f5f3254</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kNumber</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17aa44368572ec08fcb50437238332dfb3f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kRecording</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a0e1ef8d0eaae75444bc919a049db7241</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kState</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a9bb2b407ad24886ac842823dea0bd096</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kCommissioned</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17ab928a811c2bad20336763642e245cd09</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kModel</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17afeb1836931bca47e2b2bc99aa845fede</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kSerial</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17afec8ce84ca4fb4ba3b1d037d959e8864</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kVendor</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17aec41e0ebe7c25a7a4b73f9150e1f99f5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kVersion</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a36a0042422eeab085e03f70ca5d76c01</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kAckState</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17aa27b9c6441684c416ba6a23beb0bd39c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kAckUser</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17acc5f3b927bacd80cf0d5da140595c787</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kGeneratorDeviceId</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a655bc8d8d929f2dd0c185c6331d7dbfd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kNotifies</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a0efb655d2a549a9f0d012b0278577e99</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kSeverity</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a3ed31195d1a3ce704cb3d714cef04b18</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kSourceDeviceId</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17ab949bddd95e344a4709ba4d63ba829dd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kSourceUserName</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17aadc6d9a310be5a737568e04f1e1c9034</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kPercentComplete</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17af6076c5915c8eb40d005445208d14bdb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kSize</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a278ce7bb4212514a36765a06e088a1e9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kStatus</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a2ba598a01e4fcad805c5efb66d56b23f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kResourceId</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a138d1187c7fd50d0e169ec5612d187d9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kPermission</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a281a509552a1f68aa1cb84d81fbc47cd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kInternal</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a858faa9bf8378e90104c4f12ffab1f99</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kAction</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a88814d9cc3d6d12829c771163d00ac94</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kAudibleNotify</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a3b3e491dda08ad2457c3425627633b55</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kLog</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17aea926d2493576c7ecde7b2e34a2cf0e0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kNotify</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a2ac71a30c7037b87a3745ef05341e526</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kResourceType</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a8c22f0946220bac11a7d6e44d3be61f0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
       <name>kNone</name>
       <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
       <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a111597f514a00f4527353db2f083a36b</anchor>
@@ -3454,6 +5704,329 @@
       <name>kUnassigned</name>
       <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
       <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a8162c65d966df81c15f52f35ad9c977e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kDataSourceNumber</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17ae9244334b1a9e1f9dcf169d086f3a1da</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kDescription</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a54138d6e1237f834b18fd6aeb7327c11</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kModifiedSince</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a638cbe38534e2f3601655cc1de61e69b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kTime</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17ac692a550fe8d66b0ea70e0e76ed91b2d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kEndTime</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a2ae7222bd83ffef3f75eee44bb2281ec</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kStartTime</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a87d4a2bedd8e050131d82544502507b9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kEvent</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a70e37b241544ef7c0bff25e7083bef3f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kFramerate</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a9e2c71a9dba6771fd5dc9be533d7f689</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kPriority</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a787b0636033970e6419beacd0452cc60</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kClientType</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a3425380365cdaacebf08374f522a6371</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kOwned</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a9351721acf91a903cec4d6aff6282328</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kOwner</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a2c94842cdfc838e893c26f4ac0985853</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kUsername</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a59b67610e35d414664efa7fdbc9c8997</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kAllTags</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17ad47b6714bacf0d2f7fcdbd0e2d91ee1e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kCapturing</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a644898670b8148cdc939300684589e75</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kIp</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a4220de05876b48704bac476a9f5f3254</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kNumber</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17aa44368572ec08fcb50437238332dfb3f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kRecording</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a0e1ef8d0eaae75444bc919a049db7241</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kState</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a9bb2b407ad24886ac842823dea0bd096</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kCommissioned</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17ab928a811c2bad20336763642e245cd09</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kModel</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17afeb1836931bca47e2b2bc99aa845fede</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kSerial</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17afec8ce84ca4fb4ba3b1d037d959e8864</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kVendor</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17aec41e0ebe7c25a7a4b73f9150e1f99f5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kVersion</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a36a0042422eeab085e03f70ca5d76c01</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kAckState</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17aa27b9c6441684c416ba6a23beb0bd39c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kAckUser</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17acc5f3b927bacd80cf0d5da140595c787</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kGeneratorDeviceId</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a655bc8d8d929f2dd0c185c6331d7dbfd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kNotifies</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a0efb655d2a549a9f0d012b0278577e99</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kSeverity</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a3ed31195d1a3ce704cb3d714cef04b18</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kSourceDeviceId</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17ab949bddd95e344a4709ba4d63ba829dd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kSourceUserName</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17aadc6d9a310be5a737568e04f1e1c9034</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kPercentComplete</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17af6076c5915c8eb40d005445208d14bdb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kSize</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a278ce7bb4212514a36765a06e088a1e9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kStatus</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a2ba598a01e4fcad805c5efb66d56b23f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kResourceId</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a138d1187c7fd50d0e169ec5612d187d9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kPermission</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a281a509552a1f68aa1cb84d81fbc47cd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kInternal</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a858faa9bf8378e90104c4f12ffab1f99</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kAction</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a88814d9cc3d6d12829c771163d00ac94</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kAudibleNotify</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a3b3e491dda08ad2457c3425627633b55</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kLog</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17aea926d2493576c7ecde7b2e34a2cf0e0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kNotify</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a2ac71a30c7037b87a3745ef05341e526</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kResourceType</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_collection_filter_item.html</anchorfile>
+      <anchor>a7a426ee3c166b7a59122cd8fdd9ced17a8c22f0946220bac11a7d6e44d3be61f0</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>VxSdk::VxConfigStatus</name>
+    <filename>struct_vx_sdk_1_1_vx_config_status.html</filename>
+    <member kind="enumeration">
+      <type></type>
+      <name>Value</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_config_status.html</anchorfile>
+      <anchor>a44ff2faac0d3b09210014d60837558e9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kUnknown</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_config_status.html</anchorfile>
+      <anchor>a44ff2faac0d3b09210014d60837558e9a8f818d132859baaf33de85dd25855d6e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kConfigured</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_config_status.html</anchorfile>
+      <anchor>a44ff2faac0d3b09210014d60837558e9a16965f1aa4ad490db71abce742ccaeb8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kConfiguring</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_config_status.html</anchorfile>
+      <anchor>a44ff2faac0d3b09210014d60837558e9a404901a2abfd7d7cc04ccee7a0cdaeb1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kFailed</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_config_status.html</anchorfile>
+      <anchor>a44ff2faac0d3b09210014d60837558e9aaa1820c00c8c457f391a51dbd137476e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kUnconfigured</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_config_status.html</anchorfile>
+      <anchor>a44ff2faac0d3b09210014d60837558e9a363a465bb018590dd49fe8412e2e0ef5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kUnknown</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_config_status.html</anchorfile>
+      <anchor>a44ff2faac0d3b09210014d60837558e9a8f818d132859baaf33de85dd25855d6e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kConfigured</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_config_status.html</anchorfile>
+      <anchor>a44ff2faac0d3b09210014d60837558e9a16965f1aa4ad490db71abce742ccaeb8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kConfiguring</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_config_status.html</anchorfile>
+      <anchor>a44ff2faac0d3b09210014d60837558e9a404901a2abfd7d7cc04ccee7a0cdaeb1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kFailed</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_config_status.html</anchorfile>
+      <anchor>a44ff2faac0d3b09210014d60837558e9aaa1820c00c8c457f391a51dbd137476e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kUnconfigured</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_config_status.html</anchorfile>
+      <anchor>a44ff2faac0d3b09210014d60837558e9a363a465bb018590dd49fe8412e2e0ef5</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -3621,12 +6194,6 @@
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>kUnknown</name>
-      <anchorfile>struct_vx_sdk_1_1_vx_device_type.html</anchorfile>
-      <anchor>ab69578909dcd1e573f53abae17329db9a7f1c816fa33b367fba2455ecc77d15e3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
       <name>kCamera</name>
       <anchorfile>struct_vx_sdk_1_1_vx_device_type.html</anchorfile>
       <anchor>ab69578909dcd1e573f53abae17329db9aa55a30007877cb921556ff06a31e4e7d</anchor>
@@ -3654,6 +6221,12 @@
       <name>kEncoder</name>
       <anchorfile>struct_vx_sdk_1_1_vx_device_type.html</anchorfile>
       <anchor>ab69578909dcd1e573f53abae17329db9af932be00c49c2a81bec9b0ab6663a5f8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kExternal</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_device_type.html</anchorfile>
+      <anchor>ab69578909dcd1e573f53abae17329db9a869b128fe3cb6aabb55ca1663abe333c</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
@@ -3690,6 +6263,12 @@
       <name>kUi</name>
       <anchorfile>struct_vx_sdk_1_1_vx_device_type.html</anchorfile>
       <anchor>ab69578909dcd1e573f53abae17329db9af117cc9282ebaa11acc27c2de1f677dd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kUnknown</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_device_type.html</anchorfile>
+      <anchor>ab69578909dcd1e573f53abae17329db9a7f1c816fa33b367fba2455ecc77d15e3</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
@@ -3699,12 +6278,6 @@
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>kUnknown</name>
-      <anchorfile>struct_vx_sdk_1_1_vx_device_type.html</anchorfile>
-      <anchor>ab69578909dcd1e573f53abae17329db9a7f1c816fa33b367fba2455ecc77d15e3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
       <name>kCamera</name>
       <anchorfile>struct_vx_sdk_1_1_vx_device_type.html</anchorfile>
       <anchor>ab69578909dcd1e573f53abae17329db9aa55a30007877cb921556ff06a31e4e7d</anchor>
@@ -3732,6 +6305,12 @@
       <name>kEncoder</name>
       <anchorfile>struct_vx_sdk_1_1_vx_device_type.html</anchorfile>
       <anchor>ab69578909dcd1e573f53abae17329db9af932be00c49c2a81bec9b0ab6663a5f8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kExternal</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_device_type.html</anchorfile>
+      <anchor>ab69578909dcd1e573f53abae17329db9a869b128fe3cb6aabb55ca1663abe333c</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
@@ -3768,6 +6347,12 @@
       <name>kUi</name>
       <anchorfile>struct_vx_sdk_1_1_vx_device_type.html</anchorfile>
       <anchor>ab69578909dcd1e573f53abae17329db9af117cc9282ebaa11acc27c2de1f677dd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kUnknown</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_device_type.html</anchorfile>
+      <anchor>ab69578909dcd1e573f53abae17329db9a7f1c816fa33b367fba2455ecc77d15e3</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
@@ -4031,8 +6616,8 @@
       <type>char</type>
       <name>value</name>
       <anchorfile>struct_vx_sdk_1_1_vx_kv_object.html</anchorfile>
-      <anchor>adb4c6d08ccde84840d96f0e75c6e77b4</anchor>
-      <arglist>[64]</arglist>
+      <anchor>ac007a0586c9732b609c0ed299c87bd4a</anchor>
+      <arglist>[2048]</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -4075,6 +6660,13 @@
     </member>
     <member kind="variable">
       <type>char</type>
+      <name>authToken</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_login_info.html</anchorfile>
+      <anchor>afdbd2a9d57e40896917862578b361365</anchor>
+      <arglist>[512]</arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
       <name>ipAddress</name>
       <anchorfile>struct_vx_sdk_1_1_vx_login_info.html</anchorfile>
       <anchor>ac56160737c3aa9e3d8bb8340ef832ec8</anchor>
@@ -4099,6 +6691,101 @@
       <name>port</name>
       <anchorfile>struct_vx_sdk_1_1_vx_login_info.html</anchorfile>
       <anchor>a978a113dd955c9c4f470565541b929b2</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>VxSdk::VxLogLevel</name>
+    <filename>struct_vx_sdk_1_1_vx_log_level.html</filename>
+    <member kind="enumeration">
+      <type></type>
+      <name>Value</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_log_level.html</anchorfile>
+      <anchor>aced4481f57edfd273e9c00b97628457d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kTrace</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_log_level.html</anchorfile>
+      <anchor>aced4481f57edfd273e9c00b97628457dafdcc23a4f22ff772cc224a1d169de249</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kDebug</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_log_level.html</anchorfile>
+      <anchor>aced4481f57edfd273e9c00b97628457dac155d97f4268b75c6c4ff767799fe860</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kInfo</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_log_level.html</anchorfile>
+      <anchor>aced4481f57edfd273e9c00b97628457dad4237189cecbce41b4c554c801025fe3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kWarning</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_log_level.html</anchorfile>
+      <anchor>aced4481f57edfd273e9c00b97628457da03ec3efdeba45bc8d9906727cadea708</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kError</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_log_level.html</anchorfile>
+      <anchor>aced4481f57edfd273e9c00b97628457dab8623b7dee5e3a93f09d6f5682cb999c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kFatal</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_log_level.html</anchorfile>
+      <anchor>aced4481f57edfd273e9c00b97628457dae0c528b016c1e879288003e1a3735b9c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kNone</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_log_level.html</anchorfile>
+      <anchor>aced4481f57edfd273e9c00b97628457da8aac4d2aaec289a8e71028c580c4b334</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kTrace</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_log_level.html</anchorfile>
+      <anchor>aced4481f57edfd273e9c00b97628457dafdcc23a4f22ff772cc224a1d169de249</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kDebug</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_log_level.html</anchorfile>
+      <anchor>aced4481f57edfd273e9c00b97628457dac155d97f4268b75c6c4ff767799fe860</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kInfo</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_log_level.html</anchorfile>
+      <anchor>aced4481f57edfd273e9c00b97628457dad4237189cecbce41b4c554c801025fe3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kWarning</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_log_level.html</anchorfile>
+      <anchor>aced4481f57edfd273e9c00b97628457da03ec3efdeba45bc8d9906727cadea708</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kError</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_log_level.html</anchorfile>
+      <anchor>aced4481f57edfd273e9c00b97628457dab8623b7dee5e3a93f09d6f5682cb999c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kFatal</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_log_level.html</anchorfile>
+      <anchor>aced4481f57edfd273e9c00b97628457dae0c528b016c1e879288003e1a3735b9c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kNone</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_log_level.html</anchorfile>
+      <anchor>aced4481f57edfd273e9c00b97628457da8aac4d2aaec289a8e71028c580c4b334</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -4209,6 +6896,101 @@
     </member>
   </compound>
   <compound kind="struct">
+    <name>VxSdk::VxNewDevice</name>
+    <filename>struct_vx_sdk_1_1_vx_new_device.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>VxNewDevice</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_device.html</anchorfile>
+      <anchor>a7eb9917f7d81da30b79f09b0a2efce7c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>VxNewDevice</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_device.html</anchorfile>
+      <anchor>a10e2bcfb60263de3a5fe4db6677937a6</anchor>
+      <arglist>(const VxNewDevice &amp;ref)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~VxNewDevice</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_device.html</anchorfile>
+      <anchor>abee2dae099e52f68bdd6588cec46a1c4</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Clear</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_device.html</anchorfile>
+      <anchor>a0662a4a71599dbe8979e5fc2ce34ff24</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable">
+      <type>bool</type>
+      <name>shouldAutoCommission</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_device.html</anchorfile>
+      <anchor>af3ea2c73022784b7b3ca7c7e2c7687c8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>dataStorageId</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_device.html</anchorfile>
+      <anchor>a2ed23ba1d37d6608d39c01fb6b33a985</anchor>
+      <arglist>[64]</arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>driverType</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_device.html</anchorfile>
+      <anchor>a2111adfbacce8371487599b213b04bb3</anchor>
+      <arglist>[64]</arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>id</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_device.html</anchorfile>
+      <anchor>a974c7277ea9a23563315358748be1ed6</anchor>
+      <arglist>[64]</arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>ip</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_device.html</anchorfile>
+      <anchor>a359a62b9d319783f0cade4ae9469147f</anchor>
+      <arglist>[64]</arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>name</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_device.html</anchorfile>
+      <anchor>aa8789d39d8908edbce23167438b2875a</anchor>
+      <arglist>[64]</arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>password</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_device.html</anchorfile>
+      <anchor>a054e91c946255eadd6617370736130fc</anchor>
+      <arglist>[64]</arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>username</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_device.html</anchorfile>
+      <anchor>a13717147fe3e0df564c3b97aef82b8fb</anchor>
+      <arglist>[64]</arglist>
+    </member>
+    <member kind="variable">
+      <type>VxDeviceType::Value</type>
+      <name>type</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_device.html</anchorfile>
+      <anchor>a5dbc95a4a55ebb29cd0b0e063e0783bf</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
     <name>VxSdk::VxNewDeviceAssignment</name>
     <filename>struct_vx_sdk_1_1_vx_new_device_assignment.html</filename>
     <member kind="function">
@@ -4269,6 +7051,45 @@
     </member>
   </compound>
   <compound kind="struct">
+    <name>VxSdk::VxNewDrawing</name>
+    <filename>struct_vx_sdk_1_1_vx_new_drawing.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>VxNewDrawing</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_drawing.html</anchorfile>
+      <anchor>a787590cbe36282540477518e77064a21</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>VxNewDrawing</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_drawing.html</anchorfile>
+      <anchor>a2f569105a4a819a27d9d5e9602425504</anchor>
+      <arglist>(const VxNewDrawing &amp;ref)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~VxNewDrawing</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_drawing.html</anchorfile>
+      <anchor>a673dcbea026189df7bd144fb7d37b973</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Clear</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_drawing.html</anchorfile>
+      <anchor>a1d62fb9fe08f3b081bfdb68205917ae7</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>name</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_drawing.html</anchorfile>
+      <anchor>a15e3781696bdd71b0df134ff31e2cdf7</anchor>
+      <arglist>[64]</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
     <name>VxSdk::VxNewEvent</name>
     <filename>struct_vx_sdk_1_1_vx_new_event.html</filename>
     <member kind="function">
@@ -4318,6 +7139,13 @@
       <name>sourceDeviceId</name>
       <anchorfile>struct_vx_sdk_1_1_vx_new_event.html</anchorfile>
       <anchor>ae3f8358d24df0e03d76339408ff72d80</anchor>
+      <arglist>[64]</arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>sourceUserName</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_event.html</anchorfile>
+      <anchor>a727e67078691d1734ab2e58b15e1233d</anchor>
       <arglist>[64]</arglist>
     </member>
     <member kind="variable">
@@ -4463,6 +7291,179 @@
     </member>
   </compound>
   <compound kind="struct">
+    <name>VxSdk::VxNewMarker</name>
+    <filename>struct_vx_sdk_1_1_vx_new_marker.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>VxNewMarker</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_marker.html</anchorfile>
+      <anchor>ad8882a0e8cf7abfd4bdf683d79896d22</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>VxNewMarker</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_marker.html</anchorfile>
+      <anchor>a0e2d7625b954f090bfcee7f82290349a</anchor>
+      <arglist>(const VxNewMarker &amp;ref)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~VxNewMarker</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_marker.html</anchorfile>
+      <anchor>af876704113e4870fddcf35b7a5f06284</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Clear</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_marker.html</anchorfile>
+      <anchor>a3ecae0d336c1e9a93a1a147da4e6caff</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>associatedDataSourceId</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_marker.html</anchorfile>
+      <anchor>a92ae7e9a25b5047efb9a540d0b35bcf0</anchor>
+      <arglist>[64]</arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>name</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_marker.html</anchorfile>
+      <anchor>a85c54918bc16a3664d1ad86089b065df</anchor>
+      <arglist>[64]</arglist>
+    </member>
+    <member kind="variable">
+      <type>float</type>
+      <name>direction</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_marker.html</anchorfile>
+      <anchor>a40f4c8cfbb89832d9bf5df3e2cdd4da0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>float</type>
+      <name>x</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_marker.html</anchorfile>
+      <anchor>a7a46daf429cc2e370cdf8793108d23a1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>float</type>
+      <name>y</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_marker.html</anchorfile>
+      <anchor>ad9f2fe4a75c6137f6d9158cb7225801b</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>VxSdk::VxNewMonitor</name>
+    <filename>struct_vx_sdk_1_1_vx_new_monitor.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>VxNewMonitor</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_monitor.html</anchorfile>
+      <anchor>afa3e0209f010456b75722706835acbd0</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>VxNewMonitor</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_monitor.html</anchorfile>
+      <anchor>ae7af32788a728fb0bb299f9ef5a2b6e5</anchor>
+      <arglist>(const VxNewMonitor &amp;ref)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~VxNewMonitor</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_monitor.html</anchorfile>
+      <anchor>ac4e4e94f60d22d3d684ada0b8eb75103</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Clear</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_monitor.html</anchorfile>
+      <anchor>aabb4220f9433be88d896e9b252111542</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>hostDeviceId</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_monitor.html</anchorfile>
+      <anchor>aeb8f688b7ce5e243fcef27bfdb99d780</anchor>
+      <arglist>[64]</arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>name</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_monitor.html</anchorfile>
+      <anchor>a03a495abbf25e5f9056d858a0d449ff7</anchor>
+      <arglist>[64]</arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>number</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_monitor.html</anchorfile>
+      <anchor>af5be9b5ee0fd0e73e57fae6c02ff3296</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>VxCellLayout::Value</type>
+      <name>layout</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_monitor.html</anchorfile>
+      <anchor>ade1ae208a294750158db6e5f9a88046f</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>VxSdk::VxNewNotification</name>
+    <filename>struct_vx_sdk_1_1_vx_new_notification.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>VxNewNotification</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_notification.html</anchorfile>
+      <anchor>a84b1bcbbb1c9a105b515ff1e48f5428c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>VxNewNotification</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_notification.html</anchorfile>
+      <anchor>a859d9cc132be80e0603f4980de192d3f</anchor>
+      <arglist>(const VxNewNotification &amp;ref)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~VxNewNotification</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_notification.html</anchorfile>
+      <anchor>a1b5fb6ae0197f65fbc6a9cec24a229ca</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Clear</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_notification.html</anchorfile>
+      <anchor>a7e235fb7019cfee03101bfc16340eefd</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable">
+      <type>char **</type>
+      <name>roleIds</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_notification.html</anchorfile>
+      <anchor>a71037199fb6fa4f029b6ad299e2c62b0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>roleIdSize</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_notification.html</anchorfile>
+      <anchor>ad9f9f30880afb55bc3ee270085f6af6b</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
     <name>VxSdk::VxNewPrivilege</name>
     <filename>struct_vx_sdk_1_1_vx_new_privilege.html</filename>
     <member kind="function">
@@ -4505,6 +7506,66 @@
       <name>permissionId</name>
       <anchorfile>struct_vx_sdk_1_1_vx_new_privilege.html</anchorfile>
       <anchor>a6c710dcdd7424a36205f14b54ccb9666</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>VxSdk::VxNewQuickReport</name>
+    <filename>struct_vx_sdk_1_1_vx_new_quick_report.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>VxNewQuickReport</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_quick_report.html</anchorfile>
+      <anchor>adaa3cf17ce71f47deaca62aeda07a2c3</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>VxNewQuickReport</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_quick_report.html</anchorfile>
+      <anchor>a26c1d835cfd825db4ee8cc099e93c3aa</anchor>
+      <arglist>(const VxNewQuickReport &amp;ref)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~VxNewQuickReport</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_quick_report.html</anchorfile>
+      <anchor>af9c4e4f6f434b21983e26c847d2d844d</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Clear</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_quick_report.html</anchorfile>
+      <anchor>afc0f0990bb2e41f6c05416cfb1a26993</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>endTime</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_quick_report.html</anchorfile>
+      <anchor>ad193ab6c0b331a52b4300bdddbee7266</anchor>
+      <arglist>[64]</arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>startTime</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_quick_report.html</anchorfile>
+      <anchor>a393364ace6460f3c92cf1b1946281a52</anchor>
+      <arglist>[64]</arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>contentsSize</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_quick_report.html</anchorfile>
+      <anchor>a68cdbd15dba75d2bb1e65e131866386a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>VxReportContent::Value *</type>
+      <name>contents</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_new_quick_report.html</anchorfile>
+      <anchor>a8c5c5088bc3de32d63b2d4da71a8ced9</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -5558,6 +8619,172 @@
     </member>
   </compound>
   <compound kind="struct">
+    <name>VxSdk::VxReportContent</name>
+    <filename>struct_vx_sdk_1_1_vx_report_content.html</filename>
+    <member kind="enumeration">
+      <type></type>
+      <name>Value</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_report_content.html</anchorfile>
+      <anchor>af254bfc130407d8fae7e1550cd736bbd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kCameraConfig</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_report_content.html</anchorfile>
+      <anchor>af254bfc130407d8fae7e1550cd736bbda58701f280fa601a643e2bc98ac3bfd7b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kDeviceInfo</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_report_content.html</anchorfile>
+      <anchor>af254bfc130407d8fae7e1550cd736bbda212e721a072e4c7c2049a4045b0a6a04</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kEventHistory</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_report_content.html</anchorfile>
+      <anchor>af254bfc130407d8fae7e1550cd736bbda2923cf24bcfe194c24250569525df091</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kOnlineOffline</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_report_content.html</anchorfile>
+      <anchor>af254bfc130407d8fae7e1550cd736bbdab21371da0b4dd33592fbb85a77f5414d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kRecorderConfig</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_report_content.html</anchorfile>
+      <anchor>af254bfc130407d8fae7e1550cd736bbdabb551097e6c29c58ff85fc97f3640fc7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kRecorderDiagnostics</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_report_content.html</anchorfile>
+      <anchor>af254bfc130407d8fae7e1550cd736bbdafa4afb21336f7aaf7d6c38325e2bf49e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kUserActions</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_report_content.html</anchorfile>
+      <anchor>af254bfc130407d8fae7e1550cd736bbda8a3f0675c0218ceb7a651ff3697bcb9c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kVxClusterConfig</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_report_content.html</anchorfile>
+      <anchor>af254bfc130407d8fae7e1550cd736bbdac7550f23b18d0e26dc37832317857eb8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kCameraConfig</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_report_content.html</anchorfile>
+      <anchor>af254bfc130407d8fae7e1550cd736bbda58701f280fa601a643e2bc98ac3bfd7b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kDeviceInfo</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_report_content.html</anchorfile>
+      <anchor>af254bfc130407d8fae7e1550cd736bbda212e721a072e4c7c2049a4045b0a6a04</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kEventHistory</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_report_content.html</anchorfile>
+      <anchor>af254bfc130407d8fae7e1550cd736bbda2923cf24bcfe194c24250569525df091</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kOnlineOffline</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_report_content.html</anchorfile>
+      <anchor>af254bfc130407d8fae7e1550cd736bbdab21371da0b4dd33592fbb85a77f5414d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kRecorderConfig</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_report_content.html</anchorfile>
+      <anchor>af254bfc130407d8fae7e1550cd736bbdabb551097e6c29c58ff85fc97f3640fc7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kRecorderDiagnostics</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_report_content.html</anchorfile>
+      <anchor>af254bfc130407d8fae7e1550cd736bbdafa4afb21336f7aaf7d6c38325e2bf49e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kUserActions</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_report_content.html</anchorfile>
+      <anchor>af254bfc130407d8fae7e1550cd736bbda8a3f0675c0218ceb7a651ff3697bcb9c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kVxClusterConfig</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_report_content.html</anchorfile>
+      <anchor>af254bfc130407d8fae7e1550cd736bbdac7550f23b18d0e26dc37832317857eb8</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>VxSdk::VxReportCreationStatus</name>
+    <filename>struct_vx_sdk_1_1_vx_report_creation_status.html</filename>
+    <member kind="enumeration">
+      <type></type>
+      <name>Value</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_report_creation_status.html</anchorfile>
+      <anchor>a05ed1f4ba6573b3e4f3136a179c996ff</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kUnknown</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_report_creation_status.html</anchorfile>
+      <anchor>a05ed1f4ba6573b3e4f3136a179c996ffaafc13376bdb0eaed5f007921e4b553e8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kInProgress</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_report_creation_status.html</anchorfile>
+      <anchor>a05ed1f4ba6573b3e4f3136a179c996ffa36899e56adc0eea554d253bf98493953</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kFailed</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_report_creation_status.html</anchorfile>
+      <anchor>a05ed1f4ba6573b3e4f3136a179c996ffa2001c4ecb2a4a3d484d72e7ae7575411</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kSuccessful</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_report_creation_status.html</anchorfile>
+      <anchor>a05ed1f4ba6573b3e4f3136a179c996ffaecddf081cffb7e832a2d4901d7d3334b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kUnknown</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_report_creation_status.html</anchorfile>
+      <anchor>a05ed1f4ba6573b3e4f3136a179c996ffaafc13376bdb0eaed5f007921e4b553e8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kInProgress</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_report_creation_status.html</anchorfile>
+      <anchor>a05ed1f4ba6573b3e4f3136a179c996ffa36899e56adc0eea554d253bf98493953</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kFailed</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_report_creation_status.html</anchorfile>
+      <anchor>a05ed1f4ba6573b3e4f3136a179c996ffa2001c4ecb2a4a3d484d72e7ae7575411</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kSuccessful</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_report_creation_status.html</anchorfile>
+      <anchor>a05ed1f4ba6573b3e4f3136a179c996ffaecddf081cffb7e832a2d4901d7d3334b</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
     <name>VxSdk::VxResourceType</name>
     <filename>struct_vx_sdk_1_1_vx_resource_type.html</filename>
     <member kind="enumeration">
@@ -6077,6 +9304,65 @@
     </member>
   </compound>
   <compound kind="struct">
+    <name>VxSdk::VxSystemLicenseType</name>
+    <filename>struct_vx_sdk_1_1_vx_system_license_type.html</filename>
+    <member kind="enumeration">
+      <type></type>
+      <name>Value</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_system_license_type.html</anchorfile>
+      <anchor>a1ff4a741eeb84d94fd16552ea9c09ab9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kUnknown</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_system_license_type.html</anchorfile>
+      <anchor>a1ff4a741eeb84d94fd16552ea9c09ab9abe44bf19a61256a219f3b7ef41b73bd3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kEnterprise</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_system_license_type.html</anchorfile>
+      <anchor>a1ff4a741eeb84d94fd16552ea9c09ab9a7e266e3297ff6dadb50863c905981ddd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kUltimate</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_system_license_type.html</anchorfile>
+      <anchor>a1ff4a741eeb84d94fd16552ea9c09ab9aa9bc9983de944c380caec2e116de16ca</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kUnlicensed</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_system_license_type.html</anchorfile>
+      <anchor>a1ff4a741eeb84d94fd16552ea9c09ab9a13f2b18a6bed96b8133455b8d3e1fa42</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kUnknown</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_system_license_type.html</anchorfile>
+      <anchor>a1ff4a741eeb84d94fd16552ea9c09ab9abe44bf19a61256a219f3b7ef41b73bd3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kEnterprise</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_system_license_type.html</anchorfile>
+      <anchor>a1ff4a741eeb84d94fd16552ea9c09ab9a7e266e3297ff6dadb50863c905981ddd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kUltimate</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_system_license_type.html</anchorfile>
+      <anchor>a1ff4a741eeb84d94fd16552ea9c09ab9aa9bc9983de944c380caec2e116de16ca</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>kUnlicensed</name>
+      <anchorfile>struct_vx_sdk_1_1_vx_system_license_type.html</anchorfile>
+      <anchor>a1ff4a741eeb84d94fd16552ea9c09ab9a13f2b18a6bed96b8133455b8d3e1fa42</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
     <name>VxSdk::VxZoomDirection</name>
     <filename>struct_vx_sdk_1_1_vx_zoom_direction.html</filename>
     <member kind="enumeration">
@@ -6141,6 +9427,7 @@
     <namespace>VxSdk::Utilities</namespace>
     <class kind="struct">VxSdk::IVxBookmark</class>
     <class kind="struct">VxSdk::IVxClip</class>
+    <class kind="struct">VxSdk::IVxConfiguration</class>
     <class kind="struct">VxSdk::IVxDataInterface</class>
     <class kind="struct">VxSdk::IVxDataObject</class>
     <class kind="struct">VxSdk::IVxDataSession</class>
@@ -6148,15 +9435,24 @@
     <class kind="struct">VxSdk::IVxDataStorage</class>
     <class kind="struct">VxSdk::IVxDevice</class>
     <class kind="struct">VxSdk::IVxDeviceAssignment</class>
+    <class kind="struct">VxSdk::IVxDrawing</class>
     <class kind="struct">VxSdk::IVxDriver</class>
     <class kind="struct">VxSdk::IVxEvent</class>
     <class kind="struct">VxSdk::IVxExport</class>
     <class kind="struct">VxSdk::IVxExportClip</class>
+    <class kind="struct">VxSdk::IVxLicense</class>
+    <class kind="struct">VxSdk::IVxLicenseFeature</class>
+    <class kind="struct">VxSdk::IVxMarker</class>
+    <class kind="struct">VxSdk::IVxMonitor</class>
+    <class kind="struct">VxSdk::IVxMonitorCell</class>
+    <class kind="struct">VxSdk::IVxNotification</class>
     <class kind="struct">VxSdk::IVxPattern</class>
     <class kind="struct">VxSdk::IVxPreset</class>
     <class kind="struct">VxSdk::IVxPrivilege</class>
     <class kind="struct">VxSdk::IVxPtzController</class>
     <class kind="struct">VxSdk::IVxPtzLock</class>
+    <class kind="struct">VxSdk::IVxQuickReport</class>
+    <class kind="struct">VxSdk::IVxResourceLock</class>
     <class kind="struct">VxSdk::IVxRole</class>
     <class kind="struct">VxSdk::IVxSchedule</class>
     <class kind="struct">VxSdk::IVxScheduleTrigger</class>
@@ -6166,9 +9462,11 @@
     <class kind="struct">VxSdk::IVxUser</class>
     <class kind="struct">VxSdk::VxAckState</class>
     <class kind="struct">VxSdk::VxAuthInfo</class>
+    <class kind="struct">VxSdk::VxCellLayout</class>
     <class kind="struct">VxSdk::VxCollection</class>
     <class kind="struct">VxSdk::VxCollectionFilter</class>
     <class kind="struct">VxSdk::VxCollectionFilterItem</class>
+    <class kind="struct">VxSdk::VxConfigStatus</class>
     <class kind="struct">VxSdk::VxDataSourceType</class>
     <class kind="struct">VxSdk::VxDataStorageType</class>
     <class kind="struct">VxSdk::VxDeviceState</class>
@@ -6179,13 +9477,20 @@
     <class kind="struct">VxSdk::VxIrisDirection</class>
     <class kind="struct">VxSdk::VxKvObject</class>
     <class kind="struct">VxSdk::VxLoginInfo</class>
+    <class kind="struct">VxSdk::VxLogLevel</class>
     <class kind="struct">VxSdk::VxNewBookmark</class>
     <class kind="struct">VxSdk::VxNewDataObject</class>
+    <class kind="struct">VxSdk::VxNewDevice</class>
     <class kind="struct">VxSdk::VxNewDeviceAssignment</class>
+    <class kind="struct">VxSdk::VxNewDrawing</class>
     <class kind="struct">VxSdk::VxNewEvent</class>
     <class kind="struct">VxSdk::VxNewExport</class>
     <class kind="struct">VxSdk::VxNewExportClip</class>
+    <class kind="struct">VxSdk::VxNewMarker</class>
+    <class kind="struct">VxSdk::VxNewMonitor</class>
+    <class kind="struct">VxSdk::VxNewNotification</class>
     <class kind="struct">VxSdk::VxNewPrivilege</class>
+    <class kind="struct">VxSdk::VxNewQuickReport</class>
     <class kind="struct">VxSdk::VxNewSchedule</class>
     <class kind="struct">VxSdk::VxNewScheduleTrigger</class>
     <class kind="struct">VxSdk::VxNewSituation</class>
@@ -6195,6 +9500,8 @@
     <class kind="struct">VxSdk::VxRecordingFramerate</class>
     <class kind="struct">VxSdk::VxRecordingType</class>
     <class kind="struct">VxSdk::VxRecurrenceType</class>
+    <class kind="struct">VxSdk::VxReportContent</class>
+    <class kind="struct">VxSdk::VxReportCreationStatus</class>
     <class kind="struct">VxSdk::VxResourceType</class>
     <class kind="struct">VxSdk::VxResult</class>
     <class kind="struct">VxSdk::VxRetentionPriority</class>
@@ -6203,6 +9510,7 @@
     <class kind="struct">VxSdk::VxSnapshotFilter</class>
     <class kind="struct">VxSdk::VxSnapshotFilterItem</class>
     <class kind="struct">VxSdk::VxStreamProtocol</class>
+    <class kind="struct">VxSdk::VxSystemLicenseType</class>
     <class kind="struct">VxSdk::VxZoomDirection</class>
     <member kind="typedef">
       <type>void(*</type>
@@ -6227,17 +9535,24 @@
     </member>
     <member kind="function">
       <type>EXTERN_C VXAPI VxResult::Value</type>
-      <name>VxSetAuthToken</name>
-      <anchorfile>namespace_vx_sdk.html</anchorfile>
-      <anchor>a89c2f5129c4710a2741f8182808edf25</anchor>
-      <arglist>(const VxAuthInfo &amp;authInfo, IVxSystem *&amp;system)</arglist>
-    </member>
-    <member kind="function">
-      <type>EXTERN_C VXAPI VxResult::Value</type>
       <name>IsSupportedSystem</name>
       <anchorfile>namespace_vx_sdk.html</anchorfile>
       <anchor>a289bd1fbcc394cf5e8aa60ca0534034f</anchor>
       <arglist>(const char *ipAddress, int port, bool &amp;isSupported)</arglist>
+    </member>
+    <member kind="function">
+      <type>EXTERN_C VXAPI VxResult::Value</type>
+      <name>VxSetLogLevel</name>
+      <anchorfile>namespace_vx_sdk.html</anchorfile>
+      <anchor>af7173ae984c07547738fa093e0a7ba18</anchor>
+      <arglist>(VxLogLevel::Value logLevel)</arglist>
+    </member>
+    <member kind="function">
+      <type>EXTERN_C VXAPI VxResult::Value</type>
+      <name>VxSetLogPath</name>
+      <anchorfile>namespace_vx_sdk.html</anchorfile>
+      <anchor>aa74053f36b1c9fd465980a4bf8bbfb29</anchor>
+      <arglist>(const char *logPath)</arglist>
     </member>
   </compound>
   <compound kind="namespace">

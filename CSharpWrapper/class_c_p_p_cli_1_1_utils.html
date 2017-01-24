@@ -139,9 +139,15 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a07aeac4d8bb768bb49b3072b1133b914"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_utils.html#a07aeac4d8bb768bb49b3072b1133b914">ConvertDateTimeToChar</a> (System::DateTime dateTime)</td></tr>
 <tr class="memdesc:a07aeac4d8bb768bb49b3072b1133b914"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a DateTime to a char.  <a href="#a07aeac4d8bb768bb49b3072b1133b914">More...</a><br /></td></tr>
 <tr class="separator:a07aeac4d8bb768bb49b3072b1133b914"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12f4f8d443902669613af86ea21eeae3"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_utils.html#a12f4f8d443902669613af86ea21eeae3">ConvertDateTimeToCharNonConst</a> (System::DateTime dateTime)</td></tr>
+<tr class="memdesc:a12f4f8d443902669613af86ea21eeae3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a DateTime to a char.  <a href="#a12f4f8d443902669613af86ea21eeae3">More...</a><br /></td></tr>
+<tr class="separator:a12f4f8d443902669613af86ea21eeae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebf2ab4986b04cd6725f78ec64f9f757"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_utils.html#aebf2ab4986b04cd6725f78ec64f9f757">ConvertDateTimeToTimeChar</a> (System::DateTime dateTime)</td></tr>
 <tr class="memdesc:aebf2ab4986b04cd6725f78ec64f9f757"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a DateTime to a char in TimeOfDay format.  <a href="#aebf2ab4986b04cd6725f78ec64f9f757">More...</a><br /></td></tr>
 <tr class="separator:aebf2ab4986b04cd6725f78ec64f9f757"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1848cba03e76016082f8a14f8a600243"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_utils.html#a1848cba03e76016082f8a14f8a600243">ConvertDateTimeToTimeCharNonConst</a> (System::DateTime dateTime)</td></tr>
+<tr class="memdesc:a1848cba03e76016082f8a14f8a600243"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a DateTime to a char in TimeOfDay format.  <a href="#a1848cba03e76016082f8a14f8a600243">More...</a><br /></td></tr>
+<tr class="separator:a1848cba03e76016082f8a14f8a600243"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a660ce15e752eec79eae1ef003bbe24"><td class="memItemLeft" align="right" valign="top">static System::DateTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_utils.html#a1a660ce15e752eec79eae1ef003bbe24">ConvertTimeCharToDateTime</a> (char *timeString)</td></tr>
 <tr class="memdesc:a1a660ce15e752eec79eae1ef003bbe24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a char to a DateTime using TimeOfDay format.  <a href="#a1a660ce15e752eec79eae1ef003bbe24">More...</a><br /></td></tr>
 <tr class="separator:a1a660ce15e752eec79eae1ef003bbe24"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,7 +155,7 @@ Static Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides commonly used methods. </p>
 
-<p>Definition at line <a class="el" href="_utils_8h_source.html#l00053">53</a> of file <a class="el" href="_utils_8h_source.html">Utils.h</a>.</p>
+<p>Definition at line <a class="el" href="_utils_8h_source.html#l00074">74</a> of file <a class="el" href="_utils_8h_source.html">Utils.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ad35ae4b3763298547bffaa8e6cf150f6"></a>
 <div class="memitem">
@@ -182,8 +188,8 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Default DateTime if it fails, else the parsed DateTime.</dd></dl>
 
-<p>Definition at line <a class="el" href="_utils_8h_source.html#l00091">91</a> of file <a class="el" href="_utils_8h_source.html">Utils.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                                                                          {</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            System::String^ value = <span class="keyword">gcnew</span> System::String(dateTimeString);</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            System::String^ format = <span class="keyword">gcnew</span> System::String(<a class="code" href="class_c_p_p_cli_1_1_utils.html#a8338f12ca753f53791ea9906f76d4fe6">GetDateFormat</a>());</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordflow">if</span> (value == System::String::Empty)</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                <span class="keywordflow">return</span> System::DateTime();</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keywordflow">return</span> System::DateTime::ParseExact(value, format, System::Globalization::CultureInfo::InvariantCulture);</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        }</div><div class="ttc" id="class_c_p_p_cli_1_1_utils_html_a8338f12ca753f53791ea9906f76d4fe6"><div class="ttname"><a href="class_c_p_p_cli_1_1_utils.html#a8338f12ca753f53791ea9906f76d4fe6">CPPCli::Utils::GetDateFormat</a></div><div class="ttdeci">static const char * GetDateFormat()</div><div class="ttdef"><b>Definition:</b> <a href="_utils_8h_source.html#l00055">Utils.h:55</a></div></div>
+<p>Definition at line <a class="el" href="_utils_8h_source.html#l00112">112</a> of file <a class="el" href="_utils_8h_source.html">Utils.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                                                                          {</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            System::String^ value = <span class="keyword">gcnew</span> System::String(dateTimeString);</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            System::String^ format = <span class="keyword">gcnew</span> System::String(<a class="code" href="class_c_p_p_cli_1_1_utils.html#a8338f12ca753f53791ea9906f76d4fe6">GetDateFormat</a>());</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <span class="keywordflow">if</span> (value == System::String::Empty)</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                <span class="keywordflow">return</span> System::DateTime();</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            System::DateTime timeValue;</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            System::Globalization::CultureInfo^ culture = System::Globalization::CultureInfo::InvariantCulture;</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            System::DateTime::TryParseExact(value, format, culture, System::Globalization::DateTimeStyles::None, timeValue);</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            <span class="keywordflow">return</span> timeValue;</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        }</div><div class="ttc" id="class_c_p_p_cli_1_1_utils_html_a8338f12ca753f53791ea9906f76d4fe6"><div class="ttname"><a href="class_c_p_p_cli_1_1_utils.html#a8338f12ca753f53791ea9906f76d4fe6">CPPCli::Utils::GetDateFormat</a></div><div class="ttdeci">static const char * GetDateFormat()</div><div class="ttdef"><b>Definition:</b> <a href="_utils_8h_source.html#l00076">Utils.h:76</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -218,8 +224,44 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The DateTime as a char.</dd></dl>
 
-<p>Definition at line <a class="el" href="_utils_8h_source.html#l00105">105</a> of file <a class="el" href="_utils_8h_source.html">Utils.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                                                                          {</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            System::String^ timeString = dateTime.ToString(<span class="keyword">gcnew</span> System::String(<a class="code" href="class_c_p_p_cli_1_1_utils.html#a8338f12ca753f53791ea9906f76d4fe6">GetDateFormat</a>()));</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            msclr::interop::marshal_context^ ctx = <span class="keyword">gcnew</span> msclr::interop::marshal_context();</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="keywordflow">return</span> ctx-&gt;marshal_as&lt;<span class="keyword">const</span> <span class="keywordtype">char</span>*&gt;(timeString);</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        }</div><div class="ttc" id="class_c_p_p_cli_1_1_utils_html_a8338f12ca753f53791ea9906f76d4fe6"><div class="ttname"><a href="class_c_p_p_cli_1_1_utils.html#a8338f12ca753f53791ea9906f76d4fe6">CPPCli::Utils::GetDateFormat</a></div><div class="ttdeci">static const char * GetDateFormat()</div><div class="ttdef"><b>Definition:</b> <a href="_utils_8h_source.html#l00055">Utils.h:55</a></div></div>
+<p>Definition at line <a class="el" href="_utils_8h_source.html#l00129">129</a> of file <a class="el" href="_utils_8h_source.html">Utils.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                                                                          {</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            System::String^ timeString = dateTime.ToString(<span class="keyword">gcnew</span> System::String(<a class="code" href="class_c_p_p_cli_1_1_utils.html#a8338f12ca753f53791ea9906f76d4fe6">GetDateFormat</a>()));</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            msclr::interop::marshal_context^ ctx = <span class="keyword">gcnew</span> msclr::interop::marshal_context();</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            <span class="keywordflow">return</span> ctx-&gt;marshal_as&lt;<span class="keyword">const</span> <span class="keywordtype">char</span>*&gt;(timeString);</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        }</div><div class="ttc" id="class_c_p_p_cli_1_1_utils_html_a8338f12ca753f53791ea9906f76d4fe6"><div class="ttname"><a href="class_c_p_p_cli_1_1_utils.html#a8338f12ca753f53791ea9906f76d4fe6">CPPCli::Utils::GetDateFormat</a></div><div class="ttdeci">static const char * GetDateFormat()</div><div class="ttdef"><b>Definition:</b> <a href="_utils_8h_source.html#l00076">Utils.h:76</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a12f4f8d443902669613af86ea21eeae3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static char* CPPCli::Utils::ConvertDateTimeToCharNonConst </td>
+          <td>(</td>
+          <td class="paramtype">System::DateTime&#160;</td>
+          <td class="paramname"><em>dateTime</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convert a DateTime to a char. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dateTime</td><td>The DateTime.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The DateTime as a char.</dd></dl>
+
+<p>Definition at line <a class="el" href="_utils_8h_source.html#l00140">140</a> of file <a class="el" href="_utils_8h_source.html">Utils.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                                                                            {</div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            System::String^ timeString = dateTime.ToString(<span class="keyword">gcnew</span> System::String(<a class="code" href="class_c_p_p_cli_1_1_utils.html#a8338f12ca753f53791ea9906f76d4fe6">GetDateFormat</a>()));</div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            msclr::interop::marshal_context^ ctx = <span class="keyword">gcnew</span> msclr::interop::marshal_context();</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            <span class="keywordflow">return</span> (<span class="keywordtype">char</span>*)(<span class="keywordtype">void</span>*)System::Runtime::InteropServices::Marshal::StringToHGlobalAnsi(timeString);</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        }</div><div class="ttc" id="class_c_p_p_cli_1_1_utils_html_a8338f12ca753f53791ea9906f76d4fe6"><div class="ttname"><a href="class_c_p_p_cli_1_1_utils.html#a8338f12ca753f53791ea9906f76d4fe6">CPPCli::Utils::GetDateFormat</a></div><div class="ttdeci">static const char * GetDateFormat()</div><div class="ttdef"><b>Definition:</b> <a href="_utils_8h_source.html#l00076">Utils.h:76</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -254,8 +296,43 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The DateTime as a char in TimeOfDay format.</dd></dl>
 
-<p>Definition at line <a class="el" href="_utils_8h_source.html#l00116">116</a> of file <a class="el" href="_utils_8h_source.html">Utils.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                                                                              {</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            System::String^ timeString = dateTime.ToString(<span class="keyword">gcnew</span> System::String(<span class="stringliteral">&quot;HH:mm:ss&quot;</span>));</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            msclr::interop::marshal_context^ ctx = <span class="keyword">gcnew</span> msclr::interop::marshal_context();</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            <span class="keywordflow">return</span> ctx-&gt;marshal_as&lt;<span class="keyword">const</span> <span class="keywordtype">char</span>*&gt;(timeString);</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        }</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_utils_8h_source.html#l00151">151</a> of file <a class="el" href="_utils_8h_source.html">Utils.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                                                                              {</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            System::String^ timeString = dateTime.ToString(<span class="keyword">gcnew</span> System::String(<span class="stringliteral">&quot;HH:mm:ss&quot;</span>));</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            msclr::interop::marshal_context^ ctx = <span class="keyword">gcnew</span> msclr::interop::marshal_context();</div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <span class="keywordflow">return</span> ctx-&gt;marshal_as&lt;<span class="keyword">const</span> <span class="keywordtype">char</span>*&gt;(timeString);</div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        }</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a1848cba03e76016082f8a14f8a600243"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static char* CPPCli::Utils::ConvertDateTimeToTimeCharNonConst </td>
+          <td>(</td>
+          <td class="paramtype">System::DateTime&#160;</td>
+          <td class="paramname"><em>dateTime</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convert a DateTime to a char in TimeOfDay format. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dateTime</td><td>The DateTime.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The DateTime as a char in TimeOfDay format.</dd></dl>
+
+<p>Definition at line <a class="el" href="_utils_8h_source.html#l00162">162</a> of file <a class="el" href="_utils_8h_source.html">Utils.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                                                                                {</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            System::String^ timeString = dateTime.ToString(<span class="keyword">gcnew</span> System::String(<span class="stringliteral">&quot;HH:mm:ss&quot;</span>));</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            msclr::interop::marshal_context^ ctx = <span class="keyword">gcnew</span> msclr::interop::marshal_context();</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            <span class="keywordflow">return</span> (<span class="keywordtype">char</span>*)(<span class="keywordtype">void</span>*)System::Runtime::InteropServices::Marshal::StringToHGlobalAnsi(timeString);</div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="af27a653d2c277c67bb7a2dee0971f4b2"></a>
@@ -289,8 +366,8 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Null if it fails, else the converted string.</dd></dl>
 
-<p>Definition at line <a class="el" href="_utils_8h_source.html#l00062">62</a> of file <a class="el" href="_utils_8h_source.html">Utils.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                                                     {</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            msclr::interop::marshal_context^ ctx = <span class="keyword">gcnew</span> msclr::interop::marshal_context();</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">return</span> ctx-&gt;marshal_as&lt;<span class="keyword">const</span> <span class="keywordtype">char</span>*&gt;(sysString);</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_utils_8h_source.html#l00083">83</a> of file <a class="el" href="_utils_8h_source.html">Utils.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                                                                     {</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            msclr::interop::marshal_context^ ctx = <span class="keyword">gcnew</span> msclr::interop::marshal_context();</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordflow">return</span> ctx-&gt;marshal_as&lt;<span class="keyword">const</span> <span class="keywordtype">char</span>*&gt;(sysString);</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a73723d64a0019760ef5604b43d808e14"></a>
@@ -324,8 +401,8 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Null if it fails, else the converted string.</dd></dl>
 
-<p>Definition at line <a class="el" href="_utils_8h_source.html#l00072">72</a> of file <a class="el" href="_utils_8h_source.html">Utils.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                                                       {</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordflow">return</span> (<span class="keywordtype">char</span>*)(<span class="keywordtype">void</span>*)System::Runtime::InteropServices::Marshal::StringToHGlobalAnsi(sysString);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        }</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_utils_8h_source.html#l00093">93</a> of file <a class="el" href="_utils_8h_source.html">Utils.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                                                                       {</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordflow">return</span> (<span class="keywordtype">char</span>*)(<span class="keywordtype">void</span>*)System::Runtime::InteropServices::Marshal::StringToHGlobalAnsi(sysString);</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ad84eb1bec2e04032e80ed1bf44b982a6"></a>
@@ -359,8 +436,8 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Null if it fails, else the converted string.</dd></dl>
 
-<p>Definition at line <a class="el" href="_utils_8h_source.html#l00081">81</a> of file <a class="el" href="_utils_8h_source.html">Utils.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                                                            {</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            msclr::interop::marshal_context^ ctx = <span class="keyword">gcnew</span> msclr::interop::marshal_context();</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordflow">return</span> ctx-&gt;marshal_as&lt;std::string&gt;(sysString);</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        }</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_utils_8h_source.html#l00102">102</a> of file <a class="el" href="_utils_8h_source.html">Utils.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                                                                            {</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            msclr::interop::marshal_context^ ctx = <span class="keyword">gcnew</span> msclr::interop::marshal_context();</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keywordflow">return</span> ctx-&gt;marshal_as&lt;std::string&gt;(sysString);</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a1a660ce15e752eec79eae1ef003bbe24"></a>
@@ -394,8 +471,8 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Default DateTime if it fails, else the parsed DateTime.</dd></dl>
 
-<p>Definition at line <a class="el" href="_utils_8h_source.html#l00127">127</a> of file <a class="el" href="_utils_8h_source.html">Utils.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                                                                          {</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            System::String^ value = <span class="keyword">gcnew</span> System::String(timeString);</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            System::String^ format = <span class="keyword">gcnew</span> System::String(<span class="stringliteral">&quot;HH:mm:ss&quot;</span>);</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            <span class="keywordflow">if</span> (value == System::String::Empty)</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                <span class="keywordflow">return</span> System::DateTime();</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            <span class="keywordflow">return</span> System::DateTime::ParseExact(value, format, System::Globalization::CultureInfo::InvariantCulture);</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        }</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_utils_8h_source.html#l00173">173</a> of file <a class="el" href="_utils_8h_source.html">Utils.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                                                                          {</div><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            System::String^ value = <span class="keyword">gcnew</span> System::String(timeString);</div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            System::String^ format = <span class="keyword">gcnew</span> System::String(<span class="stringliteral">&quot;HH:mm:ss&quot;</span>);</div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            <span class="keywordflow">if</span> (value == System::String::Empty)</div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                <span class="keywordflow">return</span> System::DateTime();</div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            <span class="keywordflow">return</span> System::DateTime::ParseExact(value, format, System::Globalization::CultureInfo::InvariantCulture);</div><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a8338f12ca753f53791ea9906f76d4fe6"></a>
@@ -419,8 +496,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_utils_8h_source.html#l00055">55</a> of file <a class="el" href="_utils_8h_source.html">Utils.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;yyyy-MM-dd&#39;T&#39;HH:mm:ss.fff&#39;Z&#39;&quot;</span>; }</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_utils_8h_source.html#l00076">76</a> of file <a class="el" href="_utils_8h_source.html">Utils.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;yyyy-MM-dd&#39;T&#39;HH:mm:ss.fff&#39;Z&#39;&quot;</span>; }</div></div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

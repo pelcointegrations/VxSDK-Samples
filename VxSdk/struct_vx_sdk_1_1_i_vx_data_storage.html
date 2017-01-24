@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">VideoXpert SDK
-   &#160;<span id="projectnumber">1.1</span>
+   &#160;<span id="projectnumber">1.2</span>
    </div>
    <div id="projectbrief">A software development kit for third party vendors to integrate with the VideoXpert platform</div>
   </td>
@@ -142,6 +142,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab84fb3373aca3085ffb4b1b2a3e70b72"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html#ab84fb3373aca3085ffb4b1b2a3e70b72">GetHostDevice</a> (<a class="el" href="struct_vx_sdk_1_1_i_vx_device.html">IVxDevice</a> *&amp;hostDevice) const  =0</td></tr>
 <tr class="memdesc:ab84fb3373aca3085ffb4b1b2a3e70b72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the host device of this data storage.  <a href="#ab84fb3373aca3085ffb4b1b2a3e70b72">More...</a><br /></td></tr>
 <tr class="separator:ab84fb3373aca3085ffb4b1b2a3e70b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0291e3ed41f4fd49854b68b80f19095e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html#a0291e3ed41f4fd49854b68b80f19095e">GetStorageConfiguration</a> (<a class="el" href="struct_vx_sdk_1_1_i_vx_configuration_1_1_storage.html">IVxConfiguration::Storage</a> *&amp;storageConfig) const  =0</td></tr>
+<tr class="memdesc:a0291e3ed41f4fd49854b68b80f19095e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the storage configuration.  <a href="#a0291e3ed41f4fd49854b68b80f19095e">More...</a><br /></td></tr>
+<tr class="separator:a0291e3ed41f4fd49854b68b80f19095e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d694992518354b1e996bac1c6652bd4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html#a5d694992518354b1e996bac1c6652bd4">Refresh</a> ()=0</td></tr>
+<tr class="memdesc:a5d694992518354b1e996bac1c6652bd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refreshes the member values for this object by retrieving its current information from the VideoXpert system.  <a href="#a5d694992518354b1e996bac1c6652bd4">More...</a><br /></td></tr>
+<tr class="separator:a5d694992518354b1e996bac1c6652bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad636fe9912ec303d2f8ab2faa1a2f744"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html#ad636fe9912ec303d2f8ab2faa1a2f744">SetName</a> (char <a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html#a8922e6ab7101679d21fbf0b2db6970c8">name</a>[64])=0</td></tr>
+<tr class="memdesc:ad636fe9912ec303d2f8ab2faa1a2f744"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name property.  <a href="#ad636fe9912ec303d2f8ab2faa1a2f744">More...</a><br /></td></tr>
+<tr class="separator:ad636fe9912ec303d2f8ab2faa1a2f744"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3c297acc77597225a5eba47685b7cfb"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html#ae3c297acc77597225a5eba47685b7cfb">UnassignDevice</a> (<a class="el" href="struct_vx_sdk_1_1_i_vx_device.html">IVxDevice</a> &amp;device) const  =0</td></tr>
 <tr class="memdesc:ae3c297acc77597225a5eba47685b7cfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unassign a device from this data storage.  <a href="#ae3c297acc77597225a5eba47685b7cfb">More...</a><br /></td></tr>
 <tr class="separator:ae3c297acc77597225a5eba47685b7cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -222,11 +231,11 @@ Public Attributes</h2></td></tr>
 
 <p>Clears this instance. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_data_storage_8h_source.html#l00079">79</a> of file <a class="el" href="_i_vx_data_storage_8h_source.html">IVxDataStorage.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                     {</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<span class="keywordtype">id</span>);</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_storage.html#a8922e6ab7101679d21fbf0b2db6970c8">name</a>);</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_storage.html#ac3527ab5f54d08a1b2e90fef46c8b772">type</a> = <a class="code" href="struct_vx_sdk_1_1_vx_data_storage_type.html#a39fab14e2b987116aea9c9a8d570877ba34b55c273b0856659179b2359ea69b56">VxDataStorageType::kUnknown</a>;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        }</div><div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00018">VxMacros.h:18</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_storage_html_a8922e6ab7101679d21fbf0b2db6970c8"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_storage.html#a8922e6ab7101679d21fbf0b2db6970c8">VxSdk::IVxDataStorage::name</a></div><div class="ttdeci">char name[64]</div><div class="ttdoc">The friendly name of the data storage. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_storage_8h_source.html#l00069">IVxDataStorage.h:69</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_vx_data_storage_type_html_a39fab14e2b987116aea9c9a8d570877ba34b55c273b0856659179b2359ea69b56"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_data_storage_type.html#a39fab14e2b987116aea9c9a8d570877ba34b55c273b0856659179b2359ea69b56">VxSdk::VxDataStorageType::kUnknown</a></div><div class="ttdoc">An error or unknown value was returned.</div><div class="ttdef"><b>Definition:</b> <a href="_vx_primitives_8h_source.html#l00075">VxPrimitives.h:75</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_storage_html_ac3527ab5f54d08a1b2e90fef46c8b772"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_storage.html#ac3527ab5f54d08a1b2e90fef46c8b772">VxSdk::IVxDataStorage::type</a></div><div class="ttdeci">VxDataStorageType::Value type</div><div class="ttdoc">The data storage type. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_storage_8h_source.html#l00073">IVxDataStorage.h:73</a></div></div>
+<p>Definition at line <a class="el" href="_i_vx_data_storage_8h_source.html#l00099">99</a> of file <a class="el" href="_i_vx_data_storage_8h_source.html">IVxDataStorage.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                     {</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<span class="keywordtype">id</span>);</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_storage.html#a8922e6ab7101679d21fbf0b2db6970c8">name</a>);</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_storage.html#ac3527ab5f54d08a1b2e90fef46c8b772">type</a> = <a class="code" href="struct_vx_sdk_1_1_vx_data_storage_type.html#a39fab14e2b987116aea9c9a8d570877ba34b55c273b0856659179b2359ea69b56">VxDataStorageType::kUnknown</a>;</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        }</div><div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00018">VxMacros.h:18</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_storage_html_a8922e6ab7101679d21fbf0b2db6970c8"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_storage.html#a8922e6ab7101679d21fbf0b2db6970c8">VxSdk::IVxDataStorage::name</a></div><div class="ttdeci">char name[64]</div><div class="ttdoc">The friendly name of the data storage. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_storage_8h_source.html#l00089">IVxDataStorage.h:89</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_data_storage_type_html_a39fab14e2b987116aea9c9a8d570877ba34b55c273b0856659179b2359ea69b56"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_data_storage_type.html#a39fab14e2b987116aea9c9a8d570877ba34b55c273b0856659179b2359ea69b56">VxSdk::VxDataStorageType::kUnknown</a></div><div class="ttdoc">An error or unknown value was returned.</div><div class="ttdef"><b>Definition:</b> <a href="_vx_primitives_8h_source.html#l00221">VxPrimitives.h:221</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_storage_html_ac3527ab5f54d08a1b2e90fef46c8b772"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_storage.html#ac3527ab5f54d08a1b2e90fef46c8b772">VxSdk::IVxDataStorage::type</a></div><div class="ttdeci">VxDataStorageType::Value type</div><div class="ttdoc">The data storage type. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_storage_8h_source.html#l00093">IVxDataStorage.h:93</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -279,6 +288,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the data sources assigned to this data storage. </p>
+<p>Available filters: kAllTags, kCapturing, kId, kIp, kModifiedSince, kName, kNumber, kRecording, kState, kType, kUnassigned.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dataSourceCollection</td><td>A <a class="el" href="struct_vx_sdk_1_1_vx_collection.html" title="Represents a collection of resources. ">VxCollection</a> of the assigned data sources.</td></tr>
@@ -312,6 +322,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the devices assigned to this data storage. </p>
+<p>Available filters: kDataSourceId, kModifiedSince.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">deviceAssignmentCollection</td><td>A <a class="el" href="struct_vx_sdk_1_1_vx_collection.html" title="Represents a collection of resources. ">VxCollection</a> of the assigned devices.</td></tr>
@@ -345,6 +356,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets all of the available device drivers that this data storage provides. </p>
+<p>Available filters: kModifiedSince, kName, kVendor, kVersion.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">driverCollection</td><td>A <a class="el" href="struct_vx_sdk_1_1_vx_collection.html" title="Represents a collection of resources. ">VxCollection</a> of available drivers.</td></tr>
@@ -385,6 +397,98 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of the request.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0291e3ed41f4fd49854b68b80f19095e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxDataStorage::GetStorageConfiguration </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_vx_sdk_1_1_i_vx_configuration_1_1_storage.html">IVxConfiguration::Storage</a> *&amp;&#160;</td>
+          <td class="paramname"><em>storageConfig</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the storage configuration. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">storageConfig</td><td>The storage configuration.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of the request.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5d694992518354b1e996bac1c6652bd4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxDataStorage::Refresh </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Refreshes the member values for this object by retrieving its current information from the VideoXpert system. </p>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of refreshing the member values for this object.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad636fe9912ec303d2f8ab2faa1a2f744"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxDataStorage::SetName </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>name</em>[64]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the name property. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The new name value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of setting the property.</dd></dl>
 
 </div>
 </div>
@@ -434,7 +538,7 @@ Public Attributes</h2></td></tr>
 
 <p>The unique identifier of the data storage. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_data_storage_8h_source.html#l00065">65</a> of file <a class="el" href="_i_vx_data_storage_8h_source.html">IVxDataStorage.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_data_storage_8h_source.html#l00085">85</a> of file <a class="el" href="_i_vx_data_storage_8h_source.html">IVxDataStorage.h</a>.</p>
 
 </div>
 </div>
@@ -450,7 +554,7 @@ Public Attributes</h2></td></tr>
 
 <p>The friendly name of the data storage. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_data_storage_8h_source.html#l00069">69</a> of file <a class="el" href="_i_vx_data_storage_8h_source.html">IVxDataStorage.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_data_storage_8h_source.html#l00089">89</a> of file <a class="el" href="_i_vx_data_storage_8h_source.html">IVxDataStorage.h</a>.</p>
 
 </div>
 </div>
@@ -466,7 +570,7 @@ Public Attributes</h2></td></tr>
 
 <p>The data storage type. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_data_storage_8h_source.html#l00073">73</a> of file <a class="el" href="_i_vx_data_storage_8h_source.html">IVxDataStorage.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_data_storage_8h_source.html#l00093">93</a> of file <a class="el" href="_i_vx_data_storage_8h_source.html">IVxDataStorage.h</a>.</p>
 
 </div>
 </div>

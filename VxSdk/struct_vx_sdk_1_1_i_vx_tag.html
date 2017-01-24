@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">VideoXpert SDK
-   &#160;<span id="projectnumber">1.1</span>
+   &#160;<span id="projectnumber">1.2</span>
    </div>
    <div id="projectbrief">A software development kit for third party vendors to integrate with the VideoXpert platform</div>
   </td>
@@ -137,6 +137,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af7ec3cdefd49d9dc20f2d03fc143df55"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_tag.html#af7ec3cdefd49d9dc20f2d03fc143df55">GetLinks</a> (<a class="el" href="struct_vx_sdk_1_1_vx_collection.html">VxCollection</a>&lt; <a class="el" href="struct_vx_sdk_1_1_i_vx_device.html">IVxDevice</a> ** &gt; &amp;deviceCollection) const  =0</td></tr>
 <tr class="memdesc:af7ec3cdefd49d9dc20f2d03fc143df55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the devices associated with this tag.  <a href="#af7ec3cdefd49d9dc20f2d03fc143df55">More...</a><br /></td></tr>
 <tr class="separator:af7ec3cdefd49d9dc20f2d03fc143df55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7099b908ba481aa8e0e7509723de6c2f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_tag.html#a7099b908ba481aa8e0e7509723de6c2f">GetOwner</a> (<a class="el" href="struct_vx_sdk_1_1_i_vx_user.html">IVxUser</a> *&amp;user) const  =0</td></tr>
+<tr class="memdesc:a7099b908ba481aa8e0e7509723de6c2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the <a class="el" href="struct_vx_sdk_1_1_i_vx_user.html" title="Represents information about a system user. ">IVxUser</a> that owns this tag, if any.  <a href="#a7099b908ba481aa8e0e7509723de6c2f">More...</a><br /></td></tr>
+<tr class="separator:a7099b908ba481aa8e0e7509723de6c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd2babff047d5cd4f9079352cca1621b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_tag.html#abd2babff047d5cd4f9079352cca1621b">Link</a> (<a class="el" href="struct_vx_sdk_1_1_i_vx_data_source.html">IVxDataSource</a> &amp;dataSource) const  =0</td></tr>
 <tr class="memdesc:abd2babff047d5cd4f9079352cca1621b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associates a data source with this tag. If the data source is deleted, the association with this tag shall also be removed.  <a href="#abd2babff047d5cd4f9079352cca1621b">More...</a><br /></td></tr>
 <tr class="separator:abd2babff047d5cd4f9079352cca1621b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,6 +149,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a01464bbeee0fdc8644644b832481faab"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_tag.html#a01464bbeee0fdc8644644b832481faab">Merge</a> (<a class="el" href="struct_vx_sdk_1_1_i_vx_tag.html">IVxTag</a> &amp;tag) const  =0</td></tr>
 <tr class="memdesc:a01464bbeee0fdc8644644b832481faab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merges this tag into the given tag. All links associated with this tag will be re-associated with the given tag; this tag will then be deleted.  <a href="#a01464bbeee0fdc8644644b832481faab">More...</a><br /></td></tr>
 <tr class="separator:a01464bbeee0fdc8644644b832481faab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa502b95bb6093d87e5473974887a100b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_tag.html#aa502b95bb6093d87e5473974887a100b">Refresh</a> ()=0</td></tr>
+<tr class="memdesc:aa502b95bb6093d87e5473974887a100b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refreshes the member values for this object by retrieving its current information from the VideoXpert system.  <a href="#aa502b95bb6093d87e5473974887a100b">More...</a><br /></td></tr>
+<tr class="separator:aa502b95bb6093d87e5473974887a100b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2d75831306ad70a68f7d2cd222afacd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_tag.html#aa2d75831306ad70a68f7d2cd222afacd">SetName</a> (char <a class="el" href="struct_vx_sdk_1_1_i_vx_tag.html#a6734da598f3f27909cb851c36b6918f0">name</a>[64])=0</td></tr>
+<tr class="memdesc:aa2d75831306ad70a68f7d2cd222afacd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name property.  <a href="#aa2d75831306ad70a68f7d2cd222afacd">More...</a><br /></td></tr>
+<tr class="separator:aa2d75831306ad70a68f7d2cd222afacd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e9e20e044eb5d79d43e41e98c60b6ec"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_tag.html#a0e9e20e044eb5d79d43e41e98c60b6ec">UnLink</a> (<a class="el" href="struct_vx_sdk_1_1_i_vx_data_source.html">IVxDataSource</a> &amp;dataSource) const  =0</td></tr>
 <tr class="memdesc:a0e9e20e044eb5d79d43e41e98c60b6ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a data source association from this tag.  <a href="#a0e9e20e044eb5d79d43e41e98c60b6ec">More...</a><br /></td></tr>
 <tr class="separator:a0e9e20e044eb5d79d43e41e98c60b6ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -199,10 +208,10 @@ Protected Member Functions</h2></td></tr>
 
 <p>Clears this instance. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_tag_8h_source.html#l00088">88</a> of file <a class="el" href="_i_vx_tag_8h_source.html">IVxTag.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                     {</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<span class="keywordtype">id</span>);</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_tag.html#a6734da598f3f27909cb851c36b6918f0">name</a>);</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_tag.html#a0ce4bee608627ebc954e6ce138e0b400">owner</a>);</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        }</div><div class="ttc" id="struct_vx_sdk_1_1_i_vx_tag_html_a6734da598f3f27909cb851c36b6918f0"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_tag.html#a6734da598f3f27909cb851c36b6918f0">VxSdk::IVxTag::name</a></div><div class="ttdeci">char name[64]</div><div class="ttdoc">The friendly name of the tag. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_tag_8h_source.html#l00078">IVxTag.h:78</a></div></div>
+<p>Definition at line <a class="el" href="_i_vx_tag_8h_source.html#l00107">107</a> of file <a class="el" href="_i_vx_tag_8h_source.html">IVxTag.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                     {</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<span class="keywordtype">id</span>);</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_tag.html#a6734da598f3f27909cb851c36b6918f0">name</a>);</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_tag.html#a0ce4bee608627ebc954e6ce138e0b400">owner</a>);</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        }</div><div class="ttc" id="struct_vx_sdk_1_1_i_vx_tag_html_a6734da598f3f27909cb851c36b6918f0"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_tag.html#a6734da598f3f27909cb851c36b6918f0">VxSdk::IVxTag::name</a></div><div class="ttdeci">char name[64]</div><div class="ttdoc">The friendly name of the tag. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_tag_8h_source.html#l00097">IVxTag.h:97</a></div></div>
 <div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00018">VxMacros.h:18</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_tag_html_a0ce4bee608627ebc954e6ce138e0b400"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_tag.html#a0ce4bee608627ebc954e6ce138e0b400">VxSdk::IVxTag::owner</a></div><div class="ttdeci">char owner[64]</div><div class="ttdoc">The name of the user that owns the tag if private. If not present, indicates that the tag is not owne...</div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_tag_8h_source.html#l00082">IVxTag.h:82</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_tag_html_a0ce4bee608627ebc954e6ce138e0b400"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_tag.html#a0ce4bee608627ebc954e6ce138e0b400">VxSdk::IVxTag::owner</a></div><div class="ttdeci">char owner[64]</div><div class="ttdoc">The name of the user that owns the tag if private. If not present, indicates that the tag is not owne...</div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_tag_8h_source.html#l00101">IVxTag.h:101</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -281,6 +290,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the data sources associated with this tag. </p>
+<p>Available filters: kAllTags, kCapturing, kId, kIp, kModifiedSince, kName, kNumber, kRecording, kState, kType, kUnassigned.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dataSourceCollection</td><td>The data sources associated with this tag.</td></tr>
@@ -314,9 +324,43 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the devices associated with this tag. </p>
+<p>Available filters: kAllTags, kCommissioned, kId, kIp, kModel, kModifiedSince, kName, kSerial, kState, kType, kVendor, kVersion.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">deviceCollection</td><td>The devices associated with this tag.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of the request.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7099b908ba481aa8e0e7509723de6c2f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxTag::GetOwner </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html">IVxUser</a> *&amp;&#160;</td>
+          <td class="paramname"><em>user</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the <a class="el" href="struct_vx_sdk_1_1_i_vx_user.html" title="Represents information about a system user. ">IVxUser</a> that owns this tag, if any. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">user</td><td>The <a class="el" href="struct_vx_sdk_1_1_i_vx_user.html" title="Represents information about a system user. ">IVxUser</a> that owns this tag.</td></tr>
   </table>
   </dd>
 </dl>
@@ -423,6 +467,65 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aa502b95bb6093d87e5473974887a100b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxTag::Refresh </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Refreshes the member values for this object by retrieving its current information from the VideoXpert system. </p>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of refreshing the member values for this object.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa2d75831306ad70a68f7d2cd222afacd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxTag::SetName </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>name</em>[64]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the name property. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The new name value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of setting the property.</dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a0e9e20e044eb5d79d43e41e98c60b6ec"></a>
 <div class="memitem">
 <div class="memproto">
@@ -502,7 +605,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The unique identifier of the tag. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_tag_8h_source.html#l00074">74</a> of file <a class="el" href="_i_vx_tag_8h_source.html">IVxTag.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_tag_8h_source.html#l00093">93</a> of file <a class="el" href="_i_vx_tag_8h_source.html">IVxTag.h</a>.</p>
 
 </div>
 </div>
@@ -518,7 +621,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The friendly name of the tag. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_tag_8h_source.html#l00078">78</a> of file <a class="el" href="_i_vx_tag_8h_source.html">IVxTag.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_tag_8h_source.html#l00097">97</a> of file <a class="el" href="_i_vx_tag_8h_source.html">IVxTag.h</a>.</p>
 
 </div>
 </div>
@@ -534,7 +637,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The name of the user that owns the tag if private. If not present, indicates that the tag is not owned (public). </p>
 
-<p>Definition at line <a class="el" href="_i_vx_tag_8h_source.html#l00082">82</a> of file <a class="el" href="_i_vx_tag_8h_source.html">IVxTag.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_tag_8h_source.html#l00101">101</a> of file <a class="el" href="_i_vx_tag_8h_source.html">IVxTag.h</a>.</p>
 
 </div>
 </div>

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['klive',['kLive',['../class_media_controller_1_1_i_controller.html#aeb873b38a229a877fafc92ef3a581f37acc1969e6e601edde4fbbad12a234e519',1,'MediaController::IController']]],
-  ['kplayback',['kPlayback',['../class_media_controller_1_1_i_controller.html#aeb873b38a229a877fafc92ef3a581f37a2182a8f6dc36ced932e7e05305f22704',1,'MediaController::IController']]],
-  ['kstopped',['kStopped',['../class_media_controller_1_1_i_controller.html#aeb873b38a229a877fafc92ef3a581f37a277ddc64239dd32f57f788dbd3ec64a9',1,'MediaController::IController']]]
+  ['klive',['kLive',['../class_media_controller_1_1_i_stream.html#a0ac9cb583470ae5b9f2e3314fdca9843adf3918a3aa70d9f1df2517efe874a5cb',1,'MediaController::IStream']]],
+  ['kplayback',['kPlayback',['../class_media_controller_1_1_i_stream.html#a0ac9cb583470ae5b9f2e3314fdca9843a75ff807459806cb0692c305bb7b0d1e0',1,'MediaController::IStream']]],
+  ['kstopped',['kStopped',['../class_media_controller_1_1_i_stream.html#a0ac9cb583470ae5b9f2e3314fdca9843a133c44ef437ff8a26fc323ed35e975ff',1,'MediaController::IStream']]]
 ];

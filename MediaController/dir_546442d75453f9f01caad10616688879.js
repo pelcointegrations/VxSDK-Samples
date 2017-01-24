@@ -8,8 +8,7 @@ var dir_546442d75453f9f01caad10616688879 =
       [ "GstVars", "struct_media_controller_1_1_gst_vars.html", "struct_media_controller_1_1_gst_vars" ]
     ] ],
     [ "GstWrapper.h", "_gst_wrapper_8h.html", [
-      [ "GstWrapper", "class_media_controller_1_1_gst_wrapper.html", "class_media_controller_1_1_gst_wrapper" ],
-      [ "Builder", "class_media_controller_1_1_gst_wrapper_1_1_builder.html", "class_media_controller_1_1_gst_wrapper_1_1_builder" ]
+      [ "GstWrapper", "class_media_controller_1_1_gst_wrapper.html", "class_media_controller_1_1_gst_wrapper" ]
     ] ],
     [ "IController.h", "_i_controller_8h.html", "_i_controller_8h" ],
     [ "IStream.h", "_i_stream_8h.html", [

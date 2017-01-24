@@ -2,6 +2,7 @@ var searchData=
 [
   ['sdpparser',['SdpParser',['../class_media_controller_1_1_rtsp_1_1_sdp_parser.html',1,'MediaController::Rtsp']]],
   ['stoppedstate',['StoppedState',['../class_media_controller_1_1_stopped_state.html',1,'MediaController']]],
+  ['storage',['Storage',['../../VxSdk/struct_vx_sdk_1_1_i_vx_configuration_1_1_storage.html',1,'VxSdk::IVxConfiguration']]],
   ['stream',['Stream',['../class_media_controller_1_1_mjpeg_pull_1_1_stream.html',1,'MediaController::MjpegPull']]],
   ['stream',['Stream',['../class_media_controller_1_1_rtsp_1_1_stream.html',1,'MediaController::Rtsp']]],
   ['streambase',['StreamBase',['../class_media_controller_1_1_stream_base.html',1,'MediaController']]],

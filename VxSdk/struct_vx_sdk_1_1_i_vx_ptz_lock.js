@@ -6,6 +6,7 @@ var struct_vx_sdk_1_1_i_vx_ptz_lock =
     [ "GetLockState", "struct_vx_sdk_1_1_i_vx_ptz_lock.html#aa5c93732ba2030d5f4cb5e8645a33b7e", null ],
     [ "GetOwner", "struct_vx_sdk_1_1_i_vx_ptz_lock.html#a6079540a942a60da9180e81108319730", null ],
     [ "Lock", "struct_vx_sdk_1_1_i_vx_ptz_lock.html#a9cfa5bd89cd6a04d0c1d04a2c4e9fdf2", null ],
+    [ "Refresh", "struct_vx_sdk_1_1_i_vx_ptz_lock.html#a70e572cd78ec37efbb942358287c8226", null ],
     [ "Unlock", "struct_vx_sdk_1_1_i_vx_ptz_lock.html#a03070556a4e337fe1862cf05ec8839cb", null ],
     [ "id", "struct_vx_sdk_1_1_i_vx_ptz_lock.html#a3e8bd2f9f7b13ce505e457b1b573cad3", null ]
 ];

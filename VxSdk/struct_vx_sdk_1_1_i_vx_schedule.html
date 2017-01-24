@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">VideoXpert SDK
-   &#160;<span id="projectnumber">1.1</span>
+   &#160;<span id="projectnumber">1.2</span>
    </div>
    <div id="projectbrief">A software development kit for third party vendors to integrate with the VideoXpert platform</div>
   </td>
@@ -143,6 +143,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa3c1e9aec47b330ae8aa001ef5fcaf2e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_schedule.html#aa3c1e9aec47b330ae8aa001ef5fcaf2e">Link</a> (<a class="el" href="struct_vx_sdk_1_1_i_vx_data_source.html">IVxDataSource</a> &amp;dataSource) const  =0</td></tr>
 <tr class="memdesc:aa3c1e9aec47b330ae8aa001ef5fcaf2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associates a data source with this schedule.  <a href="#aa3c1e9aec47b330ae8aa001ef5fcaf2e">More...</a><br /></td></tr>
 <tr class="separator:aa3c1e9aec47b330ae8aa001ef5fcaf2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3ccdcb236870635db6c37e799648257"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_schedule.html#aa3ccdcb236870635db6c37e799648257">Refresh</a> ()=0</td></tr>
+<tr class="memdesc:aa3ccdcb236870635db6c37e799648257"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refreshes the member values for this object by retrieving its current information from the VideoXpert system.  <a href="#aa3ccdcb236870635db6c37e799648257">More...</a><br /></td></tr>
+<tr class="separator:aa3ccdcb236870635db6c37e799648257"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a670642c17b5bc6bb4126fb1613fd3244"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_schedule.html#a670642c17b5bc6bb4126fb1613fd3244">SetAction</a> (<a class="el" href="struct_vx_sdk_1_1_vx_schedule_action.html#a0763ea0e08e829e4a547ebbff97e9a81">VxScheduleAction::Value</a> <a class="el" href="struct_vx_sdk_1_1_i_vx_schedule.html#a7caa0dd7fbcae4b593fa8adc183ba92a">action</a>)=0</td></tr>
+<tr class="memdesc:a670642c17b5bc6bb4126fb1613fd3244"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the action property.  <a href="#a670642c17b5bc6bb4126fb1613fd3244">More...</a><br /></td></tr>
+<tr class="separator:a670642c17b5bc6bb4126fb1613fd3244"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e8031dd66669863af7487e3481bd212"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_schedule.html#a4e8031dd66669863af7487e3481bd212">SetName</a> (char <a class="el" href="struct_vx_sdk_1_1_i_vx_schedule.html#acf72c12742deaf000c51b73c76c990c9">name</a>[64])=0</td></tr>
+<tr class="memdesc:a4e8031dd66669863af7487e3481bd212"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name property.  <a href="#a4e8031dd66669863af7487e3481bd212">More...</a><br /></td></tr>
+<tr class="separator:a4e8031dd66669863af7487e3481bd212"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ccc04b6f2cf78d6cb3e153e0a5d62bc"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_schedule.html#a8ccc04b6f2cf78d6cb3e153e0a5d62bc">SetUseAllDataSources</a> (bool <a class="el" href="struct_vx_sdk_1_1_i_vx_schedule.html#ab940eaec6ee10a7fe1bf8f91bf440732">useAllDataSources</a>)=0</td></tr>
+<tr class="memdesc:a8ccc04b6f2cf78d6cb3e153e0a5d62bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether the schedule applies to all data sources.  <a href="#a8ccc04b6f2cf78d6cb3e153e0a5d62bc">More...</a><br /></td></tr>
+<tr class="separator:a8ccc04b6f2cf78d6cb3e153e0a5d62bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a382ee0da2dd3bf090ef5eaaf3bb31f7b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_schedule.html#a382ee0da2dd3bf090ef5eaaf3bb31f7b">UnLink</a> (<a class="el" href="struct_vx_sdk_1_1_i_vx_data_source.html">IVxDataSource</a> &amp;dataSource) const  =0</td></tr>
 <tr class="memdesc:a382ee0da2dd3bf090ef5eaaf3bb31f7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a data source association from this schedule.  <a href="#a382ee0da2dd3bf090ef5eaaf3bb31f7b">More...</a><br /></td></tr>
 <tr class="separator:a382ee0da2dd3bf090ef5eaaf3bb31f7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -229,12 +241,12 @@ Protected Member Functions</h2></td></tr>
 
 <p>Clears this instance. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_schedule_8h_source.html#l00079">79</a> of file <a class="el" href="_i_vx_schedule_8h_source.html">IVxSchedule.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                     {</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_schedule.html#ab940eaec6ee10a7fe1bf8f91bf440732">useAllDataSources</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<span class="keywordtype">id</span>);</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_schedule.html#acf72c12742deaf000c51b73c76c990c9">name</a>);</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_schedule.html#a7caa0dd7fbcae4b593fa8adc183ba92a">action</a> = <a class="code" href="struct_vx_sdk_1_1_vx_schedule_action.html#a0763ea0e08e829e4a547ebbff97e9a81aa435f1599784f29592b60dcb05341d90">VxScheduleAction::kUnknown</a>;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        }</div><div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00018">VxMacros.h:18</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_schedule_html_acf72c12742deaf000c51b73c76c990c9"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_schedule.html#acf72c12742deaf000c51b73c76c990c9">VxSdk::IVxSchedule::name</a></div><div class="ttdeci">char name[64]</div><div class="ttdoc">The friendly name of the schedule. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_schedule_8h_source.html#l00069">IVxSchedule.h:69</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_schedule_html_a7caa0dd7fbcae4b593fa8adc183ba92a"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_schedule.html#a7caa0dd7fbcae4b593fa8adc183ba92a">VxSdk::IVxSchedule::action</a></div><div class="ttdeci">VxScheduleAction::Value action</div><div class="ttdoc">The action performed when the schedule is active. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_schedule_8h_source.html#l00073">IVxSchedule.h:73</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_vx_schedule_action_html_a0763ea0e08e829e4a547ebbff97e9a81aa435f1599784f29592b60dcb05341d90"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_schedule_action.html#a0763ea0e08e829e4a547ebbff97e9a81aa435f1599784f29592b60dcb05341d90">VxSdk::VxScheduleAction::kUnknown</a></div><div class="ttdoc">An error or unknown value was returned.</div><div class="ttdef"><b>Definition:</b> <a href="_vx_primitives_8h_source.html#l00376">VxPrimitives.h:376</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_schedule_html_ab940eaec6ee10a7fe1bf8f91bf440732"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_schedule.html#ab940eaec6ee10a7fe1bf8f91bf440732">VxSdk::IVxSchedule::useAllDataSources</a></div><div class="ttdeci">bool useAllDataSources</div><div class="ttdoc">Indicates whether the schedule applies to all data sources. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_schedule_8h_source.html#l00061">IVxSchedule.h:61</a></div></div>
+<p>Definition at line <a class="el" href="_i_vx_schedule_8h_source.html#l00103">103</a> of file <a class="el" href="_i_vx_schedule_8h_source.html">IVxSchedule.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                     {</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_schedule.html#ab940eaec6ee10a7fe1bf8f91bf440732">useAllDataSources</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<span class="keywordtype">id</span>);</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_schedule.html#acf72c12742deaf000c51b73c76c990c9">name</a>);</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_schedule.html#a7caa0dd7fbcae4b593fa8adc183ba92a">action</a> = <a class="code" href="struct_vx_sdk_1_1_vx_schedule_action.html#a0763ea0e08e829e4a547ebbff97e9a81aa435f1599784f29592b60dcb05341d90">VxScheduleAction::kUnknown</a>;</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        }</div><div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00018">VxMacros.h:18</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_schedule_html_acf72c12742deaf000c51b73c76c990c9"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_schedule.html#acf72c12742deaf000c51b73c76c990c9">VxSdk::IVxSchedule::name</a></div><div class="ttdeci">char name[64]</div><div class="ttdoc">The friendly name of the schedule. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_schedule_8h_source.html#l00093">IVxSchedule.h:93</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_schedule_html_a7caa0dd7fbcae4b593fa8adc183ba92a"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_schedule.html#a7caa0dd7fbcae4b593fa8adc183ba92a">VxSdk::IVxSchedule::action</a></div><div class="ttdeci">VxScheduleAction::Value action</div><div class="ttdoc">The action performed when the schedule is active. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_schedule_8h_source.html#l00097">IVxSchedule.h:97</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_schedule_action_html_a0763ea0e08e829e4a547ebbff97e9a81aa435f1599784f29592b60dcb05341d90"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_schedule_action.html#a0763ea0e08e829e4a547ebbff97e9a81aa435f1599784f29592b60dcb05341d90">VxSdk::VxScheduleAction::kUnknown</a></div><div class="ttdoc">An error or unknown value was returned.</div><div class="ttdef"><b>Definition:</b> <a href="_vx_primitives_8h_source.html#l00587">VxPrimitives.h:587</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_schedule_html_ab940eaec6ee10a7fe1bf8f91bf440732"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_schedule.html#ab940eaec6ee10a7fe1bf8f91bf440732">VxSdk::IVxSchedule::useAllDataSources</a></div><div class="ttdeci">bool useAllDataSources</div><div class="ttdoc">Indicates whether the schedule applies to all data sources. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_schedule_8h_source.html#l00085">IVxSchedule.h:85</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -313,6 +325,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the data sources associated with this schedule. </p>
+<p>Available filters: kAllTags, kCapturing, kId, kIp, kModifiedSince, kName, kNumber, kRecording, kState, kType, kUnassigned.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dataSourceCollection</td><td>The data sources associated with this schedule.</td></tr>
@@ -389,6 +402,131 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aa3ccdcb236870635db6c37e799648257"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxSchedule::Refresh </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Refreshes the member values for this object by retrieving its current information from the VideoXpert system. </p>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of refreshing the member values for this object.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a670642c17b5bc6bb4126fb1613fd3244"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxSchedule::SetAction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_vx_sdk_1_1_vx_schedule_action.html#a0763ea0e08e829e4a547ebbff97e9a81">VxScheduleAction::Value</a>&#160;</td>
+          <td class="paramname"><em>action</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the action property. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">action</td><td>The new action value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of setting the property.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4e8031dd66669863af7487e3481bd212"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxSchedule::SetName </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>name</em>[64]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the name property. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The new name value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of setting the property.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8ccc04b6f2cf78d6cb3e153e0a5d62bc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxSchedule::SetUseAllDataSources </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>useAllDataSources</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets whether the schedule applies to all data sources. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">useAllDataSources</td><td>True to use all data sources, otherwise false.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of setting the property.</dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a382ee0da2dd3bf090ef5eaaf3bb31f7b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -435,7 +573,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The action performed when the schedule is active. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_schedule_8h_source.html#l00073">73</a> of file <a class="el" href="_i_vx_schedule_8h_source.html">IVxSchedule.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_schedule_8h_source.html#l00097">97</a> of file <a class="el" href="_i_vx_schedule_8h_source.html">IVxSchedule.h</a>.</p>
 
 </div>
 </div>
@@ -451,7 +589,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The unique identifier of the schedule. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_schedule_8h_source.html#l00065">65</a> of file <a class="el" href="_i_vx_schedule_8h_source.html">IVxSchedule.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_schedule_8h_source.html#l00089">89</a> of file <a class="el" href="_i_vx_schedule_8h_source.html">IVxSchedule.h</a>.</p>
 
 </div>
 </div>
@@ -467,7 +605,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The friendly name of the schedule. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_schedule_8h_source.html#l00069">69</a> of file <a class="el" href="_i_vx_schedule_8h_source.html">IVxSchedule.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_schedule_8h_source.html#l00093">93</a> of file <a class="el" href="_i_vx_schedule_8h_source.html">IVxSchedule.h</a>.</p>
 
 </div>
 </div>
@@ -483,7 +621,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Indicates whether the schedule applies to all data sources. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_schedule_8h_source.html#l00061">61</a> of file <a class="el" href="_i_vx_schedule_8h_source.html">IVxSchedule.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_schedule_8h_source.html#l00085">85</a> of file <a class="el" href="_i_vx_schedule_8h_source.html">IVxSchedule.h</a>.</p>
 
 </div>
 </div>

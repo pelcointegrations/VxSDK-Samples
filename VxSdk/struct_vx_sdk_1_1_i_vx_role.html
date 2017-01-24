@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">VideoXpert SDK
-   &#160;<span id="projectnumber">1.1</span>
+   &#160;<span id="projectnumber">1.2</span>
    </div>
    <div id="projectbrief">A software development kit for third party vendors to integrate with the VideoXpert platform</div>
   </td>
@@ -140,6 +140,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9789bafa82270b52c5bf3693bd4f6bfe"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_role.html#a9789bafa82270b52c5bf3693bd4f6bfe">GetUsers</a> (<a class="el" href="struct_vx_sdk_1_1_vx_collection.html">VxCollection</a>&lt; <a class="el" href="struct_vx_sdk_1_1_i_vx_user.html">IVxUser</a> ** &gt; &amp;userCollection) const  =0</td></tr>
 <tr class="memdesc:a9789bafa82270b52c5bf3693bd4f6bfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the users which are currently assigned this role.  <a href="#a9789bafa82270b52c5bf3693bd4f6bfe">More...</a><br /></td></tr>
 <tr class="separator:a9789bafa82270b52c5bf3693bd4f6bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d2e3d802204c90f9a986bbff753ca6a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_role.html#a5d2e3d802204c90f9a986bbff753ca6a">Refresh</a> ()=0</td></tr>
+<tr class="memdesc:a5d2e3d802204c90f9a986bbff753ca6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refreshes the member values for this object by retrieving its current information from the VideoXpert system.  <a href="#a5d2e3d802204c90f9a986bbff753ca6a">More...</a><br /></td></tr>
+<tr class="separator:a5d2e3d802204c90f9a986bbff753ca6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c8250a8bfc928dafd8c0ef37d339829"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_role.html#a7c8250a8bfc928dafd8c0ef37d339829">SetName</a> (char <a class="el" href="struct_vx_sdk_1_1_i_vx_role.html#a0d0a93810a4e736b39b8d5a9879e4783">name</a>[64])=0</td></tr>
+<tr class="memdesc:a7c8250a8bfc928dafd8c0ef37d339829"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name property.  <a href="#a7c8250a8bfc928dafd8c0ef37d339829">More...</a><br /></td></tr>
+<tr class="separator:a7c8250a8bfc928dafd8c0ef37d339829"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -220,10 +226,10 @@ Protected Member Functions</h2></td></tr>
 
 <p>Clears this instance. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_role_8h_source.html#l00066">66</a> of file <a class="el" href="_i_vx_role_8h_source.html">IVxRole.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                     {</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_role.html#a172c7231665023ac27137e1fa5b694db">isReadOnly</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<span class="keywordtype">id</span>);</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_role.html#a0d0a93810a4e736b39b8d5a9879e4783">name</a>);</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        }</div><div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00018">VxMacros.h:18</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_role_html_a0d0a93810a4e736b39b8d5a9879e4783"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_role.html#a0d0a93810a4e736b39b8d5a9879e4783">VxSdk::IVxRole::name</a></div><div class="ttdeci">char name[64]</div><div class="ttdoc">The friendly name of the role. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_role_8h_source.html#l00060">IVxRole.h:60</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_role_html_a172c7231665023ac27137e1fa5b694db"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_role.html#a172c7231665023ac27137e1fa5b694db">VxSdk::IVxRole::isReadOnly</a></div><div class="ttdeci">bool isReadOnly</div><div class="ttdoc">Indicates whether this role is read-only. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_role_8h_source.html#l00052">IVxRole.h:52</a></div></div>
+<p>Definition at line <a class="el" href="_i_vx_role_8h_source.html#l00079">79</a> of file <a class="el" href="_i_vx_role_8h_source.html">IVxRole.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                     {</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_role.html#a172c7231665023ac27137e1fa5b694db">isReadOnly</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<span class="keywordtype">id</span>);</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_role.html#a0d0a93810a4e736b39b8d5a9879e4783">name</a>);</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        }</div><div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00018">VxMacros.h:18</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_role_html_a0d0a93810a4e736b39b8d5a9879e4783"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_role.html#a0d0a93810a4e736b39b8d5a9879e4783">VxSdk::IVxRole::name</a></div><div class="ttdeci">char name[64]</div><div class="ttdoc">The friendly name of the role. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_role_8h_source.html#l00073">IVxRole.h:73</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_role_html_a172c7231665023ac27137e1fa5b694db"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_role.html#a172c7231665023ac27137e1fa5b694db">VxSdk::IVxRole::isReadOnly</a></div><div class="ttdeci">bool isReadOnly</div><div class="ttdoc">Indicates whether this role is read-only. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_role_8h_source.html#l00065">IVxRole.h:65</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -302,6 +308,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the privileges assigned to this role. </p>
+<p>Available filters: kModifiedSince, kPermission, kResourceId.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">privilegeCollection</td><td>The privileges assigned to this role.</td></tr>
@@ -335,6 +342,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the users which are currently assigned this role. </p>
+<p>Available filters: kModifiedSince, kName.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">userCollection</td><td>A <a class="el" href="struct_vx_sdk_1_1_vx_collection.html" title="Represents a collection of resources. ">VxCollection</a> of users which are currently assigned this role.</td></tr>
@@ -342,6 +350,65 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of the request.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5d2e3d802204c90f9a986bbff753ca6a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxRole::Refresh </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Refreshes the member values for this object by retrieving its current information from the VideoXpert system. </p>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of refreshing the member values for this object.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7c8250a8bfc928dafd8c0ef37d339829"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxRole::SetName </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>name</em>[64]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the name property. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The new name value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of setting the property.</dd></dl>
 
 </div>
 </div>
@@ -358,7 +425,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The unique identifier of the role. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_role_8h_source.html#l00056">56</a> of file <a class="el" href="_i_vx_role_8h_source.html">IVxRole.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_role_8h_source.html#l00069">69</a> of file <a class="el" href="_i_vx_role_8h_source.html">IVxRole.h</a>.</p>
 
 </div>
 </div>
@@ -374,7 +441,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Indicates whether this role is read-only. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_role_8h_source.html#l00052">52</a> of file <a class="el" href="_i_vx_role_8h_source.html">IVxRole.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_role_8h_source.html#l00065">65</a> of file <a class="el" href="_i_vx_role_8h_source.html">IVxRole.h</a>.</p>
 
 </div>
 </div>
@@ -390,7 +457,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The friendly name of the role. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_role_8h_source.html#l00060">60</a> of file <a class="el" href="_i_vx_role_8h_source.html">IVxRole.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_role_8h_source.html#l00073">73</a> of file <a class="el" href="_i_vx_role_8h_source.html">IVxRole.h</a>.</p>
 
 </div>
 </div>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['yresolution',['yResolution',['../../VxSdk/struct_vx_sdk_1_1_i_vx_data_session.html#a92841ee8af205e5992d8ecb843955f9d',1,'VxSdk::IVxDataSession']]]
+  ['windowhandle',['windowHandle',['../../MediaController/struct_media_controller_1_1_gst_vars.html#a146f93c0030ddd6a1de8ac16eb30ce41',1,'MediaController::GstVars']]]
 ];

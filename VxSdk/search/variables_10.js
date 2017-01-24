@@ -8,5 +8,8 @@ var searchData=
   ['recurweeklysize',['recurWeeklySize',['../struct_vx_sdk_1_1_i_vx_schedule_trigger.html#aa0d6a5867b5918eef6ac1b6da9b14726',1,'VxSdk::IVxScheduleTrigger::recurWeeklySize()'],['../struct_vx_sdk_1_1_vx_new_schedule_trigger.html#a3cb6492d5ec69641da00c8380c0270c5',1,'VxSdk::VxNewScheduleTrigger::recurWeeklySize()']]],
   ['recuryearly',['recurYearly',['../struct_vx_sdk_1_1_i_vx_schedule_trigger.html#addbe4127bb9ec9686132b101f075c071',1,'VxSdk::IVxScheduleTrigger::recurYearly()'],['../struct_vx_sdk_1_1_vx_new_schedule_trigger.html#a65a658b02569c634e24ac2d61ec9ec21',1,'VxSdk::VxNewScheduleTrigger::recurYearly()']]],
   ['recuryearlysize',['recurYearlySize',['../struct_vx_sdk_1_1_i_vx_schedule_trigger.html#a0a9be2bea16fb24f077cc38005b7f700',1,'VxSdk::IVxScheduleTrigger::recurYearlySize()'],['../struct_vx_sdk_1_1_vx_new_schedule_trigger.html#a28a0e67c8a70233bd77ed3eacd392df3',1,'VxSdk::VxNewScheduleTrigger::recurYearlySize()']]],
-  ['resourcetype',['resourceType',['../struct_vx_sdk_1_1_i_vx_privilege.html#a6af1316af5512f033b6f1391d2791ca1',1,'VxSdk::IVxPrivilege']]]
+  ['resourcetype',['resourceType',['../struct_vx_sdk_1_1_i_vx_privilege.html#a6af1316af5512f033b6f1391d2791ca1',1,'VxSdk::IVxPrivilege']]],
+  ['retentionlimit',['retentionLimit',['../struct_vx_sdk_1_1_i_vx_configuration_1_1_storage.html#a3bf9ee628420309778e2c6122eb593d7',1,'VxSdk::IVxConfiguration::Storage']]],
+  ['roleids',['roleIds',['../struct_vx_sdk_1_1_i_vx_notification.html#ab597654d00d1fa76269fe2c819b982c7',1,'VxSdk::IVxNotification::roleIds()'],['../struct_vx_sdk_1_1_vx_new_notification.html#a71037199fb6fa4f029b6ad299e2c62b0',1,'VxSdk::VxNewNotification::roleIds()']]],
+  ['roleidsize',['roleIdSize',['../struct_vx_sdk_1_1_i_vx_notification.html#aa1efcabbd9c84d155a83e4f3c3917ed3',1,'VxSdk::IVxNotification::roleIdSize()'],['../struct_vx_sdk_1_1_vx_new_notification.html#ad9f9f30880afb55bc3ee270085f6af6b',1,'VxSdk::VxNewNotification::roleIdSize()']]]
 ];

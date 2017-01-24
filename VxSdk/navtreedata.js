@@ -17,7 +17,7 @@ var NAVTREE =
         [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", "functions_vars" ],
         [ "Enumerations", "functions_enum.html", null ],
-        [ "Enumerator", "functions_eval.html", null ]
+        [ "Enumerator", "functions_eval.html", "functions_eval" ]
       ] ]
     ] ],
     [ "Files", null, [
@@ -33,9 +33,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_i_vx_bookmark_8h.html",
-"struct_vx_sdk_1_1_i_vx_data_source.html#a8fe7320e808adb9c9ffc3ccf9aa9a9fe",
+"struct_vx_sdk_1_1_i_vx_configuration_1_1_cluster.html#a650660fd680771eb03e5a19f017e5682",
+"struct_vx_sdk_1_1_i_vx_marker.html#aeb06e961fda8f6d60842018744e85f56",
 "struct_vx_sdk_1_1_i_vx_system.html#a89441c2a97ea14bff936661dd27631fc",
-"struct_vx_sdk_1_1_vx_new_schedule_trigger.html#a995770b843dac049d5cc7caf2b591924"
+"struct_vx_sdk_1_1_vx_login_info.html#a978a113dd955c9c4f470565541b929b2",
+"struct_vx_sdk_1_1_vx_report_content.html#af254bfc130407d8fae7e1550cd736bbdab21371da0b4dd33592fbb85a77f5414d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

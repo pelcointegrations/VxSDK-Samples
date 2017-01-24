@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">VideoXpert SDK
-   &#160;<span id="projectnumber">1.1</span>
+   &#160;<span id="projectnumber">1.2</span>
    </div>
    <div id="projectbrief">A software development kit for third party vendors to integrate with the VideoXpert platform</div>
   </td>
@@ -123,12 +123,16 @@ $(document).ready(function(){initNavTree('struct_vx_sdk_1_1_i_vx_user.html','');
   <tr><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html#a907a33cd57fed0a42904c82c1a9762d3">GetAccountState</a>(bool &amp;isEnabled) const  =0</td><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html">VxSdk::IVxUser</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html#ae9e2a230184111061a788a3d8796cadd">GetDataObjects</a>(VxCollection&lt; IVxDataObject ** &gt; &amp;dataObjectCollection) const  =0</td><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html">VxSdk::IVxUser</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html#ace6928c447717a2da6f69e510ba232c5">GetRoles</a>(VxCollection&lt; IVxRole ** &gt; &amp;roleCollection) const  =0</td><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html">VxSdk::IVxUser</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html#ae81214d4810a9bcee975aeaa8b8fb0ba">id</a></td><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html">VxSdk::IVxUser</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html#ab7ea09fb9c481648d2e67bb453e1b44e">name</a></td><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html">VxSdk::IVxUser</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html#a0fec61f07111443caea2361aeba57a44">passwordExpiration</a></td><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html">VxSdk::IVxUser</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html#a6dfce76d4a997409717344ab59262de5">GetTags</a>(VxCollection&lt; IVxTag ** &gt; &amp;tagCollection) const  =0</td><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html">VxSdk::IVxUser</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html#ae81214d4810a9bcee975aeaa8b8fb0ba">id</a></td><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html">VxSdk::IVxUser</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html#ab7ea09fb9c481648d2e67bb453e1b44e">name</a></td><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html">VxSdk::IVxUser</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html#a0fec61f07111443caea2361aeba57a44">passwordExpiration</a></td><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html">VxSdk::IVxUser</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html#af632c1f9ce64b3c0a6c5fd206cc72a35">Refresh</a>()=0</td><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html">VxSdk::IVxUser</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html#a950885fc2054d1b46c1819a5762b22cd">RemoveFromRole</a>(IVxRole &amp;role) const  =0</td><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html">VxSdk::IVxUser</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html#a2ed81f987bdbb7d97754e0150e5724ce">SetAccountState</a>(bool isEnabled) const  =0</td><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html">VxSdk::IVxUser</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html#aa6ab4e90493f88f97d3fc9cd2bdbac73">SetPassword</a>(const char *newPassword) const  =0</td><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html">VxSdk::IVxUser</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html#a150119700d84d14e0f69715efb7c8029">SetDomain</a>(char domain[64])=0</td><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html">VxSdk::IVxUser</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html#a51c6e1eda7d9486fee1dddc3f174af4a">SetName</a>(char name[64])=0</td><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html">VxSdk::IVxUser</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html#a1cec19a11c525937a618ca589b2c7361">SetPassword</a>(char newPassword[64]) const  =0</td><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html">VxSdk::IVxUser</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

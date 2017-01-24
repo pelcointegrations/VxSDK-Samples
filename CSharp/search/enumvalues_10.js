@@ -6,5 +6,6 @@ var searchData=
   ['vieweventhistory',['ViewEventHistory',['../../CSharpWrapper/class_c_p_p_cli_1_1_privilege.html#aafa1578cd2326685f3238c33a26db1ebae512a534385ea59d43ecfbf869c25260',1,'CPPCli::Privilege']]],
   ['viewmaps',['ViewMaps',['../../CSharpWrapper/class_c_p_p_cli_1_1_privilege.html#aafa1578cd2326685f3238c33a26db1ebaca486d04b28655232d02a8aced330218',1,'CPPCli::Privilege']]],
   ['viewrecordedvideo',['ViewRecordedVideo',['../../CSharpWrapper/class_c_p_p_cli_1_1_privilege.html#aafa1578cd2326685f3238c33a26db1eba3acef5c76c55494926c3257d80b00ef3',1,'CPPCli::Privilege']]],
-  ['viewvideosources',['ViewVideoSources',['../../CSharpWrapper/class_c_p_p_cli_1_1_privilege.html#aafa1578cd2326685f3238c33a26db1eba9cf6dd52a1b043d46ad9287c92639935',1,'CPPCli::Privilege']]]
+  ['viewvideosources',['ViewVideoSources',['../../CSharpWrapper/class_c_p_p_cli_1_1_privilege.html#aafa1578cd2326685f3238c33a26db1eba9cf6dd52a1b043d46ad9287c92639935',1,'CPPCli::Privilege']]],
+  ['vxclusterconfig',['VxClusterConfig',['../../CSharpWrapper/class_c_p_p_cli_1_1_new_quick_report.html#a0965d29efe5fb8339e29c1b184d515efa07642fd7becaa5d8dc56dc10eb25752c',1,'CPPCli::NewQuickReport']]]
 ];

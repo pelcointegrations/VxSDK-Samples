@@ -6,6 +6,13 @@ var dir_02dfd6565f8d4457ec6c4e168ddfc310 =
     [ "Clip.h", "_clip_8h.html", [
       [ "Clip", "class_c_p_p_cli_1_1_clip.html", "class_c_p_p_cli_1_1_clip" ]
     ] ],
+    [ "Configuration.h", "_configuration_8h.html", [
+      [ "Configuration", "class_c_p_p_cli_1_1_configuration.html", "class_c_p_p_cli_1_1_configuration" ],
+      [ "Time", "class_c_p_p_cli_1_1_configuration_1_1_time.html", "class_c_p_p_cli_1_1_configuration_1_1_time" ],
+      [ "Node", "class_c_p_p_cli_1_1_configuration_1_1_node.html", "class_c_p_p_cli_1_1_configuration_1_1_node" ],
+      [ "Cluster", "class_c_p_p_cli_1_1_configuration_1_1_cluster.html", "class_c_p_p_cli_1_1_configuration_1_1_cluster" ],
+      [ "Storage", "class_c_p_p_cli_1_1_configuration_1_1_storage.html", "class_c_p_p_cli_1_1_configuration_1_1_storage" ]
+    ] ],
     [ "DataInterface.h", "_data_interface_8h.html", [
       [ "DataInterface", "class_c_p_p_cli_1_1_data_interface.html", "class_c_p_p_cli_1_1_data_interface" ]
     ] ],
@@ -27,6 +34,9 @@ var dir_02dfd6565f8d4457ec6c4e168ddfc310 =
     [ "DeviceAssignment.h", "_device_assignment_8h.html", [
       [ "DeviceAssignment", "class_c_p_p_cli_1_1_device_assignment.html", "class_c_p_p_cli_1_1_device_assignment" ]
     ] ],
+    [ "Drawing.h", "_drawing_8h.html", [
+      [ "Drawing", "class_c_p_p_cli_1_1_drawing.html", "class_c_p_p_cli_1_1_drawing" ]
+    ] ],
     [ "Driver.h", "_driver_8h.html", [
       [ "Driver", "class_c_p_p_cli_1_1_driver.html", "class_c_p_p_cli_1_1_driver" ]
     ] ],
@@ -39,17 +49,35 @@ var dir_02dfd6565f8d4457ec6c4e168ddfc310 =
     [ "ExportClip.h", "_export_clip_8h.html", [
       [ "ExportClip", "class_c_p_p_cli_1_1_export_clip.html", "class_c_p_p_cli_1_1_export_clip" ]
     ] ],
+    [ "License.h", "_license_8h.html", [
+      [ "License", "class_c_p_p_cli_1_1_license.html", "class_c_p_p_cli_1_1_license" ]
+    ] ],
+    [ "LicenseFeature.h", "_license_feature_8h.html", [
+      [ "LicenseFeature", "class_c_p_p_cli_1_1_license_feature.html", "class_c_p_p_cli_1_1_license_feature" ]
+    ] ],
+    [ "Marker.h", "_marker_8h.html", [
+      [ "Marker", "class_c_p_p_cli_1_1_marker.html", "class_c_p_p_cli_1_1_marker" ]
+    ] ],
     [ "MediaControl.h", "_media_control_8h.html", [
       [ "MediaControl", "class_c_p_p_cli_1_1_media_control.html", "class_c_p_p_cli_1_1_media_control" ]
     ] ],
     [ "MediaEvent.h", "_media_event_8h.html", [
       [ "MediaEvent", "class_c_p_p_cli_1_1_media_event.html", "class_c_p_p_cli_1_1_media_event" ]
     ] ],
+    [ "Monitor.h", "_monitor_8h.html", [
+      [ "Monitor", "class_c_p_p_cli_1_1_monitor.html", "class_c_p_p_cli_1_1_monitor" ]
+    ] ],
+    [ "MonitorCell.h", "_monitor_cell_8h.html", [
+      [ "MonitorCell", "class_c_p_p_cli_1_1_monitor_cell.html", "class_c_p_p_cli_1_1_monitor_cell" ]
+    ] ],
     [ "NewBookmark.h", "_new_bookmark_8h.html", [
       [ "NewBookmark", "class_c_p_p_cli_1_1_new_bookmark.html", "class_c_p_p_cli_1_1_new_bookmark" ]
     ] ],
     [ "NewDataObject.h", "_new_data_object_8h.html", [
       [ "NewDataObject", "class_c_p_p_cli_1_1_new_data_object.html", "class_c_p_p_cli_1_1_new_data_object" ]
+    ] ],
+    [ "NewDevice.h", "_new_device_8h.html", [
+      [ "NewDevice", "class_c_p_p_cli_1_1_new_device.html", "class_c_p_p_cli_1_1_new_device" ]
     ] ],
     [ "NewDeviceAssignment.h", "_new_device_assignment_8h.html", [
       [ "NewDeviceAssignment", "class_c_p_p_cli_1_1_new_device_assignment.html", "class_c_p_p_cli_1_1_new_device_assignment" ]
@@ -63,8 +91,20 @@ var dir_02dfd6565f8d4457ec6c4e168ddfc310 =
     [ "NewExportClip.h", "_new_export_clip_8h.html", [
       [ "NewExportClip", "class_c_p_p_cli_1_1_new_export_clip.html", "class_c_p_p_cli_1_1_new_export_clip" ]
     ] ],
+    [ "NewMarker.h", "_new_marker_8h.html", [
+      [ "NewMarker", "class_c_p_p_cli_1_1_new_marker.html", "class_c_p_p_cli_1_1_new_marker" ]
+    ] ],
+    [ "NewMonitor.h", "_new_monitor_8h.html", [
+      [ "NewMonitor", "class_c_p_p_cli_1_1_new_monitor.html", "class_c_p_p_cli_1_1_new_monitor" ]
+    ] ],
+    [ "NewNotification.h", "_new_notification_8h.html", [
+      [ "NewNotification", "class_c_p_p_cli_1_1_new_notification.html", "class_c_p_p_cli_1_1_new_notification" ]
+    ] ],
     [ "NewPrivilege.h", "_new_privilege_8h.html", [
       [ "NewPrivilege", "class_c_p_p_cli_1_1_new_privilege.html", "class_c_p_p_cli_1_1_new_privilege" ]
+    ] ],
+    [ "NewQuickReport.h", "_new_quick_report_8h.html", [
+      [ "NewQuickReport", "class_c_p_p_cli_1_1_new_quick_report.html", "class_c_p_p_cli_1_1_new_quick_report" ]
     ] ],
     [ "NewSchedule.h", "_new_schedule_8h.html", [
       [ "NewSchedule", "class_c_p_p_cli_1_1_new_schedule.html", "class_c_p_p_cli_1_1_new_schedule" ]
@@ -81,6 +121,9 @@ var dir_02dfd6565f8d4457ec6c4e168ddfc310 =
     [ "NewUser.h", "_new_user_8h.html", [
       [ "NewUser", "class_c_p_p_cli_1_1_new_user.html", "class_c_p_p_cli_1_1_new_user" ]
     ] ],
+    [ "Notification.h", "_notification_8h.html", [
+      [ "Notification", "class_c_p_p_cli_1_1_notification.html", "class_c_p_p_cli_1_1_notification" ]
+    ] ],
     [ "Pattern.h", "_pattern_8h.html", [
       [ "Pattern", "class_c_p_p_cli_1_1_pattern.html", "class_c_p_p_cli_1_1_pattern" ]
     ] ],
@@ -95,6 +138,12 @@ var dir_02dfd6565f8d4457ec6c4e168ddfc310 =
     ] ],
     [ "PtzLock.h", "_ptz_lock_8h.html", [
       [ "PtzLock", "class_c_p_p_cli_1_1_ptz_lock.html", "class_c_p_p_cli_1_1_ptz_lock" ]
+    ] ],
+    [ "QuickReport.h", "_quick_report_8h.html", [
+      [ "QuickReport", "class_c_p_p_cli_1_1_quick_report.html", "class_c_p_p_cli_1_1_quick_report" ]
+    ] ],
+    [ "ResourceLock.h", "_resource_lock_8h.html", [
+      [ "ResourceLock", "class_c_p_p_cli_1_1_resource_lock.html", "class_c_p_p_cli_1_1_resource_lock" ]
     ] ],
     [ "Role.h", "_role_8h.html", [
       [ "Role", "class_c_p_p_cli_1_1_role.html", "class_c_p_p_cli_1_1_role" ]
@@ -119,7 +168,9 @@ var dir_02dfd6565f8d4457ec6c4e168ddfc310 =
     ] ],
     [ "Utils.h", "_utils_8h.html", [
       [ "Results", "class_c_p_p_cli_1_1_results.html", "class_c_p_p_cli_1_1_results" ],
-      [ "Utils", "class_c_p_p_cli_1_1_utils.html", "class_c_p_p_cli_1_1_utils" ]
+      [ "LogLevel", "class_c_p_p_cli_1_1_log_level.html", "class_c_p_p_cli_1_1_log_level" ],
+      [ "Utils", "class_c_p_p_cli_1_1_utils.html", "class_c_p_p_cli_1_1_utils" ],
+      [ "VxGlobal", "class_c_p_p_cli_1_1_vx_global.html", "class_c_p_p_cli_1_1_vx_global" ]
     ] ],
     [ "VXSystem.h", "_v_x_system_8h.html", [
       [ "VXSystem", "class_c_p_p_cli_1_1_v_x_system.html", "class_c_p_p_cli_1_1_v_x_system" ]

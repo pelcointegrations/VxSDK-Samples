@@ -3,6 +3,8 @@ var struct_vx_sdk_1_1_i_vx_export =
     [ "Clear", "struct_vx_sdk_1_1_i_vx_export.html#ab3aa47a4f580251fec05602db6e8e893", null ],
     [ "Delete", "struct_vx_sdk_1_1_i_vx_export.html#ae29a38ba8a475af9003011776d09a5c4", null ],
     [ "DeleteExport", "struct_vx_sdk_1_1_i_vx_export.html#ab37423770bd8d3caac762d97878ee982", null ],
+    [ "GetOwner", "struct_vx_sdk_1_1_i_vx_export.html#affab5824cbdd61e441eb20577c743e8c", null ],
+    [ "Refresh", "struct_vx_sdk_1_1_i_vx_export.html#af224af9670ea6b8cd81ec83f04f22c48", null ],
     [ "completedTime", "struct_vx_sdk_1_1_i_vx_export.html#a3e16200fd05a80e3b1ecae4d158ebabb", null ],
     [ "dataUri", "struct_vx_sdk_1_1_i_vx_export.html#aa3036f19233f19e47b5e3bb13010bac3", null ],
     [ "exportClips", "struct_vx_sdk_1_1_i_vx_export.html#aa22126be18b2aab33b2f8a6df00f78ac", null ],

@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">VideoXpert SDK
-   &#160;<span id="projectnumber">1.1</span>
+   &#160;<span id="projectnumber">1.2</span>
    </div>
    <div id="projectbrief">A software development kit for third party vendors to integrate with the VideoXpert platform</div>
   </td>
@@ -131,6 +131,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab37423770bd8d3caac762d97878ee982"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_export.html#ab37423770bd8d3caac762d97878ee982">DeleteExport</a> () const  =0</td></tr>
 <tr class="memdesc:ab37423770bd8d3caac762d97878ee982"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes this export from the VideoXpert system.  <a href="#ab37423770bd8d3caac762d97878ee982">More...</a><br /></td></tr>
 <tr class="separator:ab37423770bd8d3caac762d97878ee982"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affab5824cbdd61e441eb20577c743e8c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_export.html#affab5824cbdd61e441eb20577c743e8c">GetOwner</a> (<a class="el" href="struct_vx_sdk_1_1_i_vx_user.html">IVxUser</a> *&amp;user) const  =0</td></tr>
+<tr class="memdesc:affab5824cbdd61e441eb20577c743e8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the <a class="el" href="struct_vx_sdk_1_1_i_vx_user.html" title="Represents information about a system user. ">IVxUser</a> that owns this export, if any.  <a href="#affab5824cbdd61e441eb20577c743e8c">More...</a><br /></td></tr>
+<tr class="separator:affab5824cbdd61e441eb20577c743e8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af224af9670ea6b8cd81ec83f04f22c48"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_export.html#af224af9670ea6b8cd81ec83f04f22c48">Refresh</a> ()=0</td></tr>
+<tr class="memdesc:af224af9670ea6b8cd81ec83f04f22c48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refreshes the member values for this object by retrieving its current information from the VideoXpert system.  <a href="#af224af9670ea6b8cd81ec83f04f22c48">More...</a><br /></td></tr>
+<tr class="separator:af224af9670ea6b8cd81ec83f04f22c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -211,23 +217,23 @@ Protected Member Functions</h2></td></tr>
 
 <p>Clears this instance. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_export_8h_source.html#l00089">89</a> of file <a class="el" href="_i_vx_export_8h_source.html">IVxExport.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                     {</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_export.html#a3c57ba9ac33d8efd3e9f7fe52e258b60">isProtected</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_export.html#a3e16200fd05a80e3b1ecae4d158ebabb">completedTime</a>);</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_export.html#aa3036f19233f19e47b5e3bb13010bac3">dataUri</a>);</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<span class="keywordtype">id</span>);</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_export.html#acb003a0bb07c690d98ac31a3df2acff4">initiatedTime</a>);</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_export.html#ad18a65d91d7a67c2b911c3bb547693ca">name</a>);</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_export.html#a61177657d81c4a15cf1bc4bcacc2fe3f">owner</a>);</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_export.html#a3a9884aa7ca1d43e8fb9a4e6f1ce7278">exportClipSize</a> = 0;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_export.html#aaa5317c295432b078af6315ec4da29fe">percentComplete</a> = 0;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_export.html#a9e274ad07293f316902804a68f246bfb">fileSizeKb</a> = 0;</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_export.html#ac05e307b3db25b2357f14a1ccdc77466">secondsRemaining</a> = 0;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_export.html#aa22126be18b2aab33b2f8a6df00f78ac">exportClips</a> = <span class="keyword">nullptr</span>;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_export.html#a13eb37299ce8a52b9b0165b9861c4718">format</a> = <a class="code" href="struct_vx_sdk_1_1_vx_export_format.html#a1d413558b0370220d65194ec7eddb4baa91a1ce887e09f6424fc4b0d38289f50b">VxExportFormat::kUnknown</a>;</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_export.html#a80cc015ee1ec962cc515acdd9dbcef6c">status</a> = <a class="code" href="struct_vx_sdk_1_1_vx_export_status.html#a5bc60298c1d090e24db14b6afe0cc312a5e8e5f6e25d87d2aa119c7c712cffa4a">VxExportStatus::kUnknown</a>;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        }</div><div class="ttc" id="struct_vx_sdk_1_1_i_vx_export_html_a9e274ad07293f316902804a68f246bfb"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_export.html#a9e274ad07293f316902804a68f246bfb">VxSdk::IVxExport::fileSizeKb</a></div><div class="ttdeci">int fileSizeKb</div><div class="ttdoc">The file size of the exported data in kilobytes (kB). </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_export_8h_source.html#l00067">IVxExport.h:67</a></div></div>
+<p>Definition at line <a class="el" href="_i_vx_export_8h_source.html#l00100">100</a> of file <a class="el" href="_i_vx_export_8h_source.html">IVxExport.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                     {</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_export.html#a3c57ba9ac33d8efd3e9f7fe52e258b60">isProtected</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_export.html#a3e16200fd05a80e3b1ecae4d158ebabb">completedTime</a>);</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_export.html#aa3036f19233f19e47b5e3bb13010bac3">dataUri</a>);</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<span class="keywordtype">id</span>);</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_export.html#acb003a0bb07c690d98ac31a3df2acff4">initiatedTime</a>);</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_export.html#ad18a65d91d7a67c2b911c3bb547693ca">name</a>);</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_export.html#a61177657d81c4a15cf1bc4bcacc2fe3f">owner</a>);</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_export.html#a3a9884aa7ca1d43e8fb9a4e6f1ce7278">exportClipSize</a> = 0;</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_export.html#aaa5317c295432b078af6315ec4da29fe">percentComplete</a> = 0;</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_export.html#a9e274ad07293f316902804a68f246bfb">fileSizeKb</a> = 0;</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_export.html#ac05e307b3db25b2357f14a1ccdc77466">secondsRemaining</a> = 0;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_export.html#aa22126be18b2aab33b2f8a6df00f78ac">exportClips</a> = <span class="keyword">nullptr</span>;</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_export.html#a13eb37299ce8a52b9b0165b9861c4718">format</a> = <a class="code" href="struct_vx_sdk_1_1_vx_export_format.html#a1d413558b0370220d65194ec7eddb4baa91a1ce887e09f6424fc4b0d38289f50b">VxExportFormat::kUnknown</a>;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_export.html#a80cc015ee1ec962cc515acdd9dbcef6c">status</a> = <a class="code" href="struct_vx_sdk_1_1_vx_export_status.html#a5bc60298c1d090e24db14b6afe0cc312a5e8e5f6e25d87d2aa119c7c712cffa4a">VxExportStatus::kUnknown</a>;</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        }</div><div class="ttc" id="struct_vx_sdk_1_1_i_vx_export_html_a9e274ad07293f316902804a68f246bfb"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_export.html#a9e274ad07293f316902804a68f246bfb">VxSdk::IVxExport::fileSizeKb</a></div><div class="ttdeci">int fileSizeKb</div><div class="ttdoc">The file size of the exported data in kilobytes (kB). </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_export_8h_source.html#l00078">IVxExport.h:78</a></div></div>
 <div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00018">VxMacros.h:18</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_export_html_ad18a65d91d7a67c2b911c3bb547693ca"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_export.html#ad18a65d91d7a67c2b911c3bb547693ca">VxSdk::IVxExport::name</a></div><div class="ttdeci">char name[64]</div><div class="ttdoc">The friendly name of the export. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_export_8h_source.html#l00050">IVxExport.h:50</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_export_html_a3a9884aa7ca1d43e8fb9a4e6f1ce7278"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_export.html#a3a9884aa7ca1d43e8fb9a4e6f1ce7278">VxSdk::IVxExport::exportClipSize</a></div><div class="ttdeci">int exportClipSize</div><div class="ttdoc">The size of exportClips. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_export_8h_source.html#l00063">IVxExport.h:63</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_export_html_aa3036f19233f19e47b5e3bb13010bac3"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_export.html#aa3036f19233f19e47b5e3bb13010bac3">VxSdk::IVxExport::dataUri</a></div><div class="ttdeci">char dataUri[512]</div><div class="ttdoc">The URI to the exported data. It will only be present if the exported data is completed and available...</div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_export_8h_source.html#l00038">IVxExport.h:38</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_export_html_a3e16200fd05a80e3b1ecae4d158ebabb"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_export.html#a3e16200fd05a80e3b1ecae4d158ebabb">VxSdk::IVxExport::completedTime</a></div><div class="ttdeci">char completedTime[64]</div><div class="ttdoc">The date and time at which the triggered export completed the export operation. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_export_8h_source.html#l00034">IVxExport.h:34</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_export_html_a80cc015ee1ec962cc515acdd9dbcef6c"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_export.html#a80cc015ee1ec962cc515acdd9dbcef6c">VxSdk::IVxExport::status</a></div><div class="ttdeci">VxExportStatus::Value status</div><div class="ttdoc">The current status of the export. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_export_8h_source.html#l00083">IVxExport.h:83</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_export_html_aaa5317c295432b078af6315ec4da29fe"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_export.html#aaa5317c295432b078af6315ec4da29fe">VxSdk::IVxExport::percentComplete</a></div><div class="ttdeci">float percentComplete</div><div class="ttdoc">The percent complete value from 0 to 100. This specifies how close the export is to completion...</div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_export_8h_source.html#l00059">IVxExport.h:59</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_vx_export_status_html_a5bc60298c1d090e24db14b6afe0cc312a5e8e5f6e25d87d2aa119c7c712cffa4a"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_export_status.html#a5bc60298c1d090e24db14b6afe0cc312a5e8e5f6e25d87d2aa119c7c712cffa4a">VxSdk::VxExportStatus::kUnknown</a></div><div class="ttdoc">An error or unknown value was returned.</div><div class="ttdef"><b>Definition:</b> <a href="_vx_primitives_8h_source.html#l00153">VxPrimitives.h:153</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_export_html_aa22126be18b2aab33b2f8a6df00f78ac"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_export.html#aa22126be18b2aab33b2f8a6df00f78ac">VxSdk::IVxExport::exportClips</a></div><div class="ttdeci">IVxExportClip ** exportClips</div><div class="ttdoc">The clips associated with this export. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_export_8h_source.html#l00075">IVxExport.h:75</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_export_html_a61177657d81c4a15cf1bc4bcacc2fe3f"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_export.html#a61177657d81c4a15cf1bc4bcacc2fe3f">VxSdk::IVxExport::owner</a></div><div class="ttdeci">char owner[64]</div><div class="ttdoc">The name of the user that has created this export, if any. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_export_8h_source.html#l00054">IVxExport.h:54</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_export_html_ac05e307b3db25b2357f14a1ccdc77466"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_export.html#ac05e307b3db25b2357f14a1ccdc77466">VxSdk::IVxExport::secondsRemaining</a></div><div class="ttdeci">int secondsRemaining</div><div class="ttdoc">The estimated time remaining, in seconds, until the export is 100 percent complete. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_export_8h_source.html#l00071">IVxExport.h:71</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_export_html_acb003a0bb07c690d98ac31a3df2acff4"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_export.html#acb003a0bb07c690d98ac31a3df2acff4">VxSdk::IVxExport::initiatedTime</a></div><div class="ttdeci">char initiatedTime[64]</div><div class="ttdoc">The date and time at which the export was requested. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_export_8h_source.html#l00046">IVxExport.h:46</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_export_html_a13eb37299ce8a52b9b0165b9861c4718"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_export.html#a13eb37299ce8a52b9b0165b9861c4718">VxSdk::IVxExport::format</a></div><div class="ttdeci">VxExportFormat::Value format</div><div class="ttdoc">The format of the export data. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_export_8h_source.html#l00079">IVxExport.h:79</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_vx_export_format_html_a1d413558b0370220d65194ec7eddb4baa91a1ce887e09f6424fc4b0d38289f50b"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_export_format.html#a1d413558b0370220d65194ec7eddb4baa91a1ce887e09f6424fc4b0d38289f50b">VxSdk::VxExportFormat::kUnknown</a></div><div class="ttdoc">An error or unknown value was returned.</div><div class="ttdef"><b>Definition:</b> <a href="_vx_primitives_8h_source.html#l00139">VxPrimitives.h:139</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_export_html_a3c57ba9ac33d8efd3e9f7fe52e258b60"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_export.html#a3c57ba9ac33d8efd3e9f7fe52e258b60">VxSdk::IVxExport::isProtected</a></div><div class="ttdeci">bool isProtected</div><div class="ttdoc">Indicates whether the export data is signed and encrypted. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_export_8h_source.html#l00030">IVxExport.h:30</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_export_html_ad18a65d91d7a67c2b911c3bb547693ca"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_export.html#ad18a65d91d7a67c2b911c3bb547693ca">VxSdk::IVxExport::name</a></div><div class="ttdeci">char name[64]</div><div class="ttdoc">The friendly name of the export. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_export_8h_source.html#l00061">IVxExport.h:61</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_export_html_a3a9884aa7ca1d43e8fb9a4e6f1ce7278"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_export.html#a3a9884aa7ca1d43e8fb9a4e6f1ce7278">VxSdk::IVxExport::exportClipSize</a></div><div class="ttdeci">int exportClipSize</div><div class="ttdoc">The size of exportClips. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_export_8h_source.html#l00074">IVxExport.h:74</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_export_html_aa3036f19233f19e47b5e3bb13010bac3"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_export.html#aa3036f19233f19e47b5e3bb13010bac3">VxSdk::IVxExport::dataUri</a></div><div class="ttdeci">char dataUri[512]</div><div class="ttdoc">The URI to the exported data. It will only be present if the exported data is completed and available...</div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_export_8h_source.html#l00049">IVxExport.h:49</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_export_html_a3e16200fd05a80e3b1ecae4d158ebabb"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_export.html#a3e16200fd05a80e3b1ecae4d158ebabb">VxSdk::IVxExport::completedTime</a></div><div class="ttdeci">char completedTime[64]</div><div class="ttdoc">The date and time at which the triggered export completed the export operation. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_export_8h_source.html#l00045">IVxExport.h:45</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_export_html_a80cc015ee1ec962cc515acdd9dbcef6c"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_export.html#a80cc015ee1ec962cc515acdd9dbcef6c">VxSdk::IVxExport::status</a></div><div class="ttdeci">VxExportStatus::Value status</div><div class="ttdoc">The current status of the export. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_export_8h_source.html#l00094">IVxExport.h:94</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_export_html_aaa5317c295432b078af6315ec4da29fe"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_export.html#aaa5317c295432b078af6315ec4da29fe">VxSdk::IVxExport::percentComplete</a></div><div class="ttdeci">float percentComplete</div><div class="ttdoc">The percent complete value from 0 to 100. This specifies how close the export is to completion...</div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_export_8h_source.html#l00070">IVxExport.h:70</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_export_status_html_a5bc60298c1d090e24db14b6afe0cc312a5e8e5f6e25d87d2aa119c7c712cffa4a"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_export_status.html#a5bc60298c1d090e24db14b6afe0cc312a5e8e5f6e25d87d2aa119c7c712cffa4a">VxSdk::VxExportStatus::kUnknown</a></div><div class="ttdoc">An error or unknown value was returned.</div><div class="ttdef"><b>Definition:</b> <a href="_vx_primitives_8h_source.html#l00301">VxPrimitives.h:301</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_export_html_aa22126be18b2aab33b2f8a6df00f78ac"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_export.html#aa22126be18b2aab33b2f8a6df00f78ac">VxSdk::IVxExport::exportClips</a></div><div class="ttdeci">IVxExportClip ** exportClips</div><div class="ttdoc">The clips associated with this export. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_export_8h_source.html#l00086">IVxExport.h:86</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_export_html_a61177657d81c4a15cf1bc4bcacc2fe3f"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_export.html#a61177657d81c4a15cf1bc4bcacc2fe3f">VxSdk::IVxExport::owner</a></div><div class="ttdeci">char owner[64]</div><div class="ttdoc">The name of the user that has created this export, if any. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_export_8h_source.html#l00065">IVxExport.h:65</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_export_html_ac05e307b3db25b2357f14a1ccdc77466"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_export.html#ac05e307b3db25b2357f14a1ccdc77466">VxSdk::IVxExport::secondsRemaining</a></div><div class="ttdeci">int secondsRemaining</div><div class="ttdoc">The estimated time remaining, in seconds, until the export is 100 percent complete. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_export_8h_source.html#l00082">IVxExport.h:82</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_export_html_acb003a0bb07c690d98ac31a3df2acff4"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_export.html#acb003a0bb07c690d98ac31a3df2acff4">VxSdk::IVxExport::initiatedTime</a></div><div class="ttdeci">char initiatedTime[64]</div><div class="ttdoc">The date and time at which the export was requested. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_export_8h_source.html#l00057">IVxExport.h:57</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_export_html_a13eb37299ce8a52b9b0165b9861c4718"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_export.html#a13eb37299ce8a52b9b0165b9861c4718">VxSdk::IVxExport::format</a></div><div class="ttdeci">VxExportFormat::Value format</div><div class="ttdoc">The format of the export data. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_export_8h_source.html#l00090">IVxExport.h:90</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_export_format_html_a1d413558b0370220d65194ec7eddb4baa91a1ce887e09f6424fc4b0d38289f50b"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_export_format.html#a1d413558b0370220d65194ec7eddb4baa91a1ce887e09f6424fc4b0d38289f50b">VxSdk::VxExportFormat::kUnknown</a></div><div class="ttdoc">An error or unknown value was returned.</div><div class="ttdef"><b>Definition:</b> <a href="_vx_primitives_8h_source.html#l00287">VxPrimitives.h:287</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_export_html_a3c57ba9ac33d8efd3e9f7fe52e258b60"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_export.html#a3c57ba9ac33d8efd3e9f7fe52e258b60">VxSdk::IVxExport::isProtected</a></div><div class="ttdeci">bool isProtected</div><div class="ttdoc">Indicates whether the export data is signed and encrypted. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_export_8h_source.html#l00041">IVxExport.h:41</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -283,6 +289,65 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="affab5824cbdd61e441eb20577c743e8c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxExport::GetOwner </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html">IVxUser</a> *&amp;&#160;</td>
+          <td class="paramname"><em>user</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the <a class="el" href="struct_vx_sdk_1_1_i_vx_user.html" title="Represents information about a system user. ">IVxUser</a> that owns this export, if any. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">user</td><td>The <a class="el" href="struct_vx_sdk_1_1_i_vx_user.html" title="Represents information about a system user. ">IVxUser</a> that owns this export.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of the request.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af224af9670ea6b8cd81ec83f04f22c48"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxExport::Refresh </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Refreshes the member values for this object by retrieving its current information from the VideoXpert system. </p>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of refreshing the member values for this object.</dd></dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="a3e16200fd05a80e3b1ecae4d158ebabb"></a>
 <div class="memitem">
@@ -296,7 +361,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The date and time at which the triggered export completed the export operation. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_export_8h_source.html#l00034">34</a> of file <a class="el" href="_i_vx_export_8h_source.html">IVxExport.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_export_8h_source.html#l00045">45</a> of file <a class="el" href="_i_vx_export_8h_source.html">IVxExport.h</a>.</p>
 
 </div>
 </div>
@@ -312,7 +377,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The URI to the exported data. It will only be present if the exported data is completed and available for download. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_export_8h_source.html#l00038">38</a> of file <a class="el" href="_i_vx_export_8h_source.html">IVxExport.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_export_8h_source.html#l00049">49</a> of file <a class="el" href="_i_vx_export_8h_source.html">IVxExport.h</a>.</p>
 
 </div>
 </div>
@@ -328,7 +393,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The clips associated with this export. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_export_8h_source.html#l00075">75</a> of file <a class="el" href="_i_vx_export_8h_source.html">IVxExport.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_export_8h_source.html#l00086">86</a> of file <a class="el" href="_i_vx_export_8h_source.html">IVxExport.h</a>.</p>
 
 </div>
 </div>
@@ -344,7 +409,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The size of <a class="el" href="struct_vx_sdk_1_1_i_vx_export.html#aa22126be18b2aab33b2f8a6df00f78ac" title="The clips associated with this export. ">exportClips</a>. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_export_8h_source.html#l00063">63</a> of file <a class="el" href="_i_vx_export_8h_source.html">IVxExport.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_export_8h_source.html#l00074">74</a> of file <a class="el" href="_i_vx_export_8h_source.html">IVxExport.h</a>.</p>
 
 </div>
 </div>
@@ -360,7 +425,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The file size of the exported data in kilobytes (kB). </p>
 
-<p>Definition at line <a class="el" href="_i_vx_export_8h_source.html#l00067">67</a> of file <a class="el" href="_i_vx_export_8h_source.html">IVxExport.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_export_8h_source.html#l00078">78</a> of file <a class="el" href="_i_vx_export_8h_source.html">IVxExport.h</a>.</p>
 
 </div>
 </div>
@@ -376,7 +441,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The format of the export data. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_export_8h_source.html#l00079">79</a> of file <a class="el" href="_i_vx_export_8h_source.html">IVxExport.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_export_8h_source.html#l00090">90</a> of file <a class="el" href="_i_vx_export_8h_source.html">IVxExport.h</a>.</p>
 
 </div>
 </div>
@@ -392,7 +457,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The unique identifier of the export. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_export_8h_source.html#l00042">42</a> of file <a class="el" href="_i_vx_export_8h_source.html">IVxExport.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_export_8h_source.html#l00053">53</a> of file <a class="el" href="_i_vx_export_8h_source.html">IVxExport.h</a>.</p>
 
 </div>
 </div>
@@ -408,7 +473,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The date and time at which the export was requested. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_export_8h_source.html#l00046">46</a> of file <a class="el" href="_i_vx_export_8h_source.html">IVxExport.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_export_8h_source.html#l00057">57</a> of file <a class="el" href="_i_vx_export_8h_source.html">IVxExport.h</a>.</p>
 
 </div>
 </div>
@@ -424,7 +489,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Indicates whether the export data is signed and encrypted. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_export_8h_source.html#l00030">30</a> of file <a class="el" href="_i_vx_export_8h_source.html">IVxExport.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_export_8h_source.html#l00041">41</a> of file <a class="el" href="_i_vx_export_8h_source.html">IVxExport.h</a>.</p>
 
 </div>
 </div>
@@ -440,7 +505,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The friendly name of the export. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_export_8h_source.html#l00050">50</a> of file <a class="el" href="_i_vx_export_8h_source.html">IVxExport.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_export_8h_source.html#l00061">61</a> of file <a class="el" href="_i_vx_export_8h_source.html">IVxExport.h</a>.</p>
 
 </div>
 </div>
@@ -456,7 +521,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The name of the user that has created this export, if any. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_export_8h_source.html#l00054">54</a> of file <a class="el" href="_i_vx_export_8h_source.html">IVxExport.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_export_8h_source.html#l00065">65</a> of file <a class="el" href="_i_vx_export_8h_source.html">IVxExport.h</a>.</p>
 
 </div>
 </div>
@@ -472,7 +537,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The percent complete value from 0 to 100. This specifies how close the export is to completion. 0 indicates that the export has not been triggered; 100 indicates that the export is complete. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_export_8h_source.html#l00059">59</a> of file <a class="el" href="_i_vx_export_8h_source.html">IVxExport.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_export_8h_source.html#l00070">70</a> of file <a class="el" href="_i_vx_export_8h_source.html">IVxExport.h</a>.</p>
 
 </div>
 </div>
@@ -488,7 +553,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The estimated time remaining, in seconds, until the export is 100 percent complete. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_export_8h_source.html#l00071">71</a> of file <a class="el" href="_i_vx_export_8h_source.html">IVxExport.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_export_8h_source.html#l00082">82</a> of file <a class="el" href="_i_vx_export_8h_source.html">IVxExport.h</a>.</p>
 
 </div>
 </div>
@@ -504,7 +569,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The current status of the export. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_export_8h_source.html#l00083">83</a> of file <a class="el" href="_i_vx_export_8h_source.html">IVxExport.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_export_8h_source.html#l00094">94</a> of file <a class="el" href="_i_vx_export_8h_source.html">IVxExport.h</a>.</p>
 
 </div>
 </div>

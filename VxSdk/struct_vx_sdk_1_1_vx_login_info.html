@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">VideoXpert SDK
-   &#160;<span id="projectnumber">1.1</span>
+   &#160;<span id="projectnumber">1.2</span>
    </div>
    <div id="projectbrief">A software development kit for third party vendors to integrate with the VideoXpert platform</div>
   </td>
@@ -142,6 +142,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ab2512eba0575aa577f77e6209f5e4a94"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_login_info.html#ab2512eba0575aa577f77e6209f5e4a94">useSsl</a></td></tr>
 <tr class="memdesc:ab2512eba0575aa577f77e6209f5e4a94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the connection will use SSL.  <a href="#ab2512eba0575aa577f77e6209f5e4a94">More...</a><br /></td></tr>
 <tr class="separator:ab2512eba0575aa577f77e6209f5e4a94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdbd2a9d57e40896917862578b361365"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_login_info.html#afdbd2a9d57e40896917862578b361365">authToken</a> [512]</td></tr>
+<tr class="memdesc:afdbd2a9d57e40896917862578b361365"><td class="mdescLeft">&#160;</td><td class="mdescRight">The authentication token to use.  <a href="#afdbd2a9d57e40896917862578b361365">More...</a><br /></td></tr>
+<tr class="separator:afdbd2a9d57e40896917862578b361365"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac56160737c3aa9e3d8bb8340ef832ec8"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_login_info.html#ac56160737c3aa9e3d8bb8340ef832ec8">ipAddress</a> [64]</td></tr>
 <tr class="memdesc:ac56160737c3aa9e3d8bb8340ef832ec8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The VideoXpert system IP.  <a href="#ac56160737c3aa9e3d8bb8340ef832ec8">More...</a><br /></td></tr>
 <tr class="separator:ac56160737c3aa9e3d8bb8340ef832ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -184,7 +187,7 @@ Public Attributes</h2></td></tr>
 <p>Initializes a new instance of the <a class="el" href="struct_vx_sdk_1_1_vx_login_info.html" title="Represents the information needed to log in to a VideoXpert system. ">VxLoginInfo</a> struct. </p>
 
 <p>Definition at line <a class="el" href="_vx_login_info_8h_source.html#l00017">17</a> of file <a class="el" href="_vx_login_info_8h_source.html">VxLoginInfo.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                      {</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            <a class="code" href="struct_vx_sdk_1_1_vx_login_info.html#a4fe546f781c59bdf8f2e8df6bbb33e61">Clear</a>();</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        }</div><div class="ttc" id="struct_vx_sdk_1_1_vx_login_info_html_a4fe546f781c59bdf8f2e8df6bbb33e61"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_login_info.html#a4fe546f781c59bdf8f2e8df6bbb33e61">VxSdk::VxLoginInfo::Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdoc">Clears this instance. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_login_info_8h_source.html#l00043">VxLoginInfo.h:43</a></div></div>
+<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                      {</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            <a class="code" href="struct_vx_sdk_1_1_vx_login_info.html#a4fe546f781c59bdf8f2e8df6bbb33e61">Clear</a>();</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        }</div><div class="ttc" id="struct_vx_sdk_1_1_vx_login_info_html_a4fe546f781c59bdf8f2e8df6bbb33e61"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_login_info.html#a4fe546f781c59bdf8f2e8df6bbb33e61">VxSdk::VxLoginInfo::Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdoc">Clears this instance. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_login_info_8h_source.html#l00044">VxLoginInfo.h:44</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -219,12 +222,13 @@ Public Attributes</h2></td></tr>
 </dl>
 
 <p>Definition at line <a class="el" href="_vx_login_info_8h_source.html#l00025">25</a> of file <a class="el" href="_vx_login_info_8h_source.html">VxLoginInfo.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                                            {</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_login_info.html#ab2512eba0575aa577f77e6209f5e4a94">useSsl</a> = ref.useSsl;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <a class="code" href="namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">Utilities::StrCopySafe</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_login_info.html#ac56160737c3aa9e3d8bb8340ef832ec8">ipAddress</a>, ref.ipAddress);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <a class="code" href="namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">Utilities::StrCopySafe</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_login_info.html#a7200b12f5b360d3378c5f46a3d7714f2">password</a>, ref.password);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <a class="code" href="namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">Utilities::StrCopySafe</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_login_info.html#a32d5efcf1f7e642086212c1997906837">username</a>, ref.username);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_login_info.html#a978a113dd955c9c4f470565541b929b2">port</a> = ref.port;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        }</div><div class="ttc" id="struct_vx_sdk_1_1_vx_login_info_html_a978a113dd955c9c4f470565541b929b2"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_login_info.html#a978a113dd955c9c4f470565541b929b2">VxSdk::VxLoginInfo::port</a></div><div class="ttdeci">unsigned short port</div><div class="ttdoc">The VideoXpert system port. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_login_info_8h_source.html#l00071">VxLoginInfo.h:71</a></div></div>
+<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                                            {</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_login_info.html#ab2512eba0575aa577f77e6209f5e4a94">useSsl</a> = ref.useSsl;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <a class="code" href="namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">Utilities::StrCopySafe</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_login_info.html#afdbd2a9d57e40896917862578b361365">authToken</a>, ref.authToken);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <a class="code" href="namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">Utilities::StrCopySafe</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_login_info.html#ac56160737c3aa9e3d8bb8340ef832ec8">ipAddress</a>, ref.ipAddress);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <a class="code" href="namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">Utilities::StrCopySafe</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_login_info.html#a7200b12f5b360d3378c5f46a3d7714f2">password</a>, ref.password);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <a class="code" href="namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">Utilities::StrCopySafe</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_login_info.html#a32d5efcf1f7e642086212c1997906837">username</a>, ref.username);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_login_info.html#a978a113dd955c9c4f470565541b929b2">port</a> = ref.port;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        }</div><div class="ttc" id="struct_vx_sdk_1_1_vx_login_info_html_a978a113dd955c9c4f470565541b929b2"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_login_info.html#a978a113dd955c9c4f470565541b929b2">VxSdk::VxLoginInfo::port</a></div><div class="ttdeci">unsigned short port</div><div class="ttdoc">The VideoXpert system port. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_login_info_8h_source.html#l00077">VxLoginInfo.h:77</a></div></div>
 <div class="ttc" id="namespace_vx_sdk_1_1_utilities_html_a11cbdb435aa92ea160aad373da6a32db"><div class="ttname"><a href="namespace_vx_sdk_1_1_utilities.html#a11cbdb435aa92ea160aad373da6a32db">VxSdk::Utilities::StrCopySafe</a></div><div class="ttdeci">static void StrCopySafe(char(&amp;dst)[dstSize], const char *src)</div><div class="ttdoc">Performs a safe string copy. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_utilities_8h_source.html#l00015">VxUtilities.h:15</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_vx_login_info_html_ac56160737c3aa9e3d8bb8340ef832ec8"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_login_info.html#ac56160737c3aa9e3d8bb8340ef832ec8">VxSdk::VxLoginInfo::ipAddress</a></div><div class="ttdeci">char ipAddress[64]</div><div class="ttdoc">The VideoXpert system IP. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_login_info_8h_source.html#l00059">VxLoginInfo.h:59</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_vx_login_info_html_a32d5efcf1f7e642086212c1997906837"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_login_info.html#a32d5efcf1f7e642086212c1997906837">VxSdk::VxLoginInfo::username</a></div><div class="ttdeci">char username[64]</div><div class="ttdoc">The username to login with. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_login_info_8h_source.html#l00067">VxLoginInfo.h:67</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_vx_login_info_html_a7200b12f5b360d3378c5f46a3d7714f2"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_login_info.html#a7200b12f5b360d3378c5f46a3d7714f2">VxSdk::VxLoginInfo::password</a></div><div class="ttdeci">char password[64]</div><div class="ttdoc">The password to login with. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_login_info_8h_source.html#l00063">VxLoginInfo.h:63</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_vx_login_info_html_ab2512eba0575aa577f77e6209f5e4a94"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_login_info.html#ab2512eba0575aa577f77e6209f5e4a94">VxSdk::VxLoginInfo::useSsl</a></div><div class="ttdeci">bool useSsl</div><div class="ttdoc">Indicates whether the connection will use SSL. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_login_info_8h_source.html#l00055">VxLoginInfo.h:55</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_login_info_html_ac56160737c3aa9e3d8bb8340ef832ec8"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_login_info.html#ac56160737c3aa9e3d8bb8340ef832ec8">VxSdk::VxLoginInfo::ipAddress</a></div><div class="ttdeci">char ipAddress[64]</div><div class="ttdoc">The VideoXpert system IP. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_login_info_8h_source.html#l00065">VxLoginInfo.h:65</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_login_info_html_a32d5efcf1f7e642086212c1997906837"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_login_info.html#a32d5efcf1f7e642086212c1997906837">VxSdk::VxLoginInfo::username</a></div><div class="ttdeci">char username[64]</div><div class="ttdoc">The username to login with. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_login_info_8h_source.html#l00073">VxLoginInfo.h:73</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_login_info_html_a7200b12f5b360d3378c5f46a3d7714f2"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_login_info.html#a7200b12f5b360d3378c5f46a3d7714f2">VxSdk::VxLoginInfo::password</a></div><div class="ttdeci">char password[64]</div><div class="ttdoc">The password to login with. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_login_info_8h_source.html#l00069">VxLoginInfo.h:69</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_login_info_html_ab2512eba0575aa577f77e6209f5e4a94"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_login_info.html#ab2512eba0575aa577f77e6209f5e4a94">VxSdk::VxLoginInfo::useSsl</a></div><div class="ttdeci">bool useSsl</div><div class="ttdoc">Indicates whether the connection will use SSL. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_login_info_8h_source.html#l00057">VxLoginInfo.h:57</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_login_info_html_afdbd2a9d57e40896917862578b361365"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_login_info.html#afdbd2a9d57e40896917862578b361365">VxSdk::VxLoginInfo::authToken</a></div><div class="ttdeci">char authToken[512]</div><div class="ttdoc">The authentication token to use. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_login_info_8h_source.html#l00061">VxLoginInfo.h:61</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -251,8 +255,8 @@ Public Attributes</h2></td></tr>
 
 <p>Finalizes an instance of the <a class="el" href="struct_vx_sdk_1_1_vx_login_info.html" title="Represents the information needed to log in to a VideoXpert system. ">VxLoginInfo</a> class. </p>
 
-<p>Definition at line <a class="el" href="_vx_login_info_8h_source.html#l00036">36</a> of file <a class="el" href="_vx_login_info_8h_source.html">VxLoginInfo.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                       {</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <a class="code" href="struct_vx_sdk_1_1_vx_login_info.html#a4fe546f781c59bdf8f2e8df6bbb33e61">Clear</a>();</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        }</div><div class="ttc" id="struct_vx_sdk_1_1_vx_login_info_html_a4fe546f781c59bdf8f2e8df6bbb33e61"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_login_info.html#a4fe546f781c59bdf8f2e8df6bbb33e61">VxSdk::VxLoginInfo::Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdoc">Clears this instance. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_login_info_8h_source.html#l00043">VxLoginInfo.h:43</a></div></div>
+<p>Definition at line <a class="el" href="_vx_login_info_8h_source.html#l00037">37</a> of file <a class="el" href="_vx_login_info_8h_source.html">VxLoginInfo.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                       {</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <a class="code" href="struct_vx_sdk_1_1_vx_login_info.html#a4fe546f781c59bdf8f2e8df6bbb33e61">Clear</a>();</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        }</div><div class="ttc" id="struct_vx_sdk_1_1_vx_login_info_html_a4fe546f781c59bdf8f2e8df6bbb33e61"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_login_info.html#a4fe546f781c59bdf8f2e8df6bbb33e61">VxSdk::VxLoginInfo::Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdoc">Clears this instance. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_login_info_8h_source.html#l00044">VxLoginInfo.h:44</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -280,17 +284,34 @@ Public Attributes</h2></td></tr>
 
 <p>Clears this instance. </p>
 
-<p>Definition at line <a class="el" href="_vx_login_info_8h_source.html#l00043">43</a> of file <a class="el" href="_vx_login_info_8h_source.html">VxLoginInfo.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                     {</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_login_info.html#ab2512eba0575aa577f77e6209f5e4a94">useSsl</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_login_info.html#ac56160737c3aa9e3d8bb8340ef832ec8">ipAddress</a>);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_login_info.html#a7200b12f5b360d3378c5f46a3d7714f2">password</a>);</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_login_info.html#a32d5efcf1f7e642086212c1997906837">username</a>);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_login_info.html#a978a113dd955c9c4f470565541b929b2">port</a> = 0;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div><div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00018">VxMacros.h:18</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_vx_login_info_html_a978a113dd955c9c4f470565541b929b2"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_login_info.html#a978a113dd955c9c4f470565541b929b2">VxSdk::VxLoginInfo::port</a></div><div class="ttdeci">unsigned short port</div><div class="ttdoc">The VideoXpert system port. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_login_info_8h_source.html#l00071">VxLoginInfo.h:71</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_vx_login_info_html_ac56160737c3aa9e3d8bb8340ef832ec8"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_login_info.html#ac56160737c3aa9e3d8bb8340ef832ec8">VxSdk::VxLoginInfo::ipAddress</a></div><div class="ttdeci">char ipAddress[64]</div><div class="ttdoc">The VideoXpert system IP. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_login_info_8h_source.html#l00059">VxLoginInfo.h:59</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_vx_login_info_html_a32d5efcf1f7e642086212c1997906837"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_login_info.html#a32d5efcf1f7e642086212c1997906837">VxSdk::VxLoginInfo::username</a></div><div class="ttdeci">char username[64]</div><div class="ttdoc">The username to login with. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_login_info_8h_source.html#l00067">VxLoginInfo.h:67</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_vx_login_info_html_a7200b12f5b360d3378c5f46a3d7714f2"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_login_info.html#a7200b12f5b360d3378c5f46a3d7714f2">VxSdk::VxLoginInfo::password</a></div><div class="ttdeci">char password[64]</div><div class="ttdoc">The password to login with. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_login_info_8h_source.html#l00063">VxLoginInfo.h:63</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_vx_login_info_html_ab2512eba0575aa577f77e6209f5e4a94"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_login_info.html#ab2512eba0575aa577f77e6209f5e4a94">VxSdk::VxLoginInfo::useSsl</a></div><div class="ttdeci">bool useSsl</div><div class="ttdoc">Indicates whether the connection will use SSL. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_login_info_8h_source.html#l00055">VxLoginInfo.h:55</a></div></div>
+<p>Definition at line <a class="el" href="_vx_login_info_8h_source.html#l00044">44</a> of file <a class="el" href="_vx_login_info_8h_source.html">VxLoginInfo.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                     {</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_login_info.html#ab2512eba0575aa577f77e6209f5e4a94">useSsl</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_login_info.html#afdbd2a9d57e40896917862578b361365">authToken</a>);</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_login_info.html#ac56160737c3aa9e3d8bb8340ef832ec8">ipAddress</a>);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_login_info.html#a7200b12f5b360d3378c5f46a3d7714f2">password</a>);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_login_info.html#a32d5efcf1f7e642086212c1997906837">username</a>);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_vx_login_info.html#a978a113dd955c9c4f470565541b929b2">port</a> = 0;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        }</div><div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00018">VxMacros.h:18</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_login_info_html_a978a113dd955c9c4f470565541b929b2"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_login_info.html#a978a113dd955c9c4f470565541b929b2">VxSdk::VxLoginInfo::port</a></div><div class="ttdeci">unsigned short port</div><div class="ttdoc">The VideoXpert system port. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_login_info_8h_source.html#l00077">VxLoginInfo.h:77</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_login_info_html_ac56160737c3aa9e3d8bb8340ef832ec8"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_login_info.html#ac56160737c3aa9e3d8bb8340ef832ec8">VxSdk::VxLoginInfo::ipAddress</a></div><div class="ttdeci">char ipAddress[64]</div><div class="ttdoc">The VideoXpert system IP. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_login_info_8h_source.html#l00065">VxLoginInfo.h:65</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_login_info_html_a32d5efcf1f7e642086212c1997906837"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_login_info.html#a32d5efcf1f7e642086212c1997906837">VxSdk::VxLoginInfo::username</a></div><div class="ttdeci">char username[64]</div><div class="ttdoc">The username to login with. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_login_info_8h_source.html#l00073">VxLoginInfo.h:73</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_login_info_html_a7200b12f5b360d3378c5f46a3d7714f2"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_login_info.html#a7200b12f5b360d3378c5f46a3d7714f2">VxSdk::VxLoginInfo::password</a></div><div class="ttdeci">char password[64]</div><div class="ttdoc">The password to login with. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_login_info_8h_source.html#l00069">VxLoginInfo.h:69</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_login_info_html_ab2512eba0575aa577f77e6209f5e4a94"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_login_info.html#ab2512eba0575aa577f77e6209f5e4a94">VxSdk::VxLoginInfo::useSsl</a></div><div class="ttdeci">bool useSsl</div><div class="ttdoc">Indicates whether the connection will use SSL. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_login_info_8h_source.html#l00057">VxLoginInfo.h:57</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_login_info_html_afdbd2a9d57e40896917862578b361365"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_login_info.html#afdbd2a9d57e40896917862578b361365">VxSdk::VxLoginInfo::authToken</a></div><div class="ttdeci">char authToken[512]</div><div class="ttdoc">The authentication token to use. </div><div class="ttdef"><b>Definition:</b> <a href="_vx_login_info_8h_source.html#l00061">VxLoginInfo.h:61</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="afdbd2a9d57e40896917862578b361365"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char VxSdk::VxLoginInfo::authToken[512]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The authentication token to use. </p>
+
+<p>Definition at line <a class="el" href="_vx_login_info_8h_source.html#l00061">61</a> of file <a class="el" href="_vx_login_info_8h_source.html">VxLoginInfo.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ac56160737c3aa9e3d8bb8340ef832ec8"></a>
 <div class="memitem">
 <div class="memproto">
@@ -303,7 +324,7 @@ Public Attributes</h2></td></tr>
 
 <p>The VideoXpert system IP. </p>
 
-<p>Definition at line <a class="el" href="_vx_login_info_8h_source.html#l00059">59</a> of file <a class="el" href="_vx_login_info_8h_source.html">VxLoginInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="_vx_login_info_8h_source.html#l00065">65</a> of file <a class="el" href="_vx_login_info_8h_source.html">VxLoginInfo.h</a>.</p>
 
 </div>
 </div>
@@ -319,7 +340,7 @@ Public Attributes</h2></td></tr>
 
 <p>The password to login with. </p>
 
-<p>Definition at line <a class="el" href="_vx_login_info_8h_source.html#l00063">63</a> of file <a class="el" href="_vx_login_info_8h_source.html">VxLoginInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="_vx_login_info_8h_source.html#l00069">69</a> of file <a class="el" href="_vx_login_info_8h_source.html">VxLoginInfo.h</a>.</p>
 
 </div>
 </div>
@@ -335,7 +356,7 @@ Public Attributes</h2></td></tr>
 
 <p>The VideoXpert system port. </p>
 
-<p>Definition at line <a class="el" href="_vx_login_info_8h_source.html#l00071">71</a> of file <a class="el" href="_vx_login_info_8h_source.html">VxLoginInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="_vx_login_info_8h_source.html#l00077">77</a> of file <a class="el" href="_vx_login_info_8h_source.html">VxLoginInfo.h</a>.</p>
 
 </div>
 </div>
@@ -351,7 +372,7 @@ Public Attributes</h2></td></tr>
 
 <p>The username to login with. </p>
 
-<p>Definition at line <a class="el" href="_vx_login_info_8h_source.html#l00067">67</a> of file <a class="el" href="_vx_login_info_8h_source.html">VxLoginInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="_vx_login_info_8h_source.html#l00073">73</a> of file <a class="el" href="_vx_login_info_8h_source.html">VxLoginInfo.h</a>.</p>
 
 </div>
 </div>
@@ -367,7 +388,7 @@ Public Attributes</h2></td></tr>
 
 <p>Indicates whether the connection will use SSL. </p>
 
-<p>Definition at line <a class="el" href="_vx_login_info_8h_source.html#l00055">55</a> of file <a class="el" href="_vx_login_info_8h_source.html">VxLoginInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="_vx_login_info_8h_source.html#l00057">57</a> of file <a class="el" href="_vx_login_info_8h_source.html">VxLoginInfo.h</a>.</p>
 
 </div>
 </div>

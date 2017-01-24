@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">VideoXpert SDK
-   &#160;<span id="projectnumber">1.1</span>
+   &#160;<span id="projectnumber">1.2</span>
    </div>
    <div id="projectbrief">A software development kit for third party vendors to integrate with the VideoXpert platform</div>
   </td>
@@ -167,15 +167,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a490c9e16c48ef4b7808fc43424ab9d82"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_ptz_controller.html#a490c9e16c48ef4b7808fc43424ab9d82">PtzStop</a> () const  =0</td></tr>
 <tr class="memdesc:a490c9e16c48ef4b7808fc43424ab9d82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops all PTZ actions.  <a href="#a490c9e16c48ef4b7808fc43424ab9d82">More...</a><br /></td></tr>
 <tr class="separator:a490c9e16c48ef4b7808fc43424ab9d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad21e69443c0a9eb96e08939e54f38841"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_ptz_controller.html#ad21e69443c0a9eb96e08939e54f38841">Refresh</a> ()=0</td></tr>
+<tr class="memdesc:ad21e69443c0a9eb96e08939e54f38841"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refreshes the member values for this object by retrieving its current information from the VideoXpert system.  <a href="#ad21e69443c0a9eb96e08939e54f38841">More...</a><br /></td></tr>
+<tr class="separator:ad21e69443c0a9eb96e08939e54f38841"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa44dec03a985efd8123b6d1b7505911c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_ptz_controller.html#aa44dec03a985efd8123b6d1b7505911c">RelativeMove</a> (int deltaX, int deltaY, int deltaZ) const  =0</td></tr>
 <tr class="memdesc:aa44dec03a985efd8123b6d1b7505911c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the camera position relative to the current position.  <a href="#aa44dec03a985efd8123b6d1b7505911c">More...</a><br /></td></tr>
 <tr class="separator:aa44dec03a985efd8123b6d1b7505911c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f42591d6dea743e62a73c1e5f151fcc"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_ptz_controller.html#a7f42591d6dea743e62a73c1e5f151fcc">RelativePercentageMove</a> (int percentageX, int percentageY) const  =0</td></tr>
+<tr class="memdesc:a7f42591d6dea743e62a73c1e5f151fcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the camera position within a percentage relative to the device’s current field of view.  <a href="#a7f42591d6dea743e62a73c1e5f151fcc">More...</a><br /></td></tr>
+<tr class="separator:a7f42591d6dea743e62a73c1e5f151fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a8d4b3d627cda6b1d68aa3491c5687a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_ptz_controller.html#a1a8d4b3d627cda6b1d68aa3491c5687a">TriggerPattern</a> (<a class="el" href="struct_vx_sdk_1_1_i_vx_pattern.html">IVxPattern</a> &amp;pattern) const  =0</td></tr>
 <tr class="memdesc:a1a8d4b3d627cda6b1d68aa3491c5687a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggers a pattern.  <a href="#a1a8d4b3d627cda6b1d68aa3491c5687a">More...</a><br /></td></tr>
 <tr class="separator:a1a8d4b3d627cda6b1d68aa3491c5687a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2b9bf465c57c25738f33b2ad8fa1523"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_ptz_controller.html#ad2b9bf465c57c25738f33b2ad8fa1523">TriggerPreset</a> (<a class="el" href="struct_vx_sdk_1_1_i_vx_preset.html">IVxPreset</a> &amp;preset) const  =0</td></tr>
 <tr class="memdesc:ad2b9bf465c57c25738f33b2ad8fa1523"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggers a preset.  <a href="#ad2b9bf465c57c25738f33b2ad8fa1523">More...</a><br /></td></tr>
 <tr class="separator:ad2b9bf465c57c25738f33b2ad8fa1523"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada6763bb0757cea2737e8c7a25bb5dfd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_ptz_controller.html#ada6763bb0757cea2737e8c7a25bb5dfd">TriggerRefresh</a> ()=0</td></tr>
+<tr class="memdesc:ada6763bb0757cea2737e8c7a25bb5dfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggers a refresh of this <a class="el" href="struct_vx_sdk_1_1_i_vx_ptz_controller.html" title="Represents a controller for a device that has pan, tilt, and/or zoom functionality. ">IVxPtzController</a> on the VideoXpert system; updating its <a class="el" href="struct_vx_sdk_1_1_i_vx_pattern.html">patterns</a> and <a class="el" href="struct_vx_sdk_1_1_i_vx_preset.html">presets</a> based on the current camera configuration.  <a href="#ada6763bb0757cea2737e8c7a25bb5dfd">More...</a><br /></td></tr>
+<tr class="separator:ada6763bb0757cea2737e8c7a25bb5dfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -414,9 +423,9 @@ Protected Member Functions</h2></td></tr>
 
 <p>Clears this instance. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_ptz_controller_8h_source.html#l00145">145</a> of file <a class="el" href="_i_vx_ptz_controller_8h_source.html">IVxPtzController.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                     {</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_ptz_controller.html#ac2f8fe6f8aa429843d3316acfe259bd2">isLocked</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_ptz_controller.html#af2519138541a43f9ae4d6af2c5bb6f6b">lockExpireTime</a> = 0;</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        }</div><div class="ttc" id="struct_vx_sdk_1_1_i_vx_ptz_controller_html_ac2f8fe6f8aa429843d3316acfe259bd2"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_ptz_controller.html#ac2f8fe6f8aa429843d3316acfe259bd2">VxSdk::IVxPtzController::isLocked</a></div><div class="ttdeci">bool isLocked</div><div class="ttdoc">Indicates whether the PTZ control is locked. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_ptz_controller_8h_source.html#l00135">IVxPtzController.h:135</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_ptz_controller_html_af2519138541a43f9ae4d6af2c5bb6f6b"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_ptz_controller.html#af2519138541a43f9ae4d6af2c5bb6f6b">VxSdk::IVxPtzController::lockExpireTime</a></div><div class="ttdeci">int lockExpireTime</div><div class="ttdoc">The time remaining (in seconds) until the PTZ lock expires. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_ptz_controller_8h_source.html#l00139">IVxPtzController.h:139</a></div></div>
+<p>Definition at line <a class="el" href="_i_vx_ptz_controller_8h_source.html#l00172">172</a> of file <a class="el" href="_i_vx_ptz_controller_8h_source.html">IVxPtzController.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                     {</div><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_ptz_controller.html#ac2f8fe6f8aa429843d3316acfe259bd2">isLocked</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_ptz_controller.html#af2519138541a43f9ae4d6af2c5bb6f6b">lockExpireTime</a> = 0;</div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        }</div><div class="ttc" id="struct_vx_sdk_1_1_i_vx_ptz_controller_html_ac2f8fe6f8aa429843d3316acfe259bd2"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_ptz_controller.html#ac2f8fe6f8aa429843d3316acfe259bd2">VxSdk::IVxPtzController::isLocked</a></div><div class="ttdeci">bool isLocked</div><div class="ttdoc">Indicates whether the PTZ control is locked. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_ptz_controller_8h_source.html#l00162">IVxPtzController.h:162</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_ptz_controller_html_af2519138541a43f9ae4d6af2c5bb6f6b"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_ptz_controller.html#af2519138541a43f9ae4d6af2c5bb6f6b">VxSdk::IVxPtzController::lockExpireTime</a></div><div class="ttdeci">int lockExpireTime</div><div class="ttdoc">The time remaining (in seconds) until the PTZ lock expires. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_ptz_controller_8h_source.html#l00166">IVxPtzController.h:166</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -586,6 +595,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the available patterns. </p>
+<p>Available filters: kModifiedSince.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">patternCollection</td><td>A <a class="el" href="struct_vx_sdk_1_1_vx_collection.html" title="Represents a collection of resources. ">VxCollection</a> of the associated patterns.</td></tr>
@@ -670,6 +680,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the available presets. </p>
+<p>Available filters: kModifiedSince.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">presetCollection</td><td>A <a class="el" href="struct_vx_sdk_1_1_vx_collection.html" title="Represents a collection of resources. ">VxCollection</a> of the associated presets.</td></tr>
@@ -739,6 +750,32 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ad21e69443c0a9eb96e08939e54f38841"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxPtzController::Refresh </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Refreshes the member values for this object by retrieving its current information from the VideoXpert system. </p>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of refreshing the member values for this object.</dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="aa44dec03a985efd8123b6d1b7505911c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -783,6 +820,51 @@ Protected Member Functions</h2></td></tr>
     <tr><td class="paramname">deltaX</td><td>The degree to pan relative to the current X position. Negative values pan left, positive values pan right.</td></tr>
     <tr><td class="paramname">deltaY</td><td>The degree to tilt relative to the current Y position. Negative values pan left, positive values pan right.</td></tr>
     <tr><td class="paramname">deltaZ</td><td>The magnification level relative to the current Z position. Negative values pan left, positive values pan right.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of the request.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7f42591d6dea743e62a73c1e5f151fcc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxPtzController::RelativePercentageMove </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>percentageX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>percentageY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Moves the camera position within a percentage relative to the device’s current field of view. </p>
+<p>The rotational x and y parameters are used to move within a percentage of the current field of view of the camera. For instance, if the x parameter were 50 and the y parameter were -50, the pan/tilt would move halfway to the edge of the field of view along the x axis and halfway to the field of view along the negative y axis from its present position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">percentageX</td><td>Percentage of the current field of view of the camera (X axis). Positive values are to the right, negative values are to the left. Range: -100 to 100.</td></tr>
+    <tr><td class="paramname">percentageY</td><td>Percentage of the current field of view of the camera (Y axis). Positive values are up, negative values are down. Range: -100 to 100.</td></tr>
   </table>
   </dd>
 </dl>
@@ -856,6 +938,32 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ada6763bb0757cea2737e8c7a25bb5dfd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxPtzController::TriggerRefresh </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Triggers a refresh of this <a class="el" href="struct_vx_sdk_1_1_i_vx_ptz_controller.html" title="Represents a controller for a device that has pan, tilt, and/or zoom functionality. ">IVxPtzController</a> on the VideoXpert system; updating its <a class="el" href="struct_vx_sdk_1_1_i_vx_pattern.html">patterns</a> and <a class="el" href="struct_vx_sdk_1_1_i_vx_preset.html">presets</a> based on the current camera configuration. </p>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of refreshing the <a class="el" href="struct_vx_sdk_1_1_i_vx_ptz_controller.html" title="Represents a controller for a device that has pan, tilt, and/or zoom functionality. ">IVxPtzController</a>.</dd></dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="ac2f8fe6f8aa429843d3316acfe259bd2"></a>
 <div class="memitem">
@@ -869,7 +977,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Indicates whether the PTZ control is locked. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_ptz_controller_8h_source.html#l00135">135</a> of file <a class="el" href="_i_vx_ptz_controller_8h_source.html">IVxPtzController.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_ptz_controller_8h_source.html#l00162">162</a> of file <a class="el" href="_i_vx_ptz_controller_8h_source.html">IVxPtzController.h</a>.</p>
 
 </div>
 </div>
@@ -885,7 +993,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The time remaining (in seconds) until the PTZ lock expires. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_ptz_controller_8h_source.html#l00139">139</a> of file <a class="el" href="_i_vx_ptz_controller_8h_source.html">IVxPtzController.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_ptz_controller_8h_source.html#l00166">166</a> of file <a class="el" href="_i_vx_ptz_controller_8h_source.html">IVxPtzController.h</a>.</p>
 
 </div>
 </div>

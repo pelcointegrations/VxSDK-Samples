@@ -15,9 +15,12 @@ var struct_vx_sdk_1_1_i_vx_ptz_controller =
     [ "GetPresets", "struct_vx_sdk_1_1_i_vx_ptz_controller.html#aafb7d2e038dc0fa6c01d3e7c2373ded2", null ],
     [ "GetPtzLock", "struct_vx_sdk_1_1_i_vx_ptz_controller.html#a93ea89980aa5c6136976ffdc5e858c4d", null ],
     [ "PtzStop", "struct_vx_sdk_1_1_i_vx_ptz_controller.html#a490c9e16c48ef4b7808fc43424ab9d82", null ],
+    [ "Refresh", "struct_vx_sdk_1_1_i_vx_ptz_controller.html#ad21e69443c0a9eb96e08939e54f38841", null ],
     [ "RelativeMove", "struct_vx_sdk_1_1_i_vx_ptz_controller.html#aa44dec03a985efd8123b6d1b7505911c", null ],
+    [ "RelativePercentageMove", "struct_vx_sdk_1_1_i_vx_ptz_controller.html#a7f42591d6dea743e62a73c1e5f151fcc", null ],
     [ "TriggerPattern", "struct_vx_sdk_1_1_i_vx_ptz_controller.html#a1a8d4b3d627cda6b1d68aa3491c5687a", null ],
     [ "TriggerPreset", "struct_vx_sdk_1_1_i_vx_ptz_controller.html#ad2b9bf465c57c25738f33b2ad8fa1523", null ],
+    [ "TriggerRefresh", "struct_vx_sdk_1_1_i_vx_ptz_controller.html#ada6763bb0757cea2737e8c7a25bb5dfd", null ],
     [ "isLocked", "struct_vx_sdk_1_1_i_vx_ptz_controller.html#ac2f8fe6f8aa429843d3316acfe259bd2", null ],
     [ "lockExpireTime", "struct_vx_sdk_1_1_i_vx_ptz_controller.html#af2519138541a43f9ae4d6af2c5bb6f6b", null ]
 ];

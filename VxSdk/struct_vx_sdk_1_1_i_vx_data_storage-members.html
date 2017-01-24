@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">VideoXpert SDK
-   &#160;<span id="projectnumber">1.1</span>
+   &#160;<span id="projectnumber">1.2</span>
    </div>
    <div id="projectbrief">A software development kit for third party vendors to integrate with the VideoXpert platform</div>
   </td>
@@ -122,10 +122,13 @@ $(document).ready(function(){initNavTree('struct_vx_sdk_1_1_i_vx_data_storage.ht
   <tr class="even"><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html#a582c5b27ad3b9605acedd2c611ee1253">GetDeviceAssignments</a>(VxCollection&lt; IVxDeviceAssignment ** &gt; &amp;deviceAssignmentCollection) const  =0</td><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html">VxSdk::IVxDataStorage</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html#a899b2515d9816d70ab5ab3ed63576812">GetDrivers</a>(VxCollection&lt; IVxDriver ** &gt; &amp;driverCollection) const  =0</td><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html">VxSdk::IVxDataStorage</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html#ab84fb3373aca3085ffb4b1b2a3e70b72">GetHostDevice</a>(IVxDevice *&amp;hostDevice) const  =0</td><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html">VxSdk::IVxDataStorage</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html#a765311f55ff9f2b73942a9ac0a462419">id</a></td><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html">VxSdk::IVxDataStorage</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html#a8922e6ab7101679d21fbf0b2db6970c8">name</a></td><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html">VxSdk::IVxDataStorage</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html#ac3527ab5f54d08a1b2e90fef46c8b772">type</a></td><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html">VxSdk::IVxDataStorage</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html#ae3c297acc77597225a5eba47685b7cfb">UnassignDevice</a>(IVxDevice &amp;device) const  =0</td><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html">VxSdk::IVxDataStorage</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html#a0291e3ed41f4fd49854b68b80f19095e">GetStorageConfiguration</a>(IVxConfiguration::Storage *&amp;storageConfig) const  =0</td><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html">VxSdk::IVxDataStorage</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html#a765311f55ff9f2b73942a9ac0a462419">id</a></td><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html">VxSdk::IVxDataStorage</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html#a8922e6ab7101679d21fbf0b2db6970c8">name</a></td><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html">VxSdk::IVxDataStorage</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html#a5d694992518354b1e996bac1c6652bd4">Refresh</a>()=0</td><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html">VxSdk::IVxDataStorage</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html#ad636fe9912ec303d2f8ab2faa1a2f744">SetName</a>(char name[64])=0</td><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html">VxSdk::IVxDataStorage</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html#ac3527ab5f54d08a1b2e90fef46c8b772">type</a></td><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html">VxSdk::IVxDataStorage</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html#ae3c297acc77597225a5eba47685b7cfb">UnassignDevice</a>(IVxDevice &amp;device) const  =0</td><td class="entry"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html">VxSdk::IVxDataStorage</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

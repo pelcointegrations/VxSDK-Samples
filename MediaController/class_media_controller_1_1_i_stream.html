@@ -109,6 +109,7 @@ $(document).ready(function(){initNavTree('class_media_controller_1_1_i_stream.ht
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_media_controller_1_1_i_stream-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -121,35 +122,44 @@ $(document).ready(function(){initNavTree('class_media_controller_1_1_i_stream.ht
 
 <p><code>#include &lt;<a class="el" href="_i_stream_8h_source.html">IStream.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a0ac9cb583470ae5b9f2e3314fdca9843"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_i_stream.html#a0ac9cb583470ae5b9f2e3314fdca9843">Mode</a> { <br />
+&#160;&#160;<a class="el" href="class_media_controller_1_1_i_stream.html#a0ac9cb583470ae5b9f2e3314fdca9843a133c44ef437ff8a26fc323ed35e975ff">kStopped</a>, 
+<br />
+&#160;&#160;<a class="el" href="class_media_controller_1_1_i_stream.html#a0ac9cb583470ae5b9f2e3314fdca9843adf3918a3aa70d9f1df2517efe874a5cb">kLive</a>, 
+<br />
+&#160;&#160;<a class="el" href="class_media_controller_1_1_i_stream.html#a0ac9cb583470ae5b9f2e3314fdca9843a75ff807459806cb0692c305bb7b0d1e0">kPlayback</a>
+<br />
+ }<tr class="memdesc:a0ac9cb583470ae5b9f2e3314fdca9843"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent the different playback modes.  <a href="class_media_controller_1_1_i_stream.html#a0ac9cb583470ae5b9f2e3314fdca9843">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a0ac9cb583470ae5b9f2e3314fdca9843"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae5266309acb4de0c67c82d179b5a6888"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_i_stream.html#ae5266309acb4de0c67c82d179b5a6888">~IStream</a> ()</td></tr>
 <tr class="memdesc:ae5266309acb4de0c67c82d179b5a6888"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor.  <a href="#ae5266309acb4de0c67c82d179b5a6888">More...</a><br /></td></tr>
 <tr class="separator:ae5266309acb4de0c67c82d179b5a6888"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afefbdcf267875b8ab73c0a3dacff96a0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_i_stream.html#afefbdcf267875b8ab73c0a3dacff96a0">Play</a> (int speed)=0</td></tr>
-<tr class="memdesc:afefbdcf267875b8ab73c0a3dacff96a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call Play on the stream.  <a href="#afefbdcf267875b8ab73c0a3dacff96a0">More...</a><br /></td></tr>
-<tr class="separator:afefbdcf267875b8ab73c0a3dacff96a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af037ad06c1a89885106931709b0f51c1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_i_stream.html#af037ad06c1a89885106931709b0f51c1">Play</a> (float speed=0, unsigned int unixTime=0)=0</td></tr>
+<tr class="memdesc:af037ad06c1a89885106931709b0f51c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call Play on the stream.  <a href="#af037ad06c1a89885106931709b0f51c1">More...</a><br /></td></tr>
+<tr class="separator:af037ad06c1a89885106931709b0f51c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac421e258f6dc1c9cd65d95b0b4d145f4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_i_stream.html#ac421e258f6dc1c9cd65d95b0b4d145f4">PlayStream</a> (float speed, unsigned int unixTime)=0</td></tr>
+<tr class="separator:ac421e258f6dc1c9cd65d95b0b4d145f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb52708f005e2395d90b06bf22868afe"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_i_stream.html#aeb52708f005e2395d90b06bf22868afe">Pause</a> ()=0</td></tr>
 <tr class="memdesc:aeb52708f005e2395d90b06bf22868afe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call Pause on the stream.  <a href="#aeb52708f005e2395d90b06bf22868afe">More...</a><br /></td></tr>
 <tr class="separator:aeb52708f005e2395d90b06bf22868afe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ba52c69638f1ee143d3d9ad78b6eade"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_i_stream.html#a8ba52c69638f1ee143d3d9ad78b6eade">Stop</a> ()=0</td></tr>
 <tr class="memdesc:a8ba52c69638f1ee143d3d9ad78b6eade"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call TearDown on the stream.  <a href="#a8ba52c69638f1ee143d3d9ad78b6eade">More...</a><br /></td></tr>
 <tr class="separator:a8ba52c69638f1ee143d3d9ad78b6eade"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89a7629afd57f6eb9e90a750ad2c5dfd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_i_stream.html#a89a7629afd57f6eb9e90a750ad2c5dfd">FrameForward</a> ()=0</td></tr>
-<tr class="memdesc:a89a7629afd57f6eb9e90a750ad2c5dfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not implemented.  <a href="#a89a7629afd57f6eb9e90a750ad2c5dfd">More...</a><br /></td></tr>
-<tr class="separator:a89a7629afd57f6eb9e90a750ad2c5dfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58c336f518d87333a01e2824276db82c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_i_stream.html#a58c336f518d87333a01e2824276db82c">FrameBackward</a> ()=0</td></tr>
-<tr class="memdesc:a58c336f518d87333a01e2824276db82c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not implemented.  <a href="#a58c336f518d87333a01e2824276db82c">More...</a><br /></td></tr>
-<tr class="separator:a58c336f518d87333a01e2824276db82c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed3c956ef7efd114eea1044bab631d55"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_i_stream.html#aed3c956ef7efd114eea1044bab631d55">Seek</a> (unsigned int unixTime, int speed)=0</td></tr>
-<tr class="memdesc:aed3c956ef7efd114eea1044bab631d55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call Play on the stream with the supplied start time, resulting in a playback stream.  <a href="#aed3c956ef7efd114eea1044bab631d55">More...</a><br /></td></tr>
-<tr class="separator:aed3c956ef7efd114eea1044bab631d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f6788601512710453d7a4b0b1999838"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_i_stream.html#a8f6788601512710453d7a4b0b1999838">GoToLive</a> ()=0</td></tr>
-<tr class="memdesc:a8f6788601512710453d7a4b0b1999838"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the stream to Live and call Play.  <a href="#a8f6788601512710453d7a4b0b1999838">More...</a><br /></td></tr>
-<tr class="separator:a8f6788601512710453d7a4b0b1999838"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92acd082bf3f10528c19662f6c90a0c8"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_i_stream.html#a92acd082bf3f10528c19662f6c90a0c8">GoToLive</a> ()=0</td></tr>
+<tr class="memdesc:a92acd082bf3f10528c19662f6c90a0c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the stream to Live and call Play.  <a href="#a92acd082bf3f10528c19662f6c90a0c8">More...</a><br /></td></tr>
+<tr class="separator:a92acd082bf3f10528c19662f6c90a0c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1acf51b6b487e08555b855f16a6234f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_i_stream.html#af1acf51b6b487e08555b855f16a6234f">NewRequest</a> (<a class="el" href="struct_media_controller_1_1_media_request.html">MediaRequest</a> &amp;request)=0</td></tr>
 <tr class="memdesc:af1acf51b6b487e08555b855f16a6234f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the stream to a new source.  <a href="#af1acf51b6b487e08555b855f16a6234f">More...</a><br /></td></tr>
 <tr class="separator:af1acf51b6b487e08555b855f16a6234f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0287c7ed351222b7c8fde8bf4c2a34a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_media_controller_1_1_i_stream.html#a0ac9cb583470ae5b9f2e3314fdca9843">Mode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_controller_1_1_i_stream.html#ab0287c7ed351222b7c8fde8bf4c2a34a">GetMode</a> ()=0</td></tr>
+<tr class="memdesc:ab0287c7ed351222b7c8fde8bf4c2a34a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current playback mode.  <a href="#ab0287c7ed351222b7c8fde8bf4c2a34a">More...</a><br /></td></tr>
+<tr class="separator:ab0287c7ed351222b7c8fde8bf4c2a34a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Defines the stream interface. </p>
@@ -157,6 +167,37 @@ Public Member Functions</h2></td></tr>
 <p>Definition at line <a class="el" href="_i_stream_8h_source.html#l00011">11</a> of file <a class="el" href="_i_stream_8h_source.html">IStream.h</a>.</p>
 </div>
 <p>Inherited by <a class="el" href="class_media_controller_1_1_i_controller.html">MediaController::IController</a>, and <a class="el" href="class_media_controller_1_1_stream_base.html">MediaController::StreamBase</a>.</p>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a class="anchor" id="a0ac9cb583470ae5b9f2e3314fdca9843"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_media_controller_1_1_i_stream.html#a0ac9cb583470ae5b9f2e3314fdca9843">MediaController::IStream::Mode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Values that represent the different playback modes. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a0ac9cb583470ae5b9f2e3314fdca9843a133c44ef437ff8a26fc323ed35e975ff"></a>kStopped&#160;</td><td class="fielddoc">
+<p>The stream is stopped.</p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a0ac9cb583470ae5b9f2e3314fdca9843adf3918a3aa70d9f1df2517efe874a5cb"></a>kLive&#160;</td><td class="fielddoc">
+<p>The stream is playing live video.</p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a0ac9cb583470ae5b9f2e3314fdca9843a75ff807459806cb0692c305bb7b0d1e0"></a>kPlayback&#160;</td><td class="fielddoc">
+<p>The stream is playing recorded video.</p>
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="_i_stream_8h_source.html#l00016">16</a> of file <a class="el" href="_i_stream_8h_source.html">IStream.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                  {</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            <a class="code" href="class_media_controller_1_1_i_stream.html#a0ac9cb583470ae5b9f2e3314fdca9843a133c44ef437ff8a26fc323ed35e975ff">kStopped</a>,</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <a class="code" href="class_media_controller_1_1_i_stream.html#a0ac9cb583470ae5b9f2e3314fdca9843adf3918a3aa70d9f1df2517efe874a5cb">kLive</a>,</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <a class="code" href="class_media_controller_1_1_i_stream.html#a0ac9cb583470ae5b9f2e3314fdca9843a75ff807459806cb0692c305bb7b0d1e0">kPlayback</a></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        };</div><div class="ttc" id="class_media_controller_1_1_i_stream_html_a0ac9cb583470ae5b9f2e3314fdca9843adf3918a3aa70d9f1df2517efe874a5cb"><div class="ttname"><a href="class_media_controller_1_1_i_stream.html#a0ac9cb583470ae5b9f2e3314fdca9843adf3918a3aa70d9f1df2517efe874a5cb">MediaController::IStream::kLive</a></div><div class="ttdoc">The stream is playing live video.</div><div class="ttdef"><b>Definition:</b> <a href="_i_stream_8h_source.html#l00021">IStream.h:21</a></div></div>
+<div class="ttc" id="class_media_controller_1_1_i_stream_html_a0ac9cb583470ae5b9f2e3314fdca9843a75ff807459806cb0692c305bb7b0d1e0"><div class="ttname"><a href="class_media_controller_1_1_i_stream.html#a0ac9cb583470ae5b9f2e3314fdca9843a75ff807459806cb0692c305bb7b0d1e0">MediaController::IStream::kPlayback</a></div><div class="ttdoc">The stream is playing recorded video.</div><div class="ttdef"><b>Definition:</b> <a href="_i_stream_8h_source.html#l00024">IStream.h:24</a></div></div>
+<div class="ttc" id="class_media_controller_1_1_i_stream_html_a0ac9cb583470ae5b9f2e3314fdca9843a133c44ef437ff8a26fc323ed35e975ff"><div class="ttname"><a href="class_media_controller_1_1_i_stream.html#a0ac9cb583470ae5b9f2e3314fdca9843a133c44ef437ff8a26fc323ed35e975ff">MediaController::IStream::kStopped</a></div><div class="ttdoc">The stream is stopped.</div><div class="ttdef"><b>Definition:</b> <a href="_i_stream_8h_source.html#l00018">IStream.h:18</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ae5266309acb4de0c67c82d179b5a6888"></a>
 <div class="memitem">
@@ -181,12 +222,12 @@ Public Member Functions</h2></td></tr>
 
 <p>Virtual destructor. </p>
 
-<p>Definition at line <a class="el" href="_i_stream_8h_source.html#l00017">17</a> of file <a class="el" href="_i_stream_8h_source.html">IStream.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{}</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_i_stream_8h_source.html#l00030">30</a> of file <a class="el" href="_i_stream_8h_source.html">IStream.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{}</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a58c336f518d87333a01e2824276db82c"></a>
+<a class="anchor" id="ab0287c7ed351222b7c8fde8bf4c2a34a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -194,7 +235,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void MediaController::IStream::FrameBackward </td>
+          <td class="memname">virtual <a class="el" href="class_media_controller_1_1_i_stream.html#a0ac9cb583470ae5b9f2e3314fdca9843">Mode</a> MediaController::IStream::GetMode </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -207,13 +248,14 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Not implemented. </p>
+<p>Get the current playback mode. </p>
+<dl class="section return"><dt>Returns</dt><dd>The current stream <a class="el" href="class_media_controller_1_1_i_stream.html#a0ac9cb583470ae5b9f2e3314fdca9843" title="Values that represent the different playback modes. ">Mode</a>.</dd></dl>
 
-<p>Implemented in <a class="el" href="class_media_controller_1_1_rtsp_1_1_stream.html#af9f598827bbff60d6e5b5d9c09bebb38">MediaController::Rtsp::Stream</a>, <a class="el" href="class_media_controller_1_1_mjpeg_pull_1_1_stream.html#a4bcb19c50be111a4792098c6a26500fa">MediaController::MjpegPull::Stream</a>, <a class="el" href="class_media_controller_1_1_controller.html#a93643812e3a63875b37209340a826443">MediaController::Controller</a>, and <a class="el" href="class_media_controller_1_1_stream_base.html#a6dedd1c7d98100ed150258af0ea0e57b">MediaController::StreamBase</a>.</p>
+<p>Implemented in <a class="el" href="class_media_controller_1_1_stream_base.html#ad45aca1bf506ddeac7aec127b8037266">MediaController::StreamBase</a>, and <a class="el" href="class_media_controller_1_1_controller.html#a9832c40e836ec7b9b7a45b7ee2aaf42e">MediaController::Controller</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a89a7629afd57f6eb9e90a750ad2c5dfd"></a>
+<a class="anchor" id="a92acd082bf3f10528c19662f6c90a0c8"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -221,34 +263,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void MediaController::IStream::FrameForward </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Not implemented. </p>
-
-<p>Implemented in <a class="el" href="class_media_controller_1_1_rtsp_1_1_stream.html#a736a9e2d49723a000b57af8939ff79d5">MediaController::Rtsp::Stream</a>, <a class="el" href="class_media_controller_1_1_mjpeg_pull_1_1_stream.html#aca3cd513815443d0283d45a73d869e94">MediaController::MjpegPull::Stream</a>, <a class="el" href="class_media_controller_1_1_controller.html#aa210a1fa88e98ae72a97fbb691293343">MediaController::Controller</a>, and <a class="el" href="class_media_controller_1_1_stream_base.html#a3508d3b5e19efb45b0cf9fd843a15b73">MediaController::StreamBase</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a8f6788601512710453d7a4b0b1999838"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void MediaController::IStream::GoToLive </td>
+          <td class="memname">virtual bool MediaController::IStream::GoToLive </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -263,7 +278,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Set the stream to Live and call Play. </p>
 
-<p>Implemented in <a class="el" href="class_media_controller_1_1_rtsp_1_1_stream.html#a4957db748a2995dd1942e1e74d1fb784">MediaController::Rtsp::Stream</a>, <a class="el" href="class_media_controller_1_1_mjpeg_pull_1_1_stream.html#abfff76528674a47a0fb967daafbcc964">MediaController::MjpegPull::Stream</a>, and <a class="el" href="class_media_controller_1_1_controller.html#a677d67427e4a34e52fa2f8bf2702ab82">MediaController::Controller</a>.</p>
+<p>Implemented in <a class="el" href="class_media_controller_1_1_rtsp_1_1_stream.html#a0a29dca12814d719149345d6bad0c018">MediaController::Rtsp::Stream</a>, <a class="el" href="class_media_controller_1_1_mjpeg_pull_1_1_stream.html#a2771304e82b01a5199727c56be628639">MediaController::MjpegPull::Stream</a>, and <a class="el" href="class_media_controller_1_1_controller.html#aaf46bf4854c44e95c5921f0092bb1dfb">MediaController::Controller</a>.</p>
 
 </div>
 </div>
@@ -328,7 +343,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="afefbdcf267875b8ab73c0a3dacff96a0"></a>
+<a class="anchor" id="af037ad06c1a89885106931709b0f51c1"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -336,50 +351,16 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void MediaController::IStream::Play </td>
+          <td class="memname">virtual bool MediaController::IStream::Play </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>speed</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Call Play on the stream. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">speed</td><td>The playback speed. Negative values can be used for reverse playback.</td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implemented in <a class="el" href="class_media_controller_1_1_rtsp_1_1_stream.html#a7790a70a35e70203c73232ff1fc27dfc">MediaController::Rtsp::Stream</a>, <a class="el" href="class_media_controller_1_1_mjpeg_pull_1_1_stream.html#abc07b64122ca24edbf1e10bfd99e6ca4">MediaController::MjpegPull::Stream</a>, <a class="el" href="class_media_controller_1_1_controller.html#a1fefe26969ec04245cc19616f7e84c86">MediaController::Controller</a>, and <a class="el" href="class_media_controller_1_1_stream_base.html#af3824ae01db55f2d8a850c6537572d11">MediaController::StreamBase</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aed3c956ef7efd114eea1044bab631d55"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void MediaController::IStream::Seek </td>
-          <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>unixTime</em>, </td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>speed</em> = <code>0</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>speed</em>&#160;</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>unixTime</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -394,16 +375,52 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Call Play on the stream with the supplied start time, resulting in a playback stream. </p>
+<p>Call Play on the stream. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">unixTime</td><td>The start time for playback.</td></tr>
-    <tr><td class="paramname">speed</td><td>The playback speed. Negative values can be used for reverse playback.</td></tr>
+    <tr><td class="paramname">speed</td><td>The playback speed. Negative values can be used for reverse playback. A value of 0 will resume a paused stream.</td></tr>
+    <tr><td class="paramname">unixTime</td><td>The start time for playback. A value of 0 will start a live stream.</td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class_media_controller_1_1_rtsp_1_1_stream.html#a7cd6a0ebc8cf8bfceeb5874ff713134e">MediaController::Rtsp::Stream</a>, <a class="el" href="class_media_controller_1_1_mjpeg_pull_1_1_stream.html#a237f606f4e68139542998d50848e5ea7">MediaController::MjpegPull::Stream</a>, <a class="el" href="class_media_controller_1_1_controller.html#ad6945bebdaaf9337d4589cd9e7188890">MediaController::Controller</a>, and <a class="el" href="class_media_controller_1_1_stream_base.html#aae155f1282c9c6ab41caa41f9852da18">MediaController::StreamBase</a>.</p>
+<p>Implemented in <a class="el" href="class_media_controller_1_1_rtsp_1_1_stream.html#a4c2d53803d2e6b6dfef82f3f3531ddb6">MediaController::Rtsp::Stream</a>, <a class="el" href="class_media_controller_1_1_mjpeg_pull_1_1_stream.html#a0c45ff070115cc8e4356d544830a20a8">MediaController::MjpegPull::Stream</a>, <a class="el" href="class_media_controller_1_1_controller.html#a845a3ef3ab3e9c5505905b3116f1a36d">MediaController::Controller</a>, and <a class="el" href="class_media_controller_1_1_stream_base.html#a8082f1179f094eab73f0907cb8d58833">MediaController::StreamBase</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac421e258f6dc1c9cd65d95b0b4d145f4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void MediaController::IStream::PlayStream </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>speed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>unixTime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_media_controller_1_1_rtsp_1_1_stream.html#af6c8913a855356b9d01ce626e85b5b7e">MediaController::Rtsp::Stream</a>, <a class="el" href="class_media_controller_1_1_mjpeg_pull_1_1_stream.html#a18c9111bc5b0f026c9aa7eb251670e98">MediaController::MjpegPull::Stream</a>, and <a class="el" href="class_media_controller_1_1_controller.html#a155e01afb385bc15ad08e8810af1299c">MediaController::Controller</a>.</p>
 
 </div>
 </div>

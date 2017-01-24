@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">VideoXpert SDK
-   &#160;<span id="projectnumber">1.1</span>
+   &#160;<span id="projectnumber">1.2</span>
    </div>
    <div id="projectbrief">A software development kit for third party vendors to integrate with the VideoXpert platform</div>
   </td>
@@ -140,6 +140,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9cfa5bd89cd6a04d0c1d04a2c4e9fdf2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_ptz_lock.html#a9cfa5bd89cd6a04d0c1d04a2c4e9fdf2">Lock</a> (int expireTime) const  =0</td></tr>
 <tr class="memdesc:a9cfa5bd89cd6a04d0c1d04a2c4e9fdf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Locks the PTZ control.  <a href="#a9cfa5bd89cd6a04d0c1d04a2c4e9fdf2">More...</a><br /></td></tr>
 <tr class="separator:a9cfa5bd89cd6a04d0c1d04a2c4e9fdf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70e572cd78ec37efbb942358287c8226"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_ptz_lock.html#a70e572cd78ec37efbb942358287c8226">Refresh</a> ()=0</td></tr>
+<tr class="memdesc:a70e572cd78ec37efbb942358287c8226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refreshes the member values for this object by retrieving its current information from the VideoXpert system.  <a href="#a70e572cd78ec37efbb942358287c8226">More...</a><br /></td></tr>
+<tr class="separator:a70e572cd78ec37efbb942358287c8226"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03070556a4e337fe1862cf05ec8839cb"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_ptz_lock.html#a03070556a4e337fe1862cf05ec8839cb">Unlock</a> () const  =0</td></tr>
 <tr class="memdesc:a03070556a4e337fe1862cf05ec8839cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlocks the PTZ control.  <a href="#a03070556a4e337fe1862cf05ec8839cb">More...</a><br /></td></tr>
 <tr class="separator:a03070556a4e337fe1862cf05ec8839cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -184,8 +187,8 @@ Protected Member Functions</h2></td></tr>
 
 <p>Clears this instance. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_ptz_lock_8h_source.html#l00059">59</a> of file <a class="el" href="_i_vx_ptz_lock_8h_source.html">IVxPtzLock.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                     {</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<span class="keywordtype">id</span>);</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        }</div><div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00018">VxMacros.h:18</a></div></div>
+<p>Definition at line <a class="el" href="_i_vx_ptz_lock_8h_source.html#l00064">64</a> of file <a class="el" href="_i_vx_ptz_lock_8h_source.html">IVxPtzLock.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                     {</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<span class="keywordtype">id</span>);</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }</div><div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00018">VxMacros.h:18</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -346,6 +349,32 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a70e572cd78ec37efbb942358287c8226"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxPtzLock::Refresh </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Refreshes the member values for this object by retrieving its current information from the VideoXpert system. </p>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of refreshing the member values for this object.</dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a03070556a4e337fe1862cf05ec8839cb"></a>
 <div class="memitem">
 <div class="memproto">
@@ -385,7 +414,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The unique identifier of the PTZ lock. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_ptz_lock_8h_source.html#l00053">53</a> of file <a class="el" href="_i_vx_ptz_lock_8h_source.html">IVxPtzLock.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_ptz_lock_8h_source.html#l00058">58</a> of file <a class="el" href="_i_vx_ptz_lock_8h_source.html">IVxPtzLock.h</a>.</p>
 
 </div>
 </div>

@@ -127,8 +127,6 @@ $(document).ready(function(){initNavTree('class_c_p_p_cli_1_1_device.html','');}
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a9e9bb567a4d33139f8e874925378503d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_device.html#a9e9bb567a4d33139f8e874925378503d">Types</a> { <br />
-&#160;&#160;<a class="el" href="class_c_p_p_cli_1_1_device.html#a9e9bb567a4d33139f8e874925378503da88183b946cc5f0e8c96b2e66e1c74a7e">Types::Unknown</a>, 
-<br />
 &#160;&#160;<a class="el" href="class_c_p_p_cli_1_1_device.html#a9e9bb567a4d33139f8e874925378503da967d35e40f3f95b1f538bd248640bf3b">Types::Camera</a>, 
 <br />
 &#160;&#160;<a class="el" href="class_c_p_p_cli_1_1_device.html#a9e9bb567a4d33139f8e874925378503da83168e6cb289d732cc78427b51f93153">Types::Core</a>, 
@@ -138,6 +136,8 @@ Public Types</h2></td></tr>
 &#160;&#160;<a class="el" href="class_c_p_p_cli_1_1_device.html#a9e9bb567a4d33139f8e874925378503dae6818a215084646ac80a1a07561ecf35">Types::Decoder</a>, 
 <br />
 &#160;&#160;<a class="el" href="class_c_p_p_cli_1_1_device.html#a9e9bb567a4d33139f8e874925378503da87d487f6f605eb96e61be67988e41e6d">Types::Encoder</a>, 
+<br />
+&#160;&#160;<a class="el" href="class_c_p_p_cli_1_1_device.html#a9e9bb567a4d33139f8e874925378503dab206a1b4ea1097761f78e8876f6da779">Types::External</a>, 
 <br />
 &#160;&#160;<a class="el" href="class_c_p_p_cli_1_1_device.html#a9e9bb567a4d33139f8e874925378503daae94be3cd532ce4a025884819eb08c98">Types::Manager</a>, 
 <br />
@@ -151,6 +151,8 @@ Public Types</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="class_c_p_p_cli_1_1_device.html#a9e9bb567a4d33139f8e874925378503da730b1d2ffece9a1c748a54cd0bb0e363">Types::Ui</a>, 
 <br />
+&#160;&#160;<a class="el" href="class_c_p_p_cli_1_1_device.html#a9e9bb567a4d33139f8e874925378503da88183b946cc5f0e8c96b2e66e1c74a7e">Types::Unknown</a>, 
+<br />
 &#160;&#160;<a class="el" href="class_c_p_p_cli_1_1_device.html#a9e9bb567a4d33139f8e874925378503da072a1a46e06607a200fe8af01d0928aa">Types::Vcd</a>
 <br />
  }<tr class="memdesc:a9e9bb567a4d33139f8e874925378503d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent device types.  <a href="class_c_p_p_cli_1_1_device.html#a9e9bb567a4d33139f8e874925378503d">More...</a><br /></td></tr>
@@ -159,7 +161,7 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a64fabf5a4bb6a6884b110738e22f3e05"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_device.html#a64fabf5a4bb6a6884b110738e22f3e05">Device</a> (<a class="elRef" doxygen="C:/Users/zachm/Git/vxsdk-docs/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_device.html">VxSdk::IVxDevice</a> *vxDevice)</td></tr>
+<tr class="memitem:a64fabf5a4bb6a6884b110738e22f3e05"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_device.html#a64fabf5a4bb6a6884b110738e22f3e05">Device</a> (<a class="elRef" doxygen="C:/Users/zachm/Git/samples_for_testing/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_device.html">VxSdk::IVxDevice</a> *vxDevice)</td></tr>
 <tr class="memdesc:a64fabf5a4bb6a6884b110738e22f3e05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a64fabf5a4bb6a6884b110738e22f3e05">More...</a><br /></td></tr>
 <tr class="separator:a64fabf5a4bb6a6884b110738e22f3e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84a03c64ddc562482acb2ea7cc3b3a9a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_device.html#a84a03c64ddc562482acb2ea7cc3b3a9a">~Device</a> ()</td></tr>
@@ -168,15 +170,20 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa601808544ef37fe5f90d6d3b921593e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_device.html#aa601808544ef37fe5f90d6d3b921593e">!Device</a> ()</td></tr>
 <tr class="memdesc:aa601808544ef37fe5f90d6d3b921593e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finaliser.  <a href="#aa601808544ef37fe5f90d6d3b921593e">More...</a><br /></td></tr>
 <tr class="separator:aa601808544ef37fe5f90d6d3b921593e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a269d613c36f766e65eda932fc804ed31"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">Results::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_device.html#a269d613c36f766e65eda932fc804ed31">Refresh</a> ()</td></tr>
+<tr class="memdesc:a269d613c36f766e65eda932fc804ed31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refreshes this instances properties.  <a href="#a269d613c36f766e65eda932fc804ed31">More...</a><br /></td></tr>
+<tr class="separator:a269d613c36f766e65eda932fc804ed31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
 Package Functions</h2></td></tr>
 <tr class="memitem:ad9eee7e1162a0b06cc520f5b5316707d"><td class="memItemLeft" align="right" valign="top">System::Collections::Generic::List&lt; <a class="el" href="class_c_p_p_cli_1_1_data_source.html">DataSource</a>^ &gt;^&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_device.html#ad9eee7e1162a0b06cc520f5b5316707d">_GetDataSources</a> ()</td></tr>
 <tr class="separator:ad9eee7e1162a0b06cc520f5b5316707d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e5ba21633e100bc30ea2789b944c355"><td class="memItemLeft" align="right" valign="top">System::Collections::Generic::List&lt; <a class="el" href="class_c_p_p_cli_1_1_device_assignment.html">DeviceAssignment</a>^ &gt;^&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_device.html#a7e5ba21633e100bc30ea2789b944c355">_GetDeviceAssignments</a> ()</td></tr>
+<tr class="separator:a7e5ba21633e100bc30ea2789b944c355"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-attribs"></a>
 Package Attributes</h2></td></tr>
-<tr class="memitem:afaeffe7f56c0c29059669a529b8d890f"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/Users/zachm/Git/vxsdk-docs/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_device.html">VxSdk::IVxDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_device.html#afaeffe7f56c0c29059669a529b8d890f">_device</a></td></tr>
+<tr class="memitem:afaeffe7f56c0c29059669a529b8d890f"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/Users/zachm/Git/samples_for_testing/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_device.html">VxSdk::IVxDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_device.html#afaeffe7f56c0c29059669a529b8d890f">_device</a></td></tr>
 <tr class="separator:afaeffe7f56c0c29059669a529b8d890f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
@@ -184,30 +191,33 @@ Properties</h2></td></tr>
 <tr class="memitem:a211fc1188c6e216bdfe4fa56d2380389"><td class="memItemLeft" align="right" valign="top">System::Collections::Generic::List&lt; <a class="el" href="class_c_p_p_cli_1_1_data_source.html">DataSource</a>^ &gt;^&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_device.html#a211fc1188c6e216bdfe4fa56d2380389">DataSources</a><code> [get]</code></td></tr>
 <tr class="memdesc:a211fc1188c6e216bdfe4fa56d2380389"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the data sources hosted by this device.  <a href="#a211fc1188c6e216bdfe4fa56d2380389">More...</a><br /></td></tr>
 <tr class="separator:a211fc1188c6e216bdfe4fa56d2380389"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3db1050bf199703b5d79dac21ea0a9fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_device.html#a3db1050bf199703b5d79dac21ea0a9fd">IsCommissioned</a><code> [get]</code></td></tr>
-<tr class="memdesc:a3db1050bf199703b5d79dac21ea0a9fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a value indicating whether the device is commissioned.  <a href="#a3db1050bf199703b5d79dac21ea0a9fd">More...</a><br /></td></tr>
-<tr class="separator:a3db1050bf199703b5d79dac21ea0a9fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cb0e61d7f0ce4b64c1a8ee7ee534a44"><td class="memItemLeft" align="right" valign="top">System::Collections::Generic::List&lt; <a class="el" href="class_c_p_p_cli_1_1_device_assignment.html">DeviceAssignment</a>^ &gt;^&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_device.html#a9cb0e61d7f0ce4b64c1a8ee7ee534a44">DeviceAssignments</a><code> [get]</code></td></tr>
+<tr class="memdesc:a9cb0e61d7f0ce4b64c1a8ee7ee534a44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the assignments to a data storage for this device.  <a href="#a9cb0e61d7f0ce4b64c1a8ee7ee534a44">More...</a><br /></td></tr>
+<tr class="separator:a9cb0e61d7f0ce4b64c1a8ee7ee534a44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60162ff569cfb15a00cc6790ca84a86f"><td class="memItemLeft" align="right" valign="top">System::String^ &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_device.html#a60162ff569cfb15a00cc6790ca84a86f">Id</a><code> [get]</code></td></tr>
 <tr class="memdesc:a60162ff569cfb15a00cc6790ca84a86f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the unique identifier of the device.  <a href="#a60162ff569cfb15a00cc6790ca84a86f">More...</a><br /></td></tr>
 <tr class="separator:a60162ff569cfb15a00cc6790ca84a86f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac42cd6380526feec0ef2844453d6a9f5"><td class="memItemLeft" align="right" valign="top">System::String^ &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_device.html#ac42cd6380526feec0ef2844453d6a9f5">Ip</a><code> [get]</code></td></tr>
 <tr class="memdesc:ac42cd6380526feec0ef2844453d6a9f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the IP of the device.  <a href="#ac42cd6380526feec0ef2844453d6a9f5">More...</a><br /></td></tr>
 <tr class="separator:ac42cd6380526feec0ef2844453d6a9f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3db1050bf199703b5d79dac21ea0a9fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_device.html#a3db1050bf199703b5d79dac21ea0a9fd">IsCommissioned</a><code> [get]</code></td></tr>
+<tr class="memdesc:a3db1050bf199703b5d79dac21ea0a9fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a value indicating whether the device is commissioned.  <a href="#a3db1050bf199703b5d79dac21ea0a9fd">More...</a><br /></td></tr>
+<tr class="separator:a3db1050bf199703b5d79dac21ea0a9fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62bf6d13cf298349876b4aba2e70d297"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_device.html#a62bf6d13cf298349876b4aba2e70d297">IsLicenseRequired</a><code> [get]</code></td></tr>
 <tr class="memdesc:a62bf6d13cf298349876b4aba2e70d297"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a value indicating whether a license is required for commissioning the device.  <a href="#a62bf6d13cf298349876b4aba2e70d297">More...</a><br /></td></tr>
 <tr class="separator:a62bf6d13cf298349876b4aba2e70d297"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a605ea45b28c43d0ecfda539d3aaf8270"><td class="memItemLeft" align="right" valign="top">System::String^ &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_device.html#a605ea45b28c43d0ecfda539d3aaf8270">Model</a><code> [get]</code></td></tr>
-<tr class="memdesc:a605ea45b28c43d0ecfda539d3aaf8270"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the device model.  <a href="#a605ea45b28c43d0ecfda539d3aaf8270">More...</a><br /></td></tr>
-<tr class="separator:a605ea45b28c43d0ecfda539d3aaf8270"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbe02dfae71494ea96e831a089fd2c95"><td class="memItemLeft" align="right" valign="top">System::String^ &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_device.html#afbe02dfae71494ea96e831a089fd2c95">Name</a><code> [get]</code></td></tr>
-<tr class="memdesc:afbe02dfae71494ea96e831a089fd2c95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the friendly name of the device.  <a href="#afbe02dfae71494ea96e831a089fd2c95">More...</a><br /></td></tr>
-<tr class="separator:afbe02dfae71494ea96e831a089fd2c95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1e74d9da8f97972b6663ae4aef48bba"><td class="memItemLeft" align="right" valign="top">System::String^ &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_device.html#af1e74d9da8f97972b6663ae4aef48bba">Password</a><code> [get]</code></td></tr>
-<tr class="memdesc:af1e74d9da8f97972b6663ae4aef48bba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the account password used to communicate with the device, if any.  <a href="#af1e74d9da8f97972b6663ae4aef48bba">More...</a><br /></td></tr>
-<tr class="separator:af1e74d9da8f97972b6663ae4aef48bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fa25f65ec17accf2ff6334edb32a256"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_device.html#a6fa25f65ec17accf2ff6334edb32a256">IsPelcoHardware</a><code> [get]</code></td></tr>
 <tr class="memdesc:a6fa25f65ec17accf2ff6334edb32a256"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a value indicating whether the device is running on Pelco hardware.  <a href="#a6fa25f65ec17accf2ff6334edb32a256">More...</a><br /></td></tr>
 <tr class="separator:a6fa25f65ec17accf2ff6334edb32a256"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a605ea45b28c43d0ecfda539d3aaf8270"><td class="memItemLeft" align="right" valign="top">System::String^ &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_device.html#a605ea45b28c43d0ecfda539d3aaf8270">Model</a><code> [get]</code></td></tr>
+<tr class="memdesc:a605ea45b28c43d0ecfda539d3aaf8270"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the device model.  <a href="#a605ea45b28c43d0ecfda539d3aaf8270">More...</a><br /></td></tr>
+<tr class="separator:a605ea45b28c43d0ecfda539d3aaf8270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbe02dfae71494ea96e831a089fd2c95"><td class="memItemLeft" align="right" valign="top">System::String^ &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_device.html#afbe02dfae71494ea96e831a089fd2c95">Name</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:afbe02dfae71494ea96e831a089fd2c95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the friendly name of the device.  <a href="#afbe02dfae71494ea96e831a089fd2c95">More...</a><br /></td></tr>
+<tr class="separator:afbe02dfae71494ea96e831a089fd2c95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1e74d9da8f97972b6663ae4aef48bba"><td class="memItemLeft" align="right" valign="top">System::String^ &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_device.html#af1e74d9da8f97972b6663ae4aef48bba">Password</a><code> [set]</code></td></tr>
+<tr class="memdesc:af1e74d9da8f97972b6663ae4aef48bba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the account password used to communicate with the device, if any.  <a href="#af1e74d9da8f97972b6663ae4aef48bba">More...</a><br /></td></tr>
+<tr class="separator:af1e74d9da8f97972b6663ae4aef48bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb2ab590c89ffe5fce68824eaad5ee71"><td class="memItemLeft" align="right" valign="top">System::String^ &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_device.html#aeb2ab590c89ffe5fce68824eaad5ee71">Serial</a><code> [get]</code></td></tr>
 <tr class="memdesc:aeb2ab590c89ffe5fce68824eaad5ee71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the serial number.  <a href="#aeb2ab590c89ffe5fce68824eaad5ee71">More...</a><br /></td></tr>
 <tr class="separator:aeb2ab590c89ffe5fce68824eaad5ee71"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,8 +227,8 @@ Properties</h2></td></tr>
 <tr class="memitem:a147c91b37b0c0c4658a8febb20d6550d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_p_p_cli_1_1_device.html#a9e9bb567a4d33139f8e874925378503d">Types</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_device.html#a147c91b37b0c0c4658a8febb20d6550d">Type</a><code> [get]</code></td></tr>
 <tr class="memdesc:a147c91b37b0c0c4658a8febb20d6550d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the type of device.  <a href="#a147c91b37b0c0c4658a8febb20d6550d">More...</a><br /></td></tr>
 <tr class="separator:a147c91b37b0c0c4658a8febb20d6550d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a498469d0ff8734c22cf7f1e6d2441a5a"><td class="memItemLeft" align="right" valign="top">System::String^ &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_device.html#a498469d0ff8734c22cf7f1e6d2441a5a">Username</a><code> [get]</code></td></tr>
-<tr class="memdesc:a498469d0ff8734c22cf7f1e6d2441a5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the account username used to communicate with the device, if any.  <a href="#a498469d0ff8734c22cf7f1e6d2441a5a">More...</a><br /></td></tr>
+<tr class="memitem:a498469d0ff8734c22cf7f1e6d2441a5a"><td class="memItemLeft" align="right" valign="top">System::String^ &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_device.html#a498469d0ff8734c22cf7f1e6d2441a5a">Username</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a498469d0ff8734c22cf7f1e6d2441a5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the account username used to communicate with the device, if any.  <a href="#a498469d0ff8734c22cf7f1e6d2441a5a">More...</a><br /></td></tr>
 <tr class="separator:a498469d0ff8734c22cf7f1e6d2441a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56333a18c5947c168ac4f29010085e06"><td class="memItemLeft" align="right" valign="top">System::String^ &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_device.html#a56333a18c5947c168ac4f29010085e06">Vendor</a><code> [get]</code></td></tr>
 <tr class="memdesc:a56333a18c5947c168ac4f29010085e06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the device vendor, if any.  <a href="#a56333a18c5947c168ac4f29010085e06">More...</a><br /></td></tr>
@@ -233,7 +243,7 @@ Properties</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="class_c_p_p_cli_1_1_device.html" title="The Device class represents a particular physical device in the system. ">Device</a> class represents a particular physical device in the system. </p>
 
-<p>Definition at line <a class="el" href="_device_8h_source.html#l00012">12</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_8h_source.html#l00013">13</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="a9e9bb567a4d33139f8e874925378503d"></a>
 <div class="memitem">
@@ -255,10 +265,7 @@ Properties</h2></td></tr>
 
 <p>Values that represent device types. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a9e9bb567a4d33139f8e874925378503da88183b946cc5f0e8c96b2e66e1c74a7e"></a>Unknown&#160;</td><td class="fielddoc">
-<p>An error or unknown value was returned.</p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a9e9bb567a4d33139f8e874925378503da967d35e40f3f95b1f538bd248640bf3b"></a>Camera&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a9e9bb567a4d33139f8e874925378503da967d35e40f3f95b1f538bd248640bf3b"></a>Camera&#160;</td><td class="fielddoc">
 <p>A camera device.</p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a9e9bb567a4d33139f8e874925378503da83168e6cb289d732cc78427b51f93153"></a>Core&#160;</td><td class="fielddoc">
@@ -272,6 +279,9 @@ Properties</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a9e9bb567a4d33139f8e874925378503da87d487f6f605eb96e61be67988e41e6d"></a>Encoder&#160;</td><td class="fielddoc">
 <p>An encoder device.</p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9e9bb567a4d33139f8e874925378503dab206a1b4ea1097761f78e8876f6da779"></a>External&#160;</td><td class="fielddoc">
+<p>An external device.</p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a9e9bb567a4d33139f8e874925378503daae94be3cd532ce4a025884819eb08c98"></a>Manager&#160;</td><td class="fielddoc">
 <p>A system manager device.</p>
@@ -291,13 +301,16 @@ Properties</h2></td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a9e9bb567a4d33139f8e874925378503da730b1d2ffece9a1c748a54cd0bb0e363"></a>Ui&#160;</td><td class="fielddoc">
 <p>A UI device.</p>
 </td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9e9bb567a4d33139f8e874925378503da88183b946cc5f0e8c96b2e66e1c74a7e"></a>Unknown&#160;</td><td class="fielddoc">
+<p>An error or unknown value was returned.</p>
+</td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a9e9bb567a4d33139f8e874925378503da072a1a46e06607a200fe8af01d0928aa"></a>Vcd&#160;</td><td class="fielddoc">
 <p>A VCD device.</p>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="_device_8h_source.html#l00018">18</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                         {</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            Unknown,</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            Camera,</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            Core,</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            </div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            CoreMg,</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            Decoder,</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            Encoder,</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            Manager,</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            Mg,</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            Monitor,</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            Recorder,</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            </div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            Udi,</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            </div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            Ui,</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            </div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            Vcd</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        };</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_device_8h_source.html#l00019">19</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                         {</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            Camera,</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            Core,</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            </div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            CoreMg,</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            Decoder,</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            Encoder,</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            External,</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            Manager,</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            Mg,</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            Monitor,</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            Recorder,</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            </div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            Udi,</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            </div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            Ui,</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            Unknown,</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            Vcd</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        };</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -308,7 +321,7 @@ Properties</h2></td></tr>
         <tr>
           <td class="memname">CPPCli::Device::Device </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" doxygen="C:/Users/zachm/Git/vxsdk-docs/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_device.html">VxSdk::IVxDevice</a> *&#160;</td>
+          <td class="paramtype"><a class="elRef" doxygen="C:/Users/zachm/Git/samples_for_testing/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_device.html">VxSdk::IVxDevice</a> *&#160;</td>
           <td class="paramname"><em>vxDevice</em></td><td>)</td>
           <td></td>
         </tr>
@@ -324,7 +337,7 @@ Properties</h2></td></tr>
 </dl>
 
 <p>Definition at line <a class="el" href="_device_8cpp_source.html#l00008">8</a> of file <a class="el" href="_device_8cpp_source.html">Device.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;                                             {</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="class_c_p_p_cli_1_1_device.html#afaeffe7f56c0c29059669a529b8d890f">_device</a> = vxDevice;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div><div class="ttc" id="class_c_p_p_cli_1_1_device_html_afaeffe7f56c0c29059669a529b8d890f"><div class="ttname"><a href="class_c_p_p_cli_1_1_device.html#afaeffe7f56c0c29059669a529b8d890f">CPPCli::Device::_device</a></div><div class="ttdeci">VxSdk::IVxDevice * _device</div><div class="ttdef"><b>Definition:</b> <a href="_device_8h_source.html#l00222">Device.h:222</a></div></div>
+<div class="fragment"><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;                                             {</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="class_c_p_p_cli_1_1_device.html#afaeffe7f56c0c29059669a529b8d890f">_device</a> = vxDevice;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div><div class="ttc" id="class_c_p_p_cli_1_1_device_html_afaeffe7f56c0c29059669a529b8d890f"><div class="ttname"><a href="class_c_p_p_cli_1_1_device.html#afaeffe7f56c0c29059669a529b8d890f">CPPCli::Device::_device</a></div><div class="ttdeci">VxSdk::IVxDevice * _device</div><div class="ttdef"><b>Definition:</b> <a href="_device_8h_source.html#l00255">Device.h:255</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -351,8 +364,8 @@ Properties</h2></td></tr>
 
 <p>Destructor. </p>
 
-<p>Definition at line <a class="el" href="_device_8h_source.html#l00068">68</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                          {</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            this-&gt;!<a class="code" href="class_c_p_p_cli_1_1_device.html#a64fabf5a4bb6a6884b110738e22f3e05">Device</a>();</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        }</div><div class="ttc" id="class_c_p_p_cli_1_1_device_html_a64fabf5a4bb6a6884b110738e22f3e05"><div class="ttname"><a href="class_c_p_p_cli_1_1_device.html#a64fabf5a4bb6a6884b110738e22f3e05">CPPCli::Device::Device</a></div><div class="ttdeci">Device(VxSdk::IVxDevice *vxDevice)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="_device_8cpp_source.html#l00008">Device.cpp:8</a></div></div>
+<p>Definition at line <a class="el" href="_device_8h_source.html#l00072">72</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                          {</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            this-&gt;!<a class="code" href="class_c_p_p_cli_1_1_device.html#a64fabf5a4bb6a6884b110738e22f3e05">Device</a>();</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        }</div><div class="ttc" id="class_c_p_p_cli_1_1_device_html_a64fabf5a4bb6a6884b110738e22f3e05"><div class="ttname"><a href="class_c_p_p_cli_1_1_device.html#a64fabf5a4bb6a6884b110738e22f3e05">CPPCli::Device::Device</a></div><div class="ttdeci">Device(VxSdk::IVxDevice *vxDevice)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="_device_8cpp_source.html#l00008">Device.cpp:8</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -372,8 +385,8 @@ Properties</h2></td></tr>
 <p>Finaliser. </p>
 
 <p>Definition at line <a class="el" href="_device_8cpp_source.html#l00012">12</a> of file <a class="el" href="_device_8cpp_source.html">Device.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;                      {</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_c_p_p_cli_1_1_device.html#afaeffe7f56c0c29059669a529b8d890f">_device</a>-&gt;<a class="codeRef" doxygen="C:/Users/zachm/Git/vxsdk-docs/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_device.html#a1a8bc3d079d756661f08fa05fcc620a1">Delete</a>();</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="class_c_p_p_cli_1_1_device.html#afaeffe7f56c0c29059669a529b8d890f">_device</a> = <span class="keyword">nullptr</span>;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div><div class="ttc" id="struct_vx_sdk_1_1_i_vx_device_html_a1a8bc3d079d756661f08fa05fcc620a1"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_i_vx_device.html#a1a8bc3d079d756661f08fa05fcc620a1">VxSdk::IVxDevice::Delete</a></div><div class="ttdeci">virtual VxResult::Value Delete() const  =0</div></div>
-<div class="ttc" id="class_c_p_p_cli_1_1_device_html_afaeffe7f56c0c29059669a529b8d890f"><div class="ttname"><a href="class_c_p_p_cli_1_1_device.html#afaeffe7f56c0c29059669a529b8d890f">CPPCli::Device::_device</a></div><div class="ttdeci">VxSdk::IVxDevice * _device</div><div class="ttdef"><b>Definition:</b> <a href="_device_8h_source.html#l00222">Device.h:222</a></div></div>
+<div class="fragment"><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;                      {</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_c_p_p_cli_1_1_device.html#afaeffe7f56c0c29059669a529b8d890f">_device</a>-&gt;<a class="codeRef" doxygen="C:/Users/zachm/Git/samples_for_testing/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_device.html#a1a8bc3d079d756661f08fa05fcc620a1">Delete</a>();</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="class_c_p_p_cli_1_1_device.html#afaeffe7f56c0c29059669a529b8d890f">_device</a> = <span class="keyword">nullptr</span>;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div><div class="ttc" id="struct_vx_sdk_1_1_i_vx_device_html_a1a8bc3d079d756661f08fa05fcc620a1"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_i_vx_device.html#a1a8bc3d079d756661f08fa05fcc620a1">VxSdk::IVxDevice::Delete</a></div><div class="ttdeci">virtual VxResult::Value Delete() const  =0</div></div>
+<div class="ttc" id="class_c_p_p_cli_1_1_device_html_afaeffe7f56c0c29059669a529b8d890f"><div class="ttname"><a href="class_c_p_p_cli_1_1_device.html#afaeffe7f56c0c29059669a529b8d890f">CPPCli::Device::_device</a></div><div class="ttdeci">VxSdk::IVxDevice * _device</div><div class="ttdef"><b>Definition:</b> <a href="_device_8h_source.html#l00255">Device.h:255</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -399,15 +412,71 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_device_8cpp_source.html#l00017">17</a> of file <a class="el" href="_device_8cpp_source.html">Device.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                                                       {</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="comment">// Create a list of managed data source objects</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    List&lt;DataSource^&gt;^ mlist = <span class="keyword">gcnew</span> List&lt;DataSource^&gt;();</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">// Create a collection of unmanaged data source objects</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="codeRef" doxygen="C:/Users/zachm/Git/vxsdk-docs/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_collection.html">VxSdk::VxCollection&lt;VxSdk::IVxDataSource**&gt;</a> dataSources;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">// Make the GetDataSources call, which will return with the total count of data sources, this allows the client to allocate memory.</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="codeRef" doxygen="C:/Users/zachm/Git/vxsdk-docs/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxSdk::VxResult::Value</a> result = <a class="code" href="class_c_p_p_cli_1_1_device.html#afaeffe7f56c0c29059669a529b8d890f">_device</a>-&gt;<a class="codeRef" doxygen="C:/Users/zachm/Git/vxsdk-docs/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_device.html#a5d6894113b9aa50991bdcf8fd0063275">GetDataSources</a>(dataSources);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">// Unless there are no data sources on the system, this should return VxSdk::VxResult::kInsufficientSize</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">if</span> (result == <a class="codeRef" doxygen="C:/Users/zachm/Git/vxsdk-docs/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26a0d4ae90e7aa11503b8f2313aee339803">VxSdk::VxResult::kInsufficientSize</a>) {</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="comment">// An array of pointers is allocated using the size returned by the previous GetDataSources call</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        dataSources.collection = <span class="keyword">new</span> <a class="codeRef" doxygen="C:/Users/zachm/Git/vxsdk-docs/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_data_source.html">VxSdk::IVxDataSource</a>*[dataSources.collectionSize];</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        result = <a class="code" href="class_c_p_p_cli_1_1_device.html#afaeffe7f56c0c29059669a529b8d890f">_device</a>-&gt;<a class="codeRef" doxygen="C:/Users/zachm/Git/vxsdk-docs/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_device.html#a5d6894113b9aa50991bdcf8fd0063275">GetDataSources</a>(dataSources);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="comment">// The result should now be kOK since we have allocated enough space</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordflow">if</span> (result == <a class="codeRef" doxygen="C:/Users/zachm/Git/vxsdk-docs/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26ac95db274cb42e10fd36986b8336daae3">VxSdk::VxResult::kOK</a>) {</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; dataSources.collectionSize; i++)</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                mlist-&gt;Add(<span class="keyword">gcnew</span> <a class="code" href="class_c_p_p_cli_1_1_data_source.html">CPPCli::DataSource</a>(dataSources.collection[i]));</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        }</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="comment">// Remove the memory we previously allocated to the collection</span></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">delete</span>[] dataSources.collection;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> mlist;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div><div class="ttc" id="struct_vx_sdk_1_1_vx_result_html_adc2e4ff9e03060a9ed92fdc0121dde26ac95db274cb42e10fd36986b8336daae3"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26ac95db274cb42e10fd36986b8336daae3">VxSdk::VxResult::kOK</a></div><div class="ttdeci">kOK</div></div>
-<div class="ttc" id="class_c_p_p_cli_1_1_data_source_html"><div class="ttname"><a href="class_c_p_p_cli_1_1_data_source.html">CPPCli::DataSource</a></div><div class="ttdoc">The DataSource class represents a data producer in the system hosted by a device. Each DataSource pro...</div><div class="ttdef"><b>Definition:</b> <a href="_data_source_8h_source.html#l00018">DataSource.h:18</a></div></div>
+<p>Definition at line <a class="el" href="_device_8cpp_source.html#l00021">21</a> of file <a class="el" href="_device_8cpp_source.html">Device.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                                                       {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">// Create a list of managed data source objects</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    List&lt;DataSource^&gt;^ mlist = <span class="keyword">gcnew</span> List&lt;DataSource^&gt;();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">// Create a collection of unmanaged data source objects</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="codeRef" doxygen="C:/Users/zachm/Git/samples_for_testing/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_collection.html">VxSdk::VxCollection&lt;VxSdk::IVxDataSource**&gt;</a> dataSources;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">// Make the GetDataSources call, which will return with the total count of data sources, this allows the client to allocate memory.</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="codeRef" doxygen="C:/Users/zachm/Git/samples_for_testing/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxSdk::VxResult::Value</a> result = <a class="code" href="class_c_p_p_cli_1_1_device.html#afaeffe7f56c0c29059669a529b8d890f">_device</a>-&gt;<a class="codeRef" doxygen="C:/Users/zachm/Git/samples_for_testing/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_device.html#a5d6894113b9aa50991bdcf8fd0063275">GetDataSources</a>(dataSources);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">// Unless there are no data sources on the system, this should return VxSdk::VxResult::kInsufficientSize</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">if</span> (result == <a class="codeRef" doxygen="C:/Users/zachm/Git/samples_for_testing/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26a0d4ae90e7aa11503b8f2313aee339803">VxSdk::VxResult::kInsufficientSize</a>) {</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="comment">// An array of pointers is allocated using the size returned by the previous GetDataSources call</span></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        dataSources.collection = <span class="keyword">new</span> <a class="codeRef" doxygen="C:/Users/zachm/Git/samples_for_testing/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_data_source.html">VxSdk::IVxDataSource</a>*[dataSources.collectionSize];</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        result = <a class="code" href="class_c_p_p_cli_1_1_device.html#afaeffe7f56c0c29059669a529b8d890f">_device</a>-&gt;<a class="codeRef" doxygen="C:/Users/zachm/Git/samples_for_testing/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_device.html#a5d6894113b9aa50991bdcf8fd0063275">GetDataSources</a>(dataSources);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="comment">// The result should now be kOK since we have allocated enough space</span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">if</span> (result == <a class="codeRef" doxygen="C:/Users/zachm/Git/samples_for_testing/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26ac95db274cb42e10fd36986b8336daae3">VxSdk::VxResult::kOK</a>) {</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; dataSources.collectionSize; i++)</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                mlist-&gt;Add(<span class="keyword">gcnew</span> <a class="code" href="class_c_p_p_cli_1_1_data_source.html">CPPCli::DataSource</a>(dataSources.collection[i]));</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        }</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="comment">// Remove the memory we previously allocated to the collection</span></div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">delete</span>[] dataSources.collection;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> mlist;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div><div class="ttc" id="struct_vx_sdk_1_1_vx_result_html_adc2e4ff9e03060a9ed92fdc0121dde26ac95db274cb42e10fd36986b8336daae3"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26ac95db274cb42e10fd36986b8336daae3">VxSdk::VxResult::kOK</a></div><div class="ttdeci">kOK</div></div>
+<div class="ttc" id="class_c_p_p_cli_1_1_data_source_html"><div class="ttname"><a href="class_c_p_p_cli_1_1_data_source.html">CPPCli::DataSource</a></div><div class="ttdoc">The DataSource class represents a data producer in the system hosted by a device. Each DataSource pro...</div><div class="ttdef"><b>Definition:</b> <a href="_data_source_8h_source.html#l00019">DataSource.h:19</a></div></div>
 <div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_source_html"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_i_vx_data_source.html">VxSdk::IVxDataSource</a></div></div>
 <div class="ttc" id="struct_vx_sdk_1_1_vx_collection_html"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_collection.html">VxSdk::VxCollection</a></div></div>
-<div class="ttc" id="class_c_p_p_cli_1_1_device_html_afaeffe7f56c0c29059669a529b8d890f"><div class="ttname"><a href="class_c_p_p_cli_1_1_device.html#afaeffe7f56c0c29059669a529b8d890f">CPPCli::Device::_device</a></div><div class="ttdeci">VxSdk::IVxDevice * _device</div><div class="ttdef"><b>Definition:</b> <a href="_device_8h_source.html#l00222">Device.h:222</a></div></div>
+<div class="ttc" id="class_c_p_p_cli_1_1_device_html_afaeffe7f56c0c29059669a529b8d890f"><div class="ttname"><a href="class_c_p_p_cli_1_1_device.html#afaeffe7f56c0c29059669a529b8d890f">CPPCli::Device::_device</a></div><div class="ttdeci">VxSdk::IVxDevice * _device</div><div class="ttdef"><b>Definition:</b> <a href="_device_8h_source.html#l00255">Device.h:255</a></div></div>
 <div class="ttc" id="struct_vx_sdk_1_1_i_vx_device_html_a5d6894113b9aa50991bdcf8fd0063275"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_i_vx_device.html#a5d6894113b9aa50991bdcf8fd0063275">VxSdk::IVxDevice::GetDataSources</a></div><div class="ttdeci">virtual VxResult::Value GetDataSources(VxCollection&lt; IVxDataSource ** &gt; &amp;dataSourceCollection) const  =0</div></div>
 <div class="ttc" id="struct_vx_sdk_1_1_vx_result_html_adc2e4ff9e03060a9ed92fdc0121dde26"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxSdk::VxResult::Value</a></div><div class="ttdeci">Value</div></div>
 <div class="ttc" id="struct_vx_sdk_1_1_vx_result_html_adc2e4ff9e03060a9ed92fdc0121dde26a0d4ae90e7aa11503b8f2313aee339803"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26a0d4ae90e7aa11503b8f2313aee339803">VxSdk::VxResult::kInsufficientSize</a></div><div class="ttdeci">kInsufficientSize</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a7e5ba21633e100bc30ea2789b944c355"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="class_c_p_p_cli_1_1_device_assignment.html">CPPCli::DeviceAssignment</a>^ &gt; CPPCli::Device::_GetDeviceAssignments </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_device_8cpp_source.html#l00045">45</a> of file <a class="el" href="_device_8cpp_source.html">Device.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                                                   {</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// Create a list of managed device assignment objects</span></div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    List&lt;DeviceAssignment^&gt;^ mlist = <span class="keyword">gcnew</span> List&lt;DeviceAssignment^&gt;();</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">// Create a collection of unmanaged device assignment objects</span></div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="codeRef" doxygen="C:/Users/zachm/Git/samples_for_testing/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_collection.html">VxSdk::VxCollection&lt;VxSdk::IVxDeviceAssignment**&gt;</a> deviceAssignments;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// Make the GetDeviceAssignments call, which will return with the total count of device assignments, this allows the client to allocate memory.</span></div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="codeRef" doxygen="C:/Users/zachm/Git/samples_for_testing/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxSdk::VxResult::Value</a> result = <a class="code" href="class_c_p_p_cli_1_1_device.html#afaeffe7f56c0c29059669a529b8d890f">_device</a>-&gt;<a class="codeRef" doxygen="C:/Users/zachm/Git/samples_for_testing/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_device.html#a4932e62abad1d903910c8aeeda6e116b">GetDeviceAssignments</a>(deviceAssignments);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">// Unless there are no device assignments on the system, this should return VxSdk::VxResult::kInsufficientSize</span></div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">if</span> (result == <a class="codeRef" doxygen="C:/Users/zachm/Git/samples_for_testing/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26a0d4ae90e7aa11503b8f2313aee339803">VxSdk::VxResult::kInsufficientSize</a>) {</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="comment">// An array of pointers is allocated using the size returned by the previous GetDeviceAssignments call</span></div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        deviceAssignments.collection = <span class="keyword">new</span> <a class="codeRef" doxygen="C:/Users/zachm/Git/samples_for_testing/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_device_assignment.html">VxSdk::IVxDeviceAssignment</a>*[deviceAssignments.collectionSize];</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        result = <a class="code" href="class_c_p_p_cli_1_1_device.html#afaeffe7f56c0c29059669a529b8d890f">_device</a>-&gt;<a class="codeRef" doxygen="C:/Users/zachm/Git/samples_for_testing/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_device.html#a4932e62abad1d903910c8aeeda6e116b">GetDeviceAssignments</a>(deviceAssignments);</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="comment">// The result should now be kOK since we have allocated enough space</span></div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">if</span> (result == <a class="codeRef" doxygen="C:/Users/zachm/Git/samples_for_testing/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26ac95db274cb42e10fd36986b8336daae3">VxSdk::VxResult::kOK</a>) {</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; deviceAssignments.collectionSize; i++)</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                mlist-&gt;Add(<span class="keyword">gcnew</span> <a class="code" href="class_c_p_p_cli_1_1_device_assignment.html">CPPCli::DeviceAssignment</a>(deviceAssignments.collection[i]));</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="comment">// Remove the memory we previously allocated to the collection</span></div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keyword">delete</span>[] deviceAssignments.collection;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> mlist;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div><div class="ttc" id="struct_vx_sdk_1_1_i_vx_device_html_a4932e62abad1d903910c8aeeda6e116b"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_i_vx_device.html#a4932e62abad1d903910c8aeeda6e116b">VxSdk::IVxDevice::GetDeviceAssignments</a></div><div class="ttdeci">virtual VxResult::Value GetDeviceAssignments(VxCollection&lt; IVxDeviceAssignment ** &gt; &amp;deviceAssignmentCollection) const  =0</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_result_html_adc2e4ff9e03060a9ed92fdc0121dde26ac95db274cb42e10fd36986b8336daae3"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26ac95db274cb42e10fd36986b8336daae3">VxSdk::VxResult::kOK</a></div><div class="ttdeci">kOK</div></div>
+<div class="ttc" id="class_c_p_p_cli_1_1_device_assignment_html"><div class="ttname"><a href="class_c_p_p_cli_1_1_device_assignment.html">CPPCli::DeviceAssignment</a></div><div class="ttdoc">The DeviceAssignment class represents a device assignment. </div><div class="ttdef"><b>Definition:</b> <a href="_device_assignment_8h_source.html#l00015">DeviceAssignment.h:15</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_collection_html"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_collection.html">VxSdk::VxCollection</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_device_assignment_html"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_i_vx_device_assignment.html">VxSdk::IVxDeviceAssignment</a></div></div>
+<div class="ttc" id="class_c_p_p_cli_1_1_device_html_afaeffe7f56c0c29059669a529b8d890f"><div class="ttname"><a href="class_c_p_p_cli_1_1_device.html#afaeffe7f56c0c29059669a529b8d890f">CPPCli::Device::_device</a></div><div class="ttdeci">VxSdk::IVxDevice * _device</div><div class="ttdef"><b>Definition:</b> <a href="_device_8h_source.html#l00255">Device.h:255</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_result_html_adc2e4ff9e03060a9ed92fdc0121dde26"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxSdk::VxResult::Value</a></div><div class="ttdeci">Value</div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_result_html_adc2e4ff9e03060a9ed92fdc0121dde26a0d4ae90e7aa11503b8f2313aee339803"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26a0d4ae90e7aa11503b8f2313aee339803">VxSdk::VxResult::kInsufficientSize</a></div><div class="ttdeci">kInsufficientSize</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a269d613c36f766e65eda932fc804ed31"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">CPPCli::Results::Value</a> CPPCli::Device::Refresh </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Refreshes this instances properties. </p>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">Result</a> of updating the properties.</dd></dl>
+
+<p>Definition at line <a class="el" href="_device_8cpp_source.html#l00017">17</a> of file <a class="el" href="_device_8cpp_source.html">Device.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                                         {</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">CPPCli::Results::Value</a>)<a class="code" href="class_c_p_p_cli_1_1_device.html#afaeffe7f56c0c29059669a529b8d890f">_device</a>-&gt;<a class="codeRef" doxygen="C:/Users/zachm/Git/samples_for_testing/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_device.html#a5dc71be807d49c4b4467045ef27f08b3">Refresh</a>();</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div><div class="ttc" id="class_c_p_p_cli_1_1_results_html_a12504aac644d00e0532be43063a970ca"><div class="ttname"><a href="class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca">CPPCli::Results::Value</a></div><div class="ttdeci">Value</div><div class="ttdoc">Values that represent the result of calls to the VideoXpert system. </div><div class="ttdef"><b>Definition:</b> <a href="_utils_8h_source.html#l00021">Utils.h:21</a></div></div>
+<div class="ttc" id="class_c_p_p_cli_1_1_device_html_afaeffe7f56c0c29059669a529b8d890f"><div class="ttname"><a href="class_c_p_p_cli_1_1_device.html#afaeffe7f56c0c29059669a529b8d890f">CPPCli::Device::_device</a></div><div class="ttdeci">VxSdk::IVxDevice * _device</div><div class="ttdef"><b>Definition:</b> <a href="_device_8h_source.html#l00255">Device.h:255</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_device_html_a5dc71be807d49c4b4467045ef27f08b3"><div class="ttname"><a href="../VxSdk/struct_vx_sdk_1_1_i_vx_device.html#a5dc71be807d49c4b4467045ef27f08b3">VxSdk::IVxDevice::Refresh</a></div><div class="ttdeci">virtual VxResult::Value Refresh()=0</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -420,7 +489,7 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" doxygen="C:/Users/zachm/Git/vxsdk-docs/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_device.html">VxSdk::IVxDevice</a>* CPPCli::Device::_device</td>
+          <td class="memname"><a class="elRef" doxygen="C:/Users/zachm/Git/samples_for_testing/VxSdk/VxSdk.tag:../VxSdk/" href="../VxSdk/struct_vx_sdk_1_1_i_vx_device.html">VxSdk::IVxDevice</a>* CPPCli::Device::_device</td>
         </tr>
       </table>
   </td>
@@ -430,7 +499,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_device_8h_source.html#l00222">222</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_8h_source.html#l00255">255</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -456,7 +525,32 @@ Properties</h2></td></tr>
 <p>Gets the data sources hosted by this device. </p>
 <p>A <code>List</code> of data sources.</p>
 
-<p>Definition at line <a class="el" href="_device_8h_source.html#l00081">81</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_8h_source.html#l00091">91</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9cb0e61d7f0ce4b64c1a8ee7ee534a44"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System:: Collections:: Generic:: List&lt; <a class="el" href="class_c_p_p_cli_1_1_device_assignment.html">DeviceAssignment</a>^&gt;^ CPPCli::Device::DeviceAssignments</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the assignments to a data storage for this device. </p>
+<p>A <code>List</code> of device assignments.</p>
+
+<p>Definition at line <a class="el" href="_device_8h_source.html#l00100">100</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -481,7 +575,7 @@ Properties</h2></td></tr>
 <p>Gets the unique identifier of the device. </p>
 <p>The unique identifier.</p>
 
-<p>Definition at line <a class="el" href="_device_8h_source.html#l00099">99</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_8h_source.html#l00109">109</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -506,7 +600,7 @@ Properties</h2></td></tr>
 <p>Gets the IP of the device. </p>
 <p>The IP.</p>
 
-<p>Definition at line <a class="el" href="_device_8h_source.html#l00108">108</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_8h_source.html#l00118">118</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -531,7 +625,7 @@ Properties</h2></td></tr>
 <p>Gets a value indicating whether the device is commissioned. </p>
 <p><code>true</code> if commissioned, <code>false</code> if not.</p>
 
-<p>Definition at line <a class="el" href="_device_8h_source.html#l00090">90</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_8h_source.html#l00127">127</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -556,7 +650,7 @@ Properties</h2></td></tr>
 <p>Gets a value indicating whether a license is required for commissioning the device. </p>
 <p><code>true</code> if license required, <code>false</code> if not.</p>
 
-<p>Definition at line <a class="el" href="_device_8h_source.html#l00117">117</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_8h_source.html#l00136">136</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -581,7 +675,7 @@ Properties</h2></td></tr>
 <p>Gets a value indicating whether the device is running on Pelco hardware. </p>
 <p><code>true</code> if a Pelco device, <code>false</code> if not.</p>
 
-<p>Definition at line <a class="el" href="_device_8h_source.html#l00153">153</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_8h_source.html#l00145">145</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -606,7 +700,7 @@ Properties</h2></td></tr>
 <p>Gets the device model. </p>
 <p>The model name.</p>
 
-<p>Definition at line <a class="el" href="_device_8h_source.html#l00126">126</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_8h_source.html#l00154">154</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -623,15 +717,15 @@ Properties</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets the friendly name of the device. </p>
+<p>Gets or sets the friendly name of the device. </p>
 <p>The friendly name.</p>
 
-<p>Definition at line <a class="el" href="_device_8h_source.html#l00135">135</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_8h_source.html#l00163">163</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -648,15 +742,15 @@ Properties</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+<span class="mlabels"><span class="mlabel">set</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets the account password used to communicate with the device, if any. </p>
+<p>Sets the account password used to communicate with the device, if any. </p>
 <p>The password.</p>
 
-<p>Definition at line <a class="el" href="_device_8h_source.html#l00144">144</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_8h_source.html#l00177">177</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -681,7 +775,7 @@ Properties</h2></td></tr>
 <p>Gets the serial number. </p>
 <p>The serial number.</p>
 
-<p>Definition at line <a class="el" href="_device_8h_source.html#l00162">162</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_8h_source.html#l00190">190</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -706,7 +800,7 @@ Properties</h2></td></tr>
 <p>Gets the current operational state of the device. </p>
 <p>The current state of the device.</p>
 
-<p>Definition at line <a class="el" href="_device_8h_source.html#l00171">171</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_8h_source.html#l00199">199</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -731,7 +825,7 @@ Properties</h2></td></tr>
 <p>Gets the type of device. </p>
 <p>The device <a class="el" href="class_c_p_p_cli_1_1_device.html#a9e9bb567a4d33139f8e874925378503d">Type</a>.</p>
 
-<p>Definition at line <a class="el" href="_device_8h_source.html#l00180">180</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_8h_source.html#l00208">208</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -748,15 +842,15 @@ Properties</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets the account username used to communicate with the device, if any. </p>
+<p>Gets or sets the account username used to communicate with the device, if any. </p>
 <p>The username.</p>
 
-<p>Definition at line <a class="el" href="_device_8h_source.html#l00189">189</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_8h_source.html#l00217">217</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -781,7 +875,7 @@ Properties</h2></td></tr>
 <p>Gets the device vendor, if any. </p>
 <p>The name of the devices vendor.</p>
 
-<p>Definition at line <a class="el" href="_device_8h_source.html#l00198">198</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_8h_source.html#l00231">231</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -806,7 +900,7 @@ Properties</h2></td></tr>
 <p>Gets the current version of software running on the device. </p>
 <p>The software version.</p>
 
-<p>Definition at line <a class="el" href="_device_8h_source.html#l00207">207</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_8h_source.html#l00240">240</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -831,7 +925,7 @@ Properties</h2></td></tr>
 <p>Gets the virtual IP of the device, if any. </p>
 <p>The virtual IP.</p>
 
-<p>Definition at line <a class="el" href="_device_8h_source.html#l00216">216</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_8h_source.html#l00249">249</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>

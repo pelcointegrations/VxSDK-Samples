@@ -12,5 +12,8 @@ var dir_33b88cab26195a916bc88538c7213a7b =
     ] ],
     [ "InputBox.cs", "_input_box_8cs.html", [
       [ "InputBox", "class_s_d_k_sample_app_1_1_source_1_1_input_box.html", "class_s_d_k_sample_app_1_1_source_1_1_input_box" ]
+    ] ],
+    [ "Utilities.cs", "_utilities_8cs.html", [
+      [ "Utilities", "class_s_d_k_sample_app_1_1_source_1_1_utilities.html", "class_s_d_k_sample_app_1_1_source_1_1_utilities" ]
     ] ]
 ];

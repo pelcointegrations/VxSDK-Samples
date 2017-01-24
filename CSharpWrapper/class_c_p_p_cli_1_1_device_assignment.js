@@ -7,6 +7,7 @@ var class_c_p_p_cli_1_1_device_assignment =
     [ "_GetDataStorage", "class_c_p_p_cli_1_1_device_assignment.html#ac742c84a14d3f5ebc37ce2df2a75bd55", null ],
     [ "_GetDevice", "class_c_p_p_cli_1_1_device_assignment.html#a93c5b31a611c7e1dad53e0dfa589a501", null ],
     [ "_GetDriver", "class_c_p_p_cli_1_1_device_assignment.html#a0d016436e95a5f71888e2efe28e16a87", null ],
+    [ "_SetDataSources", "class_c_p_p_cli_1_1_device_assignment.html#a7ba42d7a78b70f2406c05e31543081db", null ],
     [ "_deviceAssignment", "class_c_p_p_cli_1_1_device_assignment.html#a1056ea90cc0cab98e1a0794a6ba5d3bd", null ],
     [ "DataSources", "class_c_p_p_cli_1_1_device_assignment.html#ac6da2cda517ca9d2658be545f8e583df", null ],
     [ "DataStorage", "class_c_p_p_cli_1_1_device_assignment.html#a1eed99909e310fc7f7c89ae09e102268", null ],

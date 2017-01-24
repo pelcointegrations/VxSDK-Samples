@@ -4,6 +4,7 @@ var class_c_p_p_cli_1_1_driver =
     [ "~Driver", "class_c_p_p_cli_1_1_driver.html#a10851cc571a757e9b437153f0ac44e9d", null ],
     [ "!Driver", "class_c_p_p_cli_1_1_driver.html#adf58d4f36d3b72b4999afc32d2b0966f", null ],
     [ "_GetDataStorage", "class_c_p_p_cli_1_1_driver.html#a5e7c2d8a8cbdd60b1a1d39ead2667f65", null ],
+    [ "Refresh", "class_c_p_p_cli_1_1_driver.html#aa90ee8fb5f24e33bb756c516ded25217", null ],
     [ "_driver", "class_c_p_p_cli_1_1_driver.html#ad96122449cc6cc03ff5e4e20fd2c3ae1", null ],
     [ "DataStorage", "class_c_p_p_cli_1_1_driver.html#a01517a2003ad1063358a667c1c44d58a", null ],
     [ "Name", "class_c_p_p_cli_1_1_driver.html#a2d0ede71cc957a31b5e1b17dc0625ccf", null ],

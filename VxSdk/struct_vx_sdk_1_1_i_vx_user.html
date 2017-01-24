@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">VideoXpert SDK
-   &#160;<span id="projectnumber">1.1</span>
+   &#160;<span id="projectnumber">1.2</span>
    </div>
    <div id="projectbrief">A software development kit for third party vendors to integrate with the VideoXpert platform</div>
   </td>
@@ -143,15 +143,27 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ace6928c447717a2da6f69e510ba232c5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html#ace6928c447717a2da6f69e510ba232c5">GetRoles</a> (<a class="el" href="struct_vx_sdk_1_1_vx_collection.html">VxCollection</a>&lt; <a class="el" href="struct_vx_sdk_1_1_i_vx_role.html">IVxRole</a> ** &gt; &amp;roleCollection) const  =0</td></tr>
 <tr class="memdesc:ace6928c447717a2da6f69e510ba232c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the roles associated with this user.  <a href="#ace6928c447717a2da6f69e510ba232c5">More...</a><br /></td></tr>
 <tr class="separator:ace6928c447717a2da6f69e510ba232c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dfce76d4a997409717344ab59262de5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html#a6dfce76d4a997409717344ab59262de5">GetTags</a> (<a class="el" href="struct_vx_sdk_1_1_vx_collection.html">VxCollection</a>&lt; <a class="el" href="struct_vx_sdk_1_1_i_vx_tag.html">IVxTag</a> ** &gt; &amp;tagCollection) const  =0</td></tr>
+<tr class="memdesc:a6dfce76d4a997409717344ab59262de5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets all private tags owned by this user and all public tags. Other user’s private tags will not be returned regardless of permissions.  <a href="#a6dfce76d4a997409717344ab59262de5">More...</a><br /></td></tr>
+<tr class="separator:a6dfce76d4a997409717344ab59262de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af632c1f9ce64b3c0a6c5fd206cc72a35"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html#af632c1f9ce64b3c0a6c5fd206cc72a35">Refresh</a> ()=0</td></tr>
+<tr class="memdesc:af632c1f9ce64b3c0a6c5fd206cc72a35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refreshes the member values for this object by retrieving its current information from the VideoXpert system.  <a href="#af632c1f9ce64b3c0a6c5fd206cc72a35">More...</a><br /></td></tr>
+<tr class="separator:af632c1f9ce64b3c0a6c5fd206cc72a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a950885fc2054d1b46c1819a5762b22cd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html#a950885fc2054d1b46c1819a5762b22cd">RemoveFromRole</a> (<a class="el" href="struct_vx_sdk_1_1_i_vx_role.html">IVxRole</a> &amp;role) const  =0</td></tr>
 <tr class="memdesc:a950885fc2054d1b46c1819a5762b22cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a role from this user.  <a href="#a950885fc2054d1b46c1819a5762b22cd">More...</a><br /></td></tr>
 <tr class="separator:a950885fc2054d1b46c1819a5762b22cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ed81f987bdbb7d97754e0150e5724ce"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html#a2ed81f987bdbb7d97754e0150e5724ce">SetAccountState</a> (bool isEnabled) const  =0</td></tr>
 <tr class="memdesc:a2ed81f987bdbb7d97754e0150e5724ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the account state of the user. A disabled account will not be able to access the system.  <a href="#a2ed81f987bdbb7d97754e0150e5724ce">More...</a><br /></td></tr>
 <tr class="separator:a2ed81f987bdbb7d97754e0150e5724ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6ab4e90493f88f97d3fc9cd2bdbac73"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html#aa6ab4e90493f88f97d3fc9cd2bdbac73">SetPassword</a> (const char *newPassword) const  =0</td></tr>
-<tr class="memdesc:aa6ab4e90493f88f97d3fc9cd2bdbac73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a new password for the user.  <a href="#aa6ab4e90493f88f97d3fc9cd2bdbac73">More...</a><br /></td></tr>
-<tr class="separator:aa6ab4e90493f88f97d3fc9cd2bdbac73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a150119700d84d14e0f69715efb7c8029"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html#a150119700d84d14e0f69715efb7c8029">SetDomain</a> (char <a class="el" href="struct_vx_sdk_1_1_i_vx_user.html#a95a84f8009807d0aee9aa9e0de10fc09">domain</a>[64])=0</td></tr>
+<tr class="memdesc:a150119700d84d14e0f69715efb7c8029"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the domain property.  <a href="#a150119700d84d14e0f69715efb7c8029">More...</a><br /></td></tr>
+<tr class="separator:a150119700d84d14e0f69715efb7c8029"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51c6e1eda7d9486fee1dddc3f174af4a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html#a51c6e1eda7d9486fee1dddc3f174af4a">SetName</a> (char <a class="el" href="struct_vx_sdk_1_1_i_vx_user.html#ab7ea09fb9c481648d2e67bb453e1b44e">name</a>[64])=0</td></tr>
+<tr class="memdesc:a51c6e1eda7d9486fee1dddc3f174af4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name property.  <a href="#a51c6e1eda7d9486fee1dddc3f174af4a">More...</a><br /></td></tr>
+<tr class="separator:a51c6e1eda7d9486fee1dddc3f174af4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cec19a11c525937a618ca589b2c7361"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html#a1cec19a11c525937a618ca589b2c7361">SetPassword</a> (char newPassword[64]) const  =0</td></tr>
+<tr class="memdesc:a1cec19a11c525937a618ca589b2c7361"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a new password for the user.  <a href="#a1cec19a11c525937a618ca589b2c7361">More...</a><br /></td></tr>
+<tr class="separator:a1cec19a11c525937a618ca589b2c7361"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -235,11 +247,11 @@ Protected Member Functions</h2></td></tr>
 
 <p>Clears this instance. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_user_8h_source.html#l00093">93</a> of file <a class="el" href="_i_vx_user_8h_source.html">IVxUser.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                     {</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_user.html#a95a84f8009807d0aee9aa9e0de10fc09">domain</a>);</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<span class="keywordtype">id</span>);</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_user.html#ab7ea09fb9c481648d2e67bb453e1b44e">name</a>);</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_user.html#a0fec61f07111443caea2361aeba57a44">passwordExpiration</a>);</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        }</div><div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00018">VxMacros.h:18</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_user_html_a95a84f8009807d0aee9aa9e0de10fc09"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_user.html#a95a84f8009807d0aee9aa9e0de10fc09">VxSdk::IVxUser::domain</a></div><div class="ttdeci">char domain[64]</div><div class="ttdoc">The network domain for this user. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_user_8h_source.html#l00075">IVxUser.h:75</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_user_html_ab7ea09fb9c481648d2e67bb453e1b44e"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_user.html#ab7ea09fb9c481648d2e67bb453e1b44e">VxSdk::IVxUser::name</a></div><div class="ttdeci">char name[64]</div><div class="ttdoc">The unique name, within the domain, of the user. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_user_8h_source.html#l00083">IVxUser.h:83</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_user_html_a0fec61f07111443caea2361aeba57a44"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_user.html#a0fec61f07111443caea2361aeba57a44">VxSdk::IVxUser::passwordExpiration</a></div><div class="ttdeci">char passwordExpiration[64]</div><div class="ttdoc">The time at which the user’s password will expire. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_user_8h_source.html#l00087">IVxUser.h:87</a></div></div>
+<p>Definition at line <a class="el" href="_i_vx_user_8h_source.html#l00119">119</a> of file <a class="el" href="_i_vx_user_8h_source.html">IVxUser.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                     {</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_user.html#a95a84f8009807d0aee9aa9e0de10fc09">domain</a>);</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<span class="keywordtype">id</span>);</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_user.html#ab7ea09fb9c481648d2e67bb453e1b44e">name</a>);</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_user.html#a0fec61f07111443caea2361aeba57a44">passwordExpiration</a>);</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        }</div><div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00018">VxMacros.h:18</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_user_html_a95a84f8009807d0aee9aa9e0de10fc09"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_user.html#a95a84f8009807d0aee9aa9e0de10fc09">VxSdk::IVxUser::domain</a></div><div class="ttdeci">char domain[64]</div><div class="ttdoc">The network domain for this user. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_user_8h_source.html#l00101">IVxUser.h:101</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_user_html_ab7ea09fb9c481648d2e67bb453e1b44e"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_user.html#ab7ea09fb9c481648d2e67bb453e1b44e">VxSdk::IVxUser::name</a></div><div class="ttdeci">char name[64]</div><div class="ttdoc">The unique name, within the domain, of the user. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_user_8h_source.html#l00109">IVxUser.h:109</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_user_html_a0fec61f07111443caea2361aeba57a44"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_user.html#a0fec61f07111443caea2361aeba57a44">VxSdk::IVxUser::passwordExpiration</a></div><div class="ttdeci">char passwordExpiration[64]</div><div class="ttdoc">The time at which the user’s password will expire. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_user_8h_source.html#l00113">IVxUser.h:113</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -351,6 +363,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the data objects associated with this user. </p>
+<p>Available filters: kClientType, kModifiedSince, kOwned, kOwner.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dataObjectCollection</td><td>A <a class="el" href="struct_vx_sdk_1_1_vx_collection.html" title="Represents a collection of resources. ">VxCollection</a> of data objects associated with this user.</td></tr>
@@ -384,6 +397,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the roles associated with this user. </p>
+<p>Available filters: kId, kInternal, kModifiedSince, kName.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">roleCollection</td><td>The roles associated with this user.</td></tr>
@@ -391,6 +405,66 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of the request.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6dfce76d4a997409717344ab59262de5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxUser::GetTags </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_vx_sdk_1_1_vx_collection.html">VxCollection</a>&lt; <a class="el" href="struct_vx_sdk_1_1_i_vx_tag.html">IVxTag</a> ** &gt; &amp;&#160;</td>
+          <td class="paramname"><em>tagCollection</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets all private tags owned by this user and all public tags. Other user’s private tags will not be returned regardless of permissions. </p>
+<p>Available filters: kModifiedSince, kName, kOwned, kOwner, kResourceId, kResourceType.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tagCollection</td><td>A <a class="el" href="struct_vx_sdk_1_1_vx_collection.html" title="Represents a collection of resources. ">VxCollection</a> of tags available to the user.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of the request.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af632c1f9ce64b3c0a6c5fd206cc72a35"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxUser::Refresh </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Refreshes the member values for this object by retrieving its current information from the VideoXpert system. </p>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of refreshing the member values for this object.</dd></dl>
 
 </div>
 </div>
@@ -460,7 +534,73 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa6ab4e90493f88f97d3fc9cd2bdbac73"></a>
+<a class="anchor" id="a150119700d84d14e0f69715efb7c8029"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxUser::SetDomain </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>domain</em>[64]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the domain property. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">domain</td><td>The new domain value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of setting the property.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a51c6e1eda7d9486fee1dddc3f174af4a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxUser::SetName </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>name</em>[64]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the name property. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The new name value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of setting the property.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1cec19a11c525937a618ca589b2c7361"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -470,8 +610,8 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxUser::SetPassword </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>newPassword</em></td><td>)</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>newPassword</em>[64]</td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -506,7 +646,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The network domain for this user. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_user_8h_source.html#l00075">75</a> of file <a class="el" href="_i_vx_user_8h_source.html">IVxUser.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_user_8h_source.html#l00101">101</a> of file <a class="el" href="_i_vx_user_8h_source.html">IVxUser.h</a>.</p>
 
 </div>
 </div>
@@ -522,7 +662,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The unique identifier of the user. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_user_8h_source.html#l00079">79</a> of file <a class="el" href="_i_vx_user_8h_source.html">IVxUser.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_user_8h_source.html#l00105">105</a> of file <a class="el" href="_i_vx_user_8h_source.html">IVxUser.h</a>.</p>
 
 </div>
 </div>
@@ -538,7 +678,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The unique name, within the domain, of the user. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_user_8h_source.html#l00083">83</a> of file <a class="el" href="_i_vx_user_8h_source.html">IVxUser.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_user_8h_source.html#l00109">109</a> of file <a class="el" href="_i_vx_user_8h_source.html">IVxUser.h</a>.</p>
 
 </div>
 </div>
@@ -554,7 +694,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The time at which the user’s password will expire. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_user_8h_source.html#l00087">87</a> of file <a class="el" href="_i_vx_user_8h_source.html">IVxUser.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_user_8h_source.html#l00113">113</a> of file <a class="el" href="_i_vx_user_8h_source.html">IVxUser.h</a>.</p>
 
 </div>
 </div>

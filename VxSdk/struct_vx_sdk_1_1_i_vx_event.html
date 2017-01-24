@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">VideoXpert SDK
-   &#160;<span id="projectnumber">1.1</span>
+   &#160;<span id="projectnumber">1.2</span>
    </div>
    <div id="projectbrief">A software development kit for third party vendors to integrate with the VideoXpert platform</div>
   </td>
@@ -131,12 +131,33 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a62f86281e77174ef98c398c3ce8bc5ab"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_event.html#a62f86281e77174ef98c398c3ce8bc5ab">Delete</a> () const  =0</td></tr>
 <tr class="memdesc:a62f86281e77174ef98c398c3ce8bc5ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes this instance.  <a href="#a62f86281e77174ef98c398c3ce8bc5ab">More...</a><br /></td></tr>
 <tr class="separator:a62f86281e77174ef98c398c3ce8bc5ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad68a4a2ee28582874d56822a17519abc"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_event.html#ad68a4a2ee28582874d56822a17519abc">GetGeneratorDevice</a> (<a class="el" href="struct_vx_sdk_1_1_i_vx_device.html">IVxDevice</a> *&amp;device) const  =0</td></tr>
+<tr class="memdesc:ad68a4a2ee28582874d56822a17519abc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the device that the event was generated on.  <a href="#ad68a4a2ee28582874d56822a17519abc">More...</a><br /></td></tr>
+<tr class="separator:ad68a4a2ee28582874d56822a17519abc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcd4686d1e2733ae474b3b28c919b1ac"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_event.html#abcd4686d1e2733ae474b3b28c919b1ac">GetSituation</a> (<a class="el" href="struct_vx_sdk_1_1_i_vx_situation.html">IVxSituation</a> *&amp;situation) const  =0</td></tr>
+<tr class="memdesc:abcd4686d1e2733ae474b3b28c919b1ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the situation that this event represents.  <a href="#abcd4686d1e2733ae474b3b28c919b1ac">More...</a><br /></td></tr>
+<tr class="separator:abcd4686d1e2733ae474b3b28c919b1ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25d84cbb12b9e2dc895db8d844927d96"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_event.html#a25d84cbb12b9e2dc895db8d844927d96">GetSourceDevice</a> (<a class="el" href="struct_vx_sdk_1_1_i_vx_device.html">IVxDevice</a> *&amp;device) const  =0</td></tr>
+<tr class="memdesc:a25d84cbb12b9e2dc895db8d844927d96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the device that the situation occurred on.  <a href="#a25d84cbb12b9e2dc895db8d844927d96">More...</a><br /></td></tr>
+<tr class="separator:a25d84cbb12b9e2dc895db8d844927d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a028ba0d7305e69341a7d1c270689eff6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_event.html#a028ba0d7305e69341a7d1c270689eff6">GetUser</a> (<a class="el" href="struct_vx_sdk_1_1_i_vx_user.html">IVxUser</a> *&amp;user) const  =0</td></tr>
+<tr class="memdesc:a028ba0d7305e69341a7d1c270689eff6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the user that was the cause of the situation.  <a href="#a028ba0d7305e69341a7d1c270689eff6">More...</a><br /></td></tr>
+<tr class="separator:a028ba0d7305e69341a7d1c270689eff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41c73754094a134c110f543fd93226d3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_event.html#a41c73754094a134c110f543fd93226d3">Refresh</a> ()=0</td></tr>
+<tr class="memdesc:a41c73754094a134c110f543fd93226d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refreshes the member values for this object by retrieving its current information from the VideoXpert system.  <a href="#a41c73754094a134c110f543fd93226d3">More...</a><br /></td></tr>
+<tr class="separator:a41c73754094a134c110f543fd93226d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3be8c9064c4ed0e8d169665493521aa9"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_event.html#a3be8c9064c4ed0e8d169665493521aa9">Silence</a> (int wakeup) const  =0</td></tr>
 <tr class="memdesc:a3be8c9064c4ed0e8d169665493521aa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Silences the event for a given amount of time.  <a href="#a3be8c9064c4ed0e8d169665493521aa9">More...</a><br /></td></tr>
 <tr class="separator:a3be8c9064c4ed0e8d169665493521aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:ab593b4bd7c55a1327b45fa5148e3af20"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_event.html#ab593b4bd7c55a1327b45fa5148e3af20">ackTime</a> [256]</td></tr>
+<tr class="memdesc:ab593b4bd7c55a1327b45fa5148e3af20"><td class="mdescLeft">&#160;</td><td class="mdescRight">The time at which the current <a class="el" href="struct_vx_sdk_1_1_i_vx_event.html#a63b353689db46235004a972568cb148f" title="The current acknowledgement state of the event. ">ackState</a> was set.  <a href="#ab593b4bd7c55a1327b45fa5148e3af20">More...</a><br /></td></tr>
+<tr class="separator:ab593b4bd7c55a1327b45fa5148e3af20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a796364946249371ebc0bdbc12a9f62cb"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_event.html#a796364946249371ebc0bdbc12a9f62cb">ackUser</a> [256]</td></tr>
+<tr class="memdesc:a796364946249371ebc0bdbc12a9f62cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The user that set the current <a class="el" href="struct_vx_sdk_1_1_i_vx_event.html#a63b353689db46235004a972568cb148f" title="The current acknowledgement state of the event. ">ackState</a>, if any.  <a href="#a796364946249371ebc0bdbc12a9f62cb">More...</a><br /></td></tr>
+<tr class="separator:a796364946249371ebc0bdbc12a9f62cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a6fde978a66e707dc977d5a444c63a8"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_event.html#a0a6fde978a66e707dc977d5a444c63a8">generatorDeviceId</a> [64]</td></tr>
 <tr class="memdesc:a0a6fde978a66e707dc977d5a444c63a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The unique identifier of the device that created and injected this event into the system.  <a href="#a0a6fde978a66e707dc977d5a444c63a8">More...</a><br /></td></tr>
 <tr class="separator:a0a6fde978a66e707dc977d5a444c63a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,7 +198,7 @@ Protected Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents an instance of a particular situation that has occurred. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_event_8h_source.html#l00012">12</a> of file <a class="el" href="_i_vx_event_8h_source.html">IVxEvent.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_event_8h_source.html#l00014">14</a> of file <a class="el" href="_i_vx_event_8h_source.html">IVxEvent.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a0c19b915ab4b21e0648ab76128f8111f"></a>
 <div class="memitem">
@@ -228,18 +249,20 @@ Protected Member Functions</h2></td></tr>
 
 <p>Clears this instance. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_event_8h_source.html#l00079">79</a> of file <a class="el" href="_i_vx_event_8h_source.html">IVxEvent.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                     {</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_event.html#a0a6fde978a66e707dc977d5a444c63a8">generatorDeviceId</a>);</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<span class="keywordtype">id</span>);</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_event.html#ab9ba8f3ac9b8c2263e65946ebc958eb9">situationType</a>);</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_event.html#a87f4a81aa3a1d72cc0c4f04f880e531a">sourceDeviceId</a>);</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_event.html#a749c67f2258bad576459f86a868aa7f5">sourceUserName</a>);</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_event.html#a7395af3579c9c352f5d2a5609cfcd609">time</a>);</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_event.html#a8e4bbc1935f8d4593acd3e01758d62c6">propertySize</a> = 0;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_event.html#a29855cedf8b0fb9936b1ce998e5fb84c">severity</a> = 0;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_event.html#a63b353689db46235004a972568cb148f">ackState</a> = <a class="code" href="struct_vx_sdk_1_1_vx_ack_state.html#aaf5b9ee2965d9d85afdf38009baf181fa7f83e693264f6d0f3b2c33cdebe4f907">VxAckState::kUnknown</a>;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_event.html#a32f15792088e4a2e1a790790249791c4">properties</a> = <span class="keyword">nullptr</span>;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        }</div><div class="ttc" id="struct_vx_sdk_1_1_vx_ack_state_html_aaf5b9ee2965d9d85afdf38009baf181fa7f83e693264f6d0f3b2c33cdebe4f907"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_ack_state.html#aaf5b9ee2965d9d85afdf38009baf181fa7f83e693264f6d0f3b2c33cdebe4f907">VxSdk::VxAckState::kUnknown</a></div><div class="ttdoc">An error or unknown value was returned.</div><div class="ttdef"><b>Definition:</b> <a href="_vx_primitives_8h_source.html#l00011">VxPrimitives.h:11</a></div></div>
+<p>Definition at line <a class="el" href="_i_vx_event_8h_source.html#l00118">118</a> of file <a class="el" href="_i_vx_event_8h_source.html">IVxEvent.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                     {</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_event.html#ab593b4bd7c55a1327b45fa5148e3af20">ackTime</a>);</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_event.html#a796364946249371ebc0bdbc12a9f62cb">ackUser</a>);</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_event.html#a0a6fde978a66e707dc977d5a444c63a8">generatorDeviceId</a>);</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<span class="keywordtype">id</span>);</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_event.html#ab9ba8f3ac9b8c2263e65946ebc958eb9">situationType</a>);</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_event.html#a87f4a81aa3a1d72cc0c4f04f880e531a">sourceDeviceId</a>);</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_event.html#a749c67f2258bad576459f86a868aa7f5">sourceUserName</a>);</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_event.html#a7395af3579c9c352f5d2a5609cfcd609">time</a>);</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_event.html#a8e4bbc1935f8d4593acd3e01758d62c6">propertySize</a> = 0;</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_event.html#a29855cedf8b0fb9936b1ce998e5fb84c">severity</a> = 0;</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_event.html#a63b353689db46235004a972568cb148f">ackState</a> = <a class="code" href="struct_vx_sdk_1_1_vx_ack_state.html#aaf5b9ee2965d9d85afdf38009baf181fa7f83e693264f6d0f3b2c33cdebe4f907">VxAckState::kUnknown</a>;</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_event.html#a32f15792088e4a2e1a790790249791c4">properties</a> = <span class="keyword">nullptr</span>;</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        }</div><div class="ttc" id="struct_vx_sdk_1_1_vx_ack_state_html_aaf5b9ee2965d9d85afdf38009baf181fa7f83e693264f6d0f3b2c33cdebe4f907"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_ack_state.html#aaf5b9ee2965d9d85afdf38009baf181fa7f83e693264f6d0f3b2c33cdebe4f907">VxSdk::VxAckState::kUnknown</a></div><div class="ttdoc">An error or unknown value was returned.</div><div class="ttdef"><b>Definition:</b> <a href="_vx_primitives_8h_source.html#l00011">VxPrimitives.h:11</a></div></div>
 <div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00018">VxMacros.h:18</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_event_html_a32f15792088e4a2e1a790790249791c4"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_event.html#a32f15792088e4a2e1a790790249791c4">VxSdk::IVxEvent::properties</a></div><div class="ttdeci">VxKvObject ** properties</div><div class="ttdoc">Optional additional information related to the event. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_event_8h_source.html#l00073">IVxEvent.h:73</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_event_html_a29855cedf8b0fb9936b1ce998e5fb84c"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_event.html#a29855cedf8b0fb9936b1ce998e5fb84c">VxSdk::IVxEvent::severity</a></div><div class="ttdeci">unsigned short severity</div><div class="ttdoc">The severity of the event, from 1 (highest) to 10 (lowest). </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_event_8h_source.html#l00065">IVxEvent.h:65</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_event_html_ab9ba8f3ac9b8c2263e65946ebc958eb9"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_event.html#ab9ba8f3ac9b8c2263e65946ebc958eb9">VxSdk::IVxEvent::situationType</a></div><div class="ttdeci">char situationType[256]</div><div class="ttdoc">The type of the situation that led to the generation of this event. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_event_8h_source.html#l00045">IVxEvent.h:45</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_event_html_a63b353689db46235004a972568cb148f"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_event.html#a63b353689db46235004a972568cb148f">VxSdk::IVxEvent::ackState</a></div><div class="ttdeci">VxAckState::Value ackState</div><div class="ttdoc">The current acknowledgement state of the event. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_event_8h_source.html#l00069">IVxEvent.h:69</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_event_html_a749c67f2258bad576459f86a868aa7f5"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_event.html#a749c67f2258bad576459f86a868aa7f5">VxSdk::IVxEvent::sourceUserName</a></div><div class="ttdeci">char sourceUserName[64]</div><div class="ttdoc">The name of the user that was the cause of the situation, if any. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_event_8h_source.html#l00053">IVxEvent.h:53</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_event_html_a87f4a81aa3a1d72cc0c4f04f880e531a"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_event.html#a87f4a81aa3a1d72cc0c4f04f880e531a">VxSdk::IVxEvent::sourceDeviceId</a></div><div class="ttdeci">char sourceDeviceId[64]</div><div class="ttdoc">The unique identifier of the device that the situation occurred on. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_event_8h_source.html#l00049">IVxEvent.h:49</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_event_html_a0a6fde978a66e707dc977d5a444c63a8"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_event.html#a0a6fde978a66e707dc977d5a444c63a8">VxSdk::IVxEvent::generatorDeviceId</a></div><div class="ttdeci">char generatorDeviceId[64]</div><div class="ttdoc">The unique identifier of the device that created and injected this event into the system...</div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_event_8h_source.html#l00037">IVxEvent.h:37</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_event_html_a8e4bbc1935f8d4593acd3e01758d62c6"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_event.html#a8e4bbc1935f8d4593acd3e01758d62c6">VxSdk::IVxEvent::propertySize</a></div><div class="ttdeci">int propertySize</div><div class="ttdoc">The size of properties. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_event_8h_source.html#l00061">IVxEvent.h:61</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_event_html_a7395af3579c9c352f5d2a5609cfcd609"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_event.html#a7395af3579c9c352f5d2a5609cfcd609">VxSdk::IVxEvent::time</a></div><div class="ttdeci">char time[64]</div><div class="ttdoc">The time at which the situation occurred. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_event_8h_source.html#l00057">IVxEvent.h:57</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_event_html_a32f15792088e4a2e1a790790249791c4"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_event.html#a32f15792088e4a2e1a790790249791c4">VxSdk::IVxEvent::properties</a></div><div class="ttdeci">VxKvObject ** properties</div><div class="ttdoc">Optional additional information related to the event. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_event_8h_source.html#l00112">IVxEvent.h:112</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_event_html_a29855cedf8b0fb9936b1ce998e5fb84c"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_event.html#a29855cedf8b0fb9936b1ce998e5fb84c">VxSdk::IVxEvent::severity</a></div><div class="ttdeci">unsigned short severity</div><div class="ttdoc">The severity of the event, from 1 (highest) to 10 (lowest). </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_event_8h_source.html#l00104">IVxEvent.h:104</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_event_html_ab9ba8f3ac9b8c2263e65946ebc958eb9"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_event.html#ab9ba8f3ac9b8c2263e65946ebc958eb9">VxSdk::IVxEvent::situationType</a></div><div class="ttdeci">char situationType[256]</div><div class="ttdoc">The type of the situation that led to the generation of this event. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_event_8h_source.html#l00084">IVxEvent.h:84</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_event_html_a63b353689db46235004a972568cb148f"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_event.html#a63b353689db46235004a972568cb148f">VxSdk::IVxEvent::ackState</a></div><div class="ttdeci">VxAckState::Value ackState</div><div class="ttdoc">The current acknowledgement state of the event. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_event_8h_source.html#l00108">IVxEvent.h:108</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_event_html_a749c67f2258bad576459f86a868aa7f5"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_event.html#a749c67f2258bad576459f86a868aa7f5">VxSdk::IVxEvent::sourceUserName</a></div><div class="ttdeci">char sourceUserName[64]</div><div class="ttdoc">The name of the user that was the cause of the situation, if any. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_event_8h_source.html#l00092">IVxEvent.h:92</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_event_html_a87f4a81aa3a1d72cc0c4f04f880e531a"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_event.html#a87f4a81aa3a1d72cc0c4f04f880e531a">VxSdk::IVxEvent::sourceDeviceId</a></div><div class="ttdeci">char sourceDeviceId[64]</div><div class="ttdoc">The unique identifier of the device that the situation occurred on. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_event_8h_source.html#l00088">IVxEvent.h:88</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_event_html_a796364946249371ebc0bdbc12a9f62cb"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_event.html#a796364946249371ebc0bdbc12a9f62cb">VxSdk::IVxEvent::ackUser</a></div><div class="ttdeci">char ackUser[256]</div><div class="ttdoc">The user that set the current ackState, if any. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_event_8h_source.html#l00071">IVxEvent.h:71</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_event_html_ab593b4bd7c55a1327b45fa5148e3af20"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_event.html#ab593b4bd7c55a1327b45fa5148e3af20">VxSdk::IVxEvent::ackTime</a></div><div class="ttdeci">char ackTime[256]</div><div class="ttdoc">The time at which the current ackState was set. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_event_8h_source.html#l00067">IVxEvent.h:67</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_event_html_a0a6fde978a66e707dc977d5a444c63a8"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_event.html#a0a6fde978a66e707dc977d5a444c63a8">VxSdk::IVxEvent::generatorDeviceId</a></div><div class="ttdeci">char generatorDeviceId[64]</div><div class="ttdoc">The unique identifier of the device that created and injected this event into the system...</div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_event_8h_source.html#l00076">IVxEvent.h:76</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_event_html_a8e4bbc1935f8d4593acd3e01758d62c6"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_event.html#a8e4bbc1935f8d4593acd3e01758d62c6">VxSdk::IVxEvent::propertySize</a></div><div class="ttdeci">int propertySize</div><div class="ttdoc">The size of properties. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_event_8h_source.html#l00100">IVxEvent.h:100</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_event_html_a7395af3579c9c352f5d2a5609cfcd609"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_event.html#a7395af3579c9c352f5d2a5609cfcd609">VxSdk::IVxEvent::time</a></div><div class="ttdeci">char time[64]</div><div class="ttdoc">The time at which the situation occurred. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_event_8h_source.html#l00096">IVxEvent.h:96</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -266,6 +289,164 @@ Protected Member Functions</h2></td></tr>
 
 <p>Deletes this instance. </p>
 <dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of deleting this instance.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad68a4a2ee28582874d56822a17519abc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxEvent::GetGeneratorDevice </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_vx_sdk_1_1_i_vx_device.html">IVxDevice</a> *&amp;&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the device that the event was generated on. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>The generator device.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of the request.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abcd4686d1e2733ae474b3b28c919b1ac"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxEvent::GetSituation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_vx_sdk_1_1_i_vx_situation.html">IVxSituation</a> *&amp;&#160;</td>
+          <td class="paramname"><em>situation</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the situation that this event represents. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">situation</td><td>The situation of the event.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of the request.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a25d84cbb12b9e2dc895db8d844927d96"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxEvent::GetSourceDevice </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_vx_sdk_1_1_i_vx_device.html">IVxDevice</a> *&amp;&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the device that the situation occurred on. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>The source device.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of the request.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a028ba0d7305e69341a7d1c270689eff6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxEvent::GetUser </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html">IVxUser</a> *&amp;&#160;</td>
+          <td class="paramname"><em>user</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the user that was the cause of the situation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">user</td><td>The user that caused the situation.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of the request.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a41c73754094a134c110f543fd93226d3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxEvent::Refresh </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Refreshes the member values for this object by retrieving its current information from the VideoXpert system. </p>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of refreshing the member values for this object.</dd></dl>
 
 </div>
 </div>
@@ -315,7 +496,39 @@ Protected Member Functions</h2></td></tr>
 
 <p>The current acknowledgement state of the event. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_event_8h_source.html#l00069">69</a> of file <a class="el" href="_i_vx_event_8h_source.html">IVxEvent.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_event_8h_source.html#l00108">108</a> of file <a class="el" href="_i_vx_event_8h_source.html">IVxEvent.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab593b4bd7c55a1327b45fa5148e3af20"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char VxSdk::IVxEvent::ackTime[256]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The time at which the current <a class="el" href="struct_vx_sdk_1_1_i_vx_event.html#a63b353689db46235004a972568cb148f" title="The current acknowledgement state of the event. ">ackState</a> was set. </p>
+
+<p>Definition at line <a class="el" href="_i_vx_event_8h_source.html#l00067">67</a> of file <a class="el" href="_i_vx_event_8h_source.html">IVxEvent.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a796364946249371ebc0bdbc12a9f62cb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char VxSdk::IVxEvent::ackUser[256]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The user that set the current <a class="el" href="struct_vx_sdk_1_1_i_vx_event.html#a63b353689db46235004a972568cb148f" title="The current acknowledgement state of the event. ">ackState</a>, if any. </p>
+
+<p>Definition at line <a class="el" href="_i_vx_event_8h_source.html#l00071">71</a> of file <a class="el" href="_i_vx_event_8h_source.html">IVxEvent.h</a>.</p>
 
 </div>
 </div>
@@ -331,7 +544,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The unique identifier of the device that created and injected this event into the system. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_event_8h_source.html#l00037">37</a> of file <a class="el" href="_i_vx_event_8h_source.html">IVxEvent.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_event_8h_source.html#l00076">76</a> of file <a class="el" href="_i_vx_event_8h_source.html">IVxEvent.h</a>.</p>
 
 </div>
 </div>
@@ -347,7 +560,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The unique identifier created by the device that generated the event. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_event_8h_source.html#l00041">41</a> of file <a class="el" href="_i_vx_event_8h_source.html">IVxEvent.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_event_8h_source.html#l00080">80</a> of file <a class="el" href="_i_vx_event_8h_source.html">IVxEvent.h</a>.</p>
 
 </div>
 </div>
@@ -363,7 +576,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Optional additional information related to the event. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_event_8h_source.html#l00073">73</a> of file <a class="el" href="_i_vx_event_8h_source.html">IVxEvent.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_event_8h_source.html#l00112">112</a> of file <a class="el" href="_i_vx_event_8h_source.html">IVxEvent.h</a>.</p>
 
 </div>
 </div>
@@ -379,7 +592,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The size of <a class="el" href="struct_vx_sdk_1_1_i_vx_event.html#a32f15792088e4a2e1a790790249791c4" title="Optional additional information related to the event. ">properties</a>. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_event_8h_source.html#l00061">61</a> of file <a class="el" href="_i_vx_event_8h_source.html">IVxEvent.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_event_8h_source.html#l00100">100</a> of file <a class="el" href="_i_vx_event_8h_source.html">IVxEvent.h</a>.</p>
 
 </div>
 </div>
@@ -395,7 +608,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The severity of the event, from 1 (highest) to 10 (lowest). </p>
 
-<p>Definition at line <a class="el" href="_i_vx_event_8h_source.html#l00065">65</a> of file <a class="el" href="_i_vx_event_8h_source.html">IVxEvent.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_event_8h_source.html#l00104">104</a> of file <a class="el" href="_i_vx_event_8h_source.html">IVxEvent.h</a>.</p>
 
 </div>
 </div>
@@ -411,7 +624,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The type of the situation that led to the generation of this event. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_event_8h_source.html#l00045">45</a> of file <a class="el" href="_i_vx_event_8h_source.html">IVxEvent.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_event_8h_source.html#l00084">84</a> of file <a class="el" href="_i_vx_event_8h_source.html">IVxEvent.h</a>.</p>
 
 </div>
 </div>
@@ -427,7 +640,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The unique identifier of the device that the situation occurred on. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_event_8h_source.html#l00049">49</a> of file <a class="el" href="_i_vx_event_8h_source.html">IVxEvent.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_event_8h_source.html#l00088">88</a> of file <a class="el" href="_i_vx_event_8h_source.html">IVxEvent.h</a>.</p>
 
 </div>
 </div>
@@ -443,7 +656,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The name of the user that was the cause of the situation, if any. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_event_8h_source.html#l00053">53</a> of file <a class="el" href="_i_vx_event_8h_source.html">IVxEvent.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_event_8h_source.html#l00092">92</a> of file <a class="el" href="_i_vx_event_8h_source.html">IVxEvent.h</a>.</p>
 
 </div>
 </div>
@@ -459,7 +672,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The time at which the situation occurred. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_event_8h_source.html#l00057">57</a> of file <a class="el" href="_i_vx_event_8h_source.html">IVxEvent.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_event_8h_source.html#l00096">96</a> of file <a class="el" href="_i_vx_event_8h_source.html">IVxEvent.h</a>.</p>
 
 </div>
 </div>

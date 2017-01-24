@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">VideoXpert SDK
-   &#160;<span id="projectnumber">1.1</span>
+   &#160;<span id="projectnumber">1.2</span>
    </div>
    <div id="projectbrief">A software development kit for third party vendors to integrate with the VideoXpert platform</div>
   </td>
@@ -131,6 +131,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aef80e32b3c161ce7887ab379efb5c687"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_session.html#aef80e32b3c161ce7887ab379efb5c687">DeleteDataSession</a> ()=0</td></tr>
 <tr class="memdesc:aef80e32b3c161ce7887ab379efb5c687"><td class="mdescLeft">&#160;</td><td class="mdescRight">Terminates the current data session.  <a href="#aef80e32b3c161ce7887ab379efb5c687">More...</a><br /></td></tr>
 <tr class="separator:aef80e32b3c161ce7887ab379efb5c687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf320c1eeae75e4690a684efe42ed1cb"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_session.html#abf320c1eeae75e4690a684efe42ed1cb">GetAuthToken</a> (char *token, int &amp;size) const  =0</td></tr>
+<tr class="memdesc:abf320c1eeae75e4690a684efe42ed1cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the data session authentication token.  <a href="#abf320c1eeae75e4690a684efe42ed1cb">More...</a><br /></td></tr>
+<tr class="separator:abf320c1eeae75e4690a684efe42ed1cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19a2ae85f860bb3e96ffe16387d17875"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_session.html#a19a2ae85f860bb3e96ffe16387d17875">GetDataSource</a> (<a class="el" href="struct_vx_sdk_1_1_i_vx_data_source.html">IVxDataSource</a> *&amp;dataSource) const  =0</td></tr>
+<tr class="memdesc:a19a2ae85f860bb3e96ffe16387d17875"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the <a class="el" href="struct_vx_sdk_1_1_i_vx_data_source.html" title="Represents a data producer in the system hosted by a device. Each data source provides a list of data...">IVxDataSource</a> from which this session is retrieving data.  <a href="#a19a2ae85f860bb3e96ffe16387d17875">More...</a><br /></td></tr>
+<tr class="separator:a19a2ae85f860bb3e96ffe16387d17875"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc4c8e96e2fbaf9452f4d94783496b86"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_session.html#afc4c8e96e2fbaf9452f4d94783496b86">GetUser</a> (<a class="el" href="struct_vx_sdk_1_1_i_vx_user.html">IVxUser</a> *&amp;user) const  =0</td></tr>
+<tr class="memdesc:afc4c8e96e2fbaf9452f4d94783496b86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the <a class="el" href="struct_vx_sdk_1_1_i_vx_user.html" title="Represents information about a system user. ">IVxUser</a> that this session is being used by, if any.  <a href="#afc4c8e96e2fbaf9452f4d94783496b86">More...</a><br /></td></tr>
+<tr class="separator:afc4c8e96e2fbaf9452f4d94783496b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5a98d1eca8ddff086d7bdacc82f94f2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_session.html#ad5a98d1eca8ddff086d7bdacc82f94f2">GoLive</a> ()=0</td></tr>
 <tr class="memdesc:ad5a98d1eca8ddff086d7bdacc82f94f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the position of the data session as close to live as possible.  <a href="#ad5a98d1eca8ddff086d7bdacc82f94f2">More...</a><br /></td></tr>
 <tr class="separator:ad5a98d1eca8ddff086d7bdacc82f94f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,12 +149,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a657f17d7fbfd7083ee9f6671a3a8d90b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_session.html#a657f17d7fbfd7083ee9f6671a3a8d90b">Play</a> ()=0</td></tr>
 <tr class="memdesc:a657f17d7fbfd7083ee9f6671a3a8d90b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts or resumes the data session.  <a href="#a657f17d7fbfd7083ee9f6671a3a8d90b">More...</a><br /></td></tr>
 <tr class="separator:a657f17d7fbfd7083ee9f6671a3a8d90b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14210f037270ec9fde0b52be62067462"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_session.html#a14210f037270ec9fde0b52be62067462">Seek</a> (long long unixTime, int <a class="el" href="struct_vx_sdk_1_1_i_vx_data_session.html#a29bb8f6bb31bc96502de18995b4d5fb7">speed</a>)=0</td></tr>
-<tr class="memdesc:a14210f037270ec9fde0b52be62067462"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seeks to the frame nearest to the given time.  <a href="#a14210f037270ec9fde0b52be62067462">More...</a><br /></td></tr>
-<tr class="separator:a14210f037270ec9fde0b52be62067462"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a09846d8ac14e9b3ed542c1391d279b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_session.html#a1a09846d8ac14e9b3ed542c1391d279b">SetSpeed</a> (int <a class="el" href="struct_vx_sdk_1_1_i_vx_data_session.html#a29bb8f6bb31bc96502de18995b4d5fb7">speed</a>)=0</td></tr>
-<tr class="memdesc:a1a09846d8ac14e9b3ed542c1391d279b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the play speed of the data session. Negative values indicate reverse speeds while positive values indicate forward speeds (1 is normal speed).  <a href="#a1a09846d8ac14e9b3ed542c1391d279b">More...</a><br /></td></tr>
-<tr class="separator:a1a09846d8ac14e9b3ed542c1391d279b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f14e30c90c60f2bdf070154e1144fc4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_session.html#a7f14e30c90c60f2bdf070154e1144fc4">Seek</a> (long long unixTime, float <a class="el" href="struct_vx_sdk_1_1_i_vx_data_session.html#a29bb8f6bb31bc96502de18995b4d5fb7">speed</a>)=0</td></tr>
+<tr class="memdesc:a7f14e30c90c60f2bdf070154e1144fc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seeks to the frame nearest to the given time.  <a href="#a7f14e30c90c60f2bdf070154e1144fc4">More...</a><br /></td></tr>
+<tr class="separator:a7f14e30c90c60f2bdf070154e1144fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95a2ea1bc5cbc6ab2455dbd86493421c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_session.html#a95a2ea1bc5cbc6ab2455dbd86493421c">SetSpeed</a> (float <a class="el" href="struct_vx_sdk_1_1_i_vx_data_session.html#a29bb8f6bb31bc96502de18995b4d5fb7">speed</a>)=0</td></tr>
+<tr class="memdesc:a95a2ea1bc5cbc6ab2455dbd86493421c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the play speed of the data session. Negative values indicate reverse speeds while positive values indicate forward speeds (1 is normal speed).  <a href="#a95a2ea1bc5cbc6ab2455dbd86493421c">More...</a><br /></td></tr>
+<tr class="separator:a95a2ea1bc5cbc6ab2455dbd86493421c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0a250830a7ad0f74f7cc2f9b9512068"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_session.html#ad0a250830a7ad0f74f7cc2f9b9512068">SetQuality</a> (unsigned short <a class="el" href="struct_vx_sdk_1_1_i_vx_data_session.html#a3b0a90f0dd19ee1a7fd829acdc8433ec">quality</a>)=0</td></tr>
+<tr class="memdesc:ad0a250830a7ad0f74f7cc2f9b9512068"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the quality property.  <a href="#ad0a250830a7ad0f74f7cc2f9b9512068">More...</a><br /></td></tr>
+<tr class="separator:ad0a250830a7ad0f74f7cc2f9b9512068"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a474a3a0c2b98b2a8c045c7db8b2cc76a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_session.html#a474a3a0c2b98b2a8c045c7db8b2cc76a">SetResolution</a> (unsigned short <a class="el" href="struct_vx_sdk_1_1_i_vx_data_session.html#a21d03a45b6c430a23b5445a1e530a9d6">xResolution</a>, unsigned short <a class="el" href="struct_vx_sdk_1_1_i_vx_data_session.html#a92841ee8af205e5992d8ecb843955f9d">yResolution</a>)=0</td></tr>
+<tr class="memdesc:a474a3a0c2b98b2a8c045c7db8b2cc76a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the resolution properties.  <a href="#a474a3a0c2b98b2a8c045c7db8b2cc76a">More...</a><br /></td></tr>
+<tr class="separator:a474a3a0c2b98b2a8c045c7db8b2cc76a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a949549e8d22904539263d4aac643e5f6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_session.html#a949549e8d22904539263d4aac643e5f6">Update</a> ()=0</td></tr>
 <tr class="memdesc:a949549e8d22904539263d4aac643e5f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the values of this instance.  <a href="#a949549e8d22904539263d4aac643e5f6">More...</a><br /></td></tr>
 <tr class="separator:a949549e8d22904539263d4aac643e5f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,9 +173,6 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:afc0ca130e7b329318da4d754ce11c152"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_session.html#afc0ca130e7b329318da4d754ce11c152">jpegUri</a> [512]</td></tr>
 <tr class="memdesc:afc0ca130e7b329318da4d754ce11c152"><td class="mdescLeft">&#160;</td><td class="mdescRight">The URI of the JPEG frame.  <a href="#afc0ca130e7b329318da4d754ce11c152">More...</a><br /></td></tr>
 <tr class="separator:afc0ca130e7b329318da4d754ce11c152"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68db051909953967a7929de4dad8c9c3"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_session.html#a68db051909953967a7929de4dad8c9c3">time</a> [64]</td></tr>
-<tr class="memdesc:a68db051909953967a7929de4dad8c9c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The absolute position of the data session.  <a href="#a68db051909953967a7929de4dad8c9c3">More...</a><br /></td></tr>
-<tr class="separator:a68db051909953967a7929de4dad8c9c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29bb8f6bb31bc96502de18995b4d5fb7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_session.html#a29bb8f6bb31bc96502de18995b4d5fb7">speed</a></td></tr>
 <tr class="memdesc:a29bb8f6bb31bc96502de18995b4d5fb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The play speed of the data.  <a href="#a29bb8f6bb31bc96502de18995b4d5fb7">More...</a><br /></td></tr>
 <tr class="separator:a29bb8f6bb31bc96502de18995b4d5fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,7 +180,7 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:a3b0a90f0dd19ee1a7fd829acdc8433ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">The image quality of the data from 1 to 100. Smaller numbers have better quality than larger numbers.  <a href="#a3b0a90f0dd19ee1a7fd829acdc8433ec">More...</a><br /></td></tr>
 <tr class="separator:a3b0a90f0dd19ee1a7fd829acdc8433ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21d03a45b6c430a23b5445a1e530a9d6"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_session.html#a21d03a45b6c430a23b5445a1e530a9d6">xResolution</a></td></tr>
-<tr class="memdesc:a21d03a45b6c430a23b5445a1e530a9d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The the horizontal resolution of the data (Width).  <a href="#a21d03a45b6c430a23b5445a1e530a9d6">More...</a><br /></td></tr>
+<tr class="memdesc:a21d03a45b6c430a23b5445a1e530a9d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The horizontal resolution of the data (Width).  <a href="#a21d03a45b6c430a23b5445a1e530a9d6">More...</a><br /></td></tr>
 <tr class="separator:a21d03a45b6c430a23b5445a1e530a9d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92841ee8af205e5992d8ecb843955f9d"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_session.html#a92841ee8af205e5992d8ecb843955f9d">yResolution</a></td></tr>
 <tr class="memdesc:a92841ee8af205e5992d8ecb843955f9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The vertical resolution of the data (Height).  <a href="#a92841ee8af205e5992d8ecb843955f9d">More...</a><br /></td></tr>
@@ -183,7 +195,7 @@ Protected Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a data session that is being transmitted by a data source, via a data interface, to a client. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_data_session_8h_source.html#l00012">12</a> of file <a class="el" href="_i_vx_data_session_8h_source.html">IVxDataSession.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_data_session_8h_source.html#l00015">15</a> of file <a class="el" href="_i_vx_data_session_8h_source.html">IVxDataSession.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="af742fa18d5780964f67086c8743601f8"></a>
 <div class="memitem">
@@ -208,14 +220,13 @@ Protected Member Functions</h2></td></tr>
 
 <p>Clears this instance. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_data_session_8h_source.html#l00093">93</a> of file <a class="el" href="_i_vx_data_session_8h_source.html">IVxDataSession.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                     {</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<span class="keywordtype">id</span>);</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_session.html#afc0ca130e7b329318da4d754ce11c152">jpegUri</a>);</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_session.html#a68db051909953967a7929de4dad8c9c3">time</a>);</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_session.html#a29bb8f6bb31bc96502de18995b4d5fb7">speed</a> = 0;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_session.html#a3b0a90f0dd19ee1a7fd829acdc8433ec">quality</a> = 0;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_session.html#a21d03a45b6c430a23b5445a1e530a9d6">xResolution</a> = 0;</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_session.html#a92841ee8af205e5992d8ecb843955f9d">yResolution</a> = 0;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        }</div><div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00018">VxMacros.h:18</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_session_html_afc0ca130e7b329318da4d754ce11c152"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_session.html#afc0ca130e7b329318da4d754ce11c152">VxSdk::IVxDataSession::jpegUri</a></div><div class="ttdeci">char jpegUri[512]</div><div class="ttdoc">The URI of the JPEG frame. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_session_8h_source.html#l00067">IVxDataSession.h:67</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_session_html_a68db051909953967a7929de4dad8c9c3"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_session.html#a68db051909953967a7929de4dad8c9c3">VxSdk::IVxDataSession::time</a></div><div class="ttdeci">char time[64]</div><div class="ttdoc">The absolute position of the data session. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_session_8h_source.html#l00071">IVxDataSession.h:71</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_session_html_a3b0a90f0dd19ee1a7fd829acdc8433ec"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_session.html#a3b0a90f0dd19ee1a7fd829acdc8433ec">VxSdk::IVxDataSession::quality</a></div><div class="ttdeci">unsigned short quality</div><div class="ttdoc">The image quality of the data from 1 to 100. Smaller numbers have better quality than larger numbers...</div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_session_8h_source.html#l00079">IVxDataSession.h:79</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_session_html_a21d03a45b6c430a23b5445a1e530a9d6"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_session.html#a21d03a45b6c430a23b5445a1e530a9d6">VxSdk::IVxDataSession::xResolution</a></div><div class="ttdeci">unsigned short xResolution</div><div class="ttdoc">The the horizontal resolution of the data (Width). </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_session_8h_source.html#l00083">IVxDataSession.h:83</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_session_html_a92841ee8af205e5992d8ecb843955f9d"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_session.html#a92841ee8af205e5992d8ecb843955f9d">VxSdk::IVxDataSession::yResolution</a></div><div class="ttdeci">unsigned short yResolution</div><div class="ttdoc">The vertical resolution of the data (Height). </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_session_8h_source.html#l00087">IVxDataSession.h:87</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_session_html_a29bb8f6bb31bc96502de18995b4d5fb7"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_session.html#a29bb8f6bb31bc96502de18995b4d5fb7">VxSdk::IVxDataSession::speed</a></div><div class="ttdeci">float speed</div><div class="ttdoc">The play speed of the data. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_session_8h_source.html#l00075">IVxDataSession.h:75</a></div></div>
+<p>Definition at line <a class="el" href="_i_vx_data_session_8h_source.html#l00124">124</a> of file <a class="el" href="_i_vx_data_session_8h_source.html">IVxDataSession.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                     {</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<span class="keywordtype">id</span>);</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_session.html#afc0ca130e7b329318da4d754ce11c152">jpegUri</a>);</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_session.html#a29bb8f6bb31bc96502de18995b4d5fb7">speed</a> = 0;</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_session.html#a3b0a90f0dd19ee1a7fd829acdc8433ec">quality</a> = 0;</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_session.html#a21d03a45b6c430a23b5445a1e530a9d6">xResolution</a> = 0;</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_session.html#a92841ee8af205e5992d8ecb843955f9d">yResolution</a> = 0;</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        }</div><div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00018">VxMacros.h:18</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_session_html_afc0ca130e7b329318da4d754ce11c152"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_session.html#afc0ca130e7b329318da4d754ce11c152">VxSdk::IVxDataSession::jpegUri</a></div><div class="ttdeci">char jpegUri[512]</div><div class="ttdoc">The URI of the JPEG frame. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_session_8h_source.html#l00102">IVxDataSession.h:102</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_session_html_a3b0a90f0dd19ee1a7fd829acdc8433ec"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_session.html#a3b0a90f0dd19ee1a7fd829acdc8433ec">VxSdk::IVxDataSession::quality</a></div><div class="ttdeci">unsigned short quality</div><div class="ttdoc">The image quality of the data from 1 to 100. Smaller numbers have better quality than larger numbers...</div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_session_8h_source.html#l00110">IVxDataSession.h:110</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_session_html_a21d03a45b6c430a23b5445a1e530a9d6"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_session.html#a21d03a45b6c430a23b5445a1e530a9d6">VxSdk::IVxDataSession::xResolution</a></div><div class="ttdeci">unsigned short xResolution</div><div class="ttdoc">The horizontal resolution of the data (Width). </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_session_8h_source.html#l00114">IVxDataSession.h:114</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_session_html_a92841ee8af205e5992d8ecb843955f9d"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_session.html#a92841ee8af205e5992d8ecb843955f9d">VxSdk::IVxDataSession::yResolution</a></div><div class="ttdeci">unsigned short yResolution</div><div class="ttdoc">The vertical resolution of the data (Height). </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_session_8h_source.html#l00118">IVxDataSession.h:118</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_session_html_a29bb8f6bb31bc96502de18995b4d5fb7"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_session.html#a29bb8f6bb31bc96502de18995b4d5fb7">VxSdk::IVxDataSession::speed</a></div><div class="ttdeci">float speed</div><div class="ttdoc">The play speed of the data. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_session_8h_source.html#l00106">IVxDataSession.h:106</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -267,6 +278,116 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Terminates the current data session. </p>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of the request.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abf320c1eeae75e4690a684efe42ed1cb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxDataSession::GetAuthToken </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>token</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the data session authentication token. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">token</td><td>The authentication token.</td></tr>
+    <tr><td class="paramname">size</td><td>The size of <em>token</em> .</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of the request.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a19a2ae85f860bb3e96ffe16387d17875"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxDataSession::GetDataSource </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_source.html">IVxDataSource</a> *&amp;&#160;</td>
+          <td class="paramname"><em>dataSource</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the <a class="el" href="struct_vx_sdk_1_1_i_vx_data_source.html" title="Represents a data producer in the system hosted by a device. Each data source provides a list of data...">IVxDataSource</a> from which this session is retrieving data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dataSource</td><td>The <a class="el" href="struct_vx_sdk_1_1_i_vx_data_source.html" title="Represents a data producer in the system hosted by a device. Each data source provides a list of data...">IVxDataSource</a> for this session.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of the request.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afc4c8e96e2fbaf9452f4d94783496b86"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxDataSession::GetUser </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_vx_sdk_1_1_i_vx_user.html">IVxUser</a> *&amp;&#160;</td>
+          <td class="paramname"><em>user</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the <a class="el" href="struct_vx_sdk_1_1_i_vx_user.html" title="Represents information about a system user. ">IVxUser</a> that this session is being used by, if any. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">user</td><td>The <a class="el" href="struct_vx_sdk_1_1_i_vx_user.html" title="Represents information about a system user. ">IVxUser</a> using this session.</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of the request.</dd></dl>
 
 </div>
@@ -349,7 +470,7 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a14210f037270ec9fde0b52be62067462"></a>
+<a class="anchor" id="a7f14e30c90c60f2bdf070154e1144fc4"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -365,7 +486,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>speed</em>&#160;</td>
         </tr>
         <tr>
@@ -393,7 +514,84 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1a09846d8ac14e9b3ed542c1391d279b"></a>
+<a class="anchor" id="ad0a250830a7ad0f74f7cc2f9b9512068"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxDataSession::SetQuality </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>quality</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the quality property. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">quality</td><td>The new quality value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of setting the property.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a474a3a0c2b98b2a8c045c7db8b2cc76a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxDataSession::SetResolution </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>xResolution</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>yResolution</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the resolution properties. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xResolution</td><td>The new horizontal resolution value.</td></tr>
+    <tr><td class="paramname">yResolution</td><td>The new vertical resolution value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of setting the properties.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a95a2ea1bc5cbc6ab2455dbd86493421c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -403,7 +601,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxDataSession::SetSpeed </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>speed</em></td><td>)</td>
           <td></td>
         </tr>
@@ -465,7 +663,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The unique identifier of the data session. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_data_session_8h_source.html#l00063">63</a> of file <a class="el" href="_i_vx_data_session_8h_source.html">IVxDataSession.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_data_session_8h_source.html#l00098">98</a> of file <a class="el" href="_i_vx_data_session_8h_source.html">IVxDataSession.h</a>.</p>
 
 </div>
 </div>
@@ -481,7 +679,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The URI of the JPEG frame. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_data_session_8h_source.html#l00067">67</a> of file <a class="el" href="_i_vx_data_session_8h_source.html">IVxDataSession.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_data_session_8h_source.html#l00102">102</a> of file <a class="el" href="_i_vx_data_session_8h_source.html">IVxDataSession.h</a>.</p>
 
 </div>
 </div>
@@ -497,7 +695,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The image quality of the data from 1 to 100. Smaller numbers have better quality than larger numbers. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_data_session_8h_source.html#l00079">79</a> of file <a class="el" href="_i_vx_data_session_8h_source.html">IVxDataSession.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_data_session_8h_source.html#l00110">110</a> of file <a class="el" href="_i_vx_data_session_8h_source.html">IVxDataSession.h</a>.</p>
 
 </div>
 </div>
@@ -513,23 +711,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The play speed of the data. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_data_session_8h_source.html#l00075">75</a> of file <a class="el" href="_i_vx_data_session_8h_source.html">IVxDataSession.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a68db051909953967a7929de4dad8c9c3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char VxSdk::IVxDataSession::time[64]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The absolute position of the data session. </p>
-
-<p>Definition at line <a class="el" href="_i_vx_data_session_8h_source.html#l00071">71</a> of file <a class="el" href="_i_vx_data_session_8h_source.html">IVxDataSession.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_data_session_8h_source.html#l00106">106</a> of file <a class="el" href="_i_vx_data_session_8h_source.html">IVxDataSession.h</a>.</p>
 
 </div>
 </div>
@@ -543,9 +725,9 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The the horizontal resolution of the data (Width). </p>
+<p>The horizontal resolution of the data (Width). </p>
 
-<p>Definition at line <a class="el" href="_i_vx_data_session_8h_source.html#l00083">83</a> of file <a class="el" href="_i_vx_data_session_8h_source.html">IVxDataSession.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_data_session_8h_source.html#l00114">114</a> of file <a class="el" href="_i_vx_data_session_8h_source.html">IVxDataSession.h</a>.</p>
 
 </div>
 </div>
@@ -561,7 +743,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The vertical resolution of the data (Height). </p>
 
-<p>Definition at line <a class="el" href="_i_vx_data_session_8h_source.html#l00087">87</a> of file <a class="el" href="_i_vx_data_session_8h_source.html">IVxDataSession.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_data_session_8h_source.html#l00118">118</a> of file <a class="el" href="_i_vx_data_session_8h_source.html">IVxDataSession.h</a>.</p>
 
 </div>
 </div>
