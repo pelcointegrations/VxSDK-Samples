@@ -239,9 +239,11 @@ void Commands::PlayStream(MediaController::GstWrapper* gstwrapper) {
             MediaDescription md = this->_sdp.GetFirstVideo();
             if (md.isMulticast)
                 gstwrapper->SetMulticastAddress(md.ip);
+            if (md.payload == 26)
+                md.encoding = "JPEG";
 
-            gstwrapper->SetCaps("video" + BuildGstCaps(md), md.encoding == "JPEG" || md.payload == 26);
-            gstwrapper->CreateVideoRtspPipeline();
+            gstwrapper->SetCaps("video" + BuildGstCaps(md));
+            gstwrapper->CreateVideoRtspPipeline(md.encoding);
         }
         else {
             MediaDescription md = this->_sdp.GetFirstAudio();

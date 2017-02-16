@@ -371,14 +371,30 @@ void GstWrapper::LinkBinElements() {
     gst_object_unref(_gstVars.sinkPad);
 }
 
-void GstWrapper::CreateVideoRtspPipeline() {
+void GstWrapper::CreateVideoRtspPipeline(string encoding) {
     // Create the pipeline.
     CreatePipeline();
 
+    // Determine which depayloader and decoder to use based on the encoding type.
+    const char* videoDepay;
+    const char* videoDec;
+    if (encoding == Constants::kEncodingJpeg) {
+        videoDepay = Constants::kRtpJpegDepay;
+        videoDec = Constants::kJpegDec;
+    }
+    else if (encoding == Constants::kEncodingMpeg) {
+        videoDepay = Constants::kRtpMp4vDepay;
+        videoDec = Constants::kRtpMp4vDec;
+    }
+    else {
+        videoDepay = Constants::kRtpH264Depay;
+        videoDec = Constants::kRtpH264Dec;
+    }
+
     // Create the depayloader, decoder and video sink.
-    _gstVars.videoDepay = gst_element_factory_make(_gstVars.isMjpeg ? Constants::kRtpJpegDepay : Constants::kRtpDepay, "videoDepay");
+    _gstVars.videoDepay = gst_element_factory_make(videoDepay, "videoDepay");
     g_assert(_gstVars.videoDepay);
-    _gstVars.videoDec = gst_element_factory_make(_gstVars.isMjpeg ? Constants::kJpegDec : Constants::kRtpDec, "videoDec");
+    _gstVars.videoDec = gst_element_factory_make(videoDec, "videoDec");
     g_assert(_gstVars.videoDec);
     _gstVars.videoSink = gst_element_factory_make(Constants::kVideoSink, "videoSink");
     g_assert(_gstVars.videoSink);

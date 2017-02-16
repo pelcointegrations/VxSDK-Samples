@@ -127,7 +127,8 @@ namespace MediaController {
         /// <summary>
         /// Create the pipeline for an RTSP video stream.
         /// </summary>
-        void CreateVideoRtspPipeline();
+        /// <param name="encoding">The video encoding type.</param>
+        void CreateVideoRtspPipeline(std::string encoding);
 
         /// <summary>
         /// Create the pipeline for an RTSP audio stream.

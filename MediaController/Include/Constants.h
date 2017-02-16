@@ -82,12 +82,16 @@ namespace MediaController {
         static const char* kHttpLogLevel = "http-log-level";
         static const char* kSslStrict = "ssl-strict";
         static const char* kCookies = "cookies";
+        static const char* kEncodingJpeg = "JPEG";
+        static const char* kEncodingMpeg = "MP4V-ES";
 
         // GStreamer elements
         static const char* kUdpSrc = "udpsrc";
         static const char* kUdpSink = "udpsink";
-        static const char* kRtpDepay = "rtph264depay";
-        static const char* kRtpDec = "avdec_h264";
+        static const char* kRtpH264Depay = "rtph264depay";
+        static const char* kRtpH264Dec = "avdec_h264";
+        static const char* kRtpMp4vDepay = "rtpmp4vdepay";
+        static const char* kRtpMp4vDec = "avdec_mpeg4";
         static const char* kVideoSink = "d3dvideosink";
         static const char* kRtpBin = "rtpbin";
         static const char* kHttpSrc = "souphttpsrc";
