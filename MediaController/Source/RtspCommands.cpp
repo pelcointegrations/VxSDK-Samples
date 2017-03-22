@@ -346,7 +346,7 @@ void Commands::GetSocket(const string& uriString, int bindPort) {
             _pSocket.connect(*endpointIterator++, error);
         }
     }
-    else if (endpoint.address().to_string() != ip){
+    else if (endpoint.address().to_string() != ip || to_string(endpoint.port()) != port) {
         _pSocket.shutdown(boost::asio::socket_base::shutdown_both);
         _pSocket.close();
         _rSocket.close();
