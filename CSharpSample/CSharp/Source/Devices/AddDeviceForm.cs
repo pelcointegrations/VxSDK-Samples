@@ -88,7 +88,7 @@ namespace SDKSampleApp.Source
                     Username = tbxUsername.Text,
                     Password = tbxPassword.Text,
                     ShouldAutoCommission = ckbxAutoCommission.Checked,
-                    Type = (Device.Types)cbxDeviceType.SelectedIndex + 1
+                    Type = (Device.Types)cbxDeviceType.SelectedIndex
                 };
 
                 if (cbxRecorder.Enabled)
