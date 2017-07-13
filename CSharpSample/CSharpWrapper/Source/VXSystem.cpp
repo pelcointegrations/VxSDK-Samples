@@ -26,6 +26,7 @@ CPPCli::VXSystem::!VXSystem() {
     if (_system != nullptr) {
         // Unsubscribe to the system events
         _system->StopNotifications();
+        _system->StopInternalNotifications();
         delete _callback;
         _system->Delete();
         _system = nullptr;
@@ -76,6 +77,24 @@ CPPCli::Results::Value CPPCli::VXSystem::AddDrawing(System::String^ drawingName)
     VxSdk::VxResult::Value result = _system->AddDrawing(vxDrawing);
     // Unless there was an issue creating the drawing the result should be VxSdk::VxResult::kOK
     return CPPCli::Results::Value(result);
+}
+
+CPPCli::ManualRecording^ CPPCli::VXSystem::AddManualRecording(CPPCli::NewManualRecording^ newManualRecording) {
+    VxSdk::VxNewManualRecording vxNewManualRecording;
+    VxSdk::Utilities::StrCopySafe(vxNewManualRecording.dataSourceId, Utils::ConvertSysString(newManualRecording->DataSourceId));
+    vxNewManualRecording.postRecord = newManualRecording->PostRecord;
+    vxNewManualRecording.preRecord = newManualRecording->PreRecord;
+
+    CPPCli::ManualRecording^ retManualRecording = nullptr;
+    // Make the call to add the manual recording into VideoXpert
+    VxSdk::IVxManualRecording* manualRecordingItem = nullptr;
+    VxSdk::VxResult::Value result = _system->AddManualRecording(vxNewManualRecording, manualRecordingItem);
+
+    // Unless there was an issue adding the manual recording the result should be VxSdk::VxResult::kOK
+    if (result == VxSdk::VxResult::kOK) {
+        retManualRecording = gcnew CPPCli::ManualRecording(manualRecordingItem);
+    }
+    return retManualRecording;
 }
 
 CPPCli::Results::Value CPPCli::VXSystem::AddRole(System::String^ roleName) {
@@ -227,6 +246,7 @@ CPPCli::Results::Value CPPCli::VXSystem::CreateBookmark(CPPCli::NewBookmark^ new
     VxSdk::VxNewBookmark vxBookmark;
     VxSdk::Utilities::StrCopySafe(vxBookmark.dataSourceId, Utils::ConvertSysString(newBookmark->DataSourceId));
     VxSdk::Utilities::StrCopySafe(vxBookmark.description, Utils::ConvertSysString(newBookmark->Description));
+    VxSdk::Utilities::StrCopySafe(vxBookmark.name, Utils::ConvertSysString(newBookmark->Name));
     VxSdk::Utilities::StrCopySafe(vxBookmark.time, Utils::ConvertDateTimeToChar(newBookmark->Time));
 
     // Make the call to add the bookmark into VideoXpert
@@ -309,6 +329,20 @@ CPPCli::Notification^ CPPCli::VXSystem::CreateNotification(CPPCli::NewNotificati
         retNotification = gcnew CPPCli::Notification(notificationItem);
     }
     return retNotification;
+}
+
+CPPCli::QuickLog^ CPPCli::VXSystem::CreateQuickLog() {
+    CPPCli::QuickLog^ retQuickLog = nullptr;
+    VxSdk::IVxQuickLog* quickLogItem = nullptr;
+    // Attempt to create the quick log
+    VxSdk::VxResult::Value result = _system->CreateQuickLog(quickLogItem);
+    // Unless there was an issue creating the quick log the result should be VxSdk::VxResult::kOK
+    if (result == VxSdk::VxResult::kOK) {
+        // The quickLogItem returned from the system is the quick log initiated on the server and contains the
+        // information needed to obtain the log data
+        retQuickLog = gcnew CPPCli::QuickLog(quickLogItem);
+    }
+    return retQuickLog;
 }
 
 CPPCli::QuickReport^ CPPCli::VXSystem::CreateQuickReport(NewQuickReport^ newQuickReport) {
@@ -411,6 +445,16 @@ CPPCli::Results::Value CPPCli::VXSystem::DeleteExport(CPPCli::Export^ exportItem
     return CPPCli::Results::Value(result);
 }
 
+CPPCli::Results::Value CPPCli::VXSystem::DeleteManualRecording(CPPCli::ManualRecording^ manualRecordingItem) {
+    // Create a manual recording object using the manualRecordingItem
+    VxSdk::IVxManualRecording* delManualRecording = manualRecordingItem->_manualRecording;
+
+    // To delete a manual recording simply make a DeleteManualRecording call
+    VxSdk::VxResult::Value result = delManualRecording->DeleteManualRecording();
+    // Unless there was an issue deleting the manual recording the result should be VxSdk::VxResult::kOK
+    return CPPCli::Results::Value(result);
+}
+
 CPPCli::Results::Value CPPCli::VXSystem::DeleteNotification(CPPCli::Notification^ notificationItem) {
     // Create a notification object using the notificationItem
     VxSdk::IVxNotification* delNotification = notificationItem->_notification;
@@ -469,6 +513,30 @@ CPPCli::Results::Value CPPCli::VXSystem::DeleteUser(CPPCli::User^ userItem) {
     VxSdk::VxResult::Value result = delUser->DeleteUser();
     // Unless there was an issue deleting the user the result should be VxSdk::VxResult::kOK
     return CPPCli::Results::Value(result);
+}
+
+List<CPPCli::AlarmInput^>^ CPPCli::VXSystem::GetAlarmInputs() {
+    // Create a list of managed alarm input objects
+    List<AlarmInput^>^ mlist = gcnew List<AlarmInput^>();
+    // Create a collection of unmanaged alarm input objects
+    VxSdk::VxCollection<VxSdk::IVxAlarmInput**> alarmInputs;
+
+    // Make the GetAlarmInputs call, which will return with the total count of alarm inputs, this allows the client to allocate memory.
+    VxSdk::VxResult::Value result = _system->GetAlarmInputs(alarmInputs);
+    // Unless there are no alarm inputs on the system, this should return VxSdk::VxResult::kInsufficientSize
+    if (result == VxSdk::VxResult::kInsufficientSize) {
+        // An array of pointers is allocated using the size returned by the previous GetAlarmInputs call
+        alarmInputs.collection = new VxSdk::IVxAlarmInput*[alarmInputs.collectionSize];
+        result = _system->GetAlarmInputs(alarmInputs);
+        // The result should now be kOK since we have allocated enough space
+        if (result == VxSdk::VxResult::kOK) {
+            for (int i = 0; i < alarmInputs.collectionSize; i++)
+                mlist->Add(gcnew CPPCli::AlarmInput(alarmInputs.collection[i]));
+        }
+        // Remove the memory we previously allocated to the collection
+        delete[] alarmInputs.collection;
+    }
+    return mlist;
 }
 
 List<CPPCli::Bookmark^>^ CPPCli::VXSystem::GetBookmarks() {
@@ -570,6 +638,30 @@ List<CPPCli::DataStorage^>^ CPPCli::VXSystem::GetDataStorages() {
     return mlist;
 }
 
+List<CPPCli::DeviceAssignment^>^ CPPCli::VXSystem::GetDeviceAssignments() {
+    // Create a list of managed device assignment objects
+    List<DeviceAssignment^>^ mlist = gcnew List<DeviceAssignment^>();
+    // Create a collection of unmanaged device assignment objects
+    VxSdk::VxCollection<VxSdk::IVxDeviceAssignment**> deviceAssignments;
+
+    // Make the GetDeviceAssignments call, which will return with the total count of device assignments, this allows the client to allocate memory.
+    VxSdk::VxResult::Value result = _system->GetDeviceAssignments(deviceAssignments);
+    // Unless there are no device assignments on the system, this should return VxSdk::VxResult::kInsufficientSize
+    if (result == VxSdk::VxResult::kInsufficientSize) {
+        // An array of pointers is allocated using the size returned by the previous GetDeviceAssignments call
+        deviceAssignments.collection = new VxSdk::IVxDeviceAssignment*[deviceAssignments.collectionSize];
+        result = _system->GetDeviceAssignments(deviceAssignments);
+        // The result should now be kOK since we have allocated enough space
+        if (result == VxSdk::VxResult::kOK) {
+            for (int i = 0; i < deviceAssignments.collectionSize; i++)
+                mlist->Add(gcnew CPPCli::DeviceAssignment(deviceAssignments.collection[i]));
+        }
+        // Remove the memory we previously allocated to the collection
+        delete[] deviceAssignments.collection;
+    }
+    return mlist;
+}
+
 Collections::Generic::List<CPPCli::Device^>^ CPPCli::VXSystem::GetDevices() {
     // Create a list of managed device objects
     List<CPPCli::Device^>^ mlist = gcnew List<CPPCli::Device^>();
@@ -590,6 +682,30 @@ Collections::Generic::List<CPPCli::Device^>^ CPPCli::VXSystem::GetDevices() {
         }
         // Remove the memory we previously allocated to the collection
         delete[] devices.collection;
+    }
+    return mlist;
+}
+
+Collections::Generic::List<CPPCli::ManualRecording^>^ CPPCli::VXSystem::GetManualRecordings() {
+    // Create a list of managed manual recording objects
+    List<CPPCli::ManualRecording^>^ mlist = gcnew List<CPPCli::ManualRecording^>();
+    // Create a collection of unmanaged manual recording objects
+    VxSdk::VxCollection<VxSdk::IVxManualRecording**> manualRecordings;
+
+    // Make the GetManualRecordings call, which will return with the total manual recording count, this allows the client to allocate memory.
+    VxSdk::VxResult::Value result = _system->GetManualRecordings(manualRecordings);
+    // Unless there are no manual recordings on the system, this should return VxSdk::VxResult::kInsufficientSize
+    if (result == VxSdk::VxResult::kInsufficientSize) {
+        // Allocate enough space for the IVxManualRecording collection
+        manualRecordings.collection = new VxSdk::IVxManualRecording*[manualRecordings.collectionSize];
+        result = _system->GetManualRecordings(manualRecordings);
+        // The result should now be kOK since we have allocated enough space
+        if (result == VxSdk::VxResult::kOK) {
+            for (int i = 0; i < manualRecordings.collectionSize; i++)
+                mlist->Add(gcnew CPPCli::ManualRecording(manualRecordings.collection[i]));
+        }
+        // Remove the memory we previously allocated to the collection
+        delete[] manualRecordings.collection;
     }
     return mlist;
 }
@@ -700,6 +816,30 @@ List<CPPCli::Notification^>^ CPPCli::VXSystem::GetNotifications() {
         }
         // Remove the memory we previously allocated to the collection
         delete[] notifications.collection;
+    }
+    return mlist;
+}
+
+List<CPPCli::RelayOutput^>^ CPPCli::VXSystem::GetRelayOutputs() {
+    // Create a list of managed relay output objects
+    List<RelayOutput^>^ mlist = gcnew List<RelayOutput^>();
+    // Create a collection of unmanaged relay output objects
+    VxSdk::VxCollection<VxSdk::IVxRelayOutput**> relayOutputs;
+
+    // Make the GetRelayOutputs call, which will return with the total count of relay outputs, this allows the client to allocate memory.
+    VxSdk::VxResult::Value result = _system->GetRelayOutputs(relayOutputs);
+    // Unless there are no relay outputs on the system, this should return VxSdk::VxResult::kInsufficientSize
+    if (result == VxSdk::VxResult::kInsufficientSize) {
+        // An array of pointers is allocated using the size returned by the previous GetRelayOutputs call
+        relayOutputs.collection = new VxSdk::IVxRelayOutput*[relayOutputs.collectionSize];
+        result = _system->GetRelayOutputs(relayOutputs);
+        // The result should now be kOK since we have allocated enough space
+        if (result == VxSdk::VxResult::kOK) {
+            for (int i = 0; i < relayOutputs.collectionSize; i++)
+                mlist->Add(gcnew CPPCli::RelayOutput(relayOutputs.collection[i]));
+        }
+        // Remove the memory we previously allocated to the collection
+        delete[] relayOutputs.collection;
     }
     return mlist;
 }
@@ -836,6 +976,7 @@ CPPCli::Results::Value CPPCli::VXSystem::InjectEvent(CPPCli::NewEvent^ newEvent)
     VxSdk::Utilities::StrCopySafe(vxEvent.situationType, Utils::ConvertSysString(newEvent->SituationType));
     VxSdk::Utilities::StrCopySafe(vxEvent.sourceDeviceId, Utils::ConvertSysString(newEvent->SourceDeviceId));
     VxSdk::Utilities::StrCopySafe(vxEvent.time, Utils::ConvertDateTimeToChar(newEvent->Time));
+    VxSdk::Utilities::StrCopySafe(vxEvent.sourceUserName, Utils::ConvertSysString(newEvent->SourceUserName));
     int size = vxEvent.propertySize = newEvent->Properties->Count;
     VxSdk::VxKvObject *kvObj = new VxSdk::VxKvObject[size];
     vxEvent.properties = kvObj;
@@ -869,6 +1010,24 @@ CPPCli::Results::Value CPPCli::VXSystem::Login(String^ username, String^ passwor
         _system = system;
         // Create a new callback delegate
         _callback = gcnew EventCallbackDelegate(&_FireEvent);
+        _internalCallback = gcnew InternalEventCallbackDelegate(&_FireInternalEvent);
+    }
+    return CPPCli::Results::Value(result);
+}
+
+CPPCli::Results::Value CPPCli::VXSystem::Login(String^ authToken) {
+    VxSdk::Utilities::StrCopySafe(_loginInfo->authToken, Utils::ConvertSysString(authToken));
+    const int kSslPort = 443;
+    _loginInfo->port = _loginInfo->port == 0 ? kSslPort : _loginInfo->port;
+    _loginInfo->useSsl = true;
+
+    VxSdk::IVxSystem* system = nullptr;
+    VxSdk::VxResult::Value result = VxSdk::VxSystemLogin(*_loginInfo, system);
+    if (result == VxSdk::VxResult::kOK) {
+        _system = system;
+        // Create a new callback delegate
+        _callback = gcnew EventCallbackDelegate(&_FireEvent);
+        _internalCallback = gcnew InternalEventCallbackDelegate(&_FireInternalEvent);
     }
     return CPPCli::Results::Value(result);
 }
@@ -950,6 +1109,12 @@ void CPPCli::VXSystem::_FireEvent(VxSdk::IVxEvent* vxEvent) {
         return _systemEvent(gcnew Event(vxEvent));
 }
 
+void CPPCli::VXSystem::_FireInternalEvent(VxSdk::VxInternalEvent* vxInternalEvent) {
+    // Fire the notification if there is a subscription to the internal events
+    if (_sdkEvent != nullptr)
+        return _sdkEvent(gcnew CPPCli::InternalEvent(vxInternalEvent));
+}
+
 CPPCli::Configuration::Cluster^ CPPCli::VXSystem::_GetClusterConfig() {
     // Get the cluster configuration
     VxSdk::IVxConfiguration::Cluster* cluster = nullptr;
@@ -974,6 +1139,18 @@ CPPCli::User^ CPPCli::VXSystem::_GetCurrentUser() {
     return nullptr;
 }
 
+CPPCli::Device^ CPPCli::VXSystem::_GetHostDevice() {
+    // Get the device which hosts this system
+    VxSdk::IVxDevice* device = nullptr;
+    VxSdk::VxResult::Value result = _system->GetHostDevice(device);
+
+    // Return the device if GetHostDevice was successful
+    if (result == VxSdk::VxResult::kOK)
+        return gcnew Device(device);
+
+    return nullptr;
+}
+
 void CPPCli::VXSystem::SystemEvent::add(EventDelegate ^eventDelegate) {
     // Subscribe to the system events
     _system->StartNotifications(VxSdk::VxEventCallback(Marshal::GetFunctionPointerForDelegate(_callback).ToPointer()));
@@ -986,4 +1163,18 @@ void CPPCli::VXSystem::SystemEvent::remove(EventDelegate ^eventDelegate) {
     _system->StopNotifications();
     // Remove the EventDelegate subscription
     _systemEvent -= eventDelegate;
+};
+
+void CPPCli::VXSystem::InternalEvent::add(InternalEventDelegate ^sdkEventDelegate) {
+    // Subscribe to the internal events
+    _system->StartInternalNotifications(VxSdk::VxInternalEventCallback(Marshal::GetFunctionPointerForDelegate(_internalCallback).ToPointer()));
+    // Add a new subscription to the InternalEventDelegate
+    _sdkEvent += sdkEventDelegate;
+};
+
+void CPPCli::VXSystem::InternalEvent::remove(InternalEventDelegate ^sdkEventDelegate) {
+    // Unsubscribe to the internal events
+    _system->StopInternalNotifications();
+    // Remove the InternalEventDelegate subscription
+    _sdkEvent -= sdkEventDelegate;
 };

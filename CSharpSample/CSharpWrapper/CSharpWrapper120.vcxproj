@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugNoMedia|Win32">
+      <Configuration>DebugNoMedia</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugNoMedia|x64">
+      <Configuration>DebugNoMedia</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseNoMedia|Win32">
+      <Configuration>ReleaseNoMedia</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseNoMedia|x64">
+      <Configuration>ReleaseNoMedia</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7B8BD603-EB13-4E0D-A7E9-7A36813E52E1}</ProjectGuid>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>CPPCli</RootNamespace>
+    <ProjectName>CSharpWrapper</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugNoMedia|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugNoMedia|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseNoMedia|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseNoMedia|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugNoMedia|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugNoMedia|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseNoMedia|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseNoMedia|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>Bin\$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>Bin\$(PlatformTarget)\$(Configuration)\Intermediates\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugNoMedia|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>Bin\$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>Bin\$(PlatformTarget)\$(Configuration)\Intermediates\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>Bin\$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>Bin\$(PlatformTarget)\$(Configuration)\Intermediates\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugNoMedia|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>Bin\$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>Bin\$(PlatformTarget)\$(Configuration)\Intermediates\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>Bin\$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>Bin\$(PlatformTarget)\$(Configuration)\Intermediates\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseNoMedia|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>Bin\$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>Bin\$(PlatformTarget)\$(Configuration)\Intermediates\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>Bin\$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>Bin\$(PlatformTarget)\$(Configuration)\Intermediates\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseNoMedia|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>Bin\$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>Bin\$(PlatformTarget)\$(Configuration)\Intermediates\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0501;WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Include\;$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Include;$(ProjectDir)..\..\MediaController\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile />
+      <GenerateXMLDocumentationFiles>true</GenerateXMLDocumentationFiles>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>VxSdkd.lib;MediaControllerd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Lib;$(ProjectDir)..\..\MediaController\Bin\$(PlatformTarget)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\*" "$(TargetDir)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugNoMedia|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0501;WIN32;_DEBUG;NO_MEDIA;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Include\;$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\Debug\Include;$(ProjectDir)..\..\MediaController\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <GenerateXMLDocumentationFiles>true</GenerateXMLDocumentationFiles>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>VxSdkd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\Debug\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\Debug\Bin\*" "$(TargetDir)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0501;WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Include\;$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Include;$(ProjectDir)..\..\MediaController\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>VxSdkd.lib;MediaControllerd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Lib;$(ProjectDir)..\..\MediaController\Bin\$(PlatformTarget)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\*" "$(TargetDir)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugNoMedia|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0501;WIN32;_DEBUG;NO_MEDIA;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Include\;$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\Debug\Include;$(ProjectDir)..\..\MediaController\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>VxSdkd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\Debug\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\Debug\Bin\*" "$(TargetDir)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0501;WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Include\;$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Include;$(ProjectDir)..\..\MediaController\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>VxSdk.lib;MediaController.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Lib;$(ProjectDir)..\..\MediaController\Bin\$(PlatformTarget)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\*" "$(TargetDir)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseNoMedia|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0501;WIN32;NDEBUG;NO_MEDIA;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Include\;$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\Release\Include;$(ProjectDir)..\..\MediaController\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>VxSdk.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\Release\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\Release\Bin\*" "$(TargetDir)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0501;WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Include\;$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Include;$(ProjectDir)..\..\MediaController\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>VxSdk.lib;MediaController.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Lib;$(ProjectDir)..\..\MediaController\Bin\$(PlatformTarget)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\*" "$(TargetDir)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseNoMedia|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0501;WIN32;NDEBUG;NO_MEDIA;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Include\;$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\Release\Include;$(ProjectDir)..\..\MediaController\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>VxSdk.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\Release\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\Release\Bin\*" "$(TargetDir)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\AlarmInput.h" />
+    <ClInclude Include="Include\Bookmark.h" />
+    <ClInclude Include="Include\Configuration.h" />
+    <ClInclude Include="Include\DataObject.h" />
+    <ClInclude Include="Include\DataStorage.h" />
+    <ClInclude Include="Include\DeviceAssignment.h" />
+    <ClInclude Include="Include\Drawing.h" />
+    <ClInclude Include="Include\Driver.h" />
+    <ClInclude Include="Include\License.h" />
+    <ClInclude Include="Include\LicenseFeature.h" />
+    <ClInclude Include="Include\ManualRecording.h" />
+    <ClInclude Include="Include\Marker.h" />
+    <ClInclude Include="Include\Monitor.h" />
+    <ClInclude Include="Include\MonitorCell.h" />
+    <ClInclude Include="Include\NewBookmark.h" />
+    <ClInclude Include="Include\NewDataObject.h" />
+    <ClInclude Include="Include\NewDevice.h" />
+    <ClInclude Include="Include\NewDeviceAssignment.h" />
+    <ClInclude Include="Include\NewEvent.h" />
+    <ClInclude Include="Include\NewManualRecording.h" />
+    <ClInclude Include="Include\NewMonitor.h" />
+    <ClInclude Include="Include\NewMarker.h" />
+    <ClInclude Include="Include\NewNotification.h" />
+    <ClInclude Include="Include\NewPrivilege.h" />
+    <ClInclude Include="Include\NewSchedule.h" />
+    <ClInclude Include="Include\NewScheduleTrigger.h" />
+    <ClInclude Include="Include\NewSituation.h" />
+    <ClInclude Include="Include\MediaControl.h" />
+    <ClInclude Include="Include\MediaEvent.h" />
+    <ClInclude Include="Include\NewTag.h" />
+    <ClInclude Include="Include\NewUser.h" />
+    <ClInclude Include="Include\Notification.h" />
+    <ClInclude Include="Include\Privilege.h" />
+    <ClInclude Include="Include\PtzLimits.h" />
+    <ClInclude Include="Include\PtzLock.h" />
+    <ClInclude Include="Include\QuickLog.h" />
+    <ClInclude Include="Include\RelayOutput.h" />
+    <ClInclude Include="Include\ResourceLock.h" />
+    <ClInclude Include="Include\ResourceRel.h" />
+    <ClInclude Include="Include\Role.h" />
+    <ClInclude Include="Include\Schedule.h" />
+    <ClInclude Include="Include\ScheduleTrigger.h" />
+    <ClInclude Include="Include\SnapshotFilter.h" />
+    <ClInclude Include="Include\Tag.h" />
+    <ClInclude Include="Include\User.h" />
+    <ClInclude Include="Include\UserInfo.h" />
+    <ClInclude Include="Include\Utils.h" />
+    <ClInclude Include="Include\Clip.h" />
+    <ClInclude Include="Include\DataInterface.h" />
+    <ClInclude Include="Include\DataSession.h" />
+    <ClInclude Include="Include\DataSource.h" />
+    <ClInclude Include="Include\Device.h" />
+    <ClInclude Include="Include\Event.h" />
+    <ClInclude Include="Include\Export.h" />
+    <ClInclude Include="Include\ExportClip.h" />
+    <ClInclude Include="Include\NewExport.h" />
+    <ClInclude Include="Include\NewExportClip.h" />
+    <ClInclude Include="Include\Pattern.h" />
+    <ClInclude Include="Include\Preset.h" />
+    <ClInclude Include="Include\PtzController.h" />
+    <ClInclude Include="Include\Situation.h" />
+    <ClInclude Include="Include\InternalEvent.h" />
+    <ClInclude Include="Include\VXSystem.h" />
+    <ClInclude Include="Include\NewQuickReport.h" />
+    <ClInclude Include="Include\QuickReport.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Resources\AssemblyInfo.cpp" />
+    <ClCompile Include="Source\AlarmInput.cpp" />
+    <ClCompile Include="Source\Bookmark.cpp" />
+    <ClCompile Include="Source\Configuration.cpp" />
+    <ClCompile Include="Source\DataObject.cpp" />
+    <ClCompile Include="Source\DataStorage.cpp" />
+    <ClCompile Include="Source\DeviceAssignment.cpp" />
+    <ClCompile Include="Source\Drawing.cpp" />
+    <ClCompile Include="Source\Driver.cpp" />
+    <ClCompile Include="Source\License.cpp" />
+    <ClCompile Include="Source\LicenseFeature.cpp" />
+    <ClCompile Include="Source\ManualRecording.cpp" />
+    <ClCompile Include="Source\Marker.cpp" />
+    <ClCompile Include="Source\MediaControl.cpp" />
+    <ClCompile Include="Source\Clip.cpp" />
+    <ClCompile Include="Source\DataInterface.cpp" />
+    <ClCompile Include="Source\DataSource.cpp" />
+    <ClCompile Include="Source\Device.cpp" />
+    <ClCompile Include="Source\Export.cpp" />
+    <ClCompile Include="Source\ExportClip.cpp" />
+    <ClCompile Include="Source\Monitor.cpp" />
+    <ClCompile Include="Source\MonitorCell.cpp" />
+    <ClCompile Include="Source\NewExport.cpp" />
+    <ClCompile Include="Source\NewSchedule.cpp" />
+    <ClCompile Include="Source\Notification.cpp" />
+    <ClCompile Include="Source\Pattern.cpp" />
+    <ClCompile Include="Source\Preset.cpp" />
+    <ClCompile Include="Source\Privilege.cpp" />
+    <ClCompile Include="Source\PtzController.cpp" />
+    <ClCompile Include="Source\PtzLock.cpp" />
+    <ClCompile Include="Source\QuickLog.cpp" />
+    <ClCompile Include="Source\RelayOutput.cpp" />
+    <ClCompile Include="Source\ResourceRel.cpp" />
+    <ClCompile Include="Source\Role.cpp" />
+    <ClCompile Include="Source\Schedule.cpp" />
+    <ClCompile Include="Source\ScheduleTrigger.cpp" />
+    <ClCompile Include="Source\Situation.cpp" />
+    <ClCompile Include="Source\Tag.cpp" />
+    <ClCompile Include="Source\User.cpp" />
+    <ClCompile Include="Source\VXSystem.cpp" />
+    <ClCompile Include="Source\Event.cpp" />
+    <ClCompile Include="Source\QuickReport.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

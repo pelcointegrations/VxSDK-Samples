@@ -12,7 +12,6 @@ using namespace CppSamples::Common;
 /// </summary>
 /// <param name="dataModel">Instance of data model.</param>
 Plugin* CppSamples::Bookmarks::AddBookmark::Run(DataModel* dataModel) {
-
     AddNew(dataModel->VxSystem);
 
     // Return reference of parent plugin to move back to parent menu.
@@ -24,7 +23,6 @@ Plugin* CppSamples::Bookmarks::AddBookmark::Run(DataModel* dataModel) {
 /// </summary>
 /// <param name="vxSystem">Pointer to the VideoExpert system.</param>
 void CppSamples::Bookmarks::AddBookmark::AddNew(IVxSystem* vxSystem) {
-
     // Data Source ID
     VxCollection<IVxDataSource**> dataSources = GetDataSources(vxSystem);
     int dataSourceIndex = SelectDataSourceIndex(dataSources);
@@ -35,9 +33,7 @@ void CppSamples::Bookmarks::AddBookmark::AddNew(IVxSystem* vxSystem) {
 
     // Description
     cout << "\n\n" << "Enter description for bookmark: ";
-    cin.ignore();
-    string description = "";
-    getline(cin, description);
+    string description = Utility::ReadString();
 
     // Time
     cout << "\n" << "Enter time (yyyy-mm-dd hh:mm:ss): ";
@@ -55,8 +51,8 @@ void CppSamples::Bookmarks::AddBookmark::AddNew(IVxSystem* vxSystem) {
     else
         cout << "\n" << "Failed to add bookmark.\n";
 
-    // Pause for user input before going back to parent menu.
-    system("pause");
+    // Wait for user response before going back to parent menu.
+    Utility::Pause();
 }
 
 /// <summary>
@@ -88,9 +84,8 @@ VxCollection<IVxDataSource**> CppSamples::Bookmarks::AddBookmark::GetDataSources
 int CppSamples::Bookmarks::AddBookmark::SelectDataSourceIndex(VxCollection<IVxDataSource**> &dataSources) {
     while (true) {
         // Select a Data source
-        int dataSourceNumber = 0;
         cout << "\n" << "Enter data source number [1-" << dataSources.collectionSize << "] : ";
-        cin >> dataSourceNumber;
+        int dataSourceNumber = Utility::ReadInt();
         if (dataSourceNumber == 0)
             break;
         // Verify input

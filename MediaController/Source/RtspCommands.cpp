@@ -49,6 +49,20 @@ bool Commands::Options() {
 
     // Parse the server response.
     Response resp = ProcessResponse(_pSocket);
+    if (resp.statusCode == kStatusCode301 || resp.statusCode == kStatusCode302) {
+        // Set the playback URI to the redirect location.
+        typedef std::map<std::string, std::string>::iterator it_type;
+        for (it_type iterator = resp.headers.begin(); iterator != resp.headers.end(); ++iterator) {
+            string name = iterator->first;
+            std::transform(name.begin(), name.end(), name.begin(), ::tolower);
+            if (name == kLowerCaseHeaderLocation) {
+                this->_controlUri = iterator->second;
+                Options();
+                break;
+            }
+        }
+    }
+    
     if (resp.statusCode != kStatusCode200) { return false; }
     
     return true;
@@ -117,7 +131,7 @@ bool Commands::Describe(bool firstAttempt) {
         this->_rtcpPort = md.isMulticast ? md.port + 1 : _rSocket.local_endpoint().port();
     }
 
-    if (!parser.sessionControlUri.empty())
+    if (!parser.sessionControlUri.empty() && parser.sessionControlUri != "*")
         this->_controlUri = parser.sessionControlUri;
 
     return true;
@@ -131,6 +145,9 @@ bool Commands::Setup(bool firstAttempt) {
         md = this->_sdp.GetFirstVideo();
     else
         md = this->_sdp.GetFirstAudio();
+
+    if (md.controlUri == "video" || md.controlUri == "audio")
+        md.controlUri = _controlUri;
 
     // Send the SETUP request in the following format:
     // SETUP {uri} RTSP/1.0
@@ -206,7 +223,7 @@ bool Commands::SetupStream(MediaController::GstWrapper* gstwrapper, float speed,
         for (it_type iterator = resp.headers.begin(); iterator != resp.headers.end(); ++iterator) {
             string name = iterator->first;
             std::transform(name.begin(), name.end(), name.begin(), ::tolower);
-            if (name == kHeaderLocation) {
+            if (name == kLowerCaseHeaderLocation) {
                 this->_controlUri = iterator->second;
                 break;
             }
@@ -218,6 +235,9 @@ bool Commands::SetupStream(MediaController::GstWrapper* gstwrapper, float speed,
             gstwrapper->SetMode(MediaController::Controller::kLive);
 
         // Send the sequence of RTSP commands needed to start a new stream using the new location.
+#ifndef WIN32
+        ClearSocket();
+#endif
         Options();
         Describe();
         Setup();
@@ -475,8 +495,8 @@ Response ProcessResponse(boost::asio::ip::tcp::socket& socket) {
         boost::algorithm::trim(value);
 
         std::transform(name.begin(), name.end(), name.begin(), ::tolower);
-        if (name == kHeaderContentLength) contentLength = stoi(value);
-        if (name == kHeaderSession) res.session = value;
+        if (name == kLowerCaseHeaderContentLength) contentLength = stoi(value);
+        if (name == kLowerCaseHeaderSession) res.session = value;
         res.headers[name] = value;
     }
     if (contentLength == 0)

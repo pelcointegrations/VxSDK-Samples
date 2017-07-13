@@ -4,15 +4,18 @@
 <area shape="rect" id="node4" href="$class_c_p_p_cli_1_1_ptz_controller.html#a11037c498a09a8af0b4dff511c7fd4bf" title="Pan to the absolute position of the given coordinate. " alt="" coords="212,136,359,177"/>
 <area shape="rect" id="node5" href="$class_c_p_p_cli_1_1_ptz_controller.html#a02fb4191411c715decd00ba7de87ad73" title="Tilt to the absolute position of the given coordinate. " alt="" coords="212,201,359,243"/>
 <area shape="rect" id="node6" href="$class_c_p_p_cli_1_1_ptz_controller.html#a74bc19f45cd3a47fdc1865dbfa33c93c" title="Zoom to the absolute position of the given coordinates. " alt="" coords="212,267,359,308"/>
-<area shape="rect" id="node7" href="$class_c_p_p_cli_1_1_ptz_controller.html#a3205c316934173818716d0ee64ebc438" title="Focus near or far until the user wants to stop. " alt="" coords="212,332,359,373"/>
-<area shape="rect" id="node8" href="$class_c_p_p_cli_1_1_ptz_controller.html#a3e6a511a8507a57cfe776b45089b21c9" title="Open or close the iris until the user wants to stop. " alt="" coords="212,397,359,439"/>
-<area shape="rect" id="node9" href="$class_c_p_p_cli_1_1_ptz_controller.html#a4b896c1ea0c205eb15b81ccb6f6021d2" title="Continuously move the field of view at the given speed until stopped. " alt="" coords="212,463,359,504"/>
-<area shape="rect" id="node10" href="$class_c_p_p_cli_1_1_ptz_controller.html#a25cc53c7ac96d003a284c6bea41a4932" title="Get the available patterns. " alt="" coords="212,528,359,569"/>
-<area shape="rect" id="node11" href="$class_c_p_p_cli_1_1_ptz_controller.html#a7d645e59e5d0dc205ef040e851cba574" title="Get the available presets. " alt="" coords="212,593,359,635"/>
-<area shape="rect" id="node12" href="$class_c_p_p_cli_1_1_ptz_controller.html#a52039122bee70fb582472793dcdcf729" title="Update this instances properties. " alt="" coords="212,659,359,700"/>
-<area shape="rect" id="node13" href="$class_c_p_p_cli_1_1_ptz_controller.html#af1ec158bf337f5c75be82dcf9691c1d9" title="Moves the camera position relative to the current position. " alt="" coords="212,724,359,765"/>
-<area shape="rect" id="node14" href="$class_c_p_p_cli_1_1_ptz_controller.html#ad186a818ae7883ff585102e166c545e2" title="Moves the camera position within a percentage relative to the device’s current field of view..." alt="" coords="200,789,371,831"/>
-<area shape="rect" id="node15" href="$class_c_p_p_cli_1_1_ptz_controller.html#ac7bfd6bdd351fcdb92a766d01ca83bb3" title="Trigger a pattern. " alt="" coords="212,855,359,896"/>
-<area shape="rect" id="node16" href="$class_c_p_p_cli_1_1_ptz_controller.html#a73653af661e81a06eb642dd3d15bec74" title="Trigger a preset. " alt="" coords="212,920,359,961"/>
-<area shape="rect" id="node17" href="$class_c_p_p_cli_1_1_ptz_controller.html#aaae3f5219b5093ce3c068b351642154f" title="Triggers a refresh of this PtzController on the VideoXpert system; updating its patterns and presets ..." alt="" coords="212,985,359,1027"/>
+<area shape="rect" id="node7" href="$class_c_p_p_cli_1_1_ptz_controller.html#a315d54652fd852cd4abc5e900f3343dc" title="Creates a new preset using the current PTZ spatial coordinates. " alt="" coords="212,332,359,373"/>
+<area shape="rect" id="node8" href="$class_c_p_p_cli_1_1_ptz_controller.html#a3205c316934173818716d0ee64ebc438" title="Focus near or far until the user wants to stop. " alt="" coords="212,397,359,439"/>
+<area shape="rect" id="node9" href="$class_c_p_p_cli_1_1_ptz_controller.html#a3e6a511a8507a57cfe776b45089b21c9" title="Open or close the iris until the user wants to stop. " alt="" coords="212,463,359,504"/>
+<area shape="rect" id="node10" href="$class_c_p_p_cli_1_1_ptz_controller.html#a4b896c1ea0c205eb15b81ccb6f6021d2" title="Continuously move the field of view at the given speed until stopped. " alt="" coords="212,528,359,569"/>
+<area shape="rect" id="node11" href="$class_c_p_p_cli_1_1_ptz_controller.html#af88f49cab0005e7bb3485d468aaefdd4" title="Deletes a preset from the system. " alt="" coords="212,593,359,635"/>
+<area shape="rect" id="node12" href="$class_c_p_p_cli_1_1_ptz_controller.html#a25cc53c7ac96d003a284c6bea41a4932" title="Get the available patterns. " alt="" coords="212,659,359,700"/>
+<area shape="rect" id="node13" href="$class_c_p_p_cli_1_1_ptz_controller.html#a7d645e59e5d0dc205ef040e851cba574" title="Get the available presets. " alt="" coords="212,724,359,765"/>
+<area shape="rect" id="node14" href="$class_c_p_p_cli_1_1_ptz_controller.html#a52039122bee70fb582472793dcdcf729" title="Update this instances properties. " alt="" coords="212,789,359,831"/>
+<area shape="rect" id="node15" href="$class_c_p_p_cli_1_1_ptz_controller.html#af1ec158bf337f5c75be82dcf9691c1d9" title="Moves the camera position relative to the current position. " alt="" coords="212,855,359,896"/>
+<area shape="rect" id="node16" href="$class_c_p_p_cli_1_1_ptz_controller.html#ad186a818ae7883ff585102e166c545e2" title="Moves the camera position within a percentage relative to the device’s current field of view..." alt="" coords="200,920,371,961"/>
+<area shape="rect" id="node17" href="$class_c_p_p_cli_1_1_ptz_controller.html#afee104ae19351cf207caef9f852203be" title="Repositions a preset to the current PTZ spatial coordinates. " alt="" coords="212,985,359,1027"/>
+<area shape="rect" id="node18" href="$class_c_p_p_cli_1_1_ptz_controller.html#ac7bfd6bdd351fcdb92a766d01ca83bb3" title="Trigger a pattern. " alt="" coords="212,1051,359,1092"/>
+<area shape="rect" id="node19" href="$class_c_p_p_cli_1_1_ptz_controller.html#a37e54c663618b479d1b80a31dfced6a6" title="Triggers a preset by index. " alt="" coords="212,1116,359,1157"/>
+<area shape="rect" id="node20" href="$class_c_p_p_cli_1_1_ptz_controller.html#aaae3f5219b5093ce3c068b351642154f" title="Triggers a refresh of this PtzController on the VideoXpert system; updating its patterns and presets ..." alt="" coords="212,1181,359,1223"/>
 </map>

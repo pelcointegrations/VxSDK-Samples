@@ -25,19 +25,21 @@ Plugin* CppSamples::Events::AddSituation::Run(DataModel* dataModel) {
 /// <param name="vxSystem">Pointer to the VideoExpert system.</param>
 void CppSamples::Events::AddSituation::AddNewSituation(IVxSystem* vxSystem) {
 
-    string sitName = "";
-    string sitType = "";
-
     cout << "\n\n" << "Enter name for situation: ";
-    cin >> sitName;
+    string sitName = Utility::ReadString();
 
     cout << "\n" << "Enter type for situation (in format: 'external/{company_name}/{situation_type}'): ";
-    cin >> sitType;
+    string sitType = Utility::ReadString();
 
     VxNewSituation situation;
     situation.Default();
+#ifndef WIN32
+    strncpy(situation.name, sitName.c_str(), sizeof situation.name);
+    strncpy(situation.type, sitType.c_str(), sizeof situation.type);
+#else
     strncpy_s(situation.name, sitName.c_str(), sizeof situation.name);
     strncpy_s(situation.type, sitType.c_str(), sizeof situation.type);
+#endif
 
     VxResult::Value result = vxSystem->AddSituation(situation);
     if (result == VxResult::kOK)
@@ -48,5 +50,6 @@ void CppSamples::Events::AddSituation::AddNewSituation(IVxSystem* vxSystem) {
     // Remove the memory allocated to the collection.
     delete[] situation.snoozeIntervals;
 
-    system("pause");
+    // Wait for user response before going back to parent menu.
+    Utility::Pause();
 }

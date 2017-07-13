@@ -136,6 +136,16 @@ namespace SDKSampleApp.Source
                 return;
             }
 
+            if (dtpStartDate.Value > dtpEndDate.Value)
+            {
+                pbxImage1.Image = null;
+                pbxImage2.Image = null;
+                pbxImage3.Image = null;
+                pbxImage4.Image = null;
+                pbxImage5.Image = null;
+                return;
+            }
+
             RefreshClipImages();
         }
 
@@ -149,6 +159,16 @@ namespace SDKSampleApp.Source
             if (!_initialEndSet)
             {
                 _initialEndSet = true;
+                return;
+            }
+
+            if (dtpStartDate.Value > dtpEndDate.Value)
+            {
+                pbxImage1.Image = null;
+                pbxImage2.Image = null;
+                pbxImage3.Image = null;
+                pbxImage4.Image = null;
+                pbxImage5.Image = null;
                 return;
             }
 

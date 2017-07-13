@@ -3,16 +3,16 @@
   <Profiles />
   <Settings>
     <Setting Name="IP" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">10.221.224.106</Value>
     </Setting>
     <Setting Name="Port" Type="System.String" Scope="User">
       <Value Profile="(Default)">443</Value>
     </Setting>
     <Setting Name="UserName" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">admin</Value>
     </Setting>
     <Setting Name="Password" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">admin123</Value>
     </Setting>
     <Setting Name="LogDirectory" Type="System.String" Scope="User">
       <Value Profile="(Default)" />

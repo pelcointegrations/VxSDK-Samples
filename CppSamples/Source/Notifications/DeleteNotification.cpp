@@ -11,7 +11,7 @@ using namespace CppSamples::Common;
 /// </summary>
 /// <param name="dataModel">Instance of data model.</param>
 Plugin* CppSamples::Notifications::DeleteNotification::Run(DataModel* dataModel) {
-    system("cls");
+    Utility::ClearScreen();
 
     VxCollection<IVxNotification**> notifications = GetNotifications(dataModel->VxSystem);
     PrintNotifications(notifications);
@@ -30,8 +30,9 @@ Plugin* CppSamples::Notifications::DeleteNotification::Run(DataModel* dataModel)
 
     // Remove the memory allocated to the collection.
     delete[] notifications.collection;
-    // Pause for user input before going back to parent menu.
-    system("pause");
+    // Wait for user response before going back to parent menu.
+    Utility::Pause();
+
     // Return reference of parent plugin to move back to parent menu.
     return GetParent();
 }
@@ -93,9 +94,8 @@ void CppSamples::Notifications::DeleteNotification::PrintNotifications(VxCollect
 int CppSamples::Notifications::DeleteNotification::SelectNotificationIndex(VxCollection<IVxNotification**> &notifications) {
     while (true) {
         // Select notification number
-        int index = 0;
         cout << "\n" << "Enter notification number [1-" << notifications.collectionSize << "] : ";
-        cin >> index;
+        int index = Utility::ReadInt();
         if (index == 0)
             break;
         // Verify user input

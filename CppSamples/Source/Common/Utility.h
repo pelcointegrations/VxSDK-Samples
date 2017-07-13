@@ -1,7 +1,11 @@
 #pragma once
 
 #include "VxSdk.h"
+#ifdef WIN32
 #include <Rpc.h>
+#else
+#include <rpc/rpc.h>
+#endif
 
 namespace CppSamples {
     namespace Common {
@@ -19,7 +23,7 @@ namespace CppSamples {
             /// Login to the VideoExpert system.
             /// </summary>
             /// <param name=""></param>
-            static VxSdk::IVxSystem* Login();
+            static VxSdk::IVxSystem* Login(VxSdk::VxLoginInfo& loginInfo);
 
             /// <summary>
             /// Converts the local time to UTC format
@@ -68,6 +72,36 @@ namespace CppSamples {
             /// Get the time zone offset in seconds
             /// </summary>
             static int TzOffset();
+
+            /// <summary>
+            /// Clear the screen
+            /// </summary>
+            static void ClearScreen();
+
+            /// <summary>
+            /// Read a line from console input
+            /// </summary>
+            static std::string ReadString();
+
+            /// <summary>
+            /// Read an integer from console input
+            /// </summary>
+            static int ReadInt();
+
+            /// <summary>
+            /// Pause for a user input
+            /// </summary>
+            static void Pause();
+
+            /// <summary>
+            /// Replace a give string
+            /// </summary>
+            static std::string Replace(std::string original, std::string from, std::string to);
+
+            /// <summary>
+            /// Converts UTC time to string
+            /// </summary>
+            static std::string ConvertUTCTimeFormatToString(std::string utcFormat);
         };
     }
 }

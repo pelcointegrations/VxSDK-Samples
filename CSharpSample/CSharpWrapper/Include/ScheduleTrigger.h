@@ -163,7 +163,7 @@ namespace CPPCli {
             System::String^ get() { return gcnew System::String(_scheduleTrigger->eventSourceDevice); }
             void set(System::String^ value) {
                 char deviceId[64];
-                strncpy_s(deviceId, Utils::ConvertSysStringNonConst(value), sizeof(deviceId));
+				VxSdk::Utilities::StrCopySafe(deviceId, Utils::ConvertSysStringNonConst(value));
                 _scheduleTrigger->SetEventSourceDevice(deviceId);
             }
         }

@@ -11,7 +11,7 @@ using namespace CppSamples::Common;
 /// </summary>
 /// <param name="dataModel">Instance of data model.</param>
 Plugin* CppSamples::Schedules::DeleteSchedule::Run(DataModel* dataModel) {
-    system("cls");
+    Utility::ClearScreen();
 
     VxCollection<IVxSchedule**> schedules = GetSchedules(dataModel->VxSystem);
     PrintSchedules(schedules);
@@ -30,7 +30,9 @@ Plugin* CppSamples::Schedules::DeleteSchedule::Run(DataModel* dataModel) {
 
     // Remove the memory allocated to the collection.
     delete[] schedules.collection;
-    system("pause");
+    // Wait for user response before going back to parent menu.
+    Utility::Pause();
+
     // Return reference of parent plugin to move back to parent menu.
     return GetParent();
 }
@@ -78,9 +80,8 @@ void CppSamples::Schedules::DeleteSchedule::PrintSchedules(VxCollection<IVxSched
 /// <returns>Index of the selected schedule in the given collection.</returns>
 int CppSamples::Schedules::DeleteSchedule::SelectScheduleIndex(VxCollection<IVxSchedule**> &schedules) {
     while (true) {
-        int index = 0;
         cout << "\n" << "Enter schedule number [1-" << schedules.collectionSize << "] : ";
-        cin >> index;
+        int index = Utility::ReadInt();
         if (index == 0)
             break;
         if (index > 0 && index <= schedules.collectionSize)

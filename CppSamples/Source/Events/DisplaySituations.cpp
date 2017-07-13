@@ -12,7 +12,9 @@ Plugin* CppSamples::Events::DisplaySituations::Run(DataModel* dataModel) {
     Display(dataModel->VxSystem);
 
     // Pause for user input before going back to parent menu.
-    system("pause");
+    // Wait for user response before going back to parent menu.
+    Utility::Pause();
+
     // Return reference of parent plugin to move back to parent menu.
     return GetParent();
 }

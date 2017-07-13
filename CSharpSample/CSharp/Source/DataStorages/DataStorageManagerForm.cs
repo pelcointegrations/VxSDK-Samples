@@ -31,12 +31,13 @@ namespace SDKSampleApp.Source
             var dataStorages = MainForm.CurrentSystem.GetDataStorages();
             foreach (var dataStorage in dataStorages)
             {
+                var isEdge = dataStorage.Type == DataStorage.DataStorageTypes.Edge;
                 var lvItem = new ListViewItem(dataStorage.Name);
                 lvItem.SubItems.Add(dataStorage.Id);
                 lvItem.SubItems.Add(dataStorage.Type.ToString());
                 lvItem.SubItems.Add(dataStorage.HostDevice.Name);
-                lvItem.SubItems.Add(dataStorage.Drivers.Count.ToString());
-                lvItem.SubItems.Add(dataStorage.DeviceAssignments.Count.ToString());
+                lvItem.SubItems.Add(isEdge ? "N/A": dataStorage.Drivers.Count.ToString());
+                lvItem.SubItems.Add(isEdge ? "N/A" : dataStorage.DeviceAssignments.Count.ToString());
                 lvItem.Tag = dataStorage;
                 lvDataStorageManager.Items.Add(lvItem);
             }

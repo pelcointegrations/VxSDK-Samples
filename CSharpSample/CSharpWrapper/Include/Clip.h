@@ -2,6 +2,7 @@
 #ifndef Clip_h__
 #define Clip_h__
 
+#include "DataInterface.h"
 #include "SnapshotFilter.h"
 #include "Utils.h"
 
@@ -96,6 +97,15 @@ namespace CPPCli {
         System::String^ GetSnapshotEndpoint(SnapshotFilter^ filter);
 
         /// <summary>
+        /// Gets the data interfaces available for retrieval of the stored media this clip represents.
+        /// </summary>
+        /// <value>A <c>List</c> of the data interfaces.</value>
+        property System::Collections::Generic::List<DataInterface^>^ DataInterfaces {
+        public:
+            System::Collections::Generic::List<DataInterface^>^ get() { return _GetDataInterfaces(); }
+        }
+
+        /// <summary>
         /// Gets the unique identifier of the clips data source.
         /// </summary>
         /// <value>The unique identifier.</value>
@@ -111,6 +121,15 @@ namespace CPPCli {
         property System::String^ DataSourceName {
         public:
             System::String^ get() { return gcnew System::String(_clip->dataSourceName); }
+        }
+
+        /// <summary>
+        /// Gets the unique identifier of the data storage on which the media for this clip is stored.
+        /// </summary>
+        /// <value>The unique identifier.</value>
+        property System::String^ DataStorageId {
+        public:
+            System::String^ get() { return gcnew System::String(_clip->dataStorageId); }
         }
 
         /// <summary>
@@ -159,6 +178,16 @@ namespace CPPCli {
         }
 
         /// <summary>
+        /// Gets the unique identifier of the data storage on which the media for this clip was originally stored. If
+        /// different than <see cref="DataStorageId" />, indicates that this clip was copied to the data storage from another data storage.
+        /// </summary>
+        /// <value>The unique identifier.</value>
+        property System::String^ SourceDataStorageId {
+        public:
+            System::String^ get() { return gcnew System::String(_clip->sourceDataStorageId); }
+        }
+
+        /// <summary>
         /// Gets the start time of the clip.
         /// </summary>
         /// <value>The start time.</value>
@@ -169,6 +198,7 @@ namespace CPPCli {
 
     internal:
         VxSdk::IVxClip* _clip;
+        System::Collections::Generic::List<DataInterface^>^ _GetDataInterfaces();
     };
 }
 #endif // Clip_h__

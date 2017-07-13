@@ -11,12 +11,14 @@ using namespace CppSamples::Common;
 /// </summary>
 /// <param name="dataModel">Instance of data model.</param>
 Plugin* CppSamples::Notifications::ViewAllNotifications::Run(DataModel* dataModel) {
-    system("cls");
+    Utility::ClearScreen();
 
     VxCollection<IVxNotification**> notifications = GetNotifications(dataModel->VxSystem);
     PrintNotifications(notifications);
 
-    system("pause");
+    // Wait for user response before going back to parent menu.
+    Utility::Pause();
+
     // Remove the memory allocated to the collection.
     delete[] notifications.collection;
     // Return reference of parent plugin to move back to parent menu.

@@ -12,7 +12,9 @@ Plugin* CppSamples::Events::DeleteSituation::Run(DataModel* dataModel) {
     Delete(dataModel->VxSystem);
 
     // Pause for user input before going back to parent menu.
-    system("pause");
+    // Wait for user response before going back to parent menu.
+    Utility::Pause();
+
     // Return reference of parent plugin to move back to parent menu.
     return GetParent();
 }
@@ -22,16 +24,18 @@ Plugin* CppSamples::Events::DeleteSituation::Run(DataModel* dataModel) {
 /// </summary>
 /// <param name="vxSystem">system pointer</param>
 void CppSamples::Events::DeleteSituation::Delete(IVxSystem* vxSystem) {
-
     // Get all situations from the system
     cout << "\n" << "Fetching situations from system..Please wait..\n";
     VxCollection<IVxSituation**> situations = GetSituations(vxSystem);
     DisplaySituationDetailsOnScreen(situations);
 
     // User selects a situation
-    int situationToDelete = -1;
     cout << "\n" << "Enter the index of situation to delete [1-" << situations.collectionSize << "] : ";
-    cin >> situationToDelete;
+    int situationToDelete = Utility::ReadInt();
+
+    // Validate user input
+    if (situationToDelete < 1 || situationToDelete > situations.collectionSize)
+        return;
 
     // Print details of selected situation to delete
     IVxSituation* situation = situations.collection[situationToDelete - 1];
@@ -50,7 +54,6 @@ void CppSamples::Events::DeleteSituation::Delete(IVxSystem* vxSystem) {
 
 // Get a collection of situations from the given VideoExpert system.
 VxCollection<IVxSituation**> CppSamples::Events::DeleteSituation::GetSituations(IVxSystem* vxSystem) {
-
     // Read the size of collection from system.
     VxCollection<IVxSituation**> situations;
     VxResult::Value result = vxSystem->GetSituations(situations);
@@ -69,7 +72,6 @@ VxCollection<IVxSituation**> CppSamples::Events::DeleteSituation::GetSituations(
 /// </summary>
 /// <param name="situations">Situations list to iterate</param>
 void CppSamples::Events::DeleteSituation::DisplaySituationDetailsOnScreen(VxCollection<IVxSituation**> situations) {
-
     if (situations.collectionSize > 0) {
         cout << situations.collectionSize << " situations found.\n";
 

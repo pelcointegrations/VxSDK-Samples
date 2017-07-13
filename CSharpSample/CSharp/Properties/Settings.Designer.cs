@@ -25,7 +25,7 @@ namespace SDKSampleApp.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("10.221.224.106")]
         public string IP {
             get {
                 return ((string)(this["IP"]));
@@ -49,7 +49,7 @@ namespace SDKSampleApp.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("admin")]
         public string UserName {
             get {
                 return ((string)(this["UserName"]));
@@ -61,7 +61,7 @@ namespace SDKSampleApp.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("admin123")]
         public string Password {
             get {
                 return ((string)(this["Password"]));

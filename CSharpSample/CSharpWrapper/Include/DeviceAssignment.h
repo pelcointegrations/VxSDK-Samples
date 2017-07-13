@@ -79,9 +79,18 @@ namespace CPPCli {
             System::String^ get() { return gcnew System::String(_deviceAssignment->driverType); }
             void set(System::String^ value) {
                 char driverType[64];
-                strncpy_s(driverType, Utils::ConvertSysStringNonConst(value), sizeof(driverType));
+                VxSdk::Utilities::StrCopySafe(driverType, Utils::ConvertSysStringNonConst(value));
                 _deviceAssignment->SetDriverType(driverType);
             }
+        }
+
+        /// <summary>
+        /// Gets the unique identifier of the device assignment.
+        /// </summary>
+        /// <value>The unique identifier.</value>
+        property System::String^ Id {
+        public:
+            System::String^ get() { return gcnew System::String(_deviceAssignment->id); }
         }
 
     internal:

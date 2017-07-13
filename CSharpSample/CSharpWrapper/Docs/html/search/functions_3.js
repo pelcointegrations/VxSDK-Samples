@@ -20,6 +20,7 @@ var searchData=
   ['createmjpegstream',['CreateMjpegStream',['../class_c_p_p_cli_1_1_data_source.html#a73b46581c47ef65d5b4a16e2fd0a3ab3',1,'CPPCli::DataSource']]],
   ['createmonitor',['CreateMonitor',['../class_c_p_p_cli_1_1_v_x_system.html#a48863030947ba8c9ee640e59aff0e31f',1,'CPPCli::VXSystem']]],
   ['createnotification',['CreateNotification',['../class_c_p_p_cli_1_1_v_x_system.html#a1d51ec3edbe971197360ee6c8186d74e',1,'CPPCli::VXSystem']]],
+  ['createquicklog',['CreateQuickLog',['../class_c_p_p_cli_1_1_v_x_system.html#a7fcfca63e635df5d2e3fdc73a6daa42f',1,'CPPCli::VXSystem']]],
   ['createquickreport',['CreateQuickReport',['../class_c_p_p_cli_1_1_v_x_system.html#a7e1d88e2bc26a449b774f9424cf5db31',1,'CPPCli::VXSystem']]],
   ['createtag',['CreateTag',['../class_c_p_p_cli_1_1_v_x_system.html#a674cd93ad45232be0c78a4a5108a6923',1,'CPPCli::VXSystem']]]
 ];

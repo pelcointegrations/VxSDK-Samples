@@ -2,25 +2,29 @@
 #ifndef VXSystem_h__
 #define VXSystem_h__
 
+#include "AlarmInput.h"
 #include "Device.h"
 #include "DataStorage.h"
 #include "Drawing.h"
+#include "InternalEvent.h"
 #include "License.h"
+#include "Monitor.h"
 #include "NewBookmark.h"
 #include "NewDataObject.h"
 #include "NewDevice.h"
 #include "NewEvent.h"
 #include "NewExport.h"
+#include "NewManualRecording.h"
+#include "NewMonitor.h"
 #include "NewNotification.h"
 #include "NewQuickReport.h"
 #include "NewSchedule.h"
 #include "NewSituation.h"
 #include "NewTag.h"
 #include "NewUser.h"
+#include "QuickLog.h"
 #include "QuickReport.h"
-#include "NewDevice.h"
-#include "Monitor.h"
-#include "NewMonitor.h"
+#include "RelayOutput.h"
 
 namespace CPPCli {
 
@@ -32,6 +36,20 @@ namespace CPPCli {
     public:
 
         /// <summary>
+        /// Values that represent the current status of an <c>AutoAddDevices</c> search.
+        /// </summary>
+        enum class SearchStatus {
+            /// <summary>An error or unknown value was returned.</summary>
+            Unknown,
+
+            /// <summary>Device search is in progress.</summary>
+            InProgress,
+
+            /// <summary>Device search has completed.</summary>
+            Complete
+        };
+
+        /// <summary>
         /// The native event callback delegate.
         /// </summary>
         /// <param name="vxEvent">The event sent from system.</param>
@@ -40,10 +58,24 @@ namespace CPPCli {
         delegate void EventCallbackDelegate(VxSdk::IVxEvent* vxEvent);
 
         /// <summary>
+        /// The native internal event callback delegate.
+        /// </summary>
+        /// <param name="vxInternalEvent">The internal event sent from the VxSDK.</param>
+        [System::Runtime::InteropServices::UnmanagedFunctionPointer(
+            System::Runtime::InteropServices::CallingConvention::Cdecl)]
+        delegate void InternalEventCallbackDelegate(VxSdk::VxInternalEvent* vxInternalEvent);
+
+        /// <summary>
         /// The managed event delegate.
         /// </summary>
         /// <param name="vxEvent">The event sent from the system as a managed type.</param>
         delegate void EventDelegate(Event^ vxEvent);
+
+        /// <summary>
+        /// The managed internal event delegate.
+        /// </summary>
+        /// <param name="sdkEvent">The internal event sent from the VxSDK as a managed type.</param>
+        delegate void InternalEventDelegate(InternalEvent^ sdkEvent);
 
         /// <summary>
         /// Constructor that takes an IP as a parameter.
@@ -91,6 +123,13 @@ namespace CPPCli {
         /// <param name="drawingName">The name of the new drawing to be added to the system.</param>
         /// <returns>The <see cref="Results::Value">Result</see> of adding the drawing.</returns>
         Results::Value AddDrawing(System::String^ drawingName);
+
+        /// <summary>
+        /// Add a new manual recording to the VideoXpert system.
+        /// </summary>
+        /// <param name="newManualRecording">The new manual recording to be added.</param>
+        /// <returns><c>nullptr</c> if it fails, else the new manual recording.</returns>
+        ManualRecording^ AddManualRecording(NewManualRecording^ newManualRecording);
 
         /// <summary>
         /// Create a new role on the VideoXpert system.
@@ -159,8 +198,14 @@ namespace CPPCli {
         /// Create a new notification on the VideoXpert system.
         /// </summary>
         /// <param name="newNotification">The new notification to be added to the system.</param>
-        /// <returns><c>nullptr</c> if it fails, else the new export.</returns>
+        /// <returns><c>nullptr</c> if it fails, else the new notification.</returns>
         Notification^ CreateNotification(NewNotification^ newNotification);
+
+        /// <summary>
+        /// Create a new quick log on the VideoXpert system.
+        /// </summary>
+        /// <returns><c>nullptr</c> if it fails, else the new log.</returns>
+        QuickLog^ CreateQuickLog();
 
         /// <summary>
         /// Create a new quick report on the VideoXpert system.
@@ -220,6 +265,13 @@ namespace CPPCli {
         Results::Value DeleteExport(Export^ exportItem);
 
         /// <summary>
+        /// Delete a manual recording from the VideoXpert system.
+        /// </summary>
+        /// <param name="manualRecordingItem">The manual recording to be deleted from the system.</param>
+        /// <returns>The <see cref="Results::Value">Result</see> of deleting the manual recording.</returns>
+        Results::Value DeleteManualRecording(ManualRecording^ manualRecordingItem);
+
+        /// <summary>
         /// Delete a notification from the VideoXpert system.
         /// </summary>
         /// <param name="notificationItem">The notification to be deleted from the system.</param>
@@ -262,6 +314,12 @@ namespace CPPCli {
         Results::Value DeleteUser(User^ user);
 
         /// <summary>
+        /// Get the alarm inputs from the VideoXpert system.
+        /// </summary>
+        /// <returns>A <c>List</c> containing the alarm inputs on the system.</returns>
+        System::Collections::Generic::List<AlarmInput^>^ GetAlarmInputs();
+
+        /// <summary>
         /// Get the bookmarks from the VideoXpert system.
         /// </summary>
         /// <returns>A <c>List</c> containing the bookmarks on the system.</returns>
@@ -284,6 +342,12 @@ namespace CPPCli {
         /// </summary>
         /// <returns>A <c>List</c> containing the data storages.</returns>
         System::Collections::Generic::List<DataStorage^>^ GetDataStorages();
+
+        /// <summary>
+        /// Get the device assignments residing on the system.
+        /// </summary>
+        /// <returns>A <c>List</c> containing the device assignments.</returns>
+        System::Collections::Generic::List<DeviceAssignment^>^ GetDeviceAssignments();
 
         /// <summary>
         /// Get the devices from the VideoXpert system.
@@ -310,6 +374,12 @@ namespace CPPCli {
         License^ GetLicense();
 
         /// <summary>
+        /// Gets the manual recordings residing on the system.
+        /// </summary>
+        /// <returns>A <c>List</c> containing the manual recordings on the system.</returns>
+        System::Collections::Generic::List<ManualRecording^>^ GetManualRecordings();
+
+        /// <summary>
         /// Get the monitors residing on the system.
         /// </summary>
         /// <returns>A <c>List</c> containing the monitors on the system.</returns>
@@ -320,6 +390,12 @@ namespace CPPCli {
         /// </summary>
         /// <returns>A <c>List</c> containing the notifications on the system.</returns>
         System::Collections::Generic::List<Notification^>^ GetNotifications();
+
+        /// <summary>
+        /// Get the relay outputs from the VideoXpert system.
+        /// </summary>
+        /// <returns>A <c>List</c> containing the relay outputs on the system.</returns>
+        System::Collections::Generic::List<RelayOutput^>^ GetRelayOutputs();
 
         /// <summary>
         /// Get the roles from the VideoXpert system.
@@ -365,6 +441,13 @@ namespace CPPCli {
         /// <param name="password">The password to log in with.</param>
         /// <returns>The <see cref="Results::Value">Result</see> of the log in process.</returns>
         Results::Value Login(System::String^ username, System::String^ password);
+
+        /// <summary>
+        /// Log in to the VideoXpert system.
+        /// </summary>
+        /// <param name="authToken">The auth token</param>
+        /// <returns>The <see cref="Results::Value">Result</see> of the log in process.</returns>
+        Results::Value Login(System::String^ authToken);
 
         /// <summary>
         /// Update this instances properties.
@@ -415,6 +498,27 @@ namespace CPPCli {
         }
 
         /// <summary>
+        /// Gets the current <see cref="SearchStatus"/> of an <c>AutoAddDevices</c> search.
+        /// </summary>
+        /// <value>The current <see cref="SearchStatus"/> of an <c>AutoAddDevices</c> search.</value>
+        property SearchStatus DeviceSearchStatus {
+            SearchStatus get() {
+                VxSdk::VxDeviceSearchStatus::Value status;
+                _system->GetDeviceSearchStatus(status);
+                return (SearchStatus)status;
+            }
+        }
+
+        /// <summary>
+        /// Gets the device that hosts this system.
+        /// </summary>
+        /// <value>The host device.</value>
+        property CPPCli::Device^ HostDevice {
+        public:
+            CPPCli::Device^ get() { return _GetHostDevice(); }
+        }
+
+        /// <summary>
         /// Gets the unique identifier of the VideoXpert system.
         /// </summary>
         /// <value>The unique identifier.</value>
@@ -430,7 +534,7 @@ namespace CPPCli {
             System::String^ get() { return gcnew System::String(_system->name); }
             void set(System::String^ value) {
                 char name[64];
-                strncpy_s(name, Utils::ConvertSysStringNonConst(value), sizeof(name));
+                VxSdk::Utilities::StrCopySafe(name, Utils::ConvertSysStringNonConst(value));
                 _system->SetName(name);
             }
         }
@@ -443,14 +547,26 @@ namespace CPPCli {
             void remove(EventDelegate ^eventDelegate);
         }
 
+        /// <summary>
+        /// InternalEvent is raised whenever a new internal event is sent from the VxSDK.
+        /// </summary>
+        event InternalEventDelegate ^ InternalEvent {
+            void add(InternalEventDelegate ^sdkEventDelegate);
+            void remove(InternalEventDelegate ^sdkEventDelegate);
+        }
+
     internal:
         VxSdk::IVxSystem* _system;
         EventCallbackDelegate ^ _callback;
+        InternalEventCallbackDelegate ^ _internalCallback;
         VxSdk::VxLoginInfo* _loginInfo;
         static EventDelegate ^ _systemEvent;
+        static InternalEventDelegate ^ _sdkEvent;
         static void _FireEvent(VxSdk::IVxEvent* vxEvent);
+        static void _FireInternalEvent(VxSdk::VxInternalEvent* vxInternalEvent);
         Configuration::Cluster^ _GetClusterConfig();
         CPPCli::User^ _GetCurrentUser();
+        CPPCli::Device^ _GetHostDevice();
     };
 }
 #endif // VXSystem_h__

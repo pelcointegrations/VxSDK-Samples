@@ -35,7 +35,7 @@ CPPCli::Results::Value CPPCli::User::RemoveFromRole(CPPCli::Role^ role) {
 
 CPPCli::Results::Value CPPCli::User::SetPassword(System::String^ newPassword) {
     char password[64];
-    strncpy_s(password, Utils::ConvertSysStringNonConst(newPassword), sizeof(password));
+    VxSdk::Utilities::StrCopySafe(password, Utils::ConvertSysStringNonConst(newPassword));
 
     // Make the call to set the users password
     VxSdk::VxResult::Value result = _user->SetPassword(password);

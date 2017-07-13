@@ -44,6 +44,8 @@
             this.btnAutoDiscover = new System.Windows.Forms.Button();
             this.btnCommission = new System.Windows.Forms.Button();
             this.btnDecommission = new System.Windows.Forms.Button();
+            this.lblAutoDiscoveryStatus = new System.Windows.Forms.Label();
+            this.lblStatus = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnRefresh
@@ -175,11 +177,30 @@
             this.btnDecommission.UseVisualStyleBackColor = true;
             this.btnDecommission.Click += new System.EventHandler(this.ButtonDecommission_Click);
             // 
+            // lblAutoDiscoveryStatus
+            // 
+            this.lblAutoDiscoveryStatus.AutoSize = true;
+            this.lblAutoDiscoveryStatus.Location = new System.Drawing.Point(13, 413);
+            this.lblAutoDiscoveryStatus.Name = "lblAutoDiscoveryStatus";
+            this.lblAutoDiscoveryStatus.Size = new System.Drawing.Size(115, 13);
+            this.lblAutoDiscoveryStatus.TabIndex = 16;
+            this.lblAutoDiscoveryStatus.Text = "AutoDiscovery Status: ";
+            // 
+            // lblStatus
+            // 
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.Location = new System.Drawing.Point(125, 413);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(0, 13);
+            this.lblStatus.TabIndex = 17;
+            // 
             // DeviceManagerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1160, 419);
+            this.ClientSize = new System.Drawing.Size(1160, 432);
+            this.Controls.Add(this.lblStatus);
+            this.Controls.Add(this.lblAutoDiscoveryStatus);
             this.Controls.Add(this.btnDecommission);
             this.Controls.Add(this.btnCommission);
             this.Controls.Add(this.btnAutoDiscover);
@@ -196,6 +217,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Device Manager";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -217,5 +239,7 @@
         private System.Windows.Forms.Button btnAutoDiscover;
         private System.Windows.Forms.Button btnCommission;
         private System.Windows.Forms.Button btnDecommission;
+        private System.Windows.Forms.Label lblAutoDiscoveryStatus;
+        private System.Windows.Forms.Label lblStatus;
     }
 }

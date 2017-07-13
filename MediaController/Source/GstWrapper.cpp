@@ -7,8 +7,13 @@
 #include <gst/video/video.h>
 #include <boost/date_time/posix_time/posix_time.hpp>
 #include <boost/thread.hpp>
-#include <Winsock2.h>
 #include "libsoup/soup-logger.h"
+#include <chrono>
+#ifdef WIN32
+#include "Winsock2.h"
+#else
+#include <arpa/inet.h>
+#endif
 
 using namespace std;
 using namespace MediaController;
@@ -117,6 +122,17 @@ GstPadProbeReturn OnRtpPacketReceived(GstPad *localPad, GstPadProbeInfo *info, G
     return GST_PAD_PROBE_OK;
 }
 
+long TzOffset() {
+    tm utcTm{ 0 }, localTm{ 0 };
+    time_t local = time(nullptr);
+    gmtime_s(&utcTm, &local);
+    localtime_s(&localTm, &local);
+    localTm.tm_isdst = 0;
+    local = mktime(&localTm);
+    time_t utc = mktime(&utcTm);
+    return static_cast<long>(difftime(local, utc));
+}
+
 GstPadProbeReturn OnJpegPacketReceived(GstPad *localPad, GstPadProbeInfo *info, GstVars *vars) {
     // Get the event info if available.
     GstEvent *event = GST_PAD_PROBE_INFO_EVENT(info);
@@ -163,6 +179,28 @@ GstPadProbeReturn OnJpegPacketReceived(GstPad *localPad, GstPadProbeInfo *info, 
                 // Set the lastTimestamp value to the newly generated value.
                 vars->lastTimestamp = streamTs;
             }
+        }
+        else if (gst_structure_has_field(responseHeaders, Constants::kHeaderResourceTimestamp)) {
+            string timestamp(gst_structure_get_string(responseHeaders, Constants::kHeaderResourceTimestamp));
+            if (timestamp.length() > 24)
+                timestamp = timestamp.substr(0, timestamp.size() - 6);
+
+            long long unixTime = 0;
+            tm localTm;
+            time_t local = time(nullptr);
+            localtime_s(&localTm, &local);
+            stringstream timeStream(timestamp);
+            timeStream >> get_time(&localTm, "%Y-%m-%dT%H:%M:%S");
+            if (timeStream.good()) {
+                auto timePoint = chrono::system_clock::from_time_t(mktime(&localTm));
+                unixTime = chrono::duration_cast<chrono::seconds>(timePoint.time_since_epoch()).count();
+                if (vars->mode == Controller::kPlayback) {
+                    unixTime += TzOffset();
+                }
+            }
+
+            vars->currentTimestamp = static_cast<unsigned long>(unixTime);
+            vars->lastTimestamp = static_cast<uint32_t>(unixTime);
         }
     }
     return GST_PAD_PROBE_OK;
@@ -505,12 +543,13 @@ void GstWrapper::Pause() const {
 
 void GstWrapper::ClearPipeline() {
     g_print("Stopping receiver pipeline.\n");
-    gst_element_set_state(_gstVars.pipeline, GST_STATE_NULL);
-    gst_object_unref(_gstVars.pipeline);
-    _gstVars.isPipelineActive = false;
-    _gstVars.lastTimestamp = NULL;
     if (_gstVars.protocol == VxSdk::VxStreamProtocol::kMjpegPull) {
         g_source_remove(_gstVars.busWatchId);
         g_main_loop_unref(_gstVars.loop);
     }
+
+    gst_element_set_state(_gstVars.pipeline, GST_STATE_NULL);
+    gst_object_unref(_gstVars.pipeline);
+    _gstVars.isPipelineActive = false;
+    _gstVars.lastTimestamp = NULL;
 }

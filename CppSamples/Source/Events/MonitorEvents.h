@@ -55,12 +55,6 @@ namespace CppSamples {
             /// </summary>
             /// <param name="vxSystem">Pointer to the VideoExpert system.</param>
             bool UnSubscribeEvents(VxSdk::IVxSystem* vxSystem);
-
-            /// <summary>
-            /// Converts the UTC time format to string format (HH:MM::SS, Day Month)
-            /// </summary>
-            /// <param name="utcFormat">time string in UTC format (YYYYmmddTHHMMSSZ)</param>
-            static std::string CovertUTCTimeFormatToString(std::string utcFormat);
         };
     }
 }

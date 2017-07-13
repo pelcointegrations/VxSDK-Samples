@@ -46,6 +46,7 @@ var class_c_p_p_cli_1_1_privilege =
     [ "Unlink", "class_c_p_p_cli_1_1_privilege.html#a0af07825f32068b6625f470f40fac68d", null ],
     [ "Unlink", "class_c_p_p_cli_1_1_privilege.html#a3399c8902f14849e866fdd1da878206a", null ],
     [ "Unlink", "class_c_p_p_cli_1_1_privilege.html#a9ac4c1e3f7a69392ec16b50a58f13329", null ],
+    [ "ExcludeRestricted", "class_c_p_p_cli_1_1_privilege.html#aa3b1efbebe3e3d0566d1711549e465db", null ],
     [ "Id", "class_c_p_p_cli_1_1_privilege.html#a7121aee5c6586117bf6fcbf0e409eeec", null ],
     [ "IsRestricted", "class_c_p_p_cli_1_1_privilege.html#a8c39dbab6d84140763b8b6ede3407861", null ],
     [ "LinkedDataSources", "class_c_p_p_cli_1_1_privilege.html#ae68495a0acc6ea9296b02a2a95d3ecec", null ],

@@ -29,6 +29,17 @@ namespace CPPCli {
         }
 
         /// <summary>
+        /// Gets or sets the specific data encoding to export (quality, framerate, and resolution). This can be obtained from the desired data interface of
+        /// the clip. If not specified, the server shall select the data encoding.
+        /// </summary>
+        /// <value>The specific data encoding to export.</value>
+        property System::String^ DataEncodingId {
+        public:
+            System::String^ get() { return gcnew System::String(_newExportClip->dataEncodingId); }
+            void set(System::String^ value) { VxSdk::Utilities::StrCopySafe(_newExportClip->dataEncodingId, Utils::ConvertSysString(value)); }
+        }
+
+        /// <summary>
         /// Gets or sets the unique identifier of the data source.
         /// </summary>
         /// <value>The unique identifier.</value>

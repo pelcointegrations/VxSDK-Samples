@@ -15,6 +15,16 @@ namespace CppSamples {
             /// Represents a VideoXpert system and allows the user to manage the system and devices.
             /// </summary>
             VxSdk::IVxSystem* VxSystem;
+
+            /// <summary>
+            /// The user name used to log in to the VideoXpert system.
+            /// </summary>
+            std::string username;
+
+            /// <summary>
+            /// The password used to log in to the VideoXpert system.
+            /// </summary>
+            std::string password;
         };
 
         /// <summary>

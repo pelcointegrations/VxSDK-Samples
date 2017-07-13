@@ -1,4 +1,6 @@
 <map id="CppSamples::Schedules::AddTriggerToSchedule::Run" name="CppSamples::Schedules::AddTriggerToSchedule::Run">
 <area shape="rect" id="node2" href="$class_cpp_samples_1_1_common_1_1_option_selector.html#a8c183cd39fece9e8ef79717c0544c9a2" title="The given name and item will be added to the collection. " alt="" coords="257,5,429,47"/>
 <area shape="rect" id="node3" href="$class_cpp_samples_1_1_common_1_1_option_selector.html#ae9ce81a1a63a838f8d3534f6f755e2c5" title="Prints a collection of options and chose a user defined one. " alt="" coords="244,71,443,112"/>
+<area shape="rect" id="node4" href="$class_cpp_samples_1_1_common_1_1_utility.html#ae4d196b8a6c4e7a18e7a1f61657cef8d" title="Clear the screen " alt="" coords="491,37,647,79"/>
+<area shape="rect" id="node5" href="$class_cpp_samples_1_1_common_1_1_utility.html#ae93d1db9beef07ae8b5bac0baddf8c7a" title="Read an integer from console input " alt="" coords="491,103,647,144"/>
 </map>

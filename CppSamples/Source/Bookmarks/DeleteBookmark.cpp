@@ -32,7 +32,10 @@ Plugin* CppSamples::Bookmarks::DeleteBookmark::Run(DataModel* dataModel) {
 
     // Remove the memory allocated to the collection.
     delete[] bookmarks.collection;
-    system("pause");
+
+    // Wait for user response before going back to parent menu.
+    Utility::Pause();
+
     // Return reference of parent plugin to move back to parent menu.
     return GetParent();
 }
@@ -81,9 +84,8 @@ void CppSamples::Bookmarks::DeleteBookmark::PrintBookmarks(VxCollection<IVxBookm
 /// <returns>Index of the selected bookmark in the given collection.</returns>
 int CppSamples::Bookmarks::DeleteBookmark::SelectBookmarkIndex(VxCollection<IVxBookmark**> &bookmarks) {
     while (true) {
-        int index = 0;
         cout << "\n" << "Enter bookmark number [1-" << bookmarks.collectionSize << "] : ";
-        cin >> index;
+        int index = Utility::ReadInt();
         if (index == 0)
             break;
         if (index > 0 && index <= bookmarks.collectionSize)

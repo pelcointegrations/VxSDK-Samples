@@ -6,5 +6,6 @@ var searchData=
   ['preset',['Preset',['../class_c_p_p_cli_1_1_preset.html#ac6c742a755caa04e79f0862644bee55e',1,'CPPCli::Preset']]],
   ['privilege',['Privilege',['../class_c_p_p_cli_1_1_privilege.html#a04faea3847a97394639a4669bde402d2',1,'CPPCli::Privilege']]],
   ['ptzcontroller',['PtzController',['../class_c_p_p_cli_1_1_ptz_controller.html#a7df16ff611c5d2ecf9501f7b89a0a5b8',1,'CPPCli::PtzController']]],
+  ['ptzlimits',['PtzLimits',['../class_c_p_p_cli_1_1_ptz_limits.html#aa77ef555897948ab87a5078af6046caf',1,'CPPCli::PtzLimits']]],
   ['ptzlock',['PtzLock',['../class_c_p_p_cli_1_1_ptz_lock.html#ab84316dcc2a34c2ec453d6cbb1247253',1,'CPPCli::PtzLock']]]
 ];

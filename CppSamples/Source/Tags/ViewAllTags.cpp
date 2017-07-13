@@ -11,13 +11,15 @@ using namespace CppSamples::Common;
 /// </summary>
 /// <param name="dataModel">Instance of data model.</param>
 Plugin* CppSamples::Tags::ViewAllTags::Run(DataModel* dataModel) {
-    system("cls");
+    Utility::ClearScreen();
 
     // Get a collection of tags
     VxCollection<IVxTag**> tags = GetTags(dataModel->VxSystem);
     PrintTags(tags);
 
-    system("pause");
+    // Wait for user response before going back to parent menu.
+    Utility::Pause();
+
     // Remove the memory allocated to the collection.
     delete[] tags.collection;
     // Return reference of parent plugin to move back to parent menu.

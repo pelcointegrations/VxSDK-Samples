@@ -152,7 +152,7 @@ namespace CPPCli {
         public:
             System::String^ get() { return gcnew System::String(_monitor->name); }
             void set(System::String^ value) {
-                strncpy_s(_monitor->name, Utils::ConvertSysStringNonConst(value), sizeof(_monitor->name));
+				VxSdk::Utilities::StrCopySafe(_monitor->name, Utils::ConvertSysStringNonConst(value));
             }
         }
 

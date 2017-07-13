@@ -33,6 +33,9 @@ namespace CPPCli {
 
             /// <summary>A VideoXpert storage device.</summary>
             VideoXpertStorage,
+
+            /// <summary>An edge storage device.</summary>
+            Edge
         };
 
         /// <summary>
@@ -128,6 +131,15 @@ namespace CPPCli {
         }
 
         /// <summary>
+        /// Gets a value indicating whether the data storage is configured as a failover unit.
+        /// </summary>
+        /// <value><c>true</c> if the data storage is a failover unit, <c>false</c> if not.</value>
+        property bool IsFailover {
+        public:
+            bool get() { return _dataStorage->isFailover; }
+        }
+
+        /// <summary>
         /// Gets or sets the friendly name of the data storage.
         /// </summary>
         /// <value>The friendly name.</value>
@@ -136,7 +148,7 @@ namespace CPPCli {
             System::String^ get() { return gcnew System::String(_dataStorage->name); }
             void set(System::String^ value) {
                 char name[64];
-                strncpy_s(name, Utils::ConvertSysStringNonConst(value), sizeof(name));
+                VxSdk::Utilities::StrCopySafe(name, Utils::ConvertSysStringNonConst(value));
                 _dataStorage->SetName(name);
             }
         }

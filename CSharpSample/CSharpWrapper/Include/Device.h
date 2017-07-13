@@ -2,8 +2,10 @@
 #ifndef Device_h__
 #define Device_h__
 
+#include "AlarmInput.h"
 #include "DataSource.h"
 #include "DeviceAssignment.h"
+#include "RelayOutput.h"
 
 namespace CPPCli {
 
@@ -14,6 +16,20 @@ namespace CPPCli {
     public:
 
         /// <summary>
+        /// Values that represent the operational state of a device.
+        /// </summary>
+        enum class DeviceStatus {
+            /// <summary>An error or unknown value was returned.</summary>
+            Unknown,
+
+            /// <summary>Being prepared for use.</summary>
+            Initializing,
+
+            /// <summary>Invalid/missing credentials.</summary>
+            Unauthenticated
+        };
+
+        /// <summary>
         /// Values that represent device types.
         /// </summary>
         enum class Types {
@@ -22,7 +38,7 @@ namespace CPPCli {
 
             /// <summary>A VideoXpert Core device.</summary>
             Core,
-            
+
             /// <summary>A VideoXpert Core/MediaGateway device.</summary>
             CoreMg,
 
@@ -46,10 +62,10 @@ namespace CPPCli {
 
             /// <summary>A network storage device.</summary>
             Recorder,
-            
+
             /// <summary>A UDI device.</summary>
             Udi,
-            
+
             /// <summary>A UI device.</summary>
             Ui,
 
@@ -85,6 +101,15 @@ namespace CPPCli {
         Results::Value Refresh();
 
         /// <summary>
+        /// Gets the alarm inputs hosted by this device.
+        /// </summary>
+        /// <value>A <c>List</c> of alarm inputs.</value>
+        property System::Collections::Generic::List<AlarmInput^>^ AlarmInputs {
+        public:
+            System::Collections::Generic::List<AlarmInput^>^ get() { return _GetAlarmInputs(); }
+        }
+
+        /// <summary>
         /// Gets the data sources hosted by this device.
         /// </summary>
         /// <value>A <c>List</c> of data sources.</value>
@@ -100,6 +125,15 @@ namespace CPPCli {
         property System::Collections::Generic::List<DeviceAssignment^>^ DeviceAssignments {
         public:
             System::Collections::Generic::List<DeviceAssignment^>^ get() { return _GetDeviceAssignments(); }
+        }
+
+        /// <summary>
+        /// Gets the driver device identifier.
+        /// </summary>
+        /// <value>The driver device identifier.</value>
+        property System::String^ DriverDeviceId {
+        public:
+            System::String^ get() { return gcnew System::String(_device->driverDeviceId); }
         }
 
         /// <summary>
@@ -165,7 +199,7 @@ namespace CPPCli {
             System::String^ get() { return gcnew System::String(_device->name); }
             void set(System::String^ value) {
                 char name[64];
-                strncpy_s(name, Utils::ConvertSysStringNonConst(value), sizeof(name));
+                VxSdk::Utilities::StrCopySafe(name, Utils::ConvertSysStringNonConst(value));
                 _device->SetName(name);
             }
         }
@@ -178,9 +212,18 @@ namespace CPPCli {
         public:
             void set(System::String^ value) {
                 char password[64];
-                strncpy_s(password, Utils::ConvertSysStringNonConst(value), sizeof(password));
+                VxSdk::Utilities::StrCopySafe(password, Utils::ConvertSysStringNonConst(value));
                 _device->SetPassword(password);
             }
+        }
+
+        /// <summary>
+        /// Gets the relay outputs hosted by this device.
+        /// </summary>
+        /// <value>A <c>List</c> of relay outputs.</value>
+        property System::Collections::Generic::List<RelayOutput^>^ RelayOutputs {
+        public:
+            System::Collections::Generic::List<RelayOutput^>^ get() { return _GetRelayOutputs(); }
         }
 
         /// <summary>
@@ -202,6 +245,21 @@ namespace CPPCli {
         }
 
         /// <summary>
+        /// Gets the current device status.
+        /// </summary>
+        /// <value>A device status <c>List</c>.</value>
+        property System::Collections::Generic::List<DeviceStatus>^ Status {
+        public:
+            System::Collections::Generic::List<DeviceStatus>^ get() {
+                System::Collections::Generic::List<DeviceStatus>^ mlist = gcnew System::Collections::Generic::List<DeviceStatus>();
+                for (int i = 0; i < _device->statusSize; i++)
+                    mlist->Add((DeviceStatus)_device->status[i]);
+
+                return mlist;
+            }
+        }
+
+        /// <summary>
         /// Gets the type of device.
         /// </summary>
         /// <value>The device <see cref="Types">Type</see>.</value>
@@ -219,7 +277,7 @@ namespace CPPCli {
             System::String^ get() { return gcnew System::String(_device->username); }
             void set(System::String^ value) {
                 char username[64];
-                strncpy_s(username, Utils::ConvertSysStringNonConst(value), sizeof(username));
+                VxSdk::Utilities::StrCopySafe(username, Utils::ConvertSysStringNonConst(value));
                 _device->SetUsername(username);
             }
         }
@@ -253,8 +311,10 @@ namespace CPPCli {
 
     internal:
         VxSdk::IVxDevice* _device;
+        System::Collections::Generic::List<AlarmInput^>^ _GetAlarmInputs();
         System::Collections::Generic::List<DataSource^>^ _GetDataSources();
         System::Collections::Generic::List<DeviceAssignment^>^ _GetDeviceAssignments();
+        System::Collections::Generic::List<RelayOutput^>^ _GetRelayOutputs();
     };
 }
 #endif // Device_h__

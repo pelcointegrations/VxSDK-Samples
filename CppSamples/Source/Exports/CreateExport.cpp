@@ -15,8 +15,9 @@ Plugin* CppSamples::Exports::CreateExport::Run(DataModel* dataModel) {
 
     CreateNewExportOption(dataSources, dataModel->VxSystem);
 
-    // Pause for user input before going back to parent menu.
-    system("pause");
+    // Wait for user response before going back to parent menu.
+    Utility::Pause();
+
     // Remove the memory allocated to the collection.
     delete[] dataSources.collection;
     // Return reference of parent plugin to move back to parent menu.
@@ -26,12 +27,11 @@ Plugin* CppSamples::Exports::CreateExport::Run(DataModel* dataModel) {
 // Creates an export using the given system.
 void CppSamples::Exports::CreateExport::CreateNewExportOption(VxCollection<IVxDataSource**> dataSources, IVxSystem* vxSystem) const {
     // Select a Data source
-    int camNum;
     cout << "\nEnter data source index [1-"<<dataSources.collectionSize<<"]: ";
-    cin >> camNum;
+    int camNum = Utility::ReadInt();
 
     // Verify input
-    if (camNum < 1 || camNum >= dataSources.collectionSize)
+    if (camNum < 1 || camNum > dataSources.collectionSize)
         return;
 
     // Print the details of selected data source
@@ -45,7 +45,6 @@ void CppSamples::Exports::CreateExport::CreateNewExportOption(VxCollection<IVxDa
     int fileFormatOption = 1;
 
     if (clips.collectionSize > 0) {
-        cin.ignore();
         // Start time for export
         cout << "\n" << "Input start time for export clip(yyyy-mm-dd hh:mm:ss): ";
         struct tm startTime = Utility::GetDateAndTimeFromUser();
@@ -58,22 +57,11 @@ void CppSamples::Exports::CreateExport::CreateNewExportOption(VxCollection<IVxDa
 
         // Read name of export
         cout << "\n" << "Enter name for your export: ";
-        getline(cin, exportName);
-
-        // File Format Option
-        cout << "\n\t" << "1.MkvZip";
-        cout << "\n\t" << "2.Mp4";
-        cout << "\n" << "Choose a file format for your export from above options: ";
-        cin >> fileFormatOption;
+        exportName = Utility::ReadString();
 
         // Create instance of export structure and assign user inputs.
         VxNewExport* newExport = new VxNewExport();
-        if (fileFormatOption == 1) {
-            newExport->format = VxExportFormat::kMkvZip;
-        }
-        else if (fileFormatOption == 2) {
-            newExport->format = VxExportFormat::kMp4;
-        }
+        newExport->format = VxExportFormat::kMkvZip;
         Utilities::StrCopySafe(newExport->name, exportName.c_str());
 
         // Create instance of Export Clip

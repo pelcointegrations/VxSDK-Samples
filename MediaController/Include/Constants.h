@@ -17,27 +17,28 @@ namespace MediaController {
         static const float kMillisecondsFloat = 1000.0;
 
         // Header names
-        static const char* kHeaderLocation = "location";
-        static const char* kHeaderSession = "session";
+        static const char* kHeaderLocation = "Location";
+        static const char* kHeaderSession = "Session";
         static const char* kHeaderUserAgent = "User-Agent";
         static const char* kHeaderTransport = "Transport";
         static const char* kHeaderCSeq = "CSeq";
         static const char* kHeaderAccept = "Accept";
         static const char* kHeaderRange = "Range";
         static const char* kHeaderScale = "Scale";
-        static const char* kHeaderContentLength = "content-length";
+        static const char* kHeaderContentLength = "Content-Length";
         static const char* kHeaderContentDisposition = "Content-Disposition";
+        static const char* kHeaderResourceTimestamp = "X-Resource-Timestamp";
 
-		static const char* kLowerCaseHeaderLocation = "location";
-		static const char* kLowerCaseHeaderSession = "session";
-		static const char* kLowerCaseHeaderUserAgent = "user-agent";
-		static const char* kLowerCaseHeaderTransport = "transport";
-		static const char* kLowerCaseHeaderCSeq = "cseq";
-		static const char* kLowerCaseHeaderAccept = "accept";
-		static const char* kLowerCaseHeaderRange = "range";
-		static const char* kLowerCaseHeaderScale = "scale";
-		static const char* kLowerCaseHeaderContentLength = "content-length";
-		static const char* kLowerCaseHeaderContentDisposition = "content-disposition";
+        static const char* kLowerCaseHeaderLocation = "location";
+        static const char* kLowerCaseHeaderSession = "session";
+        static const char* kLowerCaseHeaderUserAgent = "user-agent";
+        static const char* kLowerCaseHeaderTransport = "transport";
+        static const char* kLowerCaseHeaderCSeq = "cseq";
+        static const char* kLowerCaseHeaderAccept = "accept";
+        static const char* kLowerCaseHeaderRange = "range";
+        static const char* kLowerCaseHeaderScale = "scale";
+        static const char* kLowerCaseHeaderContentLength = "content-length";
+        static const char* kLowerCaseHeaderContentDisposition = "content-disposition";
 
         // Status codes
         static const unsigned short kStatusCode200 = 200;
@@ -92,14 +93,20 @@ namespace MediaController {
         static const char* kRtpH264Dec = "avdec_h264";
         static const char* kRtpMp4vDepay = "rtpmp4vdepay";
         static const char* kRtpMp4vDec = "avdec_mpeg4";
-        static const char* kVideoSink = "d3dvideosink";
         static const char* kRtpBin = "rtpbin";
         static const char* kHttpSrc = "souphttpsrc";
         static const char* kJpegDec = "jpegdec";
         static const char* kRtpJpegDepay = "rtpjpegdepay";
         static const char* kRtpAudioDepay = "rtppcmudepay";
         static const char* kRtpAudioDec = "mulawdec";
+#ifndef WIN32
+        static const char* kVideoSink = "xvimagesink";
+        static const char* kAudioSink = "alsasink";
+#else
+        static const char* kVideoSink = "d3dvideosink";
         static const char* kAudioSink = "directsoundsink";
+#endif
+
     }
 }
 #endif // Constants_h__

@@ -36,8 +36,9 @@ Plugin* CppSamples::Notifications::AddNotification::Run(DataModel* dataModel) {
     else
         cout << "\n" << "Failed to add notification.\n";
 
-    // Pause for user input before going back to parent menu.
-    system("pause");
+    // Wait for user response before going back to parent menu.
+    Utility::Pause();
+
     // Return reference of parent plugin to move back to parent menu.
     return GetParent();
 }
@@ -59,8 +60,7 @@ vector<string> CppSamples::Notifications::AddNotification::GetSelectedRoles(IVxS
             continue;
 
         cout << "\n" << "Select role (" << role->name<< ") y/n : ";
-        string option;
-        cin >> option;
+        string option = Utility::ReadString();
         if (option.size() > 0 && (option[0] == 'y' || option[0] == 'Y')) {
             selectedRoles.push_back(string(role->id));
             cout << role->name << " is selected. \n";

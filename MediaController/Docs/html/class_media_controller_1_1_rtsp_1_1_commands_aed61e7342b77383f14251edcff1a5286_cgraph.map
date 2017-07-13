@@ -5,7 +5,7 @@
 <area shape="rect" id="node5" href="$class_media_controller_1_1_rtsp_1_1_sdp_parser.html#a451b0af69cb552a7bada46ac19a1b2e2" title="Get the first available video media description. " alt="" coords="231,201,410,243"/>
 <area shape="rect" id="node6" href="$class_media_controller_1_1_gst_wrapper.html#aeed3787401bedd57cb6b69d2fd362cc8" title="Set the multicast group address. " alt="" coords="225,267,416,308"/>
 <area shape="rect" id="node7" href="$class_media_controller_1_1_gst_wrapper.html#a7375a8fa9172f8d9f3ad047c01f9bacd" title="Set the stream capabilities. " alt="" coords="225,332,416,373"/>
-<area shape="rect" id="node8" href="$class_media_controller_1_1_gst_wrapper.html#a9d9daf14c6b6cfe52a7fb0bcd6b4a76c" title="Create the pipeline for an RTSP video stream. " alt="" coords="225,397,416,439"/>
+<area shape="rect" id="node8" href="$class_media_controller_1_1_gst_wrapper.html#a7acbfc6d1b82c31bc5acac759c2b3854" title="Create the pipeline for an RTSP video stream. " alt="" coords="225,397,416,439"/>
 <area shape="rect" id="node9" href="$class_media_controller_1_1_rtsp_1_1_sdp_parser.html#a4950ff5fbfa0c3966e543faec7dd12f9" title="Get the first available audio media description. " alt="" coords="231,463,410,504"/>
 <area shape="rect" id="node10" href="$class_media_controller_1_1_gst_wrapper.html#a041731491df0ed485c82b323756d6927" title="Create the pipeline for an RTSP audio stream. " alt="" coords="225,528,416,569"/>
 </map>

@@ -134,6 +134,9 @@ Properties</h2></td></tr>
 <tr class="memitem:acf730768f021d7777bc559033373cf29"><td class="memItemLeft" align="right" valign="top">System::String^ &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_new_event.html#acf730768f021d7777bc559033373cf29">GeneratorDeviceId</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:acf730768f021d7777bc559033373cf29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the unique identifier of the device that generated this event.  <a href="#acf730768f021d7777bc559033373cf29">More...</a><br /></td></tr>
 <tr class="separator:acf730768f021d7777bc559033373cf29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50ef21627b0afac2446ec1ccabfd3f77"><td class="memItemLeft" align="right" valign="top">System::String^ &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_new_event.html#a50ef21627b0afac2446ec1ccabfd3f77">Id</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a50ef21627b0afac2446ec1ccabfd3f77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the unique identifier of the event.  <a href="#a50ef21627b0afac2446ec1ccabfd3f77">More...</a><br /></td></tr>
+<tr class="separator:a50ef21627b0afac2446ec1ccabfd3f77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36f0ec4e4ce5e48a65cdf2af2c6881a6"><td class="memItemLeft" align="right" valign="top">System::Collections::Generic::List&lt; System::Collections::Generic::KeyValuePair&lt; System::String^ , System::String^ &gt;&gt;^&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_new_event.html#a36f0ec4e4ce5e48a65cdf2af2c6881a6">Properties</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a36f0ec4e4ce5e48a65cdf2af2c6881a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets any additional information related to the event.  <a href="#a36f0ec4e4ce5e48a65cdf2af2c6881a6">More...</a><br /></td></tr>
 <tr class="separator:a36f0ec4e4ce5e48a65cdf2af2c6881a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -243,6 +246,32 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a50ef21627b0afac2446ec1ccabfd3f77"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System:: String^ CPPCli::NewEvent::Id</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets the unique identifier of the event. </p>
+<p>If not provided, the server will create this value. </p>
+<p>The unique identifier.</p>
+
+<p>Definition at line <a class="el" href="_new_event_8h_source.html#l00045">45</a> of file <a class="el" href="_new_event_8h_source.html">NewEvent.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a36f0ec4e4ce5e48a65cdf2af2c6881a6"></a>
 <div class="memitem">
 <div class="memproto">
@@ -264,7 +293,7 @@ Properties</h2></td></tr>
 <p>Gets or sets any additional information related to the event. </p>
 <p>A <code>List</code> containing the event properties.</p>
 
-<p>Definition at line <a class="el" href="_new_event_8h_source.html#l00045">45</a> of file <a class="el" href="_new_event_8h_source.html">NewEvent.h</a>.</p>
+<p>Definition at line <a class="el" href="_new_event_8h_source.html#l00055">55</a> of file <a class="el" href="_new_event_8h_source.html">NewEvent.h</a>.</p>
 
 </div>
 </div>
@@ -289,7 +318,7 @@ Properties</h2></td></tr>
 <p>Gets or sets the identifier for the type of situation that led to this new event. </p>
 <p>The type identifier of the situation.</p>
 
-<p>Definition at line <a class="el" href="_new_event_8h_source.html#l00078">78</a> of file <a class="el" href="_new_event_8h_source.html">NewEvent.h</a>.</p>
+<p>Definition at line <a class="el" href="_new_event_8h_source.html#l00088">88</a> of file <a class="el" href="_new_event_8h_source.html">NewEvent.h</a>.</p>
 
 </div>
 </div>
@@ -314,7 +343,7 @@ Properties</h2></td></tr>
 <p>Gets or sets the unique identifier of the device that the situation occurred on. </p>
 <p>The unique identifier.</p>
 
-<p>Definition at line <a class="el" href="_new_event_8h_source.html#l00088">88</a> of file <a class="el" href="_new_event_8h_source.html">NewEvent.h</a>.</p>
+<p>Definition at line <a class="el" href="_new_event_8h_source.html#l00098">98</a> of file <a class="el" href="_new_event_8h_source.html">NewEvent.h</a>.</p>
 
 </div>
 </div>
@@ -339,7 +368,7 @@ Properties</h2></td></tr>
 <p>Gets or sets the unique identifier of the user that caused the situation to occur. </p>
 <p>The unique identifier.</p>
 
-<p>Definition at line <a class="el" href="_new_event_8h_source.html#l00098">98</a> of file <a class="el" href="_new_event_8h_source.html">NewEvent.h</a>.</p>
+<p>Definition at line <a class="el" href="_new_event_8h_source.html#l00108">108</a> of file <a class="el" href="_new_event_8h_source.html">NewEvent.h</a>.</p>
 
 </div>
 </div>
@@ -364,7 +393,7 @@ Properties</h2></td></tr>
 <p>Gets or sets the time at which the situation occurred. </p>
 <p>The time.</p>
 
-<p>Definition at line <a class="el" href="_new_event_8h_source.html#l00108">108</a> of file <a class="el" href="_new_event_8h_source.html">NewEvent.h</a>.</p>
+<p>Definition at line <a class="el" href="_new_event_8h_source.html#l00118">118</a> of file <a class="el" href="_new_event_8h_source.html">NewEvent.h</a>.</p>
 
 </div>
 </div>

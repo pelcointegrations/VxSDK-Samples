@@ -264,13 +264,6 @@ void SetEventDetailsToJniObject(JNIEnv * env, Jni_Event* evObj, jobject jevObj, 
 /// <param name="passwd">Password</param>
 /// <param name="ip">IP of Vx system to connect</param>
 JNIEXPORT jboolean JNICALL Java_javasample_JSystem_Connect(JNIEnv *env, jobject obj, jstring usrName, jstring passwd, jstring ip) {
-    //Before logging in to VxSDK, initialize the SDK using key file.
-    VxSdk::VxResult::Value result = VxSdk::VxInit(kSdkKey);
-    if (result != VxSdk::VxResult::kOK) {
-        LOGGER->Log("Failed to initialize the VxSDK.  Verify the SDK key.");
-        return false;
-    }
-
     //Convert to C++ strings
     const char *userName_native = env->GetStringUTFChars(usrName, JNI_FALSE);
     const char *password_native = env->GetStringUTFChars(passwd, JNI_FALSE);

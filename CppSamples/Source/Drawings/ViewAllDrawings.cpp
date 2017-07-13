@@ -11,12 +11,14 @@ using namespace CppSamples::Common;
 /// </summary>
 /// <param name="dataModel">Instance of data model.</param>
 Plugin* CppSamples::Drawings::ViewAllDrawings::Run(DataModel* dataModel) {
-    system("cls");
+    Utility::ClearScreen();
 
     VxCollection<IVxDrawing**> drawings = GetDrawings(dataModel->VxSystem);
     PrintDrawings(drawings);
 
-    system("pause");
+    // Wait for user response before going back to parent menu.
+    Utility::Pause();
+
     // Remove the memory allocated to the collection.
     delete[] drawings.collection;
     // Return reference of parent plugin to move back to parent menu.

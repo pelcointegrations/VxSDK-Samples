@@ -230,11 +230,14 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
+<tr class="memitem:aa3b1efbebe3e3d0566d1711549e465db"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_privilege.html#aa3b1efbebe3e3d0566d1711549e465db">ExcludeRestricted</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:aa3b1efbebe3e3d0566d1711549e465db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets whether the privilege is excluded from the associated resources.  <a href="#aa3b1efbebe3e3d0566d1711549e465db">More...</a><br /></td></tr>
+<tr class="separator:aa3b1efbebe3e3d0566d1711549e465db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7121aee5c6586117bf6fcbf0e409eeec"><td class="memItemLeft" align="right" valign="top">System::String^ &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_privilege.html#a7121aee5c6586117bf6fcbf0e409eeec">Id</a><code> [get]</code></td></tr>
 <tr class="memdesc:a7121aee5c6586117bf6fcbf0e409eeec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the unique identifier for this privilege.  <a href="#a7121aee5c6586117bf6fcbf0e409eeec">More...</a><br /></td></tr>
 <tr class="separator:a7121aee5c6586117bf6fcbf0e409eeec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c39dbab6d84140763b8b6ede3407861"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_privilege.html#a8c39dbab6d84140763b8b6ede3407861">IsRestricted</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a8c39dbab6d84140763b8b6ede3407861"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets whether the privilege is restricted to the associated resources.  <a href="#a8c39dbab6d84140763b8b6ede3407861">More...</a><br /></td></tr>
+<tr class="memdesc:a8c39dbab6d84140763b8b6ede3407861"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets whether the privilege is restricted to the associated resources.  <a href="#a8c39dbab6d84140763b8b6ede3407861">More...</a><br /></td></tr>
 <tr class="separator:a8c39dbab6d84140763b8b6ede3407861"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae68495a0acc6ea9296b02a2a95d3ecec"><td class="memItemLeft" align="right" valign="top">System::Collections::Generic::List&lt; <a class="el" href="class_c_p_p_cli_1_1_data_source.html">DataSource</a>^ &gt;^&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_privilege.html#ae68495a0acc6ea9296b02a2a95d3ecec">LinkedDataSources</a><code> [get]</code></td></tr>
 <tr class="memdesc:ae68495a0acc6ea9296b02a2a95d3ecec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the data sources associated with this privilege.  <a href="#ae68495a0acc6ea9296b02a2a95d3ecec">More...</a><br /></td></tr>
@@ -737,6 +740,31 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Property Documentation</h2>
+<a class="anchor" id="aa3b1efbebe3e3d0566d1711549e465db"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CPPCli::Privilege::ExcludeRestricted</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets whether the privilege is excluded from the associated resources. </p>
+<p><code>true</code> if the privilege is excluded, <code>false</code> if not.</p>
+
+<p>Definition at line <a class="el" href="_privilege_8h_source.html#l00187">187</a> of file <a class="el" href="_privilege_8h_source.html">Privilege.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a7121aee5c6586117bf6fcbf0e409eeec"></a>
 <div class="memitem">
 <div class="memproto">
@@ -758,7 +786,7 @@ Here is the caller graph for this function:</div>
 <p>Gets the unique identifier for this privilege. </p>
 <p>The unique identifier.</p>
 
-<p>Definition at line <a class="el" href="_privilege_8h_source.html#l00187">187</a> of file <a class="el" href="_privilege_8h_source.html">Privilege.h</a>.</p>
+<p>Definition at line <a class="el" href="_privilege_8h_source.html#l00197">197</a> of file <a class="el" href="_privilege_8h_source.html">Privilege.h</a>.</p>
 
 </div>
 </div>
@@ -780,10 +808,10 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Gets whether the privilege is restricted to the associated resources. </p>
+<p>Gets or sets whether the privilege is restricted to the associated resources. </p>
 <p><code>true</code> if restricted, <code>false</code> if not.</p>
 
-<p>Definition at line <a class="el" href="_privilege_8h_source.html#l00196">196</a> of file <a class="el" href="_privilege_8h_source.html">Privilege.h</a>.</p>
+<p>Definition at line <a class="el" href="_privilege_8h_source.html#l00206">206</a> of file <a class="el" href="_privilege_8h_source.html">Privilege.h</a>.</p>
 
 </div>
 </div>
@@ -808,7 +836,7 @@ Here is the caller graph for this function:</div>
 <p>Gets the data sources associated with this privilege. </p>
 <p>A list of data sources.</p>
 
-<p>Definition at line <a class="el" href="_privilege_8h_source.html#l00206">206</a> of file <a class="el" href="_privilege_8h_source.html">Privilege.h</a>.</p>
+<p>Definition at line <a class="el" href="_privilege_8h_source.html#l00216">216</a> of file <a class="el" href="_privilege_8h_source.html">Privilege.h</a>.</p>
 
 </div>
 </div>
@@ -833,7 +861,7 @@ Here is the caller graph for this function:</div>
 <p>Gets the devices associated with this privilege. </p>
 <p>A list of devices.</p>
 
-<p>Definition at line <a class="el" href="_privilege_8h_source.html#l00215">215</a> of file <a class="el" href="_privilege_8h_source.html">Privilege.h</a>.</p>
+<p>Definition at line <a class="el" href="_privilege_8h_source.html#l00225">225</a> of file <a class="el" href="_privilege_8h_source.html">Privilege.h</a>.</p>
 
 </div>
 </div>
@@ -858,7 +886,7 @@ Here is the caller graph for this function:</div>
 <p>Gets the users associated with this privilege. </p>
 <p>A list of users.</p>
 
-<p>Definition at line <a class="el" href="_privilege_8h_source.html#l00224">224</a> of file <a class="el" href="_privilege_8h_source.html">Privilege.h</a>.</p>
+<p>Definition at line <a class="el" href="_privilege_8h_source.html#l00234">234</a> of file <a class="el" href="_privilege_8h_source.html">Privilege.h</a>.</p>
 
 </div>
 </div>
@@ -883,7 +911,7 @@ Here is the caller graph for this function:</div>
 <p>Gets the identifier of the permission being granted by this privilege. </p>
 <p>The permission identifier.</p>
 
-<p>Definition at line <a class="el" href="_privilege_8h_source.html#l00233">233</a> of file <a class="el" href="_privilege_8h_source.html">Privilege.h</a>.</p>
+<p>Definition at line <a class="el" href="_privilege_8h_source.html#l00243">243</a> of file <a class="el" href="_privilege_8h_source.html">Privilege.h</a>.</p>
 
 </div>
 </div>
@@ -909,7 +937,7 @@ Here is the caller graph for this function:</div>
 <p>Smaller numbers have higher priority than larger numbers (e.g. 1 is the highest priority). </p>
 <p>The priority.</p>
 
-<p>Definition at line <a class="el" href="_privilege_8h_source.html#l00243">243</a> of file <a class="el" href="_privilege_8h_source.html">Privilege.h</a>.</p>
+<p>Definition at line <a class="el" href="_privilege_8h_source.html#l00253">253</a> of file <a class="el" href="_privilege_8h_source.html">Privilege.h</a>.</p>
 
 </div>
 </div>
@@ -934,7 +962,7 @@ Here is the caller graph for this function:</div>
 <p>Gets the resource type, if any, that can be linked to this privilege. </p>
 <p>The resource type.</p>
 
-<p>Definition at line <a class="el" href="_privilege_8h_source.html#l00253">253</a> of file <a class="el" href="_privilege_8h_source.html">Privilege.h</a>.</p>
+<p>Definition at line <a class="el" href="_privilege_8h_source.html#l00263">263</a> of file <a class="el" href="_privilege_8h_source.html">Privilege.h</a>.</p>
 
 </div>
 </div>
@@ -959,7 +987,7 @@ Here is the caller graph for this function:</div>
 <p>Gets the data sources not associated with this privilege. </p>
 <p>A list of data sources.</p>
 
-<p>Definition at line <a class="el" href="_privilege_8h_source.html#l00262">262</a> of file <a class="el" href="_privilege_8h_source.html">Privilege.h</a>.</p>
+<p>Definition at line <a class="el" href="_privilege_8h_source.html#l00272">272</a> of file <a class="el" href="_privilege_8h_source.html">Privilege.h</a>.</p>
 
 </div>
 </div>
@@ -984,7 +1012,7 @@ Here is the caller graph for this function:</div>
 <p>Gets the devices not associated with this privilege. </p>
 <p>A list of devices.</p>
 
-<p>Definition at line <a class="el" href="_privilege_8h_source.html#l00271">271</a> of file <a class="el" href="_privilege_8h_source.html">Privilege.h</a>.</p>
+<p>Definition at line <a class="el" href="_privilege_8h_source.html#l00281">281</a> of file <a class="el" href="_privilege_8h_source.html">Privilege.h</a>.</p>
 
 </div>
 </div>
@@ -1009,7 +1037,7 @@ Here is the caller graph for this function:</div>
 <p>Gets the users not associated with this privilege. </p>
 <p>A list of users.</p>
 
-<p>Definition at line <a class="el" href="_privilege_8h_source.html#l00280">280</a> of file <a class="el" href="_privilege_8h_source.html">Privilege.h</a>.</p>
+<p>Definition at line <a class="el" href="_privilege_8h_source.html#l00290">290</a> of file <a class="el" href="_privilege_8h_source.html">Privilege.h</a>.</p>
 
 </div>
 </div>

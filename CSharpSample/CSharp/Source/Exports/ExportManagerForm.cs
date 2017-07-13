@@ -55,13 +55,20 @@ namespace SDKSampleApp.Source
         /// <param name="args">The <paramref name="args"/> parameter.</param>
         private void ButtonDownload_Click(object sender, EventArgs args)
         {
+            if (lvExportManager.CheckedItems.Count == 0)
+                return;
+
             // Get the associated Export object from the selected item.
             var export = (Export)lvExportManager.CheckedItems[0].Tag;
             
             // Open a save file dialog for the user to select a filename for the
             // export download.
-            saveFileDialog.ShowDialog();
+            saveFileDialog.FileName = export.Name;
+            var result = saveFileDialog.ShowDialog();
             saveFileDialog.Dispose();
+
+            if (result != DialogResult.OK)
+                return;
 
             using (var downloadForm = new DownloadProgressForm())
             {
@@ -77,6 +84,9 @@ namespace SDKSampleApp.Source
         /// <param name="args">The <paramref name="args"/> parameter.</param>
         private void ButtonDelete_Click(object sender, EventArgs args)
         {
+            if (lvExportManager.CheckedItems.Count == 0)
+                return;
+
             // Get the associated Export object from the selected item and delete
             // it from the VideoXpert system.
             var export = (Export)lvExportManager.CheckedItems[0].Tag;

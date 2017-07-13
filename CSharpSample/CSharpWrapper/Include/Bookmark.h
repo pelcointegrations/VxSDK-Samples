@@ -47,7 +47,7 @@ namespace CPPCli {
             System::String^ get() { return gcnew System::String(_bookmark->description); }
             void set(System::String^ value) {
                 char description[64];
-                strncpy_s(description, Utils::ConvertSysStringNonConst(value), sizeof(description));
+                VxSdk::Utilities::StrCopySafe(description, Utils::ConvertSysStringNonConst(value));
                 _bookmark->SetDescription(description);
             }
         }
@@ -59,6 +59,20 @@ namespace CPPCli {
         property System::String^ Id {
         public:
             System::String^ get() { return gcnew System::String(_bookmark->id); }
+        }
+
+        /// <summary>
+        /// Gets or sets the friendly name.
+        /// </summary>
+        /// <value>The friendly name.</value>
+        property System::String^ Name {
+        public:
+            System::String^ get() { return gcnew System::String(_bookmark->name); }
+            void set(System::String^ value) {
+                char name[64];
+                VxSdk::Utilities::StrCopySafe(name, Utils::ConvertSysStringNonConst(value));
+                _bookmark->SetName(name);
+            }
         }
 
         /// <summary>

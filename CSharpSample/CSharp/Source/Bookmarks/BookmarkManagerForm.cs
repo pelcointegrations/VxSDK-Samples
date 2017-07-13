@@ -41,7 +41,7 @@ namespace SDKSampleApp.Source
                 lvItem.SubItems.Add(bookmark.Description);
                 lvItem.SubItems.Add(bookmark.Time.ToLocalTime().ToString("s"));
                 lvItem.SubItems.Add(bookmark.Id);
-                lvItem.SubItems.Add(bookmark.DataSource.Name);
+                lvItem.SubItems.Add(bookmark.Name);
                 lvItem.Tag = bookmark;
                 lvBookmarkManager.Items.Add(lvItem);
             }

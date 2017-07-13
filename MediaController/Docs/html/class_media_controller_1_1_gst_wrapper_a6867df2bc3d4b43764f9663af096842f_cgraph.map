@@ -4,7 +4,7 @@
 <area shape="rect" id="node4" href="$class_media_controller_1_1_gst_wrapper.html#ae61952b746aca7df898cf7faafcfd372" title="Remove an existing timestamp event subscriber. " alt="" coords="244,136,435,177"/>
 <area shape="rect" id="node5" href="$class_media_controller_1_1_gst_wrapper.html#ac0e9a26c816b6f27f981fbf9e06f2600" title="Remove all existing timestamp event subscribers. " alt="" coords="244,201,435,243"/>
 <area shape="rect" id="node6" href="$class_media_controller_1_1_gst_wrapper.html#ac0fa98f176f83ceb495e49ec58ef8392" title="Add custom data to be stored in here, which will be send back to caller inside TimestampEvent on Time..." alt="" coords="244,267,435,308"/>
-<area shape="rect" id="node7" href="$class_media_controller_1_1_gst_wrapper.html#a9d9daf14c6b6cfe52a7fb0bcd6b4a76c" title="Create the pipeline for an RTSP video stream. " alt="" coords="244,332,435,373"/>
+<area shape="rect" id="node7" href="$class_media_controller_1_1_gst_wrapper.html#a7acbfc6d1b82c31bc5acac759c2b3854" title="Create the pipeline for an RTSP video stream. " alt="" coords="244,332,435,373"/>
 <area shape="rect" id="node8" href="$class_media_controller_1_1_gst_wrapper.html#a041731491df0ed485c82b323756d6927" title="Create the pipeline for an RTSP audio stream. " alt="" coords="244,397,435,439"/>
 <area shape="rect" id="node9" href="$class_media_controller_1_1_gst_wrapper.html#ac8cadd47be5e2847488be93e8064b1ef" title="Create the pipeline for an MJPEG stream. " alt="" coords="244,463,435,504"/>
 <area shape="rect" id="node10" href="$class_media_controller_1_1_gst_wrapper.html#a5ec4443c87798903502a4f65cb6eebea" title="Set the pipeline state to playing and update the speed value for determining the framerate. " alt="" coords="244,528,435,569"/>

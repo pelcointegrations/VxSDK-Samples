@@ -18,6 +18,8 @@ var class_c_p_p_cli_1_1_situation =
     [ "LinkedDevices", "class_c_p_p_cli_1_1_situation.html#a677ff8042ab395b95099a73cc7697af4", null ],
     [ "Name", "class_c_p_p_cli_1_1_situation.html#aeb93f5bd32d24faa06d6db61512cf7b4", null ],
     [ "Notifications", "class_c_p_p_cli_1_1_situation.html#ab5f12cb480845a707e83032013bc46d4", null ],
+    [ "ServicePropertyId", "class_c_p_p_cli_1_1_situation.html#a490a5db215667e60287d5323aa7312df", null ],
+    [ "ServiceType", "class_c_p_p_cli_1_1_situation.html#ad8f4b3c25f718f5ab3ee5572a6531fe7", null ],
     [ "Severity", "class_c_p_p_cli_1_1_situation.html#ae87d1d0274791cdcbfa76ca5ce3d0676", null ],
     [ "ShouldExpandBanner", "class_c_p_p_cli_1_1_situation.html#aced7a867aa2308df8a517242579e299e", null ],
     [ "ShouldLog", "class_c_p_p_cli_1_1_situation.html#a7ca87e3e74345749777feb9c3bfc22a2", null ],

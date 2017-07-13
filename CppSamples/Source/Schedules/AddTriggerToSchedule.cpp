@@ -13,7 +13,6 @@ using namespace CppSamples::Common;
 /// </summary>
 /// <param name="dataModel">Instance of data model.</param>
 Plugin* CppSamples::Schedules::AddTriggerToSchedule::Run(DataModel* dataModel) {
-
     cout << "\n";
     VxCollection<IVxSchedule**> schedules = GetSchedules(dataModel->VxSystem);
     OptionSelector<IVxSchedule*> optionSelector;
@@ -54,17 +53,39 @@ Plugin* CppSamples::Schedules::AddTriggerToSchedule::Run(DataModel* dataModel) {
         if (!framerateSelector.SelectOption(&scheduleTrigger.framerate))
             scheduleTrigger.framerate = VxRecordingFramerate::kUnknown;
 
+        // Event 
+        cout << "\n";
+        OptionSelector<VxSituationType::Value> eventSelector;
+        eventSelector.Heading = "\nSelect a type of event";
+        eventSelector.AddItem("AlarmActive", VxSituationType::kAlarmActive);
+        eventSelector.AddItem("AlarmInactive", VxSituationType::kAlarmInactive);
+        eventSelector.AddItem("Motion", VxSituationType::kMotion);
+        eventSelector.AddItem("NoMotion", VxSituationType::kNoMotion);
+        if (!eventSelector.SelectOption(&scheduleTrigger.event))
+            scheduleTrigger.event = VxSituationType::kUnknown;
+
+        // Recurrence
+        cout << "\n";
+        OptionSelector<VxRecurrenceType::Value> recurrenceSelector;
+        recurrenceSelector.Heading = "\nSelect a type of recurrence";
+        recurrenceSelector.AddItem("Daily", VxRecurrenceType::kDaily);
+        recurrenceSelector.AddItem("Monthly", VxRecurrenceType::kMonthly);
+        recurrenceSelector.AddItem("Weekly", VxRecurrenceType::kWeekly);
+        recurrenceSelector.AddItem("Yearly", VxRecurrenceType::kYearly);
+        if (!recurrenceSelector.SelectOption(&scheduleTrigger.recurrence))
+            scheduleTrigger.recurrence = VxRecurrenceType::kUnknown;
+
         // PreTrigger
         cout << "\n" << "Enter PreTrigger value      : ";
-        cin >> scheduleTrigger.preTrigger;
+        scheduleTrigger.preTrigger = Utility::ReadInt();
 
         // PostTrigger
         cout << "Enter PostTrigger value     : ";
-        cin >> scheduleTrigger.postTrigger;
+        scheduleTrigger.postTrigger = Utility::ReadInt();
 
         // Timeout
         cout << "Enter Timeout Duration      : ";
-        cin >> scheduleTrigger.timeout;
+        scheduleTrigger.timeout = Utility::ReadInt();
 
         // Make the call to add the schedule into VideoXpert
         VxResult::Value result = selectedSchedule->AddScheduleTrigger(scheduleTrigger);
@@ -74,7 +95,9 @@ Plugin* CppSamples::Schedules::AddTriggerToSchedule::Run(DataModel* dataModel) {
             cout << "\n" << "Failed to add schedule.\n";
     }
 
-    system("pause");
+    // Wait for user response before going back to parent menu.
+    Utility::Pause();
+
     // Return reference of parent plugin to move back to parent menu.
     return GetParent();
 }
@@ -99,10 +122,8 @@ VxCollection<IVxSchedule**> CppSamples::Schedules::AddTriggerToSchedule::GetSche
 /// </summary>
 /// <param name="message">Message to be printed while before reading time</param>
 string CppSamples::Schedules::AddTriggerToSchedule::ReadTime(string message) {
-
-    string utcFormat;
     cout << message << "(HH:MM:SS) : ";
-    cin >> utcFormat;
+    string utcFormat = Utility::ReadString();
 
     std::stringstream dateStream(utcFormat);
     struct tm parseTime;
@@ -124,10 +145,8 @@ string CppSamples::Schedules::AddTriggerToSchedule::ReadTime(string message) {
 /// </summary>
 /// <param name="message">Message to be printed while before reading date</param>
 string CppSamples::Schedules::AddTriggerToSchedule::ReadDate(string message) {
-
-    string utcFormat;
     cout << message << "(dd-mm-yy) : ";
-    cin >> utcFormat;
+    string utcFormat = Utility::ReadString();
 
     std::stringstream dateStream(utcFormat);
     struct tm parseDate;

@@ -8,7 +8,8 @@
 #include <boost/regex.hpp>
 #include <boost/lexical_cast.hpp>
 
+#include "VxSdk.h"
 #include "Constants.h"
 #include "Macros.h"
 #include "Utilities.h"
-#include "VxSdk.h"
+

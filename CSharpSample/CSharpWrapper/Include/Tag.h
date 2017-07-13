@@ -115,7 +115,7 @@ namespace CPPCli {
             System::String^ get() { return gcnew System::String(_tag->name); }
             void set(System::String^ value) {
                 char name[64];
-                strncpy_s(name, Utils::ConvertSysStringNonConst(value), sizeof(name));
+                VxSdk::Utilities::StrCopySafe(name, Utils::ConvertSysStringNonConst(value));
                 _tag->SetName(name);
             }
         }

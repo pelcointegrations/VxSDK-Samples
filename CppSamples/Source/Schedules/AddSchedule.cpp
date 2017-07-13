@@ -20,9 +20,8 @@ Plugin* CppSamples::Schedules::AddSchedule::Run(DataModel* dataModel) {
     Utilities::StrCopySafe(vxSchedule.id, newGuid.c_str());
 
     // Read name from input
-    cout << "\n\n" << "Enter role name: ";
-    string name = "";
-    cin >> name;
+    cout << "\n\n" << "Enter schedule name: ";
+    string name = Utility::ReadString();
     Utilities::StrCopySafe(vxSchedule.name, name.c_str());
 
     // Create instance of OptionSelector and add options to it
@@ -43,7 +42,9 @@ Plugin* CppSamples::Schedules::AddSchedule::Run(DataModel* dataModel) {
     else
         cout << "\n" << "Failed to add schedule.\n";
 
-    system("pause");
+    // Wait for user response before going back to parent menu.
+    Utility::Pause();
+
     // Return reference of parent plugin to move back to parent menu.
     return GetParent();
 }

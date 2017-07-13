@@ -1,6 +1,10 @@
 #include "stdafx.h"
 #include "MenuItem.h"
+#ifdef WIN32
 #include <conio.h>
+#else
+#include <curses.h>
+#endif
 #include "OptionSelector.h"
 
 using namespace std;

@@ -4,6 +4,7 @@
 
 #include "Pattern.h"
 #include "Preset.h"
+#include "PtzLimits.h"
 #include "PtzLock.h"
 
 namespace CPPCli {
@@ -119,6 +120,13 @@ namespace CPPCli {
         Results::Value AbsoluteZoom(int positionZ);
 
         /// <summary>
+        /// Creates a new preset using the current PTZ spatial coordinates.
+        /// </summary>
+        /// <param name="index">The unique index value for the new preset.</param>
+        /// <returns>The <see cref="Results::Value">Result</see> of the adding the preset.</returns>
+        Results::Value AddPreset(int index);
+
+        /// <summary>
         /// Focus near or far until the user wants to stop.
         /// </summary>
         /// <param name="nearFar">The direction to focus.</param>
@@ -140,6 +148,13 @@ namespace CPPCli {
         /// <param name="inOut">The direction to zoom.</param>
         /// <returns>The <see cref="Results::Value">Result</see> of the continuous move.</returns>
         Results::Value ContinuousMove(int speedX, int speedY, ZoomDirections inOut);
+
+        /// <summary>
+        /// Deletes a preset from the system.
+        /// </summary>
+        /// <param name="preset">The <see cref="Preset"/> to delete.</param>
+        /// <returns>The <see cref="Results::Value">Result</see> of deleting the preset.</returns>
+        CPPCli::Results::Value DeletePreset(Preset^ preset);
 
         /// <summary>
         /// Get the available patterns.
@@ -187,6 +202,13 @@ namespace CPPCli {
         Results::Value RelativePercentageMove(int percentageX, int percentageY);
 
         /// <summary>
+        /// Repositions a preset to the current PTZ spatial coordinates.
+        /// </summary>
+        /// <param name="preset">The <see cref="Preset"/> to reposition.</param>
+        /// <returns>The <see cref="Results::Value">Result</see> of repositioning the preset.</returns>
+        Results::Value RepositionPreset(Preset^  preset);
+
+        /// <summary>
         /// Stops all PTZ actions.
         /// </summary>
         /// <returns>The <see cref="Results::Value">Result</see> of the stop call.</returns>
@@ -198,6 +220,13 @@ namespace CPPCli {
         /// <param name="pattern">The <see cref="Pattern"/> to trigger.</param>
         /// <returns>The <see cref="Results::Value">Result</see> of triggering the pattern.</returns>
         Results::Value TriggerPattern(Pattern^ pattern);
+
+        /// <summary>
+        /// Triggers a preset by index.
+        /// </summary>
+        /// <param name="index">The index of the preset to trigger.</param>
+        /// <returns>The <see cref="Results::Value">Result</see> of triggering the preset.</returns>
+        Results::Value TriggerPreset(int index);
 
         /// <summary>
         /// Trigger a preset.
@@ -229,6 +258,15 @@ namespace CPPCli {
         property int LockExpireTime {
         public:
             int get() { return _ptzController->lockExpireTime; }
+        }
+
+        /// <summary>
+        /// Gets the <see cref="PtzLimits"/> for this ptz controller.
+        /// </summary>
+        /// <value><c>nullptr</c> if no ptz limits are available, else the <see cref="PtzLimits"/>.</value>
+        property PtzLimits^ PTZLimits {
+        public:
+            PtzLimits^ get() { return _GetPtzLimits(); }
         }
 
         /// <summary>
@@ -281,6 +319,7 @@ namespace CPPCli {
 
     internal:
         VxSdk::IVxPtzController* _ptzController;
+        PtzLimits^ _GetPtzLimits();
         PtzLock^ _GetPtzLock();
     };
 }

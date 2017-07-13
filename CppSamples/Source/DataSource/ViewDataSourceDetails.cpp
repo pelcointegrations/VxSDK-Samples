@@ -1,6 +1,11 @@
 #include "stdafx.h"
 #include "ViewDataSourceDetails.h"
+#include "Utility.h"
+#ifdef WIN32
 #include <conio.h>
+#else
+#include <curses.h>
+#endif
 
 using namespace std;
 using namespace VxSdk;
@@ -43,9 +48,8 @@ void CppSamples::DataSource::ViewDataSourceDetails::PrintDataSourceCollection(Vx
     // Repeating loop to help user to view multiple data source one by one.
     while (true) {
         // Read user input for data source number
-        int dataSourceNumber = 0;
         cout << "\n" << "Enter number [1-" << collection.collectionSize << "] : ";
-        cin >> dataSourceNumber;
+        int dataSourceNumber = Utility::ReadInt();
 
         // 0 to break the loop ang go back to parent menu.
         if (dataSourceNumber == 0)

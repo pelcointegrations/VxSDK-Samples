@@ -11,12 +11,14 @@ using namespace CppSamples::Common;
 /// </summary>
 /// <param name="dataModel">Instance of data model.</param>
 Plugin* CppSamples::Bookmarks::ViewAllBookmarks::Run(DataModel* dataModel) {
-    system("cls");
+    Utility::ClearScreen();
 
     VxCollection<IVxBookmark**> bookmarks = GetBookmarks(dataModel->VxSystem);
     PrintBookmarks(bookmarks);
 
-    system("pause");
+    // Wait for user response before going back to parent menu.
+    Utility::Pause();
+
     // Remove the memory allocated to the collection.
     delete[] bookmarks.collection;
     // Return reference of parent plugin to move back to parent menu.
@@ -48,12 +50,23 @@ void CppSamples::Bookmarks::ViewAllBookmarks::PrintBookmarks(VxCollection<IVxBoo
     if (bookmarkCollection.collectionSize == 0)
         return;
 
+    cout << "------------------------------------------------------------------------------------------\n";
+    cout << "No      Data Source Name                Time                            Description \n";
     cout << "------------------------------------------------------------------------------------------";
     for (int i = 0; i < bookmarkCollection.collectionSize; i++) {
         IVxBookmark* bookmark = bookmarkCollection.collection[i];
 
+        string dataSourceName = "";
+        IVxDataSource* dataSource = nullptr;
+        bookmark->GetDataSource(dataSource);
+        if (dataSource != nullptr) {
+
+            dataSourceName = string(dataSource->name);
+            dataSourceName += string(30 - dataSourceName.length(), ' ');
+        }
+
         cout << "\n" << (i + 1);
-        cout << "\t" << bookmark->id;
+        cout << "\t" << dataSourceName;
         cout << "\t" << bookmark->time;
         cout << "\t" << bookmark->description;
     }

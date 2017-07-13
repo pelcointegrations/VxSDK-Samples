@@ -9,7 +9,7 @@ Due to the file size limit on GitHub you must manually unzip libgstlibav.zip loc
 ## Requirements
 
 * VideoXpert SDK
-* Visual Studio 2013
+* Visual Studio 2013 or Visual Studio 2015
 
 ## Reference
 

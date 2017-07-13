@@ -2,27 +2,17 @@
 #include "Constants.h"
 #include "Utility.h"
 #include <iomanip>
+#ifndef WIN32
+#include<time.h>
+#include <uuid/uuid.h>
+#endif
 
 using namespace std;
 using namespace VxSdk;
 using namespace CppSamples::Common;
 
-// Initialize the SDK.
-bool Utility::Init() {
-    VxResult::Value result = VxInit(Constants::kSdkKey);
-    return result == VxResult::kOK;
-}
-
 // Login to the VideoExpert system.
-IVxSystem* Utility::Login() {
-    // Create Login information structure .
-    VxLoginInfo loginInfo;
-    loginInfo.port = Constants::kPortnum;
-    loginInfo.useSsl = true;
-    Utilities::StrCopySafe(loginInfo.ipAddress, Constants::kSystemIp);
-    Utilities::StrCopySafe(loginInfo.username, Constants::kUserName);
-    Utilities::StrCopySafe(loginInfo.password, Constants::kPassword);
-
+IVxSystem* Utility::Login(VxLoginInfo& loginInfo) {
     // Login to the VideoExpert system and get an instance of it.
     IVxSystem* system = nullptr;
     VxSystemLogin(loginInfo, system);
@@ -40,7 +30,11 @@ string Utility::ConvertLocalTimetoUTC(struct tm t) {
     stringstream fmt;
     time_t epochTime = mktime(&t);
     struct tm timeinfo;
+#ifndef WIN32
+    gmtime_r(&epochTime, &timeinfo);
+#else
     gmtime_s(&timeinfo, &epochTime);
+#endif
 
     // Convert tm structure to string
     fmt << timeinfo.tm_year + 1900 << "-"
@@ -209,6 +203,13 @@ void Utility::ShowProgress(string statusMsg, unsigned int x, unsigned int n, int
 /// <returns>String value of new Guid.</returns>
 string Utility::GetNewGuid() {
     // Create new instance of GUID
+#ifndef WIN32
+    uuid_t uuid;
+    uuid_generate_random ( uuid );
+    char buffer[37];
+    uuid_unparse ( uuid, buffer );
+    return string(buffer);
+#else
     GUID newGuid;
     HRESULT hCreateGuid = CoCreateGuid(&newGuid);
 
@@ -219,6 +220,7 @@ string Utility::GetNewGuid() {
         newGuid.Data4[0], newGuid.Data4[1], newGuid.Data4[2], newGuid.Data4[3],
         newGuid.Data4[4], newGuid.Data4[5], newGuid.Data4[6], newGuid.Data4[7]);
     return string(buffer);
+#endif
 }
 
 /// <summary>
@@ -228,11 +230,92 @@ int Utility::TzOffset() {
     int offset;
     tm utcTm{ 0 }, localTm{ 0 };
     time_t local = time(nullptr), utc;
+#ifndef WIN32
+    gmtime_r(&local, &utcTm);
+#else
     gmtime_s(&utcTm, &local);
+#endif
     localtime_s(&localTm, &local);
     localTm.tm_isdst = 0;
     local = mktime(&localTm);
     utc = mktime(&utcTm);
     offset = static_cast<int>(difftime(local, utc));
     return offset;
+}
+
+/// <summary>
+/// Clear the screen
+/// </summary>
+void Utility::ClearScreen() {
+#ifndef WIN32
+    system("clear");
+#else
+    system("cls");
+#endif
+}
+
+/// <summary>
+/// Read a string from console input
+/// </summary>
+string Utility::ReadString() {
+    string line = "";
+    std::getline(std::cin, line);
+    return line;
+}
+
+/// <summary>
+/// Read an integer from console input
+/// </summary>
+int Utility::ReadInt() {
+    string line = "";
+    cin >> line;
+    int value = atoi(line.c_str());
+    while (std::cin.get() != '\n');
+    return value;
+}
+
+/// <summary>
+/// Pause for a user input
+/// </summary>
+void Utility::Pause() {
+#ifndef WIN32
+    std::cout << "Press any key to continue...";
+    std::cin.clear();
+    fseek(stdin, 0, SEEK_END);
+    fflush(stdin);
+    while (std::cin.get() != '\n');
+#else
+    system("pause");
+#endif
+}
+
+/// <summary>
+/// Replace a give string
+/// </summary>
+string Utility::Replace(string original, string from, string to) {
+    int index = 0;
+    int len = from.length();
+    while (true) {
+        index = original.find(from);
+        if (index < 0) {
+            break;
+        }
+        original = original.replace(index, len, to);
+    }
+    return original;
+}
+
+/// <summary>
+/// Converts the UTC time format to string format (HH:MM::SS, Day Month)
+/// </summary>
+/// <param name="utcFormat">time string in UTC format (YYYYmmddTHHMMSSZ)</param>
+string Utility::ConvertUTCTimeFormatToString(string utcFormat) {
+    stringstream dateStream(utcFormat);
+    struct tm parseTime;
+    //Here parse date and time string value to time structure
+    dateStream >> get_time(&parseTime, "%Y-%m-%dT%H:%M:%S");
+    char buffer[18];
+    strftime(buffer, 18, "%X %x", &parseTime);
+
+    return string(buffer);
 }

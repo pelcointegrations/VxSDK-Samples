@@ -1,5 +1,9 @@
 #include "stdafx.h"
 #include "ViewAllDataSource.h"
+#include "Utility.h"
+#ifndef WIN32
+#include <unistd.h>
+#endif
 
 using namespace std;
 using namespace VxSdk;
@@ -39,14 +43,14 @@ VxCollection<IVxDataSource**> CppSamples::DataSource::ViewAllDataSource::GetData
 
 // Print the given collection of data source to the screen.
 void CppSamples::DataSource::ViewAllDataSource::PrintDataSourceCollection(VxCollection<IVxDataSource**> collection) {
-    system("cls");
+    Utility::ClearScreen();
+
     // Print details of all data sources on screen
     for (int i = 0; i < collection.collectionSize; i++)
         PrintDataSource(i + 1, collection.collection[i]);
 
     // Wait for user response before going back to parent menu.
-    cout << "\n\n" << "Press any key to continue...";
-    getchar();
+    Utility::Pause();
 }
 
 // Print the details of the given data source to the screen.

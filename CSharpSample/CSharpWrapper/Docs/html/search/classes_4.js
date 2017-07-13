@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['license',['License',['../class_c_p_p_cli_1_1_license.html',1,'CPPCli']]],
-  ['licensefeature',['LicenseFeature',['../class_c_p_p_cli_1_1_license_feature.html',1,'CPPCli']]],
-  ['loglevel',['LogLevel',['../class_c_p_p_cli_1_1_log_level.html',1,'CPPCli']]]
+  ['event',['Event',['../class_c_p_p_cli_1_1_event.html',1,'CPPCli']]],
+  ['export',['Export',['../class_c_p_p_cli_1_1_export.html',1,'CPPCli']]],
+  ['exportclip',['ExportClip',['../class_c_p_p_cli_1_1_export_clip.html',1,'CPPCli']]]
 ];

@@ -43,8 +43,158 @@ namespace CPPCli {
             /// <summary>There was an error communicating to the device.</summary>
             CommunicationError,
 
-            /// <summary>The key used to initialize the SDK was invalid.</summary>
-            InvalidKey
+            /// <summary>No valid license was found on the VideoXpert system.</summary>
+            InvalidLicense,
+
+            /// <summary>Camera is unavailable, data cannot be retrieved at this time.</summary>
+            CameraUnavailable,
+
+            /// <summary>
+            /// No further stream data is currently available (the edge of a currently recording clip has been reached); more data will
+            /// be available shortly.
+            /// </summary>
+            EdgeOfStream,
+
+            /// <summary>
+            /// No further stream data is available (the end of all recorded data has been reached; no further data is currently be recorded).
+            /// </summary>
+            EndOfStream,
+
+            /// <summary>The server is unable to initiate any new stream sessions due to having reached its stream count capacity.</summary>
+            NoAvailableStreams,
+
+            /// <summary>Storage is unavailable, data cannot be retrieved at this time.</summary>
+            StorageUnavailable,
+
+            /// <summary>The data needed to perform the export operation can not be retrieved.</summary>
+            ExportDataUnretrievable,
+
+            /// <summary>The export storage location does not have enough free space to store the export.</summary>
+            ExportStorageFull,
+
+            /// <summary> The export storage location is not accessible due to invalid credentials.</summary>
+            ExportStorageUnauthenticated,
+
+            /// <summary>
+            /// The export storage location is not accessible; this may be due to an invalid location, network issue, or storage issue.
+            /// </summary>
+            ExportStorageUnavailable,
+
+            /// <summary>
+            /// The requested operation is not possible due to a conflict with the resource. Typically this is due to a violation of a
+            /// uniqueness property on one of the resource’s fields.
+            /// </summary>
+            Conflict,
+
+            /// <summary>The server has insufficient resources to satisfy the request.</summary>
+            InsufficientResources,
+
+            /// <summary>
+            /// The server is not in an appropriate state to be able to service this request. The server requires intervention in order
+            /// to resolve this.
+            /// </summary>
+            NotReady,
+
+            /// <summary>
+            /// The server is not in an appropriate state to be able to service this request due to an authentication issue between it
+            /// and another entity. The server requires intervention in order to resolve this.
+            /// </summary>
+            NotReadyUnauthenticated,
+
+            /// <summary>
+            /// The server is not in an appropriate state to be able to service this request due to an authorization issue between it
+            /// and another entity. The server requires intervention in order to resolve this.
+            /// </summary>
+            NotReadyUnauthorized,
+
+            /// <summary>The requested operation failed.</summary>
+            OperationFailed,
+
+            /// <summary>
+            /// The server is incapable of handling the client request due to the size of the resulting response.What constitutes
+            /// ’too large’ is entirely up to the server.
+            /// </summary>
+            ResponseTooLarge,
+
+            /// <summary>The license that was supplied has an activation conflict with an existing license(e.g.duplicate activation IDs).</summary>
+            ActivationConflict,
+
+            /// <summary>The activation failed due to communication error with the FNO licensing server.</summary>
+            ActivationHostNotFound,
+
+            /// <summary>The activation failed.</summary>
+            ActivationFailed,
+
+            /// <summary>The license that was supplied is not compatible with the device and/or system that it is being applied to.</summary>
+            IncompatibleLicense,
+
+            /// <summary>A valid license is available but the available count on that license is fully utilized.</summary>
+            LicenseCountExceeded,
+
+            /// <summary>A valid license is required to utilize this method on the resource; no valid license found.</summary>
+            LicenseRequired,
+
+            /// <summary>Unable to apply the license; valid LDAP administrator credentials are required.</summary>
+            LicenseReqLdapAdmin,
+
+            /// <summary>Unable to commission (or float) a feature because no valid license is available for it.</summary>
+            NoLicense,
+
+            /// <summary>Camera is in use (or the usage dwell time is active) by same or higher authority user.</summary>
+            CameraInUse,
+
+            /// <summary>Camera is locked by same or higher authority user.</summary>
+            CameraLocked,
+
+            /// <summary>Locked by lower authority user, may override.</summary>
+            NeedOverride,
+
+            /// <summary>
+            /// An attempt to set an invalid value on a writable field was made. The value may be invalid due to being out of range, unavailable, etc.
+            /// </summary>
+            InvalidValue,
+
+            /// <summary>An attempt to set a new port number failed because the port number is already in use.</summary>
+            PortInUse,
+
+            /// <summary>An attempt to edit a read-only field was made.</summary>
+            ReadOnlyField,
+
+            /// <summary>An attempt to edit a locked resource was made by a user that does not own the IVxResourceLock.</summary>
+            ResourceLocked,
+
+            /// <summary>A request was made using expired authentication credentials.</summary>
+            AuthExpired,
+
+            /// <summary>A password with an insufficient number of digits was supplied in an attempt to create a new user password.</summary>
+            PasswordReqMoreDigits,
+
+            /// <summary>A password with an insufficient number of lowercase letters was supplied in an attempt to create a new user password.</summary>
+            PasswordReqMoreLower,
+
+            /// <summary>A password with an insufficient number of special characters was supplied in an attempt to create a new user password.</summary>
+            PasswordReqMoreSpecial,
+
+            /// <summary>A password with an insufficient number of uppercase letters was supplied in an attempt to create a new user password.</summary>
+            PasswordReqMoreUpper,
+
+            /// <summary>A password of insufficient length was supplied in an attempt to create a new user password.</summary>
+            PasswordTooShort,
+
+            /// <summary>A password too similar to a previous password was supplied in an attempt to create a new user password.</summary>
+            PasswordTooSimilar,
+
+            /// <summary>
+            /// The requested operation is not possible due to a permission conflict with the resource. Typically this is due to a violation
+            /// of permission hierarchy (e.g. a nested permission is being assigned without its parent permission already assigned).
+            /// </summary>
+            PermissionConflict,
+
+            /// <summary>An unauthenticated request was made (i.e. invalid username and/or password).</summary>
+            Unauthenticated,
+
+            /// <summary>An unauthorized request was made (i.e. user does not have permission to access the resource).</summary>
+            Unauthorized
         };
     };
 
@@ -118,6 +268,7 @@ namespace CPPCli {
             System::DateTime timeValue;
             System::Globalization::CultureInfo^ culture = System::Globalization::CultureInfo::InvariantCulture;
             System::DateTime::TryParseExact(value, format, culture, System::Globalization::DateTimeStyles::None, timeValue);
+            timeValue = System::DateTime::SpecifyKind(timeValue, System::DateTimeKind::Utc);
             return timeValue;
         }
 
@@ -127,6 +278,7 @@ namespace CPPCli {
         /// <param name="dateTime">The DateTime.</param>
         /// <returns>The DateTime as a char.</returns>
         static const char* ConvertDateTimeToChar(System::DateTime dateTime) {
+            dateTime = dateTime.ToUniversalTime();
             System::String^ timeString = dateTime.ToString(gcnew System::String(GetDateFormat()));
             msclr::interop::marshal_context^ ctx = gcnew msclr::interop::marshal_context();
             return ctx->marshal_as<const char*>(timeString);
@@ -138,6 +290,7 @@ namespace CPPCli {
         /// <param name="dateTime">The DateTime.</param>
         /// <returns>The DateTime as a char.</returns>
         static char* ConvertDateTimeToCharNonConst(System::DateTime dateTime) {
+            dateTime = dateTime.ToUniversalTime();
             System::String^ timeString = dateTime.ToString(gcnew System::String(GetDateFormat()));
             msclr::interop::marshal_context^ ctx = gcnew msclr::interop::marshal_context();
             return (char*)(void*)System::Runtime::InteropServices::Marshal::StringToHGlobalAnsi(timeString);
@@ -171,12 +324,17 @@ namespace CPPCli {
         /// <param name="timeString">The time string.</param>
         /// <returns>Default DateTime if it fails, else the parsed DateTime.</returns>
         static System::DateTime ConvertTimeCharToDateTime(char* timeString) {
+            System::DateTime parsedTime;
             System::String^ value = gcnew System::String(timeString);
-            System::String^ format = gcnew System::String("HH:mm:ss");
             if (value == System::String::Empty)
-                return System::DateTime();
+                return parsedTime;
 
-            return System::DateTime::ParseExact(value, format, System::Globalization::CultureInfo::InvariantCulture);
+            array<System::String^>^ formats = gcnew array<System::String^>(2);
+            formats[0] = gcnew System::String("HH:mm:ss");
+            formats[1] = gcnew System::String("HH:mm:ss.fff");
+            System::DateTime::TryParseExact(value, formats, System::Globalization::CultureInfo::InvariantCulture, System::Globalization::DateTimeStyles::None, parsedTime);
+
+            return parsedTime;
         }
     };
 
@@ -185,18 +343,6 @@ namespace CPPCli {
     /// </summary>
     public ref class VxGlobal{
     public:
-        /// <summary>
-        /// Initialize the VideoXpert SDK.
-        /// </summary>
-        /// <param name="key">The key to initialize the SDK with.</param>
-        /// <returns>The <see cref="Results::Value">Result</see> of the initialization process.</returns>
-        static CPPCli::Results::Value InitializeSdk(System::String^ key) {
-            // Init the sdk with your key generated using VxSdkKeyGen.exe
-            VxSdk::VxResult::Value result = VxSdk::VxInit(Utils::ConvertSysString(key));
-
-            return CPPCli::Results::Value(result);
-        }
-
         /// <summary>
         /// Sets the minimum severity level of messages to log.
         /// </summary>

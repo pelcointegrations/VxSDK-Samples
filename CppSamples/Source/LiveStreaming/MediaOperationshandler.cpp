@@ -5,7 +5,7 @@ using namespace std;
 using namespace VxSdk;
 
 // Do media operation for given character.
-void CppSamples::LiveStreaming::MediaOperationshandler::DoOperation(char keyCode) {
+bool CppSamples::LiveStreaming::MediaOperationshandler::DoOperation(char keyCode) {
     // Map the character code with operations
     // p => Play or Pause
     // z => Increase Speed
@@ -14,19 +14,21 @@ void CppSamples::LiveStreaming::MediaOperationshandler::DoOperation(char keyCode
     switch (keyCode) {
         case 'p':
             PauseOrPlay();
-            break;
+            return true;
         case 'z':
             IncreaseSpeed();
-            break;
+            return true;
         case 'x':
             DecreaseSpeed();
-            break;
-        case 'l':
-            GoToLive();
-            break;
+            return true;
+        //case 'l':
+        //    GoToLive();
+        //    return true;
         default:
             break;
     }
+
+    return false;
 }
 
 // Decrease speed and play with new speed.
@@ -36,8 +38,11 @@ void CppSamples::LiveStreaming::MediaOperationshandler::DecreaseSpeed() {
     // Play the stream with new speed
     bool result = _mediaControl->Play(_speed);
     // Verfify the result.
-    if (!result)
+    if (result)
+        cout << "Speed decreased to " << _speed;
+    else
         cout << "\nFailed to decrease speed.";
+    cout << "\n";
 }
 
 // Request the media control to move the stream to live.
@@ -52,8 +57,11 @@ void CppSamples::LiveStreaming::MediaOperationshandler::IncreaseSpeed() {
     // Play the stream with new speed
     bool result = _mediaControl->Play(_speed);
     // Verfify the result.
-    if (!result)
+    if (result)
+        cout << "Speed increased to " << _speed;
+    else
         cout << "\nFailed to increase speed.";
+    cout << "\n";
 }
 
 // Toggle between pause and play options.

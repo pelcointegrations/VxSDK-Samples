@@ -1,8 +1,10 @@
 #include "stdafx.h"
 #include "PtzOperationsHandler.h"
+#include "Utility.h"
 
 using namespace std;
 using namespace VxSdk;
+using namespace CppSamples::Common;
 
 bool CppSamples::LiveStreaming::PtzOperationsHandler::DoOperation(char keyCode) {
     // Verify the instance of PTZ controller.
@@ -75,7 +77,7 @@ bool CppSamples::LiveStreaming::PtzOperationsHandler::DoOperation(char keyCode) 
     // Show message if command processed.
     if (isPtzCommandProcessed && _showResult) {
         if (ptzRes)
-            cout << "\n" << "PTZ command sent succefully.\n ";
+            cout << "\n" << "PTZ command sent successfully.\n ";
         else {
             cout << "\n" << "PTZ command failed!!\n";
         }
@@ -218,20 +220,22 @@ void CppSamples::LiveStreaming::PtzOperationsHandler::TriggerPattern(){
 
             // User inputs a pattern index
             cout << "\nEnter the index of pattern to be triggered (0 to cancel): ";
-            int ch;
-            cin >> ch;
+            int ch = Utility::ReadInt();
             // Verify the pattern index
-            if (ch != 0) {
+            if (ch > 0 && ch <= patterns.collectionSize) {
                 // Select the pattern
-                IVxPattern* pattern = patterns.collection[ch];
+                IVxPattern* pattern = patterns.collection[ch - 1];
                 // Trigger the control using selected pattern.
                 if (_ptzControl->TriggerPattern(*pattern))
                     cout << "\nPattern triggered succesfully..\n";
                 else
                     cout << "\nFailed to trigger pattern.\n";
             }
-            else {
+            else if (ch == 0) {
                 cout << "\nCancelled..\n";
+            }
+            else {
+                cout << "\nInvalid option selected.";
             }
         }
         else {
@@ -259,20 +263,22 @@ void CppSamples::LiveStreaming::PtzOperationsHandler::TriggerPreset(){
 
             // User inputs a preset index
             cout << "\nEnter the index of preset to be triggered (0 to cancel): ";
-            int ch;
-            cin >> ch;
+            int ch = Utility::ReadInt();
             // Verify the preset index
-            if (ch != 0) {
+            if (ch > 0 && ch <= presets.collectionSize) {
                 // Select the preset
-                IVxPreset* preset = presets.collection[ch];
+                IVxPreset* preset = presets.collection[ch - 1];
                 // Trigger the control using selected preset.
                 if (_ptzControl->TriggerPreset(*preset))
                     cout << "\nPreset triggered succesfully..\n";
                 else
                     cout << "\nFailed to trigger preset.\n";
             }
-            else {
+            else if (ch == 0) {
                 cout << "\nCancelled..\n";
+            }
+            else {
+                cout << "\nInvalid option selected.";
             }
         }
         else {

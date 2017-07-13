@@ -84,7 +84,7 @@ namespace SDKSampleApp.Source
             pbxMain.AllowDrop = true;
 
             // Clone each item in the MainForm ListView and add it to lvDataSources.
-            foreach (ListViewItem item in MainForm.Instance.lvDataSources.Items)
+            foreach (DataGridViewRow item in MainForm.Instance.dgvDataSources.Rows)
             {
                 var ds = (DataSource)item.Tag;
                 var lvItem = new ListViewItem(ds.Name);

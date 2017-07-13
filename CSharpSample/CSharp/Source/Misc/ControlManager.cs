@@ -75,20 +75,20 @@ namespace SDKSampleApp.Source
             if (control == Controls.Left)
             {
                 SelectedControl = Controls.Left;
-                MainForm.Instance.scVideoPanels.Panel1.BackColor = Color.LimeGreen;
-                MainForm.Instance.scVideoPanels.Panel2.BackColor = SystemColors.Control;
+                MainForm.Instance.scVideoPanels.Panel1.BackColor = Color.FromArgb(0, 125, 197);
+                MainForm.Instance.scVideoPanels.Panel2.BackColor = SystemColors.ControlDark;
                 ChangePtzFormState(PtzControl != null);
-                if (MainForm.Instance.lvDataSources.Items.Count > 0)
-                    MainForm.Instance.lvDataSources.Items[_playingIndexLeft].Selected = true;
+                if (MainForm.Instance.dgvDataSources.RowCount > 0)
+                    MainForm.Instance.dgvDataSources.Rows[_playingIndexLeft].Selected = true;
             }
             else
             {
                 SelectedControl = Controls.Right;
-                MainForm.Instance.scVideoPanels.Panel1.BackColor = SystemColors.Control;
-                MainForm.Instance.scVideoPanels.Panel2.BackColor = Color.LimeGreen;
+                MainForm.Instance.scVideoPanels.Panel1.BackColor = SystemColors.ControlDark;
+                MainForm.Instance.scVideoPanels.Panel2.BackColor = Color.FromArgb(0, 125, 197);
                 ChangePtzFormState(PtzControl != null);
-                if (MainForm.Instance.lvDataSources.Items.Count > 0)
-                    MainForm.Instance.lvDataSources.Items[_playingIndexRight].Selected = true;
+                if (MainForm.Instance.dgvDataSources.RowCount > 0)
+                    MainForm.Instance.dgvDataSources.Rows[_playingIndexRight].Selected = true;
             }
         }
 
@@ -118,9 +118,9 @@ namespace SDKSampleApp.Source
         public void SetPlayingIndex()
         {
             if (SelectedControl == Controls.Left)
-                _playingIndexLeft = MainForm.Instance.lvDataSources.SelectedItems[0].Index;
+                _playingIndexLeft = MainForm.Instance.dgvDataSources.SelectedRows[0].Index;
             else
-                _playingIndexRight = MainForm.Instance.lvDataSources.SelectedItems[0].Index;
+                _playingIndexRight = MainForm.Instance.dgvDataSources.SelectedRows[0].Index;
         }
 
         /// <summary>
@@ -140,6 +140,46 @@ namespace SDKSampleApp.Source
                     _mediaControllerLeft = value;
                 else
                     _mediaControllerRight = value;
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets the CurrentDataSource property.
+        /// </summary>
+        /// <value>A <see cref="DataSource"/>.</value>
+        public DataSource CurrentDataSource
+        {
+            get
+            {
+                return SelectedControl == Controls.Left ? _dataSourceLeft : _dataSourceRight;
+            }
+
+            set
+            {
+                if (SelectedControl == Controls.Left)
+                    _dataSourceLeft = value;
+                else
+                    _dataSourceRight = value;
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets the CurrentManualRecording property.
+        /// </summary>
+        /// <value>A <see cref="ManualRecording"/>.</value>
+        public ManualRecording CurrentManualRecording
+        {
+            get
+            {
+                return SelectedControl == Controls.Left ? _manualRecordingLeft : _manualRecordingRight;
+            }
+
+            set
+            {
+                if (SelectedControl == Controls.Left)
+                    _manualRecordingLeft = value;
+                else
+                    _manualRecordingRight = value;
             }
         }
 
@@ -231,6 +271,26 @@ namespace SDKSampleApp.Source
                 MainForm.Instance.lblTimestampRight.Text = timestamp;
             });
         }
+
+        /// <summary>
+        /// The _dataSourceLeft field.
+        /// </summary>  
+        private DataSource _dataSourceLeft;
+
+        /// <summary>
+        /// The _dataSourceRight field.
+        /// </summary>  
+        private DataSource _dataSourceRight;
+
+        /// <summary>
+        /// The _manualRecordingLeft field.
+        /// </summary>  
+        private ManualRecording _manualRecordingLeft;
+
+        /// <summary>
+        /// The _manualRecordingRight field.
+        /// </summary>  
+        private ManualRecording _manualRecordingRight;
 
         /// <summary>
         /// The _mediaControllerLeft field.

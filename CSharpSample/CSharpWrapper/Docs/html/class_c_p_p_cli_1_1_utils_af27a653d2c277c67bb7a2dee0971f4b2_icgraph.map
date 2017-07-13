@@ -1,22 +1,19 @@
 <map id="CPPCli::Utils::ConvertSysString" name="CPPCli::Utils::ConvertSysString">
-<area shape="rect" id="node2" href="$class_c_p_p_cli_1_1_vx_global.html#a059f42e3abff0da7751d72b6956d3dc4" title="Initialize the VideoXpert SDK. " alt="" coords="233,5,436,32"/>
-<area shape="rect" id="node3" href="$class_c_p_p_cli_1_1_vx_global.html#ac8677f64c1a6135b6db2d8332fb38f09" title="Sets the output path for log files. " alt="" coords="234,56,435,83"/>
-<area shape="rect" id="node4" href="$class_c_p_p_cli_1_1_clip.html#a4736e7d4e94f76405d7d8b9a2db98560" title="Gets the endpoint URI for snapshots. " alt="" coords="245,107,424,149"/>
-<area shape="rect" id="node6" href="$class_c_p_p_cli_1_1_v_x_system.html#a5e8b29f60578e845e270005bc92eea42" title="Create a new data object on the VideoXpert system. " alt="" coords="239,173,430,214"/>
-<area shape="rect" id="node8" href="$class_c_p_p_cli_1_1_v_x_system.html#a3907ebd3065c1bff25bf9339f11481ec" title="Add a device to the VideoXpert system. " alt="" coords="233,239,436,265"/>
-<area shape="rect" id="node9" href="$class_c_p_p_cli_1_1_v_x_system.html#abbf92e7f5827b3426452b627c9ea1248" title="Create a new drawing on the VideoXpert system. " alt="" coords="229,289,440,316"/>
-<area shape="rect" id="node10" href="$class_c_p_p_cli_1_1_v_x_system.html#a000a325c16f49ec7a53b541b6bc9439e" title="Create a new role on the VideoXpert system. " alt="" coords="239,340,430,367"/>
-<area shape="rect" id="node11" href="$class_c_p_p_cli_1_1_v_x_system.html#a95d3d9a822f64b57b931fcf46200f734" title="Add a new schedule on the VideoXpert system. " alt="" coords="225,391,444,417"/>
-<area shape="rect" id="node12" href="$class_c_p_p_cli_1_1_v_x_system.html#adddaec3653d09d4b061057cd4706231d" title="Add a new situation to the system. " alt="" coords="227,441,442,468"/>
-<area shape="rect" id="node13" href="$class_c_p_p_cli_1_1_v_x_system.html#a58473959242d329280fb9100c14c47d7" title="Create a new user on the VideoXpert system. " alt="" coords="239,492,430,519"/>
-<area shape="rect" id="node14" href="$class_c_p_p_cli_1_1_v_x_system.html#a7596cd2c07ce54fa64e1326c0a6b1abb" title="Create a new bookmark on the VideoXpert system. " alt="" coords="245,543,424,585"/>
-<area shape="rect" id="node15" href="$class_c_p_p_cli_1_1_v_x_system.html#a3f3c16cc6385e273c7bdb92b1b5fca1d" title="Create a new export on the VideoXpert system. " alt="" coords="245,609,424,650"/>
-<area shape="rect" id="node16" href="$class_c_p_p_cli_1_1_v_x_system.html#a48863030947ba8c9ee640e59aff0e31f" title="Create a new monitor on the VideoXpert system. " alt="" coords="245,674,424,715"/>
-<area shape="rect" id="node17" href="$class_c_p_p_cli_1_1_v_x_system.html#a1d51ec3edbe971197360ee6c8186d74e" title="Create a new notification on the VideoXpert system. " alt="" coords="245,739,424,781"/>
-<area shape="rect" id="node18" href="$class_c_p_p_cli_1_1_v_x_system.html#a674cd93ad45232be0c78a4a5108a6923" title="Create a new tag on the VideoXpert system. " alt="" coords="235,805,435,832"/>
-<area shape="rect" id="node19" href="$class_c_p_p_cli_1_1_v_x_system.html#aa8284a86d0c78a47d086c20c352060db" title="Insert a new event into the system. " alt="" coords="249,857,421,898"/>
-<area shape="rect" id="node20" href="$class_c_p_p_cli_1_1_v_x_system.html#a834b57b4ce75de89d603b8da3c5f20e3" title="Log in to the VideoXpert system. " alt="" coords="249,923,421,949"/>
-<area shape="rect" id="node21" href="$class_c_p_p_cli_1_1_v_x_system.html#ac600d21c12932e612566eed1c68b6066" title="Search for events on the system. " alt="" coords="243,974,426,1015"/>
-<area shape="rect" id="node5" href="$class_c_p_p_cli_1_1_clip.html#a434fac639c7d8ef2418adeea295ee565" title="Destructor. " alt="" coords="497,115,629,141"/>
-<area shape="rect" id="node7" href="$class_c_p_p_cli_1_1_v_x_system.html#adad99c4b19cddd9bdb36943e33041216" title="Virtual destructor. " alt="" coords="492,543,633,585"/>
+<area shape="rect" id="node2" href="$class_c_p_p_cli_1_1_vx_global.html#ac8677f64c1a6135b6db2d8332fb38f09" title="Sets the output path for log files. " alt="" coords="234,5,435,32"/>
+<area shape="rect" id="node3" href="$class_c_p_p_cli_1_1_v_x_system.html#a5e8b29f60578e845e270005bc92eea42" title="Create a new data object on the VideoXpert system. " alt="" coords="239,57,430,98"/>
+<area shape="rect" id="node5" href="$class_c_p_p_cli_1_1_v_x_system.html#a3907ebd3065c1bff25bf9339f11481ec" title="Add a device to the VideoXpert system. " alt="" coords="233,123,436,149"/>
+<area shape="rect" id="node6" href="$class_c_p_p_cli_1_1_v_x_system.html#abbf92e7f5827b3426452b627c9ea1248" title="Create a new drawing on the VideoXpert system. " alt="" coords="229,173,440,200"/>
+<area shape="rect" id="node7" href="$class_c_p_p_cli_1_1_v_x_system.html#ad4c4f3a1b2d80209d2bfaa4a7816e4a6" title="Add a new manual recording to the VideoXpert system. " alt="" coords="231,225,438,266"/>
+<area shape="rect" id="node8" href="$class_c_p_p_cli_1_1_v_x_system.html#a000a325c16f49ec7a53b541b6bc9439e" title="Create a new role on the VideoXpert system. " alt="" coords="239,291,430,317"/>
+<area shape="rect" id="node9" href="$class_c_p_p_cli_1_1_v_x_system.html#a95d3d9a822f64b57b931fcf46200f734" title="Add a new schedule on the VideoXpert system. " alt="" coords="225,341,444,368"/>
+<area shape="rect" id="node10" href="$class_c_p_p_cli_1_1_v_x_system.html#adddaec3653d09d4b061057cd4706231d" title="Add a new situation to the system. " alt="" coords="227,392,442,419"/>
+<area shape="rect" id="node11" href="$class_c_p_p_cli_1_1_v_x_system.html#a58473959242d329280fb9100c14c47d7" title="Create a new user on the VideoXpert system. " alt="" coords="239,443,430,469"/>
+<area shape="rect" id="node12" href="$class_c_p_p_cli_1_1_v_x_system.html#a7596cd2c07ce54fa64e1326c0a6b1abb" title="Create a new bookmark on the VideoXpert system. " alt="" coords="245,494,424,535"/>
+<area shape="rect" id="node13" href="$class_c_p_p_cli_1_1_v_x_system.html#a3f3c16cc6385e273c7bdb92b1b5fca1d" title="Create a new export on the VideoXpert system. " alt="" coords="245,559,424,601"/>
+<area shape="rect" id="node14" href="$class_c_p_p_cli_1_1_v_x_system.html#a48863030947ba8c9ee640e59aff0e31f" title="Create a new monitor on the VideoXpert system. " alt="" coords="245,625,424,666"/>
+<area shape="rect" id="node15" href="$class_c_p_p_cli_1_1_v_x_system.html#a1d51ec3edbe971197360ee6c8186d74e" title="Create a new notification on the VideoXpert system. " alt="" coords="245,690,424,731"/>
+<area shape="rect" id="node16" href="$class_c_p_p_cli_1_1_v_x_system.html#a674cd93ad45232be0c78a4a5108a6923" title="Create a new tag on the VideoXpert system. " alt="" coords="235,756,435,783"/>
+<area shape="rect" id="node17" href="$class_c_p_p_cli_1_1_v_x_system.html#aa8284a86d0c78a47d086c20c352060db" title="Insert a new event into the system. " alt="" coords="249,807,421,849"/>
+<area shape="rect" id="node18" href="$class_c_p_p_cli_1_1_v_x_system.html#ac600d21c12932e612566eed1c68b6066" title="Search for events on the system. " alt="" coords="243,873,426,914"/>
+<area shape="rect" id="node4" href="$class_c_p_p_cli_1_1_v_x_system.html#adad99c4b19cddd9bdb36943e33041216" title="Virtual destructor. " alt="" coords="492,435,633,477"/>
 </map>

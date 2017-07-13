@@ -7,5 +7,6 @@ var class_c_p_p_cli_1_1_bookmark =
     [ "DataSource", "class_c_p_p_cli_1_1_bookmark.html#a5ed02f7669688c6b264a550946832b5b", null ],
     [ "Description", "class_c_p_p_cli_1_1_bookmark.html#ada6da3ccaf6a53c1bafabc17db8c8759", null ],
     [ "Id", "class_c_p_p_cli_1_1_bookmark.html#af71845a3594ff456af1579abaae4ad78", null ],
+    [ "Name", "class_c_p_p_cli_1_1_bookmark.html#aeba06b04ca91dc1832bd9f814bc0ad59", null ],
     [ "Time", "class_c_p_p_cli_1_1_bookmark.html#ae72e5478cc137cf14ce4d93930281c43", null ]
 ];

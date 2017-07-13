@@ -33,7 +33,7 @@
             this.chDescription = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chTime = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.chDataSourceName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnNewBookmark = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
@@ -47,13 +47,13 @@
             this.chDescription,
             this.chTime,
             this.chId,
-            this.chDataSourceName});
+            this.chName});
             this.lvBookmarkManager.FullRowSelect = true;
             this.lvBookmarkManager.GridLines = true;
             this.lvBookmarkManager.Location = new System.Drawing.Point(12, 12);
             this.lvBookmarkManager.MultiSelect = false;
             this.lvBookmarkManager.Name = "lvBookmarkManager";
-            this.lvBookmarkManager.Size = new System.Drawing.Size(754, 320);
+            this.lvBookmarkManager.Size = new System.Drawing.Size(703, 320);
             this.lvBookmarkManager.TabIndex = 0;
             this.lvBookmarkManager.UseCompatibleStateImageBehavior = false;
             this.lvBookmarkManager.View = System.Windows.Forms.View.Details;
@@ -79,14 +79,14 @@
             this.chId.Text = "ID";
             this.chId.Width = 224;
             // 
-            // chDataSourceName
+            // chName
             // 
-            this.chDataSourceName.Text = "Data Source Name";
-            this.chDataSourceName.Width = 182;
+            this.chName.Text = "Name";
+            this.chName.Width = 135;
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(772, 41);
+            this.btnDelete.Location = new System.Drawing.Point(722, 41);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(89, 23);
             this.btnDelete.TabIndex = 2;
@@ -96,7 +96,7 @@
             // 
             // btnNewBookmark
             // 
-            this.btnNewBookmark.Location = new System.Drawing.Point(771, 12);
+            this.btnNewBookmark.Location = new System.Drawing.Point(721, 12);
             this.btnNewBookmark.Name = "btnNewBookmark";
             this.btnNewBookmark.Size = new System.Drawing.Size(90, 23);
             this.btnNewBookmark.TabIndex = 3;
@@ -106,7 +106,7 @@
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(772, 70);
+            this.btnRefresh.Location = new System.Drawing.Point(722, 70);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(89, 23);
             this.btnRefresh.TabIndex = 4;
@@ -118,7 +118,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(866, 350);
+            this.ClientSize = new System.Drawing.Size(819, 350);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnNewBookmark);
             this.Controls.Add(this.btnDelete);
@@ -140,9 +140,9 @@
         private System.Windows.Forms.ColumnHeader chDescription;
         private System.Windows.Forms.ColumnHeader chTime;
         private System.Windows.Forms.ColumnHeader chId;
-        private System.Windows.Forms.ColumnHeader chDataSourceName;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnNewBookmark;
         private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.ColumnHeader chName;
     }
 }

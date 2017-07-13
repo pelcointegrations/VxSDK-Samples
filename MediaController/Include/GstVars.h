@@ -2,7 +2,7 @@
 #define GstVars_h__
 
 #include "Controller.h"
-#include <gst\gstelement.h>
+#include <gst/gstelement.h>
 
 namespace MediaController {
 

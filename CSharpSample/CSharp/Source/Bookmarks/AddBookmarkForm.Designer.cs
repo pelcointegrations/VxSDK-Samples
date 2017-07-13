@@ -36,8 +36,11 @@
             this.tbxDescription = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.gbxName = new System.Windows.Forms.GroupBox();
+            this.tbxName = new System.Windows.Forms.TextBox();
             this.gbxTime.SuspendLayout();
             this.gbxDescription.SuspendLayout();
+            this.gbxName.SuspendLayout();
             this.SuspendLayout();
             // 
             // lvDataSources
@@ -61,7 +64,7 @@
             // gbxTime
             // 
             this.gbxTime.Controls.Add(this.dtpTime);
-            this.gbxTime.Location = new System.Drawing.Point(248, 81);
+            this.gbxTime.Location = new System.Drawing.Point(248, 145);
             this.gbxTime.Name = "gbxTime";
             this.gbxTime.Size = new System.Drawing.Size(215, 58);
             this.gbxTime.TabIndex = 18;
@@ -116,11 +119,30 @@
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             // 
+            // gbxName
+            // 
+            this.gbxName.Controls.Add(this.tbxName);
+            this.gbxName.Location = new System.Drawing.Point(248, 81);
+            this.gbxName.Name = "gbxName";
+            this.gbxName.Size = new System.Drawing.Size(215, 58);
+            this.gbxName.TabIndex = 7;
+            this.gbxName.TabStop = false;
+            this.gbxName.Text = "Name";
+            // 
+            // tbxName
+            // 
+            this.tbxName.Location = new System.Drawing.Point(6, 19);
+            this.tbxName.MaxLength = 64;
+            this.tbxName.Name = "tbxName";
+            this.tbxName.Size = new System.Drawing.Size(203, 20);
+            this.tbxName.TabIndex = 0;
+            // 
             // AddBookmarkForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(475, 249);
+            this.Controls.Add(this.gbxName);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.gbxDescription);
@@ -135,6 +157,8 @@
             this.gbxTime.ResumeLayout(false);
             this.gbxDescription.ResumeLayout(false);
             this.gbxDescription.PerformLayout();
+            this.gbxName.ResumeLayout(false);
+            this.gbxName.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -149,5 +173,7 @@
         private System.Windows.Forms.TextBox tbxDescription;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.GroupBox gbxName;
+        private System.Windows.Forms.TextBox tbxName;
     }
 }

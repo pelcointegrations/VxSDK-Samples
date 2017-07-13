@@ -39,6 +39,16 @@ namespace CPPCli {
         }
 
         /// <summary>
+        /// Gets or sets the unique identifier of the event. If not provided, the server will create this value.
+        /// </summary>
+        /// <value>The unique identifier.</value>
+        property System::String^ Id {
+        public:
+            System::String^ get() { return gcnew System::String(_newEvent->id); }
+            void set(System::String^ value) { VxSdk::Utilities::StrCopySafe(_newEvent->id, Utils::ConvertSysString(value)); }
+        }
+
+        /// <summary>
         /// Gets or sets any additional information related to the event.
         /// </summary>
         /// <value>A <c>List</c> containing the event properties.</value>
@@ -65,8 +75,8 @@ namespace CPPCli {
 
                 for (int i = 0; i < _newEvent->propertySize; i++)
                 {
-                    strncpy_s(_newEvent->properties[i].key, Utils::ConvertSysString(value[i].Key), sizeof(_newEvent->properties[i].key));
-                    strncpy_s(_newEvent->properties[i].value, Utils::ConvertSysString(value[i].Value), sizeof(_newEvent->properties[i].value));
+                    VxSdk::Utilities::StrCopySafe(_newEvent->properties[i].key, Utils::ConvertSysString(value[i].Key));
+                    VxSdk::Utilities::StrCopySafe(_newEvent->properties[i].value, Utils::ConvertSysString(value[i].Value));
                 }
             }
         }

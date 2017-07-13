@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E8D5BFBC-AE54-4553-B859-0B6E577AD609}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>CPPJni</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>Bin\$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>Bin\$(PlatformTarget)\$(Configuration)\Intermediates\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>Bin\$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>Bin\$(PlatformTarget)\$(Configuration)\Intermediates\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>Bin\$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>Bin\$(PlatformTarget)\$(Configuration)\Intermediates\</IntDir>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetExt>.dll</TargetExt>
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>Bin\$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>Bin\$(PlatformTarget)\$(Configuration)\Intermediates\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>Include\;$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Include;$(ProjectDir)..\..\MediaController\Include;$(ProgramFiles)\Java\jdk1.8.0_66\include;$(ProgramFiles)\Java\jdk1.8.0_66\include\win32</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>VxSdkd.lib;MediaControllerd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Lib;$(ProjectDir)..\..\MediaController\Bin\$(PlatformTarget)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\*" "$(TargetDir)"
+COPY /Y "$(ProjectDir)..\..\MediaController\Bin\$(PlatformTarget)\$(ConfigurationName)\*" "$(TargetDir)"</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>if not exist ..\Java\libs\$(PlatformTarget)\$(ConfigurationName)\bin mkdir ..\Java\libs\$(PlatformTarget)\$(ConfigurationName)\bin
+if not exist ..\Java\libs\$(PlatformTarget)\$(ConfigurationName)\lib mkdir ..\Java\libs\$(PlatformTarget)\$(ConfigurationName)\lib
+
+COPY /Y "$(TargetDir)*" "..\Java\libs\$(PlatformTarget)\$(ConfigurationName)"
+XCOPY  "$(ProjectDir)..\..\MediaController\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_runtime\bin\*.*" "..\Java\libs\$(PlatformTarget)\$(ConfigurationName)\bin\" /y /D
+XCOPY  "$(ProjectDir)..\..\MediaController\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_runtime\lib" "..\Java\libs\$(PlatformTarget)\$(ConfigurationName)\lib\" /s /i /y /D</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>Include\;$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Include;$(ProjectDir)..\..\MediaController\Include;$(ProgramFiles)\Java\jdk1.8.0_66\include;$(ProgramFiles)\Java\jdk1.8.0_66\include\win32</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>VxSdkd.lib;MediaControllerd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Lib;$(ProjectDir)..\..\MediaController\Bin\$(PlatformTarget)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\*" "$(TargetDir)"
+COPY /Y "$(ProjectDir)..\..\MediaController\Bin\$(PlatformTarget)\$(ConfigurationName)\*" "$(TargetDir)"</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>if not exist ..\Java\libs\$(PlatformTarget)\$(ConfigurationName)\bin mkdir ..\Java\libs\$(PlatformTarget)\$(ConfigurationName)\bin
+if not exist ..\Java\libs\$(PlatformTarget)\$(ConfigurationName)\lib mkdir ..\Java\libs\$(PlatformTarget)\$(ConfigurationName)\lib
+
+COPY /Y "$(TargetDir)*" "..\Java\libs\$(PlatformTarget)\$(ConfigurationName)"
+XCOPY  "$(ProjectDir)..\..\MediaController\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_runtime\bin\*.*" "..\Java\libs\$(PlatformTarget)\$(ConfigurationName)\bin\" /y /D
+XCOPY  "$(ProjectDir)..\..\MediaController\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_runtime\lib" "..\Java\libs\$(PlatformTarget)\$(ConfigurationName)\lib\" /s /i /y /D</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>Include\;$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Include;$(ProjectDir)..\..\MediaController\Include;$(ProgramFiles)\Java\jdk1.8.0_66\include;$(ProgramFiles)\Java\jdk1.8.0_66\include\win32</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Lib;$(ProjectDir)..\..\MediaController\Bin\$(PlatformTarget)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>VxSdk.lib;MediaController.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\*" "$(TargetDir)"
+COPY /Y "$(ProjectDir)..\..\MediaController\Bin\$(PlatformTarget)\$(ConfigurationName)\*" "$(TargetDir)"</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>if not exist ..\Java\libs\$(PlatformTarget)\$(ConfigurationName)\bin mkdir ..\Java\libs\$(PlatformTarget)\$(ConfigurationName)\bin
+if not exist ..\Java\libs\$(PlatformTarget)\$(ConfigurationName)\lib mkdir ..\Java\libs\$(PlatformTarget)\$(ConfigurationName)\lib
+
+COPY /Y "$(TargetDir)*" "..\Java\libs\$(PlatformTarget)\$(ConfigurationName)"
+XCOPY  "$(ProjectDir)..\..\MediaController\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_runtime\bin\*.*" "..\Java\libs\$(PlatformTarget)\$(ConfigurationName)\bin\" /y /D
+XCOPY  "$(ProjectDir)..\..\MediaController\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_runtime\lib" "..\Java\libs\$(PlatformTarget)\$(ConfigurationName)\lib\" /s /i /y /D</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>Include\;$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Include;$(ProjectDir)..\..\MediaController\Include;$(ProgramFiles)\Java\jdk1.8.0_66\include;$(ProgramFiles)\Java\jdk1.8.0_66\include\win32</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Lib;$(ProjectDir)..\..\MediaController\Bin\$(PlatformTarget)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>VxSdk.lib;MediaController.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>COPY /Y "$(ProgramFiles)\Pelco\VideoXpertSDK\SDK\$(PlatformTarget)\$(Configuration)\Bin\*" "$(TargetDir)"
+COPY /Y "$(ProjectDir)..\..\MediaController\Bin\$(PlatformTarget)\$(ConfigurationName)\*" "$(TargetDir)"</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>if not exist ..\Java\libs\$(PlatformTarget)\$(ConfigurationName)\bin mkdir ..\Java\libs\$(PlatformTarget)\$(ConfigurationName)\bin
+if not exist ..\Java\libs\$(PlatformTarget)\$(ConfigurationName)\lib mkdir ..\Java\libs\$(PlatformTarget)\$(ConfigurationName)\lib
+
+COPY /Y "$(TargetDir)*" "..\Java\libs\$(PlatformTarget)\$(ConfigurationName)"
+XCOPY  "$(ProjectDir)..\..\MediaController\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_runtime\bin\*.*" "..\Java\libs\$(PlatformTarget)\$(ConfigurationName)\bin\" /y /D
+XCOPY  "$(ProjectDir)..\..\MediaController\ThirdParty\GStreamer\1.8.1\$(PlatformTarget)\gstreamer_runtime\lib" "..\Java\libs\$(PlatformTarget)\$(ConfigurationName)\lib\" /s /i /y /D</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\Constants.h" />
+    <ClInclude Include="Include\javasample_JDataSource.h" />
+    <ClInclude Include="Include\javasample_JDevice.h" />
+    <ClInclude Include="Include\javasample_JEvent.h" />
+    <ClInclude Include="Include\javasample_JExport.h" />
+    <ClInclude Include="Include\javasample_JMediaControl.h" />
+    <ClInclude Include="Include\javasample_JPTZController.h" />
+    <ClInclude Include="Include\javasample_JSituation.h" />
+    <ClInclude Include="Include\javasample_JSystem.h" />
+    <ClInclude Include="Include\javasample_Win32.h" />
+    <ClInclude Include="Include\JClip.h" />
+    <ClInclude Include="Include\JDataInterface.h" />
+    <ClInclude Include="Include\JDatasource.h" />
+    <ClInclude Include="Include\JDevice.h" />
+    <ClInclude Include="Include\JEvent.h" />
+    <ClInclude Include="Include\JExport.h" />
+    <ClInclude Include="Include\JMediaControl.h" />
+    <ClInclude Include="Include\JPTZController.h" />
+    <ClInclude Include="Include\JSituation.h" />
+    <ClInclude Include="Include\JSystem.h" />
+    <ClInclude Include="Include\Logger.h" />
+    <ClInclude Include="Include\stdafx.h" />
+    <ClInclude Include="Include\targetver.h" />
+    <ClInclude Include="Include\JniUtils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\JDatasource.cpp" />
+    <ClCompile Include="Source\JDevice.cpp" />
+    <ClCompile Include="Source\JMediaControl.cpp" />
+    <ClCompile Include="Source\JPTZController.cpp" />
+    <ClCompile Include="Source\JSystem.cpp" />
+    <ClCompile Include="Source\Logger.cpp" />
+    <ClCompile Include="Source\stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\JniUtils.cpp" />
+    <ClCompile Include="Source\Win32.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

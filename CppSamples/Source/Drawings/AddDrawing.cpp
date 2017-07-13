@@ -15,8 +15,7 @@ Plugin* CppSamples::Drawings::AddDrawing::Run(DataModel* dataModel) {
 
     // Read name from input
     cout << "\n\n" << "Enter drawing name: ";
-    string name = "";
-    cin >> name;
+    string name = Utility::ReadString();
 
     // Add Drawing
     VxNewDrawing drawing;
@@ -29,7 +28,9 @@ Plugin* CppSamples::Drawings::AddDrawing::Run(DataModel* dataModel) {
     else
         cout << "\n" << "Failed to add drawing.\n";
 
-    system("pause");
+    // Wait for user response before going back to parent menu.
+    Utility::Pause();
+
     // Return reference of parent plugin to move back to parent menu.
     return GetParent();
 }

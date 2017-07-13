@@ -1,4 +1,5 @@
 <map id="CPPCli::VXSystem::InjectEvent" name="CPPCli::VXSystem::InjectEvent">
 <area shape="rect" id="node2" href="$class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2" title="Convert a system string to a char. " alt="" coords="227,5,399,47"/>
 <area shape="rect" id="node3" href="$class_c_p_p_cli_1_1_utils.html#a07aeac4d8bb768bb49b3072b1133b914" title="Convert a DateTime to a char. " alt="" coords="225,71,401,112"/>
+<area shape="rect" id="node4" href="$class_c_p_p_cli_1_1_v_x_system.html#a109e36ca22a5e30c57f0651b3ee6b389" title="Log in to the VideoXpert system. " alt="" coords="227,137,399,163"/>
 </map>

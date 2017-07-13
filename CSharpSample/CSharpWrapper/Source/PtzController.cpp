@@ -44,6 +44,12 @@ CPPCli::Results::Value CPPCli::PtzController::AbsoluteZoom(int positionZ) {
     return CPPCli::Results::Value(result);
 }
 
+CPPCli::Results::Value CPPCli::PtzController::AddPreset(int index) {
+    // Call AddPreset and return the result
+    VxSdk::VxResult::Value result = _ptzController->AddPreset(index);
+    return CPPCli::Results::Value(result);
+}
+
 CPPCli::Results::Value CPPCli::PtzController::ContinuousFocus(CPPCli::PtzController::FocusDirections nearFar) {
     // Call ContinuousFocus and return the result
     VxSdk::VxResult::Value result = _ptzController->ContinuousFocus((VxSdk::VxFocusDirection::Value)nearFar);
@@ -59,6 +65,12 @@ CPPCli::Results::Value CPPCli::PtzController::ContinuousIris(CPPCli::PtzControll
 CPPCli::Results::Value CPPCli::PtzController::ContinuousMove(int speedX, int speedY, CPPCli::PtzController::ZoomDirections inOut) {
     // Call ContinuousMove and return the result
     VxSdk::VxResult::Value result = _ptzController->ContinuousMove(speedX, speedY, (VxSdk::VxZoomDirection::Value)inOut);
+    return CPPCli::Results::Value(result);
+}
+
+CPPCli::Results::Value CPPCli::PtzController::DeletePreset(Preset^ preset) {
+    // Call DeletePreset and return the result
+    VxSdk::VxResult::Value result = _ptzController->DeletePreset(*preset->_preset);
     return CPPCli::Results::Value(result);
 }
 
@@ -126,6 +138,12 @@ CPPCli::Results::Value CPPCli::PtzController::RelativePercentageMove(int percent
     return CPPCli::Results::Value(result);
 }
 
+CPPCli::Results::Value CPPCli::PtzController::RepositionPreset(Preset^ preset) {
+    // Call RepositionPreset and return the result
+    VxSdk::VxResult::Value result = _ptzController->RepositionPreset(*preset->_preset);
+    return CPPCli::Results::Value(result);
+}
+
 CPPCli::Results::Value CPPCli::PtzController::Stop() {
     // Call PtzStop and return the result
     VxSdk::VxResult::Value result = _ptzController->PtzStop();
@@ -135,6 +153,12 @@ CPPCli::Results::Value CPPCli::PtzController::Stop() {
 CPPCli::Results::Value CPPCli::PtzController::TriggerPattern(Pattern^ pattern) {
     // Call TriggerPattern and return the result
     VxSdk::VxResult::Value result = _ptzController->TriggerPattern(*pattern->_pattern);
+    return CPPCli::Results::Value(result);
+}
+
+CPPCli::Results::Value CPPCli::PtzController::TriggerPreset(int index) {
+    // Call TriggerPreset and return the result
+    VxSdk::VxResult::Value result = _ptzController->TriggerPreset(index);
     return CPPCli::Results::Value(result);
 }
 
@@ -148,6 +172,18 @@ CPPCli::Results::Value CPPCli::PtzController::TriggerRefresh() {
     // Call TriggerRefresh and return the result
     VxSdk::VxResult::Value result = _ptzController->TriggerRefresh();
     return CPPCli::Results::Value(result);
+}
+
+CPPCli::PtzLimits^ CPPCli::PtzController::_GetPtzLimits() {
+    // Get the ptz limit values from the ptz controller
+    VxSdk::VxPtzLimits* ptzLimits = nullptr;
+    VxSdk::VxResult::Value result = _ptzController->GetPtzLimits(ptzLimits);
+
+    // Return the ptz limits if GetPtzLimits was successful
+    if (result == VxSdk::VxResult::kOK)
+        return gcnew PtzLimits(ptzLimits);
+
+    return nullptr;
 }
 
 CPPCli::PtzLock^ CPPCli::PtzController::_GetPtzLock() {

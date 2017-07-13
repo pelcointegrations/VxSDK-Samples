@@ -20,7 +20,10 @@ void CppSamples::Events::MonitorEvents::StartMonitorEvents(IVxSystem* vxSystem) 
     cout << "\n\n" << "Subscribing to events";
     if (!SubscribeEvents(vxSystem)) {
         cout << "Error subscribing to events! \n";
-        system("pause");
+
+        // Wait for user response before going back to parent menu.
+        Utility::Pause();
+
         return;
     }
 
@@ -33,7 +36,8 @@ void CppSamples::Events::MonitorEvents::StartMonitorEvents(IVxSystem* vxSystem) 
         cout << "Error unsubscribing to events!\n";
 
     cout << "\n";
-    system("pause");
+    // Wait for user response before going back to parent menu.
+    Utility::Pause();
 }
 
 /// <summary>
@@ -43,7 +47,7 @@ void CppSamples::Events::MonitorEvents::StartMonitorEvents(IVxSystem* vxSystem) 
 void CppSamples::Events::MonitorEvents::PrintEventRow(IVxEvent* vxEvent) {
     const int eventTimeWidth = 20;
     const int eventStringWidth = 32;
-    cout << left << setw(eventTimeWidth) << setfill(' ') << MonitorEvents::CovertUTCTimeFormatToString(vxEvent->time);
+    cout << left << setw(eventTimeWidth) << setfill(' ') << Utility::ConvertUTCTimeFormatToString(vxEvent->time);
     cout << left << setw(eventStringWidth) << setfill(' ') << vxEvent->situationType;
     cout << left << setw(eventStringWidth) << setfill(' ') << vxEvent->sourceDeviceId;
     cout << "\n";
@@ -104,19 +108,4 @@ bool CppSamples::Events::MonitorEvents::UnSubscribeEvents(IVxSystem* vxSystem) {
         cout << "\n" << "Failed to unsubscribe events!!\n";
         return false;
     }
-}
-
-/// <summary>
-/// Converts the UTC time format to string format (HH:MM::SS, Day Month)
-/// </summary>
-/// <param name="utcFormat">time string in UTC format (YYYYmmddTHHMMSSZ)</param>
-string CppSamples::Events::MonitorEvents::CovertUTCTimeFormatToString(string utcFormat) {
-    stringstream dateStream(utcFormat);
-    struct tm parseTime;
-    //Here parse date and time string value to time structure
-    dateStream >> get_time(&parseTime, "%Y-%m-%dT%H:%M:%S");
-    char buffer[18];
-    strftime(buffer, 18, "%X %x", &parseTime);
-
-    return string(buffer);
 }

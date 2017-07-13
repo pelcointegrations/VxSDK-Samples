@@ -126,9 +126,7 @@ Public Types</h2></td></tr>
 <tr class="memitem:a5099286740a481c658f0fb9c540982aa"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_export.html#a5099286740a481c658f0fb9c540982aa">Formats</a> { <br />
 &#160;&#160;<a class="el" href="class_c_p_p_cli_1_1_export.html#a5099286740a481c658f0fb9c540982aaa88183b946cc5f0e8c96b2e66e1c74a7e">Formats::Unknown</a>, 
 <br />
-&#160;&#160;<a class="el" href="class_c_p_p_cli_1_1_export.html#a5099286740a481c658f0fb9c540982aaa22ede624179d7924a226fea4faa5c4de">Formats::MkvZip</a>, 
-<br />
-&#160;&#160;<a class="el" href="class_c_p_p_cli_1_1_export.html#a5099286740a481c658f0fb9c540982aaa7d761542d4b5ea168dc156e85a9a2949">Formats::Mp4</a>
+&#160;&#160;<a class="el" href="class_c_p_p_cli_1_1_export.html#a5099286740a481c658f0fb9c540982aaa22ede624179d7924a226fea4faa5c4de">Formats::MkvZip</a>
 <br />
  }<tr class="memdesc:a5099286740a481c658f0fb9c540982aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent the format of exported data.  <a href="class_c_p_p_cli_1_1_export.html#a5099286740a481c658f0fb9c540982aa">More...</a><br /></td></tr>
 </td></tr>
@@ -239,13 +237,10 @@ Properties</h2></td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a5099286740a481c658f0fb9c540982aaa22ede624179d7924a226fea4faa5c4de"></a>MkvZip&#160;</td><td class="fielddoc">
 <p>MKV file(s) contained withing a zip file.</p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a5099286740a481c658f0fb9c540982aaa7d761542d4b5ea168dc156e85a9a2949"></a>Mp4&#160;</td><td class="fielddoc">
-<p>An MP4 file.</p>
-</td></tr>
 </table>
 
 <p>Definition at line <a class="el" href="_export_8h_source.html#l00021">21</a> of file <a class="el" href="_export_8h_source.html">Export.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                           {</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            Unknown,</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            MkvZip,</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            Mp4</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        };</div></div><!-- fragment -->
+<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                           {</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            Unknown,</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            MkvZip</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        };</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="aa1e40310d87591e803c2c5d30d74f0a7"></a>
@@ -285,8 +280,8 @@ Properties</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="_export_8h_source.html#l00035">35</a> of file <a class="el" href="_export_8h_source.html">Export.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                          {</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            Unknown,</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            Exporting,</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            Failed,</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            Pending,</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            Successful</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        };</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_export_8h_source.html#l00032">32</a> of file <a class="el" href="_export_8h_source.html">Export.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                          {</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            Unknown,</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            Exporting,</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            Failed,</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            Pending,</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            Successful</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        };</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -349,8 +344,8 @@ Here is the caller graph for this function:</div>
 
 <p>Destructor. </p>
 
-<p>Definition at line <a class="el" href="_export_8h_source.html#l00061">61</a> of file <a class="el" href="_export_8h_source.html">Export.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                          {</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            this-&gt;!<a class="code" href="class_c_p_p_cli_1_1_export.html#a741f9a7a48b2049c61535182849961e1">Export</a>();</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        }</div><div class="ttc" id="class_c_p_p_cli_1_1_export_html_a741f9a7a48b2049c61535182849961e1"><div class="ttname"><a href="class_c_p_p_cli_1_1_export.html#a741f9a7a48b2049c61535182849961e1">CPPCli::Export::Export</a></div><div class="ttdeci">Export(VxSdk::IVxExport *vxExport)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="_export_8cpp_source.html#l00008">Export.cpp:8</a></div></div>
+<p>Definition at line <a class="el" href="_export_8h_source.html#l00058">58</a> of file <a class="el" href="_export_8h_source.html">Export.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                          {</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            this-&gt;!<a class="code" href="class_c_p_p_cli_1_1_export.html#a741f9a7a48b2049c61535182849961e1">Export</a>();</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div><div class="ttc" id="class_c_p_p_cli_1_1_export_html_a741f9a7a48b2049c61535182849961e1"><div class="ttname"><a href="class_c_p_p_cli_1_1_export.html#a741f9a7a48b2049c61535182849961e1">CPPCli::Export::Export</a></div><div class="ttdeci">Export(VxSdk::IVxExport *vxExport)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="_export_8cpp_source.html#l00008">Export.cpp:8</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -438,7 +433,7 @@ Here is the caller graph for this function:</div>
 <p>Gets the date and time at which the triggered export completed the export operation. </p>
 <p>A default <code>DateTime</code> if it fails, else the <code>DateTime</code> when the export completed.</p>
 
-<p>Definition at line <a class="el" href="_export_8h_source.html#l00080">80</a> of file <a class="el" href="_export_8h_source.html">Export.h</a>.</p>
+<p>Definition at line <a class="el" href="_export_8h_source.html#l00077">77</a> of file <a class="el" href="_export_8h_source.html">Export.h</a>.</p>
 
 </div>
 </div>
@@ -464,7 +459,7 @@ Here is the caller graph for this function:</div>
 <p>It will only be present if the exported data is completed and available for download. </p>
 <p>The data URI.</p>
 
-<p>Definition at line <a class="el" href="_export_8h_source.html#l00090">90</a> of file <a class="el" href="_export_8h_source.html">Export.h</a>.</p>
+<p>Definition at line <a class="el" href="_export_8h_source.html#l00087">87</a> of file <a class="el" href="_export_8h_source.html">Export.h</a>.</p>
 
 </div>
 </div>
@@ -489,7 +484,7 @@ Here is the caller graph for this function:</div>
 <p>Gets the clips associated with this export. </p>
 <p>The <code>List</code> of clips contained in the export.</p>
 
-<p>Definition at line <a class="el" href="_export_8h_source.html#l00099">99</a> of file <a class="el" href="_export_8h_source.html">Export.h</a>.</p>
+<p>Definition at line <a class="el" href="_export_8h_source.html#l00096">96</a> of file <a class="el" href="_export_8h_source.html">Export.h</a>.</p>
 
 </div>
 </div>
@@ -514,7 +509,7 @@ Here is the caller graph for this function:</div>
 <p>Gets the file size of the exported data in kilobytes (kB). </p>
 <p>The file size.</p>
 
-<p>Definition at line <a class="el" href="_export_8h_source.html#l00108">108</a> of file <a class="el" href="_export_8h_source.html">Export.h</a>.</p>
+<p>Definition at line <a class="el" href="_export_8h_source.html#l00105">105</a> of file <a class="el" href="_export_8h_source.html">Export.h</a>.</p>
 
 </div>
 </div>
@@ -539,7 +534,7 @@ Here is the caller graph for this function:</div>
 <p>Gets the format of the export data. </p>
 <p>The export <a class="el" href="class_c_p_p_cli_1_1_export.html#a5099286740a481c658f0fb9c540982aa">Format</a>.</p>
 
-<p>Definition at line <a class="el" href="_export_8h_source.html#l00117">117</a> of file <a class="el" href="_export_8h_source.html">Export.h</a>.</p>
+<p>Definition at line <a class="el" href="_export_8h_source.html#l00114">114</a> of file <a class="el" href="_export_8h_source.html">Export.h</a>.</p>
 
 </div>
 </div>
@@ -564,7 +559,7 @@ Here is the caller graph for this function:</div>
 <p>Gets the unique export identifier. </p>
 <p>The unique identifier.</p>
 
-<p>Definition at line <a class="el" href="_export_8h_source.html#l00126">126</a> of file <a class="el" href="_export_8h_source.html">Export.h</a>.</p>
+<p>Definition at line <a class="el" href="_export_8h_source.html#l00123">123</a> of file <a class="el" href="_export_8h_source.html">Export.h</a>.</p>
 
 </div>
 </div>
@@ -589,7 +584,7 @@ Here is the caller graph for this function:</div>
 <p>Gets the date and time at which the <a class="el" href="class_c_p_p_cli_1_1_export.html" title="The Export class represents an exported data set that is archived within the system. ">Export</a> was requested. </p>
 <p>The <code>DateTime</code> when the export was initiated.</p>
 
-<p>Definition at line <a class="el" href="_export_8h_source.html#l00135">135</a> of file <a class="el" href="_export_8h_source.html">Export.h</a>.</p>
+<p>Definition at line <a class="el" href="_export_8h_source.html#l00132">132</a> of file <a class="el" href="_export_8h_source.html">Export.h</a>.</p>
 
 </div>
 </div>
@@ -614,7 +609,7 @@ Here is the caller graph for this function:</div>
 <p>Gets a value indicating whether the export data is signed and encrypted. </p>
 <p><code>true</code> if this export is protected, <code>false</code> if not.</p>
 
-<p>Definition at line <a class="el" href="_export_8h_source.html#l00144">144</a> of file <a class="el" href="_export_8h_source.html">Export.h</a>.</p>
+<p>Definition at line <a class="el" href="_export_8h_source.html#l00141">141</a> of file <a class="el" href="_export_8h_source.html">Export.h</a>.</p>
 
 </div>
 </div>
@@ -639,7 +634,7 @@ Here is the caller graph for this function:</div>
 <p>Gets the friendly name of the export. </p>
 <p>The friendly name.</p>
 
-<p>Definition at line <a class="el" href="_export_8h_source.html#l00153">153</a> of file <a class="el" href="_export_8h_source.html">Export.h</a>.</p>
+<p>Definition at line <a class="el" href="_export_8h_source.html#l00150">150</a> of file <a class="el" href="_export_8h_source.html">Export.h</a>.</p>
 
 </div>
 </div>
@@ -664,7 +659,7 @@ Here is the caller graph for this function:</div>
 <p>Gets the user that has created this export, if any. </p>
 <p>The user that owns this export.</p>
 
-<p>Definition at line <a class="el" href="_export_8h_source.html#l00162">162</a> of file <a class="el" href="_export_8h_source.html">Export.h</a>.</p>
+<p>Definition at line <a class="el" href="_export_8h_source.html#l00159">159</a> of file <a class="el" href="_export_8h_source.html">Export.h</a>.</p>
 
 </div>
 </div>
@@ -689,7 +684,7 @@ Here is the caller graph for this function:</div>
 <p>Gets the name of the user that has created this export, if any. </p>
 <p>The owner name.</p>
 
-<p>Definition at line <a class="el" href="_export_8h_source.html#l00171">171</a> of file <a class="el" href="_export_8h_source.html">Export.h</a>.</p>
+<p>Definition at line <a class="el" href="_export_8h_source.html#l00168">168</a> of file <a class="el" href="_export_8h_source.html">Export.h</a>.</p>
 
 </div>
 </div>
@@ -715,7 +710,7 @@ Here is the caller graph for this function:</div>
 <p>This specifies how close the export is to completion. 0 indicates that the export has not been triggered; 100 indicates that the export is complete. </p>
 <p>The percent complete.</p>
 
-<p>Definition at line <a class="el" href="_export_8h_source.html#l00182">182</a> of file <a class="el" href="_export_8h_source.html">Export.h</a>.</p>
+<p>Definition at line <a class="el" href="_export_8h_source.html#l00179">179</a> of file <a class="el" href="_export_8h_source.html">Export.h</a>.</p>
 
 </div>
 </div>
@@ -741,7 +736,7 @@ Here is the caller graph for this function:</div>
 <p>If the export is complete this value will be 0. </p>
 <p>The seconds remaining.</p>
 
-<p>Definition at line <a class="el" href="_export_8h_source.html#l00192">192</a> of file <a class="el" href="_export_8h_source.html">Export.h</a>.</p>
+<p>Definition at line <a class="el" href="_export_8h_source.html#l00189">189</a> of file <a class="el" href="_export_8h_source.html">Export.h</a>.</p>
 
 </div>
 </div>
@@ -766,7 +761,7 @@ Here is the caller graph for this function:</div>
 <p>Gets the current status of the export. </p>
 <p>The current export status.</p>
 
-<p>Definition at line <a class="el" href="_export_8h_source.html#l00201">201</a> of file <a class="el" href="_export_8h_source.html">Export.h</a>.</p>
+<p>Definition at line <a class="el" href="_export_8h_source.html#l00198">198</a> of file <a class="el" href="_export_8h_source.html">Export.h</a>.</p>
 
 </div>
 </div>

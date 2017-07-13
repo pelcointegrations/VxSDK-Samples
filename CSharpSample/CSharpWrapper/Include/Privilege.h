@@ -181,6 +181,16 @@ namespace CPPCli {
         CPPCli::Results::Value Unlink(System::Collections::Generic::List<User^>^ users);
 
         /// <summary>
+        /// Gets or sets whether the privilege is excluded from the associated resources.
+        /// </summary>
+        /// <value><c>true</c> if the privilege is excluded, <c>false</c> if not.</value>
+        property bool ExcludeRestricted {
+        public:
+            bool get() { return _privilege->excludeRestricted; }
+            void set(bool value) { _privilege->SetExcludeRestricted(value); }
+        }
+
+        /// <summary>
         /// Gets the unique identifier for this privilege.
         /// </summary>
         /// <value>The unique identifier.</value>
@@ -190,7 +200,7 @@ namespace CPPCli {
         }
 
         /// <summary>
-        /// Gets whether the privilege is restricted to the associated resources.
+        /// Gets or sets whether the privilege is restricted to the associated resources.
         /// </summary>
         /// <value><c>true</c> if restricted, <c>false</c> if not.</value>
         property bool IsRestricted {

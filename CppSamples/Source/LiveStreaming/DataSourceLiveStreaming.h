@@ -2,13 +2,14 @@
 
 #include "VxSdk.h"
 #include "MediaController.h"
+#ifndef VxSdkInLinux
 #include <Windows.h>
+#endif
 
 #include "Plugin.h"
 
 namespace CppSamples {
     namespace LiveStreaming {
-
         /// <summary>
         /// This plugin sample streams the video in live
         /// </summary>
@@ -32,7 +33,8 @@ namespace CppSamples {
             /// </summary>
             /// <param name="isPtzEnabled">True indicates PTZ options to be displayed else player controls only</param>
             /// <param name="isLive">True indicates to show live options only else include playback options also</param>
-            static void DisplayPlayerOptionsToConsole(bool isPtzEnabled, bool isLive);
+            /// <param name="isRecording">True indicates the camera is in recording state</param>
+            static void DisplayPlayerOptionsToConsole(bool isPtzEnabled, bool isLive, bool isRecording);
 
             /// <summary>
             /// Streams a video in live.
@@ -70,7 +72,7 @@ namespace CppSamples {
             /// <param name="dataInterface">Selected dataInterface</param>
             /// <param name="seekTime">nullptr for live; otherwise pass time in "yyyymmddThhmmssZ-" format</param>
             /// <returns>True if streaming was successfull. False otherwise.</returns>
-            static bool StartStreamingForDataSource(VxSdk::IVxDataSource* dataSource, VxSdk::IVxDataInterface* dataInterface, time_t seekTime);
+            bool StartStreamingForDataSource(VxSdk::IVxDataSource* dataSource, VxSdk::IVxDataInterface* dataInterface, time_t seekTime);
 
             /// <summary>
             /// Callback fired from MediaController class for updating the timestamp of currently playing stream

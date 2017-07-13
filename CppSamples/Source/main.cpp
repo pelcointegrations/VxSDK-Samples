@@ -3,6 +3,7 @@
 
 #include "stdafx.h"
 #include "Controller.h"
+
 #include "Common/MenuItem.h"
 #include "Common/Controller.h"
 
@@ -65,14 +66,22 @@ using namespace CppSamples::Common;
 
 MenuItem* CreateMenuStructure();
 
-int _tmain() {
+#ifndef WIN32
 
+int main() {
+    return _tmain();
+}
+
+#endif
+
+int _tmain() {
     // Create menu structure of the application.
     MenuItem* rootMenu = CreateMenuStructure();
     // Create new instance of Controller.
     Controller controller(rootMenu);
     // Start the controller
     controller.Run();
+
     return 0;
 }
 
@@ -89,7 +98,7 @@ void AddSubMenu(MenuItem* menu, MenuItem* subMenu) {
 MenuItem* CreateMenuStructure() {
     // Create new instance of Root menu.
     MenuItem* rootMenu = new MenuItem("Main Menu");
-    
+
     // Data Sources
     // ------------
     MenuItem* dataSourceMenu = new MenuItem("DataSources");

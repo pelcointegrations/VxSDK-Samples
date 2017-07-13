@@ -1,5 +1,9 @@
 #include "stdafx.h"
+#ifdef WIN32
 #include <direct.h>
+#else
+#include <sys/stat.h>
+#endif
 #include <curl.h>
 
 #include "DownloadExport.h"
@@ -12,11 +16,16 @@ using namespace CppSamples::Common;
 
 // Downloads an export from the current system and saves as a file.
 Plugin* CppSamples::Exports::DownloadExport::Run(DataModel* dataModel) {
-    Download(dataModel->VxSystem);
+    username = dataModel->username;
+    password = dataModel->password;
+    if (Download(dataModel->VxSystem)) {
+        Utility::ShowProgress("Completed", 100, 100, 50);
 
-    cout << "\n\n";
-    // Pause for user input before going back to parent menu.
-    system("pause");
+        cout << "\n\n";
+        // Pause for user input before going back to parent menu.
+        Utility::Pause();
+    }
+
     // Return reference of parent plugin to move back to parent menu.
     return GetParent();
 }
@@ -63,48 +72,44 @@ void CppSamples::Exports::DownloadExport::DisplayExportDetailsOnScreen(VxCollect
 }
 
 // Downloads an export from the current system and saves as a file.
-void CppSamples::Exports::DownloadExport::Download(IVxSystem* vxSystem) const {
+bool CppSamples::Exports::DownloadExport::Download(IVxSystem* vxSystem) const {
     // Get a collection of exports from the system
     VxCollection<IVxExport**> exports = GetExports(vxSystem);
     // Display the details of exports in the collection on screen.
     DisplayExportDetailsOnScreen(exports);
 
     if (exports.collectionSize <= 0)
-        return;
+        return false;
+
     // User selects an export
-    int exportIndex;
     cout << "\n" << "Enter index of export to download [1-" << exports.collectionSize << "] : ";
-    cin >> exportIndex;
+    int exportIndex = Utility::ReadInt();
 
     // Validate user input
-    if (exportIndex < 1 || exportIndex >= exports.collectionSize)
-        return;
+    if (exportIndex < 1 || exportIndex > exports.collectionSize)
+        return false;
 
     // Print details of selected export to delete
     IVxExport* vxExport = exports.collection[exportIndex - 1];
     ShowExportDetails(vxExport);
     
     // File Location
-    cout << "\n" << "Enter path to save export file(eg: C:\\ExportFolder): ";
-    string pathToSave = "";
-    cin >> pathToSave;
+    cout << "\n" << "Enter path to save export file: ";
+    string pathToSave = Utility::ReadString();
 
     // File Name
     cout << "\n" << "Enter name to save export file: ";
-    string fileToSave = "";
-    cin >> fileToSave;
+    string fileToSave = Utility::ReadString();
 
     // Set extention based of export format
-    string fullPath;
-    if (vxExport->format == VxExportFormat::kMp4) {
-        fullPath = pathToSave + "\\" + fileToSave + ".mp4";
-    }
-    else {
-        fullPath = pathToSave + "\\" + fileToSave + ".zip";
-    }
+    string fullPath = pathToSave + "/" + fileToSave + ".zip";
 
     // Make directory if doesn't exists
+#ifdef VxSdkInLinux
+    mkdir(pathToSave.c_str(),0777);
+#else
     _mkdir(pathToSave.c_str());
+#endif
 
     // Initialize CURL
     int actualFileSize = vxExport->fileSizeKb;
@@ -113,18 +118,27 @@ void CppSamples::Exports::DownloadExport::Download(IVxSystem* vxSystem) const {
 
     if (curl) {
         // Open File for Writing
+#ifdef VxSdkInLinux
+        fp = fopen(fullPath.c_str(), "wb");
+#else
         fopen_s(&fp, fullPath.c_str(), "wb");
+#endif
         if (fp == nullptr) {
             char buff[256];
+#ifdef VxSdkInLinux
+            *buff = *strerror(errno);
+#else
             strerror_s(buff, 100, errno);
+#endif
             printf("Error opening file for writing:  %s\n", buff);
-            return;
+            return false;
         }
 
         // Create Header structure with user name and password
         struct curl_slist *headers = nullptr;
-        string userNameHeader = "X-Serenity-User: " + Utility::Encode(Constants::kUserName);
-        string passwordHeader = "X-Serenity-Password: " + Utility::Encode(Constants::kPassword);
+        
+        string userNameHeader = "X-Serenity-User: " + Utility::Encode(username);
+        string passwordHeader = "X-Serenity-Password: " + Utility::Encode(password);
         headers = curl_slist_append(headers, userNameHeader.c_str());
         headers = curl_slist_append(headers, passwordHeader.c_str());
 
@@ -145,11 +159,12 @@ void CppSamples::Exports::DownloadExport::Download(IVxSystem* vxSystem) const {
         // Cleanup the CURL
         curl_easy_cleanup(curl);
         fclose(fp);
-        cout << "\n\n";
     }
 
     // Remove the memory allocated to the collection.
     delete[] exports.collection;
+
+    return true;
 }
 
 /// <summary>
@@ -159,9 +174,6 @@ string CppSamples::Exports::DownloadExport::GetExportFormatInString(VxExportForm
     string expFormatInString = "Unknown";
     if (expFormat == VxExportFormat::kMkvZip) {
         expFormatInString = "MkvZip";
-    }
-    else if (expFormat == VxExportFormat::kMp4) {
-        expFormatInString = "Mp4";
     }
 
     return expFormatInString;

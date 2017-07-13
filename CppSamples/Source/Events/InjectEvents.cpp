@@ -11,8 +11,9 @@ Plugin* CppSamples::Events::InjectEvents::Run(DataModel* dataModel) {
 
     Inject(dataModel->VxSystem);
 
-    // Pause for user input before going back to parent menu.
-    system("pause");
+    // Wait for user response before going back to parent menu.
+    Utility::Pause();
+
     // Return reference of parent plugin to move back to parent menu.
     return GetParent();
 }
@@ -29,9 +30,13 @@ void CppSamples::Events::InjectEvents::Inject(IVxSystem* vxSystem) {
     DisplaySituationDetailsOnScreen(situations);
 
     // User selects a situation
-    int situationId = -1;
     cout << "\n" << "Enter the id of the situation to be associated with the event [1-" << situations.collectionSize << "] : ";
-    cin >> situationId;
+    int situationId = Utility::ReadInt();
+
+    if (situationId < 1 || situationId > situations.collectionSize) {
+        cout << "\n" << "Invalid option is given.";
+        return;
+    }
 
     // Print details of selected situation
     IVxSituation* situation = situations.collection[situationId - 1];
@@ -39,16 +44,13 @@ void CppSamples::Events::InjectEvents::Inject(IVxSystem* vxSystem) {
 
     // Read generator Device ID
     cout << "\n" << "Enter generator device id: ";
-    string generatorDeviceId = "";
-    cin >> generatorDeviceId;
+    string generatorDeviceId = Utility::ReadString();
 
     // Read source Device ID
     cout << "\n" << "Enter source device id: ";
-    string sourceDeviceId = "";
-    cin >> sourceDeviceId;
+    string sourceDeviceId = Utility::ReadString();
 
     // Read event time
-    cin.ignore();
     cout << "\n" << "Enter event time(yyyy-mm-dd hh:mm:ss): ";
     struct tm strtTime = Utility::GetDateAndTimeFromUser();
     string startTimeInUTC = Utility::ConvertLocalTimetoUTC(strtTime);

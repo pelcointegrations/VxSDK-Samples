@@ -18,10 +18,12 @@ namespace SDKSampleApp.Source
         {
             InitializeComponent();
 
-            // Clone each item in the MainForm ListView and add it to lvDataSources.
-            foreach (ListViewItem item in MainForm.Instance.lvDataSources.Items)
+            foreach (DataGridViewRow row in MainForm.Instance.dgvDataSources.Rows)
             {
-                var lvItem = (ListViewItem)item.Clone();
+                var ds = (DataSource)row.Tag;
+                var lvItem = new ListViewItem(ds.Name);
+                lvItem.SubItems.Add(ds.Number.ToString());
+                lvItem.Tag = ds;
                 lvDataSources.Items.Add(lvItem);
             }
         }
@@ -40,6 +42,7 @@ namespace SDKSampleApp.Source
             var newBookmark = new NewBookmark
             {
                 Description = tbxDescription.Text,
+                Name = tbxName.Text,
                 Time = dtpTime.Value.ToUniversalTime(),
                 DataSourceId = dataSource.Id
             };

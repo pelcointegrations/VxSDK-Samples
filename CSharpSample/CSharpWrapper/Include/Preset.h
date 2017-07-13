@@ -40,6 +40,15 @@ namespace CPPCli {
         }
 
         /// <summary>
+        /// Gets the unique numerical sequence value of this preset.
+        /// </summary>
+        /// <value>The unique numerical sequence value.</value>
+        property int Index {
+        public:
+            int get() { return _preset->index; }
+        }
+
+        /// <summary>
         /// Gets the friendly name of the preset.
         /// </summary>
         /// <value>The friendly name.</value>

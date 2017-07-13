@@ -46,12 +46,6 @@ namespace CppSamples {
             /// Print the headings for a table of events.
             /// </summary>
             static void PrintEventHeadings();
-
-            /// <summary>
-            /// Converts the UTC time format to string format (HH:MM::SS, Day Month)
-            /// </summary>
-            /// <param name="utcFormat">time string in UTC format (YYYYmmddTHHMMSSZ)</param>
-            static std::string CovertUTCTimeFormatToString(std::string utcFormat);
         };
     }
 }

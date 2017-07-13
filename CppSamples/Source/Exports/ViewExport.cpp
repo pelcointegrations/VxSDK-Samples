@@ -8,7 +8,7 @@ using namespace CppSamples::Common;
 
 // Print all exports available in the current system.
 Plugin* CppSamples::Exports::ViewExport::Run(DataModel* dataModel) {
-    system("cls");
+    Utility::ClearScreen();
 
     // Get a collection of exports from the system
     VxCollection<IVxExport**> exportCollection = GetExports(dataModel->VxSystem);
@@ -17,7 +17,8 @@ Plugin* CppSamples::Exports::ViewExport::Run(DataModel* dataModel) {
 
     cout << "\n\n";
     // Pause for user input before going back to parent menu.
-    system("pause");
+    Utility::Pause();
+
     // Remove the memory allocated to the collection.
     delete[] exportCollection.collection;
     // Return reference of parent plugin to move back to parent menu.

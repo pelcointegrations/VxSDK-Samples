@@ -48,6 +48,16 @@ namespace CPPCli {
         }
 
         /// <summary>
+        /// Gets or sets the friendly name of the bookmark.
+        /// </summary>
+        /// <value>The friendly name.</value>
+        property System::String^ Name {
+        public:
+            System::String^ get() { return gcnew System::String(_newBookmark->name); }
+            void set(System::String^ value) { VxSdk::Utilities::StrCopySafe(_newBookmark->name, Utils::ConvertSysString(value)); }
+        }
+
+        /// <summary>
         /// Gets or sets the time at which the point of interest occurred.
         /// </summary>
         /// <value>The time at which the point of interest occurred.</value>

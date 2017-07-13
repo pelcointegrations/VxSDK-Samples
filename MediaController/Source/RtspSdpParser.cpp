@@ -46,6 +46,8 @@ void SdpParser::Parse(const string& sdp) {
             media.conferenceType = line.substr(7);
             boost::trim(media.conferenceType);
         }
+        else if (line.substr(0, 2) == "c=")
+            ParseConnectionInformation(line, media.ip, media.ttl, media.isMulticast);
         else if (!media.type.empty()) {
             // If the line contains the connection information, parse it.
             if (line.substr(0, 2) == "c=")

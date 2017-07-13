@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include "DeleteExport.h"
+#include "Utility.h"
 
 using namespace std;
 using namespace VxSdk;
@@ -11,7 +12,8 @@ Plugin* CppSamples::Exports::DeleteExport::Run(DataModel* dataModel) {
 
     cout << "\n\n";
     // Pause for user input before going back to parent menu.
-    system("pause");
+    Utility::Pause();
+
     // Return reference of parent plugin to move back to parent menu.
     return GetParent();
 }
@@ -27,12 +29,11 @@ void CppSamples::Exports::DeleteExport::DeleteSingleExport(IVxSystem* vxSystem) 
         return;
 
     // User selects an export
-    int exportIndex;
     cout << "\n" << "Enter index of export to delete [1-" << exports.collectionSize << "] : ";
-    cin >> exportIndex;
+    int exportIndex = Utility::ReadInt();
 
     // Validate user input
-    if (exportIndex < 1 || exportIndex >= exports.collectionSize)
+    if (exportIndex < 1 || exportIndex > exports.collectionSize)
         return;
 
     // Print details of selected export to delete

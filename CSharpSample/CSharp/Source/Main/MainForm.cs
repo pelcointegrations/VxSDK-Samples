@@ -27,27 +27,18 @@ namespace SDKSampleApp.Source
         public MainForm()
         {
             InitializeComponent();
+            dtpSeekTime.Value = DateTime.Now.AddMinutes(-10);
             scOuter.Panel2Collapsed = true;
             Instance = this;
             PtzForm = new PTZControlForm();
             Control = new ControlManager();
             SnapshotBasePath = Environment.GetFolderPath(Environment.SpecialFolder.CommonPictures) + "\\";
+            bgWorker.DoWork += Utilities.BackgroundWorker_DoWork;
+            bgWorker.ProgressChanged += Utilities.BackgroundWorker_ProgressChanged;
+            bgWorker.RunWorkerCompleted += Utilities.BackgroundWorker_RunWorkerCompleted;
+            LogPath = Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData) +
+                                 "\\Pelco\\VxSdk\\Logs";
         }
-
-        /// <summary>
-        /// Gets the SDK key used to initialize the SDK.
-        /// </summary>
-        /// <value>The SDK key.</value>
-        public static string SdkKey
-        {
-            get { return "ReplaceWithGeneratedKey"; }
-        }
-
-        /// <summary>
-        /// Gets or sets the CurrentDevice property.
-        /// </summary>
-        /// <value>The device that is currently streaming.</value>
-        public static DataSource CurrentDataSource { get; set; }
 
         /// <summary>
         /// Gets or sets the CurrentDevices property.
@@ -80,6 +71,12 @@ namespace SDKSampleApp.Source
         public static string CurrentUserName { get; set; }
 
         /// <summary>
+        /// Gets or sets the LogPath property.
+        /// </summary>
+        /// <value>The logging directory for the VxSDK.</value>
+        public static string LogPath { get; set; }
+
+        /// <summary>
         /// Gets or sets the SnapshotBasePath property.
         /// </summary>
         /// <value>The directory to save snapshots.</value>
@@ -102,6 +99,15 @@ namespace SDKSampleApp.Source
         /// </summary>
         /// <value>A <see cref="ControlManager"/>.</value>
         public ControlManager Control { get; set; }
+
+        /// <summary>
+        /// The OnInternalEvent method.
+        /// </summary>
+        /// <param name="internalEvent">The <paramref name="internalEvent"/> parameter.</param>
+        public void OnInternalEvent(InternalEvent internalEvent)
+        {
+            WriteToLog(internalEvent.Type.ToString());
+        }
 
         /// <summary>
         /// The OnSystemEvent method.
@@ -201,7 +207,54 @@ namespace SDKSampleApp.Source
                 return;
 
             Control.Current.GoToLive();
+            SetManualRecordingStatus();
             Control.ChangePtzFormState(Control.PtzControl != null);
+        }
+
+        /// <summary>
+        /// The ButtonManualRecord_Click method.
+        /// </summary>
+        /// <param name="sender">The <paramref name="sender"/> parameter.</param>
+        /// <param name="args">The <paramref name="args"/> parameter.</param>
+        private void ButtonManualRecord_Click(object sender, EventArgs args)
+        {
+            if (Control.Current == null)
+                return;
+
+            if (Control.CurrentDataSource == null)
+                return;
+
+            if (Control.CurrentManualRecording == null)
+            {
+                var newManualRecording = new NewManualRecording {DataSourceId = Control.CurrentDataSource.Id};
+
+                Control.CurrentManualRecording = CurrentSystem.AddManualRecording(newManualRecording);
+                if (Control.CurrentManualRecording == null)
+                {
+                    WriteToLog("Unable to start manual recording.");
+                    return;
+                }
+
+                WriteToLog(string.Format("Started manual recording on {0}.", Control.CurrentDataSource.Name));
+                btnManualRecord.Text = @"Stop";
+                nudPreRecord.Enabled = false;
+                nudPostRecord.Enabled = false;
+            }
+            else
+            {
+                var result = CurrentSystem.DeleteManualRecording(Control.CurrentManualRecording);
+                if (result != Results.Value.OK)
+                    WriteToLog(string.Format("Error: {0}.", result));
+
+                WriteToLog(string.Format("Stopped manual recording on {0}.", Control.CurrentDataSource.Name));
+                Control.CurrentManualRecording = null;
+                btnManualRecord.Text = @"Record";
+                if (Control.Current.Mode != MediaControl.Modes.Live)
+                    return;
+
+                nudPreRecord.Enabled = true;
+                nudPostRecord.Enabled = true;
+            }
         }
 
         /// <summary>
@@ -217,6 +270,9 @@ namespace SDKSampleApp.Source
             Control.Current.Pause();
             Control.ChangePtzFormState(false);
             btnLive.Enabled = true;
+            btnManualRecord.Enabled = false;
+            nudPostRecord.Enabled = false;
+            nudPreRecord.Enabled = false;
         }
 
         /// <summary>
@@ -230,6 +286,17 @@ namespace SDKSampleApp.Source
         }
 
         /// <summary>
+        /// The ButtonRefreshDataSources_Click method.
+        /// </summary>
+        /// <param name="sender">The <paramref name="sender"/> parameter.</param>
+        /// <param name="args">The <paramref name="args"/> parameter.</param>
+        private void ButtonRefreshDataSources_Click(object sender, EventArgs args)
+        {
+            bgWorker.WorkerReportsProgress = true;
+            bgWorker.RunWorkerAsync();
+        }
+
+        /// <summary>
         /// The ButtonSeek_Click method.
         /// </summary>
         /// <param name="sender">The <paramref name="sender"/> parameter.</param>
@@ -237,8 +304,7 @@ namespace SDKSampleApp.Source
         private void ButtonSeek_Click(object sender, EventArgs args)
         {
             // The seek time value must be in UTC format.
-            var yesterday = DateTime.UtcNow.AddDays(-1);
-            StartStream(yesterday);
+            StartStream(dtpSeekTime.Value.ToUniversalTime());
         }
 
         /// <summary>
@@ -270,6 +336,16 @@ namespace SDKSampleApp.Source
         }
 
         /// <summary>
+        /// The GridViewDataSources_CellDoubleClick method.
+        /// </summary>
+        /// <param name="sender">The <paramref name="sender"/> parameter.</param>
+        /// <param name="args">The <paramref name="args"/> parameter.</param>
+        private void GridViewDataSources_CellDoubleClick(object sender, DataGridViewCellEventArgs args)
+        {
+            StartStream();
+        }
+
+        /// <summary>
         /// The MenuItemLog_Click method.
         /// </summary>
         /// <param name="sender">The <paramref name="sender"/> parameter.</param>
@@ -287,6 +363,19 @@ namespace SDKSampleApp.Source
                 showLogToolStripMenuItem.Text = @"Show Log";
                 ClientSize = new Size(ClientSize.Width, ClientSize.Height - 90);
                 scOuter.Panel2Collapsed = true;
+            }
+        }
+
+        /// <summary>
+        /// The MenuItemAlarmInputManager_Click method.
+        /// </summary>
+        /// <param name="sender">The <paramref name="sender"/> parameter.</param>
+        /// <param name="args">The <paramref name="args"/> parameter.</param>
+        private void MenuItemAlarmInputManager_Click(object sender, EventArgs args)
+        {
+            using (var alarmInputManagerForm = new AlarmInputManagerForm())
+            {
+                alarmInputManagerForm.ShowDialog();
             }
         }
 
@@ -327,6 +416,19 @@ namespace SDKSampleApp.Source
             using (var dataObjectManager = new DataObjectManagerForm())
             {
                 dataObjectManager.ShowDialog();
+            }
+        }
+
+        /// <summary>
+        /// The MenuItemDataSourceManager_Click method.
+        /// </summary>
+        /// <param name="sender">The <paramref name="sender"/> parameter.</param>
+        /// <param name="args">The <paramref name="args"/> parameter.</param>
+        private void MenuItemDataSourceManager_Click(object sender, EventArgs args)
+        {
+            using (var dataSourceManagerForm = new DataSourceManagerForm())
+            {
+                dataSourceManagerForm.ShowDialog();
             }
         }
 
@@ -454,6 +556,61 @@ namespace SDKSampleApp.Source
         }
 
         /// <summary>
+        /// The MenuItemLogout_Click method.
+        /// </summary>
+        /// <param name="sender">The <paramref name="sender"/> parameter.</param>
+        /// <param name="args">The <paramref name="args"/> parameter.</param>
+        private void MenuItemLogout_Click(object sender, EventArgs args)
+        {
+            StopAllStreams();
+            dgvDataSources.Rows.Clear();
+            CurrentUserName = string.Empty;
+            CurrentPassword = string.Empty;
+            if (CurrentDataSources != null)
+                CurrentDataSources.Clear();
+
+            if (CurrentDevices != null)
+                CurrentDevices.Clear();
+            
+            CurrentDataSources = null;
+            CurrentDevices = null;
+            CurrentSystem = null;
+            eventsToolStripMenuItem.Enabled = false;
+            manageToolStripMenuItem.Enabled = false;
+            btnSeek.Enabled = false;
+            btnPause.Enabled = false;
+            btnPlay.Enabled = false;
+            btnStop.Enabled = false;
+            btnSnapshot.Enabled = false;
+            btnRefreshDataSources.Enabled = false;
+            btnManualRecord.Enabled = false;
+            nudPostRecord.Enabled = false;
+            nudPreRecord.Enabled = false;
+        }
+
+        /// <summary>
+        /// The MenuItemModifyLoggingPath_Click method.
+        /// </summary>
+        /// <param name="sender">The <paramref name="sender"/> parameter.</param>
+        /// <param name="args">The <paramref name="args"/> parameter.</param>
+        private void MenuItemModifyLoggingPath_Click(object sender, EventArgs args)
+        {
+            using (var folderDialog = new FolderBrowserDialog())
+            {
+                folderDialog.SelectedPath = LogPath;
+                folderDialog.Description = @"Choose Logging Path...";
+
+                var result = folderDialog.ShowDialog();
+                if (result != DialogResult.OK)
+                    return;
+
+                LogPath = folderDialog.SelectedPath;
+                VxGlobal.SetLogPath(LogPath.Replace(@"\", @"\\"));
+                WriteToLog(string.Format("Logging Path changed to: {0}", folderDialog.SelectedPath));
+            }
+        }
+
+        /// <summary>
         /// The MenuItemMonitors_Click method.
         /// </summary>
         /// <param name="sender">The <paramref name="sender"/> parameter.</param>
@@ -502,6 +659,19 @@ namespace SDKSampleApp.Source
         }
 
         /// <summary>
+        /// The MenuItemQuickLog_Click method.
+        /// </summary>
+        /// <param name="sender">The <paramref name="sender"/> parameter.</param>
+        /// <param name="args">The <paramref name="args"/> parameter.</param>
+        private void MenuItemQuickLog_Click(object sender, EventArgs args)
+        {
+            using (var quickLogForm = new QuickLogForm())
+            {
+                quickLogForm.ShowDialog();
+            }
+        }
+
+        /// <summary>
         /// The MenuItemQuickReport_Click method.
         /// </summary>
         /// <param name="sender">The <paramref name="sender"/> parameter.</param>
@@ -511,6 +681,19 @@ namespace SDKSampleApp.Source
             using (var quickReportForm = new QuickReportForm())
             {
                 quickReportForm.ShowDialog();
+            }
+        }
+
+        /// <summary>
+        /// The MenuItemRelayOutputManager_Click method.
+        /// </summary>
+        /// <param name="sender">The <paramref name="sender"/> parameter.</param>
+        /// <param name="args">The <paramref name="args"/> parameter.</param>
+        private void MenuItemRelayOutputManager_Click(object sender, EventArgs args)
+        {
+            using (var relayOutputManagerForm = new RelayOutputManagerForm())
+            {
+                relayOutputManagerForm.ShowDialog();
             }
         }
 
@@ -739,7 +922,9 @@ namespace SDKSampleApp.Source
                 relY = adjustedY / yMidPoint * -100;
             }
 
-            Control.PtzControl.RelativePercentageMove((int)relX, (int)relY);
+            var result = Control.PtzControl.RelativePercentageMove((int)relX, (int)relY);
+            if (result != Results.Value.OK)
+                WriteToLog(string.Format("Error: {0}.", result));
         }
 
         /// <summary>
@@ -800,7 +985,9 @@ namespace SDKSampleApp.Source
                 return;
 
             var zoomLevel = (float)args.Delta / 2;
-            Control.PtzControl.RelativeMove(0, 0, (int)zoomLevel);
+            var result = Control.PtzControl.RelativeMove(0, 0, (int)zoomLevel);
+            if (result != Results.Value.OK)
+                WriteToLog(string.Format("Error: {0}.", result));
         }
 
         /// <summary>
@@ -811,6 +998,7 @@ namespace SDKSampleApp.Source
         private void PanelVideoStreamLeft_MouseClick(object sender, MouseEventArgs args)
         {
             Control.SelectControl(ControlManager.Controls.Left);
+            SetManualRecordingStatus();
             if (Control.PtzControl == null)
                 return;
 
@@ -825,6 +1013,7 @@ namespace SDKSampleApp.Source
         private void PanelVideoStreamRight_MouseClick(object sender, MouseEventArgs args)
         {
             Control.SelectControl(ControlManager.Controls.Right);
+            SetManualRecordingStatus();
             if (Control.PtzControl == null)
                 return;
 
@@ -967,9 +1156,9 @@ namespace SDKSampleApp.Source
         /// </summary>
         /// <param name="selProtocol">The selected protocol.</param>
         /// <param name="dataSource">The selected data source.</param>
-        /// <param name="autoSelect">Selects the first available stream if True.</param>
+        /// <param name="showWindow">Selects the first available stream if False.</param>
         /// <returns>The currently selected data interface.</returns>
-        private DataInterface SelectDataInterface(VxStreamProtocol selProtocol, DataSource dataSource, bool autoSelect)
+        private DataInterface SelectDataInterface(VxStreamProtocol selProtocol, DataSource dataSource, bool showWindow)
         {
             DataInterface dataInterface;
             if (selProtocol == VxStreamProtocol.RtspRtp)
@@ -980,7 +1169,7 @@ namespace SDKSampleApp.Source
                 if (interfaceList.Count == 0)
                     return null;
 
-                if (autoSelect)
+                if (!showWindow)
                     return interfaceList[0];
 
                 if (interfaceList.Count > 1)
@@ -1006,6 +1195,41 @@ namespace SDKSampleApp.Source
         }
 
         /// <summary>
+        /// Sets the state of the manual recording UI elements based on the manual recording status of the current stream.
+        /// </summary>
+        public void SetManualRecordingStatus()
+        {
+            if (Control.CurrentDataSource == null)
+            {
+                btnManualRecord.Text = @"Record";
+                btnManualRecord.Enabled = false;
+                nudPreRecord.Enabled = false;
+                nudPostRecord.Enabled = false;
+                return;
+            }
+
+            var manualRecordings = CurrentSystem.GetManualRecordings();
+            var userUpn = CurrentSystem.Currentuser.Name + "@" + CurrentSystem.Currentuser.Domain;
+            foreach (var manualRecording in manualRecordings)
+            {
+                if (manualRecording.DataSourceId == Control.CurrentDataSource.Id && manualRecording.OwnerName == userUpn)
+                {
+                    Control.CurrentManualRecording = manualRecording;
+                    btnManualRecord.Text = @"Stop";
+                    btnManualRecord.Enabled = true;
+                    nudPreRecord.Enabled = false;
+                    nudPostRecord.Enabled = false;
+                    return;
+                }
+            }
+
+            btnManualRecord.Text = @"Record";
+            btnManualRecord.Enabled = Control.Current.Mode == MediaControl.Modes.Live;
+            nudPreRecord.Enabled = Control.Current.Mode == MediaControl.Modes.Live;
+            nudPostRecord.Enabled = Control.Current.Mode == MediaControl.Modes.Live;
+        }
+
+        /// <summary>
         /// The StartStream method.
         /// </summary>
         /// <param name="seekTime">The <paramref name="seekTime"/> in UTC format.  If no value or a default 
@@ -1015,9 +1239,11 @@ namespace SDKSampleApp.Source
             try
             {
                 // Get the data sources for the selected device.
-                var dataSource = (DataSource)lvDataSources.SelectedItems[0].Tag;
+                var dataSource = (DataSource)dgvDataSources.SelectedRows[0].Tag;
                 var protocol = mjpegToolStripMenuItem.Checked ? VxStreamProtocol.MjpegPull : VxStreamProtocol.RtspRtp;
-                var showWindow = Control.Current != null && Control.Current.Mode == MediaControl.Modes.Stopped;
+                var showWindow = true;
+                if (Control.Current != null)
+                    showWindow = Control.Current.Mode == MediaControl.Modes.Stopped;
 
                 var dataInterface = SelectDataInterface(protocol, dataSource, showWindow);
                 if (dataInterface == null)
@@ -1028,7 +1254,14 @@ namespace SDKSampleApp.Source
 
                 DataSource audioDataSource;
                 DataInterface audioDataInterface;
-                SelectAudioData(dataSource, showWindow, out audioDataSource, out audioDataInterface);
+                var audioLink = dataSource.LinkedAudioRelation;
+                if (audioLink != null)
+                {
+                    audioDataSource = audioLink.Resource;
+                    audioDataInterface = SelectDataInterface(VxStreamProtocol.RtspRtp, audioDataSource, false);
+                }
+                else
+                    SelectAudioData(dataSource, showWindow, out audioDataSource, out audioDataInterface);
 
                 // If the media controller exists then a stream is running and the user is
                 // requesting a new action on it.  If it's null then this is either the
@@ -1044,7 +1277,7 @@ namespace SDKSampleApp.Source
                 {
                     // If a new device has been selected while another stream is running, stop the
                     // old stream and set up the new stream using the new data source.
-                    if ((CurrentDataSource == null) || (dataSource.Id != CurrentDataSource.Id))
+                    if ((Control.CurrentDataSource == null) || (dataSource.Id != Control.CurrentDataSource.Id))
                     {
                         Control.Current.Stop();
                         Control.Current.SetDataSource(dataSource, dataInterface, audioDataSource, audioDataInterface);
@@ -1093,7 +1326,36 @@ namespace SDKSampleApp.Source
 
                 Control.SetPlayingIndex();
                 SetupPtzControls(dataSource);
-                CurrentDataSource = dataSource;
+                Control.CurrentDataSource = dataSource;
+                SetManualRecordingStatus();
+            }
+            catch (Exception ex)
+            {
+                WriteToLog(string.Format(@"Error: {0}\n", ex.Message));
+            }
+        }
+
+        /// <summary>
+        /// Subscribes to internal VxSDK events.
+        /// </summary>
+        public void SubscribeToInternalEvents()
+        {
+            CurrentSystem.InternalEvent += OnInternalEvent;
+        }
+
+        /// <summary>
+        /// The StopAllStreams method.
+        /// </summary>
+        private void StopAllStreams()
+        {
+            try
+            {
+                var selControl = Control.SelectedControl;
+                Control.SelectControl(ControlManager.Controls.Left);
+                StopStream();
+                Control.SelectControl(ControlManager.Controls.Right);
+                StopStream();
+                Control.SelectControl(selControl);
             }
             catch (Exception ex)
             {
@@ -1122,28 +1384,16 @@ namespace SDKSampleApp.Source
                 Control.SelectedPanel.Refresh();
 
                 Control.PtzControl = null;
+                Control.CurrentDataSource = null;
+                Control.CurrentManualRecording = null;
+                btnManualRecord.Text = @"Record";
+                btnManualRecord.Enabled = false;
+                nudPostRecord.Enabled = false;
+                nudPreRecord.Enabled = false;
                 Control.ChangePtzFormState(false);
 
                 Control.Current.Dispose();
                 Control.Current = null;
-            }
-            catch (Exception ex)
-            {
-                WriteToLog(string.Format(@"Error: {0}\n", ex.Message));
-            }
-        }
-
-        /// <summary>
-        /// The StopAllStreams method.
-        /// </summary>
-        private void StopAllStreams()
-        {
-            try
-            {
-                Control.SelectControl(ControlManager.Controls.Left);
-                StopStream();
-                Control.SelectControl(ControlManager.Controls.Right);
-                StopStream();
             }
             catch (Exception ex)
             {

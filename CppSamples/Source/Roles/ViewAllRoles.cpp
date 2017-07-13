@@ -11,12 +11,14 @@ using namespace CppSamples::Common;
 /// </summary>
 /// <param name="dataModel">Instance of data model.</param>
 Plugin* CppSamples::Roles::ViewAllRoles::Run(DataModel* dataModel) {
-    system("cls");
+    Utility::ClearScreen();
 
     VxCollection<IVxRole**> roles = GetRoles(dataModel->VxSystem);
     PrintRoles(roles);
 
-    system("pause");
+    // Wait for user response before going back to parent menu.
+    Utility::Pause();
+
     // Remove the memory allocated to the collection.
     delete[] roles.collection;
     // Return reference of parent plugin to move back to parent menu.
@@ -43,7 +45,6 @@ VxCollection<IVxRole**> CppSamples::Roles::ViewAllRoles::GetRoles(IVxSystem* vxS
 /// </summary>
 /// <param name="roleCollection">Collection of roles.</param>
 void CppSamples::Roles::ViewAllRoles::PrintRoles(VxCollection<IVxRole**> roleCollection) {
-
     cout << roleCollection.collectionSize << " roles found." << "\n";
     if (roleCollection.collectionSize == 0)
         return;

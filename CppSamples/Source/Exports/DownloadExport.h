@@ -20,6 +20,16 @@ namespace CppSamples {
             /// <param name="dataModel">Instance of data model.</param>
             CppSamples::Common::Plugin* Run(CppSamples::Common::DataModel* dataModel) override;
 
+            /// <summary>
+            /// The user name used to log in to the VideoXpert system.
+            /// </summary>
+            std::string username;
+
+            /// <summary>
+            /// The password used to log in to the VideoXpert system.
+            /// </summary>
+            std::string password;
+
         protected:
             /// <summary>
             /// Prints the given collection of exports to the screen.
@@ -31,7 +41,8 @@ namespace CppSamples {
             /// Downloads an export from the current system and saves as a file.
             /// </summary>
             /// <param name="vxSystem">Pointer to the VideoExpert system.</param>
-            void Download(VxSdk::IVxSystem* vxSystem) const;
+            /// <returns>True if downloaded successfully; False otherwise.</returns>
+            bool Download(VxSdk::IVxSystem* vxSystem) const;
 
             /// <summary>
             /// Convert the value of export format to string.

@@ -11,12 +11,14 @@ using namespace CppSamples::Common;
 /// </summary>
 /// <param name="dataModel">Instance of data model.</param>
 Plugin* CppSamples::Users::ViewAllUsers::Run(DataModel* dataModel) {
-    system("cls");
+    Utility::ClearScreen();
 
     VxCollection<IVxUser**> users = GetUsers(dataModel->VxSystem);
     PrintUsers(users);
 
-    system("pause");
+    // Wait for user response before going back to parent menu.
+    Utility::Pause();
+
     // Remove the memory allocated to the collection.
     delete[] users.collection;
     // Return reference of parent plugin to move back to parent menu.
@@ -43,7 +45,6 @@ VxCollection<IVxUser**> CppSamples::Users::ViewAllUsers::GetUsers(IVxSystem* vxS
 /// </summary>
 /// <param name="userCollection">Collection of users.</param>
 void CppSamples::Users::ViewAllUsers::PrintUsers(VxCollection<IVxUser**> userCollection) {
-
     cout << userCollection.collectionSize << " users found." << "\n";
     if (userCollection.collectionSize == 0)
         return;

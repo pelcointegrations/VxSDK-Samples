@@ -11,7 +11,7 @@ using namespace CppSamples::Common;
 /// </summary>
 /// <param name="dataModel">Instance of data model.</param>
 Plugin* CppSamples::Tags::MergeTag::Run(DataModel* dataModel) {
-    system("cls");
+    Utility::ClearScreen();
 
     // Get a collection of tags
     VxCollection<IVxTag**> tags = GetTags(dataModel->VxSystem);
@@ -20,18 +20,26 @@ Plugin* CppSamples::Tags::MergeTag::Run(DataModel* dataModel) {
     if (tags.collectionSize > 0) {
         int firstIndex = SelectTagIndex(tags, -1);
         int secondIndex = SelectTagIndex(tags, firstIndex);
-        IVxTag* firstTag = tags.collection[firstIndex];
-        IVxTag* secondTag = tags.collection[secondIndex];
-        VxResult::Value result = firstTag->Merge(*secondTag);
-        if (result == VxResult::kOK)
-            cout << "\n" << "Tag merged succesfully.\n";
-        else
-            cout << "\n" << "Failed to merge tag!!\n";
+        if (firstIndex < 0 || firstIndex >= tags.collectionSize ||
+            secondIndex < 0 || secondIndex >= tags.collectionSize) {
+            cout << "\n" << "Invalid input.\n";
+        } else {
+            IVxTag* firstTag = tags.collection[firstIndex];
+            IVxTag* secondTag = tags.collection[secondIndex];
+            VxResult::Value result = firstTag->Merge(*secondTag);
+            if (result == VxResult::kOK)
+                cout << "\n" << "Tag merged succesfully.\n";
+            else
+                cout << "\n" << "Failed to merge tag!!\n";
+
+            // Remove the memory allocated to the collection.
+            delete[] tags.collection;
+        }
     }
 
-    // Remove the memory allocated to the collection.
-    delete[] tags.collection;
-    system("pause");
+    // Wait for user response before going back to parent menu.
+    Utility::Pause();
+
     // Return reference of parent plugin to move back to parent menu.
     return GetParent();
 }
@@ -80,12 +88,11 @@ void CppSamples::Tags::MergeTag::PrintTags(VxCollection<IVxTag**> tagCollection)
 /// <returns>Index of the selected tag in the given collection.</returns>
 int CppSamples::Tags::MergeTag::SelectTagIndex(VxCollection<IVxTag**> &tags, int firstIndex) {
     while (true) {
-        int index = 0;
         if (firstIndex < 0)
             cout << "\n" << "Enter first tag number [1-" << tags.collectionSize << "] : ";
         else
             cout << "\n" << "Enter second tag number [1-" << tags.collectionSize << "] : ";
-        cin >> index;
+        int index = Utility::ReadInt();
         if (index == 0)
             break;
         if (index > 0 && index <= tags.collectionSize) {

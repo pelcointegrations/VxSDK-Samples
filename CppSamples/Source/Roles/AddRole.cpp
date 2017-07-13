@@ -15,8 +15,7 @@ Plugin* CppSamples::Roles::AddRole::Run(DataModel* dataModel) {
 
     // Read name from input
     cout << "\n\n" << "Enter role name: ";
-    string name = "";
-    cin >> name;
+    string name = Utility::ReadString();
 
     // Add Role
     VxResult::Value result = dataModel->VxSystem->AddRole(name.c_str());
@@ -25,7 +24,9 @@ Plugin* CppSamples::Roles::AddRole::Run(DataModel* dataModel) {
     else
         cout << "\n" << "Failed to add role.\n";
 
-    system("pause");
+    // Wait for user response before going back to parent menu.
+    Utility::Pause();
+
     // Return reference of parent plugin to move back to parent menu.
     return GetParent();
 }

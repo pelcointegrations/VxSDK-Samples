@@ -15,8 +15,7 @@ Plugin* CppSamples::Tags::AddTag::Run(DataModel* dataModel) {
 
     // Read name from input
     cout << "\n\n" << "Enter tag name: ";
-    string name = "";
-    cin >> name;
+    string name = Utility::ReadString();
 
     // Add Tag
     VxNewTag tag;
@@ -30,7 +29,9 @@ Plugin* CppSamples::Tags::AddTag::Run(DataModel* dataModel) {
     else
         cout << "\n" << "Failed to add tag.\n";
 
-    system("pause");
+    // Wait for user response before going back to parent menu.
+    Utility::Pause();
+
     // Return reference of parent plugin to move back to parent menu.
     return GetParent();
 }

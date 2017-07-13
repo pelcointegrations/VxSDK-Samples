@@ -107,10 +107,8 @@ namespace CPPCli {
 
                 for (int i = 0; i < _newScheduleTrigger->eventPropertySize; i++)
                 {
-                    strncpy_s(_newScheduleTrigger->eventProperties[i].key, Utils::ConvertSysString(value[i].Key),
-                        sizeof(_newScheduleTrigger->eventProperties[i].key));
-                    strncpy_s(_newScheduleTrigger->eventProperties[i].value, Utils::ConvertSysString(value[i].Value),
-                        sizeof(_newScheduleTrigger->eventProperties[i].value));
+                    VxSdk::Utilities::StrCopySafe(_newScheduleTrigger->eventProperties[i].key, Utils::ConvertSysString(value[i].Key));
+                    VxSdk::Utilities::StrCopySafe(_newScheduleTrigger->eventProperties[i].value, Utils::ConvertSysString(value[i].Value));
                 }
             }
         }

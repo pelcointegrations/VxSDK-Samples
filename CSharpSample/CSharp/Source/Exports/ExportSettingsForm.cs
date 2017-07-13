@@ -26,6 +26,9 @@ namespace SDKSampleApp.Source
         /// <param name="args">The <paramref name="args"/> parameter</param>
         private void ButtonStartExport_Click(object sender, EventArgs args)
         {
+            if (string.IsNullOrEmpty(tbxExportName.Text))
+                return;
+
             using (var newExport = new NewExport())
             {
                 // Create an Clip object for each clip added by the user.  Then
@@ -36,21 +39,7 @@ namespace SDKSampleApp.Source
                     newExport.Clips.Add(clip);
                 }
 
-                Export.Formats format;
-                switch (cbxExportFormat.SelectedItem.ToString())
-                {
-                    case "MkvZip":
-                        format = Export.Formats.MkvZip;
-                        break;
-                    case "MP4":
-                        format = Export.Formats.Mp4;
-                        break;
-                    default:
-                        format = Export.Formats.Unknown;
-                        break;
-                }
-
-                newExport.Format = format;
+                newExport.Format = Export.Formats.MkvZip;
                 newExport.Name = tbxExportName.Text;
                 newExport.Password = tbxExportPassword.Text;
 

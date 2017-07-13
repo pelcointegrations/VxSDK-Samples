@@ -127,4 +127,22 @@
   <data name="camera_online" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\camera_online.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="cam_fixed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cam_fixed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cam_fixed_offline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cam_fixed_offline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cam_pano" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cam_pano.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cam_pano_offline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cam_pano_offline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cam_ptz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cam_ptz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cam_ptz_offline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cam_ptz_offline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

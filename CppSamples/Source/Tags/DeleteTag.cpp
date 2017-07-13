@@ -11,7 +11,7 @@ using namespace CppSamples::Common;
 /// </summary>
 /// <param name="dataModel">Instance of data model.</param>
 Plugin* CppSamples::Tags::DeleteTag::Run(DataModel* dataModel) {
-    system("cls");
+    Utility::ClearScreen();
 
     // Get a collection of tags
     VxCollection<IVxTag**> tags = GetTags(dataModel->VxSystem);
@@ -31,7 +31,9 @@ Plugin* CppSamples::Tags::DeleteTag::Run(DataModel* dataModel) {
 
     // Remove the memory allocated to the collection.
     delete[] tags.collection;
-    system("pause");
+    // Wait for user response before going back to parent menu.
+    Utility::Pause();
+
     // Return reference of parent plugin to move back to parent menu.
     return GetParent();
 }
@@ -79,9 +81,8 @@ void CppSamples::Tags::DeleteTag::PrintTags(VxCollection<IVxTag**> tagCollection
 /// <returns>Index of the selected tag in the given collection.</returns>
 int CppSamples::Tags::DeleteTag::SelectTagIndex(VxCollection<IVxTag**> &tags) {
     while (true) {
-        int index = 0;
         cout << "\n" << "Enter tag number [1-" << tags.collectionSize << "] : ";
-        cin >> index;
+        int index = Utility::ReadInt();
         if (index == 0)
             break;
         if (index > 0 && index <= tags.collectionSize)

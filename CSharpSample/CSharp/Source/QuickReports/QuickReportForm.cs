@@ -52,7 +52,11 @@ namespace SDKSampleApp.Source
 
             var quickReport = MainForm.CurrentSystem.CreateQuickReport(newQuickReport);
             if (quickReport == null)
+            {
+                MessageBox.Show("Unable to create quick report.\n (Not supported)");
+                Close();
                 return;
+            }
 
             using (var reportStatusForm = new ReportStatusForm(quickReport))
             {

@@ -11,7 +11,7 @@ using namespace CppSamples::Common;
 /// </summary>
 /// <param name="dataModel">Instance of data model.</param>
 Plugin* CppSamples::Drawings::DeleteDrawing::Run(DataModel* dataModel) {
-    system("cls");
+    Utility::ClearScreen();
 
     VxCollection<IVxDrawing**> drawings = GetDrawings(dataModel->VxSystem);
     PrintDrawings(drawings);
@@ -30,7 +30,9 @@ Plugin* CppSamples::Drawings::DeleteDrawing::Run(DataModel* dataModel) {
 
     // Remove the memory allocated to the collection.
     delete[] drawings.collection;
-    system("pause");
+    // Wait for user response before going back to parent menu.
+    Utility::Pause();
+
     // Return reference of parent plugin to move back to parent menu.
     return GetParent();
 }
@@ -78,9 +80,8 @@ void CppSamples::Drawings::DeleteDrawing::PrintDrawings(VxCollection<IVxDrawing*
 /// <returns>Index of the selected drawing in the given collection.</returns>
 int CppSamples::Drawings::DeleteDrawing::SelectDrawingIndex(VxCollection<IVxDrawing**> &drawings) {
     while (true) {
-        int index = 0;
         cout << "\n" << "Enter drawing number [1-" << drawings.collectionSize << "] : ";
-        cin >> index;
+        int index = Utility::ReadInt();
         if (index == 0)
             break;
         if (index > 0 && index <= drawings.collectionSize)

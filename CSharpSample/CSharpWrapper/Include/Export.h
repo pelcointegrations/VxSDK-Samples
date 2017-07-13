@@ -23,10 +23,7 @@ namespace CPPCli {
             Unknown,
 
             /// <summary>MKV file(s) contained withing a zip file.</summary>
-            MkvZip,
-
-            /// <summary>An MP4 file.</summary>
-            Mp4
+            MkvZip
         };
 
         /// <summary>

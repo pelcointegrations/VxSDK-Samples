@@ -1,8 +1,13 @@
 #include "stdafx.h"
 #include "Controller.h"
 #include <iostream>
-#include <conio.h>
 #include "Utility.h"
+#include "Constants.h"
+#ifdef WIN32
+#include <conio.h>
+#else
+#include <curses.h>
+#endif
 
 using namespace std;
 using namespace VxSdk;
@@ -32,33 +37,41 @@ void Controller::Run() {
             break;
     }
 
-    cout << "\n\n" << "Have a nice day...";
+    cout << "\n\n";
+#ifdef WIN32
     _getch();
+#else
+    getch();
+#endif
 }
 
 // This method initialize the VideoExpert system and
 // Creates a new instance of DataModel.
 DataModel* Controller::Initialize() {
-    // Initialize VxSDK
-    cout << "Initializing VxSDK...\n";
-    if (!Utility::Init()) {
-        cout << "Failed to initialize the VxSDK. Verify the SDK key.\n";
-        return nullptr;
-    }
+    // Create Login information structure .
+    VxLoginInfo loginInfo;
+    loginInfo.port = Constants::kPortnum;
+    loginInfo.useSsl = true;
+    cout << "\n" << "Enter system IP        : ";
+    Utilities::StrCopySafe(loginInfo.ipAddress, Utility::ReadString().c_str());
+    cout << "Enter system user name : ";
+    Utilities::StrCopySafe(loginInfo.username, Utility::ReadString().c_str());
+    cout << "Enter system password  : ";
+    Utilities::StrCopySafe(loginInfo.password, Utility::ReadString().c_str());
 
-    // Login to Server and create an instance of VxSystem
-    cout << "Connecting to system...\n";
-    IVxSystem* vxSystem = Utility::Login();
+    IVxSystem* vxSystem = Utility::Login(loginInfo);
     if (vxSystem == nullptr) {
         cout << "Failed to login!!\n";
         return nullptr;
     }
 
-    cout << "Login to VxSDK successfully.";
+    cout << "Login to VxSDK successfully.\n";
 
     // Create an instance of DataModel
     DataModel* dataModel = new DataModel();
     dataModel->VxSystem = vxSystem;
+    dataModel->username = loginInfo.username;
+    dataModel->password = loginInfo.password;
 
     return dataModel;
 }

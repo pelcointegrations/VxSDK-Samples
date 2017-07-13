@@ -11,7 +11,7 @@ using namespace CppSamples::Common;
 /// </summary>
 /// <param name="dataModel">Instance of data model.</param>
 Plugin* CppSamples::DataObjects::DeleteDataObject::Run(DataModel* dataModel) {
-    system("cls");
+    Utility::ClearScreen();
 
     // Read and print data objects from the system
     VxCollection<IVxDataObject**> dataObjects = GetDataObjects(dataModel->VxSystem);
@@ -32,7 +32,9 @@ Plugin* CppSamples::DataObjects::DeleteDataObject::Run(DataModel* dataModel) {
 
     // Remove the memory allocated to the collection.
     delete[] dataObjects.collection;
-    system("pause");
+    // Wait for user response before going back to parent menu.
+    Utility::Pause();
+
     // Return reference of parent plugin to move back to parent menu.
     return GetParent();
 }
@@ -57,7 +59,6 @@ VxCollection<IVxDataObject**> CppSamples::DataObjects::DeleteDataObject::GetData
 /// </summary>
 /// <param name="dataObjectCollection">Collection of dataObjects.</param>
 void CppSamples::DataObjects::DeleteDataObject::PrintDataObjects(VxCollection<IVxDataObject**> dataObjectCollection) {
-
     cout << dataObjectCollection.collectionSize << " dataObjects found." << "\n";
     if (dataObjectCollection.collectionSize == 0)
         return;
@@ -81,9 +82,8 @@ void CppSamples::DataObjects::DeleteDataObject::PrintDataObjects(VxCollection<IV
 /// <returns>Index of the selected dataObject in the given collection.</returns>
 int CppSamples::DataObjects::DeleteDataObject::SelectDataObjectIndex(VxCollection<IVxDataObject**> &dataObjects) {
     while (true) {
-        int index = 0;
         cout << "\n" << "Enter dataObject number [1-" << dataObjects.collectionSize << "] : ";
-        cin >> index;
+        int index = Utility::ReadInt();
         if (index == 0)
             break;
         if (index > 0 && index <= dataObjects.collectionSize)

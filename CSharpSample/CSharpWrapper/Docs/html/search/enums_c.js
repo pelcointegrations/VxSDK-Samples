@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['zoomdirections',['ZoomDirections',['../class_c_p_p_cli_1_1_ptz_controller.html#a1c4a102a3a38b54d55b1fb9d73d06c3d',1,'CPPCli::PtzController']]]
+  ['value',['Value',['../class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970ca',1,'CPPCli::Results::Value()'],['../class_c_p_p_cli_1_1_log_level.html#ab6a080f338f1ba4534e998de0757aa15',1,'CPPCli::LogLevel::Value()']]]
 ];

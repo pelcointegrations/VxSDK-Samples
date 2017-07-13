@@ -36,6 +36,8 @@ namespace SDKSampleApp.Source
             this.cbxPatterns = new System.Windows.Forms.ComboBox();
             this.btnTriggerPattern = new System.Windows.Forms.Button();
             this.gbPresets = new System.Windows.Forms.GroupBox();
+            this.btnNewPreset = new System.Windows.Forms.Button();
+            this.btnDeletePreset = new System.Windows.Forms.Button();
             this.cbxPresets = new System.Windows.Forms.ComboBox();
             this.btnTriggerPreset = new System.Windows.Forms.Button();
             this.btnPtzZoomOut = new System.Windows.Forms.Button();
@@ -77,6 +79,7 @@ namespace SDKSampleApp.Source
             this.lblLockOwner = new System.Windows.Forms.Label();
             this.btnLock = new System.Windows.Forms.Button();
             this.btnRefreshLock = new System.Windows.Forms.Button();
+            this.btnRepositionPreset = new System.Windows.Forms.Button();
             this.gbPatterns.SuspendLayout();
             this.gbPresets.SuspendLayout();
             this.gbAbsoluteMove.SuspendLayout();
@@ -91,14 +94,14 @@ namespace SDKSampleApp.Source
             this.gbPatterns.Controls.Add(this.btnTriggerPattern);
             this.gbPatterns.Location = new System.Drawing.Point(12, 185);
             this.gbPatterns.Name = "gbPatterns";
-            this.gbPatterns.Size = new System.Drawing.Size(210, 75);
+            this.gbPatterns.Size = new System.Drawing.Size(226, 75);
             this.gbPatterns.TabIndex = 46;
             this.gbPatterns.TabStop = false;
             this.gbPatterns.Text = "Patterns";
             // 
             // btnStop
             // 
-            this.btnStop.Location = new System.Drawing.Point(77, 46);
+            this.btnStop.Location = new System.Drawing.Point(93, 48);
             this.btnStop.Name = "btnStop";
             this.btnStop.Size = new System.Drawing.Size(60, 21);
             this.btnStop.TabIndex = 33;
@@ -111,12 +114,12 @@ namespace SDKSampleApp.Source
             this.cbxPatterns.FormattingEnabled = true;
             this.cbxPatterns.Location = new System.Drawing.Point(6, 19);
             this.cbxPatterns.Name = "cbxPatterns";
-            this.cbxPatterns.Size = new System.Drawing.Size(196, 21);
+            this.cbxPatterns.Size = new System.Drawing.Size(212, 21);
             this.cbxPatterns.TabIndex = 31;
             // 
             // btnTriggerPattern
             // 
-            this.btnTriggerPattern.Location = new System.Drawing.Point(142, 46);
+            this.btnTriggerPattern.Location = new System.Drawing.Point(158, 48);
             this.btnTriggerPattern.Name = "btnTriggerPattern";
             this.btnTriggerPattern.Size = new System.Drawing.Size(60, 21);
             this.btnTriggerPattern.TabIndex = 32;
@@ -126,28 +129,51 @@ namespace SDKSampleApp.Source
             // 
             // gbPresets
             // 
+            this.gbPresets.Controls.Add(this.btnRepositionPreset);
+            this.gbPresets.Controls.Add(this.btnNewPreset);
+            this.gbPresets.Controls.Add(this.btnDeletePreset);
             this.gbPresets.Controls.Add(this.cbxPresets);
             this.gbPresets.Controls.Add(this.btnTriggerPreset);
             this.gbPresets.Location = new System.Drawing.Point(12, 104);
             this.gbPresets.Name = "gbPresets";
-            this.gbPresets.Size = new System.Drawing.Size(210, 75);
+            this.gbPresets.Size = new System.Drawing.Size(226, 75);
             this.gbPresets.TabIndex = 45;
             this.gbPresets.TabStop = false;
             this.gbPresets.Text = "Presets";
+            // 
+            // btnNewPreset
+            // 
+            this.btnNewPreset.Location = new System.Drawing.Point(6, 46);
+            this.btnNewPreset.Name = "btnNewPreset";
+            this.btnNewPreset.Size = new System.Drawing.Size(40, 21);
+            this.btnNewPreset.TabIndex = 34;
+            this.btnNewPreset.Text = "New";
+            this.btnNewPreset.UseVisualStyleBackColor = true;
+            this.btnNewPreset.Click += new System.EventHandler(this.ButtonNewPreset_Click);
+            // 
+            // btnDeletePreset
+            // 
+            this.btnDeletePreset.Location = new System.Drawing.Point(48, 46);
+            this.btnDeletePreset.Name = "btnDeletePreset";
+            this.btnDeletePreset.Size = new System.Drawing.Size(50, 21);
+            this.btnDeletePreset.TabIndex = 33;
+            this.btnDeletePreset.Text = "Delete";
+            this.btnDeletePreset.UseVisualStyleBackColor = true;
+            this.btnDeletePreset.Click += new System.EventHandler(this.ButtonDeletePreset_Click);
             // 
             // cbxPresets
             // 
             this.cbxPresets.FormattingEnabled = true;
             this.cbxPresets.Location = new System.Drawing.Point(6, 19);
             this.cbxPresets.Name = "cbxPresets";
-            this.cbxPresets.Size = new System.Drawing.Size(198, 21);
+            this.cbxPresets.Size = new System.Drawing.Size(212, 21);
             this.cbxPresets.TabIndex = 31;
             // 
             // btnTriggerPreset
             // 
-            this.btnTriggerPreset.Location = new System.Drawing.Point(142, 46);
+            this.btnTriggerPreset.Location = new System.Drawing.Point(169, 46);
             this.btnTriggerPreset.Name = "btnTriggerPreset";
-            this.btnTriggerPreset.Size = new System.Drawing.Size(60, 21);
+            this.btnTriggerPreset.Size = new System.Drawing.Size(49, 21);
             this.btnTriggerPreset.TabIndex = 32;
             this.btnTriggerPreset.Text = "Trigger";
             this.btnTriggerPreset.UseVisualStyleBackColor = true;
@@ -265,7 +291,7 @@ namespace SDKSampleApp.Source
             // 
             // btnPtzFocusFar
             // 
-            this.btnPtzFocusFar.Location = new System.Drawing.Point(154, 68);
+            this.btnPtzFocusFar.Location = new System.Drawing.Point(162, 68);
             this.btnPtzFocusFar.Name = "btnPtzFocusFar";
             this.btnPtzFocusFar.Size = new System.Drawing.Size(31, 30);
             this.btnPtzFocusFar.TabIndex = 47;
@@ -276,7 +302,7 @@ namespace SDKSampleApp.Source
             // 
             // btnPtzIrisClose
             // 
-            this.btnPtzIrisClose.Location = new System.Drawing.Point(191, 68);
+            this.btnPtzIrisClose.Location = new System.Drawing.Point(207, 68);
             this.btnPtzIrisClose.Name = "btnPtzIrisClose";
             this.btnPtzIrisClose.Size = new System.Drawing.Size(31, 30);
             this.btnPtzIrisClose.TabIndex = 48;
@@ -287,7 +313,7 @@ namespace SDKSampleApp.Source
             // 
             // btnPtzIrisOpen
             // 
-            this.btnPtzIrisOpen.Location = new System.Drawing.Point(191, 10);
+            this.btnPtzIrisOpen.Location = new System.Drawing.Point(207, 10);
             this.btnPtzIrisOpen.Name = "btnPtzIrisOpen";
             this.btnPtzIrisOpen.Size = new System.Drawing.Size(31, 30);
             this.btnPtzIrisOpen.TabIndex = 50;
@@ -298,7 +324,7 @@ namespace SDKSampleApp.Source
             // 
             // btnPtzFocusNear
             // 
-            this.btnPtzFocusNear.Location = new System.Drawing.Point(154, 10);
+            this.btnPtzFocusNear.Location = new System.Drawing.Point(162, 10);
             this.btnPtzFocusNear.Name = "btnPtzFocusNear";
             this.btnPtzFocusNear.Size = new System.Drawing.Size(31, 30);
             this.btnPtzFocusNear.TabIndex = 49;
@@ -319,7 +345,7 @@ namespace SDKSampleApp.Source
             // lblFocus
             // 
             this.lblFocus.AutoSize = true;
-            this.lblFocus.Location = new System.Drawing.Point(151, 47);
+            this.lblFocus.Location = new System.Drawing.Point(159, 47);
             this.lblFocus.Name = "lblFocus";
             this.lblFocus.Size = new System.Drawing.Size(36, 13);
             this.lblFocus.TabIndex = 52;
@@ -328,7 +354,7 @@ namespace SDKSampleApp.Source
             // lblIris
             // 
             this.lblIris.AutoSize = true;
-            this.lblIris.Location = new System.Drawing.Point(196, 47);
+            this.lblIris.Location = new System.Drawing.Point(212, 47);
             this.lblIris.Name = "lblIris";
             this.lblIris.Size = new System.Drawing.Size(20, 13);
             this.lblIris.TabIndex = 53;
@@ -346,14 +372,14 @@ namespace SDKSampleApp.Source
             this.gbAbsoluteMove.Controls.Add(this.txbxAbsX);
             this.gbAbsoluteMove.Location = new System.Drawing.Point(12, 266);
             this.gbAbsoluteMove.Name = "gbAbsoluteMove";
-            this.gbAbsoluteMove.Size = new System.Drawing.Size(210, 78);
+            this.gbAbsoluteMove.Size = new System.Drawing.Size(226, 78);
             this.gbAbsoluteMove.TabIndex = 54;
             this.gbAbsoluteMove.TabStop = false;
             this.gbAbsoluteMove.Text = "Absolute Move";
             // 
             // btnSetPosition
             // 
-            this.btnSetPosition.Location = new System.Drawing.Point(122, 45);
+            this.btnSetPosition.Location = new System.Drawing.Point(143, 45);
             this.btnSetPosition.Name = "btnSetPosition";
             this.btnSetPosition.Size = new System.Drawing.Size(75, 23);
             this.btnSetPosition.TabIndex = 7;
@@ -363,7 +389,7 @@ namespace SDKSampleApp.Source
             // 
             // btnGetPosition
             // 
-            this.btnGetPosition.Location = new System.Drawing.Point(28, 45);
+            this.btnGetPosition.Location = new System.Drawing.Point(61, 45);
             this.btnGetPosition.Name = "btnGetPosition";
             this.btnGetPosition.Size = new System.Drawing.Size(75, 23);
             this.btnGetPosition.TabIndex = 6;
@@ -374,7 +400,7 @@ namespace SDKSampleApp.Source
             // lblAbsZ
             // 
             this.lblAbsZ.AutoSize = true;
-            this.lblAbsZ.Location = new System.Drawing.Point(138, 22);
+            this.lblAbsZ.Location = new System.Drawing.Point(154, 22);
             this.lblAbsZ.Name = "lblAbsZ";
             this.lblAbsZ.Size = new System.Drawing.Size(14, 13);
             this.lblAbsZ.TabIndex = 5;
@@ -383,7 +409,7 @@ namespace SDKSampleApp.Source
             // lblAbsY
             // 
             this.lblAbsY.AutoSize = true;
-            this.lblAbsY.Location = new System.Drawing.Point(73, 22);
+            this.lblAbsY.Location = new System.Drawing.Point(81, 22);
             this.lblAbsY.Name = "lblAbsY";
             this.lblAbsY.Size = new System.Drawing.Size(14, 13);
             this.lblAbsY.TabIndex = 4;
@@ -400,21 +426,21 @@ namespace SDKSampleApp.Source
             // 
             // txbxAbsZ
             // 
-            this.txbxAbsZ.Location = new System.Drawing.Point(158, 19);
+            this.txbxAbsZ.Location = new System.Drawing.Point(178, 19);
             this.txbxAbsZ.Name = "txbxAbsZ";
             this.txbxAbsZ.Size = new System.Drawing.Size(39, 20);
             this.txbxAbsZ.TabIndex = 2;
             // 
             // txbxAbsY
             // 
-            this.txbxAbsY.Location = new System.Drawing.Point(93, 19);
+            this.txbxAbsY.Location = new System.Drawing.Point(105, 19);
             this.txbxAbsY.Name = "txbxAbsY";
             this.txbxAbsY.Size = new System.Drawing.Size(39, 20);
             this.txbxAbsY.TabIndex = 1;
             // 
             // txbxAbsX
             // 
-            this.txbxAbsX.Location = new System.Drawing.Point(28, 19);
+            this.txbxAbsX.Location = new System.Drawing.Point(32, 19);
             this.txbxAbsX.Name = "txbxAbsX";
             this.txbxAbsX.Size = new System.Drawing.Size(39, 20);
             this.txbxAbsX.TabIndex = 0;
@@ -430,14 +456,14 @@ namespace SDKSampleApp.Source
             this.gbRelativeMove.Controls.Add(this.txbxRelX);
             this.gbRelativeMove.Location = new System.Drawing.Point(12, 350);
             this.gbRelativeMove.Name = "gbRelativeMove";
-            this.gbRelativeMove.Size = new System.Drawing.Size(210, 78);
+            this.gbRelativeMove.Size = new System.Drawing.Size(226, 78);
             this.gbRelativeMove.TabIndex = 55;
             this.gbRelativeMove.TabStop = false;
             this.gbRelativeMove.Text = "Relative Move";
             // 
             // btnMove
             // 
-            this.btnMove.Location = new System.Drawing.Point(142, 45);
+            this.btnMove.Location = new System.Drawing.Point(163, 45);
             this.btnMove.Name = "btnMove";
             this.btnMove.Size = new System.Drawing.Size(55, 23);
             this.btnMove.TabIndex = 7;
@@ -448,7 +474,7 @@ namespace SDKSampleApp.Source
             // lblRelZ
             // 
             this.lblRelZ.AutoSize = true;
-            this.lblRelZ.Location = new System.Drawing.Point(138, 22);
+            this.lblRelZ.Location = new System.Drawing.Point(154, 22);
             this.lblRelZ.Name = "lblRelZ";
             this.lblRelZ.Size = new System.Drawing.Size(14, 13);
             this.lblRelZ.TabIndex = 5;
@@ -457,7 +483,7 @@ namespace SDKSampleApp.Source
             // lblRelY
             // 
             this.lblRelY.AutoSize = true;
-            this.lblRelY.Location = new System.Drawing.Point(73, 22);
+            this.lblRelY.Location = new System.Drawing.Point(81, 22);
             this.lblRelY.Name = "lblRelY";
             this.lblRelY.Size = new System.Drawing.Size(14, 13);
             this.lblRelY.TabIndex = 4;
@@ -474,7 +500,7 @@ namespace SDKSampleApp.Source
             // 
             // txbxRelZ
             // 
-            this.txbxRelZ.Location = new System.Drawing.Point(158, 19);
+            this.txbxRelZ.Location = new System.Drawing.Point(178, 19);
             this.txbxRelZ.Name = "txbxRelZ";
             this.txbxRelZ.Size = new System.Drawing.Size(39, 20);
             this.txbxRelZ.TabIndex = 2;
@@ -482,7 +508,7 @@ namespace SDKSampleApp.Source
             // 
             // txbxRelY
             // 
-            this.txbxRelY.Location = new System.Drawing.Point(93, 19);
+            this.txbxRelY.Location = new System.Drawing.Point(105, 19);
             this.txbxRelY.Name = "txbxRelY";
             this.txbxRelY.Size = new System.Drawing.Size(39, 20);
             this.txbxRelY.TabIndex = 1;
@@ -490,7 +516,7 @@ namespace SDKSampleApp.Source
             // 
             // txbxRelX
             // 
-            this.txbxRelX.Location = new System.Drawing.Point(28, 19);
+            this.txbxRelX.Location = new System.Drawing.Point(32, 19);
             this.txbxRelX.Name = "txbxRelX";
             this.txbxRelX.Size = new System.Drawing.Size(39, 20);
             this.txbxRelX.TabIndex = 0;
@@ -504,7 +530,7 @@ namespace SDKSampleApp.Source
             this.gbPtzLock.Controls.Add(this.btnRefreshLock);
             this.gbPtzLock.Location = new System.Drawing.Point(12, 434);
             this.gbPtzLock.Name = "gbPtzLock";
-            this.gbPtzLock.Size = new System.Drawing.Size(200, 80);
+            this.gbPtzLock.Size = new System.Drawing.Size(226, 80);
             this.gbPtzLock.TabIndex = 56;
             this.gbPtzLock.TabStop = false;
             this.gbPtzLock.Text = "PTZ Lock";
@@ -547,11 +573,21 @@ namespace SDKSampleApp.Source
             this.btnRefreshLock.UseVisualStyleBackColor = true;
             this.btnRefreshLock.Click += new System.EventHandler(this.ButtonRefreshLock_Click);
             // 
+            // btnRepositionPreset
+            // 
+            this.btnRepositionPreset.Location = new System.Drawing.Point(100, 46);
+            this.btnRepositionPreset.Name = "btnRepositionPreset";
+            this.btnRepositionPreset.Size = new System.Drawing.Size(67, 21);
+            this.btnRepositionPreset.TabIndex = 35;
+            this.btnRepositionPreset.Text = "Reposition";
+            this.btnRepositionPreset.UseVisualStyleBackColor = true;
+            this.btnRepositionPreset.Click += new System.EventHandler(this.ButtonRepositionPreset_Click);
+            // 
             // PTZControlForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(230, 523);
+            this.ClientSize = new System.Drawing.Size(244, 520);
             this.Controls.Add(this.gbPtzLock);
             this.Controls.Add(this.gbRelativeMove);
             this.Controls.Add(this.gbAbsoluteMove);
@@ -642,5 +678,8 @@ namespace SDKSampleApp.Source
         private Button btnRefreshLock;
         private Label lblExpireTime;
         private Label lblLockOwner;
+        private Button btnNewPreset;
+        private Button btnDeletePreset;
+        private Button btnRepositionPreset;
     }
 }

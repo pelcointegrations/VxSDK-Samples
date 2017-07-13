@@ -148,7 +148,7 @@ namespace CPPCli {
             System::String^ get() { return gcnew System::String(_situation->name); }
             void set(System::String^ value) {
                 char name[64];
-                strncpy_s(name, Utils::ConvertSysStringNonConst(value), sizeof(name));
+                VxSdk::Utilities::StrCopySafe(name, Utils::ConvertSysStringNonConst(value));
                 _situation->SetName(name);
             }
         }
@@ -160,6 +160,24 @@ namespace CPPCli {
         property System::Collections::Generic::List<Notification^>^ Notifications {
         public:
             System::Collections::Generic::List<Notification^>^ get() { return _GetNotifications(); }
+        }
+
+        /// <summary>
+        /// Gets the name of the key in the properties map corresponding to the service identifier for the source of this situation, if any.
+        /// </summary>
+        /// <value>The service property identifier for the source of this situation.</value>
+        property System::String^ ServicePropertyId {
+        public:
+            System::String^ get() { return gcnew System::String(_situation->servicePropertyId); }
+        }
+
+        /// <summary>
+        /// Gets the resource type of the service corresponding to the source of this situation, if any.
+        /// </summary>
+        /// <value>The service type for the source of this situation.</value>
+        property System::String^ ServiceType {
+        public:
+            System::String^ get() { return gcnew System::String(_situation->serviceType); }
         }
 
         /// <summary>

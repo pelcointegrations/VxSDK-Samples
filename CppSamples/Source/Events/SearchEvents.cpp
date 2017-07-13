@@ -12,8 +12,9 @@ Plugin* CppSamples::Events::SearchEvents::Run(DataModel* dataModel) {
 
     DoSearchEvents(dataModel->VxSystem);
 
-    // Pause for user input before going back to parent menu.
-    system("pause");
+    // Wait for user response before going back to parent menu.
+    Utility::Pause();
+
     // Return reference of parent plugin to move back to parent menu.
     return GetParent();
 }
@@ -32,7 +33,8 @@ void CppSamples::Events::SearchEvents::DoSearchEvents(IVxSystem* vxSystem) {
     string endTimeInUTC = Utility::ConvertLocalTimetoUTC(endTime);
 
     // Start Searching Events
-    system("cls");
+    Utility::ClearScreen();
+
     cout << "Fetching events from " << startTimeInUTC << " to " << endTimeInUTC << " (UTC).";
     cout << "\n\n";
     VxCollection<IVxEvent**> events = Search(vxSystem, startTimeInUTC, endTimeInUTC);
@@ -43,7 +45,7 @@ void CppSamples::Events::SearchEvents::DoSearchEvents(IVxSystem* vxSystem) {
             for (int i = 0; i < events.collectionSize; i++)
                 PrintEventRow(events.collection[i]);
         }
-
+        cout << "\n---------------------------------------------------------------------------------------------\n";
         // Remove the memory allocated to the collection.
         delete[] events.collection;
     }
@@ -87,7 +89,7 @@ VxCollection<IVxEvent**> CppSamples::Events::SearchEvents::Search(IVxSystem* vxS
 void CppSamples::Events::SearchEvents::PrintEventRow(IVxEvent* vxEvent) {
     const int eventTimeWidth = 20;
     const int eventStringWidth = 32;
-    cout << left << setw(eventTimeWidth) << setfill(' ') << SearchEvents::CovertUTCTimeFormatToString(vxEvent->time);
+    cout << left << setw(eventTimeWidth) << setfill(' ') << Utility::ConvertUTCTimeFormatToString(vxEvent->time);
     cout << left << setw(eventStringWidth) << setfill(' ') << vxEvent->situationType;
     cout << left << setw(eventStringWidth) << setfill(' ') << vxEvent->sourceDeviceId;
     cout << "\n";
@@ -99,24 +101,9 @@ void CppSamples::Events::SearchEvents::PrintEventRow(IVxEvent* vxEvent) {
 void CppSamples::Events::SearchEvents::PrintEventHeadings() {
     const int eventTimeWidth = 20;
     const int eventStringWidth = 32;
-    cout << "\n--------------------------------------------------\n";
+    cout << "\n---------------------------------------------------------------------------------------------\n";
     cout << left << setw(eventTimeWidth) << setfill(' ') << "Time(UTC)";
     cout << left << setw(eventStringWidth) << setfill(' ') << "Situation Type";
     cout << left << setw(eventStringWidth) << setfill(' ') << "Source Device";
-    cout << "\n--------------------------------------------------\n";
-}
-
-/// <summary>
-/// Converts the UTC time format to string format (HH:MM::SS, Day Month)
-/// </summary>
-/// <param name="utcFormat">time string in UTC format (YYYYmmddTHHMMSSZ)</param>
-string CppSamples::Events::SearchEvents::CovertUTCTimeFormatToString(string utcFormat) {
-    stringstream dateStream(utcFormat);
-    struct tm parseTime;
-    //Here parse date and time string value to time structure
-    dateStream >> get_time(&parseTime, "%Y-%m-%dT%H:%M:%S");
-    char buffer[18];
-    strftime(buffer, 18, "%X %x", &parseTime);
-
-    return string(buffer);
+    cout << "\n---------------------------------------------------------------------------------------------\n";
 }

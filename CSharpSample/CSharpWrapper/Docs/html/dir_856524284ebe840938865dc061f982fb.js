@@ -1,5 +1,6 @@
 var dir_856524284ebe840938865dc061f982fb =
 [
+    [ "AlarmInput.h", "_alarm_input_8h_source.html", null ],
     [ "Bookmark.h", "_bookmark_8h_source.html", null ],
     [ "Clip.h", "_clip_8h_source.html", null ],
     [ "Configuration.h", "_configuration_8h_source.html", null ],
@@ -15,8 +16,10 @@ var dir_856524284ebe840938865dc061f982fb =
     [ "Event.h", "_event_8h_source.html", null ],
     [ "Export.h", "_export_8h_source.html", null ],
     [ "ExportClip.h", "_export_clip_8h_source.html", null ],
+    [ "InternalEvent.h", "_internal_event_8h_source.html", null ],
     [ "License.h", "_license_8h_source.html", null ],
     [ "LicenseFeature.h", "_license_feature_8h_source.html", null ],
+    [ "ManualRecording.h", "_manual_recording_8h_source.html", null ],
     [ "Marker.h", "_marker_8h_source.html", null ],
     [ "MediaControl.h", "_media_control_8h_source.html", null ],
     [ "MediaEvent.h", "_media_event_8h_source.html", null ],
@@ -29,6 +32,7 @@ var dir_856524284ebe840938865dc061f982fb =
     [ "NewEvent.h", "_new_event_8h_source.html", null ],
     [ "NewExport.h", "_new_export_8h_source.html", null ],
     [ "NewExportClip.h", "_new_export_clip_8h_source.html", null ],
+    [ "NewManualRecording.h", "_new_manual_recording_8h_source.html", null ],
     [ "NewMarker.h", "_new_marker_8h_source.html", null ],
     [ "NewMonitor.h", "_new_monitor_8h_source.html", null ],
     [ "NewNotification.h", "_new_notification_8h_source.html", null ],
@@ -44,9 +48,13 @@ var dir_856524284ebe840938865dc061f982fb =
     [ "Preset.h", "_preset_8h_source.html", null ],
     [ "Privilege.h", "_privilege_8h_source.html", null ],
     [ "PtzController.h", "_ptz_controller_8h_source.html", null ],
+    [ "PtzLimits.h", "_ptz_limits_8h_source.html", null ],
     [ "PtzLock.h", "_ptz_lock_8h_source.html", null ],
+    [ "QuickLog.h", "_quick_log_8h_source.html", null ],
     [ "QuickReport.h", "_quick_report_8h_source.html", null ],
+    [ "RelayOutput.h", "_relay_output_8h_source.html", null ],
     [ "ResourceLock.h", "_resource_lock_8h_source.html", null ],
+    [ "ResourceRel.h", "_resource_rel_8h_source.html", null ],
     [ "Role.h", "_role_8h_source.html", null ],
     [ "Schedule.h", "_schedule_8h_source.html", null ],
     [ "ScheduleTrigger.h", "_schedule_trigger_8h_source.html", null ],
@@ -54,6 +62,7 @@ var dir_856524284ebe840938865dc061f982fb =
     [ "SnapshotFilter.h", "_snapshot_filter_8h_source.html", null ],
     [ "Tag.h", "_tag_8h_source.html", null ],
     [ "User.h", "_user_8h_source.html", null ],
+    [ "UserInfo.h", "_user_info_8h_source.html", null ],
     [ "Utils.h", "_utils_8h_source.html", null ],
     [ "VXSystem.h", "_v_x_system_8h_source.html", null ]
 ];

@@ -1,7 +1,12 @@
 #include "stdafx.h"
 #include "ViewDataSourceByPage.h"
+#ifdef WIN32
 #include <conio.h>
+#else
+#include <curses.h>
+#endif
 #include "Paging.h"
+#include "Utility.h"
 
 using namespace std;
 using namespace VxSdk;
@@ -46,18 +51,20 @@ void CppSamples::DataSource::ViewDataSourceByPage::PrintDataSource(int number, I
 
 // Print the given collection of data source to the screen.
 void CppSamples::DataSource::ViewDataSourceByPage::PrintDataSourceCollection(VxCollection<IVxDataSource**> collection) {
-
     // Read number of items per page from user.
-    int numberOfItemsPerPage = 0;
     cout << "\n" << "Enter number of items per page: ";
-    cin >> numberOfItemsPerPage;
+    int numberOfItemsPerPage = Utility::ReadInt();
+    if (numberOfItemsPerPage < 1) {
+        cout << "\n" << "number of items per page: " << numberOfItemsPerPage;
+        return;
+    }
 
     // Initialize instance of Paging class
     Paging paging(collection.collectionSize, numberOfItemsPerPage);
 
     while (true) {
         // Print header of a page on screen
-        system("cls");
+        Utility::ClearScreen();
         cout << "========================================================";
         cout << "\n" << "Number\tData Source Name";
         cout << "\n" << "========================================================\n";
@@ -70,10 +77,25 @@ void CppSamples::DataSource::ViewDataSourceByPage::PrintDataSourceCollection(VxC
         cout << "========================================================";
         cout << "\n\n" << "Page " << paging.GetCurrentPage() << " of " << paging.GetPageCount();
 
-        // Get user inputs
+#ifndef WIN32
+        // Get user inputs in Linux
+        cout << "\n\n" << "Press 'Enter' key to move next";
+
+        int key = 77;
+        if (paging.GetCurrentPage() == paging.GetPageCount()) {
+            key = 27;
+        }
+
+        std::cin.clear();
+        fseek(stdin, 0, SEEK_END);
+        fflush(stdin);
+        while (std::cin.get() != '\n');
+#else
+        // Get user inputs in Windows
         cout << "\n\n" << "Press arrow keys to traverse. Esc key to quit...";
         int key = _getch();
-        
+#endif
+
         // Convert the user inputs into commands
         // Top or Left   => Previous Page
         // Right or Down => Next page
@@ -86,6 +108,5 @@ void CppSamples::DataSource::ViewDataSourceByPage::PrintDataSourceCollection(VxC
             break;
     }
 
-    cout << "\n\n" << "Press any key to continue...";
-    getchar();
+    Utility::Pause();
 }

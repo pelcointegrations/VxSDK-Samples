@@ -1,12 +1,16 @@
 #pragma once
 
 #include "Plugin.h"
+#include "Utility.h"
 #include <vector>
+#ifdef WIN32
 #include <conio.h>
+#else
+#include <curses.h>
+#endif
 
 namespace CppSamples {
     namespace Common {
-
         /// <summary>
         /// This helper class prints a collection of options and chose a user defined option.
         /// </summary>
@@ -72,38 +76,29 @@ namespace CppSamples {
             bool isInvalidOption = false;
             while (true) {
                 if (ClearScreenAlways)
-                    system("cls");
+                    Utility::ClearScreen();
 
                 if (ShowHeaderFooter)
-                    cout << "========================================================" << "\n\t";
-                cout << Heading;
+                    std::cout << "========================================================" << "\n\t";
+                std::cout << Heading;
                 if (ShowHeaderFooter)
-                    cout << "\n" << "========================================================";
-
+                    std::cout << "\n" << "========================================================";
 
                 int index = 0;
                 int size = _names.size();
                 for (; index < size; index++)
-                    cout << OptionSeperator << (index + 1) << ". " << _names[index];
+                    std::cout << OptionSeperator << (index + 1) << ". " << _names[index];
 
                 if (ShowHeaderFooter)
-                    cout << "\n========================================================";
+                    std::cout << "\n========================================================";
 
                 if (isInvalidOption) {
-                    cout << "\n" << "Invalid option!!!";
+                    std::cout << "\n" << "Invalid option!!!";
                     isInvalidOption = false;
                 }
 
-                cout << "\n" << "Select your option [1-" << index << "] : ";
-
-                int option = -1;
-                if (index > 9)
-                    cin >> option;
-                else {
-                    option = _getche();
-                    option = option - '0';
-                }
-
+                std::cout << "\n" << "Select your option [1-" << index << "] : ";
+                int option = Utility::ReadInt();
                 if (option > 0 && option <= index) {
                     *result = _items[option - 1];
                     return true;

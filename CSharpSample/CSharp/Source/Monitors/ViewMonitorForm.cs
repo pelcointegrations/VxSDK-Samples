@@ -255,7 +255,7 @@ namespace SDKSampleApp.Source
             label.Text = string.Empty;
             var cell = label.Tag as MonitorCell;
             if (cell != null)
-                cell.DataSourceId = string.Empty;
+                cell.Disconnect();
         }
 
         /// <summary>

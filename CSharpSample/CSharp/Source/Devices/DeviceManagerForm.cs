@@ -44,6 +44,8 @@ namespace SDKSampleApp.Source
                 lvItem.Tag = device;
                 lvDevices.Items.Add(lvItem);
             }
+
+            lblStatus.Text = MainForm.CurrentSystem.DeviceSearchStatus.ToString();
         }
 
         /// <summary>

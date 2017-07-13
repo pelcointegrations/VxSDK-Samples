@@ -179,6 +179,12 @@ Properties</h2></td></tr>
 <tr class="memitem:ab5f12cb480845a707e83032013bc46d4"><td class="memItemLeft" align="right" valign="top">System::Collections::Generic::List&lt; <a class="el" href="class_c_p_p_cli_1_1_notification.html">Notification</a>^ &gt;^&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_situation.html#ab5f12cb480845a707e83032013bc46d4">Notifications</a><code> [get]</code></td></tr>
 <tr class="memdesc:ab5f12cb480845a707e83032013bc46d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the notifications configured for this situation.  <a href="#ab5f12cb480845a707e83032013bc46d4">More...</a><br /></td></tr>
 <tr class="separator:ab5f12cb480845a707e83032013bc46d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a490a5db215667e60287d5323aa7312df"><td class="memItemLeft" align="right" valign="top">System::String^ &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_situation.html#a490a5db215667e60287d5323aa7312df">ServicePropertyId</a><code> [get]</code></td></tr>
+<tr class="memdesc:a490a5db215667e60287d5323aa7312df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the name of the key in the properties map corresponding to the service identifier for the source of this situation, if any.  <a href="#a490a5db215667e60287d5323aa7312df">More...</a><br /></td></tr>
+<tr class="separator:a490a5db215667e60287d5323aa7312df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8f4b3c25f718f5ab3ee5572a6531fe7"><td class="memItemLeft" align="right" valign="top">System::String^ &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_situation.html#ad8f4b3c25f718f5ab3ee5572a6531fe7">ServiceType</a><code> [get]</code></td></tr>
+<tr class="memdesc:ad8f4b3c25f718f5ab3ee5572a6531fe7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the resource type of the service corresponding to the source of this situation, if any.  <a href="#ad8f4b3c25f718f5ab3ee5572a6531fe7">More...</a><br /></td></tr>
+<tr class="separator:ad8f4b3c25f718f5ab3ee5572a6531fe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae87d1d0274791cdcbfa76ca5ce3d0676"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_p_cli_1_1_situation.html#ae87d1d0274791cdcbfa76ca5ce3d0676">Severity</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:ae87d1d0274791cdcbfa76ca5ce3d0676"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the severity of the generated event, from 1 (highest) to 10 (lowest).  <a href="#ae87d1d0274791cdcbfa76ca5ce3d0676">More...</a><br /></td></tr>
 <tr class="separator:ae87d1d0274791cdcbfa76ca5ce3d0676"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -748,6 +754,56 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a490a5db215667e60287d5323aa7312df"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System:: String^ CPPCli::Situation::ServicePropertyId</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the name of the key in the properties map corresponding to the service identifier for the source of this situation, if any. </p>
+<p>The service property identifier for the source of this situation.</p>
+
+<p>Definition at line <a class="el" href="_situation_8h_source.html#l00169">169</a> of file <a class="el" href="_situation_8h_source.html">Situation.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad8f4b3c25f718f5ab3ee5572a6531fe7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System:: String^ CPPCli::Situation::ServiceType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the resource type of the service corresponding to the source of this situation, if any. </p>
+<p>The service type for the source of this situation.</p>
+
+<p>Definition at line <a class="el" href="_situation_8h_source.html#l00178">178</a> of file <a class="el" href="_situation_8h_source.html">Situation.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ae87d1d0274791cdcbfa76ca5ce3d0676"></a>
 <div class="memitem">
 <div class="memproto">
@@ -769,7 +825,7 @@ Here is the caller graph for this function:</div>
 <p>Gets or sets the severity of the generated event, from 1 (highest) to 10 (lowest). </p>
 <p>The event severity.</p>
 
-<p>Definition at line <a class="el" href="_situation_8h_source.html#l00169">169</a> of file <a class="el" href="_situation_8h_source.html">Situation.h</a>.</p>
+<p>Definition at line <a class="el" href="_situation_8h_source.html#l00187">187</a> of file <a class="el" href="_situation_8h_source.html">Situation.h</a>.</p>
 
 </div>
 </div>
@@ -794,7 +850,7 @@ Here is the caller graph for this function:</div>
 <p>Gets or sets whether the notification banner on clients should be expanded by default. </p>
 <p><code>true</code> if the banner should be expanded, <code>false</code> if not.</p>
 
-<p>Definition at line <a class="el" href="_situation_8h_source.html#l00179">179</a> of file <a class="el" href="_situation_8h_source.html">Situation.h</a>.</p>
+<p>Definition at line <a class="el" href="_situation_8h_source.html#l00197">197</a> of file <a class="el" href="_situation_8h_source.html">Situation.h</a>.</p>
 
 </div>
 </div>
@@ -819,7 +875,7 @@ Here is the caller graph for this function:</div>
 <p>Gets or sets whether events generated from this situation shall be persisted or immediately be discarded. </p>
 <p><code>true</code> if events will be logged, <code>false</code> if not.</p>
 
-<p>Definition at line <a class="el" href="_situation_8h_source.html#l00189">189</a> of file <a class="el" href="_situation_8h_source.html">Situation.h</a>.</p>
+<p>Definition at line <a class="el" href="_situation_8h_source.html#l00207">207</a> of file <a class="el" href="_situation_8h_source.html">Situation.h</a>.</p>
 
 </div>
 </div>
@@ -844,7 +900,7 @@ Here is the caller graph for this function:</div>
 <p>Gets or sets whether an event generated from the situation shall generate notifications. </p>
 <p><code>true</code> if notifications will be sent, <code>false</code> if not.</p>
 
-<p>Definition at line <a class="el" href="_situation_8h_source.html#l00199">199</a> of file <a class="el" href="_situation_8h_source.html">Situation.h</a>.</p>
+<p>Definition at line <a class="el" href="_situation_8h_source.html#l00217">217</a> of file <a class="el" href="_situation_8h_source.html">Situation.h</a>.</p>
 
 </div>
 </div>
@@ -869,7 +925,7 @@ Here is the caller graph for this function:</div>
 <p>Gets or sets the default snooze intervals, in seconds, for a generated event. </p>
 <p>A list of snooze intervals in seconds.</p>
 
-<p>Definition at line <a class="el" href="_situation_8h_source.html#l00209">209</a> of file <a class="el" href="_situation_8h_source.html">Situation.h</a>.</p>
+<p>Definition at line <a class="el" href="_situation_8h_source.html#l00227">227</a> of file <a class="el" href="_situation_8h_source.html">Situation.h</a>.</p>
 
 </div>
 </div>
@@ -894,7 +950,7 @@ Here is the caller graph for this function:</div>
 <p>Gets the unique source identifier. </p>
 <p>The unique source identifier.</p>
 
-<p>Definition at line <a class="el" href="_situation_8h_source.html#l00226">226</a> of file <a class="el" href="_situation_8h_source.html">Situation.h</a>.</p>
+<p>Definition at line <a class="el" href="_situation_8h_source.html#l00244">244</a> of file <a class="el" href="_situation_8h_source.html">Situation.h</a>.</p>
 
 </div>
 </div>
@@ -919,7 +975,7 @@ Here is the caller graph for this function:</div>
 <p>Gets the situation type. </p>
 <p>The situation type.</p>
 
-<p>Definition at line <a class="el" href="_situation_8h_source.html#l00235">235</a> of file <a class="el" href="_situation_8h_source.html">Situation.h</a>.</p>
+<p>Definition at line <a class="el" href="_situation_8h_source.html#l00253">253</a> of file <a class="el" href="_situation_8h_source.html">Situation.h</a>.</p>
 
 </div>
 </div>
@@ -944,7 +1000,7 @@ Here is the caller graph for this function:</div>
 <p>Gets or sets whether a notification sound should play on supporting clients when an event is received. </p>
 <p><code>true</code> if audio should play on event notification, <code>false</code> if not.</p>
 
-<p>Definition at line <a class="el" href="_situation_8h_source.html#l00244">244</a> of file <a class="el" href="_situation_8h_source.html">Situation.h</a>.</p>
+<p>Definition at line <a class="el" href="_situation_8h_source.html#l00262">262</a> of file <a class="el" href="_situation_8h_source.html">Situation.h</a>.</p>
 
 </div>
 </div>

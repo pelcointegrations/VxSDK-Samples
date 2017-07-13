@@ -175,7 +175,8 @@ $(document).ready(function(){initNavTree('functions_r.html','');});
 , <a class="el" href="class_c_p_p_cli_1_1_schedule_trigger.html#ad91a84d2e904d5dd8a8f6e2187f5d818">CPPCli::ScheduleTrigger</a>
 </li>
 <li>Refresh()
-: <a class="el" href="class_c_p_p_cli_1_1_bookmark.html#aab6827dfac7e746adf2a1f2fbf11b8f1">CPPCli::Bookmark</a>
+: <a class="el" href="class_c_p_p_cli_1_1_alarm_input.html#a5c78924730c1247714899ff620bceaa6">CPPCli::AlarmInput</a>
+, <a class="el" href="class_c_p_p_cli_1_1_bookmark.html#aab6827dfac7e746adf2a1f2fbf11b8f1">CPPCli::Bookmark</a>
 , <a class="el" href="class_c_p_p_cli_1_1_configuration_1_1_cluster.html#adc45cf66a08c4a8a5c78c9c79b32f467">CPPCli::Configuration::Cluster</a>
 , <a class="el" href="class_c_p_p_cli_1_1_configuration_1_1_node.html#a0719cc0c9bff93660cf1fa033ea1c589">CPPCli::Configuration::Node</a>
 , <a class="el" href="class_c_p_p_cli_1_1_configuration_1_1_storage.html#a18b0fd4c07cd6b4552ec6c88afcb0407">CPPCli::Configuration::Storage</a>
@@ -189,6 +190,7 @@ $(document).ready(function(){initNavTree('functions_r.html','');});
 , <a class="el" href="class_c_p_p_cli_1_1_event.html#abc83bb9a11408e5cfbfd6a4d941e613e">CPPCli::Event</a>
 , <a class="el" href="class_c_p_p_cli_1_1_export.html#ab6dc87e5894270a1418468efbbedca9b">CPPCli::Export</a>
 , <a class="el" href="class_c_p_p_cli_1_1_license_feature.html#a2f06be98c2a534fa5d4afce33603ad6b">CPPCli::LicenseFeature</a>
+, <a class="el" href="class_c_p_p_cli_1_1_manual_recording.html#a9385d1a5f23d78eb017b5ed043b32fd2">CPPCli::ManualRecording</a>
 , <a class="el" href="class_c_p_p_cli_1_1_marker.html#ae02e93ed1ce882cb8ddfa6499c87aaa0">CPPCli::Marker</a>
 , <a class="el" href="class_c_p_p_cli_1_1_monitor.html#a05929ebfc89449cb0de3cbe361e8fd4d">CPPCli::Monitor</a>
 , <a class="el" href="class_c_p_p_cli_1_1_monitor_cell.html#a79471d20a09c418581b0491731703dd8">CPPCli::MonitorCell</a>
@@ -196,6 +198,8 @@ $(document).ready(function(){initNavTree('functions_r.html','');});
 , <a class="el" href="class_c_p_p_cli_1_1_privilege.html#a6d3157a3121d1307d84d2603863d4e22">CPPCli::Privilege</a>
 , <a class="el" href="class_c_p_p_cli_1_1_ptz_controller.html#a52039122bee70fb582472793dcdcf729">CPPCli::PtzController</a>
 , <a class="el" href="class_c_p_p_cli_1_1_ptz_lock.html#a121caa3919c97da3cf04d06df87d8fa4">CPPCli::PtzLock</a>
+, <a class="el" href="class_c_p_p_cli_1_1_relay_output.html#a064a6651971d09ece6e14ab75bee0688">CPPCli::RelayOutput</a>
+, <a class="el" href="class_c_p_p_cli_1_1_resource_rel.html#a1fcfb12cd38498ecb398a942e1aa044b">CPPCli::ResourceRel</a>
 , <a class="el" href="class_c_p_p_cli_1_1_role.html#ab894ec4e59c39a31b4dac74e192754bc">CPPCli::Role</a>
 , <a class="el" href="class_c_p_p_cli_1_1_schedule.html#afcaf234e3caa50edf0f94ca37994c439">CPPCli::Schedule</a>
 , <a class="el" href="class_c_p_p_cli_1_1_schedule_trigger.html#aad17d67d07c2447f8a9f9bb2f5a55c76">CPPCli::ScheduleTrigger</a>
@@ -209,6 +213,15 @@ $(document).ready(function(){initNavTree('functions_r.html','');});
 </li>
 <li>RelativePercentageMove()
 : <a class="el" href="class_c_p_p_cli_1_1_ptz_controller.html#ad186a818ae7883ff585102e166c545e2">CPPCli::PtzController</a>
+</li>
+<li>RelayOutput()
+: <a class="el" href="class_c_p_p_cli_1_1_relay_output.html#a698cecdb045abb6ad47959dbf9019598">CPPCli::RelayOutput</a>
+</li>
+<li>RelayOutputs
+: <a class="el" href="class_c_p_p_cli_1_1_device.html#a94b0fc71eba53b9620de83cee6da60fa">CPPCli::Device</a>
+</li>
+<li>RelayStates
+: <a class="el" href="class_c_p_p_cli_1_1_relay_output.html#a6c5aad8dfec53bb819330c42cdb522d4">CPPCli::RelayOutput</a>
 </li>
 <li>RemoveFromRole()
 : <a class="el" href="class_c_p_p_cli_1_1_user.html#af244d582019bd4ceeb03c2d623d02192">CPPCli::User</a>
@@ -225,14 +238,29 @@ $(document).ready(function(){initNavTree('functions_r.html','');});
 <li>RemoveRole()
 : <a class="el" href="class_c_p_p_cli_1_1_notification.html#a91e753cec64ecd500b729a66d9569da7">CPPCli::Notification</a>
 </li>
+<li>RenderType
+: <a class="el" href="class_c_p_p_cli_1_1_data_interface.html#a0ff8744f28211ed4df422fd649015974">CPPCli::DataInterface</a>
+</li>
+<li>RenderTypes
+: <a class="el" href="class_c_p_p_cli_1_1_data_interface.html#a8e97b1072453ba84675387131889bcd4">CPPCli::DataInterface</a>
+</li>
 <li>ReportContent
 : <a class="el" href="class_c_p_p_cli_1_1_new_quick_report.html#a0965d29efe5fb8339e29c1b184d515ef">CPPCli::NewQuickReport</a>
 </li>
 <li>ReportCreationStatus
 : <a class="el" href="class_c_p_p_cli_1_1_quick_report.html#ae77ef814927ee074eb461a330b90c04d">CPPCli::QuickReport</a>
 </li>
+<li>RepositionPreset()
+: <a class="el" href="class_c_p_p_cli_1_1_ptz_controller.html#afee104ae19351cf207caef9f852203be">CPPCli::PtzController</a>
+</li>
+<li>Resource
+: <a class="el" href="class_c_p_p_cli_1_1_resource_rel.html#aa01ed3641fa3c95c9451fa9132fc3a70">CPPCli::ResourceRel</a>
+</li>
 <li>ResourceLock()
 : <a class="el" href="class_c_p_p_cli_1_1_resource_lock.html#a1f8efa79ceb7053639defc72e5239dbb">CPPCli::ResourceLock</a>
+</li>
+<li>ResourceRel()
+: <a class="el" href="class_c_p_p_cli_1_1_resource_rel.html#a00c432dade6b78edced59d3f4695dc7d">CPPCli::ResourceRel</a>
 </li>
 <li>ResourceType
 : <a class="el" href="class_c_p_p_cli_1_1_privilege.html#aab766462ab104e9eb56fae0babbc3c79">CPPCli::Privilege</a>

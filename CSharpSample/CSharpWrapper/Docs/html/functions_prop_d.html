@@ -88,6 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow4" class="tabs3">
     <ul class="tablist">
       <li><a href="functions_prop.html#index_a"><span>a</span></a></li>
+      <li><a href="functions_prop_b.html#index_b"><span>b</span></a></li>
       <li><a href="functions_prop_c.html#index_c"><span>c</span></a></li>
       <li class="current"><a href="functions_prop_d.html#index_d"><span>d</span></a></li>
       <li><a href="functions_prop_e.html#index_e"><span>e</span></a></li>
@@ -158,24 +159,32 @@ $(document).ready(function(){initNavTree('functions_prop_d.html','');});
 : <a class="el" href="class_c_p_p_cli_1_1_data_object.html#affa4927d95435dbba61f3fb8b8d0345d">CPPCli::DataObject</a>
 , <a class="el" href="class_c_p_p_cli_1_1_new_data_object.html#adae2b7970f2abd1a74599be0136f72c2">CPPCli::NewDataObject</a>
 </li>
+<li>DataEncodingId
+: <a class="el" href="class_c_p_p_cli_1_1_data_interface.html#a60cc4d83d3e3a0ff56daa5294859e1fc">CPPCli::DataInterface</a>
+, <a class="el" href="class_c_p_p_cli_1_1_new_export_clip.html#a8db43a3e898fe7ae154eceb42346eb9b">CPPCli::NewExportClip</a>
+</li>
 <li>DataEndpoint
 : <a class="el" href="class_c_p_p_cli_1_1_data_interface.html#abf4532540ca294aed3ea11d888fadbee">CPPCli::DataInterface</a>
 </li>
 <li>DataInterfaces
-: <a class="el" href="class_c_p_p_cli_1_1_data_source.html#aca2fec75cee24bb63a6c790f7f6719ce">CPPCli::DataSource</a>
+: <a class="el" href="class_c_p_p_cli_1_1_clip.html#a312388d88efa1be8b77c25776ed3a4cb">CPPCli::Clip</a>
+, <a class="el" href="class_c_p_p_cli_1_1_data_source.html#aca2fec75cee24bb63a6c790f7f6719ce">CPPCli::DataSource</a>
 </li>
 <li>DataObjects
 : <a class="el" href="class_c_p_p_cli_1_1_user.html#a70f601d462af456ce4a47764017e7475">CPPCli::User</a>
 </li>
 <li>DataSource
 : <a class="el" href="class_c_p_p_cli_1_1_bookmark.html#a5ed02f7669688c6b264a550946832b5b">CPPCli::Bookmark</a>
+, <a class="el" href="class_c_p_p_cli_1_1_manual_recording.html#aad132917bcd36ac9c5116f656ebd0e20">CPPCli::ManualRecording</a>
 </li>
 <li>DataSourceId
 : <a class="el" href="class_c_p_p_cli_1_1_clip.html#abacceb0edfd0b1a7ac2dfd6a79938396">CPPCli::Clip</a>
 , <a class="el" href="class_c_p_p_cli_1_1_export_clip.html#a7b27fc8d6875e2022356b305a41c99f0">CPPCli::ExportClip</a>
+, <a class="el" href="class_c_p_p_cli_1_1_manual_recording.html#a223ac616e91805406f109c70942d1bf9">CPPCli::ManualRecording</a>
 , <a class="el" href="class_c_p_p_cli_1_1_monitor_cell.html#a7913b1a88f52c139ae696d15044bf175">CPPCli::MonitorCell</a>
 , <a class="el" href="class_c_p_p_cli_1_1_new_bookmark.html#a51741f86fd142c51acb988eca6ec13df">CPPCli::NewBookmark</a>
 , <a class="el" href="class_c_p_p_cli_1_1_new_export_clip.html#a99dfbd3ce990b0057961bcdf50b243b6">CPPCli::NewExportClip</a>
+, <a class="el" href="class_c_p_p_cli_1_1_new_manual_recording.html#ac78529702478185d3f8faa1897cf8f74">CPPCli::NewManualRecording</a>
 </li>
 <li>DataSourceIds
 : <a class="el" href="class_c_p_p_cli_1_1_new_device_assignment.html#a58d170e87769999b58ecf6e4b9296ea2">CPPCli::NewDeviceAssignment</a>
@@ -193,7 +202,8 @@ $(document).ready(function(){initNavTree('functions_prop_d.html','');});
 , <a class="el" href="class_c_p_p_cli_1_1_driver.html#a01517a2003ad1063358a667c1c44d58a">CPPCli::Driver</a>
 </li>
 <li>DataStorageId
-: <a class="el" href="class_c_p_p_cli_1_1_new_device.html#a6fdfbea585034e5f5a8fa823031e7e47">CPPCli::NewDevice</a>
+: <a class="el" href="class_c_p_p_cli_1_1_clip.html#ac81ef22ca6f4b1663b12326282b531c3">CPPCli::Clip</a>
+, <a class="el" href="class_c_p_p_cli_1_1_new_device.html#a6fdfbea585034e5f5a8fa823031e7e47">CPPCli::NewDevice</a>
 </li>
 <li>DataStorages
 : <a class="el" href="class_c_p_p_cli_1_1_data_source.html#a6c133ae24e9dfe58c6400d48b29dce9b">CPPCli::DataSource</a>
@@ -202,10 +212,12 @@ $(document).ready(function(){initNavTree('functions_prop_d.html','');});
 : <a class="el" href="class_c_p_p_cli_1_1_export.html#a1626329c0d36b98e1772892fc6884f1b">CPPCli::Export</a>
 </li>
 <li>Description
-: <a class="el" href="class_c_p_p_cli_1_1_bookmark.html#ada6da3ccaf6a53c1bafabc17db8c8759">CPPCli::Bookmark</a>
+: <a class="el" href="class_c_p_p_cli_1_1_alarm_input.html#a2220d61c0f3759401eef93918ea9ef66">CPPCli::AlarmInput</a>
+, <a class="el" href="class_c_p_p_cli_1_1_bookmark.html#ada6da3ccaf6a53c1bafabc17db8c8759">CPPCli::Bookmark</a>
 , <a class="el" href="class_c_p_p_cli_1_1_new_bookmark.html#a780b2de0442513873626a55e12e1c0f8">CPPCli::NewBookmark</a>
 , <a class="el" href="class_c_p_p_cli_1_1_pattern.html#ae777cb3677bf166ae74a50cd961ba356">CPPCli::Pattern</a>
 , <a class="el" href="class_c_p_p_cli_1_1_preset.html#a19f157125f4216568f0eaae3a442b09a">CPPCli::Preset</a>
+, <a class="el" href="class_c_p_p_cli_1_1_relay_output.html#a11153790c0d4f543d8184d84fdececc9">CPPCli::RelayOutput</a>
 </li>
 <li>Device
 : <a class="el" href="class_c_p_p_cli_1_1_device_assignment.html#a0e0f03035df0c0368bd46779ea6e6772">CPPCli::DeviceAssignment</a>
@@ -216,6 +228,9 @@ $(document).ready(function(){initNavTree('functions_prop_d.html','');});
 </li>
 <li>DeviceId
 : <a class="el" href="class_c_p_p_cli_1_1_new_device_assignment.html#a544ae823dc0ff218874761eb353bec86">CPPCli::NewDeviceAssignment</a>
+</li>
+<li>DeviceSearchStatus
+: <a class="el" href="class_c_p_p_cli_1_1_v_x_system.html#a91529caefcfd3727b40b7418f806ae74">CPPCli::VXSystem</a>
 </li>
 <li>Direction
 : <a class="el" href="class_c_p_p_cli_1_1_marker.html#a5eed56a258f4558453dd1d9c799cca35">CPPCli::Marker</a>
@@ -230,6 +245,9 @@ $(document).ready(function(){initNavTree('functions_prop_d.html','');});
 </li>
 <li>Driver
 : <a class="el" href="class_c_p_p_cli_1_1_device_assignment.html#a44aaed86c07cd95978bb1ad1776f9b8e">CPPCli::DeviceAssignment</a>
+</li>
+<li>DriverDeviceId
+: <a class="el" href="class_c_p_p_cli_1_1_device.html#a66c6413e1415d5d558dab4c46bd209fd">CPPCli::Device</a>
 </li>
 <li>Drivers
 : <a class="el" href="class_c_p_p_cli_1_1_data_storage.html#a9ffc0180c5773164cc6052847bcfe292">CPPCli::DataStorage</a>

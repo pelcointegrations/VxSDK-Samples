@@ -17,6 +17,32 @@ namespace CPPCli {
     public:
 
         /// <summary>
+        /// Values that represent the type of a phone number.
+        /// </summary>
+        enum class PhoneType {
+            /// <summary>Home number.</summary>
+            Home,
+
+            /// <summary>Home fax number.</summary>
+            HomeFax,
+
+            /// <summary>Mobile number.</summary>
+            Mobile,
+
+            /// <summary>Other number.</summary>
+            Other,
+
+            /// <summary>Pager number.</summary>
+            Pager,
+
+            /// <summary>Work number.</summary>
+            Work,
+
+            /// <summary>Work fax number.</summary>
+            WorkFax
+        };
+
+        /// <summary>
         /// Constructor.
         /// </summary>
         /// <param name="vxUser">The vx user.</param>
@@ -90,8 +116,36 @@ namespace CPPCli {
             System::String^ get() { return gcnew System::String(_user->domain); }
             void set(System::String^ value) {
                 char domain[64];
-                strncpy_s(domain, Utils::ConvertSysStringNonConst(value), sizeof(domain));
+                VxSdk::Utilities::StrCopySafe(domain, Utils::ConvertSysStringNonConst(value));
                 _user->SetName(domain);
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets the employee identifier associated with the user.
+        /// </summary>
+        /// <value>The employee identifier.</value>
+        property System::String^ EmployeeId {
+        public:
+            System::String^ get() { return gcnew System::String(_user->employeeId); }
+            void set(System::String^ value) {
+                char employeeId[64];
+                VxSdk::Utilities::StrCopySafe(employeeId, Utils::ConvertSysStringNonConst(value));
+                _user->SetName(employeeId);
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets the first name of user.
+        /// </summary>
+        /// <value>The first name of user.</value>
+        property System::String^ FirstName {
+        public:
+            System::String^ get() { return gcnew System::String(_user->firstName); }
+            void set(System::String^ value) {
+                char firstName[64];
+                VxSdk::Utilities::StrCopySafe(firstName, Utils::ConvertSysStringNonConst(value));
+                _user->SetName(firstName);
             }
         }
 
@@ -105,6 +159,20 @@ namespace CPPCli {
         }
 
         /// <summary>
+        /// Gets or sets the last name of user.
+        /// </summary>
+        /// <value>The last name of user.</value>
+        property System::String^ LastName {
+        public:
+            System::String^ get() { return gcnew System::String(_user->lastName); }
+            void set(System::String^ value) {
+                char lastName[64];
+                VxSdk::Utilities::StrCopySafe(lastName, Utils::ConvertSysStringNonConst(value));
+                _user->SetName(lastName);
+            }
+        }
+
+        /// <summary>
         /// Gets or sets the friendly name, within the domain, of the user.
         /// </summary>
         /// <value>The friendly name.</value>
@@ -113,8 +181,22 @@ namespace CPPCli {
             System::String^ get() { return gcnew System::String(_user->name); }
             void set(System::String^ value) {
                 char name[64];
-                strncpy_s(name, Utils::ConvertSysStringNonConst(value), sizeof(name));
+                VxSdk::Utilities::StrCopySafe(name, Utils::ConvertSysStringNonConst(value));
                 _user->SetName(name);
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets supplemental information about the user.
+        /// </summary>
+        /// <value>Information about the user.</value>
+        property System::String^ Note {
+        public:
+            System::String^ get() { return gcnew System::String(_user->note); }
+            void set(System::String^ value) {
+                char note[1024];
+                VxSdk::Utilities::StrCopySafe(note, Utils::ConvertSysStringNonConst(value));
+                _user->SetName(note);
             }
         }
 
@@ -125,6 +207,39 @@ namespace CPPCli {
         property System::DateTime PasswordExpiration {
         public:
             System::DateTime get() { return Utils::ConvertCharToDateTime(_user->passwordExpiration); }
+        }
+
+        /// <summary>
+        /// Gets or sets the telephone number(s) for the user.
+        /// </summary>
+        /// <value>The telephone number(s) for the user.</value>
+        property System::Collections::Generic::List<System::Collections::Generic::KeyValuePair<User::PhoneType, System::String^>>^ PhoneNumbers {
+        public:
+            System::Collections::Generic::List<System::Collections::Generic::KeyValuePair<User::PhoneType, System::String^>>^ get() {
+                System::Collections::Generic::List<System::Collections::Generic::KeyValuePair<User::PhoneType, System::String^>>^ mList =
+                    gcnew System::Collections::Generic::List<System::Collections::Generic::KeyValuePair<User::PhoneType, System::String^>>();
+
+                for (int i = 0; i < _user->phoneNumberSize; i++)
+                {
+                    auto phoneNumber = _user->phoneNumbers[i];
+                    System::Collections::Generic::KeyValuePair<User::PhoneType, System::String^> kvPair((User::PhoneType)phoneNumber.type,
+                        gcnew System::String(phoneNumber.number));
+
+                    mList->Add(kvPair);
+                }
+
+                return mList;
+            }
+            void set(System::Collections::Generic::List<System::Collections::Generic::KeyValuePair<User::PhoneType, System::String^>>^ value) {
+                int size = value->Count;
+                VxSdk::VxPhoneNumber *numbers = new VxSdk::VxPhoneNumber[size];
+                for (int i = 0; i < size; i++) {
+                    numbers[i].type = (VxSdk::VxPhoneType::Value)value[i].Key;
+                    VxSdk::Utilities::StrCopySafe(numbers[i].number, Utils::ConvertSysString(value[i].Value));
+                }
+
+                _user->SetPhoneNumbers(numbers, size);
+            }
         }
 
         /// <summary>

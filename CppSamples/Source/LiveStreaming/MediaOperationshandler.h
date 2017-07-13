@@ -18,7 +18,7 @@ namespace CppSamples {
             /// Do media operation for given character.
             /// </summary>
             /// <param name="keyCode">Character code represent a command.</param>
-            void DoOperation(char keyCode);
+            bool DoOperation(char keyCode);
 
         protected:
             /// <summary>

@@ -30,9 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.btnPlay = new System.Windows.Forms.Button();
-            this.lvDataSources = new System.Windows.Forms.ListView();
-            this.colHeadName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.colHeadIp = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panelVideoStreamLeft = new System.Windows.Forms.Panel();
             this.btnPause = new System.Windows.Forms.Button();
             this.btnStop = new System.Windows.Forms.Button();
@@ -48,8 +45,10 @@
             this.logErrorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logFatalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logDisableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modifyLoggingPathToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.snapshotPathToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showLogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eventsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.subscribeToSystemEventsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -64,9 +63,11 @@
             this.rtspToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mjpegToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.alarmInputsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bookmarkManagerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clusterConfigToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataObjectsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dataSourcesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataStorageManagerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.devicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.drawingManagerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -74,7 +75,9 @@
             this.licenseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.monitorsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.notificationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.quickLogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quickReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.relayOutputsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rolesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.scheduleManagerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.situationManagerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -85,20 +88,35 @@
             this.lblSpeed = new System.Windows.Forms.Label();
             this.nudSpeed = new System.Windows.Forms.NumericUpDown();
             this.scInner = new System.Windows.Forms.SplitContainer();
+            this.dgvDataSources = new System.Windows.Forms.DataGridView();
+            this.colStatus = new System.Windows.Forms.DataGridViewImageColumn();
+            this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnRefreshDataSources = new System.Windows.Forms.Button();
             this.pbLoadCameras = new System.Windows.Forms.ProgressBar();
             this.lblAddingCameras = new System.Windows.Forms.Label();
+            this.nudPostRecord = new System.Windows.Forms.NumericUpDown();
+            this.lblPostRecord = new System.Windows.Forms.Label();
+            this.nudPreRecord = new System.Windows.Forms.NumericUpDown();
+            this.lblPreRecord = new System.Windows.Forms.Label();
+            this.btnManualRecord = new System.Windows.Forms.Button();
+            this.dtpSeekTime = new System.Windows.Forms.DateTimePicker();
             this.btnSnapshot = new System.Windows.Forms.Button();
             this.lblTimestampRight = new System.Windows.Forms.Label();
             this.scVideoPanels = new System.Windows.Forms.SplitContainer();
             this.panelVideoStreamRight = new System.Windows.Forms.Panel();
             this.scOuter = new System.Windows.Forms.SplitContainer();
             this.txbxLog = new System.Windows.Forms.TextBox();
+            this.bgWorker = new System.ComponentModel.BackgroundWorker();
             this.menuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudSpeed)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.scInner)).BeginInit();
             this.scInner.Panel1.SuspendLayout();
             this.scInner.Panel2.SuspendLayout();
             this.scInner.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDataSources)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPostRecord)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPreRecord)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.scVideoPanels)).BeginInit();
             this.scVideoPanels.Panel1.SuspendLayout();
             this.scVideoPanels.Panel2.SuspendLayout();
@@ -113,41 +131,13 @@
             // 
             this.btnPlay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnPlay.Enabled = false;
-            this.btnPlay.Location = new System.Drawing.Point(647, 366);
+            this.btnPlay.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.btnPlay.Location = new System.Drawing.Point(557, 366);
             this.btnPlay.Name = "btnPlay";
             this.btnPlay.Size = new System.Drawing.Size(45, 23);
             this.btnPlay.TabIndex = 14;
             this.btnPlay.Text = "Play";
-            this.btnPlay.UseVisualStyleBackColor = true;
             this.btnPlay.Click += new System.EventHandler(this.ButtonPlay_Click);
-            // 
-            // lvDataSources
-            // 
-            this.lvDataSources.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lvDataSources.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.colHeadName,
-            this.colHeadIp});
-            this.lvDataSources.FullRowSelect = true;
-            this.lvDataSources.HideSelection = false;
-            this.lvDataSources.Location = new System.Drawing.Point(3, 3);
-            this.lvDataSources.MultiSelect = false;
-            this.lvDataSources.Name = "lvDataSources";
-            this.lvDataSources.Size = new System.Drawing.Size(360, 365);
-            this.lvDataSources.TabIndex = 1;
-            this.lvDataSources.UseCompatibleStateImageBehavior = false;
-            this.lvDataSources.View = System.Windows.Forms.View.Details;
-            // 
-            // colHeadName
-            // 
-            this.colHeadName.Text = "Name";
-            this.colHeadName.Width = 237;
-            // 
-            // colHeadIp
-            // 
-            this.colHeadIp.Text = "IP";
-            this.colHeadIp.Width = 100;
             // 
             // panelVideoStreamLeft
             // 
@@ -171,24 +161,24 @@
             // 
             this.btnPause.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnPause.Enabled = false;
-            this.btnPause.Location = new System.Drawing.Point(545, 366);
+            this.btnPause.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.btnPause.Location = new System.Drawing.Point(455, 366);
             this.btnPause.Name = "btnPause";
             this.btnPause.Size = new System.Drawing.Size(45, 23);
             this.btnPause.TabIndex = 2;
             this.btnPause.Text = "Pause";
-            this.btnPause.UseVisualStyleBackColor = true;
             this.btnPause.Click += new System.EventHandler(this.ButtonPause_Click);
             // 
             // btnStop
             // 
             this.btnStop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnStop.Enabled = false;
-            this.btnStop.Location = new System.Drawing.Point(596, 366);
+            this.btnStop.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.btnStop.Location = new System.Drawing.Point(506, 366);
             this.btnStop.Name = "btnStop";
             this.btnStop.Size = new System.Drawing.Size(45, 23);
             this.btnStop.TabIndex = 4;
             this.btnStop.Text = "Stop";
-            this.btnStop.UseVisualStyleBackColor = true;
             this.btnStop.Click += new System.EventHandler(this.ButtonStop_Click);
             // 
             // lblTimestampLeft
@@ -201,6 +191,7 @@
             // 
             // menuStrip
             // 
+            this.menuStrip.BackColor = System.Drawing.SystemColors.Control;
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.eventsToolStripMenuItem,
@@ -218,8 +209,10 @@
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.connectToolStripMenuItem,
             this.vxSDKLogLevelToolStripMenuItem,
+            this.modifyLoggingPathToolStripMenuItem,
             this.snapshotPathToolStripMenuItem,
             this.showLogToolStripMenuItem,
+            this.logoutToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
@@ -304,6 +297,13 @@
             this.logDisableToolStripMenuItem.Text = "Disable";
             this.logDisableToolStripMenuItem.Click += new System.EventHandler(this.MenuItemLogLevel_Click);
             // 
+            // modifyLoggingPathToolStripMenuItem
+            // 
+            this.modifyLoggingPathToolStripMenuItem.Name = "modifyLoggingPathToolStripMenuItem";
+            this.modifyLoggingPathToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
+            this.modifyLoggingPathToolStripMenuItem.Text = "Modify Logging Path";
+            this.modifyLoggingPathToolStripMenuItem.Click += new System.EventHandler(this.MenuItemModifyLoggingPath_Click);
+            // 
             // snapshotPathToolStripMenuItem
             // 
             this.snapshotPathToolStripMenuItem.Name = "snapshotPathToolStripMenuItem";
@@ -317,6 +317,13 @@
             this.showLogToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
             this.showLogToolStripMenuItem.Text = "Show Log";
             this.showLogToolStripMenuItem.Click += new System.EventHandler(this.MenuItemLog_Click);
+            // 
+            // logoutToolStripMenuItem
+            // 
+            this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
+            this.logoutToolStripMenuItem.Text = "Logout";
+            this.logoutToolStripMenuItem.Click += new System.EventHandler(this.MenuItemLogout_Click);
             // 
             // exitToolStripMenuItem
             // 
@@ -424,9 +431,11 @@
             // manageToolStripMenuItem
             // 
             this.manageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.alarmInputsToolStripMenuItem,
             this.bookmarkManagerToolStripMenuItem,
             this.clusterConfigToolStripMenuItem,
             this.dataObjectsToolStripMenuItem,
+            this.dataSourcesToolStripMenuItem,
             this.dataStorageManagerToolStripMenuItem,
             this.devicesToolStripMenuItem,
             this.drawingManagerToolStripMenuItem,
@@ -434,7 +443,9 @@
             this.licenseToolStripMenuItem,
             this.monitorsToolStripMenuItem,
             this.notificationsToolStripMenuItem,
+            this.quickLogToolStripMenuItem,
             this.quickReportToolStripMenuItem,
+            this.relayOutputsToolStripMenuItem,
             this.rolesToolStripMenuItem,
             this.scheduleManagerToolStripMenuItem,
             this.situationManagerToolStripMenuItem,
@@ -444,6 +455,13 @@
             this.manageToolStripMenuItem.Name = "manageToolStripMenuItem";
             this.manageToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.manageToolStripMenuItem.Text = "Manage";
+            // 
+            // alarmInputsToolStripMenuItem
+            // 
+            this.alarmInputsToolStripMenuItem.Name = "alarmInputsToolStripMenuItem";
+            this.alarmInputsToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.alarmInputsToolStripMenuItem.Text = "Alarm Inputs";
+            this.alarmInputsToolStripMenuItem.Click += new System.EventHandler(this.MenuItemAlarmInputManager_Click);
             // 
             // bookmarkManagerToolStripMenuItem
             // 
@@ -465,6 +483,13 @@
             this.dataObjectsToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.dataObjectsToolStripMenuItem.Text = "Data Objects";
             this.dataObjectsToolStripMenuItem.Click += new System.EventHandler(this.MenuItemDataObjectManager_Click);
+            // 
+            // dataSourcesToolStripMenuItem
+            // 
+            this.dataSourcesToolStripMenuItem.Name = "dataSourcesToolStripMenuItem";
+            this.dataSourcesToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.dataSourcesToolStripMenuItem.Text = "Data Sources";
+            this.dataSourcesToolStripMenuItem.Click += new System.EventHandler(this.MenuItemDataSourceManager_Click);
             // 
             // dataStorageManagerToolStripMenuItem
             // 
@@ -515,12 +540,26 @@
             this.notificationsToolStripMenuItem.Text = "Notifications";
             this.notificationsToolStripMenuItem.Click += new System.EventHandler(this.MenuItemNotifications_Click);
             // 
+            // quickLogToolStripMenuItem
+            // 
+            this.quickLogToolStripMenuItem.Name = "quickLogToolStripMenuItem";
+            this.quickLogToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.quickLogToolStripMenuItem.Text = "Quick Log";
+            this.quickLogToolStripMenuItem.Click += new System.EventHandler(this.MenuItemQuickLog_Click);
+            // 
             // quickReportToolStripMenuItem
             // 
             this.quickReportToolStripMenuItem.Name = "quickReportToolStripMenuItem";
             this.quickReportToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.quickReportToolStripMenuItem.Text = "Quick Report";
             this.quickReportToolStripMenuItem.Click += new System.EventHandler(this.MenuItemQuickReport_Click);
+            // 
+            // relayOutputsToolStripMenuItem
+            // 
+            this.relayOutputsToolStripMenuItem.Name = "relayOutputsToolStripMenuItem";
+            this.relayOutputsToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.relayOutputsToolStripMenuItem.Text = "Relay Outputs";
+            this.relayOutputsToolStripMenuItem.Click += new System.EventHandler(this.MenuItemRelayOutputManager_Click);
             // 
             // rolesToolStripMenuItem
             // 
@@ -561,31 +600,31 @@
             // 
             this.btnSeek.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnSeek.Enabled = false;
-            this.btnSeek.Location = new System.Drawing.Point(494, 366);
+            this.btnSeek.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.btnSeek.Location = new System.Drawing.Point(353, 366);
             this.btnSeek.Name = "btnSeek";
             this.btnSeek.Size = new System.Drawing.Size(45, 23);
             this.btnSeek.TabIndex = 36;
             this.btnSeek.Text = "Seek";
-            this.btnSeek.UseVisualStyleBackColor = true;
             this.btnSeek.Click += new System.EventHandler(this.ButtonSeek_Click);
             // 
             // btnLive
             // 
             this.btnLive.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnLive.Enabled = false;
-            this.btnLive.Location = new System.Drawing.Point(443, 366);
+            this.btnLive.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.btnLive.Location = new System.Drawing.Point(404, 366);
             this.btnLive.Name = "btnLive";
             this.btnLive.Size = new System.Drawing.Size(45, 23);
             this.btnLive.TabIndex = 37;
             this.btnLive.Text = "Live";
-            this.btnLive.UseVisualStyleBackColor = true;
             this.btnLive.Click += new System.EventHandler(this.ButtonLive_Click);
             // 
             // lblSpeed
             // 
             this.lblSpeed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblSpeed.AutoSize = true;
-            this.lblSpeed.Location = new System.Drawing.Point(698, 370);
+            this.lblSpeed.Location = new System.Drawing.Point(608, 371);
             this.lblSpeed.Name = "lblSpeed";
             this.lblSpeed.Size = new System.Drawing.Size(38, 13);
             this.lblSpeed.TabIndex = 38;
@@ -595,7 +634,7 @@
             // 
             this.nudSpeed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.nudSpeed.DecimalPlaces = 1;
-            this.nudSpeed.Location = new System.Drawing.Point(737, 367);
+            this.nudSpeed.Location = new System.Drawing.Point(647, 369);
             this.nudSpeed.Maximum = new decimal(new int[] {
             300,
             0,
@@ -625,12 +664,20 @@
             // 
             // scInner.Panel1
             // 
+            this.scInner.Panel1.Controls.Add(this.dgvDataSources);
+            this.scInner.Panel1.Controls.Add(this.btnRefreshDataSources);
             this.scInner.Panel1.Controls.Add(this.pbLoadCameras);
             this.scInner.Panel1.Controls.Add(this.lblAddingCameras);
-            this.scInner.Panel1.Controls.Add(this.lvDataSources);
             // 
             // scInner.Panel2
             // 
+            this.scInner.Panel2.BackColor = System.Drawing.SystemColors.Control;
+            this.scInner.Panel2.Controls.Add(this.nudPostRecord);
+            this.scInner.Panel2.Controls.Add(this.lblPostRecord);
+            this.scInner.Panel2.Controls.Add(this.nudPreRecord);
+            this.scInner.Panel2.Controls.Add(this.lblPreRecord);
+            this.scInner.Panel2.Controls.Add(this.btnManualRecord);
+            this.scInner.Panel2.Controls.Add(this.dtpSeekTime);
             this.scInner.Panel2.Controls.Add(this.btnSnapshot);
             this.scInner.Panel2.Controls.Add(this.lblTimestampRight);
             this.scInner.Panel2.Controls.Add(this.scVideoPanels);
@@ -646,10 +693,70 @@
             this.scInner.SplitterDistance = 366;
             this.scInner.TabIndex = 40;
             // 
+            // dgvDataSources
+            // 
+            this.dgvDataSources.AllowUserToAddRows = false;
+            this.dgvDataSources.AllowUserToDeleteRows = false;
+            this.dgvDataSources.AllowUserToResizeRows = false;
+            this.dgvDataSources.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvDataSources.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvDataSources.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvDataSources.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDataSources.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colStatus,
+            this.colName,
+            this.colNumber});
+            this.dgvDataSources.Location = new System.Drawing.Point(0, 0);
+            this.dgvDataSources.MultiSelect = false;
+            this.dgvDataSources.Name = "dgvDataSources";
+            this.dgvDataSources.ReadOnly = true;
+            this.dgvDataSources.RowHeadersVisible = false;
+            this.dgvDataSources.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvDataSources.ShowEditingIcon = false;
+            this.dgvDataSources.ShowRowErrors = false;
+            this.dgvDataSources.Size = new System.Drawing.Size(366, 359);
+            this.dgvDataSources.TabIndex = 5;
+            this.dgvDataSources.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridViewDataSources_CellDoubleClick);
+            // 
+            // colStatus
+            // 
+            this.colStatus.HeaderText = "";
+            this.colStatus.Name = "colStatus";
+            this.colStatus.ReadOnly = true;
+            this.colStatus.Width = 40;
+            // 
+            // colName
+            // 
+            this.colName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colName.HeaderText = "Name";
+            this.colName.Name = "colName";
+            this.colName.ReadOnly = true;
+            // 
+            // colNumber
+            // 
+            this.colNumber.HeaderText = "#";
+            this.colNumber.Name = "colNumber";
+            this.colNumber.ReadOnly = true;
+            this.colNumber.Width = 60;
+            // 
+            // btnRefreshDataSources
+            // 
+            this.btnRefreshDataSources.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnRefreshDataSources.Enabled = false;
+            this.btnRefreshDataSources.Location = new System.Drawing.Point(3, 366);
+            this.btnRefreshDataSources.Name = "btnRefreshDataSources";
+            this.btnRefreshDataSources.Size = new System.Drawing.Size(75, 23);
+            this.btnRefreshDataSources.TabIndex = 4;
+            this.btnRefreshDataSources.Text = "Refresh";
+            this.btnRefreshDataSources.Click += new System.EventHandler(this.ButtonRefreshDataSources_Click);
+            // 
             // pbLoadCameras
             // 
             this.pbLoadCameras.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbLoadCameras.BackColor = System.Drawing.SystemColors.Control;
             this.pbLoadCameras.Location = new System.Drawing.Point(99, 371);
             this.pbLoadCameras.Name = "pbLoadCameras";
             this.pbLoadCameras.Size = new System.Drawing.Size(264, 21);
@@ -666,16 +773,93 @@
             this.lblAddingCameras.Text = "Loading Cameras";
             this.lblAddingCameras.Visible = false;
             // 
+            // nudPostRecord
+            // 
+            this.nudPostRecord.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.nudPostRecord.Enabled = false;
+            this.nudPostRecord.Location = new System.Drawing.Point(881, 366);
+            this.nudPostRecord.Maximum = new decimal(new int[] {
+            30,
+            0,
+            0,
+            0});
+            this.nudPostRecord.Name = "nudPostRecord";
+            this.nudPostRecord.Size = new System.Drawing.Size(44, 20);
+            this.nudPostRecord.TabIndex = 51;
+            this.nudPostRecord.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lblPostRecord
+            // 
+            this.lblPostRecord.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblPostRecord.AutoSize = true;
+            this.lblPostRecord.Location = new System.Drawing.Point(852, 370);
+            this.lblPostRecord.Name = "lblPostRecord";
+            this.lblPostRecord.Size = new System.Drawing.Size(28, 13);
+            this.lblPostRecord.TabIndex = 50;
+            this.lblPostRecord.Text = "Post";
+            // 
+            // nudPreRecord
+            // 
+            this.nudPreRecord.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.nudPreRecord.Enabled = false;
+            this.nudPreRecord.Location = new System.Drawing.Point(802, 366);
+            this.nudPreRecord.Maximum = new decimal(new int[] {
+            30,
+            0,
+            0,
+            0});
+            this.nudPreRecord.Name = "nudPreRecord";
+            this.nudPreRecord.Size = new System.Drawing.Size(44, 20);
+            this.nudPreRecord.TabIndex = 49;
+            this.nudPreRecord.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.nudPreRecord.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            // 
+            // lblPreRecord
+            // 
+            this.lblPreRecord.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblPreRecord.AutoSize = true;
+            this.lblPreRecord.Location = new System.Drawing.Point(777, 370);
+            this.lblPreRecord.Name = "lblPreRecord";
+            this.lblPreRecord.Size = new System.Drawing.Size(23, 13);
+            this.lblPreRecord.TabIndex = 48;
+            this.lblPreRecord.Text = "Pre";
+            // 
+            // btnManualRecord
+            // 
+            this.btnManualRecord.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnManualRecord.Enabled = false;
+            this.btnManualRecord.Location = new System.Drawing.Point(931, 365);
+            this.btnManualRecord.Name = "btnManualRecord";
+            this.btnManualRecord.Size = new System.Drawing.Size(51, 23);
+            this.btnManualRecord.TabIndex = 47;
+            this.btnManualRecord.Text = "Record";
+            this.btnManualRecord.UseVisualStyleBackColor = true;
+            this.btnManualRecord.Click += new System.EventHandler(this.ButtonManualRecord_Click);
+            // 
+            // dtpSeekTime
+            // 
+            this.dtpSeekTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.dtpSeekTime.CustomFormat = "yyyy-MM-dd hh:mm:ss tt";
+            this.dtpSeekTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpSeekTime.Location = new System.Drawing.Point(206, 367);
+            this.dtpSeekTime.Name = "dtpSeekTime";
+            this.dtpSeekTime.ShowUpDown = true;
+            this.dtpSeekTime.Size = new System.Drawing.Size(141, 20);
+            this.dtpSeekTime.TabIndex = 46;
+            // 
             // btnSnapshot
             // 
             this.btnSnapshot.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnSnapshot.Enabled = false;
-            this.btnSnapshot.Location = new System.Drawing.Point(362, 366);
+            this.btnSnapshot.Location = new System.Drawing.Point(697, 366);
             this.btnSnapshot.Name = "btnSnapshot";
             this.btnSnapshot.Size = new System.Drawing.Size(75, 23);
             this.btnSnapshot.TabIndex = 45;
             this.btnSnapshot.Text = "Snapshot";
-            this.btnSnapshot.UseVisualStyleBackColor = true;
             this.btnSnapshot.Click += new System.EventHandler(this.ButtonSnapshot_Click);
             // 
             // lblTimestampRight
@@ -692,7 +876,6 @@
             this.scVideoPanels.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.scVideoPanels.BackColor = System.Drawing.SystemColors.Control;
             this.scVideoPanels.Location = new System.Drawing.Point(3, 3);
             this.scVideoPanels.Name = "scVideoPanels";
             // 
@@ -751,6 +934,7 @@
             this.txbxLog.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.txbxLog.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txbxLog.Location = new System.Drawing.Point(6, 3);
             this.txbxLog.Multiline = true;
             this.txbxLog.Name = "txbxLog";
@@ -777,6 +961,9 @@
             this.scInner.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.scInner)).EndInit();
             this.scInner.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDataSources)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPostRecord)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPreRecord)).EndInit();
             this.scVideoPanels.Panel1.ResumeLayout(false);
             this.scVideoPanels.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.scVideoPanels)).EndInit();
@@ -793,13 +980,9 @@
 
         #endregion
 
-        private System.Windows.Forms.ColumnHeader colHeadName;
-        private System.Windows.Forms.ColumnHeader colHeadIp;
-
         public System.Windows.Forms.Panel panelVideoStreamLeft;
 
         public System.Windows.Forms.Label lblTimestampLeft;
-        public System.Windows.Forms.ListView lvDataSources;
         private System.Windows.Forms.MenuStrip menuStrip;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem connectToolStripMenuItem;
@@ -862,6 +1045,24 @@
         private System.Windows.Forms.ToolStripMenuItem logDisableToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quickReportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem monitorsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dataSourcesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem quickLogToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
+        public System.Windows.Forms.Button btnRefreshDataSources;
+        public System.ComponentModel.BackgroundWorker bgWorker;
+        private System.Windows.Forms.DateTimePicker dtpSeekTime;
+        public System.Windows.Forms.DataGridView dgvDataSources;
+        private System.Windows.Forms.DataGridViewImageColumn colStatus;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colNumber;
+        public System.Windows.Forms.Button btnManualRecord;
+        private System.Windows.Forms.NumericUpDown nudPostRecord;
+        private System.Windows.Forms.Label lblPostRecord;
+        private System.Windows.Forms.NumericUpDown nudPreRecord;
+        private System.Windows.Forms.Label lblPreRecord;
+        private System.Windows.Forms.ToolStripMenuItem alarmInputsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem relayOutputsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem modifyLoggingPathToolStripMenuItem;
     }
 }
 

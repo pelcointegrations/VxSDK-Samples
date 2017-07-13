@@ -75,7 +75,6 @@ bool Controller::GoToLive() {
 }
 
 bool Controller::Play(float speed, unsigned int unixTime) {
-
     // Setup audio stream in new thread
     bool audioResult = true;
     boost::thread* t1 = nullptr;
@@ -101,8 +100,9 @@ bool Controller::Play(float speed, unsigned int unixTime) {
     }
 
     // Create pipeline for video stream in main thread
-    if (videoResult)
+    if (videoResult) {
         CallPlayStream(this->stream, speed, unixTime);
+    }
 
     // Wait for audio stream to complete
     if (t2 != nullptr)
@@ -166,7 +166,7 @@ Controller::Mode Controller::GetMode() {
     if (this->stream != nullptr)
         return this->stream->GetGstreamer()->GetMode();
 
-    return Controller::Mode::kStopped; // TODO: Verify this
+    return Controller::Mode::kStopped;
 }
 
 bool Controller::IsPipelineActive() {

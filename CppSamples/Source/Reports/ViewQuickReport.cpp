@@ -2,6 +2,9 @@
 #include "ViewQuickReport.h"
 
 #include <ctime>
+#ifdef VxSdkInLinux
+#include <unistd.h>
+#endif
 #include <curl.h>
 #include "Utility.h"
 #include "Constants.h"
@@ -39,12 +42,25 @@ Plugin* CppSamples::Reports::ViewQuickReport::Run(DataModel* dataModel) {
 
     // Read Report
     string reportUrl = ReadReportUrl(dataModel->VxSystem, vxQuickReportFilter);
+    if (reportUrl.empty())
+    {
+        system("pause");
+        return GetParent();
+    }
 
     // Show Report on default browser
+#ifdef VxSdkInLinux
+    string stemp = "firefox ";
+    stemp.append(reportUrl);
+    system(stemp.c_str());
+#else
     wstring stemp = wstring(reportUrl.begin(), reportUrl.end());
     ShellExecute(0, 0, (LPCWSTR)stemp.c_str(), 0, 0, SW_SHOW);
+#endif
 
-    system("pause");
+    // Wait for user response before going back to parent menu.
+    Utility::Pause();
+
     // Return reference of parent plugin to move back to parent menu.
     return GetParent();
 }
@@ -67,7 +83,11 @@ string CppSamples::Reports::ViewQuickReport::ReadReportUrl(IVxSystem* vxSystem, 
         VxReportCreationStatus::Value status;
         quickReport->GetStatus(status);
         while (status == VxReportCreationStatus::kInProgress) {
+#ifdef VxSdkInLinux
+            sleep(1);
+#else
             Sleep(1000);
+#endif
             quickReport->GetStatus(status);
         }
 
@@ -77,7 +97,11 @@ string CppSamples::Reports::ViewQuickReport::ReadReportUrl(IVxSystem* vxSystem, 
         int size = 0;
         result = quickReport->GetQuickReportEndpoint(reportEndpoint, size);
         while (result == VxResult::kActionUnavailable) {
+#ifdef VxSdkInLinux
+            sleep(1);
+#else
             Sleep(1000);
+#endif
             result = quickReport->GetQuickReportEndpoint(reportEndpoint, size);
         }
 
@@ -89,12 +113,16 @@ string CppSamples::Reports::ViewQuickReport::ReadReportUrl(IVxSystem* vxSystem, 
         }
 
         if (result == VxResult::kOK) {
-            cout << "DONE";
+            cout << "DONE\n";
             return string(reportEndpoint);
         }
     }
 
-    cout << "Error";
+    if (result == VxResult::kActionUnavailable)
+        cout << "\nUnable to create quick report (action unavailable)\n";
+    else
+        cout << "\nError\n";
+
     return "";
 }
 

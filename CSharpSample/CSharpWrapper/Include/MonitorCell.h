@@ -58,7 +58,7 @@ namespace CPPCli {
             System::String^ get() { return gcnew System::String(_monitorCell->dataSourceId); }
             void set(System::String^ value) {
                 char id[64];
-                strncpy_s(id, Utils::ConvertSysStringNonConst(value), sizeof(id));
+                VxSdk::Utilities::StrCopySafe(id, Utils::ConvertSysStringNonConst(value));
                 _monitorCell->SetDataSource(id);
             }
         }

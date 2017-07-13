@@ -1,6 +1,8 @@
 #include "stdafx.h"
 #include "DataSourceLiveStreaming.h"
+#ifndef VxSdkInLinux
 #include <Windows.h>
+#endif
 #include <iostream>
 #include <iomanip>
 #include <fstream>
@@ -17,18 +19,25 @@ using namespace CppSamples::Common;
 // Gloabl Variables used for live streaming control
 string _currentlyPlayingCam = "";
 bool _gotPlayerHandle = false;
+#ifndef VxSdkInLinux
 HWND _gstreamerPlayerWindow = nullptr;
+#endif
 
 // Streams a video in live.
 Plugin* CppSamples::LiveStreaming::DataSourceLiveStreaming::Run(DataModel* dataModel) {
     cout << "\n\n";
     VxCollection<IVxDataSource**> dataSources = GetDataSources(dataModel->VxSystem);
 
-    // Start the live stream
-    DoLiveStreaming(dataSources);
+    try {
+        // Start the live stream
+        DoLiveStreaming(dataSources);
+    } catch (...) {
+        cout << "\nStream is not working.\n";
+    }
 
-    // Pause for user input before going back to parent menu.
-    system("pause");
+    // Wait for user response before going back to parent menu.
+    Utility::Pause();
+
     // Remove the memory allocated to the collection.
     delete[] dataSources.collection;
     // Return reference of parent plugin to move back to parent menu.
@@ -40,67 +49,53 @@ Plugin* CppSamples::LiveStreaming::DataSourceLiveStreaming::Run(DataModel* dataM
 /// </summary>
 /// <param name="isPtzEnabled">True indicates PTZ options to be displayed else player controls only</param>
 /// <param name="isLive">True indicates to show live options only else include playback options also</param>
-void CppSamples::LiveStreaming::DataSourceLiveStreaming::DisplayPlayerOptionsToConsole(bool isPtzEnabled, bool isLive) {
+/// <param name="isRecording">True indicates the camera is in recording state</param>
+void CppSamples::LiveStreaming::DataSourceLiveStreaming::DisplayPlayerOptionsToConsole(bool isPtzEnabled, bool isLive, bool isRecording) {
+    cout << "\nUSAGE: Choose one of the following options, then press enter:\n";
     if (isPtzEnabled) {
         // Menu for PTZ enabled devices
         cout <<
-            "\nUSAGE: Choose one of the following options, then press enter:\n"
-            " '7' to send PTZ command: UpLeft\n"
-            " '8' to send PTZ command: Up\n"
-            " '9' to send PTZ command: UpRight\n"
-            " '4' to send PTZ command: Left\n"
-            " '6' to send PTZ command: Right\n"
-            " '1' to send PTZ command: DownLeft\n"
-            " '2' to send PTZ command: Down\n"
-            " '3' to send PTZ command: DownRight\n"
-            " '+' to send PTZ command: ZoomIn\n"
-            " '-' to send PTZ command: ZoomOut\n"
-            " '0' to show presets\n"
-            " '.' to show patterns\n"
-            " 'P' to toggle between PAUSE and PLAY\n";
-        if (!isLive) {
-            cout << " 'z' to increase playback speed\n";
-            cout << " 'x' to decrease playback speed\n";
-            cout << " 'l' to Go to live\n";
-        }
-        cout << " 'Q' to quit\n";
+                " '7' to send PTZ command: UpLeft\n"
+                " '8' to send PTZ command: Up\n"
+                " '9' to send PTZ command: UpRight\n"
+                " '4' to send PTZ command: Left\n"
+                " '6' to send PTZ command: Right\n"
+                " '1' to send PTZ command: DownLeft\n"
+                " '2' to send PTZ command: Down\n"
+                " '3' to send PTZ command: DownRight\n"
+                " '+' to send PTZ command: ZoomIn\n"
+                " '-' to send PTZ command: ZoomOut\n"
+                " '0' to show presets\n"
+                " '.' to show patterns\n";
     }
-    else {
-        // Menu for devices without PTZ
+    if (isRecording && !isLive) {
         cout <<
-            "USAGE: Choose one of the following options, then press enter:\n"
-            " 'P' to toggle between PAUSE and PLAY\n";
-        if (!isLive) {
-            cout << " 'z' to increase playback speed\n";
-            cout << " 'x' to decrease playback speed\n";
-            cout << " 'l' to Go to live\n";
-        }
-        cout << " 'Q' to quit\n";
+                " 'P' to toggle between PAUSE and PLAY\n"
+                " 'z' to increase playback speed\n"
+                " 'x' to decrease playback speed\n";
     }
+    cout << " 'Q' to quit\n";
 }
 
 // Streams a video in live.
 void CppSamples::LiveStreaming::DataSourceLiveStreaming::DoLiveStreaming(VxCollection<IVxDataSource**> dataSources) {
     // Select a Data source
-    int camNum;
     cout << "\n" << "Enter data source number [1-" << dataSources.collectionSize << "] : ";
-    cin >> camNum;
+    int camNum = Utility::ReadInt();
 
     // Verify input
-    if (camNum < 1 || camNum >= dataSources.collectionSize)
+    if (camNum < 1 || camNum > dataSources.collectionSize)
         return;
 
-    // Read date and time for play back streaming
-    time_t timeSinceEpoch = 0;
-    if (_isPlayBack) {
-        cin.ignore();
-        cout << "\n\n" << "Input date and time to start playback(yyyy-mm-dd hh:mm:ss)";
-        struct tm playBackTime = Utility::GetDateAndTimeFromUser();
-        timeSinceEpoch = mktime(&playBackTime);
+    IVxDataSource* dataSource = dataSources.collection[camNum - 1];
+
+    // Proceed with online device only
+    if (dataSource->type != VxDataSourceType::kVideo) {
+        cout << "\n" << "Please select a video data source.\n";
+        return;
     }
 
     // Proceed with online device only
-    IVxDataSource* dataSource = dataSources.collection[camNum - 1];
     if (dataSource->state != VxDeviceState::kOnline) {
         cout << "\nDevice is offline.";
         return;
@@ -108,10 +103,17 @@ void CppSamples::LiveStreaming::DataSourceLiveStreaming::DoLiveStreaming(VxColle
 
     // Choose MJPEG or RTSP
     bool isMjpegEnabled = false;
-    string mJPEGOption = "N";
-    cout << "\nDo you want to play MJPEG (Y/N) [Default is RTSP]: ";
-    cin >> mJPEGOption;
+    std::cout << "\nDo you want to play MJPEG (Y/N) [Default is RTSP]: ";
+    string mJPEGOption = Utility::ReadString();
     if (mJPEGOption == "Y" || mJPEGOption == "y") { isMjpegEnabled = true; }
+
+    // Read date and time for play back streaming
+    time_t timeSinceEpoch = 0;
+    if (_isPlayBack) {
+        cout << "\n\n" << "Input date and time to start playback(yyyy-mm-dd hh:mm:ss)";
+        struct tm playBackTime = Utility::GetDateAndTimeFromUser();
+        timeSinceEpoch = mktime(&playBackTime);
+    }
 
     // Print the details of selected data source
     ShowDataSourceDetails(dataSource);
@@ -123,9 +125,9 @@ void CppSamples::LiveStreaming::DataSourceLiveStreaming::DoLiveStreaming(VxColle
         if (isMjpegEnabled) {
             // MJPEG Protocol
             if (dataInterface->protocol == VxStreamProtocol::kMjpegPull) {
-                cout << "\nFound MJPEG DataInterface.";
+                std::cout << "\nFound MJPEG DataInterface.\n";
                 if (!StartStreamingForDataSource(dataSource, dataInterface, timeSinceEpoch)) {
-                    cout << "\nStream failed to start. Checking for another MJPEG DataInterface.";
+                    std::cout << "\nStream failed to start. Checking for another MJPEG DataInterface.\n";
                     continue;
                 }
                 break;
@@ -134,9 +136,9 @@ void CppSamples::LiveStreaming::DataSourceLiveStreaming::DoLiveStreaming(VxColle
         else {
             // RTSP Protocol
             if (dataInterface->protocol == VxStreamProtocol::kRtspRtp) {
-                cout << "\nFound RTSP DataInterface.";
+                std::cout << "Found RTSP DataInterface.\n";
                 if (!StartStreamingForDataSource(dataSource, dataInterface, timeSinceEpoch)) {
-                    cout << "\nStream failed to start. Checking for another RTSP DataInterface.";
+                    std::cout << "\nStream failed to start. Checking for another RTSP DataInterface.\n";
                     continue;
                 }
                 break;
@@ -161,7 +163,7 @@ IController* CppSamples::LiveStreaming::DataSourceLiveStreaming::GetController(I
 
 // Get a collection of data source from the given VideoExpert system.
 VxCollection<IVxDataSource**> CppSamples::LiveStreaming::DataSourceLiveStreaming::GetDataSources(IVxSystem* vxSystem) {
-    cout << "Fetching datasources from system, Please wait...\n";
+    cout << "Fetching datasources from system, nPlease wait...\n";
     // Read the size of collection from system.
     VxCollection<IVxDataSource**> dataSources;
     VxResult::Value result = vxSystem->GetDataSources(dataSources);
@@ -201,7 +203,7 @@ void CppSamples::LiveStreaming::DataSourceLiveStreaming::ShowDataSourceDetails(I
     cout << "\nCapturing       : " << (dataSource->isCapturing ? "Yes" : "No");
     cout << "\nRecording       : " << (dataSource->isRecording ? "Yes" : "No");
     cout << "\nDataInterfaces  : " << dataSource->dataInterfaceSize;
-    cout << "\n-----------------------------------------------------------------";
+    cout << "\n-----------------------------------------------------------------\n";
 }
 
 /// <summary>
@@ -218,6 +220,10 @@ bool CppSamples::LiveStreaming::DataSourceLiveStreaming::StartStreamingForDataSo
 
     // Get Controlller
     MediaController::IController* mediaControl = GetController(dataSource, dataInterface);
+
+#ifdef VxSdkInLinux
+    mediaControl->SetWindow(nullptr);
+#else
     _currentlyPlayingCam = string(dataSource->name);
 
     // Create Window
@@ -226,18 +232,23 @@ bool CppSamples::LiveStreaming::DataSourceLiveStreaming::StartStreamingForDataSo
 
     // Set the window handle to the controller
     mediaControl->SetWindow(gstWindowHandle);
+#endif
 
     if (seekTime == 0) {
         // Start LIVE streaming
+        cout << "\nStarting Live stream.\n";
         if (!mediaControl->Play(1)) {
             cout << "\nError starting stream.";
+            delete mediaControl;
             return false;
         }
     }
     else {
         // Start playback streaming
+	cout << "\nStarting Playback stream.";
         if (!mediaControl->Play(1, static_cast<unsigned int>(seekTime))) {
             cout << "\nError starting stream.";
+            delete mediaControl;
             return false;
         }
     }
@@ -248,28 +259,35 @@ bool CppSamples::LiveStreaming::DataSourceLiveStreaming::StartStreamingForDataSo
     // Get PTZ Controller
     bool isPtz = false;
     dataSource->CanPtz(isPtz);
+    bool isRecording = dataSource->isRecording;
     IVxPtzController* ptzControl = nullptr;
     if (isPtz) {
         dataSource->GetPtzController(ptzControl);
     }
 
-    // Display the user options while streaming
-    DisplayPlayerOptionsToConsole(isPtz, (seekTime == 0));
-
-    // Initialize user option handlers
+    bool isLive = seekTime == 0;
     char option;
     PtzOperationsHandler ptzOperationsHandler(ptzControl);
     MediaOperationshandler mediaOperationshandler(mediaControl);
+    bool isPtzCommandProcessed = true;
     do {
+        if (!isPtzCommandProcessed)
+            cout << "Invalid Option !!\n";
+
+        // Display the user options while streaming
+        DisplayPlayerOptionsToConsole(isPtz, isLive, isRecording);
+
         // Read option from user
         cin >> option;
         option = tolower(option);
 
         // Process PTZ Operations
-        bool isPtzCommandProcessed = ptzOperationsHandler.DoOperation(option);
-        if (!isPtzCommandProcessed) {
+        isPtzCommandProcessed = false;
+        if (isPtz)
+            isPtzCommandProcessed = ptzOperationsHandler.DoOperation(option);
+        if (!isPtzCommandProcessed && isRecording && !isLive) {
             // Process media operations
-            mediaOperationshandler.DoOperation(option);
+            isPtzCommandProcessed = mediaOperationshandler.DoOperation(option);
         }
     } while (option != 'q');
 
@@ -305,6 +323,8 @@ void CppSamples::LiveStreaming::DataSourceLiveStreaming::TimestampCallback(Times
 
     // Normally when gstreamer player is invoked it comes with a predefined window title as given below.
     // So use that text to get the window handle.
+
+#ifndef VxSdkInLinux
 #ifndef NO_MEDIA
     if (!_gotPlayerHandle) {
         _gstreamerPlayerWindow = FindWindow(nullptr, _T("GStreamer D3D video sink (internal window)"));
@@ -319,4 +339,5 @@ void CppSamples::LiveStreaming::DataSourceLiveStreaming::TimestampCallback(Times
         string textToDisplayIntitle = _currentlyPlayingCam + " (" + fmt.str() + ")";
         ::SetWindowTextA(_gstreamerPlayerWindow, textToDisplayIntitle.c_str());
     }
+#endif // #ifndef VxSdkInLinux
 }

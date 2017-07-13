@@ -87,7 +87,7 @@ namespace SDKSampleApp.Source
                 return;
 
             var presets = ControlManager.Instance.PtzControl.GetPresets().Select(preset => 
-                new { Id = preset, Text = preset.Name }).ToList();
+                new { Id = preset, Text = preset.Index == 0 ? preset.Name : preset.Index.ToString() + " - " + preset.Name }).ToList();
             Instance.cbxPresets.ValueMember = "Id";
             Instance.cbxPresets.DisplayMember = "Text";
             Instance.cbxPresets.DataSource = presets;
@@ -445,6 +445,49 @@ namespace SDKSampleApp.Source
             }
 
             UpdatePtzLockInfo();
+        }
+
+        /// <summary>
+        /// The ButtonNewPreset_Click method.
+        /// </summary>
+        /// <param name="sender">The <paramref name="sender"/> parameter.</param>
+        /// <param name="args">The <paramref name="args"/> parameter.</param>
+        private void ButtonNewPreset_Click(object sender, EventArgs args)
+        {
+            if (ControlManager.Instance.PtzControl == null)
+                return;
+
+            decimal value = 1;
+            if (InputBox.Show("Add Preset Using Current Position", "Preset Index:", ref value, 1, 9999) != DialogResult.OK)
+                return;
+
+            ControlManager.Instance.PtzControl.AddPreset((int)value);
+            GetPresets();
+        }
+
+        /// <summary>
+        /// The ButtonDeletePreset_Click method.
+        /// </summary>
+        /// <param name="sender">The <paramref name="sender"/> parameter.</param>
+        /// <param name="args">The <paramref name="args"/> parameter.</param>
+        private void ButtonDeletePreset_Click(object sender, EventArgs args)
+        {
+            if (ControlManager.Instance.PtzControl == null || cbxPresets.SelectedItem == null)
+                return;
+
+            ControlManager.Instance.PtzControl.DeletePreset((Preset) cbxPresets.SelectedValue);
+            GetPresets();
+        }
+
+        /// <summary>
+        /// The ButtonRepositionPreset_Click method.
+        /// </summary>
+        /// <param name="sender">The <paramref name="sender"/> parameter.</param>
+        /// <param name="args">The <paramref name="args"/> parameter.</param>
+        private void ButtonRepositionPreset_Click(object sender, EventArgs args)
+        {
+            if (ControlManager.Instance.PtzControl != null && cbxPresets.SelectedItem != null)
+                ControlManager.Instance.PtzControl.RepositionPreset((Preset)cbxPresets.SelectedValue);
         }
     }
 }

@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['tag',['Tag',['../class_c_p_p_cli_1_1_tag.html',1,'CPPCli']]],
-  ['time',['Time',['../class_c_p_p_cli_1_1_configuration_1_1_time.html',1,'CPPCli::Configuration']]]
+  ['relayoutput',['RelayOutput',['../class_c_p_p_cli_1_1_relay_output.html',1,'CPPCli']]],
+  ['resourcelock',['ResourceLock',['../class_c_p_p_cli_1_1_resource_lock.html',1,'CPPCli']]],
+  ['resourcerel',['ResourceRel',['../class_c_p_p_cli_1_1_resource_rel.html',1,'CPPCli']]],
+  ['results',['Results',['../class_c_p_p_cli_1_1_results.html',1,'CPPCli']]],
+  ['role',['Role',['../class_c_p_p_cli_1_1_role.html',1,'CPPCli']]]
 ];

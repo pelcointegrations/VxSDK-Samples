@@ -12,21 +12,17 @@ using namespace CppSamples::Common;
 /// </summary>
 /// <param name="dataModel">Instance of data model.</param>
 Plugin* CppSamples::Users::AddUser::Run(DataModel* dataModel) {
-
     // Read domain from input
     cout << "\n\n" << "Enter user domain   : ";
-    string domain = "";
-    cin >> domain;
+    string domain = Utility::ReadString();
 
     // Read name from input
     cout << "Enter user name     : ";
-    string name = "";
-    cin >> name;
+    string name = Utility::ReadString();
 
     // Read password from input
     cout << "Enter user password : ";
-    string password = "";
-    cin >> password;
+    string password = Utility::ReadString();
 
     // Add User
     VxNewUser vxNewUser;
@@ -42,7 +38,9 @@ Plugin* CppSamples::Users::AddUser::Run(DataModel* dataModel) {
     else
         cout << "\n" << "Failed to add user.\n";
 
-    system("pause");
+    // Wait for user response before going back to parent menu.
+    Utility::Pause();
+
     // Return reference of parent plugin to move back to parent menu.
     return GetParent();
 }

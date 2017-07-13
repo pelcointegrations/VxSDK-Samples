@@ -77,6 +77,24 @@ namespace CPPCli {
         Results::Value Silence(int wakeup) { return (Results::Value)_event->Silence(wakeup); }
 
         /// <summary>
+        /// Gets the identifier of the client that set the current ackState, if any.
+        /// </summary>
+        /// <value>The client identifier.</value>
+        property System::String^ AckClientId {
+        public:
+            System::String^ get() { return gcnew System::String(_event->ackClientId); }
+        }
+
+        /// <summary>
+        /// Gets the friendly name of the client that set the current <see cref="AckState"/>, if any.
+        /// </summary>
+        /// <value>The friendly name of the client.</value>
+        property System::String^ AckClientName {
+        public:
+            System::String^ get() { return gcnew System::String(_event->ackClientName); }
+        }
+
+        /// <summary>
         /// Gets the current acknowledgement state of the event.
         /// </summary>
         /// <value>The current acknowledgement state.</value>
@@ -124,12 +142,30 @@ namespace CPPCli {
         }
 
         /// <summary>
+        /// Gets the friendly name of the generator device, if any.
+        /// </summary>
+        /// <value>The friendly name of the generator device.</value>
+        property System::String^ GeneratorDeviceName {
+        public:
+            System::String^ get() { return gcnew System::String(_event->generatorDeviceName); }
+        }
+
+        /// <summary>
         /// Gets the unique identifier created by the device that generated the event.
         /// </summary>
         /// <value>The events unique identifier.</value>
         property System::String^ Id {
         public:
             System::String^ get() { return gcnew System::String(_event->id); }
+        }
+
+        /// <summary>
+        /// Gets a value indicating whether the event is in its initial generated state (its ackState has not been updated).
+        /// </summary>
+        /// <value><c>true</c> if the event is in its initial generated state, <c>false</c> if not.</value>
+        property bool IsInitial {
+        public:
+            bool get() { return _event->isInitial; }
         }
 
         /// <summary>
@@ -171,6 +207,15 @@ namespace CPPCli {
         }
 
         /// <summary>
+        /// Gets the client identifier of the client that was the cause of the situation, if any.
+        /// </summary>
+        /// <value>The client identifier.</value>
+        property System::String^ SourceClientId {
+        public:
+            System::String^ get() { return gcnew System::String(_event->sourceClientId); }
+        }
+
+        /// <summary>
         /// Gets the unique identifier of the device that the situation occurred on.
         /// </summary>
         /// <value>The unique identifier of the source device.</value>
@@ -186,6 +231,15 @@ namespace CPPCli {
         property System::String^ SourceDeviceId {
         public:
             System::String^ get() { return gcnew System::String(_event->sourceDeviceId); }
+        }
+
+        /// <summary>
+        /// Gets the friendly name of the source device.
+        /// </summary>
+        /// <value>The friendly name of the source device.</value>
+        property System::String^ SourceDeviceName {
+        public:
+            System::String^ get() { return gcnew System::String(_event->sourceDeviceName); }
         }
 
         /// <summary>

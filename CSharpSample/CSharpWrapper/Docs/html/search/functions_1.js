@@ -8,8 +8,10 @@ var searchData=
   ['adddataobject',['AddDataObject',['../class_c_p_p_cli_1_1_v_x_system.html#a5e8b29f60578e845e270005bc92eea42',1,'CPPCli::VXSystem']]],
   ['adddevice',['AddDevice',['../class_c_p_p_cli_1_1_v_x_system.html#a3907ebd3065c1bff25bf9339f11481ec',1,'CPPCli::VXSystem']]],
   ['adddrawing',['AddDrawing',['../class_c_p_p_cli_1_1_v_x_system.html#abbf92e7f5827b3426452b627c9ea1248',1,'CPPCli::VXSystem']]],
+  ['addmanualrecording',['AddManualRecording',['../class_c_p_p_cli_1_1_v_x_system.html#ad4c4f3a1b2d80209d2bfaa4a7816e4a6',1,'CPPCli::VXSystem']]],
   ['addmarker',['AddMarker',['../class_c_p_p_cli_1_1_drawing.html#a5e024081144a7f8e5aded403107718bb',1,'CPPCli::Drawing']]],
   ['addnotification',['AddNotification',['../class_c_p_p_cli_1_1_situation.html#a5d5ca4b3fa9102d9045a80c458377ca5',1,'CPPCli::Situation']]],
+  ['addpreset',['AddPreset',['../class_c_p_p_cli_1_1_ptz_controller.html#a315d54652fd852cd4abc5e900f3343dc',1,'CPPCli::PtzController']]],
   ['addprivilege',['AddPrivilege',['../class_c_p_p_cli_1_1_role.html#a65f4b4620a18c255b34650c1352962cd',1,'CPPCli::Role']]],
   ['addrole',['AddRole',['../class_c_p_p_cli_1_1_notification.html#a4b01d2213ff2079ef3cda60ffcfb6ed6',1,'CPPCli::Notification::AddRole()'],['../class_c_p_p_cli_1_1_v_x_system.html#a000a325c16f49ec7a53b541b6bc9439e',1,'CPPCli::VXSystem::AddRole()']]],
   ['addschedule',['AddSchedule',['../class_c_p_p_cli_1_1_v_x_system.html#a95d3d9a822f64b57b931fcf46200f734',1,'CPPCli::VXSystem']]],
@@ -17,6 +19,7 @@ var searchData=
   ['addsituation',['AddSituation',['../class_c_p_p_cli_1_1_v_x_system.html#adddaec3653d09d4b061057cd4706231d',1,'CPPCli::VXSystem']]],
   ['addtorole',['AddToRole',['../class_c_p_p_cli_1_1_user.html#a91df0d524012fd265523ccd57ce3b36e',1,'CPPCli::User']]],
   ['adduser',['AddUser',['../class_c_p_p_cli_1_1_v_x_system.html#a58473959242d329280fb9100c14c47d7',1,'CPPCli::VXSystem']]],
+  ['alarminput',['AlarmInput',['../class_c_p_p_cli_1_1_alarm_input.html#a53719c908c0ad8b20d4e49d912d1e167',1,'CPPCli::AlarmInput']]],
   ['assigndevice',['AssignDevice',['../class_c_p_p_cli_1_1_data_storage.html#a15af7cbaf12fbb3a89e80d0e39ad02f9',1,'CPPCli::DataStorage']]],
   ['autoadddevices',['AutoAddDevices',['../class_c_p_p_cli_1_1_v_x_system.html#afe4c380811fe9a7f70f6f5576ff60068',1,'CPPCli::VXSystem']]]
 ];

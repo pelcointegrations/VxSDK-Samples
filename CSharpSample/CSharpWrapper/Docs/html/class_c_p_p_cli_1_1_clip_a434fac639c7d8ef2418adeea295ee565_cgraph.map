@@ -1,6 +1,4 @@
 <map id="CPPCli::Clip::~Clip" name="CPPCli::Clip::~Clip">
 <area shape="rect" id="node2" href="$class_c_p_p_cli_1_1_clip.html#ac6bf2bd0c8eb796352a162f175d389c0" title="Constructor. " alt="" coords="213,5,337,32"/>
 <area shape="rect" id="node3" href="$class_c_p_p_cli_1_1_clip.html#a4736e7d4e94f76405d7d8b9a2db98560" title="Gets the endpoint URI for snapshots. " alt="" coords="185,57,364,98"/>
-<area shape="rect" id="node4" href="$class_c_p_p_cli_1_1_utils.html#a07aeac4d8bb768bb49b3072b1133b914" title="Convert a DateTime to a char. " alt="" coords="412,23,588,65"/>
-<area shape="rect" id="node5" href="$class_c_p_p_cli_1_1_utils.html#af27a653d2c277c67bb7a2dee0971f4b2" title="Convert a system string to a char. " alt="" coords="414,89,586,130"/>
 </map>

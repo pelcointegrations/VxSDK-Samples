@@ -11,12 +11,14 @@ using namespace CppSamples::Common;
 /// </summary>
 /// <param name="dataModel">Instance of data model.</param>
 Plugin* CppSamples::DataObjects::ViewAllDataObjects::Run(DataModel* dataModel) {
-    system("cls");
+    Utility::ClearScreen();
 
     VxCollection<IVxDataObject**> dataObjects = GetDataObjects(dataModel->VxSystem);
     PrintDataObjects(dataObjects);
 
-    system("pause");
+    // Wait for user response before going back to parent menu.
+    Utility::Pause();
+
     // Remove the memory allocated to the collection.
     delete[] dataObjects.collection;
     // Return reference of parent plugin to move back to parent menu.
@@ -43,7 +45,6 @@ VxCollection<IVxDataObject**> CppSamples::DataObjects::ViewAllDataObjects::GetDa
 /// </summary>
 /// <param name="dataObjectCollection">Collection of dataObjects.</param>
 void CppSamples::DataObjects::ViewAllDataObjects::PrintDataObjects(VxCollection<IVxDataObject**> dataObjectCollection) {
-
     cout << dataObjectCollection.collectionSize << " dataObjects found." << "\n";
     if (dataObjectCollection.collectionSize == 0)
         return;

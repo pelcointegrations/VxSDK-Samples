@@ -19,6 +19,6 @@
 <area shape="rect" id="node18" href="$class_media_controller_1_1_gst_wrapper.html#a6e7ab52b30c5c0f3c2d61cf174b78d81" title="Set the RTCP host IP. " alt="" coords="677,748,868,789"/>
 <area shape="rect" id="node19" href="$class_media_controller_1_1_gst_wrapper.html#aeed3787401bedd57cb6b69d2fd362cc8" title="Set the multicast group address. " alt="" coords="677,813,868,855"/>
 <area shape="rect" id="node20" href="$class_media_controller_1_1_gst_wrapper.html#a7375a8fa9172f8d9f3ad047c01f9bacd" title="Set the stream capabilities. " alt="" coords="677,879,868,920"/>
-<area shape="rect" id="node21" href="$class_media_controller_1_1_gst_wrapper.html#a9d9daf14c6b6cfe52a7fb0bcd6b4a76c" title="Create the pipeline for an RTSP video stream. " alt="" coords="677,487,868,528"/>
+<area shape="rect" id="node21" href="$class_media_controller_1_1_gst_wrapper.html#a7acbfc6d1b82c31bc5acac759c2b3854" title="Create the pipeline for an RTSP video stream. " alt="" coords="677,487,868,528"/>
 <area shape="rect" id="node22" href="$class_media_controller_1_1_gst_wrapper.html#a041731491df0ed485c82b323756d6927" title="Create the pipeline for an RTSP audio stream. " alt="" coords="677,552,868,593"/>
 </map>

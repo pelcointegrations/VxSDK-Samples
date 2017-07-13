@@ -3,6 +3,8 @@
 /// </summary>
 #include "Clip.h"
 
+using namespace System::Collections::Generic;
+
 CPPCli::Clip::Clip(VxSdk::IVxClip* vxClip) {
     _clip = vxClip;
 }
@@ -10,6 +12,15 @@ CPPCli::Clip::Clip(VxSdk::IVxClip* vxClip) {
 CPPCli::Clip::!Clip() {
     _clip->Delete();
     _clip = nullptr;
+}
+
+List<CPPCli::DataInterface^>^ CPPCli::Clip::_GetDataInterfaces() {
+    // Create a list of managed export objects
+    List<DataInterface^>^ mlist = gcnew List<DataInterface^>();
+    for (int i = 0; i < _clip->dataInterfaceSize; i++)
+        mlist->Add(gcnew DataInterface(_clip->dataInterfaces[i]));
+
+    return mlist;
 }
 
 int GetFilterSize(CPPCli::SnapshotFilter^ filter) {

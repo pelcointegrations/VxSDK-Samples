@@ -1,19 +1,11 @@
 var searchData=
 [
+  ['clearscreen',['ClearScreen',['../class_cpp_samples_1_1_common_1_1_utility.html#ae4d196b8a6c4e7a18e7a1f61657cef8d',1,'CppSamples::Common::Utility']]],
   ['columnheading',['ColumnHeading',['../class_cpp_samples_1_1_common_1_1_column_heading.html',1,'CppSamples::Common']]],
   ['controller',['Controller',['../class_cpp_samples_1_1_common_1_1_controller.html',1,'CppSamples::Common']]],
   ['convertlocaltimetoutc',['ConvertLocalTimetoUTC',['../class_cpp_samples_1_1_common_1_1_utility.html#a328487444424a3ea735500ec23becd4d',1,'CppSamples::Common::Utility']]],
+  ['convertutctimeformattostring',['ConvertUTCTimeFormatToString',['../class_cpp_samples_1_1_common_1_1_utility.html#aae14949593e4c932612aa30e6fa69e2a',1,'CppSamples::Common::Utility']]],
+  ['convertutctolocaltime',['ConvertUTCtoLocalTime',['../class_cpp_samples_1_1_common_1_1_utility.html#a0da5431b9a9ff1bbf14e6b631350e4f2',1,'CppSamples::Common::Utility']]],
   ['createexport',['CreateExport',['../class_cpp_samples_1_1_exports_1_1_create_export.html',1,'CppSamples::Exports']]],
-  ['createnewexportoption',['CreateNewExportOption',['../class_cpp_samples_1_1_exports_1_1_create_export.html#acf356d0eed8a7262c2451ced00b3c211',1,'CppSamples::Exports::CreateExport']]],
-  ['curl_5fcertinfo',['curl_certinfo',['../structcurl__certinfo.html',1,'']]],
-  ['curl_5ffileinfo',['curl_fileinfo',['../structcurl__fileinfo.html',1,'']]],
-  ['curl_5fforms',['curl_forms',['../structcurl__forms.html',1,'']]],
-  ['curl_5fhttppost',['curl_httppost',['../structcurl__httppost.html',1,'']]],
-  ['curl_5fkhkey',['curl_khkey',['../structcurl__khkey.html',1,'']]],
-  ['curl_5fslist',['curl_slist',['../structcurl__slist.html',1,'']]],
-  ['curl_5fsockaddr',['curl_sockaddr',['../structcurl__sockaddr.html',1,'']]],
-  ['curl_5ftlssessioninfo',['curl_tlssessioninfo',['../structcurl__tlssessioninfo.html',1,'']]],
-  ['curl_5fversion_5finfo_5fdata',['curl_version_info_data',['../structcurl__version__info__data.html',1,'']]],
-  ['curl_5fwaitfd',['curl_waitfd',['../structcurl__waitfd.html',1,'']]],
-  ['curlmsg',['CURLMsg',['../struct_c_u_r_l_msg.html',1,'']]]
+  ['createnewexportoption',['CreateNewExportOption',['../class_cpp_samples_1_1_exports_1_1_create_export.html#acf356d0eed8a7262c2451ced00b3c211',1,'CppSamples::Exports::CreateExport']]]
 ];

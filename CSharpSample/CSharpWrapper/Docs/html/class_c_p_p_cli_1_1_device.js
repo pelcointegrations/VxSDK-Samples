@@ -1,5 +1,10 @@
 var class_c_p_p_cli_1_1_device =
 [
+    [ "DeviceStatus", "class_c_p_p_cli_1_1_device.html#ac6ddd325c681bb71338f50d627e63ad7", [
+      [ "Unknown", "class_c_p_p_cli_1_1_device.html#ac6ddd325c681bb71338f50d627e63ad7a88183b946cc5f0e8c96b2e66e1c74a7e", null ],
+      [ "Initializing", "class_c_p_p_cli_1_1_device.html#ac6ddd325c681bb71338f50d627e63ad7a32b169f72b293ef80d35435e9894f8e2", null ],
+      [ "Unauthenticated", "class_c_p_p_cli_1_1_device.html#ac6ddd325c681bb71338f50d627e63ad7ab403ce880ed2c28d0784a2430a9b6eda", null ]
+    ] ],
     [ "Types", "class_c_p_p_cli_1_1_device.html#a9e9bb567a4d33139f8e874925378503d", [
       [ "Camera", "class_c_p_p_cli_1_1_device.html#a9e9bb567a4d33139f8e874925378503da967d35e40f3f95b1f538bd248640bf3b", null ],
       [ "Core", "class_c_p_p_cli_1_1_device.html#a9e9bb567a4d33139f8e874925378503da83168e6cb289d732cc78427b51f93153", null ],
@@ -20,8 +25,10 @@ var class_c_p_p_cli_1_1_device =
     [ "~Device", "class_c_p_p_cli_1_1_device.html#a84a03c64ddc562482acb2ea7cc3b3a9a", null ],
     [ "!Device", "class_c_p_p_cli_1_1_device.html#aa601808544ef37fe5f90d6d3b921593e", null ],
     [ "Refresh", "class_c_p_p_cli_1_1_device.html#a269d613c36f766e65eda932fc804ed31", null ],
+    [ "AlarmInputs", "class_c_p_p_cli_1_1_device.html#a7ea17a77cad6c2c196f6c03971ec2c6f", null ],
     [ "DataSources", "class_c_p_p_cli_1_1_device.html#a211fc1188c6e216bdfe4fa56d2380389", null ],
     [ "DeviceAssignments", "class_c_p_p_cli_1_1_device.html#a9cb0e61d7f0ce4b64c1a8ee7ee534a44", null ],
+    [ "DriverDeviceId", "class_c_p_p_cli_1_1_device.html#a66c6413e1415d5d558dab4c46bd209fd", null ],
     [ "Id", "class_c_p_p_cli_1_1_device.html#a60162ff569cfb15a00cc6790ca84a86f", null ],
     [ "Ip", "class_c_p_p_cli_1_1_device.html#ac42cd6380526feec0ef2844453d6a9f5", null ],
     [ "IsCommissioned", "class_c_p_p_cli_1_1_device.html#a3db1050bf199703b5d79dac21ea0a9fd", null ],
@@ -30,8 +37,10 @@ var class_c_p_p_cli_1_1_device =
     [ "Model", "class_c_p_p_cli_1_1_device.html#a605ea45b28c43d0ecfda539d3aaf8270", null ],
     [ "Name", "class_c_p_p_cli_1_1_device.html#afbe02dfae71494ea96e831a089fd2c95", null ],
     [ "Password", "class_c_p_p_cli_1_1_device.html#af1e74d9da8f97972b6663ae4aef48bba", null ],
+    [ "RelayOutputs", "class_c_p_p_cli_1_1_device.html#a94b0fc71eba53b9620de83cee6da60fa", null ],
     [ "Serial", "class_c_p_p_cli_1_1_device.html#aeb2ab590c89ffe5fce68824eaad5ee71", null ],
     [ "State", "class_c_p_p_cli_1_1_device.html#ae2335410f72a33f9ca7a82f92568c362", null ],
+    [ "Status", "class_c_p_p_cli_1_1_device.html#a08d8a409f9794cb6eddb20c9332f724a", null ],
     [ "Type", "class_c_p_p_cli_1_1_device.html#a147c91b37b0c0c4658a8febb20d6550d", null ],
     [ "Username", "class_c_p_p_cli_1_1_device.html#a498469d0ff8734c22cf7f1e6d2441a5a", null ],
     [ "Vendor", "class_c_p_p_cli_1_1_device.html#a56333a18c5947c168ac4f29010085e06", null ],
