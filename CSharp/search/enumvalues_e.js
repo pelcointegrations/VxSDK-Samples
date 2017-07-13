@@ -1,5 +1,12 @@
 var searchData=
 [
-  ['timed',['Timed',['../../CSharpWrapper/class_c_p_p_cli_1_1_clip.html#acf036b9a9f760b348055f5126188e84ea984c52a196b00be4b98ba32c5ca70bfc',1,'CPPCli::Clip::Timed()'],['../namespace_s_d_k_sample_app_1_1_enums.html#adfdd7b436cd920413c37c175bd8c6e34a984c52a196b00be4b98ba32c5ca70bfc',1,'SDKSampleApp.Enums.Timed()']]],
-  ['trace',['Trace',['../../CSharpWrapper/class_c_p_p_cli_1_1_log_level.html#ab6a080f338f1ba4534e998de0757aa15add4ec0ac4e58f7c32a01244ae91150b1',1,'CPPCli::LogLevel']]]
+  ['readonlyfield',['ReadOnlyField',['../../CSharpWrapper/class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970caa96a86d84c864bcf84536ced4d7ad7e8f',1,'CPPCli::Results']]],
+  ['record',['Record',['../../CSharpWrapper/class_c_p_p_cli_1_1_schedule.html#a66e8e065ebcf171eaac44310153bcddea6a0d9eaee314c567fd72fb97ee707a36',1,'CPPCli::Schedule']]],
+  ['recorder',['Recorder',['../../CSharpWrapper/class_c_p_p_cli_1_1_device.html#a9e9bb567a4d33139f8e874925378503da1aff765143dc4bf8ef68f698234e10f6',1,'CPPCli::Device::Recorder()'],['../namespace_s_d_k_sample_app_1_1_enums.html#af32cf618fd668911fbe90d8291ead923a1aff765143dc4bf8ef68f698234e10f6',1,'SDKSampleApp.Enums.Recorder()']]],
+  ['recorderconfig',['RecorderConfig',['../../CSharpWrapper/class_c_p_p_cli_1_1_new_quick_report.html#a0965d29efe5fb8339e29c1b184d515efa92bd989da0b254b68171ac043d9f827b',1,'CPPCli::NewQuickReport']]],
+  ['recorderdiagnostics',['RecorderDiagnostics',['../../CSharpWrapper/class_c_p_p_cli_1_1_new_quick_report.html#a0965d29efe5fb8339e29c1b184d515efab27f7d9d8a2ff6cb4c7c583f27b657cb',1,'CPPCli::NewQuickReport']]],
+  ['resourcelocked',['ResourceLocked',['../../CSharpWrapper/class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970caa9197821db72b09cc1be032b96d00d121',1,'CPPCli::Results']]],
+  ['responsetoolarge',['ResponseTooLarge',['../../CSharpWrapper/class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970caaea049755df7d3ac3339ed1be31f670ee',1,'CPPCli::Results']]],
+  ['right',['Right',['../class_s_d_k_sample_app_1_1_source_1_1_control_manager.html#aff2e02e90bba71a385692fb9c7c351f4a92b09c7c48c520c3c55e497875da437c',1,'SDKSampleApp::Source::ControlManager']]],
+  ['rtsprtp',['RtspRtp',['../../CSharpWrapper/class_c_p_p_cli_1_1_data_interface.html#abc71fe6bdd16582a76e99d5a20fb35e0a91f8a6974aac1219696e7d60ee53eebb',1,'CPPCli::DataInterface::RtspRtp()'],['../namespace_s_d_k_sample_app_1_1_enums.html#a9f1969ae6142d250aa7c18d5b8c01004a91f8a6974aac1219696e7d60ee53eebb',1,'SDKSampleApp.Enums.RtspRtp()']]]
 ];

@@ -7,10 +7,10 @@ var indexSectionsWithContent =
   4: "!_abcdefghiklmnopqrstuvw~",
   5: "_abcdefghijklmnopqrstuvwxy",
   6: "tv",
-  7: "acdfilmprstvz",
-  8: "acdefhilmnoprstuvwy",
+  7: "acdefilmprstvz",
+  8: "acdefghijlmnoprstuvwy",
   9: "abcdefghijlmnopqrstuvwxyz",
-  10: "st"
+  10: "ist"
 };
 
 var indexSectionNames =

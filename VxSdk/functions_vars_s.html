@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">VideoXpert SDK
-   &#160;<span id="projectnumber">1.2</span>
+   &#160;<span id="projectnumber">2.0</span>
    </div>
    <div id="projectbrief">A software development kit for third party vendors to integrate with the VideoXpert platform</div>
   </td>
@@ -90,6 +90,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow4" class="tabs3">
     <ul class="tablist">
       <li><a href="functions_vars.html#index_a"><span>a</span></a></li>
+      <li><a href="functions_vars_b.html#index_b"><span>b</span></a></li>
       <li><a href="functions_vars_c.html#index_c"><span>c</span></a></li>
       <li><a href="functions_vars_d.html#index_d"><span>d</span></a></li>
       <li><a href="functions_vars_e.html#index_e"><span>e</span></a></li>
@@ -159,6 +160,12 @@ $(document).ready(function(){initNavTree('functions_vars_s.html','');});
 <li>serial
 : <a class="el" href="struct_vx_sdk_1_1_i_vx_device.html#a6cf7684b56d536753845c8fc0646b091">VxSdk::IVxDevice</a>
 </li>
+<li>servicePropertyId
+: <a class="el" href="struct_vx_sdk_1_1_i_vx_situation.html#a18e2fb8e9e8db44b5e86aef00a65ea6c">VxSdk::IVxSituation</a>
+</li>
+<li>serviceType
+: <a class="el" href="struct_vx_sdk_1_1_i_vx_situation.html#ad0b8d8466f3cc4680ce1901c4b3f080a">VxSdk::IVxSituation</a>
+</li>
 <li>severity
 : <a class="el" href="struct_vx_sdk_1_1_i_vx_event.html#a29855cedf8b0fb9936b1ce998e5fb84c">VxSdk::IVxEvent</a>
 , <a class="el" href="struct_vx_sdk_1_1_i_vx_situation.html#a2da6f73fe11f63405962568e63df3cb2">VxSdk::IVxSituation</a>
@@ -198,11 +205,20 @@ $(document).ready(function(){initNavTree('functions_vars_s.html','');});
 : <a class="el" href="struct_vx_sdk_1_1_i_vx_situation.html#a12e6f7f1f2cb72b47616e00907698121">VxSdk::IVxSituation</a>
 , <a class="el" href="struct_vx_sdk_1_1_vx_new_situation.html#a0c1890b5650be21ef546660c46876eec">VxSdk::VxNewSituation</a>
 </li>
+<li>sourceClientId
+: <a class="el" href="struct_vx_sdk_1_1_i_vx_event.html#a7f85495b16ac3dc0430df649f473a2f0">VxSdk::IVxEvent</a>
+</li>
+<li>sourceDataStorageId
+: <a class="el" href="struct_vx_sdk_1_1_i_vx_clip.html#a74760e5b1ef22a71504f22b0115eefaf">VxSdk::IVxClip</a>
+</li>
 <li>sourceDeviceId
 : <a class="el" href="struct_vx_sdk_1_1_i_vx_event.html#a87f4a81aa3a1d72cc0c4f04f880e531a">VxSdk::IVxEvent</a>
 , <a class="el" href="struct_vx_sdk_1_1_i_vx_situation.html#ac19f4a313c1d0eb70f9214c0b784ce9b">VxSdk::IVxSituation</a>
 , <a class="el" href="struct_vx_sdk_1_1_vx_new_event.html#ae3f8358d24df0e03d76339408ff72d80">VxSdk::VxNewEvent</a>
 , <a class="el" href="struct_vx_sdk_1_1_vx_new_situation.html#a6287117987eb201a0415ae0c06b49d9a">VxSdk::VxNewSituation</a>
+</li>
+<li>sourceDeviceName
+: <a class="el" href="struct_vx_sdk_1_1_i_vx_event.html#aecf42fa775e63e08a3226a715df6d41d">VxSdk::IVxEvent</a>
 </li>
 <li>sourceUserName
 : <a class="el" href="struct_vx_sdk_1_1_i_vx_event.html#a749c67f2258bad576459f86a868aa7f5">VxSdk::IVxEvent</a>
@@ -226,12 +242,15 @@ $(document).ready(function(){initNavTree('functions_vars_s.html','');});
 , <a class="el" href="struct_vx_sdk_1_1_vx_new_quick_report.html#a393364ace6460f3c92cf1b1946281a52">VxSdk::VxNewQuickReport</a>
 </li>
 <li>state
-: <a class="el" href="struct_vx_sdk_1_1_i_vx_data_source.html#a8fe7320e808adb9c9ffc3ccf9aa9a9fe">VxSdk::IVxDataSource</a>
+: <a class="el" href="struct_vx_sdk_1_1_i_vx_alarm_input.html#a9805e2e2dc4e6acf49907ec4e5042535">VxSdk::IVxAlarmInput</a>
+, <a class="el" href="struct_vx_sdk_1_1_i_vx_data_source.html#a8fe7320e808adb9c9ffc3ccf9aa9a9fe">VxSdk::IVxDataSource</a>
 , <a class="el" href="struct_vx_sdk_1_1_i_vx_device.html#a8a7770ef3129363a71f7ee12d8b53cdb">VxSdk::IVxDevice</a>
+, <a class="el" href="struct_vx_sdk_1_1_i_vx_relay_output.html#af707763331de03a4327ae44d9f83abdd">VxSdk::IVxRelayOutput</a>
 </li>
 <li>status
 : <a class="el" href="struct_vx_sdk_1_1_i_vx_configuration_1_1_cluster.html#a52e80cb1573f3c2cc233d333c28a477c">VxSdk::IVxConfiguration::Cluster</a>
 , <a class="el" href="struct_vx_sdk_1_1_i_vx_configuration_1_1_node.html#a6722723665c1ae7ba2e91bc412e08683">VxSdk::IVxConfiguration::Node</a>
+, <a class="el" href="struct_vx_sdk_1_1_i_vx_device.html#aad979a7dac80e8dbf6737d244aa036f7">VxSdk::IVxDevice</a>
 , <a class="el" href="struct_vx_sdk_1_1_i_vx_export.html#a80cc015ee1ec962cc515acdd9dbcef6c">VxSdk::IVxExport</a>
 </li>
 <li>statusCode
@@ -239,6 +258,9 @@ $(document).ready(function(){initNavTree('functions_vars_s.html','');});
 </li>
 <li>statusDescription
 : <a class="el" href="struct_vx_sdk_1_1_i_vx_configuration_1_1_cluster.html#a902d79843fa35133c4dfc99093ac510c">VxSdk::IVxConfiguration::Cluster</a>
+</li>
+<li>statusSize
+: <a class="el" href="struct_vx_sdk_1_1_i_vx_device.html#a57a336f56ae823a125a8a3a8d7b6bc47">VxSdk::IVxDevice</a>
 </li>
 <li>supportsMulticast
 : <a class="el" href="struct_vx_sdk_1_1_i_vx_data_interface.html#ab51fcf9aca01ba3e7d2ade1ff7e4de75">VxSdk::IVxDataInterface</a>

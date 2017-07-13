@@ -1,21 +1,27 @@
 var searchData=
 [
   ['mainform',['MainForm',['../class_s_d_k_sample_app_1_1_source_1_1_main_form.html',1,'SDKSampleApp::Source']]],
+  ['managedatasourcelinksform',['ManageDataSourceLinksForm',['../class_s_d_k_sample_app_1_1_source_1_1_manage_data_source_links_form.html',1,'SDKSampleApp::Source']]],
+  ['manualrecording',['ManualRecording',['../../CSharpWrapper/class_c_p_p_cli_1_1_manual_recording.html',1,'CPPCli']]],
   ['marker',['Marker',['../../CSharpWrapper/class_c_p_p_cli_1_1_marker.html',1,'CPPCli']]],
   ['mediacontrol',['MediaControl',['../../CSharpWrapper/class_c_p_p_cli_1_1_media_control.html',1,'CPPCli']]],
   ['mediadescription',['MediaDescription',['../../MediaController/struct_media_controller_1_1_rtsp_1_1_media_description.html',1,'MediaController::Rtsp']]],
   ['mediaevent',['MediaEvent',['../../CSharpWrapper/class_c_p_p_cli_1_1_media_event.html',1,'CPPCli']]],
   ['mediarequest',['MediaRequest',['../../MediaController/struct_media_controller_1_1_media_request.html',1,'MediaController']]],
   ['mergetagform',['MergeTagForm',['../class_s_d_k_sample_app_1_1_source_1_1_merge_tag_form.html',1,'SDKSampleApp::Source']]],
+  ['modifyalarminputform',['ModifyAlarmInputForm',['../class_s_d_k_sample_app_1_1_source_1_1_modify_alarm_input_form.html',1,'SDKSampleApp::Source']]],
+  ['modifydatasourceform',['ModifyDataSourceForm',['../class_s_d_k_sample_app_1_1_source_1_1_modify_data_source_form.html',1,'SDKSampleApp::Source']]],
   ['modifydeviceform',['ModifyDeviceForm',['../class_s_d_k_sample_app_1_1_source_1_1_modify_device_form.html',1,'SDKSampleApp::Source']]],
   ['modifydrawingform',['ModifyDrawingForm',['../class_s_d_k_sample_app_1_1_source_1_1_modify_drawing_form.html',1,'SDKSampleApp::Source']]],
   ['modifynotificationsform',['ModifyNotificationsForm',['../class_s_d_k_sample_app_1_1_source_1_1_modify_notifications_form.html',1,'SDKSampleApp::Source']]],
   ['modifyprivilegesourcesform',['ModifyPrivilegeSourcesForm',['../class_s_d_k_sample_app_1_1_source_1_1_modify_privilege_sources_form.html',1,'SDKSampleApp::Source']]],
+  ['modifyrelayoutputform',['ModifyRelayOutputForm',['../class_s_d_k_sample_app_1_1_source_1_1_modify_relay_output_form.html',1,'SDKSampleApp::Source']]],
   ['modifyroleprivilegesform',['ModifyRolePrivilegesForm',['../class_s_d_k_sample_app_1_1_source_1_1_modify_role_privileges_form.html',1,'SDKSampleApp::Source']]],
   ['modifyschedulesourcesform',['ModifyScheduleSourcesForm',['../class_s_d_k_sample_app_1_1_source_1_1_modify_schedule_sources_form.html',1,'SDKSampleApp::Source']]],
   ['modifytagform',['ModifyTagForm',['../class_s_d_k_sample_app_1_1_source_1_1_modify_tag_form.html',1,'SDKSampleApp::Source']]],
   ['modifyuserform',['ModifyUserForm',['../class_s_d_k_sample_app_1_1_source_1_1_modify_user_form.html',1,'SDKSampleApp::Source']]],
   ['monitor',['Monitor',['../../CSharpWrapper/class_c_p_p_cli_1_1_monitor.html',1,'CPPCli']]],
   ['monitorcell',['MonitorCell',['../../CSharpWrapper/class_c_p_p_cli_1_1_monitor_cell.html',1,'CPPCli']]],
-  ['monitormanagerform',['MonitorManagerForm',['../class_s_d_k_sample_app_1_1_source_1_1_monitor_manager_form.html',1,'SDKSampleApp::Source']]]
+  ['monitormanagerform',['MonitorManagerForm',['../class_s_d_k_sample_app_1_1_source_1_1_monitor_manager_form.html',1,'SDKSampleApp::Source']]],
+  ['multiviewdetailsform',['MultiviewDetailsForm',['../class_s_d_k_sample_app_1_1_source_1_1_multiview_details_form.html',1,'SDKSampleApp::Source']]]
 ];

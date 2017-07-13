@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">VideoXpert SDK
-   &#160;<span id="projectnumber">1.2</span>
+   &#160;<span id="projectnumber">2.0</span>
    </div>
    <div id="projectbrief">A software development kit for third party vendors to integrate with the VideoXpert platform</div>
   </td>
@@ -137,6 +137,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a08481e4d6f9bba07f521d79d32246ee7"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#a08481e4d6f9bba07f521d79d32246ee7">AddDrawing</a> (<a class="el" href="struct_vx_sdk_1_1_vx_new_drawing.html">VxNewDrawing</a> &amp;newDrawing) const  =0</td></tr>
 <tr class="memdesc:a08481e4d6f9bba07f521d79d32246ee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new drawing.  <a href="#a08481e4d6f9bba07f521d79d32246ee7">More...</a><br /></td></tr>
 <tr class="separator:a08481e4d6f9bba07f521d79d32246ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17516259ee1fd346889fae6a9ae46be9"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#a17516259ee1fd346889fae6a9ae46be9">AddManualRecording</a> (<a class="el" href="struct_vx_sdk_1_1_vx_new_manual_recording.html">VxNewManualRecording</a> &amp;newManualRecording, <a class="el" href="struct_vx_sdk_1_1_i_vx_manual_recording.html">IVxManualRecording</a> *&amp;manualRecordingItem) const  =0</td></tr>
+<tr class="memdesc:a17516259ee1fd346889fae6a9ae46be9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new manual recording to the VideoXpert system.  <a href="#a17516259ee1fd346889fae6a9ae46be9">More...</a><br /></td></tr>
+<tr class="separator:a17516259ee1fd346889fae6a9ae46be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16f9c1c30358e606297cdfa52188e2a4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#a16f9c1c30358e606297cdfa52188e2a4">AddNotification</a> (<a class="el" href="struct_vx_sdk_1_1_vx_new_notification.html">VxNewNotification</a> &amp;newNotification, <a class="el" href="struct_vx_sdk_1_1_i_vx_notification.html">IVxNotification</a> *&amp;notificationItem) const  =0</td></tr>
 <tr class="memdesc:a16f9c1c30358e606297cdfa52188e2a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new notification.  <a href="#a16f9c1c30358e606297cdfa52188e2a4">More...</a><br /></td></tr>
 <tr class="separator:a16f9c1c30358e606297cdfa52188e2a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,12 +167,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae60411039045c5464e72137c818ef3af"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#ae60411039045c5464e72137c818ef3af">CreateMonitor</a> (<a class="el" href="struct_vx_sdk_1_1_vx_new_monitor.html">VxNewMonitor</a> &amp;newMonitor) const  =0</td></tr>
 <tr class="memdesc:ae60411039045c5464e72137c818ef3af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new monitor to the system.  <a href="#ae60411039045c5464e72137c818ef3af">More...</a><br /></td></tr>
 <tr class="separator:ae60411039045c5464e72137c818ef3af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47fabc4efdf7d03b11aca797614bf387"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#a47fabc4efdf7d03b11aca797614bf387">CreateQuickLog</a> (<a class="el" href="struct_vx_sdk_1_1_i_vx_quick_log.html">IVxQuickLog</a> *&amp;quickLog) const  =0</td></tr>
+<tr class="memdesc:a47fabc4efdf7d03b11aca797614bf387"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a quick log on the VideoXpert system.  <a href="#a47fabc4efdf7d03b11aca797614bf387">More...</a><br /></td></tr>
+<tr class="separator:a47fabc4efdf7d03b11aca797614bf387"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2888bea03c53020f39f063b4aef17a5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#ae2888bea03c53020f39f063b4aef17a5">CreateQuickReport</a> (<a class="el" href="struct_vx_sdk_1_1_vx_new_quick_report.html">VxNewQuickReport</a> &amp;newQuickReport, <a class="el" href="struct_vx_sdk_1_1_i_vx_quick_report.html">IVxQuickReport</a> *&amp;quickReport) const  =0</td></tr>
 <tr class="memdesc:ae2888bea03c53020f39f063b4aef17a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a quick system health report on the VideoXpert system.  <a href="#ae2888bea03c53020f39f063b4aef17a5">More...</a><br /></td></tr>
 <tr class="separator:ae2888bea03c53020f39f063b4aef17a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89441c2a97ea14bff936661dd27631fc"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#a89441c2a97ea14bff936661dd27631fc">Delete</a> () const  =0</td></tr>
 <tr class="memdesc:a89441c2a97ea14bff936661dd27631fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes this instance.  <a href="#a89441c2a97ea14bff936661dd27631fc">More...</a><br /></td></tr>
 <tr class="separator:a89441c2a97ea14bff936661dd27631fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab536eff5d10b986f3686f176f67afae9"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#ab536eff5d10b986f3686f176f67afae9">GetAlarmInputs</a> (<a class="el" href="struct_vx_sdk_1_1_vx_collection.html">VxCollection</a>&lt; <a class="el" href="struct_vx_sdk_1_1_i_vx_alarm_input.html">IVxAlarmInput</a> ** &gt; &amp;alarmInputCollection) const  =0</td></tr>
+<tr class="memdesc:ab536eff5d10b986f3686f176f67afae9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the alarm inputs residing on the system.  <a href="#ab536eff5d10b986f3686f176f67afae9">More...</a><br /></td></tr>
+<tr class="separator:ab536eff5d10b986f3686f176f67afae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3335daa35f44746e4002f1eb4f07b5a5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#a3335daa35f44746e4002f1eb4f07b5a5">GetBookmarks</a> (<a class="el" href="struct_vx_sdk_1_1_vx_collection.html">VxCollection</a>&lt; <a class="el" href="struct_vx_sdk_1_1_i_vx_bookmark.html">IVxBookmark</a> ** &gt; &amp;bookmarkCollection) const  =0</td></tr>
 <tr class="memdesc:a3335daa35f44746e4002f1eb4f07b5a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the bookmarks residing on the system.  <a href="#a3335daa35f44746e4002f1eb4f07b5a5">More...</a><br /></td></tr>
 <tr class="separator:a3335daa35f44746e4002f1eb4f07b5a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -188,9 +197,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a64242437c9438a33c312c7a3fef10d19"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#a64242437c9438a33c312c7a3fef10d19">GetDataStorages</a> (<a class="el" href="struct_vx_sdk_1_1_vx_collection.html">VxCollection</a>&lt; <a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html">IVxDataStorage</a> ** &gt; &amp;dataStorageCollection) const  =0</td></tr>
 <tr class="memdesc:a64242437c9438a33c312c7a3fef10d19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the data storages residing on the system.  <a href="#a64242437c9438a33c312c7a3fef10d19">More...</a><br /></td></tr>
 <tr class="separator:a64242437c9438a33c312c7a3fef10d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af481e58cd2fac83114ac7d559d90debd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#af481e58cd2fac83114ac7d559d90debd">GetDeviceAssignments</a> (<a class="el" href="struct_vx_sdk_1_1_vx_collection.html">VxCollection</a>&lt; <a class="el" href="struct_vx_sdk_1_1_i_vx_device_assignment.html">IVxDeviceAssignment</a> ** &gt; &amp;deviceAssignmentCollection) const  =0</td></tr>
+<tr class="memdesc:af481e58cd2fac83114ac7d559d90debd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the device assignments residing on the system.  <a href="#af481e58cd2fac83114ac7d559d90debd">More...</a><br /></td></tr>
+<tr class="separator:af481e58cd2fac83114ac7d559d90debd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad50525ec77f94f279a60fb375f3d8eb3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#ad50525ec77f94f279a60fb375f3d8eb3">GetDevices</a> (<a class="el" href="struct_vx_sdk_1_1_vx_collection.html">VxCollection</a>&lt; <a class="el" href="struct_vx_sdk_1_1_i_vx_device.html">IVxDevice</a> ** &gt; &amp;deviceCollection) const  =0</td></tr>
 <tr class="memdesc:ad50525ec77f94f279a60fb375f3d8eb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the devices from the VideoXpert system.  <a href="#ad50525ec77f94f279a60fb375f3d8eb3">More...</a><br /></td></tr>
 <tr class="separator:ad50525ec77f94f279a60fb375f3d8eb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa72011553a00b8a36d22abb3f1d44324"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#aa72011553a00b8a36d22abb3f1d44324">GetDeviceSearchStatus</a> (<a class="el" href="struct_vx_sdk_1_1_vx_device_search_status.html#a64260e2e893ee0dae3641c18ed885651">VxDeviceSearchStatus::Value</a> &amp;status) const  =0</td></tr>
+<tr class="memdesc:aa72011553a00b8a36d22abb3f1d44324"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current <a class="el" href="struct_vx_sdk_1_1_vx_device_search_status.html" title="Values that represent the current status of an AutoAddDevices search. ">VxDeviceSearchStatus</a> of an <code>AutoAddDevices</code> search.  <a href="#aa72011553a00b8a36d22abb3f1d44324">More...</a><br /></td></tr>
+<tr class="separator:aa72011553a00b8a36d22abb3f1d44324"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78b8b8f73168c37309db2d8f85e1914f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#a78b8b8f73168c37309db2d8f85e1914f">GetDrawings</a> (<a class="el" href="struct_vx_sdk_1_1_vx_collection.html">VxCollection</a>&lt; <a class="el" href="struct_vx_sdk_1_1_i_vx_drawing.html">IVxDrawing</a> ** &gt; &amp;drawingCollection) const  =0</td></tr>
 <tr class="memdesc:a78b8b8f73168c37309db2d8f85e1914f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the drawings from the VideoXpert system.  <a href="#a78b8b8f73168c37309db2d8f85e1914f">More...</a><br /></td></tr>
 <tr class="separator:a78b8b8f73168c37309db2d8f85e1914f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,15 +215,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a98a155300e6eeed2d5280cb3ed4505f8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#a98a155300e6eeed2d5280cb3ed4505f8">GetExports</a> (<a class="el" href="struct_vx_sdk_1_1_vx_collection.html">VxCollection</a>&lt; <a class="el" href="struct_vx_sdk_1_1_i_vx_export.html">IVxExport</a> ** &gt; &amp;exportCollection) const  =0</td></tr>
 <tr class="memdesc:a98a155300e6eeed2d5280cb3ed4505f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the exports residing on the system.  <a href="#a98a155300e6eeed2d5280cb3ed4505f8">More...</a><br /></td></tr>
 <tr class="separator:a98a155300e6eeed2d5280cb3ed4505f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad02bce797041a2815b076e7de979085d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#ad02bce797041a2815b076e7de979085d">GetHostDevice</a> (<a class="el" href="struct_vx_sdk_1_1_i_vx_device.html">IVxDevice</a> *&amp;hostDevice) const  =0</td></tr>
+<tr class="memdesc:ad02bce797041a2815b076e7de979085d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the <a class="el" href="struct_vx_sdk_1_1_i_vx_device.html" title="Represents a particular physical device in the system. ">IVxDevice</a> that hosts this system.  <a href="#ad02bce797041a2815b076e7de979085d">More...</a><br /></td></tr>
+<tr class="separator:ad02bce797041a2815b076e7de979085d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11349cf5e1a12d2f1343f6e84b8c82aa"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#a11349cf5e1a12d2f1343f6e84b8c82aa">GetLicense</a> (<a class="el" href="struct_vx_sdk_1_1_i_vx_license.html">IVxLicense</a> *&amp;license) const  =0</td></tr>
 <tr class="memdesc:a11349cf5e1a12d2f1343f6e84b8c82aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the license for the system.  <a href="#a11349cf5e1a12d2f1343f6e84b8c82aa">More...</a><br /></td></tr>
 <tr class="separator:a11349cf5e1a12d2f1343f6e84b8c82aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e050f3aac805a693f7e5d0ba1ac477c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#a3e050f3aac805a693f7e5d0ba1ac477c">GetManualRecordings</a> (<a class="el" href="struct_vx_sdk_1_1_vx_collection.html">VxCollection</a>&lt; <a class="el" href="struct_vx_sdk_1_1_i_vx_manual_recording.html">IVxManualRecording</a> ** &gt; &amp;manualRecordingCollection) const  =0</td></tr>
+<tr class="memdesc:a3e050f3aac805a693f7e5d0ba1ac477c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the manual recordings residing on the system.  <a href="#a3e050f3aac805a693f7e5d0ba1ac477c">More...</a><br /></td></tr>
+<tr class="separator:a3e050f3aac805a693f7e5d0ba1ac477c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cbd21302be727ac723eab84b1bd7df4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#a9cbd21302be727ac723eab84b1bd7df4">GetMonitors</a> (<a class="el" href="struct_vx_sdk_1_1_vx_collection.html">VxCollection</a>&lt; <a class="el" href="struct_vx_sdk_1_1_i_vx_monitor.html">IVxMonitor</a> ** &gt; &amp;monitorCollection) const  =0</td></tr>
 <tr class="memdesc:a9cbd21302be727ac723eab84b1bd7df4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the monitors residing on the system.  <a href="#a9cbd21302be727ac723eab84b1bd7df4">More...</a><br /></td></tr>
 <tr class="separator:a9cbd21302be727ac723eab84b1bd7df4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac51f9dca2fffbd83ee6c52834fc4d583"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#ac51f9dca2fffbd83ee6c52834fc4d583">GetNotifications</a> (<a class="el" href="struct_vx_sdk_1_1_vx_collection.html">VxCollection</a>&lt; <a class="el" href="struct_vx_sdk_1_1_i_vx_notification.html">IVxNotification</a> ** &gt; &amp;notificationCollection) const  =0</td></tr>
 <tr class="memdesc:ac51f9dca2fffbd83ee6c52834fc4d583"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the notifications residing on the system.  <a href="#ac51f9dca2fffbd83ee6c52834fc4d583">More...</a><br /></td></tr>
 <tr class="separator:ac51f9dca2fffbd83ee6c52834fc4d583"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a981ed786320f2bc31c21a46c9d314bbd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#a981ed786320f2bc31c21a46c9d314bbd">GetRelayOutputs</a> (<a class="el" href="struct_vx_sdk_1_1_vx_collection.html">VxCollection</a>&lt; <a class="el" href="struct_vx_sdk_1_1_i_vx_relay_output.html">IVxRelayOutput</a> ** &gt; &amp;relayOutputCollection) const  =0</td></tr>
+<tr class="memdesc:a981ed786320f2bc31c21a46c9d314bbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the relay outputs residing on the system.  <a href="#a981ed786320f2bc31c21a46c9d314bbd">More...</a><br /></td></tr>
+<tr class="separator:a981ed786320f2bc31c21a46c9d314bbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c18f8d598fcdc1b85f1faa47bd66386"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#a5c18f8d598fcdc1b85f1faa47bd66386">GetRoles</a> (<a class="el" href="struct_vx_sdk_1_1_vx_collection.html">VxCollection</a>&lt; <a class="el" href="struct_vx_sdk_1_1_i_vx_role.html">IVxRole</a> ** &gt; &amp;roleCollection) const  =0</td></tr>
 <tr class="memdesc:a5c18f8d598fcdc1b85f1faa47bd66386"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the roles residing on the system.  <a href="#a5c18f8d598fcdc1b85f1faa47bd66386">More...</a><br /></td></tr>
 <tr class="separator:a5c18f8d598fcdc1b85f1faa47bd66386"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -233,12 +257,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa7de55900a80cbcffc19f1dc82ef8d9a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#aa7de55900a80cbcffc19f1dc82ef8d9a">SetName</a> (char <a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#a3bc550066f27fb1c4c1bbd3d45020514">name</a>[64])=0</td></tr>
 <tr class="memdesc:aa7de55900a80cbcffc19f1dc82ef8d9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name property.  <a href="#aa7de55900a80cbcffc19f1dc82ef8d9a">More...</a><br /></td></tr>
 <tr class="separator:aa7de55900a80cbcffc19f1dc82ef8d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcbdea2e839d8a3fd1aa772d15faae6d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#adcbdea2e839d8a3fd1aa772d15faae6d">StartInternalNotifications</a> (<a class="el" href="namespace_vx_sdk.html#adc0dcca87b90f34e49dcaf427621f2b5">VxInternalEventCallback</a> callback) const  =0</td></tr>
+<tr class="memdesc:adcbdea2e839d8a3fd1aa772d15faae6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start receiving internal event notifications sent by the VxSDK.  <a href="#adcbdea2e839d8a3fd1aa772d15faae6d">More...</a><br /></td></tr>
+<tr class="separator:adcbdea2e839d8a3fd1aa772d15faae6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a598f668a204e3affe0e1561fdb5a0384"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#a598f668a204e3affe0e1561fdb5a0384">StartNotifications</a> (<a class="el" href="namespace_vx_sdk.html#a5740f17d74ae3a7459a633eaca311d1a">VxEventCallback</a> callback) const  =0</td></tr>
 <tr class="memdesc:a598f668a204e3affe0e1561fdb5a0384"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start receiving event notifications using the settings for the current user.  <a href="#a598f668a204e3affe0e1561fdb5a0384">More...</a><br /></td></tr>
 <tr class="separator:a598f668a204e3affe0e1561fdb5a0384"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fdd0284804d302ba5e6b970b1b96761"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#a4fdd0284804d302ba5e6b970b1b96761">StartNotifications</a> (<a class="el" href="namespace_vx_sdk.html#a5740f17d74ae3a7459a633eaca311d1a">VxEventCallback</a> callback, <a class="el" href="struct_vx_sdk_1_1_vx_collection.html">VxCollection</a>&lt; <a class="el" href="struct_vx_sdk_1_1_i_vx_situation.html">IVxSituation</a> ** &gt; &amp;situationCollection) const  =0</td></tr>
 <tr class="memdesc:a4fdd0284804d302ba5e6b970b1b96761"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start receiving event notifications by situation type, regardless of user settings.  <a href="#a4fdd0284804d302ba5e6b970b1b96761">More...</a><br /></td></tr>
 <tr class="separator:a4fdd0284804d302ba5e6b970b1b96761"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a663bf9554e50b5e692209f34524dc45b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#a663bf9554e50b5e692209f34524dc45b">StopInternalNotifications</a> () const  =0</td></tr>
+<tr class="memdesc:a663bf9554e50b5e692209f34524dc45b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop receiving all internal event notifications.  <a href="#a663bf9554e50b5e692209f34524dc45b">More...</a><br /></td></tr>
+<tr class="separator:a663bf9554e50b5e692209f34524dc45b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7961138a0726e7260d6260e19fd693cd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#a7961138a0726e7260d6260e19fd693cd">StopNotifications</a> () const  =0</td></tr>
 <tr class="memdesc:a7961138a0726e7260d6260e19fd693cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop receiving all event notifications.  <a href="#a7961138a0726e7260d6260e19fd693cd">More...</a><br /></td></tr>
 <tr class="separator:a7961138a0726e7260d6260e19fd693cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -261,7 +291,7 @@ Protected Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a VideoXpert system and allows the user to manage the system and devices. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_system_8h_source.html#l00033">33</a> of file <a class="el" href="_i_vx_system_8h_source.html">IVxSystem.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_system_8h_source.html#l00034">34</a> of file <a class="el" href="_i_vx_system_8h_source.html">IVxSystem.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a281914260c99f63de5a5ac25dd00593b"></a>
 <div class="memitem">
@@ -388,6 +418,50 @@ Protected Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">newDrawing</td><td>The new drawing to be added.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of the request.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a17516259ee1fd346889fae6a9ae46be9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxSystem::AddManualRecording </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_vx_sdk_1_1_vx_new_manual_recording.html">VxNewManualRecording</a> &amp;&#160;</td>
+          <td class="paramname"><em>newManualRecording</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_vx_sdk_1_1_i_vx_manual_recording.html">IVxManualRecording</a> *&amp;&#160;</td>
+          <td class="paramname"><em>manualRecordingItem</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds a new manual recording to the VideoXpert system. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newManualRecording</td><td>The new manual recording to be added to the system.</td></tr>
+    <tr><td class="paramname">manualRecordingItem</td><td><code>nullptr</code> if it fails, else the new <a class="el" href="struct_vx_sdk_1_1_i_vx_manual_recording.html" title="Represents an instance of an active manual recording (the action, not the recorded clip)...">IVxManualRecording</a>.</td></tr>
   </table>
   </dd>
 </dl>
@@ -653,9 +727,9 @@ Protected Member Functions</h2></td></tr>
 
 <p>Clears this instance. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_system_8h_source.html#l00300">300</a> of file <a class="el" href="_i_vx_system_8h_source.html">IVxSystem.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                     {</div><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<span class="keywordtype">id</span>);</div><div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_system.html#a3bc550066f27fb1c4c1bbd3d45020514">name</a>);</div><div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        }</div><div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00018">VxMacros.h:18</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_system_html_a3bc550066f27fb1c4c1bbd3d45020514"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_system.html#a3bc550066f27fb1c4c1bbd3d45020514">VxSdk::IVxSystem::name</a></div><div class="ttdeci">char name[64]</div><div class="ttdoc">The friendly name of the VideoXpert system. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_system_8h_source.html#l00294">IVxSystem.h:294</a></div></div>
+<p>Definition at line <a class="el" href="_i_vx_system_8h_source.html#l00368">368</a> of file <a class="el" href="_i_vx_system_8h_source.html">IVxSystem.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;                     {</div><div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<span class="keywordtype">id</span>);</div><div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_system.html#a3bc550066f27fb1c4c1bbd3d45020514">name</a>);</div><div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        }</div><div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00025">VxMacros.h:25</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_system_html_a3bc550066f27fb1c4c1bbd3d45020514"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_system.html#a3bc550066f27fb1c4c1bbd3d45020514">VxSdk::IVxSystem::name</a></div><div class="ttdeci">char name[64]</div><div class="ttdoc">The friendly name of the VideoXpert system. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_system_8h_source.html#l00362">IVxSystem.h:362</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -736,6 +810,39 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a47fabc4efdf7d03b11aca797614bf387"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxSystem::CreateQuickLog </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_vx_sdk_1_1_i_vx_quick_log.html">IVxQuickLog</a> *&amp;&#160;</td>
+          <td class="paramname"><em>quickLog</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a quick log on the VideoXpert system. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">quickLog</td><td><code>nullptr</code> if it fails, else the new <a class="el" href="struct_vx_sdk_1_1_i_vx_quick_log.html" title="Represents a set of system logs that can be compiled together and packaged for download. ">IVxQuickLog</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of the request.</dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ae2888bea03c53020f39f063b4aef17a5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -806,6 +913,40 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ab536eff5d10b986f3686f176f67afae9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxSystem::GetAlarmInputs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_vx_sdk_1_1_vx_collection.html">VxCollection</a>&lt; <a class="el" href="struct_vx_sdk_1_1_i_vx_alarm_input.html">IVxAlarmInput</a> ** &gt; &amp;&#160;</td>
+          <td class="paramname"><em>alarmInputCollection</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the alarm inputs residing on the system. </p>
+<p>Available filters: kModifiedSince, kName, kState.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">alarmInputCollection</td><td>A <a class="el" href="struct_vx_sdk_1_1_vx_collection.html" title="Represents a collection of resources. ">VxCollection</a> of the alarm inputs residing on the system.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of the request.</dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a3335daa35f44746e4002f1eb4f07b5a5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -829,7 +970,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the bookmarks residing on the system. </p>
-<p>Available filters: kDataSourceId, kDataSourceNumber, kDescription, kModifiedSince, kSearchEndTime, kSearchStartTime, kTime.</p>
+<p>Available filters: kDataSourceId, kDataSourceName, kDataSourceNumber, kDescription, kModifiedSince, kName, kSearchEndTime, kSearchStartTime, kTime.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bookmarkCollection</td><td>A <a class="el" href="struct_vx_sdk_1_1_vx_collection.html" title="Represents a collection of resources. ">VxCollection</a> of the bookmarks residing on the system.</td></tr>
@@ -963,7 +1104,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the data sources from the VideoXpert system. </p>
-<p>Available filters: kAllTags, kCapturing, kId, kIp, kModifiedSince, kName, kNumber, kRecording, kState, kType, kUnassigned.</p>
+<p>Available filters: kAllTags, kAllPrivateTags, kCapturing, kId, kIp, kManualRecording, kModifiedSince, kName, kNumber, kRecording, kState, kType, kUnassigned.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dataSourceCollection</td><td>A <a class="el" href="struct_vx_sdk_1_1_vx_collection.html" title="Represents a collection of resources. ">VxCollection</a> of the data sources associated with the system.</td></tr>
@@ -1008,6 +1149,40 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="af481e58cd2fac83114ac7d559d90debd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxSystem::GetDeviceAssignments </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_vx_sdk_1_1_vx_collection.html">VxCollection</a>&lt; <a class="el" href="struct_vx_sdk_1_1_i_vx_device_assignment.html">IVxDeviceAssignment</a> ** &gt; &amp;&#160;</td>
+          <td class="paramname"><em>deviceAssignmentCollection</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the device assignments residing on the system. </p>
+<p>Available filters: kDataSourceId, kModifiedSince.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deviceAssignmentCollection</td><td>A <a class="el" href="struct_vx_sdk_1_1_vx_collection.html" title="Represents a collection of resources. ">VxCollection</a> of the device assignments.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of the request.</dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ad50525ec77f94f279a60fb375f3d8eb3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1031,10 +1206,43 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the devices from the VideoXpert system. </p>
-<p>Available filters: kAllTags, kCommissioned, kId, kIp, kModel, kModifiedSince, kName, kSerial, kState, kType, kVendor, kVersion.</p>
+<p>Available filters: kAllTags, kAllPrivateTags, kCommissioned, kHasStatus, kId, kIp, kModel, kModifiedSince, kName, kSerial, kState, kType, kVendor, kVersion.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">deviceCollection</td><td>A <a class="el" href="struct_vx_sdk_1_1_vx_collection.html" title="Represents a collection of resources. ">VxCollection</a> of the devices associated with the system.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of the request.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa72011553a00b8a36d22abb3f1d44324"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxSystem::GetDeviceSearchStatus </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_vx_sdk_1_1_vx_device_search_status.html#a64260e2e893ee0dae3641c18ed885651">VxDeviceSearchStatus::Value</a> &amp;&#160;</td>
+          <td class="paramname"><em>status</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the current <a class="el" href="struct_vx_sdk_1_1_vx_device_search_status.html" title="Values that represent the current status of an AutoAddDevices search. ">VxDeviceSearchStatus</a> of an <code>AutoAddDevices</code> search. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">status</td><td>The current status of an <code>AutoAddDevices</code> search.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1133,10 +1341,43 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the exports residing on the system. </p>
-<p>Available filters: kModifiedSince, kName, kPercentComplete, kSize, kStatus.</p>
+<p>Available filters: kDataSourceAllTags, kDataSourceAllPrivateTags, kDataSourceName, kDataSourceNumber, kModifiedSince, kName, kOwner, kPercentComplete, kSize, kStatus.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">exportCollection</td><td>A <a class="el" href="struct_vx_sdk_1_1_vx_collection.html" title="Represents a collection of resources. ">VxCollection</a> of the exports residing on the system.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of the request.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad02bce797041a2815b076e7de979085d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxSystem::GetHostDevice </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_vx_sdk_1_1_i_vx_device.html">IVxDevice</a> *&amp;&#160;</td>
+          <td class="paramname"><em>hostDevice</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the <a class="el" href="struct_vx_sdk_1_1_i_vx_device.html" title="Represents a particular physical device in the system. ">IVxDevice</a> that hosts this system. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hostDevice</td><td>The host <a class="el" href="struct_vx_sdk_1_1_i_vx_device.html" title="Represents a particular physical device in the system. ">IVxDevice</a>.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1170,6 +1411,40 @@ Protected Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">license</td><td>The license for the system.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of the request.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3e050f3aac805a693f7e5d0ba1ac477c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxSystem::GetManualRecordings </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_vx_sdk_1_1_vx_collection.html">VxCollection</a>&lt; <a class="el" href="struct_vx_sdk_1_1_i_vx_manual_recording.html">IVxManualRecording</a> ** &gt; &amp;&#160;</td>
+          <td class="paramname"><em>manualRecordingCollection</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the manual recordings residing on the system. </p>
+<p>Available filters: kDataSourceId, kId, kModifiedSince, kOwner.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">manualRecordingCollection</td><td>A <a class="el" href="struct_vx_sdk_1_1_vx_collection.html" title="Represents a collection of resources. ">VxCollection</a> of the manual recordings residing on the system.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1238,6 +1513,40 @@ Protected Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">notificationCollection</td><td>A <a class="el" href="struct_vx_sdk_1_1_vx_collection.html" title="Represents a collection of resources. ">VxCollection</a> of the notifications residing on the system.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of the request.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a981ed786320f2bc31c21a46c9d314bbd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxSystem::GetRelayOutputs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_vx_sdk_1_1_vx_collection.html">VxCollection</a>&lt; <a class="el" href="struct_vx_sdk_1_1_i_vx_relay_output.html">IVxRelayOutput</a> ** &gt; &amp;&#160;</td>
+          <td class="paramname"><em>relayOutputCollection</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the relay outputs residing on the system. </p>
+<p>Available filters: kModifiedSince, kName, kState.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">relayOutputCollection</td><td>A <a class="el" href="struct_vx_sdk_1_1_vx_collection.html" title="Represents a collection of resources. ">VxCollection</a> of the relay outputs residing on the system.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1336,7 +1645,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the situations residing on the system. </p>
-<p>Available filters: kAudibleNotify, kLog, kModifiedSince, kNotify, kSeverity, kSourceDeviceId, kType.</p>
+<p>Available filters: kAudibleNotify, kHasProperty, kLog, kModifiedSince, kName, kNotify, kServicePropertyId, kSeverity, kSourceDeviceId, kType.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">situationCollection</td><td>A <a class="el" href="struct_vx_sdk_1_1_vx_collection.html" title="Represents a collection of resources. ">VxCollection</a> of the situations residing on the system.</td></tr>
@@ -1370,7 +1679,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the tags residing on the system. </p>
-<p>Available filters: kModifiedSince, kName, kOwned, kOwner, kResourceId, kResourceType.</p>
+<p>Available filters: kId, kModifiedSince, kName, kOwned, kOwner, kResourceId, kResourceType.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">tagCollection</td><td>A <a class="el" href="struct_vx_sdk_1_1_vx_collection.html" title="Represents a collection of resources. ">VxCollection</a> of tags residing on the system.</td></tr>
@@ -1404,7 +1713,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the users residing on the system. </p>
-<p>Available filters: kModifiedSince, kName.</p>
+<p>Available filters: kFirstName, kLastName, kModifiedSince, kName.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">userCollection</td><td>A <a class="el" href="struct_vx_sdk_1_1_vx_collection.html" title="Represents a collection of resources. ">VxCollection</a> of users residing on the system.</td></tr>
@@ -1507,6 +1816,39 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="adcbdea2e839d8a3fd1aa772d15faae6d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxSystem::StartInternalNotifications </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_vx_sdk.html#adc0dcca87b90f34e49dcaf427621f2b5">VxInternalEventCallback</a>&#160;</td>
+          <td class="paramname"><em>callback</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Start receiving internal event notifications sent by the VxSDK. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>The callback to be used when an internal event is received.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of the request.</dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a598f668a204e3affe0e1561fdb5a0384"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1584,6 +1926,32 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a663bf9554e50b5e692209f34524dc45b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxSystem::StopInternalNotifications </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Stop receiving all internal event notifications. </p>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of the request.</dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a7961138a0726e7260d6260e19fd693cd"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1623,7 +1991,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The unique identifier of the VideoXpert system. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_system_8h_source.html#l00290">290</a> of file <a class="el" href="_i_vx_system_8h_source.html">IVxSystem.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_system_8h_source.html#l00358">358</a> of file <a class="el" href="_i_vx_system_8h_source.html">IVxSystem.h</a>.</p>
 
 </div>
 </div>
@@ -1639,12 +2007,12 @@ Protected Member Functions</h2></td></tr>
 
 <p>The friendly name of the VideoXpert system. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_system_8h_source.html#l00294">294</a> of file <a class="el" href="_i_vx_system_8h_source.html">IVxSystem.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_system_8h_source.html#l00362">362</a> of file <a class="el" href="_i_vx_system_8h_source.html">IVxSystem.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>C:/Users/zachm/Git/vxsdk/VxSdk/Include/<a class="el" href="_i_vx_system_8h_source.html">IVxSystem.h</a></li>
+<li>C:/Git/VXSDK_M3/VxSdk/Include/<a class="el" href="_i_vx_system_8h_source.html">IVxSystem.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

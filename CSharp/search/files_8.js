@@ -2,6 +2,9 @@ var searchData=
 [
   ['macros_2eh',['Macros.h',['../../MediaController/_macros_8h.html',1,'']]],
   ['mainform_2ecs',['MainForm.cs',['../_main_form_8cs.html',1,'']]],
+  ['managedatasourcelinks_2ecs',['ManageDataSourceLinks.cs',['../_manage_data_source_links_8cs.html',1,'']]],
+  ['manualrecording_2ecpp',['ManualRecording.cpp',['../../CSharpWrapper/_manual_recording_8cpp.html',1,'']]],
+  ['manualrecording_2eh',['ManualRecording.h',['../../CSharpWrapper/_manual_recording_8h.html',1,'']]],
   ['marker_2ecpp',['Marker.cpp',['../../CSharpWrapper/_marker_8cpp.html',1,'']]],
   ['marker_2eh',['Marker.h',['../../CSharpWrapper/_marker_8h.html',1,'']]],
   ['mediacontrol_2ecpp',['MediaControl.cpp',['../../CSharpWrapper/_media_control_8cpp.html',1,'']]],
@@ -12,10 +15,13 @@ var searchData=
   ['mergetagform_2ecs',['MergeTagForm.cs',['../_merge_tag_form_8cs.html',1,'']]],
   ['mjpegpullstream_2ecpp',['MjpegPullStream.cpp',['../../MediaController/_mjpeg_pull_stream_8cpp.html',1,'']]],
   ['mjpegpullstream_2eh',['MjpegPullStream.h',['../../MediaController/_mjpeg_pull_stream_8h.html',1,'']]],
+  ['modifyalarminputform_2ecs',['ModifyAlarmInputForm.cs',['../_modify_alarm_input_form_8cs.html',1,'']]],
+  ['modifydatasourceform_2ecs',['ModifyDataSourceForm.cs',['../_modify_data_source_form_8cs.html',1,'']]],
   ['modifydeviceform_2ecs',['ModifyDeviceForm.cs',['../_modify_device_form_8cs.html',1,'']]],
   ['modifydrawingform_2ecs',['ModifyDrawingForm.cs',['../_modify_drawing_form_8cs.html',1,'']]],
   ['modifynotificationsform_2ecs',['ModifyNotificationsForm.cs',['../_modify_notifications_form_8cs.html',1,'']]],
   ['modifyprivilegesourcesform_2ecs',['ModifyPrivilegeSourcesForm.cs',['../_modify_privilege_sources_form_8cs.html',1,'']]],
+  ['modifyrelayoutputform_2ecs',['ModifyRelayOutputForm.cs',['../_modify_relay_output_form_8cs.html',1,'']]],
   ['modifyroleprivilegesform_2ecs',['ModifyRolePrivilegesForm.cs',['../_modify_role_privileges_form_8cs.html',1,'']]],
   ['modifyschedulesourcesform_2ecs',['ModifyScheduleSourcesForm.cs',['../_modify_schedule_sources_form_8cs.html',1,'']]],
   ['modifytagform_2ecs',['ModifyTagForm.cs',['../_modify_tag_form_8cs.html',1,'']]],
@@ -24,5 +30,6 @@ var searchData=
   ['monitor_2eh',['Monitor.h',['../../CSharpWrapper/_monitor_8h.html',1,'']]],
   ['monitorcell_2ecpp',['MonitorCell.cpp',['../../CSharpWrapper/_monitor_cell_8cpp.html',1,'']]],
   ['monitorcell_2eh',['MonitorCell.h',['../../CSharpWrapper/_monitor_cell_8h.html',1,'']]],
-  ['monitormanagerform_2ecs',['MonitorManagerForm.cs',['../_monitor_manager_form_8cs.html',1,'']]]
+  ['monitormanagerform_2ecs',['MonitorManagerForm.cs',['../_monitor_manager_form_8cs.html',1,'']]],
+  ['multiviewdetailsform_2ecs',['MultiviewDetailsForm.cs',['../_multiview_details_form_8cs.html',1,'']]]
 ];

@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['manualrecording',['ManualRecording',['../class_c_p_p_cli_1_1_manual_recording.html#a0f98714ec391f6b987c769afb1d37e12',1,'CPPCli::ManualRecording']]],
   ['marker',['Marker',['../class_c_p_p_cli_1_1_marker.html#adc8c8e0a699db21b0d5e2e629b1e2b67',1,'CPPCli::Marker']]],
   ['mediacontrol',['MediaControl',['../class_c_p_p_cli_1_1_media_control.html#a6c22e4af9a96ebfffa17b883d0de9f28',1,'CPPCli::MediaControl']]],
   ['mediadescription',['MediaDescription',['../../MediaController/struct_media_controller_1_1_rtsp_1_1_media_description.html#a4713d3f3576ed7d8fe06eed769578348',1,'MediaController::Rtsp::MediaDescription']]],

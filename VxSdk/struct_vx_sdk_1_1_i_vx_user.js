@@ -12,10 +12,21 @@ var struct_vx_sdk_1_1_i_vx_user =
     [ "RemoveFromRole", "struct_vx_sdk_1_1_i_vx_user.html#a950885fc2054d1b46c1819a5762b22cd", null ],
     [ "SetAccountState", "struct_vx_sdk_1_1_i_vx_user.html#a2ed81f987bdbb7d97754e0150e5724ce", null ],
     [ "SetDomain", "struct_vx_sdk_1_1_i_vx_user.html#a150119700d84d14e0f69715efb7c8029", null ],
+    [ "SetEmployeeId", "struct_vx_sdk_1_1_i_vx_user.html#a3d711ba3c53e143914ccbf5ce9c69f9e", null ],
+    [ "SetFirstName", "struct_vx_sdk_1_1_i_vx_user.html#af5ac2739de7fb31248a14af2f7f38137", null ],
+    [ "SetLastName", "struct_vx_sdk_1_1_i_vx_user.html#a1669d3e5bdb3363f0631c250e2993824", null ],
     [ "SetName", "struct_vx_sdk_1_1_i_vx_user.html#a51c6e1eda7d9486fee1dddc3f174af4a", null ],
+    [ "SetNote", "struct_vx_sdk_1_1_i_vx_user.html#a7b9bba1fd327187a58553ae9a7769fd7", null ],
     [ "SetPassword", "struct_vx_sdk_1_1_i_vx_user.html#a1cec19a11c525937a618ca589b2c7361", null ],
+    [ "SetPhoneNumbers", "struct_vx_sdk_1_1_i_vx_user.html#a19ab6826d0521dd7a2c5ea238df8bfca", null ],
     [ "domain", "struct_vx_sdk_1_1_i_vx_user.html#a95a84f8009807d0aee9aa9e0de10fc09", null ],
+    [ "employeeId", "struct_vx_sdk_1_1_i_vx_user.html#a01cece5cef3455e0377019b327915756", null ],
+    [ "firstName", "struct_vx_sdk_1_1_i_vx_user.html#ad8fdf7eb02df6473717d9bbf26d04525", null ],
     [ "id", "struct_vx_sdk_1_1_i_vx_user.html#ae81214d4810a9bcee975aeaa8b8fb0ba", null ],
+    [ "lastName", "struct_vx_sdk_1_1_i_vx_user.html#adaab9a3ecb36becf9f3dd95ac0d8c584", null ],
     [ "name", "struct_vx_sdk_1_1_i_vx_user.html#ab7ea09fb9c481648d2e67bb453e1b44e", null ],
-    [ "passwordExpiration", "struct_vx_sdk_1_1_i_vx_user.html#a0fec61f07111443caea2361aeba57a44", null ]
+    [ "note", "struct_vx_sdk_1_1_i_vx_user.html#ad25d0fc92804b24a515e92af03d48d94", null ],
+    [ "passwordExpiration", "struct_vx_sdk_1_1_i_vx_user.html#a0fec61f07111443caea2361aeba57a44", null ],
+    [ "phoneNumbers", "struct_vx_sdk_1_1_i_vx_user.html#aeeb54c1d38c3eeb71c3986ce17fba646", null ],
+    [ "phoneNumberSize", "struct_vx_sdk_1_1_i_vx_user.html#a7c93633f24d4c0cfc1ff6ad0272405f9", null ]
 ];

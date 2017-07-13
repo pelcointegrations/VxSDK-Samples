@@ -6,5 +6,6 @@ var struct_vx_sdk_1_1_vx_new_bookmark =
     [ "Clear", "struct_vx_sdk_1_1_vx_new_bookmark.html#ae0c8d10da6ec254e416add315b011c0c", null ],
     [ "dataSourceId", "struct_vx_sdk_1_1_vx_new_bookmark.html#adabf87fc700a1fe69f91939545d51bfd", null ],
     [ "description", "struct_vx_sdk_1_1_vx_new_bookmark.html#ad41e46acd4f3d3668b2c7e68a3a11648", null ],
+    [ "name", "struct_vx_sdk_1_1_vx_new_bookmark.html#ae926ead91b63aecf0f3c002ac327bff8", null ],
     [ "time", "struct_vx_sdk_1_1_vx_new_bookmark.html#a268b33dc21b89fa19eda58c30ff9e134", null ]
 ];

@@ -1,6 +1,11 @@
 var searchData=
 [
-  ['vendor',['Vendor',['../class_c_p_p_cli_1_1_device.html#a56333a18c5947c168ac4f29010085e06',1,'CPPCli::Device::Vendor()'],['../class_c_p_p_cli_1_1_driver.html#a892cc89989d5fe7c1cf814da293cea8b',1,'CPPCli::Driver::Vendor()']]],
-  ['version',['Version',['../class_c_p_p_cli_1_1_device.html#ae8ccb00ec2e7e03181f4798189f56349',1,'CPPCli::Device::Version()'],['../class_c_p_p_cli_1_1_driver.html#a2f2251428a1403fc0be4cb12bcd74a90',1,'CPPCli::Driver::Version()'],['../class_c_p_p_cli_1_1_license_feature.html#ad3f0a15bde0c225ed8889c1357bb6c15',1,'CPPCli::LicenseFeature::Version()']]],
-  ['virtualip',['VirtualIp',['../class_c_p_p_cli_1_1_device.html#a8fa3cdd73b64b35e1759924b11a07191',1,'CPPCli::Device']]]
+  ['unlinkeddatasources',['UnLinkedDataSources',['../class_c_p_p_cli_1_1_privilege.html#a2c993857821cced64c4df533d555d833',1,'CPPCli::Privilege']]],
+  ['unlinkeddevices',['UnLinkedDevices',['../class_c_p_p_cli_1_1_privilege.html#a1a4ad872cbad7b733add3f7871932fe1',1,'CPPCli::Privilege']]],
+  ['unlinkedusers',['UnLinkedUsers',['../class_c_p_p_cli_1_1_privilege.html#ab86a1108825395ef9c90f04449ded635',1,'CPPCli::Privilege']]],
+  ['usealldatasources',['UseAllDataSources',['../class_c_p_p_cli_1_1_new_schedule.html#acf6995168019518d6e72fbfa2c261d35',1,'CPPCli::NewSchedule::UseAllDataSources()'],['../class_c_p_p_cli_1_1_schedule.html#a48419bf38b198f40bb507589f8c5f952',1,'CPPCli::Schedule::UseAllDataSources()']]],
+  ['useaudiblenotification',['UseAudibleNotification',['../class_c_p_p_cli_1_1_new_situation.html#a9e6fac579885f5fefac02aa85f434ee9',1,'CPPCli::NewSituation::UseAudibleNotification()'],['../class_c_p_p_cli_1_1_situation.html#a8abfd2df362e9ab7f725700e9bdeb6f6',1,'CPPCli::Situation::UseAudibleNotification()']]],
+  ['used',['Used',['../class_c_p_p_cli_1_1_license_feature.html#a6d0f1841140a4e888ff2afae687df6fe',1,'CPPCli::LicenseFeature']]],
+  ['username',['Username',['../class_c_p_p_cli_1_1_device.html#a498469d0ff8734c22cf7f1e6d2441a5a',1,'CPPCli::Device::Username()'],['../class_c_p_p_cli_1_1_new_device.html#ae825cc7fad84f2a131218225054aede9',1,'CPPCli::NewDevice::Username()']]],
+  ['users',['Users',['../class_c_p_p_cli_1_1_role.html#a3535c025b688aa32bb2f107687f16901',1,'CPPCli::Role']]]
 ];

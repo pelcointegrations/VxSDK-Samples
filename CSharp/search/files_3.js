@@ -8,6 +8,7 @@ var searchData=
   ['datasession_2eh',['DataSession.h',['../../CSharpWrapper/_data_session_8h.html',1,'']]],
   ['datasource_2ecpp',['DataSource.cpp',['../../CSharpWrapper/_data_source_8cpp.html',1,'']]],
   ['datasource_2eh',['DataSource.h',['../../CSharpWrapper/_data_source_8h.html',1,'']]],
+  ['datasourcemanagerform_2ecs',['DataSourceManagerForm.cs',['../_data_source_manager_form_8cs.html',1,'']]],
   ['datastorage_2ecpp',['DataStorage.cpp',['../../CSharpWrapper/_data_storage_8cpp.html',1,'']]],
   ['datastorage_2eh',['DataStorage.h',['../../CSharpWrapper/_data_storage_8h.html',1,'']]],
   ['datastoragedetailsform_2ecs',['DataStorageDetailsForm.cs',['../_data_storage_details_form_8cs.html',1,'']]],

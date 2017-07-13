@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">VideoXpert SDK
-   &#160;<span id="projectnumber">1.2</span>
+   &#160;<span id="projectnumber">2.0</span>
    </div>
    <div id="projectbrief">A software development kit for third party vendors to integrate with the VideoXpert platform</div>
   </td>
@@ -140,6 +140,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aebf0a75552877396bd3ab5bb86d06ff7"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_ptz_controller.html#aebf0a75552877396bd3ab5bb86d06ff7">AbsoluteZoom</a> (int positionZ) const  =0</td></tr>
 <tr class="memdesc:aebf0a75552877396bd3ab5bb86d06ff7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zooms to the absolute position of the given coordinates.  <a href="#aebf0a75552877396bd3ab5bb86d06ff7">More...</a><br /></td></tr>
 <tr class="separator:aebf0a75552877396bd3ab5bb86d06ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0334abba7d87227bc57e17dc6e5562d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_ptz_controller.html#af0334abba7d87227bc57e17dc6e5562d">AddPreset</a> (int index) const  =0</td></tr>
+<tr class="memdesc:af0334abba7d87227bc57e17dc6e5562d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new preset using the current PTZ spatial coordinates.  <a href="#af0334abba7d87227bc57e17dc6e5562d">More...</a><br /></td></tr>
+<tr class="separator:af0334abba7d87227bc57e17dc6e5562d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c0105bc04e5487c503ca9d7fc58b878"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_ptz_controller.html#a8c0105bc04e5487c503ca9d7fc58b878">ContinuousFocus</a> (<a class="el" href="struct_vx_sdk_1_1_vx_focus_direction.html#af17787426aec4e2d1a3fec9f689218f1">VxFocusDirection::Value</a> nearFar) const  =0</td></tr>
 <tr class="memdesc:a8c0105bc04e5487c503ca9d7fc58b878"><td class="mdescLeft">&#160;</td><td class="mdescRight">Continuously focuses near or far.  <a href="#a8c0105bc04e5487c503ca9d7fc58b878">More...</a><br /></td></tr>
 <tr class="separator:a8c0105bc04e5487c503ca9d7fc58b878"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,6 +155,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a527e9e41e5537828faab039444b3343d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_ptz_controller.html#a527e9e41e5537828faab039444b3343d">Delete</a> () const  =0</td></tr>
 <tr class="memdesc:a527e9e41e5537828faab039444b3343d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes this instance.  <a href="#a527e9e41e5537828faab039444b3343d">More...</a><br /></td></tr>
 <tr class="separator:a527e9e41e5537828faab039444b3343d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa20fc87169a65e810977d9af9a246862"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_ptz_controller.html#aa20fc87169a65e810977d9af9a246862">DeletePreset</a> (<a class="el" href="struct_vx_sdk_1_1_i_vx_preset.html">IVxPreset</a> &amp;preset) const  =0</td></tr>
+<tr class="memdesc:aa20fc87169a65e810977d9af9a246862"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes a preset from the system.  <a href="#aa20fc87169a65e810977d9af9a246862">More...</a><br /></td></tr>
+<tr class="separator:aa20fc87169a65e810977d9af9a246862"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad41b41740cee54b2e56bcd031456fe75"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_ptz_controller.html#ad41b41740cee54b2e56bcd031456fe75">GetPatterns</a> (<a class="el" href="struct_vx_sdk_1_1_vx_collection.html">VxCollection</a>&lt; <a class="el" href="struct_vx_sdk_1_1_i_vx_pattern.html">IVxPattern</a> ** &gt; &amp;patternCollection) const  =0</td></tr>
 <tr class="memdesc:ad41b41740cee54b2e56bcd031456fe75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the available patterns.  <a href="#ad41b41740cee54b2e56bcd031456fe75">More...</a><br /></td></tr>
 <tr class="separator:ad41b41740cee54b2e56bcd031456fe75"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,6 +167,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aafb7d2e038dc0fa6c01d3e7c2373ded2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_ptz_controller.html#aafb7d2e038dc0fa6c01d3e7c2373ded2">GetPresets</a> (<a class="el" href="struct_vx_sdk_1_1_vx_collection.html">VxCollection</a>&lt; <a class="el" href="struct_vx_sdk_1_1_i_vx_preset.html">IVxPreset</a> ** &gt; &amp;presetCollection) const  =0</td></tr>
 <tr class="memdesc:aafb7d2e038dc0fa6c01d3e7c2373ded2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the available presets.  <a href="#aafb7d2e038dc0fa6c01d3e7c2373ded2">More...</a><br /></td></tr>
 <tr class="separator:aafb7d2e038dc0fa6c01d3e7c2373ded2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad697dae97f908c15f9f1a60847a9dfa1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_ptz_controller.html#ad697dae97f908c15f9f1a60847a9dfa1">GetPtzLimits</a> (<a class="el" href="struct_vx_sdk_1_1_vx_ptz_limits.html">VxPtzLimits</a> *&amp;ptzLimits) const  =0</td></tr>
+<tr class="memdesc:ad697dae97f908c15f9f1a60847a9dfa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value limits for this PTZ controller.  <a href="#ad697dae97f908c15f9f1a60847a9dfa1">More...</a><br /></td></tr>
+<tr class="separator:ad697dae97f908c15f9f1a60847a9dfa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93ea89980aa5c6136976ffdc5e858c4d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_ptz_controller.html#a93ea89980aa5c6136976ffdc5e858c4d">GetPtzLock</a> (<a class="el" href="struct_vx_sdk_1_1_i_vx_ptz_lock.html">IVxPtzLock</a> *&amp;ptzLock) const  =0</td></tr>
 <tr class="memdesc:a93ea89980aa5c6136976ffdc5e858c4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the <a class="el" href="struct_vx_sdk_1_1_i_vx_ptz_lock.html" title="Represents a lock for a PTZ controller. ">IVxPtzLock</a> for this <a class="el" href="struct_vx_sdk_1_1_i_vx_ptz_controller.html" title="Represents a controller for a device that has pan, tilt, and/or zoom functionality. ">IVxPtzController</a>.  <a href="#a93ea89980aa5c6136976ffdc5e858c4d">More...</a><br /></td></tr>
 <tr class="separator:a93ea89980aa5c6136976ffdc5e858c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,9 +185,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7f42591d6dea743e62a73c1e5f151fcc"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_ptz_controller.html#a7f42591d6dea743e62a73c1e5f151fcc">RelativePercentageMove</a> (int percentageX, int percentageY) const  =0</td></tr>
 <tr class="memdesc:a7f42591d6dea743e62a73c1e5f151fcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the camera position within a percentage relative to the device’s current field of view.  <a href="#a7f42591d6dea743e62a73c1e5f151fcc">More...</a><br /></td></tr>
 <tr class="separator:a7f42591d6dea743e62a73c1e5f151fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affdbcd95d33618e5842951001966e2a4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_ptz_controller.html#affdbcd95d33618e5842951001966e2a4">RepositionPreset</a> (<a class="el" href="struct_vx_sdk_1_1_i_vx_preset.html">IVxPreset</a> &amp;preset) const  =0</td></tr>
+<tr class="memdesc:affdbcd95d33618e5842951001966e2a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Repositions a preset to the current PTZ spatial coordinates.  <a href="#affdbcd95d33618e5842951001966e2a4">More...</a><br /></td></tr>
+<tr class="separator:affdbcd95d33618e5842951001966e2a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a8d4b3d627cda6b1d68aa3491c5687a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_ptz_controller.html#a1a8d4b3d627cda6b1d68aa3491c5687a">TriggerPattern</a> (<a class="el" href="struct_vx_sdk_1_1_i_vx_pattern.html">IVxPattern</a> &amp;pattern) const  =0</td></tr>
 <tr class="memdesc:a1a8d4b3d627cda6b1d68aa3491c5687a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggers a pattern.  <a href="#a1a8d4b3d627cda6b1d68aa3491c5687a">More...</a><br /></td></tr>
 <tr class="separator:a1a8d4b3d627cda6b1d68aa3491c5687a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0cf6db43edf55f97cfcbe6b585e0439"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_ptz_controller.html#ac0cf6db43edf55f97cfcbe6b585e0439">TriggerPreset</a> (int index) const  =0</td></tr>
+<tr class="memdesc:ac0cf6db43edf55f97cfcbe6b585e0439"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggers a preset by index.  <a href="#ac0cf6db43edf55f97cfcbe6b585e0439">More...</a><br /></td></tr>
+<tr class="separator:ac0cf6db43edf55f97cfcbe6b585e0439"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2b9bf465c57c25738f33b2ad8fa1523"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_ptz_controller.html#ad2b9bf465c57c25738f33b2ad8fa1523">TriggerPreset</a> (<a class="el" href="struct_vx_sdk_1_1_i_vx_preset.html">IVxPreset</a> &amp;preset) const  =0</td></tr>
 <tr class="memdesc:ad2b9bf465c57c25738f33b2ad8fa1523"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggers a preset.  <a href="#ad2b9bf465c57c25738f33b2ad8fa1523">More...</a><br /></td></tr>
 <tr class="separator:ad2b9bf465c57c25738f33b2ad8fa1523"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -204,7 +219,7 @@ Protected Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a controller for a device that has pan, tilt, and/or zoom functionality. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_ptz_controller_8h_source.html#l00016">16</a> of file <a class="el" href="_i_vx_ptz_controller_8h_source.html">IVxPtzController.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_ptz_controller_8h_source.html#l00017">17</a> of file <a class="el" href="_i_vx_ptz_controller_8h_source.html">IVxPtzController.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a864a836bb1c5e53e1c4e0b842b02dc62"></a>
 <div class="memitem">
@@ -400,6 +415,39 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="af0334abba7d87227bc57e17dc6e5562d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxPtzController::AddPreset </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a new preset using the current PTZ spatial coordinates. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>The unique index value for the new preset.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of the request.</dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a5504257ccd348e696e9cf98d8ace14d5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -423,9 +471,9 @@ Protected Member Functions</h2></td></tr>
 
 <p>Clears this instance. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_ptz_controller_8h_source.html#l00172">172</a> of file <a class="el" href="_i_vx_ptz_controller_8h_source.html">IVxPtzController.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                     {</div><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_ptz_controller.html#ac2f8fe6f8aa429843d3316acfe259bd2">isLocked</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_ptz_controller.html#af2519138541a43f9ae4d6af2c5bb6f6b">lockExpireTime</a> = 0;</div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        }</div><div class="ttc" id="struct_vx_sdk_1_1_i_vx_ptz_controller_html_ac2f8fe6f8aa429843d3316acfe259bd2"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_ptz_controller.html#ac2f8fe6f8aa429843d3316acfe259bd2">VxSdk::IVxPtzController::isLocked</a></div><div class="ttdeci">bool isLocked</div><div class="ttdoc">Indicates whether the PTZ control is locked. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_ptz_controller_8h_source.html#l00162">IVxPtzController.h:162</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_ptz_controller_html_af2519138541a43f9ae4d6af2c5bb6f6b"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_ptz_controller.html#af2519138541a43f9ae4d6af2c5bb6f6b">VxSdk::IVxPtzController::lockExpireTime</a></div><div class="ttdeci">int lockExpireTime</div><div class="ttdoc">The time remaining (in seconds) until the PTZ lock expires. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_ptz_controller_8h_source.html#l00166">IVxPtzController.h:166</a></div></div>
+<p>Definition at line <a class="el" href="_i_vx_ptz_controller_8h_source.html#l00203">203</a> of file <a class="el" href="_i_vx_ptz_controller_8h_source.html">IVxPtzController.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                     {</div><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_ptz_controller.html#ac2f8fe6f8aa429843d3316acfe259bd2">isLocked</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_ptz_controller.html#af2519138541a43f9ae4d6af2c5bb6f6b">lockExpireTime</a> = 0;</div><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        }</div><div class="ttc" id="struct_vx_sdk_1_1_i_vx_ptz_controller_html_ac2f8fe6f8aa429843d3316acfe259bd2"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_ptz_controller.html#ac2f8fe6f8aa429843d3316acfe259bd2">VxSdk::IVxPtzController::isLocked</a></div><div class="ttdeci">bool isLocked</div><div class="ttdoc">Indicates whether the PTZ control is locked. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_ptz_controller_8h_source.html#l00193">IVxPtzController.h:193</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_ptz_controller_html_af2519138541a43f9ae4d6af2c5bb6f6b"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_ptz_controller.html#af2519138541a43f9ae4d6af2c5bb6f6b">VxSdk::IVxPtzController::lockExpireTime</a></div><div class="ttdeci">int lockExpireTime</div><div class="ttdoc">The time remaining (in seconds) until the PTZ lock expires. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_ptz_controller_8h_source.html#l00197">IVxPtzController.h:197</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -572,6 +620,39 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aa20fc87169a65e810977d9af9a246862"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxPtzController::DeletePreset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_vx_sdk_1_1_i_vx_preset.html">IVxPreset</a> &amp;&#160;</td>
+          <td class="paramname"><em>preset</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deletes a preset from the system. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">preset</td><td>The <a class="el" href="struct_vx_sdk_1_1_i_vx_preset.html" title="Represents a predefined point that a PTZ device can PTZ to when triggered. ">IVxPreset</a> to delete.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of the request.</dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ad41b41740cee54b2e56bcd031456fe75"></a>
 <div class="memitem">
 <div class="memproto">
@@ -684,6 +765,39 @@ Protected Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">presetCollection</td><td>A <a class="el" href="struct_vx_sdk_1_1_vx_collection.html" title="Represents a collection of resources. ">VxCollection</a> of the associated presets.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of the request.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad697dae97f908c15f9f1a60847a9dfa1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxPtzController::GetPtzLimits </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_vx_sdk_1_1_vx_ptz_limits.html">VxPtzLimits</a> *&amp;&#160;</td>
+          <td class="paramname"><em>ptzLimits</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the value limits for this PTZ controller. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ptzLimits</td><td>The PTZ limits.</td></tr>
   </table>
   </dd>
 </dl>
@@ -872,6 +986,39 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="affdbcd95d33618e5842951001966e2a4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxPtzController::RepositionPreset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_vx_sdk_1_1_i_vx_preset.html">IVxPreset</a> &amp;&#160;</td>
+          <td class="paramname"><em>preset</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Repositions a preset to the current PTZ spatial coordinates. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">preset</td><td>The <a class="el" href="struct_vx_sdk_1_1_i_vx_preset.html" title="Represents a predefined point that a PTZ device can PTZ to when triggered. ">IVxPreset</a> to reposition.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of the request.</dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a1a8d4b3d627cda6b1d68aa3491c5687a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -898,6 +1045,39 @@ Protected Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pattern</td><td>The <a class="el" href="struct_vx_sdk_1_1_i_vx_pattern.html" title="Represents a predefined sequence of movement that a PTZ device can perform when triggered. A running pattern will be halted upon any other PTZ request. ">IVxPattern</a> to trigger.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of the request.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac0cf6db43edf55f97cfcbe6b585e0439"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxPtzController::TriggerPreset </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Triggers a preset by index. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>The index of the preset to trigger.</td></tr>
   </table>
   </dd>
 </dl>
@@ -977,7 +1157,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Indicates whether the PTZ control is locked. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_ptz_controller_8h_source.html#l00162">162</a> of file <a class="el" href="_i_vx_ptz_controller_8h_source.html">IVxPtzController.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_ptz_controller_8h_source.html#l00193">193</a> of file <a class="el" href="_i_vx_ptz_controller_8h_source.html">IVxPtzController.h</a>.</p>
 
 </div>
 </div>
@@ -993,12 +1173,12 @@ Protected Member Functions</h2></td></tr>
 
 <p>The time remaining (in seconds) until the PTZ lock expires. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_ptz_controller_8h_source.html#l00166">166</a> of file <a class="el" href="_i_vx_ptz_controller_8h_source.html">IVxPtzController.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_ptz_controller_8h_source.html#l00197">197</a> of file <a class="el" href="_i_vx_ptz_controller_8h_source.html">IVxPtzController.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>C:/Users/zachm/Git/vxsdk/VxSdk/Include/<a class="el" href="_i_vx_ptz_controller_8h_source.html">IVxPtzController.h</a></li>
+<li>C:/Git/VXSDK_M3/VxSdk/Include/<a class="el" href="_i_vx_ptz_controller_8h_source.html">IVxPtzController.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

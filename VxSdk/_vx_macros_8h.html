@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>VideoXpert SDK: C:/Users/zachm/Git/vxsdk/VxSdk/Include/VxMacros.h File Reference</title>
+<title>VideoXpert SDK: C:/Git/VXSDK_M3/VxSdk/Include/VxMacros.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">VideoXpert SDK
-   &#160;<span id="projectnumber">1.2</span>
+   &#160;<span id="projectnumber">2.0</span>
    </div>
    <div id="projectbrief">A software development kit for third party vendors to integrate with the VideoXpert platform</div>
   </td>
@@ -121,8 +121,14 @@ $(document).ready(function(){initNavTree('_vx_macros_8h.html','');});
 Macros</h2></td></tr>
 <tr class="memitem:abbaccfbed35b945162c27ef6d3748e77"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_vx_macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a></td></tr>
 <tr class="separator:abbaccfbed35b945162c27ef6d3748e77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcf0ad5fbc999590c972c1ffa2d6ac7e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_vx_macros_8h.html#adcf0ad5fbc999590c972c1ffa2d6ac7e">VXAPI</a>&#160;&#160;&#160;__declspec(dllimport)</td></tr>
+<tr class="memitem:adcf0ad5fbc999590c972c1ffa2d6ac7e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_vx_macros_8h.html#adcf0ad5fbc999590c972c1ffa2d6ac7e">VXAPI</a>&#160;&#160;&#160;__attribute__((visibility(&quot;default&quot;)))</td></tr>
 <tr class="separator:adcf0ad5fbc999590c972c1ffa2d6ac7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeac2ce0783259ec62587bbe1a605ab75"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_vx_macros_8h.html#aeac2ce0783259ec62587bbe1a605ab75">strncpy_s</a>(dest,  destsz,  source,  count)    &#160;&#160;&#160;strncpy( (dest), (source), (count) )</td></tr>
+<tr class="separator:aeac2ce0783259ec62587bbe1a605ab75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a745dbcb04bfe1e000a73f8049314e30b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_vx_macros_8h.html#a745dbcb04bfe1e000a73f8049314e30b">localtime_s</a>(time,  result)                              &#160;&#160;&#160;localtime( (result) )</td></tr>
+<tr class="separator:a745dbcb04bfe1e000a73f8049314e30b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff6dacda5062766d5e4287de4290b878"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_vx_macros_8h.html#aff6dacda5062766d5e4287de4290b878">gmtime_s</a>(time,  result)                                    &#160;&#160;&#160;gmtime( (result) )</td></tr>
+<tr class="separator:aff6dacda5062766d5e4287de4290b878"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a351a251b4c37db35856809bb32aa8e4e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(src)&#160;&#160;&#160;memset(src, 0, sizeof(src));</td></tr>
 <tr class="separator:a351a251b4c37db35856809bb32aa8e4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -141,17 +147,113 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aff6dacda5062766d5e4287de4290b878"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define gmtime_s</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">time, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">result&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;gmtime( (result) )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_vx_macros_8h_source.html#l00022">22</a> of file <a class="el" href="_vx_macros_8h_source.html">VxMacros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a745dbcb04bfe1e000a73f8049314e30b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define localtime_s</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">time, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">result&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;localtime( (result) )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_vx_macros_8h_source.html#l00021">21</a> of file <a class="el" href="_vx_macros_8h_source.html">VxMacros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aeac2ce0783259ec62587bbe1a605ab75"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define strncpy_s</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">dest, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">destsz, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">source, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">count&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;strncpy( (dest), (source), (count) )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_vx_macros_8h_source.html#l00020">20</a> of file <a class="el" href="_vx_macros_8h_source.html">VxMacros.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="adcf0ad5fbc999590c972c1ffa2d6ac7e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define VXAPI&#160;&#160;&#160;__declspec(dllimport)</td>
+          <td class="memname">#define VXAPI&#160;&#160;&#160;__attribute__((visibility(&quot;default&quot;)))</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_vx_macros_8h_source.html#l00015">15</a> of file <a class="el" href="_vx_macros_8h_source.html">VxMacros.h</a>.</p>
+<p>Definition at line <a class="el" href="_vx_macros_8h_source.html#l00019">19</a> of file <a class="el" href="_vx_macros_8h_source.html">VxMacros.h</a>.</p>
 
 </div>
 </div>
@@ -169,7 +271,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_vx_macros_8h_source.html#l00018">18</a> of file <a class="el" href="_vx_macros_8h_source.html">VxMacros.h</a>.</p>
+<p>Definition at line <a class="el" href="_vx_macros_8h_source.html#l00025">25</a> of file <a class="el" href="_vx_macros_8h_source.html">VxMacros.h</a>.</p>
 
 </div>
 </div>
@@ -178,7 +280,7 @@ Macros</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_84d4be9bd5d6edb8d83eed2da4af7b18.html">vxsdk</a></li><li class="navelem"><a class="el" href="dir_94057d50c4a871bf80721f14c663150b.html">VxSdk</a></li><li class="navelem"><a class="el" href="dir_1fb81e31d44af5ddc69ca0a2d8aed69c.html">Include</a></li><li class="navelem"><a class="el" href="_vx_macros_8h.html">VxMacros.h</a></li>
+    <li class="navelem"><a class="el" href="dir_c093de07f74d989e54ce8c06a3a92c58.html">VXSDK_M3</a></li><li class="navelem"><a class="el" href="dir_4a573031e2b5876fda5cb60dcea11d2b.html">VxSdk</a></li><li class="navelem"><a class="el" href="dir_0a8b1d57e8d2d91fe66f85cdab45b5d0.html">Include</a></li><li class="navelem"><a class="el" href="_vx_macros_8h.html">VxMacros.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>

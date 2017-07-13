@@ -32,12 +32,13 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_i_vx_bookmark_8h.html",
-"struct_vx_sdk_1_1_i_vx_configuration_1_1_cluster.html#a650660fd680771eb03e5a19f017e5682",
-"struct_vx_sdk_1_1_i_vx_marker.html#aeb06e961fda8f6d60842018744e85f56",
-"struct_vx_sdk_1_1_i_vx_system.html#a89441c2a97ea14bff936661dd27631fc",
-"struct_vx_sdk_1_1_vx_login_info.html#a978a113dd955c9c4f470565541b929b2",
-"struct_vx_sdk_1_1_vx_report_content.html#af254bfc130407d8fae7e1550cd736bbdab21371da0b4dd33592fbb85a77f5414d"
+"_i_vx_alarm_input_8h.html",
+"struct_vx_sdk_1_1_i_vx_alarm_input.html#a9805e2e2dc4e6acf49907ec4e5042535",
+"struct_vx_sdk_1_1_i_vx_event.html#ad68a4a2ee28582874d56822a17519abc",
+"struct_vx_sdk_1_1_i_vx_schedule.html#aae0ab9794585fae9a21d84f8423c9f79",
+"struct_vx_sdk_1_1_vx_collection.html#aea5b5c45fbe4a35fcdbce5931df8a04e",
+"struct_vx_sdk_1_1_vx_new_event.html#ae448a44b3cffb676db7c34a6e65c8661",
+"struct_vx_sdk_1_1_vx_report_content.html#af254bfc130407d8fae7e1550cd736bbdafa4afb21336f7aaf7d6c38325e2bf49e"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

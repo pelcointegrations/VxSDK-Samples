@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>VideoXpert SDK: C:/Users/zachm/Git/vxsdk/VxSdk/Include/VxSdk.h File Reference</title>
+<title>VideoXpert SDK: C:/Git/VXSDK_M3/VxSdk/Include/VxSdk.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">VideoXpert SDK
-   &#160;<span id="projectnumber">1.2</span>
+   &#160;<span id="projectnumber">2.0</span>
    </div>
    <div id="projectbrief">A software development kit for third party vendors to integrate with the VideoXpert platform</div>
   </td>
@@ -119,6 +119,7 @@ $(document).ready(function(){initNavTree('_vx_sdk_8h.html','');});
 <code>#include &quot;<a class="el" href="_vx_utilities_8h_source.html">VxUtilities.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_vx_collection_8h_source.html">VxCollection.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_vx_collection_filter_8h_source.html">VxCollectionFilter.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_vx_internal_event_8h_source.html">VxInternalEvent.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_vx_kv_object_8h_source.html">VxKvObject.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_vx_login_info_8h_source.html">VxLoginInfo.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_vx_new_bookmark_8h_source.html">VxNewBookmark.h</a>&quot;</code><br />
@@ -129,6 +130,7 @@ $(document).ready(function(){initNavTree('_vx_sdk_8h.html','');});
 <code>#include &quot;<a class="el" href="_vx_new_event_8h_source.html">VxNewEvent.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_vx_new_export_8h_source.html">VxNewExport.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_vx_new_export_clip_8h_source.html">VxNewExportClip.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_vx_new_manual_recording_8h_source.html">VxNewManualRecording.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_vx_new_marker_8h_source.html">VxNewMarker.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_vx_new_monitor_8h_source.html">VxNewMonitor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_vx_new_notification_8h_source.html">VxNewNotification.h</a>&quot;</code><br />
@@ -140,6 +142,7 @@ $(document).ready(function(){initNavTree('_vx_sdk_8h.html','');});
 <code>#include &quot;<a class="el" href="_vx_new_tag_8h_source.html">VxNewTag.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_vx_new_user_8h_source.html">VxNewUser.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_vx_snapshot_filter_8h_source.html">VxSnapshotFilter.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_i_vx_alarm_input_8h_source.html">IVxAlarmInput.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_i_vx_bookmark_8h_source.html">IVxBookmark.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_i_vx_clip_8h_source.html">IVxClip.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_i_vx_data_interface_8h_source.html">IVxDataInterface.h</a>&quot;</code><br />
@@ -156,16 +159,20 @@ $(document).ready(function(){initNavTree('_vx_sdk_8h.html','');});
 <code>#include &quot;<a class="el" href="_i_vx_export_clip_8h_source.html">IVxExportClip.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_i_vx_license_8h_source.html">IVxLicense.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_i_vx_license_feature_8h_source.html">IVxLicenseFeature.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_i_vx_manual_recording_8h_source.html">IVxManualRecording.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_i_vx_marker_8h_source.html">IVxMarker.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_i_vx_monitor_8h_source.html">IVxMonitor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_i_vx_monitor_cell_8h_source.html">IVxMonitorCell.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_i_vx_notification_8h_source.html">IVxNotification.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_i_vx_quick_log_8h_source.html">IVxQuickLog.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_i_vx_quick_report_8h_source.html">IVxQuickReport.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_i_vx_pattern_8h_source.html">IVxPattern.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_i_vx_preset_8h_source.html">IVxPreset.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_i_vx_ptz_controller_8h_source.html">IVxPtzController.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_i_vx_ptz_lock_8h_source.html">IVxPtzLock.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_i_vx_relay_output_8h_source.html">IVxRelayOutput.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_i_vx_resource_lock_8h_source.html">IVxResourceLock.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_i_vx_resource_rel_8h_source.html">IVxResourceRel.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_i_vx_role_8h_source.html">IVxRole.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_i_vx_schedule_8h_source.html">IVxSchedule.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_i_vx_schedule_trigger_8h_source.html">IVxScheduleTrigger.h</a>&quot;</code><br />
@@ -183,9 +190,6 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad02dc2992da723f3c6ed634f320c29cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_vx_macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="_vx_macros_8h.html#adcf0ad5fbc999590c972c1ffa2d6ac7e">VXAPI</a> VxResult::Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vx_sdk.html#ad02dc2992da723f3c6ed634f320c29cc">VxSdk::VxInit</a> (const char *key)</td></tr>
-<tr class="memdesc:ad02dc2992da723f3c6ed634f320c29cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the SDK.  <a href="namespace_vx_sdk.html#ad02dc2992da723f3c6ed634f320c29cc">More...</a><br /></td></tr>
-<tr class="separator:ad02dc2992da723f3c6ed634f320c29cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc82da866a8349ce0cc529ddfecffa1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_vx_macros_8h.html#abbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a> <a class="el" href="_vx_macros_8h.html#adcf0ad5fbc999590c972c1ffa2d6ac7e">VXAPI</a> VxResult::Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vx_sdk.html#adc82da866a8349ce0cc529ddfecffa1b">VxSdk::VxSystemLogin</a> (const VxLoginInfo &amp;loginInfo, IVxSystem *&amp;system)</td></tr>
 <tr class="memdesc:adc82da866a8349ce0cc529ddfecffa1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs in to the VideoXpert system.  <a href="namespace_vx_sdk.html#adc82da866a8349ce0cc529ddfecffa1b">More...</a><br /></td></tr>
 <tr class="separator:adc82da866a8349ce0cc529ddfecffa1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -204,7 +208,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_84d4be9bd5d6edb8d83eed2da4af7b18.html">vxsdk</a></li><li class="navelem"><a class="el" href="dir_94057d50c4a871bf80721f14c663150b.html">VxSdk</a></li><li class="navelem"><a class="el" href="dir_1fb81e31d44af5ddc69ca0a2d8aed69c.html">Include</a></li><li class="navelem"><a class="el" href="_vx_sdk_8h.html">VxSdk.h</a></li>
+    <li class="navelem"><a class="el" href="dir_c093de07f74d989e54ce8c06a3a92c58.html">VXSDK_M3</a></li><li class="navelem"><a class="el" href="dir_4a573031e2b5876fda5cb60dcea11d2b.html">VxSdk</a></li><li class="navelem"><a class="el" href="dir_0a8b1d57e8d2d91fe66f85cdab45b5d0.html">Include</a></li><li class="navelem"><a class="el" href="_vx_sdk_8h.html">VxSdk.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>

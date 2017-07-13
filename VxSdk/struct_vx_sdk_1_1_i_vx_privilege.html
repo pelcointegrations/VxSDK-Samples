@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">VideoXpert SDK
-   &#160;<span id="projectnumber">1.2</span>
+   &#160;<span id="projectnumber">2.0</span>
    </div>
    <div id="projectbrief">A software development kit for third party vendors to integrate with the VideoXpert platform</div>
   </td>
@@ -167,6 +167,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abd416a2889acb726b50a6c29bad5878b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_privilege.html#abd416a2889acb726b50a6c29bad5878b">Refresh</a> ()=0</td></tr>
 <tr class="memdesc:abd416a2889acb726b50a6c29bad5878b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refreshes the member values for this object by retrieving its current information from the VideoXpert system.  <a href="#abd416a2889acb726b50a6c29bad5878b">More...</a><br /></td></tr>
 <tr class="separator:abd416a2889acb726b50a6c29bad5878b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ac7cb2ba9a0e94ea84ea9877bd7f8e2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_privilege.html#a4ac7cb2ba9a0e94ea84ea9877bd7f8e2">SetExcludeRestricted</a> (bool <a class="el" href="struct_vx_sdk_1_1_i_vx_privilege.html#a612f76abad865076beff32931fce6a95">excludeRestricted</a>)=0</td></tr>
+<tr class="memdesc:a4ac7cb2ba9a0e94ea84ea9877bd7f8e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether the privilege is excluded from the associated resources.  <a href="#a4ac7cb2ba9a0e94ea84ea9877bd7f8e2">More...</a><br /></td></tr>
+<tr class="separator:a4ac7cb2ba9a0e94ea84ea9877bd7f8e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64a7e6351c27f44f92d11152165d03ea"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_privilege.html#a64a7e6351c27f44f92d11152165d03ea">SetPriority</a> (int priority) const  =0</td></tr>
 <tr class="memdesc:a64a7e6351c27f44f92d11152165d03ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the relative priority for the privilege, from 1 to 250. Smaller numbers have higher priority than larger numbers (e.g. 1 is the highest priority).  <a href="#a64a7e6351c27f44f92d11152165d03ea">More...</a><br /></td></tr>
 <tr class="separator:a64a7e6351c27f44f92d11152165d03ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -185,6 +188,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a612f76abad865076beff32931fce6a95"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_privilege.html#a612f76abad865076beff32931fce6a95">excludeRestricted</a></td></tr>
+<tr class="memdesc:a612f76abad865076beff32931fce6a95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the privilege is excluded from the associated resources.  <a href="#a612f76abad865076beff32931fce6a95">More...</a><br /></td></tr>
+<tr class="separator:a612f76abad865076beff32931fce6a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0549f65b849d373970f8be204e95063"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_privilege.html#ac0549f65b849d373970f8be204e95063">id</a> [64]</td></tr>
 <tr class="memdesc:ac0549f65b849d373970f8be204e95063"><td class="mdescLeft">&#160;</td><td class="mdescRight">The unique identifier of the privilege.  <a href="#ac0549f65b849d373970f8be204e95063">More...</a><br /></td></tr>
 <tr class="separator:ac0549f65b849d373970f8be204e95063"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -229,12 +235,13 @@ Protected Member Functions</h2></td></tr>
 
 <p>Clears this instance. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_privilege_8h_source.html#l00157">157</a> of file <a class="el" href="_i_vx_privilege_8h_source.html">IVxPrivilege.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                     {</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<span class="keywordtype">id</span>);</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_privilege.html#a3bab913a758abf14b763d2ece5e21f67">permissionId</a> = <a class="code" href="struct_vx_sdk_1_1_vx_permission_id.html#a0f2ce8cd567e2e0c03d373c0f791a07fa9d38cac99e4b44e965530608a77f0481">VxPermissionId::kUnknown</a>;</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_privilege.html#a6af1316af5512f033b6f1391d2791ca1">resourceType</a> = <a class="code" href="struct_vx_sdk_1_1_vx_resource_type.html#ab5e03cec1884cc4b76ac108659a0d3b2aec04288bacbae566d96b2ffd868419fa">VxResourceType::kUnknown</a>;</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        }</div><div class="ttc" id="struct_vx_sdk_1_1_i_vx_privilege_html_a6af1316af5512f033b6f1391d2791ca1"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_privilege.html#a6af1316af5512f033b6f1391d2791ca1">VxSdk::IVxPrivilege::resourceType</a></div><div class="ttdeci">VxResourceType::Value resourceType</div><div class="ttdoc">The resource type supported by this privilege, if any. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_privilege_8h_source.html#l00151">IVxPrivilege.h:151</a></div></div>
-<div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00018">VxMacros.h:18</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_vx_resource_type_html_ab5e03cec1884cc4b76ac108659a0d3b2aec04288bacbae566d96b2ffd868419fa"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_resource_type.html#ab5e03cec1884cc4b76ac108659a0d3b2aec04288bacbae566d96b2ffd868419fa">VxSdk::VxResourceType::kUnknown</a></div><div class="ttdoc">An error or unknown value was returned.</div><div class="ttdef"><b>Definition:</b> <a href="_vx_primitives_8h_source.html#l00528">VxPrimitives.h:528</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_vx_permission_id_html_a0f2ce8cd567e2e0c03d373c0f791a07fa9d38cac99e4b44e965530608a77f0481"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_permission_id.html#a0f2ce8cd567e2e0c03d373c0f791a07fa9d38cac99e4b44e965530608a77f0481">VxSdk::VxPermissionId::kUnknown</a></div><div class="ttdoc">An error or unknown value was returned.</div><div class="ttdef"><b>Definition:</b> <a href="_vx_primitives_8h_source.html#l00386">VxPrimitives.h:386</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_privilege_html_a3bab913a758abf14b763d2ece5e21f67"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_privilege.html#a3bab913a758abf14b763d2ece5e21f67">VxSdk::IVxPrivilege::permissionId</a></div><div class="ttdeci">VxPermissionId::Value permissionId</div><div class="ttdoc">The permission being granted by this privilege. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_privilege_8h_source.html#l00147">IVxPrivilege.h:147</a></div></div>
+<p>Definition at line <a class="el" href="_i_vx_privilege_8h_source.html#l00167">167</a> of file <a class="el" href="_i_vx_privilege_8h_source.html">IVxPrivilege.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                     {</div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_privilege.html#a612f76abad865076beff32931fce6a95">excludeRestricted</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<span class="keywordtype">id</span>);</div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_privilege.html#a3bab913a758abf14b763d2ece5e21f67">permissionId</a> = <a class="code" href="struct_vx_sdk_1_1_vx_permission_id.html#a0f2ce8cd567e2e0c03d373c0f791a07fa9d38cac99e4b44e965530608a77f0481">VxPermissionId::kUnknown</a>;</div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_privilege.html#a6af1316af5512f033b6f1391d2791ca1">resourceType</a> = <a class="code" href="struct_vx_sdk_1_1_vx_resource_type.html#ab5e03cec1884cc4b76ac108659a0d3b2aec04288bacbae566d96b2ffd868419fa">VxResourceType::kUnknown</a>;</div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        }</div><div class="ttc" id="struct_vx_sdk_1_1_i_vx_privilege_html_a6af1316af5512f033b6f1391d2791ca1"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_privilege.html#a6af1316af5512f033b6f1391d2791ca1">VxSdk::IVxPrivilege::resourceType</a></div><div class="ttdeci">VxResourceType::Value resourceType</div><div class="ttdoc">The resource type supported by this privilege, if any. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_privilege_8h_source.html#l00161">IVxPrivilege.h:161</a></div></div>
+<div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00025">VxMacros.h:25</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_privilege_html_a612f76abad865076beff32931fce6a95"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_privilege.html#a612f76abad865076beff32931fce6a95">VxSdk::IVxPrivilege::excludeRestricted</a></div><div class="ttdeci">bool excludeRestricted</div><div class="ttdoc">Indicates whether the privilege is excluded from the associated resources. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_privilege_8h_source.html#l00149">IVxPrivilege.h:149</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_resource_type_html_ab5e03cec1884cc4b76ac108659a0d3b2aec04288bacbae566d96b2ffd868419fa"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_resource_type.html#ab5e03cec1884cc4b76ac108659a0d3b2aec04288bacbae566d96b2ffd868419fa">VxSdk::VxResourceType::kUnknown</a></div><div class="ttdoc">An error or unknown value was returned.</div><div class="ttdef"><b>Definition:</b> <a href="_vx_primitives_8h_source.html#l00678">VxPrimitives.h:678</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_permission_id_html_a0f2ce8cd567e2e0c03d373c0f791a07fa9d38cac99e4b44e965530608a77f0481"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_permission_id.html#a0f2ce8cd567e2e0c03d373c0f791a07fa9d38cac99e4b44e965530608a77f0481">VxSdk::VxPermissionId::kUnknown</a></div><div class="ttdoc">An error or unknown value was returned.</div><div class="ttdef"><b>Definition:</b> <a href="_vx_primitives_8h_source.html#l00464">VxPrimitives.h:464</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_privilege_html_a3bab913a758abf14b763d2ece5e21f67"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_privilege.html#a3bab913a758abf14b763d2ece5e21f67">VxSdk::IVxPrivilege::permissionId</a></div><div class="ttdeci">VxPermissionId::Value permissionId</div><div class="ttdoc">The permission being granted by this privilege. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_privilege_8h_source.html#l00157">IVxPrivilege.h:157</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -313,7 +320,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the data sources associated with this privilege. </p>
-<p>Available filters: kAllTags, kCapturing, kId, kIp, kModifiedSince, kName, kNumber, kRecording, kState, kType, kUnassigned.</p>
+<p>Available filters: kAllTags, kAllPrivateTags, kModifiedSince.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dataSourceCollection</td><td>The data sources associated with this privilege.</td></tr>
@@ -347,7 +354,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the devices associated with this privilege. </p>
-<p>Available filters: kAllTags, kCommissioned, kId, kIp, kModel, kModifiedSince, kName, kSerial, kState, kType, kVendor, kVersion.</p>
+<p>Available filters: kAllTags, kAllPrivateTags, kModifiedSince.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">deviceCollection</td><td>The devices associated with this privilege.</td></tr>
@@ -381,7 +388,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the users associated with this privilege. </p>
-<p>Available filters: kModifiedSince, kName.</p>
+<p>Available filters: kAllTags, kAllPrivateTags, kModifiedSince.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">userCollection</td><td>The users associated with this privilege.</td></tr>
@@ -481,7 +488,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the data sources not associated with this privilege. </p>
-<p>Available filters: kAllTags, kCapturing, kId, kIp, kModifiedSince, kName, kNumber, kRecording, kState, kType, kUnassigned.</p>
+<p>Available filters: kAllTags, kAllPrivateTags, kModifiedSince.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dataSourceCollection</td><td>The data sources not associated with this privilege.</td></tr>
@@ -515,13 +522,13 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the devices not associated with this privilege. </p>
+<p>Available filters: kAllTags, kAllPrivateTags, kModifiedSince.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">deviceCollection</td><td>The devices not associated with this privilege.</td></tr>
   </table>
   </dd>
 </dl>
-<p>Available filters: kAllTags, kCommissioned, kId, kIp, kModel, kModifiedSince, kName, kSerial, kState, kType, kVendor, kVersion.</p>
 <dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of the request.</dd></dl>
 
 </div>
@@ -549,7 +556,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the users not associated with this privilege. </p>
-<p>Available filters: kModifiedSince, kName.</p>
+<p>Available filters: kAllTags, kAllPrivateTags, kModifiedSince.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">userCollection</td><td>The users not associated with this privilege.</td></tr>
@@ -682,6 +689,39 @@ Protected Member Functions</h2></td></tr>
 
 <p>Refreshes the member values for this object by retrieving its current information from the VideoXpert system. </p>
 <dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of refreshing the member values for this object.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4ac7cb2ba9a0e94ea84ea9877bd7f8e2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">VxResult::Value</a> VxSdk::IVxPrivilege::SetExcludeRestricted </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>excludeRestricted</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets whether the privilege is excluded from the associated resources. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">excludeRestricted</td><td>True to exclude this privilege from associated resources, otherwise false.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_vx_sdk_1_1_vx_result.html#adc2e4ff9e03060a9ed92fdc0121dde26">Result</a> of setting the property.</dd></dl>
 
 </div>
 </div>
@@ -851,6 +891,22 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a612f76abad865076beff32931fce6a95"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool VxSdk::IVxPrivilege::excludeRestricted</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicates whether the privilege is excluded from the associated resources. </p>
+
+<p>Definition at line <a class="el" href="_i_vx_privilege_8h_source.html#l00149">149</a> of file <a class="el" href="_i_vx_privilege_8h_source.html">IVxPrivilege.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ac0549f65b849d373970f8be204e95063"></a>
 <div class="memitem">
 <div class="memproto">
@@ -863,7 +919,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The unique identifier of the privilege. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_privilege_8h_source.html#l00143">143</a> of file <a class="el" href="_i_vx_privilege_8h_source.html">IVxPrivilege.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_privilege_8h_source.html#l00153">153</a> of file <a class="el" href="_i_vx_privilege_8h_source.html">IVxPrivilege.h</a>.</p>
 
 </div>
 </div>
@@ -879,7 +935,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The permission being granted by this privilege. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_privilege_8h_source.html#l00147">147</a> of file <a class="el" href="_i_vx_privilege_8h_source.html">IVxPrivilege.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_privilege_8h_source.html#l00157">157</a> of file <a class="el" href="_i_vx_privilege_8h_source.html">IVxPrivilege.h</a>.</p>
 
 </div>
 </div>
@@ -895,12 +951,12 @@ Protected Member Functions</h2></td></tr>
 
 <p>The resource type supported by this privilege, if any. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_privilege_8h_source.html#l00151">151</a> of file <a class="el" href="_i_vx_privilege_8h_source.html">IVxPrivilege.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_privilege_8h_source.html#l00161">161</a> of file <a class="el" href="_i_vx_privilege_8h_source.html">IVxPrivilege.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>C:/Users/zachm/Git/vxsdk/VxSdk/Include/<a class="el" href="_i_vx_privilege_8h_source.html">IVxPrivilege.h</a></li>
+<li>C:/Git/VXSDK_M3/VxSdk/Include/<a class="el" href="_i_vx_privilege_8h_source.html">IVxPrivilege.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

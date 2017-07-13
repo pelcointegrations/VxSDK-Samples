@@ -28,12 +28,13 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_bookmark_8cpp.html",
-"class_c_p_p_cli_1_1_configuration_1_1_cluster.html#adf7e9ab23b2c42ceb9068daf6647b957",
-"class_c_p_p_cli_1_1_event.html#afd6eaa4d731ac9d12f82b48750970c7f",
-"class_c_p_p_cli_1_1_new_monitor.html#a810e8787fe9e0ae7eafdde4f0ad29b44",
-"class_c_p_p_cli_1_1_quick_report.html#a5b19d9b8636b6337a87ac1c43f348195",
-"class_c_p_p_cli_1_1_v_x_system.html#abbf92e7f5827b3426452b627c9ea1248"
+"_alarm_input_8cpp.html",
+"class_c_p_p_cli_1_1_clip.html#a415b9bba8c69cce01c0c682987af0edc",
+"class_c_p_p_cli_1_1_device.html#a9e9bb567a4d33139f8e874925378503dad2986ac8cb6bd55892099c1ffd6b1f6f",
+"class_c_p_p_cli_1_1_media_event.html#ace96793cf3e296f0300d27b1a60aea1e",
+"class_c_p_p_cli_1_1_pattern.html",
+"class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970caaaa5f5dd29d66359b7b1c9aa545f8a035",
+"class_c_p_p_cli_1_1_v_x_system.html#a70fc853c6bbfbd245f1394b1f6950a55"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

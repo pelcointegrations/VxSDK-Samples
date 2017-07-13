@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">VideoXpert SDK
-   &#160;<span id="projectnumber">1.2</span>
+   &#160;<span id="projectnumber">2.0</span>
    </div>
    <div id="projectbrief">A software development kit for third party vendors to integrate with the VideoXpert platform</div>
   </td>
@@ -127,15 +127,36 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ab51fcf9aca01ba3e7d2ade1ff7e4de75"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_interface.html#ab51fcf9aca01ba3e7d2ade1ff7e4de75">supportsMulticast</a></td></tr>
 <tr class="memdesc:ab51fcf9aca01ba3e7d2ade1ff7e4de75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the interface provides multicast transmission.  <a href="#ab51fcf9aca01ba3e7d2ade1ff7e4de75">More...</a><br /></td></tr>
 <tr class="separator:ab51fcf9aca01ba3e7d2ade1ff7e4de75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cfc1e4c2cb9fea0d97af75f0dc7982a"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_interface.html#a0cfc1e4c2cb9fea0d97af75f0dc7982a">dataEncodingId</a> [64]</td></tr>
+<tr class="memdesc:a0cfc1e4c2cb9fea0d97af75f0dc7982a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The unique identifier for a specific data encoding (based on encoding quality, framerate, and resolution). Multiple identical copies of the data may exist across the system; these will have the same dataEncodingId. This ID may be used when requesting a specific encoding to export, record, playback, etc.  <a href="#a0cfc1e4c2cb9fea0d97af75f0dc7982a">More...</a><br /></td></tr>
+<tr class="separator:a0cfc1e4c2cb9fea0d97af75f0dc7982a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac89a1add775fc1a2309a49d7d9dbb5b6"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_interface.html#ac89a1add775fc1a2309a49d7d9dbb5b6">dataEndpoint</a> [512]</td></tr>
 <tr class="memdesc:ac89a1add775fc1a2309a49d7d9dbb5b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The protocol-specific stream control endpoint URI.  <a href="#ac89a1add775fc1a2309a49d7d9dbb5b6">More...</a><br /></td></tr>
 <tr class="separator:ac89a1add775fc1a2309a49d7d9dbb5b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45d5f2bf9e831f1e52c4f6428e20033c"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_interface.html#a45d5f2bf9e831f1e52c4f6428e20033c">multicastTestIp</a> [64]</td></tr>
 <tr class="memdesc:a45d5f2bf9e831f1e52c4f6428e20033c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The multicast test IP used to test transmission capabilities.  <a href="#a45d5f2bf9e831f1e52c4f6428e20033c">More...</a><br /></td></tr>
 <tr class="separator:a45d5f2bf9e831f1e52c4f6428e20033c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87deca3589ddfc10dbaa2aa3f2efc5c4"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_interface.html#a87deca3589ddfc10dbaa2aa3f2efc5c4">framerate</a></td></tr>
+<tr class="memdesc:a87deca3589ddfc10dbaa2aa3f2efc5c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The framerate of the data.  <a href="#a87deca3589ddfc10dbaa2aa3f2efc5c4">More...</a><br /></td></tr>
+<tr class="separator:a87deca3589ddfc10dbaa2aa3f2efc5c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ea6adf049940a48d2686345598398eb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_interface.html#a5ea6adf049940a48d2686345598398eb">bitrate</a></td></tr>
+<tr class="memdesc:a5ea6adf049940a48d2686345598398eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Average bitrate of the stream, if available (in kbps).  <a href="#a5ea6adf049940a48d2686345598398eb">More...</a><br /></td></tr>
+<tr class="separator:a5ea6adf049940a48d2686345598398eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3886faf0212f73e1ca6371b413116bfb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_interface.html#a3886faf0212f73e1ca6371b413116bfb">xResolution</a></td></tr>
+<tr class="memdesc:a3886faf0212f73e1ca6371b413116bfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Horizontal resolution of the data.  <a href="#a3886faf0212f73e1ca6371b413116bfb">More...</a><br /></td></tr>
+<tr class="separator:a3886faf0212f73e1ca6371b413116bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e5f912d49e92c0f30a6455f7dad34b1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_interface.html#a8e5f912d49e92c0f30a6455f7dad34b1">yResolution</a></td></tr>
+<tr class="memdesc:a8e5f912d49e92c0f30a6455f7dad34b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertical resolution of the data.  <a href="#a8e5f912d49e92c0f30a6455f7dad34b1">More...</a><br /></td></tr>
+<tr class="separator:a8e5f912d49e92c0f30a6455f7dad34b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f5f5fc5b4fe6e15a840ed1aa95af633"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_interface.html#a9f5f5fc5b4fe6e15a840ed1aa95af633">multicastTestPort</a></td></tr>
 <tr class="memdesc:a9f5f5fc5b4fe6e15a840ed1aa95af633"><td class="mdescLeft">&#160;</td><td class="mdescRight">The multicast test port used to test transmission capabilities.  <a href="#a9f5f5fc5b4fe6e15a840ed1aa95af633">More...</a><br /></td></tr>
 <tr class="separator:a9f5f5fc5b4fe6e15a840ed1aa95af633"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22c7ea7d36aacc65eeab91b50b455a81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vx_sdk_1_1_vx_render_type.html#a0bbc6f3d20869c9606bb5cea42333757">VxRenderType::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_interface.html#a22c7ea7d36aacc65eeab91b50b455a81">renderType</a></td></tr>
+<tr class="memdesc:a22c7ea7d36aacc65eeab91b50b455a81"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of rendering required for the media data delivered by this interface. Clients can utilize this to create the correct rendering pipeline. Defaults to standard.  <a href="#a22c7ea7d36aacc65eeab91b50b455a81">More...</a><br /></td></tr>
+<tr class="separator:a22c7ea7d36aacc65eeab91b50b455a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cebe44dae98e3be654a50237a72a163"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vx_sdk_1_1_vx_stream_format.html#a260562598b38a1b54ea5dc5a3e6d15aa">VxStreamFormat::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_interface.html#a8cebe44dae98e3be654a50237a72a163">format</a></td></tr>
+<tr class="memdesc:a8cebe44dae98e3be654a50237a72a163"><td class="mdescLeft">&#160;</td><td class="mdescRight">The media stream encoding format.  <a href="#a8cebe44dae98e3be654a50237a72a163">More...</a><br /></td></tr>
+<tr class="separator:a8cebe44dae98e3be654a50237a72a163"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5c27eda7717e97d2baaa7318e83eb80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vx_sdk_1_1_vx_stream_protocol.html#a2b76fe7e5279308f2ee4a134507a412a">VxStreamProtocol::Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_interface.html#ae5c27eda7717e97d2baaa7318e83eb80">protocol</a></td></tr>
 <tr class="memdesc:ae5c27eda7717e97d2baaa7318e83eb80"><td class="mdescLeft">&#160;</td><td class="mdescRight">The transport protocol used by the data interface.  <a href="#ae5c27eda7717e97d2baaa7318e83eb80">More...</a><br /></td></tr>
 <tr class="separator:ae5c27eda7717e97d2baaa7318e83eb80"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,18 +195,59 @@ Protected Member Functions</h2></td></tr>
 
 <p>Clears this instance. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_data_interface_8h_source.html#l00040">40</a> of file <a class="el" href="_i_vx_data_interface_8h_source.html">IVxDataInterface.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                     {</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_interface.html#ab51fcf9aca01ba3e7d2ade1ff7e4de75">supportsMulticast</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_interface.html#ac89a1add775fc1a2309a49d7d9dbb5b6">dataEndpoint</a>);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_interface.html#a45d5f2bf9e831f1e52c4f6428e20033c">multicastTestIp</a>);</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_interface.html#a9f5f5fc5b4fe6e15a840ed1aa95af633">multicastTestPort</a> = 0;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_interface.html#ae5c27eda7717e97d2baaa7318e83eb80">protocol</a> = <a class="code" href="struct_vx_sdk_1_1_vx_stream_protocol.html#a2b76fe7e5279308f2ee4a134507a412aa6666699fcf3216a304d4951da8cda5ae">VxStreamProtocol::kUnknown</a>;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        }</div><div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00018">VxMacros.h:18</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_interface_html_a45d5f2bf9e831f1e52c4f6428e20033c"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_interface.html#a45d5f2bf9e831f1e52c4f6428e20033c">VxSdk::IVxDataInterface::multicastTestIp</a></div><div class="ttdeci">char multicastTestIp[64]</div><div class="ttdoc">The multicast test IP used to test transmission capabilities. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_interface_8h_source.html#l00026">IVxDataInterface.h:26</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_vx_stream_protocol_html_a2b76fe7e5279308f2ee4a134507a412aa6666699fcf3216a304d4951da8cda5ae"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_stream_protocol.html#a2b76fe7e5279308f2ee4a134507a412aa6666699fcf3216a304d4951da8cda5ae">VxSdk::VxStreamProtocol::kUnknown</a></div><div class="ttdoc">An error or unknown value was returned.</div><div class="ttdef"><b>Definition:</b> <a href="_vx_primitives_8h_source.html#l00638">VxPrimitives.h:638</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_interface_html_ac89a1add775fc1a2309a49d7d9dbb5b6"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_interface.html#ac89a1add775fc1a2309a49d7d9dbb5b6">VxSdk::IVxDataInterface::dataEndpoint</a></div><div class="ttdeci">char dataEndpoint[512]</div><div class="ttdoc">The protocol-specific stream control endpoint URI. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_interface_8h_source.html#l00022">IVxDataInterface.h:22</a></div></div>
+<p>Definition at line <a class="el" href="_i_vx_data_interface_8h_source.html#l00071">71</a> of file <a class="el" href="_i_vx_data_interface_8h_source.html">IVxDataInterface.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                     {</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_interface.html#ab51fcf9aca01ba3e7d2ade1ff7e4de75">supportsMulticast</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_interface.html#a0cfc1e4c2cb9fea0d97af75f0dc7982a">dataEncodingId</a>);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_interface.html#ac89a1add775fc1a2309a49d7d9dbb5b6">dataEndpoint</a>);</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_interface.html#a45d5f2bf9e831f1e52c4f6428e20033c">multicastTestIp</a>);</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_interface.html#a87deca3589ddfc10dbaa2aa3f2efc5c4">framerate</a> = 0.0f;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_interface.html#a5ea6adf049940a48d2686345598398eb">bitrate</a> = 0;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_interface.html#a3886faf0212f73e1ca6371b413116bfb">xResolution</a> = 0;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_interface.html#a8e5f912d49e92c0f30a6455f7dad34b1">yResolution</a> = 0;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_interface.html#a9f5f5fc5b4fe6e15a840ed1aa95af633">multicastTestPort</a> = 0;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_interface.html#a22c7ea7d36aacc65eeab91b50b455a81">renderType</a> = <a class="code" href="struct_vx_sdk_1_1_vx_render_type.html#a0bbc6f3d20869c9606bb5cea42333757ab36ac64d44eee9d4b5b64c8e8935aa68">VxRenderType::kUnknown</a>;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_interface.html#a8cebe44dae98e3be654a50237a72a163">format</a> = <a class="code" href="struct_vx_sdk_1_1_vx_stream_format.html#a260562598b38a1b54ea5dc5a3e6d15aaa4cb8b04e90c60b764836616fe73e0055">VxStreamFormat::kUnknown</a>;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_interface.html#ae5c27eda7717e97d2baaa7318e83eb80">protocol</a> = <a class="code" href="struct_vx_sdk_1_1_vx_stream_protocol.html#a2b76fe7e5279308f2ee4a134507a412aa6666699fcf3216a304d4951da8cda5ae">VxStreamProtocol::kUnknown</a>;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        }</div><div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_interface_html_a22c7ea7d36aacc65eeab91b50b455a81"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_interface.html#a22c7ea7d36aacc65eeab91b50b455a81">VxSdk::IVxDataInterface::renderType</a></div><div class="ttdeci">VxRenderType::Value renderType</div><div class="ttdoc">The type of rendering required for the media data delivered by this interface. Clients can utilize th...</div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_interface_8h_source.html#l00057">IVxDataInterface.h:57</a></div></div>
+<div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00025">VxMacros.h:25</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_interface_html_a45d5f2bf9e831f1e52c4f6428e20033c"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_interface.html#a45d5f2bf9e831f1e52c4f6428e20033c">VxSdk::IVxDataInterface::multicastTestIp</a></div><div class="ttdeci">char multicastTestIp[64]</div><div class="ttdoc">The multicast test IP used to test transmission capabilities. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_interface_8h_source.html#l00032">IVxDataInterface.h:32</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_stream_format_html_a260562598b38a1b54ea5dc5a3e6d15aaa4cb8b04e90c60b764836616fe73e0055"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_stream_format.html#a260562598b38a1b54ea5dc5a3e6d15aaa4cb8b04e90c60b764836616fe73e0055">VxSdk::VxStreamFormat::kUnknown</a></div><div class="ttdoc">An error or unknown value was returned.</div><div class="ttdef"><b>Definition:</b> <a href="_vx_primitives_8h_source.html#l00893">VxPrimitives.h:893</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_stream_protocol_html_a2b76fe7e5279308f2ee4a134507a412aa6666699fcf3216a304d4951da8cda5ae"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_stream_protocol.html#a2b76fe7e5279308f2ee4a134507a412aa6666699fcf3216a304d4951da8cda5ae">VxSdk::VxStreamProtocol::kUnknown</a></div><div class="ttdoc">An error or unknown value was returned.</div><div class="ttdef"><b>Definition:</b> <a href="_vx_primitives_8h_source.html#l00913">VxPrimitives.h:913</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_interface_html_a0cfc1e4c2cb9fea0d97af75f0dc7982a"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_interface.html#a0cfc1e4c2cb9fea0d97af75f0dc7982a">VxSdk::IVxDataInterface::dataEncodingId</a></div><div class="ttdeci">char dataEncodingId[64]</div><div class="ttdoc">The unique identifier for a specific data encoding (based on encoding quality, framerate, and resolution). Multiple identical copies of the data may exist across the system; these will have the same dataEncodingId. This ID may be used when requesting a specific encoding to export, record, playback, etc. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_interface_8h_source.html#l00024">IVxDataInterface.h:24</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_interface_html_a5ea6adf049940a48d2686345598398eb"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_interface.html#a5ea6adf049940a48d2686345598398eb">VxSdk::IVxDataInterface::bitrate</a></div><div class="ttdeci">int bitrate</div><div class="ttdoc">Average bitrate of the stream, if available (in kbps). </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_interface_8h_source.html#l00040">IVxDataInterface.h:40</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_interface_html_ac89a1add775fc1a2309a49d7d9dbb5b6"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_interface.html#ac89a1add775fc1a2309a49d7d9dbb5b6">VxSdk::IVxDataInterface::dataEndpoint</a></div><div class="ttdeci">char dataEndpoint[512]</div><div class="ttdoc">The protocol-specific stream control endpoint URI. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_interface_8h_source.html#l00028">IVxDataInterface.h:28</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_interface_html_a3886faf0212f73e1ca6371b413116bfb"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_interface.html#a3886faf0212f73e1ca6371b413116bfb">VxSdk::IVxDataInterface::xResolution</a></div><div class="ttdeci">int xResolution</div><div class="ttdoc">Horizontal resolution of the data. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_interface_8h_source.html#l00044">IVxDataInterface.h:44</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_render_type_html_a0bbc6f3d20869c9606bb5cea42333757ab36ac64d44eee9d4b5b64c8e8935aa68"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_render_type.html#a0bbc6f3d20869c9606bb5cea42333757ab36ac64d44eee9d4b5b64c8e8935aa68">VxSdk::VxRenderType::kUnknown</a></div><div class="ttdoc">An error or unknown value was returned.</div><div class="ttdef"><b>Definition:</b> <a href="_vx_primitives_8h_source.html#l00618">VxPrimitives.h:618</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_interface_html_a8cebe44dae98e3be654a50237a72a163"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_interface.html#a8cebe44dae98e3be654a50237a72a163">VxSdk::IVxDataInterface::format</a></div><div class="ttdeci">VxStreamFormat::Value format</div><div class="ttdoc">The media stream encoding format. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_interface_8h_source.html#l00061">IVxDataInterface.h:61</a></div></div>
 <div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_interface_html_ab51fcf9aca01ba3e7d2ade1ff7e4de75"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_interface.html#ab51fcf9aca01ba3e7d2ade1ff7e4de75">VxSdk::IVxDataInterface::supportsMulticast</a></div><div class="ttdeci">bool supportsMulticast</div><div class="ttdoc">Indicates whether the interface provides multicast transmission. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_interface_8h_source.html#l00018">IVxDataInterface.h:18</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_interface_html_ae5c27eda7717e97d2baaa7318e83eb80"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_interface.html#ae5c27eda7717e97d2baaa7318e83eb80">VxSdk::IVxDataInterface::protocol</a></div><div class="ttdeci">VxStreamProtocol::Value protocol</div><div class="ttdoc">The transport protocol used by the data interface. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_interface_8h_source.html#l00034">IVxDataInterface.h:34</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_interface_html_a9f5f5fc5b4fe6e15a840ed1aa95af633"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_interface.html#a9f5f5fc5b4fe6e15a840ed1aa95af633">VxSdk::IVxDataInterface::multicastTestPort</a></div><div class="ttdeci">unsigned short multicastTestPort</div><div class="ttdoc">The multicast test port used to test transmission capabilities. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_interface_8h_source.html#l00030">IVxDataInterface.h:30</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_interface_html_ae5c27eda7717e97d2baaa7318e83eb80"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_interface.html#ae5c27eda7717e97d2baaa7318e83eb80">VxSdk::IVxDataInterface::protocol</a></div><div class="ttdeci">VxStreamProtocol::Value protocol</div><div class="ttdoc">The transport protocol used by the data interface. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_interface_8h_source.html#l00065">IVxDataInterface.h:65</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_interface_html_a9f5f5fc5b4fe6e15a840ed1aa95af633"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_interface.html#a9f5f5fc5b4fe6e15a840ed1aa95af633">VxSdk::IVxDataInterface::multicastTestPort</a></div><div class="ttdeci">unsigned short multicastTestPort</div><div class="ttdoc">The multicast test port used to test transmission capabilities. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_interface_8h_source.html#l00052">IVxDataInterface.h:52</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_interface_html_a8e5f912d49e92c0f30a6455f7dad34b1"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_interface.html#a8e5f912d49e92c0f30a6455f7dad34b1">VxSdk::IVxDataInterface::yResolution</a></div><div class="ttdeci">int yResolution</div><div class="ttdoc">Vertical resolution of the data. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_interface_8h_source.html#l00048">IVxDataInterface.h:48</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_interface_html_a87deca3589ddfc10dbaa2aa3f2efc5c4"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_interface.html#a87deca3589ddfc10dbaa2aa3f2efc5c4">VxSdk::IVxDataInterface::framerate</a></div><div class="ttdeci">float framerate</div><div class="ttdoc">The framerate of the data. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_interface_8h_source.html#l00036">IVxDataInterface.h:36</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a5ea6adf049940a48d2686345598398eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int VxSdk::IVxDataInterface::bitrate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Average bitrate of the stream, if available (in kbps). </p>
+
+<p>Definition at line <a class="el" href="_i_vx_data_interface_8h_source.html#l00040">40</a> of file <a class="el" href="_i_vx_data_interface_8h_source.html">IVxDataInterface.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0cfc1e4c2cb9fea0d97af75f0dc7982a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char VxSdk::IVxDataInterface::dataEncodingId[64]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The unique identifier for a specific data encoding (based on encoding quality, framerate, and resolution). Multiple identical copies of the data may exist across the system; these will have the same dataEncodingId. This ID may be used when requesting a specific encoding to export, record, playback, etc. </p>
+
+<p>Definition at line <a class="el" href="_i_vx_data_interface_8h_source.html#l00024">24</a> of file <a class="el" href="_i_vx_data_interface_8h_source.html">IVxDataInterface.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ac89a1add775fc1a2309a49d7d9dbb5b6"></a>
 <div class="memitem">
 <div class="memproto">
@@ -198,7 +260,39 @@ Protected Member Functions</h2></td></tr>
 
 <p>The protocol-specific stream control endpoint URI. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_data_interface_8h_source.html#l00022">22</a> of file <a class="el" href="_i_vx_data_interface_8h_source.html">IVxDataInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_data_interface_8h_source.html#l00028">28</a> of file <a class="el" href="_i_vx_data_interface_8h_source.html">IVxDataInterface.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8cebe44dae98e3be654a50237a72a163"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vx_sdk_1_1_vx_stream_format.html#a260562598b38a1b54ea5dc5a3e6d15aa">VxStreamFormat::Value</a> VxSdk::IVxDataInterface::format</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The media stream encoding format. </p>
+
+<p>Definition at line <a class="el" href="_i_vx_data_interface_8h_source.html#l00061">61</a> of file <a class="el" href="_i_vx_data_interface_8h_source.html">IVxDataInterface.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a87deca3589ddfc10dbaa2aa3f2efc5c4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float VxSdk::IVxDataInterface::framerate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The framerate of the data. </p>
+
+<p>Definition at line <a class="el" href="_i_vx_data_interface_8h_source.html#l00036">36</a> of file <a class="el" href="_i_vx_data_interface_8h_source.html">IVxDataInterface.h</a>.</p>
 
 </div>
 </div>
@@ -214,7 +308,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The multicast test IP used to test transmission capabilities. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_data_interface_8h_source.html#l00026">26</a> of file <a class="el" href="_i_vx_data_interface_8h_source.html">IVxDataInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_data_interface_8h_source.html#l00032">32</a> of file <a class="el" href="_i_vx_data_interface_8h_source.html">IVxDataInterface.h</a>.</p>
 
 </div>
 </div>
@@ -230,7 +324,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>The multicast test port used to test transmission capabilities. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_data_interface_8h_source.html#l00030">30</a> of file <a class="el" href="_i_vx_data_interface_8h_source.html">IVxDataInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_data_interface_8h_source.html#l00052">52</a> of file <a class="el" href="_i_vx_data_interface_8h_source.html">IVxDataInterface.h</a>.</p>
 
 </div>
 </div>
@@ -246,7 +340,23 @@ Protected Member Functions</h2></td></tr>
 
 <p>The transport protocol used by the data interface. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_data_interface_8h_source.html#l00034">34</a> of file <a class="el" href="_i_vx_data_interface_8h_source.html">IVxDataInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_data_interface_8h_source.html#l00065">65</a> of file <a class="el" href="_i_vx_data_interface_8h_source.html">IVxDataInterface.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a22c7ea7d36aacc65eeab91b50b455a81"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vx_sdk_1_1_vx_render_type.html#a0bbc6f3d20869c9606bb5cea42333757">VxRenderType::Value</a> VxSdk::IVxDataInterface::renderType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The type of rendering required for the media data delivered by this interface. Clients can utilize this to create the correct rendering pipeline. Defaults to standard. </p>
+
+<p>Definition at line <a class="el" href="_i_vx_data_interface_8h_source.html#l00057">57</a> of file <a class="el" href="_i_vx_data_interface_8h_source.html">IVxDataInterface.h</a>.</p>
 
 </div>
 </div>
@@ -266,8 +376,40 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a3886faf0212f73e1ca6371b413116bfb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int VxSdk::IVxDataInterface::xResolution</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Horizontal resolution of the data. </p>
+
+<p>Definition at line <a class="el" href="_i_vx_data_interface_8h_source.html#l00044">44</a> of file <a class="el" href="_i_vx_data_interface_8h_source.html">IVxDataInterface.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8e5f912d49e92c0f30a6455f7dad34b1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int VxSdk::IVxDataInterface::yResolution</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vertical resolution of the data. </p>
+
+<p>Definition at line <a class="el" href="_i_vx_data_interface_8h_source.html#l00048">48</a> of file <a class="el" href="_i_vx_data_interface_8h_source.html">IVxDataInterface.h</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>C:/Users/zachm/Git/vxsdk/VxSdk/Include/<a class="el" href="_i_vx_data_interface_8h_source.html">IVxDataInterface.h</a></li>
+<li>C:/Git/VXSDK_M3/VxSdk/Include/<a class="el" href="_i_vx_data_interface_8h_source.html">IVxDataInterface.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

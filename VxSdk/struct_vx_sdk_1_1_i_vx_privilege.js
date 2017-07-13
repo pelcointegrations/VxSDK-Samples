@@ -15,11 +15,13 @@ var struct_vx_sdk_1_1_i_vx_privilege =
     [ "Link", "struct_vx_sdk_1_1_i_vx_privilege.html#a2d0c74c6d2f08e0fc37b163384c08707", null ],
     [ "Link", "struct_vx_sdk_1_1_i_vx_privilege.html#aa21fe3b639bbabe9708338bf5c8b956d", null ],
     [ "Refresh", "struct_vx_sdk_1_1_i_vx_privilege.html#abd416a2889acb726b50a6c29bad5878b", null ],
+    [ "SetExcludeRestricted", "struct_vx_sdk_1_1_i_vx_privilege.html#a4ac7cb2ba9a0e94ea84ea9877bd7f8e2", null ],
     [ "SetPriority", "struct_vx_sdk_1_1_i_vx_privilege.html#a64a7e6351c27f44f92d11152165d03ea", null ],
     [ "SetRestricted", "struct_vx_sdk_1_1_i_vx_privilege.html#aca97f36efb0171bd674c9fad443be3ad", null ],
     [ "UnLink", "struct_vx_sdk_1_1_i_vx_privilege.html#a1848f062df5310959a02a2ca57320e25", null ],
     [ "UnLink", "struct_vx_sdk_1_1_i_vx_privilege.html#ab11eba660eeea4be3cec9f53db4c21fe", null ],
     [ "UnLink", "struct_vx_sdk_1_1_i_vx_privilege.html#ab91f3ed66dcad714e3e6bc090b6f6949", null ],
+    [ "excludeRestricted", "struct_vx_sdk_1_1_i_vx_privilege.html#a612f76abad865076beff32931fce6a95", null ],
     [ "id", "struct_vx_sdk_1_1_i_vx_privilege.html#ac0549f65b849d373970f8be204e95063", null ],
     [ "permissionId", "struct_vx_sdk_1_1_i_vx_privilege.html#a3bab913a758abf14b763d2ece5e21f67", null ],
     [ "resourceType", "struct_vx_sdk_1_1_i_vx_privilege.html#a6af1316af5512f033b6f1391d2791ca1", null ]

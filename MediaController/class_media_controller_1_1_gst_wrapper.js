@@ -9,7 +9,7 @@ var class_media_controller_1_1_gst_wrapper =
     [ "CreateAudioRtspPipeline", "class_media_controller_1_1_gst_wrapper.html#a041731491df0ed485c82b323756d6927", null ],
     [ "CreateMjpegPipeline", "class_media_controller_1_1_gst_wrapper.html#ac8cadd47be5e2847488be93e8064b1ef", null ],
     [ "CreatePipeline", "class_media_controller_1_1_gst_wrapper.html#acca92f4ffddcff3e49c0e59ab9fce106", null ],
-    [ "CreateVideoRtspPipeline", "class_media_controller_1_1_gst_wrapper.html#a9d9daf14c6b6cfe52a7fb0bcd6b4a76c", null ],
+    [ "CreateVideoRtspPipeline", "class_media_controller_1_1_gst_wrapper.html#a7acbfc6d1b82c31bc5acac759c2b3854", null ],
     [ "GetLastTimestamp", "class_media_controller_1_1_gst_wrapper.html#aea3795ae288b23f9355bd3fa04371cc1", null ],
     [ "GetMode", "class_media_controller_1_1_gst_wrapper.html#aaf7152a829d2ecd653fc2f508e336475", null ],
     [ "GetSpeed", "class_media_controller_1_1_gst_wrapper.html#a6867df2bc3d4b43764f9663af096842f", null ],

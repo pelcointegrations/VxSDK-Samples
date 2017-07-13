@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['ackclientid',['ackClientId',['../struct_vx_sdk_1_1_i_vx_event.html#a8aaad17d0e79e38051dc382650897724',1,'VxSdk::IVxEvent']]],
+  ['ackclientname',['ackClientName',['../struct_vx_sdk_1_1_i_vx_event.html#aec08e4a37c52946660da1d26592c2035',1,'VxSdk::IVxEvent']]],
   ['ackstate',['ackState',['../struct_vx_sdk_1_1_i_vx_event.html#a63b353689db46235004a972568cb148f',1,'VxSdk::IVxEvent']]],
   ['acktime',['ackTime',['../struct_vx_sdk_1_1_i_vx_event.html#ab593b4bd7c55a1327b45fa5148e3af20',1,'VxSdk::IVxEvent']]],
   ['ackuser',['ackUser',['../struct_vx_sdk_1_1_i_vx_event.html#a796364946249371ebc0bdbc12a9f62cb',1,'VxSdk::IVxEvent']]],

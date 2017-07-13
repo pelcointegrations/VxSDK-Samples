@@ -2,7 +2,7 @@
 <tagfile>
   <compound kind="file">
     <name>Constants.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/MediaController/Include/</path>
+    <path>C:/Git/VxSDK-Samples/MediaController/Include/</path>
     <filename>_constants_8h</filename>
     <namespace>MediaController</namespace>
     <namespace>MediaController::Constants</namespace>
@@ -151,6 +151,13 @@
       <name>kHeaderContentDisposition</name>
       <anchorfile>namespace_media_controller_1_1_constants.html</anchorfile>
       <anchor>a1df6c92b0472b96b732ab46efc71b273</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static const char *</type>
+      <name>kHeaderResourceTimestamp</name>
+      <anchorfile>namespace_media_controller_1_1_constants.html</anchorfile>
+      <anchor>a2d699e855f6f312e087bb6d6a90064a9</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable" static="yes">
@@ -491,6 +498,20 @@
     </member>
     <member kind="variable" static="yes">
       <type>static const char *</type>
+      <name>kEncodingJpeg</name>
+      <anchorfile>namespace_media_controller_1_1_constants.html</anchorfile>
+      <anchor>a489fb3b53d710628ffb2f8ae47fb67c5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static const char *</type>
+      <name>kEncodingMpeg</name>
+      <anchorfile>namespace_media_controller_1_1_constants.html</anchorfile>
+      <anchor>a304f89cc66d02e50b0857a0a91a5df2a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static const char *</type>
       <name>kUdpSrc</name>
       <anchorfile>namespace_media_controller_1_1_constants.html</anchorfile>
       <anchor>a159daa3f31f87524c1c6e1573f0f49a5</anchor>
@@ -505,23 +526,30 @@
     </member>
     <member kind="variable" static="yes">
       <type>static const char *</type>
-      <name>kRtpDepay</name>
+      <name>kRtpH264Depay</name>
       <anchorfile>namespace_media_controller_1_1_constants.html</anchorfile>
-      <anchor>a7344a87fe1374b4977eb57f6680ace1c</anchor>
+      <anchor>ae9167e90fa6de421418d09bb18d2272d</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable" static="yes">
       <type>static const char *</type>
-      <name>kRtpDec</name>
+      <name>kRtpH264Dec</name>
       <anchorfile>namespace_media_controller_1_1_constants.html</anchorfile>
-      <anchor>a8a646437a2e9c2f31fb3cef972c744d4</anchor>
+      <anchor>a8f551cb1af0125a1cea622f232d1db6f</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable" static="yes">
       <type>static const char *</type>
-      <name>kVideoSink</name>
+      <name>kRtpMp4vDepay</name>
       <anchorfile>namespace_media_controller_1_1_constants.html</anchorfile>
-      <anchor>a496a4c1bf4601a82786ac5b03b38ea74</anchor>
+      <anchor>a410b49b5db7aa2edf503095d9a886ab1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static const char *</type>
+      <name>kRtpMp4vDec</name>
+      <anchorfile>namespace_media_controller_1_1_constants.html</anchorfile>
+      <anchor>a6fd84183ca7489cf514eab3726d0cd81</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable" static="yes">
@@ -568,6 +596,13 @@
     </member>
     <member kind="variable" static="yes">
       <type>static const char *</type>
+      <name>kVideoSink</name>
+      <anchorfile>namespace_media_controller_1_1_constants.html</anchorfile>
+      <anchor>a496a4c1bf4601a82786ac5b03b38ea74</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static const char *</type>
       <name>kAudioSink</name>
       <anchorfile>namespace_media_controller_1_1_constants.html</anchorfile>
       <anchor>a0d0bf966a7fcda506b4b0a0c73a370eb</anchor>
@@ -576,7 +611,7 @@
   </compound>
   <compound kind="file">
     <name>Controller.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/MediaController/Include/</path>
+    <path>C:/Git/VxSDK-Samples/MediaController/Include/</path>
     <filename>_controller_8h</filename>
     <includes id="_i_controller_8h" name="IController.h" local="yes" imported="no">IController.h</includes>
     <class kind="class">MediaController::Controller</class>
@@ -584,7 +619,7 @@
   </compound>
   <compound kind="file">
     <name>GstVars.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/MediaController/Include/</path>
+    <path>C:/Git/VxSDK-Samples/MediaController/Include/</path>
     <filename>_gst_vars_8h</filename>
     <includes id="_controller_8h" name="Controller.h" local="yes" imported="no">Controller.h</includes>
     <class kind="struct">MediaController::GstVars</class>
@@ -592,7 +627,7 @@
   </compound>
   <compound kind="file">
     <name>GstWrapper.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/MediaController/Include/</path>
+    <path>C:/Git/VxSDK-Samples/MediaController/Include/</path>
     <filename>_gst_wrapper_8h</filename>
     <includes id="_controller_8h" name="Controller.h" local="yes" imported="no">Controller.h</includes>
     <includes id="_gst_vars_8h" name="GstVars.h" local="yes" imported="no">GstVars.h</includes>
@@ -601,7 +636,7 @@
   </compound>
   <compound kind="file">
     <name>IController.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/MediaController/Include/</path>
+    <path>C:/Git/VxSDK-Samples/MediaController/Include/</path>
     <filename>_i_controller_8h</filename>
     <includes id="_i_stream_8h" name="IStream.h" local="yes" imported="no">IStream.h</includes>
     <includes id="_timestamp_event_8h" name="TimestampEvent.h" local="yes" imported="no">TimestampEvent.h</includes>
@@ -617,7 +652,7 @@
   </compound>
   <compound kind="file">
     <name>IStream.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/MediaController/Include/</path>
+    <path>C:/Git/VxSDK-Samples/MediaController/Include/</path>
     <filename>_i_stream_8h</filename>
     <includes id="_media_request_8h" name="MediaRequest.h" local="yes" imported="no">MediaRequest.h</includes>
     <class kind="class">MediaController::IStream</class>
@@ -625,7 +660,7 @@
   </compound>
   <compound kind="file">
     <name>Macros.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/MediaController/Include/</path>
+    <path>C:/Git/VxSDK-Samples/MediaController/Include/</path>
     <filename>_macros_8h</filename>
     <member kind="define">
       <type>#define</type>
@@ -644,7 +679,7 @@
   </compound>
   <compound kind="file">
     <name>MediaController.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/MediaController/Include/</path>
+    <path>C:/Git/VxSDK-Samples/MediaController/Include/</path>
     <filename>_media_controller_8h</filename>
     <includes id="_macros_8h" name="Macros.h" local="yes" imported="no">Macros.h</includes>
     <includes id="_i_controller_8h" name="IController.h" local="yes" imported="no">IController.h</includes>
@@ -660,14 +695,14 @@
   </compound>
   <compound kind="file">
     <name>MediaRequest.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/MediaController/Include/</path>
+    <path>C:/Git/VxSDK-Samples/MediaController/Include/</path>
     <filename>_media_request_8h</filename>
     <class kind="struct">MediaController::MediaRequest</class>
     <namespace>MediaController</namespace>
   </compound>
   <compound kind="file">
     <name>MjpegPullStream.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/MediaController/Include/</path>
+    <path>C:/Git/VxSDK-Samples/MediaController/Include/</path>
     <filename>_mjpeg_pull_stream_8h</filename>
     <includes id="_stream_base_8h" name="StreamBase.h" local="yes" imported="no">StreamBase.h</includes>
     <class kind="class">MediaController::MjpegPull::Stream</class>
@@ -676,7 +711,7 @@
   </compound>
   <compound kind="file">
     <name>RtspCommands.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/MediaController/Include/</path>
+    <path>C:/Git/VxSDK-Samples/MediaController/Include/</path>
     <filename>_rtsp_commands_8h</filename>
     <includes id="_rtsp_sdp_parser_8h" name="RtspSdpParser.h" local="yes" imported="no">RtspSdpParser.h</includes>
     <includes id="_gst_wrapper_8h" name="GstWrapper.h" local="yes" imported="no">GstWrapper.h</includes>
@@ -686,7 +721,7 @@
   </compound>
   <compound kind="file">
     <name>RtspKeepAlive.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/MediaController/Include/</path>
+    <path>C:/Git/VxSDK-Samples/MediaController/Include/</path>
     <filename>_rtsp_keep_alive_8h</filename>
     <includes id="_rtsp_commands_8h" name="RtspCommands.h" local="yes" imported="no">RtspCommands.h</includes>
     <class kind="class">MediaController::Rtsp::KeepAlive</class>
@@ -695,7 +730,7 @@
   </compound>
   <compound kind="file">
     <name>RtspMediaDescription.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/MediaController/Include/</path>
+    <path>C:/Git/VxSDK-Samples/MediaController/Include/</path>
     <filename>_rtsp_media_description_8h</filename>
     <class kind="struct">MediaController::Rtsp::MediaDescription</class>
     <namespace>MediaController</namespace>
@@ -703,7 +738,7 @@
   </compound>
   <compound kind="file">
     <name>RtspResponse.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/MediaController/Include/</path>
+    <path>C:/Git/VxSDK-Samples/MediaController/Include/</path>
     <filename>_rtsp_response_8h</filename>
     <class kind="struct">MediaController::Rtsp::Response</class>
     <namespace>MediaController</namespace>
@@ -711,7 +746,7 @@
   </compound>
   <compound kind="file">
     <name>RtspSdpParser.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/MediaController/Include/</path>
+    <path>C:/Git/VxSDK-Samples/MediaController/Include/</path>
     <filename>_rtsp_sdp_parser_8h</filename>
     <includes id="_rtsp_media_description_8h" name="RtspMediaDescription.h" local="yes" imported="no">RtspMediaDescription.h</includes>
     <class kind="class">MediaController::Rtsp::SdpParser</class>
@@ -720,7 +755,7 @@
   </compound>
   <compound kind="file">
     <name>RtspStream.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/MediaController/Include/</path>
+    <path>C:/Git/VxSDK-Samples/MediaController/Include/</path>
     <filename>_rtsp_stream_8h</filename>
     <includes id="_stream_base_8h" name="StreamBase.h" local="yes" imported="no">StreamBase.h</includes>
     <includes id="_rtsp_commands_8h" name="RtspCommands.h" local="yes" imported="no">RtspCommands.h</includes>
@@ -731,7 +766,7 @@
   </compound>
   <compound kind="file">
     <name>stdafx.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/MediaController/Include/</path>
+    <path>C:/Git/VxSDK-Samples/MediaController/Include/</path>
     <filename>stdafx_8h</filename>
     <includes id="_constants_8h" name="Constants.h" local="yes" imported="no">Constants.h</includes>
     <includes id="_macros_8h" name="Macros.h" local="yes" imported="no">Macros.h</includes>
@@ -739,7 +774,7 @@
   </compound>
   <compound kind="file">
     <name>StreamBase.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/MediaController/Include/</path>
+    <path>C:/Git/VxSDK-Samples/MediaController/Include/</path>
     <filename>_stream_base_8h</filename>
     <includes id="_i_stream_8h" name="IStream.h" local="yes" imported="no">IStream.h</includes>
     <includes id="_media_request_8h" name="MediaRequest.h" local="yes" imported="no">MediaRequest.h</includes>
@@ -748,14 +783,14 @@
   </compound>
   <compound kind="file">
     <name>StreamFactory.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/MediaController/Include/</path>
+    <path>C:/Git/VxSDK-Samples/MediaController/Include/</path>
     <filename>_stream_factory_8h</filename>
     <class kind="class">MediaController::StreamFactory</class>
     <namespace>MediaController</namespace>
   </compound>
   <compound kind="file">
     <name>StreamState.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/MediaController/Include/</path>
+    <path>C:/Git/VxSDK-Samples/MediaController/Include/</path>
     <filename>_stream_state_8h</filename>
     <includes id="_controller_8h" name="Controller.h" local="yes" imported="no">Controller.h</includes>
     <class kind="class">MediaController::StreamState</class>
@@ -766,14 +801,14 @@
   </compound>
   <compound kind="file">
     <name>TimestampEvent.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/MediaController/Include/</path>
+    <path>C:/Git/VxSDK-Samples/MediaController/Include/</path>
     <filename>_timestamp_event_8h</filename>
     <class kind="struct">MediaController::TimestampEvent</class>
     <namespace>MediaController</namespace>
   </compound>
   <compound kind="file">
     <name>Utilities.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/MediaController/Include/</path>
+    <path>C:/Git/VxSDK-Samples/MediaController/Include/</path>
     <filename>_utilities_8h</filename>
     <namespace>MediaController</namespace>
     <namespace>MediaController::Utilities</namespace>
@@ -794,7 +829,7 @@
   </compound>
   <compound kind="file">
     <name>Controller.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/MediaController/Source/</path>
+    <path>C:/Git/VxSDK-Samples/MediaController/Source/</path>
     <filename>_controller_8cpp</filename>
     <includes id="stdafx_8h" name="stdafx.h" local="yes" imported="no">stdafx.h</includes>
     <includes id="_controller_8h" name="Controller.h" local="yes" imported="no">Controller.h</includes>
@@ -815,7 +850,7 @@
   </compound>
   <compound kind="file">
     <name>GstWrapper.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/MediaController/Source/</path>
+    <path>C:/Git/VxSDK-Samples/MediaController/Source/</path>
     <filename>_gst_wrapper_8cpp</filename>
     <includes id="stdafx_8h" name="stdafx.h" local="yes" imported="no">stdafx.h</includes>
     <includes id="_gst_wrapper_8h" name="GstWrapper.h" local="yes" imported="no">GstWrapper.h</includes>
@@ -832,6 +867,13 @@
       <anchorfile>_gst_wrapper_8cpp.html</anchorfile>
       <anchor>a53921032cc730c27174f7b5295051f27</anchor>
       <arglist>(GstPad *localPad, GstPadProbeInfo *info, GstVars *vars)</arglist>
+    </member>
+    <member kind="function">
+      <type>long</type>
+      <name>TzOffset</name>
+      <anchorfile>_gst_wrapper_8cpp.html</anchorfile>
+      <anchor>a11c78f8df17ee5a431fcb828704e1a21</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>GstPadProbeReturn</type>
@@ -857,7 +899,7 @@
   </compound>
   <compound kind="file">
     <name>MjpegPullStream.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/MediaController/Source/</path>
+    <path>C:/Git/VxSDK-Samples/MediaController/Source/</path>
     <filename>_mjpeg_pull_stream_8cpp</filename>
     <includes id="stdafx_8h" name="stdafx.h" local="yes" imported="no">stdafx.h</includes>
     <includes id="_mjpeg_pull_stream_8h" name="MjpegPullStream.h" local="yes" imported="no">MjpegPullStream.h</includes>
@@ -866,7 +908,7 @@
   </compound>
   <compound kind="file">
     <name>RtspCommands.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/MediaController/Source/</path>
+    <path>C:/Git/VxSDK-Samples/MediaController/Source/</path>
     <filename>_rtsp_commands_8cpp</filename>
     <includes id="stdafx_8h" name="stdafx.h" local="yes" imported="no">stdafx.h</includes>
     <includes id="_rtsp_commands_8h" name="RtspCommands.h" local="yes" imported="no">RtspCommands.h</includes>
@@ -910,7 +952,7 @@
   </compound>
   <compound kind="file">
     <name>RtspKeepAlive.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/MediaController/Source/</path>
+    <path>C:/Git/VxSDK-Samples/MediaController/Source/</path>
     <filename>_rtsp_keep_alive_8cpp</filename>
     <includes id="stdafx_8h" name="stdafx.h" local="yes" imported="no">stdafx.h</includes>
     <includes id="_rtsp_keep_alive_8h" name="RtspKeepAlive.h" local="yes" imported="no">RtspKeepAlive.h</includes>
@@ -918,7 +960,7 @@
   </compound>
   <compound kind="file">
     <name>RtspSdpParser.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/MediaController/Source/</path>
+    <path>C:/Git/VxSDK-Samples/MediaController/Source/</path>
     <filename>_rtsp_sdp_parser_8cpp</filename>
     <includes id="stdafx_8h" name="stdafx.h" local="yes" imported="no">stdafx.h</includes>
     <includes id="_rtsp_sdp_parser_8h" name="RtspSdpParser.h" local="yes" imported="no">RtspSdpParser.h</includes>
@@ -967,7 +1009,7 @@
   </compound>
   <compound kind="file">
     <name>RtspStream.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/MediaController/Source/</path>
+    <path>C:/Git/VxSDK-Samples/MediaController/Source/</path>
     <filename>_rtsp_stream_8cpp</filename>
     <includes id="stdafx_8h" name="stdafx.h" local="yes" imported="no">stdafx.h</includes>
     <includes id="_rtsp_stream_8h" name="RtspStream.h" local="yes" imported="no">RtspStream.h</includes>
@@ -978,13 +1020,13 @@
   </compound>
   <compound kind="file">
     <name>stdafx.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/MediaController/Source/</path>
+    <path>C:/Git/VxSDK-Samples/MediaController/Source/</path>
     <filename>stdafx_8cpp</filename>
     <includes id="stdafx_8h" name="stdafx.h" local="yes" imported="no">stdafx.h</includes>
   </compound>
   <compound kind="file">
     <name>StreamBase.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/MediaController/Source/</path>
+    <path>C:/Git/VxSDK-Samples/MediaController/Source/</path>
     <filename>_stream_base_8cpp</filename>
     <includes id="stdafx_8h" name="stdafx.h" local="yes" imported="no">stdafx.h</includes>
     <includes id="_stream_base_8h" name="StreamBase.h" local="yes" imported="no">StreamBase.h</includes>
@@ -992,7 +1034,7 @@
   </compound>
   <compound kind="file">
     <name>StreamFactory.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/MediaController/Source/</path>
+    <path>C:/Git/VxSDK-Samples/MediaController/Source/</path>
     <filename>_stream_factory_8cpp</filename>
     <includes id="stdafx_8h" name="stdafx.h" local="yes" imported="no">stdafx.h</includes>
     <includes id="_stream_factory_8h" name="StreamFactory.h" local="yes" imported="no">StreamFactory.h</includes>
@@ -1004,7 +1046,7 @@
   </compound>
   <compound kind="file">
     <name>StreamState.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/MediaController/Source/</path>
+    <path>C:/Git/VxSDK-Samples/MediaController/Source/</path>
     <filename>_stream_state_8cpp</filename>
     <includes id="stdafx_8h" name="stdafx.h" local="yes" imported="no">stdafx.h</includes>
     <includes id="_stream_state_8h" name="StreamState.h" local="yes" imported="no">StreamState.h</includes>
@@ -1014,7 +1056,7 @@
   </compound>
   <compound kind="file">
     <name>Utilities.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/MediaController/Source/</path>
+    <path>C:/Git/VxSDK-Samples/MediaController/Source/</path>
     <filename>_utilities_8cpp</filename>
     <includes id="stdafx_8h" name="stdafx.h" local="yes" imported="no">stdafx.h</includes>
     <includes id="_utilities_8h" name="Utilities.h" local="yes" imported="no">Utilities.h</includes>
@@ -1755,8 +1797,8 @@
       <type>void</type>
       <name>CreateVideoRtspPipeline</name>
       <anchorfile>class_media_controller_1_1_gst_wrapper.html</anchorfile>
-      <anchor>a9d9daf14c6b6cfe52a7fb0bcd6b4a76c</anchor>
-      <arglist>()</arglist>
+      <anchor>a7acbfc6d1b82c31bc5acac759c2b3854</anchor>
+      <arglist>(std::string encoding)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -2919,6 +2961,13 @@
     </member>
     <member kind="variable" static="yes">
       <type>static const char *</type>
+      <name>kHeaderResourceTimestamp</name>
+      <anchorfile>namespace_media_controller_1_1_constants.html</anchorfile>
+      <anchor>a2d699e855f6f312e087bb6d6a90064a9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static const char *</type>
       <name>kLowerCaseHeaderLocation</name>
       <anchorfile>namespace_media_controller_1_1_constants.html</anchorfile>
       <anchor>af8359b98859e5d9158a8035cfac446f3</anchor>
@@ -3255,6 +3304,20 @@
     </member>
     <member kind="variable" static="yes">
       <type>static const char *</type>
+      <name>kEncodingJpeg</name>
+      <anchorfile>namespace_media_controller_1_1_constants.html</anchorfile>
+      <anchor>a489fb3b53d710628ffb2f8ae47fb67c5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static const char *</type>
+      <name>kEncodingMpeg</name>
+      <anchorfile>namespace_media_controller_1_1_constants.html</anchorfile>
+      <anchor>a304f89cc66d02e50b0857a0a91a5df2a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static const char *</type>
       <name>kUdpSrc</name>
       <anchorfile>namespace_media_controller_1_1_constants.html</anchorfile>
       <anchor>a159daa3f31f87524c1c6e1573f0f49a5</anchor>
@@ -3269,23 +3332,30 @@
     </member>
     <member kind="variable" static="yes">
       <type>static const char *</type>
-      <name>kRtpDepay</name>
+      <name>kRtpH264Depay</name>
       <anchorfile>namespace_media_controller_1_1_constants.html</anchorfile>
-      <anchor>a7344a87fe1374b4977eb57f6680ace1c</anchor>
+      <anchor>ae9167e90fa6de421418d09bb18d2272d</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable" static="yes">
       <type>static const char *</type>
-      <name>kRtpDec</name>
+      <name>kRtpH264Dec</name>
       <anchorfile>namespace_media_controller_1_1_constants.html</anchorfile>
-      <anchor>a8a646437a2e9c2f31fb3cef972c744d4</anchor>
+      <anchor>a8f551cb1af0125a1cea622f232d1db6f</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable" static="yes">
       <type>static const char *</type>
-      <name>kVideoSink</name>
+      <name>kRtpMp4vDepay</name>
       <anchorfile>namespace_media_controller_1_1_constants.html</anchorfile>
-      <anchor>a496a4c1bf4601a82786ac5b03b38ea74</anchor>
+      <anchor>a410b49b5db7aa2edf503095d9a886ab1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static const char *</type>
+      <name>kRtpMp4vDec</name>
+      <anchorfile>namespace_media_controller_1_1_constants.html</anchorfile>
+      <anchor>a6fd84183ca7489cf514eab3726d0cd81</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable" static="yes">
@@ -3328,6 +3398,13 @@
       <name>kRtpAudioDec</name>
       <anchorfile>namespace_media_controller_1_1_constants.html</anchorfile>
       <anchor>a1fc95fedaecf9556be64e03cba8859a8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static const char *</type>
+      <name>kVideoSink</name>
+      <anchorfile>namespace_media_controller_1_1_constants.html</anchorfile>
+      <anchor>a496a4c1bf4601a82786ac5b03b38ea74</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable" static="yes">

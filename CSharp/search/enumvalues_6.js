@@ -1,11 +1,9 @@
 var searchData=
 [
-  ['in',['In',['../../CSharpWrapper/class_c_p_p_cli_1_1_ptz_controller.html#a1c4a102a3a38b54d55b1fb9d73d06c3daefeb369cccbd560588a756610865664c',1,'CPPCli::PtzController']]],
-  ['info',['Info',['../../CSharpWrapper/class_c_p_p_cli_1_1_log_level.html#ab6a080f338f1ba4534e998de0757aa15a4059b0251f66a18cb56f544728796875',1,'CPPCli::LogLevel']]],
-  ['inprogress',['InProgress',['../../CSharpWrapper/class_c_p_p_cli_1_1_quick_report.html#ae77ef814927ee074eb461a330b90c04da12d868c18cb29bf58f02b504be9033fd',1,'CPPCli::QuickReport']]],
-  ['insufficientsize',['InsufficientSize',['../../CSharpWrapper/class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970caac87f7496cbb27b7ef44dc4766c4e7c2d',1,'CPPCli::Results::InsufficientSize()'],['../namespace_s_d_k_sample_app_1_1_enums.html#a4bfd34104cd21c30a3ea3d2b61e59cdfac87f7496cbb27b7ef44dc4766c4e7c2d',1,'SDKSampleApp.Enums.InsufficientSize()']]],
-  ['invalidhandle',['InvalidHandle',['../namespace_s_d_k_sample_app_1_1_enums.html#a4bfd34104cd21c30a3ea3d2b61e59cdfa2d0e462e9958ce7bb443e70023241dfe',1,'SDKSampleApp::Enums']]],
-  ['invalidkey',['InvalidKey',['../../CSharpWrapper/class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970caa0011e5adf86cf2b7dbc981fa5124af1b',1,'CPPCli::Results']]],
-  ['invalidlogininfo',['InvalidLoginInfo',['../../CSharpWrapper/class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970caa812bdf85b54f88ae21885f00d2be746f',1,'CPPCli::Results::InvalidLoginInfo()'],['../namespace_s_d_k_sample_app_1_1_enums.html#a4bfd34104cd21c30a3ea3d2b61e59cdfa812bdf85b54f88ae21885f00d2be746f',1,'SDKSampleApp.Enums.InvalidLoginInfo()']]],
-  ['invalidparameters',['InvalidParameters',['../../CSharpWrapper/class_c_p_p_cli_1_1_results.html#a12504aac644d00e0532be43063a970caa16eda536c5a9f951aa496fa52f400fd5',1,'CPPCli::Results']]]
+  ['h264',['H264',['../../CSharpWrapper/class_c_p_p_cli_1_1_data_interface.html#a87fd964a3783dddd4318aa8c6406258ba8ba63b54352f7053b055235a9ec7ac09',1,'CPPCli::DataInterface']]],
+  ['h265',['H265',['../../CSharpWrapper/class_c_p_p_cli_1_1_data_interface.html#a87fd964a3783dddd4318aa8c6406258ba5be0961e6e8a5cd49abb33d4c0f0ffc0',1,'CPPCli::DataInterface']]],
+  ['handleevents',['HandleEvents',['../../CSharpWrapper/class_c_p_p_cli_1_1_privilege.html#aafa1578cd2326685f3238c33a26db1ebab64fa6b5cfb981bf16cef9db72028162',1,'CPPCli::Privilege']]],
+  ['high',['High',['../../CSharpWrapper/class_c_p_p_cli_1_1_clip.html#a62d6f7b0b4f419b00a71e79e48d98236a655d20c1ca69519ca647684edbb2db35',1,'CPPCli::Clip::High()'],['../namespace_s_d_k_sample_app_1_1_enums.html#a60f5891bdda37c37de27392f4eb6f573a655d20c1ca69519ca647684edbb2db35',1,'SDKSampleApp.Enums.High()']]],
+  ['home',['Home',['../../CSharpWrapper/class_c_p_p_cli_1_1_user.html#a878f50e44e2fd0b8e4b8d169c3fbd55ca8cf04a9734132302f96da8e113e80ce5',1,'CPPCli::User']]],
+  ['homefax',['HomeFax',['../../CSharpWrapper/class_c_p_p_cli_1_1_user.html#a878f50e44e2fd0b8e4b8d169c3fbd55ca621e69ea29eda40b47248e32eb0042a2',1,'CPPCli::User']]]
 ];

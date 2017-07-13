@@ -12,6 +12,7 @@ var struct_vx_sdk_1_1_i_vx_data_storage =
     [ "SetName", "struct_vx_sdk_1_1_i_vx_data_storage.html#ad636fe9912ec303d2f8ab2faa1a2f744", null ],
     [ "UnassignDevice", "struct_vx_sdk_1_1_i_vx_data_storage.html#ae3c297acc77597225a5eba47685b7cfb", null ],
     [ "id", "struct_vx_sdk_1_1_i_vx_data_storage.html#a765311f55ff9f2b73942a9ac0a462419", null ],
+    [ "isFailover", "struct_vx_sdk_1_1_i_vx_data_storage.html#aa83371da939dfa04e0e0ec67f82b9a01", null ],
     [ "name", "struct_vx_sdk_1_1_i_vx_data_storage.html#a8922e6ab7101679d21fbf0b2db6970c8", null ],
     [ "type", "struct_vx_sdk_1_1_i_vx_data_storage.html#ac3527ab5f54d08a1b2e90fef46c8b772", null ]
 ];

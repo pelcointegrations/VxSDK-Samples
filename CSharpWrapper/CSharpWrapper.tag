@@ -1,8 +1,16 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
 <tagfile>
   <compound kind="file">
+    <name>AlarmInput.h</name>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <filename>_alarm_input_8h</filename>
+    <includes id="_utils_8h" name="Utils.h" local="yes" imported="no">Utils.h</includes>
+    <class kind="class">CPPCli::AlarmInput</class>
+    <namespace>CPPCli</namespace>
+  </compound>
+  <compound kind="file">
     <name>Bookmark.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_bookmark_8h</filename>
     <includes id="_data_source_8h" name="DataSource.h" local="yes" imported="no">DataSource.h</includes>
     <includes id="_utils_8h" name="Utils.h" local="yes" imported="no">Utils.h</includes>
@@ -11,8 +19,9 @@
   </compound>
   <compound kind="file">
     <name>Clip.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_clip_8h</filename>
+    <includes id="_data_interface_8h" name="DataInterface.h" local="yes" imported="no">DataInterface.h</includes>
     <includes id="_snapshot_filter_8h" name="SnapshotFilter.h" local="yes" imported="no">SnapshotFilter.h</includes>
     <includes id="_utils_8h" name="Utils.h" local="yes" imported="no">Utils.h</includes>
     <class kind="class">CPPCli::Clip</class>
@@ -20,7 +29,7 @@
   </compound>
   <compound kind="file">
     <name>Configuration.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_configuration_8h</filename>
     <includes id="_utils_8h" name="Utils.h" local="yes" imported="no">Utils.h</includes>
     <class kind="class">CPPCli::Configuration</class>
@@ -32,14 +41,14 @@
   </compound>
   <compound kind="file">
     <name>DataInterface.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_data_interface_8h</filename>
     <class kind="class">CPPCli::DataInterface</class>
     <namespace>CPPCli</namespace>
   </compound>
   <compound kind="file">
     <name>DataObject.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_data_object_8h</filename>
     <includes id="_utils_8h" name="Utils.h" local="yes" imported="no">Utils.h</includes>
     <includes id="_data_object_8h" name="DataObject.h" local="yes" imported="no">DataObject.h</includes>
@@ -48,17 +57,16 @@
   </compound>
   <compound kind="file">
     <name>DataSession.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_data_session_8h</filename>
     <class kind="class">CPPCli::DataSession</class>
     <namespace>CPPCli</namespace>
   </compound>
   <compound kind="file">
     <name>DataSource.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_data_source_8h</filename>
     <includes id="_clip_8h" name="Clip.h" local="yes" imported="no">Clip.h</includes>
-    <includes id="_data_interface_8h" name="DataInterface.h" local="yes" imported="no">DataInterface.h</includes>
     <includes id="_data_session_8h" name="DataSession.h" local="yes" imported="no">DataSession.h</includes>
     <includes id="_ptz_controller_8h" name="PtzController.h" local="yes" imported="no">PtzController.h</includes>
     <class kind="class">CPPCli::DataSource</class>
@@ -66,7 +74,7 @@
   </compound>
   <compound kind="file">
     <name>DataStorage.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_data_storage_8h</filename>
     <includes id="_configuration_8h" name="Configuration.h" local="yes" imported="no">Configuration.h</includes>
     <includes id="_device_8h" name="Device.h" local="yes" imported="no">Device.h</includes>
@@ -78,16 +86,18 @@
   </compound>
   <compound kind="file">
     <name>Device.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_device_8h</filename>
+    <includes id="_alarm_input_8h" name="AlarmInput.h" local="yes" imported="no">AlarmInput.h</includes>
     <includes id="_data_source_8h" name="DataSource.h" local="yes" imported="no">DataSource.h</includes>
     <includes id="_device_assignment_8h" name="DeviceAssignment.h" local="yes" imported="no">DeviceAssignment.h</includes>
+    <includes id="_relay_output_8h" name="RelayOutput.h" local="yes" imported="no">RelayOutput.h</includes>
     <class kind="class">CPPCli::Device</class>
     <namespace>CPPCli</namespace>
   </compound>
   <compound kind="file">
     <name>DeviceAssignment.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_device_assignment_8h</filename>
     <includes id="_data_source_8h" name="DataSource.h" local="yes" imported="no">DataSource.h</includes>
     <class kind="class">CPPCli::DeviceAssignment</class>
@@ -95,7 +105,7 @@
   </compound>
   <compound kind="file">
     <name>Drawing.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_drawing_8h</filename>
     <includes id="_utils_8h" name="Utils.h" local="yes" imported="no">Utils.h</includes>
     <includes id="_new_marker_8h" name="NewMarker.h" local="yes" imported="no">NewMarker.h</includes>
@@ -106,7 +116,7 @@
   </compound>
   <compound kind="file">
     <name>Driver.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_driver_8h</filename>
     <includes id="_utils_8h" name="Utils.h" local="yes" imported="no">Utils.h</includes>
     <class kind="class">CPPCli::Driver</class>
@@ -114,7 +124,7 @@
   </compound>
   <compound kind="file">
     <name>Event.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_event_8h</filename>
     <includes id="_utils_8h" name="Utils.h" local="yes" imported="no">Utils.h</includes>
     <includes id="_device_8h" name="Device.h" local="yes" imported="no">Device.h</includes>
@@ -125,7 +135,7 @@
   </compound>
   <compound kind="file">
     <name>Export.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_export_8h</filename>
     <includes id="_export_clip_8h" name="ExportClip.h" local="yes" imported="no">ExportClip.h</includes>
     <includes id="_user_8h" name="User.h" local="yes" imported="no">User.h</includes>
@@ -135,15 +145,23 @@
   </compound>
   <compound kind="file">
     <name>ExportClip.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_export_clip_8h</filename>
     <includes id="_utils_8h" name="Utils.h" local="yes" imported="no">Utils.h</includes>
     <class kind="class">CPPCli::ExportClip</class>
     <namespace>CPPCli</namespace>
   </compound>
   <compound kind="file">
+    <name>InternalEvent.h</name>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <filename>_internal_event_8h</filename>
+    <includes id="_utils_8h" name="Utils.h" local="yes" imported="no">Utils.h</includes>
+    <class kind="class">CPPCli::InternalEvent</class>
+    <namespace>CPPCli</namespace>
+  </compound>
+  <compound kind="file">
     <name>License.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_license_8h</filename>
     <includes id="_license_feature_8h" name="LicenseFeature.h" local="yes" imported="no">LicenseFeature.h</includes>
     <includes id="_utils_8h" name="Utils.h" local="yes" imported="no">Utils.h</includes>
@@ -152,15 +170,24 @@
   </compound>
   <compound kind="file">
     <name>LicenseFeature.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_license_feature_8h</filename>
     <includes id="_device_8h" name="Device.h" local="yes" imported="no">Device.h</includes>
     <class kind="class">CPPCli::LicenseFeature</class>
     <namespace>CPPCli</namespace>
   </compound>
   <compound kind="file">
+    <name>ManualRecording.h</name>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <filename>_manual_recording_8h</filename>
+    <includes id="_data_source_8h" name="DataSource.h" local="yes" imported="no">DataSource.h</includes>
+    <includes id="_utils_8h" name="Utils.h" local="yes" imported="no">Utils.h</includes>
+    <class kind="class">CPPCli::ManualRecording</class>
+    <namespace>CPPCli</namespace>
+  </compound>
+  <compound kind="file">
     <name>Marker.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_marker_8h</filename>
     <includes id="_data_source_8h" name="DataSource.h" local="yes" imported="no">DataSource.h</includes>
     <includes id="_utils_8h" name="Utils.h" local="yes" imported="no">Utils.h</includes>
@@ -169,7 +196,7 @@
   </compound>
   <compound kind="file">
     <name>MediaControl.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_media_control_8h</filename>
     <includes id="_media_event_8h" name="MediaEvent.h" local="yes" imported="no">MediaEvent.h</includes>
     <includes id="_utils_8h" name="Utils.h" local="yes" imported="no">Utils.h</includes>
@@ -179,14 +206,14 @@
   </compound>
   <compound kind="file">
     <name>MediaEvent.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_media_event_8h</filename>
     <class kind="class">CPPCli::MediaEvent</class>
     <namespace>CPPCli</namespace>
   </compound>
   <compound kind="file">
     <name>Monitor.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_monitor_8h</filename>
     <includes id="_utils_8h" name="Utils.h" local="yes" imported="no">Utils.h</includes>
     <includes id="_monitor_cell_8h" name="MonitorCell.h" local="yes" imported="no">MonitorCell.h</includes>
@@ -195,7 +222,7 @@
   </compound>
   <compound kind="file">
     <name>MonitorCell.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_monitor_cell_8h</filename>
     <includes id="_utils_8h" name="Utils.h" local="yes" imported="no">Utils.h</includes>
     <class kind="class">CPPCli::MonitorCell</class>
@@ -203,7 +230,7 @@
   </compound>
   <compound kind="file">
     <name>NewBookmark.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_new_bookmark_8h</filename>
     <includes id="_bookmark_8h" name="Bookmark.h" local="yes" imported="no">Bookmark.h</includes>
     <class kind="class">CPPCli::NewBookmark</class>
@@ -211,7 +238,7 @@
   </compound>
   <compound kind="file">
     <name>NewDataObject.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_new_data_object_8h</filename>
     <includes id="_data_object_8h" name="DataObject.h" local="yes" imported="no">DataObject.h</includes>
     <class kind="class">CPPCli::NewDataObject</class>
@@ -219,7 +246,7 @@
   </compound>
   <compound kind="file">
     <name>NewDevice.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_new_device_8h</filename>
     <includes id="_device_8h" name="Device.h" local="yes" imported="no">Device.h</includes>
     <class kind="class">CPPCli::NewDevice</class>
@@ -227,7 +254,7 @@
   </compound>
   <compound kind="file">
     <name>NewDeviceAssignment.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_new_device_assignment_8h</filename>
     <includes id="_utils_8h" name="Utils.h" local="yes" imported="no">Utils.h</includes>
     <class kind="class">CPPCli::NewDeviceAssignment</class>
@@ -235,7 +262,7 @@
   </compound>
   <compound kind="file">
     <name>NewEvent.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_new_event_8h</filename>
     <includes id="_utils_8h" name="Utils.h" local="yes" imported="no">Utils.h</includes>
     <includes id="_event_8h" name="Event.h" local="yes" imported="no">Event.h</includes>
@@ -244,7 +271,7 @@
   </compound>
   <compound kind="file">
     <name>NewExport.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_new_export_8h</filename>
     <includes id="_new_export_clip_8h" name="NewExportClip.h" local="yes" imported="no">NewExportClip.h</includes>
     <class kind="class">CPPCli::NewExport</class>
@@ -252,7 +279,7 @@
   </compound>
   <compound kind="file">
     <name>NewExportClip.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_new_export_clip_8h</filename>
     <includes id="_utils_8h" name="Utils.h" local="yes" imported="no">Utils.h</includes>
     <includes id="_export_8h" name="Export.h" local="yes" imported="no">Export.h</includes>
@@ -260,8 +287,16 @@
     <namespace>CPPCli</namespace>
   </compound>
   <compound kind="file">
+    <name>NewManualRecording.h</name>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <filename>_new_manual_recording_8h</filename>
+    <includes id="_manual_recording_8h" name="ManualRecording.h" local="yes" imported="no">ManualRecording.h</includes>
+    <class kind="class">CPPCli::NewManualRecording</class>
+    <namespace>CPPCli</namespace>
+  </compound>
+  <compound kind="file">
     <name>NewMarker.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_new_marker_8h</filename>
     <includes id="_marker_8h" name="Marker.h" local="yes" imported="no">Marker.h</includes>
     <class kind="class">CPPCli::NewMarker</class>
@@ -269,7 +304,7 @@
   </compound>
   <compound kind="file">
     <name>NewMonitor.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_new_monitor_8h</filename>
     <includes id="_utils_8h" name="Utils.h" local="yes" imported="no">Utils.h</includes>
     <includes id="_monitor_8h" name="Monitor.h" local="yes" imported="no">Monitor.h</includes>
@@ -278,7 +313,7 @@
   </compound>
   <compound kind="file">
     <name>NewNotification.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_new_notification_8h</filename>
     <includes id="_notification_8h" name="Notification.h" local="yes" imported="no">Notification.h</includes>
     <class kind="class">CPPCli::NewNotification</class>
@@ -286,7 +321,7 @@
   </compound>
   <compound kind="file">
     <name>NewPrivilege.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_new_privilege_8h</filename>
     <includes id="_privilege_8h" name="Privilege.h" local="yes" imported="no">Privilege.h</includes>
     <class kind="class">CPPCli::NewPrivilege</class>
@@ -294,7 +329,7 @@
   </compound>
   <compound kind="file">
     <name>NewQuickReport.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_new_quick_report_8h</filename>
     <includes id="_utils_8h" name="Utils.h" local="yes" imported="no">Utils.h</includes>
     <class kind="class">CPPCli::NewQuickReport</class>
@@ -302,7 +337,7 @@
   </compound>
   <compound kind="file">
     <name>NewSchedule.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_new_schedule_8h</filename>
     <includes id="_schedule_8h" name="Schedule.h" local="yes" imported="no">Schedule.h</includes>
     <includes id="_new_schedule_trigger_8h" name="NewScheduleTrigger.h" local="yes" imported="no">NewScheduleTrigger.h</includes>
@@ -311,7 +346,7 @@
   </compound>
   <compound kind="file">
     <name>NewScheduleTrigger.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_new_schedule_trigger_8h</filename>
     <includes id="_utils_8h" name="Utils.h" local="yes" imported="no">Utils.h</includes>
     <includes id="_clip_8h" name="Clip.h" local="yes" imported="no">Clip.h</includes>
@@ -321,7 +356,7 @@
   </compound>
   <compound kind="file">
     <name>NewSituation.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_new_situation_8h</filename>
     <includes id="_utils_8h" name="Utils.h" local="yes" imported="no">Utils.h</includes>
     <includes id="_situation_8h" name="Situation.h" local="yes" imported="no">Situation.h</includes>
@@ -330,7 +365,7 @@
   </compound>
   <compound kind="file">
     <name>NewTag.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_new_tag_8h</filename>
     <includes id="_tag_8h" name="Tag.h" local="yes" imported="no">Tag.h</includes>
     <class kind="class">CPPCli::NewTag</class>
@@ -338,7 +373,7 @@
   </compound>
   <compound kind="file">
     <name>NewUser.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_new_user_8h</filename>
     <includes id="_user_8h" name="User.h" local="yes" imported="no">User.h</includes>
     <class kind="class">CPPCli::NewUser</class>
@@ -346,7 +381,7 @@
   </compound>
   <compound kind="file">
     <name>Notification.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_notification_8h</filename>
     <includes id="_role_8h" name="Role.h" local="yes" imported="no">Role.h</includes>
     <includes id="_utils_8h" name="Utils.h" local="yes" imported="no">Utils.h</includes>
@@ -355,21 +390,21 @@
   </compound>
   <compound kind="file">
     <name>Pattern.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_pattern_8h</filename>
     <class kind="class">CPPCli::Pattern</class>
     <namespace>CPPCli</namespace>
   </compound>
   <compound kind="file">
     <name>Preset.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_preset_8h</filename>
     <class kind="class">CPPCli::Preset</class>
     <namespace>CPPCli</namespace>
   </compound>
   <compound kind="file">
     <name>Privilege.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_privilege_8h</filename>
     <includes id="_utils_8h" name="Utils.h" local="yes" imported="no">Utils.h</includes>
     <includes id="_device_8h" name="Device.h" local="yes" imported="no">Device.h</includes>
@@ -378,25 +413,42 @@
   </compound>
   <compound kind="file">
     <name>PtzController.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_ptz_controller_8h</filename>
     <includes id="_pattern_8h" name="Pattern.h" local="yes" imported="no">Pattern.h</includes>
     <includes id="_preset_8h" name="Preset.h" local="yes" imported="no">Preset.h</includes>
+    <includes id="_ptz_limits_8h" name="PtzLimits.h" local="yes" imported="no">PtzLimits.h</includes>
     <includes id="_ptz_lock_8h" name="PtzLock.h" local="yes" imported="no">PtzLock.h</includes>
     <class kind="class">CPPCli::PtzController</class>
     <namespace>CPPCli</namespace>
   </compound>
   <compound kind="file">
+    <name>PtzLimits.h</name>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <filename>_ptz_limits_8h</filename>
+    <includes id="_utils_8h" name="Utils.h" local="yes" imported="no">Utils.h</includes>
+    <class kind="class">CPPCli::PtzLimits</class>
+    <namespace>CPPCli</namespace>
+  </compound>
+  <compound kind="file">
     <name>PtzLock.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_ptz_lock_8h</filename>
     <includes id="_utils_8h" name="Utils.h" local="yes" imported="no">Utils.h</includes>
     <class kind="class">CPPCli::PtzLock</class>
     <namespace>CPPCli</namespace>
   </compound>
   <compound kind="file">
+    <name>QuickLog.h</name>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <filename>_quick_log_8h</filename>
+    <includes id="_utils_8h" name="Utils.h" local="yes" imported="no">Utils.h</includes>
+    <class kind="class">CPPCli::QuickLog</class>
+    <namespace>CPPCli</namespace>
+  </compound>
+  <compound kind="file">
     <name>QuickReport.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_quick_report_8h</filename>
     <includes id="_new_quick_report_8h" name="NewQuickReport.h" local="yes" imported="no">NewQuickReport.h</includes>
     <includes id="_utils_8h" name="Utils.h" local="yes" imported="no">Utils.h</includes>
@@ -404,8 +456,16 @@
     <namespace>CPPCli</namespace>
   </compound>
   <compound kind="file">
+    <name>RelayOutput.h</name>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <filename>_relay_output_8h</filename>
+    <includes id="_utils_8h" name="Utils.h" local="yes" imported="no">Utils.h</includes>
+    <class kind="class">CPPCli::RelayOutput</class>
+    <namespace>CPPCli</namespace>
+  </compound>
+  <compound kind="file">
     <name>ResourceLock.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_resource_lock_8h</filename>
     <includes id="_data_source_8h" name="DataSource.h" local="yes" imported="no">DataSource.h</includes>
     <includes id="_utils_8h" name="Utils.h" local="yes" imported="no">Utils.h</includes>
@@ -413,8 +473,17 @@
     <namespace>CPPCli</namespace>
   </compound>
   <compound kind="file">
+    <name>ResourceRel.h</name>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <filename>_resource_rel_8h</filename>
+    <includes id="_data_source_8h" name="DataSource.h" local="yes" imported="no">DataSource.h</includes>
+    <includes id="_utils_8h" name="Utils.h" local="yes" imported="no">Utils.h</includes>
+    <class kind="class">CPPCli::ResourceRel</class>
+    <namespace>CPPCli</namespace>
+  </compound>
+  <compound kind="file">
     <name>Role.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_role_8h</filename>
     <includes id="_utils_8h" name="Utils.h" local="yes" imported="no">Utils.h</includes>
     <includes id="_new_privilege_8h" name="NewPrivilege.h" local="yes" imported="no">NewPrivilege.h</includes>
@@ -423,7 +492,7 @@
   </compound>
   <compound kind="file">
     <name>Schedule.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_schedule_8h</filename>
     <includes id="_utils_8h" name="Utils.h" local="yes" imported="no">Utils.h</includes>
     <includes id="_data_source_8h" name="DataSource.h" local="yes" imported="no">DataSource.h</includes>
@@ -434,7 +503,7 @@
   </compound>
   <compound kind="file">
     <name>ScheduleTrigger.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_schedule_trigger_8h</filename>
     <includes id="_clip_8h" name="Clip.h" local="yes" imported="no">Clip.h</includes>
     <class kind="class">CPPCli::ScheduleTrigger</class>
@@ -442,7 +511,7 @@
   </compound>
   <compound kind="file">
     <name>Situation.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_situation_8h</filename>
     <includes id="_device_8h" name="Device.h" local="yes" imported="no">Device.h</includes>
     <includes id="_notification_8h" name="Notification.h" local="yes" imported="no">Notification.h</includes>
@@ -451,7 +520,7 @@
   </compound>
   <compound kind="file">
     <name>SnapshotFilter.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_snapshot_filter_8h</filename>
     <includes id="_utils_8h" name="Utils.h" local="yes" imported="no">Utils.h</includes>
     <class kind="class">CPPCli::SnapshotFilter</class>
@@ -459,7 +528,7 @@
   </compound>
   <compound kind="file">
     <name>Tag.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_tag_8h</filename>
     <includes id="_utils_8h" name="Utils.h" local="yes" imported="no">Utils.h</includes>
     <includes id="_data_source_8h" name="DataSource.h" local="yes" imported="no">DataSource.h</includes>
@@ -468,7 +537,7 @@
   </compound>
   <compound kind="file">
     <name>User.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_user_8h</filename>
     <includes id="_utils_8h" name="Utils.h" local="yes" imported="no">Utils.h</includes>
     <includes id="_data_object_8h" name="DataObject.h" local="yes" imported="no">DataObject.h</includes>
@@ -478,8 +547,17 @@
     <namespace>CPPCli</namespace>
   </compound>
   <compound kind="file">
+    <name>UserInfo.h</name>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <filename>_user_info_8h</filename>
+    <includes id="_utils_8h" name="Utils.h" local="yes" imported="no">Utils.h</includes>
+    <includes id="_user_8h" name="User.h" local="yes" imported="no">User.h</includes>
+    <class kind="class">CPPCli::UserInfo</class>
+    <namespace>CPPCli</namespace>
+  </compound>
+  <compound kind="file">
     <name>Utils.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_utils_8h</filename>
     <class kind="class">CPPCli::Results</class>
     <class kind="class">CPPCli::LogLevel</class>
@@ -489,38 +567,50 @@
   </compound>
   <compound kind="file">
     <name>VXSystem.h</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Include/</path>
     <filename>_v_x_system_8h</filename>
+    <includes id="_alarm_input_8h" name="AlarmInput.h" local="yes" imported="no">AlarmInput.h</includes>
     <includes id="_device_8h" name="Device.h" local="yes" imported="no">Device.h</includes>
     <includes id="_data_storage_8h" name="DataStorage.h" local="yes" imported="no">DataStorage.h</includes>
     <includes id="_drawing_8h" name="Drawing.h" local="yes" imported="no">Drawing.h</includes>
+    <includes id="_internal_event_8h" name="InternalEvent.h" local="yes" imported="no">InternalEvent.h</includes>
     <includes id="_license_8h" name="License.h" local="yes" imported="no">License.h</includes>
+    <includes id="_monitor_8h" name="Monitor.h" local="yes" imported="no">Monitor.h</includes>
     <includes id="_new_bookmark_8h" name="NewBookmark.h" local="yes" imported="no">NewBookmark.h</includes>
     <includes id="_new_data_object_8h" name="NewDataObject.h" local="yes" imported="no">NewDataObject.h</includes>
     <includes id="_new_device_8h" name="NewDevice.h" local="yes" imported="no">NewDevice.h</includes>
     <includes id="_new_event_8h" name="NewEvent.h" local="yes" imported="no">NewEvent.h</includes>
     <includes id="_new_export_8h" name="NewExport.h" local="yes" imported="no">NewExport.h</includes>
+    <includes id="_new_manual_recording_8h" name="NewManualRecording.h" local="yes" imported="no">NewManualRecording.h</includes>
+    <includes id="_new_monitor_8h" name="NewMonitor.h" local="yes" imported="no">NewMonitor.h</includes>
     <includes id="_new_notification_8h" name="NewNotification.h" local="yes" imported="no">NewNotification.h</includes>
     <includes id="_new_quick_report_8h" name="NewQuickReport.h" local="yes" imported="no">NewQuickReport.h</includes>
     <includes id="_new_schedule_8h" name="NewSchedule.h" local="yes" imported="no">NewSchedule.h</includes>
     <includes id="_new_situation_8h" name="NewSituation.h" local="yes" imported="no">NewSituation.h</includes>
     <includes id="_new_tag_8h" name="NewTag.h" local="yes" imported="no">NewTag.h</includes>
     <includes id="_new_user_8h" name="NewUser.h" local="yes" imported="no">NewUser.h</includes>
+    <includes id="_quick_log_8h" name="QuickLog.h" local="yes" imported="no">QuickLog.h</includes>
     <includes id="_quick_report_8h" name="QuickReport.h" local="yes" imported="no">QuickReport.h</includes>
-    <includes id="_monitor_8h" name="Monitor.h" local="yes" imported="no">Monitor.h</includes>
-    <includes id="_new_monitor_8h" name="NewMonitor.h" local="yes" imported="no">NewMonitor.h</includes>
+    <includes id="_relay_output_8h" name="RelayOutput.h" local="yes" imported="no">RelayOutput.h</includes>
     <class kind="class">CPPCli::VXSystem</class>
     <namespace>CPPCli</namespace>
   </compound>
   <compound kind="file">
+    <name>AlarmInput.cpp</name>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
+    <filename>_alarm_input_8cpp</filename>
+    <includes id="_alarm_input_8h" name="AlarmInput.h" local="yes" imported="no">AlarmInput.h</includes>
+    <includes id="_device_8h" name="Device.h" local="yes" imported="no">Device.h</includes>
+  </compound>
+  <compound kind="file">
     <name>Bookmark.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
     <filename>_bookmark_8cpp</filename>
     <includes id="_bookmark_8h" name="Bookmark.h" local="yes" imported="no">Bookmark.h</includes>
   </compound>
   <compound kind="file">
     <name>Clip.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
     <filename>_clip_8cpp</filename>
     <includes id="_clip_8h" name="Clip.h" local="yes" imported="no">Clip.h</includes>
     <member kind="function">
@@ -533,107 +623,115 @@
   </compound>
   <compound kind="file">
     <name>Configuration.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
     <filename>_configuration_8cpp</filename>
     <includes id="_configuration_8h" name="Configuration.h" local="yes" imported="no">Configuration.h</includes>
   </compound>
   <compound kind="file">
     <name>DataInterface.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
     <filename>_data_interface_8cpp</filename>
     <includes id="_data_interface_8h" name="DataInterface.h" local="yes" imported="no">DataInterface.h</includes>
   </compound>
   <compound kind="file">
     <name>DataObject.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
     <filename>_data_object_8cpp</filename>
     <includes id="_data_object_8h" name="DataObject.h" local="yes" imported="no">DataObject.h</includes>
     <includes id="_user_8h" name="User.h" local="yes" imported="no">User.h</includes>
   </compound>
   <compound kind="file">
     <name>DataSource.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
     <filename>_data_source_8cpp</filename>
     <includes id="_data_storage_8h" name="DataStorage.h" local="yes" imported="no">DataStorage.h</includes>
+    <includes id="_resource_rel_8h" name="ResourceRel.h" local="yes" imported="no">ResourceRel.h</includes>
+    <includes id="_user_info_8h" name="UserInfo.h" local="yes" imported="no">UserInfo.h</includes>
   </compound>
   <compound kind="file">
     <name>DataStorage.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
     <filename>_data_storage_8cpp</filename>
     <includes id="_data_storage_8h" name="DataStorage.h" local="yes" imported="no">DataStorage.h</includes>
   </compound>
   <compound kind="file">
     <name>Device.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
     <filename>_device_8cpp</filename>
     <includes id="_device_8h" name="Device.h" local="yes" imported="no">Device.h</includes>
   </compound>
   <compound kind="file">
     <name>DeviceAssignment.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
     <filename>_device_assignment_8cpp</filename>
     <includes id="_device_8h" name="Device.h" local="yes" imported="no">Device.h</includes>
     <includes id="_data_storage_8h" name="DataStorage.h" local="yes" imported="no">DataStorage.h</includes>
   </compound>
   <compound kind="file">
     <name>Drawing.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
     <filename>_drawing_8cpp</filename>
     <includes id="_drawing_8h" name="Drawing.h" local="yes" imported="no">Drawing.h</includes>
   </compound>
   <compound kind="file">
     <name>Driver.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
     <filename>_driver_8cpp</filename>
     <includes id="_driver_8h" name="Driver.h" local="yes" imported="no">Driver.h</includes>
     <includes id="_data_storage_8h" name="DataStorage.h" local="yes" imported="no">DataStorage.h</includes>
   </compound>
   <compound kind="file">
     <name>Event.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
     <filename>_event_8cpp</filename>
     <includes id="_event_8h" name="Event.h" local="yes" imported="no">Event.h</includes>
   </compound>
   <compound kind="file">
     <name>Export.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
     <filename>_export_8cpp</filename>
     <includes id="_export_8h" name="Export.h" local="yes" imported="no">Export.h</includes>
   </compound>
   <compound kind="file">
     <name>ExportClip.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
     <filename>_export_clip_8cpp</filename>
     <includes id="_export_clip_8h" name="ExportClip.h" local="yes" imported="no">ExportClip.h</includes>
   </compound>
   <compound kind="file">
     <name>License.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
     <filename>_license_8cpp</filename>
     <includes id="_license_8h" name="License.h" local="yes" imported="no">License.h</includes>
   </compound>
   <compound kind="file">
     <name>LicenseFeature.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
     <filename>_license_feature_8cpp</filename>
     <includes id="_license_feature_8h" name="LicenseFeature.h" local="yes" imported="no">LicenseFeature.h</includes>
   </compound>
   <compound kind="file">
+    <name>ManualRecording.cpp</name>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
+    <filename>_manual_recording_8cpp</filename>
+    <includes id="_manual_recording_8h" name="ManualRecording.h" local="yes" imported="no">ManualRecording.h</includes>
+  </compound>
+  <compound kind="file">
     <name>Marker.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
     <filename>_marker_8cpp</filename>
     <includes id="_marker_8h" name="Marker.h" local="yes" imported="no">Marker.h</includes>
     <includes id="_drawing_8h" name="Drawing.h" local="yes" imported="no">Drawing.h</includes>
   </compound>
   <compound kind="file">
     <name>MediaControl.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
     <filename>_media_control_8cpp</filename>
     <includes id="_media_control_8h" name="MediaControl.h" local="yes" imported="no">MediaControl.h</includes>
   </compound>
   <compound kind="file">
     <name>Monitor.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
     <filename>_monitor_8cpp</filename>
     <includes id="_device_8h" name="Device.h" local="yes" imported="no">Device.h</includes>
     <includes id="_monitor_8h" name="Monitor.h" local="yes" imported="no">Monitor.h</includes>
@@ -641,93 +739,112 @@
   </compound>
   <compound kind="file">
     <name>MonitorCell.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
     <filename>_monitor_cell_8cpp</filename>
     <includes id="_monitor_cell_8h" name="MonitorCell.h" local="yes" imported="no">MonitorCell.h</includes>
   </compound>
   <compound kind="file">
     <name>NewExport.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
     <filename>_new_export_8cpp</filename>
     <includes id="_new_export_8h" name="NewExport.h" local="yes" imported="no">NewExport.h</includes>
   </compound>
   <compound kind="file">
     <name>NewSchedule.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
     <filename>_new_schedule_8cpp</filename>
     <includes id="_new_schedule_8h" name="NewSchedule.h" local="yes" imported="no">NewSchedule.h</includes>
   </compound>
   <compound kind="file">
     <name>Notification.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
     <filename>_notification_8cpp</filename>
     <includes id="_notification_8h" name="Notification.h" local="yes" imported="no">Notification.h</includes>
   </compound>
   <compound kind="file">
     <name>Pattern.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
     <filename>_pattern_8cpp</filename>
     <includes id="_pattern_8h" name="Pattern.h" local="yes" imported="no">Pattern.h</includes>
   </compound>
   <compound kind="file">
     <name>Preset.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
     <filename>_preset_8cpp</filename>
     <includes id="_preset_8h" name="Preset.h" local="yes" imported="no">Preset.h</includes>
   </compound>
   <compound kind="file">
     <name>Privilege.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
     <filename>_privilege_8cpp</filename>
     <includes id="_privilege_8h" name="Privilege.h" local="yes" imported="no">Privilege.h</includes>
     <includes id="_user_8h" name="User.h" local="yes" imported="no">User.h</includes>
   </compound>
   <compound kind="file">
     <name>PtzController.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
     <filename>_ptz_controller_8cpp</filename>
     <includes id="_ptz_controller_8h" name="PtzController.h" local="yes" imported="no">PtzController.h</includes>
   </compound>
   <compound kind="file">
     <name>PtzLock.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
     <filename>_ptz_lock_8cpp</filename>
     <includes id="_ptz_lock_8h" name="PtzLock.h" local="yes" imported="no">PtzLock.h</includes>
   </compound>
   <compound kind="file">
+    <name>QuickLog.cpp</name>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
+    <filename>_quick_log_8cpp</filename>
+    <includes id="_quick_log_8h" name="QuickLog.h" local="yes" imported="no">QuickLog.h</includes>
+  </compound>
+  <compound kind="file">
     <name>QuickReport.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
     <filename>_quick_report_8cpp</filename>
     <includes id="_quick_report_8h" name="QuickReport.h" local="yes" imported="no">QuickReport.h</includes>
   </compound>
   <compound kind="file">
+    <name>RelayOutput.cpp</name>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
+    <filename>_relay_output_8cpp</filename>
+    <includes id="_device_8h" name="Device.h" local="yes" imported="no">Device.h</includes>
+    <includes id="_relay_output_8h" name="RelayOutput.h" local="yes" imported="no">RelayOutput.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>ResourceRel.cpp</name>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
+    <filename>_resource_rel_8cpp</filename>
+    <includes id="_resource_rel_8h" name="ResourceRel.h" local="yes" imported="no">ResourceRel.h</includes>
+  </compound>
+  <compound kind="file">
     <name>Role.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
     <filename>_role_8cpp</filename>
     <includes id="_role_8h" name="Role.h" local="yes" imported="no">Role.h</includes>
     <includes id="_user_8h" name="User.h" local="yes" imported="no">User.h</includes>
   </compound>
   <compound kind="file">
     <name>Schedule.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
     <filename>_schedule_8cpp</filename>
     <includes id="_schedule_8h" name="Schedule.h" local="yes" imported="no">Schedule.h</includes>
   </compound>
   <compound kind="file">
     <name>ScheduleTrigger.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
     <filename>_schedule_trigger_8cpp</filename>
     <includes id="_schedule_trigger_8h" name="ScheduleTrigger.h" local="yes" imported="no">ScheduleTrigger.h</includes>
   </compound>
   <compound kind="file">
     <name>Situation.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
     <filename>_situation_8cpp</filename>
     <includes id="_situation_8h" name="Situation.h" local="yes" imported="no">Situation.h</includes>
   </compound>
   <compound kind="file">
     <name>Tag.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
     <filename>_tag_8cpp</filename>
     <includes id="_device_8h" name="Device.h" local="yes" imported="no">Device.h</includes>
     <includes id="_tag_8h" name="Tag.h" local="yes" imported="no">Tag.h</includes>
@@ -735,15 +852,106 @@
   </compound>
   <compound kind="file">
     <name>User.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
     <filename>_user_8cpp</filename>
     <includes id="_user_8h" name="User.h" local="yes" imported="no">User.h</includes>
   </compound>
   <compound kind="file">
     <name>VXSystem.cpp</name>
-    <path>C:/Users/zachm/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
+    <path>C:/Git/VxSDK-Samples/CSharpSample/CSharpWrapper/Source/</path>
     <filename>_v_x_system_8cpp</filename>
     <includes id="_v_x_system_8h" name="VXSystem.h" local="yes" imported="no">VxSystem.h</includes>
+  </compound>
+  <compound kind="class">
+    <name>CPPCli::AlarmInput</name>
+    <filename>class_c_p_p_cli_1_1_alarm_input.html</filename>
+    <member kind="enumeration">
+      <type></type>
+      <name>AlarmStates</name>
+      <anchorfile>class_c_p_p_cli_1_1_alarm_input.html</anchorfile>
+      <anchor>a257fef1841e8d15cd3f432d7832d51e9</anchor>
+      <arglist></arglist>
+      <enumvalue file="class_c_p_p_cli_1_1_alarm_input.html" anchor="a257fef1841e8d15cd3f432d7832d51e9a88183b946cc5f0e8c96b2e66e1c74a7e">Unknown</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_alarm_input.html" anchor="a257fef1841e8d15cd3f432d7832d51e9a4d3d769b812b6faa6b76e1a8abaece2d">Active</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_alarm_input.html" anchor="a257fef1841e8d15cd3f432d7832d51e9a3cab03c00dbd11bc3569afa0748013f0">Inactive</enumvalue>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>AlarmInput</name>
+      <anchorfile>class_c_p_p_cli_1_1_alarm_input.html</anchorfile>
+      <anchor>a53719c908c0ad8b20d4e49d912d1e167</anchor>
+      <arglist>(VxSdk::IVxAlarmInput *vxAlarmInput)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~AlarmInput</name>
+      <anchorfile>class_c_p_p_cli_1_1_alarm_input.html</anchorfile>
+      <anchor>a35a08e3f9697a320c628922098fc221c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>!AlarmInput</name>
+      <anchorfile>class_c_p_p_cli_1_1_alarm_input.html</anchorfile>
+      <anchor>aa46da23bbad8869053374af03f362ba5</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>Results::Value</type>
+      <name>Refresh</name>
+      <anchorfile>class_c_p_p_cli_1_1_alarm_input.html</anchorfile>
+      <anchor>a5c78924730c1247714899ff620bceaa6</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="package">
+      <type>CPPCli::Device^</type>
+      <name>_GetHostDevice</name>
+      <anchorfile>class_c_p_p_cli_1_1_alarm_input.html</anchorfile>
+      <anchor>a369698d759872f74b795f0fcb8edf87d</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable" protection="package">
+      <type>VxSdk::IVxAlarmInput *</type>
+      <name>_alarmInput</name>
+      <anchorfile>class_c_p_p_cli_1_1_alarm_input.html</anchorfile>
+      <anchor>a499aa9324f362f79886f8bd9937c317f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::String^ </type>
+      <name>Description</name>
+      <anchorfile>class_c_p_p_cli_1_1_alarm_input.html</anchorfile>
+      <anchor>a2220d61c0f3759401eef93918ea9ef66</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>CPPCli::Device^ </type>
+      <name>HostDevice</name>
+      <anchorfile>class_c_p_p_cli_1_1_alarm_input.html</anchorfile>
+      <anchor>a3d472e419aa714e508772ab5b9cace5c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::String^ </type>
+      <name>Id</name>
+      <anchorfile>class_c_p_p_cli_1_1_alarm_input.html</anchorfile>
+      <anchor>a1abe5d4885776afcd051f020a2f2f87b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::String^ </type>
+      <name>Name</name>
+      <anchorfile>class_c_p_p_cli_1_1_alarm_input.html</anchorfile>
+      <anchor>a8168f5d674d696a1b895680a9177a8b1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>AlarmStates</type>
+      <name>State</name>
+      <anchorfile>class_c_p_p_cli_1_1_alarm_input.html</anchorfile>
+      <anchor>a2e1af8552e30605a92c09fc99a237565</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>CPPCli::Bookmark</name>
@@ -802,6 +1010,13 @@
       <name>Id</name>
       <anchorfile>class_c_p_p_cli_1_1_bookmark.html</anchorfile>
       <anchor>af71845a3594ff456af1579abaae4ad78</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::String^ </type>
+      <name>Name</name>
+      <anchorfile>class_c_p_p_cli_1_1_bookmark.html</anchorfile>
+      <anchor>aeba06b04ca91dc1832bd9f814bc0ad59</anchor>
       <arglist></arglist>
     </member>
     <member kind="property">
@@ -885,11 +1100,25 @@
       <anchor>a4736e7d4e94f76405d7d8b9a2db98560</anchor>
       <arglist>(SnapshotFilter^ filter)</arglist>
     </member>
+    <member kind="function" protection="package">
+      <type>System::Collections::Generic::List&lt; DataInterface^ &gt;^</type>
+      <name>_GetDataInterfaces</name>
+      <anchorfile>class_c_p_p_cli_1_1_clip.html</anchorfile>
+      <anchor>ac221db590f08c5a7a91cdc093677d7d7</anchor>
+      <arglist>()</arglist>
+    </member>
     <member kind="variable" protection="package">
       <type>VxSdk::IVxClip *</type>
       <name>_clip</name>
       <anchorfile>class_c_p_p_cli_1_1_clip.html</anchorfile>
       <anchor>a71bd06e3fa40d2876a614270b1072915</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::Collections::Generic::List&lt; DataInterface^ &gt;^</type>
+      <name>DataInterfaces</name>
+      <anchorfile>class_c_p_p_cli_1_1_clip.html</anchorfile>
+      <anchor>a312388d88efa1be8b77c25776ed3a4cb</anchor>
       <arglist></arglist>
     </member>
     <member kind="property">
@@ -904,6 +1133,13 @@
       <name>DataSourceName</name>
       <anchorfile>class_c_p_p_cli_1_1_clip.html</anchorfile>
       <anchor>ad0e26b6d9daf36d14c2ff363ea72d882</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::String^ </type>
+      <name>DataStorageId</name>
+      <anchorfile>class_c_p_p_cli_1_1_clip.html</anchorfile>
+      <anchor>ac81ef22ca6f4b1663b12326282b531c3</anchor>
       <arglist></arglist>
     </member>
     <member kind="property">
@@ -939,6 +1175,13 @@
       <name>Priority</name>
       <anchorfile>class_c_p_p_cli_1_1_clip.html</anchorfile>
       <anchor>abbc4366d9ef7220074f9e944e22d95f3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::String^ </type>
+      <name>SourceDataStorageId</name>
+      <anchorfile>class_c_p_p_cli_1_1_clip.html</anchorfile>
+      <anchor>a415b9bba8c69cce01c0c682987af0edc</anchor>
       <arglist></arglist>
     </member>
     <member kind="property">
@@ -1090,6 +1333,32 @@
     <filename>class_c_p_p_cli_1_1_data_interface.html</filename>
     <member kind="enumeration">
       <type></type>
+      <name>RenderTypes</name>
+      <anchorfile>class_c_p_p_cli_1_1_data_interface.html</anchorfile>
+      <anchor>a8e97b1072453ba84675387131889bcd4</anchor>
+      <arglist></arglist>
+      <enumvalue file="class_c_p_p_cli_1_1_data_interface.html" anchor="a8e97b1072453ba84675387131889bcd4a88183b946cc5f0e8c96b2e66e1c74a7e">Unknown</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_data_interface.html" anchor="a8e97b1072453ba84675387131889bcd4a534094956e702a89cfbe952d11b71578">Evo</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_data_interface.html" anchor="a8e97b1072453ba84675387131889bcd4a9b8d7600a700ccc93e9c6c7c0831d4b7">Optera180</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_data_interface.html" anchor="a8e97b1072453ba84675387131889bcd4ad863869efbe894e129b70570341ace20">Optera270</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_data_interface.html" anchor="a8e97b1072453ba84675387131889bcd4aebf75bb31cfabe4c8251efd6f72a7295">Optera360</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_data_interface.html" anchor="a8e97b1072453ba84675387131889bcd4aeb6d8ae6f20283755b339c0dc273988b">Standard</enumvalue>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>StreamFormats</name>
+      <anchorfile>class_c_p_p_cli_1_1_data_interface.html</anchorfile>
+      <anchor>a87fd964a3783dddd4318aa8c6406258b</anchor>
+      <arglist></arglist>
+      <enumvalue file="class_c_p_p_cli_1_1_data_interface.html" anchor="a87fd964a3783dddd4318aa8c6406258ba88183b946cc5f0e8c96b2e66e1c74a7e">Unknown</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_data_interface.html" anchor="a87fd964a3783dddd4318aa8c6406258ba8ba63b54352f7053b055235a9ec7ac09">H264</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_data_interface.html" anchor="a87fd964a3783dddd4318aa8c6406258ba5be0961e6e8a5cd49abb33d4c0f0ffc0">H265</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_data_interface.html" anchor="a87fd964a3783dddd4318aa8c6406258ba414c84a3f59e432968abe494acefb01b">Mpeg4</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_data_interface.html" anchor="a87fd964a3783dddd4318aa8c6406258ba5023eac1d7fffa77b37c0e6797c97773">Jpeg</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_data_interface.html" anchor="a87fd964a3783dddd4318aa8c6406258ba8bb7558ef2b1a75aaf8540c4c639fe3e">G711</enumvalue>
+    </member>
+    <member kind="enumeration">
+      <type></type>
       <name>StreamProtocols</name>
       <anchorfile>class_c_p_p_cli_1_1_data_interface.html</anchorfile>
       <anchor>abc71fe6bdd16582a76e99d5a20fb35e0</anchor>
@@ -1113,10 +1382,38 @@
       <arglist></arglist>
     </member>
     <member kind="property">
-      <type>bool</type>
-      <name>SupportsMulticast</name>
+      <type>int</type>
+      <name>Bitrate</name>
       <anchorfile>class_c_p_p_cli_1_1_data_interface.html</anchorfile>
-      <anchor>aac4519f22bc5f01d4ebb2b1cd65656ea</anchor>
+      <anchor>ae3bae104785aec1f87467bf8377134c9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::String^ </type>
+      <name>DataEncodingId</name>
+      <anchorfile>class_c_p_p_cli_1_1_data_interface.html</anchorfile>
+      <anchor>a60cc4d83d3e3a0ff56daa5294859e1fc</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::String^ </type>
+      <name>DataEndpoint</name>
+      <anchorfile>class_c_p_p_cli_1_1_data_interface.html</anchorfile>
+      <anchor>abf4532540ca294aed3ea11d888fadbee</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>StreamFormats</type>
+      <name>Format</name>
+      <anchorfile>class_c_p_p_cli_1_1_data_interface.html</anchorfile>
+      <anchor>a0182744fd84713590920abfe15b78eae</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>float</type>
+      <name>Framerate</name>
+      <anchorfile>class_c_p_p_cli_1_1_data_interface.html</anchorfile>
+      <anchor>a964990f3949a0177b60396d60a2b20be</anchor>
       <arglist></arglist>
     </member>
     <member kind="property">
@@ -1141,10 +1438,31 @@
       <arglist></arglist>
     </member>
     <member kind="property">
-      <type>System::String^ </type>
-      <name>DataEndpoint</name>
+      <type>RenderTypes</type>
+      <name>RenderType</name>
       <anchorfile>class_c_p_p_cli_1_1_data_interface.html</anchorfile>
-      <anchor>abf4532540ca294aed3ea11d888fadbee</anchor>
+      <anchor>a0ff8744f28211ed4df422fd649015974</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>bool</type>
+      <name>SupportsMulticast</name>
+      <anchorfile>class_c_p_p_cli_1_1_data_interface.html</anchorfile>
+      <anchor>aac4519f22bc5f01d4ebb2b1cd65656ea</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>int</type>
+      <name>XResolution</name>
+      <anchorfile>class_c_p_p_cli_1_1_data_interface.html</anchorfile>
+      <anchor>ad1576ec65496e2ed9cd375590d08d722</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>int</type>
+      <name>YResolution</name>
+      <anchorfile>class_c_p_p_cli_1_1_data_interface.html</anchorfile>
+      <anchor>a67d35fd25fcf8553fbd9bedd430e8b3f</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -1390,6 +1708,20 @@
       <arglist>()</arglist>
     </member>
     <member kind="function" protection="package">
+      <type>System::Collections::Generic::List&lt; DataStorage^ &gt;^</type>
+      <name>_GetAllDataStorages</name>
+      <anchorfile>class_c_p_p_cli_1_1_data_source.html</anchorfile>
+      <anchor>a8275b10e337738a482ade814d40d0ede</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="package">
+      <type>System::Collections::Generic::List&lt; ResourceRel^ &gt;^</type>
+      <name>_GetAudioRelations</name>
+      <anchorfile>class_c_p_p_cli_1_1_data_source.html</anchorfile>
+      <anchor>a79d4c8920660595ae2daea73f945ed1c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="package">
       <type>System::Collections::Generic::List&lt; Clip^ &gt;^</type>
       <name>_GetClips</name>
       <anchorfile>class_c_p_p_cli_1_1_data_source.html</anchorfile>
@@ -1411,10 +1743,31 @@
       <arglist>()</arglist>
     </member>
     <member kind="function" protection="package">
+      <type>System::Collections::Generic::List&lt; Clip^ &gt;^</type>
+      <name>_GetEdgeClips</name>
+      <anchorfile>class_c_p_p_cli_1_1_data_source.html</anchorfile>
+      <anchor>a70b268264827a7fccbc4a4b534c82f0b</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="package">
       <type>CPPCli::Device^</type>
       <name>_GetHostDevice</name>
       <anchorfile>class_c_p_p_cli_1_1_data_source.html</anchorfile>
       <anchor>a232eb7963cb0d1797d10bbe34f464017</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="package">
+      <type>ResourceRel^</type>
+      <name>_GetLinkedAudioRelation</name>
+      <anchorfile>class_c_p_p_cli_1_1_data_source.html</anchorfile>
+      <anchor>ae255b2d71700e5524d01777ff129f0db</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="package">
+      <type>System::Collections::Generic::List&lt; UserInfo^ &gt;^</type>
+      <name>_GetMultiviewInfo</name>
+      <anchorfile>class_c_p_p_cli_1_1_data_source.html</anchorfile>
+      <anchor>a7447e14aace927438b44c17bb05e4fd9</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" protection="package">
@@ -1431,11 +1784,32 @@
       <anchor>ae59ab4ef933cde5fbb1ca81a59e32539</anchor>
       <arglist>()</arglist>
     </member>
+    <member kind="function" protection="package">
+      <type>System::Collections::Generic::List&lt; ResourceRel^ &gt;^</type>
+      <name>_GetVideoRelations</name>
+      <anchorfile>class_c_p_p_cli_1_1_data_source.html</anchorfile>
+      <anchor>ab93ca21681f9c462dd3afd1d750443e4</anchor>
+      <arglist>()</arglist>
+    </member>
     <member kind="variable" protection="package">
       <type>VxSdk::IVxDataSource *</type>
       <name>_dataSource</name>
       <anchorfile>class_c_p_p_cli_1_1_data_source.html</anchorfile>
       <anchor>acea849b126e037a61ec16c8b6245c503</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::Collections::Generic::List&lt; DataStorage^ &gt;^</type>
+      <name>AllDataStorages</name>
+      <anchorfile>class_c_p_p_cli_1_1_data_source.html</anchorfile>
+      <anchor>a292a6f85a8c1a6126e1bcf19cf149af0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::Collections::Generic::List&lt; ResourceRel^ &gt;^</type>
+      <name>AudioRelations</name>
+      <anchorfile>class_c_p_p_cli_1_1_data_source.html</anchorfile>
+      <anchor>ade6576cdebab0480528afbd9cebc338e</anchor>
       <arglist></arglist>
     </member>
     <member kind="property">
@@ -1457,6 +1831,13 @@
       <name>DataStorages</name>
       <anchorfile>class_c_p_p_cli_1_1_data_source.html</anchorfile>
       <anchor>a6c133ae24e9dfe58c6400d48b29dce9b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::Collections::Generic::List&lt; Clip^ &gt;^</type>
+      <name>EdgeClips</name>
+      <anchorfile>class_c_p_p_cli_1_1_data_source.html</anchorfile>
+      <anchor>a35812a78e09da8c694f25ed09f6ba642</anchor>
       <arglist></arglist>
     </member>
     <member kind="property">
@@ -1488,6 +1869,13 @@
       <arglist></arglist>
     </member>
     <member kind="property">
+      <type>int</type>
+      <name>Index</name>
+      <anchorfile>class_c_p_p_cli_1_1_data_source.html</anchorfile>
+      <anchor>ac5f6af450fb0ed993e04ce03be93e3f3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
       <type>System::String^ </type>
       <name>Ip</name>
       <anchorfile>class_c_p_p_cli_1_1_data_source.html</anchorfile>
@@ -1513,6 +1901,20 @@
       <name>IsRecording</name>
       <anchorfile>class_c_p_p_cli_1_1_data_source.html</anchorfile>
       <anchor>adec9d5ed1eb78ed65975a143f44049c5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>ResourceRel^ </type>
+      <name>LinkedAudioRelation</name>
+      <anchorfile>class_c_p_p_cli_1_1_data_source.html</anchorfile>
+      <anchor>a7c6cb1fcfdc5a016e32dfba65a4a9f2d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::Collections::Generic::List&lt; UserInfo^ &gt;^</type>
+      <name>MultiviewInfo</name>
+      <anchorfile>class_c_p_p_cli_1_1_data_source.html</anchorfile>
+      <anchor>aeb0011a966dc8d99e211d17e123134fa</anchor>
       <arglist></arglist>
     </member>
     <member kind="property">
@@ -1564,6 +1966,13 @@
       <anchor>ad4a8cfc03e8fb1c2726c59cb3093990a</anchor>
       <arglist></arglist>
     </member>
+    <member kind="property">
+      <type>System::Collections::Generic::List&lt; ResourceRel^ &gt;^</type>
+      <name>VideoRelations</name>
+      <anchorfile>class_c_p_p_cli_1_1_data_source.html</anchorfile>
+      <anchor>a27295bb6cdb86c4a65ef389d0119717e</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>CPPCli::DataStorage</name>
@@ -1578,6 +1987,7 @@
       <enumvalue file="class_c_p_p_cli_1_1_data_storage.html" anchor="a8e8fc183074346d9ddc5b3ffa48e16b6ae2f13f429396eb3e877eac8a6515df19">DigitalSentry</enumvalue>
       <enumvalue file="class_c_p_p_cli_1_1_data_storage.html" anchor="a8e8fc183074346d9ddc5b3ffa48e16b6a93da7c7e6ceac9506ca5446b5edb236f">NSM</enumvalue>
       <enumvalue file="class_c_p_p_cli_1_1_data_storage.html" anchor="a8e8fc183074346d9ddc5b3ffa48e16b6a95d43b9f583c9e1cdf9be7a95f33fa3c">VideoXpertStorage</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_data_storage.html" anchor="a8e8fc183074346d9ddc5b3ffa48e16b6ae4a297a0f76119a442c2595ac040673e">Edge</enumvalue>
     </member>
     <member kind="function">
       <type></type>
@@ -1706,6 +2116,13 @@
       <arglist></arglist>
     </member>
     <member kind="property">
+      <type>bool</type>
+      <name>IsFailover</name>
+      <anchorfile>class_c_p_p_cli_1_1_data_storage.html</anchorfile>
+      <anchor>a51841fd23b38759fa8bb96fe1aba895c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
       <type>System::String^ </type>
       <name>Name</name>
       <anchorfile>class_c_p_p_cli_1_1_data_storage.html</anchorfile>
@@ -1723,6 +2140,16 @@
   <compound kind="class">
     <name>CPPCli::Device</name>
     <filename>class_c_p_p_cli_1_1_device.html</filename>
+    <member kind="enumeration">
+      <type></type>
+      <name>DeviceStatus</name>
+      <anchorfile>class_c_p_p_cli_1_1_device.html</anchorfile>
+      <anchor>ac6ddd325c681bb71338f50d627e63ad7</anchor>
+      <arglist></arglist>
+      <enumvalue file="class_c_p_p_cli_1_1_device.html" anchor="ac6ddd325c681bb71338f50d627e63ad7a88183b946cc5f0e8c96b2e66e1c74a7e">Unknown</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_device.html" anchor="ac6ddd325c681bb71338f50d627e63ad7a32b169f72b293ef80d35435e9894f8e2">Initializing</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_device.html" anchor="ac6ddd325c681bb71338f50d627e63ad7ab403ce880ed2c28d0784a2430a9b6eda">Unauthenticated</enumvalue>
+    </member>
     <member kind="enumeration">
       <type></type>
       <name>Types</name>
@@ -1773,6 +2200,13 @@
       <arglist>()</arglist>
     </member>
     <member kind="function" protection="package">
+      <type>System::Collections::Generic::List&lt; AlarmInput^ &gt;^</type>
+      <name>_GetAlarmInputs</name>
+      <anchorfile>class_c_p_p_cli_1_1_device.html</anchorfile>
+      <anchor>ac5173fbad945ee2b678bb584fff2937f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="package">
       <type>System::Collections::Generic::List&lt; DataSource^ &gt;^</type>
       <name>_GetDataSources</name>
       <anchorfile>class_c_p_p_cli_1_1_device.html</anchorfile>
@@ -1786,11 +2220,25 @@
       <anchor>a7e5ba21633e100bc30ea2789b944c355</anchor>
       <arglist>()</arglist>
     </member>
+    <member kind="function" protection="package">
+      <type>System::Collections::Generic::List&lt; RelayOutput^ &gt;^</type>
+      <name>_GetRelayOutputs</name>
+      <anchorfile>class_c_p_p_cli_1_1_device.html</anchorfile>
+      <anchor>a6fdb06af7530a35a16e5422b13077e66</anchor>
+      <arglist>()</arglist>
+    </member>
     <member kind="variable" protection="package">
       <type>VxSdk::IVxDevice *</type>
       <name>_device</name>
       <anchorfile>class_c_p_p_cli_1_1_device.html</anchorfile>
       <anchor>afaeffe7f56c0c29059669a529b8d890f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::Collections::Generic::List&lt; AlarmInput^ &gt;^</type>
+      <name>AlarmInputs</name>
+      <anchorfile>class_c_p_p_cli_1_1_device.html</anchorfile>
+      <anchor>a7ea17a77cad6c2c196f6c03971ec2c6f</anchor>
       <arglist></arglist>
     </member>
     <member kind="property">
@@ -1805,6 +2253,13 @@
       <name>DeviceAssignments</name>
       <anchorfile>class_c_p_p_cli_1_1_device.html</anchorfile>
       <anchor>a9cb0e61d7f0ce4b64c1a8ee7ee534a44</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::String^ </type>
+      <name>DriverDeviceId</name>
+      <anchorfile>class_c_p_p_cli_1_1_device.html</anchorfile>
+      <anchor>a66c6413e1415d5d558dab4c46bd209fd</anchor>
       <arglist></arglist>
     </member>
     <member kind="property">
@@ -1864,6 +2319,13 @@
       <arglist></arglist>
     </member>
     <member kind="property">
+      <type>System::Collections::Generic::List&lt; RelayOutput^ &gt;^</type>
+      <name>RelayOutputs</name>
+      <anchorfile>class_c_p_p_cli_1_1_device.html</anchorfile>
+      <anchor>a94b0fc71eba53b9620de83cee6da60fa</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
       <type>System::String^ </type>
       <name>Serial</name>
       <anchorfile>class_c_p_p_cli_1_1_device.html</anchorfile>
@@ -1875,6 +2337,13 @@
       <name>State</name>
       <anchorfile>class_c_p_p_cli_1_1_device.html</anchorfile>
       <anchor>ae2335410f72a33f9ca7a82f92568c362</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::Collections::Generic::List&lt; DeviceStatus &gt;^</type>
+      <name>Status</name>
+      <anchorfile>class_c_p_p_cli_1_1_device.html</anchorfile>
+      <anchor>a08d8a409f9794cb6eddb20c9332f724a</anchor>
       <arglist></arglist>
     </member>
     <member kind="property">
@@ -2012,6 +2481,13 @@
       <name>DriverType</name>
       <anchorfile>class_c_p_p_cli_1_1_device_assignment.html</anchorfile>
       <anchor>ab7cd83379177d9aa9126679d87b1501e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::String^ </type>
+      <name>Id</name>
+      <anchorfile>class_c_p_p_cli_1_1_device_assignment.html</anchorfile>
+      <anchor>a0e026273ce13aa2113d35e3c65c0760a</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -2320,6 +2796,20 @@
       <arglist></arglist>
     </member>
     <member kind="property">
+      <type>System::String^ </type>
+      <name>AckClientId</name>
+      <anchorfile>class_c_p_p_cli_1_1_event.html</anchorfile>
+      <anchor>a2a859e78223fe15ba08ef70eb1bb3eb3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::String^ </type>
+      <name>AckClientName</name>
+      <anchorfile>class_c_p_p_cli_1_1_event.html</anchorfile>
+      <anchor>a525cbc4d8d6b6a7a07fde2eefabd8970</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
       <type>AckStates</type>
       <name>AckState</name>
       <anchorfile>class_c_p_p_cli_1_1_event.html</anchorfile>
@@ -2356,9 +2846,23 @@
     </member>
     <member kind="property">
       <type>System::String^ </type>
+      <name>GeneratorDeviceName</name>
+      <anchorfile>class_c_p_p_cli_1_1_event.html</anchorfile>
+      <anchor>ad0921f63d52f51a9c5e572294cda6124</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::String^ </type>
       <name>Id</name>
       <anchorfile>class_c_p_p_cli_1_1_event.html</anchorfile>
       <anchor>aa5e57dfbf3c784e685cec866471da92b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>bool</type>
+      <name>IsInitial</name>
+      <anchorfile>class_c_p_p_cli_1_1_event.html</anchorfile>
+      <anchor>a20c6dde012f3a461dd4fc4a4a04b3a0e</anchor>
       <arglist></arglist>
     </member>
     <member kind="property">
@@ -2390,6 +2894,13 @@
       <arglist></arglist>
     </member>
     <member kind="property">
+      <type>System::String^ </type>
+      <name>SourceClientId</name>
+      <anchorfile>class_c_p_p_cli_1_1_event.html</anchorfile>
+      <anchor>a1d041324d43b1032c540de1c786e9dc5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
       <type>CPPCli::Device^ </type>
       <name>SourceDevice</name>
       <anchorfile>class_c_p_p_cli_1_1_event.html</anchorfile>
@@ -2401,6 +2912,13 @@
       <name>SourceDeviceId</name>
       <anchorfile>class_c_p_p_cli_1_1_event.html</anchorfile>
       <anchor>a6791260b1011fc749cee2a221df8baee</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::String^ </type>
+      <name>SourceDeviceName</name>
+      <anchorfile>class_c_p_p_cli_1_1_event.html</anchorfile>
+      <anchor>a0eca7810ce3a9e60c5333ddee0e46eef</anchor>
       <arglist></arglist>
     </member>
     <member kind="property">
@@ -2436,7 +2954,6 @@
       <arglist></arglist>
       <enumvalue file="class_c_p_p_cli_1_1_export.html" anchor="a5099286740a481c658f0fb9c540982aaa88183b946cc5f0e8c96b2e66e1c74a7e">Unknown</enumvalue>
       <enumvalue file="class_c_p_p_cli_1_1_export.html" anchor="a5099286740a481c658f0fb9c540982aaa22ede624179d7924a226fea4faa5c4de">MkvZip</enumvalue>
-      <enumvalue file="class_c_p_p_cli_1_1_export.html" anchor="a5099286740a481c658f0fb9c540982aaa7d761542d4b5ea168dc156e85a9a2949">Mp4</enumvalue>
     </member>
     <member kind="enumeration">
       <type></type>
@@ -2645,6 +3162,62 @@
     </member>
   </compound>
   <compound kind="class">
+    <name>CPPCli::InternalEvent</name>
+    <filename>class_c_p_p_cli_1_1_internal_event.html</filename>
+    <member kind="enumeration">
+      <type></type>
+      <name>EventType</name>
+      <anchorfile>class_c_p_p_cli_1_1_internal_event.html</anchorfile>
+      <anchor>a51542fc315691f02d3245c88ee613a66</anchor>
+      <arglist></arglist>
+      <enumvalue file="class_c_p_p_cli_1_1_internal_event.html" anchor="a51542fc315691f02d3245c88ee613a66a88183b946cc5f0e8c96b2e66e1c74a7e">Unknown</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_internal_event.html" anchor="a51542fc315691f02d3245c88ee613a66ad494df1f9424d466fde17db3f531bdf1">SystemConnectionLost</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_internal_event.html" anchor="a51542fc315691f02d3245c88ee613a66acae3685d51a579c7d9747eb123250444">SystemConnectionRestored</enumvalue>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>InternalEvent</name>
+      <anchorfile>class_c_p_p_cli_1_1_internal_event.html</anchorfile>
+      <anchor>a96c595b87a64177b328eb1920477dddd</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>InternalEvent</name>
+      <anchorfile>class_c_p_p_cli_1_1_internal_event.html</anchorfile>
+      <anchor>ad8fd4c77f33437880e25d80489040c47</anchor>
+      <arglist>(VxSdk::VxInternalEvent *vxInternalEvent)</arglist>
+    </member>
+    <member kind="variable" protection="package">
+      <type>VxSdk::VxInternalEvent *</type>
+      <name>_internalEvent</name>
+      <anchorfile>class_c_p_p_cli_1_1_internal_event.html</anchorfile>
+      <anchor>a68ea66007e885cb9ce56a9d7815db598</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::String^ </type>
+      <name>Id</name>
+      <anchorfile>class_c_p_p_cli_1_1_internal_event.html</anchorfile>
+      <anchor>a10892a0b34a68cfaeb278f216a329323</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::Collections::Generic::List&lt; System::Collections::Generic::KeyValuePair&lt; System::String^ , System::String^ &gt;&gt;^</type>
+      <name>Properties</name>
+      <anchorfile>class_c_p_p_cli_1_1_internal_event.html</anchorfile>
+      <anchor>af60db1c26e9d20c900c751fcafdd2087</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>EventType</type>
+      <name>Type</name>
+      <anchorfile>class_c_p_p_cli_1_1_internal_event.html</anchorfile>
+      <anchor>ac5ae774f9880bd92e9c7c93a54607024</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
     <name>CPPCli::License</name>
     <filename>class_c_p_p_cli_1_1_license.html</filename>
     <member kind="enumeration">
@@ -2847,6 +3420,87 @@
       <enumvalue file="class_c_p_p_cli_1_1_log_level.html" anchor="ab6a080f338f1ba4534e998de0757aa15a902b0d55fddef6f8d651fe1035b7d4bd">Error</enumvalue>
       <enumvalue file="class_c_p_p_cli_1_1_log_level.html" anchor="ab6a080f338f1ba4534e998de0757aa15a882384ec38ce8d9582b57e70861730e4">Fatal</enumvalue>
       <enumvalue file="class_c_p_p_cli_1_1_log_level.html" anchor="ab6a080f338f1ba4534e998de0757aa15a6adf97f83acf6453d4a6a4b1070f3754">None</enumvalue>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CPPCli::ManualRecording</name>
+    <filename>class_c_p_p_cli_1_1_manual_recording.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>ManualRecording</name>
+      <anchorfile>class_c_p_p_cli_1_1_manual_recording.html</anchorfile>
+      <anchor>a0f98714ec391f6b987c769afb1d37e12</anchor>
+      <arglist>(VxSdk::IVxManualRecording *vxManualRecording)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~ManualRecording</name>
+      <anchorfile>class_c_p_p_cli_1_1_manual_recording.html</anchorfile>
+      <anchor>ac727fa56f8f6f077359ef0e2e1dca188</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>!ManualRecording</name>
+      <anchorfile>class_c_p_p_cli_1_1_manual_recording.html</anchorfile>
+      <anchor>a8fb0590c9ee99a4c7de12f84916dc525</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>Results::Value</type>
+      <name>Refresh</name>
+      <anchorfile>class_c_p_p_cli_1_1_manual_recording.html</anchorfile>
+      <anchor>a9385d1a5f23d78eb017b5ed043b32fd2</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="package">
+      <type>CPPCli::DataSource^</type>
+      <name>_GetDataSource</name>
+      <anchorfile>class_c_p_p_cli_1_1_manual_recording.html</anchorfile>
+      <anchor>ab8024b351ae47d10e6f856fce18b3d23</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable" protection="package">
+      <type>VxSdk::IVxManualRecording *</type>
+      <name>_manualRecording</name>
+      <anchorfile>class_c_p_p_cli_1_1_manual_recording.html</anchorfile>
+      <anchor>af39601f43d014fe8ab406f5f6d37a3ec</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>CPPCli::DataSource^ </type>
+      <name>DataSource</name>
+      <anchorfile>class_c_p_p_cli_1_1_manual_recording.html</anchorfile>
+      <anchor>aad132917bcd36ac9c5116f656ebd0e20</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::String^ </type>
+      <name>DataSourceId</name>
+      <anchorfile>class_c_p_p_cli_1_1_manual_recording.html</anchorfile>
+      <anchor>a223ac616e91805406f109c70942d1bf9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::String^ </type>
+      <name>Id</name>
+      <anchorfile>class_c_p_p_cli_1_1_manual_recording.html</anchorfile>
+      <anchor>a20cf104a7e2e30d2b902aefbca5a19c9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::String^ </type>
+      <name>OwnerName</name>
+      <anchorfile>class_c_p_p_cli_1_1_manual_recording.html</anchorfile>
+      <anchor>a970229927f186c811ea69470bea39301</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::DateTime</type>
+      <name>Time</name>
+      <anchorfile>class_c_p_p_cli_1_1_manual_recording.html</anchorfile>
+      <anchor>abaf901990f8aadfd3e585d5c4e5d1f3b</anchor>
+      <arglist></arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -3412,6 +4066,13 @@
       <arglist></arglist>
     </member>
     <member kind="property">
+      <type>System::String^ </type>
+      <name>Name</name>
+      <anchorfile>class_c_p_p_cli_1_1_new_bookmark.html</anchorfile>
+      <anchor>a17d1e9fe47999b64257837bb49d4ceec</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
       <type>System::DateTime</type>
       <name>Time</name>
       <anchorfile>class_c_p_p_cli_1_1_new_bookmark.html</anchorfile>
@@ -3638,6 +4299,13 @@
       <arglist></arglist>
     </member>
     <member kind="property">
+      <type>System::String^ </type>
+      <name>Id</name>
+      <anchorfile>class_c_p_p_cli_1_1_new_event.html</anchorfile>
+      <anchor>a50ef21627b0afac2446ec1ccabfd3f77</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
       <type>System::Collections::Generic::List&lt; System::Collections::Generic::KeyValuePair&lt; System::String^ , System::String^ &gt;&gt;^</type>
       <name>Properties</name>
       <anchorfile>class_c_p_p_cli_1_1_new_event.html</anchorfile>
@@ -3773,6 +4441,13 @@
     </member>
     <member kind="property">
       <type>System::String^ </type>
+      <name>DataEncodingId</name>
+      <anchorfile>class_c_p_p_cli_1_1_new_export_clip.html</anchorfile>
+      <anchor>a8db43a3e898fe7ae154eceb42346eb9b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::String^ </type>
       <name>DataSourceId</name>
       <anchorfile>class_c_p_p_cli_1_1_new_export_clip.html</anchorfile>
       <anchor>a99dfbd3ce990b0057961bcdf50b243b6</anchor>
@@ -3790,6 +4465,52 @@
       <name>StartTime</name>
       <anchorfile>class_c_p_p_cli_1_1_new_export_clip.html</anchorfile>
       <anchor>a1032ea21a54a8ae9d9b33044da4850a7</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CPPCli::NewManualRecording</name>
+    <filename>class_c_p_p_cli_1_1_new_manual_recording.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>NewManualRecording</name>
+      <anchorfile>class_c_p_p_cli_1_1_new_manual_recording.html</anchorfile>
+      <anchor>a80a18a5573bf7d53dcf43fd74cefeab8</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>NewManualRecording</name>
+      <anchorfile>class_c_p_p_cli_1_1_new_manual_recording.html</anchorfile>
+      <anchor>a67cb145e362d37e434170771eec75605</anchor>
+      <arglist>(VxSdk::VxNewManualRecording *vxNewManualRecording)</arglist>
+    </member>
+    <member kind="variable" protection="package">
+      <type>VxSdk::VxNewManualRecording *</type>
+      <name>_newManualRecording</name>
+      <anchorfile>class_c_p_p_cli_1_1_new_manual_recording.html</anchorfile>
+      <anchor>a2703463a85ff8a2c6b98dafddcf6eb25</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::String^ </type>
+      <name>DataSourceId</name>
+      <anchorfile>class_c_p_p_cli_1_1_new_manual_recording.html</anchorfile>
+      <anchor>ac78529702478185d3f8faa1897cf8f74</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>int</type>
+      <name>PostRecord</name>
+      <anchorfile>class_c_p_p_cli_1_1_new_manual_recording.html</anchorfile>
+      <anchor>a0d0483405136e02f4cbadbbc356e9f8b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>int</type>
+      <name>PreRecord</name>
+      <anchorfile>class_c_p_p_cli_1_1_new_manual_recording.html</anchorfile>
+      <anchor>aaf9f73aff8706ab4cf7e5fd9886b19d2</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -4478,6 +5199,27 @@
       <arglist></arglist>
     </member>
     <member kind="property">
+      <type>System::String^ </type>
+      <name>EmployeeId</name>
+      <anchorfile>class_c_p_p_cli_1_1_new_user.html</anchorfile>
+      <anchor>adb9d58f24cb5cbd2fa3adb73a7a7722c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::String^ </type>
+      <name>FirstName</name>
+      <anchorfile>class_c_p_p_cli_1_1_new_user.html</anchorfile>
+      <anchor>af1d6dac334c1154decdc13ef084f937e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::String^ </type>
+      <name>LastName</name>
+      <anchorfile>class_c_p_p_cli_1_1_new_user.html</anchorfile>
+      <anchor>abb7d70700535f8b28e622503aa3706f0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
       <type>bool</type>
       <name>MustChangePassword</name>
       <anchorfile>class_c_p_p_cli_1_1_new_user.html</anchorfile>
@@ -4493,9 +5235,23 @@
     </member>
     <member kind="property">
       <type>System::String^ </type>
+      <name>Note</name>
+      <anchorfile>class_c_p_p_cli_1_1_new_user.html</anchorfile>
+      <anchor>aeddccd6bdefb4796f16f4a2db7bd2c9a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::String^ </type>
       <name>Password</name>
       <anchorfile>class_c_p_p_cli_1_1_new_user.html</anchorfile>
       <anchor>a6a2b307a2b0f59193abb5752b366c916</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::Collections::Generic::List&lt; System::Collections::Generic::KeyValuePair&lt; User::PhoneType, System::String^ &gt;&gt;^</type>
+      <name>PhoneNumbers</name>
+      <anchorfile>class_c_p_p_cli_1_1_new_user.html</anchorfile>
+      <anchor>a37f1ee70416f089ab7a2e245f1f827f4</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -4711,6 +5467,13 @@
       <arglist></arglist>
     </member>
     <member kind="property">
+      <type>int</type>
+      <name>Index</name>
+      <anchorfile>class_c_p_p_cli_1_1_preset.html</anchorfile>
+      <anchor>a548aa079dae5b5241eec38757805778d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
       <type>System::String^ </type>
       <name>Name</name>
       <anchorfile>class_c_p_p_cli_1_1_preset.html</anchorfile>
@@ -4901,6 +5664,13 @@
       <arglist></arglist>
     </member>
     <member kind="property">
+      <type>bool</type>
+      <name>ExcludeRestricted</name>
+      <anchorfile>class_c_p_p_cli_1_1_privilege.html</anchorfile>
+      <anchor>aa3b1efbebe3e3d0566d1711549e465db</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
       <type>System::String^ </type>
       <name>Id</name>
       <anchorfile>class_c_p_p_cli_1_1_privilege.html</anchorfile>
@@ -5070,6 +5840,13 @@
     </member>
     <member kind="function">
       <type>Results::Value</type>
+      <name>AddPreset</name>
+      <anchorfile>class_c_p_p_cli_1_1_ptz_controller.html</anchorfile>
+      <anchor>a315d54652fd852cd4abc5e900f3343dc</anchor>
+      <arglist>(int index)</arglist>
+    </member>
+    <member kind="function">
+      <type>Results::Value</type>
       <name>ContinuousFocus</name>
       <anchorfile>class_c_p_p_cli_1_1_ptz_controller.html</anchorfile>
       <anchor>a3205c316934173818716d0ee64ebc438</anchor>
@@ -5088,6 +5865,13 @@
       <anchorfile>class_c_p_p_cli_1_1_ptz_controller.html</anchorfile>
       <anchor>a4b896c1ea0c205eb15b81ccb6f6021d2</anchor>
       <arglist>(int speedX, int speedY, ZoomDirections inOut)</arglist>
+    </member>
+    <member kind="function">
+      <type>CPPCli::Results::Value</type>
+      <name>DeletePreset</name>
+      <anchorfile>class_c_p_p_cli_1_1_ptz_controller.html</anchorfile>
+      <anchor>af88f49cab0005e7bb3485d468aaefdd4</anchor>
+      <arglist>(Preset^ preset)</arglist>
     </member>
     <member kind="function">
       <type>System::Collections::Generic::List&lt; Pattern^ &gt;^</type>
@@ -5126,6 +5910,13 @@
     </member>
     <member kind="function">
       <type>Results::Value</type>
+      <name>RepositionPreset</name>
+      <anchorfile>class_c_p_p_cli_1_1_ptz_controller.html</anchorfile>
+      <anchor>afee104ae19351cf207caef9f852203be</anchor>
+      <arglist>(Preset^ preset)</arglist>
+    </member>
+    <member kind="function">
+      <type>Results::Value</type>
       <name>Stop</name>
       <anchorfile>class_c_p_p_cli_1_1_ptz_controller.html</anchorfile>
       <anchor>a1dc7b3426cb6593986a62017dd82409e</anchor>
@@ -5142,6 +5933,13 @@
       <type>Results::Value</type>
       <name>TriggerPreset</name>
       <anchorfile>class_c_p_p_cli_1_1_ptz_controller.html</anchorfile>
+      <anchor>a37e54c663618b479d1b80a31dfced6a6</anchor>
+      <arglist>(int index)</arglist>
+    </member>
+    <member kind="function">
+      <type>Results::Value</type>
+      <name>TriggerPreset</name>
+      <anchorfile>class_c_p_p_cli_1_1_ptz_controller.html</anchorfile>
       <anchor>a73653af661e81a06eb642dd3d15bec74</anchor>
       <arglist>(Preset^ preset)</arglist>
     </member>
@@ -5150,6 +5948,13 @@
       <name>TriggerRefresh</name>
       <anchorfile>class_c_p_p_cli_1_1_ptz_controller.html</anchorfile>
       <anchor>aaae3f5219b5093ce3c068b351642154f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="package">
+      <type>PtzLimits^</type>
+      <name>_GetPtzLimits</name>
+      <anchorfile>class_c_p_p_cli_1_1_ptz_controller.html</anchorfile>
+      <anchor>a65f5ef857c109733f49530aa0923efbd</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" protection="package">
@@ -5181,6 +5986,13 @@
       <arglist></arglist>
     </member>
     <member kind="property">
+      <type>PtzLimits^ </type>
+      <name>PTZLimits</name>
+      <anchorfile>class_c_p_p_cli_1_1_ptz_controller.html</anchorfile>
+      <anchor>a87e24944c4179feac89e37ad79036005</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
       <type>PtzLock^ </type>
       <name>PTZLock</name>
       <anchorfile>class_c_p_p_cli_1_1_ptz_controller.html</anchorfile>
@@ -5206,6 +6018,87 @@
       <name>Z</name>
       <anchorfile>class_c_p_p_cli_1_1_ptz_controller.html</anchorfile>
       <anchor>a5b38e23be172036c554d9c90924e74e0</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CPPCli::PtzLimits</name>
+    <filename>class_c_p_p_cli_1_1_ptz_limits.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>PtzLimits</name>
+      <anchorfile>class_c_p_p_cli_1_1_ptz_limits.html</anchorfile>
+      <anchor>aa77ef555897948ab87a5078af6046caf</anchor>
+      <arglist>(VxSdk::VxPtzLimits *vxPtzLimits)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~PtzLimits</name>
+      <anchorfile>class_c_p_p_cli_1_1_ptz_limits.html</anchorfile>
+      <anchor>ae82907ee09ef5736c0e2cc3e56c3c030</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>!PtzLimits</name>
+      <anchorfile>class_c_p_p_cli_1_1_ptz_limits.html</anchorfile>
+      <anchor>abf45485fa564b8ae4bbbb2b3a2c72522</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable" protection="package">
+      <type>VxSdk::VxPtzLimits *</type>
+      <name>_ptzLimits</name>
+      <anchorfile>class_c_p_p_cli_1_1_ptz_limits.html</anchorfile>
+      <anchor>ae351548579369456f77e4c183db3310b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>int</type>
+      <name>MinPositionY</name>
+      <anchorfile>class_c_p_p_cli_1_1_ptz_limits.html</anchorfile>
+      <anchor>a9659a4336985b06199b6d7add785aa4e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>int</type>
+      <name>MaxPositionY</name>
+      <anchorfile>class_c_p_p_cli_1_1_ptz_limits.html</anchorfile>
+      <anchor>a2d7061ad75b799f673966e11f5c9e037</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>int</type>
+      <name>MaxPositionZ</name>
+      <anchorfile>class_c_p_p_cli_1_1_ptz_limits.html</anchorfile>
+      <anchor>acd3c605b0b555536d1fdcbd46028f399</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>int</type>
+      <name>MinSpeedX</name>
+      <anchorfile>class_c_p_p_cli_1_1_ptz_limits.html</anchorfile>
+      <anchor>a8c4d693f3be621114ad8fef425541a80</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>int</type>
+      <name>MaxSpeedX</name>
+      <anchorfile>class_c_p_p_cli_1_1_ptz_limits.html</anchorfile>
+      <anchor>ada229662087fd0c92ed0083f20a32b79</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>int</type>
+      <name>MinSpeedY</name>
+      <anchorfile>class_c_p_p_cli_1_1_ptz_limits.html</anchorfile>
+      <anchor>a627dbbe257477dde5e6ce371c4a15b82</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>int</type>
+      <name>MaxSpeedY</name>
+      <anchorfile>class_c_p_p_cli_1_1_ptz_limits.html</anchorfile>
+      <anchor>ae7c8f6e38a7343aa7fb4a84636c6fa6f</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -5312,6 +6205,77 @@
     </member>
   </compound>
   <compound kind="class">
+    <name>CPPCli::QuickLog</name>
+    <filename>class_c_p_p_cli_1_1_quick_log.html</filename>
+    <member kind="enumeration">
+      <type></type>
+      <name>LogCreationStatus</name>
+      <anchorfile>class_c_p_p_cli_1_1_quick_log.html</anchorfile>
+      <anchor>a15f85c10a66784c552788babb3c35153</anchor>
+      <arglist></arglist>
+      <enumvalue file="class_c_p_p_cli_1_1_quick_log.html" anchor="a15f85c10a66784c552788babb3c35153a88183b946cc5f0e8c96b2e66e1c74a7e">Unknown</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_quick_log.html" anchor="a15f85c10a66784c552788babb3c35153a12d868c18cb29bf58f02b504be9033fd">InProgress</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_quick_log.html" anchor="a15f85c10a66784c552788babb3c35153ad7c8c85bf79bbe1b7188497c32c3b0ca">Failed</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_quick_log.html" anchor="a15f85c10a66784c552788babb3c35153a30ae8fff8898dc197acd49d9c0797d20">Successful</enumvalue>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>QuickLog</name>
+      <anchorfile>class_c_p_p_cli_1_1_quick_log.html</anchorfile>
+      <anchor>a3d9b41c4eb1c1c8ffbb066a78bfdc4e8</anchor>
+      <arglist>(VxSdk::IVxQuickLog *vxQuickLog)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~QuickLog</name>
+      <anchorfile>class_c_p_p_cli_1_1_quick_log.html</anchorfile>
+      <anchor>a2fbbba4bd4a025d68c2703b8103a66b8</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>!QuickLog</name>
+      <anchorfile>class_c_p_p_cli_1_1_quick_log.html</anchorfile>
+      <anchor>a541b01b67635d7187e3e7df56f64c44f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="package">
+      <type>System::String^</type>
+      <name>_GetQuickLogEndpoint</name>
+      <anchorfile>class_c_p_p_cli_1_1_quick_log.html</anchorfile>
+      <anchor>a4c698f816df8459f40edefe1365f6012</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="package">
+      <type>LogCreationStatus</type>
+      <name>_GetStatus</name>
+      <anchorfile>class_c_p_p_cli_1_1_quick_log.html</anchorfile>
+      <anchor>a806b2fe911a1dd922b75179b46289fb0</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable" protection="package">
+      <type>VxSdk::IVxQuickLog *</type>
+      <name>_log</name>
+      <anchorfile>class_c_p_p_cli_1_1_quick_log.html</anchorfile>
+      <anchor>aee4988559b04adf09f06594f7ff6b15c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::String^ </type>
+      <name>QuickLogEndpoint</name>
+      <anchorfile>class_c_p_p_cli_1_1_quick_log.html</anchorfile>
+      <anchor>a49da7561bc0217a8acce38a799125905</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>LogCreationStatus</type>
+      <name>Status</name>
+      <anchorfile>class_c_p_p_cli_1_1_quick_log.html</anchorfile>
+      <anchor>add27ac009d88de2d115d4ecba40588d8</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
     <name>CPPCli::QuickReport</name>
     <filename>class_c_p_p_cli_1_1_quick_report.html</filename>
     <member kind="enumeration">
@@ -5383,6 +6347,104 @@
     </member>
   </compound>
   <compound kind="class">
+    <name>CPPCli::RelayOutput</name>
+    <filename>class_c_p_p_cli_1_1_relay_output.html</filename>
+    <member kind="enumeration">
+      <type></type>
+      <name>RelayStates</name>
+      <anchorfile>class_c_p_p_cli_1_1_relay_output.html</anchorfile>
+      <anchor>a6c5aad8dfec53bb819330c42cdb522d4</anchor>
+      <arglist></arglist>
+      <enumvalue file="class_c_p_p_cli_1_1_relay_output.html" anchor="a6c5aad8dfec53bb819330c42cdb522d4a88183b946cc5f0e8c96b2e66e1c74a7e">Unknown</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_relay_output.html" anchor="a6c5aad8dfec53bb819330c42cdb522d4a4d3d769b812b6faa6b76e1a8abaece2d">Active</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_relay_output.html" anchor="a6c5aad8dfec53bb819330c42cdb522d4a3cab03c00dbd11bc3569afa0748013f0">Inactive</enumvalue>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>RelayOutput</name>
+      <anchorfile>class_c_p_p_cli_1_1_relay_output.html</anchorfile>
+      <anchor>a698cecdb045abb6ad47959dbf9019598</anchor>
+      <arglist>(VxSdk::IVxRelayOutput *vxRelayOutput)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~RelayOutput</name>
+      <anchorfile>class_c_p_p_cli_1_1_relay_output.html</anchorfile>
+      <anchor>adee7b025ab883d19f14d6d1e9d5d7395</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>!RelayOutput</name>
+      <anchorfile>class_c_p_p_cli_1_1_relay_output.html</anchorfile>
+      <anchor>a9ea2513a73242be7701996da6022a6a2</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>Results::Value</type>
+      <name>Refresh</name>
+      <anchorfile>class_c_p_p_cli_1_1_relay_output.html</anchorfile>
+      <anchor>a064a6651971d09ece6e14ab75bee0688</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="package">
+      <type>CPPCli::Device^</type>
+      <name>_GetHostDevice</name>
+      <anchorfile>class_c_p_p_cli_1_1_relay_output.html</anchorfile>
+      <anchor>a74bfac8462140c7e9dd8a37f524ba1c6</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="package">
+      <type>void</type>
+      <name>_SetRelayState</name>
+      <anchorfile>class_c_p_p_cli_1_1_relay_output.html</anchorfile>
+      <anchor>a933f0d4375f259106814f4e564f15a93</anchor>
+      <arglist>(RelayStates state)</arglist>
+    </member>
+    <member kind="variable" protection="package">
+      <type>VxSdk::IVxRelayOutput *</type>
+      <name>_relayOutput</name>
+      <anchorfile>class_c_p_p_cli_1_1_relay_output.html</anchorfile>
+      <anchor>abbb0186cc8612114ad30554acde37691</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::String^ </type>
+      <name>Description</name>
+      <anchorfile>class_c_p_p_cli_1_1_relay_output.html</anchorfile>
+      <anchor>a11153790c0d4f543d8184d84fdececc9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>CPPCli::Device^ </type>
+      <name>HostDevice</name>
+      <anchorfile>class_c_p_p_cli_1_1_relay_output.html</anchorfile>
+      <anchor>a63fb8ae0595c8b58806bd9ab8f66389b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::String^ </type>
+      <name>Id</name>
+      <anchorfile>class_c_p_p_cli_1_1_relay_output.html</anchorfile>
+      <anchor>a52e5a03ef324826abb87f43605ec071a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::String^ </type>
+      <name>Name</name>
+      <anchorfile>class_c_p_p_cli_1_1_relay_output.html</anchorfile>
+      <anchor>abcfee54c098c154a22c954246cac00c8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>RelayStates</type>
+      <name>State</name>
+      <anchorfile>class_c_p_p_cli_1_1_relay_output.html</anchorfile>
+      <anchor>a61c88d1787d0d99b2ec53687887a7187</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
     <name>CPPCli::ResourceLock</name>
     <filename>class_c_p_p_cli_1_1_resource_lock.html</filename>
     <member kind="function">
@@ -5429,6 +6491,66 @@
     </member>
   </compound>
   <compound kind="class">
+    <name>CPPCli::ResourceRel</name>
+    <filename>class_c_p_p_cli_1_1_resource_rel.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>ResourceRel</name>
+      <anchorfile>class_c_p_p_cli_1_1_resource_rel.html</anchorfile>
+      <anchor>a00c432dade6b78edced59d3f4695dc7d</anchor>
+      <arglist>(VxSdk::IVxResourceRel *vxResourceRel)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~ResourceRel</name>
+      <anchorfile>class_c_p_p_cli_1_1_resource_rel.html</anchorfile>
+      <anchor>aa21a8dea3e591abb72c31ef342356426</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>!ResourceRel</name>
+      <anchorfile>class_c_p_p_cli_1_1_resource_rel.html</anchorfile>
+      <anchor>a3b8e06dd5a87f4304a6b4abd6db5d52f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>Results::Value</type>
+      <name>Refresh</name>
+      <anchorfile>class_c_p_p_cli_1_1_resource_rel.html</anchorfile>
+      <anchor>a1fcfb12cd38498ecb398a942e1aa044b</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="package">
+      <type>DataSource^</type>
+      <name>_GetResource</name>
+      <anchorfile>class_c_p_p_cli_1_1_resource_rel.html</anchorfile>
+      <anchor>a22ef952193e3da38ab5edd41a0ff1558</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable" protection="package">
+      <type>VxSdk::IVxResourceRel *</type>
+      <name>_resourceRel</name>
+      <anchorfile>class_c_p_p_cli_1_1_resource_rel.html</anchorfile>
+      <anchor>a32c0d0b31a605b125f36ffb3844b34f7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>bool</type>
+      <name>IsLinked</name>
+      <anchorfile>class_c_p_p_cli_1_1_resource_rel.html</anchorfile>
+      <anchor>ad0e2e47baf7cca568051e3bc8524ea8b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>DataSource^ </type>
+      <name>Resource</name>
+      <anchorfile>class_c_p_p_cli_1_1_resource_rel.html</anchorfile>
+      <anchor>aa01ed3641fa3c95c9451fa9132fc3a70</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
     <name>CPPCli::Results</name>
     <filename>class_c_p_p_cli_1_1_results.html</filename>
     <member kind="enumeration">
@@ -5445,7 +6567,48 @@
       <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caa319d2cc0d8b68b88c41376c4f3574a31">ActionUnavailable</enumvalue>
       <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caa16eda536c5a9f951aa496fa52f400fd5">InvalidParameters</enumvalue>
       <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caadb3f55cd913a0331acdfa5fa1da8323a">CommunicationError</enumvalue>
-      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caa0011e5adf86cf2b7dbc981fa5124af1b">InvalidKey</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caa4134a10decc371dc5ae08375e5492eab">InvalidLicense</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caa0a8ba3f170301c46fc92e624f8e515bf">CameraUnavailable</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caaa98527b1eb7cdea60b33e9c45326cdbe">EdgeOfStream</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caacec32ee5e75ca0f05bf073ea213a72c2">EndOfStream</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caae0696b85fba8bf63f57a6895b0311fc1">NoAvailableStreams</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caabf5b773ccdc6bd91735cb02d697268bb">StorageUnavailable</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caa02d7f64b262795f9a4c1e2e210496c98">ExportDataUnretrievable</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caa362592d8bce9a2219310841f688ecaae">ExportStorageFull</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caa5c29f2463914774599614e8d10a9c384">ExportStorageUnauthenticated</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caac862b65e1b5343ed526e252c4051bc09">ExportStorageUnavailable</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caaf1d4ac54357cc0932f385d56814ba7e4">Conflict</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caa0d4df07c6e41de1bbb4a3779608e443b">InsufficientResources</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caadd353567e8118a2b8df4e822e59084ab">NotReady</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caaaa5f5dd29d66359b7b1c9aa545f8a035">NotReadyUnauthenticated</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caa1b9e372b88452c5459b60ee85105e340">NotReadyUnauthorized</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caaa244ddc17d9605fe956fca75701b5ac2">OperationFailed</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caaea049755df7d3ac3339ed1be31f670ee">ResponseTooLarge</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caac491d85a1baad8d97982b29eb7f2f26e">ActivationConflict</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caa62fb43684453de90911edbddf30f2f3d">ActivationHostNotFound</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caa630edc8ba54ba622751f2b53a8a6f8d6">ActivationFailed</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caab919b892f8199ebc83214f22448fa593">IncompatibleLicense</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caa60ed61f156260eef40899a2184633e2b">LicenseCountExceeded</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caa147f597684a8967c2138a22b66684352">LicenseRequired</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caaa27a9306ae6cd2edd2a3de7e61169d67">LicenseReqLdapAdmin</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caa45ba401e10504b30ebfba067ab24e1bd">NoLicense</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caa635177e3809b920f1818c4d6cdf078f5">CameraInUse</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caa49e1a153762ac2888a27e395c29812ea">CameraLocked</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caac3417577e0cfafd14622050b074fc8a4">NeedOverride</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caa223e81e8afa42c41346a6696560ecc7b">InvalidValue</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caae04f77652129aed8ed07cc57e63b6297">PortInUse</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caa96a86d84c864bcf84536ced4d7ad7e8f">ReadOnlyField</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caa9197821db72b09cc1be032b96d00d121">ResourceLocked</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caad222a99652644031bff94a847adad017">AuthExpired</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caa80bf2c971acda50dce36ea0905c7f01d">PasswordReqMoreDigits</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caa95ce9d35d93790c6588cac0c1655adc1">PasswordReqMoreLower</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caa30dac3a3ffc1034b94cf82a8c0d9aa06">PasswordReqMoreSpecial</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caa0d209baf4186c59c902803b3af5d44db">PasswordReqMoreUpper</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caa4c6afc7a6b333c5d2d860db6b6aa5a48">PasswordTooShort</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caa469abbf8a1ac4ee4b0e61f51a88b7f39">PasswordTooSimilar</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caa619b403ed4fd5b3e29de864b19d7c06f">PermissionConflict</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caab403ce880ed2c28d0784a2430a9b6eda">Unauthenticated</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_results.html" anchor="a12504aac644d00e0532be43063a970caae06d1ba70f1331e9f9a113cc2f887d3f">Unauthorized</enumvalue>
     </member>
   </compound>
   <compound kind="class">
@@ -6016,6 +7179,20 @@
       <arglist></arglist>
     </member>
     <member kind="property">
+      <type>System::String^ </type>
+      <name>ServicePropertyId</name>
+      <anchorfile>class_c_p_p_cli_1_1_situation.html</anchorfile>
+      <anchor>a490a5db215667e60287d5323aa7312df</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::String^ </type>
+      <name>ServiceType</name>
+      <anchorfile>class_c_p_p_cli_1_1_situation.html</anchorfile>
+      <anchor>ad8f4b3c25f718f5ab3ee5572a6531fe7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
       <type>int</type>
       <name>Severity</name>
       <anchorfile>class_c_p_p_cli_1_1_situation.html</anchorfile>
@@ -6413,6 +7590,20 @@
   <compound kind="class">
     <name>CPPCli::User</name>
     <filename>class_c_p_p_cli_1_1_user.html</filename>
+    <member kind="enumeration">
+      <type></type>
+      <name>PhoneType</name>
+      <anchorfile>class_c_p_p_cli_1_1_user.html</anchorfile>
+      <anchor>a878f50e44e2fd0b8e4b8d169c3fbd55c</anchor>
+      <arglist></arglist>
+      <enumvalue file="class_c_p_p_cli_1_1_user.html" anchor="a878f50e44e2fd0b8e4b8d169c3fbd55ca8cf04a9734132302f96da8e113e80ce5">Home</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_user.html" anchor="a878f50e44e2fd0b8e4b8d169c3fbd55ca621e69ea29eda40b47248e32eb0042a2">HomeFax</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_user.html" anchor="a878f50e44e2fd0b8e4b8d169c3fbd55ca87d17f4624a514e81dc7c8e016a7405c">Mobile</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_user.html" anchor="a878f50e44e2fd0b8e4b8d169c3fbd55ca6311ae17c1ee52b36e68aaf4ad066387">Other</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_user.html" anchor="a878f50e44e2fd0b8e4b8d169c3fbd55cae27fd6bb9d4c78b1bda908ccbb21e992">Pager</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_user.html" anchor="a878f50e44e2fd0b8e4b8d169c3fbd55ca0f9263536b9fc61ada745644735bfd8f">Work</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_user.html" anchor="a878f50e44e2fd0b8e4b8d169c3fbd55cacbff0afa3f4ec6dc0184dbd26078a0ae">WorkFax</enumvalue>
+    </member>
     <member kind="function">
       <type></type>
       <name>User</name>
@@ -6520,9 +7711,30 @@
     </member>
     <member kind="property">
       <type>System::String^ </type>
+      <name>EmployeeId</name>
+      <anchorfile>class_c_p_p_cli_1_1_user.html</anchorfile>
+      <anchor>a0cafeb0ee02280d55ba569c38168d871</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::String^ </type>
+      <name>FirstName</name>
+      <anchorfile>class_c_p_p_cli_1_1_user.html</anchorfile>
+      <anchor>aa8de178eacaf9af1c28a82ec73e74aef</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::String^ </type>
       <name>Id</name>
       <anchorfile>class_c_p_p_cli_1_1_user.html</anchorfile>
       <anchor>a406c9a2158d2604adaef86ca62c5adbd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::String^ </type>
+      <name>LastName</name>
+      <anchorfile>class_c_p_p_cli_1_1_user.html</anchorfile>
+      <anchor>a08d7c90bb69fb9747770d04da1a20484</anchor>
       <arglist></arglist>
     </member>
     <member kind="property">
@@ -6533,10 +7745,24 @@
       <arglist></arglist>
     </member>
     <member kind="property">
+      <type>System::String^ </type>
+      <name>Note</name>
+      <anchorfile>class_c_p_p_cli_1_1_user.html</anchorfile>
+      <anchor>a33a448314f09ef0ca07a06e4ce35af40</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
       <type>System::DateTime</type>
       <name>PasswordExpiration</name>
       <anchorfile>class_c_p_p_cli_1_1_user.html</anchorfile>
       <anchor>ac96d67b48abbfaf5fa58fa1a774d22ee</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::Collections::Generic::List&lt; System::Collections::Generic::KeyValuePair&lt; User::PhoneType, System::String^ &gt;&gt;^</type>
+      <name>PhoneNumbers</name>
+      <anchorfile>class_c_p_p_cli_1_1_user.html</anchorfile>
+      <anchor>a5d470061aa8df862ed106111f96ec959</anchor>
       <arglist></arglist>
     </member>
     <member kind="property">
@@ -6551,6 +7777,80 @@
       <name>Tags</name>
       <anchorfile>class_c_p_p_cli_1_1_user.html</anchorfile>
       <anchor>abe9d727e0ae683896d35130bc6354d14</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CPPCli::UserInfo</name>
+    <filename>class_c_p_p_cli_1_1_user_info.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>UserInfo</name>
+      <anchorfile>class_c_p_p_cli_1_1_user_info.html</anchorfile>
+      <anchor>ad924a5cc404e557216bb1c03ede39c29</anchor>
+      <arglist>(VxSdk::IVxUserInfo *vxUserInfo)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~UserInfo</name>
+      <anchorfile>class_c_p_p_cli_1_1_user_info.html</anchorfile>
+      <anchor>a00935205c2786e8673d3978df11ebdb6</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>!UserInfo</name>
+      <anchorfile>class_c_p_p_cli_1_1_user_info.html</anchorfile>
+      <anchor>a7f8b94b1a59f9340818b3248ba897fdc</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable" protection="package">
+      <type>VxSdk::IVxUserInfo *</type>
+      <name>_userInfo</name>
+      <anchorfile>class_c_p_p_cli_1_1_user_info.html</anchorfile>
+      <anchor>a23f4271186e919252b382cb778acf97e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::String^ </type>
+      <name>EmployeeId</name>
+      <anchorfile>class_c_p_p_cli_1_1_user_info.html</anchorfile>
+      <anchor>aec1b32412bac3805accd295d9ac253f7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::String^ </type>
+      <name>FirstName</name>
+      <anchorfile>class_c_p_p_cli_1_1_user_info.html</anchorfile>
+      <anchor>a1d89ff3104743c7b9c00341c31af6693</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::String^ </type>
+      <name>LastName</name>
+      <anchorfile>class_c_p_p_cli_1_1_user_info.html</anchorfile>
+      <anchor>ac0d12e84cd71e459e7191467e81f8424</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::String^ </type>
+      <name>Name</name>
+      <anchorfile>class_c_p_p_cli_1_1_user_info.html</anchorfile>
+      <anchor>acb1f5cad9498331e87f2f0cb1d53d3f1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::String^ </type>
+      <name>Note</name>
+      <anchorfile>class_c_p_p_cli_1_1_user_info.html</anchorfile>
+      <anchor>a77cc6a075b10a4b30bb002f4f863cf44</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>System::Collections::Generic::List&lt; System::Collections::Generic::KeyValuePair&lt; User::PhoneType, System::String^ &gt;&gt;^</type>
+      <name>PhoneNumbers</name>
+      <anchorfile>class_c_p_p_cli_1_1_user_info.html</anchorfile>
+      <anchor>a8c39fb67fe9f4edcc4a4aa752a21de4b</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -6633,13 +7933,6 @@
     <filename>class_c_p_p_cli_1_1_vx_global.html</filename>
     <member kind="function" static="yes">
       <type>static CPPCli::Results::Value</type>
-      <name>InitializeSdk</name>
-      <anchorfile>class_c_p_p_cli_1_1_vx_global.html</anchorfile>
-      <anchor>a059f42e3abff0da7751d72b6956d3dc4</anchor>
-      <arglist>(System::String^ key)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static CPPCli::Results::Value</type>
       <name>SetLogLevel</name>
       <anchorfile>class_c_p_p_cli_1_1_vx_global.html</anchorfile>
       <anchor>a6445bb0a41e8ac284750e88aee8e1ac8</anchor>
@@ -6656,6 +7949,16 @@
   <compound kind="class">
     <name>CPPCli::VXSystem</name>
     <filename>class_c_p_p_cli_1_1_v_x_system.html</filename>
+    <member kind="enumeration">
+      <type></type>
+      <name>SearchStatus</name>
+      <anchorfile>class_c_p_p_cli_1_1_v_x_system.html</anchorfile>
+      <anchor>a5a28fe162f94351185207a4f2eba3c48</anchor>
+      <arglist></arglist>
+      <enumvalue file="class_c_p_p_cli_1_1_v_x_system.html" anchor="a5a28fe162f94351185207a4f2eba3c48a88183b946cc5f0e8c96b2e66e1c74a7e">Unknown</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_v_x_system.html" anchor="a5a28fe162f94351185207a4f2eba3c48a12d868c18cb29bf58f02b504be9033fd">InProgress</enumvalue>
+      <enumvalue file="class_c_p_p_cli_1_1_v_x_system.html" anchor="a5a28fe162f94351185207a4f2eba3c48aae94f80b3ce82062a5dd7815daa04f9d">Complete</enumvalue>
+    </member>
     <member kind="function">
       <type>delegate void</type>
       <name>EventCallbackDelegate</name>
@@ -6665,10 +7968,24 @@
     </member>
     <member kind="function">
       <type>delegate void</type>
+      <name>InternalEventCallbackDelegate</name>
+      <anchorfile>class_c_p_p_cli_1_1_v_x_system.html</anchorfile>
+      <anchor>a26432ee4185f8808337efa490b78fdab</anchor>
+      <arglist>(VxSdk::VxInternalEvent *vxInternalEvent)</arglist>
+    </member>
+    <member kind="function">
+      <type>delegate void</type>
       <name>EventDelegate</name>
       <anchorfile>class_c_p_p_cli_1_1_v_x_system.html</anchorfile>
       <anchor>a00a54ff47433b31e2a2c974f8d1f8af7</anchor>
       <arglist>(Event^ vxEvent)</arglist>
+    </member>
+    <member kind="function">
+      <type>delegate void</type>
+      <name>InternalEventDelegate</name>
+      <anchorfile>class_c_p_p_cli_1_1_v_x_system.html</anchorfile>
+      <anchor>ac04cf5e703740cf56663f1fb22cb5599</anchor>
+      <arglist>(InternalEvent^ sdkEvent)</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -6718,6 +8035,13 @@
       <anchorfile>class_c_p_p_cli_1_1_v_x_system.html</anchorfile>
       <anchor>abbf92e7f5827b3426452b627c9ea1248</anchor>
       <arglist>(System::String^ drawingName)</arglist>
+    </member>
+    <member kind="function">
+      <type>ManualRecording^</type>
+      <name>AddManualRecording</name>
+      <anchorfile>class_c_p_p_cli_1_1_v_x_system.html</anchorfile>
+      <anchor>ad4c4f3a1b2d80209d2bfaa4a7816e4a6</anchor>
+      <arglist>(NewManualRecording^ newManualRecording)</arglist>
     </member>
     <member kind="function">
       <type>Results::Value</type>
@@ -6790,6 +8114,13 @@
       <arglist>(NewNotification^ newNotification)</arglist>
     </member>
     <member kind="function">
+      <type>QuickLog^</type>
+      <name>CreateQuickLog</name>
+      <anchorfile>class_c_p_p_cli_1_1_v_x_system.html</anchorfile>
+      <anchor>a7fcfca63e635df5d2e3fdc73a6daa42f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
       <type>QuickReport^</type>
       <name>CreateQuickReport</name>
       <anchorfile>class_c_p_p_cli_1_1_v_x_system.html</anchorfile>
@@ -6847,6 +8178,13 @@
     </member>
     <member kind="function">
       <type>Results::Value</type>
+      <name>DeleteManualRecording</name>
+      <anchorfile>class_c_p_p_cli_1_1_v_x_system.html</anchorfile>
+      <anchor>ab8eab579e9ac24bb50cd5a4591465010</anchor>
+      <arglist>(ManualRecording^ manualRecordingItem)</arglist>
+    </member>
+    <member kind="function">
+      <type>Results::Value</type>
       <name>DeleteNotification</name>
       <anchorfile>class_c_p_p_cli_1_1_v_x_system.html</anchorfile>
       <anchor>aa5b54584f0d21a3636e8c44490625ce1</anchor>
@@ -6888,6 +8226,13 @@
       <arglist>(User^ user)</arglist>
     </member>
     <member kind="function">
+      <type>System::Collections::Generic::List&lt; AlarmInput^ &gt;^</type>
+      <name>GetAlarmInputs</name>
+      <anchorfile>class_c_p_p_cli_1_1_v_x_system.html</anchorfile>
+      <anchor>ad1edafefdd78b21b1f452cc55398d9f9</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
       <type>System::Collections::Generic::List&lt; Bookmark^ &gt;^</type>
       <name>GetBookmarks</name>
       <anchorfile>class_c_p_p_cli_1_1_v_x_system.html</anchorfile>
@@ -6913,6 +8258,13 @@
       <name>GetDataStorages</name>
       <anchorfile>class_c_p_p_cli_1_1_v_x_system.html</anchorfile>
       <anchor>a79dc401567f320cd0ebda7349c82618e</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>System::Collections::Generic::List&lt; DeviceAssignment^ &gt;^</type>
+      <name>GetDeviceAssignments</name>
+      <anchorfile>class_c_p_p_cli_1_1_v_x_system.html</anchorfile>
+      <anchor>a2b00a01cdbd6b634d8bcf90116e0373b</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
@@ -6944,6 +8296,13 @@
       <arglist>()</arglist>
     </member>
     <member kind="function">
+      <type>System::Collections::Generic::List&lt; ManualRecording^ &gt;^</type>
+      <name>GetManualRecordings</name>
+      <anchorfile>class_c_p_p_cli_1_1_v_x_system.html</anchorfile>
+      <anchor>aed375af99c559d24e5b6c3ba539a960c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
       <type>System::Collections::Generic::List&lt; Monitor^ &gt;^</type>
       <name>GetMonitors</name>
       <anchorfile>class_c_p_p_cli_1_1_v_x_system.html</anchorfile>
@@ -6955,6 +8314,13 @@
       <name>GetNotifications</name>
       <anchorfile>class_c_p_p_cli_1_1_v_x_system.html</anchorfile>
       <anchor>ad7d94e7b8942429e0c2e9cbad61de1da</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>System::Collections::Generic::List&lt; RelayOutput^ &gt;^</type>
+      <name>GetRelayOutputs</name>
+      <anchorfile>class_c_p_p_cli_1_1_v_x_system.html</anchorfile>
+      <anchor>a1d744b3957d94a59aa2b1733c9667eaf</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
@@ -7003,8 +8369,15 @@
       <type>Results::Value</type>
       <name>Login</name>
       <anchorfile>class_c_p_p_cli_1_1_v_x_system.html</anchorfile>
-      <anchor>a834b57b4ce75de89d603b8da3c5f20e3</anchor>
+      <anchor>a109e36ca22a5e30c57f0651b3ee6b389</anchor>
       <arglist>(System::String^ username, System::String^ password)</arglist>
+    </member>
+    <member kind="function">
+      <type>Results::Value</type>
+      <name>Login</name>
+      <anchorfile>class_c_p_p_cli_1_1_v_x_system.html</anchorfile>
+      <anchor>a55e73929a870fe680a8295201f190b19</anchor>
+      <arglist>(System::String^ authToken)</arglist>
     </member>
     <member kind="function">
       <type>Results::Value</type>
@@ -7048,12 +8421,26 @@
       <anchor>a9035cffc5da5d30db874238343c08367</anchor>
       <arglist>()</arglist>
     </member>
+    <member kind="function" protection="package">
+      <type>CPPCli::Device^</type>
+      <name>_GetHostDevice</name>
+      <anchorfile>class_c_p_p_cli_1_1_v_x_system.html</anchorfile>
+      <anchor>a1d6c984916696b0265e0c1322b331282</anchor>
+      <arglist>()</arglist>
+    </member>
     <member kind="function" protection="package" static="yes">
       <type>static void</type>
       <name>_FireEvent</name>
       <anchorfile>class_c_p_p_cli_1_1_v_x_system.html</anchorfile>
       <anchor>a28d98adf632a71205425bd38f5b00755</anchor>
       <arglist>(VxSdk::IVxEvent *vxEvent)</arglist>
+    </member>
+    <member kind="function" protection="package" static="yes">
+      <type>static void</type>
+      <name>_FireInternalEvent</name>
+      <anchorfile>class_c_p_p_cli_1_1_v_x_system.html</anchorfile>
+      <anchor>a77205fe8293c39e9b44653800ec7a321</anchor>
+      <arglist>(VxSdk::VxInternalEvent *vxInternalEvent)</arglist>
     </member>
     <member kind="variable" protection="package">
       <type>VxSdk::IVxSystem *</type>
@@ -7070,6 +8457,13 @@
       <arglist></arglist>
     </member>
     <member kind="variable" protection="package">
+      <type>InternalEventCallbackDelegate^</type>
+      <name>_internalCallback</name>
+      <anchorfile>class_c_p_p_cli_1_1_v_x_system.html</anchorfile>
+      <anchor>a7cfa0c958474cf6763006add2c366a04</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="package">
       <type>VxSdk::VxLoginInfo *</type>
       <name>_loginInfo</name>
       <anchorfile>class_c_p_p_cli_1_1_v_x_system.html</anchorfile>
@@ -7081,6 +8475,13 @@
       <name>_systemEvent</name>
       <anchorfile>class_c_p_p_cli_1_1_v_x_system.html</anchorfile>
       <anchor>a2aec8c82cf350f178c2b848618e0d17f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="package" static="yes">
+      <type>static InternalEventDelegate^</type>
+      <name>_sdkEvent</name>
+      <anchorfile>class_c_p_p_cli_1_1_v_x_system.html</anchorfile>
+      <anchor>a5e4ee3b3ef504bf009b7efa40d43fee8</anchor>
       <arglist></arglist>
     </member>
     <member kind="property">
@@ -7095,6 +8496,20 @@
       <name>Currentuser</name>
       <anchorfile>class_c_p_p_cli_1_1_v_x_system.html</anchorfile>
       <anchor>a70fc853c6bbfbd245f1394b1f6950a55</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>SearchStatus</type>
+      <name>DeviceSearchStatus</name>
+      <anchorfile>class_c_p_p_cli_1_1_v_x_system.html</anchorfile>
+      <anchor>a91529caefcfd3727b40b7418f806ae74</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="property">
+      <type>CPPCli::Device^ </type>
+      <name>HostDevice</name>
+      <anchorfile>class_c_p_p_cli_1_1_v_x_system.html</anchorfile>
+      <anchor>a66a23fab4dbb847ec6c968c64aba248a</anchor>
       <arglist></arglist>
     </member>
     <member kind="property">
@@ -7118,10 +8533,18 @@
       <anchor>ab1246aed9d0a3edc510d669470b4ab2c</anchor>
       <arglist></arglist>
     </member>
+    <member kind="event">
+      <type>InternalEventDelegate^ </type>
+      <name>InternalEvent</name>
+      <anchorfile>class_c_p_p_cli_1_1_v_x_system.html</anchorfile>
+      <anchor>abee8e1f5a5d129c717f865a5b61c0a53</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="namespace">
     <name>CPPCli</name>
     <filename>namespace_c_p_p_cli.html</filename>
+    <class kind="class">CPPCli::AlarmInput</class>
     <class kind="class">CPPCli::Bookmark</class>
     <class kind="class">CPPCli::Clip</class>
     <class kind="class">CPPCli::Configuration</class>
@@ -7137,9 +8560,11 @@
     <class kind="class">CPPCli::Event</class>
     <class kind="class">CPPCli::Export</class>
     <class kind="class">CPPCli::ExportClip</class>
+    <class kind="class">CPPCli::InternalEvent</class>
     <class kind="class">CPPCli::License</class>
     <class kind="class">CPPCli::LicenseFeature</class>
     <class kind="class">CPPCli::LogLevel</class>
+    <class kind="class">CPPCli::ManualRecording</class>
     <class kind="class">CPPCli::Marker</class>
     <class kind="class">CPPCli::MediaControl</class>
     <class kind="class">CPPCli::MediaEvent</class>
@@ -7152,6 +8577,7 @@
     <class kind="class">CPPCli::NewEvent</class>
     <class kind="class">CPPCli::NewExport</class>
     <class kind="class">CPPCli::NewExportClip</class>
+    <class kind="class">CPPCli::NewManualRecording</class>
     <class kind="class">CPPCli::NewMarker</class>
     <class kind="class">CPPCli::NewMonitor</class>
     <class kind="class">CPPCli::NewNotification</class>
@@ -7167,9 +8593,13 @@
     <class kind="class">CPPCli::Preset</class>
     <class kind="class">CPPCli::Privilege</class>
     <class kind="class">CPPCli::PtzController</class>
+    <class kind="class">CPPCli::PtzLimits</class>
     <class kind="class">CPPCli::PtzLock</class>
+    <class kind="class">CPPCli::QuickLog</class>
     <class kind="class">CPPCli::QuickReport</class>
+    <class kind="class">CPPCli::RelayOutput</class>
     <class kind="class">CPPCli::ResourceLock</class>
+    <class kind="class">CPPCli::ResourceRel</class>
     <class kind="class">CPPCli::Results</class>
     <class kind="class">CPPCli::Role</class>
     <class kind="class">CPPCli::Schedule</class>
@@ -7178,6 +8608,7 @@
     <class kind="class">CPPCli::SnapshotFilter</class>
     <class kind="class">CPPCli::Tag</class>
     <class kind="class">CPPCli::User</class>
+    <class kind="class">CPPCli::UserInfo</class>
     <class kind="class">CPPCli::Utils</class>
     <class kind="class">CPPCli::VxGlobal</class>
     <class kind="class">CPPCli::VXSystem</class>

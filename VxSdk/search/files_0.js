@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['ivxalarminput_2eh',['IVxAlarmInput.h',['../_i_vx_alarm_input_8h.html',1,'']]],
   ['ivxbookmark_2eh',['IVxBookmark.h',['../_i_vx_bookmark_8h.html',1,'']]],
   ['ivxclip_2eh',['IVxClip.h',['../_i_vx_clip_8h.html',1,'']]],
   ['ivxconfiguration_2eh',['IVxConfiguration.h',['../_i_vx_configuration_8h.html',1,'']]],
@@ -17,6 +18,7 @@ var searchData=
   ['ivxexportclip_2eh',['IVxExportClip.h',['../_i_vx_export_clip_8h.html',1,'']]],
   ['ivxlicense_2eh',['IVxLicense.h',['../_i_vx_license_8h.html',1,'']]],
   ['ivxlicensefeature_2eh',['IVxLicenseFeature.h',['../_i_vx_license_feature_8h.html',1,'']]],
+  ['ivxmanualrecording_2eh',['IVxManualRecording.h',['../_i_vx_manual_recording_8h.html',1,'']]],
   ['ivxmarker_2eh',['IVxMarker.h',['../_i_vx_marker_8h.html',1,'']]],
   ['ivxmonitor_2eh',['IVxMonitor.h',['../_i_vx_monitor_8h.html',1,'']]],
   ['ivxmonitorcell_2eh',['IVxMonitorCell.h',['../_i_vx_monitor_cell_8h.html',1,'']]],
@@ -26,13 +28,17 @@ var searchData=
   ['ivxprivilege_2eh',['IVxPrivilege.h',['../_i_vx_privilege_8h.html',1,'']]],
   ['ivxptzcontroller_2eh',['IVxPtzController.h',['../_i_vx_ptz_controller_8h.html',1,'']]],
   ['ivxptzlock_2eh',['IVxPtzLock.h',['../_i_vx_ptz_lock_8h.html',1,'']]],
+  ['ivxquicklog_2eh',['IVxQuickLog.h',['../_i_vx_quick_log_8h.html',1,'']]],
   ['ivxquickreport_2eh',['IVxQuickReport.h',['../_i_vx_quick_report_8h.html',1,'']]],
+  ['ivxrelayoutput_2eh',['IVxRelayOutput.h',['../_i_vx_relay_output_8h.html',1,'']]],
   ['ivxresourcelock_2eh',['IVxResourceLock.h',['../_i_vx_resource_lock_8h.html',1,'']]],
+  ['ivxresourcerel_2eh',['IVxResourceRel.h',['../_i_vx_resource_rel_8h.html',1,'']]],
   ['ivxrole_2eh',['IVxRole.h',['../_i_vx_role_8h.html',1,'']]],
   ['ivxschedule_2eh',['IVxSchedule.h',['../_i_vx_schedule_8h.html',1,'']]],
   ['ivxscheduletrigger_2eh',['IVxScheduleTrigger.h',['../_i_vx_schedule_trigger_8h.html',1,'']]],
   ['ivxsituation_2eh',['IVxSituation.h',['../_i_vx_situation_8h.html',1,'']]],
   ['ivxsystem_2eh',['IVxSystem.h',['../_i_vx_system_8h.html',1,'']]],
   ['ivxtag_2eh',['IVxTag.h',['../_i_vx_tag_8h.html',1,'']]],
-  ['ivxuser_2eh',['IVxUser.h',['../_i_vx_user_8h.html',1,'']]]
+  ['ivxuser_2eh',['IVxUser.h',['../_i_vx_user_8h.html',1,'']]],
+  ['ivxuserinfo_2eh',['IVxUserInfo.h',['../_i_vx_user_info_8h.html',1,'']]]
 ];

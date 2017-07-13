@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">VideoXpert SDK
-   &#160;<span id="projectnumber">1.2</span>
+   &#160;<span id="projectnumber">2.0</span>
    </div>
    <div id="projectbrief">A software development kit for third party vendors to integrate with the VideoXpert platform</div>
   </td>
@@ -160,6 +160,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:aa83371da939dfa04e0e0ec67f82b9a01"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html#aa83371da939dfa04e0e0ec67f82b9a01">isFailover</a></td></tr>
+<tr class="memdesc:aa83371da939dfa04e0e0ec67f82b9a01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the data storage is configured as a failover unit.  <a href="#aa83371da939dfa04e0e0ec67f82b9a01">More...</a><br /></td></tr>
+<tr class="separator:aa83371da939dfa04e0e0ec67f82b9a01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a765311f55ff9f2b73942a9ac0a462419"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html#a765311f55ff9f2b73942a9ac0a462419">id</a> [64]</td></tr>
 <tr class="memdesc:a765311f55ff9f2b73942a9ac0a462419"><td class="mdescLeft">&#160;</td><td class="mdescRight">The unique identifier of the data storage.  <a href="#a765311f55ff9f2b73942a9ac0a462419">More...</a><br /></td></tr>
 <tr class="separator:a765311f55ff9f2b73942a9ac0a462419"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -231,11 +234,12 @@ Public Attributes</h2></td></tr>
 
 <p>Clears this instance. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_data_storage_8h_source.html#l00099">99</a> of file <a class="el" href="_i_vx_data_storage_8h_source.html">IVxDataStorage.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                     {</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<span class="keywordtype">id</span>);</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_storage.html#a8922e6ab7101679d21fbf0b2db6970c8">name</a>);</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_storage.html#ac3527ab5f54d08a1b2e90fef46c8b772">type</a> = <a class="code" href="struct_vx_sdk_1_1_vx_data_storage_type.html#a39fab14e2b987116aea9c9a8d570877ba34b55c273b0856659179b2359ea69b56">VxDataStorageType::kUnknown</a>;</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        }</div><div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00018">VxMacros.h:18</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_storage_html_a8922e6ab7101679d21fbf0b2db6970c8"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_storage.html#a8922e6ab7101679d21fbf0b2db6970c8">VxSdk::IVxDataStorage::name</a></div><div class="ttdeci">char name[64]</div><div class="ttdoc">The friendly name of the data storage. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_storage_8h_source.html#l00089">IVxDataStorage.h:89</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_vx_data_storage_type_html_a39fab14e2b987116aea9c9a8d570877ba34b55c273b0856659179b2359ea69b56"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_data_storage_type.html#a39fab14e2b987116aea9c9a8d570877ba34b55c273b0856659179b2359ea69b56">VxSdk::VxDataStorageType::kUnknown</a></div><div class="ttdoc">An error or unknown value was returned.</div><div class="ttdef"><b>Definition:</b> <a href="_vx_primitives_8h_source.html#l00221">VxPrimitives.h:221</a></div></div>
-<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_storage_html_ac3527ab5f54d08a1b2e90fef46c8b772"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_storage.html#ac3527ab5f54d08a1b2e90fef46c8b772">VxSdk::IVxDataStorage::type</a></div><div class="ttdeci">VxDataStorageType::Value type</div><div class="ttdoc">The data storage type. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_storage_8h_source.html#l00093">IVxDataStorage.h:93</a></div></div>
+<p>Definition at line <a class="el" href="_i_vx_data_storage_8h_source.html#l00103">103</a> of file <a class="el" href="_i_vx_data_storage_8h_source.html">IVxDataStorage.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                     {</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_storage.html#aa83371da939dfa04e0e0ec67f82b9a01">isFailover</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<span class="keywordtype">id</span>);</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_storage.html#a8922e6ab7101679d21fbf0b2db6970c8">name</a>);</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_data_storage.html#ac3527ab5f54d08a1b2e90fef46c8b772">type</a> = <a class="code" href="struct_vx_sdk_1_1_vx_data_storage_type.html#a39fab14e2b987116aea9c9a8d570877ba34b55c273b0856659179b2359ea69b56">VxDataStorageType::kUnknown</a>;</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        }</div><div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_storage_html_aa83371da939dfa04e0e0ec67f82b9a01"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_storage.html#aa83371da939dfa04e0e0ec67f82b9a01">VxSdk::IVxDataStorage::isFailover</a></div><div class="ttdeci">bool isFailover</div><div class="ttdoc">Indicates whether the data storage is configured as a failover unit. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_storage_8h_source.html#l00085">IVxDataStorage.h:85</a></div></div>
+<div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00025">VxMacros.h:25</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_storage_html_a8922e6ab7101679d21fbf0b2db6970c8"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_storage.html#a8922e6ab7101679d21fbf0b2db6970c8">VxSdk::IVxDataStorage::name</a></div><div class="ttdeci">char name[64]</div><div class="ttdoc">The friendly name of the data storage. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_storage_8h_source.html#l00093">IVxDataStorage.h:93</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_vx_data_storage_type_html_a39fab14e2b987116aea9c9a8d570877ba34b55c273b0856659179b2359ea69b56"><div class="ttname"><a href="struct_vx_sdk_1_1_vx_data_storage_type.html#a39fab14e2b987116aea9c9a8d570877ba34b55c273b0856659179b2359ea69b56">VxSdk::VxDataStorageType::kUnknown</a></div><div class="ttdoc">An error or unknown value was returned.</div><div class="ttdef"><b>Definition:</b> <a href="_vx_primitives_8h_source.html#l00257">VxPrimitives.h:257</a></div></div>
+<div class="ttc" id="struct_vx_sdk_1_1_i_vx_data_storage_html_ac3527ab5f54d08a1b2e90fef46c8b772"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_data_storage.html#ac3527ab5f54d08a1b2e90fef46c8b772">VxSdk::IVxDataStorage::type</a></div><div class="ttdeci">VxDataStorageType::Value type</div><div class="ttdoc">The data storage type. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_data_storage_8h_source.html#l00097">IVxDataStorage.h:97</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -288,7 +292,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the data sources assigned to this data storage. </p>
-<p>Available filters: kAllTags, kCapturing, kId, kIp, kModifiedSince, kName, kNumber, kRecording, kState, kType, kUnassigned.</p>
+<p>Available filters: kAllTags, kAllPrivateTags, kCapturing, kId, kIp, kManualRecording, kModifiedSince, kName, kNumber, kRecording, kState, kType, kUnassigned.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dataSourceCollection</td><td>A <a class="el" href="struct_vx_sdk_1_1_vx_collection.html" title="Represents a collection of resources. ">VxCollection</a> of the assigned data sources.</td></tr>
@@ -538,6 +542,22 @@ Public Attributes</h2></td></tr>
 
 <p>The unique identifier of the data storage. </p>
 
+<p>Definition at line <a class="el" href="_i_vx_data_storage_8h_source.html#l00089">89</a> of file <a class="el" href="_i_vx_data_storage_8h_source.html">IVxDataStorage.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa83371da939dfa04e0e0ec67f82b9a01"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool VxSdk::IVxDataStorage::isFailover</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicates whether the data storage is configured as a failover unit. </p>
+
 <p>Definition at line <a class="el" href="_i_vx_data_storage_8h_source.html#l00085">85</a> of file <a class="el" href="_i_vx_data_storage_8h_source.html">IVxDataStorage.h</a>.</p>
 
 </div>
@@ -554,7 +574,7 @@ Public Attributes</h2></td></tr>
 
 <p>The friendly name of the data storage. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_data_storage_8h_source.html#l00089">89</a> of file <a class="el" href="_i_vx_data_storage_8h_source.html">IVxDataStorage.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_data_storage_8h_source.html#l00093">93</a> of file <a class="el" href="_i_vx_data_storage_8h_source.html">IVxDataStorage.h</a>.</p>
 
 </div>
 </div>
@@ -570,12 +590,12 @@ Public Attributes</h2></td></tr>
 
 <p>The data storage type. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_data_storage_8h_source.html#l00093">93</a> of file <a class="el" href="_i_vx_data_storage_8h_source.html">IVxDataStorage.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_vx_data_storage_8h_source.html#l00097">97</a> of file <a class="el" href="_i_vx_data_storage_8h_source.html">IVxDataStorage.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>C:/Users/zachm/Git/vxsdk/VxSdk/Include/<a class="el" href="_i_vx_data_storage_8h_source.html">IVxDataStorage.h</a></li>
+<li>C:/Git/VXSDK_M3/VxSdk/Include/<a class="el" href="_i_vx_data_storage_8h_source.html">IVxDataStorage.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

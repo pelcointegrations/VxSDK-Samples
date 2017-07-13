@@ -1,7 +1,12 @@
 var searchData=
 [
-  ['situationtypes',['SituationTypes',['../../CSharpWrapper/class_c_p_p_cli_1_1_schedule_trigger.html#ac3c8fa22341a3764ce1694e96019138b',1,'CPPCli::ScheduleTrigger']]],
-  ['states',['States',['../../CSharpWrapper/class_c_p_p_cli_1_1_data_source.html#a61d68fcfc0e938fe709406ed9801b930',1,'CPPCli::DataSource::States()'],['../../CSharpWrapper/class_c_p_p_cli_1_1_export.html#aa1e40310d87591e803c2c5d30d74f0a7',1,'CPPCli::Export::States()']]],
-  ['streamprotocols',['StreamProtocols',['../../CSharpWrapper/class_c_p_p_cli_1_1_data_interface.html#abc71fe6bdd16582a76e99d5a20fb35e0',1,'CPPCli::DataInterface']]],
-  ['systemlicensetypes',['SystemLicenseTypes',['../../CSharpWrapper/class_c_p_p_cli_1_1_license.html#a6ef456745606bf30ff5d23124011eac1',1,'CPPCli::License']]]
+  ['recordingframerates',['RecordingFramerates',['../../CSharpWrapper/class_c_p_p_cli_1_1_clip.html#a07fe66ea22df251dc8802a6ae2b9a39c',1,'CPPCli::Clip']]],
+  ['recordingtypes',['RecordingTypes',['../../CSharpWrapper/class_c_p_p_cli_1_1_clip.html#acf036b9a9f760b348055f5126188e84e',1,'CPPCli::Clip']]],
+  ['recurrencetypes',['RecurrenceTypes',['../../CSharpWrapper/class_c_p_p_cli_1_1_schedule_trigger.html#a13b46a6775273cbdb1a68fba425e5722',1,'CPPCli::ScheduleTrigger']]],
+  ['relaystates',['RelayStates',['../../CSharpWrapper/class_c_p_p_cli_1_1_relay_output.html#a6c5aad8dfec53bb819330c42cdb522d4',1,'CPPCli::RelayOutput']]],
+  ['rendertypes',['RenderTypes',['../../CSharpWrapper/class_c_p_p_cli_1_1_data_interface.html#a8e97b1072453ba84675387131889bcd4',1,'CPPCli::DataInterface']]],
+  ['reportcontent',['ReportContent',['../../CSharpWrapper/class_c_p_p_cli_1_1_new_quick_report.html#a0965d29efe5fb8339e29c1b184d515ef',1,'CPPCli::NewQuickReport']]],
+  ['reportcreationstatus',['ReportCreationStatus',['../../CSharpWrapper/class_c_p_p_cli_1_1_quick_report.html#ae77ef814927ee074eb461a330b90c04d',1,'CPPCli::QuickReport']]],
+  ['resourcetypes',['ResourceTypes',['../../CSharpWrapper/class_c_p_p_cli_1_1_privilege.html#a67cf0e787fe40ef0d7f173282c3b9f4b',1,'CPPCli::Privilege']]],
+  ['retentionpriorities',['RetentionPriorities',['../../CSharpWrapper/class_c_p_p_cli_1_1_clip.html#a62d6f7b0b4f419b00a71e79e48d98236',1,'CPPCli::Clip']]]
 ];

@@ -13,5 +13,6 @@ var class_c_p_p_cli_1_1_device_assignment =
     [ "DataStorage", "class_c_p_p_cli_1_1_device_assignment.html#a1eed99909e310fc7f7c89ae09e102268", null ],
     [ "Device", "class_c_p_p_cli_1_1_device_assignment.html#a0e0f03035df0c0368bd46779ea6e6772", null ],
     [ "Driver", "class_c_p_p_cli_1_1_device_assignment.html#a44aaed86c07cd95978bb1ad1776f9b8e", null ],
-    [ "DriverType", "class_c_p_p_cli_1_1_device_assignment.html#ab7cd83379177d9aa9126679d87b1501e", null ]
+    [ "DriverType", "class_c_p_p_cli_1_1_device_assignment.html#ab7cd83379177d9aa9126679d87b1501e", null ],
+    [ "Id", "class_c_p_p_cli_1_1_device_assignment.html#a0e026273ce13aa2113d35e3c65c0760a", null ]
 ];

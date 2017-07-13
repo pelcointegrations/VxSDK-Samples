@@ -53,6 +53,17 @@ var struct_vx_sdk_1_1_vx_collection_filter_item =
       [ "kAudibleNotify", "struct_vx_sdk_1_1_vx_collection_filter_item.html#a7a426ee3c166b7a59122cd8fdd9ced17a3b3e491dda08ad2457c3425627633b55", null ],
       [ "kLog", "struct_vx_sdk_1_1_vx_collection_filter_item.html#a7a426ee3c166b7a59122cd8fdd9ced17aea926d2493576c7ecde7b2e34a2cf0e0", null ],
       [ "kNotify", "struct_vx_sdk_1_1_vx_collection_filter_item.html#a7a426ee3c166b7a59122cd8fdd9ced17a2ac71a30c7037b87a3745ef05341e526", null ],
-      [ "kResourceType", "struct_vx_sdk_1_1_vx_collection_filter_item.html#a7a426ee3c166b7a59122cd8fdd9ced17a8c22f0946220bac11a7d6e44d3be61f0", null ]
+      [ "kResourceType", "struct_vx_sdk_1_1_vx_collection_filter_item.html#a7a426ee3c166b7a59122cd8fdd9ced17a8c22f0946220bac11a7d6e44d3be61f0", null ],
+      [ "kLinked", "struct_vx_sdk_1_1_vx_collection_filter_item.html#a7a426ee3c166b7a59122cd8fdd9ced17a8b99167fdea312c3f73d6e111e764821", null ],
+      [ "kAllPrivateTags", "struct_vx_sdk_1_1_vx_collection_filter_item.html#a7a426ee3c166b7a59122cd8fdd9ced17aaa179ee3023e6b516fa62333d4e455e3", null ],
+      [ "kManualRecording", "struct_vx_sdk_1_1_vx_collection_filter_item.html#a7a426ee3c166b7a59122cd8fdd9ced17a2f6400e7170fa9ccd27d6d70e2260c91", null ],
+      [ "kFirstName", "struct_vx_sdk_1_1_vx_collection_filter_item.html#a7a426ee3c166b7a59122cd8fdd9ced17a2fcc9da2d7b8701163bbcf37774f4812", null ],
+      [ "kLastName", "struct_vx_sdk_1_1_vx_collection_filter_item.html#a7a426ee3c166b7a59122cd8fdd9ced17a4975e5c36ab236c25f3aeea2f938cff8", null ],
+      [ "kHasProperty", "struct_vx_sdk_1_1_vx_collection_filter_item.html#a7a426ee3c166b7a59122cd8fdd9ced17a2ad03d2cc4578f639954a310bee74f54", null ],
+      [ "kHasStatus", "struct_vx_sdk_1_1_vx_collection_filter_item.html#a7a426ee3c166b7a59122cd8fdd9ced17a117f9c3d97fe713e40e899b4a75c1368", null ],
+      [ "kDataSourceAllTags", "struct_vx_sdk_1_1_vx_collection_filter_item.html#a7a426ee3c166b7a59122cd8fdd9ced17a19ffd5292ece5b994abfb7e75bbc48d1", null ],
+      [ "kDataSourceAllPrivateTags", "struct_vx_sdk_1_1_vx_collection_filter_item.html#a7a426ee3c166b7a59122cd8fdd9ced17adf0b551ecffba61acc2f15be0f7cbba0", null ],
+      [ "kDataSourceName", "struct_vx_sdk_1_1_vx_collection_filter_item.html#a7a426ee3c166b7a59122cd8fdd9ced17a7d33caf586a69c4a56a17bf7f8690f84", null ],
+      [ "kServicePropertyId", "struct_vx_sdk_1_1_vx_collection_filter_item.html#a7a426ee3c166b7a59122cd8fdd9ced17aabfc90630c487ac1ab660a46108204db", null ]
     ] ]
 ];

@@ -8,6 +8,7 @@ var searchData=
   ['newexport',['NewExport',['../../CSharpWrapper/class_c_p_p_cli_1_1_new_export.html',1,'CPPCli']]],
   ['newexportclip',['NewExportClip',['../../CSharpWrapper/class_c_p_p_cli_1_1_new_export_clip.html',1,'CPPCli']]],
   ['newexportform',['NewExportForm',['../class_s_d_k_sample_app_1_1_source_1_1_new_export_form.html',1,'SDKSampleApp::Source']]],
+  ['newmanualrecording',['NewManualRecording',['../../CSharpWrapper/class_c_p_p_cli_1_1_new_manual_recording.html',1,'CPPCli']]],
   ['newmarker',['NewMarker',['../../CSharpWrapper/class_c_p_p_cli_1_1_new_marker.html',1,'CPPCli']]],
   ['newmonitor',['NewMonitor',['../../CSharpWrapper/class_c_p_p_cli_1_1_new_monitor.html',1,'CPPCli']]],
   ['newnotification',['NewNotification',['../../CSharpWrapper/class_c_p_p_cli_1_1_new_notification.html',1,'CPPCli']]],

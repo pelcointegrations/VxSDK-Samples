@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">VideoXpert SDK
-   &#160;<span id="projectnumber">1.2</span>
+   &#160;<span id="projectnumber">2.0</span>
    </div>
    <div id="projectbrief">A software development kit for third party vendors to integrate with the VideoXpert platform</div>
   </td>
@@ -90,6 +90,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow4" class="tabs3">
     <ul class="tablist">
       <li><a href="functions.html#index_a"><span>a</span></a></li>
+      <li><a href="functions_b.html#index_b"><span>b</span></a></li>
       <li><a href="functions_c.html#index_c"><span>c</span></a></li>
       <li><a href="functions_d.html#index_d"><span>d</span></a></li>
       <li><a href="functions_e.html#index_e"><span>e</span></a></li>
@@ -152,11 +153,24 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="struct_vx_sdk_1_1_i_vx_event.html#a0a6fde978a66e707dc977d5a444c63a8">VxSdk::IVxEvent</a>
 , <a class="el" href="struct_vx_sdk_1_1_vx_new_event.html#a9aa7b26dce59ae5f0a8aba9f8efe416c">VxSdk::VxNewEvent</a>
 </li>
+<li>generatorDeviceName
+: <a class="el" href="struct_vx_sdk_1_1_i_vx_event.html#a3e0e8c98fb264cfa217933d63b689148">VxSdk::IVxEvent</a>
+</li>
 <li>GetAccountState()
 : <a class="el" href="struct_vx_sdk_1_1_i_vx_user.html#a907a33cd57fed0a42904c82c1a9762d3">VxSdk::IVxUser</a>
 </li>
+<li>GetAlarmInputs()
+: <a class="el" href="struct_vx_sdk_1_1_i_vx_device.html#a401c1dc148d353996f21e792733838a7">VxSdk::IVxDevice</a>
+, <a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#ab536eff5d10b986f3686f176f67afae9">VxSdk::IVxSystem</a>
+</li>
+<li>GetAllDataStorages()
+: <a class="el" href="struct_vx_sdk_1_1_i_vx_data_source.html#a1239e835cba81105c2ca0a98cf7fb186">VxSdk::IVxDataSource</a>
+</li>
 <li>GetAssociation()
 : <a class="el" href="struct_vx_sdk_1_1_i_vx_marker.html#a6fe6655d758213e143c396023a1bd437">VxSdk::IVxMarker</a>
+</li>
+<li>GetAudioRelations()
+: <a class="el" href="struct_vx_sdk_1_1_i_vx_data_source.html#a88c056a3a7ebd2e905865e21ade4d549">VxSdk::IVxDataSource</a>
 </li>
 <li>GetAuthToken()
 : <a class="el" href="struct_vx_sdk_1_1_i_vx_data_session.html#abf320c1eeae75e4690a684efe42ed1cb">VxSdk::IVxDataSession</a>
@@ -189,6 +203,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>GetDataSource()
 : <a class="el" href="struct_vx_sdk_1_1_i_vx_bookmark.html#a0312d2da502885bff6436d22bf74bc6a">VxSdk::IVxBookmark</a>
 , <a class="el" href="struct_vx_sdk_1_1_i_vx_data_session.html#a19a2ae85f860bb3e96ffe16387d17875">VxSdk::IVxDataSession</a>
+, <a class="el" href="struct_vx_sdk_1_1_i_vx_manual_recording.html#a7c7274ec9335faf6fcaca3c8766e1322">VxSdk::IVxManualRecording</a>
 </li>
 <li>GetDataSources()
 : <a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html#a2b70592cbc4689952623b831964592f5">VxSdk::IVxDataStorage</a>
@@ -210,9 +225,13 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>GetDeviceAssignments()
 : <a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html#a582c5b27ad3b9605acedd2c611ee1253">VxSdk::IVxDataStorage</a>
 , <a class="el" href="struct_vx_sdk_1_1_i_vx_device.html#a4932e62abad1d903910c8aeeda6e116b">VxSdk::IVxDevice</a>
+, <a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#af481e58cd2fac83114ac7d559d90debd">VxSdk::IVxSystem</a>
 </li>
 <li>GetDevices()
 : <a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#ad50525ec77f94f279a60fb375f3d8eb3">VxSdk::IVxSystem</a>
+</li>
+<li>GetDeviceSearchStatus()
+: <a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#aa72011553a00b8a36d22abb3f1d44324">VxSdk::IVxSystem</a>
 </li>
 <li>GetDrawing()
 : <a class="el" href="struct_vx_sdk_1_1_i_vx_marker.html#a97df9a7b3d5841ba378937c93e15f6c9">VxSdk::IVxMarker</a>
@@ -225,6 +244,9 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>GetDrivers()
 : <a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html#a899b2515d9816d70ab5ab3ed63576812">VxSdk::IVxDataStorage</a>
+</li>
+<li>GetEdgeClips()
+: <a class="el" href="struct_vx_sdk_1_1_i_vx_data_source.html#a7eb52eecd68ab84356d4453b03551bad">VxSdk::IVxDataSource</a>
 </li>
 <li>GetEvents()
 : <a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#a97a1267f647b651e98f0378d2b53825a">VxSdk::IVxSystem</a>
@@ -239,9 +261,12 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="struct_vx_sdk_1_1_i_vx_event.html#ad68a4a2ee28582874d56822a17519abc">VxSdk::IVxEvent</a>
 </li>
 <li>GetHostDevice()
-: <a class="el" href="struct_vx_sdk_1_1_i_vx_data_source.html#a7c010b409195cac0ad7af5a493e4fed3">VxSdk::IVxDataSource</a>
+: <a class="el" href="struct_vx_sdk_1_1_i_vx_alarm_input.html#a84a977a95d38a1a3ef812490f3e356c1">VxSdk::IVxAlarmInput</a>
+, <a class="el" href="struct_vx_sdk_1_1_i_vx_data_source.html#a7c010b409195cac0ad7af5a493e4fed3">VxSdk::IVxDataSource</a>
 , <a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html#ab84fb3373aca3085ffb4b1b2a3e70b72">VxSdk::IVxDataStorage</a>
 , <a class="el" href="struct_vx_sdk_1_1_i_vx_monitor.html#a73bd724115893e25f9a4814c3b84bc1b">VxSdk::IVxMonitor</a>
+, <a class="el" href="struct_vx_sdk_1_1_i_vx_relay_output.html#a0d4e95257348897efcea824639b8bfaf">VxSdk::IVxRelayOutput</a>
+, <a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#ad02bce797041a2815b076e7de979085d">VxSdk::IVxSystem</a>
 </li>
 <li>GetImage()
 : <a class="el" href="struct_vx_sdk_1_1_i_vx_drawing.html#a66e0a17fd6cdbd93ee919d4ebf4f583c">VxSdk::IVxDrawing</a>
@@ -264,6 +289,9 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>GetLockState()
 : <a class="el" href="struct_vx_sdk_1_1_i_vx_ptz_lock.html#aa5c93732ba2030d5f4cb5e8645a33b7e">VxSdk::IVxPtzLock</a>
 </li>
+<li>GetManualRecordings()
+: <a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#a3e050f3aac805a693f7e5d0ba1ac477c">VxSdk::IVxSystem</a>
+</li>
 <li>GetMarkers()
 : <a class="el" href="struct_vx_sdk_1_1_i_vx_drawing.html#a6cf03c0414c83ca438a4babe8a0aedd3">VxSdk::IVxDrawing</a>
 </li>
@@ -273,6 +301,9 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>GetMonitors()
 : <a class="el" href="struct_vx_sdk_1_1_i_vx_device.html#ac225385618498b6ffa208b565d193f6b">VxSdk::IVxDevice</a>
 , <a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#a9cbd21302be727ac723eab84b1bd7df4">VxSdk::IVxSystem</a>
+</li>
+<li>GetMultiviewInfo()
+: <a class="el" href="struct_vx_sdk_1_1_i_vx_data_source.html#a555acadda684a3673ba9e66dd320ffb1">VxSdk::IVxDataSource</a>
 </li>
 <li>GetNodeConfigurations()
 : <a class="el" href="struct_vx_sdk_1_1_i_vx_configuration_1_1_cluster.html#ac2796b8fc609b301ad9f7f3c4db6ee54">VxSdk::IVxConfiguration::Cluster</a>
@@ -305,11 +336,24 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>GetPtzController()
 : <a class="el" href="struct_vx_sdk_1_1_i_vx_data_source.html#a03ca184705a1a5d98cd3735deae9007b">VxSdk::IVxDataSource</a>
 </li>
+<li>GetPtzLimits()
+: <a class="el" href="struct_vx_sdk_1_1_i_vx_ptz_controller.html#ad697dae97f908c15f9f1a60847a9dfa1">VxSdk::IVxPtzController</a>
+</li>
 <li>GetPtzLock()
 : <a class="el" href="struct_vx_sdk_1_1_i_vx_ptz_controller.html#a93ea89980aa5c6136976ffdc5e858c4d">VxSdk::IVxPtzController</a>
 </li>
+<li>GetQuickLogEndpoint()
+: <a class="el" href="struct_vx_sdk_1_1_i_vx_quick_log.html#a5436baeb17c9f9b7618498478da09dc8">VxSdk::IVxQuickLog</a>
+</li>
 <li>GetQuickReportEndpoint()
 : <a class="el" href="struct_vx_sdk_1_1_i_vx_quick_report.html#a39db85e0f44d34d32d2c6894cb887d08">VxSdk::IVxQuickReport</a>
+</li>
+<li>GetRelayOutputs()
+: <a class="el" href="struct_vx_sdk_1_1_i_vx_device.html#a230f25ac2e72db805fff361b6c54d283">VxSdk::IVxDevice</a>
+, <a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#a981ed786320f2bc31c21a46c9d314bbd">VxSdk::IVxSystem</a>
+</li>
+<li>GetResource()
+: <a class="el" href="struct_vx_sdk_1_1_i_vx_resource_rel.html#a4aed5aa07e09a48ba3283e7f9f64dade">VxSdk::IVxResourceRel</a>
 </li>
 <li>GetRestricted()
 : <a class="el" href="struct_vx_sdk_1_1_i_vx_privilege.html#ab5ecf26fb1beaffa9d0e07746f0e7285">VxSdk::IVxPrivilege</a>
@@ -341,7 +385,8 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="struct_vx_sdk_1_1_i_vx_event.html#a25d84cbb12b9e2dc895db8d844927d96">VxSdk::IVxEvent</a>
 </li>
 <li>GetStatus()
-: <a class="el" href="struct_vx_sdk_1_1_i_vx_quick_report.html#a91853de16c0bd928a9b79bf6b585cf3a">VxSdk::IVxQuickReport</a>
+: <a class="el" href="struct_vx_sdk_1_1_i_vx_quick_log.html#a0bd3de4d8eabd6952c0b472ba9482cb9">VxSdk::IVxQuickLog</a>
+, <a class="el" href="struct_vx_sdk_1_1_i_vx_quick_report.html#a91853de16c0bd928a9b79bf6b585cf3a">VxSdk::IVxQuickReport</a>
 </li>
 <li>GetStorageConfiguration()
 : <a class="el" href="struct_vx_sdk_1_1_i_vx_data_storage.html#a0291e3ed41f4fd49854b68b80f19095e">VxSdk::IVxDataStorage</a>
@@ -366,6 +411,9 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>GetUsers()
 : <a class="el" href="struct_vx_sdk_1_1_i_vx_role.html#a9789bafa82270b52c5bf3693bd4f6bfe">VxSdk::IVxRole</a>
 , <a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#af59cb45324abfb21247dcbc8a4e970f6">VxSdk::IVxSystem</a>
+</li>
+<li>GetVideoRelations()
+: <a class="el" href="struct_vx_sdk_1_1_i_vx_data_source.html#a944dcaeb41239f69694c7fb403cb14f9">VxSdk::IVxDataSource</a>
 </li>
 <li>GoLive()
 : <a class="el" href="struct_vx_sdk_1_1_i_vx_data_session.html#ad5a98d1eca8ddff086d7bdacc82f94f2">VxSdk::IVxDataSession</a>

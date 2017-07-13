@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">VideoXpert SDK
-   &#160;<span id="projectnumber">1.2</span>
+   &#160;<span id="projectnumber">2.0</span>
    </div>
    <div id="projectbrief">A software development kit for third party vendors to integrate with the VideoXpert platform</div>
   </td>
@@ -152,6 +152,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a6072e55d7592a0c39929b53783650147"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_device_assignment.html#a6072e55d7592a0c39929b53783650147">driverType</a> [64]</td></tr>
 <tr class="memdesc:a6072e55d7592a0c39929b53783650147"><td class="mdescLeft">&#160;</td><td class="mdescRight">The driver type.  <a href="#a6072e55d7592a0c39929b53783650147">More...</a><br /></td></tr>
 <tr class="separator:a6072e55d7592a0c39929b53783650147"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2d290e0d86ac3685218d717b7981a81"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_device_assignment.html#ad2d290e0d86ac3685218d717b7981a81">id</a> [64]</td></tr>
+<tr class="memdesc:ad2d290e0d86ac3685218d717b7981a81"><td class="mdescLeft">&#160;</td><td class="mdescRight">The unique identifier of the device assignment.  <a href="#ad2d290e0d86ac3685218d717b7981a81">More...</a><br /></td></tr>
+<tr class="separator:ad2d290e0d86ac3685218d717b7981a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -187,9 +190,9 @@ Protected Member Functions</h2></td></tr>
 
 <p>Clears this instance. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_device_assignment_8h_source.html#l00071">71</a> of file <a class="el" href="_i_vx_device_assignment_8h_source.html">IVxDeviceAssignment.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                     {</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_device_assignment.html#a6072e55d7592a0c39929b53783650147">driverType</a>);</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        }</div><div class="ttc" id="struct_vx_sdk_1_1_i_vx_device_assignment_html_a6072e55d7592a0c39929b53783650147"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_device_assignment.html#a6072e55d7592a0c39929b53783650147">VxSdk::IVxDeviceAssignment::driverType</a></div><div class="ttdeci">char driverType[64]</div><div class="ttdoc">The driver type. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_device_assignment_8h_source.html#l00065">IVxDeviceAssignment.h:65</a></div></div>
-<div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00018">VxMacros.h:18</a></div></div>
+<p>Definition at line <a class="el" href="_i_vx_device_assignment_8h_source.html#l00075">75</a> of file <a class="el" href="_i_vx_device_assignment_8h_source.html">IVxDeviceAssignment.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                     {</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_device_assignment.html#a6072e55d7592a0c39929b53783650147">driverType</a>);</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<span class="keywordtype">id</span>);</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div><div class="ttc" id="struct_vx_sdk_1_1_i_vx_device_assignment_html_a6072e55d7592a0c39929b53783650147"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_device_assignment.html#a6072e55d7592a0c39929b53783650147">VxSdk::IVxDeviceAssignment::driverType</a></div><div class="ttdeci">char driverType[64]</div><div class="ttdoc">The driver type. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_device_assignment_8h_source.html#l00065">IVxDeviceAssignment.h:65</a></div></div>
+<div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00025">VxMacros.h:25</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -242,7 +245,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the data sources assigned by this device assignment. </p>
-<p>Available filters: kAllTags, kCapturing, kId, kIp, kModifiedSince, kName, kNumber, kRecording, kState, kType, kUnassigned.</p>
+<p>Available filters: kAllTags, kAllPrivateTags, kCapturing, kId, kIp, kManualRecording, kModifiedSince, kName, kNumber, kRecording, kState, kType, kUnassigned.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dataSourceCollection</td><td>A <a class="el" href="struct_vx_sdk_1_1_vx_collection.html" title="Represents a collection of resources. ">VxCollection</a> of the associated data sources.</td></tr>
@@ -446,8 +449,24 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ad2d290e0d86ac3685218d717b7981a81"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char VxSdk::IVxDeviceAssignment::id[64]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The unique identifier of the device assignment. </p>
+
+<p>Definition at line <a class="el" href="_i_vx_device_assignment_8h_source.html#l00069">69</a> of file <a class="el" href="_i_vx_device_assignment_8h_source.html">IVxDeviceAssignment.h</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>C:/Users/zachm/Git/vxsdk/VxSdk/Include/<a class="el" href="_i_vx_device_assignment_8h_source.html">IVxDeviceAssignment.h</a></li>
+<li>C:/Git/VXSDK_M3/VxSdk/Include/<a class="el" href="_i_vx_device_assignment_8h_source.html">IVxDeviceAssignment.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

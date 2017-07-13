@@ -8,5 +8,6 @@ var struct_vx_sdk_1_1_i_vx_device_assignment =
     [ "GetDriver", "struct_vx_sdk_1_1_i_vx_device_assignment.html#aa5f76a4a86c8fbe397c83dd1d9dc185e", null ],
     [ "SetDataSources", "struct_vx_sdk_1_1_i_vx_device_assignment.html#a8422a7cae5e1967c4ac4d4f2117e38d0", null ],
     [ "SetDriverType", "struct_vx_sdk_1_1_i_vx_device_assignment.html#a7362b76f541ac0b8eeb91e0204ae35f5", null ],
-    [ "driverType", "struct_vx_sdk_1_1_i_vx_device_assignment.html#a6072e55d7592a0c39929b53783650147", null ]
+    [ "driverType", "struct_vx_sdk_1_1_i_vx_device_assignment.html#a6072e55d7592a0c39929b53783650147", null ],
+    [ "id", "struct_vx_sdk_1_1_i_vx_device_assignment.html#ad2d290e0d86ac3685218d717b7981a81", null ]
 ];

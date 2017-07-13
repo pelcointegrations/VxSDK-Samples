@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x',['X',['../class_c_p_p_cli_1_1_marker.html#ab966713d4f7e1d6f72790fddf6762ce8',1,'CPPCli::Marker::X()'],['../class_c_p_p_cli_1_1_new_marker.html#a9268d36962b28f8dafc878f3a1f1d9c1',1,'CPPCli::NewMarker::X()'],['../class_c_p_p_cli_1_1_ptz_controller.html#a16f86e7a6f03ad8f42a9e7fb4c00da75',1,'CPPCli::PtzController::X()']]]
+  ['width',['Width',['../class_c_p_p_cli_1_1_data_session.html#aa5c0c85eaa978c0746bb84f8ff835c3b',1,'CPPCli::DataSession::Width()'],['../class_c_p_p_cli_1_1_snapshot_filter.html#ad675476fedbe3ed217a4c4956b1129d6',1,'CPPCli::SnapshotFilter::Width()']]]
 ];

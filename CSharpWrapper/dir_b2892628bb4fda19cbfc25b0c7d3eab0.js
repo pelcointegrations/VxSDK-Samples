@@ -1,5 +1,6 @@
 var dir_b2892628bb4fda19cbfc25b0c7d3eab0 =
 [
+    [ "AlarmInput.cpp", "_alarm_input_8cpp.html", null ],
     [ "Bookmark.cpp", "_bookmark_8cpp.html", null ],
     [ "Clip.cpp", "_clip_8cpp.html", "_clip_8cpp" ],
     [ "Configuration.cpp", "_configuration_8cpp.html", null ],
@@ -16,6 +17,7 @@ var dir_b2892628bb4fda19cbfc25b0c7d3eab0 =
     [ "ExportClip.cpp", "_export_clip_8cpp.html", null ],
     [ "License.cpp", "_license_8cpp.html", null ],
     [ "LicenseFeature.cpp", "_license_feature_8cpp.html", null ],
+    [ "ManualRecording.cpp", "_manual_recording_8cpp.html", null ],
     [ "Marker.cpp", "_marker_8cpp.html", null ],
     [ "MediaControl.cpp", "_media_control_8cpp.html", null ],
     [ "Monitor.cpp", "_monitor_8cpp.html", null ],
@@ -28,7 +30,10 @@ var dir_b2892628bb4fda19cbfc25b0c7d3eab0 =
     [ "Privilege.cpp", "_privilege_8cpp.html", null ],
     [ "PtzController.cpp", "_ptz_controller_8cpp.html", null ],
     [ "PtzLock.cpp", "_ptz_lock_8cpp.html", null ],
+    [ "QuickLog.cpp", "_quick_log_8cpp.html", null ],
     [ "QuickReport.cpp", "_quick_report_8cpp.html", null ],
+    [ "RelayOutput.cpp", "_relay_output_8cpp.html", null ],
+    [ "ResourceRel.cpp", "_resource_rel_8cpp.html", null ],
     [ "Role.cpp", "_role_8cpp.html", null ],
     [ "Schedule.cpp", "_schedule_8cpp.html", null ],
     [ "ScheduleTrigger.cpp", "_schedule_trigger_8cpp.html", null ],

@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['value',['value',['../struct_vx_sdk_1_1_vx_collection_filter.html#ab56db2375389beb09fc179a08b86ba45',1,'VxSdk::VxCollectionFilter::value()'],['../struct_vx_sdk_1_1_vx_kv_object.html#ac007a0586c9732b609c0ed299c87bd4a',1,'VxSdk::VxKvObject::value()'],['../struct_vx_sdk_1_1_vx_snapshot_filter.html#a9536c285b815e26e53a3dcaeed72ef46',1,'VxSdk::VxSnapshotFilter::value()']]],
-  ['vendor',['vendor',['../struct_vx_sdk_1_1_i_vx_device.html#a8cd009fd9e5081c700a57bfec56eccbb',1,'VxSdk::IVxDevice::vendor()'],['../struct_vx_sdk_1_1_i_vx_driver.html#a6bcfb7764cc6e702d0b4d3b20f316af6',1,'VxSdk::IVxDriver::vendor()']]],
-  ['version',['version',['../struct_vx_sdk_1_1_i_vx_device.html#a514018af79a6577480736ce08054687b',1,'VxSdk::IVxDevice::version()'],['../struct_vx_sdk_1_1_i_vx_driver.html#a79b07c30e05b482b5e09e6e333b84178',1,'VxSdk::IVxDriver::version()'],['../struct_vx_sdk_1_1_i_vx_license_feature.html#ac8c4b95b89729eb449adfbc449d7ed08',1,'VxSdk::IVxLicenseFeature::version()']]],
-  ['virtualip',['virtualIp',['../struct_vx_sdk_1_1_i_vx_device.html#aa1e20ff11975b1820d0facb620392b2f',1,'VxSdk::IVxDevice']]]
+  ['usealldatasources',['useAllDataSources',['../struct_vx_sdk_1_1_i_vx_schedule.html#ab940eaec6ee10a7fe1bf8f91bf440732',1,'VxSdk::IVxSchedule::useAllDataSources()'],['../struct_vx_sdk_1_1_vx_new_schedule.html#a46a321f0f54ff23a14eca7971f05c859',1,'VxSdk::VxNewSchedule::useAllDataSources()']]],
+  ['used',['used',['../struct_vx_sdk_1_1_i_vx_license_feature.html#aa3b32654a27c49f5faba23d336497763',1,'VxSdk::IVxLicenseFeature']]],
+  ['username',['username',['../struct_vx_sdk_1_1_i_vx_device.html#a2b3137cce75ac148c23ab19c0907ca62',1,'VxSdk::IVxDevice::username()'],['../struct_vx_sdk_1_1_vx_login_info.html#a32d5efcf1f7e642086212c1997906837',1,'VxSdk::VxLoginInfo::username()'],['../struct_vx_sdk_1_1_vx_new_device.html#a13717147fe3e0df564c3b97aef82b8fb',1,'VxSdk::VxNewDevice::username()']]],
+  ['usessl',['useSsl',['../struct_vx_sdk_1_1_vx_auth_info.html#ae9f7ff1253746370fa49360661de96f0',1,'VxSdk::VxAuthInfo::useSsl()'],['../struct_vx_sdk_1_1_vx_login_info.html#ab2512eba0575aa577f77e6209f5e4a94',1,'VxSdk::VxLoginInfo::useSsl()']]]
 ];

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['increasespeed',['IncreaseSpeed',['../class_cpp_samples_1_1_live_streaming_1_1_media_operationshandler.html#aca9f08d64ee07131d8931ff1f1d1d645',1,'CppSamples::LiveStreaming::MediaOperationshandler']]],
-  ['init',['Init',['../../MediaController/class_media_controller_1_1_gst_wrapper.html#a4c8055af9c0bb23eb8d32845761f1f74',1,'MediaController::GstWrapper::Init()'],['../class_cpp_samples_1_1_common_1_1_utility.html#a86a7140321ef3dde2146b5415729bb73',1,'CppSamples::Common::Utility::Init()']]],
+  ['init',['Init',['../../MediaController/class_media_controller_1_1_gst_wrapper.html#a4c8055af9c0bb23eb8d32845761f1f74',1,'MediaController::GstWrapper::Init()'],['../class_cpp_samples_1_1_common_1_1_utility.html#a89a67282aead5f61534cb9358ee71736',1,'CppSamples::Common::Utility::Init()']]],
   ['initialize',['Initialize',['../class_cpp_samples_1_1_common_1_1_controller.html#a7ff8e783e1d42f46a0e4333c19b6b7b4',1,'CppSamples::Common::Controller']]],
   ['inject',['Inject',['../class_cpp_samples_1_1_events_1_1_inject_events.html#a906f721f0fa239b567374202844eee88',1,'CppSamples::Events::InjectEvents']]],
   ['injectevents',['InjectEvents',['../class_cpp_samples_1_1_events_1_1_inject_events.html#a11abd060320e9734ea3908bf5914a377',1,'CppSamples::Events::InjectEvents']]],

@@ -5,6 +5,7 @@ var searchData=
   ['dataobjectmanagerform',['DataObjectManagerForm',['../class_s_d_k_sample_app_1_1_source_1_1_data_object_manager_form.html',1,'SDKSampleApp::Source']]],
   ['datasession',['DataSession',['../../CSharpWrapper/class_c_p_p_cli_1_1_data_session.html',1,'CPPCli']]],
   ['datasource',['DataSource',['../../CSharpWrapper/class_c_p_p_cli_1_1_data_source.html',1,'CPPCli']]],
+  ['datasourcemanagerform',['DataSourceManagerForm',['../class_s_d_k_sample_app_1_1_source_1_1_data_source_manager_form.html',1,'SDKSampleApp::Source']]],
   ['datastorage',['DataStorage',['../../CSharpWrapper/class_c_p_p_cli_1_1_data_storage.html',1,'CPPCli']]],
   ['datastoragedetailsform',['DataStorageDetailsForm',['../class_s_d_k_sample_app_1_1_source_1_1_data_storage_details_form.html',1,'SDKSampleApp::Source']]],
   ['datastoragemanagerform',['DataStorageManagerForm',['../class_s_d_k_sample_app_1_1_source_1_1_data_storage_manager_form.html',1,'SDKSampleApp::Source']]],

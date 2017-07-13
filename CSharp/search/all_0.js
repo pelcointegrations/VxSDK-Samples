@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['_21alarminput',['!AlarmInput',['../../CSharpWrapper/class_c_p_p_cli_1_1_alarm_input.html#aa46da23bbad8869053374af03f362ba5',1,'CPPCli::AlarmInput']]],
   ['_21bookmark',['!Bookmark',['../../CSharpWrapper/class_c_p_p_cli_1_1_bookmark.html#ab2ed869f3eca6aa7af6739f5ee121a37',1,'CPPCli::Bookmark']]],
   ['_21clip',['!Clip',['../../CSharpWrapper/class_c_p_p_cli_1_1_clip.html#a3ce6dae1562b1e95699c54d92dbdb79e',1,'CPPCli::Clip']]],
   ['_21cluster',['!Cluster',['../../CSharpWrapper/class_c_p_p_cli_1_1_configuration_1_1_cluster.html#ab54f00517bdbbeb525107d44f5f2edfe',1,'CPPCli::Configuration::Cluster']]],
@@ -15,6 +16,7 @@ var searchData=
   ['_21export',['!Export',['../../CSharpWrapper/class_c_p_p_cli_1_1_export.html#ac6755bc024906285d62892f9466226df',1,'CPPCli::Export']]],
   ['_21license',['!License',['../../CSharpWrapper/class_c_p_p_cli_1_1_license.html#a3ba32c0a35986236799309a161dd85d3',1,'CPPCli::License']]],
   ['_21licensefeature',['!LicenseFeature',['../../CSharpWrapper/class_c_p_p_cli_1_1_license_feature.html#ac09354c3d64011af659e5996021f6068',1,'CPPCli::LicenseFeature']]],
+  ['_21manualrecording',['!ManualRecording',['../../CSharpWrapper/class_c_p_p_cli_1_1_manual_recording.html#a8fb0590c9ee99a4c7de12f84916dc525',1,'CPPCli::ManualRecording']]],
   ['_21marker',['!Marker',['../../CSharpWrapper/class_c_p_p_cli_1_1_marker.html#a670f1271707272d4a2f632d6c856457e',1,'CPPCli::Marker']]],
   ['_21mediacontrol',['!MediaControl',['../../CSharpWrapper/class_c_p_p_cli_1_1_media_control.html#a6169790c09dc57fed40de16a5695420b',1,'CPPCli::MediaControl']]],
   ['_21monitor',['!Monitor',['../../CSharpWrapper/class_c_p_p_cli_1_1_monitor.html#a60ea8995462e27bc6cfe4bdbf5685f1a',1,'CPPCli::Monitor']]],
@@ -28,9 +30,13 @@ var searchData=
   ['_21preset',['!Preset',['../../CSharpWrapper/class_c_p_p_cli_1_1_preset.html#a14cda27674c9bd9fd60961416e3bf4d4',1,'CPPCli::Preset']]],
   ['_21privilege',['!Privilege',['../../CSharpWrapper/class_c_p_p_cli_1_1_privilege.html#a43c82612879331fbf52af4652f84bf09',1,'CPPCli::Privilege']]],
   ['_21ptzcontroller',['!PtzController',['../../CSharpWrapper/class_c_p_p_cli_1_1_ptz_controller.html#a60a6a638587600f05104d32c1085bc3d',1,'CPPCli::PtzController']]],
+  ['_21ptzlimits',['!PtzLimits',['../../CSharpWrapper/class_c_p_p_cli_1_1_ptz_limits.html#abf45485fa564b8ae4bbbb2b3a2c72522',1,'CPPCli::PtzLimits']]],
   ['_21ptzlock',['!PtzLock',['../../CSharpWrapper/class_c_p_p_cli_1_1_ptz_lock.html#a63dd1f95d7fb1d4b12461057c8fe3e68',1,'CPPCli::PtzLock']]],
+  ['_21quicklog',['!QuickLog',['../../CSharpWrapper/class_c_p_p_cli_1_1_quick_log.html#a541b01b67635d7187e3e7df56f64c44f',1,'CPPCli::QuickLog']]],
   ['_21quickreport',['!QuickReport',['../../CSharpWrapper/class_c_p_p_cli_1_1_quick_report.html#ae13a08b26362cbc1f06504d5b7b00ae0',1,'CPPCli::QuickReport']]],
+  ['_21relayoutput',['!RelayOutput',['../../CSharpWrapper/class_c_p_p_cli_1_1_relay_output.html#a9ea2513a73242be7701996da6022a6a2',1,'CPPCli::RelayOutput']]],
   ['_21resourcelock',['!ResourceLock',['../../CSharpWrapper/class_c_p_p_cli_1_1_resource_lock.html#a99e88872c717ae9326f472e8e19b19e1',1,'CPPCli::ResourceLock']]],
+  ['_21resourcerel',['!ResourceRel',['../../CSharpWrapper/class_c_p_p_cli_1_1_resource_rel.html#a3b8e06dd5a87f4304a6b4abd6db5d52f',1,'CPPCli::ResourceRel']]],
   ['_21role',['!Role',['../../CSharpWrapper/class_c_p_p_cli_1_1_role.html#a4ade89abb4bb96ef20653d512e19538f',1,'CPPCli::Role']]],
   ['_21schedule',['!Schedule',['../../CSharpWrapper/class_c_p_p_cli_1_1_schedule.html#a599f4cad9418ab01a1285f49faca0f21',1,'CPPCli::Schedule']]],
   ['_21scheduletrigger',['!ScheduleTrigger',['../../CSharpWrapper/class_c_p_p_cli_1_1_schedule_trigger.html#a2c6af9cdcc0526d39770616b09c8af3b',1,'CPPCli::ScheduleTrigger']]],
@@ -40,5 +46,6 @@ var searchData=
   ['_21tag',['!Tag',['../../CSharpWrapper/class_c_p_p_cli_1_1_tag.html#ab293c8afed8fb3b70cceb568c7f59020',1,'CPPCli::Tag']]],
   ['_21time',['!Time',['../../CSharpWrapper/class_c_p_p_cli_1_1_configuration_1_1_time.html#a43d5a10703f37f85d2bc950dac131642',1,'CPPCli::Configuration::Time']]],
   ['_21user',['!User',['../../CSharpWrapper/class_c_p_p_cli_1_1_user.html#ac26ca87c8a1d3b53cb1d1aa94544668c',1,'CPPCli::User']]],
+  ['_21userinfo',['!UserInfo',['../../CSharpWrapper/class_c_p_p_cli_1_1_user_info.html#a7f8b94b1a59f9340818b3248ba897fdc',1,'CPPCli::UserInfo']]],
   ['_21vxsystem',['!VXSystem',['../../CSharpWrapper/class_c_p_p_cli_1_1_v_x_system.html#a907262dda74153eb989969e9b42e2aa0',1,'CPPCli::VXSystem']]]
 ];

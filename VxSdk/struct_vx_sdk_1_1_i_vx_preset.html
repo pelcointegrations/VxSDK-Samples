@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">VideoXpert SDK
-   &#160;<span id="projectnumber">1.2</span>
+   &#160;<span id="projectnumber">2.0</span>
    </div>
    <div id="projectbrief">A software development kit for third party vendors to integrate with the VideoXpert platform</div>
   </td>
@@ -137,6 +137,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a915786255a537595549f729393b5bc0d"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_preset.html#a915786255a537595549f729393b5bc0d">name</a> [64]</td></tr>
 <tr class="memdesc:a915786255a537595549f729393b5bc0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The friendly name of the preset.  <a href="#a915786255a537595549f729393b5bc0d">More...</a><br /></td></tr>
 <tr class="separator:a915786255a537595549f729393b5bc0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af47b8853a4b20d03a4e0419ab6079d43"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_i_vx_preset.html#af47b8853a4b20d03a4e0419ab6079d43">index</a></td></tr>
+<tr class="memdesc:af47b8853a4b20d03a4e0419ab6079d43"><td class="mdescLeft">&#160;</td><td class="mdescRight">The unique numerical sequence value of this preset.  <a href="#af47b8853a4b20d03a4e0419ab6079d43">More...</a><br /></td></tr>
+<tr class="separator:af47b8853a4b20d03a4e0419ab6079d43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -172,8 +175,9 @@ Protected Member Functions</h2></td></tr>
 
 <p>Clears this instance. </p>
 
-<p>Definition at line <a class="el" href="_i_vx_preset_8h_source.html#l00034">34</a> of file <a class="el" href="_i_vx_preset_8h_source.html">IVxPreset.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                     {</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_preset.html#ae82d0e57fe1196de9e76c255d90c8921">description</a>);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_preset.html#a915786255a537595549f729393b5bc0d">name</a>);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        }</div><div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00018">VxMacros.h:18</a></div></div>
+<p>Definition at line <a class="el" href="_i_vx_preset_8h_source.html#l00038">38</a> of file <a class="el" href="_i_vx_preset_8h_source.html">IVxPreset.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                     {</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_preset.html#ae82d0e57fe1196de9e76c255d90c8921">description</a>);</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <a class="code" href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a>(this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_preset.html#a915786255a537595549f729393b5bc0d">name</a>);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            this-&gt;<a class="code" href="struct_vx_sdk_1_1_i_vx_preset.html#af47b8853a4b20d03a4e0419ab6079d43">index</a> = 0;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div><div class="ttc" id="struct_vx_sdk_1_1_i_vx_preset_html_af47b8853a4b20d03a4e0419ab6079d43"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_preset.html#af47b8853a4b20d03a4e0419ab6079d43">VxSdk::IVxPreset::index</a></div><div class="ttdeci">int index</div><div class="ttdoc">The unique numerical sequence value of this preset. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_preset_8h_source.html#l00032">IVxPreset.h:32</a></div></div>
+<div class="ttc" id="_vx_macros_8h_html_a351a251b4c37db35856809bb32aa8e4e"><div class="ttname"><a href="_vx_macros_8h.html#a351a251b4c37db35856809bb32aa8e4e">VxZeroArray</a></div><div class="ttdeci">#define VxZeroArray(src)</div><div class="ttdef"><b>Definition:</b> <a href="_vx_macros_8h_source.html#l00025">VxMacros.h:25</a></div></div>
 <div class="ttc" id="struct_vx_sdk_1_1_i_vx_preset_html_ae82d0e57fe1196de9e76c255d90c8921"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_preset.html#ae82d0e57fe1196de9e76c255d90c8921">VxSdk::IVxPreset::description</a></div><div class="ttdeci">char description[64]</div><div class="ttdoc">The friendly description of the preset. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_preset_8h_source.html#l00024">IVxPreset.h:24</a></div></div>
 <div class="ttc" id="struct_vx_sdk_1_1_i_vx_preset_html_a915786255a537595549f729393b5bc0d"><div class="ttname"><a href="struct_vx_sdk_1_1_i_vx_preset.html#a915786255a537595549f729393b5bc0d">VxSdk::IVxPreset::name</a></div><div class="ttdeci">char name[64]</div><div class="ttdoc">The friendly name of the preset. </div><div class="ttdef"><b>Definition:</b> <a href="_i_vx_preset_8h_source.html#l00028">IVxPreset.h:28</a></div></div>
 </div><!-- fragment -->
@@ -222,6 +226,22 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="af47b8853a4b20d03a4e0419ab6079d43"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int VxSdk::IVxPreset::index</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The unique numerical sequence value of this preset. </p>
+
+<p>Definition at line <a class="el" href="_i_vx_preset_8h_source.html#l00032">32</a> of file <a class="el" href="_i_vx_preset_8h_source.html">IVxPreset.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a915786255a537595549f729393b5bc0d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -239,7 +259,7 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>C:/Users/zachm/Git/vxsdk/VxSdk/Include/<a class="el" href="_i_vx_preset_8h_source.html">IVxPreset.h</a></li>
+<li>C:/Git/VXSDK_M3/VxSdk/Include/<a class="el" href="_i_vx_preset_8h_source.html">IVxPreset.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

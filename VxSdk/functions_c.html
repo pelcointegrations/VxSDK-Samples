@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">VideoXpert SDK
-   &#160;<span id="projectnumber">1.2</span>
+   &#160;<span id="projectnumber">2.0</span>
    </div>
    <div id="projectbrief">A software development kit for third party vendors to integrate with the VideoXpert platform</div>
   </td>
@@ -90,6 +90,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow4" class="tabs3">
     <ul class="tablist">
       <li><a href="functions.html#index_a"><span>a</span></a></li>
+      <li><a href="functions_b.html#index_b"><span>b</span></a></li>
       <li class="current"><a href="functions_c.html#index_c"><span>c</span></a></li>
       <li><a href="functions_d.html#index_d"><span>d</span></a></li>
       <li><a href="functions_e.html#index_e"><span>e</span></a></li>
@@ -152,7 +153,8 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 : <a class="el" href="struct_vx_sdk_1_1_i_vx_data_source.html#a47020f3413ea82ab0798b66ccb0d8d1d">VxSdk::IVxDataSource</a>
 </li>
 <li>Clear()
-: <a class="el" href="struct_vx_sdk_1_1_i_vx_bookmark.html#af54c1581b932fa17eae44e4c982c644d">VxSdk::IVxBookmark</a>
+: <a class="el" href="struct_vx_sdk_1_1_i_vx_alarm_input.html#ae1efb2c978d9187c3b6ac43901065516">VxSdk::IVxAlarmInput</a>
+, <a class="el" href="struct_vx_sdk_1_1_i_vx_bookmark.html#af54c1581b932fa17eae44e4c982c644d">VxSdk::IVxBookmark</a>
 , <a class="el" href="struct_vx_sdk_1_1_i_vx_clip.html#a8d64970a8f67a5e0d119cd89f67cf6a3">VxSdk::IVxClip</a>
 , <a class="el" href="struct_vx_sdk_1_1_i_vx_configuration_1_1_cluster.html#aa5f8efca0071c0fcf1f21aa0e3ded2d8">VxSdk::IVxConfiguration::Cluster</a>
 , <a class="el" href="struct_vx_sdk_1_1_i_vx_configuration_1_1_node.html#a6ede2987514177bdf98c95b14dd60a41">VxSdk::IVxConfiguration::Node</a>
@@ -172,6 +174,7 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 , <a class="el" href="struct_vx_sdk_1_1_i_vx_export_clip.html#a08f25697452ecf7074516986fc4a3e9e">VxSdk::IVxExportClip</a>
 , <a class="el" href="struct_vx_sdk_1_1_i_vx_license.html#ac2ae2b849e1b31fb9ecd955b4ebdbf9d">VxSdk::IVxLicense</a>
 , <a class="el" href="struct_vx_sdk_1_1_i_vx_license_feature.html#a32427af17eb0ac84c3e9f185ce4902ac">VxSdk::IVxLicenseFeature</a>
+, <a class="el" href="struct_vx_sdk_1_1_i_vx_manual_recording.html#aef84e9ab1f6ba3f73237e5aba57c9d9a">VxSdk::IVxManualRecording</a>
 , <a class="el" href="struct_vx_sdk_1_1_i_vx_marker.html#a07510cb97d0b1ceebe81d354d8eb3a71">VxSdk::IVxMarker</a>
 , <a class="el" href="struct_vx_sdk_1_1_i_vx_monitor.html#a57e8cd5a57086f6b7131e4999fe1a95c">VxSdk::IVxMonitor</a>
 , <a class="el" href="struct_vx_sdk_1_1_i_vx_monitor_cell.html#a320b500dbd834d9ab1e82d02cca200a3">VxSdk::IVxMonitorCell</a>
@@ -181,7 +184,9 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 , <a class="el" href="struct_vx_sdk_1_1_i_vx_privilege.html#a50a93c9e1aff4381fe9ef639cf9f55df">VxSdk::IVxPrivilege</a>
 , <a class="el" href="struct_vx_sdk_1_1_i_vx_ptz_controller.html#a5504257ccd348e696e9cf98d8ace14d5">VxSdk::IVxPtzController</a>
 , <a class="el" href="struct_vx_sdk_1_1_i_vx_ptz_lock.html#ade6deaee52d7b03d3a9b5bf9419cad90">VxSdk::IVxPtzLock</a>
+, <a class="el" href="struct_vx_sdk_1_1_i_vx_relay_output.html#a8bc04a9748061918d206bd0f0569fb51">VxSdk::IVxRelayOutput</a>
 , <a class="el" href="struct_vx_sdk_1_1_i_vx_resource_lock.html#adbba9a0351a32f41a3fe6405d433e243">VxSdk::IVxResourceLock</a>
+, <a class="el" href="struct_vx_sdk_1_1_i_vx_resource_rel.html#aedc0e8edb1d0f24273e7dc531cb3bdcb">VxSdk::IVxResourceRel</a>
 , <a class="el" href="struct_vx_sdk_1_1_i_vx_role.html#a44e1daf49239bb2ae088fa5b3db4da40">VxSdk::IVxRole</a>
 , <a class="el" href="struct_vx_sdk_1_1_i_vx_schedule.html#a1c6362f8539819c91ab72d6905662121">VxSdk::IVxSchedule</a>
 , <a class="el" href="struct_vx_sdk_1_1_i_vx_schedule_trigger.html#ac45edc64bd53f0b04c4339f13acdc97f">VxSdk::IVxScheduleTrigger</a>
@@ -189,9 +194,11 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 , <a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#a5a717b71abddd42bbb8c52898e5f9ef7">VxSdk::IVxSystem</a>
 , <a class="el" href="struct_vx_sdk_1_1_i_vx_tag.html#abcd0976b606d8e14c8e682fe57dd1c7f">VxSdk::IVxTag</a>
 , <a class="el" href="struct_vx_sdk_1_1_i_vx_user.html#a40d8de93106db0b3a43f0eeefd56678b">VxSdk::IVxUser</a>
+, <a class="el" href="struct_vx_sdk_1_1_i_vx_user_info.html#a46ba20930d06863f94116465d0f30cbc">VxSdk::IVxUserInfo</a>
 , <a class="el" href="struct_vx_sdk_1_1_vx_auth_info.html#ad12a37c261f60fc7c44c8dad46793610">VxSdk::VxAuthInfo</a>
 , <a class="el" href="struct_vx_sdk_1_1_vx_collection.html#a4af5e68db32e170619a3fe5936d31bb6">VxSdk::VxCollection&lt; T &gt;</a>
 , <a class="el" href="struct_vx_sdk_1_1_vx_collection_filter.html#a82862b3910a7b0af9514751d1b8fcb2f">VxSdk::VxCollectionFilter</a>
+, <a class="el" href="struct_vx_sdk_1_1_vx_internal_event.html#a62649c70c3a734eb988fe1ba07ddb7ed">VxSdk::VxInternalEvent</a>
 , <a class="el" href="struct_vx_sdk_1_1_vx_kv_object.html#a1f9c4690e58d21b912d59cda25f745e0">VxSdk::VxKvObject</a>
 , <a class="el" href="struct_vx_sdk_1_1_vx_login_info.html#a4fe546f781c59bdf8f2e8df6bbb33e61">VxSdk::VxLoginInfo</a>
 , <a class="el" href="struct_vx_sdk_1_1_vx_new_bookmark.html#ae0c8d10da6ec254e416add315b011c0c">VxSdk::VxNewBookmark</a>
@@ -202,6 +209,7 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 , <a class="el" href="struct_vx_sdk_1_1_vx_new_event.html#a607b987679479895a1225b3e18adbb56">VxSdk::VxNewEvent</a>
 , <a class="el" href="struct_vx_sdk_1_1_vx_new_export.html#aafad0b87a1c77d8eb39f046f34255b6d">VxSdk::VxNewExport</a>
 , <a class="el" href="struct_vx_sdk_1_1_vx_new_export_clip.html#a6156ec20b108dd356a4a2dc272787d11">VxSdk::VxNewExportClip</a>
+, <a class="el" href="struct_vx_sdk_1_1_vx_new_manual_recording.html#a66c1646124848e5a9cd16f9ba21f6c6b">VxSdk::VxNewManualRecording</a>
 , <a class="el" href="struct_vx_sdk_1_1_vx_new_marker.html#a3ecae0d336c1e9a93a1a147da4e6caff">VxSdk::VxNewMarker</a>
 , <a class="el" href="struct_vx_sdk_1_1_vx_new_monitor.html#aabb4220f9433be88d896e9b252111542">VxSdk::VxNewMonitor</a>
 , <a class="el" href="struct_vx_sdk_1_1_vx_new_notification.html#a7e235fb7019cfee03101bfc16340eefd">VxSdk::VxNewNotification</a>
@@ -212,6 +220,8 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 , <a class="el" href="struct_vx_sdk_1_1_vx_new_situation.html#a0e60735373dc956e6c1d695347970c43">VxSdk::VxNewSituation</a>
 , <a class="el" href="struct_vx_sdk_1_1_vx_new_tag.html#a0308c8147926b8909448ea11d69886ae">VxSdk::VxNewTag</a>
 , <a class="el" href="struct_vx_sdk_1_1_vx_new_user.html#a8a3c2c7c864b38205298a00062239420">VxSdk::VxNewUser</a>
+, <a class="el" href="struct_vx_sdk_1_1_vx_phone_number.html#af8ce7d1c83f6bd76fa21124c5932ca70">VxSdk::VxPhoneNumber</a>
+, <a class="el" href="struct_vx_sdk_1_1_vx_ptz_limits.html#a9151cad6a5650dc611759fed2f3f9850">VxSdk::VxPtzLimits</a>
 , <a class="el" href="struct_vx_sdk_1_1_vx_snapshot_filter.html#aaba74c438096b39c137d8f4cb3c8c691">VxSdk::VxSnapshotFilter</a>
 </li>
 <li>clientType
@@ -268,6 +278,9 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 </li>
 <li>CreateMonitor()
 : <a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#ae60411039045c5464e72137c818ef3af">VxSdk::IVxSystem</a>
+</li>
+<li>CreateQuickLog()
+: <a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#a47fabc4efdf7d03b11aca797614bf387">VxSdk::IVxSystem</a>
 </li>
 <li>CreateQuickReport()
 : <a class="el" href="struct_vx_sdk_1_1_i_vx_system.html#ae2888bea03c53020f39f063b4aef17a5">VxSdk::IVxSystem</a>

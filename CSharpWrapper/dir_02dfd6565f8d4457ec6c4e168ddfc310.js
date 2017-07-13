@@ -1,5 +1,8 @@
 var dir_02dfd6565f8d4457ec6c4e168ddfc310 =
 [
+    [ "AlarmInput.h", "_alarm_input_8h.html", [
+      [ "AlarmInput", "class_c_p_p_cli_1_1_alarm_input.html", "class_c_p_p_cli_1_1_alarm_input" ]
+    ] ],
     [ "Bookmark.h", "_bookmark_8h.html", [
       [ "Bookmark", "class_c_p_p_cli_1_1_bookmark.html", "class_c_p_p_cli_1_1_bookmark" ]
     ] ],
@@ -49,11 +52,17 @@ var dir_02dfd6565f8d4457ec6c4e168ddfc310 =
     [ "ExportClip.h", "_export_clip_8h.html", [
       [ "ExportClip", "class_c_p_p_cli_1_1_export_clip.html", "class_c_p_p_cli_1_1_export_clip" ]
     ] ],
+    [ "InternalEvent.h", "_internal_event_8h.html", [
+      [ "InternalEvent", "class_c_p_p_cli_1_1_internal_event.html", "class_c_p_p_cli_1_1_internal_event" ]
+    ] ],
     [ "License.h", "_license_8h.html", [
       [ "License", "class_c_p_p_cli_1_1_license.html", "class_c_p_p_cli_1_1_license" ]
     ] ],
     [ "LicenseFeature.h", "_license_feature_8h.html", [
       [ "LicenseFeature", "class_c_p_p_cli_1_1_license_feature.html", "class_c_p_p_cli_1_1_license_feature" ]
+    ] ],
+    [ "ManualRecording.h", "_manual_recording_8h.html", [
+      [ "ManualRecording", "class_c_p_p_cli_1_1_manual_recording.html", "class_c_p_p_cli_1_1_manual_recording" ]
     ] ],
     [ "Marker.h", "_marker_8h.html", [
       [ "Marker", "class_c_p_p_cli_1_1_marker.html", "class_c_p_p_cli_1_1_marker" ]
@@ -90,6 +99,9 @@ var dir_02dfd6565f8d4457ec6c4e168ddfc310 =
     ] ],
     [ "NewExportClip.h", "_new_export_clip_8h.html", [
       [ "NewExportClip", "class_c_p_p_cli_1_1_new_export_clip.html", "class_c_p_p_cli_1_1_new_export_clip" ]
+    ] ],
+    [ "NewManualRecording.h", "_new_manual_recording_8h.html", [
+      [ "NewManualRecording", "class_c_p_p_cli_1_1_new_manual_recording.html", "class_c_p_p_cli_1_1_new_manual_recording" ]
     ] ],
     [ "NewMarker.h", "_new_marker_8h.html", [
       [ "NewMarker", "class_c_p_p_cli_1_1_new_marker.html", "class_c_p_p_cli_1_1_new_marker" ]
@@ -136,14 +148,26 @@ var dir_02dfd6565f8d4457ec6c4e168ddfc310 =
     [ "PtzController.h", "_ptz_controller_8h.html", [
       [ "PtzController", "class_c_p_p_cli_1_1_ptz_controller.html", "class_c_p_p_cli_1_1_ptz_controller" ]
     ] ],
+    [ "PtzLimits.h", "_ptz_limits_8h.html", [
+      [ "PtzLimits", "class_c_p_p_cli_1_1_ptz_limits.html", "class_c_p_p_cli_1_1_ptz_limits" ]
+    ] ],
     [ "PtzLock.h", "_ptz_lock_8h.html", [
       [ "PtzLock", "class_c_p_p_cli_1_1_ptz_lock.html", "class_c_p_p_cli_1_1_ptz_lock" ]
+    ] ],
+    [ "QuickLog.h", "_quick_log_8h.html", [
+      [ "QuickLog", "class_c_p_p_cli_1_1_quick_log.html", "class_c_p_p_cli_1_1_quick_log" ]
     ] ],
     [ "QuickReport.h", "_quick_report_8h.html", [
       [ "QuickReport", "class_c_p_p_cli_1_1_quick_report.html", "class_c_p_p_cli_1_1_quick_report" ]
     ] ],
+    [ "RelayOutput.h", "_relay_output_8h.html", [
+      [ "RelayOutput", "class_c_p_p_cli_1_1_relay_output.html", "class_c_p_p_cli_1_1_relay_output" ]
+    ] ],
     [ "ResourceLock.h", "_resource_lock_8h.html", [
       [ "ResourceLock", "class_c_p_p_cli_1_1_resource_lock.html", "class_c_p_p_cli_1_1_resource_lock" ]
+    ] ],
+    [ "ResourceRel.h", "_resource_rel_8h.html", [
+      [ "ResourceRel", "class_c_p_p_cli_1_1_resource_rel.html", "class_c_p_p_cli_1_1_resource_rel" ]
     ] ],
     [ "Role.h", "_role_8h.html", [
       [ "Role", "class_c_p_p_cli_1_1_role.html", "class_c_p_p_cli_1_1_role" ]
@@ -165,6 +189,9 @@ var dir_02dfd6565f8d4457ec6c4e168ddfc310 =
     ] ],
     [ "User.h", "_user_8h.html", [
       [ "User", "class_c_p_p_cli_1_1_user.html", "class_c_p_p_cli_1_1_user" ]
+    ] ],
+    [ "UserInfo.h", "_user_info_8h.html", [
+      [ "UserInfo", "class_c_p_p_cli_1_1_user_info.html", "class_c_p_p_cli_1_1_user_info" ]
     ] ],
     [ "Utils.h", "_utils_8h.html", [
       [ "Results", "class_c_p_p_cli_1_1_results.html", "class_c_p_p_cli_1_1_results" ],

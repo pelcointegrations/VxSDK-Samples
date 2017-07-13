@@ -1,9 +1,11 @@
 var class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form =
 [
     [ "PTZControlForm", "class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#a8cbcdc0b32dbf5620c07fb5d6fea43c7", null ],
+    [ "ButtonDeletePreset_Click", "class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#a01ca0dc3798b580740ebf9959c1f6b19", null ],
     [ "ButtonGetPosition_Click", "class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#a01233766ed6d06542e4962a4253e75fd", null ],
     [ "ButtonLockClick", "class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#ab796d007b72027f18cfc62ea6f2ad585", null ],
     [ "ButtonMove_Click", "class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#a81b7d709bf9dcee6fb93dd160fefc225", null ],
+    [ "ButtonNewPreset_Click", "class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#a5b31601fdc17085d11924fe805994826", null ],
     [ "ButtonPtzD_Click", "class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#a7a93fb8a983e124693de872547c729ea", null ],
     [ "ButtonPtzDL_Click", "class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#a12198f22feea2c151a4d6492e0667f86", null ],
     [ "ButtonPtzDR_Click", "class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#adf27f633fa3fa9c36afc5f1cdaa2f357", null ],
@@ -19,6 +21,7 @@ var class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form =
     [ "ButtonPtzZoomIn_Click", "class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#afcc87f3253d3a04d5c4c72d6077f2e9f", null ],
     [ "ButtonPtzZoomOut_Click", "class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#ad76913363e18f2dcb3f91b41198cc581", null ],
     [ "ButtonRefreshLock_Click", "class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#a17f0d7b24bb1cb172510614bffb146e6", null ],
+    [ "ButtonRepositionPreset_Click", "class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#a1eb9250f4a9d2ddeb4dd6ff62e1907e6", null ],
     [ "ButtonSetPosition_Click", "class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#a5de3b24202f2191d18c75fce8907f8a4", null ],
     [ "ButtonTriggerPattern_Click", "class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#a1d271c8d520c318979952c3414cdea7e", null ],
     [ "ButtonTriggerPreset_Click", "class_s_d_k_sample_app_1_1_source_1_1_p_t_z_control_form.html#af0296d7b73d197da5ab7abacc12b0420", null ],

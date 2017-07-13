@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['haslive',['hasLive',['../struct_vx_sdk_1_1_i_vx_data_source.html#aaedeba4fb25b0dfb8af7bb0bfa086869',1,'VxSdk::IVxDataSource']]],
-  ['hasrecorded',['hasRecorded',['../struct_vx_sdk_1_1_i_vx_data_source.html#abd4af36a9baf8fd2c443b628ddef40ed',1,'VxSdk::IVxDataSource']]],
-  ['hostaddress',['hostAddress',['../struct_vx_sdk_1_1_i_vx_configuration_1_1_node.html#a22a1ba406963f3c2cf6da2bf2af7ebc8',1,'VxSdk::IVxConfiguration::Node']]],
-  ['hostdeviceid',['hostDeviceId',['../struct_vx_sdk_1_1_vx_new_monitor.html#aeb8f688b7ce5e243fcef27bfdb99d780',1,'VxSdk::VxNewMonitor']]]
+  ['generatordeviceid',['generatorDeviceId',['../struct_vx_sdk_1_1_i_vx_event.html#a0a6fde978a66e707dc977d5a444c63a8',1,'VxSdk::IVxEvent::generatorDeviceId()'],['../struct_vx_sdk_1_1_vx_new_event.html#a9aa7b26dce59ae5f0a8aba9f8efe416c',1,'VxSdk::VxNewEvent::generatorDeviceId()']]],
+  ['generatordevicename',['generatorDeviceName',['../struct_vx_sdk_1_1_i_vx_event.html#a3e0e8c98fb264cfa217933d63b689148',1,'VxSdk::IVxEvent']]]
 ];

@@ -68,6 +68,7 @@ var searchData=
   ['_7evxauthinfo',['~VxAuthInfo',['../../VxSdk/struct_vx_sdk_1_1_vx_auth_info.html#a65bf07c7f125a03edae628668155fe08',1,'VxSdk::VxAuthInfo']]],
   ['_7evxcollection',['~VxCollection',['../../VxSdk/struct_vx_sdk_1_1_vx_collection.html#aea5b5c45fbe4a35fcdbce5931df8a04e',1,'VxSdk::VxCollection']]],
   ['_7evxcollectionfilter',['~VxCollectionFilter',['../../VxSdk/struct_vx_sdk_1_1_vx_collection_filter.html#a83884eabe331bca2520af206dd079e42',1,'VxSdk::VxCollectionFilter']]],
+  ['_7evxinternalevent',['~VxInternalEvent',['../../VxSdk/struct_vx_sdk_1_1_vx_internal_event.html#a07da148c41a2c542b119aba9827e05d5',1,'VxSdk::VxInternalEvent']]],
   ['_7evxkvobject',['~VxKvObject',['../../VxSdk/struct_vx_sdk_1_1_vx_kv_object.html#a6566f127030ffdad393511ca526304f4',1,'VxSdk::VxKvObject']]],
   ['_7evxlogininfo',['~VxLoginInfo',['../../VxSdk/struct_vx_sdk_1_1_vx_login_info.html#a718db4457dc0c1532527524d676a952d',1,'VxSdk::VxLoginInfo']]],
   ['_7evxnewbookmark',['~VxNewBookmark',['../../VxSdk/struct_vx_sdk_1_1_vx_new_bookmark.html#a8ba1c7bbb4e565a82064a13dce20c5b2',1,'VxSdk::VxNewBookmark']]],
@@ -78,6 +79,7 @@ var searchData=
   ['_7evxnewevent',['~VxNewEvent',['../../VxSdk/struct_vx_sdk_1_1_vx_new_event.html#a43ce251e23e924d4703a5506ffcb8f78',1,'VxSdk::VxNewEvent']]],
   ['_7evxnewexport',['~VxNewExport',['../../VxSdk/struct_vx_sdk_1_1_vx_new_export.html#ac976e1c952e071d820e9aa699e3b5da7',1,'VxSdk::VxNewExport']]],
   ['_7evxnewexportclip',['~VxNewExportClip',['../../VxSdk/struct_vx_sdk_1_1_vx_new_export_clip.html#a7025e6436e7d665da7ec9478d6a48964',1,'VxSdk::VxNewExportClip']]],
+  ['_7evxnewmanualrecording',['~VxNewManualRecording',['../../VxSdk/struct_vx_sdk_1_1_vx_new_manual_recording.html#a9164952c44f4efb01c46d534906b9255',1,'VxSdk::VxNewManualRecording']]],
   ['_7evxnewmarker',['~VxNewMarker',['../../VxSdk/struct_vx_sdk_1_1_vx_new_marker.html#af876704113e4870fddcf35b7a5f06284',1,'VxSdk::VxNewMarker']]],
   ['_7evxnewmonitor',['~VxNewMonitor',['../../VxSdk/struct_vx_sdk_1_1_vx_new_monitor.html#ac4e4e94f60d22d3d684ada0b8eb75103',1,'VxSdk::VxNewMonitor']]],
   ['_7evxnewnotification',['~VxNewNotification',['../../VxSdk/struct_vx_sdk_1_1_vx_new_notification.html#a1b5fb6ae0197f65fbc6a9cec24a229ca',1,'VxSdk::VxNewNotification']]],
@@ -88,5 +90,7 @@ var searchData=
   ['_7evxnewsituation',['~VxNewSituation',['../../VxSdk/struct_vx_sdk_1_1_vx_new_situation.html#a60c59035f4a6c3d03c23f4f73acacf67',1,'VxSdk::VxNewSituation']]],
   ['_7evxnewtag',['~VxNewTag',['../../VxSdk/struct_vx_sdk_1_1_vx_new_tag.html#a71d2a100ee2a2b6ed495cd1311a96454',1,'VxSdk::VxNewTag']]],
   ['_7evxnewuser',['~VxNewUser',['../../VxSdk/struct_vx_sdk_1_1_vx_new_user.html#a990706a53a7eb14eef94097949dbda2c',1,'VxSdk::VxNewUser']]],
+  ['_7evxphonenumber',['~VxPhoneNumber',['../../VxSdk/struct_vx_sdk_1_1_vx_phone_number.html#aa72a0b379ea5d2470bc721ba2ec951ac',1,'VxSdk::VxPhoneNumber']]],
+  ['_7evxptzlimits',['~VxPtzLimits',['../../VxSdk/struct_vx_sdk_1_1_vx_ptz_limits.html#a6bb6cfc22d5c6aa7ab43caf7226a8f36',1,'VxSdk::VxPtzLimits']]],
   ['_7evxsnapshotfilter',['~VxSnapshotFilter',['../../VxSdk/struct_vx_sdk_1_1_vx_snapshot_filter.html#a2a4c136634ed4faf5d7d443a9ba169ca',1,'VxSdk::VxSnapshotFilter']]]
 ];

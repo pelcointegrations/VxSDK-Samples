@@ -10,6 +10,7 @@ var searchData=
   ['ptzcontrolform_2ecs',['PTZControlForm.cs',['../_p_t_z_control_form_8cs.html',1,'']]],
   ['ptzcontroller_2ecpp',['PtzController.cpp',['../../CSharpWrapper/_ptz_controller_8cpp.html',1,'']]],
   ['ptzcontroller_2eh',['PtzController.h',['../../CSharpWrapper/_ptz_controller_8h.html',1,'']]],
+  ['ptzlimits_2eh',['PtzLimits.h',['../../CSharpWrapper/_ptz_limits_8h.html',1,'']]],
   ['ptzlock_2ecpp',['PtzLock.cpp',['../../CSharpWrapper/_ptz_lock_8cpp.html',1,'']]],
   ['ptzlock_2eh',['PtzLock.h',['../../CSharpWrapper/_ptz_lock_8h.html',1,'']]]
 ];

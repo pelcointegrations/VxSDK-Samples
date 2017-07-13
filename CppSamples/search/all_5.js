@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['employeeid',['employeeId',['../../VxSdk/struct_vx_sdk_1_1_i_vx_user.html#a01cece5cef3455e0377019b327915756',1,'VxSdk::IVxUser::employeeId()'],['../../VxSdk/struct_vx_sdk_1_1_i_vx_user_info.html#a792a6ddb6abd8db5666284edc53f3390',1,'VxSdk::IVxUserInfo::employeeId()'],['../../VxSdk/struct_vx_sdk_1_1_vx_new_user.html#a378fa9350ed67d060f249d141079c156',1,'VxSdk::VxNewUser::employeeId()']]],
   ['encode',['Encode',['../class_cpp_samples_1_1_common_1_1_utility.html#ac85e9f1c22244458f903bc254dbd0b8d',1,'CppSamples::Common::Utility']]],
   ['encoding',['encoding',['../../MediaController/struct_media_controller_1_1_rtsp_1_1_media_description.html#a19845be452979f69d76b4f5edf290333',1,'MediaController::Rtsp::MediaDescription']]],
   ['enddate',['endDate',['../../VxSdk/struct_vx_sdk_1_1_i_vx_schedule_trigger.html#a04af3624ace06d404bc24a3654c4efa5',1,'VxSdk::IVxScheduleTrigger::endDate()'],['../../VxSdk/struct_vx_sdk_1_1_vx_new_schedule_trigger.html#a4b72743841ea30e531760fe29f79c085',1,'VxSdk::VxNewScheduleTrigger::endDate()']]],
@@ -10,8 +11,10 @@ var searchData=
   ['eventpropertysize',['eventPropertySize',['../../VxSdk/struct_vx_sdk_1_1_i_vx_schedule_trigger.html#a21ac39c9aae9c17e71b0994ef6263e03',1,'VxSdk::IVxScheduleTrigger::eventPropertySize()'],['../../VxSdk/struct_vx_sdk_1_1_vx_new_schedule_trigger.html#a83ecf136b6591188ff9eac53d121800d',1,'VxSdk::VxNewScheduleTrigger::eventPropertySize()']]],
   ['eventscallback',['EventsCallBack',['../class_cpp_samples_1_1_events_1_1_monitor_events.html#ae930c5d37959a0ca21d8561a5674b9fd',1,'CppSamples::Events::MonitorEvents']]],
   ['eventsourcedevice',['eventSourceDevice',['../../VxSdk/struct_vx_sdk_1_1_i_vx_schedule_trigger.html#aa041384d52d0a8e1d5aafa9c76034fe3',1,'VxSdk::IVxScheduleTrigger::eventSourceDevice()'],['../../VxSdk/struct_vx_sdk_1_1_vx_new_schedule_trigger.html#a4999bc1de9ed8bf49188f310597be17c',1,'VxSdk::VxNewScheduleTrigger::eventSourceDevice()']]],
-  ['exitmenu',['ExitMenu',['../class_cpp_samples_1_1_common_1_1_exit_menu.html',1,'CppSamples::Common']]],
+  ['eventtype',['eventType',['../../VxSdk/struct_vx_sdk_1_1_vx_internal_event.html#ae6c3e570870feaaa111d50986e8e4335',1,'VxSdk::VxInternalEvent']]],
+  ['excluderestricted',['excludeRestricted',['../../VxSdk/struct_vx_sdk_1_1_i_vx_privilege.html#a612f76abad865076beff32931fce6a95',1,'VxSdk::IVxPrivilege']]],
   ['exitmenu',['ExitMenu',['../class_cpp_samples_1_1_common_1_1_exit_menu.html#ab48dd4dcc3c16e09c3f3d71b8a0918c6',1,'CppSamples::Common::ExitMenu']]],
+  ['exitmenu',['ExitMenu',['../class_cpp_samples_1_1_common_1_1_exit_menu.html',1,'CppSamples::Common']]],
   ['expiration',['expiration',['../../VxSdk/struct_vx_sdk_1_1_i_vx_license_feature.html#a2c19b1c2c60ad25479d57da9f073ef18',1,'VxSdk::IVxLicenseFeature']]],
   ['exportclips',['exportClips',['../../VxSdk/struct_vx_sdk_1_1_i_vx_export.html#aa22126be18b2aab33b2f8a6df00f78ac',1,'VxSdk::IVxExport']]],
   ['exportclipsize',['exportClipSize',['../../VxSdk/struct_vx_sdk_1_1_i_vx_export.html#a3a9884aa7ca1d43e8fb9a4e6f1ce7278',1,'VxSdk::IVxExport']]]

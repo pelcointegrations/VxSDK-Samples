@@ -23,14 +23,18 @@ var class_c_p_p_cli_1_1_clip =
     [ "Clip", "class_c_p_p_cli_1_1_clip.html#ac6bf2bd0c8eb796352a162f175d389c0", null ],
     [ "~Clip", "class_c_p_p_cli_1_1_clip.html#a434fac639c7d8ef2418adeea295ee565", null ],
     [ "!Clip", "class_c_p_p_cli_1_1_clip.html#a3ce6dae1562b1e95699c54d92dbdb79e", null ],
+    [ "_GetDataInterfaces", "class_c_p_p_cli_1_1_clip.html#ac221db590f08c5a7a91cdc093677d7d7", null ],
     [ "GetSnapshotEndpoint", "class_c_p_p_cli_1_1_clip.html#a4736e7d4e94f76405d7d8b9a2db98560", null ],
     [ "_clip", "class_c_p_p_cli_1_1_clip.html#a71bd06e3fa40d2876a614270b1072915", null ],
+    [ "DataInterfaces", "class_c_p_p_cli_1_1_clip.html#a312388d88efa1be8b77c25776ed3a4cb", null ],
     [ "DataSourceId", "class_c_p_p_cli_1_1_clip.html#abacceb0edfd0b1a7ac2dfd6a79938396", null ],
     [ "DataSourceName", "class_c_p_p_cli_1_1_clip.html#ad0e26b6d9daf36d14c2ff363ea72d882", null ],
+    [ "DataStorageId", "class_c_p_p_cli_1_1_clip.html#ac81ef22ca6f4b1663b12326282b531c3", null ],
     [ "EndTime", "class_c_p_p_cli_1_1_clip.html#a240ef970e00aad46504c9945cc9e704c", null ],
     [ "EventType", "class_c_p_p_cli_1_1_clip.html#aa81854f6af51460b14282c110bdb0f4a", null ],
     [ "Framerate", "class_c_p_p_cli_1_1_clip.html#a8c8b1079f165a14e979cc416c0e36d58", null ],
     [ "MediaType", "class_c_p_p_cli_1_1_clip.html#acbf08be907f55f39c635c6219e3c1e27", null ],
     [ "Priority", "class_c_p_p_cli_1_1_clip.html#abbc4366d9ef7220074f9e944e22d95f3", null ],
+    [ "SourceDataStorageId", "class_c_p_p_cli_1_1_clip.html#a415b9bba8c69cce01c0c682987af0edc", null ],
     [ "StartTime", "class_c_p_p_cli_1_1_clip.html#aaee1c8c3c974efa1dbc2f9fcbdbd1841", null ]
 ];

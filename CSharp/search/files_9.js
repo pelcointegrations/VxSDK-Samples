@@ -9,6 +9,7 @@ var searchData=
   ['newexport_2eh',['NewExport.h',['../../CSharpWrapper/_new_export_8h.html',1,'']]],
   ['newexportclip_2eh',['NewExportClip.h',['../../CSharpWrapper/_new_export_clip_8h.html',1,'']]],
   ['newexportform_2ecs',['NewExportForm.cs',['../_new_export_form_8cs.html',1,'']]],
+  ['newmanualrecording_2eh',['NewManualRecording.h',['../../CSharpWrapper/_new_manual_recording_8h.html',1,'']]],
   ['newmarker_2eh',['NewMarker.h',['../../CSharpWrapper/_new_marker_8h.html',1,'']]],
   ['newmonitor_2eh',['NewMonitor.h',['../../CSharpWrapper/_new_monitor_8h.html',1,'']]],
   ['newnotification_2eh',['NewNotification.h',['../../CSharpWrapper/_new_notification_8h.html',1,'']]],

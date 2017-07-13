@@ -31,6 +31,8 @@ var struct_vx_sdk_1_1_i_vx_situation =
     [ "name", "struct_vx_sdk_1_1_i_vx_situation.html#a781953eb7bea73e928362d1f69973e8c", null ],
     [ "notificationIds", "struct_vx_sdk_1_1_i_vx_situation.html#a9125a431af889cb5a04b14bd841a180e", null ],
     [ "notificationIdSize", "struct_vx_sdk_1_1_i_vx_situation.html#a1063e56b6ebd030fe646f440f44e919a", null ],
+    [ "servicePropertyId", "struct_vx_sdk_1_1_i_vx_situation.html#a18e2fb8e9e8db44b5e86aef00a65ea6c", null ],
+    [ "serviceType", "struct_vx_sdk_1_1_i_vx_situation.html#ad0b8d8466f3cc4680ce1901c4b3f080a", null ],
     [ "severity", "struct_vx_sdk_1_1_i_vx_situation.html#a2da6f73fe11f63405962568e63df3cb2", null ],
     [ "shouldAudiblyNotify", "struct_vx_sdk_1_1_i_vx_situation.html#adc2aead84d8cbf0cbadfc7ad03ee8226", null ],
     [ "shouldExpandBanner", "struct_vx_sdk_1_1_i_vx_situation.html#a9afdbca6018c4ee5ecb95c5b8b610d97", null ],

@@ -1,20 +1,14 @@
 var searchData=
 [
-  ['dailyendtime',['dailyEndTime',['../struct_vx_sdk_1_1_i_vx_schedule_trigger.html#a6bde960b57a4c8018d06166da30d311a',1,'VxSdk::IVxScheduleTrigger::dailyEndTime()'],['../struct_vx_sdk_1_1_vx_new_schedule_trigger.html#a5de028ad6da5a083bcf4245c7729a009',1,'VxSdk::VxNewScheduleTrigger::dailyEndTime()']]],
-  ['dailystarttime',['dailyStartTime',['../struct_vx_sdk_1_1_i_vx_schedule_trigger.html#aee0ffd4e4165b90af57d663bb6456022',1,'VxSdk::IVxScheduleTrigger::dailyStartTime()'],['../struct_vx_sdk_1_1_vx_new_schedule_trigger.html#a343af41f592d68dcfdfea2403921c4e4',1,'VxSdk::VxNewScheduleTrigger::dailyStartTime()']]],
-  ['data',['data',['../struct_vx_sdk_1_1_vx_new_data_object.html#a9bd21f325bfbef95ac0cc10bc5c2bac8',1,'VxSdk::VxNewDataObject']]],
-  ['dataendpoint',['dataEndpoint',['../struct_vx_sdk_1_1_i_vx_data_interface.html#ac89a1add775fc1a2309a49d7d9dbb5b6',1,'VxSdk::IVxDataInterface']]],
-  ['datainterfaces',['dataInterfaces',['../struct_vx_sdk_1_1_i_vx_data_source.html#af1467589857083c4702294e73f637a2d',1,'VxSdk::IVxDataSource']]],
-  ['datainterfacesize',['dataInterfaceSize',['../struct_vx_sdk_1_1_i_vx_data_source.html#adf332a3c38459478e693abde970f317e',1,'VxSdk::IVxDataSource']]],
-  ['datasourceid',['dataSourceId',['../struct_vx_sdk_1_1_i_vx_clip.html#a6eff1302892dd02ba665c27ee8d9e246',1,'VxSdk::IVxClip::dataSourceId()'],['../struct_vx_sdk_1_1_i_vx_export_clip.html#a5f18d0a23299a355997f8b101c89967a',1,'VxSdk::IVxExportClip::dataSourceId()'],['../struct_vx_sdk_1_1_i_vx_monitor_cell.html#a6b1257145f4bb75c08a724e828ab5c2c',1,'VxSdk::IVxMonitorCell::dataSourceId()'],['../struct_vx_sdk_1_1_vx_new_bookmark.html#adabf87fc700a1fe69f91939545d51bfd',1,'VxSdk::VxNewBookmark::dataSourceId()'],['../struct_vx_sdk_1_1_vx_new_export_clip.html#a839d776995f19a1b6e50e712fb125fb2',1,'VxSdk::VxNewExportClip::dataSourceId()']]],
-  ['datasourceids',['dataSourceIds',['../struct_vx_sdk_1_1_vx_new_device_assignment.html#af11119d12b9c0e12ed7f29aeac58556d',1,'VxSdk::VxNewDeviceAssignment']]],
-  ['datasourceidsize',['dataSourceIdSize',['../struct_vx_sdk_1_1_vx_new_device_assignment.html#a3ddf756dd3dd8751918b73da46118efd',1,'VxSdk::VxNewDeviceAssignment']]],
-  ['datasourcename',['dataSourceName',['../struct_vx_sdk_1_1_i_vx_clip.html#a5168277aa5f368746bac9118430046a8',1,'VxSdk::IVxClip']]],
-  ['datastorageid',['dataStorageId',['../struct_vx_sdk_1_1_vx_new_device.html#a2ed23ba1d37d6608d39c01fb6b33a985',1,'VxSdk::VxNewDevice']]],
-  ['datauri',['dataUri',['../struct_vx_sdk_1_1_i_vx_export.html#aa3036f19233f19e47b5e3bb13010bac3',1,'VxSdk::IVxExport']]],
-  ['description',['description',['../struct_vx_sdk_1_1_i_vx_bookmark.html#a17c27d69436c22e39fad510bdc7a0da4',1,'VxSdk::IVxBookmark::description()'],['../struct_vx_sdk_1_1_i_vx_pattern.html#a168283d3c4499be6041166ae33727e87',1,'VxSdk::IVxPattern::description()'],['../struct_vx_sdk_1_1_i_vx_preset.html#ae82d0e57fe1196de9e76c255d90c8921',1,'VxSdk::IVxPreset::description()'],['../struct_vx_sdk_1_1_vx_new_bookmark.html#ad41e46acd4f3d3668b2c7e68a3a11648',1,'VxSdk::VxNewBookmark::description()']]],
-  ['deviceid',['deviceId',['../struct_vx_sdk_1_1_vx_new_device_assignment.html#a5e9c2374a9a6fe7aa5953b1c4636376d',1,'VxSdk::VxNewDeviceAssignment']]],
-  ['direction',['direction',['../struct_vx_sdk_1_1_i_vx_marker.html#a5ee1b44cc04b47e43a8abffc8cbb310c',1,'VxSdk::IVxMarker::direction()'],['../struct_vx_sdk_1_1_vx_new_marker.html#a40f4c8cfbb89832d9bf5df3e2cdd4da0',1,'VxSdk::VxNewMarker::direction()']]],
-  ['domain',['domain',['../struct_vx_sdk_1_1_i_vx_user.html#a95a84f8009807d0aee9aa9e0de10fc09',1,'VxSdk::IVxUser::domain()'],['../struct_vx_sdk_1_1_vx_new_user.html#ac567dae79f629ff3c74a62dd35a55045',1,'VxSdk::VxNewUser::domain()']]],
-  ['drivertype',['driverType',['../struct_vx_sdk_1_1_i_vx_device_assignment.html#a6072e55d7592a0c39929b53783650147',1,'VxSdk::IVxDeviceAssignment::driverType()'],['../struct_vx_sdk_1_1_vx_new_device.html#a2111adfbacce8371487599b213b04bb3',1,'VxSdk::VxNewDevice::driverType()'],['../struct_vx_sdk_1_1_vx_new_device_assignment.html#a392e38a3b37620dd6c11006eb220da18',1,'VxSdk::VxNewDeviceAssignment::driverType()']]]
+  ['clienttype',['clientType',['../struct_vx_sdk_1_1_i_vx_data_object.html#a902ec2276c59525c0eba90b4f6d403a1',1,'VxSdk::IVxDataObject::clientType()'],['../struct_vx_sdk_1_1_vx_new_data_object.html#a0e9e95f484648aa3ee873e7bb1324e81',1,'VxSdk::VxNewDataObject::clientType()']]],
+  ['clips',['clips',['../struct_vx_sdk_1_1_vx_new_export.html#a70dba44c1cfd4ed86b05269ead640820',1,'VxSdk::VxNewExport']]],
+  ['clipsize',['clipSize',['../struct_vx_sdk_1_1_vx_new_export.html#ac1b58e21df24ce98913fe2fb45ffd98d',1,'VxSdk::VxNewExport']]],
+  ['collection',['collection',['../struct_vx_sdk_1_1_vx_collection.html#aa6b66343ba5098e788d6e3c1da23f8c3',1,'VxSdk::VxCollection']]],
+  ['collectionsize',['collectionSize',['../struct_vx_sdk_1_1_vx_collection.html#a9b339db50d44a0fc986cdd787f1c589b',1,'VxSdk::VxCollection']]],
+  ['companyname',['companyName',['../struct_vx_sdk_1_1_i_vx_license.html#a8ee70429b2899c4b0312e42a237afa6e',1,'VxSdk::IVxLicense']]],
+  ['completedtime',['completedTime',['../struct_vx_sdk_1_1_i_vx_export.html#a3e16200fd05a80e3b1ecae4d158ebabb',1,'VxSdk::IVxExport']]],
+  ['contents',['contents',['../struct_vx_sdk_1_1_vx_new_quick_report.html#a8c5c5088bc3de32d63b2d4da71a8ced9',1,'VxSdk::VxNewQuickReport']]],
+  ['contentssize',['contentsSize',['../struct_vx_sdk_1_1_vx_new_quick_report.html#a68cdbd15dba75d2bb1e65e131866386a',1,'VxSdk::VxNewQuickReport']]],
+  ['corevirtualip',['coreVirtualIp',['../struct_vx_sdk_1_1_i_vx_configuration_1_1_cluster.html#a35b60e8dc10553c98b84e29287e6f082',1,'VxSdk::IVxConfiguration::Cluster']]],
+  ['count',['count',['../struct_vx_sdk_1_1_i_vx_license_feature.html#a741481cf402cf3209114a9bdd3c61d47',1,'VxSdk::IVxLicenseFeature']]]
 ];

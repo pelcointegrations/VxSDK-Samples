@@ -1,10 +1,9 @@
 var searchData=
 [
-  ['mediagatewaytranscast',['mediaGatewayTranscast',['../struct_vx_sdk_1_1_i_vx_configuration_1_1_cluster.html#af313df2d94249ddbf7e7a4f917b91b24',1,'VxSdk::IVxConfiguration::Cluster']]],
-  ['mediagatewayvirtualip',['mediaGatewayVirtualIp',['../struct_vx_sdk_1_1_i_vx_configuration_1_1_cluster.html#a4758fc01d477b8994ea60460574f95c0',1,'VxSdk::IVxConfiguration::Cluster']]],
-  ['merge',['Merge',['../struct_vx_sdk_1_1_i_vx_tag.html#a01464bbeee0fdc8644644b832481faab',1,'VxSdk::IVxTag']]],
-  ['model',['model',['../struct_vx_sdk_1_1_i_vx_device.html#abd7e6e7c84af30ea12543b4d873bf025',1,'VxSdk::IVxDevice']]],
-  ['multicasttestip',['multicastTestIp',['../struct_vx_sdk_1_1_i_vx_data_interface.html#a45d5f2bf9e831f1e52c4f6428e20033c',1,'VxSdk::IVxDataInterface']]],
-  ['multicasttestport',['multicastTestPort',['../struct_vx_sdk_1_1_i_vx_data_interface.html#a9f5f5fc5b4fe6e15a840ed1aa95af633',1,'VxSdk::IVxDataInterface']]],
-  ['mustchangepassword',['mustChangePassword',['../struct_vx_sdk_1_1_vx_new_user.html#ac8d645ade0a140d215817f81c8ce0ab3',1,'VxSdk::VxNewUser']]]
+  ['lastname',['lastName',['../struct_vx_sdk_1_1_i_vx_user.html#adaab9a3ecb36becf9f3dd95ac0d8c584',1,'VxSdk::IVxUser::lastName()'],['../struct_vx_sdk_1_1_i_vx_user_info.html#a8a8312176a2421dd705657e299686ef1',1,'VxSdk::IVxUserInfo::lastName()'],['../struct_vx_sdk_1_1_vx_new_user.html#a7b06cc28283d4c61593274f944a23f03',1,'VxSdk::VxNewUser::lastName()']]],
+  ['layout',['layout',['../struct_vx_sdk_1_1_i_vx_monitor.html#a1673b2c9494b90a4d447ea06ae8039c3',1,'VxSdk::IVxMonitor::layout()'],['../struct_vx_sdk_1_1_vx_new_monitor.html#ade1ae208a294750158db6e5f9a88046f',1,'VxSdk::VxNewMonitor::layout()']]],
+  ['link',['Link',['../struct_vx_sdk_1_1_i_vx_privilege.html#afdf129b25eb09df1a870e33f7abba7ea',1,'VxSdk::IVxPrivilege::Link(IVxDataSource &amp;dataSource) const  =0'],['../struct_vx_sdk_1_1_i_vx_privilege.html#a2d0c74c6d2f08e0fc37b163384c08707',1,'VxSdk::IVxPrivilege::Link(IVxDevice &amp;device) const  =0'],['../struct_vx_sdk_1_1_i_vx_privilege.html#aa21fe3b639bbabe9708338bf5c8b956d',1,'VxSdk::IVxPrivilege::Link(IVxUser &amp;user) const  =0'],['../struct_vx_sdk_1_1_i_vx_schedule.html#aa3c1e9aec47b330ae8aa001ef5fcaf2e',1,'VxSdk::IVxSchedule::Link()'],['../struct_vx_sdk_1_1_i_vx_situation.html#aec3145382a210242b56d89f8ddffe9e2',1,'VxSdk::IVxSituation::Link(IVxDataSource &amp;dataSource) const  =0'],['../struct_vx_sdk_1_1_i_vx_situation.html#a2ec5120ee5d4fc73f6a9d4099c3067e3',1,'VxSdk::IVxSituation::Link(IVxDevice &amp;device) const  =0'],['../struct_vx_sdk_1_1_i_vx_tag.html#abd2babff047d5cd4f9079352cca1621b',1,'VxSdk::IVxTag::Link(IVxDataSource &amp;dataSource) const  =0'],['../struct_vx_sdk_1_1_i_vx_tag.html#a75d99100f68b6186944e0e4d3e0d937e',1,'VxSdk::IVxTag::Link(IVxDevice &amp;device) const  =0']]],
+  ['localtime_5fs',['localtime_s',['../_vx_macros_8h.html#a745dbcb04bfe1e000a73f8049314e30b',1,'VxMacros.h']]],
+  ['lock',['Lock',['../struct_vx_sdk_1_1_i_vx_ptz_lock.html#a9cfa5bd89cd6a04d0c1d04a2c4e9fdf2',1,'VxSdk::IVxPtzLock']]],
+  ['lockexpiretime',['lockExpireTime',['../struct_vx_sdk_1_1_i_vx_ptz_controller.html#af2519138541a43f9ae4d6af2c5bb6f6b',1,'VxSdk::IVxPtzController']]]
 ];

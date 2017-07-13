@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>VideoXpert SDK: C:/Users/zachm/Git/vxsdk/VxSdk/Include/VxPrimitives.h File Reference</title>
+<title>VideoXpert SDK: C:/Git/VXSDK_M3/VxSdk/Include/VxPrimitives.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">VideoXpert SDK
-   &#160;<span id="projectnumber">1.2</span>
+   &#160;<span id="projectnumber">2.0</span>
    </div>
    <div id="projectbrief">A software development kit for third party vendors to integrate with the VideoXpert platform</div>
   </td>
@@ -122,6 +122,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_ack_state.html">VxSdk::VxAckState</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent the current acknowledgement state of an event.  <a href="struct_vx_sdk_1_1_vx_ack_state.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_alarm_state.html">VxSdk::VxAlarmState</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent the state of an alarm input.  <a href="struct_vx_sdk_1_1_vx_alarm_state.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_cell_layout.html">VxSdk::VxCellLayout</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent possible monitor layouts.  <a href="struct_vx_sdk_1_1_vx_cell_layout.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,8 +140,14 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_data_storage_type.html">VxSdk::VxDataStorageType</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent hardware type of a data storage.  <a href="struct_vx_sdk_1_1_vx_data_storage_type.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_device_search_status.html">VxSdk::VxDeviceSearchStatus</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent the current status of an <code>AutoAddDevices</code> search.  <a href="struct_vx_sdk_1_1_vx_device_search_status.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_device_state.html">VxSdk::VxDeviceState</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent the operational state of a device.  <a href="struct_vx_sdk_1_1_vx_device_state.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_device_status.html">VxSdk::VxDeviceStatus</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent the current status of a device.  <a href="struct_vx_sdk_1_1_vx_device_status.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_device_type.html">VxSdk::VxDeviceType</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent device types.  <a href="struct_vx_sdk_1_1_vx_device_type.html#details">More...</a><br /></td></tr>
@@ -152,17 +161,23 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_focus_direction.html">VxSdk::VxFocusDirection</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent focus directions.  <a href="struct_vx_sdk_1_1_vx_focus_direction.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_internal_event_type.html">VxSdk::VxInternalEventType</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent event types sent from the VxSDK.  <a href="struct_vx_sdk_1_1_vx_internal_event_type.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_iris_direction.html">VxSdk::VxIrisDirection</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent iris directions.  <a href="struct_vx_sdk_1_1_vx_iris_direction.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_log_creation_status.html">VxSdk::VxLogCreationStatus</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent status of creating a quick log.  <a href="struct_vx_sdk_1_1_vx_log_creation_status.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_log_level.html">VxSdk::VxLogLevel</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent logging severity levels.  <a href="struct_vx_sdk_1_1_vx_log_level.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_report_creation_status.html">VxSdk::VxReportCreationStatus</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent status of creating a quick report.  <a href="struct_vx_sdk_1_1_vx_report_creation_status.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_permission_id.html">VxSdk::VxPermissionId</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent a permission type.  <a href="struct_vx_sdk_1_1_vx_permission_id.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_phone_type.html">VxSdk::VxPhoneType</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent the type of a phone number.  <a href="struct_vx_sdk_1_1_vx_phone_type.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_recording_framerate.html">VxSdk::VxRecordingFramerate</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent the video framerate level.  <a href="struct_vx_sdk_1_1_vx_recording_framerate.html#details">More...</a><br /></td></tr>
@@ -173,8 +188,17 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_recurrence_type.html">VxSdk::VxRecurrenceType</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent the interval at which triggers repeat.  <a href="struct_vx_sdk_1_1_vx_recurrence_type.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_relay_state.html">VxSdk::VxRelayState</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent the state of a relay output.  <a href="struct_vx_sdk_1_1_vx_relay_state.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_render_type.html">VxSdk::VxRenderType</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent the stream rendering types.  <a href="struct_vx_sdk_1_1_vx_render_type.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_report_content.html">VxSdk::VxReportContent</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent types of content for quick reports.  <a href="struct_vx_sdk_1_1_vx_report_content.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_report_creation_status.html">VxSdk::VxReportCreationStatus</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent status of creating a quick report.  <a href="struct_vx_sdk_1_1_vx_report_creation_status.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_resource_type.html">VxSdk::VxResourceType</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent a type of resource.  <a href="struct_vx_sdk_1_1_vx_resource_type.html#details">More...</a><br /></td></tr>
@@ -193,6 +217,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_snapshot_filter_item.html">VxSdk::VxSnapshotFilterItem</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent snapshot filter types.  <a href="struct_vx_sdk_1_1_vx_snapshot_filter_item.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_stream_format.html">VxSdk::VxStreamFormat</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent media stream encoding formats.  <a href="struct_vx_sdk_1_1_vx_stream_format.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vx_sdk_1_1_vx_stream_protocol.html">VxSdk::VxStreamProtocol</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent stream protocols.  <a href="struct_vx_sdk_1_1_vx_stream_protocol.html#details">More...</a><br /></td></tr>
@@ -214,7 +241,7 @@ Namespaces</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_84d4be9bd5d6edb8d83eed2da4af7b18.html">vxsdk</a></li><li class="navelem"><a class="el" href="dir_94057d50c4a871bf80721f14c663150b.html">VxSdk</a></li><li class="navelem"><a class="el" href="dir_1fb81e31d44af5ddc69ca0a2d8aed69c.html">Include</a></li><li class="navelem"><a class="el" href="_vx_primitives_8h.html">VxPrimitives.h</a></li>
+    <li class="navelem"><a class="el" href="dir_c093de07f74d989e54ce8c06a3a92c58.html">VXSDK_M3</a></li><li class="navelem"><a class="el" href="dir_4a573031e2b5876fda5cb60dcea11d2b.html">VxSdk</a></li><li class="navelem"><a class="el" href="dir_0a8b1d57e8d2d91fe66f85cdab45b5d0.html">Include</a></li><li class="navelem"><a class="el" href="_vx_primitives_8h.html">VxPrimitives.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
