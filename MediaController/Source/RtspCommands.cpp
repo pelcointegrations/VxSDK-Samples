@@ -48,7 +48,9 @@ bool Commands::Options() {
     catch (...) { return false; }
 
     // Parse the server response.
-    Response resp = ProcessResponse(_pSocket);
+    Response resp;
+    try { resp = ProcessResponse(_pSocket); }
+    catch (...) { return false; }
     if (resp.statusCode == kStatusCode301 || resp.statusCode == kStatusCode302) {
         // Set the playback URI to the redirect location.
         typedef std::map<std::string, std::string>::iterator it_type;
@@ -88,7 +90,9 @@ bool Commands::GetParameter() {
     catch (...) { return false; }
 
     // Parse the server response.
-    Response resp = ProcessResponse(_pSocket);
+    Response resp;
+    try { resp = ProcessResponse(_pSocket); }
+    catch (...) { return false; }
     if (resp.statusCode != kStatusCode200) { return false; }
 
     return true;
@@ -114,7 +118,9 @@ bool Commands::Describe(bool firstAttempt) {
     catch (...) { return false; }
 
     // Parse the server response.
-    Response resp = ProcessResponse(_pSocket);
+    Response resp;
+    try { resp = ProcessResponse(_pSocket); }
+    catch (...) { return false; }
     if (resp.statusCode != kStatusCode200) { return false; }
     // Parse the session description information.
     SdpParser& parser = this->_sdp;
@@ -170,7 +176,9 @@ bool Commands::Setup(bool firstAttempt) {
     catch (...) { return false; }
 
     // Parse the server response.
-    Response resp = ProcessResponse(_pSocket);
+    Response resp;
+    try { resp = ProcessResponse(_pSocket); }
+    catch (...) { return false; }
     if (resp.statusCode != kStatusCode200) { return false; }
     // Set the session ID using the UUID obtained from the server response.
     this->_sessionId = GetSessionUuid(resp.session);
@@ -214,7 +222,9 @@ bool Commands::SetupStream(MediaController::GstWrapper* gstwrapper, float speed,
     catch (...) { return false; }
 
     // Parse the server response.
-    Response resp = ProcessResponse(_pSocket);
+    Response resp;
+    try { resp = ProcessResponse(_pSocket); }
+    catch (...) { return false; }
 
     // If a redirect code was returned we need to tear down the current session and start a new one using the redirect location.
     if (resp.statusCode == kStatusCode301 || resp.statusCode == kStatusCode302) {
@@ -296,7 +306,8 @@ void Commands::Pause() {
     catch (...) { return; }
 
     // Parse the server response.
-    ProcessResponse(_pSocket);
+    try { ProcessResponse(_pSocket); }
+    catch (...) { }
 }
 
 void Commands::Teardown() {
@@ -320,7 +331,8 @@ void Commands::Teardown() {
     catch (...) { return; }
 
     // Parse the server response.
-    ProcessResponse(_pSocket);
+    try { ProcessResponse(_pSocket); }
+    catch (...) { return; }
 
     // Reset the value for the CSeq field.
     _cSeqNum = 0;
